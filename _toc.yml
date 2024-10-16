@@ -5,8 +5,31 @@ format: jb-book
 root: intro
 parts:
 - caption: Introduzione alla fisica
+  chapters:
+  - ch/intro.md
 - caption: Meccanica classica
+  chapters:
+  - ch/mechanics.md
+# - ch/mechanics/kinematics
+# - ch/mechanics/actions
+# - ch/mechanics/inertia
+# - ch/mechanics/dynamics
 - caption: Termodinamica
+  chapters:
+  - ch/thermodynamics.md
+# - ch/thermodynamics/...
+# - ch/thermodynamics/...
+# - ch/thermodynamics/...
 - caption: Elettromagnetismo
+  chapters:
+  - ch/electromagnetism.md
+# - ch/electromagnetism/...
+# - ch/electromagnetism/...
+# - ch/electromagnetism/...
 - caption: Fisica moderna
+  chapters:
+  - ch/modern.md
+# - ch/modern/...
+# - ch/modern/...
+# - ch/modern/...
 
