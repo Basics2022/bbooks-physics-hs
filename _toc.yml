@@ -3,5 +3,10 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
+parts:
+- caption: Introduzione alla fisica
+- caption: Meccanica classica
+- caption: Termodinamica
+- caption: Elettromagnetismo
+- caption: Fisica moderna
+

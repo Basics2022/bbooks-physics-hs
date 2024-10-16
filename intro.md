@@ -1,9 +1,14 @@
-# basics-book template
+(book:math-hs-miscellanea)=
+# Fisica per le scuole superiori
 
-If you want ot start a new basics-book, it could be a good idea to start from this template.
+<span style="color:red">
+Questo libro potrebbe diventare la **landing page** per la fisica delle scuole superiori. 
+Per ora colleziona gli argomenti. L'organizzazione migliore verrà decisa in un secondo momento.
+</span>
 
-Please check out the Github repo of the project, [basics-book project](https://github.com/Basics2022).
-
-
-```{tableofcontents}
-```
+## Argomenti
+- Introduzione alla fisica: metodo sperimentale, misura, grandezze,...
+- Meccanica classica
+- Termodinamica classica
+- Elettromagnetismo classico
+- Fisica moderna
