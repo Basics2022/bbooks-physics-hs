@@ -7,6 +7,15 @@ parts:
 - caption: Introduzione alla fisica
   chapters:
   - file: ch/intro.md
+  - file: ch/intro/physical_quantities
+    sections:
+    - file: ch/intro/physical_quantities-space
+    - file: ch/intro/physical_quantities-mass
+    - file: ch/intro/physical_quantities-time
+    - file: ch/intro/physical_quantities-temperature
+    - file: ch/intro/physical_quantities-charge
+    - file: ch/intro/physical_quantities-mole
+    - file: ch/intro/physical_quantities-luminosity
 - caption: Meccanica classica
   chapters:
   - file: ch/mechanics.md

@@ -170,6 +170,16 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione alla fisica</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="ch/intro.html">Introduzione alla fisica</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/intro/physical_quantities.html">Grandezze fisiche</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/intro/physical_quantities-space.html">Spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/intro/physical_quantities-mass.html">Quantità di materia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/intro/physical_quantities-time.html">Tempo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/intro/physical_quantities-temperature.html">Temperatura</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/intro/physical_quantities-charge.html">Carica e corrente elettrica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/intro/physical_quantities-mole.html">Quantità di sostanza, la mole</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/intro/physical_quantities-luminosity.html">Intensità luminosa</a></li>
+</ul>
+</li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Meccanica classica</span></p>
 <ul class="nav bd-sidenav">
@@ -358,9 +368,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -376,14 +384,6 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#argomenti">Argomenti</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -395,20 +395,81 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="fisica-per-le-scuole-superiori">
 <span id="book-math-hs-miscellanea"></span><h1>Fisica per le scuole superiori<a class="headerlink" href="#fisica-per-le-scuole-superiori" title="Permalink to this heading">#</a></h1>
+<p>Questo libro fa parte del materiale pensato per <a class="reference external" href="https://basics2022.github.io/bbooks-hs">le scuole superiori</a></p>
 <span style="color:red">
 Questo libro potrebbe diventare la **landing page** per la fisica delle scuole superiori. 
 Per ora colleziona gli argomenti. L'organizzazione migliore verrà decisa in un secondo momento.
 </span>
-<div class="section" id="argomenti">
-<h2>Argomenti<a class="headerlink" href="#argomenti" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Introduzione alla fisica: metodo sperimentale, misura, grandezze,…</p></li>
-<li><p>Meccanica classica</p></li>
-<li><p>Termodinamica classica</p></li>
-<li><p>Elettromagnetismo classico</p></li>
-<li><p>Fisica moderna</p></li>
-</ul>
+<p><strong>Discipline.</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Introduzione alla fisica</strong></p>
 </div>
+<div class="sd-card-body docutils">
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Meccanica classica</strong></p>
+</div>
+<div class="sd-card-body docutils">
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Termodinamica</strong></p>
+</div>
+<div class="sd-card-body docutils">
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Elettromagnetismo</strong></p>
+</div>
+<div class="sd-card-body docutils">
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text"><strong>Fisica del XX secolo</strong></p>
+</div>
+<div class="sd-card-body docutils">
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--
+## Argomenti
+```{dropdown} Introduzione alla fisica
+```
+```{dropdown} Meccanica classica
+```
+```{dropdown} Termodinamica
+```
+```{dropdown} Elettromagnetismo
+```
+```{dropdown} Fisica moderna
+```
+-->
+<!--
+- Introduzione alla fisica: metodo sperimentale, misura, grandezze,...
+- Meccanica classica
+- Termodinamica classica
+- Elettromagnetismo classico
+- Fisica moderna
+-->
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -466,20 +527,6 @@ Per ora colleziona gli argomenti. L'organizzazione migliore verrà decisa in un 
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#argomenti">Argomenti</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
