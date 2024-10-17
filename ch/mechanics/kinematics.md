@@ -5,7 +5,7 @@ La cinematica si occupa della descrizione del moto dei sistemi, senza indagarne 
 
 Lo stato di un sistema è definito da un insieme di variabili indipendenti, o coordinate, dette **gradi di libertà**.  Il numero di gradi di libertà coincide con la dimensione della varietà (**todo** *dello spazio?*) nel quale si svolge il moto.
 
-La posizione di un **punto** libero nello spazio euclideo $E^n$ ($n=2$ piano, $n=3$ spazio. **todo** ref alla definizione di spazio euclideo in matematica:geometria) è definito da un insieme di $n$ coordinate:
+Lo stato di un **punto** libero nello spazio euclideo $E^n$ ($n=2$ piano, $n=3$ spazio. **todo** ref alla definizione di spazio euclideo in matematica:geometria) è definito dalla sua posizione nello spazio, tramite un insieme di $n$ coordinate:
 - un punto libero nel piano ha 2 gradi di libertà (traslazione);
 - un punto libero nello spazio ha 3 gradi di libertà (traslazione). 
 
