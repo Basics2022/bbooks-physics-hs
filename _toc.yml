@@ -18,11 +18,13 @@ parts:
     - file: ch/intro/physical_quantities-luminosity
 - caption: Meccanica classica
   chapters:
-  - file: ch/mechanics.md
-# - file: ch/mechanics/kinematics
-# - file: ch/mechanics/actions
-# - file: ch/mechanics/inertia
-# - file: ch/mechanics/dynamics
+  - file: ch/mechanics
+  - file: ch/mechanics/models
+  - file: ch/mechanics/kinematics
+  - file: ch/mechanics/actions
+  - file: ch/mechanics/statics
+  - file: ch/mechanics/inertia
+  - file: ch/mechanics/dynamics
 - caption: Termodinamica
   chapters:
   - file: ch/thermodynamics.md
