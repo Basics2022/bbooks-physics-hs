@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/statics';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Inertia" href="inertia.html" />
+    <link rel="next" title="Inerzia" href="inertia.html" />
     <link rel="prev" title="Azioni" href="actions.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -185,11 +185,16 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Meccanica classica</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../mechanics.html">Meccanica classica</a></li>
-<li class="toctree-l1"><a class="reference internal" href="models.html">Modelli in meccanica classica</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kinematics.html">Cinematica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="models.html">Modelli</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="kinematics.html">Cinematica</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="kinematics-point.html">Cinematica del punto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kinematics-rigid.html">Cinematica di un corpo rigido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kinematics-relative.html">Cinematica relativa</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="actions.html">Azioni</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Statica</a></li>
-<li class="toctree-l1"><a class="reference internal" href="inertia.html">Inertia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inertia.html">Inerzia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dynamics.html">Dinamica</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Termodinamica</span></p>
@@ -398,8 +403,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-del-punto">Cinematica del punto</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-di-un-corpo-rigido">Cinematica di un corpo rigido</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-del-punto">Statica del punto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-di-un-corpo-rigido">Statica di un corpo rigido</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-nel-piano">Problemi nel piano</a></li>
 </ul>
 </li>
@@ -416,11 +421,11 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="statica">
 <span id="physics-hs-mechanics-statics"></span><h1>Statica<a class="headerlink" href="#statica" title="Permalink to this heading">#</a></h1>
-<div class="section" id="cinematica-del-punto">
-<span id="physics-hs-mechanics-statics-point"></span><h2>Cinematica del punto<a class="headerlink" href="#cinematica-del-punto" title="Permalink to this heading">#</a></h2>
+<div class="section" id="statica-del-punto">
+<span id="physics-hs-mechanics-statics-point"></span><h2>Statica del punto<a class="headerlink" href="#statica-del-punto" title="Permalink to this heading">#</a></h2>
 </div>
-<div class="section" id="cinematica-di-un-corpo-rigido">
-<span id="physics-hs-mechanics-statics-rigid"></span><h2>Cinematica di un corpo rigido<a class="headerlink" href="#cinematica-di-un-corpo-rigido" title="Permalink to this heading">#</a></h2>
+<div class="section" id="statica-di-un-corpo-rigido">
+<span id="physics-hs-mechanics-statics-rigid"></span><h2>Statica di un corpo rigido<a class="headerlink" href="#statica-di-un-corpo-rigido" title="Permalink to this heading">#</a></h2>
 <div class="section" id="problemi-nel-piano">
 <span id="physics-hs-mechanics-statics-rigid-2d"></span><h3>Problemi nel piano<a class="headerlink" href="#problemi-nel-piano" title="Permalink to this heading">#</a></h3>
 </div>
@@ -471,7 +476,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Inertia</p>
+        <p class="prev-next-title">Inerzia</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -490,8 +495,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-del-punto">Cinematica del punto</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-di-un-corpo-rigido">Cinematica di un corpo rigido</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-del-punto">Statica del punto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-di-un-corpo-rigido">Statica di un corpo rigido</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-nel-piano">Problemi nel piano</a></li>
 </ul>
 </li>

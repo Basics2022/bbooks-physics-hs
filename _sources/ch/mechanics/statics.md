@@ -2,10 +2,10 @@
 # Statica
 
 (physics-hs:mechanics:statics:point)=
-## Cinematica del punto
+## Statica del punto
 
 (physics-hs:mechanics:statics:rigid)=
-## Cinematica di un corpo rigido
+## Statica di un corpo rigido
 
 (physics-hs:mechanics:statics:rigid-2d)=
 ### Problemi nel piano
