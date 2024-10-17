@@ -62,6 +62,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/kinematics';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -189,7 +191,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Cinematica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="actions.html">Azioni</a></li>
 <li class="toctree-l1"><a class="reference internal" href="statics.html">Statica</a></li>
-<li class="toctree-l1"><a class="reference internal" href="inertia.html">Inertia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inertia.html">Inerzia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dynamics.html">Dinamica</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Termodinamica</span></p>
@@ -416,8 +418,19 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="cinematica">
 <span id="physics-hs-mechanics-kinematics"></span><h1>Cinematica<a class="headerlink" href="#cinematica" title="Permalink to this heading">#</a></h1>
+<p>La cinematica si occupa della descrizione del moto dei sistemi, senza indagarne le cause. La cinematica si occupa della descrizione dello stato di un sistema, e della sua variazione, nello spazio.</p>
+<p>Lo stato di un sistema è definito da un insieme di variabili indipendenti, o coordinate, dette <strong>gradi di libertà</strong>.  Il numero di gradi di libertà coincide con la dimensione della varietà (<strong>todo</strong> <em>dello spazio?</em>) nel quale si svolge il moto.</p>
+<p>La posizione di un <strong>punto</strong> libero nello spazio euclideo <span class="math notranslate nohighlight">\(E^n\)</span> (<span class="math notranslate nohighlight">\(n=2\)</span> piano, <span class="math notranslate nohighlight">\(n=3\)</span> spazio. <strong>todo</strong> ref alla definizione di spazio euclideo in matematica:geometria) è definito da un insieme di <span class="math notranslate nohighlight">\(n\)</span> coordinate: un punto libero nel piano ha 2 gradi di libertà; un punto libero nello spazio ha 3 gradi di libertà.</p>
+<p>Lo stato di un <strong>corpo rigido</strong> è definito dalla posizione di un suo punto nello spazio e dalla sua orientazione:</p>
+<ul class="simple">
+<li><p>un corpo rigido nel piano ha 3 gradi di libertà, 2 per definire la posizione di un suo punto nello spazio (traslazione) e 1 per definire la sua orientazione (rotazione) rispetto a un asse ortogonale al piano;</p></li>
+<li><p>un corpo rigido nello spazio ha 6 gradi di libertà, 3 per definire la posizione di un suo punto nello spazio (traslazione) e 3 per definire la sua orientazione (rotazione)</p></li>
+</ul>
 <div class="section" id="cinematica-del-punto">
 <span id="physics-hs-mechanics-kinematics-point"></span><h2>Cinematica del punto<a class="headerlink" href="#cinematica-del-punto" title="Permalink to this heading">#</a></h2>
+<p><strong>Posizione di un punto.</strong> <span class="math notranslate nohighlight">\(\vec{r}_P = P - O\)</span></p>
+<p><strong>Velocità di un punto.</strong> <span class="math notranslate nohighlight">\(\vec{v}_P = \dfrac{d \vec{r}_P}{dt}\)</span></p>
+<p><strong>Accelerazione di un punto.</strong>* <span class="math notranslate nohighlight">\(\vec{a}_P = \dfrac{d \vec{v}_P}{dt} = \dfrac{d^2 \vec{r}_P}{d t^2}\)</span></p>
 </div>
 <div class="section" id="cinematica-di-un-corpo-rigido">
 <span id="physics-hs-mechanics-kinematics-rigid"></span><h2>Cinematica di un corpo rigido<a class="headerlink" href="#cinematica-di-un-corpo-rigido" title="Permalink to this heading">#</a></h2>
