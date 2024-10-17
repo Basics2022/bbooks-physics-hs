@@ -1,5 +1,5 @@
 (physics-hs:mechanics:inertia)=
-# Inertia
+# Inerzia
 
 ## Massa e distribuzione di massa
 

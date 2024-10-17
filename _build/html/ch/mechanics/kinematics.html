@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cinematica &#8212; My sample book</title>
+    <title>Cinematica &#8212; Fisica per le superiori</title>
   
   
   
@@ -62,11 +62,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/kinematics';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Azioni" href="actions.html" />
-    <link rel="prev" title="Modelli in meccanica classica" href="models.html" />
+    <link rel="next" title="Cinematica relativa" href="kinematics-relative.html" />
+    <link rel="prev" title="Modelli" href="models.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -153,8 +155,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../../_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Fisica per le superiori - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Fisica per le superiori - Home"/>`);</script>
   
   
 </a></div>
@@ -185,10 +187,12 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Meccanica classica</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../mechanics.html">Meccanica classica</a></li>
-<li class="toctree-l1"><a class="reference internal" href="models.html">Modelli in meccanica classica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="models.html">Modelli</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Cinematica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kinematics-relative.html">Cinematica relativa</a></li>
 <li class="toctree-l1"><a class="reference internal" href="actions.html">Azioni</a></li>
 <li class="toctree-l1"><a class="reference internal" href="statics.html">Statica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inertia.html">Inerzia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dynamics.html">Dinamica</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Termodinamica</span></p>
@@ -415,13 +419,72 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="cinematica">
 <span id="physics-hs-mechanics-kinematics"></span><h1>Cinematica<a class="headerlink" href="#cinematica" title="Permalink to this heading">#</a></h1>
+<p>La cinematica si occupa della descrizione del moto dei sistemi, senza indagarne le cause. La cinematica si occupa della descrizione dello stato di un sistema, e della sua variazione, nello spazio.</p>
+<p>Lo stato di un sistema è definito da un insieme di variabili indipendenti, o coordinate, dette <strong>gradi di libertà</strong>.  Il numero di gradi di libertà coincide con la dimensione della varietà (<strong>todo</strong> <em>dello spazio?</em>) nel quale si svolge il moto.</p>
+<p>La posizione di un <strong>punto</strong> libero nello spazio euclideo <span class="math notranslate nohighlight">\(E^n\)</span> (<span class="math notranslate nohighlight">\(n=2\)</span> piano, <span class="math notranslate nohighlight">\(n=3\)</span> spazio. <strong>todo</strong> ref alla definizione di spazio euclideo in matematica:geometria) è definito da un insieme di <span class="math notranslate nohighlight">\(n\)</span> coordinate:</p>
+<ul class="simple">
+<li><p>un punto libero nel piano ha 2 gradi di libertà (traslazione);</p></li>
+<li><p>un punto libero nello spazio ha 3 gradi di libertà (traslazione).</p></li>
+</ul>
+<p>Lo stato di un <strong>corpo rigido</strong> è definito dalla posizione di un suo punto nello spazio e dalla sua orientazione:</p>
+<ul class="simple">
+<li><p>un corpo rigido nel piano ha 3 gradi di libertà, 2 per definire la posizione di un suo punto nello spazio (traslazione) e 1 per definire la sua orientazione (rotazione) rispetto a un asse ortogonale al piano;</p></li>
+<li><p>un corpo rigido nello spazio ha 6 gradi di libertà, 3 per definire la posizione di un suo punto nello spazio (traslazione) e 3 per definire la sua orientazione (rotazione)</p></li>
+</ul>
 <div class="section" id="cinematica-del-punto">
 <span id="physics-hs-mechanics-kinematics-point"></span><h2>Cinematica del punto<a class="headerlink" href="#cinematica-del-punto" title="Permalink to this heading">#</a></h2>
+<p><strong>Posizione di un punto.</strong> <span class="math notranslate nohighlight">\(P - O = \vec{r}_P\)</span></p>
+<p><strong>Velocità di un punto.</strong> <span class="math notranslate nohighlight">\(\vec{v}_P = \dfrac{d \vec{r}_P}{dt}\)</span></p>
+<p><strong>Accelerazione di un punto.</strong> <span class="math notranslate nohighlight">\(\vec{a}_P = \dfrac{d \vec{v}_P}{dt} = \dfrac{d^2 \vec{r}_P}{d t^2}\)</span></p>
 </div>
 <div class="section" id="cinematica-di-un-corpo-rigido">
 <span id="physics-hs-mechanics-kinematics-rigid"></span><h2>Cinematica di un corpo rigido<a class="headerlink" href="#cinematica-di-un-corpo-rigido" title="Permalink to this heading">#</a></h2>
 <div class="section" id="problemi-nel-piano">
 <span id="physics-hs-mechanics-kinematics-rigid-2d"></span><h3>Problemi nel piano<a class="headerlink" href="#problemi-nel-piano" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Posizione di un punto.</strong></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[Q - O = \vec{r}_Q\]</div>
+<ul class="simple">
+<li><p><strong>Orientazione del corpo.</strong></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[P - Q = \vec{r}_{QP} = \cos \theta \, \vec{r}_{QP}^0 + \sin \theta \, \hat{n} \times \vec{r}_{QP}^0\]</div>
+<ul class="simple">
+<li><p><strong>Velocità di un punto.</strong></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\vec{v}_P = \dfrac{d \vec{r}_P}{dt}\]</div>
+<ul class="simple">
+<li><p><strong>Velocità angolare del corpo</strong>, <span class="math notranslate nohighlight">\(\vec{\omega} = \dot{\theta} \hat{n}\)</span>.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \dfrac{d \vec{r}_{QP}}{dt} 
+  &amp; = \dfrac{d}{dt} \left(  \cos \theta \, \vec{r}_{QP}^0 + \sin \theta \, \hat{n} \times \vec{r}_{QP}^0 \right) = \\
+  &amp; = \dot{\theta} \left( -\sin \theta \, \vec{r}_{QP}^0 + \cos \theta \, \hat{n} \times \vec{r}_{QP}^0 \right) = \\
+  &amp; = \dot{\theta} \hat{n} \times \left( \sin \theta \, \hat{n} \times \vec{r}_{QP}^0 + \cos \theta \, \vec{r}_{QP}^0 \right) = \\
+  &amp; = \dot{\theta} \hat{n} \times \vec{r}_{QP} \ ,
+\end{aligned}\end{split}\]</div>
+<p>avendo usato l’identità vettoriale</p>
+<div class="math notranslate nohighlight">
+\[\vec{n} \times (\vec{n} \times \vec{w}) = \hat{n} \underbrace{(\hat{n} \cdot \vec{w})}_{=0} - \vec{w} \underbrace{(\hat{n} \cdot \hat{n})}_{=1} = - \vec{w} \ .\]</div>
+<ul class="simple">
+<li><p><strong>Accelerazione di un punto.</strong></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\vec{a}_P = \dfrac{d \vec{v}_P}{dt} = \dfrac{d^2 \vec{r}_P}{d t^2}\]</div>
+<ul class="simple">
+<li><p><strong>Accelerazione angolare del corpo</strong>, <span class="math notranslate nohighlight">\(\vec{\alpha} = \dot{\vec{\omega}} = \ddot{\theta} \hat{n}\)</span>.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ \dfrac{d^2 \vec{r}_{QP}}{dt^2}
+   &amp; = \dfrac{d}{dt} \left( \vec{\omega} \times \vec{r}_{QP} \right) = \\
+   &amp; = \dfrac{d \vec{\omega}}{dt} \times \vec{r}_{QP} + \vec{\omega} \times \dfrac{d \vec{r}_{QP}}{dt}= \\
+   &amp; = \alpha \times \vec{r}_{QP} + \vec{\omega} \times \left( \vec{\omega} \times \vec{r}_{QP} \right) \ .
+\end{aligned}\end{split}\]</div>
 </div>
 </div>
 </div>
@@ -462,15 +525,15 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Modelli in meccanica classica</p>
+        <p class="prev-next-title">Modelli</p>
       </div>
     </a>
     <a class="right-next"
-       href="actions.html"
+       href="kinematics-relative.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Azioni</p>
+        <p class="prev-next-title">Cinematica relativa</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

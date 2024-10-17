@@ -1,5 +1,5 @@
 (physics-hs:mechanics:models)=
-# Modelli in meccanica classica
+# Modelli
 
 - **Sistema** e ambiente esterno
 

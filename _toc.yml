@@ -21,6 +21,7 @@ parts:
   - file: ch/mechanics
   - file: ch/mechanics/models
   - file: ch/mechanics/kinematics
+  - file: ch/mechanics/kinematics-relative
   - file: ch/mechanics/actions
   - file: ch/mechanics/statics
   - file: ch/mechanics/inertia
