@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Termodinamica &#8212; My sample book</title>
+    <title>Termodinamica &#8212; Fisica per le superiori</title>
   
   
   
@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Elettromagnetismo" href="electromagnetism.html" />
-    <link rel="prev" title="Meccanica classica" href="mechanics.html" />
+    <link rel="prev" title="Dinamica" href="mechanics/dynamics.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -153,8 +153,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Fisica per le superiori - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Fisica per le superiori - Home"/>`);</script>
   
   
 </a></div>
@@ -171,10 +171,26 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione alla fisica</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduzione alla fisica</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="intro/physical_quantities.html">Grandezze fisiche</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-space.html">Spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-mass.html">Quantità di materia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-time.html">Tempo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-temperature.html">Temperatura</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-charge.html">Carica e corrente elettrica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-mole.html">Quantità di sostanza, la mole</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-luminosity.html">Intensità luminosa</a></li>
+</ul>
+</li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Meccanica classica</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mechanics.html">Meccanica classica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mechanics/models.html">Modelli in meccanica classica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mechanics/kinematics.html">Cinematica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mechanics/actions.html">Azioni</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mechanics/statics.html">Statica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mechanics/inertia.html">Inertia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mechanics/dynamics.html">Dinamica</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Termodinamica</span></p>
 <ul class="current nav bd-sidenav">
@@ -386,6 +402,15 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="termodinamica">
 <span id="physics-hs-thermodynamics"></span><h1>Termodinamica<a class="headerlink" href="#termodinamica" title="Permalink to this heading">#</a></h1>
+<p>La termodinamica si occupa dell’energia di un sistema, le forme di energia e le trasformazioni tra diverse forme di energia, e le variazioni di energia del sistema tramite scambi di lavoro o calore con l’ambiente esterno.</p>
+<p><strong>todo</strong> in meccanica, la presenza di azioni dissipative riduce l’energia meccanica (<strong>todo</strong> riferimento al teorema dell’energia cinetica). Dove finisce questa energia? <strong>Equivalenza lavoro-calore di Joule</strong></p>
+<p><strong>todo</strong> approccio macroscopico a sistemi complessi</p>
+<p><strong>todo</strong> formulazione dei princìpi a partire dall’esperienza:</p>
+<ul class="simple">
+<li><p>non si crea energia meccanica dal nulla, ossia la dissipazione dell’energia meccanica è non-negativa</p></li>
+<li><p>temperatura, grandezza fisica associata alla sensazione di caldo-freddo; evidenza della dilatazione delle sostanze al variare della temperatura (principio fisico alla base del principio di funzionamento dei primi termometri)</p></li>
+<li><p>tendenza di due sistemi chiusi e in quiete inizialemente a temperature diverse a raggiungere l’equilibrio termico: trasferimento di calore “dal corpo a temperatura maggiore a quello a temperatura minore”</p></li>
+</ul>
 </div>
 
     <script type="text/x-thebe-config">
@@ -419,12 +444,12 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="mechanics.html"
+       href="mechanics/dynamics.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Meccanica classica</p>
+        <p class="prev-next-title">Dinamica</p>
       </div>
     </a>
     <a class="right-next"
