@@ -37,6 +37,9 @@ parts:
 - caption: Termodinamica
   chapters:
   - file: ch/thermodynamics.md
+  - file: ch/thermodynamics/ideal-gas
+  - file: ch/thermodynamics/ideal-gas-experiments
+  - file: ch/thermodynamics/ideal-gas-kinetic-theory
 # - file: ch/thermodynamics/...
 # - file: ch/thermodynamics/...
 # - file: ch/thermodynamics/...
