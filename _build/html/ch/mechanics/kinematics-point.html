@@ -408,7 +408,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moti-particolari">Moti particolari</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-non-accelerato">Moto non accelerato</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-uniformemente-accelerato">Moto uniformemente accelerato</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-circolare">Moto circolare</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-circolare">Moto circolare</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-circolare-uniforme">Moto circolare uniforme</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-armonico-lungo-un-segmento">Moto armonico lungo un segmento</a></li>
 </ul>
 </li>
@@ -433,15 +436,131 @@ document.write(`
 <h2>Moti particolari<a class="headerlink" href="#moti-particolari" title="Permalink to this heading">#</a></h2>
 <div class="section" id="moto-non-accelerato">
 <h3>Moto non accelerato<a class="headerlink" href="#moto-non-accelerato" title="Permalink to this heading">#</a></h3>
+<p>Un moto non accelerato di un punto <span class="math notranslate nohighlight">\(P\)</span> rispetto a un sistema di riferimento con origine in <span class="math notranslate nohighlight">\(O\)</span> può essere definito dalla condizione di accelerazione nulla</p>
+<div class="math notranslate nohighlight">
+\[\vec{a}_P = \ddot{\vec{r}}_P(t) = \vec{0} \ ,\]</div>
+<p>la cui integrazione due volte in tempo fornisce le leggi della velocità e dello spazio</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  \vec{v}_P(t) &amp; = \vec{c}_1 \\
+  \vec{r}_P(t) &amp; = \vec{c}_1 \, t + \vec{c}_2 \ .
+\end{cases}\end{split}\]</div>
+<p><strong>todo</strong> dimostrazione come esercizio con procedimento</p>
+<p>Si nota che la condizione di accelerazione nulla implica la condizione di velocità costante. <strong>todo</strong></p>
+<p>accompagnata da condizioni tra di loro compatibili (<strong>todo</strong> <em>fare esempio di condizioni non compatibili, es. velocità diverse in due istanti temporali diversi</em>) che identifichino unicamente il moto, come possono essere ad esempio:</p>
+<ul>
+<li><p>posizione e velocità a un istante temporale</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+    \vec{r}(t_0) = \vec{r}_0 \\
+    \vec{v}(t_0) = \vec{v}_0
+  \end{cases}\end{split}\]</div>
+<p>Le leggi del moto possono diventano</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+    \vec{v}_P    &amp; = \vec{v}_0  \\
+    \vec{r}_P(t) &amp; = \vec{v}_0 \, ( t - t_0 ) + \vec{r}_0 \ ,
+  \end{cases}\end{split}\]</div>
+<p><strong>todo</strong> dimostrazione come esercizio con procedimento</p>
+</li>
+<li><p>posizione in due istanti temporali</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+    \vec{r}(t_0) = \vec{r}_0 \\
+    \vec{r}(t_1) = \vec{r}_1
+  \end{cases}\end{split}\]</div>
+<p>Le leggi del moto possono diventano</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+    \vec{v}_P    &amp; = \frac{\vec{r}_1 - \vec{r}_0}{t_1 - t_0} \\
+    \vec{r}_P(t) &amp; = \vec{v}_P \, ( t - t_0 ) + \vec{r}_0 \ ,
+  \end{cases}\end{split}\]</div>
+<p><strong>todo</strong> dimostrazione come esercizio con procedimento</p>
+</li>
+</ul>
+<span style="color:red">
+**todo** moto rettilineo; uso dei sistemi di riferimento
+</span>
 </div>
 <div class="section" id="moto-uniformemente-accelerato">
 <h3>Moto uniformemente accelerato<a class="headerlink" href="#moto-uniformemente-accelerato" title="Permalink to this heading">#</a></h3>
+<p>Un moto uniformemente accelerato di un punto <span class="math notranslate nohighlight">\(P\)</span> rispetto a un sistema di riferimento con origine in <span class="math notranslate nohighlight">\(O\)</span> può essere definito dalla condizione di accelerazione costante</p>
+<div class="math notranslate nohighlight">
+\[\vec{a}_P = \ddot{\vec{r}}_P(t) = \vec{a} \ ,\]</div>
+<p>la cui integrazione due volte in tempo fornisce le leggi della velocità e dello spazio</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  \vec{v}_P(t) &amp; = \vec{a} t               + \vec{c}_1 \\
+  \vec{r}_P(t) &amp; = \dfrac{1}{2}\vec{a} t^2 + \vec{c}_1 \, t + \vec{c}_2 \ .
+\end{cases}\end{split}\]</div>
+<p><strong>todo</strong> dimostrazione come esercizio con procedimento</p>
+<p>accompagnata da condizioni tra di loro compatibili che identifichino unicamente il moto, come possono essere ad esempio:</p>
+<ul>
+<li><p>posizione e velocità a un istante temporale</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+    \vec{r}(t_0) = \vec{r}_0 \\
+    \vec{v}(t_0) = \vec{v}_0
+  \end{cases}\end{split}\]</div>
+<p>Le leggi del moto possono diventano</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+    \vec{v}_P(t) &amp; = \vec{a} t                     + \vec{v}_0  \\
+    \vec{r}_P(t) &amp; = \dfrac{1}{2}\vec{a} (t-t_0)^2 + \vec{v}_0 \, ( t - t_0 ) + \vec{r}_0 \ ,
+  \end{cases}\end{split}\]</div>
+<p><strong>todo</strong> dimostrazione come esercizio con procedimento</p>
+</li>
+<li><p>posizione in due istanti temporali… <strong>todo</strong></p>
+<p><strong>todo</strong> dimostrazione come esercizio con procedimento</p>
+</li>
+</ul>
+<span style="color:red">
+**todo** moto piano (rettilineo se $\vec{a}$, $\vec{v}_0$ sono allineati); uso dei sistemi di riferimento
+</span>
 </div>
 <div class="section" id="moto-circolare">
 <h3>Moto circolare<a class="headerlink" href="#moto-circolare" title="Permalink to this heading">#</a></h3>
+<p>La cinematica di un punto su una traiettoria circolare (<strong>todo</strong> è un vincolo!) può essere rappresentato usando un sistema di <strong>coordinate polari</strong> con origine coincidente con il centro della circonferenza</p>
+<div class="math notranslate nohighlight">
+\[r = R \ , \quad \theta_P(t)=\text{**todo**}\]</div>
+<p>o in coordinate cartesiane</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+ x_P(t) = R \, \cos \theta_P(t) \\
+ y_P(t) = R \, \sin \theta_P(t) \\
+\end{cases}\end{split}\]</div>
+<p>che permettono di identificare il punto <span class="math notranslate nohighlight">\(P\)</span> con il raggio vettore rispetto all’origine</p>
+<div class="math notranslate nohighlight">
+\[\vec{r}_P = R \cos \theta_P(t) \hat{x} + R \sin \theta_P(t) \hat{y} \ .\]</div>
+<ul class="simple">
+<li><p>Definizione vettori <span class="math notranslate nohighlight">\(\hat{r}\)</span>, <span class="math notranslate nohighlight">\(\hat{\theta}\)</span> <strong>todo</strong></p></li>
+<li><p>La velocità e l’accelerazione del punto <strong>todo</strong></p>
+<ul>
+<li><p>direzione e modulo di velocità e accelerazione</p></li>
+</ul>
+</li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  \vec{v}_P(t) &amp; = R \dot{\theta}(t) \left( -\sin \theta_P(t) \hat{x} + \cos \theta_P(t) \hat{y} \right) = R \dot{\theta}(t) \hat{\theta}(t) \\
+  \vec{a}_P(t) &amp; = R \ddot{\theta}(t) \left( -\sin \theta_P(t) \hat{x} + \cos \theta_P(t) \hat{y} \right) + \\
+               &amp; + R \ddot{\theta}^2(t) \left( -\cos \theta_P(t) \hat{x} - \sin \theta_P(t) \hat{y} \right)     
+                 = R \ddot{\theta}(t) \hat{\theta}(t) - R \dot{\theta}^2(t) \hat{r}(t) \ .
+\end{cases}\end{split}\]</div>
+<div class="section" id="moto-circolare-uniforme">
+<h4>Moto circolare uniforme<a class="headerlink" href="#moto-circolare-uniforme" title="Permalink to this heading">#</a></h4>
+<p>Il moto circolare uniforme ha modulo della velocità costante,</p>
+<div class="math notranslate nohighlight">
+\[|\vec{v}_P| = |R \dot \theta_P|\]</div>
+<p>e la derivata nel tempo della coordinata <span class="math notranslate nohighlight">\(\theta_P\)</span> è costante <strong>todo</strong></p>
+<ul class="simple">
+<li><p><strong>todo</strong> pulsazione, periodo, frequenza,…</p></li>
+</ul>
+</div>
 </div>
 <div class="section" id="moto-armonico-lungo-un-segmento">
 <h3>Moto armonico lungo un segmento<a class="headerlink" href="#moto-armonico-lungo-un-segmento" title="Permalink to this heading">#</a></h3>
+<p>Un moto armonico lungo un segmento può essere definito come la proiezione di un punto che compie un moto circolare uniforme su una circonferenza che ha il segmento come diametro <strong>todo</strong></p>
 </div>
 </div>
 <div class="section" id="problemi">
@@ -515,7 +634,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moti-particolari">Moti particolari</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-non-accelerato">Moto non accelerato</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-uniformemente-accelerato">Moto uniformemente accelerato</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-circolare">Moto circolare</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-circolare">Moto circolare</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-circolare-uniforme">Moto circolare uniforme</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-armonico-lungo-un-segmento">Moto armonico lungo un segmento</a></li>
 </ul>
 </li>
