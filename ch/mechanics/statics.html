@@ -62,10 +62,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/statics';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Inerzia" href="inertia.html" />
+    <link rel="next" title="Statica dei sistemi puntiformi" href="statics-point.html" />
     <link rel="prev" title="Azioni" href="actions.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -193,7 +195,13 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="actions.html">Azioni</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Statica</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Statica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="statics-point.html">Statica dei sistemi puntiformi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="statics-rigid.html">Statica dei corpi rigidi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="statics-fluid.html">Statica dei fluidi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="statics-problems.html">Problemi</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="inertia.html">Inerzia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dynamics.html">Dinamica</a></li>
 </ul>
@@ -405,9 +413,13 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-del-punto">Statica del punto</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-di-un-corpo-rigido">Statica di un corpo rigido</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-nel-piano">Problemi nel piano</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-nel-piano">Problemi nel piano</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi-ed-esercizi">Esempi ed esercizi</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-dei-fluidi">Statica dei fluidi</a></li>
 </ul>
             </nav>
         </div>
@@ -423,12 +435,36 @@ document.write(`
 <span id="physics-hs-mechanics-statics"></span><h1>Statica<a class="headerlink" href="#statica" title="Permalink to this heading">#</a></h1>
 <div class="section" id="statica-del-punto">
 <span id="physics-hs-mechanics-statics-point"></span><h2>Statica del punto<a class="headerlink" href="#statica-del-punto" title="Permalink to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\sum_k \vec{F}^{ext} = \vec{0}\]</div>
 </div>
 <div class="section" id="statica-di-un-corpo-rigido">
 <span id="physics-hs-mechanics-statics-rigid"></span><h2>Statica di un corpo rigido<a class="headerlink" href="#statica-di-un-corpo-rigido" title="Permalink to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  \sum_k \vec{F}^{ext} = \vec{0} \\
+  \sum_k \vec{M}^{ext}_H = \vec{0} 
+\end{cases}\end{split}\]</div>
+<p><span style="color:red">O per un sistema esteso generico?</span></p>
 <div class="section" id="problemi-nel-piano">
 <span id="physics-hs-mechanics-statics-rigid-2d"></span><h3>Problemi nel piano<a class="headerlink" href="#problemi-nel-piano" title="Permalink to this heading">#</a></h3>
+<div class="section" id="esempi-ed-esercizi">
+<h4>Esempi ed esercizi<a class="headerlink" href="#esempi-ed-esercizi" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>leve</p></li>
+<li><p>carrucole</p></li>
+<li><p>ingranaggi e trasmissioni</p></li>
+</ul>
 </div>
+</div>
+</div>
+<div class="section" id="statica-dei-fluidi">
+<span id="physics-hs-mechanics-statics-fluids"></span><h2>Statica dei fluidi<a class="headerlink" href="#statica-dei-fluidi" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Stevino e principio di Archimede</p></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
 </div>
 </div>
 
@@ -472,11 +508,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="inertia.html"
+       href="statics-point.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Inerzia</p>
+        <p class="prev-next-title">Statica dei sistemi puntiformi</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -497,9 +533,13 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-del-punto">Statica del punto</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-di-un-corpo-rigido">Statica di un corpo rigido</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-nel-piano">Problemi nel piano</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-nel-piano">Problemi nel piano</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi-ed-esercizi">Esempi ed esercizi</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-dei-fluidi">Statica dei fluidi</a></li>
 </ul>
   </nav></div>
 
