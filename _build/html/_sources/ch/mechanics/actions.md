@@ -27,11 +27,12 @@ Esempio, forze concentrate, se la regione di interazione è "sufficientemente" (
 - esempi: gravità (legge di gravitazione universale, gravità nei pressi della superficie terrestre), molle e smorzatori leggeri, forze di contatto (reazione normale e attrito)
 
 ## Sistemi di forze equivalenti
-
+<span \sytle="color:red">Qui o dopo gli esempi?</span>
 
 ## Esempi
 
-### Gravità
+<!-- ### Gravità -->
+```{dropdown} Gravità
 #### Legge di gravitazione universale
 La forza $\vec{F}_{12}$ esercitata da un corpo di massa $m_2$ in $P_2$ su un corpo di massa $m_1$ in $P_1$ è descritta dalla **legge di gravitazione universale di Newton**,
 
@@ -47,11 +48,11 @@ Il campo di gravità generato da una massa $m_2$ posta in $P_2$ è **todo** una 
 
 $$\vec{g}(\vec{r}_1) = \dfrac{\vec{F}_{12}}{m_1} = G \dfrac{m_2}{r_{12}^2} \hat{r}_{12} \ ,$$
 
-**todo** abituarsi al concetto di campo, introdotto a partire dalla definizione operativa con *massa test*
-**todo** PSCE
-**todo** noto il campo di gravità $\vec{g}(P)$, la forza di gravità percepita da un sistema di massa $m$ in $P$ può essere scritta come
+- **todo** abituarsi al concetto di campo, introdotto a partire dalla definizione operativa con *massa test*
+- **todo** PSCE
+- **todo** noto il campo di gravità $\vec{g}(P)$, la forza di gravità percepita da un sistema di massa $m$ in $P$ può essere scritta come
 
- $$\vec{F} = m \vec{g}(P)$$
+  $$\vec{F}_g = m \vec{g}(P)$$
 
 #### Campo di gravità nei pressi della superficie terrestre
 All'interno di un dominio limitato nei pressi della superficie terrestre, è comune approssimare il campo di gravitazione terrestre come un campo uniforme, diretto lungo la verticale locale verso il centro della terra e di intensità $g = G \frac{M_E}{R_E^2}$.
@@ -60,7 +61,21 @@ E' possibile derivare questo modello, approssimando il vettore posizione rispett
 
 $$\vec{g}(\vec{r}) = - G \dfrac{M_E}{R_E^2} \hat{z} = - g \hat{z} \ .$$
 
+La forza di gravità percepita da un corpo di massa $m$ nei pressi della superficie terrestre è quindi 
+
+$$\vec{F}_g = - m g \hat{z} \ ,$$
+
+quello che viene comunemente chiamato **peso**.
+```
+
+### Azioni elastiche: molle lineari
+
+### Azioni di contatto
+#### Reazioni vincolari (ideali)
+
+#### Attrito
+##### Attrito statico
+##### Attrito dinamico
 
 - lavoro e potenza di una forza
-
 - azioni conservative

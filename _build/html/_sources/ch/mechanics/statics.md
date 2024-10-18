@@ -1,12 +1,12 @@
 (physics-hs:mechanics:statics)=
 # Statica
 
-(physics-hs:mechanics:statics:point)=
+<!-- (physics-hs:mechanics:statics:point)= -->
 ## Statica del punto
 
 $$\sum_k \vec{F}^{ext} = \vec{0}$$
 
-(physics-hs:mechanics:statics:rigid)=
+<!-- (physics-hs:mechanics:statics:rigid)= -->
 ## Statica di un corpo rigido
 
 $$\begin{cases}
@@ -16,6 +16,17 @@ $$\begin{cases}
 
 <span style="color:red">O per un sistema esteso generico?</span>
 
-(physics-hs:mechanics:statics:rigid-2d)=
+<!-- (physics-hs:mechanics:statics:rigid-2d)= -->
 ### Problemi nel piano
+
+#### Esempi ed esercizi
+- leve
+- carrucole
+- ingranaggi e trasmissioni
+
+<!-- (physics-hs:mechanics:statics:fluids)= -->
+## Statica dei fluidi
+- Stevino e principio di Archimede
+
+
 

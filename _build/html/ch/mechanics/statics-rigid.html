@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Statica &#8212; Fisica per le superiori</title>
+    <title>Statica dei corpi rigidi &#8212; Fisica per le superiori</title>
   
   
   
@@ -62,13 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/statics';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/statics-rigid';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Statica dei sistemi puntiformi" href="statics-point.html" />
-    <link rel="prev" title="Azioni" href="actions.html" />
+    <link rel="next" title="Statica dei fluidi" href="statics-fluid.html" />
+    <link rel="prev" title="Statica dei sistemi puntiformi" href="statics-point.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -195,9 +193,9 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="actions.html">Azioni</a></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Statica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="statics.html">Statica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="statics-point.html">Statica dei sistemi puntiformi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="statics-rigid.html">Statica dei corpi rigidi</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Statica dei corpi rigidi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="statics-fluid.html">Statica dei fluidi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="statics-problems.html">Problemi</a></li>
 </ul>
@@ -287,7 +285,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch/mechanics/statics.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch/mechanics/statics-rigid.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -317,7 +315,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/mechanics/statics.md" target="_blank"
+      <li><a href="../../_sources/ch/mechanics/statics-rigid.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -388,9 +386,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -401,27 +397,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Statica</h1>
+    <h1>Statica dei corpi rigidi</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-del-punto">Statica del punto</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-di-un-corpo-rigido">Statica di un corpo rigido</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-nel-piano">Problemi nel piano</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi-ed-esercizi">Esempi ed esercizi</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-dei-fluidi">Statica dei fluidi</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -431,45 +411,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="statica">
-<span id="physics-hs-mechanics-statics"></span><h1>Statica<a class="headerlink" href="#statica" title="Permalink to this heading">#</a></h1>
-<!-- (physics-hs:mechanics:statics:point)= -->
-<div class="section" id="statica-del-punto">
-<h2>Statica del punto<a class="headerlink" href="#statica-del-punto" title="Permalink to this heading">#</a></h2>
-<div class="math notranslate nohighlight">
-\[\sum_k \vec{F}^{ext} = \vec{0}\]</div>
-<!-- (physics-hs:mechanics:statics:rigid)= -->
-</div>
-<div class="section" id="statica-di-un-corpo-rigido">
-<h2>Statica di un corpo rigido<a class="headerlink" href="#statica-di-un-corpo-rigido" title="Permalink to this heading">#</a></h2>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{cases}
-  \sum_k \vec{F}^{ext} = \vec{0} \\
-  \sum_k \vec{M}^{ext}_H = \vec{0} 
-\end{cases}\end{split}\]</div>
-<p><span style="color:red">O per un sistema esteso generico?</span></p>
-<!-- (physics-hs:mechanics:statics:rigid-2d)= -->
-<div class="section" id="problemi-nel-piano">
-<h3>Problemi nel piano<a class="headerlink" href="#problemi-nel-piano" title="Permalink to this heading">#</a></h3>
-<div class="section" id="esempi-ed-esercizi">
-<h4>Esempi ed esercizi<a class="headerlink" href="#esempi-ed-esercizi" title="Permalink to this heading">#</a></h4>
-<ul class="simple">
-<li><p>leve</p></li>
-<li><p>carrucole</p></li>
-<li><p>ingranaggi e trasmissioni</p></li>
-</ul>
-<!-- (physics-hs:mechanics:statics:fluids)= -->
-</div>
-</div>
-</div>
-<div class="section" id="statica-dei-fluidi">
-<h2>Statica dei fluidi<a class="headerlink" href="#statica-dei-fluidi" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Stevino e principio di Archimede</p></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-</div>
+  <div class="tex2jax_ignore mathjax_ignore section" id="statica-dei-corpi-rigidi">
+<span id="physics-hs-mechanics-statics-rigid"></span><h1>Statica dei corpi rigidi<a class="headerlink" href="#statica-dei-corpi-rigidi" title="Permalink to this heading">#</a></h1>
 </div>
 
     <script type="text/x-thebe-config">
@@ -503,20 +446,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="actions.html"
+       href="statics-point.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Azioni</p>
+        <p class="prev-next-title">Statica dei sistemi puntiformi</p>
       </div>
     </a>
     <a class="right-next"
-       href="statics-point.html"
+       href="statics-fluid.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Statica dei sistemi puntiformi</p>
+        <p class="prev-next-title">Statica dei fluidi</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -526,28 +469,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-del-punto">Statica del punto</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-di-un-corpo-rigido">Statica di un corpo rigido</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-nel-piano">Problemi nel piano</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi-ed-esercizi">Esempi ed esercizi</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-dei-fluidi">Statica dei fluidi</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
