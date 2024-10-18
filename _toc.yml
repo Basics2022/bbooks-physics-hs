@@ -27,6 +27,11 @@ parts:
     - file: ch/mechanics/kinematics-relative
   - file: ch/mechanics/actions
   - file: ch/mechanics/statics
+    sections:
+    - file: ch/mechanics/statics-point
+    - file: ch/mechanics/statics-rigid
+    - file: ch/mechanics/statics-fluid
+    - file: ch/mechanics/statics-problems
   - file: ch/mechanics/inertia
   - file: ch/mechanics/dynamics
 - caption: Termodinamica

@@ -62,6 +62,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/statics';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -423,9 +425,17 @@ document.write(`
 <span id="physics-hs-mechanics-statics"></span><h1>Statica<a class="headerlink" href="#statica" title="Permalink to this heading">#</a></h1>
 <div class="section" id="statica-del-punto">
 <span id="physics-hs-mechanics-statics-point"></span><h2>Statica del punto<a class="headerlink" href="#statica-del-punto" title="Permalink to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\sum_k \vec{F}^{ext} = \vec{0}\]</div>
 </div>
 <div class="section" id="statica-di-un-corpo-rigido">
 <span id="physics-hs-mechanics-statics-rigid"></span><h2>Statica di un corpo rigido<a class="headerlink" href="#statica-di-un-corpo-rigido" title="Permalink to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  \sum_k \vec{F}^{ext} = \vec{0} \\
+  \sum_k \vec{M}^{ext}_H = \vec{0} 
+\end{cases}\end{split}\]</div>
+<p><span style="color:red">O per un sistema esteso generico?</span></p>
 <div class="section" id="problemi-nel-piano">
 <span id="physics-hs-mechanics-statics-rigid-2d"></span><h3>Problemi nel piano<a class="headerlink" href="#problemi-nel-piano" title="Permalink to this heading">#</a></h3>
 </div>

@@ -118,7 +118,7 @@ che permettono di identificare il punto $P$ con il raggio vettore rispetto all'o
 
 $$\vec{r}_P = R \cos \theta_P(t) \hat{x} + R \sin \theta_P(t) \hat{y} \ .$$
 
-- Definizione vettori $\hat{r}$, $\hat{\theta}$ **todo**
+- Definizione vettori $\hat{r}$, $\hat{\theta}$ **todo** *dipendenza di questi versori dalla posizione di $P$ nello spazio, e quindi in generale dal tempo
 - La velocità e l'accelerazione del punto **todo**
   - direzione e modulo di velocità e accelerazione
 

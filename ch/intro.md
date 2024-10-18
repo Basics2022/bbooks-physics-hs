@@ -12,5 +12,6 @@
   - processo e strumenti di misura:
     - logica **todo** *?*
     - analisi dati, errori
+- **Astrazione** e costruzione di **modelli**, con il linguaggio matematico
 - Rappresentazione dei dati
   - ...
