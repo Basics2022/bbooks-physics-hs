@@ -16,7 +16,7 @@
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="pb-statics-001.svg"
-   inkscape:export-filename="/home/davide/Documents/basics-books/books/bbooks-physics-hs/media/pb-statics-000-ese-000.png"
+   inkscape:export-filename="/home/davide/Documents/basics-books/books/bbooks-physics-hs/media/pb-statics-001-ese-002.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
   <defs
@@ -89,7 +89,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="119.00877"
+     inkscape:cx="-22.419801"
      inkscape:cy="340.91789"
      inkscape:document-units="mm"
      inkscape:current-layer="g2689"
@@ -119,7 +119,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -436,7 +436,7 @@
     <path
        sodipodi:nodetypes="cc"
        style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 7.7254762,66.823141 12.0149308,0"
+       d="M 7.7254762,66.823141 H 19.740407"
        id="path2679"
        inkscape:connector-curvature="0" />
     <path
