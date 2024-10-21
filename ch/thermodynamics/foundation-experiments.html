@@ -62,10 +62,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/foundation-experiments';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Principi della termodinamica" href="foundation-principles.html" />
+    <link rel="next" title="Termodinamica e teoria atomica" href="foundation-atomic-theory.html" />
     <link rel="prev" title="Origini della termodinamica" href="foundation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -208,7 +210,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../thermodynamics.html">Termodinamica</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="foundation.html">Origini della termodinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Esperienze ed esperimenti</a></li>
-<li class="toctree-l2"><a class="reference internal" href="foundation-principles.html">Principi della termodinamica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foundation-atomic-theory.html">Termodinamica e teoria atomica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foundation-principles.html">Princìpi della termodinamica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foundation-principles-open.html">Sistemi aperti</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="matter.html">Stati della materia</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -219,7 +223,17 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="heat-engines.html">Macchine termiche</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="heat-engine.html">Macchine termiche</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-td-cycles.html">Cicli termodinamici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-carnot.html">Macchina termica di Carnot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-second-principle.html">Secondo principio della termodinamica per cicli termodinamici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-otto.html">Ciclo Otto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-diesel.html">Ciclo Diesel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-rankine.html">Ciclo Rankine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-joule-brayton.html">Ciclo Joule-Brayton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-problems.html">Problemi</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="heat-transmission.html">Meccanismi di trasmissione del calore</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Elettromagnetismo</span></p>
@@ -428,37 +442,147 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="esperienze-ed-esperimenti">
 <span id="physics-hs-thermodynamics-foundation-experiments"></span><h1>Esperienze ed esperimenti<a class="headerlink" href="#esperienze-ed-esperimenti" title="Permalink to this heading">#</a></h1>
-<p><strong>Concetti e primi strumenti.</strong></p>
+<p>Sviluppo non lineare, dovuto ai contributi di molti studiosi, nel corso di più di un paio di secoli</p>
+<p><strong>Esperienze.</strong></p>
 <ul class="simple">
-<li><p>Temperatura, pressione</p></li>
-<li><p>Primi strumenti, e princìpi fisici utilizzati:</p>
+<li><p>Sensazione di caldo e freddo</p></li>
+<li><p>Dissipazione dell’energia meccanica “macroscopica”</p></li>
+</ul>
+<p><strong>Domande aperte.</strong></p>
+<ul class="simple">
+<li><p>Come è fatta la materia?</p>
 <ul>
-<li><p>manometro di Torricelli e peso di una colonna di acqua o Hg</p></li>
-<li><p>termometri e dilatazione termica delle sostanze</p></li>
+<li><p>affermazione della <strong>teoria atomistica</strong>: particelle elementari, che si possono combinare</p></li>
+<li><p>esiste il vuoto? “la natura ha orrore del vuoto” (Galileo)?</p></li>
+</ul>
+</li>
+<li><p>Come descrivere le sensazioni di caldo-freddo: temperatura e calore</p>
+<ul>
+<li><p>teoria <strong>calorica</strong>? Fluido invisibile</p></li>
+<li><p>…</p></li>
 </ul>
 </li>
 </ul>
-<p><strong>Esperienza.</strong></p>
+<p><strong>Indagine scientifica: natura materia.</strong> Rivoluzione scientifica del XVI-XVII secolo. Costruzione di strumenti</p>
 <ul class="simple">
-<li><p>Tendenze naturali:</p>
+<li><p>Torricelli, disceplo di Galileo:</p>
 <ul>
-<li><p>Equilibrio termico: calore dal corpo più caldo a quello più freddo</p></li>
-<li><p>Dissipazione dell’energia meccanica</p></li>
-<li><p>Conservazione della massa</p></li>
+<li><p>il barometro;</p></li>
+<li><p>la misura del peso dell’aria: <strong>pressione</strong> atmosferica;</p></li>
+<li><p>“vuoto” al di sopra della colonnina di Hg: argomento che rilancia la tesi atomistica</p></li>
 </ul>
 </li>
-<li><p>Esperimenti in chimica, sull’indagine della natura della materia:</p>
+<li><p>Boyle, “primo chimico”; tra i fondatori della Royal Society; preciso sperimentatore (descrizione dettagliata per permettere replica), grazie agli strumenti progettati e realizzati da Robert Hooke:</p>
 <ul>
-<li><p>misura di: massa, pressione, volume, temperatura,</p></li>
-<li><p>esperimenti su: reazioni chimiche, gas</p></li>
+<li><p>contributi alla chimica</p></li>
+<li><p>legge di Boyle sui gas: l’aria si comporta come una molla, <span class="math notranslate nohighlight">\(PV = \text{cost}\)</span> a <span class="math notranslate nohighlight">\(T\)</span> cost. Comportamento elastico, come i solidi studiati da Hooke (legge costitutiva lineare elastica): modello dei gas come costituiti da particelle elementari, collegati da molle</p></li>
+</ul>
+</li>
+<li><p>D.Bernoulli, <em>Hydrodynamica</em>, 1738:</p>
+<ul>
+<li><p>primo modello matematico nella teoria cinetica dei gas: gas costituiti da particelle libere di muoversi: la pressione è il risultato degli urti delle particelle sulle pareti del contenitore.</p></li>
+</ul>
+</li>
+<li><p>A.Lavoisier, fine ‘700, uno dei più influenti chimici della storia:</p>
+<ul>
+<li><p>misura del peso nelle indagini di chimica: <strong>conservazione della massa</strong> in fisica classica</p></li>
+<li><p>altro valido argomento a sostegno della teoria atomistica: le sostanze sono formate da particelle elementari che si combinano a formare diverse sostanze; nelle reazioni chimiche, reagenti e prodotti hanno la stessa massa (<span class="math notranslate nohighlight">\(Hg \, O \rightarrow Hg \, + \, \frac{1}{2} O_2\)</span>)</p></li>
+</ul>
+</li>
+<li><p>Composizione sostanze è ben definita?</p>
+<ul>
+<li><p>Berthollet: no, contrario alla teoria atomica, es. bronzo (lega!): la composizione di una sostanza dipende dal processo con il quale viene prodotto;</p></li>
+<li><p>Proust: carbonato basico di <span class="math notranslate nohighlight">\(Cu\)</span>. I campioni provenienti da diverse parti, trovate sia in natura sia sintetizzate in laboratorio, hanno esattamente la stessa composizione in massa;</p></li>
+<li><p>Dalton: sostenitore teoria atomica, dopo aver formulato la legge delle proporzioni multiple; pessimo sperimentatore; gli atomi sono indivisibili, ma non pensa che le sostanze possano avere molecole con più atomi; le sue conclusioni sulla composizione dell’acqua saranno causa di grande confusione negli anni successivi</p></li>
+</ul>
+</li>
+<li><p>Gay-Lussac, 1808, discepolo di Berthollet</p>
+<ul>
+<li><p>leggi dei gas</p></li>
+<li><p>studi con controllo del volume: osserva che <span class="math notranslate nohighlight">\(V\)</span>, <span class="math notranslate nohighlight">\(n\)</span> sono proporzionali a parti pressione e temperatura; non formula una spiegazione fondata sulla teoria atomica, forse per timore del giudizio di Berthollet, più probabilmente per il disaccordo con le conclusioni sbagliate di Dalton sulla composizione dell’acqua</p></li>
+</ul>
+</li>
+<li><p>Avogadro, 1811:</p>
+<ul>
+<li><p>volumi di gas uguali nelle stesse condizioni di <span class="math notranslate nohighlight">\(T\)</span>, <span class="math notranslate nohighlight">\(P\)</span> contengono lo stesso numero di molecole, anche tipi di gas diverso</p></li>
+</ul>
+</li>
+<li><p>Berzelius, 1813</p></li>
+<li><p>Cannizzaro, 1860 <em>Sunto di un corso di filosofia chimica</em></p></li>
+</ul>
+<p><strong>Indagine scientifica - Calore e temperatura.</strong> <span style="color:red">Muovere sopra, prima dell’indagine dei chimici? Fare un paragrafo introduttivo su pressione/temperatura, strumenti per la misura, e scale di misura? Non rispetta un ordine cronologico, ma permette di non spezzettare troppo il racconto”</span></p>
+<ul class="simple">
+<li><p>strumenti e scale di temperatura</p></li>
+<li><p>equilibrio termico, e tendenza naturale nell’evoluzione della temperatura</p></li>
+<li><p>calore latente, J.Black</p></li>
+<li><p>Fourier: equazione per la conduzione</p></li>
+<li><p>…</p></li>
+</ul>
+<p><strong>Indagine scientifica - Macchine termiche: energia, lavoro e calore.</strong></p>
+<ul class="simple">
+<li><p>L’invenzione della macchina a vapore e i motori termici dà il via alla rivoluzione industriale</p></li>
+<li><p>Indagini teoriche sul funzionamento delle macchine termiche, sulla trasmissione di calore e la generazione di lavoro</p>
+<ul>
+<li><p>1824, <strong>S.Carnot</strong> <em>riflessioni sulla forza motrice del fuoco</em>:</p>
+<ul>
+<li><p>analisi teorica delle macchine termiche, macchina ideale e rendimento massimo</p></li>
+<li><p>critica della <em>teoria calorica</em>: se il calore fosse materia, questo dovrebbe essere creato dal movimento…</p></li>
+</ul>
+</li>
+<li><p>Joule: equivalenza lavoro-calore (porterà al I principio)</p></li>
+<li><p><strong>Clausius</strong>:</p>
+<ul>
+<li><p>irreversibilità, in termini di etnropia (II principio)</p></li>
+</ul>
+</li>
+<li><p><strong>Gibbs</strong>: formalizzazione di una teoria termodinamica “macroscopica”, con un approccio geometrico:</p>
+<ul>
+<li><p>variabili di stato, spazio delle fasi, regola delle fasi</p></li>
+<li><p>energia libera</p></li>
 </ul>
 </li>
 </ul>
-<p><strong>Macchine termiche.</strong></p>
-<ul class="simple">
-<li><p>Applicazioni che guidano la rivoluzione industriale in Inghilterra,</p></li>
-<li><p>Approfondimenti e studi teorici sul funzionamento delle macchine termiche, le sostanze e i fenomeni fisici coinvolti</p></li>
+</li>
 </ul>
+<p><strong>Indagine scientifica - Meccanica statistica: il microscopico.</strong></p>
+<ul class="simple">
+<li><p>Clausius</p></li>
+<li><p>Maxwell:</p>
+<ul>
+<li><p>…</p></li>
+</ul>
+</li>
+<li><p>Gibbs</p></li>
+<li><p><strong>Boltzmann</strong></p>
+<ul>
+<li><p>…</p></li>
+</ul>
+</li>
+</ul>
+<!--
+**Concetti e primi strumenti.**
+- Temperatura, pressione
+- Primi strumenti, e princìpi fisici utilizzati: 
+  - manometro di Torricelli e peso di una colonna di acqua o Hg
+  - termometri e dilatazione termica delle sostanze
+
+**Esperienza.**
+- Conservazione della massa
+
+- Esperimenti in chimica, sull'indagine della natura della materia: 
+  - misura di: massa, pressione, volume, temperatura,
+  - esperimenti su: reazioni chimiche, gas
+
+- Tendenze naturali:
+  - Equilibrio termico: calore dal corpo più caldo a quello più freddo
+  - Dissipazione dell'energia meccanica
+- Equivalenza di Joule: esistono due modi per trasferire energia, lavoro e calore
+
+
+**Macchine termiche.**
+- Applicazioni che guidano la rivoluzione industriale in Inghilterra,
+- Approfondimenti e studi teorici sul funzionamento delle macchine termiche, le sostanze e i fenomeni fisici coinvolti
+-->
 </div>
 
     <script type="text/x-thebe-config">
@@ -501,11 +625,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="foundation-principles.html"
+       href="foundation-atomic-theory.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Principi della termodinamica</p>
+        <p class="prev-next-title">Termodinamica e teoria atomica</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

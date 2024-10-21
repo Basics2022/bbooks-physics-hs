@@ -206,7 +206,11 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Termodinamica</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Termodinamica</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="thermodynamics/foundation.html">Origini della termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+<li class="toctree-l1 has-children"><a class="reference internal" href="thermodynamics/foundation.html">Origini della termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="thermodynamics/foundation-experiments.html">Esperienze ed esperimenti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thermodynamics/foundation-atomic-theory.html">Termodinamica e teoria atomica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thermodynamics/foundation-principles.html">Princìpi della termodinamica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thermodynamics/foundation-principles-open.html">Sistemi aperti</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="thermodynamics/matter.html">Stati della materia</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -217,7 +221,17 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="thermodynamics/heat-engines.html">Macchine termiche</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="thermodynamics/heat-engine.html">Macchine termiche</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="thermodynamics/heat-engine-td-cycles.html">Cicli termodinamici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thermodynamics/heat-engine-carnot.html">Macchina termica di Carnot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thermodynamics/heat-engine-second-principle.html">Secondo principio della termodinamica per cicli termodinamici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thermodynamics/heat-engine-otto.html">Ciclo Otto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thermodynamics/heat-engine-diesel.html">Ciclo Diesel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thermodynamics/heat-engine-rankine.html">Ciclo Rankine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thermodynamics/heat-engine-joule-brayton.html">Ciclo Joule-Brayton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="thermodynamics/heat-engine-problems.html">Problemi</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="thermodynamics/heat-transmission.html">Meccanismi di trasmissione del calore</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Elettromagnetismo</span></p>
@@ -426,7 +440,52 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="termodinamica">
 <span id="physics-hs-thermodynamics"></span><h1>Termodinamica<a class="headerlink" href="#termodinamica" title="Permalink to this heading">#</a></h1>
-<p>La termodinamica si occupa dell’energia di un sistema, le forme di energia e le trasformazioni tra diverse forme di energia, e le variazioni di energia del sistema tramite scambi di lavoro o calore con l’ambiente esterno.</p>
+<p>La termodinamica si occupa dell’<strong>energia</strong> di un sistema, definita come <em>capacità di un sistema di svolgere lavoro</em>, e la sua variazione tramite scambi di lavoro o calore con l’ambiente esterno.</p>
+<ul class="simple">
+<li><p>…</p></li>
+</ul>
+<p>La termodinamica classica fornisce <strong>modelli macroscopici</strong> di sistemi composti da un numero elevato di componenti elementari.</p>
+<ul class="simple">
+<li><p>indagini sulla struttura della materia, <span style="color:red">indagini di chimica</span>:</p>
+<ul>
+<li><p>primi strumenti: barometro, termometro, calorimetro</p></li>
+<li><p>studi sui gas, reazioni chimiche (Boyle, Lavoisier, Dalton, Charles, Gay-Lussac, Avogadro): legge dei gas perfetti, teoria atomica</p></li>
+<li><p>temperatura e calore</p></li>
+<li><p>transizione di fase</p></li>
+</ul>
+</li>
+<li><p>macchine termiche</p>
+<ul>
+<li><p>prima: innovazione tecnologica: macchine termiche nella rivoluzione industirale. Trasformazione di calore in lavoro</p></li>
+<li><p>poi: indagini teoriche sulle macchine termiche, relazione tra calore e lavoro</p>
+<ul>
+<li><p>Carnot</p></li>
+<li><p>Clausis</p></li>
+</ul>
+</li>
+<li><p>formalizzazione (Clausius, Rankine, Kelvin, Gibbs):</p>
+<ul>
+<li><p>modello:</p>
+<ul>
+<li><p>variabili di stato <em>intensive</em> macroscopiche (come temperatura, pressione, energia interna) per descrivere lo stato di un sistema</p></li>
+<li><p>regola delle fasi di Gibbs</p></li>
+<li><p>…</p></li>
+</ul>
+</li>
+<li><p>princìpi che traducano l’esperienza:</p>
+<ul>
+<li><p>primo principio della TD</p></li>
+<li><p>secondo principio della TD</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><br><span style="color:red">- Stati di equilibrio, e come questo equilibrio viene raggiunto</span>
+<br><span style="color:red">- Reazioni chimiche</span>
+<br><span style="color:red">- Rankine, Kelvin, <strong>Gibbs</strong>: variabili di stato</span></p>
 <p><strong>todo</strong> in meccanica, la presenza di azioni dissipative riduce l’energia meccanica (<strong>todo</strong> riferimento al teorema dell’energia cinetica). Dove finisce questa energia? <strong>Equivalenza lavoro-calore di Joule</strong></p>
 <p><strong>todo</strong> approccio macroscopico a sistemi complessi</p>
 <p><strong>todo</strong> formulazione dei princìpi a partire dall’esperienza:</p>

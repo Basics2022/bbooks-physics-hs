@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Principi della termodinamica &#8212; Fisica per le superiori</title>
+    <title>Princìpi della termodinamica &#8212; Fisica per le superiori</title>
   
   
   
@@ -62,11 +62,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/foundation-principles';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Stati della materia" href="matter.html" />
-    <link rel="prev" title="Esperienze ed esperimenti" href="foundation-experiments.html" />
+    <link rel="next" title="Sistemi aperti" href="foundation-principles-open.html" />
+    <link rel="prev" title="Termodinamica e teoria atomica" href="foundation-atomic-theory.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -208,7 +210,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../thermodynamics.html">Termodinamica</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="foundation.html">Origini della termodinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="foundation-experiments.html">Esperienze ed esperimenti</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Principi della termodinamica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foundation-atomic-theory.html">Termodinamica e teoria atomica</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Princìpi della termodinamica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foundation-principles-open.html">Sistemi aperti</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="matter.html">Stati della materia</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -219,7 +223,17 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="heat-engines.html">Macchine termiche</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="heat-engine.html">Macchine termiche</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-td-cycles.html">Cicli termodinamici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-carnot.html">Macchina termica di Carnot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-second-principle.html">Secondo principio della termodinamica per cicli termodinamici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-otto.html">Ciclo Otto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-diesel.html">Ciclo Diesel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-rankine.html">Ciclo Rankine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-joule-brayton.html">Ciclo Joule-Brayton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-problems.html">Problemi</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="heat-transmission.html">Meccanismi di trasmissione del calore</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Elettromagnetismo</span></p>
@@ -412,7 +426,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Principi della termodinamica</h1>
+    <h1>Princìpi della termodinamica</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -427,13 +441,60 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="principi-della-termodinamica">
-<span id="physics-hs-thermodynamics-foundation-principles"></span><h1>Principi della termodinamica<a class="headerlink" href="#principi-della-termodinamica" title="Permalink to this heading">#</a></h1>
-<ul class="simple">
-<li><p><strong>Principio di conservazione della massa.</strong></p></li>
-<li><p><strong>Principio zero</strong> <strong>todo</strong> <em>serve?</em></p></li>
-<li><p><strong>Primo principio: bilancio dell’energia totale di un sistema chiuso.</strong></p></li>
-<li><p><strong>Secondo principio: irreversibilità.</strong></p></li>
-<li><p><strong>Terzo “principio”: …</strong> <strong>todo</strong> *vale? E’ un princìpio o è una conseguenza degli altri princìpi?…”</p></li>
+<span id="physics-hs-thermodynamics-foundation-principles"></span><h1>Princìpi della termodinamica<a class="headerlink" href="#principi-della-termodinamica" title="Permalink to this heading">#</a></h1>
+<p>In questa sezione vengono presentati i princìpi fondamentali della termodinamica classica. <strong>todo</strong></p>
+<p><strong>Principio di conservazione della massa.</strong>
+Nell’ambito della fisica classica, la massa di un sistema chiuso è costante.</p>
+<p><strong>Primo principio della termodinamica - bilancio dell’energia totale.</strong>
+Il primo principio della termodinamica rappresenta il bilancio di energia totale per un sistema chiuso (<strong>todo</strong> <em>riferimenti a sistemi aperti e chiusi</em>),</p>
+<div class="math notranslate nohighlight">
+\[d E^{tot} = \delta L^{ext} + \delta Q^{ext} \ . \]</div>
+<p>Usando il teorema dell’energia cinetica (<strong>todo</strong> riferimento alla meccanica), <span class="math notranslate nohighlight">\(dK = \delta L^{ext} + \delta L^{int}\)</span>, e la definizione di energia interna come differenza tra energia totale ed energia cinetica macroscopica, <span class="math notranslate nohighlight">\(E := E^{tot} - K\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[d E = - \delta L^{int} + \delta Q^{ext} \ .\]</div>
+<p><strong>Regola delle fasi di Gibbs.</strong>
+L’energia interna può essere scritta come funzione di stato, <span class="math notranslate nohighlight">\(E(S, X_k)\)</span>, <strong>todo</strong> con variabili indipendenti …</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+dE &amp; = \left(\dfrac{\partial E}{\partial S}\right)_{\mathbf{X}} d S 
+     + \left(\dfrac{\partial E}{\partial X_k}\right)_{S} d X_k  = \\
+   &amp; = T \, d S + \sum_k F_k \, d X_k
+\end{aligned}\end{split}\]</div>
+<p>La variazione di energia interna rispetto alla variabile <span class="math notranslate nohighlight">\(S\)</span> corrisponde alla temperatura,</p>
+<div class="math notranslate nohighlight">
+\[T = \left(\dfrac{\partial E}{\partial S}\right)_{\mathbf{X}} \ge 0 \ .\]</div>
+<p><strong>Secondo principio della termodinamica - irreversibilità.</strong></p>
+<ul>
+<li><p>Secondo principio per sistemi semplici <strong>todo</strong> <em>temperatura uniforme</em></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+    dE &amp; = \delta Q^{ext} - \delta L^{int} = \\
+       &amp; = \underbrace{\delta Q^{ext} + \delta^+ D}_{\delta U} - \delta L^{int, rev} = \\
+  \end{aligned}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  -\delta L^{int,rev} &amp; = \displaystyle\sum_k F_k \, d X_k \\
+  \delta U            &amp; = T \, dS
+  \end{cases}\end{split}\]</div>
+<p><strong>Enunciato di Clausis del secondo teorema della termodinamica</strong> La variazione elementare di entropia <span class="math notranslate nohighlight">\(d S\)</span> di un sistema a temperatura uniforme <span class="math notranslate nohighlight">\(T\)</span> è maggiore o uguale al rapporto tra il flusso di calore elementare introdotto nel sistema e la temperatura del sistema stesso,</p>
+<div class="math notranslate nohighlight">
+\[dS = \underbrace{\dfrac{\delta^+ D}{T}}_{\ge 0} + \dfrac{\delta Q^{ext}}{T} \ge \dfrac{\delta Q^{ext}}{T} \ .\]</div>
+</li>
+<li><p>Secondo principio per sistemi composti. <span class="math notranslate nohighlight">\(S = \sum_i S_i\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+    dS_i &amp; = \dfrac{\delta Q^{ext,i}_i}{T_i} - \dfrac{\delta D_i}{T_i} = \\
+         &amp; = \dfrac{\delta Q^{ext}_i}{T_i} + \dfrac{\sum_{k \ne i} \delta Q_{ik}}{T_i} - \dfrac{\delta D_i}{T_i} \ge \\
+         &amp; \ge \dfrac{\delta Q^{ext}_i}{T_i} + \dfrac{\sum_{k \ne i} \delta Q_{ik}}{T_i} \ , 
+  \end{aligned}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+    dS &amp; = \sum_i d S_i \ge \\
+       &amp; \ge \sum_i \left\{ \dfrac{\delta Q^{ext}_i}{T_i} + \dfrac{\sum_{k \ne i} \delta Q_{ik}}{T_i} \right\} = \\
+       &amp; = \sum_i \dfrac{\delta Q^{ext}_i}{T_i} + \underbrace{\sum_{\left\{i,k\right\}} \delta Q_{ik} \left( \dfrac{1}{T_i} - \dfrac{1}{T_k} \right)}_{\ge 0} \ge \\
+       &amp; \ge \sum_i \dfrac{\delta Q^{ext}_i}{T_i} \ . 
+  \end{aligned}\end{split}\]</div>
+</li>
 </ul>
 </div>
 
@@ -468,20 +529,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="foundation-experiments.html"
+       href="foundation-atomic-theory.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Esperienze ed esperimenti</p>
+        <p class="prev-next-title">Termodinamica e teoria atomica</p>
       </div>
     </a>
     <a class="right-next"
-       href="matter.html"
+       href="foundation-principles-open.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Stati della materia</p>
+        <p class="prev-next-title">Sistemi aperti</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
