@@ -19,6 +19,8 @@
   - macchine elettrostatiche, bottiglia di Leida
   - ...
 
+- 1747, B.Franklin intuisce la legge di conservazione della carica elettrica, *"not created by the the friction, but collected"*
+
 - 1784, C.A.Coulomb formula la legge di Coulomb usando una bilancia a torsione
 
 - 1800, A.Volta: pila. Conversione di energia chimia in energia elettrica.
@@ -43,7 +45,7 @@
 
 - Elettricità e termodinamica:
   - 1821, Seeback
-  - 1827: Ohm
+  - 1827, Ohm
   - 1834, Peltier
 
 - 1850, Kirchhoff e leggi sui circuiti

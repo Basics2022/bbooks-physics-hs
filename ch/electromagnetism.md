@@ -18,7 +18,7 @@
     - generatori (tensione e corrente?)
     - strumenti
   - energia in circuiti elettrici in regime stazionario
-  - leggi di Krichhoff; configurazione in serie e parallelo di resistenze; circuito RC (carica e scarica di un condensatore)
+  - leggi di Kirchhoff; configurazione in serie e parallelo di resistenze; circuito RC (carica e scarica di un condensatore)
   - elettrochimica: elettrolisi, pila, accumulatori
   - corrente nei gas e nei semi-conduttori:
     - gas: esperimenti su tubi a vuoto
