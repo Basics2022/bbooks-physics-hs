@@ -32,6 +32,8 @@ Metodo generale per la definizione delle scale di temperatura: scelta di due tem
   - estremi: solidificazione ($100 \, \text{°C}$) ed evaporazione ($0 \, \text{°C}$) dell'acqua a temperatura ambiente. Perché questa definizione "invertita" rispetto alle altre? Perché no, si potrebbe rispondere. Per rendere più pratica la misura e adeguarsi al verso delle altre scale, un anno dopo la morte di Celsius, la scala fu invertita da Linneo (**todo** lo stesso Linneo, biologo, che si dilettava con la classificazione di piante e animali, padre della classificazione scientifica degli organismi viventi, usata tuttora)
 
 ### Scala termodinamica
+Scala di temperatura assoluta
+- Esperimenti sui gas, estrapolando i dati sperimentali delle [leggi di Charles](physics-hs:thermodynamics:matter:gases:ideal:experiments:charles) e di [Gay-Lussac](physics-hs:thermodynamics:matter:gases:ideal:experiments:gay-lussac)
 - 1848, Kelvin *On an Absolute Thermometric Scale*.
 
 ## Teoria cinetica dei gas

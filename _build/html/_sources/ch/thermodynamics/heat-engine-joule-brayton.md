@@ -52,5 +52,6 @@ $$\eta = 1 - \dfrac{1}{\beta^{\frac{\gamma-1}{\gamma}}} \ .$$
 
 
 ## Esempio
+**todo**
 
 

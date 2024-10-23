@@ -55,6 +55,7 @@ parts:
     - file: ch/thermodynamics/ideal-gas
       sections:
       - file: ch/thermodynamics/ideal-gas-experiments
+      - file: ch/thermodynamics/ideal-gas-expressions
       - file: ch/thermodynamics/ideal-gas-kinetic-theory
 #   - file: ch/thermodynamics/real-gas
 #   - file: ch/thermodynamics/solids
