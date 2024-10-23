@@ -62,11 +62,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/heat-engine-joule-brayton';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Problemi" href="heat-engine-problems.html" />
-    <link rel="prev" title="Ciclo Rankine" href="heat-engine-rankine.html" />
+    <link rel="next" title="Ciclo Rankine" href="heat-engine-rankine.html" />
+    <link rel="prev" title="Ciclo Diesel" href="heat-engine-diesel.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -207,28 +209,36 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../thermodynamics.html">Termodinamica</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="foundation.html">Origini della termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="foundation-history.html">Breve storia della termodinamica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="foundation-experiments.html">Esperienze ed esperimenti</a></li>
 <li class="toctree-l2"><a class="reference internal" href="foundation-atomic-theory.html">Termodinamica e teoria atomica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="foundation-principles.html">Princìpi della termodinamica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="foundation-principles-open.html">Sistemi aperti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foundation-problems.html">Problemi</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="matter.html">Stati della materia</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="ideal-gas.html">Gas ideali</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="principles.html">Princìpi della termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="principles-lavoisier.html">Principio di Lavoisier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="principles-first.html">Primo principio della termodinamica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="principles-gibbs-phase-rule.html">Energia interna e regola delle fasi di Gibbs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="principles-second.html">Secondo principio della termodinamica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="principles-open.html">Sistemi aperti</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="matter.html">Stati della materia</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="ideal-gas.html">Gas ideali</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="ideal-gas-experiments.html">Esperimenti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ideal-gas-kinetic-theory.html">Teoria cinetica dei gas</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="heat-engine.html">Macchine termiche</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="heat-engine.html">Macchine termiche</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="heat-engine-td-cycles.html">Cicli termodinamici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="heat-engine-carnot.html">Macchina termica di Carnot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="heat-engine-second-principle.html">Secondo principio della termodinamica per cicli termodinamici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="heat-engine-otto.html">Ciclo Otto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="heat-engine-diesel.html">Ciclo Diesel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="heat-engine-rankine.html">Ciclo Rankine</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Ciclo Joule-Brayton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-rankine.html">Ciclo Rankine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="heat-engine-problems.html">Problemi</a></li>
 </ul>
 </li>
@@ -413,7 +423,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -429,6 +441,17 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-joule-brayton-aperto">Ciclo Joule-Brayton aperto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-joule-brayton-chiuso">Ciclo Joule-Brayton chiuso</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rendimento-del-ciclo-joule-brayton">Rendimento del ciclo Joule-Brayton</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempio">Esempio</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -440,6 +463,60 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="ciclo-joule-brayton">
 <span id="physics-hs-thermodynamics-heat-engine-joule-brayton"></span><h1>Ciclo Joule-Brayton<a class="headerlink" href="#ciclo-joule-brayton" title="Permalink to this heading">#</a></h1>
+<p><strong>Storia e applicazioni.</strong>
+Il ciclo Joule-Brayton rappresenta il ciclo termodinamico ideale per il funzionamento a ciclo continuo delle macchine a gas.</p>
+<p>Nelle moderne applicazioni, le turbine a gas possono operare</p>
+<ul class="simple">
+<li><p>a ciclo aperto: motori a getto, ad esempio per propulsione aeronautica</p></li>
+<li><p>ciclo chiuso: turbine con rigenerazione</p></li>
+<li><p>cicli combinati</p></li>
+</ul>
+<p>Entrambe le configurazioni sono realizzate con macchine termiche continue, che sono <strong>sistemi aperti</strong> <strong>todo</strong> <em>scrivere la sezione per i sistemi aperti e aggiungere riferimento</em></p>
+<div class="section" id="ciclo-joule-brayton-aperto">
+<h2>Ciclo Joule-Brayton aperto<a class="headerlink" href="#ciclo-joule-brayton-aperto" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="ciclo-joule-brayton-chiuso">
+<h2>Ciclo Joule-Brayton chiuso<a class="headerlink" href="#ciclo-joule-brayton-chiuso" title="Permalink to this heading">#</a></h2>
+<p>Un modello ideale del ciclo Joule-Brayton è formato da:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(1 \rightarrow 2\)</span> compressione adiabatica in compressore, tipicamente dinamico assiale - sistema aperto</p></li>
+<li><p><span class="math notranslate nohighlight">\(2 \rightarrow 3\)</span> combustione a pressione costante: la combustione avviene in camera di combustione aperta e viene modellata come una trasformazione termodinamica a pressione costante; in prima approssimazione, si può trascurare il flusso di massa del combustibile e la variazione delle proprietà chimico-fisiche del fluido di lavoro; la reazione di combustione produce il calore in ingresso al sistema</p></li>
+<li><p><span class="math notranslate nohighlight">\(3 \rightarrow 4\)</span> espansione adiabatica in turbina - sistema aperto</p></li>
+<li><p><span class="math notranslate nohighlight">\(4 \rightarrow 1\)</span>, raffreddamento a pressione costante</p></li>
+</ul>
+</div>
+<div class="section" id="rendimento-del-ciclo-joule-brayton">
+<h2>Rendimento del ciclo Joule-Brayton<a class="headerlink" href="#rendimento-del-ciclo-joule-brayton" title="Permalink to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\eta = 1 + \dfrac{\dot{Q}_{41}}{\dot{Q}_{23}}
+       = 1 + \dfrac{\dot{m} \, c_P \, (T_1 - T_4)}{\dot{m} \, c_P \, (T_3 - T_2)}
+       = 1 + \dfrac{T_1 - T_4}{T_3 - T_2}
+\]</div>
+<p>Usando le condizioni, <strong>todo</strong> <em>usare direttamente le espressioni delle adiabatiche ideali ricavate nella sezione delle trasformazioni termodinamiche con gas ideali</em></p>
+<div class="math notranslate nohighlight">
+\[P_2 = P_3 \qquad , \qquad P_1 = P_4\]</div>
+<div class="math notranslate nohighlight">
+\[P_1 \, V_1^{\gamma} = P_2 \, V_2^{\gamma}\]</div>
+<div class="math notranslate nohighlight">
+\[P_3 \, V_3^{\gamma} = P_4 \, V_4^{\gamma}\]</div>
+<p>e la legge dei gas ideali, <span class="math notranslate nohighlight">\(P V = m R T\)</span>, assumendo che sia un’equazione di stato adatta a descrivere il fluido di lavoro, per riscrivere l’equazione delle trasformazioni adiabatiche</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  P_1^{1-\gamma} \, T_1^{\gamma} &amp; = P_2^{1-\gamma} \, T_2^{\gamma} \\
+  P_3^{1-\gamma} \, T_3^{\gamma} &amp; = P_4^{1-\gamma} \, T_4^{\gamma}
+\end{aligned}
+\begin{aligned}
+  &amp; \qquad \rightarrow \qquad  (T_4 - T_1) \, P_1^{\frac{1-\gamma}{\gamma}} = (T_3 - T_2) \, P_2^{\frac{1-\gamma}{\gamma}} \\
+  &amp; \qquad \rightarrow \qquad  \dfrac{T_4 - T_1}{T_3 - T_2} = \left( \dfrac{P_1}{P_2} \right)^{\frac{\gamma-1}{\gamma}} = \dfrac{1}{\beta^{\frac{\gamma - 1}{\gamma}}} \\
+\end{aligned}
+\end{split}\]</div>
+<p>è possibile riscrivere l’espressione del rendimento del ciclo Otto in funzione unicamente del rapporto di compressione <span class="math notranslate nohighlight">\(\beta := \dfrac{P_2}{P_1}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\eta = 1 - \dfrac{1}{\beta^{\frac{\gamma-1}{\gamma}}} \ .\]</div>
+</div>
+<div class="section" id="esempio">
+<h2>Esempio<a class="headerlink" href="#esempio" title="Permalink to this heading">#</a></h2>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -473,20 +550,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="heat-engine-rankine.html"
+       href="heat-engine-diesel.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Ciclo Rankine</p>
+        <p class="prev-next-title">Ciclo Diesel</p>
       </div>
     </a>
     <a class="right-next"
-       href="heat-engine-problems.html"
+       href="heat-engine-rankine.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Problemi</p>
+        <p class="prev-next-title">Ciclo Rankine</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -496,6 +573,23 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-joule-brayton-aperto">Ciclo Joule-Brayton aperto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-joule-brayton-chiuso">Ciclo Joule-Brayton chiuso</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rendimento-del-ciclo-joule-brayton">Rendimento del ciclo Joule-Brayton</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempio">Esempio</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

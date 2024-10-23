@@ -1,6 +1,8 @@
 (physics-hs:thermodynamics:foundation:principles)=
 # Princìpi della termodinamica
 
+<span style="color:red">Sistemare come presentazione! I contenuti vengono divisi nelle sezioni successive.</span>
+
 In questa sezione vengono presentati i princìpi fondamentali della termodinamica classica. **todo**
 
 **Principio di conservazione della massa.**
@@ -42,25 +44,4 @@ $$T = \left(\dfrac{\partial E}{\partial S}\right)_{\mathbf{X}} \ge 0 \ .$$
   -\delta L^{int,rev} & = \displaystyle\sum_k F_k \, d X_k \\
   \delta U            & = T \, dS
   \end{cases}$$
-  
-  **Enunciato di Clausis del secondo teorema della termodinamica** La variazione elementare di entropia $d S$ di un sistema a temperatura uniforme $T$ è maggiore o uguale al rapporto tra il flusso di calore elementare introdotto nel sistema e la temperatura del sistema stesso,
-  
-  $$dS = \underbrace{\dfrac{\delta^+ D}{T}}_{\ge 0} + \dfrac{\delta Q^{ext}}{T} \ge \dfrac{\delta Q^{ext}}{T} \ .$$
-
-- Secondo principio per sistemi composti. $S = \sum_i S_i$
-
-  $$\begin{aligned}
-    dS_i & = \dfrac{\delta Q^{ext,i}_i}{T_i} - \dfrac{\delta D_i}{T_i} = \\
-         & = \dfrac{\delta Q^{ext}_i}{T_i} + \dfrac{\sum_{k \ne i} \delta Q_{ik}}{T_i} - \dfrac{\delta D_i}{T_i} \ge \\
-         & \ge \dfrac{\delta Q^{ext}_i}{T_i} + \dfrac{\sum_{k \ne i} \delta Q_{ik}}{T_i} \ , 
-  \end{aligned}$$
-
-  $$\begin{aligned}
-    dS & = \sum_i d S_i \ge \\
-       & \ge \sum_i \left\{ \dfrac{\delta Q^{ext}_i}{T_i} + \dfrac{\sum_{k \ne i} \delta Q_{ik}}{T_i} \right\} = \\
-       & = \sum_i \dfrac{\delta Q^{ext}_i}{T_i} + \underbrace{\sum_{\left\{i,k\right\}} \delta Q_{ik} \left( \dfrac{1}{T_i} - \dfrac{1}{T_k} \right)}_{\ge 0} \ge \\
-       & \ge \sum_i \dfrac{\delta Q^{ext}_i}{T_i} \ . 
-  \end{aligned}$$
-
-
 

@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Macchine termiche &#8212; Fisica per le superiori</title>
+    <title>Princìpi della termodinamica &#8212; Fisica per le superiori</title>
   
   
   
@@ -62,11 +62,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/heat-engines';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/principles';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Meccanismi di trasmissione del calore" href="heat-transmission.html" />
-    <link rel="prev" title="Teoria cinetica dei gas" href="ideal-gas-kinetic-theory.html" />
+    <link rel="next" title="Principio di Lavoisier" href="principles-lavoisier.html" />
+    <link rel="prev" title="Problemi" href="foundation-problems.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -207,19 +209,37 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../thermodynamics.html">Termodinamica</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="foundation.html">Origini della termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="foundation-history.html">Breve storia della termodinamica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="foundation-experiments.html">Esperienze ed esperimenti</a></li>
-<li class="toctree-l2"><a class="reference internal" href="foundation-principles.html">Principi della termodinamica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foundation-atomic-theory.html">Termodinamica e teoria atomica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foundation-problems.html">Problemi</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="matter.html">Stati della materia</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="ideal-gas.html">Gas ideali</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Princìpi della termodinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="principles-lavoisier.html">Principio di Lavoisier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="principles-first.html">Primo principio della termodinamica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="principles-gibbs-phase-rule.html">Energia interna e regola delle fasi di Gibbs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="principles-second.html">Secondo principio della termodinamica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="principles-open.html">Sistemi aperti</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="matter.html">Stati della materia</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="ideal-gas.html">Gas ideali</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="ideal-gas-experiments.html">Esperimenti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ideal-gas-kinetic-theory.html">Teoria cinetica dei gas</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Macchine termiche</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+<li class="toctree-l1 has-children"><a class="reference internal" href="heat-engine.html">Macchine termiche</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-td-cycles.html">Cicli termodinamici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-carnot.html">Macchina termica di Carnot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-second-principle.html">Secondo principio della termodinamica per cicli termodinamici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-otto.html">Ciclo Otto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-diesel.html">Ciclo Diesel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-joule-brayton.html">Ciclo Joule-Brayton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-rankine.html">Ciclo Rankine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-problems.html">Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="heat-transmission.html">Meccanismi di trasmissione del calore</a></li>
@@ -302,7 +322,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch/thermodynamics/heat-engines.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch/thermodynamics/principles.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -332,7 +352,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/thermodynamics/heat-engines.md" target="_blank"
+      <li><a href="../../_sources/ch/thermodynamics/principles.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -414,7 +434,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Macchine termiche</h1>
+    <h1>Princìpi della termodinamica</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -428,20 +448,43 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="macchine-termiche">
-<span id="physics-hs-thermodynamics-heat-engine"></span><h1>Macchine termiche<a class="headerlink" href="#macchine-termiche" title="Permalink to this heading">#</a></h1>
-<p><strong>Storia.</strong></p>
-<ul class="simple">
-<li><p>rivoluzione industriale</p></li>
-<li><p>…</p></li>
-<li><p>macchine termiche oggi: motori a combustione interna, motori aeronautici, centrali di generazione di energia elettrica (conversione di forme di energia),…</p></li>
-<li><p>…</p></li>
-<li><p>trasformazioni TD e componenti (turbine, compressori, scambiatori di calore,…)</p></li>
-<li><p>cicli termodinamici e macchine termiche</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="principi-della-termodinamica">
+<span id="physics-hs-thermodynamics-foundation-principles"></span><h1>Princìpi della termodinamica<a class="headerlink" href="#principi-della-termodinamica" title="Permalink to this heading">#</a></h1>
+<p><span style="color:red">Sistemare come presentazione! I contenuti vengono divisi nelle sezioni successive.</span></p>
+<p>In questa sezione vengono presentati i princìpi fondamentali della termodinamica classica. <strong>todo</strong></p>
+<p><strong>Principio di conservazione della massa.</strong>
+Nell’ambito della fisica classica, la massa di un sistema chiuso è costante.</p>
+<p><strong>Primo principio della termodinamica - bilancio dell’energia totale.</strong>
+Il primo principio della termodinamica rappresenta il bilancio di energia totale per un sistema chiuso (<strong>todo</strong> <em>riferimenti a sistemi aperti e chiusi</em>),</p>
+<div class="math notranslate nohighlight">
+\[d E^{tot} = \delta L^{ext} + \delta Q^{ext} \ . \]</div>
+<p>Usando il teorema dell’energia cinetica (<strong>todo</strong> riferimento alla meccanica), <span class="math notranslate nohighlight">\(dK = \delta L^{ext} + \delta L^{int}\)</span>, e la definizione di energia interna come differenza tra energia totale ed energia cinetica macroscopica, <span class="math notranslate nohighlight">\(E := E^{tot} - K\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[d E = - \delta L^{int} + \delta Q^{ext} \ .\]</div>
+<p><strong>Regola delle fasi di Gibbs.</strong>
+L’energia interna può essere scritta come funzione di stato, <span class="math notranslate nohighlight">\(E(S, X_k)\)</span>, <strong>todo</strong> con variabili indipendenti …</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+dE &amp; = \left(\dfrac{\partial E}{\partial S}\right)_{\mathbf{X}} d S 
+     + \left(\dfrac{\partial E}{\partial X_k}\right)_{S} d X_k  = \\
+   &amp; = T \, d S + \sum_k F_k \, d X_k
+\end{aligned}\end{split}\]</div>
+<p>La variazione di energia interna rispetto alla variabile <span class="math notranslate nohighlight">\(S\)</span> corrisponde alla temperatura,</p>
+<div class="math notranslate nohighlight">
+\[T = \left(\dfrac{\partial E}{\partial S}\right)_{\mathbf{X}} \ge 0 \ .\]</div>
+<p><strong>Secondo principio della termodinamica - irreversibilità.</strong></p>
 <ul>
-<li><p>macchina ideale di Carnot: efficienza massima, formulazioni equivalenti del <em>secondo principio della TD</em> per le macchine termiche (Planck, Kelvin)</p></li>
-<li><p>macchine reali</p></li>
-</ul>
+<li><p>Secondo principio per sistemi semplici <strong>todo</strong> <em>temperatura uniforme</em></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+    dE &amp; = \delta Q^{ext} - \delta L^{int} = \\
+       &amp; = \underbrace{\delta Q^{ext} + \delta^+ D}_{\delta U} - \delta L^{int, rev} = \\
+  \end{aligned}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  -\delta L^{int,rev} &amp; = \displaystyle\sum_k F_k \, d X_k \\
+  \delta U            &amp; = T \, dS
+  \end{cases}\end{split}\]</div>
 </li>
 </ul>
 <div class="toctree-wrapper compound">
@@ -479,20 +522,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="ideal-gas-kinetic-theory.html"
+       href="foundation-problems.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Teoria cinetica dei gas</p>
+        <p class="prev-next-title">Problemi</p>
       </div>
     </a>
     <a class="right-next"
-       href="heat-transmission.html"
+       href="principles-lavoisier.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Meccanismi di trasmissione del calore</p>
+        <p class="prev-next-title">Principio di Lavoisier</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
