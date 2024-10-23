@@ -39,10 +39,17 @@ parts:
   - file: ch/thermodynamics
   - file: ch/thermodynamics/foundation
     sections:
+    - file: ch/thermodynamics/foundation-history
     - file: ch/thermodynamics/foundation-experiments
     - file: ch/thermodynamics/foundation-atomic-theory
-    - file: ch/thermodynamics/foundation-principles
-    - file: ch/thermodynamics/foundation-principles-open
+    - file: ch/thermodynamics/foundation-problems
+  - file: ch/thermodynamics/principles
+    sections:
+    - file: ch/thermodynamics/principles-lavoisier
+    - file: ch/thermodynamics/principles-first
+    - file: ch/thermodynamics/principles-gibbs-phase-rule
+    - file: ch/thermodynamics/principles-second
+    - file: ch/thermodynamics/principles-open
   - file: ch/thermodynamics/matter
     sections:
     - file: ch/thermodynamics/ideal-gas
@@ -50,6 +57,7 @@ parts:
       - file: ch/thermodynamics/ideal-gas-experiments
       - file: ch/thermodynamics/ideal-gas-kinetic-theory
 #   - file: ch/thermodynamics/real-gas
+#   - file: ch/thermodynamics/solids
   - file: ch/thermodynamics/heat-engine
     sections:
     - file: ch/thermodynamics/heat-engine-td-cycles
@@ -57,8 +65,8 @@ parts:
     - file: ch/thermodynamics/heat-engine-second-principle
     - file: ch/thermodynamics/heat-engine-otto
     - file: ch/thermodynamics/heat-engine-diesel
-    - file: ch/thermodynamics/heat-engine-rankine
     - file: ch/thermodynamics/heat-engine-joule-brayton
+    - file: ch/thermodynamics/heat-engine-rankine
     - file: ch/thermodynamics/heat-engine-problems
   - file: ch/thermodynamics/heat-transmission
 - caption: Elettromagnetismo

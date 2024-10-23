@@ -1,0 +1,700 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breve storia della termodinamica &#8212; Fisica per le superiori</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/foundation-history';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Esperienze ed esperimenti" href="foundation-experiments.html" />
+    <link rel="prev" title="Origini della termodinamica" href="foundation.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Fisica per le superiori - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Fisica per le superiori - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Fisica per le scuole superiori
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione alla fisica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduzione alla fisica</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../intro/physical_quantities.html">Grandezze fisiche</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../intro/physical_quantities-space.html">Spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../intro/physical_quantities-mass.html">Quantità di materia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../intro/physical_quantities-time.html">Tempo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../intro/physical_quantities-temperature.html">Temperatura</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../intro/physical_quantities-charge.html">Carica e corrente elettrica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../intro/physical_quantities-mole.html">Quantità di sostanza, la mole</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../intro/physical_quantities-luminosity.html">Intensità luminosa</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Meccanica classica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../mechanics.html">Meccanica classica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mechanics/models.html">Modelli</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/kinematics.html">Cinematica</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-point.html">Cinematica del punto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-rigid.html">Cinematica di un corpo rigido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-relative.html">Cinematica relativa</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../mechanics/actions.html">Azioni</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/statics.html">Statica</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/statics-point.html">Statica dei sistemi puntiformi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/statics-rigid.html">Statica dei corpi rigidi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/statics-fluid.html">Statica dei fluidi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/statics-problems.html">Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../mechanics/inertia.html">Inerzia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mechanics/dynamics.html">Dinamica</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Termodinamica</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../thermodynamics.html">Termodinamica</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="foundation.html">Origini della termodinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Breve storia della termodinamica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foundation-experiments.html">Esperienze ed esperimenti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foundation-atomic-theory.html">Termodinamica e teoria atomica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foundation-problems.html">Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="principles.html">Princìpi della termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="principles-lavoisier.html">Principio di Lavoisier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="principles-first.html">Primo principio della termodinamica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="principles-gibbs-phase-rule.html">Energia interna e regola delle fasi di Gibbs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="principles-second.html">Secondo principio della termodinamica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="principles-open.html">Sistemi aperti</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="matter.html">Stati della materia</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="ideal-gas.html">Gas ideali</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="ideal-gas-experiments.html">Esperimenti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ideal-gas-kinetic-theory.html">Teoria cinetica dei gas</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="heat-engine.html">Macchine termiche</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-td-cycles.html">Cicli termodinamici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-carnot.html">Macchina termica di Carnot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-second-principle.html">Secondo principio della termodinamica per cicli termodinamici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-otto.html">Ciclo Otto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-diesel.html">Ciclo Diesel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-joule-brayton.html">Ciclo Joule-Brayton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-rankine.html">Ciclo Rankine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-problems.html">Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="heat-transmission.html">Meccanismi di trasmissione del calore</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Elettromagnetismo</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../electromagnetism.html">Elettromagnetismo</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Fisica moderna</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../modern.html">Fisica del XX secolo</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch/thermodynamics/foundation-history.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/ch/thermodynamics/foundation-history.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Breve storia della termodinamica</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="breve-storia-della-termodinamica">
+<span id="physics-hs-thermodynamics-foundation-experiments"></span><h1>Breve storia della termodinamica<a class="headerlink" href="#breve-storia-della-termodinamica" title="Permalink to this heading">#</a></h1>
+<p>Sviluppo non lineare, dovuto ai contributi di molti studiosi, nel corso di più di un paio di secoli.</p>
+<p><strong>Esperienze.</strong></p>
+<ul class="simple">
+<li><p>Sensazione di caldo e freddo</p></li>
+<li><p>Dissipazione dell’energia meccanica “macroscopica”</p></li>
+</ul>
+<p><strong>Domande aperte.</strong></p>
+<ul class="simple">
+<li><p>Come è fatta la materia?</p>
+<ul>
+<li><p>affermazione della <strong>teoria atomistica</strong>: particelle elementari, che si possono combinare</p></li>
+<li><p>esiste il vuoto? “la natura ha orrore del vuoto” (Galileo)?</p></li>
+</ul>
+</li>
+<li><p>Come descrivere le sensazioni di caldo-freddo: temperatura e calore</p>
+<ul>
+<li><p>teoria <strong>calorica</strong>? Fluido invisibile</p></li>
+<li><p>…</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Indagine scientifica: natura materia.</strong> Rivoluzione scientifica del XVI-XVII secolo. Costruzione di strumenti</p>
+<ul class="simple">
+<li><p>Torricelli, disceplo di Galileo:</p>
+<ul>
+<li><p>il barometro;</p></li>
+<li><p>la misura del peso dell’aria: <strong>pressione</strong> atmosferica;</p></li>
+<li><p>“vuoto” al di sopra della colonnina di Hg: argomento che rilancia la tesi atomistica</p></li>
+</ul>
+</li>
+<li><p>Boyle, “primo chimico”; tra i fondatori della Royal Society; preciso sperimentatore (descrizione dettagliata per permettere replica), grazie agli strumenti progettati e realizzati da Robert Hooke:</p>
+<ul>
+<li><p>contributi alla chimica</p></li>
+<li><p>legge di Boyle sui gas: l’aria si comporta come una molla, <span class="math notranslate nohighlight">\(PV = \text{cost}\)</span> a <span class="math notranslate nohighlight">\(T\)</span> cost. Comportamento elastico, come i solidi studiati da Hooke (legge costitutiva lineare elastica): modello dei gas come costituiti da particelle elementari, collegati da molle</p></li>
+</ul>
+</li>
+<li><p>D.Bernoulli, <em>Hydrodynamica</em>, 1738:</p>
+<ul>
+<li><p>primo modello matematico nella teoria cinetica dei gas: gas costituiti da particelle libere di muoversi: la pressione è il risultato degli urti delle particelle sulle pareti del contenitore.</p></li>
+</ul>
+</li>
+<li><p>A.Lavoisier, fine ‘700, uno dei più influenti chimici della storia:</p>
+<ul>
+<li><p>misura del peso nelle indagini di chimica: <strong>conservazione della massa</strong> in fisica classica</p></li>
+<li><p>altro valido argomento a sostegno della teoria atomistica: le sostanze sono formate da particelle elementari che si combinano a formare diverse sostanze; nelle reazioni chimiche, reagenti e prodotti hanno la stessa massa (<span class="math notranslate nohighlight">\(Hg \, O \rightarrow Hg \, + \, \frac{1}{2} O_2\)</span>)</p></li>
+</ul>
+</li>
+<li><p>Composizione sostanze è ben definita?</p>
+<ul>
+<li><p>Berthollet: no, contrario alla teoria atomica, es. bronzo (lega!): la composizione di una sostanza dipende dal processo con il quale viene prodotto;</p></li>
+<li><p>Proust: carbonato basico di <span class="math notranslate nohighlight">\(Cu\)</span>. I campioni provenienti da diverse parti, trovate sia in natura sia sintetizzate in laboratorio, hanno esattamente la stessa composizione in massa;</p></li>
+<li><p>Dalton: sostenitore teoria atomica, dopo aver formulato la legge delle proporzioni multiple; pessimo sperimentatore; gli atomi sono indivisibili, ma non pensa che le sostanze possano avere molecole con più atomi; le sue conclusioni sulla composizione dell’acqua saranno causa di grande confusione negli anni successivi</p></li>
+</ul>
+</li>
+<li><p>Gay-Lussac, 1808, discepolo di Berthollet</p>
+<ul>
+<li><p>leggi dei gas</p></li>
+<li><p>studi con controllo del volume: osserva che <span class="math notranslate nohighlight">\(V\)</span>, <span class="math notranslate nohighlight">\(n\)</span> sono proporzionali a parti pressione e temperatura; non formula una spiegazione fondata sulla teoria atomica, forse per timore del giudizio di Berthollet, più probabilmente per il disaccordo con le conclusioni sbagliate di Dalton sulla composizione dell’acqua</p></li>
+</ul>
+</li>
+<li><p>Avogadro, 1811:</p>
+<ul>
+<li><p>volumi di gas uguali nelle stesse condizioni di <span class="math notranslate nohighlight">\(T\)</span>, <span class="math notranslate nohighlight">\(P\)</span> contengono lo stesso numero di molecole, anche tipi di gas diverso</p></li>
+</ul>
+</li>
+<li><p>Berzelius, 1813</p></li>
+<li><p>Cannizzaro, 1860 <em>Sunto di un corso di filosofia chimica</em></p></li>
+</ul>
+<p><strong>Indagine scientifica - Calore e temperatura.</strong> <span style="color:red">Muovere sopra, prima dell’indagine dei chimici? Fare un paragrafo introduttivo su pressione/temperatura, strumenti per la misura, e scale di misura? Non rispetta un ordine cronologico, ma permette di non spezzettare troppo il racconto”</span></p>
+<ul class="simple">
+<li><p>strumenti e scale di temperatura</p></li>
+<li><p>equilibrio termico, e tendenza naturale nell’evoluzione della temperatura</p></li>
+<li><p>calore latente, J.Black</p></li>
+<li><p>Fourier: equazione per la conduzione</p></li>
+<li><p>…</p></li>
+</ul>
+<p><strong>Indagine scientifica - Macchine termiche: energia, lavoro e calore.</strong></p>
+<ul class="simple">
+<li><p>L’invenzione della macchina a vapore e i motori termici dà il via alla rivoluzione industriale</p></li>
+<li><p>Indagini teoriche sul funzionamento delle macchine termiche, sulla trasmissione di calore e la generazione di lavoro</p>
+<ul>
+<li><p>1824, <strong>S.Carnot</strong> <em>riflessioni sulla forza motrice del fuoco</em>:</p>
+<ul>
+<li><p>analisi teorica delle macchine termiche, macchina ideale e rendimento massimo</p></li>
+<li><p>critica della <em>teoria calorica</em>: se il calore fosse materia, questo dovrebbe essere creato dal movimento…</p></li>
+</ul>
+</li>
+<li><p>Joule: equivalenza lavoro-calore (porterà al I principio)</p></li>
+<li><p><strong>Clausius</strong>:</p>
+<ul>
+<li><p>irreversibilità, in termini di etnropia (II principio)</p></li>
+</ul>
+</li>
+<li><p><strong>Gibbs</strong>: formalizzazione di una teoria termodinamica “macroscopica”, con un approccio geometrico:</p>
+<ul>
+<li><p>variabili di stato, spazio delle fasi, regola delle fasi</p></li>
+<li><p>energia libera</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Indagine scientifica - Meccanica statistica: il microscopico.</strong></p>
+<ul class="simple">
+<li><p>Clausius</p></li>
+<li><p>Maxwell:</p>
+<ul>
+<li><p>…</p></li>
+</ul>
+</li>
+<li><p>Gibbs</p></li>
+<li><p><strong>Boltzmann</strong></p>
+<ul>
+<li><p>…</p></li>
+</ul>
+</li>
+</ul>
+<!--
+**Concetti e primi strumenti.**
+- Temperatura, pressione
+- Primi strumenti, e princìpi fisici utilizzati: 
+  - manometro di Torricelli e peso di una colonna di acqua o Hg
+  - termometri e dilatazione termica delle sostanze
+
+**Esperienza.**
+- Conservazione della massa
+
+- Esperimenti in chimica, sull'indagine della natura della materia: 
+  - misura di: massa, pressione, volume, temperatura,
+  - esperimenti su: reazioni chimiche, gas
+
+- Tendenze naturali:
+  - Equilibrio termico: calore dal corpo più caldo a quello più freddo
+  - Dissipazione dell'energia meccanica
+- Equivalenza di Joule: esistono due modi per trasferire energia, lavoro e calore
+
+
+**Macchine termiche.**
+- Applicazioni che guidano la rivoluzione industriale in Inghilterra,
+- Approfondimenti e studi teorici sul funzionamento delle macchine termiche, le sostanze e i fenomeni fisici coinvolti
+-->
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ch/thermodynamics"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="foundation.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Origini della termodinamica</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="foundation-experiments.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Esperienze ed esperimenti</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By basics
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

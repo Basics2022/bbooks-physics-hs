@@ -1,105 +1,107 @@
 (physics-hs:thermodynamics:foundation:experiments)=
 # Esperienze ed esperimenti
 
-Sviluppo non lineare, dovuto ai contributi di molti studiosi, nel corso di più di un paio di secoli
+## Dilatazione sostanze
 
-**Esperienze.**
-- Sensazione di caldo e freddo
-- Dissipazione dell'energia meccanica "macroscopica" 
+## Esperienza di Torricelli 
 
-**Domande aperte.**
-- Come è fatta la materia?
-  - affermazione della **teoria atomistica**: particelle elementari, che si possono combinare
-  - esiste il vuoto? "la natura ha orrore del vuoto" (Galileo)?
-- Come descrivere le sensazioni di caldo-freddo: temperatura e calore
-  - teoria **calorica**? Fluido invisibile
-  - ...
+## Prime esperienze sui gas
+Boyle
 
-**Indagine scientifica: natura materia.** Rivoluzione scientifica del XVI-XVII secolo. Costruzione di strumenti 
-- Torricelli, disceplo di Galileo: 
-  - il barometro; 
-  - la misura del peso dell'aria: **pressione** atmosferica;
-  - "vuoto" al di sopra della colonnina di Hg: argomento che rilancia la tesi atomistica
+## Equilibrio termico
+...
 
-- Boyle, "primo chimico"; tra i fondatori della Royal Society; preciso sperimentatore (descrizione dettagliata per permettere replica), grazie agli strumenti progettati e realizzati da Robert Hooke:
-  - contributi alla chimica
-  - legge di Boyle sui gas: l'aria si comporta come una molla, $PV = \text{cost}$ a $T$ cost. Comportamento elastico, come i solidi studiati da Hooke (legge costitutiva lineare elastica): modello dei gas come costituiti da particelle elementari, collegati da molle
+## Scale di temperatura
+- Scale empiriche: costruite con scelte arbitrarie senza nessun significato fisico profondo
+- Scala termodinamica: la temperatura assoluta è direttamente legata all'agitazione dei componenti elementari della materia
 
-- D.Bernoulli, *Hydrodynamica*, 1738: 
-  - primo modello matematico nella teoria cinetica dei gas: gas costituiti da particelle libere di muoversi: la pressione è il risultato degli urti delle particelle sulle pareti del contenitore.
+### Scale empiriche
+Metodo generale per la definizione delle scale di temperatura: scelta di due temperature di riferimento, facilmente riproducibili nei limiti di errori tollerati; suddivisione in parti uguali dell'intervallo ed estensione oltre questi limiti, tipicamente in 100 o 60 (o suoi multipli) parti.
+- 1702, Romer:
+  - estremo inferiore,  $0 \, \text{°Ro}$: temperatura eutettica del cloruro di ammonio;
+  - estremo superiore, $60 \, \text{°Ro}$: temperatura di ebollizione dell'acqua
+  successivamente si accorse che la solidificazione dell'acqua avveniva circa a $7.5 \, \text{°Ro}$ e decise di usare questa condizione per definire l'estremo inferiore, in modo tale da rendere più facile la taratura dello strumento
+- 1709-15, Fahrenheit:
+  - definizione originale della scala:
+    - estremo inferiore,   $0 \, \text{°F}$: temperatura eutettica del cloruro di ammonio; le malelingue sostengono la temperatura più bassa registrata negli inverni di Danzica, città allora prussiana in cui viveva mentre metteva a punto gli strumenti
+    - estremo superiore,   $96 \, \text{°F}$: temperatura media del corpo umano
+  - le scelte rocambolesche e definite in maniera imprecisa non costituivano delle condizioni facilmente replicabili per la costruzione e/o taratura di nuovi strumenti. Vennero scelte quindi le condizioni di solidificazione ($32 \, \text{°F}$) e di evaporazione ($212 \, \text{°F}$) dell'acqua a pressione ambiente al livello del mare, in modo tale da suddividere tale intervallo in 180 sotto-intervalli
+- 1731, de Réaumur:
+  - estremi: solidificazione ($0 \, \text{°Re}$) ed evaporazione ($80 \, \text{°Re}$) dell'acqua a temperatura ambiente. Perché 80 intervalli tra queste due condizioni? Perché il termometro costruito da Reaumur usava come principio fisico l'espansione dell'etanolo, e il volume dell'etanolo varia dell'8% tra le due condizioni di riferimento scelte.
+- 1742, Celsius:
+  - estremi: solidificazione ($100 \, \text{°C}$) ed evaporazione ($0 \, \text{°C}$) dell'acqua a temperatura ambiente. Perché questa definizione "invertita" rispetto alle altre? Perché no, si potrebbe rispondere. Per rendere più pratica la misura e adeguarsi al verso delle altre scale, un anno dopo la morte di Celsius, la scala fu invertita da Linneo (**todo** lo stesso Linneo, biologo, che si dilettava con la classificazione di piante e animali, padre della classificazione scientifica degli organismi viventi, usata tuttora)
 
-- A.Lavoisier, fine '700, uno dei più influenti chimici della storia:
-  - misura del peso nelle indagini di chimica: **conservazione della massa** in fisica classica
-  - altro valido argomento a sostegno della teoria atomistica: le sostanze sono formate da particelle elementari che si combinano a formare diverse sostanze; nelle reazioni chimiche, reagenti e prodotti hanno la stessa massa ($Hg \, O \rightarrow Hg \, + \, \frac{1}{2} O_2$)
+### Scala termodinamica
+- 1848, Kelvin *On an Absolute Thermometric Scale*.
 
-- Composizione sostanze è ben definita?
-  - Berthollet: no, contrario alla teoria atomica, es. bronzo (lega!): la composizione di una sostanza dipende dal processo con il quale viene prodotto; 
-  - Proust: carbonato basico di $Cu$. I campioni provenienti da diverse parti, trovate sia in natura sia sintetizzate in laboratorio, hanno esattamente la stessa composizione in massa;
-  - Dalton: sostenitore teoria atomica, dopo aver formulato la legge delle proporzioni multiple; pessimo sperimentatore; gli atomi sono indivisibili, ma non pensa che le sostanze possano avere molecole con più atomi; le sue conclusioni sulla composizione dell'acqua saranno causa di grande confusione negli anni successivi
+## Teoria cinetica dei gas
+1738, D.Bernoulli *Hydrodynamica*
 
-- Gay-Lussac, 1808, discepolo di Berthollet
-  - leggi dei gas
-  - studi con controllo del volume: osserva che $V$, $n$ sono proporzionali a parti pressione e temperatura; non formula una spiegazione fondata sulla teoria atomica, forse per timore del giudizio di Berthollet, più probabilmente per il disaccordo con le conclusioni sbagliate di Dalton sulla composizione dell'acqua
+## Calore latente e calore specifico
+1750-60, J.Black. I suoi studi sul calore aiutano a distinguere i concetti di temperatura e di calore **todo**
+- sistemi fisici sul quale non viene compiuto lavoro, scambiano tra di loro calore per raggiungere l'equilibrio termico
+  - la quantità di calore "entrante" in un sistema, ne fa variare la temperatura. La variazione di temperatura nel sistema è inversamente proporzionale alla sua massa,
 
-- Avogadro, 1811:
-  - volumi di gas uguali nelle stesse condizioni di $T$, $P$ contengono lo stesso numero di molecole, anche tipi di gas diverso
+    $$m \, c_x \, d T = \delta Q \ ,$$
 
-- Berzelius, 1813
+    la costante di proporzionalità è definita **calore specifico**. **todo** *controllare commenti su stato termodinamico ${\cdot}_x$ del sistema*
 
-- Cannizzaro, 1860 *Sunto di un corso di filosofia chimica*
+  - la quantità di calore scambiata tra due sistemi è uguale e opposta: $d Q_{ij} = - d Q_{ji}$.
+    Mettendo a contatto due sistemi che non manifestano cambiamenti di fase, isolati dall'ambiente, si ottiene quindi
 
-**Indagine scientifica - Calore e temperatura.** <span style="color:red">Muovere sopra, prima dell'indagine dei chimici? Fare un paragrafo introduttivo su pressione/temperatura, strumenti per la misura, e scale di misura? Non rispetta un ordine cronologico, ma permette di non spezzettare troppo il racconto"</span>
-- strumenti e scale di temperatura
-- equilibrio termico, e tendenza naturale nell'evoluzione della temperatura
-- calore latente, J.Black
-- Fourier: equazione per la conduzione
-- ...
+    $$\begin{cases}
+      d E_i = m_i \, c_i \, d T_i = \delta Q_{ij} \\
+      d E_j = m_j \, c_j \, d T_j = \delta Q_{ji} = - \delta Q_{ij}
+    \end{cases}
+    $$
 
-**Indagine scientifica - Macchine termiche: energia, lavoro e calore.**
-- L'invenzione della macchina a vapore e i motori termici dà il via alla rivoluzione industriale
+    $$\rightarrow \qquad 0 = d E_i + d E_j = m_i \, c_i \, d T_i + m_j \, c_j \, d T_j$$
 
-- Indagini teoriche sul funzionamento delle macchine termiche, sulla trasmissione di calore e la generazione di lavoro
-  - 1824, **S.Carnot** *riflessioni sulla forza motrice del fuoco*:
-    - analisi teorica delle macchine termiche, macchina ideale e rendimento massimo
-    - critica della *teoria calorica*: se il calore fosse materia, questo dovrebbe essere creato dal movimento...
-  - Joule: equivalenza lavoro-calore (porterà al I principio)
-  - **Clausius**:
-    - irreversibilità, in termini di etnropia (II principio)
-  - **Gibbs**: formalizzazione di una teoria termodinamica "macroscopica", con un approccio geometrico:
-    - variabili di stato, spazio delle fasi, regola delle fasi
-    - energia libera
+    **todo** *definire energia interna e aggiungere riferimento alla sezione "Princìpi della termodinamica"*
 
-**Indagine scientifica - Meccanica statistica: il microscopico.**
-- Clausius
-- Maxwell:
-  - ...
+- i cambiamenti di fase avvengono a temperatura costante. Ad esempio, l'apporto di calore a un sistema in equilibrio contenente ghiaccio alla temperatura di solidificazione non ne fa aumentare la temperatura, ma la massa liquida. L'aumento della temperatura. Una volta completata la trasformazione di fase, l'apporto di calore causa una variazione di temperatura,
+
+    $$\delta Q = \begin{cases}
+      d m_{l} \, L_{sl}                 \quad & , \quad {\delta m_l < m} \\
+      d m_{l} \, L_{sl} + m \, c \, d T \quad & , \quad {\delta m_l = m} \ .
+    \end{cases}$$
+
+    Viene definito **calore latente di fusione** il coefficiente $L_{sl}$ di proporzionalità tra il calore entrante nel sistema durante la trasformazione di fase e la quantità di massa liquefatta $\delta m_l$.
+
+## Esperienze sui gas, ed equazione di stato dei gas perfetti
+- Boyle: $PV = \text{const.}$
+- Charles: $V \propto T$
+- Gay-Lussac: $P \propto T$
+- Avogadro: $V \propto n$
+
+L'equazione di stato dei gas perfetti riassume questi risultati
+
+$$\dfrac{P V}{T n} = R = \text{const.}$$
+
+
+## Lavoro, ... **todo**
+
+```{margin}
+**todo**<br> Diatriba sulla priorità sulla formulazione del principio di conservazione dell'energia: von Meyer; Joule; successivamente Hemlholtz; Tyndall - scienziato e uno dei primi alpinisti - uno dei pochi a riconoscere il contributo di von Meyer
+```
+
+- Rivoluzione industriale
+- 1798, B.Thompson, *An Inquiry Concerning the Source of the Heat Which is Excited by Friction*, oggi può essere interpretato come un lavoro che identificava l'attrito come fenomeno di dissipazione dell'energia meccanica "utile"/"macroscopica" e della sua conversione in calore;
+- 1824, S.Carnot, *Riflessioni sulla forza motrice del fuoco* 
+- 1840-42, J.von Meyer, medico, chimico e fisico, intuisce il principio di conservazione dell'energia, *"che non può essere né creata né distrutta"* **ref** *Remarks on the Forces of Nature*, 1841
+- 1842-45, J.P.Joule *The Mechanical Equivalent of Heat*
+- 1850, R.Clausius
+
+## Formalismo e prìncipi della termodinamica classica
+**todo**
+
+- usando il formalismo di Gibbs:
+  - funzioni di stato (energia interna,...), regola delle fasi, spazio di fase,...
+- si possono formulare i prìncipi della termodinamica
+
+## Meccanica statistica
+- Maxwell
 - Gibbs
 - **Boltzmann**
-  - ...
 
-
-<!--
-**Concetti e primi strumenti.**
-- Temperatura, pressione
-- Primi strumenti, e princìpi fisici utilizzati: 
-  - manometro di Torricelli e peso di una colonna di acqua o Hg
-  - termometri e dilatazione termica delle sostanze
-
-**Esperienza.**
-- Conservazione della massa
-
-- Esperimenti in chimica, sull'indagine della natura della materia: 
-  - misura di: massa, pressione, volume, temperatura,
-  - esperimenti su: reazioni chimiche, gas
-
-- Tendenze naturali:
-  - Equilibrio termico: calore dal corpo più caldo a quello più freddo
-  - Dissipazione dell'energia meccanica
-- Equivalenza di Joule: esistono due modi per trasferire energia, lavoro e calore
-
-
-**Macchine termiche.**
-- Applicazioni che guidano la rivoluzione industriale in Inghilterra,
-- Approfondimenti e studi teorici sul funzionamento delle macchine termiche, le sostanze e i fenomeni fisici coinvolti
--->
 
