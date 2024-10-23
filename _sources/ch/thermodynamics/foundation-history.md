@@ -1,4 +1,4 @@
-(physics-hs:thermodynamics:foundation:experiments)=
+(physics-hs:thermodynamics:foundation:history)=
 # Breve storia della termodinamica
 
 Sviluppo non lineare, dovuto ai contributi di molti studiosi, nel corso di più di un paio di secoli.

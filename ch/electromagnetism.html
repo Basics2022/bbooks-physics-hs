@@ -224,6 +224,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 has-children"><a class="reference internal" href="thermodynamics/matter.html">Stati della materia</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="thermodynamics/ideal-gas.html">Gas ideali</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="thermodynamics/ideal-gas-experiments.html">Esperimenti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="thermodynamics/ideal-gas-expressions.html">Espressioni diverse dell’equazione di stato dei gas perfetti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="thermodynamics/ideal-gas-kinetic-theory.html">Teoria cinetica dei gas</a></li>
 </ul>
 </li>
@@ -421,7 +422,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -437,6 +440,15 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#argomenti-del-programma">Argomenti del programma</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-del-bbook">Schema del bbook</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -448,6 +460,105 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="elettromagnetismo">
 <span id="physics-hs-electromagnetism"></span><h1>Elettromagnetismo<a class="headerlink" href="#elettromagnetismo" title="Permalink to this heading">#</a></h1>
+<p><strong>Concetti e primi strumenti.</strong></p>
+<div class="section" id="argomenti-del-programma">
+<h2>Argomenti del programma<a class="headerlink" href="#argomenti-del-programma" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Elettrostatica</p>
+<ul>
+<li><p>Elettrizzazione, conduttori e isolanti, legge di Coulomb e primi strumenti (bilancia a torsione, elettroscopio,…)</p></li>
+<li><p>Campo elettrico: def operativa con carica di prova; PSCE; lavoro, potenziale e campo conservativo; flusso di un campo vettoriale; energia potenziale, potenziale elettrico; legge di Gauss e legge di Faraday stazionaria</p></li>
+<li><p>Polarizzazione; condensatore; energia; circuiti di condensatori in regime stazionario (o solo come esercizi?)</p></li>
+<li><p>esercizi:</p>
+<ul>
+<li><p>legge di Coulomb e strumenti; dipolo magnetico e molecole</p></li>
+<li><p>esercizio su campo elettrico; moto di una carica in un campo elettrico</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Corrente elettrica:</p>
+<ul>
+<li><p>def</p></li>
+<li><p>circuiti elettrici:</p>
+<ul>
+<li><p>resistenze di Ohm</p></li>
+<li><p>generatori (tensione e corrente?)</p></li>
+<li><p>strumenti</p></li>
+</ul>
+</li>
+<li><p>energia in circuiti elettrici in regime stazionario</p></li>
+<li><p>leggi di Krichhoff; configurazione in serie e parallelo di resistenze; circuito RC (carica e scarica di un condensatore)</p></li>
+<li><p>elettrochimica: elettrolisi, pila, accumulatori</p></li>
+<li><p>corrente nei gas e nei semi-conduttori:</p>
+<ul>
+<li><p>gas: esperimenti su tubi a vuoto</p></li>
+<li><p>semi-conduttori: componente fondamentale dell’elettronica moderna; diodi,…</p></li>
+</ul>
+</li>
+<li><p>esericizi:</p>
+<ul>
+<li><p>…</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Magnetismo ed elettromagnetismo:</p>
+<ul>
+<li><p>Esperienze di Oersted, Faraday, Ampere; flusso e circuitazione del campo magnetico</p></li>
+<li><p>Spira, induttore, dipolo magnetico (e modelli microscopici del magnetismo)</p></li>
+<li><p>Forza di Lorentz</p></li>
+<li><p>Azioni meccaniche: spire, principi di funzionamento del motore elettrico DC, galvanometro</p></li>
+<li><p>Induzione magnetica:</p>
+<ul>
+<li><p>legge di Faraday e sue applicazioni</p></li>
+<li><p>trasformatori, motori/generatori elettrici AC <span style="color:red">Dove introdurre il regime AC?</span></p></li>
+<li><p>circuito RLC, energia</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Onde EM <span style="color:red">Serve una part del bbook sulle onde?</span></p>
+<ul>
+<li><p>Luce e ottica</p></li>
+</ul>
+</li>
+<li><p>Riassunto principi dell’EM: conservazione della carica elettrica, eq. di Maxwell, forza di Lorentz</p>
+<ul>
+<li><p>…</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="schema-del-bbook">
+<h2>Schema del bbook<a class="headerlink" href="#schema-del-bbook" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Introduzione all’elettromagnetismo.</strong></p>
+<ul>
+<li><p><strong>Breve storia dell’elettromagnetismo.</strong></p></li>
+<li><p><strong>Esperienze ed esperimenti.</strong></p></li>
+</ul>
+</li>
+<li><p><strong>Princìpi dell’elettromagnetismo.</strong></p></li>
+<li><p><strong>Approssimazione circuitale.</strong></p>
+<ul>
+<li><p><strong>Circuiti elettrici.</strong></p>
+<ul>
+<li><p>componenti</p></li>
+<li><p>regimi di funzionamento</p></li>
+</ul>
+</li>
+<li><p><strong>Circuiti elettromagnetici.</strong></p>
+<ul>
+<li><p>…</p></li>
+<li><p>esempi: trasformatori</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Macchine elettriche.</strong></p></li>
+</ul>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -504,6 +615,21 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#argomenti-del-programma">Argomenti del programma</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-del-bbook">Schema del bbook</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

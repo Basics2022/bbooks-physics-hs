@@ -44,7 +44,7 @@ $$
 
 $$\eta = 1 - \dfrac{1}{\beta^{\gamma-1}} \ .$$
 
-## Funzionamento di un motore interno
+## Funzionamento di un motore a combustione interna
 **todo**
 
 ## Esempio
