@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gas ideali &#8212; Fisica per le superiori</title>
+    <title>Espressioni diverse dell’equazione di stato dei gas perfetti &#8212; Fisica per le superiori</title>
   
   
   
@@ -62,11 +62,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/ideal-gas';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/ideal-gas-expressions';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Esperimenti" href="ideal-gas-experiments.html" />
-    <link rel="prev" title="Stati della materia" href="matter.html" />
+    <link rel="next" title="Teoria cinetica dei gas" href="ideal-gas-kinetic-theory.html" />
+    <link rel="prev" title="Esperimenti" href="ideal-gas-experiments.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -222,9 +224,9 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="matter.html">Stati della materia</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Gas ideali</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="ideal-gas.html">Gas ideali</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="ideal-gas-experiments.html">Esperimenti</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ideal-gas-expressions.html">Espressioni diverse dell’equazione di stato dei gas perfetti</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Espressioni diverse dell’equazione di stato dei gas perfetti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ideal-gas-kinetic-theory.html">Teoria cinetica dei gas</a></li>
 </ul>
 </li>
@@ -321,7 +323,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch/thermodynamics/ideal-gas.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch/thermodynamics/ideal-gas-expressions.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -351,7 +353,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/thermodynamics/ideal-gas.md" target="_blank"
+      <li><a href="../../_sources/ch/thermodynamics/ideal-gas-expressions.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -433,7 +435,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Gas ideali</h1>
+    <h1>Espressioni diverse dell’equazione di stato dei gas perfetti</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -447,22 +449,35 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="gas-ideali">
-<span id="physics-hs-thermodynamics-matter-gases-ideal"></span><h1>Gas ideali<a class="headerlink" href="#gas-ideali" title="Permalink to this heading">#</a></h1>
-<p>Il modello di gas ideale rappresenta un gas in cui</p>
-<ul class="simple">
-<li><p>le molecole hanno volume trascurabile rispetto al volume disponibile</p></li>
-<li><p>le molecole non interagiscono tra di loro e interagiscono le pareti solide di un contenitore con urti perfettamente elastici; è possibile rilassare l’ipotesi di assenza di interazioni tra le particelle con l’ipotesi di interazioni perfettamente elastiche</p></li>
-<li><p>le molecole sono identiche</p></li>
-<li><p>il moto delle molecole è casuale e isotropo, cioè non esistono direzioni preferenziali del moto</p></li>
+  <div class="tex2jax_ignore mathjax_ignore section" id="espressioni-diverse-dell-equazione-di-stato-dei-gas-perfetti">
+<span id="physics-hs-thermodynamics-matter-gases-ideal-expressions"></span><h1>Espressioni diverse dell’equazione di stato dei gas perfetti<a class="headerlink" href="#espressioni-diverse-dell-equazione-di-stato-dei-gas-perfetti" title="Permalink to this heading">#</a></h1>
+<p>Formule alternative dell’equazione di stato dei gas perfetti</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(n\)</span> numero di moli, <span class="math notranslate nohighlight">\(R\)</span> costante universale dei gas</p>
+<div class="math notranslate nohighlight">
+\[P \, V = n \, R \, T\]</div>
+</li>
+<li><p>il numero di moli <span class="math notranslate nohighlight">\(n\)</span> può essere scritto come rapporto della massa <span class="math notranslate nohighlight">\(m\)</span> del sistema e la massa molare <span class="math notranslate nohighlight">\(M_m\)</span> del gas considerato,</p>
+<div class="math notranslate nohighlight">
+\[m = M_m \, n\]</div>
+<p>Usando questa espressione per sostituire <span class="math notranslate nohighlight">\(n\)</span> nella legge dei gas perfetti, e dividendo per <span class="math notranslate nohighlight">\(V\)</span> si può trovare una nuova espressione dell’equazione di stato di un gas perfetto,</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+    P   = \dfrac{m}{V} \, \dfrac{R}{M_m} \, T     
+        = \rho \, R_g \, T \ ,
+  \end{aligned}\]</div>
+<p>avendo riconosciuto la densità come rapporto tra massa e volume del sistema <span class="math notranslate nohighlight">\(\rho = \frac{m}{V}\)</span> e definito la costante    del gas specifica per il gas considerato come rapporto della costante universale e la massa molare, <span class="math notranslate nohighlight">\(R_g = \frac{R}{M_m}\)</span></p>
+</li>
+<li><p>la relazione di Avogadro lega il numero di moli <span class="math notranslate nohighlight">\(n\)</span> e il numero di molecole <span class="math notranslate nohighlight">\(N\)</span> (<strong>todo</strong> *può essere solo una comoda unità di conto? Da dove arriva?…),</p>
+<div class="math notranslate nohighlight">
+\[N = N_A \, n \ ,\]</div>
+<p>essendo <span class="math notranslate nohighlight">\(N_A \approx 6.022 \cdot 10^{23} \text{mol}^-1\)</span> il <strong>numero di Avogadro</strong>. La legge di stato dei gas perfetti può quindi essere riscritta come</p>
+<div class="math notranslate nohighlight">
+\[P \, V = N \, \frac{R}{N_A} \, T = N \, k_B \, T \ , \]</div>
+<p>dove è stata introdotta la costante di Boltzmann, <span class="math notranslate nohighlight">\(k_B = \frac{R}{N_A} \approx 1.38 \cdot 10^{-23} \frac{\text{J}}{\text{K}}\)</span>.</p>
+<p>La costante di Boltzmann (<strong>todo</strong> <em>introdotta da Planck e da lui dedicata a Boltzmann</em>) è il fattore di conversione tra l’energia dovuta all’agitazione termica del sistema e la sua temperatura, come mostrato nella sezione dedicata alla <a class="reference internal" href="ideal-gas-kinetic-theory.html#physics-hs-thermodynamics-matter-gases-ideal-kinetic-theory"><span class="std std-ref">teoria cinetica dei gas</span></a>.</p>
+</li>
 </ul>
-<p>Il modello di gas ideale può essere un buon modello per gas:</p>
-<ul class="simple">
-<li><p><strong>alta temperatura e molecole semplici</strong>: l’energia cinetica delle molecole rende trascurabile l’energia delle forze intermolecolari tra molecole distanti; l’interazione tra molecole semplici o non-polari è debole se confrontata rispetto a molecole complesse o polari</p></li>
-<li><p><strong>bassa pressione e bassa densità</strong>: la bassa concentrazione di molecole rende le loro interazioni rare.</p></li>
-</ul>
-<div class="toctree-wrapper compound">
-</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -496,20 +511,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="matter.html"
+       href="ideal-gas-experiments.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Stati della materia</p>
+        <p class="prev-next-title">Esperimenti</p>
       </div>
     </a>
     <a class="right-next"
-       href="ideal-gas-experiments.html"
+       href="ideal-gas-kinetic-theory.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Esperimenti</p>
+        <p class="prev-next-title">Teoria cinetica dei gas</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

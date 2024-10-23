@@ -447,13 +447,16 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esperimenti-e-leggi">Esperimenti e leggi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boyle-hooke">Boyle-Hooke</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#charles">Charles</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gay-lussac">Gay-Lussac</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#avogadro">Avogadro</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-dei-gas-ideali">Legge dei gas ideali</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-boyle">Legge di Boyle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-charles">Legge di Charles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gay-lussac">Legge di Gay-Lussac</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scala-di-temperatura-assoluta">Scala di temperatura assoluta</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-avogadro">Legge di Avogadro</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-dei-gas-ideali">Legge dei gas ideali</a></li>
 </ul>
             </nav>
         </div>
@@ -467,41 +470,64 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="esperimenti">
 <span id="physics-hs-thermodynamics-matter-gases-ideal-experiments"></span><h1>Esperimenti<a class="headerlink" href="#esperimenti" title="Permalink to this heading">#</a></h1>
+<p><strong>todo</strong> Aggiungere immagini e grafici dei dati sperimentali per le leggi di Charles e Gay-Lussac con estrapolazione verso lo zero assoluto.</p>
 <div class="section" id="esperimenti-e-leggi">
 <h2>Esperimenti e leggi<a class="headerlink" href="#esperimenti-e-leggi" title="Permalink to this heading">#</a></h2>
-<div class="section" id="boyle-hooke">
-<h3>Boyle-Hooke<a class="headerlink" href="#boyle-hooke" title="Permalink to this heading">#</a></h3>
+<div class="section" id="legge-di-boyle">
+<span id="physics-hs-thermodynamics-matter-gases-ideal-experiments-boyle"></span><h3>Legge di Boyle<a class="headerlink" href="#legge-di-boyle" title="Permalink to this heading">#</a></h3>
 <p>Per gas semplici, a temperatura sufficientemente elevata, e pressione sufficientemente ridotta</p>
 <div class="math notranslate nohighlight">
 \[T, n \text{ const} \quad \rightarrow \quad P V = \text{const}\]</div>
 </div>
-<div class="section" id="charles">
-<h3>Charles<a class="headerlink" href="#charles" title="Permalink to this heading">#</a></h3>
+<div class="section" id="legge-di-charles">
+<span id="physics-hs-thermodynamics-matter-gases-ideal-experiments-charles"></span><h3>Legge di Charles<a class="headerlink" href="#legge-di-charles" title="Permalink to this heading">#</a></h3>
 <p>Per gas semplici, a temperatura sufficientemente elevata, e pressione sufficientemente ridotta</p>
 <div class="math notranslate nohighlight">
 \[P, n \text{ const} \quad \rightarrow \quad \dfrac{\Delta V}{\Delta T} = V_0 \, \alpha_P = \text{const}\]</div>
 <div class="math notranslate nohighlight">
 \[V = V_0 \, ( 1 + \alpha_P \, T ) \ ,\]</div>
 <p>avendo indicato con <span class="math notranslate nohighlight">\(\alpha_0\)</span> il coefficiente di dilatazione termica a pressione costante.</p>
+<p>I dati sperimentali misurati mostrano un andamento lineare, e la loro estrapolazione verso il valore limite del volume <span class="math notranslate nohighlight">\(V = 0\)</span> porta a un valore di temperatura <span class="math notranslate nohighlight">\(T = -273.15 \text{°C}\)</span>.</p>
 </div>
-<div class="section" id="gay-lussac">
-<h3>Gay-Lussac<a class="headerlink" href="#gay-lussac" title="Permalink to this heading">#</a></h3>
+<div class="section" id="legge-di-gay-lussac">
+<span id="physics-hs-thermodynamics-matter-gases-ideal-experiments-gay-lussac"></span><h3>Legge di Gay-Lussac<a class="headerlink" href="#legge-di-gay-lussac" title="Permalink to this heading">#</a></h3>
 <p>Per gas semplici, a temperatura sufficientemente elevata, e pressione sufficientemente ridotta</p>
 <div class="math notranslate nohighlight">
 \[V, n \text{ const} \quad \rightarrow \quad \frac{\Delta P}{\Delta T} = P_0 \, k_V = \text{const}\]</div>
 <div class="math notranslate nohighlight">
 \[P = P_0 \, ( 1 + k_V \, T ) \ ,\]</div>
+<p>I dati sperimentali misurati mostrano un andamento lineare, e la loro estrapolazione verso il valore limite del volume <span class="math notranslate nohighlight">\(P = 0\)</span> porta allo stesso valore di temperatura <span class="math notranslate nohighlight">\(T = -273.15 \text{°C}\)</span> trovato nell’esperimento di Charles.</p>
+<div class="section" id="scala-di-temperatura-assoluta">
+<span id="physics-hs-thermodynamics-matter-gases-ideal-experiments-t-kelvin"></span><h4>Scala di temperatura assoluta<a class="headerlink" href="#scala-di-temperatura-assoluta" title="Permalink to this heading">#</a></h4>
+<p>Questa osservazione porta alla scelta di una nuova scala di temperatura, quella che diverrà la scala di temperatura termodinamica, o assoluta, di Kelvin:</p>
+<ul class="simple">
+<li><p>viene definito il punto a temperatura, <span class="math notranslate nohighlight">\(0 \text{ K} = -273.15 \text{°C}\)</span></p></li>
+<li><p>viene mantenuta l’ampiezza del grado,</p></li>
+</ul>
+<p>così che la legge di conversione tra il valore numerico della misura di temperatura con la scala Celsius e la scala Kelvin è</p>
+<div class="math notranslate nohighlight">
+\[T[\text{K}] = T[\text{°C}] + 273.15 \ .\]</div>
+<p>Usando la scala di temperatura assoluta, le leggi di Charles e di Gay-Lussac possono essere riscritte come <strong>todo</strong> (<em>evitare singolarità</em>)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  V &amp; \propto T \qquad \text{se $P, n$ const.} \\
+  P &amp; \propto T \qquad \text{se $T, n$ const.} \\
+\end{aligned}\end{split}\]</div>
 </div>
-<div class="section" id="avogadro">
-<h3>Avogadro<a class="headerlink" href="#avogadro" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="legge-di-avogadro">
+<h3>Legge di Avogadro<a class="headerlink" href="#legge-di-avogadro" title="Permalink to this heading">#</a></h3>
 <p>Per gas semplici, a temperatura sufficientemente elevata, e pressione sufficientemente ridotta</p>
 <div class="math notranslate nohighlight">
 \[P, T \text{ const} \quad \rightarrow \quad \frac{n}{V} = \text{const}\]</div>
 </div>
-<div class="section" id="legge-dei-gas-ideali">
-<h3>Legge dei gas ideali<a class="headerlink" href="#legge-dei-gas-ideali" title="Permalink to this heading">#</a></h3>
-<p>Per gas semplici, a temperatura sufficientemente elevata, e pressione sufficientemente ridotta</p>
 </div>
+<div class="section" id="legge-dei-gas-ideali">
+<h2>Legge dei gas ideali<a class="headerlink" href="#legge-dei-gas-ideali" title="Permalink to this heading">#</a></h2>
+<p>La legge dei gas ideali permette di riassumere le quattro leggi di Boyle, Charles, Gay-Lussac, Avogadro in un’unica equazione di stato,</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{P \, V}{n \, T} = R \ ,\]</div>
+<p>avendo introdotto <span class="math notranslate nohighlight">\(R \approx 8.314 \frac{\text{J}}{\text{mol} \,\text{K}}\)</span> la <strong>costante universale dei gas</strong>.</p>
 </div>
 </div>
 
@@ -569,13 +595,16 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esperimenti-e-leggi">Esperimenti e leggi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boyle-hooke">Boyle-Hooke</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#charles">Charles</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gay-lussac">Gay-Lussac</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#avogadro">Avogadro</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-dei-gas-ideali">Legge dei gas ideali</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-boyle">Legge di Boyle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-charles">Legge di Charles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gay-lussac">Legge di Gay-Lussac</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scala-di-temperatura-assoluta">Scala di temperatura assoluta</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-avogadro">Legge di Avogadro</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-dei-gas-ideali">Legge dei gas ideali</a></li>
 </ul>
   </nav></div>
 
