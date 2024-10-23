@@ -13,7 +13,7 @@ Conservazione della carica, e corrente elettrica
 
 Bilancia a torsione...
 
-$$\mathbf{F}_{12} = k \frac{q_1 \, q_2}{|\mathbf{r}_{12}|} \hat{\mathbf{r}}_{21} \ ,$$
+$$\vec{F}_{12} = k \frac{q_1 \, q_2}{|\vec{r}_{12}|^2} \hat{r}_{21} \ ,$$
 
 ...
 
