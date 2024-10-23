@@ -1,5 +1,5 @@
 (physics-hs:thermodynamics:foundation)=
-# Origini della termodinamica
+# Introduzione alla termodinamica
 
 **Concetti e primi strumenti.**
 - Temperatura, pressione

@@ -73,6 +73,11 @@ parts:
 - caption: Elettromagnetismo
   chapters:
   - file: ch/electromagnetism.md
+  - file: ch/electromagnetism/foundation
+    sections:
+    - file: ch/electromagnetism/foundation-history
+    - file: ch/electromagnetism/foundation-experiments
+    - file: ch/electromagnetism/foundation-problems
 # - file: ch/electromagnetism/...
 # - file: ch/electromagnetism/...
 # - file: ch/electromagnetism/...
