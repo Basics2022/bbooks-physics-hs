@@ -48,6 +48,7 @@ parts:
     - file: ch/thermodynamics/principles-lavoisier
     - file: ch/thermodynamics/principles-first
     - file: ch/thermodynamics/principles-gibbs-phase-rule
+    - file: ch/thermodynamics/principles-phase-diagrams
     - file: ch/thermodynamics/principles-second
     - file: ch/thermodynamics/principles-open
   - file: ch/thermodynamics/matter
