@@ -57,8 +57,10 @@ parts:
       - file: ch/thermodynamics/ideal-gas-experiments
       - file: ch/thermodynamics/ideal-gas-expressions
       - file: ch/thermodynamics/ideal-gas-kinetic-theory
+      - file: ch/thermodynamics/ideal-gas-formulas
 #   - file: ch/thermodynamics/real-gas
 #   - file: ch/thermodynamics/solids
+    - file: ch/thermodynamics/elastic-solid-1d
   - file: ch/thermodynamics/heat-engine
     sections:
     - file: ch/thermodynamics/heat-engine-td-cycles

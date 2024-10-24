@@ -45,7 +45,7 @@
 
 - Elettricità e termodinamica:
   - 1821, Seeback
-  - 1827: Ohm
+  - 1827, Ohm
   - 1834, Peltier
 
 - 1850, Kirchhoff e leggi sui circuiti
