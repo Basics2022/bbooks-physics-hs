@@ -1,4 +1,4 @@
-(book:math-hs-miscellanea)=
+(book:physics:hs)=
 # Fisica per le scuole superiori
 
 Questo libro fa parte del materiale pensato per [le scuole superiori](https://basics2022.github.io/bbooks-hs)
