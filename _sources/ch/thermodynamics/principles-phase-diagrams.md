@@ -21,4 +21,35 @@ Esempi:
 - piano H-S, Mollier
 - ...
 
+### Piano di Clapeyron, P-V
+**Lavoro.**
+Nel caso di **sistemi chiusi** e **processi ideali**, il primo principio della termodinamica viene scritto
 
+$$\begin{aligned}
+  d E & = - \delta L^{int,rev} + \delta Q^{ext} = \\
+      & = - P \, dV + T \, dS \ .
+\end{aligned}$$
+
+Nel caso in cui il contributo dell'**energia cinetica sia trascurabile**, il lavoro compiuto dal sistema sull'ambiente esterno coincide con
+
+$$\delta L^{done} = - \delta L^{ext} = - d K + \delta L^{int} \approx \delta L^{int} \approx \delta L^{int,rev} =  P \, dV$$
+
+Un sistema che compie una trasformazione termodinamica descritta dalla curva $\gamma$ nel piano $P-V$ di Clapeyron, compie un lavoro verso l'ambiente esterno che è uguale alla somma dei contributi elementari - e quindi l'integrale 
+
+$$L^{done} = \int_{\gamma} \delta L^{done} \approx \int_{\gamma} P \, d V \ ,$$
+
+che ha l'immediata rappresentazione grafica corrispondente all'area (con segno) tra il grafico della trasformazione e l'asse delle ascisse, $P=0$.
+
+**Esempi di trasformazioni.**
+...
+
+### Piano entropico, T-S
+Nel caso di trasformazioni ideali, il calore entrante nel sistema può essere identificato con il termines
+
+$$\delta Q^{ext} = T \, d S - \underbrace{\delta^+ D}_{$=0$ ideal, rev.} \approx = T \, dS \ ..$$
+
+Un sistema chiuso che compie una trasformazione termodinamica descritta dalla curva $\gamma$ nel piano $P-V$ di Clapeyron, assorbe calore dall'ambiente esterno che è uguale alla somma dei contributi elementari - e quindi l'integrale 
+
+$$Q^{ext} = \int_{\gamma} \delta Q^{ext} \approx \int_{\gamma} T \, d S ,$$
+
+che ha l'immediata rappresentazione grafica corrispondente all'area (con segno) tra il grafico della trasformazione e l'asse delle ascisse, $T=0$.

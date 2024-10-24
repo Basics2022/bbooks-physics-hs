@@ -457,7 +457,11 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagramma-di-stato-di-un-sistema-mono-componente">Diagramma di stato di un sistema mono-componente</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#piani-termodinamici">Piani termodinamici</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#piani-termodinamici">Piani termodinamici</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#piano-di-clapeyron-p-v">Piano di Clapeyron, P-V</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#piano-entropico-t-s">Piano entropico, T-S</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -493,6 +497,35 @@ Esempi:</p>
 <li><p>piano H-S, Mollier</p></li>
 <li><p>…</p></li>
 </ul>
+<div class="section" id="piano-di-clapeyron-p-v">
+<h3>Piano di Clapeyron, P-V<a class="headerlink" href="#piano-di-clapeyron-p-v" title="Permalink to this heading">#</a></h3>
+<p><strong>Lavoro.</strong>
+Nel caso di <strong>sistemi chiusi</strong> e <strong>processi ideali</strong>, il primo principio della termodinamica viene scritto</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  d E &amp; = - \delta L^{int,rev} + \delta Q^{ext} = \\
+      &amp; = - P \, dV + T \, dS \ .
+\end{aligned}\end{split}\]</div>
+<p>Nel caso in cui il contributo dell’<strong>energia cinetica sia trascurabile</strong>, il lavoro compiuto dal sistema sull’ambiente esterno coincide con</p>
+<div class="math notranslate nohighlight">
+\[\delta L^{done} = - \delta L^{ext} = - d K + \delta L^{int} \approx \delta L^{int} \approx \delta L^{int,rev} =  P \, dV\]</div>
+<p>Un sistema che compie una trasformazione termodinamica descritta dalla curva <span class="math notranslate nohighlight">\(\gamma\)</span> nel piano <span class="math notranslate nohighlight">\(P-V\)</span> di Clapeyron, compie un lavoro verso l’ambiente esterno che è uguale alla somma dei contributi elementari - e quindi l’integrale</p>
+<div class="math notranslate nohighlight">
+\[L^{done} = \int_{\gamma} \delta L^{done} \approx \int_{\gamma} P \, d V \ ,\]</div>
+<p>che ha l’immediata rappresentazione grafica corrispondente all’area (con segno) tra il grafico della trasformazione e l’asse delle ascisse, <span class="math notranslate nohighlight">\(P=0\)</span>.</p>
+<p><strong>Esempi di trasformazioni.</strong>
+…</p>
+</div>
+<div class="section" id="piano-entropico-t-s">
+<h3>Piano entropico, T-S<a class="headerlink" href="#piano-entropico-t-s" title="Permalink to this heading">#</a></h3>
+<p>Nel caso di trasformazioni ideali, il calore entrante nel sistema può essere identificato con il termines</p>
+<div class="math notranslate nohighlight">
+\[\delta Q^{ext} = T \, d S - \underbrace{\delta^+ D}_{$=0$ ideal, rev.} \approx = T \, dS \ ..\]</div>
+<p>Un sistema chiuso che compie una trasformazione termodinamica descritta dalla curva <span class="math notranslate nohighlight">\(\gamma\)</span> nel piano <span class="math notranslate nohighlight">\(P-V\)</span> di Clapeyron, assorbe calore dall’ambiente esterno che è uguale alla somma dei contributi elementari - e quindi l’integrale</p>
+<div class="math notranslate nohighlight">
+\[Q^{ext} = \int_{\gamma} \delta Q^{ext} \approx \int_{\gamma} T \, d S ,\]</div>
+<p>che ha l’immediata rappresentazione grafica corrispondente all’area (con segno) tra il grafico della trasformazione e l’asse delle ascisse, <span class="math notranslate nohighlight">\(T=0\)</span>.</p>
+</div>
 </div>
 </div>
 
@@ -560,7 +593,11 @@ Esempi:</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagramma-di-stato-di-un-sistema-mono-componente">Diagramma di stato di un sistema mono-componente</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#piani-termodinamici">Piani termodinamici</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#piani-termodinamici">Piani termodinamici</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#piano-di-clapeyron-p-v">Piano di Clapeyron, P-V</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#piano-entropico-t-s">Piano entropico, T-S</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
