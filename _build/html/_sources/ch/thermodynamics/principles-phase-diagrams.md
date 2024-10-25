@@ -46,7 +46,7 @@ che ha l'immediata rappresentazione grafica corrispondente all'area (con segno) 
 ### Piano entropico, T-S
 Nel caso di trasformazioni ideali, il calore entrante nel sistema può essere identificato con il termines
 
-$$\delta Q^{ext} = T \, d S - \underbrace{\delta^+ D}_{=0 \text{ ideal, rev.}} \approx = T \, dS \ ..$$
+$$\delta Q^{ext} = T \, d S - \underbrace{\delta^+ D}_{=0 \text{ ideal, rev.}} = T \, dS \ ..$$
 
 Un sistema chiuso che compie una trasformazione termodinamica descritta dalla curva $\gamma$ nel piano $P-V$ di Clapeyron, assorbe calore dall'ambiente esterno che è uguale alla somma dei contributi elementari - e quindi l'integrale 
 

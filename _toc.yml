@@ -81,7 +81,10 @@ parts:
     - file: ch/electromagnetism/foundation-history
     - file: ch/electromagnetism/foundation-experiments
     - file: ch/electromagnetism/foundation-problems
-# - file: ch/electromagnetism/...
+  - file: ch/electromagnetism/electrostatics
+  - file: ch/electromagnetism/electric-current
+  - file: ch/electromagnetism/electromagnetism-steady
+  - file: ch/electromagnetism/electromagnetism-general
 # - file: ch/electromagnetism/...
 # - file: ch/electromagnetism/...
 - caption: Fisica moderna
