@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Statica dei corpi rigidi &#8212; Fisica per le superiori</title>
+    <title>Corrente elettrica &#8212; Fisica per le superiori</title>
   
   
   
@@ -62,11 +62,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/statics-rigid';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/electromagnetism/electric-current';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Statica dei fluidi" href="statics-fluid.html" />
-    <link rel="prev" title="Statica dei sistemi puntiformi" href="statics-point.html" />
+    <link rel="next" title="Magnetismo ed elettromagnetismo in regime stazionario" href="electromagnetism-steady.html" />
+    <link rel="prev" title="Elettrostatica" href="electrostatics.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -183,25 +185,25 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Meccanica classica</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../mechanics.html">Meccanica classica</a></li>
-<li class="toctree-l1"><a class="reference internal" href="models.html">Modelli</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="kinematics.html">Cinematica</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="kinematics-point.html">Cinematica del punto</a></li>
-<li class="toctree-l2"><a class="reference internal" href="kinematics-rigid.html">Cinematica di un corpo rigido</a></li>
-<li class="toctree-l2"><a class="reference internal" href="kinematics-relative.html">Cinematica relativa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mechanics/models.html">Modelli</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/kinematics.html">Cinematica</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-point.html">Cinematica del punto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-rigid.html">Cinematica di un corpo rigido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-relative.html">Cinematica relativa</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="actions.html">Azioni</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="statics.html">Statica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="statics-point.html">Statica dei sistemi puntiformi</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Statica dei corpi rigidi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="statics-fluid.html">Statica dei fluidi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="statics-problems.html">Problemi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mechanics/actions.html">Azioni</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/statics.html">Statica</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/statics-point.html">Statica dei sistemi puntiformi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/statics-rigid.html">Statica dei corpi rigidi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/statics-fluid.html">Statica dei fluidi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/statics-problems.html">Problemi</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="inertia.html">Inerzia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dynamics.html">Dinamica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mechanics/inertia.html">Inerzia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mechanics/dynamics.html">Dinamica</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Termodinamica</span></p>
 <ul class="nav bd-sidenav">
@@ -247,18 +249,18 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../thermodynamics/heat-transmission.html">Meccanismi di trasmissione del calore</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Elettromagnetismo</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../electromagnetism.html">Elettromagnetismo</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../electromagnetism/foundation.html">Introduzione all’elettromagnetismo</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../electromagnetism/foundation-history.html">Breve storia dell’elettromagnetismo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../electromagnetism/foundation-experiments.html">Esperienze ed esperimenti</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../electromagnetism/foundation-problems.html">Problemi</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="foundation.html">Introduzione all’elettromagnetismo</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="foundation-history.html">Breve storia dell’elettromagnetismo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foundation-experiments.html">Esperienze ed esperimenti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foundation-problems.html">Problemi</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../electromagnetism/electrostatics.html">Elettrostatica</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../electromagnetism/electric-current.html">Corrente elettrica</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../electromagnetism/electromagnetism-steady.html">Magnetismo ed elettromagnetismo in regime stazionario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../electromagnetism/electromagnetism-general.html">Induzione ed elettromagnetismo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electrostatics.html">Elettrostatica</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Corrente elettrica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electromagnetism-steady.html">Magnetismo ed elettromagnetismo in regime stazionario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electromagnetism-general.html">Induzione ed elettromagnetismo</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Fisica moderna</span></p>
 <ul class="nav bd-sidenav">
@@ -334,7 +336,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch/mechanics/statics-rigid.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch/electromagnetism/electric-current.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -364,7 +366,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/mechanics/statics-rigid.md" target="_blank"
+      <li><a href="../../_sources/ch/electromagnetism/electric-current.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -435,7 +437,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -446,11 +450,28 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Statica dei corpi rigidi</h1>
+    <h1>Corrente elettrica</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strumenti-misura-e-generazione">Strumenti: misura e generazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-conservazione-della-carica-elettrica">Legge di conservazione della carica elettrica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione">Conduzione</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione-nei-solidi-di-ohm">Conduzione nei solidi “di Ohm”</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gas">gas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vuoto">vuoto?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#semiconduttori">semiconduttori</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#circuiti-elettrici">Circuiti elettrici</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -460,8 +481,106 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="statica-dei-corpi-rigidi">
-<span id="physics-hs-mechanics-statics-rigid"></span><h1>Statica dei corpi rigidi<a class="headerlink" href="#statica-dei-corpi-rigidi" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="corrente-elettrica">
+<span id="physics-hs-electromagnetism-electric-current"></span><h1>Corrente elettrica<a class="headerlink" href="#corrente-elettrica" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>corrente elettrica:</p>
+<ul>
+<li><p>descrizione microscopica: materiale elettricamente neutro, con <span class="math notranslate nohighlight">\(e^-\)</span> liberi di conduzione</p></li>
+<li><p>def come flusso di carica: dalla descrizione micro alla descrizione macroscopica, media, (“fenomenologica”?)</p></li>
+</ul>
+</li>
+</ul>
+<p>Localmente, è possibile definire una <strong>densità “macroscopica” di corrente elettrica</strong> come la media pesata delle velocità delle cariche, <span class="math notranslate nohighlight">\(\vec{v}\)</span>.</p>
+<p><strong>todo</strong>. <strong>Obs - corrente elettrica nei solidi</strong>: è possibile avere corrente elettrica anche in materiali elettricamente neutri, anche localmente. Ad esempio, nell’ipotesi di avere due sostanze diverse con carica <span class="math notranslate nohighlight">\(\rho^+\)</span>, <span class="math notranslate nohighlight">\(\rho^-\)</span> e velocità media delle due sostanze <span class="math notranslate nohighlight">\(\vec{v}^+\)</span>, <span class="math notranslate nohighlight">\(\vec{v}^-\)</span>, la corrente densità di corrente elettrica è</p>
+<div class="math notranslate nohighlight">
+\[\vec{j} = \rho \vec{v} = \rho^+ \vec{v}^+ + \rho^- \vec{v}^- \ . \]</div>
+<p>Nel caso in cui il materiale sia neutro, la densità di carica elettrica è nulla, <span class="math notranslate nohighlight">\(0 = \rho = \rho^+ + \rho^- =\)</span> e quindi <span class="math notranslate nohighlight">\(\rho^+ = - \rho^-\)</span> e la densità di corrente elettrica può essere scritta come <span class="math notranslate nohighlight">\(\vec{j} = \rho^- (\vec{v}^- - \vec{v}^+)\)</span>. Assumendo che le cariche elettriche positive siano ferme rispetto all’osservatore <span class="math notranslate nohighlight">\(\vec{v}^+ = \vec{0}\)</span>, la densità di corrente elettrica diventa <span class="math notranslate nohighlight">\(\vec{j} = \rho^- \vec{v}^-\)</span>.</p>
+<p>La <strong>corrente elettrica</strong> attraverso una superficie <span class="math notranslate nohighlight">\(S\)</span> viene definita come il flusso di carica elettrica attraverso la superficie <span class="math notranslate nohighlight">\(S\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[i = I_{S} = \Phi_{S}(\vec{j}) \ .\]</div>
+<div class="section" id="strumenti-misura-e-generazione">
+<h2>Strumenti: misura e generazione<a class="headerlink" href="#strumenti-misura-e-generazione" title="Permalink to this heading">#</a></h2>
+<p><strong>todo</strong></p>
+<ul class="simple">
+<li><p>strumenti per misurare corrente e tensione: amperometro e voltmetro</p></li>
+<li><p>generatori di “spinta”: generatori di tensione</p></li>
+<li><p>resistenza al moto: la resistenza elettica</p></li>
+</ul>
+</div>
+<div class="section" id="legge-di-conservazione-della-carica-elettrica">
+<h2>Legge di conservazione della carica elettrica<a class="headerlink" href="#legge-di-conservazione-della-carica-elettrica" title="Permalink to this heading">#</a></h2>
+<p>Il principio di conservazione della carica elettrica</p>
+<div class="math notranslate nohighlight">
+\[\dot{Q}_V = - \Phi_{\partial V}(\vec{j}) = - I_{\partial V}\]</div>
+<ul class="simple">
+<li><p><strong>todo</strong> esempi/esercizi con misura della corrente e della carica elettrica, con strumenti di misura (misura o modello di strumento, come bilance)</p></li>
+</ul>
+</div>
+<div class="section" id="conduzione">
+<h2>Conduzione<a class="headerlink" href="#conduzione" title="Permalink to this heading">#</a></h2>
+<div class="section" id="conduzione-nei-solidi-di-ohm">
+<h3>Conduzione nei solidi “di Ohm”<a class="headerlink" href="#conduzione-nei-solidi-di-ohm" title="Permalink to this heading">#</a></h3>
+<p><strong>Legge di Ohm</strong> in forma locale:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{j}(P) = \sigma(P) \, \vec{e}(P)
+\qquad \ , \qquad
+\vec{e}(P) = \rho_R(P) \, \vec{j}(P)
+\]</div>
+<p><strong>Prima legge di Ohm</strong> <span style="color:red"> “per cavi” </span> <strong>todo</strong> <em>trovare titolo decente</em></p>
+<div class="math notranslate nohighlight">
+\[d V = i \, d R\]</div>
+<p><strong>Seconda legge di Ohm</strong> <span style="color:red"> “per cavi” </span> <strong>todo</strong> <em>trovare titolo decente</em></p>
+<div class="math notranslate nohighlight">
+\[d R = \dfrac{\rho_R}{A} \, d \ell\]</div>
+</div>
+<div class="section" id="gas">
+<h3>gas<a class="headerlink" href="#gas" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="vuoto">
+<h3>vuoto?<a class="headerlink" href="#vuoto" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="semiconduttori">
+<h3>semiconduttori<a class="headerlink" href="#semiconduttori" title="Permalink to this heading">#</a></h3>
+<p>cenni all’elettronica: diodi, transistor, …</p>
+</div>
+</div>
+<div class="section" id="circuiti-elettrici">
+<h2>Circuiti elettrici<a class="headerlink" href="#circuiti-elettrici" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>dalle leggi fisiche alle leggi di Kirchhoff, ipotesi (validità e non-validità dell’approccio circuitale)</p></li>
+<li><p>componenti:</p>
+<ul>
+<li><p>resistenze</p></li>
+<li><p>condensatori</p></li>
+<li><p>generatori</p></li>
+</ul>
+</li>
+<li><p>regimi di funzionamento in DC, (trascurando gli effetti EM: no campi magnetici esterni, <em>ogni circuito è una spira</em>…):</p>
+<ul>
+<li><p>stazionario</p>
+<ul>
+<li><p>bilancio di energia: “generatori” di energia elettrica, “perdite” nelle resistenze</p>
+<ul>
+<li><p>approfondimenti:</p>
+<ul>
+<li><p>pile <span style="color:red"> Collegamento ad altre parti: termodinamica? chimica?</span></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>transitorio:</p>
+<ul>
+<li><p>esempio: carica/scarica condensatore</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -477,7 +596,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./ch/mechanics"
+            path: "./ch/electromagnetism"
         },
         predefinedOutput: true
     }
@@ -495,20 +614,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="statics-point.html"
+       href="electrostatics.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Statica dei sistemi puntiformi</p>
+        <p class="prev-next-title">Elettrostatica</p>
       </div>
     </a>
     <a class="right-next"
-       href="statics-fluid.html"
+       href="electromagnetism-steady.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Statica dei fluidi</p>
+        <p class="prev-next-title">Magnetismo ed elettromagnetismo in regime stazionario</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -518,6 +637,29 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strumenti-misura-e-generazione">Strumenti: misura e generazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-conservazione-della-carica-elettrica">Legge di conservazione della carica elettrica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione">Conduzione</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione-nei-solidi-di-ohm">Conduzione nei solidi “di Ohm”</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gas">gas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vuoto">vuoto?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#semiconduttori">semiconduttori</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#circuiti-elettrici">Circuiti elettrici</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
