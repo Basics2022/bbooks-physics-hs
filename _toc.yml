@@ -85,6 +85,7 @@ parts:
   - file: ch/electromagnetism/electric-current
   - file: ch/electromagnetism/electromagnetism-steady
   - file: ch/electromagnetism/electromagnetism-general
+  - file: ch/electromagnetism/em-waves
 # - file: ch/electromagnetism/...
 # - file: ch/electromagnetism/...
 - caption: Fisica moderna

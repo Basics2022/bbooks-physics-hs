@@ -476,6 +476,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore">Condensatore</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore-infinito-piano">Condensatore infinito piano</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore-sferico-todo">Condensatore sferico, <strong>todo</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-di-maxwell-e-carica-di-un-condensatore">Equazioni di Maxwell e carica di un condensatore</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#todo"><strong>todo</strong> …</a></li>
@@ -643,17 +644,41 @@ Posizionando le cariche contemporanamente<div class="sd-summary-down docutils">
 <div class="section" id="condensatore-infinito-piano">
 <h3>Condensatore infinito piano<a class="headerlink" href="#condensatore-infinito-piano" title="Permalink to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
-\[e = 2 \frac{\sigma}{\varepsilon}\]</div>
+\[e = \frac{\sigma}{\varepsilon}\]</div>
 <div class="math notranslate nohighlight">
 \[Q = \sigma \, A\]</div>
 <div class="math notranslate nohighlight">
 \[\Delta V = \int_{\ell} \vec{e} \cdot d \vec{r} = \ell \, e\]</div>
 <div class="math notranslate nohighlight">
-\[ Q = \frac{\varepsilon \, A}{2 \, \ell} \, \Delta V = C \, \Delta V \ ,\]</div>
-<p><span class="math notranslate nohighlight">\(C\)</span> capacità, <span class="math notranslate nohighlight">\(C = \frac{\varepsilon \, A}{2 \, \ell}\)</span> capacità per un condensatore piano.</p>
+\[ Q = \sigma \, A = \varepsilon \, e \, A = \frac{\varepsilon \, \ell}{A} \, \Delta V = C \, \Delta V \ ,\]</div>
+<p><span class="math notranslate nohighlight">\(C\)</span> capacità, <span class="math notranslate nohighlight">\(C = \frac{\varepsilon \, A}{\ell}\)</span> capacità per un condensatore piano.</p>
 </div>
 <div class="section" id="condensatore-sferico-todo">
 <h3>Condensatore sferico, <strong>todo</strong><a class="headerlink" href="#condensatore-sferico-todo" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="equazioni-di-maxwell-e-carica-di-un-condensatore">
+<h3>Equazioni di Maxwell e carica di un condensatore<a class="headerlink" href="#equazioni-di-maxwell-e-carica-di-un-condensatore" title="Permalink to this heading">#</a></h3>
+<p><strong>todo</strong> significato del termine <span class="math notranslate nohighlight">\(\dot{\Phi}_{S}(\vec{d})\)</span></p>
+<p>L’equazione di Ampére-Maxwell,</p>
+<div class="math notranslate nohighlight">
+\[\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S \]</div>
+<p>viene applicata a un condensatore piano, usando due superfici <span class="math notranslate nohighlight">\(S_1\)</span>, <span class="math notranslate nohighlight">\(S_2\)</span> che hanno lo stesso contorno, <span class="math notranslate nohighlight">\(\ell\)</span></p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(S_1\)</span> è tagliata dal conduttore</p>
+<div class="math notranslate nohighlight">
+\[\Gamma_{\ell}(\vec{h}) = i_{S_1}\]</div>
+</li>
+<li><p><span class="math notranslate nohighlight">\(S_2\)</span> passa tra le armature del condensatore</p>
+<div class="math notranslate nohighlight">
+\[\Gamma_{\ell}(\vec{h}) = \dot{\Phi}_{S_2}(\vec{d})\]</div>
+</li>
+</ul>
+<p>Segue che <span class="math notranslate nohighlight">\(i_{S_1} = \dot{\Phi}_{S_2}(\vec{d})\)</span> e quindi</p>
+<div class="math notranslate nohighlight">
+\[i = \dfrac{d}{dt} \left( A \, d \right) = \dfrac{d}{dt} \left( A \, \varepsilon \, e \right) = \dfrac{d Q}{dt}\]</div>
+<!--
+$$= \dfrac{d}{dt} \left( C \, \Delta V \right) \ .$$
+-->
 </div>
 </div>
 <div class="section" id="todo">
@@ -759,6 +784,7 @@ Posizionando le cariche contemporanamente<div class="sd-summary-down docutils">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore">Condensatore</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore-infinito-piano">Condensatore infinito piano</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore-sferico-todo">Condensatore sferico, <strong>todo</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-di-maxwell-e-carica-di-un-condensatore">Equazioni di Maxwell e carica di un condensatore</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#todo"><strong>todo</strong> …</a></li>

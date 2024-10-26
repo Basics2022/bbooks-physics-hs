@@ -143,17 +143,44 @@ Il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$ in una regio
 ## Condensatore
 
 ### Condensatore infinito piano
-$$e = 2 \frac{\sigma}{\varepsilon}$$
+$$e = \frac{\sigma}{\varepsilon}$$
 
 $$Q = \sigma \, A$$
 
 $$\Delta V = \int_{\ell} \vec{e} \cdot d \vec{r} = \ell \, e$$
 
-$$ Q = \frac{\varepsilon \, A}{2 \, \ell} \, \Delta V = C \, \Delta V \ ,$$
+$$ Q = \sigma \, A = \varepsilon \, e \, A = \frac{\varepsilon \, \ell}{A} \, \Delta V = C \, \Delta V \ ,$$
 
-$C$ capacità, $C = \frac{\varepsilon \, A}{2 \, \ell}$ capacità per un condensatore piano.
+$C$ capacità, $C = \frac{\varepsilon \, A}{\ell}$ capacità per un condensatore piano.
 
 ### Condensatore sferico, **todo**
+
+
+### Equazioni di Maxwell e carica di un condensatore
+**todo** significato del termine $\dot{\Phi}_{S}(\vec{d})$
+
+L'equazione di Ampére-Maxwell,
+
+$$\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S $$
+
+viene applicata a un condensatore piano, usando due superfici $S_1$, $S_2$ che hanno lo stesso contorno, $\ell$
+
+- $S_1$ è tagliata dal conduttore 
+
+  $$\Gamma_{\ell}(\vec{h}) = i_{S_1}$$
+
+- $S_2$ passa tra le armature del condensatore
+
+  $$\Gamma_{\ell}(\vec{h}) = \dot{\Phi}_{S_2}(\vec{d})$$
+
+Segue che $i_{S_1} = \dot{\Phi}_{S_2}(\vec{d})$ e quindi
+
+$$i = \dfrac{d}{dt} \left( A \, d \right) = \dfrac{d}{dt} \left( A \, \varepsilon \, e \right) = \dfrac{d Q}{dt}$$
+<!--
+$$= \dfrac{d}{dt} \left( C \, \Delta V \right) \ .$$
+-->
+
+
 
 
 ## **todo** ...
