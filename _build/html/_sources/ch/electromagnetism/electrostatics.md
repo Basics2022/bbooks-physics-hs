@@ -140,6 +140,21 @@ Il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$ in una regio
 
 - **todo** esempi
 
+## Condensatore
+
+### Condensatore infinito piano
+$$e = 2 \frac{\sigma}{\varepsilon}$$
+
+$$Q = \sigma \, A$$
+
+$$\Delta V = \int_{\ell} \vec{e} \cdot d \vec{r} = \ell \, e$$
+
+$$ Q = \frac{\varepsilon \, A}{2 \, \ell} \, \Delta V = C \, \Delta V \ ,$$
+
+$C$ capacità, $C = \frac{\varepsilon \, A}{2 \, \ell}$ capacità per un condensatore piano.
+
+### Condensatore sferico, **todo**
+
 
 ## **todo** ...
 **todo**
