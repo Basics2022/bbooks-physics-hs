@@ -6,7 +6,7 @@
 
 ## Esperienza di Faraday
 
-$$d \vec{F} = - i \vec{B} \times d \vec{\ell} \ .$$
+$$d \vec{F} = - i \, \vec{b} \times d \vec{\ell} \ .$$
 
 **todo** ha senso associarla a Faraday? Nessuno la conosceva prima? Galvani, Volta,... come misuravano la corrente elettrica?
 
@@ -69,7 +69,7 @@ mentre le leggi di conservazione della carica elettrica e la legge di Gauss per 
 
 $$\begin{aligned}
   \dot{Q}_V & = - i_{\partial V} \\
-  \Phi_{\partial V}(\vec{d}) & = \dot{Q}_V \\
+  \Phi_{\partial V}(\vec{d}) & = Q_V \\
 \end{aligned}$$
 
 implicano 
@@ -86,10 +86,10 @@ $$\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S $$
 ## Moto di una carica elettrica in un campo elettromagnetico
 Forza di Lorentz
 
-$$\vec{F}^{Lorentz} = q (\vec{e}(P) + \vec{b}(P) \times \vec{v})$$
+$$\vec{F}^{Lorentz} = q \left(\vec{e}(P) + \vec{b}(P) \times \vec{v} \right)$$
 
 Moto di una carica elettrica in un campo elettromagnetico, nell'ipotesi di effetto nullo su di essa del proprio campo elettrico
 
-  $$m \ddot{ \vec{r} } = \vec{R}^{ext} = q ( \vec{e}(P) + \vec{b}(P) \times \dot{\vec{r}} ) + \vec{F}^{\text{non EM}}$$
+  $$m \ddot{ \vec{r} } = \vec{R}^{ext} = q \left( \vec{e}(P) + \vec{b}(P) \times \dot{\vec{r}} \right) + \vec{F}^{\text{non EM}}$$
 
 - **todo** esempi

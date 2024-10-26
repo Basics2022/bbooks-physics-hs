@@ -466,6 +466,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energia-potenziale-di-una-distribuzione-di-cariche">Energia potenziale di una distribuzione di cariche</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-elettrico-nei-materiali">Campo elettrico nei materiali</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verso-le-equazioni-di-maxwell">Verso le equazioni di Maxwell</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gauss-per-il-flusso-del-campo-elettrico">Legge di Gauss per il flusso del campo elettrico</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-faraday-in-elettrostatica">Legge di Faraday, in elettrostatica</a></li>
@@ -523,20 +524,85 @@ document.write(`
 <p>Come mostrato (<strong>todo</strong> <span style="color:red"> ah sì? fare riferimenti qui?</span>) per il campo gravitazionale, anche il campo elettrostatico è un campo conservativo.</p>
 <p>Il lavoro fatto dal campo su una carica che descrive una traiettoria <span class="math notranslate nohighlight">\(\gamma\)</span>, con estremi <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> è uguale a</p>
 <div class="math notranslate nohighlight">
-\[L = \int_{\gamma} \vec{F}(P) \cdot d \vec{r} = - \Delta U = U(A) - U(B) \ ,\]</div>
-<p>avendo definito <span class="math notranslate nohighlight">\(U(P)\)</span> l’<strong>energia potenziale</strong>. Poiché la forza agente sulla carica può essere scritta come \vec{F}(P) = q \ , \vec{e}(P)$$, è possibile definire il lavoro e l’energia potenziale per unità di carica,</p>
+\[\begin{split}\begin{aligned}
+  L &amp; = \int_{\gamma} \vec{F}(P) \cdot d \vec{r} = - \int_{\gamma} \nabla U(P) \cdot d \vec{r} = - \Delta U = U(A) - U(B) \\
+    &amp; = q \, \int_{\gamma} \vec{e}(P) \cdot d \vec{r} = - q \int_{\gamma} \nabla V(P) \cdot d \vec{r} = - q \, \Delta V = q \, \left( V(A) - V(B) \right) \\
+\end{aligned}\end{split}\]</div>
+<p>avendo definito l’<strong>energia potenziale</strong> <span class="math notranslate nohighlight">\(U(P)\)</span> del sistema di cariche che produce il campo elettrico <span class="math notranslate nohighlight">\(\vec{e}(P)\)</span> e il <strong>potenziale elettrico</strong> <span class="math notranslate nohighlight">\(V(P)\)</span> come l’energia potenziale per unità di carica <span class="math notranslate nohighlight">\(q\)</span>.</p>
+<p>Il potenziale generato da una carica <span class="math notranslate nohighlight">\(q_i\)</span> posizionata punto “potenziante” <span class="math notranslate nohighlight">\(P_i\)</span> nel punto “potenziato” <span class="math notranslate nohighlight">\(P\)</span></p>
 <div class="math notranslate nohighlight">
-\[L = - \Delta U = - q \, {\Delta V} \ .\]</div>
+\[V_i(P) = - \frac{1}{4 \pi \varepsilon} \frac{q_i}{|\vec{r}_i|} \ ,\]</div>
+<p>con <span class="math notranslate nohighlight">\(\vec{r}_i = P_i - P\)</span>. Poichè il PSCE vale per la forza e il campo elettrico, il <strong>PSCE</strong> vale per il potenziale, e quindi il potenziale elettrico generato da un sistema di cariche è la somma del potenziale elettrico generato dalle singole cariche,</p>
+<div class="math notranslate nohighlight">
+\[V_i(P) = - \frac{1}{4 \pi \varepsilon} \sum_i \frac{q_{i}}{\left|\vec{r}_{i}\right|} \]</div>
 </div>
 <div class="section" id="energia-potenziale-di-una-distribuzione-di-cariche">
 <h3>Energia potenziale di una distribuzione di cariche<a class="headerlink" href="#energia-potenziale-di-una-distribuzione-di-cariche" title="Permalink to this heading">#</a></h3>
-<p>L’energia potenziale di un sistema di cariche è uguale al lavoro fatto per costruire tale distribuzione. Poiché in meccanica classica l’energia è definita a meno di una costante additiva arbitraria, si può considerare la condizione di riferimento con le cariche poste all‘“infinito” o, meglio, infinitamente distanti una dalle altre.</p>
-<p>In assenza di altri fenomeni, l’energia potenziale del sistema di cariche è uguale al lavoro fatto per costruire il sistema di cariche. Ad esempio, si può costruire il sistema di cariche</p>
-<ul class="simple">
-<li><p>posizionandole una alla volta …</p></li>
-<li><p>posizionandole tutte insieme con una “scalatura” delle distanze …</p></li>
-</ul>
+<p>L’energia potenziale di un sistema di cariche è uguale al lavoro (<span style="color:red">delle forze esterne = - lavoro forza elettrica</span>) fatto per costruire tale distribuzione. Poiché in meccanica classica l’energia è definita a meno di una costante additiva arbitraria, si può considerare la condizione di riferimento con le cariche poste all‘“infinito” o, meglio, infinitamente distanti una dalle altre.</p>
+<p>Per un sistema di cariche puntiformi, l’energia potenziale del sistema è uguale alla somma dell’energia potenziale tra le singole coppie di cariche</p>
+<div class="math notranslate nohighlight">
+\[E^{pot} = - \sum_{\{i,j\}, i \ne j} V_{ij} = \sum_{\{i,j\}, i \ne j} \frac{1}{4 \pi \varepsilon} \frac{{q}_{i} \, q_{j}}{r_{ij}} \ ,\]</div>
+<p>senza ripetere la sommatoria sulle coppie con gli elementi invertiti.</p>
+<p>Seguono due dimostrazioni di questa formula, ottenute costruendo il sistema di cariche dall’infinito in due maneire diverse.</p>
+<!--
+In assenza di altri fenomeni, l'energia potenziale del sistema di cariche è uguale al lavoro fatto per costruire il sistema di cariche. Ad esempio, si può costruire il sistema di cariche
+-->
+<p><span style="color:red"> <strong>todo</strong> </span></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Posizionando una carica alla volta<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  L^{ext}_1 &amp; = 0 \\
+  L^{ext}_2 &amp; = \frac{1}{4 \pi \varepsilon} \frac{q_1 \, q_2}{r_{12}}  \\
+  L^{ext}_3 &amp; = \frac{1}{4 \pi \varepsilon} \frac{q_1 \, q_3}{r_{13}} + \frac{1}{4 \pi \varepsilon} \frac{q_2 \, q_3}{r_{23}}  \\
+            &amp; ... \\
+  L^{ext}_n &amp; = \sum_{j=1}^{n-1} \frac{1}{4 \pi \varepsilon} \frac{q_1 \, q_n}{r_{1n}} \\
+\end{aligned}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[E^{pot} = L^{ext} = \sum_i L^{ext}_i = \sum_{\{i, j\}, i \ne j} \frac{1}{4 \pi \varepsilon} \frac{q_1 \, q_j}{r_{ij}} \ .\]</div>
 </div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Posizionando le cariche contemporanamente<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Posizionando tutte le cariche contamporaneamente con una “scalatura” delle distanze, <span class="math notranslate nohighlight">\(\vec{r}_i(\alpha) = \frac{\vec{r}_i}{\alpha}\)</span>, <span class="math notranslate nohighlight">\(\alpha \in (0, 1]\)</span>, il lavoro delle forze elettriche è</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  dL_i(\alpha) &amp; = \sum_{j \ne i} \vec{F}_{ij}(\alpha) \cdot d \vec{r}_i(\alpha) = \\
+  &amp; = \sum_{j \ne i} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{1}{\left| \frac{\vec{r}_i}{\alpha} - \frac{\vec{r}_j}{\alpha}\right|^2} \hat{r}_{ji} \cdot \left(-\frac{\vec{r}_i}{\alpha^2}\right) \, d \alpha = \\
+  &amp; = - \sum_{j \ne i} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{\hat{r}_{ji} \cdot\vec{r}_i}{\left| \vec{r}_i - \vec{r}_j\right|^2}  \, d \alpha
+\end{aligned}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ dL(\alpha) &amp; = \sum_i d L_i = \\
+  &amp; = - \sum_{i} \sum_{j \ne i} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{\hat{r}_{ji} \cdot\vec{r}_i}{\left| \vec{r}_i - \vec{r}_j\right|^2}  \, d \alpha = \\
+  &amp; = - \sum_{\{i,j\}, i \ne j} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{\hat{r}_{ji} \cdot \left( \vec{r}_i - \vec{r}_j \right)}{\left| \vec{r}_i - \vec{r}_j\right|^2}  \, d \alpha = \\
+  &amp; = - \sum_{\{i,j\}, i \ne j} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{1}{r_{ij}}  \, d \alpha  \ ,
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">e il lavoro diventa</p>
+<div class="math notranslate nohighlight">
+\[
+ L = \int_{\alpha = 0}^{1} dL (\alpha) =  - \int_{\alpha=0}^{1} \sum_{\{i,j\}, i \ne j} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{1}{r_{ij}}  \, d \alpha = - \sum_{\{i,j\}, i \ne j} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{1}{r_{ij}} \ .
+\]</div>
+</div>
+</details></div>
+</div>
+<div class="section" id="campo-elettrico-nei-materiali">
+<h2>Campo elettrico nei materiali<a class="headerlink" href="#campo-elettrico-nei-materiali" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>polarizzazione…</p></li>
+</ul>
+<p>Per materiali lineari isotropi,</p>
+<div class="math notranslate nohighlight">
+\[\vec{d} := \varepsilon \vec{e} = \varepsilon_0 \vec{e} + \vec{p}\]</div>
 </div>
 <div class="section" id="verso-le-equazioni-di-maxwell">
 <h2>Verso le equazioni di Maxwell<a class="headerlink" href="#verso-le-equazioni-di-maxwell" title="Permalink to this heading">#</a></h2>
@@ -660,6 +726,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energia-potenziale-di-una-distribuzione-di-cariche">Energia potenziale di una distribuzione di cariche</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-elettrico-nei-materiali">Campo elettrico nei materiali</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verso-le-equazioni-di-maxwell">Verso le equazioni di Maxwell</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gauss-per-il-flusso-del-campo-elettrico">Legge di Gauss per il flusso del campo elettrico</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-faraday-in-elettrostatica">Legge di Faraday, in elettrostatica</a></li>
