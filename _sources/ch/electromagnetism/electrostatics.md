@@ -39,19 +39,81 @@ Come mostrato (**todo** <span style="color:red"> ah sì? fare riferimenti qui?</
 
 Il lavoro fatto dal campo su una carica che descrive una traiettoria $\gamma$, con estremi $A$, $B$ è uguale a
 
-$$L = \int_{\gamma} \vec{F}(P) \cdot d \vec{r} = - \Delta U = U(A) - U(B) \ ,$$
+$$\begin{aligned}
+  L & = \int_{\gamma} \vec{F}(P) \cdot d \vec{r} = - \int_{\gamma} \nabla U(P) \cdot d \vec{r} = - \Delta U = U(A) - U(B) \\
+    & = q \, \int_{\gamma} \vec{e}(P) \cdot d \vec{r} = - q \int_{\gamma} \nabla V(P) \cdot d \vec{r} = - q \, \Delta V = q \, \left( V(A) - V(B) \right) \\
+\end{aligned}$$
 
-avendo definito $U(P)$ l'**energia potenziale**. Poiché la forza agente sulla carica può essere scritta come \vec{F}(P) = q \ , \vec{e}(P)$$, è possibile definire il lavoro e l'energia potenziale per unità di carica,
+avendo definito l'**energia potenziale** $U(P)$ del sistema di cariche che produce il campo elettrico $\vec{e}(P)$ e il **potenziale elettrico** $V(P)$ come l'energia potenziale per unità di carica $q$.
 
-$$L = - \Delta U = - q \, {\Delta V} \ .$$
+Il potenziale generato da una carica $q_i$ posizionata punto "potenziante" $P_i$ nel punto "potenziato" $P$
+
+$$V_i(P) = - \frac{1}{4 \pi \varepsilon} \frac{q_i}{|\vec{r}_i|} \ ,$$
+
+con $\vec{r}_i = P_i - P$. Poichè il PSCE vale per la forza e il campo elettrico, il **PSCE** vale per il potenziale, e quindi il potenziale elettrico generato da un sistema di cariche è la somma del potenziale elettrico generato dalle singole cariche,
+
+$$V_i(P) = - \frac{1}{4 \pi \varepsilon} \sum_i \frac{q_{i}}{\left|\vec{r}_{i}\right|} $$
 
 ### Energia potenziale di una distribuzione di cariche
-L'energia potenziale di un sistema di cariche è uguale al lavoro fatto per costruire tale distribuzione. Poiché in meccanica classica l'energia è definita a meno di una costante additiva arbitraria, si può considerare la condizione di riferimento con le cariche poste all'"infinito" o, meglio, infinitamente distanti una dalle altre.
 
+L'energia potenziale di un sistema di cariche è uguale al lavoro (<span style="color:red">delle forze esterne = - lavoro forza elettrica</span>) fatto per costruire tale distribuzione. Poiché in meccanica classica l'energia è definita a meno di una costante additiva arbitraria, si può considerare la condizione di riferimento con le cariche poste all'"infinito" o, meglio, infinitamente distanti una dalle altre.
+
+Per un sistema di cariche puntiformi, l'energia potenziale del sistema è uguale alla somma dell'energia potenziale tra le singole coppie di cariche
+
+$$E^{pot} = - \sum_{\{i,j\}, i \ne j} V_{ij} = \sum_{\{i,j\}, i \ne j} \frac{1}{4 \pi \varepsilon} \frac{{q}_{i} \, q_{j}}{r_{ij}} \ ,$$
+
+senza ripetere la sommatoria sulle coppie con gli elementi invertiti.
+
+Seguono due dimostrazioni di questa formula, ottenute costruendo il sistema di cariche dall'infinito in due maneire diverse.
+
+<!--
 In assenza di altri fenomeni, l'energia potenziale del sistema di cariche è uguale al lavoro fatto per costruire il sistema di cariche. Ad esempio, si può costruire il sistema di cariche
-- posizionandole una alla volta ...
+-->
 
-- posizionandole tutte insieme con una "scalatura" delle distanze ...
+<span style="color:red"> **todo** </span>
+
+```{dropdown} Posizionando una carica alla volta
+$$\begin{aligned}
+  L^{ext}_1 & = 0 \\
+  L^{ext}_2 & = \frac{1}{4 \pi \varepsilon} \frac{q_1 \, q_2}{r_{12}}  \\
+  L^{ext}_3 & = \frac{1}{4 \pi \varepsilon} \frac{q_1 \, q_3}{r_{13}} + \frac{1}{4 \pi \varepsilon} \frac{q_2 \, q_3}{r_{23}}  \\
+            & ... \\
+  L^{ext}_n & = \sum_{j=1}^{n-1} \frac{1}{4 \pi \varepsilon} \frac{q_1 \, q_n}{r_{1n}} \\
+\end{aligned}$$
+
+$$E^{pot} = L^{ext} = \sum_i L^{ext}_i = \sum_{\{i, j\}, i \ne j} \frac{1}{4 \pi \varepsilon} \frac{q_1 \, q_j}{r_{ij}} \ .$$
+```
+
+```{dropdown} Posizionando le cariche contemporanamente
+Posizionando tutte le cariche contamporaneamente con una "scalatura" delle distanze, $\vec{r}_i(\alpha) = \frac{\vec{r}_i}{\alpha}$, $\alpha \in (0, 1]$, il lavoro delle forze elettriche è
+
+$$\begin{aligned}
+  dL_i(\alpha) & = \sum_{j \ne i} \vec{F}_{ij}(\alpha) \cdot d \vec{r}_i(\alpha) = \\
+  & = \sum_{j \ne i} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{1}{\left| \frac{\vec{r}_i}{\alpha} - \frac{\vec{r}_j}{\alpha}\right|^2} \hat{r}_{ji} \cdot \left(-\frac{\vec{r}_i}{\alpha^2}\right) \, d \alpha = \\
+  & = - \sum_{j \ne i} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{\hat{r}_{ji} \cdot\vec{r}_i}{\left| \vec{r}_i - \vec{r}_j\right|^2}  \, d \alpha
+\end{aligned}$$
+
+$$\begin{aligned}
+ dL(\alpha) & = \sum_i d L_i = \\
+  & = - \sum_{i} \sum_{j \ne i} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{\hat{r}_{ji} \cdot\vec{r}_i}{\left| \vec{r}_i - \vec{r}_j\right|^2}  \, d \alpha = \\
+  & = - \sum_{\{i,j\}, i \ne j} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{\hat{r}_{ji} \cdot \left( \vec{r}_i - \vec{r}_j \right)}{\left| \vec{r}_i - \vec{r}_j\right|^2}  \, d \alpha = \\
+  & = - \sum_{\{i,j\}, i \ne j} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{1}{r_{ij}}  \, d \alpha  \ ,
+\end{aligned}$$
+
+e il lavoro diventa
+
+$$
+ L = \int_{\alpha = 0}^{1} dL (\alpha) =  - \int_{\alpha=0}^{1} \sum_{\{i,j\}, i \ne j} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{1}{r_{ij}}  \, d \alpha = - \sum_{\{i,j\}, i \ne j} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{1}{r_{ij}} \ .
+$$
+```
+
+## Campo elettrico nei materiali
+
+- polarizzazione...
+
+Per materiali lineari isotropi,
+
+$$\vec{d} := \varepsilon \vec{e} = \varepsilon_0 \vec{e} + \vec{p}$$
 
 
 ## Verso le equazioni di Maxwell
@@ -77,6 +139,48 @@ Il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$ in una regio
   $$m \ddot{ \vec{r} } = \vec{R}^{ext} = q \, \vec{e}(P) + \vec{F}^{\text{non }\vec{e}}$$
 
 - **todo** esempi
+
+## Condensatore
+
+### Condensatore infinito piano
+$$e = \frac{\sigma}{\varepsilon}$$
+
+$$Q = \sigma \, A$$
+
+$$\Delta V = \int_{\ell} \vec{e} \cdot d \vec{r} = \ell \, e$$
+
+$$ Q = \sigma \, A = \varepsilon \, e \, A = \frac{\varepsilon \, \ell}{A} \, \Delta V = C \, \Delta V \ ,$$
+
+$C$ capacità, $C = \frac{\varepsilon \, A}{\ell}$ capacità per un condensatore piano.
+
+### Condensatore sferico, **todo**
+
+
+### Equazioni di Maxwell e carica di un condensatore
+**todo** significato del termine $\dot{\Phi}_{S}(\vec{d})$
+
+L'equazione di Ampére-Maxwell,
+
+$$\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S $$
+
+viene applicata a un condensatore piano, usando due superfici $S_1$, $S_2$ che hanno lo stesso contorno, $\ell$
+
+- $S_1$ è tagliata dal conduttore 
+
+  $$\Gamma_{\ell}(\vec{h}) = i_{S_1}$$
+
+- $S_2$ passa tra le armature del condensatore
+
+  $$\Gamma_{\ell}(\vec{h}) = \dot{\Phi}_{S_2}(\vec{d})$$
+
+Segue che $i_{S_1} = \dot{\Phi}_{S_2}(\vec{d})$ e quindi
+
+$$i = \dfrac{d}{dt} \left( A \, d \right) = \dfrac{d}{dt} \left( A \, \varepsilon \, e \right) = \dfrac{d Q}{dt}$$
+<!--
+$$= \dfrac{d}{dt} \left( C \, \Delta V \right) \ .$$
+-->
+
+
 
 
 ## **todo** ...
