@@ -261,6 +261,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="electric-current.html">Corrente elettrica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="electromagnetism-steady.html">Magnetismo ed elettromagnetismo in regime stazionario</a></li>
 <li class="toctree-l1"><a class="reference internal" href="electromagnetism-general.html">Induzione ed elettromagnetismo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="electrical-engineering.html">Principi di elettrotecnica</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="circuits-electric.html">Circuiti elettrici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="circuits-magnetic.html">Circuiti magnetici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-machines.html">Sistemi elettromeccanici e macchine elettriche</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="em-waves.html">Onde elettromagnetiche</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Fisica moderna</span></p>
@@ -461,7 +467,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-coulmb">Legge di Coulmb</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-coulomb">Legge di Coulomb</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#il-campo-elettrico">Il campo elettrico</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-conservativo">Campo conservativo</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energia-potenziale-di-una-distribuzione-di-cariche">Energia potenziale di una distribuzione di cariche</a></li>
@@ -494,35 +500,41 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="elettrostatica">
 <span id="physics-hs-electromagnetism-electrostatics"></span><h1>Elettrostatica<a class="headerlink" href="#elettrostatica" title="Permalink to this heading">#</a></h1>
-<div class="section" id="legge-di-coulmb">
-<h2>Legge di Coulmb<a class="headerlink" href="#legge-di-coulmb" title="Permalink to this heading">#</a></h2>
+<div class="section" id="legge-di-coulomb">
+<h2>Legge di Coulomb<a class="headerlink" href="#legge-di-coulomb" title="Permalink to this heading">#</a></h2>
 <p>Date due cariche elettriche puntiformi <span class="math notranslate nohighlight">\(q_1\)</span>, <span class="math notranslate nohighlight">\(q_2\)</span>, nella posizione <span class="math notranslate nohighlight">\(P_1\)</span>, <span class="math notranslate nohighlight">\(P_2\)</span> nello spazio, la forza</p>
 <div class="math notranslate nohighlight">
 \[\vec{F}_{12} = k \frac{q_1 \, q_2}{|\vec{r}_{12}|^2} \, \hat{r}_{21} = \frac{1}{4 \pi \varepsilon}\frac{q_1 \, q_2}{|\vec{r}_{12}|^2} \, \hat{r}_{21}\]</div>
-<p>essendo <span class="math notranslate nohighlight">\(\vec{r}_{21}\)</span> il vettore che congiunge il punto <span class="math notranslate nohighlight">\(P_2\)</span> con il punto <span class="math notranslate nohighlight">\(P_1\)</span>, <span class="math notranslate nohighlight">\(\vec{r}_{21} = \vec{r}_1 - \vec{r}_2\)</span>.</p>
+<p>essendo <span class="math notranslate nohighlight">\(\vec{r}_{21}\)</span> il vettore che congiunge il punto <span class="math notranslate nohighlight">\(P_2\)</span> con il punto <span class="math notranslate nohighlight">\(P_{1}\)</span>, <span class="math notranslate nohighlight">\(\vec{r}_{21} = \vec{r}_1 - \vec{r}_2\)</span>.</p>
+<p>La scelta della definizione della costante di proporzionalità, <span class="math notranslate nohighlight">\(k = \frac{1}{4 \pi \varepsilon}\)</span>, viene fatta per ottenere un’espressione della <a class="reference internal" href="#physics-hs-electromagnetism-electrostatics-maxwell-gauss"><span class="std std-ref">legge di Gauss per il campo elettrico</span></a> senza fattori numerici.</p>
+<p>La costante <span class="math notranslate nohighlight">\(\varepsilon\)</span> viene definita costante dielettrica del mezzo. Per cariche elettriche posizionate nello spazio “vuoto” (di materia ma non di proprietà fisiche), nell’espressione della legge di Coulomb compare la <strong>costante dielettrica nel vuoto</strong>,</p>
+<div class="math notranslate nohighlight">
+\[\varepsilon_0 = 8.854 \cdot 10^{-12} \, C^2 \, N^{-1} \, m^{-2} \ .\]</div>
+<p>Materiali isotropi lineari non dispersivi possono essere caratterizzati da una sola costante, la costante dielettrica del materiale. Questa caratteristica del materiale viene di solito definita come multiplo della costante dielettrica del vuoto, tramite la costante dielettrica relativa <span class="math notranslate nohighlight">\(\varepsilon_r\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\varepsilon = \varepsilon_r \,\varepsilon_0 \ . \]</div>
 <p><strong>todo</strong></p>
 <ul class="simple">
-<li><p>definizione della costante di proporzionalità <span class="math notranslate nohighlight">\(k = 4 \pi \varepsilon\)</span> guidata dalla legge di Gauss</p></li>
-<li><p>costante dielettrica, nel vuoto e del materiale…;</p></li>
-<li><p>esperimento ed esercizio con elettroscopio e bilancia (similitudine con legge di gravitazione universale, ma doppia natura della carica elettrica + o -)</p></li>
+<li><p>esperimento ed esercizio con elettroscopio e bilancia (similitudine con legge di gravitazione universale, ma doppia natura della carica elettrica + o -) <strong>todo</strong> riferimento alle prime esperienze sulle cariche elettriche</p></li>
 <li><p><strong>PSCE</strong></p></li>
 </ul>
 </div>
 <div class="section" id="il-campo-elettrico">
 <h2>Il campo elettrico<a class="headerlink" href="#il-campo-elettrico" title="Permalink to this heading">#</a></h2>
-<p>Viene data una distribuzione di cariche, <span class="math notranslate nohighlight">\(q_i\)</span>, nei punti dello spazio <span class="math notranslate nohighlight">\(P_i\)</span>. Si prende una carica test, una carica di prova, di intensità nota <span class="math notranslate nohighlight">\(q^{test}\)</span>, che può esseere mossa a discrezione in ogni punto <span class="math notranslate nohighlight">\(P\)</span> dello spazio e per la quale è possibile misurare la forza <span class="math notranslate nohighlight">\(\vec{F}(P)\)</span> agente su di essa a causa della distribuzione di cariche,</p>
+<p>Data una distribuzione di cariche nello spazio, è possibile descriverla tramite l’effetto che avrebbe su una carica qualsiasi posta in un punto arbitrario dello spazio, introducendo la definizione di campo elettrico.</p>
+<p>Viene data qui una <strong>definizione operativa</strong> del campo elettrico. Data una distribuzione di cariche, <span class="math notranslate nohighlight">\(q_i\)</span>, nei punti dello spazio <span class="math notranslate nohighlight">\(P_i\)</span>, si prende una carica test - di prova - di intensità nota <span class="math notranslate nohighlight">\(q^{test}\)</span>, che può essere posizionata in ogni punto <span class="math notranslate nohighlight">\(P\)</span> dello spazio. E’ inoltre possibile misurare la forza <span class="math notranslate nohighlight">\(\vec{F}(P; q^{test})\)</span> agente sulla carica di prova dovuta all’interazione con la distribuzione di cariche in esame,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-  \vec{F}_{test}(P)
+  \vec{F}_{test}(P, q^{test})
   &amp; = \sum_i \vec{F}_{test,i}(P) = \\
   &amp; = \sum_i \frac{1}{4 \pi \varepsilon}\frac{q_i \, q_{test}}{|\vec{r}_{i,test,i}|^2} \, \hat{r}_{i,test} = \\
   &amp; = q_{test} \sum_i \frac{1}{4 \pi \varepsilon}\frac{q_i}{|\vec{r}_{i,test,i}|^2} \, \hat{r}_{i,test} = \\
   &amp; = q_{test} \, \vec{e}(P; \, q_i, \, P_i) \ .
 \end{aligned}\end{split}\]</div>
 <p>Poichè la forza sulla carica di prova è proporzionale alla sua carica elettrica, è possibile descrivere l’effetto della distribuzione nota di cariche nello spazio con la funzione <span class="math notranslate nohighlight">\(\vec{e}(P; \, q_i, \, P_i)\)</span>. Questa funzione viene definita <strong>campo elettrico</strong> della distribuzione delle cariche.</p>
-<p>Noto il campo elettrico di una dsitribuzione di cariche, la forza agente su una carica elettrica <span class="math notranslate nohighlight">\(q\)</span> posta nel punto <span class="math notranslate nohighlight">\(P\)</span> dello spazio è</p>
+<p>Viceversa, noto il campo elettrico di una distribuzione di cariche, la forza agente su una carica elettrica <span class="math notranslate nohighlight">\(q\)</span> posta nel punto <span class="math notranslate nohighlight">\(P\)</span> dello spazio è</p>
 <div class="math notranslate nohighlight">
-\[\vec{F} = q \, \vec{e}(P)\]</div>
+\[\vec{F} = q \, \vec{e}(P) \ .\]</div>
 <ul class="simple">
 <li><p><strong>todo</strong> Poichè il PSCE vale per la forza, il <strong>PSCE</strong> vale per il campo elettrico</p></li>
 </ul>
@@ -535,20 +547,20 @@ document.write(`
   L &amp; = \int_{\gamma} \vec{F}(P) \cdot d \vec{r} = - \int_{\gamma} \nabla U(P) \cdot d \vec{r} = - \Delta U = U(A) - U(B) \\
     &amp; = q \, \int_{\gamma} \vec{e}(P) \cdot d \vec{r} = - q \int_{\gamma} \nabla V(P) \cdot d \vec{r} = - q \, \Delta V = q \, \left( V(A) - V(B) \right) \\
 \end{aligned}\end{split}\]</div>
-<p>avendo definito l’<strong>energia potenziale</strong> <span class="math notranslate nohighlight">\(U(P)\)</span> del sistema di cariche che produce il campo elettrico <span class="math notranslate nohighlight">\(\vec{e}(P)\)</span> e il <strong>potenziale elettrico</strong> <span class="math notranslate nohighlight">\(V(P)\)</span> come l’energia potenziale per unità di carica <span class="math notranslate nohighlight">\(q\)</span>.</p>
+<p>avendo definito l’<strong>energia potenziale</strong> <span class="math notranslate nohighlight">\(U(P)\)</span> del sistema di cariche che produce il campo elettrico <span class="math notranslate nohighlight">\(\vec{e}(P)\)</span> e il <strong>potenziale elettrico</strong> <span class="math notranslate nohighlight">\(V(P)\)</span> come l’energia potenziale per unità di carica <span class="math notranslate nohighlight">\(q\)</span>. Sia l’energia potenziale sia il potenziale sono definiti a meno di una costante additiva.</p>
 <p>Il potenziale generato da una carica <span class="math notranslate nohighlight">\(q_i\)</span> posizionata punto “potenziante” <span class="math notranslate nohighlight">\(P_i\)</span> nel punto “potenziato” <span class="math notranslate nohighlight">\(P\)</span></p>
 <div class="math notranslate nohighlight">
-\[V_i(P) = - \frac{1}{4 \pi \varepsilon} \frac{q_i}{|\vec{r}_i|} \ ,\]</div>
-<p>con <span class="math notranslate nohighlight">\(\vec{r}_i = P_i - P\)</span>. Poichè il PSCE vale per la forza e il campo elettrico, il <strong>PSCE</strong> vale per il potenziale, e quindi il potenziale elettrico generato da un sistema di cariche è la somma del potenziale elettrico generato dalle singole cariche,</p>
+\[V_i(P) = \frac{1}{4 \pi \varepsilon} \frac{q_i}{|\vec{r}_i|} \ ,\]</div>
+<p>con <span class="math notranslate nohighlight">\(\vec{r}_i = P - P_i\)</span>. Poichè il PSCE vale per la forza e il campo elettrico, il <strong>PSCE</strong> vale per il potenziale, e quindi il potenziale elettrico generato da un sistema di cariche è la somma del potenziale elettrico generato dalle singole cariche,</p>
 <div class="math notranslate nohighlight">
-\[V_i(P) = - \frac{1}{4 \pi \varepsilon} \sum_i \frac{q_{i}}{\left|\vec{r}_{i}\right|} \]</div>
+\[V_i(P) = \frac{1}{4 \pi \varepsilon} \sum_i \frac{q_{i}}{\left|\vec{r}_{i}\right|} \]</div>
 </div>
 <div class="section" id="energia-potenziale-di-una-distribuzione-di-cariche">
 <h3>Energia potenziale di una distribuzione di cariche<a class="headerlink" href="#energia-potenziale-di-una-distribuzione-di-cariche" title="Permalink to this heading">#</a></h3>
 <p>L’energia potenziale di un sistema di cariche è uguale al lavoro (<span style="color:red">delle forze esterne = - lavoro forza elettrica</span>) fatto per costruire tale distribuzione. Poiché in meccanica classica l’energia è definita a meno di una costante additiva arbitraria, si può considerare la condizione di riferimento con le cariche poste all‘“infinito” o, meglio, infinitamente distanti una dalle altre.</p>
 <p>Per un sistema di cariche puntiformi, l’energia potenziale del sistema è uguale alla somma dell’energia potenziale tra le singole coppie di cariche</p>
 <div class="math notranslate nohighlight">
-\[E^{pot} = - \sum_{\{i,j\}, i \ne j} V_{ij} = \sum_{\{i,j\}, i \ne j} \frac{1}{4 \pi \varepsilon} \frac{{q}_{i} \, q_{j}}{r_{ij}} \ ,\]</div>
+\[E^{pot} = \sum_{\{i,j\}, i \ne j} V_{ij} = \sum_{\{i,j\}, i \ne j} \frac{1}{4 \pi \varepsilon} \frac{{q}_{i} \, q_{j}}{r_{ij}} \ ,\]</div>
 <p>senza ripetere la sommatoria sulle coppie con gli elementi invertiti.</p>
 <p>Seguono due dimostrazioni di questa formula, ottenute costruendo il sistema di cariche dall’infinito in due maneire diverse.</p>
 <!--
@@ -610,16 +622,45 @@ Posizionando le cariche contemporanamente<div class="sd-summary-down docutils">
 <p>Per materiali lineari isotropi,</p>
 <div class="math notranslate nohighlight">
 \[\vec{d} := \varepsilon \vec{e} = \varepsilon_0 \vec{e} + \vec{p}\]</div>
+<p><strong>todo</strong> polarizzazione, cariche libere e cariche “vincolate”</p>
 </div>
 <div class="section" id="verso-le-equazioni-di-maxwell">
-<h2>Verso le equazioni di Maxwell<a class="headerlink" href="#verso-le-equazioni-di-maxwell" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-electromagnetism-electrostatics-maxwell"></span><h2>Verso le equazioni di Maxwell<a class="headerlink" href="#verso-le-equazioni-di-maxwell" title="Permalink to this heading">#</a></h2>
 <div class="section" id="legge-di-gauss-per-il-flusso-del-campo-elettrico">
-<h3>Legge di Gauss per il flusso del campo elettrico<a class="headerlink" href="#legge-di-gauss-per-il-flusso-del-campo-elettrico" title="Permalink to this heading">#</a></h3>
-<p><strong>todo</strong> come dimostrarla senza usare troppa matematica? Esempio in caso semplice, ma come generalizzarlo?</p>
+<span id="physics-hs-electromagnetism-electrostatics-maxwell-gauss"></span><h3>Legge di Gauss per il flusso del campo elettrico<a class="headerlink" href="#legge-di-gauss-per-il-flusso-del-campo-elettrico" title="Permalink to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
 \[\Phi_{\partial V}(\vec{d}) = Q_V\]</div>
-<p><strong>todo</strong> come introdurre <span class="math notranslate nohighlight">\(\vec{d}\)</span>? Definire risposta dei materiali prima?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione della legge di Gauss<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Dimostrazione per una carica puntiforme e una superficie sferica.</strong>
+Il calcolo diretto del flusso del campo elettrico generato da una carica puntiforme attraverso una superficie sferica di raggio <span class="math notranslate nohighlight">\(r\)</span> centrata nella carica</p>
+<div class="math notranslate nohighlight">
+\[\Phi_{S^{sphere}}(\vec{d}) = \oint_{S^{sphere}} \vec{d} \cdot \hat{n} = \oint_{S^{sphere}} \frac{1}{4 \pi }\frac{q}{r^2} \underbrace{\hat{r} \cdot \hat{r}}_{=1} \ .  \]</div>
+<p class="sd-card-text">L’integranda è costante, essendo <span class="math notranslate nohighlight">\(r\)</span> costante sulla superficie sferica, e quindi si riduce al prodotto della funzione integranda per l’estensione del dominio di integrazione, qui la superficie estenra della sfera. Ricordando che la superficie di una superficie sferica di raggio <span class="math notranslate nohighlight">\(r\)</span> è <span class="math notranslate nohighlight">\(S = 4 \pi r^2\)</span>, si ottiene l’espressione della legge di Gauss per il campo elettrico di una carica puntiforme attraverso una superficie sferica,</p>
+<div class="math notranslate nohighlight">
+\[\Phi_{S^{sphere}}(\vec{d}) = 4 \, \pi \, r^2 \frac{1}{4 \, \pi \, r^2} q = q \ .\]</div>
+<p class="sd-card-text"><strong>todo</strong> obs: andamento del campo come <span class="math notranslate nohighlight">\(r^{-2}\)</span> implica andamento del flusso costante attraverso superfici che sottengono lo stesso <strong>angolo solido</strong></p>
+<p class="sd-card-text"><strong>todo</strong> … altra osservazione che ora non ricordo…</p>
+<p class="sd-card-text"><strong>Dimostrazione per una carica puntiforme e per una superficie arbitraria.</strong>
+Usando l’osservazione sull’andamento del campo, e la definizione di angolo solido</p>
+<div class="math notranslate nohighlight">
+\[\oint_S \frac{q}{4 \pi} \frac{1}{r^2} \hat{r} \cdot \hat{n} \, dS =
+\oint_{\Omega} \frac{q}{4 \pi}  \, d \Omega = q \]</div>
+<p class="sd-card-text"><strong>Dimostrazione per una distribuzione di carica qualsiasi e superficie arbitraria.</strong>
+Avendo dimostrato la legge di Gauss per una carica puntiforme attraverso una superficie arbitraria, la legge di Gauss per il campo <span class="math notranslate nohighlight">\(\vec{d}\)</span> generato da una distribuzione di carica qualsiasi segue immediatamente, ricordando che vale il PSCE</p>
+<div class="math notranslate nohighlight">
+\[\Phi_{\partial V}(\vec{d}_i) = q_i\]</div>
+<div class="math notranslate nohighlight">
+\[\sum_i \Phi_{\partial V}(\vec{d}_i) = \Phi_{\partial V} \left(\sum_i \vec{d}_i \right) = \sum_i q_i\]</div>
+<div class="math notranslate nohighlight">
+\[\Phi_{\partial V}(\vec{d}) = Q_V\]</div>
 </div>
+</details></div>
 <div class="section" id="legge-di-faraday-in-elettrostatica">
 <h3>Legge di Faraday, in elettrostatica<a class="headerlink" href="#legge-di-faraday-in-elettrostatica" title="Permalink to this heading">#</a></h3>
 <ul>
@@ -629,7 +670,29 @@ Posizionando le cariche contemporanamente<div class="sd-summary-down docutils">
 </li>
 <li><p>Questa equazione è valida <strong>solo</strong> in un regime elettrostatico: la forma generale dell’equazione di Faraday prevede un termine dipendente dal tempo, che è identicamente nullo nel regime elettrostatico.</p></li>
 </ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione della legge di Faraday<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Dimostrazione per una carica puntiforme e un percorso circolare.</strong>
+Il calcolo diretto della circuitazione del campo elettrico generato da una carica puntiforme lungo un percorso circolare di raggio <span class="math notranslate nohighlight">\(r\)</span> centrato nella carica</p>
+<div class="math notranslate nohighlight">
+\[\Gamma_{\ell^{circle}}(\vec{e}) = \oint_{\ell^{circle}} \vec{e} \cdot \hat{t} = \oint_{S^{sphere}} \frac{1}{4 \pi \varepsilon}\frac{q}{r^2} \underbrace{\hat{r} \cdot \hat{t}}_{=0} = 0 \ ,  \]</div>
+<p class="sd-card-text">poiché il versore tangente al percorso circolare è ortogonale al campo elettrico, diretto in direzione radiale.</p>
+<p class="sd-card-text"><strong>Dimostrazione per una carica puntiforme e un percorso arbitrario.</strong></p>
+<p class="sd-card-text"><strong>Dimostrazione per una distribuzione di carica qualsiasi e percorso arbitrario.</strong>
+Avendo dimostrato la legge di Faraday nel caso stazionario per una carica puntiforme lungo un percorso arbitrario, la legge di Faraday in regime stazionario per il <span class="math notranslate nohighlight">\(\vec{e}\)</span> generato da una distribuzione di carica qualsiasi segue immediatamente, ricordando che vale il PSCE</p>
+<div class="math notranslate nohighlight">
+\[\Gamma_{\partial S}(\vec{e}_i) = 0\]</div>
+<div class="math notranslate nohighlight">
+\[\sum_i \Gamma_{\partial S}(\vec{e}_i) = \Gamma_{\partial S} \left(\sum_i \vec{e}_i \right) = 0\]</div>
+<div class="math notranslate nohighlight">
+\[\Gamma_{\partial S}(\vec{e}) = 0\]</div>
 </div>
+</details></div>
 </div>
 <div class="section" id="moto-di-una-carica-in-un-campo-elettrico">
 <h2>Moto di una carica in un campo elettrico<a class="headerlink" href="#moto-di-una-carica-in-un-campo-elettrico" title="Permalink to this heading">#</a></h2>
@@ -674,9 +737,9 @@ Posizionando le cariche contemporanamente<div class="sd-summary-down docutils">
 \[\Gamma_{\ell}(\vec{h}) = \dot{\Phi}_{S_2}(\vec{d})\]</div>
 </li>
 </ul>
-<p>Segue che <span class="math notranslate nohighlight">\(i_{S_1} = \dot{\Phi}_{S_2}(\vec{d})\)</span> e quindi</p>
+<p>Segue che <span class="math notranslate nohighlight">\(i_{S_1} = \dot{\Phi}_{S_2}(\vec{d})\)</span> e quindi si ritrova la legge di conservazione della carica elettrica,</p>
 <div class="math notranslate nohighlight">
-\[i = \dfrac{d}{dt} \left( A \, d \right) = \dfrac{d}{dt} \left( A \, \varepsilon \, e \right) = \dfrac{d Q}{dt}\]</div>
+\[i = \dfrac{d}{dt} \left( A \, d \right) = \dfrac{d}{dt} \left( A \, \varepsilon \, e \right) = \dfrac{d Q}{dt} \ .\]</div>
 <!--
 $$= \dfrac{d}{dt} \left( C \, \Delta V \right) \ .$$
 -->
@@ -769,7 +832,7 @@ $$= \dfrac{d}{dt} \left( C \, \Delta V \right) \ .$$
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-coulmb">Legge di Coulmb</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-coulomb">Legge di Coulomb</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#il-campo-elettrico">Il campo elettrico</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-conservativo">Campo conservativo</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energia-potenziale-di-una-distribuzione-di-cariche">Energia potenziale di una distribuzione di cariche</a></li>

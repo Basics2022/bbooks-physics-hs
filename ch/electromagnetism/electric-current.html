@@ -261,6 +261,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Corrente elettrica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="electromagnetism-steady.html">Magnetismo ed elettromagnetismo in regime stazionario</a></li>
 <li class="toctree-l1"><a class="reference internal" href="electromagnetism-general.html">Induzione ed elettromagnetismo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="electrical-engineering.html">Principi di elettrotecnica</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="circuits-electric.html">Circuiti elettrici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="circuits-magnetic.html">Circuiti magnetici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-machines.html">Sistemi elettromeccanici e macchine elettriche</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="em-waves.html">Onde elettromagnetiche</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Fisica moderna</span></p>
@@ -465,12 +471,11 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-conservazione-della-carica-elettrica">Legge di conservazione della carica elettrica</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione">Conduzione</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione-nei-solidi-di-ohm">Conduzione nei solidi “di Ohm”</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gas">gas</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vuoto">vuoto?</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#semiconduttori">semiconduttori</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione-nei-gas">Conduzione nei gas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione-nei-vuoto">Conduzione nei vuoto?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione-nei-semiconduttori">Conduzione nei semiconduttori</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#circuiti-elettrici">Circuiti elettrici</a></li>
 </ul>
             </nav>
         </div>
@@ -522,65 +527,43 @@ document.write(`
 <h2>Conduzione<a class="headerlink" href="#conduzione" title="Permalink to this heading">#</a></h2>
 <div class="section" id="conduzione-nei-solidi-di-ohm">
 <h3>Conduzione nei solidi “di Ohm”<a class="headerlink" href="#conduzione-nei-solidi-di-ohm" title="Permalink to this heading">#</a></h3>
-<p><strong>Legge di Ohm</strong> in forma locale:</p>
+<p>In un materiale di Ohm, il campo elettrico <span class="math notranslate nohighlight">\(\vec{e}\)</span> è proporzionale alla densità di corrente elettrica <span class="math notranslate nohighlight">\(\vec{j}\)</span>. Per un solido isotropo, senza direzioni preferenziali, la <strong>forma locale - differenziale - della legge di Ohm</strong> è
+<strong>Legge di Ohm</strong> in forma locale:</p>
 <div class="math notranslate nohighlight">
 \[
 \vec{j}(P) = \sigma(P) \, \vec{e}(P)
 \qquad \ , \qquad
 \vec{e}(P) = \rho_R(P) \, \vec{j}(P)
 \]</div>
-<p><strong>Prima legge di Ohm</strong> <span style="color:red"> “per cavi” </span> <strong>todo</strong> <em>trovare titolo decente</em></p>
+<p>essendo la resistività <span class="math notranslate nohighlight">\(\rho_R\)</span>, e la conduttanza <span class="math notranslate nohighlight">\(\sigma = \frac{1}{\rho_R}\)</span> le costanti di proporzionalità, caratteristiche del materiale.</p>
+<p>In un cavo conduttore, nell’ipotesi di grandezze uniformi sulla sezione - o riferendosi alle grandezze medie -, si può integrare la legge in forma locale su un tratto di cavo elementare, di lunghezza <span class="math notranslate nohighlight">\(d \ell\)</span>,</p>
 <div class="math notranslate nohighlight">
-\[d V = i \, d R\]</div>
-<p><strong>Seconda legge di Ohm</strong> <span style="color:red"> “per cavi” </span> <strong>todo</strong> <em>trovare titolo decente</em></p>
+\[\begin{split}\begin{aligned}
+ \underbrace{e \, d \ell}_{- d v} \, A &amp; = \rho_R \, \underbrace{j \, A}_{i} \, d \ell \\
+ \rightarrow \quad dv &amp; = - \dfrac{\rho_R \, d \ell}{A} \, i = - dR \, i \ , 
+\end{aligned}\end{split}\]</div>
+<p>avendo introdotto la differenza di potenziale elementare <span class="math notranslate nohighlight">\(d v\)</span> tra gli estremi del tratto di cavo elementare, proporzionale alla corrente che transita nel cavo tramite la <strong>resistenza elettrica</strong> elementare <span class="math notranslate nohighlight">\(dR\)</span>. Queste relazioni che caratterizzano i materiali di Ohm sono le due leggi di Ohm:</p>
+<ul>
+<li><p><strong>Prima legge di Ohm.</strong> La differenza di potenziale agli estremi di un cavo di lunghezza elementare è proporzionale alla corrente, tramite la resistenza elettrica elementare,</p>
 <div class="math notranslate nohighlight">
-\[d R = \dfrac{\rho_R}{A} \, d \ell\]</div>
+\[dv = - dR \, i \ ,\]</div>
+</li>
+<li><p><strong>Seconda legge di Ohm.</strong> La resistenza elettrica di un cavo è direttamente proporzionale alla resistività del materiale, alla lunghezza del cavo, e inversamente proporzionale alla sezione del cavo,</p>
+<div class="math notranslate nohighlight">
+\[dR = \frac{\rho_R \, d\ell}{A} \ .\]</div>
+</li>
+</ul>
 </div>
-<div class="section" id="gas">
-<h3>gas<a class="headerlink" href="#gas" title="Permalink to this heading">#</a></h3>
+<div class="section" id="conduzione-nei-gas">
+<h3>Conduzione nei gas<a class="headerlink" href="#conduzione-nei-gas" title="Permalink to this heading">#</a></h3>
 </div>
-<div class="section" id="vuoto">
-<h3>vuoto?<a class="headerlink" href="#vuoto" title="Permalink to this heading">#</a></h3>
+<div class="section" id="conduzione-nei-vuoto">
+<h3>Conduzione nei vuoto?<a class="headerlink" href="#conduzione-nei-vuoto" title="Permalink to this heading">#</a></h3>
 </div>
-<div class="section" id="semiconduttori">
-<h3>semiconduttori<a class="headerlink" href="#semiconduttori" title="Permalink to this heading">#</a></h3>
+<div class="section" id="conduzione-nei-semiconduttori">
+<h3>Conduzione nei semiconduttori<a class="headerlink" href="#conduzione-nei-semiconduttori" title="Permalink to this heading">#</a></h3>
 <p>cenni all’elettronica: diodi, transistor, …</p>
 </div>
-</div>
-<div class="section" id="circuiti-elettrici">
-<h2>Circuiti elettrici<a class="headerlink" href="#circuiti-elettrici" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>dalle leggi fisiche alle leggi di Kirchhoff, ipotesi (validità e non-validità dell’approccio circuitale)</p></li>
-<li><p>componenti:</p>
-<ul>
-<li><p>resistenze</p></li>
-<li><p>condensatori</p></li>
-<li><p>generatori</p></li>
-</ul>
-</li>
-<li><p>regimi di funzionamento in DC, (trascurando gli effetti EM: no campi magnetici esterni, <em>ogni circuito è una spira</em>…):</p>
-<ul>
-<li><p>stazionario</p>
-<ul>
-<li><p>bilancio di energia: “generatori” di energia elettrica, “perdite” nelle resistenze</p>
-<ul>
-<li><p>approfondimenti:</p>
-<ul>
-<li><p>pile <span style="color:red"> Collegamento ad altre parti: termodinamica? chimica?</span></p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>transitorio:</p>
-<ul>
-<li><p>esempio: carica/scarica condensatore</p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
 </div>
 </div>
 
@@ -651,12 +634,11 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-conservazione-della-carica-elettrica">Legge di conservazione della carica elettrica</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione">Conduzione</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione-nei-solidi-di-ohm">Conduzione nei solidi “di Ohm”</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gas">gas</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vuoto">vuoto?</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#semiconduttori">semiconduttori</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione-nei-gas">Conduzione nei gas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione-nei-vuoto">Conduzione nei vuoto?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione-nei-semiconduttori">Conduzione nei semiconduttori</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#circuiti-elettrici">Circuiti elettrici</a></li>
 </ul>
   </nav></div>
 
