@@ -34,6 +34,7 @@ $$\dot{Q}_V = - \Phi_{\partial V}(\vec{j}) = - I_{\partial V}$$
 
 ### Conduzione nei solidi "di Ohm"
 
+In un materiale di Ohm, il campo elettrico $\vec{e}$ è proporzionale alla densità di corrente elettrica $\vec{j}$. Per un solido isotropo, senza direzioni preferenziali, la **forma locale - differenziale - della legge di Ohm** è
 **Legge di Ohm** in forma locale: 
 
 $$
@@ -42,30 +43,28 @@ $$
 \vec{e}(P) = \rho_R(P) \, \vec{j}(P)
 $$
 
-**Prima legge di Ohm** <span style="color:red"> "per cavi" </span> **todo** *trovare titolo decente*
+essendo la resistività $\rho_R$, e la conduttanza $\sigma = \frac{1}{\rho_R}$ le costanti di proporzionalità, caratteristiche del materiale.
 
-$$d V = i \, d R$$
+In un cavo conduttore, nell'ipotesi di grandezze uniformi sulla sezione - o riferendosi alle grandezze medie -, si può integrare la legge in forma locale su un tratto di cavo elementare, di lunghezza $d \ell$,
 
-**Seconda legge di Ohm** <span style="color:red"> "per cavi" </span> **todo** *trovare titolo decente*
+$$\begin{aligned}
+ \underbrace{e \, d \ell}_{- d v} \, A & = \rho_R \, \underbrace{j \, A}_{i} \, d \ell \\
+ \rightarrow \quad dv & = - \dfrac{\rho_R \, d \ell}{A} \, i = - dR \, i \ , 
+\end{aligned}$$
 
-$$d R = \dfrac{\rho_R}{A} \, d \ell$$
+avendo introdotto la differenza di potenziale elementare $d v$ tra gli estremi del tratto di cavo elementare, proporzionale alla corrente che transita nel cavo tramite la **resistenza elettrica** elementare $dR$. Queste relazioni che caratterizzano i materiali di Ohm sono le due leggi di Ohm:
 
-### gas
-### vuoto?
-### semiconduttori
+ - **Prima legge di Ohm.** La differenza di potenziale agli estremi di un cavo di lunghezza elementare è proporzionale alla corrente, tramite la resistenza elettrica elementare,
+
+   $$dv = - dR \, i \ ,$$
+
+ - **Seconda legge di Ohm.** La resistenza elettrica di un cavo è direttamente proporzionale alla resistività del materiale, alla lunghezza del cavo, e inversamente proporzionale alla sezione del cavo,
+
+   $$dR = \frac{\rho_R \, d\ell}{A} \ .$$
+
+### Conduzione nei gas
+### Conduzione nei vuoto?
+### Conduzione nei semiconduttori
  cenni all'elettronica: diodi, transistor, ...
 
 
-## Circuiti elettrici
-- dalle leggi fisiche alle leggi di Kirchhoff, ipotesi (validità e non-validità dell'approccio circuitale)
-- componenti:
-  - resistenze
-  - condensatori
-  - generatori
-- regimi di funzionamento in DC, (trascurando gli effetti EM: no campi magnetici esterni, *ogni circuito è una spira*...):
-  - stazionario
-    - bilancio di energia: "generatori" di energia elettrica, "perdite" nelle resistenze
-      - approfondimenti:
-        - pile <span style="color:red"> Collegamento ad altre parti: termodinamica? chimica?</span>
-  - transitorio:
-    - esempio: carica/scarica condensatore

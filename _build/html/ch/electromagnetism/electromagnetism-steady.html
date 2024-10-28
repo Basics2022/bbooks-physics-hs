@@ -261,6 +261,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="electric-current.html">Corrente elettrica</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Magnetismo ed elettromagnetismo in regime stazionario</a></li>
 <li class="toctree-l1"><a class="reference internal" href="electromagnetism-general.html">Induzione ed elettromagnetismo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="electrical-engineering.html">Principi di elettrotecnica</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="circuits-electric.html">Circuiti elettrici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="circuits-magnetic.html">Circuiti magnetici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-machines.html">Sistemi elettromeccanici e macchine elettriche</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="em-waves.html">Onde elettromagnetiche</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Fisica moderna</span></p>
 <ul class="nav bd-sidenav">
@@ -468,6 +475,16 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienze-di-oersted-e-ampere">Esperienze di Oersted e Ampere</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-ampere">Legge di Ampére</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-biot-savart">Legge di Biot-Savart</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-generale">Formula generale</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#filo-rettilineo-infinito">Filo rettilineo infinito</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi-spira-e-solenoide">Esempi: spira e solenoide</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#spira-circolare">Spira circolare</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#solenoide-rettilineo">Solenoide rettilineo</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#solenoide-toroidale">Solenoide toroidale</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verso-le-equazioni-di-maxwell">Verso le equazioni di Maxwell</a><ul class="nav section-nav flex-column">
@@ -504,7 +521,7 @@ document.write(`
 <div class="section" id="il-galvanometro">
 <h3>Il galvanometro<a class="headerlink" href="#il-galvanometro" title="Permalink to this heading">#</a></h3>
 <p>Il galvanometro è uno strumento utilizzato per la misura della corrente elettrica. Sfrutta l’azione meccanica osservata nell’esperienza di Faraday</p>
-<p>Il momento meccanico generato dalla corrente nel cavo elettrico equilibria un momento generato da componenti meccanici “noti”, realizzabili e tarabili con estrema precisione.</p>
+<p>Il momento meccanico generato dalla corrente nel cavo elettrico equilibria un momento generato da componenti meccanici “noti”, realizzabili e tarabili con la precisione richiesta.</p>
 <p><strong>todo</strong> <em>Serve questo riferimento qui?</em></p>
 <ul class="simple">
 <li><p>azioni elettro-meccaniche:…, cenni al motore elettrico in corrente continua? serve accoppiamento <span class="math notranslate nohighlight">\(\vec{e} \leftrightarrow \vec{b}\)</span> di Faraday</p></li>
@@ -522,20 +539,88 @@ document.write(`
 </ul>
 <div class="section" id="legge-di-ampere">
 <h3>Legge di Ampére<a class="headerlink" href="#legge-di-ampere" title="Permalink to this heading">#</a></h3>
-<p>Forza scambiata tra due cavi percorsi da corrente elettrica</p>
+<p>Forza (<span style="color:red"><strong>todo</strong> per unità di lunghezza; usare notazione vettoriale per indicare la direzione della forza</span>) scambiata tra due cavi percorsi da corrente elettrica</p>
 <div class="math notranslate nohighlight">
-\[F = \frac{\mu}{2 \pi} \frac{i_1 \, i_2}{d}\]</div>
+\[\frac{F}{L} = \frac{\mu}{2 \pi} \frac{i_1 \, i_2}{d}\]</div>
 </div>
 <div class="section" id="legge-di-biot-savart">
 <h3>Legge di Biot-Savart<a class="headerlink" href="#legge-di-biot-savart" title="Permalink to this heading">#</a></h3>
-<p>Confrontando la legge di Ampére con l’esperienza di Faraday, è possibile ricavare l’espressione del campo magentico prodotto da un cavo percorso da corrente elettrica,</p>
+<p>Confrontando la legge di Ampére con l’esperienza di Faraday, è possibile ricavare l’espressione del campo magnetico prodotto da un cavo infinito percorso da corrente elettrica,</p>
 <div class="math notranslate nohighlight">
-\[F = \frac{\mu}{2 \pi} \frac{i}{d}\]</div>
+\[b = \frac{\mu}{2 \pi} \frac{i}{d}\]</div>
 <p><strong>todo</strong></p>
 <ul class="simple">
 <li><p>campo magnetico prodotto da un cavo rettilineo infinito</p></li>
 <li><p>campo magnetico prodotto da un solenoide: lineare infinito, toroidale</p></li>
 </ul>
+</div>
+<div class="section" id="formula-generale">
+<h3>Formula generale<a class="headerlink" href="#formula-generale" title="Permalink to this heading">#</a></h3>
+<p>Contributo elementare</p>
+<div class="math notranslate nohighlight">
+\[d \vec{b}(\vec{r}_0) = - \frac{\mu}{4 \pi} i(\vec{r}) \frac{ \vec{r}_0 - \vec{r} }{| \vec{r}_0 - \vec{r} |^3} \times d \vec{\ell}(\vec{r})\]</div>
+<div class="math notranslate nohighlight">
+\[\vec{b}(\vec{r}_0) = - \frac{\mu}{4 \pi} \int_{\gamma(\vec{r})} i(\vec{r})  \frac{ \vec{r}_0 - \vec{r} }{| \vec{r}_0 - \vec{r} |^3}\times d \vec{\ell}(\vec{r})\]</div>
+<div class="section" id="filo-rettilineo-infinito">
+<h4>Filo rettilineo infinito<a class="headerlink" href="#filo-rettilineo-infinito" title="Permalink to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[z = R \, \tan \theta\]</div>
+<div class="math notranslate nohighlight">
+\[dz = R \frac{1}{\cos^2 \theta} \, d \theta\]</div>
+<div class="math notranslate nohighlight">
+\[r^2 = R^2 + z^2 = R^2 \left(1+\frac{\sin^2 \theta}{\cos^2 \theta} \right) = R^2 \frac{1}{\cos^2 \theta}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{b}(\vec{r}_0) &amp; = - \frac{\mu}{4 \pi} i \int_{z=-\infty}^{\infty} \hat{\theta} \frac{r}{r^2} \sin \theta dz = \\
+                     &amp; = - \frac{\mu}{4 \pi} i \hat{\theta} \int_{\theta=\pi}^{0} \frac{\cos^2 \theta}{R^2} \sin \theta R \frac{1}{\cos^2 \theta} \, d \theta = \\
+                     &amp; =   \frac{\mu}{4 \pi} i \hat{\theta} \int_{\theta=0}^{\pi} \frac{1}{R} \sin \theta \, d \theta = \\
+                     &amp; =   \frac{\mu \, i}{2 \pi \, R} \hat{\theta} \ .
+\end{aligned}\end{split}\]</div>
+</div>
+</div>
+<div class="section" id="esempi-spira-e-solenoide">
+<h3>Esempi: spira e solenoide<a class="headerlink" href="#esempi-spira-e-solenoide" title="Permalink to this heading">#</a></h3>
+<div class="section" id="spira-circolare">
+<h4>Spira circolare<a class="headerlink" href="#spira-circolare" title="Permalink to this heading">#</a></h4>
+<p>Sfruttando la simmetria cilindrica del problema, è possibile calcolare il campo magnetico $$ sull’asse di una spira circolare</p>
+<div class="math notranslate nohighlight">
+\[\cos \phi = \frac{R}{r} \qquad , \qquad
+r^2 = R^2 + z^2\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{b}(\theta) &amp; = 2 \pi R \left( -\frac{\mu}{4 \pi} i \frac{\vec{r}}{r^3} \times \hat{\theta} \cdot \hat{z} \right) \hat{z} = \\
+   &amp; = \frac{\mu \, i}{2} \frac{R}{r^2} \cos \phi \hat{z} = \\
+   &amp; = \frac{\mu \, i}{2} \frac{R^2}{r^3} \hat{z}  = \\
+   &amp; = \frac{\mu \, i}{2} \frac{R^2}{(R^2 + z^2)^{3/2}} \hat{z}  =
+       \frac{\mu \, i}{2 \, R} \frac{1}{\left(1 + \left(\frac{z}{R}\right)^2 \right)^{3/2}} \hat{z} 
+\end{aligned}\end{split}\]</div>
+</div>
+<div class="section" id="solenoide-rettilineo">
+<h4>Solenoide rettilineo<a class="headerlink" href="#solenoide-rettilineo" title="Permalink to this heading">#</a></h4>
+<p>Applicando la legge di Ampére,</p>
+<div class="math notranslate nohighlight">
+\[ N \, i = \Gamma_{\gamma}(\vec{h}) = \ell \, h = \ell \, \frac{b}{\mu}\]</div>
+<div class="math notranslate nohighlight">
+\[b = \mu \frac{N}{\ell} \, i\]</div>
+<p>Il flusso del campo magnetico (uniforme) vale quindi</p>
+<div class="math notranslate nohighlight">
+\[\phi = b \, A = \mu \frac{N \, A}{\ell} \, i\]</div>
+</div>
+<div class="section" id="solenoide-toroidale">
+<h4>Solenoide toroidale<a class="headerlink" href="#solenoide-toroidale" title="Permalink to this heading">#</a></h4>
+<p>Applicando la legge di Ampère,</p>
+<div class="math notranslate nohighlight">
+\[N \, i = \Gamma_{\gamma}(\vec{h}) = r \, 2 \, \pi \, h = r \, 2 \, \pi \frac{b}{\mu}\]</div>
+<div class="math notranslate nohighlight">
+\[b(r) = \mu \frac{N}{2 \, \pi \, r } \, i\]</div>
+<p>Il flusso del campo magnetico attraverso le sezioni del toro vale</p>
+<div class="math notranslate nohighlight">
+\[\Phi(\vec{b}) = \oint_{S} b(r) \, dS =  \mu \frac{N \, i}{2 \pi}\int_{\rho=0}^{a} \int_{\alpha=0}^{2\pi} \frac{1}{R - \rho \cos \alpha} \rho \, d \rho \, d \alpha  = \]</div>
+<p><strong>todo</strong></p>
+<!--
+Nell'ipotesi in cui il raggio $R$ dell'anello sia molto maggiore del raggio della sezione del toro, si può approssimare il campo come uniforme, $b =$
+-->
+</div>
 </div>
 </div>
 <div class="section" id="verso-le-equazioni-di-maxwell">
@@ -543,13 +628,13 @@ document.write(`
 <div class="section" id="legge-di-gauss-per-il-flusso-del-campo-magnetico">
 <h3>Legge di Gauss per il flusso del campo magnetico<a class="headerlink" href="#legge-di-gauss-per-il-flusso-del-campo-magnetico" title="Permalink to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
-\[\Phi_{\partial V}(\vec{d}) = 0\]</div>
+\[\Phi_{\partial V}(\vec{b}) = 0\]</div>
 <p><strong>todo</strong> <em>interpretazione: inesistenza del monopolo magnetico? linee di campo chiuse?</em></p>
 </div>
 <div class="section" id="id1">
 <h3>Legge di Ampére<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
-\[\oint_{\ell_S} \vec{e} \cdot \hat{t} = \Gamma_{\ell_S}(\vec{h}) = \Phi_{S}(\vec{j}) = i_S \ ,\]</div>
+\[\oint_{\ell_S} \vec{h} \cdot \hat{t} = \Gamma_{\ell_S}(\vec{h}) = \Phi_{S}(\vec{j}) = i_S \ ,\]</div>
 <p>essendo <span class="math notranslate nohighlight">\(\ell_S = \partial S\)</span> il contorno - chiuso - della superficie <span class="math notranslate nohighlight">\(S\)</span>.</p>
 <ul class="simple">
 <li><p>Questa equazione è valida <strong>solo</strong> in un regime elettrostatico: la forma generale dell’equazione di Ampére prevede un termine dipendente dal tempo, che è identicamente nullo nel regime elettrostatico.</p></li>
@@ -663,6 +748,16 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienze-di-oersted-e-ampere">Esperienze di Oersted e Ampere</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-ampere">Legge di Ampére</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-biot-savart">Legge di Biot-Savart</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formula-generale">Formula generale</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#filo-rettilineo-infinito">Filo rettilineo infinito</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi-spira-e-solenoide">Esempi: spira e solenoide</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#spira-circolare">Spira circolare</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#solenoide-rettilineo">Solenoide rettilineo</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#solenoide-toroidale">Solenoide toroidale</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verso-le-equazioni-di-maxwell">Verso le equazioni di Maxwell</a><ul class="nav section-nav flex-column">

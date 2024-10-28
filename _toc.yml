@@ -85,6 +85,11 @@ parts:
   - file: ch/electromagnetism/electric-current
   - file: ch/electromagnetism/electromagnetism-steady
   - file: ch/electromagnetism/electromagnetism-general
+  - file: ch/electromagnetism/electrical-engineering
+    sections:
+    - file: ch/electromagnetism/circuits-electric
+    - file: ch/electromagnetism/circuits-magnetic
+    - file: ch/electromagnetism/electric-machines
   - file: ch/electromagnetism/em-waves
 # - file: ch/electromagnetism/...
 # - file: ch/electromagnetism/...

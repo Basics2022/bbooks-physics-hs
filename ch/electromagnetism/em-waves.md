@@ -6,5 +6,9 @@ Le equazioni di Maxwell prevedono che, sotto opportune condizioni, il campo elet
 - Dalle equazioni di Maxwell alle equazioni delle onde **todo** <span style="color:red">è possibile arrivarci senza passare dalle equazioni in forma differenziale? Magari con qualche analogia meccanica governata dalle equazioni delle onde. Se sì, in maniera sufficiente formale, figata</span>
 
 - Esperimenti di Hertz:
-  - onde elettromagnetiche
+  - onde elettromagnetiche:
+    - esperimento onde EM
+    - **risonanza**, tipica dei fenomeni ondulatori
+  - esperimento fallimentare su raggi catodici; con lo stesso esperimento, Thompson dimostra l'esistena dell'elettrone
+  - effetto fotoelettrico...
   - luce come onda EM: la velocità di propagazione del campo EM prevista dalle equazioni di Maxwell è vicina alle misure della velocità della luce disponibile in quegli anni. E' un caso?

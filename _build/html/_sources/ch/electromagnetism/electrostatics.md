@@ -1,25 +1,35 @@
 (physics-hs:electromagnetism:electrostatics)=
 # Elettrostatica
 
-## Legge di Coulmb
+## Legge di Coulomb
 
 Date due cariche elettriche puntiformi $q_1$, $q_2$, nella posizione $P_1$, $P_2$ nello spazio, la forza 
 
 $$\vec{F}_{12} = k \frac{q_1 \, q_2}{|\vec{r}_{12}|^2} \, \hat{r}_{21} = \frac{1}{4 \pi \varepsilon}\frac{q_1 \, q_2}{|\vec{r}_{12}|^2} \, \hat{r}_{21}$$
 
-essendo $\vec{r}_{21}$ il vettore che congiunge il punto $P_2$ con il punto $P_1$, $\vec{r}_{21} = \vec{r}_1 - \vec{r}_2$.
+essendo $\vec{r}_{21}$ il vettore che congiunge il punto $P_2$ con il punto $P_{1}$, $\vec{r}_{21} = \vec{r}_1 - \vec{r}_2$.
+
+La scelta della definizione della costante di proporzionalità, $k = \frac{1}{4 \pi \varepsilon}$, viene fatta per ottenere un'espressione della [legge di Gauss per il campo elettrico](physics-hs:electromagnetism:electrostatics:maxwell:gauss) senza fattori numerici.
+
+La costante $\varepsilon$ viene definita costante dielettrica del mezzo. Per cariche elettriche posizionate nello spazio "vuoto" (di materia ma non di proprietà fisiche), nell'espressione della legge di Coulomb compare la **costante dielettrica nel vuoto**,
+
+$$\varepsilon_0 = 8.854 \cdot 10^{-12} \, C^2 \, N^{-1} \, m^{-2} \ .$$
+
+Materiali isotropi lineari non dispersivi possono essere caratterizzati da una sola costante, la costante dielettrica del materiale. Questa caratteristica del materiale viene di solito definita come multiplo della costante dielettrica del vuoto, tramite la costante dielettrica relativa $\varepsilon_r$,
+
+$$\varepsilon = \varepsilon_r \,\varepsilon_0 \ . $$
 
 **todo**
-- definizione della costante di proporzionalità $k = 4 \pi \varepsilon$ guidata dalla legge di Gauss
-- costante dielettrica, nel vuoto e del materiale...; 
-- esperimento ed esercizio con elettroscopio e bilancia (similitudine con legge di gravitazione universale, ma doppia natura della carica elettrica + o -)
+- esperimento ed esercizio con elettroscopio e bilancia (similitudine con legge di gravitazione universale, ma doppia natura della carica elettrica + o -) **todo** riferimento alle prime esperienze sulle cariche elettriche
 - **PSCE**
 
 ## Il campo elettrico
-Viene data una distribuzione di cariche, $q_i$, nei punti dello spazio $P_i$. Si prende una carica test, una carica di prova, di intensità nota $q^{test}$, che può esseere mossa a discrezione in ogni punto $P$ dello spazio e per la quale è possibile misurare la forza $\vec{F}(P)$ agente su di essa a causa della distribuzione di cariche,
+Data una distribuzione di cariche nello spazio, è possibile descriverla tramite l'effetto che avrebbe su una carica qualsiasi posta in un punto arbitrario dello spazio, introducendo la definizione di campo elettrico.
+
+Viene data qui una **definizione operativa** del campo elettrico. Data una distribuzione di cariche, $q_i$, nei punti dello spazio $P_i$, si prende una carica test - di prova - di intensità nota $q^{test}$, che può essere posizionata in ogni punto $P$ dello spazio. E' inoltre possibile misurare la forza $\vec{F}(P; q^{test})$ agente sulla carica di prova dovuta all'interazione con la distribuzione di cariche in esame,
 
 $$\begin{aligned}
-  \vec{F}_{test}(P)
+  \vec{F}_{test}(P, q^{test})
   & = \sum_i \vec{F}_{test,i}(P) = \\
   & = \sum_i \frac{1}{4 \pi \varepsilon}\frac{q_i \, q_{test}}{|\vec{r}_{i,test,i}|^2} \, \hat{r}_{i,test} = \\
   & = q_{test} \sum_i \frac{1}{4 \pi \varepsilon}\frac{q_i}{|\vec{r}_{i,test,i}|^2} \, \hat{r}_{i,test} = \\
@@ -28,9 +38,9 @@ $$\begin{aligned}
 
 Poichè la forza sulla carica di prova è proporzionale alla sua carica elettrica, è possibile descrivere l'effetto della distribuzione nota di cariche nello spazio con la funzione $\vec{e}(P; \, q_i, \, P_i)$. Questa funzione viene definita **campo elettrico** della distribuzione delle cariche.
 
-Noto il campo elettrico di una dsitribuzione di cariche, la forza agente su una carica elettrica $q$ posta nel punto $P$ dello spazio è
+Viceversa, noto il campo elettrico di una distribuzione di cariche, la forza agente su una carica elettrica $q$ posta nel punto $P$ dello spazio è
 
-$$\vec{F} = q \, \vec{e}(P)$$
+$$\vec{F} = q \, \vec{e}(P) \ .$$
 
 - **todo** Poichè il PSCE vale per la forza, il **PSCE** vale per il campo elettrico
 
@@ -44,15 +54,15 @@ $$\begin{aligned}
     & = q \, \int_{\gamma} \vec{e}(P) \cdot d \vec{r} = - q \int_{\gamma} \nabla V(P) \cdot d \vec{r} = - q \, \Delta V = q \, \left( V(A) - V(B) \right) \\
 \end{aligned}$$
 
-avendo definito l'**energia potenziale** $U(P)$ del sistema di cariche che produce il campo elettrico $\vec{e}(P)$ e il **potenziale elettrico** $V(P)$ come l'energia potenziale per unità di carica $q$.
+avendo definito l'**energia potenziale** $U(P)$ del sistema di cariche che produce il campo elettrico $\vec{e}(P)$ e il **potenziale elettrico** $V(P)$ come l'energia potenziale per unità di carica $q$. Sia l'energia potenziale sia il potenziale sono definiti a meno di una costante additiva.
 
 Il potenziale generato da una carica $q_i$ posizionata punto "potenziante" $P_i$ nel punto "potenziato" $P$
 
-$$V_i(P) = - \frac{1}{4 \pi \varepsilon} \frac{q_i}{|\vec{r}_i|} \ ,$$
+$$V_i(P) = \frac{1}{4 \pi \varepsilon} \frac{q_i}{|\vec{r}_i|} \ ,$$
 
-con $\vec{r}_i = P_i - P$. Poichè il PSCE vale per la forza e il campo elettrico, il **PSCE** vale per il potenziale, e quindi il potenziale elettrico generato da un sistema di cariche è la somma del potenziale elettrico generato dalle singole cariche,
+con $\vec{r}_i = P - P_i$. Poichè il PSCE vale per la forza e il campo elettrico, il **PSCE** vale per il potenziale, e quindi il potenziale elettrico generato da un sistema di cariche è la somma del potenziale elettrico generato dalle singole cariche,
 
-$$V_i(P) = - \frac{1}{4 \pi \varepsilon} \sum_i \frac{q_{i}}{\left|\vec{r}_{i}\right|} $$
+$$V_i(P) = \frac{1}{4 \pi \varepsilon} \sum_i \frac{q_{i}}{\left|\vec{r}_{i}\right|} $$
 
 ### Energia potenziale di una distribuzione di cariche
 
@@ -60,7 +70,7 @@ L'energia potenziale di un sistema di cariche è uguale al lavoro (<span style="
 
 Per un sistema di cariche puntiformi, l'energia potenziale del sistema è uguale alla somma dell'energia potenziale tra le singole coppie di cariche
 
-$$E^{pot} = - \sum_{\{i,j\}, i \ne j} V_{ij} = \sum_{\{i,j\}, i \ne j} \frac{1}{4 \pi \varepsilon} \frac{{q}_{i} \, q_{j}}{r_{ij}} \ ,$$
+$$E^{pot} = \sum_{\{i,j\}, i \ne j} V_{ij} = \sum_{\{i,j\}, i \ne j} \frac{1}{4 \pi \varepsilon} \frac{{q}_{i} \, q_{j}}{r_{ij}} \ ,$$
 
 senza ripetere la sommatoria sulle coppie con gli elementi invertiti.
 
@@ -115,16 +125,47 @@ Per materiali lineari isotropi,
 
 $$\vec{d} := \varepsilon \vec{e} = \varepsilon_0 \vec{e} + \vec{p}$$
 
+**todo** polarizzazione, cariche libere e cariche "vincolate"
 
+(physics-hs:electromagnetism:electrostatics:maxwell)=
 ## Verso le equazioni di Maxwell
 
+(physics-hs:electromagnetism:electrostatics:maxwell:gauss)=
 ### Legge di Gauss per il flusso del campo elettrico
-
-**todo** come dimostrarla senza usare troppa matematica? Esempio in caso semplice, ma come generalizzarlo?
 
   $$\Phi_{\partial V}(\vec{d}) = Q_V$$
 
-**todo** come introdurre $\vec{d}$? Definire risposta dei materiali prima?
+```{dropdown} Dimostrazione della legge di Gauss
+**Dimostrazione per una carica puntiforme e una superficie sferica.**
+Il calcolo diretto del flusso del campo elettrico generato da una carica puntiforme attraverso una superficie sferica di raggio $r$ centrata nella carica
+
+$$\Phi_{S^{sphere}}(\vec{d}) = \oint_{S^{sphere}} \vec{d} \cdot \hat{n} = \oint_{S^{sphere}} \frac{1}{4 \pi }\frac{q}{r^2} \underbrace{\hat{r} \cdot \hat{r}}_{=1} \ .  $$
+
+L'integranda è costante, essendo $r$ costante sulla superficie sferica, e quindi si riduce al prodotto della funzione integranda per l'estensione del dominio di integrazione, qui la superficie estenra della sfera. Ricordando che la superficie di una superficie sferica di raggio $r$ è $S = 4 \pi r^2$, si ottiene l'espressione della legge di Gauss per il campo elettrico di una carica puntiforme attraverso una superficie sferica,
+
+$$\Phi_{S^{sphere}}(\vec{d}) = 4 \, \pi \, r^2 \frac{1}{4 \, \pi \, r^2} q = q \ .$$
+
+**todo** obs: andamento del campo come $r^{-2}$ implica andamento del flusso costante attraverso superfici che sottengono lo stesso **angolo solido**
+
+**todo** ... altra osservazione che ora non ricordo...
+
+**Dimostrazione per una carica puntiforme e per una superficie arbitraria.**
+Usando l'osservazione sull'andamento del campo, e la definizione di angolo solido
+
+$$\oint_S \frac{q}{4 \pi} \frac{1}{r^2} \hat{r} \cdot \hat{n} \, dS =
+\oint_{\Omega} \frac{q}{4 \pi}  \, d \Omega = q $$
+
+
+**Dimostrazione per una distribuzione di carica qualsiasi e superficie arbitraria.**
+Avendo dimostrato la legge di Gauss per una carica puntiforme attraverso una superficie arbitraria, la legge di Gauss per il campo $\vec{d}$ generato da una distribuzione di carica qualsiasi segue immediatamente, ricordando che vale il PSCE
+
+$$\Phi_{\partial V}(\vec{d}_i) = q_i$$
+
+$$\sum_i \Phi_{\partial V}(\vec{d}_i) = \Phi_{\partial V} \left(\sum_i \vec{d}_i \right) = \sum_i q_i$$
+
+$$\Phi_{\partial V}(\vec{d}) = Q_V$$
+
+```
 
 ### Legge di Faraday, in elettrostatica
 - La legge di Faraday in elettrostatica è una diretta conseguenza della conservatività del campo elettrico
@@ -132,6 +173,27 @@ $$\vec{d} := \varepsilon \vec{e} = \varepsilon_0 \vec{e} + \vec{p}$$
   $$\Gamma_{\ell}(\vec{e}) = \oint_{\ell} \vec{e} \cdot \hat{t} = 0 \ .$$
 
 - Questa equazione è valida **solo** in un regime elettrostatico: la forma generale dell'equazione di Faraday prevede un termine dipendente dal tempo, che è identicamente nullo nel regime elettrostatico.
+
+```{dropdown} Dimostrazione della legge di Faraday
+**Dimostrazione per una carica puntiforme e un percorso circolare.**
+Il calcolo diretto della circuitazione del campo elettrico generato da una carica puntiforme lungo un percorso circolare di raggio $r$ centrato nella carica
+
+$$\Gamma_{\ell^{circle}}(\vec{e}) = \oint_{\ell^{circle}} \vec{e} \cdot \hat{t} = \oint_{S^{sphere}} \frac{1}{4 \pi \varepsilon}\frac{q}{r^2} \underbrace{\hat{r} \cdot \hat{t}}_{=0} = 0 \ ,  $$
+
+poiché il versore tangente al percorso circolare è ortogonale al campo elettrico, diretto in direzione radiale.
+
+**Dimostrazione per una carica puntiforme e un percorso arbitrario.**
+
+**Dimostrazione per una distribuzione di carica qualsiasi e percorso arbitrario.**
+Avendo dimostrato la legge di Faraday nel caso stazionario per una carica puntiforme lungo un percorso arbitrario, la legge di Faraday in regime stazionario per il $\vec{e}$ generato da una distribuzione di carica qualsiasi segue immediatamente, ricordando che vale il PSCE
+
+$$\Gamma_{\partial S}(\vec{e}_i) = 0$$
+
+$$\sum_i \Gamma_{\partial S}(\vec{e}_i) = \Gamma_{\partial S} \left(\sum_i \vec{e}_i \right) = 0$$
+
+$$\Gamma_{\partial S}(\vec{e}) = 0$$
+
+```
 
 ## Moto di una carica in un campo elettrico
 Il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$ in una regione dello spazio nel quale c'è un campo elettrico $\vec{e}(\vec{r})$ è soggetto a una forza esterna $\vec{F}^{el} = q \, \vec{e}(P)$. L'equazione del moto diventa quindi
@@ -173,9 +235,9 @@ viene applicata a un condensatore piano, usando due superfici $S_1$, $S_2$ che h
 
   $$\Gamma_{\ell}(\vec{h}) = \dot{\Phi}_{S_2}(\vec{d})$$
 
-Segue che $i_{S_1} = \dot{\Phi}_{S_2}(\vec{d})$ e quindi
+Segue che $i_{S_1} = \dot{\Phi}_{S_2}(\vec{d})$ e quindi si ritrova la legge di conservazione della carica elettrica,
 
-$$i = \dfrac{d}{dt} \left( A \, d \right) = \dfrac{d}{dt} \left( A \, \varepsilon \, e \right) = \dfrac{d Q}{dt}$$
+$$i = \dfrac{d}{dt} \left( A \, d \right) = \dfrac{d}{dt} \left( A \, \varepsilon \, e \right) = \dfrac{d Q}{dt} \ .$$
 <!--
 $$= \dfrac{d}{dt} \left( C \, \Delta V \right) \ .$$
 -->
