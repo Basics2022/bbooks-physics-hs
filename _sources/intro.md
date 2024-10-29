@@ -15,26 +15,31 @@ Per ora colleziona gli argomenti. L'organizzazione migliore verrà decisa in un 
 :gutter: 3
 
 :::{grid-item-card}
+:link: ch/intro.html
 **Introduzione alla fisica**
 ^^^
 :::
 
 :::{grid-item-card} 
+:link: ch/mechanics.html
 **Meccanica classica**
 ^^^
 :::
 
 :::{grid-item-card}
+:link: ch/thermodynamics.html
 **Termodinamica**
 ^^^
 :::
 
 :::{grid-item-card}
+:link: ch/electromagnetism.html
 **Elettromagnetismo**
 ^^^
 :::
 
 :::{grid-item-card}
+:link: ch/modern.html
 **Fisica del XX secolo**
 ^^^
 :::
