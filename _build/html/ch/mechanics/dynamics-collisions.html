@@ -506,12 +506,14 @@ document.write(`
 <p>Tra due istanti temporali immediatamente precedente e immediatamente successivo all’urto tra due sistemi possono essere trascurate tutte le azioni agenti sul sistema complessivo tranne quelle <strong>impulsive</strong> dovute all’<strong>urto</strong>, e ad eventuali <strong>reazioni vincolari</strong> (vedi esercizi),</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-  \vec{I}^{ext}   &amp; = \Delta \vec{Q} = \Delta \vec{Q}_1 + \Delta \vec{Q}_2 \\
-  \vec{J}_H^{ext} &amp; = \Delta \vec{\Gamma}_H + \dot{\vec{x}}_H \times \Delta \vec{Q} = \Delta \vec{\Gamma}_{H,1} + \Delta \vec{\Gamma}_{H,2} \\
-  L^{ext} + L^{int} &amp; = \Delta K = \Delta K_1 + \Delta K_2 \ ,
+  \vec{I}^{ext}   &amp; = \Delta \vec{Q} \\
+  \vec{J}_H^{ext} &amp; = \Delta \vec{\Gamma}_H + \Delta \dot{\vec{x}}_H \times \vec{Q} = \Delta \vec{\Gamma}_{H} \\
+  L^{ext} + L^{int} &amp; = \Delta K \ ,
 \end{aligned}\end{split}\]</div>
+<p>con <span class="math notranslate nohighlight">\(\vec{I}^{ext}\)</span> l’impulso delle forze esterne durante l’urto, <span class="math notranslate nohighlight">\(\vec{J}^{ext}\)</span> l’impulso dei momenti esterni durante l’urto, <span class="math notranslate nohighlight">\(L^{ext}\)</span>, <span class="math notranslate nohighlight">\(L^{int}\)</span> il lavoro delle forze esterne e interne durante l’urto.</p>
 <p>E’ bene osservare che in assenza di forze e momenti impulsivi esterni - anche dovuti a eventuali vincoli - ai due sistemi che collidono, la quantità di moto e il momento della quantità di moto del sistema complessivo si conservano in un urto.
 Al contrario, in generale, l’<strong>energia cinetica non si conserva</strong> poiché dipende anche dalla potenza delle azioni interne che includono quelle impulsive scambiate durante l’urto.</p>
+<p>Il <strong>coefficiente di restituzione</strong> <span class="math notranslate nohighlight">\(\varepsilon \in [0, 1]\)</span> è definito come <strong>todo</strong></p>
 <div class="section" id="problemi">
 <h2>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h2>
 <!-- Esercizio ************************************************************* -->
@@ -522,6 +524,7 @@ Al contrario, in generale, l’<strong>energia cinetica non si conserva</strong>
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Collisione tra blocchi su piano orizzontale liscio</div>
+<p class="sd-card-text">Date le masse di due blocchi che scivolano su un piano orizzontale liscio, e le velocità iniziali dei due blocchi, e il coefficiente di restituzione dell’urto, viene chiesto di determinare le velocità dei due blocchi dopo l’urto.</p>
 </div>
 </div>
 </div>
@@ -551,6 +554,16 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Collisione tra blocchi su piano orizzontale scabro</div>
+<p class="sd-card-text">Date le masse di due blocchi che scivolano su un piano orizzontale scabro, le velocità e la distanza iniziale tra i due blocchi, il coefficiente di restituzione dell’urto, il coefficiente di attrito dinamico <span class="math notranslate nohighlight">\(\mu^d\)</span> tra i due blocchi e il piano orizzontale, viene chiesto di determinare:</p>
+<ul class="simple">
+<li><p class="sd-card-text">le condizioni affinché avvenga l’urto</p></li>
+<li><p class="sd-card-text">in caso di urto:</p>
+<ul>
+<li><p class="sd-card-text">le velocità immediatamente dopo l’urto</p></li>
+<li><p class="sd-card-text">la posizione finale delle due masse</p></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -580,6 +593,8 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Rimbalzo di una palla</div>
+<p class="sd-card-text">Dato il coefficiente di restituzione degli urti tra la palla di massa <span class="math notranslate nohighlight">\(m_1\)</span> nota e ilpiano orizzontale, viene chiesto di determinare la distanza verticale percorsa dalla palla durante i rimbalzi.</p>
+<p class="sd-card-text"><strong>Oss.</strong> Il numero di rimbalzi è infinito, ma il risultato si ottiene da una serie infinita convergente.</p>
 </div>
 </div>
 </div>
@@ -609,6 +624,7 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Collisione di un sistema massa-molla con una parete</div>
+<p class="sd-card-text">Data la configurazione iniziale del sistema massa-molla, con lunghezza a riposo nulla <span class="math notranslate nohighlight">\(\ell_0\)</span> e allungamento iniziale <span class="math notranslate nohighlight">\(x_0\)</span>, viene chiesto di descrivere l’evoluzione del sistema in funzione del coefficiente di restituzione <span class="math notranslate nohighlight">\(\varepsilon\)</span> degli urti tra la massa e la parete rigida verticale. In particolare, si chiede di distinguere il caso di urto elastico dai casi di urto parzialmente elastico.</p>
 </div>
 </div>
 </div>
@@ -638,6 +654,7 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Collisioni tra due blocchi e una parete rigida</div>
+<p class="sd-card-text">Nel caso di urti perfettamente elastici tra i due blocchi e con la parete, viene chiesto di determinare il numero di urti tra i due blocchi.</p>
 </div>
 </div>
 </div>
@@ -667,6 +684,12 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Proiettile su pendolo con massa concentrata</div>
+<p class="sd-card-text">Un proiettile colpisce un pendolo. In funzione del coefficiente di restituzione <span class="math notranslate nohighlight">\(\varepsilon\)</span>, viene chiesto di determinare:</p>
+<ul class="simple">
+<li><p class="sd-card-text">le condizioni immediatamente successive all’urto</p></li>
+<li><p class="sd-card-text">l’angolo massimo raggiunto dal pendolo</p></li>
+</ul>
+<p class="sd-card-text">Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l’urto.</p>
 </div>
 </div>
 </div>
@@ -696,6 +719,12 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Proiettile su pendolo con massa distribuita</div>
+<p class="sd-card-text">Un proiettile colpisce un pendolo. In funzione del coefficiente di restituzione <span class="math notranslate nohighlight">\(\varepsilon\)</span>, viene chiesto di determinare:</p>
+<ul class="simple">
+<li><p class="sd-card-text">le condizioni immediatamente successive all’urto</p></li>
+<li><p class="sd-card-text">l’angolo massimo raggiunto dal pendolo.</p></li>
+</ul>
+<p class="sd-card-text">Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l’urto.</p>
 </div>
 </div>
 </div>
@@ -725,6 +754,12 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Proiettile su bersaglio di poligono di tiro</div>
+<p class="sd-card-text">Un proiettile colpisce il bersaglio di un poligono, inizialmente appoggiato alla parete verticale. In funzione del coefficiente di restituzione <span class="math notranslate nohighlight">\(\varepsilon\)</span>, viene chiesto di determinare:</p>
+<ul class="simple">
+<li><p class="sd-card-text">le condizioni immediatamente successive all’urto</p></li>
+<li><p class="sd-card-text">la velocità minima del proiettile prima dell’urto che garantisce di abbattere il bersaglio.</p></li>
+</ul>
+<p class="sd-card-text">Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l’urto.</p>
 </div>
 </div>
 </div>
@@ -754,6 +789,7 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Collisione su sistema libero rigido di masse concentrate</div>
+<p class="sd-card-text">Un proiettile colpisce un sistema rigido di due masse concentrate, libero e inizialmente in quiete. Si chiede di determinare il moto dei sistemi dopo l’urto, in funzione del coefficiente di restituzione.</p>
 </div>
 </div>
 </div>
@@ -783,6 +819,7 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Collisione su sistema libero rigido a massa distribuita</div>
+<p class="sd-card-text">Un proiettile colpisce un sistema rigido di due masse concentrate, libero e inizialmente in quiete. Si chiede di determinare il moto dei sistemi dopo l’urto, in funzione del coefficiente di restituzione.</p>
 </div>
 </div>
 </div>
