@@ -34,6 +34,15 @@ parts:
     - file: ch/mechanics/statics-problems
   - file: ch/mechanics/inertia
   - file: ch/mechanics/dynamics
+    sections:
+    - file: ch/mechanics/dynamics-principles
+    - file: ch/mechanics/dynamics-eom
+      sections:
+      - file: ch/mechanics/dynamics-eom-proof-point
+      - file: ch/mechanics/dynamics-eom-proof-points
+    - file: ch/mechanics/dynamics-conservation
+    - file: ch/mechanics/dynamics-collisions
+    - file: ch/mechanics/dynamics-motion-gravitation
 - caption: Termodinamica
   chapters:
   - file: ch/thermodynamics
