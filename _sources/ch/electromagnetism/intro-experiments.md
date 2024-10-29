@@ -1,4 +1,4 @@
-(physics-hs:electromagnetism:foundation:experiments)=
+(physics-hs:electromagnetism:intro:experiments)=
 # Esperienze ed esperimenti
 
 ## Elettrizzazione
