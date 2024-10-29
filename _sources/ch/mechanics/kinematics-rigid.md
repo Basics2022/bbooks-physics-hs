@@ -1,8 +1,8 @@
 (physics-hs:mechanics:kinematics:rigid)=
-## Cinematica di un corpo rigido
+# Cinematica di un corpo rigido
 
 (physics-hs:mechanics:kinematics:rigid-2d)=
-### Problemi nel piano
+## Problemi nel piano
 
 - **Posizione di un punto.** 
 

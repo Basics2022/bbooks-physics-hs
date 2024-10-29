@@ -31,8 +31,7 @@ Esempio, forze concentrate, se la regione di interazione è "sufficientemente" (
 
 ## Esempi
 
-<!-- ### Gravità -->
-```{dropdown} Gravità
+### Gravità 
 #### Legge di gravitazione universale
 La forza $\vec{F}_{12}$ esercitata da un corpo di massa $m_2$ in $P_2$ su un corpo di massa $m_1$ in $P_1$ è descritta dalla **legge di gravitazione universale di Newton**,
 
@@ -66,7 +65,6 @@ La forza di gravità percepita da un corpo di massa $m$ nei pressi della superfi
 $$\vec{F}_g = - m g \hat{z} \ ,$$
 
 quello che viene comunemente chiamato **peso**.
-```
 
 ### Azioni elastiche: molle lineari
 
