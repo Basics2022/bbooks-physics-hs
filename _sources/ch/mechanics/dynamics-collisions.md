@@ -19,7 +19,7 @@ $$\begin{aligned}
   L^{ext} + L^{int} & = \Delta K \ ,
 \end{aligned}$$
 
-con $\vec{I}^{ext}$ l'impulso delle forze esterne durante l'urto, $\vec{J}^{ext}_H$ l'impulso dei momenti esterni durante l'urto, $L^{ext}$, $L^{int}$ il lavoro delle forze esterne e interne durante l'urto.
+con $\vec{I}^{ext}$ l'impulso delle forze esterne durante l'urto, $\vec{J}^{ext}$ l'impulso dei momenti esterni durante l'urto, $L^{ext}$, $L^{int}$ il lavoro delle forze esterne e interne durante l'urto.
 
 E' bene osservare che in assenza di forze e momenti impulsivi esterni - anche dovuti a eventuali vincoli - ai due sistemi che collidono, la quantità di moto e il momento della quantità di moto del sistema complessivo si conservano in un urto.
 Al contrario, in generale, l'**energia cinetica non si conserva** poiché dipende anche dalla potenza delle azioni interne che includono quelle impulsive scambiate durante l'urto.
@@ -35,6 +35,8 @@ Il **coefficiente di restituzione** $\varepsilon \in [0, 1]$ è definito come **
 
 :::{grid-item-card} Collisione tra blocchi su piano orizzontale liscio
 :columns: 8
+
+Date le masse di due blocchi che scivolano su un piano orizzontale liscio, e le velocità iniziali dei due blocchi, e il coefficiente di restituzione dell'urto, viene chiesto di determinare le velocità dei due blocchi dopo l'urto.
 
 :::
 
