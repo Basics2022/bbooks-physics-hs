@@ -11,6 +11,7 @@ essendo $\vec{r}_{21}$ il vettore che congiunge il punto $P_2$ con il punto $P_{
 
 
 |![](../../media/electrostatics-coulomb-pp.png)|![](../../media/electrostatics-coulomb-pn.png)|![](../../media/electrostatics-coulomb-nn.png)|
+|---|---|---|
 
 <!--
 ```{figure} ../../media/electrostatics-coulomb-pp.png
