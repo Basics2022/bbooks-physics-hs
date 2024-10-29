@@ -59,6 +59,12 @@ Date le masse di due blocchi che scivolano su un piano orizzontale liscio, e le 
 :::{grid-item-card} Collisione tra blocchi su piano orizzontale scabro
 :columns: 8
 
+Date le masse di due blocchi che scivolano su un piano orizzontale scabro, le velocità e la distanza iniziale tra i due blocchi, il coefficiente di restituzione dell'urto, il coefficiente di attrito dinamico $\mu^d$ tra i due blocchi e il piano orizzontale, viene chiesto di determinare:
+- le condizioni affinché avvenga l'urto
+- in caso di urto:
+  - le velocità immediatamente dopo l'urto
+  - la posizione finale delle due masse
+
 :::
 
 :::{grid-item-card} 
@@ -79,6 +85,10 @@ Date le masse di due blocchi che scivolano su un piano orizzontale liscio, e le 
 
 :::{grid-item-card} Rimbalzo di una palla
 :columns: 8
+
+Dato il coefficiente di restituzione degli urti tra la palla di massa $m_1$ nota e ilpiano orizzontale, viene chiesto di determinare la distanza verticale percorsa dalla palla durante i rimbalzi.
+
+**Oss.** Il numero di rimbalzi è infinito, ma il risultato si ottiene da una serie infinita convergente.
 
 :::
 
@@ -101,6 +111,8 @@ Date le masse di due blocchi che scivolano su un piano orizzontale liscio, e le 
 :::{grid-item-card} Collisione di un sistema massa-molla con una parete
 :columns: 8
 
+Data la configurazione iniziale del sistema massa-molla, con lunghezza a riposo nulla $\ell_0$ e allungamento iniziale $x_0$, viene chiesto di descrivere l'evoluzione del sistema in funzione del coefficiente di restituzione $\varepsilon$ degli urti tra la massa e la parete rigida verticale. In particolare, si chiede di distinguere il caso di urto elastico dai casi di urto parzialmente elastico.
+
 :::
 
 :::{grid-item-card} 
@@ -121,6 +133,8 @@ Date le masse di due blocchi che scivolano su un piano orizzontale liscio, e le 
 
 :::{grid-item-card} Collisioni tra due blocchi e una parete rigida
 :columns: 8
+
+Nel caso di urti perfettamente elastici tra i due blocchi e con la parete, viene chiesto di determinare il numero di urti tra i due blocchi.
 
 :::
 
@@ -143,6 +157,12 @@ Date le masse di due blocchi che scivolano su un piano orizzontale liscio, e le 
 :::{grid-item-card} Proiettile su pendolo con massa concentrata
 :columns: 8
 
+Un proiettile colpisce un pendolo. In funzione del coefficiente di restituzione $\varepsilon$, viene chiesto di determinare:
+- le condizioni immediatamente successive all'urto
+- l'angolo massimo raggiunto dal pendolo
+
+Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l'urto.
+
 :::
 
 :::{grid-item-card} 
@@ -163,6 +183,12 @@ Date le masse di due blocchi che scivolano su un piano orizzontale liscio, e le 
 
 :::{grid-item-card} Proiettile su pendolo con massa distribuita
 :columns: 8
+
+Un proiettile colpisce un pendolo. In funzione del coefficiente di restituzione $\varepsilon$, viene chiesto di determinare:
+- le condizioni immediatamente successive all'urto
+- l'angolo massimo raggiunto dal pendolo.
+
+Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l'urto.
 
 :::
 
@@ -185,6 +211,12 @@ Date le masse di due blocchi che scivolano su un piano orizzontale liscio, e le 
 :::{grid-item-card} Proiettile su bersaglio di poligono di tiro
 :columns: 8
 
+Un proiettile colpisce il bersaglio di un poligono, inizialmente appoggiato alla parete verticale. In funzione del coefficiente di restituzione $\varepsilon$, viene chiesto di determinare:
+- le condizioni immediatamente successive all'urto
+- la velocità minima del proiettile prima dell'urto che garantisce di abbattere il bersaglio.
+
+Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l'urto.
+
 :::
 
 :::{grid-item-card} 
@@ -206,6 +238,8 @@ Date le masse di due blocchi che scivolano su un piano orizzontale liscio, e le 
 :::{grid-item-card} Collisione su sistema libero rigido di masse concentrate
 :columns: 8
 
+Un proiettile colpisce un sistema rigido di due masse concentrate, libero e inizialmente in quiete. Si chiede di determinare il moto dei sistemi dopo l'urto, in funzione del coefficiente di restituzione.
+
 :::
 
 :::{grid-item-card} 
@@ -226,6 +260,8 @@ Date le masse di due blocchi che scivolano su un piano orizzontale liscio, e le 
 
 :::{grid-item-card} Collisione su sistema libero rigido a massa distribuita
 :columns: 8
+
+Un proiettile colpisce un sistema rigido di due masse concentrate, libero e inizialmente in quiete. Si chiede di determinare il moto dei sistemi dopo l'urto, in funzione del coefficiente di restituzione.
 
 :::
 
