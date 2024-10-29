@@ -1,4 +1,4 @@
-(physics-hs:electromagnetism:foundation:problems)=
+(physics-hs:electromagnetism:intro:problems)=
 # Problemi
 
 <!-- Esercizio ************************************************************* -->

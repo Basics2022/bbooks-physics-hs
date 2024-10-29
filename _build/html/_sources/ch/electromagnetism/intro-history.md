@@ -1,4 +1,4 @@
-(physics-hs:electromagnetism:foundation:history)=
+(physics-hs:electromagnetism:intro:history)=
 # Breve storia dell'elettromagnetismo
 
 **todo**

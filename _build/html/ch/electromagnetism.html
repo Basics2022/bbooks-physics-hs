@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/electromagnetism';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Introduzione all’elettromagnetismo" href="electromagnetism/foundation.html" />
+    <link rel="next" title="Introduzione all’elettromagnetismo" href="electromagnetism/intro.html" />
     <link rel="prev" title="Meccanismi di trasmissione del calore" href="thermodynamics/heat-transmission.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -249,17 +249,20 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Elettromagnetismo</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Elettromagnetismo</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="electromagnetism/foundation.html">Introduzione all’elettromagnetismo</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="electromagnetism/foundation-history.html">Breve storia dell’elettromagnetismo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="electromagnetism/foundation-experiments.html">Esperienze ed esperimenti</a></li>
-<li class="toctree-l2"><a class="reference internal" href="electromagnetism/foundation-problems.html">Problemi</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="electromagnetism/intro.html">Introduzione all’elettromagnetismo</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="electromagnetism/intro-history.html">Breve storia dell’elettromagnetismo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electromagnetism/intro-experiments.html">Esperienze ed esperimenti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electromagnetism/intro-problems.html">Problemi</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="electromagnetism/electrostatics.html">Elettrostatica</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electromagnetism/electric-current.html">Corrente elettrica</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electromagnetism/electromagnetism-steady.html">Magnetismo ed elettromagnetismo in regime stazionario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electromagnetism/electromagnetism-general.html">Induzione ed elettromagnetismo</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="electromagnetism/electrical-engineering.html">Principi di elettrotecnica</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="electromagnetism/em.html">Fondamenti di elettromagnetismo</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="electromagnetism/electrostatics.html">Elettrostatica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electromagnetism/electric-current.html">Corrente elettrica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electromagnetism/electromagnetism-steady.html">Magnetismo ed elettromagnetismo in regime stazionario</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electromagnetism/electromagnetism-general.html">Induzione ed elettromagnetismo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="electromagnetism/electrical-engineering.html">Principi di elettrotecnica</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="electromagnetism/circuits-electric.html">Circuiti elettrici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="electromagnetism/circuits-magnetic.html">Circuiti magnetici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="electromagnetism/electric-machines.html">Sistemi elettromeccanici e macchine elettriche</a></li>
@@ -442,9 +445,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -460,15 +461,6 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#argomenti-del-programma">Argomenti del programma</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-del-bbook">Schema del bbook</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -480,105 +472,79 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="elettromagnetismo">
 <span id="physics-hs-electromagnetism"></span><h1>Elettromagnetismo<a class="headerlink" href="#elettromagnetismo" title="Permalink to this heading">#</a></h1>
-<p><strong>Concetti e primi strumenti.</strong></p>
-<div class="section" id="argomenti-del-programma">
-<h2>Argomenti del programma<a class="headerlink" href="#argomenti-del-programma" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Elettrostatica</p>
-<ul>
-<li><p>Elettrizzazione, conduttori e isolanti, legge di Coulomb e primi strumenti (bilancia a torsione, elettroscopio,…)</p></li>
-<li><p>Campo elettrico: def operativa con carica di prova; PSCE; lavoro, potenziale e campo conservativo; flusso di un campo vettoriale; energia potenziale, potenziale elettrico; legge di Gauss e legge di Faraday stazionaria</p></li>
-<li><p>Polarizzazione; condensatore; energia; circuiti di condensatori in regime stazionario (o solo come esercizi?)</p></li>
-<li><p>esercizi:</p>
-<ul>
-<li><p>legge di Coulomb e strumenti; dipolo magnetico e molecole</p></li>
-<li><p>esercizio su campo elettrico; moto di una carica in un campo elettrico</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>Corrente elettrica:</p>
-<ul>
-<li><p>def</p></li>
-<li><p>circuiti elettrici:</p>
-<ul>
-<li><p>resistenze di Ohm</p></li>
-<li><p>generatori (tensione e corrente?)</p></li>
-<li><p>strumenti</p></li>
-</ul>
-</li>
-<li><p>energia in circuiti elettrici in regime stazionario</p></li>
-<li><p>leggi di Kirchhoff; configurazione in serie e parallelo di resistenze; circuito RC (carica e scarica di un condensatore)</p></li>
-<li><p>elettrochimica: elettrolisi, pila, accumulatori</p></li>
-<li><p>corrente nei gas e nei semi-conduttori:</p>
-<ul>
-<li><p>gas: esperimenti su tubi a vuoto</p></li>
-<li><p>semi-conduttori: componente fondamentale dell’elettronica moderna; diodi,…</p></li>
-</ul>
-</li>
-<li><p>esericizi:</p>
-<ul>
-<li><p>…</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>Magnetismo ed elettromagnetismo:</p>
-<ul>
-<li><p>Esperienze di Oersted, Faraday, Ampere; flusso e circuitazione del campo magnetico</p></li>
-<li><p>Spira, induttore, dipolo magnetico (e modelli microscopici del magnetismo)</p></li>
-<li><p>Forza di Lorentz</p></li>
-<li><p>Azioni meccaniche: spire, principi di funzionamento del motore elettrico DC, galvanometro</p></li>
-<li><p>Induzione magnetica:</p>
-<ul>
-<li><p>legge di Faraday e sue applicazioni</p></li>
-<li><p>trasformatori, motori/generatori elettrici AC <span style="color:red">Dove introdurre il regime AC?</span></p></li>
-<li><p>circuito RLC, energia</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>Onde EM <span style="color:red">Serve una part del bbook sulle onde?</span></p>
-<ul>
-<li><p>Luce e ottica</p></li>
-</ul>
-</li>
-<li><p>Riassunto principi dell’EM: conservazione della carica elettrica, eq. di Maxwell, forza di Lorentz</p>
-<ul>
-<li><p>…</p></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="schema-del-bbook">
-<h2>Schema del bbook<a class="headerlink" href="#schema-del-bbook" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>Introduzione all’elettromagnetismo.</strong></p>
-<ul>
-<li><p><strong>Breve storia dell’elettromagnetismo.</strong></p></li>
-<li><p><strong>Esperienze ed esperimenti.</strong></p></li>
-</ul>
-</li>
-<li><p><strong>Princìpi dell’elettromagnetismo.</strong></p></li>
-<li><p><strong>Approssimazione circuitale.</strong></p>
-<ul>
-<li><p><strong>Circuiti elettrici.</strong></p>
-<ul>
-<li><p>componenti</p></li>
-<li><p>regimi di funzionamento</p></li>
-</ul>
-</li>
-<li><p><strong>Circuiti elettromagnetici.</strong></p>
-<ul>
-<li><p>…</p></li>
-<li><p>esempi: trasformatori</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>Macchine elettriche.</strong></p></li>
-</ul>
-</div>
+<p><strong>Presentazione libro</strong>
+I contenuti sono suddivisi in quattro diverse sezioni:</p>
+<ol class="arabic simple">
+<li><p><strong>Introduzione all’elettromagnetismo.</strong> Viene presentata la cronologia e una la descrizione dei <strong>concetti</strong> e le prime <strong>esperienze</strong> che hanno permesso di riconoscere i principi fisici che governano i fenomeni elettromagnetici e di costruire una teoria consistente, la teoria dell’elettromagnetismo classico;</p></li>
+<li><p><strong>Principi dell’elettromagnetismo.</strong> Partendo dai concetti e dalle esperienze, vengono formalizzati i principi dell’elettromagnetismo <strong>todo</strong></p></li>
+<li><p><strong>Principi di elettrotecnica.</strong> Partendo dai principi generali dell’elettromagnetismo, viene introdotta l’<strong>approssimazione circuitale</strong> per ridurre il problema elettromagnetico alla soluzione di circuiti.  <strong>todo</strong></p></li>
+<li><p><strong>Onde elettromagnetiche.</strong> <strong>todo</strong></p></li>
+</ol>
+<!--
+**Argomenti**
+- Principi dell'elettromagnetismo
+
+- Principi di elettrotecnica: approssimazione circuitale per circuiti elettrici, circuiti magnetici e sistemi elettromeccanici
+
+- Onde elettromagnetiche
+
+**Concetti e primi strumenti.**
+
+## Argomenti del programma
+- Elettrostatica
+  - Elettrizzazione, conduttori e isolanti, legge di Coulomb e primi strumenti (bilancia a torsione, elettroscopio,...)
+  - Campo elettrico: def operativa con carica di prova; PSCE; lavoro, potenziale e campo conservativo; flusso di un campo vettoriale; energia potenziale, potenziale elettrico; legge di Gauss e legge di Faraday stazionaria
+  - Polarizzazione; condensatore; energia; circuiti di condensatori in regime stazionario (o solo come esercizi?)
+  - esercizi: 
+    - legge di Coulomb e strumenti; dipolo magnetico e molecole
+    - esercizio su campo elettrico; moto di una carica in un campo elettrico
+- Corrente elettrica:
+  - def
+  - circuiti elettrici: 
+    - resistenze di Ohm
+    - generatori (tensione e corrente?)
+    - strumenti
+  - energia in circuiti elettrici in regime stazionario
+  - leggi di Kirchhoff; configurazione in serie e parallelo di resistenze; circuito RC (carica e scarica di un condensatore)
+  - elettrochimica: elettrolisi, pila, accumulatori
+  - corrente nei gas e nei semi-conduttori:
+    - gas: esperimenti su tubi a vuoto
+    - semi-conduttori: componente fondamentale dell'elettronica moderna; diodi,...
+  - esericizi:
+    - ...
+- Magnetismo ed elettromagnetismo:
+  - Esperienze di Oersted, Faraday, Ampere; flusso e circuitazione del campo magnetico
+  - Spira, induttore, dipolo magnetico (e modelli microscopici del magnetismo)
+  - Forza di Lorentz
+  - Azioni meccaniche: spire, principi di funzionamento del motore elettrico DC, galvanometro
+  - Induzione magnetica:
+    - legge di Faraday e sue applicazioni
+    - trasformatori, motori/generatori elettrici AC <span style="color:red">Dove introdurre il regime AC?</span>
+    - circuito RLC, energia
+- Onde EM <span style="color:red">Serve una part del bbook sulle onde?</span> 
+  - Luce e ottica
+- Riassunto principi dell'EM: conservazione della carica elettrica, eq. di Maxwell, forza di Lorentz
+  - ...
+
+
+## Schema del bbook
+- **Introduzione all'elettromagnetismo.**
+  - **Breve storia dell'elettromagnetismo.**
+  - **Esperienze ed esperimenti.**
+
+- **Princìpi dell'elettromagnetismo.**
+
+- **Approssimazione circuitale.**
+  - **Circuiti elettrici.**
+    - componenti
+    - regimi di funzionamento
+  - **Circuiti elettromagnetici.**
+    - ...
+    - esempi: trasformatori
+
+- **Macchine elettriche.**
+
+-->
 </div>
 
     <script type="text/x-thebe-config">
@@ -621,7 +587,7 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="electromagnetism/foundation.html"
+       href="electromagnetism/intro.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
@@ -635,21 +601,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#argomenti-del-programma">Argomenti del programma</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-del-bbook">Schema del bbook</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

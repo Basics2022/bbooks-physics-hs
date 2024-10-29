@@ -76,15 +76,17 @@ parts:
 - caption: Elettromagnetismo
   chapters:
   - file: ch/electromagnetism.md
-  - file: ch/electromagnetism/foundation
+  - file: ch/electromagnetism/intro
     sections:
-    - file: ch/electromagnetism/foundation-history
-    - file: ch/electromagnetism/foundation-experiments
-    - file: ch/electromagnetism/foundation-problems
-  - file: ch/electromagnetism/electrostatics
-  - file: ch/electromagnetism/electric-current
-  - file: ch/electromagnetism/electromagnetism-steady
-  - file: ch/electromagnetism/electromagnetism-general
+    - file: ch/electromagnetism/intro-history
+    - file: ch/electromagnetism/intro-experiments
+    - file: ch/electromagnetism/intro-problems
+  - file: ch/electromagnetism/em
+    sections:
+    - file: ch/electromagnetism/electrostatics
+    - file: ch/electromagnetism/electric-current
+    - file: ch/electromagnetism/electromagnetism-steady
+    - file: ch/electromagnetism/electromagnetism-general
   - file: ch/electromagnetism/electrical-engineering
     sections:
     - file: ch/electromagnetism/circuits-electric

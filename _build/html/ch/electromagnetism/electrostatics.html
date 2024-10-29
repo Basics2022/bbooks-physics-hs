@@ -68,7 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Corrente elettrica" href="electric-current.html" />
-    <link rel="prev" title="Problemi" href="foundation-problems.html" />
+    <link rel="prev" title="Fondamenti di elettromagnetismo" href="em.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -251,17 +251,20 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Elettromagnetismo</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../electromagnetism.html">Elettromagnetismo</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="foundation.html">Introduzione all’elettromagnetismo</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="foundation-history.html">Breve storia dell’elettromagnetismo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="foundation-experiments.html">Esperienze ed esperimenti</a></li>
-<li class="toctree-l2"><a class="reference internal" href="foundation-problems.html">Problemi</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="intro.html">Introduzione all’elettromagnetismo</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro-history.html">Breve storia dell’elettromagnetismo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro-experiments.html">Esperienze ed esperimenti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro-problems.html">Problemi</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Elettrostatica</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electric-current.html">Corrente elettrica</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electromagnetism-steady.html">Magnetismo ed elettromagnetismo in regime stazionario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="electromagnetism-general.html">Induzione ed elettromagnetismo</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="electrical-engineering.html">Principi di elettrotecnica</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="em.html">Fondamenti di elettromagnetismo</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Elettrostatica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electric-current.html">Corrente elettrica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electromagnetism-steady.html">Magnetismo ed elettromagnetismo in regime stazionario</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electromagnetism-general.html">Induzione ed elettromagnetismo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="electrical-engineering.html">Principi di elettrotecnica</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="circuits-electric.html">Circuiti elettrici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="circuits-magnetic.html">Circuiti magnetici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="electric-machines.html">Sistemi elettromeccanici e macchine elettriche</a></li>
@@ -506,6 +509,37 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\vec{F}_{12} = k \frac{q_1 \, q_2}{|\vec{r}_{12}|^2} \, \hat{r}_{21} = \frac{1}{4 \pi \varepsilon}\frac{q_1 \, q_2}{|\vec{r}_{12}|^2} \, \hat{r}_{21}\]</div>
 <p>essendo <span class="math notranslate nohighlight">\(\vec{r}_{21}\)</span> il vettore che congiunge il punto <span class="math notranslate nohighlight">\(P_2\)</span> con il punto <span class="math notranslate nohighlight">\(P_{1}\)</span>, <span class="math notranslate nohighlight">\(\vec{r}_{21} = \vec{r}_1 - \vec{r}_2\)</span>.</p>
+<p>|—|—|—|</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p><img alt="" src="../../_images/electrostatics-coulomb-pp.png" /></p></th>
+<th class="head"><p><img alt="" src="../../_images/electrostatics-coulomb-pn.png" /></p></th>
+<th class="head"><p><img alt="" src="../../_images/electrostatics-coulomb-nn.png" /></p></th>
+</tr>
+</thead>
+</table>
+<!--
+```{figure} ../../media/electrostatics-coulomb-pp.png
+---
+width: 30%
+---
+```
+```{figure} ../../media/electrostatics-coulomb-pn.png
+---
+width: 30%
+---
+```
+```{figure} ../../media/electrostatics-coulomb-nn.png
+---
+width: 30%
+---
+```
+-->
+<!--
+![](../../media/electrostatics-coulomb-pp.png)
+![](../../media/electrostatics-coulomb-pn.png)
+![](../../media/electrostatics-coulomb-nn.png)
+-->
 <p>La scelta della definizione della costante di proporzionalità, <span class="math notranslate nohighlight">\(k = \frac{1}{4 \pi \varepsilon}\)</span>, viene fatta per ottenere un’espressione della <a class="reference internal" href="#physics-hs-electromagnetism-electrostatics-maxwell-gauss"><span class="std std-ref">legge di Gauss per il campo elettrico</span></a> senza fattori numerici.</p>
 <p>La costante <span class="math notranslate nohighlight">\(\varepsilon\)</span> viene definita costante dielettrica del mezzo. Per cariche elettriche posizionate nello spazio “vuoto” (di materia ma non di proprietà fisiche), nell’espressione della legge di Coulomb compare la <strong>costante dielettrica nel vuoto</strong>,</p>
 <div class="math notranslate nohighlight">
@@ -800,12 +834,12 @@ $$= \dfrac{d}{dt} \left( C \, \Delta V \right) \ .$$
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="foundation-problems.html"
+       href="em.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Problemi</p>
+        <p class="prev-next-title">Fondamenti di elettromagnetismo</p>
       </div>
     </a>
     <a class="right-next"

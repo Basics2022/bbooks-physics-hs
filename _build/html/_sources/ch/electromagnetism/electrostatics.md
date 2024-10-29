@@ -9,6 +9,34 @@ $$\vec{F}_{12} = k \frac{q_1 \, q_2}{|\vec{r}_{12}|^2} \, \hat{r}_{21} = \frac{1
 
 essendo $\vec{r}_{21}$ il vettore che congiunge il punto $P_2$ con il punto $P_{1}$, $\vec{r}_{21} = \vec{r}_1 - \vec{r}_2$.
 
+
+|---|---|---|
+|![](../../media/electrostatics-coulomb-pp.png)|![](../../media/electrostatics-coulomb-pn.png)|![](../../media/electrostatics-coulomb-nn.png)|
+|---|---|---|
+
+<!--
+```{figure} ../../media/electrostatics-coulomb-pp.png
+---
+width: 30%
+---
+```
+```{figure} ../../media/electrostatics-coulomb-pn.png
+---
+width: 30%
+---
+```
+```{figure} ../../media/electrostatics-coulomb-nn.png
+---
+width: 30%
+---
+```
+-->
+<!--
+![](../../media/electrostatics-coulomb-pp.png)
+![](../../media/electrostatics-coulomb-pn.png)
+![](../../media/electrostatics-coulomb-nn.png)
+-->
+
 La scelta della definizione della costante di proporzionalità, $k = \frac{1}{4 \pi \varepsilon}$, viene fatta per ottenere un'espressione della [legge di Gauss per il campo elettrico](physics-hs:electromagnetism:electrostatics:maxwell:gauss) senza fattori numerici.
 
 La costante $\varepsilon$ viene definita costante dielettrica del mezzo. Per cariche elettriche posizionate nello spazio "vuoto" (di materia ma non di proprietà fisiche), nell'espressione della legge di Coulomb compare la **costante dielettrica nel vuoto**,
