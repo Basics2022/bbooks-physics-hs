@@ -10,7 +10,6 @@ $$\vec{F}_{12} = k \frac{q_1 \, q_2}{|\vec{r}_{12}|^2} \, \hat{r}_{21} = \frac{1
 essendo $\vec{r}_{21}$ il vettore che congiunge il punto $P_2$ con il punto $P_{1}$, $\vec{r}_{21} = \vec{r}_1 - \vec{r}_2$.
 
 
-|---|---|---|
 |![](../../media/electrostatics-coulomb-pp.png)|![](../../media/electrostatics-coulomb-pn.png)|![](../../media/electrostatics-coulomb-nn.png)|
 |---|---|---|
 
@@ -50,6 +49,9 @@ $$\varepsilon = \varepsilon_r \,\varepsilon_0 \ . $$
 **todo**
 - esperimento ed esercizio con elettroscopio e bilancia (similitudine con legge di gravitazione universale, ma doppia natura della carica elettrica + o -) **todo** riferimento alle prime esperienze sulle cariche elettriche
 - **PSCE**
+
+### Misura della carica elettrica
+Un elettrometro è uno strumento di misura della carica elettrica. Una versione rudimentale di un elettrometro è la bilancia di torsione usata da Coulomb nei suoi esperimenti.
 
 ## Il campo elettrico
 Data una distribuzione di cariche nello spazio, è possibile descriverla tramite l'effetto che avrebbe su una carica qualsiasi posta in un punto arbitrario dello spazio, introducendo la definizione di campo elettrico.
@@ -243,8 +245,26 @@ $$ Q = \sigma \, A = \varepsilon \, e \, A = \frac{\varepsilon \, \ell}{A} \, \D
 
 $C$ capacità, $C = \frac{\varepsilon \, A}{\ell}$ capacità per un condensatore piano.
 
-### Condensatore sferico, **todo**
+```{dropdown} Condensatore cilindrico
+**todo**
+```
 
+```{dropdown} Condensatore sferico
+Tra le sfere del condensatore, il campo elettrico è ha direzione radiale e valore assoluto $\propto r^{-2}$,
+
+$$\vec{e}(r) = \frac{1}{4 \pi \varepsilon} \frac{Q}{r^2} \hat{r} \ .$$
+
+dove la carica totale della superficie sferica con distribuzione di carica uniforme è data dal prodotto della densità superficiale di carica e la superficie, $Q = \sigma \, S_1 = \sigma \, 4 \pi \, R_1^2$.
+La differenza di potenziale tra le due armature è quindi
+
+$$\Delta V = - \int_{\ell} \vec{e}(r) \cdot \hat{r} = \int_{r=R_1}^{R_2} \frac{Q}{4 \pi r^2} dr = \frac{1}{4 \pi \varepsilon} \frac{1}{r} \bigg|_{R_1}^{R_2} = - \frac{1}{4 \pi \varepsilon} \left(\frac{1}{R_1} - \frac{1}{R_2} \right) \ , Q \ .$$
+
+La formula precedente e la definizione di capacità, $$Q = C , \Delta V$$, consente di determinare la capacità di un condensatore sferico ideale,
+
+$$C = 4 \pi \, \varepsilon \,  \frac{R_1 \, R_2}{R_2 - R_1} \ .$$
+```
+
+<!-- **todo** non qui! Spostare nella pagina riassuntiva delle equazioni di Maxwell?
 
 ### Equazioni di Maxwell e carica di un condensatore
 **todo** significato del termine $\dot{\Phi}_{S}(\vec{d})$
@@ -266,11 +286,6 @@ viene applicata a un condensatore piano, usando due superfici $S_1$, $S_2$ che h
 Segue che $i_{S_1} = \dot{\Phi}_{S_2}(\vec{d})$ e quindi si ritrova la legge di conservazione della carica elettrica,
 
 $$i = \dfrac{d}{dt} \left( A \, d \right) = \dfrac{d}{dt} \left( A \, \varepsilon \, e \right) = \dfrac{d Q}{dt} \ .$$
-<!--
-$$= \dfrac{d}{dt} \left( C \, \Delta V \right) \ .$$
--->
-
-
 
 
 ## **todo** ...
@@ -283,7 +298,7 @@ $$= \dfrac{d}{dt} \left( C \, \Delta V \right) \ .$$
       - campi elettrici nei materiali: polarizzazione
       - energia accumulata
       - sistemi di condensatori
-
+-->
 
 
 

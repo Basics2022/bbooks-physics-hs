@@ -470,7 +470,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-coulomb">Legge di Coulomb</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-coulomb">Legge di Coulomb</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#misura-della-carica-elettrica">Misura della carica elettrica</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#il-campo-elettrico">Il campo elettrico</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-conservativo">Campo conservativo</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energia-potenziale-di-una-distribuzione-di-cariche">Energia potenziale di una distribuzione di cariche</a></li>
@@ -485,11 +488,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-di-una-carica-in-un-campo-elettrico">Moto di una carica in un campo elettrico</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore">Condensatore</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore-infinito-piano">Condensatore infinito piano</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore-sferico-todo">Condensatore sferico, <strong>todo</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-di-maxwell-e-carica-di-un-condensatore">Equazioni di Maxwell e carica di un condensatore</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#todo"><strong>todo</strong> …</a></li>
 </ul>
             </nav>
         </div>
@@ -509,7 +509,6 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\vec{F}_{12} = k \frac{q_1 \, q_2}{|\vec{r}_{12}|^2} \, \hat{r}_{21} = \frac{1}{4 \pi \varepsilon}\frac{q_1 \, q_2}{|\vec{r}_{12}|^2} \, \hat{r}_{21}\]</div>
 <p>essendo <span class="math notranslate nohighlight">\(\vec{r}_{21}\)</span> il vettore che congiunge il punto <span class="math notranslate nohighlight">\(P_2\)</span> con il punto <span class="math notranslate nohighlight">\(P_{1}\)</span>, <span class="math notranslate nohighlight">\(\vec{r}_{21} = \vec{r}_1 - \vec{r}_2\)</span>.</p>
-<p>|—|—|—|</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p><img alt="" src="../../_images/electrostatics-coulomb-pp.png" /></p></th>
@@ -552,6 +551,10 @@ width: 30%
 <li><p>esperimento ed esercizio con elettroscopio e bilancia (similitudine con legge di gravitazione universale, ma doppia natura della carica elettrica + o -) <strong>todo</strong> riferimento alle prime esperienze sulle cariche elettriche</p></li>
 <li><p><strong>PSCE</strong></p></li>
 </ul>
+<div class="section" id="misura-della-carica-elettrica">
+<h3>Misura della carica elettrica<a class="headerlink" href="#misura-della-carica-elettrica" title="Permalink to this heading">#</a></h3>
+<p>Un elettrometro è uno strumento di misura della carica elettrica. Una versione rudimentale di un elettrometro è la bilancia di torsione usata da Coulomb nei suoi esperimenti.</p>
+</div>
 </div>
 <div class="section" id="il-campo-elettrico">
 <h2>Il campo elettrico<a class="headerlink" href="#il-campo-elettrico" title="Permalink to this heading">#</a></h2>
@@ -750,56 +753,69 @@ Avendo dimostrato la legge di Faraday nel caso stazionario per una carica puntif
 <div class="math notranslate nohighlight">
 \[ Q = \sigma \, A = \varepsilon \, e \, A = \frac{\varepsilon \, \ell}{A} \, \Delta V = C \, \Delta V \ ,\]</div>
 <p><span class="math notranslate nohighlight">\(C\)</span> capacità, <span class="math notranslate nohighlight">\(C = \frac{\varepsilon \, A}{\ell}\)</span> capacità per un condensatore piano.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Condensatore cilindrico<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>todo</strong></p>
 </div>
-<div class="section" id="condensatore-sferico-todo">
-<h3>Condensatore sferico, <strong>todo</strong><a class="headerlink" href="#condensatore-sferico-todo" title="Permalink to this heading">#</a></h3>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Condensatore sferico<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Tra le sfere del condensatore, il campo elettrico è ha direzione radiale e valore assoluto <span class="math notranslate nohighlight">\(\propto r^{-2}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\vec{e}(r) = \frac{1}{4 \pi \varepsilon} \frac{Q}{r^2} \hat{r} \ .\]</div>
+<p class="sd-card-text">dove la carica totale della superficie sferica con distribuzione di carica uniforme è data dal prodotto della densità superficiale di carica e la superficie, <span class="math notranslate nohighlight">\(Q = \sigma \, S_1 = \sigma \, 4 \pi \, R_1^2\)</span>.
+La differenza di potenziale tra le due armature è quindi</p>
+<div class="math notranslate nohighlight">
+\[\Delta V = - \int_{\ell} \vec{e}(r) \cdot \hat{r} = \int_{r=R_1}^{R_2} \frac{Q}{4 \pi r^2} dr = \frac{1}{4 \pi \varepsilon} \frac{1}{r} \bigg|_{R_1}^{R_2} = - \frac{1}{4 \pi \varepsilon} \left(\frac{1}{R_1} - \frac{1}{R_2} \right) \ , Q \ .\]</div>
+<p class="sd-card-text">La formula precedente e la definizione di capacità, $<span class="math notranslate nohighlight">\(Q = C , \Delta V\)</span>$, consente di determinare la capacità di un condensatore sferico ideale,</p>
+<div class="math notranslate nohighlight">
+\[C = 4 \pi \, \varepsilon \,  \frac{R_1 \, R_2}{R_2 - R_1} \ .\]</div>
 </div>
-<div class="section" id="equazioni-di-maxwell-e-carica-di-un-condensatore">
-<h3>Equazioni di Maxwell e carica di un condensatore<a class="headerlink" href="#equazioni-di-maxwell-e-carica-di-un-condensatore" title="Permalink to this heading">#</a></h3>
-<p><strong>todo</strong> significato del termine <span class="math notranslate nohighlight">\(\dot{\Phi}_{S}(\vec{d})\)</span></p>
-<p>L’equazione di Ampére-Maxwell,</p>
-<div class="math notranslate nohighlight">
-\[\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S \]</div>
-<p>viene applicata a un condensatore piano, usando due superfici <span class="math notranslate nohighlight">\(S_1\)</span>, <span class="math notranslate nohighlight">\(S_2\)</span> che hanno lo stesso contorno, <span class="math notranslate nohighlight">\(\ell\)</span></p>
-<ul>
-<li><p><span class="math notranslate nohighlight">\(S_1\)</span> è tagliata dal conduttore</p>
-<div class="math notranslate nohighlight">
-\[\Gamma_{\ell}(\vec{h}) = i_{S_1}\]</div>
-</li>
-<li><p><span class="math notranslate nohighlight">\(S_2\)</span> passa tra le armature del condensatore</p>
-<div class="math notranslate nohighlight">
-\[\Gamma_{\ell}(\vec{h}) = \dot{\Phi}_{S_2}(\vec{d})\]</div>
-</li>
-</ul>
-<p>Segue che <span class="math notranslate nohighlight">\(i_{S_1} = \dot{\Phi}_{S_2}(\vec{d})\)</span> e quindi si ritrova la legge di conservazione della carica elettrica,</p>
-<div class="math notranslate nohighlight">
-\[i = \dfrac{d}{dt} \left( A \, d \right) = \dfrac{d}{dt} \left( A \, \varepsilon \, e \right) = \dfrac{d Q}{dt} \ .\]</div>
-<!--
-$$= \dfrac{d}{dt} \left( C \, \Delta V \right) \ .$$
+</details><!-- **todo** non qui! Spostare nella pagina riassuntiva delle equazioni di Maxwell?
+
+### Equazioni di Maxwell e carica di un condensatore
+**todo** significato del termine $\dot{\Phi}_{S}(\vec{d})$
+
+L'equazione di Ampére-Maxwell,
+
+$$\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S $$
+
+viene applicata a un condensatore piano, usando due superfici $S_1$, $S_2$ che hanno lo stesso contorno, $\ell$
+
+- $S_1$ è tagliata dal conduttore 
+
+  $$\Gamma_{\ell}(\vec{h}) = i_{S_1}$$
+
+- $S_2$ passa tra le armature del condensatore
+
+  $$\Gamma_{\ell}(\vec{h}) = \dot{\Phi}_{S_2}(\vec{d})$$
+
+Segue che $i_{S_1} = \dot{\Phi}_{S_2}(\vec{d})$ e quindi si ritrova la legge di conservazione della carica elettrica,
+
+$$i = \dfrac{d}{dt} \left( A \, d \right) = \dfrac{d}{dt} \left( A \, \varepsilon \, e \right) = \dfrac{d Q}{dt} \ .$$
+
+
+## **todo** ...
+**todo**
+<span style="color:red"> Dove trattare i condensatori? </span>
+
+- distribuzione di carica su conduttori sulla superficie
+  - esempi: gabbia di Faraday,
+    - condensatore
+      - campi elettrici nei materiali: polarizzazione
+      - energia accumulata
+      - sistemi di condensatori
 -->
 </div>
-</div>
-<div class="section" id="todo">
-<h2><strong>todo</strong> …<a class="headerlink" href="#todo" title="Permalink to this heading">#</a></h2>
-<p><strong>todo</strong>
-<span style="color:red"> Dove trattare i condensatori? </span></p>
-<ul class="simple">
-<li><p>distribuzione di carica su conduttori sulla superficie</p>
-<ul>
-<li><p>esempi: gabbia di Faraday,</p>
-<ul>
-<li><p>condensatore</p>
-<ul>
-<li><p>campi elettrici nei materiali: polarizzazione</p></li>
-<li><p>energia accumulata</p></li>
-<li><p>sistemi di condensatori</p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
 </div>
 </div>
 
@@ -866,7 +882,10 @@ $$= \dfrac{d}{dt} \left( C \, \Delta V \right) \ .$$
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-coulomb">Legge di Coulomb</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-coulomb">Legge di Coulomb</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#misura-della-carica-elettrica">Misura della carica elettrica</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#il-campo-elettrico">Il campo elettrico</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-conservativo">Campo conservativo</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energia-potenziale-di-una-distribuzione-di-cariche">Energia potenziale di una distribuzione di cariche</a></li>
@@ -881,11 +900,8 @@ $$= \dfrac{d}{dt} \left( C \, \Delta V \right) \ .$$
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-di-una-carica-in-un-campo-elettrico">Moto di una carica in un campo elettrico</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore">Condensatore</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore-infinito-piano">Condensatore infinito piano</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore-sferico-todo">Condensatore sferico, <strong>todo</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equazioni-di-maxwell-e-carica-di-un-condensatore">Equazioni di Maxwell e carica di un condensatore</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#todo"><strong>todo</strong> …</a></li>
 </ul>
   </nav></div>
 
