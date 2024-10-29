@@ -14,15 +14,18 @@ Questi urti comportano delle variazioni finite delle quantità dinamiche in inte
 Tra due istanti temporali immediatamente precedente e immediatamente successivo all'urto tra due sistemi possono essere trascurate tutte le azioni agenti sul sistema complessivo tranne quelle **impulsive** dovute all'**urto**, e ad eventuali **reazioni vincolari** (vedi esercizi),
 
 $$\begin{aligned}
-  \vec{I}^{ext}   & = \Delta \vec{Q} = \Delta \vec{Q}_1 + \Delta \vec{Q}_2 \\
-  \vec{J}_H^{ext} & = \Delta \vec{\Gamma}_H + \dot{\vec{x}}_H \times \Delta \vec{Q} = \Delta \vec{\Gamma}_{H,1} + \Delta \vec{\Gamma}_{H,2} \\
-  L^{ext} + L^{int} & = \Delta K = \Delta K_1 + \Delta K_2 \ ,
+  \vec{I}^{ext}   & = \Delta \vec{Q} \\
+  \vec{J}_H^{ext} & = \Delta \vec{\Gamma}_H + \Delta \dot{\vec{x}}_H \times \vec{Q} = \Delta \vec{\Gamma}_{H} \\
+  L^{ext} + L^{int} & = \Delta K \ ,
 \end{aligned}$$
 
-
+con $\vec{I}^{ext}$ l'impulso delle forze esterne durante l'urto, $\vec{J}^{ext}_H$ l'impulso dei momenti esterni durante l'urto, $L^{ext}$, $L^{int}$ il lavoro delle forze esterne e interne durante l'urto.
 
 E' bene osservare che in assenza di forze e momenti impulsivi esterni - anche dovuti a eventuali vincoli - ai due sistemi che collidono, la quantità di moto e il momento della quantità di moto del sistema complessivo si conservano in un urto.
 Al contrario, in generale, l'**energia cinetica non si conserva** poiché dipende anche dalla potenza delle azioni interne che includono quelle impulsive scambiate durante l'urto.
+
+Il **coefficiente di restituzione** $\varepsilon \in [0, 1]$ è definito come **todo**
+
 
 ## Problemi
 
