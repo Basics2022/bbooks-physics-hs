@@ -17,7 +17,6 @@ $$i = I_{S} = \Phi_{S}(\vec{j}) \ .$$
 |![](../../media/electric-current.png)|![](../../media/electric-current-solids.png)|
 |---|---|
 
-
 **Oss. Corrente elettrica in materiali neutri**: è possibile avere corrente elettrica anche in materiali elettricamente neutri, anche localmente. Ad esempio, nell'ipotesi di avere due sostanze diverse con carica $\rho^+$, $\rho^-$ e velocità media delle due sostanze $\vec{v}^+$, $\vec{v}^-$, la corrente densità di corrente elettrica è
 
 $$\vec{j} = \rho \vec{v} = \rho^+ \vec{v}^+ + \rho^- \vec{v}^- \ . $$

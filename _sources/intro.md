@@ -11,7 +11,7 @@ Per ora colleziona gli argomenti. L'organizzazione migliore verrà decisa in un 
 -->
 
 **Discipline.**
-::::{grid} 3
+::::{grid} 1
 :gutter: 3
 
 :::{grid-item-card}
