@@ -501,13 +501,39 @@ document.write(`
 </li>
 </ul>
 <p>Localmente, è possibile definire una <strong>densità “macroscopica” di corrente elettrica</strong> come la media pesata delle velocità delle cariche, <span class="math notranslate nohighlight">\(\vec{v}\)</span>.</p>
-<p><strong>todo</strong>. <strong>Obs - corrente elettrica nei solidi</strong>: è possibile avere corrente elettrica anche in materiali elettricamente neutri, anche localmente. Ad esempio, nell’ipotesi di avere due sostanze diverse con carica <span class="math notranslate nohighlight">\(\rho^+\)</span>, <span class="math notranslate nohighlight">\(\rho^-\)</span> e velocità media delle due sostanze <span class="math notranslate nohighlight">\(\vec{v}^+\)</span>, <span class="math notranslate nohighlight">\(\vec{v}^-\)</span>, la corrente densità di corrente elettrica è</p>
 <div class="math notranslate nohighlight">
-\[\vec{j} = \rho \vec{v} = \rho^+ \vec{v}^+ + \rho^- \vec{v}^- \ . \]</div>
-<p>Nel caso in cui il materiale sia neutro, la densità di carica elettrica è nulla, <span class="math notranslate nohighlight">\(0 = \rho = \rho^+ + \rho^- =\)</span> e quindi <span class="math notranslate nohighlight">\(\rho^+ = - \rho^-\)</span> e la densità di corrente elettrica può essere scritta come <span class="math notranslate nohighlight">\(\vec{j} = \rho^- (\vec{v}^- - \vec{v}^+)\)</span>. Assumendo che le cariche elettriche positive siano ferme rispetto all’osservatore <span class="math notranslate nohighlight">\(\vec{v}^+ = \vec{0}\)</span>, la densità di corrente elettrica diventa <span class="math notranslate nohighlight">\(\vec{j} = \rho^- \vec{v}^-\)</span>.</p>
+\[\lim_{\Delta V(P) \rightarrow 0} \dfrac{\sum_{k \in \Delta V(P)} q_k}{\Delta V} = \rho(P)\]</div>
+<div class="math notranslate nohighlight">
+\[\lim_{\Delta V(P) \rightarrow 0} \dfrac{\sum_{k \in \Delta V(P)} q_k \vec{v}_k}{\Delta V_P} = \vec{j}(P)\]</div>
 <p>La <strong>corrente elettrica</strong> attraverso una superficie <span class="math notranslate nohighlight">\(S\)</span> viene definita come il flusso di carica elettrica attraverso la superficie <span class="math notranslate nohighlight">\(S\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[i = I_{S} = \Phi_{S}(\vec{j}) \ .\]</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p><img alt="" src="../../_images/electric-current.png" /></p></th>
+<th class="head"><p><img alt="" src="../../_images/electric-current-solids.png" /></p></th>
+</tr>
+</thead>
+</table>
+<p><strong>Oss. Corrente elettrica in materiali neutri</strong>: è possibile avere corrente elettrica anche in materiali elettricamente neutri, anche localmente. Ad esempio, nell’ipotesi di avere due sostanze diverse con carica <span class="math notranslate nohighlight">\(\rho^+\)</span>, <span class="math notranslate nohighlight">\(\rho^-\)</span> e velocità media delle due sostanze <span class="math notranslate nohighlight">\(\vec{v}^+\)</span>, <span class="math notranslate nohighlight">\(\vec{v}^-\)</span>, la corrente densità di corrente elettrica è</p>
+<div class="math notranslate nohighlight">
+\[\vec{j} = \rho \vec{v} = \rho^+ \vec{v}^+ + \rho^- \vec{v}^- \ . \]</div>
+<p>Nel caso in cui il materiale sia neutro, la densità di carica elettrica è nulla, <span class="math notranslate nohighlight">\(0 = \rho = \rho^+ + \rho^- =\)</span> e quindi <span class="math notranslate nohighlight">\(\rho^+ = - \rho^-\)</span> e la densità di corrente elettrica può essere scritta come <span class="math notranslate nohighlight">\(\vec{j} = \rho^- (\vec{v}^- - \vec{v}^+)\)</span>.</p>
+<p><strong>Oss. Corrente elettrica in solidi conduttori neutri.</strong> I solidi hanno una struttura microscopica con gli atomi disposti in un reticolo, senza libertà di movimento. Nei solidi conduttori, gli elettroni “più esterni” della struttura atomica non sono localizzati attorno al singolo atono, ma sono “condivisi” e libersi di muoversi tra tutti gli atomi del solido: queste cariche elettriche libere di muoversi permettono una buona conduzione di corrente elettrica, e vengono chiamati <strong>elettroni di conduzione</strong></p>
+<p>Senza “forzanti esterne”, come ad esempio campi elettrici, il moto degli elettroni di conduzione non ha direzioni privilegiate: poiché il moto delle cariche libere è casuale senza direzioni privilegiate, la velocità media è nulla (la velocità è una grandezza vettoriale!) e la corrente elettrica è nulla. Se le velocità delle cariche libere ha una direzione preferenziale, la loro velocità media, <span class="math notranslate nohighlight">\(\vec{v}^-\)</span>, e quindi la corrente elettrica, non è nulla. Assumendo che le cariche elettriche positive abbiano velocità media nulla rispetto all’osservatore <span class="math notranslate nohighlight">\(\vec{v}^+ = \vec{0}\)</span>, la densità di corrente elettrica diventa <span class="math notranslate nohighlight">\(\vec{j} = \rho^- \vec{v}^-\)</span>.</p>
+<!--
+```{figure} ../../media/electric-current-solids.png
+---
+width: 30%
+align: right
+---
+```
+-->
+<!--
+La corrente elementare attraverso la superficie elementare $\Delta S$ è
+V
+$$\Delta i = \Phi_{\Delta S}(\vec{j}) = \vec{j} \cdot \hat{n} \Delta S = \frac{\sum_k q_k \vec{v}_k}{\Delta V} \cdot \hat{n} \Delta S = $$
+-->
 <div class="section" id="strumenti-misura-e-generazione">
 <h2>Strumenti: misura e generazione<a class="headerlink" href="#strumenti-misura-e-generazione" title="Permalink to this heading">#</a></h2>
 <p><strong>todo</strong></p>
