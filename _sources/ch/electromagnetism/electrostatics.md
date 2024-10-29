@@ -52,11 +52,7 @@ Vale il **principio di sovrapposizione delle cause e degli effetti**. In presenz
 $$\vec{F}_1 = \vec{F}_{12} + \vec{F}_{13} = \frac{q_1 \, q_2}{4 \pi \varepsilon}\frac{\vec{r}_1 - \vec{r}_2}{|\vec{r}_1 - \vec{r}_2|^2} +  \frac{q_1 \, q_3}{4 \pi \varepsilon}\frac{\vec{r}_1 - \vec{r}_3}{|\vec{r}_1 - \vec{r}_3|^2} \ .$$
 
 ```{figure} ../../media/electrostatics-coulomb-psce.png
-:align: right
 ```
-Vale il **principio di sovrapposizione delle cause e degli effetti**. In presenza di 3 cariche puntiformi, $q_1$, $q_2$, $q_3$, la forza totale agente sulla carica $q_1$ è uguale alla somma delle forze dovute a $q_2$ e $q_3$,
-
-$$\vec{F}_1 = \vec{F}_{12} + \vec{F}_{13} = \frac{q_1 \, q_2}{4 \pi \varepsilon}\frac{\vec{r}_1 - \vec{r}_2}{|\vec{r}_1 - \vec{r}_2|^2} +  \frac{q_1 \, q_3}{4 \pi \varepsilon}\frac{\vec{r}_1 - \vec{r}_3}{|\vec{r}_1 - \vec{r}_3|^2} \ .$$
 
 <!--
 **todo**
