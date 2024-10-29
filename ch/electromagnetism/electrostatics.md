@@ -46,9 +46,19 @@ Materiali isotropi lineari non dispersivi possono essere caratterizzati da una s
 
 $$\varepsilon = \varepsilon_r \,\varepsilon_0 \ . $$
 
+
+Vale il **principio di sovrapposizione delle cause e degli effetti**. In presenza di 3 cariche puntiformi, $q_1$, $q_2$, $q_3$, la forza totale agente sulla carica $q_1$ è uguale alla somma delle forze dovute a $q_2$ e $q_3$,
+
+$$\vec{F}_1 = \vec{F}_{12} + \vec{F}_{13} = \frac{q_1 \, q_2}{4 \pi \varepsilon}\frac{\vec{r}_1 - \vec{r}_2}{|\vec{r}_1 - \vec{r}_2|^2} +  \frac{q_1 \, q_3}{4 \pi \varepsilon}\frac{\vec{r}_1 - \vec{r}_3}{|\vec{r}_1 - \vec{r}_3|^2} \ .$$
+
+```{figure} ../../media/electrostatics-coulomb-psce.png
+```
+
+<!--
 **todo**
 - esperimento ed esercizio con elettroscopio e bilancia (similitudine con legge di gravitazione universale, ma doppia natura della carica elettrica + o -) **todo** riferimento alle prime esperienze sulle cariche elettriche
 - **PSCE**
+-->
 
 ### Misura della carica elettrica
 Un elettrometro è uno strumento di misura della carica elettrica. Una versione rudimentale di un elettrometro è la bilancia di torsione usata da Coulomb nei suoi esperimenti.
