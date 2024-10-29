@@ -10,9 +10,7 @@ $$\vec{F}_{12} = k \frac{q_1 \, q_2}{|\vec{r}_{12}|^2} \, \hat{r}_{21} = \frac{1
 essendo $\vec{r}_{21}$ il vettore che congiunge il punto $P_2$ con il punto $P_{1}$, $\vec{r}_{21} = \vec{r}_1 - \vec{r}_2$.
 
 
-|---|---|---|
 |![](../../media/electrostatics-coulomb-pp.png)|![](../../media/electrostatics-coulomb-pn.png)|![](../../media/electrostatics-coulomb-nn.png)|
-|---|---|---|
 
 <!--
 ```{figure} ../../media/electrostatics-coulomb-pp.png
