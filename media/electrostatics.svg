@@ -16,7 +16,7 @@
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="electrostatics.svg"
-   inkscape:export-filename="/home/davide/Documents/basics-books/books/bbooks-physics-hs/media/electrostatics-coulomb-nn.png"
+   inkscape:export-filename="/home/davide/Documents/basics-books/books/bbooks-physics-hs/media/electrostatics-torsion-balance-coulomb.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
   <defs
@@ -4694,10 +4694,10 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="125.89236"
+     inkscape:cx="133.72104"
      inkscape:cy="194.83244"
      inkscape:document-units="mm"
-     inkscape:current-layer="g34161"
+     inkscape:current-layer="g40929"
      showgrid="false"
      inkscape:snap-global="true"
      inkscape:snap-bbox="true"
@@ -15948,7 +15948,7 @@
            style="fill:#000000;stroke-width:0" /></g>    </g>
   </g>
   <g
-     style="display:none"
+     style="display:inline"
      transform="translate(0,-197)"
      id="g40929"
      inkscape:groupmode="layer"
@@ -16264,7 +16264,7 @@
      inkscape:groupmode="layer"
      id="g34161"
      inkscape:label="coulomb force psce"
-     style="display:inline">
+     style="display:none">
     <circle
        style="display:inline;opacity:1;fill:#5555ff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.18500699;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
        id="circle34085"

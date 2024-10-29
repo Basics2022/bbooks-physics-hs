@@ -63,6 +63,13 @@ $$\vec{F}_1 = \vec{F}_{12} + \vec{F}_{13} = \frac{q_1 \, q_2}{4 \pi \varepsilon}
 ### Misura della carica elettrica
 Un elettrometro è uno strumento di misura della carica elettrica. Una versione rudimentale di un elettrometro è la bilancia di torsione usata da Coulomb nei suoi esperimenti.
 
+Il momento generato dalla forza di Coulomb sulla carica elettrica incognita $q_1$ dalla carica elettrica $q_2$ equilibria il momento elastico della bilancia di torsione. Se la struttura ha una equazione costitutiva il momento strutturale è proproporzionale alla rotazione, $M_z = K \, \theta$.
+
+**todo** *svolgere conti qui o rimandare a esercizi?*
+
+```{figure} ../../media/electrostatics-torsion-balance-coulomb.png
+```
+
 ## Il campo elettrico
 Data una distribuzione di cariche nello spazio, è possibile descriverla tramite l'effetto che avrebbe su una carica qualsiasi posta in un punto arbitrario dello spazio, introducendo la definizione di campo elettrico.
 
