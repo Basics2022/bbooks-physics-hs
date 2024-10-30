@@ -50,6 +50,7 @@ Date le masse di due blocchi che scivolano su un piano orizzontale liscio, e le 
 ::::
 
 ```{dropdown} Soluzione.
+**todo**
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -77,6 +78,7 @@ Date le masse di due blocchi che scivolano su un piano orizzontale scabro, le ve
 ::::
 
 ```{dropdown} Soluzione.
+**todo**
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -102,6 +104,7 @@ Dato il coefficiente di restituzione degli urti tra la palla di massa $m_1$ nota
 ::::
 
 ```{dropdown} Soluzione.
+**todo**
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -125,6 +128,7 @@ Data la configurazione iniziale del sistema massa-molla, con lunghezza a riposo 
 ::::
 
 ```{dropdown} Soluzione.
+**todo**
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -148,6 +152,7 @@ Nel caso di urti perfettamente elastici tra i due blocchi e con la parete, viene
 ::::
 
 ```{dropdown} Soluzione.
+**todo**
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -175,6 +180,7 @@ Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l'urto.
 ::::
 
 ```{dropdown} Soluzione.
+**todo**
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -202,6 +208,7 @@ Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l'urto.
 ::::
 
 ```{dropdown} Soluzione.
+**todo**
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -229,6 +236,7 @@ Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l'urto.
 ::::
 
 ```{dropdown} Soluzione.
+**todo**
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -252,6 +260,7 @@ Un proiettile colpisce un sistema rigido di due masse concentrate, libero e iniz
 ::::
 
 ```{dropdown} Soluzione.
+**todo**
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -275,4 +284,5 @@ Un proiettile colpisce un sistema rigido di due masse concentrate, libero e iniz
 ::::
 
 ```{dropdown} Soluzione.
+**todo**
 ```

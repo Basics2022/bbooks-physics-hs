@@ -1,7 +1,7 @@
 (physics-hs:intro)=
 # Introduzione alla fisica
 
-- Metodo sperimentale:
+- Metodo scientifico:
   - ricerca di princìpi fisici in accordo con le attività sperimentali
   - deduzione di una teoria, a partire dai princìpi
 - Grandezze fisiche:

@@ -27,7 +27,7 @@ Esempio, forze concentrate, se la regione di interazione è "sufficientemente" (
 - esempi: gravità (legge di gravitazione universale, gravità nei pressi della superficie terrestre), molle e smorzatori leggeri, forze di contatto (reazione normale e attrito)
 
 ## Sistemi di forze equivalenti
-<span \sytle="color:red">Qui o dopo gli esempi?</span>
+<span style="color:red">Qui o dopo gli esempi?</span>
 
 ## Esempi
 
