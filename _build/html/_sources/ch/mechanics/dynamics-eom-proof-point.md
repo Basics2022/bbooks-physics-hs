@@ -1,2 +1,59 @@
-(physics-hs:mechanics:dynamics:eom)=
+```{article-info}
+:author: basics
+:date: "{sub-ref}`today`"
+:read-time: "{sub-ref}`wordcount-minutes` min read"
+```
+
+(physics-hs:mechanics:dynamics:eom:point)=
 # Equazioni cardinali della dinamica per un punto
+
+Le equazioni cardinali della dinamica in forma differenziale,
+
+$$\begin{aligned}
+ \dot{\vec{Q}} & = \vec{R}^{ext} & \text{(bilancio quantità di moto)} \\
+ \dot{\vec{L}}_H + \dot{\vec{x}}_H \times \vec{Q} & = \vec{M}_H^{ext} & \text{(bilancio momento della quantità di moto)} \\
+ \dot{K} & = P^{tot} & \text{(bilancio energia cinetica)} \ .
+\end{aligned}$$
+
+vengono ricavate per un sistema puntiforme calcolando la derivata nel tempo delle grandezze dinamiche di un punto,
+
+$$\begin{aligned}
+  \vec{Q}_P & := m_P \vec{v}_P  & \text{(quantità di moto)} \\
+  \vec{L}_{P,H} & := (\vec{r}_P - \vec{r}_H) \times \vec{Q} = m_P (\vec{r}_P - \vec{r}_H) \times \vec{v}_P & \text{(momento della quantità di moto)} \\
+  K & := \frac{1}{2} m_P \vec{v}_P \cdot \vec{v}_P = \frac{1}{2} m_P |\vec{v}_P|^2 & \text{(energia cinetica)}
+\end{aligned}$$
+
+utilizzando i princìpi della dinamica.
+
+```{dropdown} Bilancio della quantità di moto
+:open:
+
+Il bilancio della quantità di moto di un punto materiale $P$, $\vec{Q}_P = m \vec{v}_P$ segue direttamente dal secondo principio della dinamica di Newton,
+
+$$\dot{\vec{Q}}_P = \vec{R}^{ext}_P$$
+```
+
+```{dropdown} Bilancio del momento della quantità di moto
+:open:
+
+La derivata nel tempo del momento della quantità di moto viene calcolata usando la regola del prodotto,
+
+$$\begin{aligned}
+\dot{\vec{L}}_{P,H} & = \dfrac{d}{dt} \left[ m_P (\vec{r}_P - \vec{r}_H) \times \vec{v}_P \right] = \\
+& = m \left[ ( \dot{\vec{r}}_P - \dot{\vec{r}}_H ) \times \vec{v}_P + m_P (\vec{r}_P - \vec{r}_H) \times \dot{\vec{v}}_P \right] = \\
+& = - m_P \dot{\vec{r}}_H \times \vec{v}_P + m_P (\vec{r}_P - \vec{r}_H) \times \dot{\vec{v}}_P = \\
+& = - \dot{\vec{r}}_H \times \vec{Q} + \vec{M}_H^{ext} \ .
+\end{aligned}$$
+```
+
+```{dropdown} Bilancio dell'energia cinetica.
+:open:
+
+$$\begin{aligned}
+\dot{K}_{P} & = \dfrac{d}{dt} \left( \frac{1}{2} m_P \vec{v}_P \cdot \vec{v}_P \right) = \\
+            & = m_P \dot{\vec{v}}_P \cdot \vec{v}_P = \\
+            & = \vec{R}^{ext} \cdot \vec{v}_P = \\
+            & = \vec{R}^{tot} \cdot \vec{v}_P = P^{tot} \ .
+\end{aligned}$$
+
+```

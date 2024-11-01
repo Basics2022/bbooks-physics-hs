@@ -62,6 +62,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/dynamics-motion-gravitation';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -206,6 +208,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2 has-children"><a class="reference internal" href="dynamics-eom.html">Equazioni cardinali della dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-point.html">Equazioni cardinali della dinamica per un punto</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-points.html">Equazioni cardinali della dinamica per sistemi di punti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-rigid-2d.html">Equazioni cardinali della dinamica per un corpo rigido in moto piano</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-conservation.html">Leggi di conservazione</a></li>
@@ -456,7 +459,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -472,6 +477,19 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gravitazione-universale">Legge di gravitazione universale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-dei-due-corpi">Problema dei due corpi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coniche">Coniche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-chiuse-e-leggi-di-keplero">Traiettorie chiuse e leggi di Keplero</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -483,6 +501,116 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="gravitazione">
 <span id="physics-hs-mechanics-dynamics-motion-gravitation"></span><h1>Gravitazione<a class="headerlink" href="#gravitazione" title="Permalink to this heading">#</a></h1>
+<div class="section" id="legge-di-gravitazione-universale">
+<h2>Legge di gravitazione universale<a class="headerlink" href="#legge-di-gravitazione-universale" title="Permalink to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{10} = G \, m_0 \, m_1 \frac{\vec{r}_{01}}{\left|\vec{r}_{01}\right|^3}\]</div>
+</div>
+<div class="section" id="problema-dei-due-corpi">
+<h2>Problema dei due corpi<a class="headerlink" href="#problema-dei-due-corpi" title="Permalink to this heading">#</a></h2>
+<div class="section" id="coniche">
+<h3>Coniche<a class="headerlink" href="#coniche" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="traiettorie-chiuse-e-leggi-di-keplero">
+<h3>Traiettorie chiuse e leggi di Keplero<a class="headerlink" href="#traiettorie-chiuse-e-leggi-di-keplero" title="Permalink to this heading">#</a></h3>
+<p><strong>Prima legge.</strong> Un pianeta descrive un’orbita ellittica attorno al Sole, che si trova in uno dei due fuochi.</p>
+<p><strong>Seconda legge legge.</strong> Considerando l’area descritta dal moto del pianeta attorno al Sole, la velocità angolare è costante lungo la traiettoria.</p>
+<p><strong>Terza legge.</strong> In un sistema di pianeti, il quadrato del periodo delle orbite descritte dai pianeti è proporzionale al cubo del semiasse maggiore della traiettoria, <span class="math notranslate nohighlight">\(T^2 \propto a^3\)</span>.</p>
+<p><span style="color:red"><strong>todo</strong> rispetto a quale sistema di riferimento? Serve l’approssimazione che la massa del Sole sia <span class="math notranslate nohighlight">\(&gt;&gt;\)</span> delle masse dei pianeti, se si considera inerziale un sistema di coordinate con origine nel Sole? O bisogna/si può usare un sistema inerziale con origine nel centro di massa del sistema (considerato isolato)</span></p>
+<p><strong>Moto piano.</strong> Siano <span class="math notranslate nohighlight">\(\vec{r}\)</span>, <span class="math notranslate nohighlight">\(\vec{v}\)</span> la posizione e la velocità del pianeta rispetto al Sole. La forza di gravità agente sul pianeta è</p>
+<div class="math notranslate nohighlight">
+\[\vec{F} = - G M m \frac{\vec{r}}{r^3} \ .\]</div>
+<p>E’ facile dimostrare che il moto è piano, cioè che la posizione e la velocità del pianeta sono sempre ortogonali a una direzione costante.</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt} \left( \vec{r} \times \vec{v} \right) = \underbrace{\vec{v} \times \vec{v}}_{=\vec{0}} + \vec{r} \times \vec{a}  = - G M m \underbrace{\vec{r} \times \frac{\vec{r}}{r^3}}_{=\vec{0}} = \vec{0} \ .\]</div>
+<p>Poiché il vettore <span class="math notranslate nohighlight">\(\vec{r} \times \vec{v} =: \frac{L}{m} \hat{k}\)</span> è costante, è costante sia il suo valore assoluto sia la sua direzione: affinché <span class="math notranslate nohighlight">\(\vec{r} \times \vec{v}\)</span> sia allineato con <span class="math notranslate nohighlight">\(\hat{k}\)</span>, i vettori <span class="math notranslate nohighlight">\(\vec{r}\)</span>, <span class="math notranslate nohighlight">\(\vec{v}\)</span> devono essere ortogonali a <span class="math notranslate nohighlight">\(\hat{k}\)</span>.</p>
+<p><strong>Coordinate polari.</strong> Per descrivere il moto piano di un punto, si può usare un sistema di coordinate 2-dimensionale. Si sceglie un sistema di coordinate polari con origine coincidente con il Sole. La posizione del pianeta è identificata dal raggio vettore</p>
+<div class="math notranslate nohighlight">
+\[\vec{r} = r \, \hat{r} \ ,\]</div>
+<p>e la derivate dei versori radiale e azimuthale valgono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\dot{\hat{r}}      &amp; =   \dot{\theta} \hat{\theta} \\
+\dot{\hat{\theta}} &amp; = - \dot{\theta} \hat{r} \\
+\end{aligned}\end{split}\]</div>
+<p>La posizione, la velocità e l’accelerazione del pianeta possono essere scritte come</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\vec{r} &amp; = r \, \hat{r} \\
+\vec{v} &amp; = \dot{r} \, \hat{r} + r \dot{\theta} \, \hat{\theta} \\
+\vec{a} &amp; = \left[ \ddot{r} - r \dot{\theta}^2 \right] \, \hat{r} +  \left[ 2 \dot{r} \dot{\theta} + r \ddot{\theta} \right] \, \hat{\theta}  \\
+\end{aligned}\end{split}\]</div>
+<p>La <strong>velocità areolare</strong>, <span class="math notranslate nohighlight">\(\vec{\Omega} = \frac{1}{2} \vec{r} \times \vec{v} \)</span> è costante e uguale a</p>
+<div class="math notranslate nohighlight">
+\[\vec{\Omega} = \frac{1}{2} \frac{L}{m} \hat{k} = \frac{1}{2} r^2 \dot{\theta} \, \hat{k} \ .\]</div>
+<p>Il <strong>periodo</strong> <span class="math notranslate nohighlight">\(T\)</span></p>
+<div class="math notranslate nohighlight">
+\[T = \frac{A}{\Omega} = \frac{\pi \, a \, b}{\Omega} \ .\]</div>
+<p>Dall’espressione della velocità angolare costante, si può ricavare il legame tra <span class="math notranslate nohighlight">\(\dot{\theta}\)</span> ed <span class="math notranslate nohighlight">\(r\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\dot{\theta} = \frac{\Omega}{r^2} \ .\]</div>
+<p>Usando le coordinate polari, l’equazione del moto <span class="math notranslate nohighlight">\(m \ddot{\vec{r}} = -G M m \frac{\vec{r}}{r^3}\)</span> viene scritta in componenti,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+r      &amp; : \ m (\ddot{r} - r\dot{\theta}^2) = - G M m \frac{1}{r^2} \\
+\theta &amp; : \ m ( 2 \dot{r} \dot{\theta} + r \ddot{\theta}^2 ) = 0
+\end{aligned}\end{split}\]</div>
+<p><strong>Traiettoria, <span class="math notranslate nohighlight">\(r(\theta)\)</span>.</strong>
+Inserendo l’espressione <span class="math notranslate nohighlight">\(\dot{\theta} = \frac{\Omega}{r^2}\)</span> nella componente radiale, e definendo la funzione <span class="math notranslate nohighlight">\(z = \frac{1}{r}\)</span>, le derivate nel tempo della coordinata radiale possono essere riscritte come</p>
+<div class="math notranslate nohighlight">
+\[\dot{r} = -\frac{1}{z^2}\frac{d z}{d \theta} \dot{\theta} = -\Omega \frac{dz}{d\theta} \]</div>
+<div class="math notranslate nohighlight">
+\[\ddot{r} = \dot{\theta} \frac{d}{d \theta} \left( - \Omega \frac{dz}{d \theta} \right) = - z^2 \Omega^2 z''(\theta)\]</div>
+<p>e la componente radiale dell’equazione di moto,</p>
+<div class="math notranslate nohighlight">
+\[-z^2 \Omega^2 z'' - z^3 \Omega^2 = - G M z^2\]</div>
+<div class="math notranslate nohighlight">
+\[ z'' + z  = \frac{G M}{\Omega^2}\]</div>
+<div class="math notranslate nohighlight">
+\[z(\theta) = \frac{G M}{\Omega^2} + A \cos(\theta) + B \sin(\theta) \ .\]</div>
+<p>La definizione di <span class="math notranslate nohighlight">\(r(z)\)</span> e una scelta opportuna di <span class="math notranslate nohighlight">\(\theta\)</span> (<strong>todo</strong> a cosa corrisponde?), permettono di scrivere</p>
+<div class="math notranslate nohighlight">
+\[r(\theta) = \frac{\Omega^2}{G M}\frac{1}{1 + \frac{A \, \Omega^2}{GM} \cos \theta}\]</div>
+<!--
+$$e = - \frac{A \Omega^2}{GM}$$
+$$e D = \frac{\Omega^2}{GM}$$
+$$D= -\frac{1}{A}$$
+
+$$c = \frac{e^2}{1-e^2} D$$
+$$a = \frac{c}{e} = \frac{e}{1-e^2} D$$
+$$b = \sqrt{a^2 - c^2} = \sqrt{\frac{1 - e^2}{e^2}} c = \sqrt{\frac{1 - e^2}{e^2}}  \frac{e^2}{1-e^2} D = \frac{e D}{\sqrt{1-e^2}} = a \, \sqrt{1-e^2} $$
+-->
+<p>Poiché la velocità areolare è costante, il periodo dell’orbita è uguale al raggporto tra l’area dell’ellisse e la velocità areaolare,</p>
+<div class="math notranslate nohighlight">
+\[T = \frac{\pi a b}{\Omega} = \pi \frac{a^2 \sqrt{1-e^2}}{\Omega} = \]</div>
+<div class="math notranslate nohighlight">
+\[1-e^2 = 1 - \left(\frac{A \Omega^2}{GM} \right)^2 = \frac{\Omega^2}{GM \, a} \]</div>
+<div class="math notranslate nohighlight">
+\[\rightarrow \qquad \frac{\sqrt{1-e^2}}{\Omega} = \frac{1}{\sqrt{GM} \sqrt{a}}\]</div>
+<div class="math notranslate nohighlight">
+\[\rightarrow \qquad T = \pi \frac{a^{\frac{3}{2}}}{\sqrt{GM}}\]</div>
+<div class="math notranslate nohighlight">
+\[
+ 2a = \frac{\Omega^2}{GM+A \Omega^2} + \frac{\Omega^2}{GM-A \Omega^2} 
+    = \Omega^2 \frac{2 GM }{(GM)^2 - A^2 \Omega^4}
+\]</div>
+<div class="math notranslate nohighlight">
+\[A^2 \Omega^4 = (GM)^2 - \frac{GM \, \Omega^2}{a}\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{\Omega^2}{GM}\frac{1}{a} = 1 - \left(\frac{A \Omega^2}{GM}\right)^2\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{1}{a} = \left( 1 - \left(\frac{A \Omega^2}{GM}\right)^2 \right) \frac{GM}{\Omega^2}\]</div>
+<!--
+Il semiasse maggiore è dato da
+
+$$\begin{aligned}
+a & = \frac{1}{2} \left( r(0)+r(\pi) \right) = \\
+  & = \frac{\Omega^2}{GM} \left[ \frac{1}{1+\frac{A \Omega^2}{GM}} + \frac{1}{1-\frac{A \Omega^2}{GM}} \right] = \\
+  & = \dfrac{2}{ \left(\frac{GM}{\Omega^2} \right)^2 - A^2}
+\end{aligned}$$
+-->
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -539,6 +667,25 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gravitazione-universale">Legge di gravitazione universale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-dei-due-corpi">Problema dei due corpi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coniche">Coniche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-chiuse-e-leggi-di-keplero">Traiettorie chiuse e leggi di Keplero</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

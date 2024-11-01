@@ -208,6 +208,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Equazioni cardinali della dinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-point.html">Equazioni cardinali della dinamica per un punto</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-points.html">Equazioni cardinali della dinamica per sistemi di punti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-rigid-2d.html">Equazioni cardinali della dinamica per un corpo rigido in moto piano</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-conservation.html">Leggi di conservazione</a></li>
@@ -485,9 +486,10 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="equazioni-cardinali-della-dinamica">
 <span id="physics-hs-mechanics-dynamics-eom"></span><h1>Equazioni cardinali della dinamica<a class="headerlink" href="#equazioni-cardinali-della-dinamica" title="Permalink to this heading">#</a></h1>
-<p>Usando i princìpi della meccanica di Newton e la conservazione della massa per sistemi chiusi, è possibile ricavare le equazioni cardinali della dinamica, che governano il moto di un sistema meccanico.</p>
 <p>Le equazioni cardinali della dinamica mettono in relazione le variazioni delle grandezze inerziali con le azioni agenti sul sistema.</p>
-<p>In particolare, per moti regolari e derivabili (e quindi senza urti impulsivi)</p>
+<p>Usando i princìpi della meccanica di Newton e la conservazione della massa per sistemi chiusi, è possibile ricavare le equazioni cardinali della dinamica, che governano il moto di un sistema meccanico.</p>
+<p>Per ogni sistema chiuso le equazioni cardinali assumono la stessa forma, quando vengono espresse in termini di quantità di moto, quantità del momento angolare ed energia cinetica del sistema. Questo viene qui dimostrato per un <a class="reference internal" href="dynamics-eom-proof-points.html#physics-hs-mechanics-dynamics-eom-points"><span class="std std-ref">punto materiale</span></a> per un <a class="reference internal" href="dynamics-eom-proof-points.html#physics-hs-mechanics-dynamics-eom-points"><span class="std std-ref">sistema di punti materiali</span></a>, e per <a class="reference internal" href="dynamics-eom-proof-rigid-2d.html#physics-hs-mechanics-dynamics-eom-rigid-2d"><span class="std std-ref">un corpo rigido con distribuzione di massa continua in un moto piano</span></a> <strong>todo</strong>, ma è valido per un sistema meccanico qualsiasi.</p>
+<p>In particolare, per moti regolari e derivabili (e quindi senza urti impulsivi) le 3 equazioni cardinali del moto sono:</p>
 <ul>
 <li><p><strong>bilancio della quantità di moto</strong>: la derivata nel tempo della quantità di moto di un sistema chiuso è uguale alla risultante delle forze esterne agenti sul sistema,</p>
 <div class="math notranslate nohighlight">

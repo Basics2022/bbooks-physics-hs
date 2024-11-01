@@ -40,6 +40,7 @@ parts:
       sections:
       - file: ch/mechanics/dynamics-eom-proof-point
       - file: ch/mechanics/dynamics-eom-proof-points
+      - file: ch/mechanics/dynamics-eom-proof-rigid-2d
     - file: ch/mechanics/dynamics-conservation
     - file: ch/mechanics/dynamics-collisions
     - file: ch/mechanics/dynamics-motion-gravitation
