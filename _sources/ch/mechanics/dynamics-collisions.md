@@ -15,14 +15,14 @@ Tra due istanti temporali immediatamente precedente e immediatamente successivo 
 
 $$\begin{aligned}
   \vec{I}^{ext}   & = \Delta \vec{Q} \\
-  \vec{J}_H^{ext} & = \Delta \vec{\Gamma}_H + \Delta \dot{\vec{x}}_H \times \vec{Q} = \Delta \vec{\Gamma}_{H} \\
+  \vec{J}_H^{ext} & = \Delta \vec{\Gamma}_H + \Delta \vec{x}_H \times \vec{Q} = \Delta \vec{\Gamma}_{H} \\
   L^{ext} + L^{int} & = \Delta K \ ,
 \end{aligned}$$
 
 con $\vec{I}^{ext}$ l'impulso delle forze esterne durante l'urto, $\vec{J}^{ext}$ l'impulso dei momenti esterni durante l'urto, $L^{ext}$, $L^{int}$ il lavoro delle forze esterne e interne durante l'urto.
 
 E' bene osservare che in assenza di forze e momenti impulsivi esterni - anche dovuti a eventuali vincoli - ai due sistemi che collidono, la quantità di moto e il momento della quantità di moto del sistema complessivo si conservano in un urto.
-Al contrario, in generale, l'**energia cinetica non si conserva** poiché dipende anche dalla potenza delle azioni interne che includono quelle impulsive scambiate durante l'urto.
+Al contrario, in generale, l'**energia cinetica non si conserva** poiché dipende anche dal lavoro delle azioni interne che includono quelle impulsive scambiate durante l'urto.
 
 Il **coefficiente di restituzione** $\varepsilon \in [0, 1]$ è definito come **todo**
 

@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Equazioni cardinali della dinamica per un punto &#8212; Fisica per le superiori</title>
+    <title>Equazioni cardinali della dinamica per un corpo rigido in moto piano &#8212; Fisica per le superiori</title>
   
   
   
@@ -62,13 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/dynamics-eom-proof-point';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/dynamics-eom-proof-rigid-2d';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Equazioni cardinali della dinamica per sistemi di punti" href="dynamics-eom-proof-points.html" />
-    <link rel="prev" title="Equazioni cardinali della dinamica" href="dynamics-eom.html" />
+    <link rel="next" title="Leggi di conservazione" href="dynamics-conservation.html" />
+    <link rel="prev" title="Equazioni cardinali della dinamica per sistemi di punti" href="dynamics-eom-proof-points.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -206,9 +204,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="dynamics.html">Dinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="dynamics-principles.html">Princìpi della dinamica di Newton</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="dynamics-eom.html">Equazioni cardinali della dinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Equazioni cardinali della dinamica per un punto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-point.html">Equazioni cardinali della dinamica per un punto</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-points.html">Equazioni cardinali della dinamica per sistemi di punti</a></li>
-<li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-rigid-2d.html">Equazioni cardinali della dinamica per un corpo rigido in moto piano</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Equazioni cardinali della dinamica per un corpo rigido in moto piano</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-conservation.html">Leggi di conservazione</a></li>
@@ -358,7 +356,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch/mechanics/dynamics-eom-proof-point.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fch/mechanics/dynamics-eom-proof-rigid-2d.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -388,7 +386,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/mechanics/dynamics-eom-proof-point.md" target="_blank"
+      <li><a href="../../_sources/ch/mechanics/dynamics-eom-proof-rigid-2d.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -470,7 +468,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Equazioni cardinali della dinamica per un punto</h1>
+    <h1>Equazioni cardinali della dinamica per un corpo rigido in moto piano</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -484,85 +482,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="sd-container-fluid sd-sphinx-override sd-p-0 sd-mt-2 sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-2 sd-gx-2 sd-gy-1 docutils">
-<div class="sd-col sd-d-flex-row sd-align-minor-center docutils">
-<div class="sd-container-fluid sd-sphinx-override docutils">
-<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-gx-3 sd-gy-1 docutils">
-<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0">basics</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="equazioni-cardinali-della-dinamica-per-un-corpo-rigido-in-moto-piano">
+<span id="physics-hs-mechanics-dynamics-eom-rigid-2d"></span><h1>Equazioni cardinali della dinamica per un corpo rigido in moto piano<a class="headerlink" href="#equazioni-cardinali-della-dinamica-per-un-corpo-rigido-in-moto-piano" title="Permalink to this heading">#</a></h1>
+<p><span style="color:red"><strong>todo</strong></span></p>
 </div>
-<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>Oct 31, 2024</p>
-</div>
-<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>0 min read</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="equazioni-cardinali-della-dinamica-per-un-punto">
-<span id="physics-hs-mechanics-dynamics-eom-point"></span><h1>Equazioni cardinali della dinamica per un punto<a class="headerlink" href="#equazioni-cardinali-della-dinamica-per-un-punto" title="Permalink to this heading">#</a></h1>
-<p>Le equazioni cardinali della dinamica in forma differenziale,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
- \dot{\vec{Q}} &amp; = \vec{R}^{ext} &amp; \text{(bilancio quantità di moto)} \\
- \dot{\vec{L}}_H + \dot{\vec{x}}_H \times \vec{Q} &amp; = \vec{M}_H^{ext} &amp; \text{(bilancio momento della quantità di moto)} \\
- \dot{K} &amp; = P^{tot} &amp; \text{(bilancio energia cinetica)} \ .
-\end{aligned}\end{split}\]</div>
-<p>vengono ricavate per un sistema puntiforme calcolando la derivata nel tempo delle grandezze dinamiche di un punto,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  \vec{Q}_P &amp; := m_P \vec{v}_P  &amp; \text{(quantità di moto)} \\
-  \vec{L}_{P,H} &amp; := (\vec{r}_P - \vec{r}_H) \times \vec{Q} = m_P (\vec{r}_P - \vec{r}_H) \times \vec{v}_P &amp; \text{(momento della quantità di moto)} \\
-  K &amp; := \frac{1}{2} m_P \vec{v}_P \cdot \vec{v}_P = \frac{1}{2} m_P |\vec{v}_P|^2 &amp; \text{(energia cinetica)}
-\end{aligned}\end{split}\]</div>
-<p>utilizzando i princìpi della dinamica.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
-<summary class="sd-summary-title sd-card-header">
-Bilancio della quantità di moto<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Il bilancio della quantità di moto di un punto materiale <span class="math notranslate nohighlight">\(P\)</span>, <span class="math notranslate nohighlight">\(\vec{Q}_P = m \vec{v}_P\)</span> segue direttamente dal secondo principio della dinamica di Newton,</p>
-<div class="math notranslate nohighlight">
-\[\dot{\vec{Q}}_P = \vec{R}^{ext}_P\]</div>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
-<summary class="sd-summary-title sd-card-header">
-Bilancio del momento della quantità di moto<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">La derivata nel tempo del momento della quantità di moto viene calcolata usando la regola del prodotto,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-\dot{\vec{L}}_{P,H} &amp; = \dfrac{d}{dt} \left[ m_P (\vec{r}_P - \vec{r}_H) \times \vec{v}_P \right] = \\
-&amp; = m \left[ ( \dot{\vec{r}}_P - \dot{\vec{r}}_H ) \times \vec{v}_P + m_P (\vec{r}_P - \vec{r}_H) \times \dot{\vec{v}}_P \right] = \\
-&amp; = - m_P \dot{\vec{r}}_H \times \vec{v}_P + m_P (\vec{r}_P - \vec{r}_H) \times \dot{\vec{v}}_P = \\
-&amp; = - \dot{\vec{r}}_H \times \vec{Q} + \vec{M}_H^{ext} \ .
-\end{aligned}\end{split}\]</div>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
-<summary class="sd-summary-title sd-card-header">
-Bilancio dell’energia cinetica.<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-\dot{K}_{P} &amp; = \dfrac{d}{dt} \left( \frac{1}{2} m_P \vec{v}_P \cdot \vec{v}_P \right) = \\
-            &amp; = m_P \dot{\vec{v}}_P \cdot \vec{v}_P = \\
-            &amp; = \vec{R}^{ext} \cdot \vec{v}_P = \\
-            &amp; = \vec{R}^{tot} \cdot \vec{v}_P = P^{tot} \ .
-\end{aligned}\end{split}\]</div>
-</div>
-</details></div>
 
     <script type="text/x-thebe-config">
     {
@@ -595,20 +518,20 @@ Bilancio dell’energia cinetica.<div class="sd-summary-down docutils">
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="dynamics-eom.html"
+       href="dynamics-eom-proof-points.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Equazioni cardinali della dinamica</p>
+        <p class="prev-next-title">Equazioni cardinali della dinamica per sistemi di punti</p>
       </div>
     </a>
     <a class="right-next"
-       href="dynamics-eom-proof-points.html"
+       href="dynamics-conservation.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Equazioni cardinali della dinamica per sistemi di punti</p>
+        <p class="prev-next-title">Leggi di conservazione</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

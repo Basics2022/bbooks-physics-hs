@@ -62,6 +62,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/dynamics';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -206,6 +208,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2 has-children"><a class="reference internal" href="dynamics-eom.html">Equazioni cardinali della dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-point.html">Equazioni cardinali della dinamica per un punto</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-points.html">Equazioni cardinali della dinamica per sistemi di punti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-rigid-2d.html">Equazioni cardinali della dinamica per un corpo rigido in moto piano</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-conservation.html">Leggi di conservazione</a></li>
@@ -484,11 +487,28 @@ document.write(`
   <div class="tex2jax_ignore mathjax_ignore section" id="dinamica">
 <span id="physics-hs-mechanics-dynamics"></span><h1>Dinamica<a class="headerlink" href="#dinamica" title="Permalink to this heading">#</a></h1>
 <p>La dinamica si occupa del moto dei sistemi e delle cause del moto, mettendo insieme la descrizione cinematica, l’inerzia dei sistemi a perseverare nel moto, e le cause di una variazione del moto.</p>
-<p><strong>Princìpi della dinamica.</strong></p>
-<p><strong>Equazioni cardinali della dinamica.</strong></p>
-<p><strong>Leggi di conservazione.</strong></p>
-<p><strong>Urti.</strong></p>
-<p><strong>Moti particolari - gravitazione.</strong></p>
+<p><strong>Princìpi della dinamica.</strong> Vengono discussi i tre principi della dinamica di Newton e il significato della relatività galileiana.</p>
+<p><strong>Equazioni cardinali della dinamica.</strong> Vengono presentate le tre equazioni cardinali della dinamica per sistemi chiusi, che mettono in relazione la variazione delle grandezze dinamiche alle azioni, e che nel caso di moti regolari possono essere scritte in forma differenziale</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ \dot{\vec{Q}} &amp; = \vec{R}^{ext} &amp; \text{(bilancio quantità di moto)} \\
+ \dot{\vec{L}}_H + \dot{\vec{x}}_H \times \vec{Q} &amp; = \vec{M}_H^{ext} &amp; \text{(bilancio momento della quantità di moto)} \\
+ \dot{K} &amp; = P^{tot} &amp; \text{(bilancio energia cinetica)} \ .
+\end{aligned}\end{split}\]</div>
+<p>Viene dimostrato che le equazioni di bilancio hanno la stessa forma per ogni sistema chiuso se scritti in termini di variazione di quantità di moto, momento della quantità di moto ed energia cinetica, senza esplicitare la forma particolare di queste grandezze dinamiche per i sistemi particolari presi in considerazione. Vengono forniti alcuni esempi ed esercizi svolti.</p>
+<p><strong>Leggi di conservazione.</strong> Sotto opportune ipotesi immediatamente riconoscibili dalle equazioni cardinali, vengono ricavate le leggi di conservazione validi per i sistemi meccanici,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{R}^{ext} &amp; = \vec{0} \qquad  &amp; \rightarrow \qquad \ \ \vec{Q} = \text{const.} \\
+  \vec{M}_H^{ext} &amp; = \vec{0}, \dot{\vec{x}}_H \times \vec{Q} = \vec{0} \qquad  &amp; \rightarrow \qquad \vec{L}_H = \text{const.} \\
+  \vec{P}^{tot} &amp; = \vec{0} \qquad  &amp; \rightarrow \qquad \ \  K = \text{const.} \\
+\end{aligned}\end{split}\]</div>
+<p>Nel caso in cui le azioni agenti sul sistema non abbiano potenza nulla, ma che siano forze conservative, si riconosce la legge di conservazione dell’energia meccanica <span class="math notranslate nohighlight">\(E^{mec}\)</span>, definita come somma dell’energia cinetica, <span class="math notranslate nohighlight">\(K\)</span>, e dell’energia potenziale, <span class="math notranslate nohighlight">\(V\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[P^{tot} = -\dot{V} \ , \quad E^{mec} = K + V \qquad \rightarrow \qquad E^{mec} = \text{const.}\]</div>
+<p><strong>Urti.</strong>
+Viene presentato un modello di urto tra sistemi fondato unicamente sul coefficiente di restituzione, <span class="math notranslate nohighlight">\(\varepsilon\)</span>, per rappresentare la frazione di energia meccanica persa dal sistema durante l’urto. Vengono presentati dei problemi risolti grazie ai princìpi di conservazione e alle equazioni cardinali in forma incrementale.</p>
+<p><strong>Moti particolari - gravitazione.</strong> Vengono infine analizzati alcuni sistemi particolare, di interesse pratico, storico, e/o didattico <span style="color:red"><strong>todo</strong></span></p>
 <!--
 ## Princìpi della dinamica
 1.
