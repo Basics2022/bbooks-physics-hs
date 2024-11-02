@@ -1,5 +1,13 @@
+```{article-info}
+:author: basics
+:date: "{sub-ref}`today`"
+:read-time: "{sub-ref}`wordcount-minutes` min read"
+```
+
 (physics-hs:mechanics:kinematics:point)=
 # Cinematica del punto
+
+La cinematica di un punto è completamente definita dalla sua posizione nello spazio in funzione del tempo. 
 
 **Posizione di un punto.** $P - O = \vec{r}_P$
 

@@ -1,6 +1,8 @@
 (physics-hs:mechanics:models)=
 # Modelli
 
+<span style="color:red">Muovere in una sezione "Introduzione alla meccanica", per rendere lo schema uniforme con Termodinamica ed Elettromagnetismo: prime esperienze; approccio di Newton (grandezze fisiche e concetti); modelli</span>
+
 Quando si costruisce una teoria scientifica, è spesso necessario compiere uno sforzo di astrazione (**todo** *come conosciamo? Discorso filosofico...*), di modellazione dei fenomeni di interesse. Un buon modello è in grado di rappresentare con la precisione (**todo** *o accuratezza?*) richiesta il fenomeno studiato, essere in accordo con attività sperimentali e garantire capacità di previsione che coinvolgono tali fenomeni.
 
 Nello studio della meccanica e della fisica in generale, si è soliti distinguere gli elementi oggetti di studio da tutti gli altri elementi:

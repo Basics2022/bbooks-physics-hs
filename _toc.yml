@@ -24,6 +24,7 @@ parts:
     sections:
     - file: ch/mechanics/kinematics-point
     - file: ch/mechanics/kinematics-rigid
+    - file: ch/mechanics/kinematics-deformable
     - file: ch/mechanics/kinematics-relative
   - file: ch/mechanics/actions
   - file: ch/mechanics/statics
