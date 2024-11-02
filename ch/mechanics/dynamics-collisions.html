@@ -208,6 +208,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2 has-children"><a class="reference internal" href="dynamics-eom.html">Equazioni cardinali della dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-point.html">Equazioni cardinali della dinamica per un punto</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-points.html">Equazioni cardinali della dinamica per sistemi di punti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-rigid-2d.html">Equazioni cardinali della dinamica per un corpo rigido in moto piano</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-conservation.html">Leggi di conservazione</a></li>
@@ -513,7 +514,24 @@ document.write(`
 <p>con <span class="math notranslate nohighlight">\(\vec{I}^{ext}\)</span> l’impulso delle forze esterne durante l’urto, <span class="math notranslate nohighlight">\(\vec{J}^{ext}\)</span> l’impulso dei momenti esterni durante l’urto, <span class="math notranslate nohighlight">\(L^{ext}\)</span>, <span class="math notranslate nohighlight">\(L^{int}\)</span> il lavoro delle forze esterne e interne durante l’urto.</p>
 <p>E’ bene osservare che in assenza di forze e momenti impulsivi esterni - anche dovuti a eventuali vincoli - ai due sistemi che collidono, la quantità di moto e il momento della quantità di moto del sistema complessivo si conservano in un urto.
 Al contrario, in generale, l’<strong>energia cinetica non si conserva</strong> poiché dipende anche dal lavoro delle azioni interne che includono quelle impulsive scambiate durante l’urto.</p>
-<p>Il <strong>coefficiente di restituzione</strong> <span class="math notranslate nohighlight">\(\varepsilon \in [0, 1]\)</span> è definito come <strong>todo</strong></p>
+<p>Il <strong>coefficiente di restituzione</strong> <span class="math notranslate nohighlight">\(\varepsilon \in [0, 1]\)</span> caratterizza il tipo di urto e ha una facile interpretazione se l’urto viene studiato usando un sistema di riferimento con orgine il centro di massa del sistema, <span class="math notranslate nohighlight">\(Q\)</span>. Le quantità riferite a questo sistema vengono indicate qui con l’apice.</p>
+<p>Poiché si è scelto come riferimento il centro di massa, in assenza di forze implusive esterne,</p>
+<div class="math notranslate nohighlight">
+\[\vec{0} = {\vec{p}^-}' = {\vec{p}^+}'\]</div>
+<div class="math notranslate nohighlight">
+\[\vec{0} = {\vec{p}^-}' = {\vec{p}_1^-}' + {\vec{p}_2^-}'\]</div>
+<div class="math notranslate nohighlight">
+\[\vec{0} = {\vec{p}^+}' = {\vec{p}_1^+}' + {\vec{p}_2^+}'\]</div>
+<p><span style="color:red"><strong>todo</strong> <em>distinguere tra componente normale e tangenziale</em></span></p>
+<p>Il coefficiente di restituzione viene definito come l’opposto del rapporto tra <span style="color:red">il valore assoluto (<strong>todo</strong> dovrebbe essere la componente normale, assumento che la componente tangenziale si conservi - oppure trovare anche un modello per la componente tangenziale, dovuta ad attrito)</span> della quantità di moto di uno dei due corpi dopo e prima dell’urto,</p>
+<div class="math notranslate nohighlight">
+\[\varepsilon := - \frac{{|\vec{p}_1^+}'|}{|{\vec{p}_1^-}'|} = - \frac{{|\vec{p}_2^+}'|}{|{\vec{p}_2^-}'|}\]</div>
+<p>In termini di energia cinetica, nel sistema di riferimento del centro di massa</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+{K^+}' &amp; = \frac{1}{2 m_1} {\vec{p}_1^+}' \cdot {\vec{p}_1^+}' + \frac{1}{2 m_2} {\vec{p}_2^+}' \cdot {\vec{p}_2^+}' = \\
+       &amp; = \varepsilon^2 \left[ \frac{1}{2 m_1} {\vec{p}_1^-}' \cdot {\vec{p}_1^-}' + \frac{1}{2 m_2} {\vec{p}_2^-}' \cdot {\vec{p}_2^-}' \right] = \varepsilon^2 {K^-}'
+\end{aligned}\end{split}\]</div>
 <div class="section" id="problemi">
 <h2>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h2>
 <!-- Esercizio ************************************************************* -->

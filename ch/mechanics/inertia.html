@@ -62,6 +62,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/inertia';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -206,6 +208,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2 has-children"><a class="reference internal" href="dynamics-eom.html">Equazioni cardinali della dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-point.html">Equazioni cardinali della dinamica per un punto</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-points.html">Equazioni cardinali della dinamica per sistemi di punti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-rigid-2d.html">Equazioni cardinali della dinamica per un corpo rigido in moto piano</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-conservation.html">Leggi di conservazione</a></li>
@@ -480,7 +483,18 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#massa-e-distribuzione-di-massa">Massa e distribuzione di massa</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantita-dinamiche">Quantità dinamiche</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantita-dinamiche">Quantità dinamiche</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#punto">Punto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-punti-distribuzione-discreta-di-massa">Sistemi di punti - distribuzione discreta di massa</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-di-punti-rigidi">Sistema di punti rigidi</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-estesi-con-distribuzione-continua-di-massa">Sistemi estesi con distribuzione continua di massa</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-rigidi">Sistemi rigidi</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -496,17 +510,99 @@ document.write(`
 <span id="physics-hs-mechanics-inertia"></span><h1>Inerzia<a class="headerlink" href="#inerzia" title="Permalink to this heading">#</a></h1>
 <div class="section" id="massa-e-distribuzione-di-massa">
 <h2>Massa e distribuzione di massa<a class="headerlink" href="#massa-e-distribuzione-di-massa" title="Permalink to this heading">#</a></h2>
+<p>La massa è la grandezza fisica che rappresenta la quantità di materia (<strong>todo</strong> <em>Non confonderla con la mole, definita come quantità di sostanza, una volta affermatasi la teoria atomica</em>)</p>
+<p>In meccanica classica, la può essere definita in maniera operativa:</p>
+<ul class="simple">
+<li><p>tramite la sua <a class="reference internal" href="actions.html#physics-hs-mechanics-actions-gravitation"><span class="std std-ref">interazione gravitazionale</span></a> con altri corpi dotati di massa</p></li>
+<li><p>come una misura della resistenza di un sistema ai cambiamenti del suo stato di moto in risposta a una forza applicata, come sarà chiaro dalle equazioni della <a class="reference internal" href="dynamics.html#physics-hs-mechanics-dynamics"><span class="std std-ref">dinamica</span></a></p></li>
+</ul>
 </div>
 <div class="section" id="quantita-dinamiche">
 <h2>Quantità dinamiche<a class="headerlink" href="#quantita-dinamiche" title="Permalink to this heading">#</a></h2>
-<p>Definizione di alcune grandezze fisiche che combinano la massa con le grandezze cinematiche del corpo, e che compaiono nelle equazioni che governano la meccanica dei corpi:</p>
+<p>Come sarà chiaro nello sviluppo delle <a class="reference internal" href="dynamics-eom-proof-points.html#physics-hs-mechanics-dynamics-eom-points"><span class="std std-ref">equazioni di moto di un sistema</span></a>, la definizione di alcune grandezze dinamiche additive risulta naturale, fornendo dei concetti utili e sintetici per la costruzione di un modello e l’interpretazione dei fenomeni fisici.</p>
+<p>Queste grandezze dinamiche combinano la massa e la sua distribuzione con le grandezze cinematiche del sistema. In particolare, risulta utile definire tre grandezze:</p>
 <ul class="simple">
 <li><p>quantità di moto</p></li>
 <li><p>momento della quantità di moto</p></li>
 <li><p>energia cinetica</p></li>
 </ul>
-<p>E’ utile definire queste grandezze, poiché semplificano la formulazione delle leggi della dinamica.</p>
-<p>Sotto alcune condizioni, queste grandezze dinamiche vengono conservate.</p>
+<p>Le <a class="reference internal" href="dynamics-eom.html#physics-hs-mechanics-dynamics-eom"><span class="std std-ref">equazioni del moto</span></a> dei sistemi rappresentano delle equazioni differenziali che mettono in relazione la variazione di queste quantità dinamiche con la causa di queste variazioni, in generale riconducibile ad <a class="reference internal" href="actions.html#physics-hs-mechanics-actions"><span class="std std-ref">azioni</span></a> agenti sul sistema.</p>
+<p>Sotto opportune ipotesi, queste grandezze dinamiche sono costanti del moto, come descritto dalle <a class="reference internal" href="dynamics-conservation.html#physics-hs-mechanics-dynamics-conservation"><span class="std std-ref">leggi di conservazione</span></a>.</p>
+<p>Le 3 grandezze dinamiche possono avere espressioni diverse, a seconda del sistema di interesse. Nel caso di corpi rigidi, queste possono essere espresse in termini di velocità di un punto materiale e della velocità angolare del corpo.</p>
+<div class="section" id="punto">
+<h3>Punto<a class="headerlink" href="#punto" title="Permalink to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{Q}_P     &amp; = m_P \, \vec{v}_P \\
+  \vec{L}_{P,H} &amp; = m_P \, (P - H) \times \vec{v}_P \\
+   K_P          &amp; = \frac{1}{2} m_P \left| \vec{v}_P \right|^2
+\end{aligned}\end{split}\]</div>
+</div>
+<div class="section" id="sistemi-di-punti-distribuzione-discreta-di-massa">
+<h3>Sistemi di punti - distribuzione discreta di massa<a class="headerlink" href="#sistemi-di-punti-distribuzione-discreta-di-massa" title="Permalink to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{Q}       = \sum_i \vec{Q}_i     &amp; = \sum_i  m_i \, \vec{v}_i \\
+  \vec{L}_{H}   = \sum_i \vec{L}_{i,H} &amp; = \sum_i  m_i \, (P_i - H) \times \vec{v}_i \\
+   K            = \sum_i  K_i          &amp; = \sum_i  \frac{1}{2} m_i \left| \vec{v}_i \right|^2
+\end{aligned}\end{split}\]</div>
+<div class="section" id="sistema-di-punti-rigidi">
+<h4>Sistema di punti rigidi<a class="headerlink" href="#sistema-di-punti-rigidi" title="Permalink to this heading">#</a></h4>
+<p>Usando la definizione di centro di massa</p>
+<div class="math notranslate nohighlight">
+\[m G = \sum_i m_i P_i\]</div>
+<p>e legge del moto rigido</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}_i - \vec{v}_P = \vec{\omega} \times (P_i - P)\]</div>
+<p>le quantità dinamiche possono essere espresse in funzione della velocità del punto di riferimento <span class="math notranslate nohighlight">\(P\)</span> e della velocità angolare del sistema, tramite la massa e le altre quantità inerziali</p>
+<ul class="simple">
+<li><p>la quantità di moto</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{Q} = \sum_i m_i \vec{v}_i
+        &amp; = \sum_i m_i \left( \vec{v}_P + \vec{\omega} \times (P_i - P) \right) = \\
+        &amp; =  m \vec{v}_P + \vec{\omega} \times m (G - P) 
+\end{aligned}\end{split}\]</div>
+<ul class="simple">
+<li><p>momento della quantità di moto</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{L}_H = \sum_i m_i (P_i - H) \times \vec{v}_i
+        &amp; = \sum_i m_i \left( P_i - P + \vec{r}_P - \vec{r}_H \right) \times \vec{v}_i = \\
+        &amp; = \sum_i m_i \left( P_i - P \right) \times \vec{v}_i + \left( P - H \right) \times \vec{Q}  = \\
+        &amp; = \sum_i m_i \left( P_i - P \right) \times \left( \vec{v}_P - \left( P_i - P \right) \times \vec{\omega} \right) + \left( P - H \right) \times \vec{Q}  = \\
+        &amp; = m (G - P) \times \vec{v}_P - \sum_i m_i \left( P_i - P \right) \times \left( \left( P_i - P \right) \times \vec{\omega} \right) + \left( P - H \right) \times \vec{Q}  = \\
+        &amp; = \mathbb{I}_P \cdot \vec{\omega} +  m (G - P) \times \vec{v}_P + \left( P - H \right) \times \vec{Q}
+\end{aligned}\end{split}\]</div>
+<p>Nel caso di moto 2-dimensionale e velocità angolare perpendicolare a questo piano, <strong>todo</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{r}_{i/P} &amp; := P_i - P = \left( x_i - x_P \right) \hat{x} + \left( y_i - y_P \right) \hat{y} \\
+  \vec{\omega} &amp; = \dot{\theta} \, \hat{z}
+\end{aligned}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  - \vec{r}_{i/P} \times \left( \vec{r}_{i/P} \times \hat{\omega} \right) 
+  &amp; = - ( \Delta x_i \hat{x} + \Delta y_i \hat{y} ) \times \left[ ( \Delta x_i \hat{x} + \Delta y_i \hat{y} ) \times \dot{\theta} \hat{z} \right] = \\ 
+  &amp; = - \dot{\theta} ( \Delta x_i \hat{x} + \Delta y_i \hat{y} ) \times \left( - \Delta x_i \hat{y} + \Delta y_i \hat{x} \right) = \\
+  &amp; = \left( \Delta x_i^2 + \Delta y_i^2 \right) \dot{\theta} \, \hat{z} \ .
+\end{aligned}\end{split}\]</div>
+<p>e l’espressione del momento della quantità di moto diventa</p>
+<div class="math notranslate nohighlight">
+\[\vec{L}_{H} = I_P \, \vec{\omega} +  m (G - P) \times \vec{v}_P + \left( P - H \right) \times \vec{Q}\]</div>
+<p>con</p>
+<div class="math notranslate nohighlight">
+\[I_P = \sum_i m_i \left[ \left(x_i - x_P\right)^2 + \left(y_i - y_P\right)^2 \right]\]</div>
+</div>
+</div>
+<div class="section" id="sistemi-estesi-con-distribuzione-continua-di-massa">
+<h3>Sistemi estesi con distribuzione continua di massa<a class="headerlink" href="#sistemi-estesi-con-distribuzione-continua-di-massa" title="Permalink to this heading">#</a></h3>
+<div class="section" id="sistemi-rigidi">
+<h4>Sistemi rigidi<a class="headerlink" href="#sistemi-rigidi" title="Permalink to this heading">#</a></h4>
+</div>
+</div>
 </div>
 </div>
 
@@ -574,7 +670,18 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#massa-e-distribuzione-di-massa">Massa e distribuzione di massa</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantita-dinamiche">Quantità dinamiche</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantita-dinamiche">Quantità dinamiche</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#punto">Punto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-punti-distribuzione-discreta-di-massa">Sistemi di punti - distribuzione discreta di massa</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-di-punti-rigidi">Sistema di punti rigidi</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-estesi-con-distribuzione-continua-di-massa">Sistemi estesi con distribuzione continua di massa</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-rigidi">Sistemi rigidi</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
