@@ -33,6 +33,10 @@ parts:
     - file: ch/mechanics/statics-fluid
     - file: ch/mechanics/statics-problems
   - file: ch/mechanics/inertia
+    sections:
+    - file: ch/mechanics/inertia-point
+    - file: ch/mechanics/inertia-points
+    - file: ch/mechanics/inertia-continuum
   - file: ch/mechanics/dynamics
     sections:
     - file: ch/mechanics/dynamics-principles
