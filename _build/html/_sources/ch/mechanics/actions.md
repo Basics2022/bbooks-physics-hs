@@ -31,7 +31,10 @@ Esempio, forze concentrate, se la regione di interazione è "sufficientemente" (
 
 ## Esempi
 
+(physics-hs:mechanics:actions:gravitation)=
 ### Gravità 
+
+(physics-hs:mechanics:actions:gravitation:newton)=
 #### Legge di gravitazione universale
 La forza $\vec{F}_{12}$ esercitata da un corpo di massa $m_2$ in $P_2$ su un corpo di massa $m_1$ in $P_1$ è descritta dalla **legge di gravitazione universale di Newton**,
 

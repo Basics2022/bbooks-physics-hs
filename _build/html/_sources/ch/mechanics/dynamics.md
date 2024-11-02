@@ -20,7 +20,7 @@ Viene dimostrato che le equazioni di bilancio hanno la stessa forma per ogni sis
 $$\begin{aligned}
   \vec{R}^{ext} & = \vec{0} \qquad  & \rightarrow \qquad \ \ \vec{Q} = \text{const.} \\
   \vec{M}_H^{ext} & = \vec{0}, \dot{\vec{x}}_H \times \vec{Q} = \vec{0} \qquad  & \rightarrow \qquad \vec{L}_H = \text{const.} \\
-  \vec{P}^{tot} & = \vec{0} \qquad  & \rightarrow \qquad \ \  K = \text{const.} \\
+  P^{tot} & = \vec{0} \qquad  & \rightarrow \qquad \ \  K = \text{const.} \\
 \end{aligned}$$
 
 Nel caso in cui le azioni agenti sul sistema non abbiano potenza nulla, ma che siano forze conservative, si riconosce la legge di conservazione dell'energia meccanica $E^{mec}$, definita come somma dell'energia cinetica, $K$, e dell'energia potenziale, $V$,

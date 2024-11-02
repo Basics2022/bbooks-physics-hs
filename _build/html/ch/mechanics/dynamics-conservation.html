@@ -62,11 +62,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/dynamics-conservation';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Collisioni" href="dynamics-collisions.html" />
-    <link rel="prev" title="Equazioni cardinali della dinamica per sistemi di punti" href="dynamics-eom-proof-points.html" />
+    <link rel="prev" title="Equazioni cardinali della dinamica per un corpo rigido in moto piano" href="dynamics-eom-proof-rigid-2d.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -206,6 +208,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2 has-children"><a class="reference internal" href="dynamics-eom.html">Equazioni cardinali della dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-point.html">Equazioni cardinali della dinamica per un punto</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-points.html">Equazioni cardinali della dinamica per sistemi di punti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-rigid-2d.html">Equazioni cardinali della dinamica per un corpo rigido in moto piano</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Leggi di conservazione</a></li>
@@ -481,8 +484,56 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="leggi-di-conservazione">
+  <div class="sd-container-fluid sd-sphinx-override sd-p-0 sd-mt-2 sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-gx-2 sd-gy-1 docutils">
+<div class="sd-col sd-d-flex-row sd-align-minor-center docutils">
+<div class="sd-container-fluid sd-sphinx-override docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-gx-3 sd-gy-1 docutils">
+<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
+<p class="sd-p-0 sd-m-0">basics</p>
+</div>
+<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>Nov 01, 2024</p>
+</div>
+<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>1 min read</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="leggi-di-conservazione">
 <span id="physics-hs-mechanics-dynamics-conservation"></span><h1>Leggi di conservazione<a class="headerlink" href="#leggi-di-conservazione" title="Permalink to this heading">#</a></h1>
+<p>Partendo dalle equazioni di bilancio,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ \dot{\vec{Q}} &amp; = \vec{R}^{ext} &amp; \text{(bilancio quantità di moto)} \\
+ \dot{\vec{L}}_H + \dot{\vec{x}}_H \times \vec{Q} &amp; = \vec{M}_H^{ext} &amp; \text{(bilancio momento della quantità di moto)} \\
+ \dot{K} &amp; = P^{tot} &amp; \text{(bilancio energia cinetica)} \ .
+\end{aligned}\end{split}\]</div>
+<p>sotto opportune ipotesi, si ottengono alcune leggi di conservazione di quantità meccaniche.</p>
+<p><strong>Conservazione della quantità di moto.</strong>
+L’equazione di bilancio della quantità di moto di un sistema chiuso garantisce che la quantità di moto di un sistema chiuso è costante se la risultante delle forze esterne sul sistema è nulla,</p>
+<div class="math notranslate nohighlight">
+\[
+  \vec{R}^{ext} = \vec{0} \qquad  \rightarrow \qquad \ \ \vec{Q} = \text{const.} 
+\]</div>
+<p><strong>Conservazione del momento della quantità di moto.</strong>
+L’equazione di bilancio del momento della quantità di moto di un sistema chiuso garantisce che il momento della quantità di moto di un sistema chiuso è costante se la risultante dei momenti esterni sul sistema è nulla, ed è nullo il termine di trasporto,</p>
+<div class="math notranslate nohighlight">
+\[
+  \vec{M}_H^{ext} = \vec{0}, \dot{\vec{x}}_H \times \vec{Q} = \vec{0} \qquad  \rightarrow \qquad \vec{L}_H = \text{const.}
+\]</div>
+<p><strong>Conservazione del momento dell’energia cinetica.</strong>
+L’equazione di bilancio dell’energia cinetica di un sistema chiuso garantisce che il momento della quantità di moto di un sistema chiuso è costante se la risultante della potenza di tutte le azioni agenti sul sistema è nulla,</p>
+<div class="math notranslate nohighlight">
+\[
+  P^{tot} = \vec{0} \qquad  \rightarrow \qquad \ \  K = \text{const.}
+\]</div>
+<p><strong>Conservazione del momento dell’energia meccanica.</strong> Se le azioni agenti su un sistema sono conservative, la loro potenza può essere scritta come derivata nel tempo di un’energia potenziale, <span class="math notranslate nohighlight">\(P^{tot} = - \dot{V}\)</span>. Se si definisce <strong>energia meccanica</strong> la somma dell’energia cinetica del sistema e dell’energia potenziale delle azioni agenti sul sistema, <span class="math notranslate nohighlight">\(E^{mec} := K + V\)</span>, segue immediatamente che, in assenza di azioni non-conservative l’energia meccanica di un sistema è costante,</p>
+<div class="math notranslate nohighlight">
+\[P^{tot} = - \dot{V} \qquad \rightarrow \qquad E^{mec} = \text{const.}\]</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -516,12 +567,12 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="dynamics-eom-proof-points.html"
+       href="dynamics-eom-proof-rigid-2d.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Equazioni cardinali della dinamica per sistemi di punti</p>
+        <p class="prev-next-title">Equazioni cardinali della dinamica per un corpo rigido in moto piano</p>
       </div>
     </a>
     <a class="right-next"

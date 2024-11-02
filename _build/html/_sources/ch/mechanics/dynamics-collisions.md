@@ -24,8 +24,29 @@ con $\vec{I}^{ext}$ l'impulso delle forze esterne durante l'urto, $\vec{J}^{ext}
 E' bene osservare che in assenza di forze e momenti impulsivi esterni - anche dovuti a eventuali vincoli - ai due sistemi che collidono, la quantità di moto e il momento della quantità di moto del sistema complessivo si conservano in un urto.
 Al contrario, in generale, l'**energia cinetica non si conserva** poiché dipende anche dal lavoro delle azioni interne che includono quelle impulsive scambiate durante l'urto.
 
-Il **coefficiente di restituzione** $\varepsilon \in [0, 1]$ è definito come **todo**
+Il **coefficiente di restituzione** $\varepsilon \in [0, 1]$ caratterizza il tipo di urto e ha una facile interpretazione se l'urto viene studiato usando un sistema di riferimento con orgine il centro di massa del sistema, $Q$. Le quantità riferite a questo sistema vengono indicate qui con l'apice.
 
+Poiché si è scelto come riferimento il centro di massa, in assenza di forze implusive esterne,
+
+$$\vec{0} = {\vec{p}^-}' = {\vec{p}^+}'$$
+
+$$\vec{0} = {\vec{p}^-}' = {\vec{p}_1^-}' + {\vec{p}_2^-}'$$
+
+$$\vec{0} = {\vec{p}^+}' = {\vec{p}_1^+}' + {\vec{p}_2^+}'$$
+
+<span style="color:red">**todo** *distinguere tra componente normale e tangenziale*</span>
+
+Il coefficiente di restituzione viene definito come l'opposto del rapporto tra <span style="color:red">il valore assoluto (**todo** dovrebbe essere la componente normale, assumento che la componente tangenziale si conservi - oppure trovare anche un modello per la componente tangenziale, dovuta ad attrito)</span> della quantità di moto di uno dei due corpi dopo e prima dell'urto,
+
+$$\varepsilon := - \frac{{|\vec{p}_1^+}'|}{|{\vec{p}_1^-}'|} = - \frac{{|\vec{p}_2^+}'|}{|{\vec{p}_2^-}'|}$$
+
+In termini di energia cinetica, nel sistema di riferimento del centro di massa
+
+
+$$\begin{aligned}
+{K^+}' & = \frac{1}{2 m_1} {\vec{p}_1^+}' \cdot {\vec{p}_1^+}' + \frac{1}{2 m_2} {\vec{p}_2^+}' \cdot {\vec{p}_2^+}' = \\
+       & = \varepsilon^2 \left[ \frac{1}{2 m_1} {\vec{p}_1^-}' \cdot {\vec{p}_1^-}' + \frac{1}{2 m_2} {\vec{p}_2^-}' \cdot {\vec{p}_2^-}' \right] = \varepsilon^2 {K^-}'
+\end{aligned}$$
 
 ## Problemi
 

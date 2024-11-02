@@ -484,7 +484,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gravitazione-universale">Legge di gravitazione universale</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-dei-due-corpi">Problema dei due corpi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coniche">Coniche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-coniche-ed-energia">Traiettorie, coniche, ed energia</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-chiuse-e-leggi-di-keplero">Traiettorie chiuse e leggi di Keplero</a></li>
 </ul>
 </li>
@@ -499,8 +499,40 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="gravitazione">
+  <div class="sd-container-fluid sd-sphinx-override sd-p-0 sd-mt-2 sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-gx-2 sd-gy-1 docutils">
+<div class="sd-col sd-d-flex-row sd-align-minor-center docutils">
+<div class="sd-container-fluid sd-sphinx-override docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-gx-3 sd-gy-1 docutils">
+<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
+<p class="sd-p-0 sd-m-0">basics</p>
+</div>
+<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>Nov 02, 2024</p>
+</div>
+<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>3 min read</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="gravitazione">
 <span id="physics-hs-mechanics-dynamics-motion-gravitation"></span><h1>Gravitazione<a class="headerlink" href="#gravitazione" title="Permalink to this heading">#</a></h1>
+<!--
+- legge di gravitazione universale
+- problema dei due corpi
+  - trattazione
+  - applicazioni:
+    - velocità cosmiche (1a e 3a con grafico energia meccanica; 2a: velocità di fuga)
+    - lanciatori, multi-stadio:
+      - Tsiolkovski (formula della spinta; esercizio per sistemi aperti), Goddard, Oberth
+      - W.von Braun: dalla Germania nazista, al programma spaziale NASA
+    - progettazione orbitale: satelliti geostazionari; trasferimento di Hohmann; fionda gravitazionale
+- problema dei 3 corpi:
+  - punti lagrangiani. Esempio: telescopio Webb
+-->
 <div class="section" id="legge-di-gravitazione-universale">
 <h2>Legge di gravitazione universale<a class="headerlink" href="#legge-di-gravitazione-universale" title="Permalink to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
@@ -508,8 +540,58 @@ document.write(`
 </div>
 <div class="section" id="problema-dei-due-corpi">
 <h2>Problema dei due corpi<a class="headerlink" href="#problema-dei-due-corpi" title="Permalink to this heading">#</a></h2>
-<div class="section" id="coniche">
-<h3>Coniche<a class="headerlink" href="#coniche" title="Permalink to this heading">#</a></h3>
+<p>In meccanica classica, il problema dei due corpi si riferisce alla dinamica di un sistema formato da due corpi puntiformi soggetti unicamente alla mutua interazione gravitazionale, descritta dalla legge di gravitazione universale di Newton.</p>
+<p>Il sistema formato dai due punti è un sistema chiuso e isolato, sul quale non agiscono azioni esterne. La quantità di moto rispetto a un sistema di riferimento inerziale rimane quindi costante. Rimane quindi costante la velocità del centro di massa <span class="math notranslate nohighlight">\(G\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[G = \frac{m_0 \, P_0 + m_1 \, P_1}{m_0 + m_1} \ ,\]</div>
+<p>ed è possibile definire un sistema di riferimento inerziale con origine nel centro di massa del sistema. Il raggio vettore tra i due corpi può quindi essere riscritto,</p>
+<div class="math notranslate nohighlight">
+\[P_1 - G = P_1 - \frac{m_0 \, P_0 + m_1 \, P_1}{m_0 + m_1} = \frac{ - m_0 \, P_0 + m_0 \, P_1}{m_0 + m_1} = \frac{m_0}{m_0 + m_1}(P_1 - P_0) \ .\]</div>
+<p>L’equazione del moto per il corpo <span class="math notranslate nohighlight">\(1\)</span> nel sistema di riferimento inerziale con origine in <span class="math notranslate nohighlight">\(G\)</span> segue il secondo principio della dinamica. L’equazione del moto può essere scritto in termini del raggio vettore tra corpo <span class="math notranslate nohighlight">\(1\)</span> e centro di massa,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  m_1 \dfrac{d^2}{dt^2}(P_1-G) &amp; = - G m_0 m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} = \\
+                               &amp; = - G \dfrac{(m_0 + m_1)^2}{m_0} m_1 \frac{P_1 - G}{|P_1 - G|^3} 
+\end{aligned}\end{split}\]</div>
+<p>o in termini del raggio vettore tra i due corpi <span class="math notranslate nohighlight">\(P_1 - P_0\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+  \frac{m_0 m_1}{m_0 + m_1} \dfrac{d^2}{dt^2}(P_1-P_0) = - G m_0 m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} 
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+  m_1 \dfrac{d^2}{dt^2}(P_1-P_0) = - G ( m_0 + m_1 ) m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} 
+\]</div>
+<p>Le equazioni del moto in questi due sistemi di riferimento possono essere scritte nella forma</p>
+<div class="math notranslate nohighlight">
+\[m_1 \, \ddot{\vec{r}} = - G M m_1 \frac{\vec{r}}{r^3} \ .\]</div>
+<div class="section" id="traiettorie-coniche-ed-energia">
+<h3>Traiettorie, coniche, ed energia<a class="headerlink" href="#traiettorie-coniche-ed-energia" title="Permalink to this heading">#</a></h3>
+<p>E’ possibile dimostrare che il moto di ognuno dei due corpi è un moto piano, e che la traiettoria avviene descrive una conica.</p>
+<ul class="simple">
+<li><p><strong>todo</strong> Dimostrare che il moto è piano</p></li>
+<li><p><strong>todo</strong> Dimostrare che la traiettoria è una conica</p></li>
+</ul>
+<p>Il tipo di curva conica dipende da una grandezza scalare che può essere ricondotta a un’energia. Il prodotto scalare della velocità <span class="math notranslate nohighlight">\(\dot{\vec{r}}\)</span> con l’equazione del moto, permette di ricavare un principio di conservazione dell’energia,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  0 &amp; = \dot{\vec{r}} \cdot \left( m \ddot{\vec{r}} + G M m \frac{\vec{r}}{r^3} \right) = \\
+    &amp; = \dfrac{d}{dt} \left( \frac{1}{2} m \left|\dot{\vec{r}}\right|^2 - G M m \frac{1}{r}\right) = \dfrac{d E^{mec}}{dt}
+\end{aligned}\end{split}\]</div>
+<p>Usando il sistema di coordinate polari, e la costanza della velocità angolare <span class="math notranslate nohighlight">\(\Omega = \frac{1}{2}{r^2}{\dot{\theta}}\)</span>, si può scrivere</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \frac{E^{mec}}{m} &amp; = \frac{1}{2} \dot{r}^2 + \frac{1}{2} r^2 \dot{\theta}^2 - \frac{G M}{r} = \\
+                    &amp; = \frac{1}{2} \dot{r}^2 + 2 \frac{\Omega^2}{r^2} - \frac{G M}{r} = \\
+                    &amp; = \frac{1}{2} \dot{r}^2 + v_r(r) \ .
+\end{aligned}\end{split}\]</div>
+<p>Poiché <span class="math notranslate nohighlight">\(\frac{1}{2}\dot{r}^2 \ge 0\)</span>, il moto è possibile per tutti i valori di <span class="math notranslate nohighlight">\(r\)</span> tali che <span class="math notranslate nohighlight">\(\frac{E}{m} \ge v_r(r)\)</span>. Il valore di <span class="math notranslate nohighlight">\(E\)</span> identifica le traiettorie. <strong>todo</strong> <em>aggiungere grafici</em></p>
+<ul class="simple">
+<li><p>esiste un valore minimo di <span class="math notranslate nohighlight">\(E\)</span>: questo valore è associato a un’orbita circolare</p></li>
+<li><p>per <span class="math notranslate nohighlight">\(E_{min} \le E \le 0\)</span> esistono due soluzioni dell’equazione <span class="math notranslate nohighlight">\(\frac{E}{m} - v_r(r) = 0\)</span>: orbite chiuse, ellittiche o circolari (per <span class="math notranslate nohighlight">\(E = E_{min}\)</span>)</p></li>
+<li><p><span class="math notranslate nohighlight">\(E = 0\)</span> è un caso limite che separa le orbite chiuse e le orbite aperte: a <span class="math notranslate nohighlight">\(E = 0\)</span> è associata un’orbita parabolica</p></li>
+<li><p>per <span class="math notranslate nohighlight">\(E &gt; 0\)</span> le orbite aperte sono iperboliche</p></li>
+</ul>
 </div>
 <div class="section" id="traiettorie-chiuse-e-leggi-di-keplero">
 <h3>Traiettorie chiuse e leggi di Keplero<a class="headerlink" href="#traiettorie-chiuse-e-leggi-di-keplero" title="Permalink to this heading">#</a></h3>
@@ -543,9 +625,11 @@ document.write(`
 <p>La <strong>velocità areolare</strong>, <span class="math notranslate nohighlight">\(\vec{\Omega} = \frac{1}{2} \vec{r} \times \vec{v} \)</span> è costante e uguale a</p>
 <div class="math notranslate nohighlight">
 \[\vec{\Omega} = \frac{1}{2} \frac{L}{m} \hat{k} = \frac{1}{2} r^2 \dot{\theta} \, \hat{k} \ .\]</div>
-<p>Il <strong>periodo</strong> <span class="math notranslate nohighlight">\(T\)</span></p>
-<div class="math notranslate nohighlight">
-\[T = \frac{A}{\Omega} = \frac{\pi \, a \, b}{\Omega} \ .\]</div>
+<!--
+Il **periodo** $T$
+
+$$T = \frac{A}{\Omega} = \frac{\pi \, a \, b}{\Omega} \ .$$
+-->
 <p>Dall’espressione della velocità angolare costante, si può ricavare il legame tra <span class="math notranslate nohighlight">\(\dot{\theta}\)</span> ed <span class="math notranslate nohighlight">\(r\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\dot{\theta} = \frac{\Omega}{r^2} \ .\]</div>
@@ -568,9 +652,20 @@ Inserendo l’espressione <span class="math notranslate nohighlight">\(\dot{\the
 \[ z'' + z  = \frac{G M}{\Omega^2}\]</div>
 <div class="math notranslate nohighlight">
 \[z(\theta) = \frac{G M}{\Omega^2} + A \cos(\theta) + B \sin(\theta) \ .\]</div>
-<p>La definizione di <span class="math notranslate nohighlight">\(r(z)\)</span> e una scelta opportuna di <span class="math notranslate nohighlight">\(\theta\)</span> (<strong>todo</strong> a cosa corrisponde?), permettono di scrivere</p>
+<p>e quindi</p>
 <div class="math notranslate nohighlight">
-\[r(\theta) = \frac{\Omega^2}{G M}\frac{1}{1 + \frac{A \, \Omega^2}{GM} \cos \theta}\]</div>
+\[r(\theta) = \frac{\Omega^2}{G M}\frac{1}{1 + A \dfrac{\, \Omega^2}{GM} \cos \theta + B \dfrac{\, \Omega^2}{GM} \sin \theta}\]</div>
+<p>Scelta della direzione di riferimento: direzione del perielio: <span class="math notranslate nohighlight">\(r(\theta=0) = \min r\)</span>, <span class="math notranslate nohighlight">\(B = 0\)</span>,</p>
+<p>Scelte diverse si ottengono da una trasformazione di coordinate con una rotazione dell’asse di riferimento: <span class="math notranslate nohighlight">\(\theta_1 = \theta - \theta_0\)</span>, e quindi</p>
+<div class="math notranslate nohighlight">
+\[r(\theta) = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos \theta} = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos (\theta_1 + \theta_0 )} = \frac{\Omega^2}{GM}\frac{1}{1 + \underbrace{\frac{A\Omega^2}{GM} \cos \theta_0}_{= A_1} \cos \theta_1 \underbrace{- \frac{A \Omega^2}{GM} \sin \theta_0}_{= B_1} \sin \theta_1 }\]</div>
+<p>Il confronto con l’equazione delle coniche in coordinate polari, permette di riconoscere l’eccentricità, <span class="math notranslate nohighlight">\(e\)</span> e il prodotto <span class="math notranslate nohighlight">\(e \, D\)</span> dell’eccentricità per la distanza <span class="math notranslate nohighlight">\(D\)</span> tra fuoco e direttrice,</p>
+<div class="math notranslate nohighlight">
+\[e = \frac{A \Omega^2}{GM} \qquad , \qquad e \, D = \frac{\Omega^2}{GM}\]</div>
+<div class="math notranslate nohighlight">
+\[r(\theta) = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos \theta}\]</div>
+<div class="math notranslate nohighlight">
+\[r(\theta) = \frac{e \, D}{1 + e \, \cos \theta}\]</div>
 <!--
 $$e = - \frac{A \Omega^2}{GM}$$
 $$e D = \frac{\Omega^2}{GM}$$
@@ -678,7 +773,7 @@ a & = \frac{1}{2} \left( r(0)+r(\pi) \right) = \\
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gravitazione-universale">Legge di gravitazione universale</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-dei-due-corpi">Problema dei due corpi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coniche">Coniche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-coniche-ed-energia">Traiettorie, coniche, ed energia</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-chiuse-e-leggi-di-keplero">Traiettorie chiuse e leggi di Keplero</a></li>
 </ul>
 </li>
