@@ -27,6 +27,11 @@ parts:
     - file: ch/mechanics/kinematics-deformable
     - file: ch/mechanics/kinematics-relative
   - file: ch/mechanics/actions
+    sections:
+    - file: ch/mechanics/actions-types
+    - file: ch/mechanics/actions-work
+    - file: ch/mechanics/actions-conservative
+    - file: ch/mechanics/actions-examples
   - file: ch/mechanics/statics
     sections:
     - file: ch/mechanics/statics-point
