@@ -62,8 +62,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/actions';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -471,9 +469,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -489,35 +485,6 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzione-ai-modelli">Introduzione ai modelli</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelli">Modelli</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-forze-equivalenti">Sistemi di forze equivalenti</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">Esempi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gravita">Gravità</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gravitazione-universale">Legge di gravitazione universale</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-di-gravita">Campo di gravità</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-di-gravita-nei-pressi-della-superficie-terrestre">Campo di gravità nei pressi della superficie terrestre</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#azioni-elastiche-molle-lineari">Azioni elastiche: molle lineari</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#azioni-di-contatto">Azioni di contatto</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reazioni-vincolari-ideali">Reazioni vincolari (ideali)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#attrito">Attrito</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#attrito-statico">Attrito statico</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#attrito-dinamico">Attrito dinamico</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -539,7 +506,7 @@ document.write(`
 <p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>Nov 03, 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>2 min read</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>0 min read</p>
 </div>
 </div>
 </div>
@@ -573,95 +540,27 @@ document.write(`
 - nucleare debole: ~ decadimenti nucleari
 - nucleare forte: ~ tra particelle elementari (quark) in particelle sub-atomiche
 </span>
-<div class="section" id="introduzione-ai-modelli">
-<h2>Introduzione ai modelli<a class="headerlink" href="#introduzione-ai-modelli" title="Permalink to this heading">#</a></h2>
-<p><span style="color:red"><strong>todo</strong> qui? O una volta che sono state definite le azioni distribuite?</span></p>
-<p>Esempio, forze concentrate, se la regione di interazione è “sufficientemente” (cosa significa sufficientemente? <strong>todo</strong> bontà nel modello nella descrizione del fenomeno di interesse,…) limitata rispetto alle dimensioni del sistema</p>
-</div>
-<div class="section" id="modelli">
-<h2>Modelli<a class="headerlink" href="#modelli" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>azioni:</p>
-<ul>
-<li><p>forze</p></li>
-<li><p>momenti, e coppie di forze</p></li>
-<li><p>campi di forze, esempio campo gravitazionale</p></li>
-<li><p>forze distribuite, in un volume, in una superficie (pressione) o su una curva</p></li>
-</ul>
-</li>
-<li><p>sistemi di forze equivalenti:</p>
-<ul>
-<li><p>risultante delle forze</p></li>
-</ul>
-</li>
-<li><p>esempi: gravità (legge di gravitazione universale, gravità nei pressi della superficie terrestre), molle e smorzatori leggeri, forze di contatto (reazione normale e attrito)</p></li>
-</ul>
-</div>
-<div class="section" id="sistemi-di-forze-equivalenti">
-<h2>Sistemi di forze equivalenti<a class="headerlink" href="#sistemi-di-forze-equivalenti" title="Permalink to this heading">#</a></h2>
-<p><span style="color:red">Qui o dopo gli esempi?</span></p>
-</div>
-<div class="section" id="esempi">
-<h2>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h2>
-<div class="section" id="gravita">
-<span id="physics-hs-mechanics-actions-gravitation"></span><h3>Gravità<a class="headerlink" href="#gravita" title="Permalink to this heading">#</a></h3>
-<div class="section" id="legge-di-gravitazione-universale">
-<span id="physics-hs-mechanics-actions-gravitation-newton"></span><h4>Legge di gravitazione universale<a class="headerlink" href="#legge-di-gravitazione-universale" title="Permalink to this heading">#</a></h4>
-<p>La forza <span class="math notranslate nohighlight">\(\vec{F}_{12}\)</span> esercitata da un corpo di massa <span class="math notranslate nohighlight">\(m_2\)</span> in <span class="math notranslate nohighlight">\(P_2\)</span> su un corpo di massa <span class="math notranslate nohighlight">\(m_1\)</span> in <span class="math notranslate nohighlight">\(P_1\)</span> è descritta dalla <strong>legge di gravitazione universale di Newton</strong>,</p>
-<div class="math notranslate nohighlight">
-\[\vec{F}_{12} = G \dfrac{m_1 m_2}{r_{12}^2} \hat{r}_{12} \ ,\]</div>
-<p>avendo indicato con <span class="math notranslate nohighlight">\(\vec{r}_{12} = (P_2 - P_1)\)</span> il vettore che punta dal punto <span class="math notranslate nohighlight">\(P_1\)</span> al punto <span class="math notranslate nohighlight">\(P_2\)</span>, <span class="math notranslate nohighlight">\(r_{12} = |\vec{r}_{12}|\)</span> il suo modulo, e <span class="math notranslate nohighlight">\(\hat{r}_{12} = \frac{\vec{r}_{12}}{|\vec{r}_{12}|}\)</span> il vettore unitario lungo la stessa direzione.</p>
-<p>Nella formula, <span class="math notranslate nohighlight">\(G = \dots\)</span> indica la costante di gravitazione universale, considerata una costante della natura <strong>todo</strong></p>
-</div>
-<div class="section" id="campo-di-gravita">
-<h4>Campo di gravità<a class="headerlink" href="#campo-di-gravita" title="Permalink to this heading">#</a></h4>
-<p>Il campo di gravità generato da una massa <span class="math notranslate nohighlight">\(m_2\)</span> posta in <span class="math notranslate nohighlight">\(P_2\)</span> è <strong>todo</strong> una funzione dello spazio che associa a ogni punto <span class="math notranslate nohighlight">\(P\)</span> un vettore,</p>
-<div class="math notranslate nohighlight">
-\[\vec{g}(\vec{r}_1) = \dfrac{\vec{F}_{12}}{m_1} = G \dfrac{m_2}{r_{12}^2} \hat{r}_{12} \ ,\]</div>
-<ul>
-<li><p><strong>todo</strong> abituarsi al concetto di campo, introdotto a partire dalla definizione operativa con <em>massa test</em></p></li>
-<li><p><strong>todo</strong> PSCE</p></li>
-<li><p><strong>todo</strong> noto il campo di gravità <span class="math notranslate nohighlight">\(\vec{g}(P)\)</span>, la forza di gravità percepita da un sistema di massa <span class="math notranslate nohighlight">\(m\)</span> in <span class="math notranslate nohighlight">\(P\)</span> può essere scritta come</p>
-<div class="math notranslate nohighlight">
-\[\vec{F}_g = m \vec{g}(P)\]</div>
-</li>
-</ul>
-</div>
-<div class="section" id="campo-di-gravita-nei-pressi-della-superficie-terrestre">
-<h4>Campo di gravità nei pressi della superficie terrestre<a class="headerlink" href="#campo-di-gravita-nei-pressi-della-superficie-terrestre" title="Permalink to this heading">#</a></h4>
-<p>All’interno di un dominio limitato nei pressi della superficie terrestre, è comune approssimare il campo di gravitazione terrestre come un campo uniforme, diretto lungo la verticale locale verso il centro della terra e di intensità <span class="math notranslate nohighlight">\(g = G \frac{M_E}{R_E^2}\)</span>.</p>
-<p>E’ possibile derivare questo modello, approssimando il vettore posizione rispetto al centro della terra <span class="math notranslate nohighlight">\(P - P_E \sim R_E \hat{r}\)</span> e il versore che identifica la direzione da un punto del dominio al centro della Terra con la verticale locale <span class="math notranslate nohighlight">\(\hat{r}_{12} \sim - \hat{z}\)</span></p>
-<div class="math notranslate nohighlight">
-\[\vec{g}(\vec{r}) = - G \dfrac{M_E}{R_E^2} \hat{z} = - g \hat{z} \ .\]</div>
-<p>La forza di gravità percepita da un corpo di massa <span class="math notranslate nohighlight">\(m\)</span> nei pressi della superficie terrestre è quindi</p>
-<div class="math notranslate nohighlight">
-\[\vec{F}_g = - m g \hat{z} \ ,\]</div>
-<p>quello che viene comunemente chiamato <strong>peso</strong>.</p>
-</div>
-</div>
-<div class="section" id="azioni-elastiche-molle-lineari">
-<h3>Azioni elastiche: molle lineari<a class="headerlink" href="#azioni-elastiche-molle-lineari" title="Permalink to this heading">#</a></h3>
-</div>
-<div class="section" id="azioni-di-contatto">
-<h3>Azioni di contatto<a class="headerlink" href="#azioni-di-contatto" title="Permalink to this heading">#</a></h3>
-<div class="section" id="reazioni-vincolari-ideali">
-<h4>Reazioni vincolari (ideali)<a class="headerlink" href="#reazioni-vincolari-ideali" title="Permalink to this heading">#</a></h4>
-</div>
-<div class="section" id="attrito">
-<h4>Attrito<a class="headerlink" href="#attrito" title="Permalink to this heading">#</a></h4>
-<div class="section" id="attrito-statico">
-<h5>Attrito statico<a class="headerlink" href="#attrito-statico" title="Permalink to this heading">#</a></h5>
-</div>
-<div class="section" id="attrito-dinamico">
-<h5>Attrito dinamico<a class="headerlink" href="#attrito-dinamico" title="Permalink to this heading">#</a></h5>
-<ul class="simple">
-<li><p>lavoro e potenza di una forza</p></li>
-<li><p>azioni conservative</p></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
+<!--
+## Introduzione ai modelli
+<span style="color:red">**todo** qui? O una volta che sono state definite le azioni distribuite?</span>
+
+Esempio, forze concentrate, se la regione di interazione è "sufficientemente" (cosa significa sufficientemente? **todo** bontà nel modello nella descrizione del fenomeno di interesse,...) limitata rispetto alle dimensioni del sistema
+
+## Modelli
+- azioni:
+  - forze
+  - momenti, e coppie di forze
+  - campi di forze, esempio campo gravitazionale
+  - forze distribuite, in un volume, in una superficie (pressione) o su una curva
+
+- sistemi di forze equivalenti:
+  - risultante delle forze
+
+- esempi: gravità (legge di gravitazione universale, gravità nei pressi della superficie terrestre), molle e smorzatori leggeri, forze di contatto (reazione normale e attrito)
+
+## Sistemi di forze equivalenti
+<span style="color:red">Qui o dopo gli esempi?</span>
+-->
 <div class="toctree-wrapper compound">
 </div>
 </div>
@@ -720,41 +619,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzione-ai-modelli">Introduzione ai modelli</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelli">Modelli</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-forze-equivalenti">Sistemi di forze equivalenti</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">Esempi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gravita">Gravità</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gravitazione-universale">Legge di gravitazione universale</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-di-gravita">Campo di gravità</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-di-gravita-nei-pressi-della-superficie-terrestre">Campo di gravità nei pressi della superficie terrestre</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#azioni-elastiche-molle-lineari">Azioni elastiche: molle lineari</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#azioni-di-contatto">Azioni di contatto</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reazioni-vincolari-ideali">Reazioni vincolari (ideali)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#attrito">Attrito</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#attrito-statico">Attrito statico</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#attrito-dinamico">Attrito dinamico</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
