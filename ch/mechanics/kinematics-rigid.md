@@ -19,10 +19,12 @@ Al prezzo di non poter trattare i problemi meccanici più generali, questa scelt
 - meccanica classica **todo**
 ```
 
+<!--
 (physics-hs:mechanics:kinematics:rigid-2d)=
 ## Problemi nel piano
+-->
 
-### Posizione dei punti del corpo rigido
+## Posizione dei punti di un corpo rigido
 
 - **Posizione del un punto materiale di riferimento, $Q$.** 
 
@@ -39,7 +41,7 @@ $$P - Q = \vec{r}_{QP} = \cos \theta \, \vec{r}_{QP}^0 + \sin \theta \, \hat{n} 
           & = \vec{r}_{OQ} + \cos \theta \, \vec{r}_{QP}^0 + \sin \theta \, \hat{n} \times \vec{r}_{QP}^0  \ .
   \end{aligned}$$
 
-### Velocità dei punti del corpo rigido
+## Velocità dei punti di un corpo rigido
 - **Velocità del punto materiale di riferimento, $Q$**
 
 $$\vec{v}_Q = \dfrac{d \vec{r}_Q}{dt}$$
@@ -74,7 +76,7 @@ vale anche per moti 3-dimensionali. In questo caso però **non** è possibile sc
               & = \vec{v}_{Q/O} + \vec{\omega} \times (P - Q) \ .
   \end{aligned}$$
 
-### Accelerazione dei punti del corpo rigido
+## Accelerazione dei punti di un corpo rigido
 - **Accelerazione del punto materiale di riferimento, $Q$**
 
 $$\vec{a}_P = \dfrac{d \vec{v}_P}{dt} = \dfrac{d^2 \vec{r}_P}{d t^2}$$
