@@ -13,7 +13,7 @@
   - stazionario
     - bilancio di energia: "generatori" di energia elettrica, "perdite" nelle resistenze
       - approfondimenti:
-        - pile <span style="color:red"> Collegamento ad altre parti: termodinamica? chimica?</span>
+      - pile <span style="color:red"> Collegamento ad altre parti: termodinamica? chimica?</span>
   - transitorio:
     - esempio: carica/scarica condensatore
   - armonico, AC:

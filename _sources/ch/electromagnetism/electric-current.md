@@ -14,8 +14,11 @@ La **corrente elettrica** attraverso una superficie $S$ viene definita come il f
 
 $$i = I_{S} = \Phi_{S}(\vec{j}) \ .$$
 
-|![](../../media/electric-current.png)|![](../../media/electric-current-solids.png)|
-|---|---|
+````{list-table}
+:header-rows: 0
+* - ![](../../media/electric-current.png)
+  - ![](../../media/electric-current-solids.png)
+````
 
 **Oss. Corrente elettrica in materiali neutri**: è possibile avere corrente elettrica anche in materiali elettricamente neutri, anche localmente. Ad esempio, nell'ipotesi di avere due sostanze diverse con carica $\rho^+$, $\rho^-$ e velocità media delle due sostanze $\vec{v}^+$, $\vec{v}^-$, la corrente densità di corrente elettrica è
 
