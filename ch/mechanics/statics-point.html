@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Statica dei sistemi puntiformi &#8212; Fisica per le superiori</title>
+    <title>Statica del punto &#8212; Fisica per le superiori</title>
   
   
   
@@ -62,10 +62,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/statics-point';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Statica dei corpi rigidi" href="statics-rigid.html" />
+    <link rel="next" title="Statica di un corpo rigido" href="statics-rigid.html" />
     <link rel="prev" title="Statica" href="statics.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -201,9 +203,9 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="statics.html">Statica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Statica dei sistemi puntiformi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="statics-rigid.html">Statica dei corpi rigidi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="statics-fluid.html">Statica dei fluidi</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Statica del punto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="statics-rigid.html">Statica di un corpo rigido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="statics-fluid.html">Statica dei mezzi deformabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="statics-problems.html">Problemi</a></li>
 </ul>
 </li>
@@ -480,7 +482,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Statica dei sistemi puntiformi</h1>
+    <h1>Statica del punto</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -494,8 +496,14 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="statica-dei-sistemi-puntiformi">
-<span id="physics-hs-mechanics-statics-point"></span><h1>Statica dei sistemi puntiformi<a class="headerlink" href="#statica-dei-sistemi-puntiformi" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="statica-del-punto">
+<span id="physics-hs-mechanics-statics-point"></span><h1>Statica del punto<a class="headerlink" href="#statica-del-punto" title="Permalink to this heading">#</a></h1>
+<p>La condizione necessaria all’equilibrio di un sistema puntiforme è:</p>
+<ul class="simple">
+<li><p>l’equilibrio <strong>globale</strong> delle <strong>forze esterne</strong> agenti sul sistema</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\sum_k \vec{F}^{ext}_k = \vec{0} \ .\]</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -542,7 +550,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Statica dei corpi rigidi</p>
+        <p class="prev-next-title">Statica di un corpo rigido</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
