@@ -85,7 +85,7 @@
         
 
 \title{Fisica per le superiori}
-\date{Nov 04, 2024}
+\date{Nov 06, 2024}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -742,7 +742,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 04, 2024
+Nov 06, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -788,10 +788,11 @@ Nov 04, 2024
 La cinematica si occupa della descrizione del moto dei sistemi, senza indagarne le cause. La cinematica si occupa della descrizione dello stato di un sistema, e della sua variazione, nello spazio.
 
 \sphinxAtStartPar
-Lo stato di un sistema è definito da un insieme di variabili indipendenti, o coordinate, dette \sphinxstylestrong{gradi di libertà}.  Il numero di gradi di libertà coincide con la dimensione della varietà (\sphinxstylestrong{todo} \sphinxstyleemphasis{dello spazio?}) nel quale si svolge il moto.
+La \sphinxstylestrong{configurazione di un sistema} è definita da un insieme di variabili indipendenti, o coordinate, dette \sphinxstylestrong{gradi di libertà}.  Il numero di gradi di libertà di un sistema dipende dalla dimensione dello spazio nel quale avviene il moto, dal numero e dal tipo degli elementi che lo compongono e dai vincoli che connettono gli elementi del sistema tra di loro o con l’ambiente esterno.
+In generale, in meccanica classica lo \sphinxstylestrong{stato di un sistema} è definito dalla sua configurazione e dalla derivata prima nel tempo delle variabili che definiscono i gradi di libertà: questo è sensato per sistemi meccanici la cui dinamica è governata da equazioni differenziali ordinarie del secondo ordine.
 
 \sphinxAtStartPar
-Lo stato di un \sphinxstylestrong{punto} libero nello spazio euclideo \(E^n\) (\(n=2\) piano, \(n=3\) spazio. \sphinxstylestrong{todo} ref alla definizione di spazio euclideo in matematica:geometria) è definito dalla sua posizione nello spazio, tramite un insieme di \(n\) coordinate:
+La configurazione di un \sphinxstylestrong{punto} libero nello \sphinxhref{https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic\_geometry/euclidean\_space.html}{spazio euclideo \(E^n\)} (\(n=2\) piano, \(n=3\) spazio) è definita dalla sua posizione nello spazio, tramite un insieme di \(n\) coordinate:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -804,7 +805,7 @@ un punto libero nello spazio ha 3 gradi di libertà (traslazione).
 \end{itemize}
 
 \sphinxAtStartPar
-Lo stato di un \sphinxstylestrong{corpo rigido} è definito dalla posizione di un suo punto nello spazio e dalla sua orientazione:
+La configurazione di un \sphinxstylestrong{corpo rigido} è definita dalla posizione di un suo punto nello spazio e dalla sua orientazione:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -856,7 +857,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 04, 2024
+Nov 06, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -899,10 +900,10 @@ Nov 04, 2024
 \section{Cinematica del punto}
 \label{\detokenize{ch/mechanics/kinematics-point:cinematica-del-punto}}\label{\detokenize{ch/mechanics/kinematics-point:physics-hs-mechanics-kinematics-point}}\label{\detokenize{ch/mechanics/kinematics-point::doc}}
 \sphinxAtStartPar
-La cinematica di un punto è completamente definita dalla sua posizione nello spazio in funzione del tempo.
+La cinematica di un punto \(P(t)\) è completamente definita dalla sua posizione nello spazio in funzione del tempo.
 
 \sphinxAtStartPar
-\sphinxstylestrong{Posizione di un punto.} \(P - O = \vec{r}_P\)
+\sphinxstylestrong{Posizione di un punto.} \(P(t) - O = \vec{r}_P(t)\)
 
 \sphinxAtStartPar
 \sphinxstylestrong{Velocità di un punto.} \(\vec{v}_P = \dfrac{d \vec{r}_P}{dt}\)
@@ -1145,7 +1146,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 04, 2024
+Nov 06, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -1361,7 +1362,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 04, 2024
+Nov 06, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -1448,7 +1449,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 04, 2024
+Nov 06, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -1580,7 +1581,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 04, 2024
+Nov 06, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -1622,8 +1623,11 @@ Nov 04, 2024
 
 \section{Forza, momento di una forza, azioni distribuite}
 \label{\detokenize{ch/mechanics/actions-types:forza-momento-di-una-forza-azioni-distribuite}}\label{\detokenize{ch/mechanics/actions-types:physics-hs-mechanics-actions-def}}\label{\detokenize{ch/mechanics/actions-types::doc}}
+
+\subsection{Forza concentrata}
+\label{\detokenize{ch/mechanics/actions-types:forza-concentrata}}
 \sphinxAtStartPar
-\sphinxstylestrong{Forza.} Una forza (concentrata) è una quantità vettoriale di dimensioni fisiche,
+Una forza (concentrata) è una quantità vettoriale di dimensioni fisiche,
 \begin{equation*}
 \begin{split}[\text{forza}] = \frac{\text{[massa]}\text{[lunghezza]}}{\text{[tempo]}^2}\end{split}
 \end{equation*}
@@ -1633,18 +1637,23 @@ che può essere misurata tramite un dinamometro, e il cui effetto può alterare 
 \sphinxAtStartPar
 Oltre alle informazioni tipiche di una quantità vettoriale \sphinxhyphen{} intensità, direzione e verso \sphinxhyphen{} contenute nel vettore forza \(\vec{F}\), è spesso necessario conoscere il \sphinxstylestrong{punto di applicazione}, o la retta di applicazione, della forza.
 
+
+\subsection{Momento di una forza concentrata}
+\label{\detokenize{ch/mechanics/actions-types:momento-di-una-forza-concentrata}}
 \sphinxAtStartPar
-\sphinxstylestrong{Momento di una forza.} Il momento di una forza \(\vec{F}\) applicata nel punto \(P\), o con retta di applicazione passante per \(P\), rispetto al punto \(H\) viene definito come il prodotto vettoriale,
+Il momento di una forza \(\vec{F}\) applicata nel punto \(P\), o con retta di applicazione passante per \(P\), rispetto al punto \(H\) viene definito come il prodotto vettoriale,
 \begin{equation*}
 \begin{split}\vec{M}_H = (P - H) \times \vec{F}\end{split}
 \end{equation*}
+
+\subsection{Sistema di forze, risultante delle azioni e carichi equivalenti}
+\label{\detokenize{ch/mechanics/actions-types:sistema-di-forze-risultante-delle-azioni-e-carichi-equivalenti}}
 \sphinxAtStartPar
-\sphinxstylestrong{Risultante delle azioni e carichi equivalenti.}
 Dato un sistema di \(N\) forze \(\left\{ \vec{F}_n \right\}_{n=1:N}\), applicate nei punti \(P_n\), si definiscono:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-risultante del sistema di forze: la somma delle forze,
+\sphinxstylestrong{risultante} del sistema di forze: la somma delle forze,
 \begin{equation*}
 \begin{split}\vec{R} = \sum_{n=1}^{N} \vec{F}_n \ ,\end{split}
 \end{equation*}
@@ -1665,8 +1674,11 @@ un \sphinxstylestrong{carico equivalente}: un sistema di forze che ha la stessa 
 \end{equation*}
 \end{itemize}
 
+
+\subsection{Coppia di forze}
+\label{\detokenize{ch/mechanics/actions-types:coppia-di-forze}}
 \sphinxAtStartPar
-\sphinxstylestrong{Coppia di forze.} Una coppia di forze è un carico equivalente a due forze di uguale intensità e verso opposto, \(\vec{F}_2 = - \vec{F}_1\), applicate in due punti \(P_1\), \(P_2\) non allineati lungo la retta di applicazione delle forze per avere effetti non nulli.
+Una coppia di forze è un carico equivalente a due forze di uguale intensità e verso opposto, \(\vec{F}_2 = - \vec{F}_1\), applicate in due punti \(P_1\), \(P_2\) non allineati lungo la retta di applicazione delle forze per avere effetti non nulli.
 
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{immagine}
@@ -1685,11 +1697,17 @@ mentre la risultante dei momenti non dipende dal polo dei momenti,
   & = (P_1 - P_2) \times \vec{F}_1 =: \vec{C} \ .
 \end{aligned}\end{split}
 \end{equation*}
-\sphinxAtStartPar
-\sphinxstylestrong{Campi di forze.} \sphinxstylestrong{todo}
 
+\subsection{Campi di forze}
+\label{\detokenize{ch/mechanics/actions-types:campi-di-forze}}
 \sphinxAtStartPar
-\sphinxstylestrong{Azioni distribuite.} \sphinxstylestrong{todo}
+\sphinxstylestrong{todo}
+
+
+\subsection{Azioni distribuite}
+\label{\detokenize{ch/mechanics/actions-types:azioni-distribuite}}
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
 
 \sphinxstepscope
 
@@ -1731,7 +1749,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 04, 2024
+Nov 06, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -1884,7 +1902,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 04, 2024
+Nov 06, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -1996,7 +2014,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 04, 2024
+Nov 06, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -2213,34 +2231,75 @@ azioni conservative
 
 \chapter{Statica}
 \label{\detokenize{ch/mechanics/statics:statica}}\label{\detokenize{ch/mechanics/statics:physics-hs-mechanics-statics}}\label{\detokenize{ch/mechanics/statics::doc}}
+\sphinxAtStartPar
+La statica si occupa dello studio delle condizioni di equilibrio di un sistema, cioè le condizioni in cui un sistema rimane in quiete anche quando soggetto ad {\hyperref[\detokenize{ch/mechanics/actions:physics-hs-mechanics-actions}]{\sphinxcrossref{\DUrole{std,std-ref}{azioni}}}} esterne. Le condizioni di equilibrio dei sistemi sono un caso particolare delle {\hyperref[\detokenize{ch/mechanics/dynamics:physics-hs-mechanics-dynamics}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni della dinamica}}}}, nel caso in cui il sistema sia in quiete e le derivate delle quantità dinamiche nulle.
 
+\sphinxAtStartPar
+In generale le condizioni di equilibrio dipendono dalla natural del sistema. Come si vedrà meglio nelle sezioni di questo capitolo,
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+le condizioni di equilibrio di un sistema puntiforme sono garantite dall’equilibrio globale delle forze agenti sul sistema
+
+\item {} 
+\sphinxAtStartPar
+le condizioni di equilibrio di un corpo rigido sono garantite dall’equilibrio globale delle forze e dall’equilibrio globale dei momenti agenti sul sistema
+
+\item {} 
+\sphinxAtStartPar
+le condizioni di equilibrio di sistemi composti da corpi puntiformi e corpi rigidi sono garantite dalle condizioni di equilibrio di ognuna delle sue parti
+
+\item {} 
+\sphinxAtStartPar
+le condizioni di equilibrio di mezzi continui deformabili è garantito dall’equilibrio globale e locale delle forze
+
+\end{itemize}
+
+\sphinxstepscope
 
 
 \section{Statica del punto}
-\label{\detokenize{ch/mechanics/statics:statica-del-punto}}\begin{equation*}
-\begin{split}\sum_k \vec{F}^{ext} = \vec{0}\end{split}
-\end{equation*}
+\label{\detokenize{ch/mechanics/statics-point:statica-del-punto}}\label{\detokenize{ch/mechanics/statics-point:physics-hs-mechanics-statics-point}}\label{\detokenize{ch/mechanics/statics-point::doc}}
+\sphinxAtStartPar
+La condizione necessaria all’equilibrio di un sistema puntiforme è:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+l’equilibrio \sphinxstylestrong{globale} delle \sphinxstylestrong{forze esterne} agenti sul sistema
 
+\end{itemize}
+\begin{equation*}
+\begin{split}\sum_k \vec{F}^{ext}_k = \vec{0} \ .\end{split}
+\end{equation*}
+\sphinxstepscope
 
 
 \section{Statica di un corpo rigido}
-\label{\detokenize{ch/mechanics/statics:statica-di-un-corpo-rigido}}\begin{equation*}
+\label{\detokenize{ch/mechanics/statics-rigid:statica-di-un-corpo-rigido}}\label{\detokenize{ch/mechanics/statics-rigid:physics-hs-mechanics-statics-rigid}}\label{\detokenize{ch/mechanics/statics-rigid::doc}}
+\sphinxAtStartPar
+Le condizioni necessarie all’equilibrio di un corpo rigido sono:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+l’equilibrio \sphinxstylestrong{globale} delle \sphinxstylestrong{forze esterne} agenti sul sistema
+
+\item {} 
+\sphinxAtStartPar
+l’equilibrio \sphinxstylestrong{globale} dei \sphinxstylestrong{momenti esterni} agenti sul sistema
+
+\end{itemize}
+\begin{equation*}
 \begin{split}\begin{cases}
   \sum_k \vec{F}^{ext} = \vec{0} \\
-  \sum_k \vec{M}^{ext}_H = \vec{0} 
+  \sum_k \vec{M}^{ext}_{k,H} = \vec{0} \ .  
 \end{cases}\end{split}
 \end{equation*}
-\sphinxAtStartPar
-O per un sistema esteso generico?
-
-
-
 
 \subsection{Problemi nel piano}
-\label{\detokenize{ch/mechanics/statics:problemi-nel-piano}}
+\label{\detokenize{ch/mechanics/statics-rigid:problemi-nel-piano}}
 
 \subsubsection{Esempi ed esercizi}
-\label{\detokenize{ch/mechanics/statics:esempi-ed-esercizi}}\begin{itemize}
+\label{\detokenize{ch/mechanics/statics-rigid:esempi-ed-esercizi}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 leve
@@ -2255,11 +2314,33 @@ ingranaggi e trasmissioni
 
 \end{itemize}
 
+\sphinxstepscope
 
 
+\section{Statica dei mezzi deformabili}
+\label{\detokenize{ch/mechanics/statics-fluid:statica-dei-mezzi-deformabili}}\label{\detokenize{ch/mechanics/statics-fluid:physics-hs-mechanics-statics-fluid}}\label{\detokenize{ch/mechanics/statics-fluid::doc}}
+\sphinxAtStartPar
+La condizione necessaria all’equilibrio di un sistema puntiforme è:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+l’equilibrio \sphinxstylestrong{locale} delle forze agenti sul sistema
 
-\section{Statica dei fluidi}
-\label{\detokenize{ch/mechanics/statics:statica-dei-fluidi}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+l’equilibrio \sphinxstylestrong{locale} dei momenti agenti sul sistema
+
+\end{itemize}
+
+\sphinxAtStartPar
+Gli equilibri globali sono una diretta conseguenza degli equilibri locali, e del principio di azione e reazione della dinamica.
+
+
+\subsection{Strutture}
+\label{\detokenize{ch/mechanics/statics-fluid:strutture}}
+
+\subsection{Fluidi}
+\label{\detokenize{ch/mechanics/statics-fluid:fluidi}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Stevino e principio di Archimede
@@ -2269,24 +2350,22 @@ Stevino e principio di Archimede
 \sphinxstepscope
 
 
-\section{Statica dei sistemi puntiformi}
-\label{\detokenize{ch/mechanics/statics-point:statica-dei-sistemi-puntiformi}}\label{\detokenize{ch/mechanics/statics-point:physics-hs-mechanics-statics-point}}\label{\detokenize{ch/mechanics/statics-point::doc}}
-\sphinxstepscope
-
-
-\section{Statica dei corpi rigidi}
-\label{\detokenize{ch/mechanics/statics-rigid:statica-dei-corpi-rigidi}}\label{\detokenize{ch/mechanics/statics-rigid:physics-hs-mechanics-statics-rigid}}\label{\detokenize{ch/mechanics/statics-rigid::doc}}
-\sphinxstepscope
-
-
-\section{Statica dei fluidi}
-\label{\detokenize{ch/mechanics/statics-fluid:statica-dei-fluidi}}\label{\detokenize{ch/mechanics/statics-fluid:physics-hs-mechanics-statics-fluid}}\label{\detokenize{ch/mechanics/statics-fluid::doc}}
-\sphinxstepscope
-
-
 \section{Problemi}
 \label{\detokenize{ch/mechanics/statics-problems:problemi}}\label{\detokenize{ch/mechanics/statics-problems:physics-hs-mechanics-statics-problems}}\label{\detokenize{ch/mechanics/statics-problems::doc}}
 
+\begin{equation*}
+\begin{split}
+\begin{minipage}[t]{.55\textwidth}
+\vspace{0pt}
+\textbf{Problema 1.} Data la massa $m$ della massa puntiforme appeso tramite due fili inestensibili ideali di lunghezza $L_1$ e $L_2$ note, si calcolino le reazioni a terra.
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+\vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/pb-statics-000-ese-000.png}
+\end{minipage}
+\end{split}
+\end{equation*}\subsubsection*{Soluzione.}
 
 \begin{sphinxuseclass}{sd-container-fluid}
 \begin{sphinxuseclass}{sd-sphinx-override}
@@ -3508,7 +3587,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 04, 2024
+Nov 06, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3641,7 +3720,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 04, 2024
+Nov 06, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3729,7 +3808,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 04, 2024
+Nov 06, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3885,7 +3964,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 04, 2024
+Nov 06, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3970,7 +4049,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 04, 2024
+Nov 06, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -4269,7 +4348,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 04, 2024
+Nov 06, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -4397,7 +4476,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 04, 2024
+Nov 06, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -4607,7 +4686,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 04, 2024
+Nov 06, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5706,7 +5785,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-Nov 04, 2024
+Nov 06, 2024
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}

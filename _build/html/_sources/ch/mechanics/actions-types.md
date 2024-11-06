@@ -7,7 +7,9 @@
 (physics-hs:mechanics:actions:def)=
 # Forza, momento di una forza, azioni distribuite
 
-**Forza.** Una forza (concentrata) è una quantità vettoriale di dimensioni fisiche,
+## Forza concentrata
+
+Una forza (concentrata) è una quantità vettoriale di dimensioni fisiche,
 
 $$[\text{forza}] = \frac{\text{[massa]}\text{[lunghezza]}}{\text{[tempo]}^2}$$
 
@@ -15,13 +17,14 @@ che può essere misurata tramite un dinamometro, e il cui effetto può alterare 
 
 Oltre alle informazioni tipiche di una quantità vettoriale - intensità, direzione e verso - contenute nel vettore forza $\vec{F}$, è spesso necessario conoscere il **punto di applicazione**, o la retta di applicazione, della forza.
 
-**Momento di una forza.** Il momento di una forza $\vec{F}$ applicata nel punto $P$, o con retta di applicazione passante per $P$, rispetto al punto $H$ viene definito come il prodotto vettoriale,
+## Momento di una forza concentrata
+Il momento di una forza $\vec{F}$ applicata nel punto $P$, o con retta di applicazione passante per $P$, rispetto al punto $H$ viene definito come il prodotto vettoriale,
 
 $$\vec{M}_H = (P - H) \times \vec{F}$$
 
-**Risultante delle azioni e carichi equivalenti.**
+## Sistema di forze, risultante delle azioni e carichi equivalenti
 Dato un sistema di $N$ forze $\left\{ \vec{F}_n \right\}_{n=1:N}$, applicate nei punti $P_n$, si definiscono:
-- risultante del sistema di forze: la somma delle forze,
+- **risultante** del sistema di forze: la somma delle forze,
 
   $$\vec{R} = \sum_{n=1}^{N} \vec{F}_n \ ,$$
 
@@ -36,7 +39,8 @@ Dato un sistema di $N$ forze $\left\{ \vec{F}_n \right\}_{n=1:N}$, applicate nei
     (Q - H) \times \vec{R} & = \sum_{n=1}^{N} (P_n - H) \times \vec{F}_n \\
   \end{aligned}$$
 
-**Coppia di forze.** Una coppia di forze è un carico equivalente a due forze di uguale intensità e verso opposto, $\vec{F}_2 = - \vec{F}_1$, applicate in due punti $P_1$, $P_2$ non allineati lungo la retta di applicazione delle forze per avere effetti non nulli.
+## Coppia di forze
+Una coppia di forze è un carico equivalente a due forze di uguale intensità e verso opposto, $\vec{F}_2 = - \vec{F}_1$, applicate in due punti $P_1$, $P_2$ non allineati lungo la retta di applicazione delle forze per avere effetti non nulli.
 
 **todo** *immagine*
 
@@ -52,6 +56,8 @@ $$\begin{aligned}
   & = (P_1 - P_2) \times \vec{F}_1 =: \vec{C} \ .
 \end{aligned}$$
 
-**Campi di forze.** **todo**
+## Campi di forze
+**todo**
 
-**Azioni distribuite.** **todo**
+## Azioni distribuite
+**todo**

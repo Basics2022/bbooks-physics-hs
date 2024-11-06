@@ -1,32 +1,14 @@
 (physics-hs:mechanics:statics)=
 # Statica
 
-<!-- (physics-hs:mechanics:statics:point)= -->
-## Statica del punto
+La statica si occupa dello studio delle condizioni di equilibrio di un sistema, cioè le condizioni in cui un sistema rimane in quiete anche quando soggetto ad [azioni](physics-hs:mechanics:actions) esterne. Le condizioni di equilibrio dei sistemi sono un caso particolare delle [equazioni della dinamica](physics-hs:mechanics:dynamics), nel caso in cui il sistema sia in quiete e le derivate delle quantità dinamiche nulle.
 
-$$\sum_k \vec{F}^{ext} = \vec{0}$$
+In generale le condizioni di equilibrio dipendono dalla natural del sistema. Come si vedrà meglio nelle sezioni di questo capitolo,
+- le condizioni di equilibrio di un sistema puntiforme sono garantite dall'equilibrio globale delle forze agenti sul sistema
+- le condizioni di equilibrio di un corpo rigido sono garantite dall'equilibrio globale delle forze e dall'equilibrio globale dei momenti agenti sul sistema
+- le condizioni di equilibrio di sistemi composti da corpi puntiformi e corpi rigidi sono garantite dalle condizioni di equilibrio di ognuna delle sue parti
+- le condizioni di equilibrio di mezzi continui deformabili è garantito dall'equilibrio globale e locale delle forze 
 
-<!-- (physics-hs:mechanics:statics:rigid)= -->
-## Statica di un corpo rigido
-
-$$\begin{cases}
-  \sum_k \vec{F}^{ext} = \vec{0} \\
-  \sum_k \vec{M}^{ext}_H = \vec{0} 
-\end{cases}$$
-
-<span style="color:red">O per un sistema esteso generico?</span>
-
-<!-- (physics-hs:mechanics:statics:rigid-2d)= -->
-### Problemi nel piano
-
-#### Esempi ed esercizi
-- leve
-- carrucole
-- ingranaggi e trasmissioni
-
-<!-- (physics-hs:mechanics:statics:fluids)= -->
-## Statica dei fluidi
-- Stevino e principio di Archimede
 
 
 

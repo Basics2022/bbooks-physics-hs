@@ -447,6 +447,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
 OUTPUT book.toc
+INPUT ../../media/pb-statics-000-ese-000.png
+INPUT ../../media/pb-statics-000-ese-000.png
 INPUT pb-statics-000-ese-000.png
 INPUT pb-statics-000-ese-000.png
 INPUT pb-statics-000-ese-001.png

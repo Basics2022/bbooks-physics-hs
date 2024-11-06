@@ -3,6 +3,8 @@
 
 format: jb-book
 root: intro
+options:
+  numbered: True
 parts:
 - caption: Introduzione alla fisica
   chapters:

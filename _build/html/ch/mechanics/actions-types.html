@@ -203,9 +203,9 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="statics.html">Statica</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="statics-point.html">Statica dei sistemi puntiformi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="statics-rigid.html">Statica dei corpi rigidi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="statics-fluid.html">Statica dei fluidi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="statics-point.html">Statica del punto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="statics-rigid.html">Statica di un corpo rigido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="statics-fluid.html">Statica dei mezzi deformabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="statics-problems.html">Problemi</a></li>
 </ul>
 </li>
@@ -471,7 +471,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -487,6 +489,19 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forza-concentrata">Forza concentrata</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#momento-di-una-forza-concentrata">Momento di una forza concentrata</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-di-forze-risultante-delle-azioni-e-carichi-equivalenti">Sistema di forze, risultante delle azioni e carichi equivalenti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coppia-di-forze">Coppia di forze</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#campi-di-forze">Campi di forze</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#azioni-distribuite">Azioni distribuite</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -505,7 +520,7 @@ document.write(`
 <p class="sd-p-0 sd-m-0">basics</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>Nov 04, 2024</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>Nov 06, 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
 <p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>1 min read</p>
@@ -517,18 +532,25 @@ document.write(`
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="forza-momento-di-una-forza-azioni-distribuite">
 <span id="physics-hs-mechanics-actions-def"></span><h1>Forza, momento di una forza, azioni distribuite<a class="headerlink" href="#forza-momento-di-una-forza-azioni-distribuite" title="Permalink to this heading">#</a></h1>
-<p><strong>Forza.</strong> Una forza (concentrata) è una quantità vettoriale di dimensioni fisiche,</p>
+<div class="section" id="forza-concentrata">
+<h2>Forza concentrata<a class="headerlink" href="#forza-concentrata" title="Permalink to this heading">#</a></h2>
+<p>Una forza (concentrata) è una quantità vettoriale di dimensioni fisiche,</p>
 <div class="math notranslate nohighlight">
 \[[\text{forza}] = \frac{\text{[massa]}\text{[lunghezza]}}{\text{[tempo]}^2}\]</div>
 <p>che può essere misurata tramite un dinamometro, e il cui effetto può alterare le condizioni di equilibrio o di moto di un sistema fisico.</p>
 <p>Oltre alle informazioni tipiche di una quantità vettoriale - intensità, direzione e verso - contenute nel vettore forza <span class="math notranslate nohighlight">\(\vec{F}\)</span>, è spesso necessario conoscere il <strong>punto di applicazione</strong>, o la retta di applicazione, della forza.</p>
-<p><strong>Momento di una forza.</strong> Il momento di una forza <span class="math notranslate nohighlight">\(\vec{F}\)</span> applicata nel punto <span class="math notranslate nohighlight">\(P\)</span>, o con retta di applicazione passante per <span class="math notranslate nohighlight">\(P\)</span>, rispetto al punto <span class="math notranslate nohighlight">\(H\)</span> viene definito come il prodotto vettoriale,</p>
+</div>
+<div class="section" id="momento-di-una-forza-concentrata">
+<h2>Momento di una forza concentrata<a class="headerlink" href="#momento-di-una-forza-concentrata" title="Permalink to this heading">#</a></h2>
+<p>Il momento di una forza <span class="math notranslate nohighlight">\(\vec{F}\)</span> applicata nel punto <span class="math notranslate nohighlight">\(P\)</span>, o con retta di applicazione passante per <span class="math notranslate nohighlight">\(P\)</span>, rispetto al punto <span class="math notranslate nohighlight">\(H\)</span> viene definito come il prodotto vettoriale,</p>
 <div class="math notranslate nohighlight">
 \[\vec{M}_H = (P - H) \times \vec{F}\]</div>
-<p><strong>Risultante delle azioni e carichi equivalenti.</strong>
-Dato un sistema di <span class="math notranslate nohighlight">\(N\)</span> forze <span class="math notranslate nohighlight">\(\left\{ \vec{F}_n \right\}_{n=1:N}\)</span>, applicate nei punti <span class="math notranslate nohighlight">\(P_n\)</span>, si definiscono:</p>
+</div>
+<div class="section" id="sistema-di-forze-risultante-delle-azioni-e-carichi-equivalenti">
+<h2>Sistema di forze, risultante delle azioni e carichi equivalenti<a class="headerlink" href="#sistema-di-forze-risultante-delle-azioni-e-carichi-equivalenti" title="Permalink to this heading">#</a></h2>
+<p>Dato un sistema di <span class="math notranslate nohighlight">\(N\)</span> forze <span class="math notranslate nohighlight">\(\left\{ \vec{F}_n \right\}_{n=1:N}\)</span>, applicate nei punti <span class="math notranslate nohighlight">\(P_n\)</span>, si definiscono:</p>
 <ul>
-<li><p>risultante del sistema di forze: la somma delle forze,</p>
+<li><p><strong>risultante</strong> del sistema di forze: la somma delle forze,</p>
 <div class="math notranslate nohighlight">
 \[\vec{R} = \sum_{n=1}^{N} \vec{F}_n \ ,\]</div>
 </li>
@@ -544,7 +566,10 @@ Dato un sistema di <span class="math notranslate nohighlight">\(N\)</span> forze
   \end{aligned}\end{split}\]</div>
 </li>
 </ul>
-<p><strong>Coppia di forze.</strong> Una coppia di forze è un carico equivalente a due forze di uguale intensità e verso opposto, <span class="math notranslate nohighlight">\(\vec{F}_2 = - \vec{F}_1\)</span>, applicate in due punti <span class="math notranslate nohighlight">\(P_1\)</span>, <span class="math notranslate nohighlight">\(P_2\)</span> non allineati lungo la retta di applicazione delle forze per avere effetti non nulli.</p>
+</div>
+<div class="section" id="coppia-di-forze">
+<h2>Coppia di forze<a class="headerlink" href="#coppia-di-forze" title="Permalink to this heading">#</a></h2>
+<p>Una coppia di forze è un carico equivalente a due forze di uguale intensità e verso opposto, <span class="math notranslate nohighlight">\(\vec{F}_2 = - \vec{F}_1\)</span>, applicate in due punti <span class="math notranslate nohighlight">\(P_1\)</span>, <span class="math notranslate nohighlight">\(P_2\)</span> non allineati lungo la retta di applicazione delle forze per avere effetti non nulli.</p>
 <p><strong>todo</strong> <em>immagine</em></p>
 <p>La risultante delle forze è nulla,</p>
 <div class="math notranslate nohighlight">
@@ -556,8 +581,15 @@ Dato un sistema di <span class="math notranslate nohighlight">\(N\)</span> forze
   &amp; = (P_1 - H) \times \vec{F}_1 - (P_2 - H) \times \vec{F}_1 = \\
   &amp; = (P_1 - P_2) \times \vec{F}_1 =: \vec{C} \ .
 \end{aligned}\end{split}\]</div>
-<p><strong>Campi di forze.</strong> <strong>todo</strong></p>
-<p><strong>Azioni distribuite.</strong> <strong>todo</strong></p>
+</div>
+<div class="section" id="campi-di-forze">
+<h2>Campi di forze<a class="headerlink" href="#campi-di-forze" title="Permalink to this heading">#</a></h2>
+<p><strong>todo</strong></p>
+</div>
+<div class="section" id="azioni-distribuite">
+<h2>Azioni distribuite<a class="headerlink" href="#azioni-distribuite" title="Permalink to this heading">#</a></h2>
+<p><strong>todo</strong></p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -614,6 +646,25 @@ Dato un sistema di <span class="math notranslate nohighlight">\(N\)</span> forze
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forza-concentrata">Forza concentrata</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#momento-di-una-forza-concentrata">Momento di una forza concentrata</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-di-forze-risultante-delle-azioni-e-carichi-equivalenti">Sistema di forze, risultante delle azioni e carichi equivalenti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coppia-di-forze">Coppia di forze</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#campi-di-forze">Campi di forze</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#azioni-distribuite">Azioni distribuite</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

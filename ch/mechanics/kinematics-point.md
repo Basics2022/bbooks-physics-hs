@@ -7,9 +7,9 @@
 (physics-hs:mechanics:kinematics:point)=
 # Cinematica del punto
 
-La cinematica di un punto è completamente definita dalla sua posizione nello spazio in funzione del tempo. 
+La cinematica di un punto $P(t)$ è completamente definita dalla sua posizione nello spazio in funzione del tempo. 
 
-**Posizione di un punto.** $P - O = \vec{r}_P$
+**Posizione di un punto.** $P(t) - O = \vec{r}_P(t)$
 
 **Velocità di un punto.** $\vec{v}_P = \dfrac{d \vec{r}_P}{dt}$
 

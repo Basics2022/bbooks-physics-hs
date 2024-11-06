@@ -1,4 +1,8 @@
 (physics-hs:mechanics:statics:point)=
-# Statica dei sistemi puntiformi
+# Statica del punto
 
 
+La condizione necessaria all'equilibrio di un sistema puntiforme è:
+- l'equilibrio **globale** delle **forze esterne** agenti sul sistema
+
+$$\sum_k \vec{F}^{ext}_k = \vec{0} \ .$$

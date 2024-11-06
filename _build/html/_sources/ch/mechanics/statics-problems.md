@@ -2,6 +2,21 @@
 # Problemi
 
 <!-- Esercizio ************************************************************* -->
+```{only} latex
+Prova per vedere se crea solo compliando con latex
+
+$$
+\begin{minipage}{.45\textwidth}
+\textbf{Problema 1.} Data la massa $m$ della massa puntiforme appeso tramite due fili inestensibili ideali di lunghezza $L_1$ e $L_2$ note, si calcolino le reazioni a terra.
+\end{minipage}%
+\begin{minipage}{.05\textwidth}
+\end{minipage}%
+\begin{minipage}{.45\textwidth}
+\textbf{Problema 1.} Data la massa $m$ della massa puntiforme appeso tramite due fili inestensibili ideali di lunghezza $L_1$ e $L_2$ note, si calcolino le reazioni a terra.
+\end{minipage}
+$$
+```
+
 ::::{grid}
 :gutter: 2
 
