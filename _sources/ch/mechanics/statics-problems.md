@@ -18,7 +18,9 @@ $$
 $$
 
 **Soluzione.**
+I fili inestensibili senza massa e senza rigidezza flessionale possono solo trasmettere un'azione assiale. Ci si aiuta qui con un sistema di coordinate cartesiane con asse $x$ orizzontale con coordinata crescente verso destra e asse $y$ verticale con coordinata crescente verso l'alto. Date le direzioni dei fili identificate dai vettori unitari $\hat{t}_1$, $\hat{t}_2$, l'equilibrio della massa $m$ è garantito dall'equilibrio delle forze,
 
+$$\hat{0} = -m g \hat{y} + F_1 \hat{t}_1 + F_2 \hat{t}_2 \ .$$
 
 $$
 \begin{minipage}[t]{.55\textwidth}
