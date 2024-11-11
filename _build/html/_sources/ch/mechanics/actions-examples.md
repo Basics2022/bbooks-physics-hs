@@ -205,5 +205,6 @@ $$\vec{F}_{12} = - \mu^d N \frac{\vec{v}_{12}}{|\vec{v}_{12}|} \ ,$$
 
 avendo definito $\vec{F}_{12}$ come la forza agente sul corpo $1$ a causa del corpo $2$, e $\vec{v}_{12} = \vec{v}_1 - \vec{v}_2$ la velocità del corpo $1$ relativa al corpo $2$.
  
-- lavoro e potenza di una forza
-- azioni conservative
+#### Puro rotolamento
+
+
