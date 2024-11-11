@@ -86,13 +86,104 @@ $$V = \frac{1}{2} k (\ell - \ell_0)^2$$
 ## Azioni di contatto
 
 ### Reazioni vincolari di vincoli ideali
-I vincoli ideali sono modelli di vincolo che non compiono lavoro netto.
+I vincoli ideali sono modelli di vincolo che **non compiono lavoro netto**, e per questo sono **elementi conservativi**. Come dovrebbe risultare evidente nei paragrafi successivi dalle espressioni delle velocità relative e dalle azioni scambiate, 
 
-- **Incastro**
-- **Pattino**
-- **Appoggio**
-- **Cerniera**
-- **Carrello**
+$$\begin{aligned}
+P & = \mathbf{v}_1     \cdot \mathbf{F}_{21} + \mathbf{v}_2     \cdot \mathbf{F}_{12} 
+    + \symbf{\omega}_1 \cdot \mathbf{M}_{21} + \symbf{\omega}_2 \cdot \mathbf{M}_{12} = \\ 
+  & = ( \mathbf{v}_1 - \mathbf{v}_2 ) \cdot \mathbf{F}_{21}
+    + ( \symbf{\omega}_1 - \symbf{\omega}_2 ) \cdot \mathbf{M}_{21} = \\ 
+  & = \mathbf{v}^{rel}_{21} \cdot \mathbf{F}_{21}
+    + \symbf{\omega}^{rel}_{21} \cdot \mathbf{M}_{21} \ ,
+\end{aligned}$$
+
+entrambi i termini sono nulli, o perché il moto relativo è nullo, o le azioni agiscono in direzione ortogonale ai moti relativi.
+
+#### Incastro
+Il vincolo di incastro impedisce sia il moto sia la rotazione relativa,
+
+$$
+\begin{cases}
+  \mathbf{0} = \mathbf{v}^{rel}_{21}     = \mathbf{v}_{2}     - \mathbf{v}_{1} \\
+  \mathbf{0} = \symbf{\omega}^{rel}_{21} = \symbf{\omega}_{2} - \symbf{\omega}_{1} \\
+\end{cases}
+\qquad , \qquad
+\begin{cases}
+  \qquad \mathbf{F}_{12} = - \mathbf{F}_{21} \\
+  \qquad \mathbf{M}_{12} = - \mathbf{M}_{21} \\
+\end{cases}
+$$
+
+#### Pattino
+Il vincolo di pattino impedisce il moto relativo in una direzione e la rotazione relativa.
+
+$$
+\begin{cases}
+  \quad \forall \ \mathbf{v}^{rel}_{\hat{\mathbf{t}},21}     = \mathbf{v}_{\hat{\mathbf{t}},2}     - \mathbf{v}_{\hat{\mathbf{t}},1} \\
+          0  = v^{rel}_{\hat{\mathbf{n}},21}     = v_{\hat{\mathbf{n}},2}     - v_{\hat{\mathbf{n}},1} \\
+  \mathbf{0} = \symbf{\omega}^{rel}_{21} = \symbf{\omega}_{2} - \symbf{\omega}_{1} \\
+\end{cases}
+\qquad , \qquad
+\begin{cases}
+  \mathbf{0} = \mathbf{F}_{\hat{\mathbf{t}},12} = \mathbf{F}_{\hat{\mathbf{t}},21} \\
+  \qquad F_{\hat{\mathbf{n}},12} = - F_{\hat{\mathbf{n}},21} \\
+  \qquad \mathbf{M}_{12} = - \mathbf{M}_{21} \\
+\end{cases}
+$$
+
+#### Cerniera (cilindrica)
+Il vincolo di pattino impedisce il moto relativo e consente solo la rotazione attorno a un asse.
+
+$$
+\begin{cases}
+  \mathbf{0} = \mathbf{v}^{rel}_{21}     = \mathbf{v}_{2}     - \mathbf{v}_{1} \\
+  \quad \forall \ \omega^{rel}_{\hat{\mathbf{t}},21} = \omega_{\hat{\mathbf{t}},2} - \omega_{\hat{\mathbf{t}},1} \\
+  \mathbf{0} = \symbf{\omega}^{rel}_{\hat{\mathbf{n}},21} = \symbf{\omega}_{\hat{\mathbf{n}},2} - \symbf{\omega}_{\hat{\mathbf{n}},1} \\
+\end{cases}
+\qquad , \qquad
+\begin{cases}
+  \qquad \mathbf{F}_{12} = - \mathbf{F}_{21} \\
+  0 =  M_{\hat{\mathbf{t}},12} = M_{\hat{\mathbf{t}},21} \\
+  \qquad \mathbf{M}_{\hat{\mathbf{n}},12} = - \mathbf{M}_{\hat{\mathbf{n}},21} \\
+\end{cases}
+$$
+
+#### Cerniera (sferica)
+Il vincolo di pattino impedisce il moto relativo, consentendo una rotazione generica.
+
+$$
+\begin{cases}
+  \mathbf{0} = \mathbf{v}^{rel}_{21}     = \mathbf{v}_{2}     - \mathbf{v}_{1} \\
+  \quad \forall \symbf{\omega}^{rel}_{21} = \symbf{\omega}_{2} - \symbf{\omega}_{1} \\
+\end{cases}
+\qquad , \qquad
+\begin{cases}
+  \qquad \mathbf{F}_{12} = - \mathbf{F}_{21} \\
+  \mathbf{0} =  \mathbf{M}_{12} = \mathbf{M}_{21} \\
+\end{cases}
+$$
+
+#### Carrello
+Il vincolo di carello può essere pensato come la combinazione di un pattino e di una cerniera
+
+$$
+\begin{cases}
+  \quad \forall \ \mathbf{v}^{rel}_{\hat{\mathbf{t}},21}     = \mathbf{v}_{\hat{\mathbf{t}},2}     - \mathbf{v}_{\hat{\mathbf{t}},1} \\
+          0  = v^{rel}_{\hat{\mathbf{n}},21}     = v_{\hat{\mathbf{n}},2}     - v_{\hat{\mathbf{n}},1} \\
+  \quad \forall \ \omega^{rel}_{\hat{\mathbf{t}},21} = \omega_{\hat{\mathbf{t}},2} - \omega_{\hat{\mathbf{t}},1} \\
+  \mathbf{0} = \symbf{\omega}^{rel}_{\hat{\mathbf{n}},21} = \symbf{\omega}_{\hat{\mathbf{n}},2} - \symbf{\omega}_{\hat{\mathbf{n}},1} \\
+\end{cases}
+\qquad , \qquad
+\begin{cases}
+  \mathbf{0} = \mathbf{F}_{\hat{\mathbf{t}},12} = \mathbf{F}_{\hat{\mathbf{t}},21} \\
+  \qquad F_{\hat{\mathbf{n}},12} = - F_{\hat{\mathbf{n}},21} \\
+  0 =  M_{\hat{\mathbf{t}},12} = M_{\hat{\mathbf{t}},21} \\
+  \qquad \mathbf{M}_{\hat{\mathbf{n}},12} = - \mathbf{M}_{\hat{\mathbf{n}},21} \\
+\end{cases}
+$$
+
+#### Appoggio
+Il vincolo di appoggio è un vincolo monolatero **todo** *aggiungere descrizione*
 
 ### Attrito
 #### Attrito statico

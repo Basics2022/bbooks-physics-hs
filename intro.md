@@ -10,6 +10,53 @@ Per ora colleziona gli argomenti. L'organizzazione migliore verrà decisa in un 
 </span>
 -->
 
+<!--  Not working consistently: sometimes only html works, sometimes only pdf works, sometimes together
+````{only} pdf
+**Metodo.**
+
+**Argomenti.**
+
+````
+-->
+
+````{only} html
+```{dropdown} Introduzione alla fisica
+```
+```{dropdown} Meccanica classica
+```
+```{dropdown} Termodinamica
+```
+```{dropdown} Elettromagnetismo
+```
+```{dropdown} Fisica moderna
+```
+
+````
+
+
+<!--
+## Argomenti
+```{dropdown} Introduzione alla fisica
+```
+```{dropdown} Meccanica classica
+```
+```{dropdown} Termodinamica
+```
+```{dropdown} Elettromagnetismo
+```
+```{dropdown} Fisica moderna
+```
+-->
+
+<!--
+- Introduzione alla fisica: metodo sperimentale, misura, grandezze,...
+- Meccanica classica
+- Termodinamica classica
+- Elettromagnetismo classico
+- Fisica moderna
+-->
+
+<!--
 **Discipline.**
 ::::{grid} 1
 :gutter: 3
@@ -45,25 +92,4 @@ Per ora colleziona gli argomenti. L'organizzazione migliore verrà decisa in un 
 :::
 
 ::::
-
-
-<!--
-## Argomenti
-```{dropdown} Introduzione alla fisica
-```
-```{dropdown} Meccanica classica
-```
-```{dropdown} Termodinamica
-```
-```{dropdown} Elettromagnetismo
-```
-```{dropdown} Fisica moderna
-```
--->
-<!--
-- Introduzione alla fisica: metodo sperimentale, misura, grandezze,...
-- Meccanica classica
-- Termodinamica classica
-- Elettromagnetismo classico
-- Fisica moderna
 -->
