@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="it" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -34,6 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
@@ -54,6 +55,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -65,12 +67,12 @@ const thebe_selector_output = ".output, .cell_output"
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/electromagnetism/electric-current';</script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="Indice" href="../../genindex.html" />
+    <link rel="search" title="Cerca" href="../../search.html" />
     <link rel="next" title="Magnetismo ed elettromagnetismo in regime stazionario" href="electromagnetism-steady.html" />
     <link rel="prev" title="Elettrostatica" href="electrostatics.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="it"/>
   </head>
   
   
@@ -302,6 +304,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Fisica moderna</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../modern.html">Fisica del XX secolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/astronomy.html">Sviluppi dell’astronomia</a></li>
 </ul>
 
     </div>
@@ -358,7 +361,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://github.com/Basics2022/bbooks-physics-hs" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
+   title="Repository di origine"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -375,7 +378,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/electromagnetism/electric-current.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
+   title="Apri un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -396,7 +399,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 <div class="dropdown dropdown-download-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Scarica questa pagina">
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
@@ -405,7 +408,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="../../_sources/ch/electromagnetism/electric-current.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
-   title="Download source file"
+   title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -423,7 +426,7 @@ const thebe_selector_output = ".output, .cell_output"
       <li>
 <button onclick="window.print()"
   class="btn btn-sm btn-download-pdf-button dropdown-item"
-  title="Print to PDF"
+  title="Stampa in PDF"
   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -443,7 +446,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 <button onclick="toggleFullScreen()"
   class="btn btn-sm btn-fullscreen-button"
-  title="Fullscreen mode"
+  title="Modalità schermo intero"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
@@ -469,7 +472,7 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Cerca" aria-label="Cerca" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
@@ -493,14 +496,14 @@ document.write(`
         <div id="jb-print-toc">
             
             <div>
-                <h2> Contents </h2>
+                <h2> Contenuti </h2>
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strumenti-misura-e-generazione">Strumenti: misura e generazione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-conservazione-della-carica-elettrica">Legge di conservazione della carica elettrica</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione">Conduzione</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione-nei-solidi-di-ohm">Conduzione nei solidi “di Ohm”</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione-nei-solidi-di-ohm">Conduzione nei solidi «di Ohm»</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione-nei-gas">Conduzione nei gas</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione-nei-vuoto">Conduzione nei vuoto?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione-nei-semiconduttori">Conduzione nei semiconduttori</a></li>
@@ -523,11 +526,11 @@ document.write(`
 <li><p>corrente elettrica:</p>
 <ul>
 <li><p>descrizione microscopica: materiale elettricamente neutro, con <span class="math notranslate nohighlight">\(e^-\)</span> liberi di conduzione</p></li>
-<li><p>def come flusso di carica: dalla descrizione micro alla descrizione macroscopica, media, (“fenomenologica”?)</p></li>
+<li><p>def come flusso di carica: dalla descrizione micro alla descrizione macroscopica, media, («fenomenologica»?)</p></li>
 </ul>
 </li>
 </ul>
-<p>Localmente, è possibile definire una <strong>densità “macroscopica” di corrente elettrica</strong> come la media pesata delle velocità delle cariche, <span class="math notranslate nohighlight">\(\vec{v}\)</span>.</p>
+<p>Localmente, è possibile definire una <strong>densità «macroscopica» di corrente elettrica</strong> come la media pesata delle velocità delle cariche, <span class="math notranslate nohighlight">\(\vec{v}\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[\lim_{\Delta V(P) \rightarrow 0} \dfrac{\sum_{k \in \Delta V(P)} q_k}{\Delta V} = \rho(P)\]</div>
 <div class="math notranslate nohighlight">
@@ -550,8 +553,8 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\vec{j} = \rho \vec{v} = \rho^+ \vec{v}^+ + \rho^- \vec{v}^- \ . \]</div>
 <p>Nel caso in cui il materiale sia neutro, la densità di carica elettrica è nulla, <span class="math notranslate nohighlight">\(0 = \rho = \rho^+ + \rho^- =\)</span> e quindi <span class="math notranslate nohighlight">\(\rho^+ = - \rho^-\)</span> e la densità di corrente elettrica può essere scritta come <span class="math notranslate nohighlight">\(\vec{j} = \rho^- (\vec{v}^- - \vec{v}^+)\)</span>.</p>
-<p><strong>Oss. Corrente elettrica in solidi conduttori neutri.</strong> I solidi hanno una struttura microscopica con gli atomi disposti in un reticolo, senza libertà di movimento. Nei solidi conduttori, gli elettroni “più esterni” della struttura atomica non sono localizzati attorno al singolo atono, ma sono “condivisi” e libersi di muoversi tra tutti gli atomi del solido: queste cariche elettriche libere di muoversi permettono una buona conduzione di corrente elettrica, e vengono chiamati <strong>elettroni di conduzione</strong></p>
-<p>Senza “forzanti esterne”, come ad esempio campi elettrici, il moto degli elettroni di conduzione non ha direzioni privilegiate: poiché il moto delle cariche libere è casuale senza direzioni privilegiate, la velocità media è nulla (la velocità è una grandezza vettoriale!) e la corrente elettrica è nulla. Se le velocità delle cariche libere ha una direzione preferenziale, la loro velocità media, <span class="math notranslate nohighlight">\(\vec{v}^-\)</span>, e quindi la corrente elettrica, non è nulla. Assumendo che le cariche elettriche positive abbiano velocità media nulla rispetto all’osservatore <span class="math notranslate nohighlight">\(\vec{v}^+ = \vec{0}\)</span>, la densità di corrente elettrica diventa <span class="math notranslate nohighlight">\(\vec{j} = \rho^- \vec{v}^-\)</span>.</p>
+<p><strong>Oss. Corrente elettrica in solidi conduttori neutri.</strong> I solidi hanno una struttura microscopica con gli atomi disposti in un reticolo, senza libertà di movimento. Nei solidi conduttori, gli elettroni «più esterni» della struttura atomica non sono localizzati attorno al singolo atono, ma sono «condivisi» e libersi di muoversi tra tutti gli atomi del solido: queste cariche elettriche libere di muoversi permettono una buona conduzione di corrente elettrica, e vengono chiamati <strong>elettroni di conduzione</strong></p>
+<p>Senza «forzanti esterne», come ad esempio campi elettrici, il moto degli elettroni di conduzione non ha direzioni privilegiate: poiché il moto delle cariche libere è casuale senza direzioni privilegiate, la velocità media è nulla (la velocità è una grandezza vettoriale!) e la corrente elettrica è nulla. Se le velocità delle cariche libere ha una direzione preferenziale, la loro velocità media, <span class="math notranslate nohighlight">\(\vec{v}^-\)</span>, e quindi la corrente elettrica, non è nulla. Assumendo che le cariche elettriche positive abbiano velocità media nulla rispetto all’osservatore <span class="math notranslate nohighlight">\(\vec{v}^+ = \vec{0}\)</span>, la densità di corrente elettrica diventa <span class="math notranslate nohighlight">\(\vec{j} = \rho^- \vec{v}^-\)</span>.</p>
 <!--
 ```{figure} ../../media/electric-current-solids.png
 ---
@@ -570,7 +573,7 @@ $$\Delta i = \Phi_{\Delta S}(\vec{j}) = \vec{j} \cdot \hat{n} \Delta S = \frac{\
 <p><strong>todo</strong></p>
 <ul class="simple">
 <li><p>strumenti per misurare corrente e tensione: amperometro e voltmetro</p></li>
-<li><p>generatori di “spinta”: generatori di tensione</p></li>
+<li><p>generatori di «spinta»: generatori di tensione</p></li>
 <li><p>resistenza al moto: la resistenza elettica</p></li>
 </ul>
 </div>
@@ -586,7 +589,7 @@ $$\Delta i = \Phi_{\Delta S}(\vec{j}) = \vec{j} \cdot \hat{n} \Delta S = \frac{\
 <div class="section" id="conduzione">
 <h2>Conduzione<a class="headerlink" href="#conduzione" title="Permalink to this heading">#</a></h2>
 <div class="section" id="conduzione-nei-solidi-di-ohm">
-<h3>Conduzione nei solidi “di Ohm”<a class="headerlink" href="#conduzione-nei-solidi-di-ohm" title="Permalink to this heading">#</a></h3>
+<h3>Conduzione nei solidi «di Ohm»<a class="headerlink" href="#conduzione-nei-solidi-di-ohm" title="Permalink to this heading">#</a></h3>
 <p>In un materiale di Ohm, il campo elettrico <span class="math notranslate nohighlight">\(\vec{e}\)</span> è proporzionale alla densità di corrente elettrica <span class="math notranslate nohighlight">\(\vec{j}\)</span>. Per un solido isotropo, senza direzioni preferenziali, la <strong>forma locale - differenziale - della legge di Ohm</strong> è
 <strong>Legge di Ohm</strong> in forma locale:</p>
 <div class="math notranslate nohighlight">
@@ -662,7 +665,7 @@ $$\Delta i = \Phi_{\Delta S}(\vec{j}) = \vec{j} \cdot \hat{n} \Delta S = \frac{\
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-subtitle">precedente</p>
         <p class="prev-next-title">Elettrostatica</p>
       </div>
     </a>
@@ -670,7 +673,7 @@ $$\Delta i = \Phi_{\Delta S}(\vec{j}) = \vec{j} \cdot \hat{n} \Delta S = \frac{\
        href="electromagnetism-steady.html"
        title="next page">
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">successivo</p>
         <p class="prev-next-title">Magnetismo ed elettromagnetismo in regime stazionario</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
@@ -686,14 +689,14 @@ $$\Delta i = \Phi_{\Delta S}(\vec{j}) = \vec{j} \cdot \hat{n} \Delta S = \frac{\
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
+    <i class="fa-solid fa-list"></i> Contenuti
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strumenti-misura-e-generazione">Strumenti: misura e generazione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-conservazione-della-carica-elettrica">Legge di conservazione della carica elettrica</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione">Conduzione</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione-nei-solidi-di-ohm">Conduzione nei solidi “di Ohm”</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione-nei-solidi-di-ohm">Conduzione nei solidi «di Ohm»</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione-nei-gas">Conduzione nei gas</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione-nei-vuoto">Conduzione nei vuoto?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione-nei-semiconduttori">Conduzione nei semiconduttori</a></li>
@@ -713,7 +716,7 @@ $$\Delta i = \Phi_{\Delta S}(\vec{j}) = \vec{j} \cdot \hat{n} \Delta S = \frac{\
   <div class="footer-item">
     
 <p class="component-author">
-By basics
+Di basics
 </p>
 
   </div>

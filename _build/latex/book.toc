@@ -1,250 +1,250 @@
-\selectlanguage *{english}
+\selectlanguage *{italian}
 \contentsline {part}{I\hspace {1em}Introduzione alla fisica}{3}{part.1}%
 \contentsline {chapter}{\numberline {1}Introduzione alla fisica}{5}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Grandezze fisiche}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Spazio}{8}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Quantità di materia}{8}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Tempo}{8}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Temperatura}{8}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Carica e corrente elettrica}{8}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Quantità di sostanza, la mole}{8}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Intensità luminosa}{8}{section.2.7}%
-\contentsline {part}{II\hspace {1em}Meccanica classica}{9}{part.2}%
-\contentsline {chapter}{\numberline {3}Meccanica classica}{11}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Introduzione alla meccanica classica}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Breve storia}{13}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Osservazioni astronomiche}{13}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Galileo}{13}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Newton}{13}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Modelli}{14}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Cinematica}{15}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Cinematica del punto}{15}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Moti particolari}{16}{subsection.5.1.1}%
-\contentsline {subsubsection}{Moto non accelerato}{16}{subsubsection*.3}%
-\contentsline {subsubsection}{Moto uniformemente accelerato}{16}{subsubsection*.4}%
-\contentsline {subsubsection}{Moto circolare}{17}{subsubsection*.5}%
-\contentsline {paragraph}{Moto circolare uniforme}{17}{paragraph*.6}%
-\contentsline {subsubsection}{Moto armonico lungo un segmento}{18}{subsubsection*.7}%
-\contentsline {subsection}{\numberline {5.1.2}Problemi}{18}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Cinematica di un corpo rigido}{18}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Posizione dei punti di un corpo rigido}{18}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Velocità dei punti di un corpo rigido}{19}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Accelerazione dei punti di un corpo rigido}{19}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Cinematica dei sistemi deformabili}{20}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Cinematica relativa}{20}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Azioni}{21}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Forza, momento di una forza, azioni distribuite}{21}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Forza concentrata}{21}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Momento di una forza concentrata}{22}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Sistema di forze, risultante delle azioni e carichi equivalenti}{22}{subsection.6.1.3}%
-\contentsline {subsection}{\numberline {6.1.4}Coppia di forze}{22}{subsection.6.1.4}%
-\contentsline {subsection}{\numberline {6.1.5}Campi di forze}{23}{subsection.6.1.5}%
-\contentsline {subsection}{\numberline {6.1.6}Azioni distribuite}{23}{subsection.6.1.6}%
-\contentsline {section}{\numberline {6.2}Lavoro e potenza}{23}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Lavoro e potenza di una forza}{23}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Lavoro e potenza di un sistema di forze}{24}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Lavoro e potenza di una coppia di forze}{24}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}Azioni conservative}{24}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Esempi di forze}{25}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Gravità}{25}{subsection.6.4.1}%
-\contentsline {subsubsection}{Legge di gravitazione universale}{25}{subsubsection*.8}%
-\contentsline {subsubsection}{Campo di gravità}{25}{subsubsection*.9}%
-\contentsline {subsubsection}{Campo di gravità nei pressi della superficie terrestre}{26}{subsubsection*.10}%
-\contentsline {subsection}{\numberline {6.4.2}Azioni elastiche: molle lineari}{27}{subsection.6.4.2}%
-\contentsline {subsection}{\numberline {6.4.3}Azioni di contatto}{27}{subsection.6.4.3}%
-\contentsline {subsubsection}{Reazioni vincolari di vincoli ideali}{27}{subsubsection*.11}%
-\contentsline {paragraph}{Incastro}{27}{paragraph*.12}%
-\contentsline {paragraph}{Pattino}{27}{paragraph*.13}%
-\contentsline {paragraph}{Cerniera (cilindrica)}{28}{paragraph*.14}%
-\contentsline {paragraph}{Cerniera (sferica)}{28}{paragraph*.15}%
-\contentsline {paragraph}{Carrello}{28}{paragraph*.16}%
-\contentsline {paragraph}{Appoggio}{28}{paragraph*.17}%
-\contentsline {subsubsection}{Attrito}{28}{subsubsection*.18}%
-\contentsline {paragraph}{Attrito statico}{28}{paragraph*.19}%
-\contentsline {paragraph}{Attrito dinamico}{29}{paragraph*.20}%
-\contentsline {paragraph}{Puro rotolamento}{29}{paragraph*.21}%
-\contentsline {chapter}{\numberline {7}Statica}{31}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Statica del punto}{31}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Statica di un corpo rigido}{31}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Problemi nel piano}{32}{subsection.7.2.1}%
-\contentsline {subsubsection}{Esempi ed esercizi}{32}{subsubsection*.22}%
-\contentsline {section}{\numberline {7.3}Statica dei mezzi deformabili}{32}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Strutture}{32}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Fluidi}{32}{subsection.7.3.2}%
-\contentsline {section}{\numberline {7.4}Problemi}{32}{section.7.4}%
-\contentsline {chapter}{\numberline {8}Inerzia}{41}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Massa e distribuzione di massa}{41}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Quantità dinamiche}{41}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Inerzia e grandezze dinamiche di un punto}{42}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Inerzia e grandezze dinamiche di un sistema esteso con distribuzione discreta di massa}{42}{section.8.4}%
-\contentsline {subsection}{\numberline {8.4.1}Sistemi rigidi}{42}{subsection.8.4.1}%
-\contentsline {section}{\numberline {8.5}Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa}{43}{section.8.5}%
-\contentsline {subsection}{\numberline {8.5.1}Sistemi rigidi}{43}{subsection.8.5.1}%
-\contentsline {chapter}{\numberline {9}Dinamica}{45}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Princìpi della dinamica di Newton}{46}{section.9.1}%
-\contentsline {subsection}{\numberline {9.1.1}Sistemi di riferimento inerziali e invarianza galileiana.}{46}{subsection.9.1.1}%
-\contentsline {section}{\numberline {9.2}Equazioni cardinali della dinamica}{47}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}Equazioni cardinali della dinamica per un punto}{48}{subsection.9.2.1}%
-\contentsline {subsection}{\numberline {9.2.2}Equazioni cardinali della dinamica per sistemi di punti}{49}{subsection.9.2.2}%
-\contentsline {subsection}{\numberline {9.2.3}Equazioni cardinali della dinamica per un corpo rigido in moto piano}{51}{subsection.9.2.3}%
-\contentsline {section}{\numberline {9.3}Leggi di conservazione}{52}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Collisioni}{52}{section.9.4}%
-\contentsline {subsection}{\numberline {9.4.1}Problemi}{53}{subsection.9.4.1}%
-\contentsline {section}{\numberline {9.5}Gravitazione}{63}{section.9.5}%
-\contentsline {subsection}{\numberline {9.5.1}Legge di gravitazione universale}{63}{subsection.9.5.1}%
-\contentsline {subsection}{\numberline {9.5.2}Problema dei due corpi}{64}{subsection.9.5.2}%
-\contentsline {subsubsection}{Traiettorie, coniche, ed energia}{64}{subsubsection*.23}%
-\contentsline {subsubsection}{Traiettorie chiuse e leggi di Keplero}{65}{subsubsection*.24}%
-\contentsline {part}{III\hspace {1em}Termodinamica}{69}{part.3}%
-\contentsline {chapter}{\numberline {10}Termodinamica}{71}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Introduzione alla termodinamica}{73}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Breve storia della termodinamica}{74}{section.11.1}%
-\contentsline {section}{\numberline {11.2}Esperienze ed esperimenti}{76}{section.11.2}%
-\contentsline {subsection}{\numberline {11.2.1}Dilatazione sostanze}{76}{subsection.11.2.1}%
-\contentsline {subsection}{\numberline {11.2.2}Esperienza di Torricelli}{76}{subsection.11.2.2}%
-\contentsline {subsection}{\numberline {11.2.3}Prime esperienze sui gas}{76}{subsection.11.2.3}%
-\contentsline {subsection}{\numberline {11.2.4}Equilibrio termico}{76}{subsection.11.2.4}%
-\contentsline {subsection}{\numberline {11.2.5}Scale di temperatura}{76}{subsection.11.2.5}%
-\contentsline {subsubsection}{Scale empiriche}{76}{subsubsection*.25}%
-\contentsline {subsubsection}{Scala termodinamica}{77}{subsubsection*.26}%
-\contentsline {subsection}{\numberline {11.2.6}Teoria cinetica dei gas}{77}{subsection.11.2.6}%
-\contentsline {subsection}{\numberline {11.2.7}Calore latente e calore specifico}{77}{subsection.11.2.7}%
-\contentsline {subsection}{\numberline {11.2.8}Esperienze sui gas, ed equazione di stato dei gas perfetti}{78}{subsection.11.2.8}%
-\contentsline {subsection}{\numberline {11.2.9}Lavoro, … \sphinxstylestrong {todo}}{78}{subsection.11.2.9}%
-\contentsline {subsection}{\numberline {11.2.10}Formalismo e prìncipi della termodinamica classica}{78}{subsection.11.2.10}%
-\contentsline {subsection}{\numberline {11.2.11}Meccanica statistica}{79}{subsection.11.2.11}%
-\contentsline {section}{\numberline {11.3}Termodinamica e teoria atomica}{79}{section.11.3}%
-\contentsline {subsection}{\numberline {11.3.1}Stati della materia}{79}{subsection.11.3.1}%
-\contentsline {subsection}{\numberline {11.3.2}Cambiamenti di stato}{79}{subsection.11.3.2}%
-\contentsline {subsection}{\numberline {11.3.3}Variabili di stato}{79}{subsection.11.3.3}%
-\contentsline {section}{\numberline {11.4}Problemi}{79}{section.11.4}%
-\contentsline {subsection}{\numberline {11.4.1}\sphinxstylestrong {todo} …}{79}{subsection.11.4.1}%
-\contentsline {subsection}{\numberline {11.4.2}Calorimetria}{79}{subsection.11.4.2}%
-\contentsline {chapter}{\numberline {12}Princìpi della termodinamica}{81}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Principio di Lavoisier}{82}{section.12.1}%
-\contentsline {section}{\numberline {12.2}Primo principio della termodinamica}{82}{section.12.2}%
-\contentsline {section}{\numberline {12.3}Energia interna e regola delle fasi di Gibbs}{82}{section.12.3}%
-\contentsline {subsection}{\numberline {12.3.1}Energia interna}{82}{subsection.12.3.1}%
-\contentsline {subsection}{\numberline {12.3.2}Variabili di stato e regola delle fasi}{82}{subsection.12.3.2}%
-\contentsline {subsection}{\numberline {12.3.3}Primo principio in termini delle variabili di stato}{83}{subsection.12.3.3}%
-\contentsline {section}{\numberline {12.4}Diagrammi termodinamici}{84}{section.12.4}%
-\contentsline {subsection}{\numberline {12.4.1}Diagramma di stato di un sistema mono\sphinxhyphen {}componente}{84}{subsection.12.4.1}%
-\contentsline {subsection}{\numberline {12.4.2}Piani termodinamici}{84}{subsection.12.4.2}%
-\contentsline {subsubsection}{Piano di Clapeyron, P\sphinxhyphen {}V}{84}{subsubsection*.27}%
-\contentsline {subsubsection}{Piano entropico, T\sphinxhyphen {}S}{85}{subsubsection*.28}%
-\contentsline {section}{\numberline {12.5}Secondo principio della termodinamica}{85}{section.12.5}%
-\contentsline {subsection}{\numberline {12.5.1}Enunciato di Clausius}{85}{subsection.12.5.1}%
-\contentsline {subsubsection}{Sistemi semplici}{85}{subsubsection*.29}%
-\contentsline {subsubsection}{Sistemi composti}{85}{subsubsection*.30}%
-\contentsline {subsection}{\numberline {12.5.2}Aumento dell’entropia nell’universo}{86}{subsection.12.5.2}%
-\contentsline {section}{\numberline {12.6}Sistemi aperti}{86}{section.12.6}%
-\contentsline {chapter}{\numberline {13}Stati della materia}{87}{chapter.13}%
-\contentsline {section}{\numberline {13.1}Gas ideali}{87}{section.13.1}%
-\contentsline {subsection}{\numberline {13.1.1}Esperimenti}{87}{subsection.13.1.1}%
-\contentsline {subsubsection}{Esperimenti e leggi}{87}{subsubsection*.31}%
-\contentsline {paragraph}{Legge di Boyle}{87}{paragraph*.32}%
-\contentsline {paragraph}{Legge di Charles}{88}{paragraph*.33}%
-\contentsline {paragraph}{Legge di Gay\sphinxhyphen {}Lussac}{88}{paragraph*.34}%
-\contentsline {subparagraph}{Scala di temperatura assoluta}{88}{subparagraph*.35}%
-\contentsline {paragraph}{Legge di Avogadro}{88}{paragraph*.36}%
-\contentsline {subsubsection}{Legge dei gas ideali}{89}{subsubsection*.37}%
-\contentsline {subsection}{\numberline {13.1.2}Espressioni diverse dell’equazione di stato dei gas perfetti}{89}{subsection.13.1.2}%
-\contentsline {subsection}{\numberline {13.1.3}Teoria cinetica dei gas}{89}{subsection.13.1.3}%
-\contentsline {subsection}{\numberline {13.1.4}Caratteristiche dei gas perfetti}{91}{subsection.13.1.4}%
-\contentsline {subsubsection}{Legge di stato}{91}{subsubsection*.38}%
-\contentsline {subsubsection}{Primo principio della termodinamica}{91}{subsubsection*.39}%
-\contentsline {subsubsection}{Energia interna, entalpia e calori specifici}{91}{subsubsection*.40}%
-\contentsline {subsubsection}{Variazioni di entropia}{93}{subsubsection*.41}%
-\contentsline {section}{\numberline {13.2}Solidi elastici}{93}{section.13.2}%
-\contentsline {subsection}{\numberline {13.2.1}Solido elastico lineare 1\sphinxhyphen {}dimensionale}{93}{subsection.13.2.1}%
-\contentsline {chapter}{\numberline {14}Macchine termiche}{97}{chapter.14}%
-\contentsline {section}{\numberline {14.1}Cicli termodinamici}{97}{section.14.1}%
-\contentsline {section}{\numberline {14.2}Macchina termica di Carnot}{98}{section.14.2}%
-\contentsline {section}{\numberline {14.3}Secondo principio della termodinamica per cicli termodinamici}{98}{section.14.3}%
-\contentsline {section}{\numberline {14.4}Ciclo Otto}{99}{section.14.4}%
-\contentsline {subsection}{\numberline {14.4.1}Ciclo Otto reale}{99}{subsection.14.4.1}%
-\contentsline {subsection}{\numberline {14.4.2}Ciclo Otto ideale}{99}{subsection.14.4.2}%
-\contentsline {subsection}{\numberline {14.4.3}Rendimento del ciclo Otto}{99}{subsection.14.4.3}%
-\contentsline {subsection}{\numberline {14.4.4}Funzionamento di un motore a combustione interna}{100}{subsection.14.4.4}%
-\contentsline {subsection}{\numberline {14.4.5}Esempio}{100}{subsection.14.4.5}%
-\contentsline {section}{\numberline {14.5}Ciclo Diesel}{100}{section.14.5}%
-\contentsline {subsection}{\numberline {14.5.1}Ciclo Diesel reale}{100}{subsection.14.5.1}%
-\contentsline {section}{\numberline {14.6}Ciclo Joule\sphinxhyphen {}Brayton}{100}{section.14.6}%
-\contentsline {subsection}{\numberline {14.6.1}Ciclo Joule\sphinxhyphen {}Brayton aperto}{100}{subsection.14.6.1}%
-\contentsline {subsection}{\numberline {14.6.2}Ciclo Joule\sphinxhyphen {}Brayton chiuso}{100}{subsection.14.6.2}%
-\contentsline {subsection}{\numberline {14.6.3}Rendimento del ciclo Joule\sphinxhyphen {}Brayton}{101}{subsection.14.6.3}%
-\contentsline {subsection}{\numberline {14.6.4}Esempio}{101}{subsection.14.6.4}%
-\contentsline {section}{\numberline {14.7}Ciclo Rankine}{101}{section.14.7}%
-\contentsline {section}{\numberline {14.8}Problemi}{102}{section.14.8}%
-\contentsline {chapter}{\numberline {15}Meccanismi di trasmissione del calore}{103}{chapter.15}%
-\contentsline {part}{IV\hspace {1em}Elettromagnetismo}{105}{part.4}%
-\contentsline {chapter}{\numberline {16}Elettromagnetismo}{107}{chapter.16}%
-\contentsline {chapter}{\numberline {17}Introduzione all’elettromagnetismo}{109}{chapter.17}%
-\contentsline {section}{\numberline {17.1}Breve storia dell’elettromagnetismo}{109}{section.17.1}%
-\contentsline {section}{\numberline {17.2}Esperienze ed esperimenti}{110}{section.17.2}%
-\contentsline {subsection}{\numberline {17.2.1}Elettrizzazione}{110}{subsection.17.2.1}%
-\contentsline {subsection}{\numberline {17.2.2}Conservazione della carica}{110}{subsection.17.2.2}%
-\contentsline {subsection}{\numberline {17.2.3}Coulomb}{110}{subsection.17.2.3}%
-\contentsline {subsection}{\numberline {17.2.4}Campo elettrico ed energia del campo elettrico}{111}{subsection.17.2.4}%
-\contentsline {subsection}{\numberline {17.2.5}Pila di Volta}{111}{subsection.17.2.5}%
-\contentsline {subsection}{\numberline {17.2.6}…}{111}{subsection.17.2.6}%
-\contentsline {section}{\numberline {17.3}Problemi}{111}{section.17.3}%
-\contentsline {chapter}{\numberline {18}Fondamenti di elettromagnetismo}{115}{chapter.18}%
-\contentsline {section}{\numberline {18.1}Elettrostatica}{116}{section.18.1}%
-\contentsline {subsection}{\numberline {18.1.1}Legge di Coulomb}{116}{subsection.18.1.1}%
-\contentsline {subsubsection}{Misura della carica elettrica}{116}{subsubsection*.42}%
-\contentsline {subsection}{\numberline {18.1.2}Il campo elettrico}{118}{subsection.18.1.2}%
-\contentsline {subsubsection}{Campo conservativo}{118}{subsubsection*.43}%
-\contentsline {subsubsection}{Energia potenziale di una distribuzione di cariche}{119}{subsubsection*.44}%
-\contentsline {subsection}{\numberline {18.1.3}Campo elettrico nei materiali}{120}{subsection.18.1.3}%
-\contentsline {subsection}{\numberline {18.1.4}Verso le equazioni di Maxwell}{120}{subsection.18.1.4}%
-\contentsline {subsubsection}{Legge di Gauss per il flusso del campo elettrico}{120}{subsubsection*.45}%
-\contentsline {subsubsection}{Legge di Faraday, in elettrostatica}{121}{subsubsection*.46}%
-\contentsline {subsection}{\numberline {18.1.5}Moto di una carica in un campo elettrico}{122}{subsection.18.1.5}%
-\contentsline {subsection}{\numberline {18.1.6}Condensatore}{122}{subsection.18.1.6}%
-\contentsline {subsubsection}{Condensatore infinito piano}{122}{subsubsection*.47}%
-\contentsline {section}{\numberline {18.2}Corrente elettrica}{123}{section.18.2}%
-\contentsline {subsection}{\numberline {18.2.1}Strumenti: misura e generazione}{124}{subsection.18.2.1}%
-\contentsline {subsection}{\numberline {18.2.2}Legge di conservazione della carica elettrica}{124}{subsection.18.2.2}%
-\contentsline {subsection}{\numberline {18.2.3}Conduzione}{124}{subsection.18.2.3}%
-\contentsline {subsubsection}{Conduzione nei solidi “di Ohm”}{124}{subsubsection*.48}%
-\contentsline {subsubsection}{Conduzione nei gas}{125}{subsubsection*.49}%
-\contentsline {subsubsection}{Conduzione nei vuoto?}{125}{subsubsection*.50}%
-\contentsline {subsubsection}{Conduzione nei semiconduttori}{125}{subsubsection*.51}%
-\contentsline {section}{\numberline {18.3}Magnetismo ed elettromagnetismo in regime stazionario}{125}{section.18.3}%
-\contentsline {subsection}{\numberline {18.3.1}Esperienze elementari su campo magnetico}{125}{subsection.18.3.1}%
-\contentsline {subsection}{\numberline {18.3.2}Esperienza di Faraday}{125}{subsection.18.3.2}%
-\contentsline {subsubsection}{Il galvanometro}{125}{subsubsection*.52}%
-\contentsline {subsection}{\numberline {18.3.3}Esperienze di Oersted e Ampere}{125}{subsection.18.3.3}%
-\contentsline {subsubsection}{Legge di Ampére}{125}{subsubsection*.53}%
-\contentsline {subsubsection}{Legge di Biot\sphinxhyphen {}Savart}{126}{subsubsection*.54}%
-\contentsline {subsubsection}{Formula generale}{126}{subsubsection*.55}%
-\contentsline {paragraph}{Filo rettilineo infinito}{126}{paragraph*.56}%
-\contentsline {subsubsection}{Esempi: spira e solenoide}{126}{subsubsection*.57}%
-\contentsline {paragraph}{Spira circolare}{126}{paragraph*.58}%
-\contentsline {paragraph}{Solenoide rettilineo}{127}{paragraph*.59}%
-\contentsline {paragraph}{Solenoide toroidale}{127}{paragraph*.60}%
-\contentsline {subsection}{\numberline {18.3.4}Verso le equazioni di Maxwell}{127}{subsection.18.3.4}%
-\contentsline {subsubsection}{Legge di Gauss per il flusso del campo magnetico}{127}{subsubsection*.61}%
-\contentsline {subsubsection}{Legge di Ampére}{128}{subsubsection*.62}%
-\contentsline {subsection}{\numberline {18.3.5}Modelli microscopici del magnetismo}{128}{subsection.18.3.5}%
-\contentsline {subsection}{\numberline {18.3.6}Moto di una carica elettrica in un campo elettromagnetico}{128}{subsection.18.3.6}%
-\contentsline {section}{\numberline {18.4}Induzione ed elettromagnetismo}{129}{section.18.4}%
-\contentsline {subsection}{\numberline {18.4.1}Legge di Faraday per l’induzione elettromagnetica}{129}{subsection.18.4.1}%
-\contentsline {subsection}{\numberline {18.4.2}Correzione di Maxwell dell’equazione di Ampére}{129}{subsection.18.4.2}%
-\contentsline {subsection}{\numberline {18.4.3}Equazioni di Maxwell dell’elettromagnetismo}{129}{subsection.18.4.3}%
-\contentsline {chapter}{\numberline {19}Principi di elettrotecnica}{131}{chapter.19}%
-\contentsline {section}{\numberline {19.1}Circuiti elettrici}{131}{section.19.1}%
-\contentsline {section}{\numberline {19.2}Circuiti magnetici}{131}{section.19.2}%
-\contentsline {section}{\numberline {19.3}Sistemi elettromeccanici e macchine elettriche}{132}{section.19.3}%
-\contentsline {chapter}{\numberline {20}Onde elettromagnetiche}{133}{chapter.20}%
-\contentsline {part}{V\hspace {1em}Fisica moderna}{135}{part.5}%
-\contentsline {chapter}{\numberline {21}Fisica del XX secolo}{137}{chapter.21}%
-\contentsline {section}{\numberline {21.1}Domande}{137}{section.21.1}%
-\contentsline {section}{\numberline {21.2}Macro\sphinxhyphen {}argomenti}{137}{section.21.2}%
-\contentsline {subsection}{\numberline {21.2.1}Materia e luce}{137}{subsection.21.2.1}%
-\contentsline {subsection}{\numberline {21.2.2}Relatività di Einstein}{138}{subsection.21.2.2}%
-\contentsline {section}{\numberline {21.3}Esperienze}{138}{section.21.3}%
-\contentsline {section}{\numberline {21.4}Tecniche di misura}{138}{section.21.4}%
-\contentsline {chapter}{\numberline {22}Sviluppi dell’astronomia}{141}{chapter.22}%
-\contentsline {section}{\numberline {22.1}Breve storia}{141}{section.22.1}%
+\contentsline {section}{\numberline {2.4}Temperatura}{9}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Carica e corrente elettrica}{9}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Quantità di sostanza, la mole}{9}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Intensità luminosa}{9}{section.2.7}%
+\contentsline {part}{II\hspace {1em}Meccanica classica}{11}{part.2}%
+\contentsline {chapter}{\numberline {3}Meccanica classica}{13}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Introduzione alla meccanica classica}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Breve storia}{15}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Osservazioni astronomiche}{15}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Galileo}{15}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Newton}{16}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Modelli}{16}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Cinematica}{19}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Cinematica del punto}{20}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Moti particolari}{20}{subsection.5.1.1}%
+\contentsline {subsubsection}{Moto non accelerato}{20}{subsubsection*.3}%
+\contentsline {subsubsection}{Moto uniformemente accelerato}{21}{subsubsection*.4}%
+\contentsline {subsubsection}{Moto circolare}{21}{subsubsection*.5}%
+\contentsline {paragraph}{Moto circolare uniforme}{22}{paragraph*.6}%
+\contentsline {subsubsection}{Moto armonico lungo un segmento}{22}{subsubsection*.7}%
+\contentsline {subsection}{\numberline {5.1.2}Problemi}{22}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Cinematica di un corpo rigido}{22}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Posizione dei punti di un corpo rigido}{23}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Velocità dei punti di un corpo rigido}{23}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Accelerazione dei punti di un corpo rigido}{24}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Cinematica dei sistemi deformabili}{24}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Cinematica relativa}{24}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Azioni}{25}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Forza, momento di una forza, azioni distribuite}{25}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Forza concentrata}{25}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Momento di una forza concentrata}{26}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Sistema di forze, risultante delle azioni e carichi equivalenti}{26}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Coppia di forze}{26}{subsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.1.5}Campi di forze}{27}{subsection.6.1.5}%
+\contentsline {subsection}{\numberline {6.1.6}Azioni distribuite}{27}{subsection.6.1.6}%
+\contentsline {section}{\numberline {6.2}Lavoro e potenza}{27}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Lavoro e potenza di una forza}{27}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Lavoro e potenza di un sistema di forze}{28}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Lavoro e potenza di una coppia di forze}{28}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Azioni conservative}{28}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Esempi di forze}{29}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Gravità}{29}{subsection.6.4.1}%
+\contentsline {subsubsection}{Legge di gravitazione universale}{29}{subsubsection*.8}%
+\contentsline {subsubsection}{Campo di gravità}{29}{subsubsection*.9}%
+\contentsline {subsubsection}{Campo di gravità nei pressi della superficie terrestre}{30}{subsubsection*.10}%
+\contentsline {subsection}{\numberline {6.4.2}Azioni elastiche: molle lineari}{31}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}Azioni di contatto}{31}{subsection.6.4.3}%
+\contentsline {subsubsection}{Reazioni vincolari di vincoli ideali}{31}{subsubsection*.11}%
+\contentsline {paragraph}{Incastro}{31}{paragraph*.12}%
+\contentsline {paragraph}{Pattino}{31}{paragraph*.13}%
+\contentsline {paragraph}{Cerniera (cilindrica)}{32}{paragraph*.14}%
+\contentsline {paragraph}{Cerniera (sferica)}{32}{paragraph*.15}%
+\contentsline {paragraph}{Carrello}{32}{paragraph*.16}%
+\contentsline {paragraph}{Appoggio}{32}{paragraph*.17}%
+\contentsline {subsubsection}{Attrito}{32}{subsubsection*.18}%
+\contentsline {paragraph}{Attrito statico}{32}{paragraph*.19}%
+\contentsline {paragraph}{Attrito dinamico}{33}{paragraph*.20}%
+\contentsline {paragraph}{Puro rotolamento}{33}{paragraph*.21}%
+\contentsline {chapter}{\numberline {7}Statica}{35}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Statica del punto}{35}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Statica di un corpo rigido}{36}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Problemi nel piano}{36}{subsection.7.2.1}%
+\contentsline {subsubsection}{Esempi ed esercizi}{36}{subsubsection*.22}%
+\contentsline {section}{\numberline {7.3}Statica dei mezzi deformabili}{36}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Strutture}{36}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Fluidi}{36}{subsection.7.3.2}%
+\contentsline {section}{\numberline {7.4}Problemi}{37}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Inerzia}{45}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Massa e distribuzione di massa}{45}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Quantità dinamiche}{45}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Inerzia e grandezze dinamiche di un punto}{46}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Inerzia e grandezze dinamiche di un sistema esteso con distribuzione discreta di massa}{46}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Sistemi rigidi}{46}{subsection.8.4.1}%
+\contentsline {section}{\numberline {8.5}Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa}{47}{section.8.5}%
+\contentsline {subsection}{\numberline {8.5.1}Sistemi rigidi}{47}{subsection.8.5.1}%
+\contentsline {chapter}{\numberline {9}Dinamica}{49}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Princìpi della dinamica di Newton}{50}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Sistemi di riferimento inerziali e invarianza galileiana.}{50}{subsection.9.1.1}%
+\contentsline {section}{\numberline {9.2}Equazioni cardinali della dinamica}{52}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Equazioni cardinali della dinamica per un punto}{52}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Equazioni cardinali della dinamica per sistemi di punti}{53}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}Equazioni cardinali della dinamica per un corpo rigido in moto piano}{55}{subsection.9.2.3}%
+\contentsline {section}{\numberline {9.3}Leggi di conservazione}{56}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Collisioni}{56}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Problemi}{57}{subsection.9.4.1}%
+\contentsline {section}{\numberline {9.5}Gravitazione}{67}{section.9.5}%
+\contentsline {subsection}{\numberline {9.5.1}Legge di gravitazione universale}{67}{subsection.9.5.1}%
+\contentsline {subsection}{\numberline {9.5.2}Problema dei due corpi}{68}{subsection.9.5.2}%
+\contentsline {subsubsection}{Traiettorie, coniche, ed energia}{68}{subsubsection*.23}%
+\contentsline {subsubsection}{Traiettorie chiuse e leggi di Keplero}{69}{subsubsection*.24}%
+\contentsline {part}{III\hspace {1em}Termodinamica}{73}{part.3}%
+\contentsline {chapter}{\numberline {10}Termodinamica}{75}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Introduzione alla termodinamica}{77}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Breve storia della termodinamica}{78}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Esperienze ed esperimenti}{80}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}Dilatazione sostanze}{80}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}Esperienza di Torricelli}{80}{subsection.11.2.2}%
+\contentsline {subsection}{\numberline {11.2.3}Prime esperienze sui gas}{80}{subsection.11.2.3}%
+\contentsline {subsection}{\numberline {11.2.4}Equilibrio termico}{80}{subsection.11.2.4}%
+\contentsline {subsection}{\numberline {11.2.5}Scale di temperatura}{80}{subsection.11.2.5}%
+\contentsline {subsubsection}{Scale empiriche}{80}{subsubsection*.25}%
+\contentsline {subsubsection}{Scala termodinamica}{81}{subsubsection*.26}%
+\contentsline {subsection}{\numberline {11.2.6}Teoria cinetica dei gas}{81}{subsection.11.2.6}%
+\contentsline {subsection}{\numberline {11.2.7}Calore latente e calore specifico}{81}{subsection.11.2.7}%
+\contentsline {subsection}{\numberline {11.2.8}Esperienze sui gas, ed equazione di stato dei gas perfetti}{82}{subsection.11.2.8}%
+\contentsline {subsection}{\numberline {11.2.9}Lavoro, … \sphinxstylestrong {todo}}{82}{subsection.11.2.9}%
+\contentsline {subsection}{\numberline {11.2.10}Formalismo e prìncipi della termodinamica classica}{82}{subsection.11.2.10}%
+\contentsline {subsection}{\numberline {11.2.11}Meccanica statistica}{83}{subsection.11.2.11}%
+\contentsline {section}{\numberline {11.3}Termodinamica e teoria atomica}{83}{section.11.3}%
+\contentsline {subsection}{\numberline {11.3.1}Stati della materia}{83}{subsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.3.2}Cambiamenti di stato}{83}{subsection.11.3.2}%
+\contentsline {subsection}{\numberline {11.3.3}Variabili di stato}{83}{subsection.11.3.3}%
+\contentsline {section}{\numberline {11.4}Problemi}{83}{section.11.4}%
+\contentsline {subsection}{\numberline {11.4.1}\sphinxstylestrong {todo} …}{83}{subsection.11.4.1}%
+\contentsline {subsection}{\numberline {11.4.2}Calorimetria}{83}{subsection.11.4.2}%
+\contentsline {chapter}{\numberline {12}Princìpi della termodinamica}{85}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Principio di Lavoisier}{86}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Primo principio della termodinamica}{86}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Energia interna e regola delle fasi di Gibbs}{86}{section.12.3}%
+\contentsline {subsection}{\numberline {12.3.1}Energia interna}{86}{subsection.12.3.1}%
+\contentsline {subsection}{\numberline {12.3.2}Variabili di stato e regola delle fasi}{86}{subsection.12.3.2}%
+\contentsline {subsection}{\numberline {12.3.3}Primo principio in termini delle variabili di stato}{87}{subsection.12.3.3}%
+\contentsline {section}{\numberline {12.4}Diagrammi termodinamici}{88}{section.12.4}%
+\contentsline {subsection}{\numberline {12.4.1}Diagramma di stato di un sistema mono\sphinxhyphen {}componente}{88}{subsection.12.4.1}%
+\contentsline {subsection}{\numberline {12.4.2}Piani termodinamici}{88}{subsection.12.4.2}%
+\contentsline {subsubsection}{Piano di Clapeyron, P\sphinxhyphen {}V}{88}{subsubsection*.27}%
+\contentsline {subsubsection}{Piano entropico, T\sphinxhyphen {}S}{89}{subsubsection*.28}%
+\contentsline {section}{\numberline {12.5}Secondo principio della termodinamica}{89}{section.12.5}%
+\contentsline {subsection}{\numberline {12.5.1}Enunciato di Clausius}{89}{subsection.12.5.1}%
+\contentsline {subsubsection}{Sistemi semplici}{89}{subsubsection*.29}%
+\contentsline {subsubsection}{Sistemi composti}{89}{subsubsection*.30}%
+\contentsline {subsection}{\numberline {12.5.2}Aumento dell’entropia nell’universo}{90}{subsection.12.5.2}%
+\contentsline {section}{\numberline {12.6}Sistemi aperti}{90}{section.12.6}%
+\contentsline {chapter}{\numberline {13}Stati della materia}{91}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Gas ideali}{91}{section.13.1}%
+\contentsline {subsection}{\numberline {13.1.1}Esperimenti}{91}{subsection.13.1.1}%
+\contentsline {subsubsection}{Esperimenti e leggi}{92}{subsubsection*.31}%
+\contentsline {paragraph}{Legge di Boyle}{92}{paragraph*.32}%
+\contentsline {paragraph}{Legge di Charles}{92}{paragraph*.33}%
+\contentsline {paragraph}{Legge di Gay\sphinxhyphen {}Lussac}{92}{paragraph*.34}%
+\contentsline {subparagraph}{Scala di temperatura assoluta}{92}{subparagraph*.35}%
+\contentsline {paragraph}{Legge di Avogadro}{93}{paragraph*.36}%
+\contentsline {subsubsection}{Legge dei gas ideali}{93}{subsubsection*.37}%
+\contentsline {subsection}{\numberline {13.1.2}Espressioni diverse dell’equazione di stato dei gas perfetti}{93}{subsection.13.1.2}%
+\contentsline {subsection}{\numberline {13.1.3}Teoria cinetica dei gas}{94}{subsection.13.1.3}%
+\contentsline {subsection}{\numberline {13.1.4}Caratteristiche dei gas perfetti}{95}{subsection.13.1.4}%
+\contentsline {subsubsection}{Legge di stato}{95}{subsubsection*.38}%
+\contentsline {subsubsection}{Primo principio della termodinamica}{95}{subsubsection*.39}%
+\contentsline {subsubsection}{Energia interna, entalpia e calori specifici}{95}{subsubsection*.40}%
+\contentsline {subsubsection}{Variazioni di entropia}{97}{subsubsection*.41}%
+\contentsline {section}{\numberline {13.2}Solidi elastici}{97}{section.13.2}%
+\contentsline {subsection}{\numberline {13.2.1}Solido elastico lineare 1\sphinxhyphen {}dimensionale}{97}{subsection.13.2.1}%
+\contentsline {chapter}{\numberline {14}Macchine termiche}{101}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Cicli termodinamici}{102}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Macchina termica di Carnot}{102}{section.14.2}%
+\contentsline {section}{\numberline {14.3}Secondo principio della termodinamica per cicli termodinamici}{102}{section.14.3}%
+\contentsline {section}{\numberline {14.4}Ciclo Otto}{103}{section.14.4}%
+\contentsline {subsection}{\numberline {14.4.1}Ciclo Otto reale}{103}{subsection.14.4.1}%
+\contentsline {subsection}{\numberline {14.4.2}Ciclo Otto ideale}{103}{subsection.14.4.2}%
+\contentsline {subsection}{\numberline {14.4.3}Rendimento del ciclo Otto}{104}{subsection.14.4.3}%
+\contentsline {subsection}{\numberline {14.4.4}Funzionamento di un motore a combustione interna}{104}{subsection.14.4.4}%
+\contentsline {subsection}{\numberline {14.4.5}Esempio}{104}{subsection.14.4.5}%
+\contentsline {section}{\numberline {14.5}Ciclo Diesel}{104}{section.14.5}%
+\contentsline {subsection}{\numberline {14.5.1}Ciclo Diesel reale}{104}{subsection.14.5.1}%
+\contentsline {section}{\numberline {14.6}Ciclo Joule\sphinxhyphen {}Brayton}{105}{section.14.6}%
+\contentsline {subsection}{\numberline {14.6.1}Ciclo Joule\sphinxhyphen {}Brayton aperto}{105}{subsection.14.6.1}%
+\contentsline {subsection}{\numberline {14.6.2}Ciclo Joule\sphinxhyphen {}Brayton chiuso}{105}{subsection.14.6.2}%
+\contentsline {subsection}{\numberline {14.6.3}Rendimento del ciclo Joule\sphinxhyphen {}Brayton}{105}{subsection.14.6.3}%
+\contentsline {subsection}{\numberline {14.6.4}Esempio}{106}{subsection.14.6.4}%
+\contentsline {section}{\numberline {14.7}Ciclo Rankine}{106}{section.14.7}%
+\contentsline {section}{\numberline {14.8}Problemi}{106}{section.14.8}%
+\contentsline {chapter}{\numberline {15}Meccanismi di trasmissione del calore}{107}{chapter.15}%
+\contentsline {part}{IV\hspace {1em}Elettromagnetismo}{109}{part.4}%
+\contentsline {chapter}{\numberline {16}Elettromagnetismo}{111}{chapter.16}%
+\contentsline {chapter}{\numberline {17}Introduzione all’elettromagnetismo}{113}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Breve storia dell’elettromagnetismo}{113}{section.17.1}%
+\contentsline {section}{\numberline {17.2}Esperienze ed esperimenti}{114}{section.17.2}%
+\contentsline {subsection}{\numberline {17.2.1}Elettrizzazione}{114}{subsection.17.2.1}%
+\contentsline {subsection}{\numberline {17.2.2}Conservazione della carica}{115}{subsection.17.2.2}%
+\contentsline {subsection}{\numberline {17.2.3}Coulomb}{115}{subsection.17.2.3}%
+\contentsline {subsection}{\numberline {17.2.4}Campo elettrico ed energia del campo elettrico}{115}{subsection.17.2.4}%
+\contentsline {subsection}{\numberline {17.2.5}Pila di Volta}{115}{subsection.17.2.5}%
+\contentsline {subsection}{\numberline {17.2.6}…}{116}{subsection.17.2.6}%
+\contentsline {section}{\numberline {17.3}Problemi}{116}{section.17.3}%
+\contentsline {chapter}{\numberline {18}Fondamenti di elettromagnetismo}{119}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Elettrostatica}{120}{section.18.1}%
+\contentsline {subsection}{\numberline {18.1.1}Legge di Coulomb}{120}{subsection.18.1.1}%
+\contentsline {subsubsection}{Misura della carica elettrica}{121}{subsubsection*.42}%
+\contentsline {subsection}{\numberline {18.1.2}Il campo elettrico}{121}{subsection.18.1.2}%
+\contentsline {subsubsection}{Campo conservativo}{122}{subsubsection*.43}%
+\contentsline {subsubsection}{Energia potenziale di una distribuzione di cariche}{123}{subsubsection*.44}%
+\contentsline {subsection}{\numberline {18.1.3}Campo elettrico nei materiali}{124}{subsection.18.1.3}%
+\contentsline {subsection}{\numberline {18.1.4}Verso le equazioni di Maxwell}{124}{subsection.18.1.4}%
+\contentsline {subsubsection}{Legge di Gauss per il flusso del campo elettrico}{124}{subsubsection*.45}%
+\contentsline {subsubsection}{Legge di Faraday, in elettrostatica}{125}{subsubsection*.46}%
+\contentsline {subsection}{\numberline {18.1.5}Moto di una carica in un campo elettrico}{126}{subsection.18.1.5}%
+\contentsline {subsection}{\numberline {18.1.6}Condensatore}{126}{subsection.18.1.6}%
+\contentsline {subsubsection}{Condensatore infinito piano}{126}{subsubsection*.47}%
+\contentsline {section}{\numberline {18.2}Corrente elettrica}{127}{section.18.2}%
+\contentsline {subsection}{\numberline {18.2.1}Strumenti: misura e generazione}{128}{subsection.18.2.1}%
+\contentsline {subsection}{\numberline {18.2.2}Legge di conservazione della carica elettrica}{128}{subsection.18.2.2}%
+\contentsline {subsection}{\numberline {18.2.3}Conduzione}{128}{subsection.18.2.3}%
+\contentsline {subsubsection}{Conduzione nei solidi «di Ohm»}{128}{subsubsection*.48}%
+\contentsline {subsubsection}{Conduzione nei gas}{129}{subsubsection*.49}%
+\contentsline {subsubsection}{Conduzione nei vuoto?}{129}{subsubsection*.50}%
+\contentsline {subsubsection}{Conduzione nei semiconduttori}{129}{subsubsection*.51}%
+\contentsline {section}{\numberline {18.3}Magnetismo ed elettromagnetismo in regime stazionario}{129}{section.18.3}%
+\contentsline {subsection}{\numberline {18.3.1}Esperienze elementari su campo magnetico}{129}{subsection.18.3.1}%
+\contentsline {subsection}{\numberline {18.3.2}Esperienza di Faraday}{129}{subsection.18.3.2}%
+\contentsline {subsubsection}{Il galvanometro}{129}{subsubsection*.52}%
+\contentsline {subsection}{\numberline {18.3.3}Esperienze di Oersted e Ampere}{129}{subsection.18.3.3}%
+\contentsline {subsubsection}{Legge di Ampére}{129}{subsubsection*.53}%
+\contentsline {subsubsection}{Legge di Biot\sphinxhyphen {}Savart}{130}{subsubsection*.54}%
+\contentsline {subsubsection}{Formula generale}{130}{subsubsection*.55}%
+\contentsline {paragraph}{Filo rettilineo infinito}{130}{paragraph*.56}%
+\contentsline {subsubsection}{Esempi: spira e solenoide}{130}{subsubsection*.57}%
+\contentsline {paragraph}{Spira circolare}{130}{paragraph*.58}%
+\contentsline {paragraph}{Solenoide rettilineo}{131}{paragraph*.59}%
+\contentsline {paragraph}{Solenoide toroidale}{131}{paragraph*.60}%
+\contentsline {subsection}{\numberline {18.3.4}Verso le equazioni di Maxwell}{131}{subsection.18.3.4}%
+\contentsline {subsubsection}{Legge di Gauss per il flusso del campo magnetico}{131}{subsubsection*.61}%
+\contentsline {subsubsection}{Legge di Ampére}{132}{subsubsection*.62}%
+\contentsline {subsection}{\numberline {18.3.5}Modelli microscopici del magnetismo}{132}{subsection.18.3.5}%
+\contentsline {subsection}{\numberline {18.3.6}Moto di una carica elettrica in un campo elettromagnetico}{132}{subsection.18.3.6}%
+\contentsline {section}{\numberline {18.4}Induzione ed elettromagnetismo}{133}{section.18.4}%
+\contentsline {subsection}{\numberline {18.4.1}Legge di Faraday per l’induzione elettromagnetica}{133}{subsection.18.4.1}%
+\contentsline {subsection}{\numberline {18.4.2}Correzione di Maxwell dell’equazione di Ampére}{133}{subsection.18.4.2}%
+\contentsline {subsection}{\numberline {18.4.3}Equazioni di Maxwell dell’elettromagnetismo}{133}{subsection.18.4.3}%
+\contentsline {chapter}{\numberline {19}Principi di elettrotecnica}{135}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Circuiti elettrici}{135}{section.19.1}%
+\contentsline {section}{\numberline {19.2}Circuiti magnetici}{136}{section.19.2}%
+\contentsline {section}{\numberline {19.3}Sistemi elettromeccanici e macchine elettriche}{136}{section.19.3}%
+\contentsline {chapter}{\numberline {20}Onde elettromagnetiche}{137}{chapter.20}%
+\contentsline {part}{V\hspace {1em}Fisica moderna}{139}{part.5}%
+\contentsline {chapter}{\numberline {21}Fisica del XX secolo}{141}{chapter.21}%
+\contentsline {section}{\numberline {21.1}Domande}{141}{section.21.1}%
+\contentsline {section}{\numberline {21.2}Macro\sphinxhyphen {}argomenti}{141}{section.21.2}%
+\contentsline {subsection}{\numberline {21.2.1}Materia e luce}{141}{subsection.21.2.1}%
+\contentsline {subsection}{\numberline {21.2.2}Relatività di Einstein}{142}{subsection.21.2.2}%
+\contentsline {section}{\numberline {21.3}Esperienze}{142}{section.21.3}%
+\contentsline {section}{\numberline {21.4}Tecniche di misura}{142}{section.21.4}%
+\contentsline {chapter}{\numberline {22}Sviluppi dell’astronomia}{145}{chapter.22}%
+\contentsline {section}{\numberline {22.1}Breve storia}{145}{section.22.1}%
