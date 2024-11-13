@@ -31,7 +31,7 @@
     - parallasse statistica
 - scoperte e misure:
   - sistemi binari: Sirio (1834, Bessel), Mizar (1899, Pickering)
-  - relazione periodo-luminosità, (1900, H.S. Leavitt e le "computer umane" di Harvard) nelle variabili cefeidi
+  - relazione periodo-luminosità, (1900, H.S. Leavitt e le "calcolatrici umane" di Harvard) nelle variabili cefeidi
   - K.Schwarzschild scopre la relazione tra il colore (e quindi la temperatura) e la magnitudine apparente e reale
   - (1913) E.Hertzsprung-H.N.Russell classificano le stelle usando la temperatura e la magnitudine nel diagramma che prende il loro nome
   - (1925) C.Payne-Gaposchkin propone una composizione delle stelle, principalmente di H ed He
