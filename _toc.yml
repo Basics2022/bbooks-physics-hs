@@ -7,6 +7,7 @@ options:
   numbered: True
 parts:
 - caption: Introduzione alla fisica
+  numbered: True
   chapters:
   - file: ch/intro.md
   - file: ch/intro/physical_quantities
@@ -19,6 +20,7 @@ parts:
     - file: ch/intro/physical_quantities-mole
     - file: ch/intro/physical_quantities-luminosity
 - caption: Meccanica classica
+  numbered: True
   chapters:
   - file: ch/mechanics
   - file: ch/mechanics/intro
@@ -59,6 +61,7 @@ parts:
     - file: ch/mechanics/dynamics-collisions
     - file: ch/mechanics/dynamics-motion-gravitation
 - caption: Termodinamica
+  numbered: True
   chapters:
   - file: ch/thermodynamics
   - file: ch/thermodynamics/foundation
@@ -98,6 +101,7 @@ parts:
     - file: ch/thermodynamics/heat-engine-problems
   - file: ch/thermodynamics/heat-transmission
 - caption: Elettromagnetismo
+  numbered: True
   chapters:
   - file: ch/electromagnetism.md
   - file: ch/electromagnetism/intro
@@ -120,10 +124,15 @@ parts:
 # - file: ch/electromagnetism/...
 # - file: ch/electromagnetism/...
 - caption: Fisica moderna
+  numbered: True
   chapters:
   - file: ch/modern.md
   - file: ch/modern/astronomy.md
-# - file: ch/modern/...
-# - file: ch/modern/...
-# - file: ch/modern/...
+- caption: Indice
+  chapters:
+  - file: genindex.md
+
+
+
+
 
