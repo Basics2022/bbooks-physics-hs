@@ -57,7 +57,6 @@ $$
 
 **Soluzione.**
 
-
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
@@ -389,6 +388,33 @@ $$
 **Soluzione.**
 
 
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 15.}
+  Equilibrio di un corpo appoggiato...esempio che mostra come la retta di applicazione del peso deve cadere nella base di appoggio; qui non è possibile introdurre l'accelerazione del sistema (**todo** *aggiungere esercizio nel capitolo della dinamica*), ma si può fare un esercizio con superficie di appoggio permendicolare e non al campo di gravità locale. L'unica cosa che conta è la direzione relativa tra superficie di appoggio e forza di massa. Rimandare all'esercizio sulla dinamica con collegamento
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 16.}
+  Sollevamento di un peso sbilanciato, come mostrato in un *"video virale"*
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+\end{minipage}
+$$
+
+**Soluzione.**
+
 ````
 
 
@@ -710,4 +736,48 @@ Testo del problema...
 ```{dropdown} Soluzione.
 ```
 
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 15.
+:columns: 8
+
+**todo**
+Equilibrio di un corpo appoggiato...esempio che mostra come la retta di applicazione del peso deve cadere nella base di appoggio; qui non è possibile introdurre l'accelerazione del sistema (**todo** *aggiungere esercizio nel capitolo della dinamica*), ma si può fare un esercizio con superficie di appoggio permendicolare e non al campo di gravità locale. L'unica cosa che conta è la direzione relativa tra superficie di appoggio e forza di massa. Rimandare all'esercizio sulla dinamica con collegamento
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+<!-- ![](../../media/pb-statics-002-ese-007.png) -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 16.
+:columns: 8
+
+**todo** Sollevamento di un peso sbilanciato, come mostrato in un *"video virale"*
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+<!-- ![](../../media/pb-statics-002-ese-007.png) -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
 ````
+
