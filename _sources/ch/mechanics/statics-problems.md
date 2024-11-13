@@ -241,6 +241,7 @@ $$\begin{aligned}
   F & = \frac{1}{2} M g \\
   T_1
 \end{aligned}
+$$
 
 $$
 \begin{minipage}[t]{.55\textwidth}
