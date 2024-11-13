@@ -19,6 +19,13 @@ latex:
 bibtex_bibfiles:
   - references.bib
 
+# sphinx extensions
+sphinx:
+  config:
+    language: it
+  extra_extensions:
+    - sphinx_proof
+
 # Information about where the book exists on the web
 repository:
   url: https://github.com/Basics2022/bbooks-physics-hs  # Online location of your book
