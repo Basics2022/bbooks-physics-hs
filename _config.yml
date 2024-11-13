@@ -52,7 +52,7 @@ sphinx:
 
   extra_extensions:
     - sphinx_proof
-    # - sphinx_exercise       # to be installed
+    - sphinx_exercise
     # - sphinx_togglebutton   # to be installed
 
 
