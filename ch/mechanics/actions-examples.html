@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="it" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -34,6 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
@@ -54,6 +55,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -65,12 +67,12 @@ const thebe_selector_output = ".output, .cell_output"
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/actions-examples';</script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="Indice" href="../../genindex.html" />
+    <link rel="search" title="Cerca" href="../../search.html" />
     <link rel="next" title="Statica" href="statics.html" />
     <link rel="prev" title="Azioni conservative" href="actions-conservative.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="it"/>
   </head>
   
   
@@ -302,6 +304,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Fisica moderna</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../modern.html">Fisica del XX secolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/astronomy.html">Sviluppi dell’astronomia</a></li>
 </ul>
 
     </div>
@@ -358,7 +361,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://github.com/Basics2022/bbooks-physics-hs" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
+   title="Repository di origine"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -375,7 +378,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/mechanics/actions-examples.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
+   title="Apri un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -396,7 +399,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 <div class="dropdown dropdown-download-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Scarica questa pagina">
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
@@ -405,7 +408,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="../../_sources/ch/mechanics/actions-examples.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
-   title="Download source file"
+   title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -423,7 +426,7 @@ const thebe_selector_output = ".output, .cell_output"
       <li>
 <button onclick="window.print()"
   class="btn btn-sm btn-download-pdf-button dropdown-item"
-  title="Print to PDF"
+  title="Stampa in PDF"
   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -443,7 +446,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 <button onclick="toggleFullScreen()"
   class="btn btn-sm btn-fullscreen-button"
-  title="Fullscreen mode"
+  title="Modalità schermo intero"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
@@ -469,7 +472,7 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Cerca" aria-label="Cerca" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
@@ -493,7 +496,7 @@ document.write(`
         <div id="jb-print-toc">
             
             <div>
-                <h2> Contents </h2>
+                <h2> Contenuti </h2>
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
@@ -542,7 +545,7 @@ document.write(`
 <p class="sd-p-0 sd-m-0">basics</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>Nov 11, 2024</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>13 nov 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
 <p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>3 min read</p>
@@ -579,21 +582,21 @@ document.write(`
 \[\vec{F}_g = m \vec{g}(P)\]</div>
 </li>
 </ul>
-<p><strong>Energia potenziale gravitazionale.</strong> E’ possibile dimostrare che il campo gravitazionale è … <strong>todo</strong></p>
+<p><strong>Energia potenziale gravitazionale.</strong> E” possibile dimostrare che il campo gravitazionale è … <strong>todo</strong></p>
 <div class="math notranslate nohighlight">
 \[V(P) = - G \, m \, m_1 \frac{1}{|P - P_1|}\]</div>
 </div>
 <div class="section" id="campo-di-gravita-nei-pressi-della-superficie-terrestre">
 <h3>Campo di gravità nei pressi della superficie terrestre<a class="headerlink" href="#campo-di-gravita-nei-pressi-della-superficie-terrestre" title="Permalink to this heading">#</a></h3>
 <p>All’interno di un dominio limitato nei pressi della superficie terrestre, è comune approssimare il campo di gravitazione terrestre come un campo uniforme, diretto lungo la verticale locale verso il centro della terra e di intensità <span class="math notranslate nohighlight">\(g = G \frac{M_E}{R_E^2}\)</span>.</p>
-<p>E’ possibile derivare questo modello, approssimando il vettore posizione rispetto al centro della terra <span class="math notranslate nohighlight">\(P - P_E \sim R_E \hat{r}\)</span> e il versore che identifica la direzione da un punto del dominio al centro della Terra con la verticale locale <span class="math notranslate nohighlight">\(\hat{r}_{12} \sim - \hat{z}\)</span></p>
+<p>E” possibile derivare questo modello, approssimando il vettore posizione rispetto al centro della terra <span class="math notranslate nohighlight">\(P - P_E \sim R_E \hat{r}\)</span> e il versore che identifica la direzione da un punto del dominio al centro della Terra con la verticale locale <span class="math notranslate nohighlight">\(\hat{r}_{12} \sim - \hat{z}\)</span></p>
 <div class="math notranslate nohighlight">
 \[\vec{g}(\vec{r}) = - G \dfrac{M_E}{R_E^2} \hat{z} = - g \hat{z} \ .\]</div>
 <p>La forza di gravità percepita da un corpo di massa <span class="math notranslate nohighlight">\(m\)</span> nei pressi della superficie terrestre è quindi</p>
 <div class="math notranslate nohighlight">
 \[\vec{F}_g = - m g \hat{z} \ ,\]</div>
 <p>quello che viene comunemente chiamato <strong>peso</strong>.</p>
-<p><strong>Energia potenziale gravitazionale.</strong> E’ possibile dimostrare che il potenziale gravitazionale nei pressi della superficie terrestre diventa</p>
+<p><strong>Energia potenziale gravitazionale.</strong> E” possibile dimostrare che il potenziale gravitazionale nei pressi della superficie terrestre diventa</p>
 <div class="math notranslate nohighlight">
 \[V(P) = m \, g \, z_P \ .\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
@@ -634,12 +637,12 @@ Dimostrazione.<div class="sd-summary-down docutils">
 <p>I vincoli ideali sono modelli di vincolo che <strong>non compiono lavoro netto</strong>, e per questo sono <strong>elementi conservativi</strong>. Come dovrebbe risultare evidente nei paragrafi successivi dalle espressioni delle velocità relative e dalle azioni scambiate,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-P &amp; = \mathbf{v}_1     \cdot \mathbf{F}_{21} + \mathbf{v}_2     \cdot \mathbf{F}_{12} 
-    + \symbf{\omega}_1 \cdot \mathbf{M}_{21} + \symbf{\omega}_2 \cdot \mathbf{M}_{12} = \\ 
-  &amp; = ( \mathbf{v}_1 - \mathbf{v}_2 ) \cdot \mathbf{F}_{21}
-    + ( \symbf{\omega}_1 - \symbf{\omega}_2 ) \cdot \mathbf{M}_{21} = \\ 
-  &amp; = \mathbf{v}^{rel}_{21} \cdot \mathbf{F}_{21}
-    + \symbf{\omega}^{rel}_{21} \cdot \mathbf{M}_{21} \ ,
+P &amp; = \vec{v}_1     \cdot \vec{F}_{21} + \vec{v}_2     \cdot \vec{F}_{12} 
+    + \symbf{\omega}_1 \cdot \vec{M}_{21} + \symbf{\omega}_2 \cdot \vec{M}_{12} = \\ 
+  &amp; = ( \vec{v}_1 - \vec{v}_2 ) \cdot \vec{F}_{21}
+    + ( \symbf{\omega}_1 - \symbf{\omega}_2 ) \cdot \vec{M}_{21} = \\ 
+  &amp; = \vec{v}^{rel}_{21} \cdot \vec{F}_{21}
+    + \symbf{\omega}^{rel}_{21} \cdot \vec{M}_{21} \ ,
 \end{aligned}\end{split}\]</div>
 <p>entrambi i termini sono nulli, o perché il moto relativo è nullo, o le azioni agiscono in direzione ortogonale ai moti relativi.</p>
 <div class="section" id="incastro">
@@ -648,13 +651,13 @@ P &amp; = \mathbf{v}_1     \cdot \mathbf{F}_{21} + \mathbf{v}_2     \cdot \mathb
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{cases}
-  \mathbf{0} = \mathbf{v}^{rel}_{21}     = \mathbf{v}_{2}     - \mathbf{v}_{1} \\
-  \mathbf{0} = \symbf{\omega}^{rel}_{21} = \symbf{\omega}_{2} - \symbf{\omega}_{1} \\
+  \vec{0} = \vec{v}^{rel}_{21}     = \vec{v}_{2}     - \vec{v}_{1} \\
+  \vec{0} = \symbf{\omega}^{rel}_{21} = \symbf{\omega}_{2} - \symbf{\omega}_{1} \\
 \end{cases}
 \qquad , \qquad
 \begin{cases}
-  \qquad \mathbf{F}_{12} = - \mathbf{F}_{21} \\
-  \qquad \mathbf{M}_{12} = - \mathbf{M}_{21} \\
+  \qquad \vec{F}_{12} = - \vec{F}_{21} \\
+  \qquad \vec{M}_{12} = - \vec{M}_{21} \\
 \end{cases}
 \end{split}\]</div>
 </div>
@@ -664,15 +667,15 @@ P &amp; = \mathbf{v}_1     \cdot \mathbf{F}_{21} + \mathbf{v}_2     \cdot \mathb
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{cases}
-  \quad \forall \ \mathbf{v}^{rel}_{\hat{\mathbf{t}},21}     = \mathbf{v}_{\hat{\mathbf{t}},2}     - \mathbf{v}_{\hat{\mathbf{t}},1} \\
-          0  = v^{rel}_{\hat{\mathbf{n}},21}     = v_{\hat{\mathbf{n}},2}     - v_{\hat{\mathbf{n}},1} \\
-  \mathbf{0} = \symbf{\omega}^{rel}_{21} = \symbf{\omega}_{2} - \symbf{\omega}_{1} \\
+  \quad \forall \ \vec{v}^{rel}_{\hat{t},21}     = \vec{v}_{\hat{t},2}     - \vec{v}_{\hat{t},1} \\
+          0  = v^{rel}_{\hat{n},21}     = v_{\hat{n},2}     - v_{\hat{n},1} \\
+  \vec{0} = \symbf{\omega}^{rel}_{21} = \symbf{\omega}_{2} - \symbf{\omega}_{1} \\
 \end{cases}
 \qquad , \qquad
 \begin{cases}
-  \mathbf{0} = \mathbf{F}_{\hat{\mathbf{t}},12} = \mathbf{F}_{\hat{\mathbf{t}},21} \\
-  \qquad F_{\hat{\mathbf{n}},12} = - F_{\hat{\mathbf{n}},21} \\
-  \qquad \mathbf{M}_{12} = - \mathbf{M}_{21} \\
+  \vec{0} = \vec{F}_{\hat{t},12} = \vec{F}_{\hat{t},21} \\
+  \qquad F_{\hat{n},12} = - F_{\hat{n},21} \\
+  \qquad \vec{M}_{12} = - \vec{M}_{21} \\
 \end{cases}
 \end{split}\]</div>
 </div>
@@ -682,15 +685,15 @@ P &amp; = \mathbf{v}_1     \cdot \mathbf{F}_{21} + \mathbf{v}_2     \cdot \mathb
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{cases}
-  \mathbf{0} = \mathbf{v}^{rel}_{21}     = \mathbf{v}_{2}     - \mathbf{v}_{1} \\
-  \quad \forall \ \omega^{rel}_{\hat{\mathbf{t}},21} = \omega_{\hat{\mathbf{t}},2} - \omega_{\hat{\mathbf{t}},1} \\
-  \mathbf{0} = \symbf{\omega}^{rel}_{\hat{\mathbf{n}},21} = \symbf{\omega}_{\hat{\mathbf{n}},2} - \symbf{\omega}_{\hat{\mathbf{n}},1} \\
+  \vec{0} = \vec{v}^{rel}_{21}     = \vec{v}_{2}     - \vec{v}_{1} \\
+  \quad \forall \ \omega^{rel}_{\hat{t},21} = \omega_{\hat{t},2} - \omega_{\hat{t},1} \\
+  \vec{0} = \symbf{\omega}^{rel}_{\hat{n},21} = \symbf{\omega}_{\hat{n},2} - \symbf{\omega}_{\hat{n},1} \\
 \end{cases}
 \qquad , \qquad
 \begin{cases}
-  \qquad \mathbf{F}_{12} = - \mathbf{F}_{21} \\
-  0 =  M_{\hat{\mathbf{t}},12} = M_{\hat{\mathbf{t}},21} \\
-  \qquad \mathbf{M}_{\hat{\mathbf{n}},12} = - \mathbf{M}_{\hat{\mathbf{n}},21} \\
+  \qquad \vec{F}_{12} = - \vec{F}_{21} \\
+  0 =  M_{\hat{t},12} = M_{\hat{t},21} \\
+  \qquad \vec{M}_{\hat{n},12} = - \vec{M}_{\hat{n},21} \\
 \end{cases}
 \end{split}\]</div>
 </div>
@@ -700,13 +703,13 @@ P &amp; = \mathbf{v}_1     \cdot \mathbf{F}_{21} + \mathbf{v}_2     \cdot \mathb
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{cases}
-  \mathbf{0} = \mathbf{v}^{rel}_{21}     = \mathbf{v}_{2}     - \mathbf{v}_{1} \\
+  \vec{0} = \vec{v}^{rel}_{21}     = \vec{v}_{2}     - \vec{v}_{1} \\
   \quad \forall \symbf{\omega}^{rel}_{21} = \symbf{\omega}_{2} - \symbf{\omega}_{1} \\
 \end{cases}
 \qquad , \qquad
 \begin{cases}
-  \qquad \mathbf{F}_{12} = - \mathbf{F}_{21} \\
-  \mathbf{0} =  \mathbf{M}_{12} = \mathbf{M}_{21} \\
+  \qquad \vec{F}_{12} = - \vec{F}_{21} \\
+  \vec{0} =  \vec{M}_{12} = \vec{M}_{21} \\
 \end{cases}
 \end{split}\]</div>
 </div>
@@ -716,17 +719,17 @@ P &amp; = \mathbf{v}_1     \cdot \mathbf{F}_{21} + \mathbf{v}_2     \cdot \mathb
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{cases}
-  \quad \forall \ \mathbf{v}^{rel}_{\hat{\mathbf{t}},21}     = \mathbf{v}_{\hat{\mathbf{t}},2}     - \mathbf{v}_{\hat{\mathbf{t}},1} \\
-          0  = v^{rel}_{\hat{\mathbf{n}},21}     = v_{\hat{\mathbf{n}},2}     - v_{\hat{\mathbf{n}},1} \\
-  \quad \forall \ \omega^{rel}_{\hat{\mathbf{t}},21} = \omega_{\hat{\mathbf{t}},2} - \omega_{\hat{\mathbf{t}},1} \\
-  \mathbf{0} = \symbf{\omega}^{rel}_{\hat{\mathbf{n}},21} = \symbf{\omega}_{\hat{\mathbf{n}},2} - \symbf{\omega}_{\hat{\mathbf{n}},1} \\
+  \quad \forall \ \vec{v}^{rel}_{\hat{t},21}     = \vec{v}_{\hat{t},2}     - \vec{v}_{\hat{t},1} \\
+          0  = v^{rel}_{\hat{n},21}     = v_{\hat{n},2}     - v_{\hat{n},1} \\
+  \quad \forall \ \omega^{rel}_{\hat{t},21} = \omega_{\hat{t},2} - \omega_{\hat{t},1} \\
+  \vec{0} = \symbf{\omega}^{rel}_{\hat{n},21} = \symbf{\omega}_{\hat{n},2} - \symbf{\omega}_{\hat{n},1} \\
 \end{cases}
 \qquad , \qquad
 \begin{cases}
-  \mathbf{0} = \mathbf{F}_{\hat{\mathbf{t}},12} = \mathbf{F}_{\hat{\mathbf{t}},21} \\
-  \qquad F_{\hat{\mathbf{n}},12} = - F_{\hat{\mathbf{n}},21} \\
-  0 =  M_{\hat{\mathbf{t}},12} = M_{\hat{\mathbf{t}},21} \\
-  \qquad \mathbf{M}_{\hat{\mathbf{n}},12} = - \mathbf{M}_{\hat{\mathbf{n}},21} \\
+  \vec{0} = \vec{F}_{\hat{t},12} = \vec{F}_{\hat{t},21} \\
+  \qquad F_{\hat{n},12} = - F_{\hat{n},21} \\
+  0 =  M_{\hat{t},12} = M_{\hat{t},21} \\
+  \qquad \vec{M}_{\hat{n},12} = - \vec{M}_{\hat{n},21} \\
 \end{cases}
 \end{split}\]</div>
 </div>
@@ -795,7 +798,7 @@ P &amp; = \mathbf{v}_1     \cdot \mathbf{F}_{21} + \mathbf{v}_2     \cdot \mathb
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-subtitle">precedente</p>
         <p class="prev-next-title">Azioni conservative</p>
       </div>
     </a>
@@ -803,7 +806,7 @@ P &amp; = \mathbf{v}_1     \cdot \mathbf{F}_{21} + \mathbf{v}_2     \cdot \mathb
        href="statics.html"
        title="next page">
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">successivo</p>
         <p class="prev-next-title">Statica</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
@@ -819,7 +822,7 @@ P &amp; = \mathbf{v}_1     \cdot \mathbf{F}_{21} + \mathbf{v}_2     \cdot \mathb
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
+    <i class="fa-solid fa-list"></i> Contenuti
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
@@ -862,7 +865,7 @@ P &amp; = \mathbf{v}_1     \cdot \mathbf{F}_{21} + \mathbf{v}_2     \cdot \mathb
   <div class="footer-item">
     
 <p class="component-author">
-By basics
+Di basics
 </p>
 
   </div>

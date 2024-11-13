@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="it" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -34,6 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
@@ -54,6 +55,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -65,12 +67,12 @@ const thebe_selector_output = ".output, .cell_output"
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/dynamics-principles';</script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="Indice" href="../../genindex.html" />
+    <link rel="search" title="Cerca" href="../../search.html" />
     <link rel="next" title="Equazioni cardinali della dinamica" href="dynamics-eom.html" />
     <link rel="prev" title="Dinamica" href="dynamics.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="it"/>
   </head>
   
   
@@ -302,6 +304,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Fisica moderna</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../modern.html">Fisica del XX secolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/astronomy.html">Sviluppi dell’astronomia</a></li>
 </ul>
 
     </div>
@@ -358,7 +361,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://github.com/Basics2022/bbooks-physics-hs" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
+   title="Repository di origine"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -375,7 +378,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/mechanics/dynamics-principles.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
+   title="Apri un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -396,7 +399,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 <div class="dropdown dropdown-download-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Scarica questa pagina">
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
@@ -405,7 +408,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="../../_sources/ch/mechanics/dynamics-principles.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
-   title="Download source file"
+   title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -423,7 +426,7 @@ const thebe_selector_output = ".output, .cell_output"
       <li>
 <button onclick="window.print()"
   class="btn btn-sm btn-download-pdf-button dropdown-item"
-  title="Print to PDF"
+  title="Stampa in PDF"
   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -443,7 +446,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 <button onclick="toggleFullScreen()"
   class="btn btn-sm btn-fullscreen-button"
-  title="Fullscreen mode"
+  title="Modalità schermo intero"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
@@ -469,7 +472,7 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Cerca" aria-label="Cerca" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
@@ -493,7 +496,7 @@ document.write(`
         <div id="jb-print-toc">
             
             <div>
-                <h2> Contents </h2>
+                <h2> Contenuti </h2>
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
@@ -512,7 +515,7 @@ document.write(`
   <div class="tex2jax_ignore mathjax_ignore section" id="principi-della-dinamica-di-newton">
 <span id="physics-hs-mechanics-dynamics-principles"></span><h1>Princìpi della dinamica di Newton<a class="headerlink" href="#principi-della-dinamica-di-newton" title="Permalink to this heading">#</a></h1>
 <p>La meccanica classica di Newton viene costruita assumendo valido il <strong>principio di conservazione della massa</strong> e i <strong>tre principi della dinamica</strong>.</p>
-<p><strong>Principio di conservazione della massa.</strong> In meccanica classica, il principio di Lavoisier di conservazione della massa può essere riassunto con la formula “niente si crea, niente si distrugge”. Per essere più precisi, il principio di conservazione della massa postula che la massa di un sistema chiuso è costante.</p>
+<p><strong>Principio di conservazione della massa.</strong> In meccanica classica, il principio di Lavoisier di conservazione della massa può essere riassunto con la formula «niente si crea, niente si distrugge». Per essere più precisi, il principio di conservazione della massa postula che la massa di un sistema chiuso è costante.</p>
 <p><strong>Primo principio - principio di inerzia.</strong> Un sistema (o meglio, il baricentro di un sistema) sul quale agisce una forza esterna netta nulla, persevera nel suo stato di quiete o di moto rettilineo uniforme rispetto a un sistema di riferimento inerziale.</p>
 <p><strong>Secondo principio - bilancio della quantità di moto per sistemi chiusi.</strong> Rispetto a un sistema di riferimento inerziale, la variazione della quantità di moto <span class="math notranslate nohighlight">\(\vec{Q}\)</span> di un sistema chiuso è uguale all’impulso delle forze esterne <span class="math notranslate nohighlight">\(\vec{I}^{ext}\)</span> agenti su di esso,</p>
 <div class="math notranslate nohighlight">
@@ -521,7 +524,7 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\dot{\vec{Q}} = \vec{R}^{ext} \ ,\]</div>
 <p>avendo indicato con <span class="math notranslate nohighlight">\(\vec{R}^{ext}\)</span> la risultante delle forze esterne agenti sul sistema.</p>
-<p><strong>Terzo principio - principio di azione-reazione.</strong> Se un sistema <span class="math notranslate nohighlight">\(i\)</span> esercita una forza <span class="math notranslate nohighlight">\(\vec{F}_{ji}\)</span> sul sistema <span class="math notranslate nohighlight">\(j\)</span>, allora il sistema <span class="math notranslate nohighlight">\(j\)</span> esercita sul sistema <span class="math notranslate nohighlight">\(i\)</span> una forza <span class="math notranslate nohighlight">\(\vec{F}_{ij}\)</span> “uguale e contraria” - stesso valore assoluto e verso opposto,</p>
+<p><strong>Terzo principio - principio di azione-reazione.</strong> Se un sistema <span class="math notranslate nohighlight">\(i\)</span> esercita una forza <span class="math notranslate nohighlight">\(\vec{F}_{ji}\)</span> sul sistema <span class="math notranslate nohighlight">\(j\)</span>, allora il sistema <span class="math notranslate nohighlight">\(j\)</span> esercita sul sistema <span class="math notranslate nohighlight">\(i\)</span> una forza <span class="math notranslate nohighlight">\(\vec{F}_{ij}\)</span> «uguale e contraria» - stesso valore assoluto e verso opposto,</p>
 <div class="math notranslate nohighlight">
 \[\vec{F}_{ij} = - \vec{F}_{ji} \ .\]</div>
 <p><strong>todo</strong> <strong>Osservazioni</strong></p>
@@ -532,13 +535,13 @@ document.write(`
 <div class="section" id="sistemi-di-riferimento-inerziali-e-invarianza-galileiana">
 <h2>Sistemi di riferimento inerziali e invarianza galileiana.<a class="headerlink" href="#sistemi-di-riferimento-inerziali-e-invarianza-galileiana" title="Permalink to this heading">#</a></h2>
 <p>La formulazione dei princìpi della dinamica si basa sul concetto di sistema di riferimento inerziale, di cui non è stato ancora detto nulla.
-E’ possibile dare una definizione operativa di osservatore inerziale (o sistema di riferimento inerziale? <strong>todo</strong>), supponendo che:</p>
+E” possibile dare una definizione operativa di osservatore inerziale (o sistema di riferimento inerziale? <strong>todo</strong>), supponendo che:</p>
 <ul class="simple">
 <li><p>l’osservatore sia dotato di uno strumento in grado di misurare le forze e i momenti ai quali è soggetto (<strong>todo</strong> ad esempio una bilancia o una combinazione di dinamometri)</p></li>
-<li><p>sia possibile conoscere le azioni “vere” (<strong>todo</strong> fare riferimento alle forze “vere” note: gravitazione - che in meccanica classica è una forza -, elettromagnetica, nucleare forte e debole; o le loro manifestazioni macroscopiche come ad esempio forze di contatto) agenti sul sistema.</p></li>
+<li><p>sia possibile conoscere le azioni «vere» (<strong>todo</strong> fare riferimento alle forze «vere» note: gravitazione - che in meccanica classica è una forza -, elettromagnetica, nucleare forte e debole; o le loro manifestazioni macroscopiche come ad esempio forze di contatto) agenti sul sistema.</p></li>
 </ul>
 <p><strong>Definizione.</strong>
-Un osservatore è inerziale se la lettura degli strumenti di misura in suo possesso corrisponde alle azioni “vere” agenti sul sistema. In particolare, in assenza di azioni nette gli strumenti restituiscono una misura nulla.</p>
+Un osservatore è inerziale se la lettura degli strumenti di misura in suo possesso corrisponde alle azioni «vere» agenti sul sistema. In particolare, in assenza di azioni nette gli strumenti restituiscono una misura nulla.</p>
 <p><strong>Definizione quantità cinematiche.</strong>
 Sia <span class="math notranslate nohighlight">\(O\)</span> l’origine di un sistema di riferimento coincidente con un’osservatore inerziale, la velocità di un punto <span class="math notranslate nohighlight">\(P\)</span> rispetto a <span class="math notranslate nohighlight">\(O\)</span> è a derivata del vettore posizione <span class="math notranslate nohighlight">\(P - O\)</span> rispetto al tempo (assoluto in meccanica classica di Newton)</p>
 <div class="math notranslate nohighlight">
@@ -624,7 +627,7 @@ Dato un sistema inerziale, ogni altro sistema in moto relativo con un moto di tr
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-subtitle">precedente</p>
         <p class="prev-next-title">Dinamica</p>
       </div>
     </a>
@@ -632,7 +635,7 @@ Dato un sistema inerziale, ogni altro sistema in moto relativo con un moto di tr
        href="dynamics-eom.html"
        title="next page">
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">successivo</p>
         <p class="prev-next-title">Equazioni cardinali della dinamica</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
@@ -648,7 +651,7 @@ Dato un sistema inerziale, ogni altro sistema in moto relativo con un moto di tr
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
+    <i class="fa-solid fa-list"></i> Contenuti
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
@@ -667,7 +670,7 @@ Dato un sistema inerziale, ogni altro sistema in moto relativo con un moto di tr
   <div class="footer-item">
     
 <p class="component-author">
-By basics
+Di basics
 </p>
 
   </div>

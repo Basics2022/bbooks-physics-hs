@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="it" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -34,6 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
@@ -54,6 +55,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -65,12 +67,12 @@ const thebe_selector_output = ".output, .cell_output"
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/electromagnetism/electrostatics';</script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="Indice" href="../../genindex.html" />
+    <link rel="search" title="Cerca" href="../../search.html" />
     <link rel="next" title="Corrente elettrica" href="electric-current.html" />
     <link rel="prev" title="Fondamenti di elettromagnetismo" href="em.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="it"/>
   </head>
   
   
@@ -302,6 +304,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Fisica moderna</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../modern.html">Fisica del XX secolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/astronomy.html">Sviluppi dell’astronomia</a></li>
 </ul>
 
     </div>
@@ -358,7 +361,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://github.com/Basics2022/bbooks-physics-hs" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
+   title="Repository di origine"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -375,7 +378,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/electromagnetism/electrostatics.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
+   title="Apri un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -396,7 +399,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 <div class="dropdown dropdown-download-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Scarica questa pagina">
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
@@ -405,7 +408,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="../../_sources/ch/electromagnetism/electrostatics.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
-   title="Download source file"
+   title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -423,7 +426,7 @@ const thebe_selector_output = ".output, .cell_output"
       <li>
 <button onclick="window.print()"
   class="btn btn-sm btn-download-pdf-button dropdown-item"
-  title="Print to PDF"
+  title="Stampa in PDF"
   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -443,7 +446,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 <button onclick="toggleFullScreen()"
   class="btn btn-sm btn-fullscreen-button"
-  title="Fullscreen mode"
+  title="Modalità schermo intero"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
@@ -469,7 +472,7 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Cerca" aria-label="Cerca" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
@@ -493,7 +496,7 @@ document.write(`
         <div id="jb-print-toc">
             
             <div>
-                <h2> Contents </h2>
+                <h2> Contenuti </h2>
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
@@ -576,7 +579,7 @@ width: 30%
 ![](../../media/electrostatics-coulomb-nn.png)
 -->
 <p>La scelta della definizione della costante di proporzionalità, <span class="math notranslate nohighlight">\(k = \frac{1}{4 \pi \varepsilon}\)</span>, viene fatta per ottenere un’espressione della <a class="reference internal" href="#physics-hs-electromagnetism-electrostatics-maxwell-gauss"><span class="std std-ref">legge di Gauss per il campo elettrico</span></a> senza fattori numerici.</p>
-<p>La costante <span class="math notranslate nohighlight">\(\varepsilon\)</span> viene definita costante dielettrica del mezzo. Per cariche elettriche posizionate nello spazio “vuoto” (di materia ma non di proprietà fisiche), nell’espressione della legge di Coulomb compare la <strong>costante dielettrica nel vuoto</strong>,</p>
+<p>La costante <span class="math notranslate nohighlight">\(\varepsilon\)</span> viene definita costante dielettrica del mezzo. Per cariche elettriche posizionate nello spazio «vuoto» (di materia ma non di proprietà fisiche), nell’espressione della legge di Coulomb compare la <strong>costante dielettrica nel vuoto</strong>,</p>
 <div class="math notranslate nohighlight">
 \[\varepsilon_0 = 8.854 \cdot 10^{-12} \, C^2 \, N^{-1} \, m^{-2} \ .\]</div>
 <p>Materiali isotropi lineari non dispersivi possono essere caratterizzati da una sola costante, la costante dielettrica del materiale. Questa caratteristica del materiale viene di solito definita come multiplo della costante dielettrica del vuoto, tramite la costante dielettrica relativa <span class="math notranslate nohighlight">\(\varepsilon_r\)</span>,</p>
@@ -606,7 +609,7 @@ width: 30%
 <div class="section" id="il-campo-elettrico">
 <h2>Il campo elettrico<a class="headerlink" href="#il-campo-elettrico" title="Permalink to this heading">#</a></h2>
 <p>Data una distribuzione di cariche nello spazio, è possibile descriverla tramite l’effetto che avrebbe su una carica qualsiasi posta in un punto arbitrario dello spazio, introducendo la definizione di campo elettrico.</p>
-<p>Viene data qui una <strong>definizione operativa</strong> del campo elettrico. Data una distribuzione di cariche, <span class="math notranslate nohighlight">\(q_i\)</span>, nei punti dello spazio <span class="math notranslate nohighlight">\(P_i\)</span>, si prende una carica test - di prova - di intensità nota <span class="math notranslate nohighlight">\(q^{test}\)</span>, che può essere posizionata in ogni punto <span class="math notranslate nohighlight">\(P\)</span> dello spazio. E’ inoltre possibile misurare la forza <span class="math notranslate nohighlight">\(\vec{F}(P; q^{test})\)</span> agente sulla carica di prova dovuta all’interazione con la distribuzione di cariche in esame,</p>
+<p>Viene data qui una <strong>definizione operativa</strong> del campo elettrico. Data una distribuzione di cariche, <span class="math notranslate nohighlight">\(q_i\)</span>, nei punti dello spazio <span class="math notranslate nohighlight">\(P_i\)</span>, si prende una carica test - di prova - di intensità nota <span class="math notranslate nohighlight">\(q^{test}\)</span>, che può essere posizionata in ogni punto <span class="math notranslate nohighlight">\(P\)</span> dello spazio. E” inoltre possibile misurare la forza <span class="math notranslate nohighlight">\(\vec{F}(P; q^{test})\)</span> agente sulla carica di prova dovuta all’interazione con la distribuzione di cariche in esame,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
   \vec{F}_{test}(P, q^{test})
@@ -631,8 +634,8 @@ width: 30%
   L &amp; = \int_{\gamma} \vec{F}(P) \cdot d \vec{r} = - \int_{\gamma} \nabla U(P) \cdot d \vec{r} = - \Delta U = U(A) - U(B) \\
     &amp; = q \, \int_{\gamma} \vec{e}(P) \cdot d \vec{r} = - q \int_{\gamma} \nabla V(P) \cdot d \vec{r} = - q \, \Delta V = q \, \left( V(A) - V(B) \right) \\
 \end{aligned}\end{split}\]</div>
-<p>avendo definito l’<strong>energia potenziale</strong> <span class="math notranslate nohighlight">\(U(P)\)</span> del sistema di cariche che produce il campo elettrico <span class="math notranslate nohighlight">\(\vec{e}(P)\)</span> e il <strong>potenziale elettrico</strong> <span class="math notranslate nohighlight">\(V(P)\)</span> come l’energia potenziale per unità di carica <span class="math notranslate nohighlight">\(q\)</span>. Sia l’energia potenziale sia il potenziale sono definiti a meno di una costante additiva.</p>
-<p>Il potenziale generato da una carica <span class="math notranslate nohighlight">\(q_i\)</span> posizionata punto “potenziante” <span class="math notranslate nohighlight">\(P_i\)</span> nel punto “potenziato” <span class="math notranslate nohighlight">\(P\)</span></p>
+<p>avendo definito l”<strong>energia potenziale</strong> <span class="math notranslate nohighlight">\(U(P)\)</span> del sistema di cariche che produce il campo elettrico <span class="math notranslate nohighlight">\(\vec{e}(P)\)</span> e il <strong>potenziale elettrico</strong> <span class="math notranslate nohighlight">\(V(P)\)</span> come l’energia potenziale per unità di carica <span class="math notranslate nohighlight">\(q\)</span>. Sia l’energia potenziale sia il potenziale sono definiti a meno di una costante additiva.</p>
+<p>Il potenziale generato da una carica <span class="math notranslate nohighlight">\(q_i\)</span> posizionata punto «potenziante» <span class="math notranslate nohighlight">\(P_i\)</span> nel punto «potenziato» <span class="math notranslate nohighlight">\(P\)</span></p>
 <div class="math notranslate nohighlight">
 \[V_i(P) = \frac{1}{4 \pi \varepsilon} \frac{q_i}{|\vec{r}_i|} \ ,\]</div>
 <p>con <span class="math notranslate nohighlight">\(\vec{r}_i = P - P_i\)</span>. Poichè il PSCE vale per la forza e il campo elettrico, il <strong>PSCE</strong> vale per il potenziale, e quindi il potenziale elettrico generato da un sistema di cariche è la somma del potenziale elettrico generato dalle singole cariche,</p>
@@ -641,7 +644,7 @@ width: 30%
 </div>
 <div class="section" id="energia-potenziale-di-una-distribuzione-di-cariche">
 <h3>Energia potenziale di una distribuzione di cariche<a class="headerlink" href="#energia-potenziale-di-una-distribuzione-di-cariche" title="Permalink to this heading">#</a></h3>
-<p>L’energia potenziale di un sistema di cariche è uguale al lavoro (<span style="color:red">delle forze esterne = - lavoro forza elettrica</span>) fatto per costruire tale distribuzione. Poiché in meccanica classica l’energia è definita a meno di una costante additiva arbitraria, si può considerare la condizione di riferimento con le cariche poste all‘“infinito” o, meglio, infinitamente distanti una dalle altre.</p>
+<p>L’energia potenziale di un sistema di cariche è uguale al lavoro (<span style="color:red">delle forze esterne = - lavoro forza elettrica</span>) fatto per costruire tale distribuzione. Poiché in meccanica classica l’energia è definita a meno di una costante additiva arbitraria, si può considerare la condizione di riferimento con le cariche poste all“«infinito» o, meglio, infinitamente distanti una dalle altre.</p>
 <p>Per un sistema di cariche puntiformi, l’energia potenziale del sistema è uguale alla somma dell’energia potenziale tra le singole coppie di cariche</p>
 <div class="math notranslate nohighlight">
 \[E^{pot} = \sum_{\{i,j\}, i \ne j} V_{ij} = \sum_{\{i,j\}, i \ne j} \frac{1}{4 \pi \varepsilon} \frac{{q}_{i} \, q_{j}}{r_{ij}} \ ,\]</div>
@@ -676,7 +679,7 @@ Posizionando le cariche contemporanamente<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Posizionando tutte le cariche contamporaneamente con una “scalatura” delle distanze, <span class="math notranslate nohighlight">\(\vec{r}_i(\alpha) = \frac{\vec{r}_i}{\alpha}\)</span>, <span class="math notranslate nohighlight">\(\alpha \in (0, 1]\)</span>, il lavoro delle forze elettriche è</p>
+<p class="sd-card-text">Posizionando tutte le cariche contamporaneamente con una «scalatura» delle distanze, <span class="math notranslate nohighlight">\(\vec{r}_i(\alpha) = \frac{\vec{r}_i}{\alpha}\)</span>, <span class="math notranslate nohighlight">\(\alpha \in (0, 1]\)</span>, il lavoro delle forze elettriche è</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
   dL_i(\alpha) &amp; = \sum_{j \ne i} \vec{F}_{ij}(\alpha) \cdot d \vec{r}_i(\alpha) = \\
@@ -706,7 +709,7 @@ Posizionando le cariche contemporanamente<div class="sd-summary-down docutils">
 <p>Per materiali lineari isotropi,</p>
 <div class="math notranslate nohighlight">
 \[\vec{d} := \varepsilon \vec{e} = \varepsilon_0 \vec{e} + \vec{p}\]</div>
-<p><strong>todo</strong> polarizzazione, cariche libere e cariche “vincolate”</p>
+<p><strong>todo</strong> polarizzazione, cariche libere e cariche «vincolate»</p>
 </div>
 <div class="section" id="verso-le-equazioni-di-maxwell">
 <span id="physics-hs-electromagnetism-electrostatics-maxwell"></span><h2>Verso le equazioni di Maxwell<a class="headerlink" href="#verso-le-equazioni-di-maxwell" title="Permalink to this heading">#</a></h2>
@@ -901,7 +904,7 @@ $$i = \dfrac{d}{dt} \left( A \, d \right) = \dfrac{d}{dt} \left( A \, \varepsilo
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-subtitle">precedente</p>
         <p class="prev-next-title">Fondamenti di elettromagnetismo</p>
       </div>
     </a>
@@ -909,7 +912,7 @@ $$i = \dfrac{d}{dt} \left( A \, d \right) = \dfrac{d}{dt} \left( A \, \varepsilo
        href="electric-current.html"
        title="next page">
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">successivo</p>
         <p class="prev-next-title">Corrente elettrica</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
@@ -925,7 +928,7 @@ $$i = \dfrac{d}{dt} \left( A \, d \right) = \dfrac{d}{dt} \left( A \, \varepsilo
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
+    <i class="fa-solid fa-list"></i> Contenuti
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
@@ -963,7 +966,7 @@ $$i = \dfrac{d}{dt} \left( A \, d \right) = \dfrac{d}{dt} \left( A \, \varepsilo
   <div class="footer-item">
     
 <p class="component-author">
-By basics
+Di basics
 </p>
 
   </div>
