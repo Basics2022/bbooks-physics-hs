@@ -1,15 +1,17 @@
 (physics-hs:modern)=
 # Fisica del XX secolo
 
-## Domande
+## Struttura del capitolo
+
+### Domande
 - Struttura della materia
 - Natura della luce
 - Interazione materia-luce
 - Relatività di Einstein
 
-## Macro-argomenti
+### Macro-argomenti
 
-### Materia e luce
+#### Materia e luce
 **Indagine sulla struttura della materia, teoria atomistica**
 - particelle elementari, atomiche, e loro combinazione:
   - reazioni chimiche
@@ -31,12 +33,12 @@
   - sistemi di più particelle uguali, verso la *meccanica quantistica statistica* e le *teorie di campo quantistiche*
 - antimateria
 
-### Relatività di Einstein
+#### Relatività di Einstein
 - nuovi princìpi fisici dai quali sviluppare le teorie: velocità della luce $c$ costante, invarianza
 - relatività ristretta: teoria che mette consistente della meccanica e dell'elettromagnetismo, in assenza di gravità
 - relatività generale: teoria della gravitazione che rinuncia all'azione a distanza
 
-## Esperienze
+### Esperienze
 - **Chimica**
   - ...moltissime esperienze suggeriscono la validità di una teoria atomica...
 - **Conduttività in gas rarefatti**
@@ -47,7 +49,7 @@
   - (1899) E.Rutherford scopre e definisce la radiazione/decadimento $\alpha$ e $\beta$ dell'U
 - **Struttura della materia e interazione con la luce**, con spettroscopia e scattering
 
-## Tecniche di misura
+### Tecniche di misura
 - **Spettroscopia**
   - XVII secolo: scomposizione con **prisma** della luce solare e della luce proveniente da altre sorgenti
   - XVIII secolo: associazione dello spettro della luce emessa con i componenti chimici coinvolti nelle reazioni, es. *saggio alla fiamma*
