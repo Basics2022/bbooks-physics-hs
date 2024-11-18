@@ -1,8 +1,19 @@
 (book:physics:hs)=
 # Fisica per le scuole superiori
 
-Questo libro fa parte del materiale pensato per [le scuole superiori](https://basics2022.github.io/bbooks-hs). Il materiale è disponibile in [versione in .pdf](https://www.github.com/Basics2022/bbooks-physics-hs/blob/master/_build/latex/book.pdf) scaricabile, o in versione online all'indirizzo [https://basics2022.github.io/bbooks-physics-hs/intro.html](https://basics2022.github.io/bbooks-physics-hs/intro.html). I sorgenti sono disponibili nel repository raggiungibile dal pulsante in alto a destra.
+Questo materiale fa parte del progetto [**basics-books**]():
+- pagina principale: 
+- repository:
 
+Materiale pensato per le [**scuole superiori**](https://basics2022.github.io/bbooks-hs).
+
+Il materiale è disponibile
+- [versione in .pdf](https://www.github.com/Basics2022/bbooks-physics-hs/blob/master/_build/latex/book.pdf) scaricabile
+- in versione online all'indirizzo: [https://basics2022.github.io/bbooks-physics-hs/intro.html](https://basics2022.github.io/bbooks-physics-hs/intro.html)
+
+<!--
+Questo libro fa parte del materiale pensato per  Il materiale è disponibile in , o in versione online all'indirizzo . I sorgenti sono disponibili nel repository raggiungibile dal pulsante in alto a destra.
+-->
 <!--
 <span style="color:red">
 Questo libro potrebbe diventare la **landing page** per la fisica delle scuole superiori. 

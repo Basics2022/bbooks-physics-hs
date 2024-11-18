@@ -218,15 +218,16 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="ch/mechanics/dynamics.html">9. Dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-principles.html">9.1. Princìpi della dinamica di Newton</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="ch/mechanics/dynamics-eom.html">9.2. Equazioni cardinali della dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="ch/mechanics/dynamics-eom.html">9.2. Equazioni cardinali della dinamica per sistemi chiusi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="ch/mechanics/dynamics-eom-proof-point.html">9.2.1. Equazioni cardinali della dinamica per un punto</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ch/mechanics/dynamics-eom-proof-points.html">9.2.2. Equazioni cardinali della dinamica per sistemi di punti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ch/mechanics/dynamics-eom-proof-rigid-2d.html">9.2.3. Equazioni cardinali della dinamica per un corpo rigido in moto piano</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-conservation.html">9.3. Leggi di conservazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-collisions.html">9.4. Collisioni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-motion-gravitation.html">9.5. Gravitazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-eom-open.html">9.4. Equazioni cardinali della dinamica per sistemi aperti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-collisions.html">9.5. Collisioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-motion-gravitation.html">9.6. Gravitazione</a></li>
 </ul>
 </li>
 </ul>
@@ -243,7 +244,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 has-children"><a class="reference internal" href="ch/thermodynamics/principles.html">12. Princìpi della termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/principles-lavoisier.html">12.1. Principio di Lavoisier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/principles-first.html">12.2. Primo principio della termodinamica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/principles-gibbs-phase-rule.html">12.3. Energia interna e regola delle fasi di Gibbs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/principles-gibbs-phase-rule.html">12.3. Gibbs: energia libera, regola delle fasi e funzioni multi-variabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/principles-phase-diagrams.html">12.4. Diagrammi termodinamici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/principles-second.html">12.5. Secondo principio della termodinamica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/principles-open.html">12.6. Sistemi aperti</a></li>
@@ -415,14 +416,13 @@ document.write(`
 
    <div class="modindex-jumpbox">
    <a href="#cap-definition-0"><strong>definition-0</strong></a> | 
-   <a href="#cap-definition-1"><strong>definition-1</strong></a> | 
    <a href="#cap-example-10"><strong>example-10</strong></a> | 
    <a href="#cap-example-11"><strong>example-11</strong></a> | 
    <a href="#cap-example-12"><strong>example-12</strong></a> | 
    <a href="#cap-example-13"><strong>example-13</strong></a> | 
    <a href="#cap-example-14"><strong>example-14</strong></a> | 
    <a href="#cap-example-15"><strong>example-15</strong></a> | 
-   <a href="#cap-example-16"><strong>example-16</strong></a> | 
+   <a href="#cap-example-2"><strong>example-2</strong></a> | 
    <a href="#cap-example-3"><strong>example-3</strong></a> | 
    <a href="#cap-example-4"><strong>example-4</strong></a> | 
    <a href="#cap-example-5"><strong>example-5</strong></a> | 
@@ -430,7 +430,7 @@ document.write(`
    <a href="#cap-example-7"><strong>example-7</strong></a> | 
    <a href="#cap-example-8"><strong>example-8</strong></a> | 
    <a href="#cap-example-9"><strong>example-9</strong></a> | 
-   <a href="#cap-proposition-2"><strong>proposition-2</strong></a>
+   <a href="#cap-proposition-1"><strong>proposition-1</strong></a>
    </div>
 
    <table class="indextable modindextable">
@@ -441,14 +441,6 @@ document.write(`
        <td></td>
        <td>
        <a href="ch/thermodynamics/principles-gibbs-phase-rule.html#definition-0"><code class="xref">definition-0</code></a> <em>(ch/thermodynamics/principles-gibbs-phase-rule)</em></td><td>
-       <em>definition</em></td></tr>
-     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
-     <tr class="cap" id="cap-definition-1"><td></td><td>
-       <strong>definition-1</strong></td><td></td></tr>
-     <tr>
-       <td></td>
-       <td>
-       <a href="ch/thermodynamics/principles-gibbs-phase-rule.html#definition-1"><code class="xref">definition-1</code></a> <em>(ch/thermodynamics/principles-gibbs-phase-rule)</em></td><td>
        <em>definition</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-example-10"><td></td><td>
@@ -499,12 +491,12 @@ document.write(`
        <a href="ch/thermodynamics/principles-gibbs-phase-rule.html#example-15"><code class="xref">example-15</code></a> <em>(ch/thermodynamics/principles-gibbs-phase-rule)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
-     <tr class="cap" id="cap-example-16"><td></td><td>
-       <strong>example-16</strong></td><td></td></tr>
+     <tr class="cap" id="cap-example-2"><td></td><td>
+       <strong>example-2</strong></td><td></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="ch/thermodynamics/principles-gibbs-phase-rule.html#example-16"><code class="xref">example-16</code></a> <em>(ch/thermodynamics/principles-gibbs-phase-rule)</em></td><td>
+       <a href="ch/thermodynamics/principles-gibbs-phase-rule.html#example-2"><code class="xref">example-2</code></a> <em>(ch/thermodynamics/principles-gibbs-phase-rule)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-example-3"><td></td><td>
@@ -563,12 +555,12 @@ document.write(`
        <a href="ch/thermodynamics/principles-gibbs-phase-rule.html#example-9"><code class="xref">example-9</code></a> <em>(ch/thermodynamics/principles-gibbs-phase-rule)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
-     <tr class="cap" id="cap-proposition-2"><td></td><td>
-       <strong>proposition-2</strong></td><td></td></tr>
+     <tr class="cap" id="cap-proposition-1"><td></td><td>
+       <strong>proposition-1</strong></td><td></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="ch/thermodynamics/principles-gibbs-phase-rule.html#proposition-2"><code class="xref">proposition-2</code></a> <em>(ch/thermodynamics/principles-gibbs-phase-rule)</em></td><td>
+       <a href="ch/thermodynamics/principles-gibbs-phase-rule.html#proposition-1"><code class="xref">proposition-1</code></a> <em>(ch/thermodynamics/principles-gibbs-phase-rule)</em></td><td>
        <em>proposition</em></td></tr>
    </table>
 

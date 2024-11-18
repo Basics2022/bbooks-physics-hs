@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>9.2. Equazioni cardinali della dinamica &#8212; Fisica per le superiori</title>
+    <title>9.2. Equazioni cardinali della dinamica per sistemi chiusi &#8212; Fisica per le superiori</title>
   
   
   
@@ -215,15 +215,16 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="dynamics.html">9. Dinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="dynamics-principles.html">9.1. Princìpi della dinamica di Newton</a></li>
-<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">9.2. Equazioni cardinali della dinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">9.2. Equazioni cardinali della dinamica per sistemi chiusi</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-point.html">9.2.1. Equazioni cardinali della dinamica per un punto</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-points.html">9.2.2. Equazioni cardinali della dinamica per sistemi di punti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-rigid-2d.html">9.2.3. Equazioni cardinali della dinamica per un corpo rigido in moto piano</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-conservation.html">9.3. Leggi di conservazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-collisions.html">9.4. Collisioni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-motion-gravitation.html">9.5. Gravitazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-eom-open.html">9.4. Equazioni cardinali della dinamica per sistemi aperti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-collisions.html">9.5. Collisioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-motion-gravitation.html">9.6. Gravitazione</a></li>
 </ul>
 </li>
 </ul>
@@ -240,7 +241,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 has-children"><a class="reference internal" href="../thermodynamics/principles.html">12. Princìpi della termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-lavoisier.html">12.1. Principio di Lavoisier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-first.html">12.2. Primo principio della termodinamica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-gibbs-phase-rule.html">12.3. Energia interna e regola delle fasi di Gibbs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-gibbs-phase-rule.html">12.3. Gibbs: energia libera, regola delle fasi e funzioni multi-variabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-phase-diagrams.html">12.4. Diagrammi termodinamici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-second.html">12.5. Secondo principio della termodinamica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-open.html">12.6. Sistemi aperti</a></li>
@@ -441,7 +442,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Equazioni cardinali della dinamica</h1>
+    <h1>Equazioni cardinali della dinamica per sistemi chiusi</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -455,8 +456,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="equazioni-cardinali-della-dinamica">
-<span id="physics-hs-mechanics-dynamics-eom"></span><h1><span class="section-number">9.2. </span>Equazioni cardinali della dinamica<a class="headerlink" href="#equazioni-cardinali-della-dinamica" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="equazioni-cardinali-della-dinamica-per-sistemi-chiusi">
+<span id="physics-hs-mechanics-dynamics-eom"></span><h1><span class="section-number">9.2. </span>Equazioni cardinali della dinamica per sistemi chiusi<a class="headerlink" href="#equazioni-cardinali-della-dinamica-per-sistemi-chiusi" title="Permalink to this heading">#</a></h1>
 <p>Le equazioni cardinali della dinamica mettono in relazione le variazioni delle grandezze inerziali con le azioni agenti sul sistema.</p>
 <p>Usando i princìpi della meccanica di Newton e la conservazione della massa per sistemi chiusi, è possibile ricavare le equazioni cardinali della dinamica, che governano il moto di un sistema meccanico.</p>
 <p>Per ogni sistema chiuso le equazioni cardinali assumono la stessa forma, quando vengono espresse in termini di quantità di moto, quantità del momento angolare ed energia cinetica del sistema. Questo viene qui dimostrato per un <a class="reference internal" href="dynamics-eom-proof-points.html#physics-hs-mechanics-dynamics-eom-points"><span class="std std-ref">punto materiale</span></a> per un <a class="reference internal" href="dynamics-eom-proof-points.html#physics-hs-mechanics-dynamics-eom-points"><span class="std std-ref">sistema di punti materiali</span></a>, e per <a class="reference internal" href="dynamics-eom-proof-rigid-2d.html#physics-hs-mechanics-dynamics-eom-rigid-2d"><span class="std std-ref">un corpo rigido con distribuzione di massa continua in un moto piano</span></a> <strong>todo</strong>, ma è valido per un sistema meccanico qualsiasi.</p>

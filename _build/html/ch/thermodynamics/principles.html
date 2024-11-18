@@ -215,15 +215,16 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/dynamics.html">9. Dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-principles.html">9.1. Princìpi della dinamica di Newton</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../mechanics/dynamics-eom.html">9.2. Equazioni cardinali della dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../mechanics/dynamics-eom.html">9.2. Equazioni cardinali della dinamica per sistemi chiusi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../mechanics/dynamics-eom-proof-point.html">9.2.1. Equazioni cardinali della dinamica per un punto</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mechanics/dynamics-eom-proof-points.html">9.2.2. Equazioni cardinali della dinamica per sistemi di punti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mechanics/dynamics-eom-proof-rigid-2d.html">9.2.3. Equazioni cardinali della dinamica per un corpo rigido in moto piano</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-conservation.html">9.3. Leggi di conservazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-collisions.html">9.4. Collisioni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-motion-gravitation.html">9.5. Gravitazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-eom-open.html">9.4. Equazioni cardinali della dinamica per sistemi aperti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-collisions.html">9.5. Collisioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-motion-gravitation.html">9.6. Gravitazione</a></li>
 </ul>
 </li>
 </ul>
@@ -240,7 +241,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">12. Princìpi della termodinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="principles-lavoisier.html">12.1. Principio di Lavoisier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principles-first.html">12.2. Primo principio della termodinamica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="principles-gibbs-phase-rule.html">12.3. Energia interna e regola delle fasi di Gibbs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="principles-gibbs-phase-rule.html">12.3. Gibbs: energia libera, regola delle fasi e funzioni multi-variabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principles-phase-diagrams.html">12.4. Diagrammi termodinamici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principles-second.html">12.5. Secondo principio della termodinamica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principles-open.html">12.6. Sistemi aperti</a></li>
@@ -457,43 +458,68 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="principi-della-termodinamica">
 <span id="physics-hs-thermodynamics-foundation-principles"></span><h1><span class="section-number">12. </span>Princìpi della termodinamica<a class="headerlink" href="#principi-della-termodinamica" title="Permalink to this heading">#</a></h1>
-<p><span style="color:red">Sistemare come presentazione! I contenuti vengono divisi nelle sezioni successive.</span></p>
-<p>In questa sezione vengono presentati i princìpi fondamentali della termodinamica classica. <strong>todo</strong></p>
-<p><strong>Principio di conservazione della massa.</strong>
-Nell’ambito della fisica classica, la massa di un sistema chiuso è costante.</p>
-<p><strong>Primo principio della termodinamica - bilancio dell’energia totale.</strong>
-Il primo principio della termodinamica rappresenta il bilancio di energia totale per un sistema chiuso (<strong>todo</strong> <em>riferimenti a sistemi aperti e chiusi</em>),</p>
-<div class="math notranslate nohighlight">
-\[d E^{tot} = \delta L^{ext} + \delta Q^{ext} \ . \]</div>
-<p>Usando il teorema dell’energia cinetica (<strong>todo</strong> riferimento alla meccanica), <span class="math notranslate nohighlight">\(dK = \delta L^{ext} + \delta L^{int}\)</span>, e la definizione di energia interna come differenza tra energia totale ed energia cinetica macroscopica, <span class="math notranslate nohighlight">\(E := E^{tot} - K\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[d E = - \delta L^{int} + \delta Q^{ext} \ .\]</div>
-<p><strong>Regola delle fasi di Gibbs.</strong>
-L’energia interna può essere scritta come funzione di stato, <span class="math notranslate nohighlight">\(E(S, X_k)\)</span>, <strong>todo</strong> con variabili indipendenti …</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-dE &amp; = \left(\dfrac{\partial E}{\partial S}\right)_{\mathbf{X}} d S 
-     + \left(\dfrac{\partial E}{\partial X_k}\right)_{S} d X_k  = \\
-   &amp; = T \, d S + \sum_k F_k \, d X_k
-\end{aligned}\end{split}\]</div>
-<p>La variazione di energia interna rispetto alla variabile <span class="math notranslate nohighlight">\(S\)</span> corrisponde alla temperatura,</p>
-<div class="math notranslate nohighlight">
-\[T = \left(\dfrac{\partial E}{\partial S}\right)_{\mathbf{X}} \ge 0 \ .\]</div>
-<p><strong>Secondo principio della termodinamica - irreversibilità.</strong></p>
+<p>In questo capitolo vengono presentati i princìpi della termodinamica classica e i concetti utili per formularli. Ricordando che la termodinamica classica fornisce una descrizione macroscopica mediata della dinamica microscopica di sistemi composti da molti componenti elementari, il livello di dettaglio microscopico può essere usato per fornire un significato alle variabili termodinamiche usate nella descrizione macroscopica.</p>
+<p>I princìpi della termodinamica vengono introdotti per sistemi chiusi, e successivamente estesi ai sistemi aperti. Per un sistema chiuso,</p>
 <ul>
-<li><p>Secondo principio per sistemi semplici <strong>todo</strong> <em>temperatura uniforme</em></p>
+<li><p>il principio di conservazione della massa - di Lavoisier - valido in meccanica classica, asserisce che in un sistema chiuso la massa è costante,</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-    dE &amp; = \delta Q^{ext} - \delta L^{int} = \\
-       &amp; = \underbrace{\delta Q^{ext} + \delta^+ D}_{\delta U} - \delta L^{int, rev} = \\
-  \end{aligned}\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{cases}
-  -\delta L^{int,rev} &amp; = \displaystyle\sum_k F_k \, d X_k \\
-  \delta U            &amp; = T \, dS
-  \end{cases}\end{split}\]</div>
+\[d M = 0 \ ,\]</div>
+<p>ed è riassumibile con la formula <em>«nulla si crea, nulla si distrugge ma tutto si trasforma»</em></p>
 </li>
+<li><p>il primo principio della termodinamica fornisce la forma generale del bilancio dell’energia <em>totale</em> di un sistema chiuso,</p>
+<div class="math notranslate nohighlight">
+\[d E^{tot} = \delta L^{ext} + \delta Q^{ext} \ ,\]</div>
+<p>riconoscendo il lavoro delle forze esterne <span class="math notranslate nohighlight">\(\delta L^{ext}\)</span> o il calore «entrante» nel sistema <span class="math notranslate nohighlight">\(\delta Q^{ext}\)</span> come cause della variazione dell’energia totale del sistema.</p>
+</li>
+<li><p>definizione di energia interna, delle variabili di stato di un sistema,…Gibbs, con gli strumenti matematici delle funzioni e del calcolo multi-variabile</p></li>
+<li><p>il secondo principio della termodinamica traduce le tendenze naturali osservate: la dissipazione dell’energia meccanica macroscopica, la trasmissione del calore da un corpo caldo a un corpo freddo. Formulazione in termini di entropia, definizione della temperatura.</p></li>
 </ul>
+<p>Infine, si ricavano i bilanci delle quantità fisiche per sistemi aperti, introducendo i termini di flusso dovuti al trasporto di materia attraverso la frontiera del sistema.</p>
+<!--
+<span style="color:red">Sistemare come presentazione! I contenuti vengono divisi nelle sezioni successive.</span>
+
+In questa sezione vengono presentati i princìpi fondamentali della termodinamica classica. **todo**
+
+**Principio di conservazione della massa.**
+Nell'ambito della fisica classica, la massa di un sistema chiuso è costante.
+
+**Primo principio della termodinamica - bilancio dell'energia totale.**
+Il primo principio della termodinamica rappresenta il bilancio di energia totale per un sistema chiuso (**todo** *riferimenti a sistemi aperti e chiusi*),
+
+  $$d E^{tot} = \delta L^{ext} + \delta Q^{ext} \ . $$
+  
+  Usando il teorema dell'energia cinetica (**todo** riferimento alla meccanica), $dK = \delta L^{ext} + \delta L^{int}$, e la definizione di energia interna come differenza tra energia totale ed energia cinetica macroscopica, $E := E^{tot} - K$,
+  
+  $$d E = - \delta L^{int} + \delta Q^{ext} \ .$$
+
+**Regola delle fasi di Gibbs.**
+L'energia interna può essere scritta come funzione di stato, $E(S, X_k)$, **todo** con variabili indipendenti ...
+
+$$\begin{aligned}
+dE & = \left(\dfrac{\partial E}{\partial S}\right)_{\mathbf{X}} d S 
+     + \left(\dfrac{\partial E}{\partial X_k}\right)_{S} d X_k  = \\
+   & = T \, d S + \sum_k F_k \, d X_k
+\end{aligned}$$
+
+La variazione di energia interna rispetto alla variabile $S$ corrisponde alla temperatura,
+
+$$T = \left(\dfrac{\partial E}{\partial S}\right)_{\mathbf{X}} \ge 0 \ .$$
+
+
+**Secondo principio della termodinamica - irreversibilità.**
+
+- Secondo principio per sistemi semplici **todo** *temperatura uniforme*
+
+  $$\begin{aligned}
+    dE & = \delta Q^{ext} - \delta L^{int} = \\
+       & = \underbrace{\delta Q^{ext} + \delta^+ D}_{\delta U} - \delta L^{int, rev} = \\
+  \end{aligned}$$
+  
+  $$\begin{cases}
+  -\delta L^{int,rev} & = \displaystyle\sum_k F_k \, d X_k \\
+  \delta U            & = T \, dS
+  \end{cases}$$
+-->
 <div class="toctree-wrapper compound">
 </div>
 </div>

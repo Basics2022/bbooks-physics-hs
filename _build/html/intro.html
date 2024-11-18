@@ -212,15 +212,16 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="ch/mechanics/dynamics.html">9. Dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-principles.html">9.1. Princìpi della dinamica di Newton</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="ch/mechanics/dynamics-eom.html">9.2. Equazioni cardinali della dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="ch/mechanics/dynamics-eom.html">9.2. Equazioni cardinali della dinamica per sistemi chiusi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="ch/mechanics/dynamics-eom-proof-point.html">9.2.1. Equazioni cardinali della dinamica per un punto</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ch/mechanics/dynamics-eom-proof-points.html">9.2.2. Equazioni cardinali della dinamica per sistemi di punti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ch/mechanics/dynamics-eom-proof-rigid-2d.html">9.2.3. Equazioni cardinali della dinamica per un corpo rigido in moto piano</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-conservation.html">9.3. Leggi di conservazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-collisions.html">9.4. Collisioni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-motion-gravitation.html">9.5. Gravitazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-eom-open.html">9.4. Equazioni cardinali della dinamica per sistemi aperti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-collisions.html">9.5. Collisioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-motion-gravitation.html">9.6. Gravitazione</a></li>
 </ul>
 </li>
 </ul>
@@ -237,7 +238,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 has-children"><a class="reference internal" href="ch/thermodynamics/principles.html">12. Princìpi della termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/principles-lavoisier.html">12.1. Principio di Lavoisier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/principles-first.html">12.2. Primo principio della termodinamica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/principles-gibbs-phase-rule.html">12.3. Energia interna e regola delle fasi di Gibbs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/principles-gibbs-phase-rule.html">12.3. Gibbs: energia libera, regola delle fasi e funzioni multi-variabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/principles-phase-diagrams.html">12.4. Diagrammi termodinamici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/principles-second.html">12.5. Secondo principio della termodinamica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/principles-open.html">12.6. Sistemi aperti</a></li>
@@ -454,7 +455,20 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="fisica-per-le-scuole-superiori">
 <span id="book-physics-hs"></span><h1>Fisica per le scuole superiori<a class="headerlink" href="#fisica-per-le-scuole-superiori" title="Permalink to this heading">#</a></h1>
-<p>Questo libro fa parte del materiale pensato per <a class="reference external" href="https://basics2022.github.io/bbooks-hs">le scuole superiori</a>. Il materiale è disponibile in <a class="reference external" href="https://www.github.com/Basics2022/bbooks-physics-hs/blob/master/_build/latex/book.pdf">versione in .pdf</a> scaricabile, o in versione online all’indirizzo <a class="reference external" href="https://basics2022.github.io/bbooks-physics-hs/intro.html">https://basics2022.github.io/bbooks-physics-hs/intro.html</a>. I sorgenti sono disponibili nel repository raggiungibile dal pulsante in alto a destra.</p>
+<p>Questo materiale fa parte del progetto <span class="xref myst"><strong>basics-books</strong></span>:</p>
+<ul class="simple">
+<li><p>pagina principale:</p></li>
+<li><p>repository:</p></li>
+</ul>
+<p>Materiale pensato per le <a class="reference external" href="https://basics2022.github.io/bbooks-hs"><strong>scuole superiori</strong></a>.</p>
+<p>Il materiale è disponibile</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.github.com/Basics2022/bbooks-physics-hs/blob/master/_build/latex/book.pdf">versione in .pdf</a> scaricabile</p></li>
+<li><p>in versione online all’indirizzo: <a class="reference external" href="https://basics2022.github.io/bbooks-physics-hs/intro.html">https://basics2022.github.io/bbooks-physics-hs/intro.html</a></p></li>
+</ul>
+<!--
+Questo libro fa parte del materiale pensato per  Il materiale è disponibile in , o in versione online all'indirizzo . I sorgenti sono disponibili nel repository raggiungibile dal pulsante in alto a destra.
+-->
 <!--
 <span style="color:red">
 Questo libro potrebbe diventare la **landing page** per la fisica delle scuole superiori. 

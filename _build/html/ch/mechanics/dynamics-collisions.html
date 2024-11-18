@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>9.4. Collisioni &#8212; Fisica per le superiori</title>
+    <title>9.5. Collisioni &#8212; Fisica per le superiori</title>
   
   
   
@@ -70,8 +70,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/dynamics-collisions';</script>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="9.5. Gravitazione" href="dynamics-motion-gravitation.html" />
-    <link rel="prev" title="9.3. Leggi di conservazione" href="dynamics-conservation.html" />
+    <link rel="next" title="9.6. Gravitazione" href="dynamics-motion-gravitation.html" />
+    <link rel="prev" title="9.4. Equazioni cardinali della dinamica per sistemi aperti" href="dynamics-eom-open.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -215,15 +215,16 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="dynamics.html">9. Dinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="dynamics-principles.html">9.1. Princìpi della dinamica di Newton</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="dynamics-eom.html">9.2. Equazioni cardinali della dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="dynamics-eom.html">9.2. Equazioni cardinali della dinamica per sistemi chiusi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-point.html">9.2.1. Equazioni cardinali della dinamica per un punto</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-points.html">9.2.2. Equazioni cardinali della dinamica per sistemi di punti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-rigid-2d.html">9.2.3. Equazioni cardinali della dinamica per un corpo rigido in moto piano</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-conservation.html">9.3. Leggi di conservazione</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">9.4. Collisioni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-motion-gravitation.html">9.5. Gravitazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-eom-open.html">9.4. Equazioni cardinali della dinamica per sistemi aperti</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">9.5. Collisioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-motion-gravitation.html">9.6. Gravitazione</a></li>
 </ul>
 </li>
 </ul>
@@ -240,7 +241,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 has-children"><a class="reference internal" href="../thermodynamics/principles.html">12. Princìpi della termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-lavoisier.html">12.1. Principio di Lavoisier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-first.html">12.2. Primo principio della termodinamica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-gibbs-phase-rule.html">12.3. Energia interna e regola delle fasi di Gibbs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-gibbs-phase-rule.html">12.3. Gibbs: energia libera, regola delle fasi e funzioni multi-variabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-phase-diagrams.html">12.4. Diagrammi termodinamici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-second.html">12.5. Secondo principio della termodinamica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-open.html">12.6. Sistemi aperti</a></li>
@@ -453,7 +454,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi">9.4.1. Problemi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi">9.5.1. Problemi</a></li>
 </ul>
             </nav>
         </div>
@@ -466,7 +467,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="collisioni">
-<span id="physics-hs-mechanics-dynamics-collisions"></span><h1><span class="section-number">9.4. </span>Collisioni<a class="headerlink" href="#collisioni" title="Permalink to this heading">#</a></h1>
+<span id="physics-hs-mechanics-dynamics-collisions"></span><h1><span class="section-number">9.5. </span>Collisioni<a class="headerlink" href="#collisioni" title="Permalink to this heading">#</a></h1>
 <p>Una descrizione dettagliata delle collisioni tra sistemi qualsiasi va ben al di là dello scopo di un primo approccio alla meccanica.</p>
 <p>Qui, ci si limiterà allo studio di collisioni che:</p>
 <ul class="simple">
@@ -504,7 +505,7 @@ Al contrario, in generale, l”<strong>energia cinetica non si conserva</strong>
        &amp; = \varepsilon^2 \left[ \frac{1}{2 m_1} {\vec{p}_1^{- '}}  \cdot {\vec{p}_1^{- '}}  + \frac{1}{2 m_2} {\vec{p}_2^{- '}}  \cdot {\vec{p}_2^{- '}}  \right] = \varepsilon^2 {K^{- '}} 
 \end{aligned}\end{split}\]</div>
 <div class="section" id="problemi">
-<h2><span class="section-number">9.4.1. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">9.5.1. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h2>
 <!-- Esercizio ************************************************************* -->
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
@@ -874,12 +875,12 @@ Soluzione.<div class="sd-summary-down docutils">
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="dynamics-conservation.html"
+       href="dynamics-eom-open.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">9.3. </span>Leggi di conservazione</p>
+        <p class="prev-next-title"><span class="section-number">9.4. </span>Equazioni cardinali della dinamica per sistemi aperti</p>
       </div>
     </a>
     <a class="right-next"
@@ -887,7 +888,7 @@ Soluzione.<div class="sd-summary-down docutils">
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">9.5. </span>Gravitazione</p>
+        <p class="prev-next-title"><span class="section-number">9.6. </span>Gravitazione</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -906,7 +907,7 @@ Soluzione.<div class="sd-summary-down docutils">
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi">9.4.1. Problemi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi">9.5.1. Problemi</a></li>
 </ul>
   </nav></div>
 
