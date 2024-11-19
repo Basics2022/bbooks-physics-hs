@@ -64,7 +64,7 @@ parts:
 - caption: Termodinamica
   numbered: True
   chapters:
-  - file: ch/thermodynamics
+# - file: ch/thermodynamics
   - file: ch/thermodynamics/foundation
     sections:
     - file: ch/thermodynamics/foundation-history
