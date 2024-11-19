@@ -1,7 +1,7 @@
 (physics-hs:thermodynamics:foundation)=
 # Introduzione alla termodinamica
 
-La termodinamica è la branca della fisica che si occupa dell'**energia**, della trasformazione tra le varie forme di energia e dei meccanismi che permettono di variare l'energia di un sistema.
+La termodinamica è la branca della fisica che si occupa dell'energia, della trasformazione tra le varie forme di energia e dei meccanismi che permettono di variare l'energia di un sistema.
 
 La termodinamica classica fornisce una descrizione macroscopica, media, di sistemi complessi costituiti da un gran numero di componenti elementari a livello microscopico: un [**modello atomistico**]() della materia fornisce una descrizione di dettaglio a livello microscopico, questo modello contiene molte più informazioni di quelle necessarie in molti ambiti, e risulta non pratico; la **termodinamica classica** fornisce una descrizione macroscopica, la [**meccanica statistica**]() fornisce il ponte tra le due descrizioni
 
@@ -12,6 +12,7 @@ La prima lezione[^feynman-atomic] di fisica delle lezioni di fisica di Feynman, 
 
 ```
 
+## Contenuti
 La termodinamica classica costituisce una teoria fisica macroscopica per sistemi complessi in equilibrio statistico, almeno locale, in termini di grandezze fisiche macroscopiche:
 - come ad esempio pressione, temperatura, energia interna, calore, entropia,... che possano essere facilmente misurate
 - che permettano di descrivere lo stato macroscopico di un sistema con un numero ristretto di variabili
