@@ -89,6 +89,7 @@ parts:
       - file: ch/thermodynamics/ideal-gas-formulas
 #   - file: ch/thermodynamics/real-gas
 #   - file: ch/thermodynamics/solids
+    - file: ch/thermodynamics/humid-air
     - file: ch/thermodynamics/elastic-solid-1d
   - file: ch/thermodynamics/heat-engine
     sections:

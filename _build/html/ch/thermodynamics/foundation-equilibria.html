@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>11.3. Termodinamica e teoria atomica &#8212; Fisica per le superiori</title>
+    <title>11.3. Equilibrio in termodinamica &#8212; Fisica per le superiori</title>
   
   
   
@@ -65,10 +65,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/foundation-atomic-theory';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/foundation-equilibria';</script>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="11.4. Problemi" href="foundation-problems.html" />
+    <link rel="next" title="11.4. Termodinamica e teoria atomica" href="foundation-atomic-theory.html" />
     <link rel="prev" title="11.2. Esperienze ed esperimenti" href="foundation-experiments.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -232,8 +234,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="foundation.html">11. Introduzione alla termodinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="foundation-history.html">11.1. Breve storia della termodinamica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="foundation-experiments.html">11.2. Esperienze ed esperimenti</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">11.3. Termodinamica e teoria atomica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="foundation-problems.html">11.4. Problemi</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">11.3. Equilibrio in termodinamica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foundation-atomic-theory.html">11.4. Termodinamica e teoria atomica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foundation-problems.html">11.5. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="principles.html">12. Princìpi della termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -358,7 +361,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/thermodynamics/foundation-atomic-theory.md" target="_blank"
+      <li><a href="../../_sources/ch/thermodynamics/foundation-equilibria.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -442,7 +445,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Termodinamica e teoria atomica</h1>
+    <h1>Equilibrio in termodinamica</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -452,9 +455,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stati-della-materia">11.3.1. Stati della materia</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cambiamenti-di-stato">11.3.2. Cambiamenti di stato</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variabili-di-stato">11.3.3. Variabili di stato</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equilibrio-meccanico">11.3.1. Equilibrio meccanico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equilibrio-termico">11.3.2. Equilibrio termico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equilibrio-chimico">11.3.3. Equilibrio chimico</a></li>
 </ul>
             </nav>
         </div>
@@ -466,16 +469,23 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="termodinamica-e-teoria-atomica">
-<span id="physics-hs-thermodynamics-foundation-atomic-theory"></span><h1><span class="section-number">11.3. </span>Termodinamica e teoria atomica<a class="headerlink" href="#termodinamica-e-teoria-atomica" title="Permalink to this heading">#</a></h1>
-<div class="section" id="stati-della-materia">
-<h2><span class="section-number">11.3.1. </span>Stati della materia<a class="headerlink" href="#stati-della-materia" title="Permalink to this heading">#</a></h2>
+  <div class="tex2jax_ignore mathjax_ignore section" id="equilibrio-in-termodinamica">
+<span id="physics-hs-thermodynamics-foundation-equilibria"></span><h1><span class="section-number">11.3. </span>Equilibrio in termodinamica<a class="headerlink" href="#equilibrio-in-termodinamica" title="Permalink to this heading">#</a></h1>
+<div class="section" id="equilibrio-meccanico">
+<h2><span class="section-number">11.3.1. </span>Equilibrio meccanico<a class="headerlink" href="#equilibrio-meccanico" title="Permalink to this heading">#</a></h2>
+<p>Sistema chiuso e isolato con pareti rigide, composto da due sistemi in equilibrio separati da una parete rigida isolante mobile</p>
+<div class="math notranslate nohighlight">
+\[S(V)\]</div>
 </div>
-<div class="section" id="cambiamenti-di-stato">
-<h2><span class="section-number">11.3.2. </span>Cambiamenti di stato<a class="headerlink" href="#cambiamenti-di-stato" title="Permalink to this heading">#</a></h2>
+<div class="section" id="equilibrio-termico">
+<h2><span class="section-number">11.3.2. </span>Equilibrio termico<a class="headerlink" href="#equilibrio-termico" title="Permalink to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[S(E)\]</div>
+<div class="math notranslate nohighlight">
+\[d S = d S_1 + d S_2 = \partial_{E_1} S_1 dE_1 + \partial_{E_2} S_2 dE_2  = \left( \partial_{E_1} S_1 - \partial_{E_2} S_2 \right) d E_1 \]</div>
 </div>
-<div class="section" id="variabili-di-stato">
-<h2><span class="section-number">11.3.3. </span>Variabili di stato<a class="headerlink" href="#variabili-di-stato" title="Permalink to this heading">#</a></h2>
+<div class="section" id="equilibrio-chimico">
+<h2><span class="section-number">11.3.3. </span>Equilibrio chimico<a class="headerlink" href="#equilibrio-chimico" title="Permalink to this heading">#</a></h2>
 </div>
 </div>
 
@@ -519,11 +529,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="foundation-problems.html"
+       href="foundation-atomic-theory.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">11.4. </span>Problemi</p>
+        <p class="prev-next-title"><span class="section-number">11.4. </span>Termodinamica e teoria atomica</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -542,9 +552,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stati-della-materia">11.3.1. Stati della materia</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cambiamenti-di-stato">11.3.2. Cambiamenti di stato</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variabili-di-stato">11.3.3. Variabili di stato</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equilibrio-meccanico">11.3.1. Equilibrio meccanico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equilibrio-termico">11.3.2. Equilibrio termico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equilibrio-chimico">11.3.3. Equilibrio chimico</a></li>
 </ul>
   </nav></div>
 
