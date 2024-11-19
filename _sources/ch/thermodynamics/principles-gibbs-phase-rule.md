@@ -1,43 +1,66 @@
 (physics-hs:thermodynamics:foundation:principles:gibbs-phase-rule)=
-# Energia interna e regola delle fasi di Gibbs
+# Gibbs: energia libera, regola delle fasi e funzioni multi-variabili
 
 ## Variabili di stato
 ```{prf:definition} Variabile di stato
 
-**todo** *def di variabile di stato*
+Una variabile di stato di un sistema è una proprietà fisica del sistema che dipende esclusivamente dallo stato corrente del sistema.
+
 ```
 
-## Energia interna
-```{prf:definition} Energia interna
-**Gibbs** definisce l'energia interna del sistema come differenza tra la sua energia totale e l'energia cinetica "macroscopica", 
+### Variabili intensive ed estensive; variabili specifiche
+Una **variabile intensiva** è indipdendente dalla dimensione del sistema. Una **variabile estensiva** è additiva per i sottosistemi (**todo** *controllare l'equivalenza estensiva $\equiv$ additiva*). Se una variabile può essere espressa come funzione di una serie di variabili indipendenti intensive $\{a_i\}$ ed estensive $\{A_k\}$, una variabile intensiva è rappresentata da una funzione omogena di grado 0
 
-$$E = E^{tot} - K \ .$$
-```
+$$F(\{a_i\},\{\lambda \, A_k\}) = F(\{a_i\}, \{A_k\})$$
 
-Il bilancio dell'energia interna viene ricavato come differenza dei bilanci dell'energia totale, descritto dal primo principio della termodinamica
+mentre una variabile estensiva è rappresentata da una funzione omogenea di grado 1 rispetto alle variabili estensive $A_k$
 
-$$d E^{tot} := \delta L^{ext} + \delta Q^{ext} \ ,$$
+$$F(\{a_i\},\{\lambda \, A_k\}) = \lambda F(\{a_i\}, \{A_k\})$$
 
-e il bilancio dell'energia cinetica, fornito dal teorema dell'energia cinetica ricavato in meccanica,
+Alcuni esempi di variabili intensive ed estensive:
+- intensive: temperatura, pressione, sforzo, potenziale chimico, potenziale elettrico, magnetizzazione,...
+- estensive: quantità di sostanza (moli), massa, volume, energia, carica elettrica, momento magnetico,...
 
-$$d K = \delta L^{ext} + \delta L^{int} \ .$$
-
-Il bilancio dell'energia interna diventa quindi
-
-$$d E = \delta Q^{ext} - \delta L^{int} \ .$$
+Le **variabili specifiche** sono ricavate come rapporto tra due variabili estensive. Come casi comuni, il denominatore è la massa del sistema o il volume del sistema. Le variaibli specifiche sono variabili intensive. Alcuni esempi di variabili specifiche sono: volume specifico (inverso della densità), energia specifica, entropia specifica, capacità termica specifica,...
 
 ## Regola delle fasi di Gibbs
 ```{prf:proposition} Regola delle fasi di Gibbs
-Lo stato termodinamico di un sistema può essere descritto da un numero definito di variabili termodinamiche indipendenti, descritto dalla **regola delle fasi di Gibbs**,
+Lo stato termodinamico (di equilibrio) di un sistema è identificato da un numero $F$ di variabili di stato intensive indipendenti, determinato dalla **regola delle fasi di Gibbs**,
 
 $$F = C - P + 1 + W \ ,$$
 
-cioè il numero di variabili indipendenti (o gradi di libertà), $F$, di un sistema è una funzione del numero di componenti $C$ di un sistema, il numero di fasi $P$ e il numero $W$ di modi del sistema di manifestare lavoro interno, come ad esempio:
+cioè il numero di variabili intensive indipendenti (o gradi di libertà), $F$, di un sistema è una funzione del numero di componenti indipendenti $C$ di un sistema, il numero di fasi $P$ e il numero $W$ di modi del sistema di manifestare lavoro interno, come ad esempio:
 - sforzi meccanici interni
 - contributo della tensione superficiale
 - energia dei legami delle molecole dei componenti
 - contributo del campo elettromagnetico
 ```
+
+```{dropdown} Discussione della regola delle fasi di Gibbs
+Lo stato di equilibrio di un sistema è definito dal valore delle variabili di stato, che per un sistema gassoso non elettricamente carico sono: temperatura $T$, pressione $p$ e concentrazioni $C_{c,\phi}$ dei singoli componenti $c=1:C$ nelle singole fasi $\phi = 1:P$ all'interno del sistema.
+
+Lo stato del sistema è quindi determinato dal valore delle $1+W$ variabili termodinamiche intensive, qui $W+1=2$ $T$, $p$, e dalle $C \, P$ frazioni $n_{c,\phi}$ (molari o di massa), per un totale di $N \, P + W + 1$ variabili.
+In generele, queste variabili sono legate da alcune condizioni:
+
+- $C \, (P-1)$ condizioni di equilibrio delle fasi di ogni singolo componente, descritte dall'uguaglianza dei potenziali chimici
+
+  $$\mu_{c,\phi_1}(T,p) = \mu_{c,\phi_2}(T,p) = \dots = \mu_{c,\phi_P}(T,p)$$
+
+- $P$ condizioni di unitarietà delle frazioni
+
+  $$\sum_{c} n_{c,\phi} = 1$$
+
+Quindi, con $C \, P + W + 1$ variabili e $P + C\, (P-1) = C \, P - C + P$ equazioni, si scopre che il problema può essere determinato da 
+
+$$C \, P + W + 1 - C \, P + C - P  =  C - P + W + 1 = F \ ,$$
+
+variabili indipendenti.
+
+```
+
+**todo** 
+- Fare esempi che chiariscano la definizione di fase (es: solidi o liquidi puri rappresentano fasi a sé stanti), e di componente indipendente (es: reazioni chimiche, senza componenti in eccesso, determinano dei vincoli che riducono il numero di sostanze indipendenti, grazie ai rapporti stechiometrici tra le sostanze)
+- discutere il ruolo delle frazioni di fase di un singolo componente e il fatto che non sono variabili di stato; esempio passaggio di fase liquido-vapore: l'equilibrio è determinato dal valore di $P$ (o di $T$), la frazione di vapore è una conseguenza di altre variabili estensive del sistema.
 
 ```{prf:example} Sistema chiuso contentente un monocomponente (o non-reagente), monofase, elettricamente neutro (o non-soggetto a campo elettromagnetico)
 :class: dropdown
@@ -100,35 +123,72 @@ In assenza di altri fenomeni fisici, l'unica forma di lavoro in un solido è que
 ```
 
 ## Primo principio in termini delle variabili di stato
-Lo stato di un sistema termodinamico può essere identificato da un insieme di variabili di stato termodinamiche. **todo** *celta della variabili associate a variazione di energia...*
+L'energia interna è una variabile estensiva di un sistema termodinamico. In generale, può essere scritta come una funzione di $...$ variabili estensive che rappresentano i modi del sistema di manifestare la sua energia interna (**todo** *sia dovuta al lavoro svolto su di esso, sia al calore apportato al sistema, sia alla sua composizione chimica e quindi all'energia contenuta nei legami*)
 
-L'energia interna è quindi una variabile di stato dipendente dalle variabili indipendenti scelte,
 
 $$E(S, X_k) \ ,$$
 
-avendo indicato con $X_k$ tutte le variabili (**todo** *di stato?*) la cui variazione è associata a un lavoro interno reversibile, ed $S$ la variabile di stato la cui variazione è associata al calore scambiato con l'ambiente esterno e alle azioni interne dissipative. **todo** *facendo riferimento al capitolo sulle funzioni e sul calcolo multivariabile*
+avendo indicato con $X_k$ tutte le variabili di stato la cui variazione è associata a un lavoro interno reversibile, ed $S$ la variabile di stato la cui variazione è associata al calore scambiato con l'ambiente esterno e alle azioni interne dissipative.  **todo** *facendo riferimento al capitolo sulle funzioni e sul calcolo multivariabile*
 
-Il differenziale - **esatto** - dell'energia interna
+Assumendo che la funzione $E$ sia continua e differenziabile, almeno a tratti, si può scrivere il differenziale - esatto - dell'energia interna in funzione degli incrementi delle variabili indipendenti,
 
 $$\begin{aligned}
-dE & = \left(\dfrac{\partial E}{\partial S}\right)_{\mathbf{X}} d S 
-     + \left(\dfrac{\partial E}{\partial X_k}\right)_{S} d X_k  = \\
-   & = T \, d S + \sum_k F_k \, d X_k
+dE & = \left. \dfrac{\partial E}{\partial S} \right|_{\mathbf{X}} d S 
+     + \left. \dfrac{\partial E}{\partial X_k} \right|_{S} d X_k  = \\
+   & = T \, d S + \sum_k F_k \, d X_k \ ,
 \end{aligned}$$
 
-può essere confrontato con il bilancio dell'energia interna,
+avendo definito $F_k$ le forze generalizzate associate agli spostamenti generalizzati $dX_k$ e introdotto la definizione delle variabili $T$ ed $S$ di cui sarà chiaro il significato a breve.
+
+L'espressione del differenziale dell'energia interna può essere confrontata con il bilancio dell'energia interna scritto in termini del calore apportato al sistema e del lavoro interno,
 
 $$\begin{aligned}
-  d E & = \delta Q^{ext} + \delta L^{int} = \\
+  d E & = \delta Q^{ext} - \delta L^{int} = \\
       & = \delta Q^{ext} + \delta^+ D - \delta L^{int,rev} \ .
 \end{aligned}$$
 
-Poiché $d E$ è un differenziale esatto e $\delta L^{int,rev}$ è un contributo reversibile, segue che la somma dei due contributi in generale non reversibili, $\delta U := \delta Q^{ext} + \delta^+ D$, è un contributo reversibile. Confrontando le due espressioni del differenziale dell'energia interna, si può associare questo contributo al termine $T \, dS$, il lavoro interno reversibile alla somma dei contributi formati come prodotto delle forze generalizzate $F_k$ e le variazioni delle variabili di stato $X_k$,
+avendo riconosciuto il lavoro interno $\delta L^{int}$ come somma di un contributo reversibile e un contributo di dissipazione, mai negativo, $\delta L^{int} = \delta L^{int,rev} - \delta^+ D$.
+
+Poiché $d E$ è un differenziale esatto e $\delta L^{int,rev}$ è un contributo reversibile, segue che la somma dei due contributi in generale non reversibili, $\delta U := \delta Q^{ext} + \delta^+ D$, è un contributo reversibile. Confrontando le due espressioni del differenziale dell'energia interna, si può associare il lavoro interno reversibile alla somma dei lavori formati come prodotto delle forze generalizzate $F_k$ e le variazioni delle variabili di stato $X_k$, e il termine $\delta U$ al prodotto $T \, dS$,
 
 $$\begin{cases}
   -\delta L^{int,rev} & = \displaystyle\sum_k F_k \, d X_k \\
   \delta U            & = T \, dS
 \end{cases}$$
+
+```{dropdown} Temperatura, $\ T, \ $ ed entropia, $\ S$
+:open:
+
+In assenza di lavoro esterno compiuto sul sitema, e in assenza di dissipazione $\delta^+ D = 0$, segue che 
+
+$$\begin{aligned}
+ & d E^{tot} = d E = \delta Q^{ext} \\
+ & d S = \frac{\delta Q^{ext}}{T} \\
+\end{aligned}$$
+
+Si considera un sistema chiuso e isolato formato da due sistemi in equilibrio al loro interno, che possono scambiare tra di loro calore ma non lavoro.
+
+L'energia totale del sistema è costante, $E = E_1 + E_2$. Se i due sottosistemi non sono a temperatura iniziale uguale, si osserva un flusso di energia nella forma di calore dal sistema più caldo a quello più freddo, che soddisfa la disuguaglianza
+
+$$
+ \frac{\delta Q_{12}}{T_1} + \frac{\delta Q_{21}}{T_2} \ge 0 \quad \rightarrow \quad
+ d S_1 + d S_2 \ge 0
+$$
+
+La quantità $S = S_1 + S_2$ è non decrescente.
+
+Nel caso generale di un sistema semplice usando la definizione $dS = \frac{\delta U}{T} = \frac{\delta Q^{ext} + \delta^+ D}{T}$ e ricordando che la dissipazione è non negativa, $\delta^+ D \ge 0$, segue che
+
+$$d S \ge \frac{\delta Q^{ext}}{T} \ .$$
+
+<!--
+$$E_1(T_1) + E_2(T_2) = E = \text{const}$$
+
+$$\frac{d E_1}{d T_1} = -\frac{d E_2}{d T_2} \frac{d T_2}{d T_1}$$
+-->
+
+```
+
 
 Da L.E. Reichl, A Modern Course in Statistical Physics, con qualche incoerenza **todo** *controllare!*
 

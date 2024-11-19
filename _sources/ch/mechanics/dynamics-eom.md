@@ -1,5 +1,5 @@
 (physics-hs:mechanics:dynamics:eom)=
-# Equazioni cardinali della dinamica
+# Equazioni cardinali della dinamica per sistemi chiusi
 
 Le equazioni cardinali della dinamica mettono in relazione le variazioni delle grandezze inerziali con le azioni agenti sul sistema.
 

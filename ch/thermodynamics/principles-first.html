@@ -70,7 +70,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/principles-first';</script>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="12.3. Energia interna e regola delle fasi di Gibbs" href="principles-gibbs-phase-rule.html" />
+    <link rel="next" title="12.3. Gibbs: energia libera, regola delle fasi e funzioni multi-variabili" href="principles-gibbs-phase-rule.html" />
     <link rel="prev" title="12.1. Principio di Lavoisier" href="principles-lavoisier.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -215,15 +215,16 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/dynamics.html">9. Dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-principles.html">9.1. Princìpi della dinamica di Newton</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../mechanics/dynamics-eom.html">9.2. Equazioni cardinali della dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../mechanics/dynamics-eom.html">9.2. Equazioni cardinali della dinamica per sistemi chiusi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../mechanics/dynamics-eom-proof-point.html">9.2.1. Equazioni cardinali della dinamica per un punto</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mechanics/dynamics-eom-proof-points.html">9.2.2. Equazioni cardinali della dinamica per sistemi di punti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mechanics/dynamics-eom-proof-rigid-2d.html">9.2.3. Equazioni cardinali della dinamica per un corpo rigido in moto piano</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-conservation.html">9.3. Leggi di conservazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-collisions.html">9.4. Collisioni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-motion-gravitation.html">9.5. Gravitazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-eom-open.html">9.4. Equazioni cardinali della dinamica per sistemi aperti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-collisions.html">9.5. Collisioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-motion-gravitation.html">9.6. Gravitazione</a></li>
 </ul>
 </li>
 </ul>
@@ -240,7 +241,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="principles.html">12. Princìpi della termodinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="principles-lavoisier.html">12.1. Principio di Lavoisier</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">12.2. Primo principio della termodinamica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="principles-gibbs-phase-rule.html">12.3. Energia interna e regola delle fasi di Gibbs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="principles-gibbs-phase-rule.html">12.3. Gibbs: energia libera, regola delle fasi e funzioni multi-variabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principles-phase-diagrams.html">12.4. Diagrammi termodinamici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principles-second.html">12.5. Secondo principio della termodinamica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principles-open.html">12.6. Sistemi aperti</a></li>
@@ -430,7 +431,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -446,6 +449,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energia-interna">12.2.1. Energia interna</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -457,9 +468,61 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="primo-principio-della-termodinamica">
 <span id="physics-hs-thermodynamics-foundation-principles-first"></span><h1><span class="section-number">12.2. </span>Primo principio della termodinamica<a class="headerlink" href="#primo-principio-della-termodinamica" title="Permalink to this heading">#</a></h1>
-<p>Il primo principio della termodinamica è il bilancio di energia totale per sistemi chiusi,</p>
+<p>Il primo principio della termodinamica è il bilancio di energia totale per sistemi chiusi. La variazione di energia totale <span class="math notranslate nohighlight">\(d E^{tot}\)</span> di un sistema chiuso è dovuta al lavoro <span class="math notranslate nohighlight">\(\delta L^{ext}\)</span> svolto sul sistema dalle azioni macroscopiche esterne e dal calore <span class="math notranslate nohighlight">\(\delta Q^{ext}\)</span> trasmesso al sistema dall’esterno,</p>
 <div class="math notranslate nohighlight">
-\[d E^{tot} = \delta L^{ext} + \delta Q^{ext}\]</div>
+\[d E^{tot} = \delta L^{ext} + \delta Q^{ext} \ .\]</div>
+<p>La termodinamica classica fornisce una descrizione macroscopica media della dinamica microscopica di un numero elevato di componenti elementari (<strong>todo</strong> <em>teoria atomica</em>). L’energia totale del sistema può quindi essere interpretata come somma di un contributo cinetico macroscopico e di un contenuto microscopico, cinetico e potenziale; il calore può essere interpretato come il lavoro svolto sul sistema da parte di azioni microscopiche,</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Energia totale<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Secondo la meccanica classica di Newton, la dinamica del componente elementare <span class="math notranslate nohighlight">\(k\)</span> del sistema è governata dalle sue equazioni del moto,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  m_k \dot{\vec{v}}_k &amp; = \vec{f}_k^e + \sum_{j\ne k} \vec{f}^i_{kj} \\ 
+  \frac{d}{dt} \left( \mathbb{I}_k \cdot \vec{\omega}_k \right) &amp; = \vec{m}_k^e + \sum_{j\ne k} \vec{m}^i_{kj} \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Il centro di massa del sistema è</p>
+<div class="math notranslate nohighlight">
+\[G = \sum_k m_k P_k\]</div>
+<div class="math notranslate nohighlight">
+\[E^{tot} = \frac{1}{2} \sum_i \left| \mathbf{v}_i \right|^2 + \sum_{ij} V_{ij}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \left\langle E^{tot} \right\rangle
+  &amp; = \left\langle \frac{1}{2} \sum_i m_i \, \left( \mathbf{v} - \delta \mathbf{v}_i \right) \cdot \left( \mathbf{v} - \delta \mathbf{v}_i  \right) +  \left( \symbf{\omega} - \delta \symbf{\omega}_i \right) \cdot \mathbb{I}_i \cdot \left( \symbf{\omega} - \delta \symbf{\omega}_i  \right) + \sum_{ij} V_{ij} \right\rangle = \\
+  &amp; = \frac{1}{2} m \mathbf{v} \cdot \mathbf{v} + \frac{1}{2} \symbf{\omega} \cdot \mathbb{I}_P \cdot \symbf{\omega} + \left\langle \frac{1}{2} \sum_i m_i \delta \mathbf{v}_i \cdot \delta \mathbf{v}_i + \delta \symbf{\omega}_i \cdot \mathbb{I}_i \cdot \delta \symbf{\omega}_i + \sum_{ij} V_{ij} \right\rangle = \\
+  &amp; = K + E \ .
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Potenza delle forze</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  P &amp; = \sum_{k} \mathbf{f}_k \cdot \mathbf{v}_k = \\
+    &amp; = \sum_{k} \mathbf{f}^{e}_k \cdot \mathbf{v}_k + \sum_{ik} \mathbf{f}^i_{ki} \cdot \left( \mathbf{v}_k - \mathbf{v}_i \right) = \\
+\end{aligned}\end{split}\]</div>
+</div>
+</details><div class="section" id="energia-interna">
+<h2><span class="section-number">12.2.1. </span>Energia interna<a class="headerlink" href="#energia-interna" title="Permalink to this heading">#</a></h2>
+<div class="proof definition admonition" id="definition-0">
+<p class="admonition-title"><span class="caption-number">Definition 12.1 </span> (Energia interna)</p>
+<div class="definition-content section" id="proof-content">
+<p><strong>Gibbs</strong> definisce l’energia interna del sistema come differenza tra la sua energia totale e l’energia cinetica «macroscopica»,</p>
+<div class="math notranslate nohighlight">
+\[E = E^{tot} - K \ .\]</div>
+</div>
+</div><p>Il bilancio dell’energia interna viene ricavato come differenza dei bilanci dell’energia totale, descritto dal primo principio della termodinamica</p>
+<div class="math notranslate nohighlight">
+\[d E^{tot} := \delta L^{ext} + \delta Q^{ext} \ ,\]</div>
+<p>e il bilancio dell’energia cinetica, fornito dal teorema dell’energia cinetica ricavato in meccanica,</p>
+<div class="math notranslate nohighlight">
+\[d K = \delta L^{ext} + \delta L^{int} \ .\]</div>
+<p>Il bilancio dell’energia interna diventa quindi</p>
+<div class="math notranslate nohighlight">
+\[d E = \delta Q^{ext} - \delta L^{int} \ .\]</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -506,7 +569,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">12.3. </span>Energia interna e regola delle fasi di Gibbs</p>
+        <p class="prev-next-title"><span class="section-number">12.3. </span>Gibbs: energia libera, regola delle fasi e funzioni multi-variabili</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -516,6 +579,20 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energia-interna">12.2.1. Energia interna</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

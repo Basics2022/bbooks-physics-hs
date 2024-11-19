@@ -12,7 +12,7 @@ Le possono essere composte da particelle subatomiche, ioni, o radiazione elettro
   - 
 - metodi di creazione di raggi X:
   - Bremsstrahlung: viene emessa radiazione EM quando cariche elettriche subiscono brusca accelerazione
-  - effetto fotoelettrico: la creazione di $e^-$ liberi lascia delle lacune negli orbitali atomici: la lacuna creata in un orbitale vicino al nucleo e viene colmata da un $e^-$ in un guscio esterno; se la lacuna si forma in un orbitale sufficientemente vicino al nucleo e viene colmata da un $e^-$ in un orbitale sufficientemente esterno, la frequenza della radiazione EM emessa $f = \frac{\Delta E}{h} = \frac{E_2 - E_1}{h}$ è sufficientemente elevata da essere nella parte di spettro dei raggi X
+  - effetto fotoelettrico: la creazione di $e^-$ liberi lascia delle lacune negli orbitali atomici: la lacuna creata in un orbitale vicino al nucleo e viene colmata da un $e^-$ in un guscio esterno; se la lacuna si forma in un orbitale sufficientemente vicino al nucleo e viene colmata da un $e^-$ in un orbitale sufficientemente esterno, la frequenza della radiazione EM emessa $f = \frac{\Delta E}{h}$ è sufficientemente elevata da essere nella parte di spettro dei raggi X
   - effetto Compton inverso: un $e^-$ ad alta velocità e radiazione EM a bassa frequenza si incontrano, e l'energia viene trasferita dall'$e^-$ alla radiazione EM, aumentandone la frequenza
 - esempi e applicazioni:
   - ambito medico: diagnosi, terapia
@@ -60,4 +60,17 @@ Le possono essere composte da particelle subatomiche, ioni, o radiazione elettro
 
 ## Riferimenti
 - CURIUSS: La storia della radioattività
+
+
+## Esercizi
+- Esperimento di Marie-Curie
+- Moti di cariche in campi elettrici (uniformi e non)
+  - Esperimento di Thomson
+  - Esperimento di Millikan
+  - Precessione di Larmor (come verificare precessione momento magnetico?)
+  - Esperimento di Stern-Gerlach
+- Scattering:
+  - Esperimento di Geiger-Mardsen (Rutherford)
+
+
 
