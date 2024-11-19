@@ -105,7 +105,7 @@ parts:
 - caption: Elettromagnetismo
   numbered: True
   chapters:
-  - file: ch/electromagnetism.md
+# - file: ch/electromagnetism.md
   - file: ch/electromagnetism/intro
     sections:
     - file: ch/electromagnetism/intro-history
