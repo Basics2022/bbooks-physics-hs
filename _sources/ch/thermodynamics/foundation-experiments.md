@@ -80,11 +80,15 @@ Successivamente la definizione della scala fu modificata per evitare di usare il
 
 Le scelte rocambolesche e definite in maniera imprecisa non costituivano delle condizioni facilmente replicabili per la costruzione e/o taratura di nuovi strumenti. Vennero scelte quindi le condizioni di solidificazione, $32 \, \text{°F}$, e di evaporazione, $212 \, \text{°F}$, dell'acqua a pressione ambiente al livello del mare, in modo tale da suddividere tale intervallo in $180$ sotto-intervalli (in analogia con la scelta di $60$, per avere un numero elevato di divisori interi).
 
-**1731, de Réaumur.**
-  - estremi: solidificazione ($0 \, \text{°Re}$) ed evaporazione ($80 \, \text{°Re}$) dell'acqua a temperatura ambiente. Perché 80 intervalli tra queste due condizioni? Perché il termometro costruito da Reaumur usava come principio fisico l'espansione dell'etanolo, e il volume dell'etanolo varia dell'8% tra le due condizioni di riferimento scelte.
+**1731, de Réaumur.** La definizione usa:
+  - estremo inferiore, $0 \, \text{°Re}$: temperatura di solidificazione dell'acqua a pressione ambiente
+  - estremo superiore, $80 \, \text{°Re}$: temperatura di ebollizione dell'acqua a temperatura ambiente. Perché 80 intervalli tra queste due condizioni? Perché il termometro costruito da Reaumur usava come principio fisico la dilatazione termica dell'etanolo, e il volume dell'etanolo varia dell'8% tra le due condizioni di riferimento scelte.
 
-**1742, Celsius.**
-  - estremi: solidificazione ($100 \, \text{°C}$) ed evaporazione ($0 \, \text{°C}$) dell'acqua a temperatura ambiente. Perché questa definizione "invertita" rispetto alle altre? Perché no, si potrebbe rispondere. Per rendere più pratica la misura e adeguarsi al verso delle altre scale, un anno dopo la morte di Celsius, la scala fu invertita da Linneo (**todo** lo stesso Linneo, biologo, che si dilettava con la classificazione di piante e animali, padre della classificazione scientifica degli organismi viventi, usata tuttora)
+**1742, Celsius.** E' la scala di temperatura empirica usata attualmente in tutto il mondo, ad eccezione degli Stati Uniti, la Liberia e le Isole Cayman che usano la scala Fahrenheit. Poteva forse la definizione originale coincidere con quella usata attualmente? Ovviamente no. La definizione originale di Celsius era invertita rispetto a quella attuale, e a tutte le scale usate allora (perché? Perché no, si potrebbe rispondere. Fatevi voi la vostra scala di temperatura!), ed usava:
+  - estremo inferiore, $0 \, \text{°C}$: temperatura di evaporazione dell'acqua a pressione ambiente
+  - estremo superiore, $100 \, \text{°C}$: temperatura di solidificazione dell'acqua a pressione ambiente.
+
+Per rendere più pratica la misura e adeguarsi al verso delle altre scale, un anno dopo la morte di Celsius, la scala fu invertita da **Linneo** (lo stesso Linneo, biologo, che si dilettava con la classificazione di piante e animali, padre della classificazione scientifica degli organismi viventi, usata tuttora).
 
 ### Scala termodinamica
 Scala di temperatura assoluta
