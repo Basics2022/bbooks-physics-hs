@@ -47,6 +47,8 @@ Questo procedimento consente quindi di introdurre i concetti e le relative grand
 
 <span style="color:red">**todo** costruzione termometro; equilibrio termico</span>
 
+<span style="color:red">**todo** dilatazione lineare, volumetrica; collegamento con qualche paragrafo?</span>
+
 ```{note} Perché la relazione è lineare?
 La relazione non è lineare in generale, ma lo è per un gran numero di sostanze in un intervallo moderato di condizioni. Questo è spiegabile tramite l'espansione in **serie di Taylor** di una funzione: se si considera un intervallo sufficientemente piccolo rispetto alla rapidità di variazione di una funzione attorno alla condizione di riferimento considerata, l'approssimazione lineare è una buona approssimazione della funzione nell'intervallo considerato,
 
