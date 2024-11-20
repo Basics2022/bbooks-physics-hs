@@ -94,8 +94,8 @@ Per rendere più pratica la misura e adeguarsi al verso delle altre scale, un an
 
 ### Scala termodinamica
 Scala di temperatura assoluta
-- Esperimenti sui gas, estrapolando i dati sperimentali delle [leggi di Charles](physics-hs:thermodynamics:matter:gases:ideal:experiments:charles) e di [Gay-Lussac](physics-hs:thermodynamics:matter:gases:ideal:experiments:gay-lussac)
-- 1848, Kelvin *On an Absolute Thermometric Scale*.
+- <span style="color:red"> Esperimenti sui gas, estrapolando i dati sperimentali delle [leggi di Charles](physics-hs:thermodynamics:matter:gases:ideal:experiments:charles) e di [Gay-Lussac](physics-hs:thermodynamics:matter:gases:ideal:experiments:gay-lussac)</span>
+- <span style="color:red"> 1848, Kelvin *On an Absolute Thermometric Scale*</span>
 
 ```{note} Evaporazione ed ebollizione dell'acqua in funzione della pressione. Quanto cambia in funzione della pressione?
 ```
@@ -120,7 +120,7 @@ Nel 1738, D.Bernoulli pubblica la sua *Hydrodynamica* dove discute il moto dei f
 
 <span style="color:red"> dettagli </span>
 
-## Calore latente e calore specifico
+## Calorimetria: calore latente e calore specifico
 Gli studi di **J.Black** attorno alla metà del XVIII secolo sul raggiungimento dell'equilibrio termico e sulle transizione di fase aiutano a distinguere i concetti di temperatura e di calore, sui quali c'era ancora confusione e nessuna teoria affermata soddisfacente.
 - sistemi fisici sul quale non viene compiuto lavoro, scambiano tra di loro calore per raggiungere l'equilibrio termico
   - la quantità di calore "entrante" in un sistema, ne fa variare la temperatura. La variazione di temperatura nel sistema è inversamente proporzionale alla sua massa,
@@ -151,6 +151,8 @@ Gli studi di **J.Black** attorno alla metà del XVIII secolo sul raggiungimento 
 
     Viene definito **calore latente di fusione** il coefficiente $L_{sl}$ di proporzionalità tra il calore entrante nel sistema durante la trasformazione di fase e la quantità di massa liquefatta $\delta m_l$.
 
+```{prf:example} Esercizi calorimetria - ...
+```
 ```{prf:example} Caldo-freddo: temperatura e calore
 ```
 
@@ -167,9 +169,9 @@ $$\dfrac{P V}{T n} = R = \text{const.}$$
 
 ## Lavoro, ... **todo**
 
-```{margin}
+<!--```{margin}
 **todo**<br> Diatriba sulla priorità sulla formulazione del principio di conservazione dell'energia: von Meyer; Joule; successivamente Hemlholtz; Tyndall - scienziato e uno dei primi alpinisti - uno dei pochi a riconoscere il contributo di von Meyer
-```
+```-->
 
 - Rivoluzione industriale
 - 1798, B.Thompson, *An Inquiry Concerning the Source of the Heat Which is Excited by Friction*, oggi può essere interpretato come un lavoro che identificava l'attrito come fenomeno di dissipazione dell'energia meccanica "utile"/"macroscopica" e della sua conversione in calore;

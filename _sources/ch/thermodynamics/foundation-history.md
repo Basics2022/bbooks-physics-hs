@@ -37,6 +37,8 @@ Durante la rivoluzione scientifica del XVI-XVII secolo, la progettazione di stru
 - D.Bernoulli, *Hydrodynamica*, 1738: 
   - primo modello matematico nella teoria cinetica dei gas: gas costituiti da particelle libere di muoversi: la pressione è il risultato degli urti delle particelle sulle pareti del contenitore.
 
+- J.Black, 1750-1760: studi di calorimetria: calore specifico e calore latente
+
 - A.Lavoisier, fine '700, uno dei più influenti chimici della storia:
   - misura del peso nelle indagini di chimica: **conservazione della massa** in fisica classica
   - altro valido argomento a sostegno della teoria atomistica: le sostanze sono formate da particelle elementari che si combinano a formare diverse sostanze; nelle reazioni chimiche, reagenti e prodotti hanno la stessa massa ($Hg \, O \rightarrow Hg \, + \, \frac{1}{2} O_2$)
@@ -48,7 +50,7 @@ Durante la rivoluzione scientifica del XVI-XVII secolo, la progettazione di stru
 
 - Gay-Lussac, 1808, discepolo di Berthollet
   - leggi dei gas
-  - studi con controllo del volume: osserva che $V$, $n$ sono proporzionali a parti pressione e temperatura; non formula una spiegazione fondata sulla teoria atomica, forse per timore del giudizio di Berthollet, più probabilmente per il disaccordo con le conclusioni sbagliate di Dalton sulla composizione dell'acqua
+  - studi con controllo del volume: osserva che $V$, $n$ sono proporzionali a pressione e temperatura costanti; non formula una spiegazione fondata sulla teoria atomica, forse per timore del giudizio di Berthollet, più probabilmente per il disaccordo con le conclusioni sbagliate di Dalton sulla composizione dell'acqua
 
 - Avogadro, 1811:
   - volumi di gas uguali nelle stesse condizioni di $T$, $P$ contengono lo stesso numero di molecole, anche tipi di gas diverso
