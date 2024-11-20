@@ -15,7 +15,7 @@ ossia *"nulla si crea, nulla si distrugge, tutto si trasforma"*.
 - massa quantità estensiva $M$
 - densità quantità specifica/intensiva $\rho = \frac{\Delta M}{\Delta V}$ (massa, volume sono quantità estensive)
 
-```{prf:exercise} 
+```{exercise} 
 ```
-```{prf:exercise} 
+```{exercise} 
 ```
