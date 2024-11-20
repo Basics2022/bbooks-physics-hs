@@ -63,7 +63,7 @@ Possiamo quindi interpretare l'esperienza riguardo alla dilatazione lineare dell
 <span style="color:red"> spostare termodinamica e teoria atomica all'inizio dell'introduzione, $\sim$ Feynman?</span>
 
 ### Scale empiriche
-Una scala empirica di temperatura viene definita usando due condizioni facilmente replicabili in laboratorio per definire l'origine della scala e l'ampiezza del grado. Così, nella prima metà del XVIII secolo vennero definite alcune scale di temperatura
+Una scala empirica di temperatura viene definita usando due condizioni facilmente replicabili in laboratorio per definire l'origine della scala e l'ampiezza del grado. Così, nella prima metà del XVIII secolo vennero definite alcune scale di temperatura. Le definizioni originali subirono spesso modifiche in seguito a cambi di scelte delle condizioni di riferimento, producendo come risultato delle scale con origine e ampiezza del grado diversa <span style="color:red">formule di conversione</span>
 <!--
 Metodo generale per la definizione delle scale di temperatura: scelta di due temperature di riferimento, facilmente riproducibili nei limiti di errori tollerati; suddivisione in parti uguali dell'intervallo ed estensione oltre questi limiti, tipicamente in 100 o 60 (o suoi multipli) parti.
 -->
@@ -71,16 +71,19 @@ Metodo generale per la definizione delle scale di temperatura: scelta di due tem
   - estremo inferiore,  $0 \, \text{°Ro}$: temperatura eutettica del cloruro di ammonio, temperatura caratteristica di una sostanza molto comune nei laboratori dell'epoca;
   - estremo superiore, $60 \, \text{°Ro}$: temperatura di ebollizione dell'acqua a pressione ambiente
 
+L'originale suddivisione in $60$ intervalli fu probabilmente dettata dall'elevato numero di divisori interi di $60$.
 Successivamente la definizione della scala fu modificata per evitare di usare il cloruro di ammonio, rendere più facile la taratura dello strumento, e per uniformarsi alle scelte fatte da altri, accortosi che la solidificazione dell'acqua avveniva circa a $7.5 \, \text{°Ro}$ si decise di usare questa condizione per definire l'estremo inferiore: l'estremo inferiore della scala Romer, $7.5 \, \text{°Ro}$, corrisponde alla solidificazione dell'acqua a pressione ambiente.
 
-**1709-15, Fahrenheit** Dopo aver fatto visita a Romer, si dedicò alla progettazione e alla realizzazione di strumenti di misura di pressione e temperatura. La definizione originale della scala usava:
+**1709-15, Fahrenheit.** Dopo aver fatto visita a Romer, si dedicò alla progettazione e alla realizzazione di strumenti di misura di pressione e temperatura. La definizione originale della scala usava:
   - estremo inferiore,   $0 \, \text{°F}$: temperatura eutettica del cloruro di ammonio; le malelingue sostengono la temperatura più bassa registrata negli inverni di Danzica, città allora prussiana in cui viveva mentre metteva a punto gli strumenti
   - estremo superiore,   $96 \, \text{°F}$: temperatura media del corpo umano
 
-Le scelte rocambolesche e definite in maniera imprecisa non costituivano delle condizioni facilmente replicabili per la costruzione e/o taratura di nuovi strumenti. Vennero scelte quindi le condizioni di solidificazione ($32 \, \text{°F}$) e di evaporazione ($212 \, \text{°F}$) dell'acqua a pressione ambiente al livello del mare, in modo tale da suddividere tale intervallo in 180 sotto-intervalli
-- 1731, de Réaumur:
+Le scelte rocambolesche e definite in maniera imprecisa non costituivano delle condizioni facilmente replicabili per la costruzione e/o taratura di nuovi strumenti. Vennero scelte quindi le condizioni di solidificazione, $32 \, \text{°F}$, e di evaporazione, $212 \, \text{°F}$, dell'acqua a pressione ambiente al livello del mare, in modo tale da suddividere tale intervallo in $180$ sotto-intervalli (in analogia con la scelta di $60$, per avere un numero elevato di divisori interi).
+
+**1731, de Réaumur.**
   - estremi: solidificazione ($0 \, \text{°Re}$) ed evaporazione ($80 \, \text{°Re}$) dell'acqua a temperatura ambiente. Perché 80 intervalli tra queste due condizioni? Perché il termometro costruito da Reaumur usava come principio fisico l'espansione dell'etanolo, e il volume dell'etanolo varia dell'8% tra le due condizioni di riferimento scelte.
-- 1742, Celsius:
+
+**1742, Celsius.**
   - estremi: solidificazione ($100 \, \text{°C}$) ed evaporazione ($0 \, \text{°C}$) dell'acqua a temperatura ambiente. Perché questa definizione "invertita" rispetto alle altre? Perché no, si potrebbe rispondere. Per rendere più pratica la misura e adeguarsi al verso delle altre scale, un anno dopo la morte di Celsius, la scala fu invertita da Linneo (**todo** lo stesso Linneo, biologo, che si dilettava con la classificazione di piante e animali, padre della classificazione scientifica degli organismi viventi, usata tuttora)
 
 ### Scala termodinamica
