@@ -1,6 +1,9 @@
 (physics-hs:thermodynamics:foundation:principles:gibbs-phase-rule)=
 # Gibbs: energia interna, regola delle fasi e funzioni multi-variabili
 
+Seguendo il lavoro di Gibbs, in questa sezione vengono introdotti alcuni concetti come quello di [variabile di stato](physics-hs:thermodynamics:foundation:principles:gibbs-phase-rule:state-vars) ed [energia interna](physics-hs:thermodynamics:foundation:principles:gibbs-phase-rule:internal-energy), e la [regola delle fasi di Gibbs](physics-hs:thermodynamics:foundation:principles:gibbs-phase-rule:gibbs-phase-rule). Successivamente, il [primo principio della termodinamica viene riformulato](physics-hs:thermodynamics:foundation:principles:gibbs-phase-rule:first) utilizzando il formalismo introdotto da Gibbs che permette di identificare lo stato di un sistema con un numero limitato di variabili stato indipendenti e di esprimere le altre variabili (dipendenti) di stato come funzioni di più variabili.
+
+(physics-hs:thermodynamics:foundation:principles:gibbs-phase-rule:state-vars)=
 ## Variabili di stato
 ```{prf:definition} Variabile di stato
 
@@ -8,43 +11,35 @@ Una variabile di stato di un sistema è una proprietà fisica del sistema che di
 
 ```
 
+```{prf:example} Variabili di stato e non
+Sono variabili di stato la temperatura, la pressione, l'energia interna, l'entropia,...
+Non sono variabili di stato il lavoro o il calore scambiato dal sistema. **todo**
+
+```
+
+(physics-hs:thermodynamics:foundation:principles:gibbs-phase-rule:internal-energy)=
 ## Energia interna
 ```{prf:definition} Energia interna
-**Gibbs** definisce l'energia interna del sistema come differenza tra la sua energia totale e l'energia cinetica "macroscopica", 
+L'energia interna di un sistema viene definita come la differenza dell'energia totale e l'energia cinetica macroscopica del sistema,
 
 $$E = E^{tot} - K \ .$$
 ```
 
-Il bilancio dell'energia interna viene ricavato come differenza dei bilanci dell'energia totale, descritto dal primo principio della termodinamica
+E' possibile ricavare un bilancio per l'energia interna di un sistema chiuso sottraendo il bilancio dell'energia cinetica descritto dal teorema dell'energia cinetica al bilancio dell'energia totale fornito dal primo principio della termodinamica,
 
-$$d E^{tot} := \delta L^{ext} + \delta Q^{ext} \ ,$$
+$$\begin{aligned}
+  d E^{tot} & = \delta L^{ext} + \delta Q^{ext} \\
+  d K       & = \delta L^{ext} + \delta L^{int} \ ,
+\end{aligned}$$
 
-e il bilancio dell'energia cinetica, fornito dal teorema dell'energia cinetica ricavato in meccanica,
-
-$$d K = \delta L^{ext} + \delta L^{int} \ .$$
-
-Il bilancio dell'energia interna diventa quindi
+Il bilancio dell'energia interna per un sistema chiuso diventa quindi
 
 $$d E = \delta Q^{ext} - \delta L^{int} \ .$$
 
-### Variabili intensive ed estensive; variabili specifiche
-Una **variabile intensiva** è indipdendente dalla dimensione del sistema. Una **variabile estensiva** è additiva per i sottosistemi (**todo** *controllare l'equivalenza estensiva $\equiv$ additiva*). Se una variabile può essere espressa come funzione di una serie di variabili indipendenti intensive $\{a_i\}$ ed estensive $\{A_k\}$, una variabile intensiva è rappresentata da una funzione omogena di grado 0
-
-$$F(\{a_i\},\{\lambda \, A_k\}) = F(\{a_i\}, \{A_k\})$$
-
-mentre una variabile estensiva è rappresentata da una funzione omogenea di grado 1 rispetto alle variabili estensive $A_k$
-
-$$F(\{a_i\},\{\lambda \, A_k\}) = \lambda F(\{a_i\}, \{A_k\})$$
-
-Alcuni esempi di variabili intensive ed estensive:
-- intensive: temperatura, pressione, sforzo, potenziale chimico, potenziale elettrico, magnetizzazione,...
-- estensive: quantità di sostanza (moli), massa, volume, energia, carica elettrica, momento magnetico,...
-
-Le **variabili specifiche** sono ricavate come rapporto tra due variabili estensive. Come casi comuni, il denominatore è la massa del sistema o il volume del sistema. Le variaibli specifiche sono variabili intensive. Alcuni esempi di variabili specifiche sono: volume specifico (inverso della densità), energia specifica, entropia specifica, capacità termica specifica,...
-
+(physics-hs:thermodynamics:foundation:principles:gibbs-phase-rule:gibbs-phase-rule)=
 ## Regola delle fasi di Gibbs
 ```{prf:proposition} Regola delle fasi di Gibbs
-Lo stato termodinamico (di equilibrio) di un sistema è identificato da un numero $F$ di variabili di stato intensive indipendenti, determinato dalla **regola delle fasi di Gibbs**,
+Lo stato termodinamico (di equilibrio) di un sistema è identificato da un numero $F$ di variabili di stato **intensive** indipendenti, determinato dalla **regola delle fasi di Gibbs**,
 
 $$F = C - P + 1 + W \ ,$$
 
@@ -141,6 +136,7 @@ In assenza di altri fenomeni fisici, l'unica forma di lavoro in un solido è que
 - Campo elettrico e magnetizzazione **todo**
 ```
 
+(physics-hs:thermodynamics:foundation:principles:gibbs-phase-rule:first)=
 ## Primo principio in termini delle variabili di stato
 L'energia interna è una variabile estensiva di un sistema termodinamico. In generale, può essere scritta come una funzione di $...$ variabili estensive che rappresentano i modi del sistema di manifestare la sua energia interna (**todo** *sia dovuta al lavoro svolto su di esso, sia al calore apportato al sistema, sia alla sua composizione chimica e quindi all'energia contenuta nei legami*)
 
