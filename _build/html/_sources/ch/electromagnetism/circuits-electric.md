@@ -1,6 +1,43 @@
 (physics-hs:electromagnetism:circuits-electric)=
 # Circuiti elettrici
 
+## Approssimazione circuitale - leggi di Kirchhoff
+
+
+
+## Componenti discreti
+### Resistenza elettrica
+La legge costitutiva della resistenza elettrica è
+
+$$v = R i$$
+
+### Condensatore
+La legge costitutiva di un condensatore è
+
+$$i = C \dot{v}$$
+
+### Induttore
+La legge costitutiva di un induttore è
+
+$$v = L \dot{i}$$
+
+### Generatore di tensione
+
+$$v = e$$
+
+### Generatore di corrente
+
+$$i = a$$
+
+
+## Regimi di funzionamento
+### Regime stazionario
+
+### Transitori
+
+### Regime periodico
+
+
 - dalle leggi fisiche alle leggi di Kirchhoff, ipotesi (validità e non-validità dell'approccio circuitale)
 
 - componenti:

@@ -17,7 +17,8 @@ La termodinamica classica costituisce una teoria fisica macroscopica per sistemi
 - che permettano di descrivere lo stato macroscopico di un sistema con un numero ristretto di variabili
 - che permettano di formulare una teoria matematica consistente, partendo da alcuni princìpi fondamentali in accordo con l'esperienza sperimentale
 
-## Contenuti
+**Contenuti.**
+
 Questa **introduzione** alla materia presenta parte da una [breve cronologia](physics-hs:thermodynamics:foundation:history) delle esperienze rilevanti per lo sviluppo della termodinamica classica; segue la discussione in dettaglio alcune di queste [esperienze](physics-hs:thermodynamics:foundation:experiments), utili poi per formulare la teoria e i modelli; una breve descrizione del [modello atomico](physics-hs:thermodynamics:foundation:atomic-theory) della materia conclude l'introduzione.
 
 Le sezioni successive entrano nei dettagli:

@@ -1,15 +1,48 @@
 (physics-hs:thermodynamics:foundation:experiments)=
 # Esperienze ed esperimenti
 
+## Esperienza di Torricelli 
+Torricelli dimostrò che[^torricelli]
+
+> "viviamo sul fondo di un oceano d'aria, la quale [...] si sa che pesa, e tanto"
+
+In particolare, l'esperienza di Torricelli permette di misurare il peso dell'aria nell'atmosfera ed esprimerlo in termini di pressione atmosferica.
+
+<span style="color:red"> **todo** dettagli dell'esperimento </span>
+
+L'esperienza di Torricelli:
+- introduce il concetto di **pressione** atmosferica e nei gas in generale, come forza per unità di superficie che un gas esercita sulle pareti di un contenitore, o di una superficie esposta al gas;
+- introduce il **manometro di Torricelli** come strumento per la misura della pressione atmosferica e nei gas in generale;
+- è una delle prime esperienze dell'esistenza del **vuoto**, in contrasto con l'*horror vacui* aristotelico, principio secondo il quale la natura rifugge il vuoto, riempiendolo costantemente
+
+[^torricelli]: Lettera a Michelangelo Ricci, 2 giugno 1664, in Prefazione alle *Lezioni accademiche* di E.Torricelli
+
+## Prime esperienze sui gas - esperimento di Boyle
+L'indagine di Boyle e Hooke su gas sufficientemente rarefatti produce come risultato la legge di Boyle,
+
+$$P V = \text{const}$$
+
+valida per un sistema chiuso a temperatura $T$ costante. Al tempo delle attività sperimentali di Boyle, il manometro di Torricelli era uno strumento disponibile per una misura sufficientemente accurata della pressione, mentre non erano ancora disponibili strumenti accurati per la misura della temperatura del gas contenuto all'interno del sistema. Le attività di Boyle assumevano quindi una stabilità sufficiente della temperatura dell'ambiente all'interno dela quale era svolto l'esperimento, insieme all'equilibrio termico tra sistema e ambiente.
+
+<span style="color:red"> **todo** dettagli dell'esperimento </span>
+
+```{prf:example} **todo** 1
+```
+```{prf:example} **todo** 2
+```
+
 ## Dilatazione sostanze
 
-## Esperienza di Torricelli 
-
-## Prime esperienze sui gas
-Boyle
-
-## Equilibrio termico
-...
+```{prf:example} Anello di Gravesande
+```
+```{prf:example} Giunzione binari e ponti
+```
+```{prf:example} Pendolo
+```
+<!--
+```{prf:example} Forno
+```
+-->
 
 ## Scale di temperatura
 - Scale empiriche: costruite con scelte arbitrarie senza nessun significato fisico profondo
@@ -35,6 +68,9 @@ Metodo generale per la definizione delle scale di temperatura: scelta di due tem
 Scala di temperatura assoluta
 - Esperimenti sui gas, estrapolando i dati sperimentali delle [leggi di Charles](physics-hs:thermodynamics:matter:gases:ideal:experiments:charles) e di [Gay-Lussac](physics-hs:thermodynamics:matter:gases:ideal:experiments:gay-lussac)
 - 1848, Kelvin *On an Absolute Thermometric Scale*.
+
+## Equilibrio termico
+
 
 ## Teoria cinetica dei gas
 1738, D.Bernoulli *Hydrodynamica*
@@ -69,6 +105,9 @@ Scala di temperatura assoluta
     \end{cases}$$
 
     Viene definito **calore latente di fusione** il coefficiente $L_{sl}$ di proporzionalità tra il calore entrante nel sistema durante la trasformazione di fase e la quantità di massa liquefatta $\delta m_l$.
+
+```{prf:example} Caldo-freddo: temperatura e calore
+```
 
 ## Esperienze sui gas, ed equazione di stato dei gas perfetti
 - Boyle: $PV = \text{const.}$

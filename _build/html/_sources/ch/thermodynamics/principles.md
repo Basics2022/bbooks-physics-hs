@@ -4,13 +4,13 @@
 In questo capitolo vengono presentati i princìpi della termodinamica classica e i concetti utili per formularli. Ricordando che la termodinamica classica fornisce una descrizione macroscopica mediata della dinamica microscopica di sistemi composti da molti componenti elementari, il livello di dettaglio microscopico può essere usato per fornire un significato alle variabili termodinamiche usate nella descrizione macroscopica.
 
 I princìpi della termodinamica vengono introdotti per sistemi chiusi, e successivamente estesi ai sistemi aperti. Per un sistema chiuso,
-- il principio di conservazione della massa - di Lavoisier - valido in meccanica classica, asserisce che in un sistema chiuso la massa è costante,
+- **principio di conservazione della massa - di Lavoisier** valido in meccanica classica, asserisce che in un sistema chiuso la massa è costante,
 
   $$d M = 0 \ ,$$
 
   ed è riassumibile con la formula *"nulla si crea, nulla si distrugge ma tutto si trasforma"*
 
-- il primo principio della termodinamica fornisce la forma generale del bilancio dell'energia *totale* di un sistema chiuso,
+- **primo principio della termodinamica** fornisce la forma generale del bilancio dell'energia *totale* di un sistema chiuso,
 
   $$d E^{tot} = \delta L^{ext} + \delta Q^{ext} \ ,$$
 
@@ -18,7 +18,7 @@ I princìpi della termodinamica vengono introdotti per sistemi chiusi, e success
 
 - definizione di energia interna, delle variabili di stato di un sistema,...Gibbs, con gli strumenti matematici delle funzioni e del calcolo multi-variabile
 
-- il secondo principio della termodinamica traduce le tendenze naturali osservate: la dissipazione dell'energia meccanica macroscopica, la trasmissione del calore da un corpo caldo a un corpo freddo. Formulazione in termini di entropia, definizione della temperatura.
+- **secondo principio della termodinamica** traduce le tendenze naturali osservate: la dissipazione dell'energia meccanica macroscopica, la trasmissione del calore da un corpo caldo a un corpo freddo. Formulazione in termini di entropia, definizione della temperatura.
 
 Infine, si ricavano i bilanci delle quantità fisiche per sistemi aperti, introducendo i termini di flusso dovuti al trasporto di materia attraverso la frontiera del sistema.
 
