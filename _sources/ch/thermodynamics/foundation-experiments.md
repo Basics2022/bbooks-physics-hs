@@ -121,7 +121,7 @@ Nel 1738, D.Bernoulli pubblica la sua *Hydrodynamica* dove discute il moto dei f
 <span style="color:red"> dettagli </span>
 
 ## Calore latente e calore specifico
-1750-60, J.Black. I suoi studi sul calore aiutano a distinguere i concetti di temperatura e di calore **todo**
+Gli studi di **J.Black** attorno alla metà del XVIII secolo sul raggiungimento dell'equilibrio termico e sulle transizione di fase aiutano a distinguere i concetti di temperatura e di calore, sui quali c'era ancora confusione e nessuna teoria affermata soddisfacente.
 - sistemi fisici sul quale non viene compiuto lavoro, scambiano tra di loro calore per raggiungere l'equilibrio termico
   - la quantità di calore "entrante" in un sistema, ne fa variare la temperatura. La variazione di temperatura nel sistema è inversamente proporzionale alla sua massa,
 
