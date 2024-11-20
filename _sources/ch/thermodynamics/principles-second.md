@@ -2,9 +2,10 @@
 # Secondo principio della termodinamica
 
 ## Enunciato di Clausius
+L'enunciato di Clausis del secondo principio della termodinamica può essere formulato in maniera abbastanza naturale con il formalismo introdotto.
 
 ### Sistemi semplici
- La variazione elementare di entropia $d S$ di un sistema a temperatura uniforme $T$ è maggiore o uguale al rapporto tra il flusso di calore elementare introdotto nel sistema e la temperatura del sistema stesso,
+ La variazione elementare di entropia $d S$ di un sistema semplice chiuso a temperatura uniforme $T$ è maggiore o uguale al rapporto tra il flusso di calore elementare introdotto nel sistema e la temperatura del sistema stesso,
   
   $$dS = \underbrace{\dfrac{\delta^+ D}{T}}_{\ge 0} + \dfrac{\delta Q^{ext}}{T} \ge \dfrac{\delta Q^{ext}}{T} \ .$$
 
@@ -13,7 +14,7 @@ Questo è l'enunciato di Clausius del secondo principio della termodinamica per 
 ### Sistemi composti
 **todo** definizione di sistema composto. Avviene conduzione tra i sotto-sistemi.
 
-Definendo l'entropia come una proprietà additiva, l'entropia di un sistema composto da $N$ sotto-sistemi semplici è la somma dell'entropia dei sotto-sistemi,
+L'entropia in termodinamica classica è una grandezza fisica estensiva: l'entropia di un sistema composto da $N$ sotto-sistemi semplici è la somma dell'entropia dei sotto-sistemi,
 
 $$S = \sum_{n=1:N} S_n \ .$$
 
