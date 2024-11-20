@@ -6,6 +6,7 @@ $$d E^{tot} = \delta L^{ext} + \delta Q^{ext} \ .$$
 
 La termodinamica classica fornisce una descrizione macroscopica media della dinamica microscopica di un numero elevato di componenti elementari (**todo** *teoria atomica*). L'energia totale del sistema può quindi essere interpretata come somma di un contributo cinetico macroscopico e di un contenuto microscopico, cinetico e potenziale; il calore può essere interpretato come il lavoro svolto sul sistema da parte di azioni microscopiche,
 
+<!--
 ```{dropdown} Energia totale
 :open:
 
@@ -37,6 +38,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 ```
+-->
 
 ## Energia interna
 ```{prf:definition} Energia interna
