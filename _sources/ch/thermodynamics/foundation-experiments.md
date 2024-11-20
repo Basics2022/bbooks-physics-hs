@@ -1,15 +1,59 @@
 (physics-hs:thermodynamics:foundation:experiments)=
 # Esperienze ed esperimenti
 
-## Dilatazione sostanze
-
 ## Esperienza di Torricelli 
+Torricelli dimostrò che[^torricelli]
 
-## Prime esperienze sui gas
-Boyle
+> "viviamo sul fondo di un oceano d'aria, la quale [...] si sa che pesa, e tanto"
 
-## Equilibrio termico
-...
+In particolare, l'esperienza di Torricelli permette di misurare il peso dell'aria nell'atmosfera ed esprimerlo in termini di pressione atmosferica.
+
+<span style="color:red"> **todo** dettagli dell'esperimento </span>
+
+L'esperienza di Torricelli:
+- introduce il concetto di **pressione** atmosferica e nei gas in generale, come forza per unità di superficie che un gas esercita sulle pareti di un contenitore, o di una superficie esposta al gas;
+- introduce il **manometro di Torricelli** come strumento per la misura della pressione atmosferica e nei gas in generale;
+- è una delle prime esperienze dell'esistenza del **vuoto**, in contrasto con l'*horror vacui* aristotelico, principio secondo il quale la natura rifugge il vuoto, riempiendolo costantemente
+
+[^torricelli]: Lettera a Michelangelo Ricci, 2 giugno 1664, in Prefazione alle *Lezioni accademiche* di E.Torricelli
+
+## Prime esperienze sui gas - esperimento di Boyle
+L'indagine di Boyle e Hooke su gas sufficientemente rarefatti produce come risultato la legge di Boyle,
+
+$$P V = \text{const}$$
+
+valida per un sistema chiuso a temperatura $T$ costante. Al tempo delle attività sperimentali di Boyle, il manometro di Torricelli era uno strumento disponibile per una misura sufficientemente accurata della pressione, mentre non erano ancora disponibili strumenti accurati per la misura della temperatura del gas contenuto all'interno del sistema. Le attività di Boyle assumevano quindi una stabilità sufficiente della temperatura dell'ambiente all'interno dela quale era svolto l'esperimento, insieme all'equilibrio termico tra sistema e ambiente.
+
+<span style="color:red"> **todo** dettagli dell'esperimento </span>
+
+```{prf:example} **todo** 1
+```
+```{prf:example} **todo** 2
+```
+
+## Dilatazione sostanze
+Con le esperienze discusse fino ad ora non è ancora possibile associare nessuna grandezza fisica alla percezione comune di caldo o freddo. <span style="color:red">Confusione temperatura-calore **todo** *ref*</span>
+
+E' però possibile osservare la variazione delle dimensioni di sistemi formati da sostanze diverse, in occasione della variazione di questa percezione.
+In particolare, si prendono $N$ oggetti di sostanze diverse e si valuta la variazione delle loro dimensioni tra condizioni diverse, associabili qualitativamente alla percezione di caldo-freddo, ed etichettate con l'indice $t$. Si valuta quindi la variazione della dimensione lineare $L_i$ dell'oggetto $i$ nella condizione identificata dall'indice $t$, rispetto alla condnizione di riferimento identificata dall'indice $0$. Per la maggioranza delle sostanze, confrontando due sostanze $i$, $k$ si osserva che 
+
+$$\frac{L_{i,t} - L_{i,0}}{L_{i,0}} \frac{L_{k,0}}{L_{k,t}- L_{k,0}} = \alpha_{ik} = \text{const} \ .$$
+
+Questa osservazione permette quindi di introdurre per ogni sostanza $i$ una relazione lineare tra la variazione relativa delle sue dimensioni lineari rispetto alle dimensioni di riferimento $\frac{\Delta L_{i, 0t}}{L_{i,0}}$ e la variazione di una grandezza fisica $T$, il cui valore $T_t$ descrive la condizione $t$ comune a tutti i sistemi oggetto di indagine e associata alla percezione di caldo-freddo del sistema,
+
+$$\frac{L_{i,t}-L_{i,0}}{L_{i,0}} = \alpha_i (T_t-T_0)$$
+
+Questo procedimento consente quindi di introdurre i concetti e le relative grandezze fisiche per il **coefficiente di dilatazione termica** $\alpha_i$ dei materiali, qui ipotizzato costante nell'intervallo di condizioni analizzate, e la **temperatura** $T$. Queste due grandezze fisiche sono qui definite a meno di due valori, una temperatura di riferimento e un'unità di misura. <span style="color:red">**todo** dire due parole, e collegare con le scale di temperatura</span>
+
+<span style="color:red">**todo** costruzione termometro; equilibrio termico</span>
+
+```{note} Perché la relazione è lineare?
+La relazione non è lineare in generale, ma lo è per un gran numero di sostanze in un intervallo moderato di condizioni. Questo è spiegabile tramite l'espansione in **serie di Taylor** di una funzione: se si considera un intervallo sufficientemente piccolo rispetto alla rapidità di variazione di una funzione attorno alla condizione di riferimento considerata, l'approssimazione lineare è una buona approssimazione della funzione nell'intervallo considerato,
+
+$$f(T) = f(T_0) + f'(T_0) \, ( T - T_0 ) + o(T-T_0) \sim f(T_0) + f'(T_0) \, ( T - T_0 ) \ .$$
+
+Possiamo quindi interpretare l'esperienza riguardo alla dilatazione lineare delle sostanze in funzione della temperatura, considerando che la nostra esperienza quotidiana avviene in un intervallo limitato di condizioni rispetto a quelle disponibili in natura: limitandoci all'intervallo di temperatura anche se non sono ancora state introdotte le scale di temperatura, ma supponendo di avere una minima familiarità almeno con la scala centigrada Celsius, tanto da sapere che la temperatura del corpo umano è circa $36\text{°C}$, l'acqua bolle attorno ai $100\text{°C}$ e ghiaccia attorno agli $0\text{°C}$, limitandoci all'intervallo di temperatura, gran parte delle nostre esperienze nella vita quotidiana si svolge in un intervallo tra i $-20\text{°C}$ del frigorifero di casa ai $100\text{°C}$ dell'acqua che bolle in pentola; la temperatura minima raggiungibile è $-273.15\text{°C}$, la temperatura di un metallo fuso è dell'ordine di $1000\text{°C}$, i corpi celesti possono raggiungere temperature dell'ordine dei $10^4-10^{12}\text{°C}$.
+```
 
 ## Scale di temperatura
 - Scale empiriche: costruite con scelte arbitrarie senza nessun significato fisico profondo
@@ -35,6 +79,21 @@ Metodo generale per la definizione delle scale di temperatura: scelta di due tem
 Scala di temperatura assoluta
 - Esperimenti sui gas, estrapolando i dati sperimentali delle [leggi di Charles](physics-hs:thermodynamics:matter:gases:ideal:experiments:charles) e di [Gay-Lussac](physics-hs:thermodynamics:matter:gases:ideal:experiments:gay-lussac)
 - 1848, Kelvin *On an Absolute Thermometric Scale*.
+
+<!-- Esercizi su scale di temperatura e dilatazione termica -->
+```{prf:example} Anello di Gravesande
+```
+```{prf:example} Giunzione binari e ponti
+```
+```{prf:example} Pendolo
+```
+<!--
+```{prf:example} Forno
+```
+-->
+
+## Equilibrio termico
+<span style="color:red"> **todo** Qui? Prima? </span>
 
 ## Teoria cinetica dei gas
 1738, D.Bernoulli *Hydrodynamica*
@@ -69,6 +128,9 @@ Scala di temperatura assoluta
     \end{cases}$$
 
     Viene definito **calore latente di fusione** il coefficiente $L_{sl}$ di proporzionalità tra il calore entrante nel sistema durante la trasformazione di fase e la quantità di massa liquefatta $\delta m_l$.
+
+```{prf:example} Caldo-freddo: temperatura e calore
+```
 
 ## Esperienze sui gas, ed equazione di stato dei gas perfetti
 - Boyle: $PV = \text{const.}$

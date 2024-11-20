@@ -1,8 +1,16 @@
 (physics-hs:thermodynamics:foundation:history)=
 # Breve storia della termodinamica
 
-Sviluppo non lineare, dovuto ai contributi di molti studiosi, nel corso di più di un paio di secoli.
+La termodinamica ha avuto uno sviluppo non lineare, dovuto al contributo di molti studiosi in ambiti diversi, nel corso di più di un paio di secoli.
 
+**Brevissima storia della termodinamica.**
+Durante la rivoluzione scientifica del XVI-XVII secolo, la progettazione di strumenti di misura basati sulla dilatazione delle sostanze e la diffusione del metodo sperimentale in ambito scientifico hanno permesso di introdurre le grandezze fisiche di pressione e temperatura; la misura della massa delle sostanze negli esperimenti di chimica ha permesso a Lavoisier di formulare il principio di conservazione della massa, e formulare l'ipotesi atomistica della struttura della materia, usata da Bernoulli per formulare la teoria cinetica dei gas; le attività di Black sul cambiamento di fase delle sostanze permettono di chiarire la differenza tra temperatura e calore; la macchina a vapore strutta il calore come fonte di lavoro meccanico, svolgendo un ruolo fondamentale nella rivoluzione industriale del XVIII secolo; l'indagine sulle reazioni chimiche e sui gas fornisce nuovi dettagli sulla natura della materia e ulteriori argomenti a supporto della 'ipotesi atomistica; l'analisi teoria di Carnot sulle macchine termiche e sul loro rendimento conduce ai risultati di equivalenza di Joule sull'equivalenza lavoro-calore nel bilancio di energia di un sistema, che porta a formulare il primo principio della termodinamica. L'equivalenza tra calore e lavoro non è però perfetta, come evidenziato dal secondo principio della termodinamica enunciato da Clausis, che riassume le tendenze naturali nella trasmissione del calore e della dissipazione del lavoro meccanico in calore introducendo il concetto di entropia. Verso la fine del XIX secolo, Gibbs elabora una formalizzazione matematica rigorosa della termodinamica classica, usata in gran parte ancora oggi: grazie i concetti di energia interna di un sistema, potenziali termodinamici e stato termodinamico di un sistema, la teoria di Gibbs fornisce un modello macroscopico rigoroso per l'analisi di sistemi termodinamici che coinvolgono trasformazioni e trasferimenti di energia, tramite lavoro, calore o reazioni chimiche. 
+<span style="color:red">Gibbs, Maxwell, Boltzmann e la nascita della meccanica statistica...</span>
+
+**Dalle esperienze alla comprensione.**
+<span style="color:red">Dalla sensazione di caldo-freddo,..., a un modello...</span>
+
+<!--
 **Esperienze.**
 - Sensazione di caldo e freddo
 - Dissipazione dell'energia meccanica "macroscopica" 
@@ -14,6 +22,7 @@ Sviluppo non lineare, dovuto ai contributi di molti studiosi, nel corso di più 
 - Come descrivere le sensazioni di caldo-freddo: temperatura e calore
   - teoria **calorica**? Fluido invisibile
   - ...
+-->
 
 **Indagine scientifica: natura materia.** Rivoluzione scientifica del XVI-XVII secolo. Costruzione di strumenti 
 - Torricelli, disceplo di Galileo: 
