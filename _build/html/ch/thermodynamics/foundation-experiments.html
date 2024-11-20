@@ -463,7 +463,7 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equilibrio-termico">10.2.5. Equilibrio termico</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoria-cinetica-dei-gas">10.2.6. Teoria cinetica dei gas</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calore-latente-e-calore-specifico">10.2.7. Calore latente e calore specifico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calorimetria-calore-latente-e-calore-specifico">10.2.7. Calorimetria: calore latente e calore specifico</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienze-sui-gas-ed-equazione-di-stato-dei-gas-perfetti">10.2.8. Esperienze sui gas, ed equazione di stato dei gas perfetti</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lavoro-todo">10.2.9. Lavoro, … <strong>todo</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formalismo-e-principi-della-termodinamica-classica">10.2.10. Formalismo e prìncipi della termodinamica classica</a></li>
@@ -504,11 +504,11 @@ document.write(`
 <p>valida per un sistema chiuso a temperatura <span class="math notranslate nohighlight">\(T\)</span> costante. Al tempo delle attività sperimentali di Boyle, il manometro di Torricelli era uno strumento disponibile per una misura sufficientemente accurata della pressione, mentre non erano ancora disponibili strumenti accurati per la misura della temperatura del gas contenuto all’interno del sistema. Le attività di Boyle assumevano quindi una stabilità sufficiente della temperatura dell’ambiente all’interno dela quale era svolto l’esperimento, insieme all’equilibrio termico tra sistema e ambiente.</p>
 <p><span style="color:red"> <strong>todo</strong> dettagli dell’esperimento </span></p>
 <div class="proof example admonition" id="example-0">
-<p class="admonition-title"><span class="caption-number">Example 10.1 </span> (<strong>todo</strong> 1)</p>
+<p class="admonition-title"><span class="caption-number">Example 10.1 </span> (<strong>todo</strong> Esercizi su manometro di Torricelli)</p>
 <div class="example-content section" id="proof-content">
 </div>
 </div><div class="proof example admonition" id="example-1">
-<p class="admonition-title"><span class="caption-number">Example 10.2 </span> (<strong>todo</strong> 2)</p>
+<p class="admonition-title"><span class="caption-number">Example 10.2 </span> (<strong>todo</strong> Esercizi su legge di Boyle)</p>
 <div class="example-content section" id="proof-content">
 </div>
 </div></div>
@@ -524,6 +524,7 @@ In particolare, si prendono <span class="math notranslate nohighlight">\(N\)</sp
 \[\frac{L_{i,t}-L_{i,0}}{L_{i,0}} = \alpha_i (T_t-T_0)\]</div>
 <p>Questo procedimento consente quindi di introdurre i concetti e le relative grandezze fisiche per il <strong>coefficiente di dilatazione termica</strong> <span class="math notranslate nohighlight">\(\alpha_i\)</span> dei materiali, qui ipotizzato costante nell’intervallo di condizioni analizzate, e la <strong>temperatura</strong> <span class="math notranslate nohighlight">\(T\)</span>. Queste due grandezze fisiche sono qui definite a meno di due valori, una temperatura di riferimento e un’unità di misura. <span style="color:red"><strong>todo</strong> dire due parole, e collegare con le scale di temperatura</span></p>
 <p><span style="color:red"><strong>todo</strong> costruzione termometro; equilibrio termico</span></p>
+<p><span style="color:red"><strong>todo</strong> dilatazione lineare, volumetrica; collegamento con qualche paragrafo?</span></p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <p>Perché la relazione è lineare?
@@ -535,51 +536,51 @@ La relazione non è lineare in generale, ma lo è per un gran numero di sostanze
 </div>
 <div class="section" id="scale-di-temperatura">
 <h2><span class="section-number">10.2.4. </span>Scale di temperatura<a class="headerlink" href="#scale-di-temperatura" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Scale empiriche: costruite con scelte arbitrarie senza nessun significato fisico profondo</p></li>
-<li><p>Scala termodinamica: la temperatura assoluta è direttamente legata all’agitazione dei componenti elementari della materia</p></li>
-</ul>
+<p><strong>Scale di temperatura empiriche.</strong> Le esperienze sulla dilatazione dei corpi conducono alla definizione delle <strong>scale empiriche</strong> di temperatura: assunta la linearità del fenomeno, una scala di temperatura viene definita da due condizioni facilmente replicabili in laboratorio per la costruzione/taratura degli strumenti, e che permettono di determinare una temperatura di riferimento da usare come origine e un’unità di misura che determini l’ampiezza del grado della scala di temperatura.</p>
+<p><strong>Scala termodinamica della temperatura assoluta.</strong> Mentre le scale di temperatura empiriche vengono sviluppate nella prima metà del XVIII secolo, nel XIX secolo un’approfondita comprensione della materia permette di definire una <strong>scala termodinamica</strong> per la <strong>temperatura assoluta</strong> come una grandezza fisica e manifestazione macrsocopica dello stato «di agitazione» a livello microscopico dei componenti elementari della materia.</p>
+<p><span style="color:red"> spostare termodinamica e teoria atomica all’inizio dell’introduzione, <span class="math notranslate nohighlight">\(\sim\)</span> Feynman?</span></p>
 <div class="section" id="scale-empiriche">
 <h3><span class="section-number">10.2.4.1. </span>Scale empiriche<a class="headerlink" href="#scale-empiriche" title="Permalink to this heading">#</a></h3>
-<p>Metodo generale per la definizione delle scale di temperatura: scelta di due temperature di riferimento, facilmente riproducibili nei limiti di errori tollerati; suddivisione in parti uguali dell’intervallo ed estensione oltre questi limiti, tipicamente in 100 o 60 (o suoi multipli) parti.</p>
+<p>Una scala empirica di temperatura viene definita usando due condizioni facilmente replicabili in laboratorio per definire l’origine della scala e l’ampiezza del grado. Così, nella prima metà del XVIII secolo vennero definite alcune scale di temperatura. Le definizioni originali subirono spesso modifiche in seguito a cambi di scelte delle condizioni di riferimento, producendo come risultato delle scale con origine e ampiezza del grado diversa <span style="color:red">formule di conversione</span></p>
+<!--
+Metodo generale per la definizione delle scale di temperatura: scelta di due temperature di riferimento, facilmente riproducibili nei limiti di errori tollerati; suddivisione in parti uguali dell'intervallo ed estensione oltre questi limiti, tipicamente in 100 o 60 (o suoi multipli) parti.
+-->
+<p><strong>1702, Romer.</strong> La definizione originale usava:</p>
 <ul class="simple">
-<li><p>1702, Romer:</p>
-<ul>
-<li><p>estremo inferiore,  <span class="math notranslate nohighlight">\(0 \, \text{°Ro}\)</span>: temperatura eutettica del cloruro di ammonio;</p></li>
-<li><p>estremo superiore, <span class="math notranslate nohighlight">\(60 \, \text{°Ro}\)</span>: temperatura di ebollizione dell’acqua
-successivamente si accorse che la solidificazione dell’acqua avveniva circa a <span class="math notranslate nohighlight">\(7.5 \, \text{°Ro}\)</span> e decise di usare questa condizione per definire l’estremo inferiore, in modo tale da rendere più facile la taratura dello strumento</p></li>
+<li><p>estremo inferiore,  <span class="math notranslate nohighlight">\(0 \, \text{°Ro}\)</span>: temperatura eutettica del cloruro di ammonio, temperatura caratteristica di una sostanza molto comune nei laboratori dell’epoca;</p></li>
+<li><p>estremo superiore, <span class="math notranslate nohighlight">\(60 \, \text{°Ro}\)</span>: temperatura di ebollizione dell’acqua a pressione ambiente</p></li>
 </ul>
-</li>
-<li><p>1709-15, Fahrenheit:</p>
-<ul>
-<li><p>definizione originale della scala:</p>
-<ul>
+<p>L’originale suddivisione in <span class="math notranslate nohighlight">\(60\)</span> intervalli fu probabilmente dettata dall’elevato numero di divisori interi di <span class="math notranslate nohighlight">\(60\)</span>.
+Successivamente la definizione della scala fu modificata per evitare di usare il cloruro di ammonio, rendere più facile la taratura dello strumento, e per uniformarsi alle scelte fatte da altri, accortosi che la solidificazione dell’acqua avveniva circa a <span class="math notranslate nohighlight">\(7.5 \, \text{°Ro}\)</span> si decise di usare questa condizione per definire l’estremo inferiore: l’estremo inferiore della scala Romer, <span class="math notranslate nohighlight">\(7.5 \, \text{°Ro}\)</span>, corrisponde alla solidificazione dell’acqua a pressione ambiente.</p>
+<p><strong>1709-15, Fahrenheit.</strong> Dopo aver fatto visita a Romer, si dedicò alla progettazione e alla realizzazione di strumenti di misura di pressione e temperatura. La definizione originale della scala usava:</p>
+<ul class="simple">
 <li><p>estremo inferiore,   <span class="math notranslate nohighlight">\(0 \, \text{°F}\)</span>: temperatura eutettica del cloruro di ammonio; le malelingue sostengono la temperatura più bassa registrata negli inverni di Danzica, città allora prussiana in cui viveva mentre metteva a punto gli strumenti</p></li>
 <li><p>estremo superiore,   <span class="math notranslate nohighlight">\(96 \, \text{°F}\)</span>: temperatura media del corpo umano</p></li>
 </ul>
-</li>
-<li><p>le scelte rocambolesche e definite in maniera imprecisa non costituivano delle condizioni facilmente replicabili per la costruzione e/o taratura di nuovi strumenti. Vennero scelte quindi le condizioni di solidificazione (<span class="math notranslate nohighlight">\(32 \, \text{°F}\)</span>) e di evaporazione (<span class="math notranslate nohighlight">\(212 \, \text{°F}\)</span>) dell’acqua a pressione ambiente al livello del mare, in modo tale da suddividere tale intervallo in 180 sotto-intervalli</p></li>
+<p>Le scelte rocambolesche e definite in maniera imprecisa non costituivano delle condizioni facilmente replicabili per la costruzione e/o taratura di nuovi strumenti. Vennero scelte quindi le condizioni di solidificazione, <span class="math notranslate nohighlight">\(32 \, \text{°F}\)</span>, e di evaporazione, <span class="math notranslate nohighlight">\(212 \, \text{°F}\)</span>, dell’acqua a pressione ambiente al livello del mare, in modo tale da suddividere tale intervallo in <span class="math notranslate nohighlight">\(180\)</span> sotto-intervalli (in analogia con la scelta di <span class="math notranslate nohighlight">\(60\)</span>, per avere un numero elevato di divisori interi).</p>
+<p><strong>1731, de Réaumur.</strong> La definizione usa:</p>
+<ul class="simple">
+<li><p>estremo inferiore, <span class="math notranslate nohighlight">\(0 \, \text{°Re}\)</span>: temperatura di solidificazione dell’acqua a pressione ambiente</p></li>
+<li><p>estremo superiore, <span class="math notranslate nohighlight">\(80 \, \text{°Re}\)</span>: temperatura di ebollizione dell’acqua a temperatura ambiente. Perché 80 intervalli tra queste due condizioni? Perché il termometro costruito da Reaumur usava come principio fisico la dilatazione termica dell’etanolo, e il volume dell’etanolo varia dell’8% tra le due condizioni di riferimento scelte.</p></li>
 </ul>
-</li>
-<li><p>1731, de Réaumur:</p>
-<ul>
-<li><p>estremi: solidificazione (<span class="math notranslate nohighlight">\(0 \, \text{°Re}\)</span>) ed evaporazione (<span class="math notranslate nohighlight">\(80 \, \text{°Re}\)</span>) dell’acqua a temperatura ambiente. Perché 80 intervalli tra queste due condizioni? Perché il termometro costruito da Reaumur usava come principio fisico l’espansione dell’etanolo, e il volume dell’etanolo varia dell’8% tra le due condizioni di riferimento scelte.</p></li>
+<p><strong>1742, Celsius.</strong> E” la scala di temperatura empirica usata attualmente in tutto il mondo, ad eccezione degli Stati Uniti, la Liberia e le Isole Cayman che usano la scala Fahrenheit. Poteva forse la definizione originale coincidere con quella usata attualmente? Ovviamente no. La definizione originale di Celsius era invertita rispetto a quella attuale, e a tutte le scale usate allora (perché? Perché no, si potrebbe rispondere. Fatevi voi la vostra scala di temperatura!), ed usava:</p>
+<ul class="simple">
+<li><p>estremo inferiore, <span class="math notranslate nohighlight">\(0 \, \text{°C}\)</span>: temperatura di evaporazione dell’acqua a pressione ambiente</p></li>
+<li><p>estremo superiore, <span class="math notranslate nohighlight">\(100 \, \text{°C}\)</span>: temperatura di solidificazione dell’acqua a pressione ambiente.</p></li>
 </ul>
-</li>
-<li><p>1742, Celsius:</p>
-<ul>
-<li><p>estremi: solidificazione (<span class="math notranslate nohighlight">\(100 \, \text{°C}\)</span>) ed evaporazione (<span class="math notranslate nohighlight">\(0 \, \text{°C}\)</span>) dell’acqua a temperatura ambiente. Perché questa definizione «invertita» rispetto alle altre? Perché no, si potrebbe rispondere. Per rendere più pratica la misura e adeguarsi al verso delle altre scale, un anno dopo la morte di Celsius, la scala fu invertita da Linneo (<strong>todo</strong> lo stesso Linneo, biologo, che si dilettava con la classificazione di piante e animali, padre della classificazione scientifica degli organismi viventi, usata tuttora)</p></li>
-</ul>
-</li>
-</ul>
+<p>Per rendere più pratica la misura e adeguarsi al verso delle altre scale, un anno dopo la morte di Celsius, la scala fu invertita da <strong>Linneo</strong> (lo stesso Linneo, biologo, che si dilettava con la classificazione di piante e animali, padre della classificazione scientifica degli organismi viventi, usata tuttora).</p>
 </div>
 <div class="section" id="scala-termodinamica">
 <h3><span class="section-number">10.2.4.2. </span>Scala termodinamica<a class="headerlink" href="#scala-termodinamica" title="Permalink to this heading">#</a></h3>
 <p>Scala di temperatura assoluta</p>
 <ul class="simple">
-<li><p>Esperimenti sui gas, estrapolando i dati sperimentali delle <a class="reference internal" href="ideal-gas-experiments.html#physics-hs-thermodynamics-matter-gases-ideal-experiments-charles"><span class="std std-ref">leggi di Charles</span></a> e di <a class="reference internal" href="ideal-gas-experiments.html#physics-hs-thermodynamics-matter-gases-ideal-experiments-gay-lussac"><span class="std std-ref">Gay-Lussac</span></a></p></li>
-<li><p>1848, Kelvin <em>On an Absolute Thermometric Scale</em>.</p></li>
+<li><p><span style="color:red"> Esperimenti sui gas, estrapolando i dati sperimentali delle <a class="reference internal" href="ideal-gas-experiments.html#physics-hs-thermodynamics-matter-gases-ideal-experiments-charles"><span class="std std-ref">leggi di Charles</span></a> e di <a class="reference internal" href="ideal-gas-experiments.html#physics-hs-thermodynamics-matter-gases-ideal-experiments-gay-lussac"><span class="std std-ref">Gay-Lussac</span></a></span></p></li>
+<li><p><span style="color:red"> 1848, Kelvin <em>On an Absolute Thermometric Scale</em></span></p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Evaporazione ed ebollizione dell’acqua in funzione della pressione. Quanto cambia in funzione della pressione?</p>
+</div>
 <!-- Esercizi su scale di temperatura e dilatazione termica -->
 <div class="proof example admonition" id="example-2">
 <p class="admonition-title"><span class="caption-number">Example 10.3 </span> (Anello di Gravesande)</p>
@@ -605,11 +606,12 @@ successivamente si accorse che la solidificazione dell’acqua avveniva circa a 
 </div>
 <div class="section" id="teoria-cinetica-dei-gas">
 <h2><span class="section-number">10.2.6. </span>Teoria cinetica dei gas<a class="headerlink" href="#teoria-cinetica-dei-gas" title="Permalink to this heading">#</a></h2>
-<p>1738, D.Bernoulli <em>Hydrodynamica</em></p>
+<p>Nel 1738, D.Bernoulli pubblica la sua <em>Hydrodynamica</em> dove discute il moto dei fluidi e presenta un modello atomistico per la dinamica microscopica delle molecole di un gas, che costituisce uno dei primi contributi allo sviluppo della teoria cinetica dei gas e alla meccanica statistica, fornendo un legame tra la dinamica microscopica delle molecole del gas e le grandezze fisiche tipiche di una descrizione macroscopica del sistema, pressione e <span style="color:red"> temperatura <strong>todo</strong> <em>anche la temperatura</em>? </span></p>
+<p><span style="color:red"> dettagli </span></p>
 </div>
-<div class="section" id="calore-latente-e-calore-specifico">
-<h2><span class="section-number">10.2.7. </span>Calore latente e calore specifico<a class="headerlink" href="#calore-latente-e-calore-specifico" title="Permalink to this heading">#</a></h2>
-<p>1750-60, J.Black. I suoi studi sul calore aiutano a distinguere i concetti di temperatura e di calore <strong>todo</strong></p>
+<div class="section" id="calorimetria-calore-latente-e-calore-specifico">
+<h2><span class="section-number">10.2.7. </span>Calorimetria: calore latente e calore specifico<a class="headerlink" href="#calorimetria-calore-latente-e-calore-specifico" title="Permalink to this heading">#</a></h2>
+<p>Gli studi di <strong>J.Black</strong> attorno alla metà del XVIII secolo sul raggiungimento dell’equilibrio termico e sulle transizione di fase aiutano a distinguere i concetti di temperatura e di calore, sui quali c’era ancora confusione e nessuna teoria affermata soddisfacente.</p>
 <ul>
 <li><p>sistemi fisici sul quale non viene compiuto lavoro, scambiano tra di loro calore per raggiungere l’equilibrio termico</p>
 <ul>
@@ -635,14 +637,18 @@ Mettendo a contatto due sistemi che non manifestano cambiamenti di fase, isolati
 <li><p>i cambiamenti di fase avvengono a temperatura costante. Ad esempio, l’apporto di calore a un sistema in equilibrio contenente ghiaccio alla temperatura di solidificazione non ne fa aumentare la temperatura, ma la massa liquida. L’aumento della temperatura. Una volta completata la trasformazione di fase, l’apporto di calore causa una variazione di temperatura,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\delta Q = \begin{cases}
-      d m_{l} \, L_{sl}                 \quad &amp; , \quad {\delta m_l &lt; m} \\
-      d m_{l} \, L_{sl} + m \, c \, d T \quad &amp; , \quad {\delta m_l = m} \ .
+      d m_{l} \, L_{sl}                 \quad &amp; , \quad {d m_l &lt; m} \\
+    \ \ m_{l} \, L_{sl} + m \, c \, d T \quad &amp; , \quad {d m_l = m} \ .
     \end{cases}\end{split}\]</div>
 <p>Viene definito <strong>calore latente di fusione</strong> il coefficiente <span class="math notranslate nohighlight">\(L_{sl}\)</span> di proporzionalità tra il calore entrante nel sistema durante la trasformazione di fase e la quantità di massa liquefatta <span class="math notranslate nohighlight">\(\delta m_l\)</span>.</p>
 </li>
 </ul>
 <div class="proof example admonition" id="example-5">
-<p class="admonition-title"><span class="caption-number">Example 10.6 </span> (Caldo-freddo: temperatura e calore)</p>
+<p class="admonition-title"><span class="caption-number">Example 10.6 </span> (Esercizi calorimetria - …)</p>
+<div class="example-content section" id="proof-content">
+</div>
+</div><div class="proof example admonition" id="example-6">
+<p class="admonition-title"><span class="caption-number">Example 10.7 </span> (Caldo-freddo: temperatura e calore)</p>
 <div class="example-content section" id="proof-content">
 </div>
 </div></div>
@@ -660,10 +666,9 @@ Mettendo a contatto due sistemi che non manifestano cambiamenti di fase, isolati
 </div>
 <div class="section" id="lavoro-todo">
 <h2><span class="section-number">10.2.9. </span>Lavoro, … <strong>todo</strong><a class="headerlink" href="#lavoro-todo" title="Permalink to this heading">#</a></h2>
-<div class="margin sidebar">
-<p class="sidebar-title"></p>
-<p><strong>todo</strong><br> Diatriba sulla priorità sulla formulazione del principio di conservazione dell’energia: von Meyer; Joule; successivamente Hemlholtz; Tyndall - scienziato e uno dei primi alpinisti - uno dei pochi a riconoscere il contributo di von Meyer</p>
-</div>
+<!--```{margin}
+**todo**<br> Diatriba sulla priorità sulla formulazione del principio di conservazione dell'energia: von Meyer; Joule; successivamente Hemlholtz; Tyndall - scienziato e uno dei primi alpinisti - uno dei pochi a riconoscere il contributo di von Meyer
+```-->
 <ul class="simple">
 <li><p>Rivoluzione industriale</p></li>
 <li><p>1798, B.Thompson, <em>An Inquiry Concerning the Source of the Heat Which is Excited by Friction</em>, oggi può essere interpretato come un lavoro che identificava l’attrito come fenomeno di dissipazione dell’energia meccanica «utile»/»macroscopica» e della sua conversione in calore;</p></li>
@@ -774,7 +779,7 @@ Mettendo a contatto due sistemi che non manifestano cambiamenti di fase, isolati
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equilibrio-termico">10.2.5. Equilibrio termico</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoria-cinetica-dei-gas">10.2.6. Teoria cinetica dei gas</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calore-latente-e-calore-specifico">10.2.7. Calore latente e calore specifico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calorimetria-calore-latente-e-calore-specifico">10.2.7. Calorimetria: calore latente e calore specifico</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienze-sui-gas-ed-equazione-di-stato-dei-gas-perfetti">10.2.8. Esperienze sui gas, ed equazione di stato dei gas perfetti</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lavoro-todo">10.2.9. Lavoro, … <strong>todo</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formalismo-e-principi-della-termodinamica-classica">10.2.10. Formalismo e prìncipi della termodinamica classica</a></li>

@@ -48,7 +48,7 @@ Durante la rivoluzione scientifica del XVI-XVII secolo, la progettazione di stru
 
 - Gay-Lussac, 1808, discepolo di Berthollet
   - leggi dei gas
-  - studi con controllo del volume: osserva che $V$, $n$ sono proporzionali a parti pressione e temperatura; non formula una spiegazione fondata sulla teoria atomica, forse per timore del giudizio di Berthollet, più probabilmente per il disaccordo con le conclusioni sbagliate di Dalton sulla composizione dell'acqua
+  - studi con controllo del volume: osserva che $V$, $n$ sono proporzionali a pressione e temperatura costanti; non formula una spiegazione fondata sulla teoria atomica, forse per timore del giudizio di Berthollet, più probabilmente per il disaccordo con le conclusioni sbagliate di Dalton sulla composizione dell'acqua
 
 - Avogadro, 1811:
   - volumi di gas uguali nelle stesse condizioni di $T$, $P$ contengono lo stesso numero di molecole, anche tipi di gas diverso
