@@ -55,7 +55,7 @@ $$x = \frac{m_v}{m_a} = \frac{\rho_v}{\rho_a} = \frac{R_a \, T}{p_a} \frac{p_v}{
 
 ricordando che $p = p_v + p_a$
 
-### Umidità relativa, $\varphi$
+### Umidità relativa
 L'umidità relativa è il rapporto tra la massa di vapore $m_v$ contenuta nell'aria umida rispetto alla massa di vapore $m_{v,sat}$ che sarebbe contenuta nel sistema nella condizionie di saturazione alla stessa temperatura,
 
 $$\varphi = \frac{m_v}{m_{v,sat}}$$

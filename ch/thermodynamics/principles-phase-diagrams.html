@@ -454,10 +454,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagramma-di-stato-di-un-sistema-mono-componente">11.4.1. Diagramma di stato di un sistema mono-componente</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#piani-termodinamici">11.4.2. Piani termodinamici</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#piano-di-clapeyron-p-v">11.4.2.1. Piano di Clapeyron, P-V</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#piano-entropico-t-s">11.4.2.2. Piano entropico, T-S</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagramma-di-stato-di-un-sistema-mono-componente-gassoso">11.4.1. Diagramma di stato di un sistema mono-componente gassoso</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#piano-di-clapeyron-p-v">11.4.1.1. Piano di Clapeyron, P-V</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#piano-entropico-t-s">11.4.1.2. Piano entropico, T-S</a></li>
 </ul>
 </li>
 </ul>
@@ -473,30 +472,43 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="diagrammi-termodinamici">
 <span id="physics-hs-thermodynamics-foundation-principles-phase-diagrams"></span><h1><span class="section-number">11.4. </span>Diagrammi termodinamici<a class="headerlink" href="#diagrammi-termodinamici" title="Permalink to this heading">#</a></h1>
-<div class="section" id="diagramma-di-stato-di-un-sistema-mono-componente">
-<h2><span class="section-number">11.4.1. </span>Diagramma di stato di un sistema mono-componente<a class="headerlink" href="#diagramma-di-stato-di-un-sistema-mono-componente" title="Permalink to this heading">#</a></h2>
+<p>I diagrammi di fase forniscono degli strumenti per una rappresentazione grafica-geometrica dello stato e delle trasformazioni di un sistema termodinamico. A seconda del sistema considerato e delle condizioni alle quali è sottoposto, è utile usare un insieme specifico di variabili di stato indipendenti per rappresentare lo stato del sistema. Così, ad esempio:</p>
+<ul class="simple">
+<li><p>per sistemi impiegati nell’ambito delle macchine termiche a fluido, in generale determinati da <span class="math notranslate nohighlight">\(F=2\)</span> variabili di stato indipendenti, risulta utile rappresentare lo stato del sistema usando come coppia di variabili indipendenti <span class="math notranslate nohighlight">\(P\)</span>, <span class="math notranslate nohighlight">\(T\)</span> (piano di Clapeyron) o <span class="math notranslate nohighlight">\(T\)</span>, <span class="math notranslate nohighlight">\(S\)</span> (piano entropico), nei quali risultano evidenti per sistemi chiusi rispettivamente il lavoro o il calore scambiato con l’ambiente esterno;</p></li>
+<li><p>per l’aria umida e lo studio di sistemi di condizionamento o metereologia, determinati da <span class="math notranslate nohighlight">\(F=3\)</span> variabili di stato indipendenti, ma con <span class="math notranslate nohighlight">\(P\)</span> circa costante in un gran numero di applicazioni, risulta conveniente usare la coppia di variabili <span class="math notranslate nohighlight">\(H\)</span>, <span class="math notranslate nohighlight">\(x\)</span>  (diagramma di Mollier) per valori di pressione <span class="math notranslate nohighlight">\(P_0\)</span> dati;</p></li>
+<li><p><span style="color:red"> …<strong>todo</strong> piano per reazioni chimiche…</span></p></li>
+<li><p><span style="color:red"> …<strong>todo</strong> piano delle fasi in metallurgia, con fasi solide…</span></p></li>
+</ul>
+<p>Questa sezione si concentra su sistemi gassosi non reagenti monofase e sulla rappresentazione dello stato di tali sistemi nei piani di Clapeyron <span class="math notranslate nohighlight">\(P-V\)</span> e nel piano entropico <span class="math notranslate nohighlight">\(T-S\)</span>. L’uso del diagramma di Mollier viene rimandato alla sezione sull”<a class="reference internal" href="humid-air.html#physics-hs-thermodynamics-matter-humid-air"><span class="std std-ref">aria umida</span></a>, <span style="color:red"> dopo aver introdotto i potenziali termodinamici per i gas, e le miscele?</span></p>
+<div class="section" id="diagramma-di-stato-di-un-sistema-mono-componente-gassoso">
+<h2><span class="section-number">11.4.1. </span>Diagramma di stato di un sistema mono-componente gassoso<a class="headerlink" href="#diagramma-di-stato-di-un-sistema-mono-componente-gassoso" title="Permalink to this heading">#</a></h2>
 <p>Si consideri un sistema ad un componente, in grado di scambiare calore e con un unico modo di manifestare il lavoro reversibile interno al sistema, quello meccanico dovuto a un’espansione isotropa del volume, <span class="math notranslate nohighlight">\(\delta L^{int,rev} = P \, d V\)</span>.</p>
-<p><span style="color:red">Come applicarla? <span class="math notranslate nohighlight">\(P\)</span>, <span class="math notranslate nohighlight">\(T\)</span> e concentrazioni? In una rappresentazione 3D del diagramma di stato, la superficie di stato è una superficie 2D, anche durante le transizioni di fase: queste sono descritte dalla composizione delle fasi, come frazioni molari. Queste non sono contate come gradi di libertà? I <strong>gradi di libertà</strong> sono cons le proprietà termodinamiche <strong>intensive</strong> indipendenti, come P,T</span>
-Applicando la regola delle fasi di Gibbs,…</p>
-<p><span style="color:red">Diagramma 3D di sistema monocomponente</span></p>
-<ul class="simple">
-<li><p>regione di una superficie 2D: ha 2 gradi di libertà</p></li>
-<li><p>curva sulla superficie di stato, es: trasformazione termodinamica: ha un grado di libertà</p></li>
-<li><p>punto: stato TD determinato, es. punto triplo, eutettico: zero gradi di libertà</p></li>
-</ul>
-</div>
-<div class="section" id="piani-termodinamici">
-<h2><span class="section-number">11.4.2. </span>Piani termodinamici<a class="headerlink" href="#piani-termodinamici" title="Permalink to this heading">#</a></h2>
-<p><span style="color:red">Piani termodinamici: proiezioni 2D di un diagramma multi-dimensionale</span>
-Esempi:</p>
-<ul class="simple">
-<li><p>piano P-V, Clapeyron</p></li>
-<li><p>piano T-S, entropico</p></li>
-<li><p>piano H-S, Mollier</p></li>
-<li><p>…</p></li>
-</ul>
+<p>Un sistema chiuso monofase formato da un gas non reagente, ha un unico modo <span class="math notranslate nohighlight">\(W=1\)</span> di manifestare lavoro interno reversibile, il lavoro meccanico di compressione, <span class="math notranslate nohighlight">\(\delta L^{int,rev} = P dV\)</span>, in assenza di carica elettrica o altri meccanismi per compiere lavoro. Come conseguenza della <a class="reference internal" href="principles-gibbs-phase-rule.html#physics-hs-thermodynamics-foundation-principles-gibbs-phase-rule-gibbs-phase-rule"><span class="std std-ref">regola delle fasi di Gibbs</span></a>,</p>
+<div class="math notranslate nohighlight">
+\[F = C - P + W - 1 = 1 - 1 + 1 + 1 = 2 \ ,\]</div>
+<p>il sistema ha due gradi di libertà, <span class="math notranslate nohighlight">\(F=2\)</span>, cioè il suo stato è determinato da due variabili intensive indipendenti. Lo stato del sistema può quindi essere completamente rappresentato in uno spazio dimensionale, cioè in un piano di stato.
+Le due scelte discusse qui sono il piano di Clapeyron e il piano entropico.</p>
+<!--
+<span style="color:red">Come applicarla? $P$, $T$ e concentrazioni? In una rappresentazione 3D del diagramma di stato, la superficie di stato è una superficie 2D, anche durante le transizioni di fase: queste sono descritte dalla composizione delle fasi, come frazioni molari. Queste non sono contate come gradi di libertà? I **gradi di libertà** sono cons le proprietà termodinamiche **intensive** indipendenti, come P,T</span>
+Applicando la regola delle fasi di Gibbs,...
+
+<span style="color:red">Diagramma 3D di sistema monocomponente</span>
+
+- regione di una superficie 2D: ha 2 gradi di libertà
+- curva sulla superficie di stato, es: trasformazione termodinamica: ha un grado di libertà
+- punto: stato TD determinato, es. punto triplo, eutettico: zero gradi di libertà
+-->
+<!--
+## Piani termodinamici
+<span style="color:red">Piani termodinamici: proiezioni 2D di un diagramma multi-dimensionale</span>
+Esempi:
+- piano P-V, Clapeyron
+- piano T-S, entropico
+- piano H-S, Mollier
+- ...
+-->
 <div class="section" id="piano-di-clapeyron-p-v">
-<h3><span class="section-number">11.4.2.1. </span>Piano di Clapeyron, P-V<a class="headerlink" href="#piano-di-clapeyron-p-v" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">11.4.1.1. </span>Piano di Clapeyron, P-V<a class="headerlink" href="#piano-di-clapeyron-p-v" title="Permalink to this heading">#</a></h3>
 <p><strong>Lavoro.</strong>
 Nel caso di <strong>sistemi chiusi</strong> e <strong>processi ideali</strong>, il primo principio della termodinamica viene scritto</p>
 <div class="math notranslate nohighlight">
@@ -515,7 +527,7 @@ Nel caso di <strong>sistemi chiusi</strong> e <strong>processi ideali</strong>, 
 …</p>
 </div>
 <div class="section" id="piano-entropico-t-s">
-<h3><span class="section-number">11.4.2.2. </span>Piano entropico, T-S<a class="headerlink" href="#piano-entropico-t-s" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">11.4.1.2. </span>Piano entropico, T-S<a class="headerlink" href="#piano-entropico-t-s" title="Permalink to this heading">#</a></h3>
 <p>Nel caso di trasformazioni ideali, il calore entrante nel sistema può essere identificato con il termines</p>
 <div class="math notranslate nohighlight">
 \[\delta Q^{ext} = T \, d S - \underbrace{\delta^+ D}_{=0 \text{ ideal, rev.}} = T \, dS \ ..\]</div>
@@ -590,10 +602,9 @@ Nel caso di <strong>sistemi chiusi</strong> e <strong>processi ideali</strong>, 
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagramma-di-stato-di-un-sistema-mono-componente">11.4.1. Diagramma di stato di un sistema mono-componente</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#piani-termodinamici">11.4.2. Piani termodinamici</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#piano-di-clapeyron-p-v">11.4.2.1. Piano di Clapeyron, P-V</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#piano-entropico-t-s">11.4.2.2. Piano entropico, T-S</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagramma-di-stato-di-un-sistema-mono-componente-gassoso">11.4.1. Diagramma di stato di un sistema mono-componente gassoso</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#piano-di-clapeyron-p-v">11.4.1.1. Piano di Clapeyron, P-V</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#piano-entropico-t-s">11.4.1.2. Piano entropico, T-S</a></li>
 </ul>
 </li>
 </ul>

@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/foundation-vocabulary';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
@@ -452,8 +454,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grandezze-intensive-estensive-specifiche">10.4.1. Grandezze intensive, estensive, specifiche</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grandezze-fisiche">10.4.2. Grandezze fisiche</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grandezze-fisiche">10.4.1. Grandezze fisiche</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grandezze-intensive-estensive-specifiche">10.4.2. Grandezze intensive, estensive, specifiche</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-ambiente-esterno">10.4.3. Sistema, ambiente esterno</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-aperto-chiuso-isolato">10.4.4. Sistema aperto/chiuso, isolato,…</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equilibrio-termodinamico">10.4.5. Equilibrio termodinamico</a></li>
@@ -471,11 +473,8 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="concetti-in-termodinamica">
 <span id="physics-hs-thermodynamics-foundation-vocabulary"></span><h1><span class="section-number">10.4. </span>Concetti in termodinamica<a class="headerlink" href="#concetti-in-termodinamica" title="Permalink to this heading">#</a></h1>
-<div class="section" id="grandezze-intensive-estensive-specifiche">
-<h2><span class="section-number">10.4.1. </span>Grandezze intensive, estensive, specifiche<a class="headerlink" href="#grandezze-intensive-estensive-specifiche" title="Permalink to this heading">#</a></h2>
-</div>
 <div class="section" id="grandezze-fisiche">
-<h2><span class="section-number">10.4.2. </span>Grandezze fisiche<a class="headerlink" href="#grandezze-fisiche" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">10.4.1. </span>Grandezze fisiche<a class="headerlink" href="#grandezze-fisiche" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><strong>Energia.</strong> Capacità di compiere lavoro</p></li>
 <li><p><strong>Lavoro.</strong></p></li>
@@ -486,6 +485,21 @@ document.write(`
 <li><p><strong>Entropia.</strong></p></li>
 <li><p>…</p></li>
 </ul>
+</div>
+<div class="section" id="grandezze-intensive-estensive-specifiche">
+<h2><span class="section-number">10.4.2. </span>Grandezze intensive, estensive, specifiche<a class="headerlink" href="#grandezze-intensive-estensive-specifiche" title="Permalink to this heading">#</a></h2>
+<p>Una <strong>variabile intensiva</strong> è indipdendente dalla dimensione del sistema. Una <strong>variabile estensiva</strong> è additiva per i sottosistemi (<strong>todo</strong> <em>controllare l’equivalenza estensiva <span class="math notranslate nohighlight">\(\equiv\)</span> additiva</em>). Se una variabile può essere espressa come funzione di una serie di variabili indipendenti intensive <span class="math notranslate nohighlight">\(\{a_i\}\)</span> ed estensive <span class="math notranslate nohighlight">\(\{A_k\}\)</span>, una variabile intensiva è rappresentata da una funzione omogena di grado 0</p>
+<div class="math notranslate nohighlight">
+\[F(\{a_i\},\{\lambda \, A_k\}) = F(\{a_i\}, \{A_k\})\]</div>
+<p>mentre una variabile estensiva è rappresentata da una funzione omogenea di grado 1 rispetto alle variabili estensive <span class="math notranslate nohighlight">\(A_k\)</span></p>
+<div class="math notranslate nohighlight">
+\[F(\{a_i\},\{\lambda \, A_k\}) = \lambda F(\{a_i\}, \{A_k\})\]</div>
+<p>Alcuni esempi di variabili intensive ed estensive:</p>
+<ul class="simple">
+<li><p>intensive: temperatura, pressione, sforzo, potenziale chimico, potenziale elettrico, magnetizzazione,…</p></li>
+<li><p>estensive: quantità di sostanza (moli), massa, volume, energia, carica elettrica, momento magnetico,…</p></li>
+</ul>
+<p>Le <strong>variabili specifiche</strong> sono ricavate come rapporto tra due variabili estensive. Come casi comuni, il denominatore è la massa del sistema o il volume del sistema. Le variaibli specifiche sono variabili intensive. Alcuni esempi di variabili specifiche sono: volume specifico (inverso della densità), energia specifica, entropia specifica, capacità termica specifica,…</p>
 </div>
 <div class="section" id="sistema-ambiente-esterno">
 <h2><span class="section-number">10.4.3. </span>Sistema, ambiente esterno<a class="headerlink" href="#sistema-ambiente-esterno" title="Permalink to this heading">#</a></h2>
@@ -579,8 +593,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grandezze-intensive-estensive-specifiche">10.4.1. Grandezze intensive, estensive, specifiche</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grandezze-fisiche">10.4.2. Grandezze fisiche</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grandezze-fisiche">10.4.1. Grandezze fisiche</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grandezze-intensive-estensive-specifiche">10.4.2. Grandezze intensive, estensive, specifiche</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-ambiente-esterno">10.4.3. Sistema, ambiente esterno</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-aperto-chiuso-isolato">10.4.4. Sistema aperto/chiuso, isolato,…</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equilibrio-termodinamico">10.4.5. Equilibrio termodinamico</a></li>
