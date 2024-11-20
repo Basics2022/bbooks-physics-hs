@@ -1,5 +1,5 @@
 (physics-hs:thermodynamics:foundation:principles:gibbs-phase-rule)=
-# Gibbs: energia libera, regola delle fasi e funzioni multi-variabili
+# Gibbs: energia interna, regola delle fasi e funzioni multi-variabili
 
 ## Variabili di stato
 ```{prf:definition} Variabile di stato

@@ -70,7 +70,8 @@ parts:
     - file: ch/thermodynamics/foundation-history
     - file: ch/thermodynamics/foundation-experiments
     - file: ch/thermodynamics/foundation-atomic-theory
-    - file: ch/thermodynamics/foundation-problems
+    - file: ch/thermodynamics/foundation-vocabulary
+#   - file: ch/thermodynamics/foundation-problems
   - file: ch/thermodynamics/principles
     sections:
     - file: ch/thermodynamics/principles-lavoisier

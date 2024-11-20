@@ -37,6 +37,8 @@ Durante la rivoluzione scientifica del XVI-XVII secolo, la progettazione di stru
 - D.Bernoulli, *Hydrodynamica*, 1738: 
   - primo modello matematico nella teoria cinetica dei gas: gas costituiti da particelle libere di muoversi: la pressione è il risultato degli urti delle particelle sulle pareti del contenitore.
 
+- J.Black, 1750-1760: studi di calorimetria: calore specifico e calore latente
+
 - A.Lavoisier, fine '700, uno dei più influenti chimici della storia:
   - misura del peso nelle indagini di chimica: **conservazione della massa** in fisica classica
   - altro valido argomento a sostegno della teoria atomistica: le sostanze sono formate da particelle elementari che si combinano a formare diverse sostanze; nelle reazioni chimiche, reagenti e prodotti hanno la stessa massa ($Hg \, O \rightarrow Hg \, + \, \frac{1}{2} O_2$)

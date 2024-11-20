@@ -71,7 +71,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
     <link rel="next" title="11.1. Principio di Lavoisier" href="principles-lavoisier.html" />
-    <link rel="prev" title="10.4. Problemi" href="foundation-problems.html" />
+    <link rel="prev" title="10.4. Concetti in termodinamica" href="foundation-vocabulary.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -234,13 +234,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="foundation-history.html">10.1. Breve storia della termodinamica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="foundation-experiments.html">10.2. Esperienze ed esperimenti</a></li>
 <li class="toctree-l2"><a class="reference internal" href="foundation-atomic-theory.html">10.3. Termodinamica e teoria atomica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="foundation-problems.html">10.4. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foundation-vocabulary.html">10.4. Concetti in termodinamica</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">11. Princìpi della termodinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="principles-lavoisier.html">11.1. Principio di Lavoisier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principles-first.html">11.2. Primo principio della termodinamica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="principles-gibbs-phase-rule.html">11.3. Gibbs: energia libera, regola delle fasi e funzioni multi-variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="principles-gibbs-phase-rule.html">11.3. Gibbs: energia interna, regola delle fasi e funzioni multi-variabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principles-phase-diagrams.html">11.4. Diagrammi termodinamici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principles-second.html">11.5. Secondo principio della termodinamica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principles-open.html">11.6. Sistemi aperti</a></li>
@@ -457,23 +457,22 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="principi-della-termodinamica">
 <span id="physics-hs-thermodynamics-foundation-principles"></span><h1><span class="section-number">11. </span>Princìpi della termodinamica<a class="headerlink" href="#principi-della-termodinamica" title="Permalink to this heading">#</a></h1>
-<p>In questo capitolo vengono presentati i princìpi della termodinamica classica e i concetti utili per formularli. Ricordando che la termodinamica classica fornisce una descrizione macroscopica mediata della dinamica microscopica di sistemi composti da molti componenti elementari, il livello di dettaglio microscopico può essere usato per fornire un significato alle variabili termodinamiche usate nella descrizione macroscopica.</p>
-<p>I princìpi della termodinamica vengono introdotti per sistemi chiusi, e successivamente estesi ai sistemi aperti. Per un sistema chiuso,</p>
-<ul>
-<li><p><strong>principio di conservazione della massa - di Lavoisier</strong> valido in meccanica classica, asserisce che in un sistema chiuso la massa è costante,</p>
+<p>In questo capitolo vengono presentati i princìpi della termodinamica classica, i concetti e il formalismo matematico utili per formularli.
+I princìpi della termodinamica vengono introdotti per <strong>sistemi chiusi</strong>, e successivamente estesi ai sistemi aperti.</p>
+<!--
+Ricordando che la termodinamica classica fornisce una descrizione macroscopica mediata della dinamica microscopica di sistemi composti da molti componenti elementari, il livello di dettaglio microscopico può essere usato per fornire un significato alle variabili termodinamiche usate nella descrizione macroscopica.
+-->
+<p>Il <a class="reference internal" href="principles-lavoisier.html#physics-hs-thermodynamics-foundation-principles-lavoisier"><span class="std std-ref"><strong>principio di conservazione della massa - di Lavoisier</strong></span></a> valido in meccanica classica, riassumibile con la formula <em>«nulla si crea, nulla si distrugge, ma tutto si trasforma»</em>, asserisce che in un sistema chiuso la massa è costante,</p>
 <div class="math notranslate nohighlight">
-\[d M = 0 \ ,\]</div>
-<p>ed è riassumibile con la formula <em>«nulla si crea, nulla si distrugge ma tutto si trasforma»</em></p>
-</li>
-<li><p><strong>primo principio della termodinamica</strong> fornisce la forma generale del bilancio dell’energia <em>totale</em> di un sistema chiuso,</p>
+\[d M = 0 \ .\]</div>
+<p>Il <a class="reference internal" href="principles-first.html#physics-hs-thermodynamics-foundation-principles-first"><span class="std std-ref"><strong>primo principio della termodinamica</strong></span></a> fornisce la forma generale del bilancio dell’energia <em>totale</em> di un sistema chiuso, riconoscendo il lavoro delle forze esterne <span class="math notranslate nohighlight">\(\delta L^{ext}\)</span> e il calore <span class="math notranslate nohighlight">\(\delta Q^{ext}\)</span> scambiato dal sistema con l’ambiente esterno come le cause della variazione dell’energia totale del sistema.</p>
 <div class="math notranslate nohighlight">
-\[d E^{tot} = \delta L^{ext} + \delta Q^{ext} \ ,\]</div>
-<p>riconoscendo il lavoro delle forze esterne <span class="math notranslate nohighlight">\(\delta L^{ext}\)</span> o il calore «entrante» nel sistema <span class="math notranslate nohighlight">\(\delta Q^{ext}\)</span> come cause della variazione dell’energia totale del sistema.</p>
-</li>
-<li><p>definizione di energia interna, delle variabili di stato di un sistema,…Gibbs, con gli strumenti matematici delle funzioni e del calcolo multi-variabile</p></li>
-<li><p><strong>secondo principio della termodinamica</strong> traduce le tendenze naturali osservate: la dissipazione dell’energia meccanica macroscopica, la trasmissione del calore da un corpo caldo a un corpo freddo. Formulazione in termini di entropia, definizione della temperatura.</p></li>
-</ul>
-<p>Infine, si ricavano i bilanci delle quantità fisiche per sistemi aperti, introducendo i termini di flusso dovuti al trasporto di materia attraverso la frontiera del sistema.</p>
+\[d E^{tot} = \delta L^{ext} + \delta Q^{ext} \ .\]</div>
+<p>L’opera di <strong>Gibbs</strong> fornisce <a class="reference internal" href="principles-gibbs-phase-rule.html#physics-hs-thermodynamics-foundation-principles-gibbs-phase-rule"><span class="std std-ref"><strong>i concetti necessari e una formalizzazione matematica</strong></span></a> rigorosa della termodinamica classica. Vengono introdotti i concetti di energia interna, variabile di stato, la regola delle fasi di Gibbs; vengono poi presentati alcuni <a class="reference internal" href="principles-phase-diagrams.html#physics-hs-thermodynamics-foundation-principles-phase-diagrams"><span class="std std-ref">diagrammi di fase</span></a> per la rappresentazione dello stato di un sistema e le trasformazioni termodinamiche e che verranno utilizzati nei capitoli successivi.</p>
+<p>Il <a class="reference internal" href="principles-second.html#physics-hs-thermodynamics-foundation-principles-second"><span class="std std-ref"><strong>secondo principio della termodinamica</strong></span></a> traduce le tendenze naturali: la dissipazione dell’energia meccanica macroscopica e la trasmissione del calore da un corpo caldo a un corpo freddo, in un principio formulabile in termini di <strong>entropia</strong>,</p>
+<div class="math notranslate nohighlight">
+\[d S \le \frac{\partial Q}{T} \ .\]</div>
+<p>Infine, i bilanci delle quantità fisiche per <a class="reference internal" href="principles-open.html#physics-hs-thermodynamics-foundation-principles-open"><span class="std std-ref"><strong>sistemi aperti</strong></span></a> vengono ricavati modificando i bilanci per sistemi chiusi, introducendo i termini di <strong>flusso delle grandezze fisiche dovuti al trasporto di materia</strong> attraverso la frontiera del sistema.</p>
 <!--
 <span style="color:red">Sistemare come presentazione! I contenuti vengono divisi nelle sezioni successive.</span>
 
@@ -554,12 +553,12 @@ $$T = \left(\dfrac{\partial E}{\partial S}\right)_{\mathbf{X}} \ge 0 \ .$$
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="foundation-problems.html"
+       href="foundation-vocabulary.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">10.4. </span>Problemi</p>
+        <p class="prev-next-title"><span class="section-number">10.4. </span>Concetti in termodinamica</p>
       </div>
     </a>
     <a class="right-next"

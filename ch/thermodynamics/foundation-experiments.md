@@ -2,7 +2,7 @@
 # Esperienze ed esperimenti
 
 ## Esperienza di Torricelli 
-Torricelli dimostrò che[^torricelli]
+Torricelli dimostra che[^torricelli]
 
 > "viviamo sul fondo di un oceano d'aria, la quale [...] si sa che pesa, e tanto"
 
