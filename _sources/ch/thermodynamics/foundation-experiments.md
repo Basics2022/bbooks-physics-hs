@@ -145,8 +145,8 @@ Gli studi di **J.Black** attorno alla metà del XVIII secolo sul raggiungimento 
 - i cambiamenti di fase avvengono a temperatura costante. Ad esempio, l'apporto di calore a un sistema in equilibrio contenente ghiaccio alla temperatura di solidificazione non ne fa aumentare la temperatura, ma la massa liquida. L'aumento della temperatura. Una volta completata la trasformazione di fase, l'apporto di calore causa una variazione di temperatura,
 
     $$\delta Q = \begin{cases}
-      d m_{l} \, L_{sl}                 \quad & , \quad {\delta m_l < m} \\
-      d m_{l} \, L_{sl} + m \, c \, d T \quad & , \quad {\delta m_l = m} \ .
+      d m_{l} \, L_{sl}                 \quad & , \quad {d m_l < m} \\
+      \ m_{l} \, L_{sl} + m \, c \, d T \quad & , \quad {d m_l = m} \ .
     \end{cases}$$
 
     Viene definito **calore latente di fusione** il coefficiente $L_{sl}$ di proporzionalità tra il calore entrante nel sistema durante la trasformazione di fase e la quantità di massa liquefatta $\delta m_l$.
