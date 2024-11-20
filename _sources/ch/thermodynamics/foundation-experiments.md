@@ -67,17 +67,17 @@ Una scala empirica di temperatura viene definita usando due condizioni facilment
 <!--
 Metodo generale per la definizione delle scale di temperatura: scelta di due temperature di riferimento, facilmente riproducibili nei limiti di errori tollerati; suddivisione in parti uguali dell'intervallo ed estensione oltre questi limiti, tipicamente in 100 o 60 (o suoi multipli) parti.
 -->
-**1702, Romer.** Definizione originale:
+**1702, Romer.** La definizione originale usava:
   - estremo inferiore,  $0 \, \text{°Ro}$: temperatura eutettica del cloruro di ammonio, temperatura caratteristica di una sostanza molto comune nei laboratori dell'epoca;
   - estremo superiore, $60 \, \text{°Ro}$: temperatura di ebollizione dell'acqua a pressione ambiente
 
 Successivamente la definizione della scala fu modificata per evitare di usare il cloruro di ammonio, rendere più facile la taratura dello strumento, e per uniformarsi alle scelte fatte da altri, accortosi che la solidificazione dell'acqua avveniva circa a $7.5 \, \text{°Ro}$ si decise di usare questa condizione per definire l'estremo inferiore: l'estremo inferiore della scala Romer, $7.5 \, \text{°Ro}$, corrisponde alla solidificazione dell'acqua a pressione ambiente.
 
-**1709-15, Fahrenheit** Dopo aver fatto visita a Romer, si dedicò alla progettazione e alla realizzazione di strumenti di misura di pressione e temperatura.
-  - definizione originale della scala:
-    - estremo inferiore,   $0 \, \text{°F}$: temperatura eutettica del cloruro di ammonio; le malelingue sostengono la temperatura più bassa registrata negli inverni di Danzica, città allora prussiana in cui viveva mentre metteva a punto gli strumenti
-    - estremo superiore,   $96 \, \text{°F}$: temperatura media del corpo umano
-  - le scelte rocambolesche e definite in maniera imprecisa non costituivano delle condizioni facilmente replicabili per la costruzione e/o taratura di nuovi strumenti. Vennero scelte quindi le condizioni di solidificazione ($32 \, \text{°F}$) e di evaporazione ($212 \, \text{°F}$) dell'acqua a pressione ambiente al livello del mare, in modo tale da suddividere tale intervallo in 180 sotto-intervalli
+**1709-15, Fahrenheit** Dopo aver fatto visita a Romer, si dedicò alla progettazione e alla realizzazione di strumenti di misura di pressione e temperatura. La definizione originale della scala usava:
+  - estremo inferiore,   $0 \, \text{°F}$: temperatura eutettica del cloruro di ammonio; le malelingue sostengono la temperatura più bassa registrata negli inverni di Danzica, città allora prussiana in cui viveva mentre metteva a punto gli strumenti
+  - estremo superiore,   $96 \, \text{°F}$: temperatura media del corpo umano
+
+Le scelte rocambolesche e definite in maniera imprecisa non costituivano delle condizioni facilmente replicabili per la costruzione e/o taratura di nuovi strumenti. Vennero scelte quindi le condizioni di solidificazione ($32 \, \text{°F}$) e di evaporazione ($212 \, \text{°F}$) dell'acqua a pressione ambiente al livello del mare, in modo tale da suddividere tale intervallo in 180 sotto-intervalli
 - 1731, de Réaumur:
   - estremi: solidificazione ($0 \, \text{°Re}$) ed evaporazione ($80 \, \text{°Re}$) dell'acqua a temperatura ambiente. Perché 80 intervalli tra queste due condizioni? Perché il termometro costruito da Reaumur usava come principio fisico l'espansione dell'etanolo, e il volume dell'etanolo varia dell'8% tra le due condizioni di riferimento scelte.
 - 1742, Celsius:
