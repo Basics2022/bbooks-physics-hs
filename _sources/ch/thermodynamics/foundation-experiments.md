@@ -67,12 +67,11 @@ Una scala empirica di temperatura viene definita usando due condizioni facilment
 <!--
 Metodo generale per la definizione delle scale di temperatura: scelta di due temperature di riferimento, facilmente riproducibili nei limiti di errori tollerati; suddivisione in parti uguali dell'intervallo ed estensione oltre questi limiti, tipicamente in 100 o 60 (o suoi multipli) parti.
 -->
-**1702, Romer.**
-- Definizione originale:
+**1702, Romer.** Definizione originale:
   - estremo inferiore,  $0 \, \text{°Ro}$: temperatura eutettica del cloruro di ammonio, temperatura caratteristica di una sostanza molto comune nei laboratori dell'epoca;
-  - estremo superiore, $60 \, \text{°Ro}$: temperatura di ebollizione dell'acqua
-- Modifiche successive:
-  per evitare di usare il cloruro di ammonio, e per uniformarsi alle scelte fatte da altri, accortosi che la solidificazione dell'acqua avveniva circa a $7.5 \, \text{°Ro}$ si decise di usare questa condizione per definire l'estremo inferiore, in modo tale da rendere più facile la taratura dello strumento
+  - estremo superiore, $60 \, \text{°Ro}$: temperatura di ebollizione dell'acqua a pressione ambiente
+
+Successivamente la definizione della scala fu modificata per evitare di usare il cloruro di ammonio, rendere più facile la taratura dello strumento, e per uniformarsi alle scelte fatte da altri, accortosi che la solidificazione dell'acqua avveniva circa a $7.5 \, \text{°Ro}$ si decise di usare questa condizione per definire l'estremo inferiore: l'estremo inferiore della scala Romer, $7.5 \, \text{°Ro}$, corrisponde alla solidificazione dell'acqua a pressione ambiente.
 
 **1709-15, Fahrenheit** Dopo aver fatto visita a Romer, si dedicò alla progettazione e alla realizzazione di strumenti di misura di pressione e temperatura.
   - definizione originale della scala:
@@ -88,6 +87,9 @@ Metodo generale per la definizione delle scale di temperatura: scelta di due tem
 Scala di temperatura assoluta
 - Esperimenti sui gas, estrapolando i dati sperimentali delle [leggi di Charles](physics-hs:thermodynamics:matter:gases:ideal:experiments:charles) e di [Gay-Lussac](physics-hs:thermodynamics:matter:gases:ideal:experiments:gay-lussac)
 - 1848, Kelvin *On an Absolute Thermometric Scale*.
+
+```{note} Evaporazione ed ebollizione dell'acqua in funzione della pressione
+```
 
 <!-- Esercizi su scale di temperatura e dilatazione termica -->
 ```{prf:example} Anello di Gravesande
