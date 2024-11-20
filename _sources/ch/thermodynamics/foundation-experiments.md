@@ -26,9 +26,9 @@ valida per un sistema chiuso a temperatura $T$ costante. Al tempo delle attivit�
 
 <span style="color:red"> **todo** dettagli dell'esperimento </span>
 
-```{prf:example} **todo** 1
+```{prf:example} **todo** Esercizi su manometro di Torricelli
 ```
-```{prf:example} **todo** 2
+```{prf:example} **todo** Esercizi su legge di Boyle
 ```
 
 ## Dilatazione sostanze
@@ -56,8 +56,9 @@ Possiamo quindi interpretare l'esperienza riguardo alla dilatazione lineare dell
 ```
 
 ## Scale di temperatura
-- Scale empiriche: costruite con scelte arbitrarie senza nessun significato fisico profondo
-- Scala termodinamica: la temperatura assoluta è direttamente legata all'agitazione dei componenti elementari della materia
+Le esperienze sulla dilatazione dei corpi conducono alla definizione delle **scale empiriche** di temperatura: assunta la linearità del fenomeno, una scala di temperatura viene definita da due condizioni facilmente replicabili in laboratorio per la costruzione/taratura degli strumenti, e che permettono di determinare una temperatura di riferimento da usare come origine e un'unità di misura che determini l'ampiezza del grado della scala di temperatura.
+
+Mentre le scale di temperatura empiriche vengono sviluppate nella prima metà del XVIII secolo, nel XIX secolo un'approfondita comprensione della materia permette di definire una **scala termodinamica** per la **temperatura assoluta** come grandezza fisica, manifestazione macrsocopica dello stato "di agitazione" a livello microscopico dei componenti elementari della materia.
 
 ### Scale empiriche
 Metodo generale per la definizione delle scale di temperatura: scelta di due temperature di riferimento, facilmente riproducibili nei limiti di errori tollerati; suddivisione in parti uguali dell'intervallo ed estensione oltre questi limiti, tipicamente in 100 o 60 (o suoi multipli) parti.
