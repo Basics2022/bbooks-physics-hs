@@ -63,10 +63,13 @@ Possiamo quindi interpretare l'esperienza riguardo alla dilatazione lineare dell
 <span style="color:red"> spostare termodinamica e teoria atomica all'inizio dell'introduzione, $\sim$ Feynman?</span>
 
 ### Scale empiriche
+Una scala empirica di temperatura viene definita usando due condizioni facilmente replicabili in laboratorio per definire l'origine della scala e l'ampiezza del grado. Così, nella prima metà del XVIII secolo vennero definite alcune scale di temperatura
+<!--
 Metodo generale per la definizione delle scale di temperatura: scelta di due temperature di riferimento, facilmente riproducibili nei limiti di errori tollerati; suddivisione in parti uguali dell'intervallo ed estensione oltre questi limiti, tipicamente in 100 o 60 (o suoi multipli) parti.
-- 1702, Romer:
-  - estremo inferiore,  $0 \, \text{°Ro}$: temperatura eutettica del cloruro di ammonio;
-  - estremo superiore, $60 \, \text{°Ro}$: temperatura di ebollizione dell'acqua
+-->
+**1702, Romer.**
+- estremo inferiore,  $0 \, \text{°Ro}$: temperatura eutettica del cloruro di ammonio, temperatura caratteristica di una sostanza molto comune nei laboratori dell'epoca;
+- estremo superiore, $60 \, \text{°Ro}$: temperatura di ebollizione dell'acqua
   successivamente si accorse che la solidificazione dell'acqua avveniva circa a $7.5 \, \text{°Ro}$ e decise di usare questa condizione per definire l'estremo inferiore, in modo tale da rendere più facile la taratura dello strumento
 - 1709-15, Fahrenheit:
   - definizione originale della scala:
