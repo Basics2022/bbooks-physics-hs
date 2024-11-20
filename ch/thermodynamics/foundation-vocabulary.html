@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>10. Introduzione alla termodinamica &#8212; Fisica per le superiori</title>
+    <title>10.5. Concetti in termodinamica &#8212; Fisica per le superiori</title>
   
   
   
@@ -65,11 +65,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/foundation';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/foundation-vocabulary';</script>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="10.1. Breve storia della termodinamica" href="foundation-history.html" />
-    <link rel="prev" title="9.6. Gravitazione" href="../mechanics/dynamics-motion-gravitation.html" />
+    <link rel="next" title="11. Princìpi della termodinamica" href="principles.html" />
+    <link rel="prev" title="10.4. Problemi" href="foundation-problems.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -228,12 +228,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Termodinamica</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">10. Introduzione alla termodinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="foundation.html">10. Introduzione alla termodinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="foundation-history.html">10.1. Breve storia della termodinamica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="foundation-experiments.html">10.2. Esperienze ed esperimenti</a></li>
 <li class="toctree-l2"><a class="reference internal" href="foundation-atomic-theory.html">10.3. Termodinamica e teoria atomica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="foundation-problems.html">10.4. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="foundation-vocabulary.html">10.5. Concetti in termodinamica</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">10.5. Concetti in termodinamica</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="principles.html">11. Princìpi della termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -358,7 +358,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/thermodynamics/foundation.md" target="_blank"
+      <li><a href="../../_sources/ch/thermodynamics/foundation-vocabulary.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -429,7 +429,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -440,11 +442,24 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introduzione alla termodinamica</h1>
+    <h1>Concetti in termodinamica</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grandezze-intensive-estensive-specifiche">10.5.1. Grandezze intensive, estensive, specifiche</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grandezze-fisiche">10.5.2. Grandezze fisiche</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-ambiente-esterno">10.5.3. Sistema, ambiente esterno</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-aperto-chiuso-isolato">10.5.4. Sistema aperto/chiuso, isolato,…</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equilibrio-termodinamico">10.5.5. Equilibrio termodinamico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-semplice-composto">10.5.6. Sistema semplice/composto</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -454,75 +469,50 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="introduzione-alla-termodinamica">
-<span id="physics-hs-thermodynamics-foundation"></span><h1><span class="section-number">10. </span>Introduzione alla termodinamica<a class="headerlink" href="#introduzione-alla-termodinamica" title="Permalink to this heading">#</a></h1>
-<p>La termodinamica è la branca della fisica che si occupa dell’energia, della trasformazione tra le varie forme di energia e dei meccanismi che permettono di variare l’energia di un sistema.</p>
-<p>La termodinamica classica fornisce una descrizione macroscopica, media, di sistemi complessi costituiti da un gran numero di componenti elementari a livello microscopico: un <a class="reference internal" href="../thermodynamics.html"><span class="doc std std-doc"><strong>modello atomistico</strong></span></a> della materia fornisce una descrizione di dettaglio a livello microscopico, questo modello contiene molte più informazioni di quelle necessarie in molti ambiti, e risulta non pratico; la <strong>termodinamica classica</strong> fornisce una descrizione macroscopica, la <a class="reference internal" href="../thermodynamics.html"><span class="doc std std-doc"><strong>meccanica statistica</strong></span></a> fornisce il ponte tra le due descrizioni</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Feynman e la teoria atomica<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">La prima lezione<a class="footnote-reference brackets" href="#feynman-atomic" id="id1">1</a> di fisica delle lezioni di fisica di Feynman, <em>The Feynman Lectures on Physics, Volume I</em> <a class="footnote-reference brackets" href="#feynman" id="id2">2</a> riguarda la teoria atomica. Feynman riconosce il ruolo fondamentale della teoria atomica nella scienza,</p>
-<blockquote>
-<div><p class="sd-card-text">If, in some cataclysm, all of scientific knowledge were to be destroyed, and only one sentence passed on to the next generations of creatures, what statement would contain the most information in the fewest words? I believe it is the atomic hypothesis (or the atomic fact, or whatever you wish to call it) that all things are made of atoms—little particles that move around in perpetual motion, attracting each other when they are a little distance apart, but repelling upon being squeezed into one another. In that one sentence, you will see, there is an enormous amount of information about the world, if just a little imagination and thinking are applied.</p>
-</div></blockquote>
+  <div class="tex2jax_ignore mathjax_ignore section" id="concetti-in-termodinamica">
+<span id="physics-hs-thermodynamics-foundation-vocabulary"></span><h1><span class="section-number">10.5. </span>Concetti in termodinamica<a class="headerlink" href="#concetti-in-termodinamica" title="Permalink to this heading">#</a></h1>
+<div class="section" id="grandezze-intensive-estensive-specifiche">
+<h2><span class="section-number">10.5.1. </span>Grandezze intensive, estensive, specifiche<a class="headerlink" href="#grandezze-intensive-estensive-specifiche" title="Permalink to this heading">#</a></h2>
 </div>
-</details><p>La termodinamica classica costituisce una teoria fisica macroscopica per sistemi complessi in equilibrio statistico, almeno locale, in termini di grandezze fisiche macroscopiche:</p>
+<div class="section" id="grandezze-fisiche">
+<h2><span class="section-number">10.5.2. </span>Grandezze fisiche<a class="headerlink" href="#grandezze-fisiche" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>come ad esempio pressione, temperatura, energia interna, calore, entropia,… che possano essere facilmente misurate</p></li>
-<li><p>che permettano di descrivere lo stato macroscopico di un sistema con un numero ristretto di variabili</p></li>
-<li><p>che permettano di formulare una teoria matematica consistente, partendo da alcuni princìpi fondamentali in accordo con l’esperienza sperimentale</p></li>
+<li><p><strong>Energia.</strong> Capacità di compiere lavoro</p></li>
+<li><p><strong>Lavoro.</strong></p></li>
+<li><p><strong>Calore.</strong></p></li>
+<li><p><strong>Temperatura.</strong></p></li>
+<li><p><strong>Pressione.</strong></p></li>
+<li><p><strong>Massa.</strong></p></li>
+<li><p><strong>Entropia.</strong></p></li>
+<li><p>…</p></li>
 </ul>
-<p><strong>Contenuti.</strong></p>
-<p>Questa <strong>introduzione</strong> alla materia presenta parte da una <a class="reference internal" href="foundation-history.html#physics-hs-thermodynamics-foundation-history"><span class="std std-ref">breve cronologia</span></a> delle esperienze rilevanti per lo sviluppo della termodinamica classica; segue la discussione in dettaglio alcune di queste <a class="reference internal" href="foundation-experiments.html#physics-hs-thermodynamics-foundation-experiments"><span class="std std-ref">esperienze</span></a>, utili poi per formulare la teoria e i modelli; una breve descrizione del <a class="reference internal" href="foundation-atomic-theory.html#physics-hs-thermodynamics-foundation-atomic-theory"><span class="std std-ref">modello atomico</span></a> della materia conclude l’introduzione.</p>
-<p>Le sezioni successive entrano nei dettagli:</p>
+</div>
+<div class="section" id="sistema-ambiente-esterno">
+<h2><span class="section-number">10.5.3. </span>Sistema, ambiente esterno<a class="headerlink" href="#sistema-ambiente-esterno" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>principi della termodinamica classica (conservazione massa, bilancio di energia totale, irreversibilità,…); sviluppo di una teoria matematica (Gibbs)</p></li>
-<li><p>modelli dei sistemi: equazioni di stato</p></li>
-<li><p>applicazioni tecniche: cicli termodinamici e macchine termiche</p></li>
-<li><p>meccanismi di trasmissione del calore</p></li>
+<li><p><strong>Sistema.</strong> Oggetto di interesse del problema</p></li>
+<li><p><strong>Ambiente esterno.</strong> Tutto quello che non fa parte del sistema di interesse, e che può interagire con esso.</p></li>
 </ul>
-<hr class="docutils" />
-<!--
-**Concetti e primi strumenti.**
-- Temperatura, pressione
-- Primi strumenti, e princìpi fisici utilizzati: 
-  - manometro di Torricelli e peso di una colonna di acqua o Hg
-  - termometri e dilatazione termica delle sostanze
-
-**Esperienza.**
-- Tendenze naturali:
-  - Equilibrio termico: calore dal corpo più caldo a quello più freddo
-  - Dissipazione dell'energia meccanica
-  - Conservazione della massa
-
-- Esperimenti in chimica, sull'indagine della natura della materia: 
-  - misura di: massa, pressione, volume, temperatura,
-  - esperimenti su: reazioni chimiche, gas
-
-**Macchine termiche.**
-- Applicazioni che guidano la rivoluzione industriale in Inghilterra,
-- Approfondimenti e studi teorici sul funzionamento delle macchine termiche, le sostanze e i fenomeni fisici coinvolti
-
-- Equivalenza calore-lavoro di Joule
-
-**Formalizzazione dei principi della termodinamica.**
-
-<span style="color:red">Le prime esperienze, lo studio delle sostanze, delle trasformazioni, e delle macchine termiche verranno ri-analizzate nei capitoli successivi, dopo aver formalizzato i princìpi della termodinamica e **todo**  un modello/approccio allo studio della materia.</span>
--->
-<hr class="footnotes docutils" />
-<dl class="footnote brackets">
-<dt class="label" id="feynman-atomic"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p><a class="reference external" href="https://www.feynmanlectures.caltech.edu/I_01.html">https://www.feynmanlectures.caltech.edu/I_01.html</a></p>
-</dd>
-<dt class="label" id="feynman"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
-<dd><p><a class="reference external" href="https://www.feynmanlectures.caltech.edu/I_toc.html">https://www.feynmanlectures.caltech.edu/I_toc.html</a></p>
-</dd>
-</dl>
-<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="sistema-aperto-chiuso-isolato">
+<h2><span class="section-number">10.5.4. </span>Sistema aperto/chiuso, isolato,…<a class="headerlink" href="#sistema-aperto-chiuso-isolato" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Sistema aperto.</strong> Sistema che può scambiare massa con l’ambiente esterno</p></li>
+<li><p><strong>Sistema chiuso.</strong> Sistema che non può scambiare massa con l’ambiente esterno</p></li>
+<li><p><strong>Sistema isolato.</strong> Sistema che non può scambiare energia con l’ambiente esterno né tramite lavoro né tramite flusso di calore</p></li>
+<li><p><strong>Sistema adiabatico.</strong> Sistema che non può scambiare calore con l’ambiente esterno</p></li>
+</ul>
+</div>
+<div class="section" id="equilibrio-termodinamico">
+<h2><span class="section-number">10.5.5. </span>Equilibrio termodinamico<a class="headerlink" href="#equilibrio-termodinamico" title="Permalink to this heading">#</a></h2>
+<p>…</p>
+</div>
+<div class="section" id="sistema-semplice-composto">
+<h2><span class="section-number">10.5.6. </span>Sistema semplice/composto<a class="headerlink" href="#sistema-semplice-composto" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Sistema semplice</strong></p></li>
+<li><p><strong>Sistema composto</strong></p></li>
+</ul>
 </div>
 </div>
 
@@ -557,20 +547,20 @@ Feynman e la teoria atomica<div class="sd-summary-down docutils">
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../mechanics/dynamics-motion-gravitation.html"
+       href="foundation-problems.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">9.6. </span>Gravitazione</p>
+        <p class="prev-next-title"><span class="section-number">10.4. </span>Problemi</p>
       </div>
     </a>
     <a class="right-next"
-       href="foundation-history.html"
+       href="principles.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">10.1. </span>Breve storia della termodinamica</p>
+        <p class="prev-next-title"><span class="section-number">11. </span>Princìpi della termodinamica</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -580,6 +570,25 @@ Feynman e la teoria atomica<div class="sd-summary-down docutils">
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grandezze-intensive-estensive-specifiche">10.5.1. Grandezze intensive, estensive, specifiche</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grandezze-fisiche">10.5.2. Grandezze fisiche</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-ambiente-esterno">10.5.3. Sistema, ambiente esterno</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-aperto-chiuso-isolato">10.5.4. Sistema aperto/chiuso, isolato,…</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equilibrio-termodinamico">10.5.5. Equilibrio termodinamico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-semplice-composto">10.5.6. Sistema semplice/composto</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
