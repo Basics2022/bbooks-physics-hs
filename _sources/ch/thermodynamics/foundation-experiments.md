@@ -95,7 +95,7 @@ Scala di temperatura assoluta
 - Esperimenti sui gas, estrapolando i dati sperimentali delle [leggi di Charles](physics-hs:thermodynamics:matter:gases:ideal:experiments:charles) e di [Gay-Lussac](physics-hs:thermodynamics:matter:gases:ideal:experiments:gay-lussac)
 - 1848, Kelvin *On an Absolute Thermometric Scale*.
 
-```{note} Evaporazione ed ebollizione dell'acqua in funzione della pressione
+```{note} Evaporazione ed ebollizione dell'acqua in funzione della pressione. Quanto cambia in funzione della pressione?
 ```
 
 <!-- Esercizi su scale di temperatura e dilatazione termica -->
@@ -114,7 +114,9 @@ Scala di temperatura assoluta
 <span style="color:red"> **todo** Qui? Prima? </span>
 
 ## Teoria cinetica dei gas
-1738, D.Bernoulli *Hydrodynamica*
+Nel 1738, D.Bernoulli pubblica la sua *Hydrodynamica* dove discute il moto dei fluidi e presenta un modello atomistico per la dinamica microscopica delle molecole di un gas, che costituisce uno dei primi contributi allo sviluppo della teoria cinetica dei gas e alla meccanica statistica, fornendo un legame tra la dinamica microscopica delle molecole del gas e le grandezze fisiche tipiche di una descrizione macroscopica del sistema, pressione e <span style="color:red"> temperatura **todo** *anche la temperatura*? </span>
+
+<span style="color:red"> dettagli </span>
 
 ## Calore latente e calore specifico
 1750-60, J.Black. I suoi studi sul calore aiutano a distinguere i concetti di temperatura e di calore **todo**
