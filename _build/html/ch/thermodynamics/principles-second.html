@@ -68,6 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/principles-second';</script>
+    <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
     <link rel="next" title="11.6. Sistemi aperti" href="principles-open.html" />
@@ -231,16 +232,16 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Termodinamica</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="foundation.html">10. Introduzione alla termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="foundation-history.html">10.2. Breve storia della termodinamica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="foundation-experiments.html">10.3. Esperienze ed esperimenti</a></li>
-<li class="toctree-l2"><a class="reference internal" href="foundation-atomic-theory.html">10.4. Termodinamica e teoria atomica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="foundation-problems.html">10.5. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foundation-history.html">10.1. Breve storia della termodinamica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foundation-experiments.html">10.2. Esperienze ed esperimenti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foundation-atomic-theory.html">10.3. Termodinamica e teoria atomica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foundation-vocabulary.html">10.4. Concetti in termodinamica</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="principles.html">11. Princìpi della termodinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="principles-lavoisier.html">11.1. Principio di Lavoisier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principles-first.html">11.2. Primo principio della termodinamica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="principles-gibbs-phase-rule.html">11.3. Gibbs: energia libera, regola delle fasi e funzioni multi-variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="principles-gibbs-phase-rule.html">11.3. Gibbs: energia interna, regola delle fasi e funzioni multi-variabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principles-phase-diagrams.html">11.4. Diagrammi termodinamici</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">11.5. Secondo principio della termodinamica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principles-open.html">11.6. Sistemi aperti</a></li>
@@ -474,9 +475,10 @@ document.write(`
 <span id="physics-hs-thermodynamics-foundation-principles-second"></span><h1><span class="section-number">11.5. </span>Secondo principio della termodinamica<a class="headerlink" href="#secondo-principio-della-termodinamica" title="Permalink to this heading">#</a></h1>
 <div class="section" id="enunciato-di-clausius">
 <h2><span class="section-number">11.5.1. </span>Enunciato di Clausius<a class="headerlink" href="#enunciato-di-clausius" title="Permalink to this heading">#</a></h2>
+<p>L’enunciato di Clausis del secondo principio della termodinamica può essere formulato in maniera abbastanza naturale con il formalismo introdotto.</p>
 <div class="section" id="sistemi-semplici">
 <h3><span class="section-number">11.5.1.1. </span>Sistemi semplici<a class="headerlink" href="#sistemi-semplici" title="Permalink to this heading">#</a></h3>
-<p>La variazione elementare di entropia <span class="math notranslate nohighlight">\(d S\)</span> di un sistema a temperatura uniforme <span class="math notranslate nohighlight">\(T\)</span> è maggiore o uguale al rapporto tra il flusso di calore elementare introdotto nel sistema e la temperatura del sistema stesso,</p>
+<p>La variazione elementare di entropia <span class="math notranslate nohighlight">\(d S\)</span> di un sistema semplice chiuso a temperatura uniforme <span class="math notranslate nohighlight">\(T\)</span> è maggiore o uguale al rapporto tra il flusso di calore elementare introdotto nel sistema e la temperatura del sistema stesso,</p>
 <div class="math notranslate nohighlight">
 \[dS = \underbrace{\dfrac{\delta^+ D}{T}}_{\ge 0} + \dfrac{\delta Q^{ext}}{T} \ge \dfrac{\delta Q^{ext}}{T} \ .\]</div>
 <p>Questo è l’enunciato di Clausius del secondo principio della termodinamica per sistemi semplici con temperatura omogenea.</p>
@@ -484,7 +486,7 @@ document.write(`
 <div class="section" id="sistemi-composti">
 <h3><span class="section-number">11.5.1.2. </span>Sistemi composti<a class="headerlink" href="#sistemi-composti" title="Permalink to this heading">#</a></h3>
 <p><strong>todo</strong> definizione di sistema composto. Avviene conduzione tra i sotto-sistemi.</p>
-<p>Definendo l’entropia come una proprietà additiva, l’entropia di un sistema composto da <span class="math notranslate nohighlight">\(N\)</span> sotto-sistemi semplici è la somma dell’entropia dei sotto-sistemi,</p>
+<p>L’entropia in termodinamica classica è una grandezza fisica estensiva: l’entropia di un sistema composto da <span class="math notranslate nohighlight">\(N\)</span> sotto-sistemi semplici è la somma dell’entropia dei sotto-sistemi,</p>
 <div class="math notranslate nohighlight">
 \[S = \sum_{n=1:N} S_n \ .\]</div>
 <p>Il bilancio dell’entropia del singolo sotto-sistema che scambia calore con gli altri sotto-sistemi e l’ambiente esterno viene scritto come</p>

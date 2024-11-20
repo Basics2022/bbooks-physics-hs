@@ -55,3 +55,10 @@ e il bilancio di energia totale del sistema diventa
 $$\dfrac{d}{dt} E^{tot}_{v_t} = P^{ext,mech}_{v_t} + \dot{Q}^{ext} - \sum_k \dot{m}_k h^{tot}_k \ ,$$
 
 avendo introdotto la definizione di entalpia totale specifica, $h^{tot} = e^{tot} + \frac{P}{\rho} = e + \frac{P}{\rho} + \frac{|\vec{v}|^2}{2}$.
+
+```{prf:example} Turbina
+```
+```{prf:example} Compressore
+```
+```{prf:example} Camera di combustione
+```
