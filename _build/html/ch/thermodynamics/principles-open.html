@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/principles-open';</script>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
@@ -428,7 +430,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -444,6 +448,17 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-di-massa">11.6.1. Bilancio di massa</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-della-quantita-di-moto">11.6.2. Bilancio della quantità di moto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-del-momento-della-quantita-di-moto">11.6.3. Bilancio del momento della quantità di moto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-dell-energia-totale">11.6.4. Bilancio dell’energia totale</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -455,9 +470,55 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="sistemi-aperti">
 <span id="physics-hs-thermodynamics-foundation-principles-open"></span><h1><span class="section-number">11.6. </span>Sistemi aperti<a class="headerlink" href="#sistemi-aperti" title="Permalink to this heading">#</a></h1>
-<p>Le equazioni di bilancio delle quantità fisiche di sistemi aperti comprende il flusso di queste quantità fisiche attraverso lafrontiera del sistema.</p>
-<p><strong>Bilancio di massa.</strong></p>
-<p><strong>Bilancio di energia totale.</strong></p>
+<p>In generale, l’equazione di bilancio di una grandezza fisica per un sistema aperto si ricava partendo dal bilancio della stessa grandezza fisica per un sistema chiuso e aggiungendo il contributo dei termini di flusso della grandezza fisica desiderata, attraverso la frontiera del sistema. Così, se il bilancio della grandezza fisica <span class="math notranslate nohighlight">\(F\)</span> per il sistema chiuso all’interno del volume <span class="math notranslate nohighlight">\(V_t\)</span> può essere scritto come</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{d}{dt} F_{V_t} = R^e_{V_t} \ ,\]</div>
+<p>il bilancio della stessa grandezza fisica per un sistema aperto identificato dal volume (geometrico) <span class="math notranslate nohighlight">\(v_t\)</span> può essere scritto come</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt} F_{v_t} = R^e_{v_t} - \Phi_{\partial v_t}(f) \ , \]</div>
+<p>avendo definito <span class="math notranslate nohighlight">\(f\)</span> come la grandezza specifica di <span class="math notranslate nohighlight">\(F\)</span> per unità di massa. Il termine di flusso attraverso la frontiera <span class="math notranslate nohighlight">\(\partial v_t\)</span> può essere scritto come la somma dei contributi di flusso attraverso porzioni <span class="math notranslate nohighlight">\(s_{k,t}\)</span> della superficie <span class="math notranslate nohighlight">\(\partial v_t = \cup_k s_{k,t}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\Phi_{\partial v_t}(f) = \sum_{s_{k,t}} \dot{m}_k \, f_k \ ,\]</div>
+<p>avendo definito <span class="math notranslate nohighlight">\(\dot{m}_k = \rho_k vi^{rel}_{n,k}\)</span> il flusso di massa attraverso la superficie <span class="math notranslate nohighlight">\(s_{k,t}\)</span> e assumendo che la grandezza <span class="math notranslate nohighlight">\(f_k\)</span> sia costante sulla superficie <span class="math notranslate nohighlight">\(s_{k,t}\)</span>, o che sia stato considerato il valore medio sulla superficie.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Nel caso la grandezza <span class="math notranslate nohighlight">\(f\)</span> non sia uniforme sulla frontiera del dominio e che vari con continuità, il termine di flusso può essere scritto al limite come sommatoria di infiniti termini attraverso superfici la cui area tende a zero, tramite un integrale di superficie, seguendo la definizione di integrale di Riemann.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Un’equazione di bilancio di una grandezza fisica per un sistema aperto include anche l’equazione di bilancio della stessa grandezza fisica per un sistema aperto come caso particolare in cui il flusso di massa è nullo attraverso la frontiera del dominio, <span class="math notranslate nohighlight">\(\dot{m}_k = 0\)</span>.</p>
+</div>
+<p>Si considerano qui i bilanci (integrali, globali di un sistema) di alcune grandezze fisiche fondamentali in meccanica classica: massa, quantità di moto, momento della quantità di moto, energia totale.</p>
+<div class="section" id="bilancio-di-massa">
+<h2><span class="section-number">11.6.1. </span>Bilancio di massa<a class="headerlink" href="#bilancio-di-massa" title="Permalink to this heading">#</a></h2>
+<p>Il bilancio di massa, <span class="math notranslate nohighlight">\(F = M\)</span>, <span class="math notranslate nohighlight">\(f = 1\)</span>, per un sistema aperto è</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt} M_{v_t} = - \sum_k \dot{m}_k\]</div>
+</div>
+<div class="section" id="bilancio-della-quantita-di-moto">
+<h2><span class="section-number">11.6.2. </span>Bilancio della quantità di moto<a class="headerlink" href="#bilancio-della-quantita-di-moto" title="Permalink to this heading">#</a></h2>
+<p><span style="color:red"> <strong>todo</strong> <em>riferimento da o a meccanica classica</em></span></p>
+</div>
+<div class="section" id="bilancio-del-momento-della-quantita-di-moto">
+<h2><span class="section-number">11.6.3. </span>Bilancio del momento della quantità di moto<a class="headerlink" href="#bilancio-del-momento-della-quantita-di-moto" title="Permalink to this heading">#</a></h2>
+<p><span style="color:red"> <strong>todo</strong> <em>riferimento da o a meccanica classica</em></span></p>
+</div>
+<div class="section" id="bilancio-dell-energia-totale">
+<h2><span class="section-number">11.6.4. </span>Bilancio dell’energia totale<a class="headerlink" href="#bilancio-dell-energia-totale" title="Permalink to this heading">#</a></h2>
+<p>Il bilancio di energia totale <span class="math notranslate nohighlight">\(F = E^{tot} = E + K\)</span>, <span class="math notranslate nohighlight">\(f = e^{tot} = e + \frac{|\vec{v}|^2}{2}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt} E^{tot}_{v_t} = P^{ext}_{v_t}  + \dot{Q}^{ext}_{v_t}  - \sum_k \dot{m}_k \, e^{tot}_k \ .\]</div>
+<p>La potenza delle azioni esterne <span class="math notranslate nohighlight">\(P^{ext}_{v_t}\)</span> può essere scritta come somma dei contributi sulle superfici della frontiera del sistema attraverso le quali c’è flusso di massa, e le superfici impermeabili che possono essere utilizzate per estrarre lavoro dal sistema. Nel caso si possano trascurare gli effetti degli sforzi viscosi sulle superfici attraverso le quali c’è flusso di massa, la potenza delle azioni agenti sul sistema può essere scritta come</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  P^{ext} &amp; = P^{ext,mech} + P^{ext,\Phi} = \\
+          &amp; = P^{ext,mech} - \sum_{k} \dot{m}_k \frac{P_k}{\rho_k} \ , 
+\end{aligned}\end{split}\]</div>
+<p>e il bilancio di energia totale del sistema diventa</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{d}{dt} E^{tot}_{v_t} = P^{ext,mech}_{v_t} + \dot{Q}^{ext} - \sum_k \dot{m}_k h^{tot}_k \ ,\]</div>
+<p>avendo introdotto la definizione di entalpia totale specifica, <span class="math notranslate nohighlight">\(h^{tot} = e^{tot} + \frac{P}{\rho} = e + \frac{P}{\rho} + \frac{|\vec{v}|^2}{2}\)</span>.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -514,6 +575,23 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-di-massa">11.6.1. Bilancio di massa</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-della-quantita-di-moto">11.6.2. Bilancio della quantità di moto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-del-momento-della-quantita-di-moto">11.6.3. Bilancio del momento della quantità di moto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-dell-energia-totale">11.6.4. Bilancio dell’energia totale</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

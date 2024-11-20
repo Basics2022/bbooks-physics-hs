@@ -6,6 +6,7 @@ $$d E^{tot} = \delta L^{ext} + \delta Q^{ext} \ .$$
 
 La termodinamica classica fornisce una descrizione macroscopica media della dinamica microscopica di un numero elevato di componenti elementari (**todo** *teoria atomica*). L'energia totale del sistema può quindi essere interpretata come somma di un contributo cinetico macroscopico e di un contenuto microscopico, cinetico e potenziale; il calore può essere interpretato come il lavoro svolto sul sistema da parte di azioni microscopiche,
 
+<!--
 ```{dropdown} Energia totale
 :open:
 
@@ -37,22 +38,5 @@ $$\begin{aligned}
 \end{aligned}$$
 
 ```
+-->
 
-## Energia interna
-```{prf:definition} Energia interna
-**Gibbs** definisce l'energia interna del sistema come differenza tra la sua energia totale e l'energia cinetica "macroscopica", 
-
-$$E = E^{tot} - K \ .$$
-```
-
-Il bilancio dell'energia interna viene ricavato come differenza dei bilanci dell'energia totale, descritto dal primo principio della termodinamica
-
-$$d E^{tot} := \delta L^{ext} + \delta Q^{ext} \ ,$$
-
-e il bilancio dell'energia cinetica, fornito dal teorema dell'energia cinetica ricavato in meccanica,
-
-$$d K = \delta L^{ext} + \delta L^{int} \ .$$
-
-Il bilancio dell'energia interna diventa quindi
-
-$$d E = \delta Q^{ext} - \delta L^{int} \ .$$

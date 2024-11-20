@@ -19,7 +19,7 @@ L'opera di **Gibbs** fornisce [**i concetti necessari e una formalizzazione mate
 
 Il [**secondo principio della termodinamica**](physics-hs:thermodynamics:foundation:principles:second) traduce le tendenze naturali: la dissipazione dell'energia meccanica macroscopica e la trasmissione del calore da un corpo caldo a un corpo freddo, in un principio formulabile in termini di **entropia**,
 
-$$d S \le \frac{\partial Q}{T} \ .$$
+$$d S \le \frac{\delta Q}{T} \ .$$
 
 Infine, i bilanci delle quantità fisiche per [**sistemi aperti**](physics-hs:thermodynamics:foundation:principles:open) vengono ricavati modificando i bilanci per sistemi chiusi, introducendo i termini di **flusso delle grandezze fisiche dovuti al trasporto di materia** attraverso la frontiera del sistema.
 

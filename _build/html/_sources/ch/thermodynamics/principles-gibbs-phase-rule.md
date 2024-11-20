@@ -8,6 +8,25 @@ Una variabile di stato di un sistema è una proprietà fisica del sistema che di
 
 ```
 
+## Energia interna
+```{prf:definition} Energia interna
+**Gibbs** definisce l'energia interna del sistema come differenza tra la sua energia totale e l'energia cinetica "macroscopica", 
+
+$$E = E^{tot} - K \ .$$
+```
+
+Il bilancio dell'energia interna viene ricavato come differenza dei bilanci dell'energia totale, descritto dal primo principio della termodinamica
+
+$$d E^{tot} := \delta L^{ext} + \delta Q^{ext} \ ,$$
+
+e il bilancio dell'energia cinetica, fornito dal teorema dell'energia cinetica ricavato in meccanica,
+
+$$d K = \delta L^{ext} + \delta L^{int} \ .$$
+
+Il bilancio dell'energia interna diventa quindi
+
+$$d E = \delta Q^{ext} - \delta L^{int} \ .$$
+
 ### Variabili intensive ed estensive; variabili specifiche
 Una **variabile intensiva** è indipdendente dalla dimensione del sistema. Una **variabile estensiva** è additiva per i sottosistemi (**todo** *controllare l'equivalenza estensiva $\equiv$ additiva*). Se una variabile può essere espressa come funzione di una serie di variabili indipendenti intensive $\{a_i\}$ ed estensive $\{A_k\}$, una variabile intensiva è rappresentata da una funzione omogena di grado 0
 
