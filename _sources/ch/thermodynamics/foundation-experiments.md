@@ -60,6 +60,8 @@ Possiamo quindi interpretare l'esperienza riguardo alla dilatazione lineare dell
 
 **Scala termodinamica della temperatura assoluta.** Mentre le scale di temperatura empiriche vengono sviluppate nella prima metà del XVIII secolo, nel XIX secolo un'approfondita comprensione della materia permette di definire una **scala termodinamica** per la **temperatura assoluta** come una grandezza fisica e manifestazione macrsocopica dello stato "di agitazione" a livello microscopico dei componenti elementari della materia.
 
+<span style="color:red"> spostare termodinamica e teoria atomica all'inizio dell'introduzione, $\sim$ Feynman?</span>
+
 ### Scale empiriche
 Metodo generale per la definizione delle scale di temperatura: scelta di due temperature di riferimento, facilmente riproducibili nei limiti di errori tollerati; suddivisione in parti uguali dell'intervallo ed estensione oltre questi limiti, tipicamente in 100 o 60 (o suoi multipli) parti.
 - 1702, Romer:
