@@ -40,21 +40,3 @@ $$\begin{aligned}
 ```
 -->
 
-## Energia interna
-```{prf:definition} Energia interna
-**Gibbs** definisce l'energia interna del sistema come differenza tra la sua energia totale e l'energia cinetica "macroscopica", 
-
-$$E = E^{tot} - K \ .$$
-```
-
-Il bilancio dell'energia interna viene ricavato come differenza dei bilanci dell'energia totale, descritto dal primo principio della termodinamica
-
-$$d E^{tot} := \delta L^{ext} + \delta Q^{ext} \ ,$$
-
-e il bilancio dell'energia cinetica, fornito dal teorema dell'energia cinetica ricavato in meccanica,
-
-$$d K = \delta L^{ext} + \delta L^{int} \ .$$
-
-Il bilancio dell'energia interna diventa quindi
-
-$$d E = \delta Q^{ext} - \delta L^{int} \ .$$
