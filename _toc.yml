@@ -6,6 +6,10 @@ root: intro
 options:
   numbered: True
 parts:
+- caption: Introduzione
+  numbered: false
+  chapters:
+  - file: ch/program
 - caption: Introduzione alla fisica
   numbered: True
   chapters:

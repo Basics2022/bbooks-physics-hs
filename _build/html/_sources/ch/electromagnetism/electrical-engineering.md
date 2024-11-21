@@ -1,5 +1,5 @@
 (physics-hs:electromagnetism:electric-engineering)=
-# Principi di elettrotecnica
+# Fondamenti di elettrotecnica
 
 L'applicazione dei fenomeni elettromagnetici può essere distinta qualitativamente in due grandi discipline:
 

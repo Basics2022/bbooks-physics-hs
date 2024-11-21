@@ -1,5 +1,5 @@
 (physics-hs:thermodynamics:heat-engine)=
-# Macchine termiche
+# Fondamenti di fisica tecnica
 
 **Storia.**
 - rivoluzione industriale

@@ -1,6 +1,23 @@
 (physics-hs:mechanics)=
 # Meccanica classica
 
+La meccanica classica si occupa del moto **todo**
+
+````{only} html
+**Contenuti.**
+```{dropdown} [Cinematica](physics-hs:mechanics:kinematics)
+```
+```{dropdown} [Azioni](physics-hs:mechanics:actions)
+```
+```{dropdown} [Statica](physics-hs:mechanics:statics)
+```
+```{dropdown} [Inerzia](physics-hs:mechanics:inertia)
+```
+```{dropdown} [Dinamica](physics-hs:mechanics:dynamics)
+```
+
+````
+
 La meccanica classica fu sviluppata da Newton nel XVII secolo, e presentanta nei *Principi matematici di filosofia naturale* (1687) **todo** *Dire due parole si Principi matemtatici di filosofia naturale*
 
 L'opera di Newton **todo** usa i metodi della geometria analitica introdotti da Cartesio, e viene sviluppata in accordo con le osservazioni astronomiche, come le leggi di Keplero, e le esperienze di Galileo sul principio di inerzia, sulla caduta dei gravi (**todo** anche se probabilmente era lo studio del rotolamento di corpi su piani inclinati) e sull'isocronismo delle piccole oscillazioni libere di un pendolo(**todo** cosa c'entra? Isocronismo come principio alla base del principio di funzionamento dei primi orologi meccanici, a gravità o a molla, con regolazione tramite scappamento; lo stesso principio, anche se migliorato, degli orologi meccanici contemporanei)

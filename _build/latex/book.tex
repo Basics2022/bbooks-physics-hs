@@ -68,7 +68,7 @@
 % Set up styles of URL: it should be placed after hyperref.
 \urlstyle{same}
 
-\addto\captionsitalian{\renewcommand{\contentsname}{Introduzione alla fisica}}
+\addto\captionsitalian{\renewcommand{\contentsname}{Introduzione}}
 
 \usepackage{sphinxmessages}
 
@@ -87,7 +87,7 @@
         
 
 \title{Fisica per le superiori}
-\date{20 nov 2024}
+\date{21 nov 2024}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -104,23 +104,11 @@
 
 
 \sphinxAtStartPar
-Questo materiale fa parte del progetto \DUrole{xref,myst}{\sphinxstylestrong{basics\sphinxhyphen{}books}}:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-pagina principale:
-
-\item {} 
-\sphinxAtStartPar
-repository:
-
-\end{itemize}
+\sphinxstylestrong{basics\sphinxhyphen{}books project.}
+Questo materiale fa parte del progetto \sphinxstylestrong{basics\sphinxhyphen{}books}. Il materiale prodotto è navigabile partendo dalla \sphinxhref{https://basics2022.github.io/bbooks}{landing page}, e pubblicamente disponibile nel \sphinxhref{https://github.com/Basics2022}{repository}.
 
 \sphinxAtStartPar
-Materiale pensato per le \sphinxhref{https://basics2022.github.io/bbooks-hs}{\sphinxstylestrong{scuole superiori}}.
-
-\sphinxAtStartPar
-Il materiale è disponibile
+In particolare questo libro fa parte del materiale pensato per le \sphinxhref{https://basics2022.github.io/bbooks-hs}{\sphinxstylestrong{scuole superiori}}. Il materiale è disponibile:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -132,18 +120,19 @@ in versione online all’indirizzo: \sphinxurl{https://basics2022.github.io/bboo
 
 \end{itemize}
 
+\sphinxstepscope
 
 
+\part{Introduzione}
+
+\sphinxstepscope
+
+\sphinxAtStartPar
+()=
 
 
-
-
-
-
-
-
-
-
+\chapter{Programma}
+\label{\detokenize{ch/program:programma}}\label{\detokenize{ch/program::doc}}
 \sphinxstepscope
 
 
@@ -468,6 +457,9 @@ Relatività di Einstein: la misura del tempo dipende dall’osservatore; spazio 
 
 \chapter{Meccanica classica}
 \label{\detokenize{ch/mechanics:meccanica-classica}}\label{\detokenize{ch/mechanics:physics-hs-mechanics}}\label{\detokenize{ch/mechanics::doc}}
+\sphinxAtStartPar
+La meccanica classica si occupa del moto
+
 \sphinxAtStartPar
 La meccanica classica fu sviluppata da Newton nel XVII secolo, e presentanta nei \sphinxstyleemphasis{Principi matematici di filosofia naturale} (1687) \sphinxstylestrong{todo} \sphinxstyleemphasis{Dire due parole si Principi matemtatici di filosofia naturale}
 
@@ -6918,6 +6910,15 @@ avendo introdotto la definizione di entalpia totale specifica, \(h^{tot} = e^{to
 
 \chapter{Stati della materia}
 \label{\detokenize{ch/thermodynamics/matter:stati-della-materia}}\label{\detokenize{ch/thermodynamics/matter:physics-hs-thermodynamics-matter}}\label{\detokenize{ch/thermodynamics/matter::doc}}
+\sphinxAtStartPar
+\sphinxstylestrong{Gas ideali.} Leggi sperimentali; legge dei gas perfetti; teorica cinetica dei gas
+
+\sphinxAtStartPar
+\sphinxstylestrong{Miscele di gas.} Miscele ideali di gas; aria umida
+
+\sphinxAtStartPar
+\sphinxstylestrong{Solidi elastici.}
+
 \sphinxstepscope
 
 
@@ -7772,8 +7773,8 @@ Controllare! Non torna l’espressione della forza: c’è solo la temperatura, 
 \sphinxstepscope
 
 
-\chapter{Macchine termiche}
-\label{\detokenize{ch/thermodynamics/heat-engine:macchine-termiche}}\label{\detokenize{ch/thermodynamics/heat-engine:physics-hs-thermodynamics-heat-engine}}\label{\detokenize{ch/thermodynamics/heat-engine::doc}}
+\chapter{Fondamenti di fisica tecnica}
+\label{\detokenize{ch/thermodynamics/heat-engine:fondamenti-di-fisica-tecnica}}\label{\detokenize{ch/thermodynamics/heat-engine:physics-hs-thermodynamics-heat-engine}}\label{\detokenize{ch/thermodynamics/heat-engine::doc}}
 \sphinxAtStartPar
 \sphinxstylestrong{Storia.}
 \begin{itemize}
@@ -8354,29 +8355,6 @@ Testo…
 
 \chapter{Introduzione all’elettromagnetismo}
 \label{\detokenize{ch/electromagnetism/intro:introduzione-all-elettromagnetismo}}\label{\detokenize{ch/electromagnetism/intro:physics-hs-electromagnetism-intro}}\label{\detokenize{ch/electromagnetism/intro::doc}}
-\sphinxAtStartPar
-\sphinxstylestrong{Contenuti.}
-I contenuti sono suddivisi in quattro diverse sezioni:
-\begin{enumerate}
-\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
-\item {} 
-\sphinxAtStartPar
-\sphinxstylestrong{Introduzione all’elettromagnetismo.} Viene presentata la cronologia e una la descrizione dei \sphinxstylestrong{concetti} e le prime \sphinxstylestrong{esperienze} che hanno permesso di riconoscere i principi fisici che governano i fenomeni elettromagnetici e di costruire una teoria consistente, la teoria dell’elettromagnetismo classico;
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstylestrong{Principi dell’elettromagnetismo.} Partendo dai concetti e dalle esperienze, vengono formalizzati i principi dell’elettromagnetismo \sphinxstylestrong{todo}
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstylestrong{Principi di elettrotecnica.} Partendo dai principi generali dell’elettromagnetismo, viene introdotta l”\sphinxstylestrong{approssimazione circuitale} per ridurre il problema elettromagnetico alla soluzione di circuiti.  \sphinxstylestrong{todo}
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstylestrong{Onde elettromagnetiche.} \sphinxstylestrong{todo}
-
-\end{enumerate}
-
 \sphinxstepscope
 
 
@@ -9813,8 +9791,67 @@ le equazioni di Maxwell: le equazioni complete dell’elettromagnetismo
 \sphinxstepscope
 
 
-\chapter{Principi di elettrotecnica}
-\label{\detokenize{ch/electromagnetism/electrical-engineering:principi-di-elettrotecnica}}\label{\detokenize{ch/electromagnetism/electrical-engineering:physics-hs-electromagnetism-electric-engineering}}\label{\detokenize{ch/electromagnetism/electrical-engineering::doc}}
+\chapter{Fondamenti di elettrotecnica}
+\label{\detokenize{ch/electromagnetism/electrical-engineering:fondamenti-di-elettrotecnica}}\label{\detokenize{ch/electromagnetism/electrical-engineering:physics-hs-electromagnetism-electric-engineering}}\label{\detokenize{ch/electromagnetism/electrical-engineering::doc}}
+\sphinxAtStartPar
+L’applicazione dei fenomeni elettromagnetici può essere distinta qualitativamente in due grandi discipline:
+\subsubsection*{\sphinxstylestrong{Elettrotecnica}}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Regime di applicazione:} correnti intense, bassa frequenza
+
+\sphinxAtStartPar
+\sphinxstylestrong{Applicazioni:} distribuzione di energia elettrica, conversione tra energia elettrica e meccanica. Esempi:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+rete di trasmissione nazionale o di distribuzione locale di energia elettrica
+
+\item {} 
+\sphinxAtStartPar
+circuito elettrico di casa
+
+\item {} 
+\sphinxAtStartPar
+generatori di energia elettrica nelle centrali elettriche
+
+\item {} 
+\sphinxAtStartPar
+elettrodomestici
+
+\item {} 
+\sphinxAtStartPar
+…
+
+\end{itemize}
+\subsubsection*{\sphinxstylestrong{Elettronica}}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Regimi di applicazione:} correnti deboli, alta frequenza
+
+\sphinxAtStartPar
+\sphinxstylestrong{Applicazioni:} trasmissine dei segnali elettrici
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+trasmissione onde EM
+
+\item {} 
+\sphinxAtStartPar
+elettronica di consumo: smartphone, computer, navigatori, radio, TV, Wi\sphinxhyphen{}Fi,…
+
+\item {} 
+\sphinxAtStartPar
+schede di controllo di elettrodomestici…
+
+\end{itemize}
+
+\sphinxAtStartPar
+A queste discipline, si aggiunge l”\sphinxstylestrong{ottica} \sphinxstylestrong{todo}…non sempre è possibile fare una distinzione netta tra le discipline…alimentazione e potenza, controllo,…
+
+\sphinxAtStartPar
+Il regime fisico di applicazione dell’elettrotecnica consente di semplificare le equazioni che governano il problema elettromagnetico usando un\(\text{'}\)\sphinxstylestrong{approssimazione circuitale}.
+
 \sphinxstepscope
 
 
@@ -9871,7 +9908,25 @@ La legge costitutiva di un induttore è
 \label{\detokenize{ch/electromagnetism/circuits-electric:transitori}}
 
 \subsubsection{Regime periodico}
-\label{\detokenize{ch/electromagnetism/circuits-electric:regime-periodico}}\begin{itemize}
+\label{\detokenize{ch/electromagnetism/circuits-electric:regime-periodico}}
+
+\paragraph{Sistemi trifase}
+\label{\detokenize{ch/electromagnetism/circuits-electric:sistemi-trifase}}
+\sphinxAtStartPar
+Vantaggi:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+funzionamento generatori ed utilizzatori naturale
+
+\item {} 
+\sphinxAtStartPar
+trasformazione in AC naturale
+
+\item {} 
+\sphinxAtStartPar
+trasmissione efficiente
+
 \item {} 
 \sphinxAtStartPar
 dalle leggi fisiche alle leggi di Kirchhoff, ipotesi (validità e non\sphinxhyphen{}validità dell’approccio circuitale)
@@ -9950,11 +10005,19 @@ armonico, AC:
 
 
 \section{Circuiti magnetici}
-\label{\detokenize{ch/electromagnetism/circuits-magnetic:circuiti-magnetici}}\label{\detokenize{ch/electromagnetism/circuits-magnetic:physics-hs-electromagnetism-circuits-magnetic}}\label{\detokenize{ch/electromagnetism/circuits-magnetic::doc}}\begin{itemize}
+\label{\detokenize{ch/electromagnetism/circuits-magnetic:circuiti-magnetici}}\label{\detokenize{ch/electromagnetism/circuits-magnetic:physics-hs-electromagnetism-circuits-magnetic}}\label{\detokenize{ch/electromagnetism/circuits-magnetic::doc}}
+
+\subsection{Approssimazinoe circuitale \sphinxhyphen{} leggi di Kirchhoff}
+\label{\detokenize{ch/electromagnetism/circuits-magnetic:approssimazinoe-circuitale-leggi-di-kirchhoff}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 dalle leggi fisiche alle leggi di Kirchhoff per i circuiti magnetici, ipotesi (validità e non\sphinxhyphen{}validità dell’approccio circuitale)
 
+\end{itemize}
+
+
+\subsection{Trasformatore}
+\label{\detokenize{ch/electromagnetism/circuits-magnetic:trasformatore}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 esempi:
@@ -9972,6 +10035,31 @@ trasformatori ideali
 
 \section{Sistemi elettromeccanici e macchine elettriche}
 \label{\detokenize{ch/electromagnetism/electric-machines:sistemi-elettromeccanici-e-macchine-elettriche}}\label{\detokenize{ch/electromagnetism/electric-machines:physics-hs-electromagnetism-electric-machines}}\label{\detokenize{ch/electromagnetism/electric-machines::doc}}
+
+\subsection{Motori e generatori elettrici}
+\label{\detokenize{ch/electromagnetism/electric-machines:motori-e-generatori-elettrici}}
+
+\subsubsection{Esempio elementare}
+\label{\detokenize{ch/electromagnetism/electric-machines:esempio-elementare}}
+
+\subsubsection{Motori elettrici in DC}
+\label{\detokenize{ch/electromagnetism/electric-machines:motori-elettrici-in-dc}}
+
+\subsubsection{Motori elettrici in AC}
+\label{\detokenize{ch/electromagnetism/electric-machines:motori-elettrici-in-ac}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+sincrono
+
+\item {} 
+\sphinxAtStartPar
+asincrono
+
+\end{itemize}
+
+
+\subsection{Serratura magnetica}
+\label{\detokenize{ch/electromagnetism/electric-machines:serratura-magnetica}}
 \sphinxstepscope
 
 
