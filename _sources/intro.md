@@ -5,15 +5,15 @@
 ````{only} html
 **Contenuti.**
 
-```{dropdown} [Introduzione alla fisica]
+```{dropdown} [Introduzione alla fisica](physics-hs:intro)
 ```
-```{dropdown} [Meccanica classica]
+```{dropdown} [Meccanica classica](physics-hs:mechanics)
 ```
-```{dropdown} [Termodinamica]
+```{dropdown} [Termodinamica](physics-hs:thermodynamics:intro)
 ```
-```{dropdown} [Elettromagnetismo]
+```{dropdown} [Elettromagnetismo](physics-hs:electromagnetism:intro)
 ```
-```{dropdown} [Fisica moderna]
+```{dropdown} [Fisica moderna](physics-hs:modern:intro)
 ```
 
 ````
