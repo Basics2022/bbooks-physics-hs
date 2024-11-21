@@ -134,6 +134,7 @@ parts:
   numbered: True
   chapters:
   - file: ch/modern.md
+  - file: ch/modern/intro.md
   - file: ch/modern/intro-radioactivity.md
   - file: ch/modern/intro-coupling.md
   - file: ch/modern/intro-photography.md

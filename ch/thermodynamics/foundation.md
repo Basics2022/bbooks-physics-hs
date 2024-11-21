@@ -1,4 +1,4 @@
-(physics-hs:thermodynamics:foundation)=
+(physics-hs:thermodynamics:intro)=
 # Introduzione alla termodinamica
 
 La termodinamica è la branca della fisica che si occupa dell'energia, della trasformazione tra le varie forme di energia e dei meccanismi che permettono di variare l'energia di un sistema.
