@@ -1,4 +1,4 @@
-(physics-hs:thermodynamics:foundation:principles)=
+(physics-hs:thermodynamics:principles)=
 # Princìpi della termodinamica
 
 In questo capitolo vengono presentati i princìpi della termodinamica classica, i concetti e il formalismo matematico utili per formularli.

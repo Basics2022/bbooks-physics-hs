@@ -1,6 +1,21 @@
 (physics-hs:electromagnetism)=
 # Elettromagnetismo
 
+L'elettromagnetismo si occupa **todo**
+
+````{only} html
+**Contenuti.**
+```{dropdown} [Fondamenti di elettromagnetismo](physics-hs:electromagnetism:em)
+```
+```{dropdown} [Fondamenti di elettrotecnica](physics-hs:electromagnetism:electric-engineering)
+```
+```{dropdown} [Onde elettromagnetiche](physics-hs:electromagnetism:em-waves)
+```
+```{dropdown} [Dinamica](physics-hs:mechanics:dynamics)
+```
+
+````
+
 
 **Presentazione libro**
 I contenuti sono suddivisi in quattro diverse sezioni:

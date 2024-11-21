@@ -5,15 +5,15 @@
 ````{only} html
 **Contenuti.**
 
-```{dropdown} Introduzione alla fisica
+```{dropdown} [Introduzione alla fisica]
 ```
-```{dropdown} Meccanica classica
+```{dropdown} [Meccanica classica]
 ```
-```{dropdown} Termodinamica
+```{dropdown} [Termodinamica]
 ```
-```{dropdown} Elettromagnetismo
+```{dropdown} [Elettromagnetismo]
 ```
-```{dropdown} Fisica moderna
+```{dropdown} [Fisica moderna]
 ```
 
 ````

@@ -164,7 +164,11 @@ const thebe_selector_output = ".output, .cell_output"
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione alla fisica</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../program.html">Programma</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione alla fisica</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../intro.html">1. Introduzione alla fisica</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../intro/physical_quantities.html">2. Grandezze fisiche</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -257,7 +261,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/elastic-solid-1d.html">12.3. Solidi elastici</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../thermodynamics/heat-engine.html">13. Macchine termiche</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../thermodynamics/heat-engine.html">13. Fondamenti di fisica tecnica</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/heat-engine-td-cycles.html">13.1. Cicli termodinamici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/heat-engine-carnot.html">13.2. Macchina termica di Carnot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/heat-engine-second-principle.html">13.3. Secondo principio della termodinamica per cicli termodinamici</a></li>
@@ -285,7 +289,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="electromagnetism-general.html">16.4. Induzione ed elettromagnetismo</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="electrical-engineering.html">17. Principi di elettrotecnica</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="electrical-engineering.html">17. Fondamenti di elettrotecnica</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="circuits-electric.html">17.1. Circuiti elettrici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="circuits-magnetic.html">17.2. Circuiti magnetici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="electric-machines.html">17.3. Sistemi elettromeccanici e macchine elettriche</a></li>
@@ -522,13 +526,42 @@ document.write(`
 <span id="physics-hs-electromagnetism-intro"></span><h1><span class="section-number">15. </span>Introduzione all’elettromagnetismo<a class="headerlink" href="#introduzione-all-elettromagnetismo" title="Permalink to this heading">#</a></h1>
 <p><strong>Contenuti.</strong>
 I contenuti sono suddivisi in quattro diverse sezioni:</p>
-<ol class="arabic simple">
-<li><p><strong>Introduzione all’elettromagnetismo.</strong> Viene presentata la cronologia e una la descrizione dei <strong>concetti</strong> e le prime <strong>esperienze</strong> che hanno permesso di riconoscere i principi fisici che governano i fenomeni elettromagnetici e di costruire una teoria consistente, la teoria dell’elettromagnetismo classico;</p></li>
-<li><p><strong>Principi dell’elettromagnetismo.</strong> Partendo dai concetti e dalle esperienze, vengono formalizzati i principi dell’elettromagnetismo <strong>todo</strong></p></li>
-<li><p><strong>Principi di elettrotecnica.</strong> Partendo dai principi generali dell’elettromagnetismo, viene introdotta l”<strong>approssimazione circuitale</strong> per ridurre il problema elettromagnetico alla soluzione di circuiti.  <strong>todo</strong></p></li>
-<li><p><strong>Onde elettromagnetiche.</strong> <strong>todo</strong></p></li>
-</ol>
-<div class="toctree-wrapper compound">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Introduzione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Viene presentata la cronologia e una la descrizione dei <strong>concetti</strong> e le prime <strong>esperienze</strong> che hanno permesso di riconoscere i principi fisici che governano i fenomeni elettromagnetici e di costruire una teoria consistente, la teoria dell’elettromagnetismo classico.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference internal" href="em.html#physics-hs-electromagnetism-em"><span class="std std-ref">Fondamenti di elettromagnetismo</span></a><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Partendo dai concetti e dalle esperienze, vengono formalizzati i principi dell’elettromagnetismo <strong>todo</strong></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference internal" href="electrical-engineering.html#physics-hs-electromagnetism-electric-engineering"><span class="std std-ref">Fondamenti di elettrotecnica</span></a><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Partendo dai principi generali dell’elettromagnetismo, viene introdotta l”<strong>approssimazione circuitale</strong> per ridurre il problema elettromagnetico alla soluzione di circuiti.  <strong>todo</strong></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference internal" href="em-waves.html#physics-hs-electromagnetism-em-waves"><span class="std std-ref">Onde elettromagnetiche</span></a><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><div class="toctree-wrapper compound">
 </div>
 </div>
 
