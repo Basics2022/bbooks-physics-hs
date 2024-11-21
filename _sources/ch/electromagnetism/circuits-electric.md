@@ -37,6 +37,12 @@ $$i = a$$
 
 ### Regime periodico
 
+#### Sistemi trifase
+Vantaggi:
+- funzionamento generatori ed utilizzatori naturale
+- trasformazione in AC naturale
+- trasmissione efficiente
+
 
 - dalle leggi fisiche alle leggi di Kirchhoff, ipotesi (validità e non-validità dell'approccio circuitale)
 
