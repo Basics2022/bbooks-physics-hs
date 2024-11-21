@@ -18,6 +18,7 @@
 
 ````
 
+**basics-books project.**
 Questo materiale fa parte del progetto **basics-books**. Il materiale prodotto è navigabile partendo dalla [landing page](https://basics2022.github.io/bbooks), e pubblicamente disponibile nel [repository](https://github.com/Basics2022).
 
 In particolare questo libro fa parte del materiale pensato per le [**scuole superiori**](https://basics2022.github.io/bbooks-hs). Il materiale è disponibile:
