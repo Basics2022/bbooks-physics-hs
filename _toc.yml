@@ -102,11 +102,13 @@ parts:
     - file: ch/thermodynamics/heat-engine-td-cycles
     - file: ch/thermodynamics/heat-engine-carnot
     - file: ch/thermodynamics/heat-engine-second-principle
-    - file: ch/thermodynamics/heat-engine-otto
-    - file: ch/thermodynamics/heat-engine-diesel
-    - file: ch/thermodynamics/heat-engine-joule-brayton
-    - file: ch/thermodynamics/heat-engine-rankine
-    - file: ch/thermodynamics/heat-engine-problems
+    - file: ch/thermodynamics/heat-engine-industrial
+      sections:
+      - file: ch/thermodynamics/heat-engine-otto
+      - file: ch/thermodynamics/heat-engine-diesel
+      - file: ch/thermodynamics/heat-engine-joule-brayton
+      - file: ch/thermodynamics/heat-engine-rankine
+      - file: ch/thermodynamics/heat-engine-problems
   - file: ch/thermodynamics/heat-transmission
 - caption: Elettromagnetismo
   numbered: True

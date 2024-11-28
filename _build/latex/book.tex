@@ -8144,19 +8144,33 @@ cioè che una macchina termica che scambia calore unicamente con una sorgente a 
 \sphinxstepscope
 
 
-\section{Ciclo Otto}
+\section{Macchine termiche e cicli termodinamici}
+\label{\detokenize{ch/thermodynamics/heat-engine-industrial:macchine-termiche-e-cicli-termodinamici}}\label{\detokenize{ch/thermodynamics/heat-engine-industrial:physics-hs-thermodynamics-heat-engine-industrial}}\label{\detokenize{ch/thermodynamics/heat-engine-industrial::doc}}
+\sphinxAtStartPar
+\sphinxstylestrong{Cicli diretti/cicli inversi}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Cicli TD} Otto, Diesel, Joule\sphinxhyphen{}Brayton, Rankine,…
+
+\sphinxAtStartPar
+\sphinxstylestrong{Applicazioni} Motori ICE, produzione energia elettrica, refrigerazione,…
+
+\sphinxstepscope
+
+
+\subsection{Ciclo Otto}
 \label{\detokenize{ch/thermodynamics/heat-engine-otto:ciclo-otto}}\label{\detokenize{ch/thermodynamics/heat-engine-otto:physics-hs-thermodynamics-heat-engine-otto}}\label{\detokenize{ch/thermodynamics/heat-engine-otto::doc}}
 \sphinxAtStartPar
 \sphinxstylestrong{Storia e applicazioni.}
 
 
-\subsection{Ciclo Otto reale}
+\subsubsection{Ciclo Otto reale}
 \label{\detokenize{ch/thermodynamics/heat-engine-otto:ciclo-otto-reale}}
 \sphinxAtStartPar
 …
 
 
-\subsection{Ciclo Otto ideale}
+\subsubsection{Ciclo Otto ideale}
 \label{\detokenize{ch/thermodynamics/heat-engine-otto:ciclo-otto-ideale}}
 \sphinxAtStartPar
 Un modello ideale del ciclo Otto è formato da:
@@ -8184,7 +8198,7 @@ Un modello ideale del ciclo Otto è formato da:
 \end{itemize}
 
 
-\subsection{Rendimento del ciclo Otto}
+\subsubsection{Rendimento del ciclo Otto}
 \label{\detokenize{ch/thermodynamics/heat-engine-otto:rendimento-del-ciclo-otto}}\begin{equation*}
 \begin{split}\eta = 1 + \dfrac{\Delta Q_{41}}{\Delta Q_{23}}
        = 1 + \dfrac{m \, c_V \, (T_1 - T_4)}{m \, c_V \, (T_3 - T_2)}
@@ -8219,13 +8233,13 @@ e la legge dei gas ideali, \(P V = m R T\), assumendo che sia un’equazione di 
 \begin{split}\eta = 1 - \dfrac{1}{\beta^{\gamma-1}} \ .\end{split}
 \end{equation*}
 
-\subsection{Funzionamento di un motore a combustione interna}
+\subsubsection{Funzionamento di un motore a combustione interna}
 \label{\detokenize{ch/thermodynamics/heat-engine-otto:funzionamento-di-un-motore-a-combustione-interna}}
 \sphinxAtStartPar
 \sphinxstylestrong{todo}
 
 
-\subsection{Esempio}
+\subsubsection{Esempio}
 \label{\detokenize{ch/thermodynamics/heat-engine-otto:esempio}}
 \sphinxAtStartPar
 \sphinxstylestrong{todo}
@@ -8233,10 +8247,10 @@ e la legge dei gas ideali, \(P V = m R T\), assumendo che sia un’equazione di 
 \sphinxstepscope
 
 
-\section{Ciclo Diesel}
+\subsection{Ciclo Diesel}
 \label{\detokenize{ch/thermodynamics/heat-engine-diesel:ciclo-diesel}}\label{\detokenize{ch/thermodynamics/heat-engine-diesel:physics-hs-thermodynamics-heat-engine-diesel}}\label{\detokenize{ch/thermodynamics/heat-engine-diesel::doc}}
 
-\subsection{Ciclo Diesel reale}
+\subsubsection{Ciclo Diesel reale}
 \label{\detokenize{ch/thermodynamics/heat-engine-diesel:ciclo-diesel-reale}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -8263,7 +8277,7 @@ scarico
 \sphinxstepscope
 
 
-\section{Ciclo Joule\sphinxhyphen{}Brayton}
+\subsection{Ciclo Joule\sphinxhyphen{}Brayton}
 \label{\detokenize{ch/thermodynamics/heat-engine-joule-brayton:ciclo-joule-brayton}}\label{\detokenize{ch/thermodynamics/heat-engine-joule-brayton:physics-hs-thermodynamics-heat-engine-joule-brayton}}\label{\detokenize{ch/thermodynamics/heat-engine-joule-brayton::doc}}
 \sphinxAtStartPar
 \sphinxstylestrong{Storia e applicazioni.}
@@ -8290,10 +8304,10 @@ cicli combinati
 Entrambe le configurazioni sono realizzate con macchine termiche continue, che sono \sphinxstylestrong{sistemi aperti} \sphinxstylestrong{todo} \sphinxstyleemphasis{scrivere la sezione per i sistemi aperti e aggiungere riferimento}
 
 
-\subsection{Ciclo Joule\sphinxhyphen{}Brayton aperto}
+\subsubsection{Ciclo Joule\sphinxhyphen{}Brayton aperto}
 \label{\detokenize{ch/thermodynamics/heat-engine-joule-brayton:ciclo-joule-brayton-aperto}}
 
-\subsection{Ciclo Joule\sphinxhyphen{}Brayton chiuso}
+\subsubsection{Ciclo Joule\sphinxhyphen{}Brayton chiuso}
 \label{\detokenize{ch/thermodynamics/heat-engine-joule-brayton:ciclo-joule-brayton-chiuso}}
 \sphinxAtStartPar
 Un modello ideale del ciclo Joule\sphinxhyphen{}Brayton è formato da:
@@ -8317,7 +8331,7 @@ Un modello ideale del ciclo Joule\sphinxhyphen{}Brayton è formato da:
 \end{itemize}
 
 
-\subsection{Rendimento del ciclo Joule\sphinxhyphen{}Brayton}
+\subsubsection{Rendimento del ciclo Joule\sphinxhyphen{}Brayton}
 \label{\detokenize{ch/thermodynamics/heat-engine-joule-brayton:rendimento-del-ciclo-joule-brayton}}\begin{equation*}
 \begin{split}\eta = 1 + \dfrac{\dot{Q}_{41}}{\dot{Q}_{23}}
        = 1 + \dfrac{\dot{m} \, c_P \, (T_1 - T_4)}{\dot{m} \, c_P \, (T_3 - T_2)}
@@ -8352,7 +8366,7 @@ e la legge dei gas ideali, \(P V = m R T\), assumendo che sia un’equazione di 
 \begin{split}\eta = 1 - \dfrac{1}{\beta^{\frac{\gamma-1}{\gamma}}} \ .\end{split}
 \end{equation*}
 
-\subsection{Esempio}
+\subsubsection{Esempio}
 \label{\detokenize{ch/thermodynamics/heat-engine-joule-brayton:esempio}}
 \sphinxAtStartPar
 \sphinxstylestrong{todo}
@@ -8360,7 +8374,7 @@ e la legge dei gas ideali, \(P V = m R T\), assumendo che sia un’equazione di 
 \sphinxstepscope
 
 
-\section{Ciclo Rankine}
+\subsection{Ciclo Rankine}
 \label{\detokenize{ch/thermodynamics/heat-engine-rankine:ciclo-rankine}}\label{\detokenize{ch/thermodynamics/heat-engine-rankine:physics-hs-thermodynamics-heat-engine-rankine}}\label{\detokenize{ch/thermodynamics/heat-engine-rankine::doc}}
 \sphinxAtStartPar
 Il ciclo Rankine rappresenta il ciclo termodinamico ideale per il funzionamento a ciclo continuo delle macchine a vapore.
@@ -8398,7 +8412,7 @@ cicli combinati
 \sphinxstepscope
 
 
-\section{Problemi}
+\subsection{Problemi}
 \label{\detokenize{ch/thermodynamics/heat-engine-problems:problemi}}\label{\detokenize{ch/thermodynamics/heat-engine-problems:physics-hs-thermodynamics-heat-engine-problems}}\label{\detokenize{ch/thermodynamics/heat-engine-problems::doc}}
 
 
@@ -11130,7 +11144,7 @@ K.Schwarzschild scopre la relazione tra il colore (e quindi la temperatura) e la
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}open}\sphinxstyleindexpageref{ch/thermodynamics/principles-open:\detokenize{example-0}}
 \indexspace
 \bigletter{example\sphinxhyphen{}1}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/thermodynamics/foundation\sphinxhyphen{}experiments}\sphinxstyleindexpageref{ch/thermodynamics/foundation-experiments:\detokenize{example-1}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}open}\sphinxstyleindexpageref{ch/thermodynamics/principles-open:\detokenize{example-1}}
 \indexspace
 \bigletter{example\sphinxhyphen{}10}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}10}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-10}}
@@ -11160,7 +11174,7 @@ K.Schwarzschild scopre la relazione tra il colore (e quindi la temperatura) e la
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}18}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-18}}
 \indexspace
 \bigletter{example\sphinxhyphen{}2}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/thermodynamics/foundation\sphinxhyphen{}experiments}\sphinxstyleindexpageref{ch/thermodynamics/foundation-experiments:\detokenize{example-2}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}open}\sphinxstyleindexpageref{ch/thermodynamics/principles-open:\detokenize{example-2}}
 \indexspace
 \bigletter{example\sphinxhyphen{}3}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/thermodynamics/foundation\sphinxhyphen{}experiments}\sphinxstyleindexpageref{ch/thermodynamics/foundation-experiments:\detokenize{example-3}}
@@ -11169,7 +11183,7 @@ K.Schwarzschild scopre la relazione tra il colore (e quindi la temperatura) e la
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}4}\sphinxstyleindexextra{ch/thermodynamics/foundation\sphinxhyphen{}experiments}\sphinxstyleindexpageref{ch/thermodynamics/foundation-experiments:\detokenize{example-4}}
 \indexspace
 \bigletter{example\sphinxhyphen{}5}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/thermodynamics/foundation\sphinxhyphen{}experiments}\sphinxstyleindexpageref{ch/thermodynamics/foundation-experiments:\detokenize{example-5}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-5}}
 \indexspace
 \bigletter{example\sphinxhyphen{}6}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}6}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-6}}
