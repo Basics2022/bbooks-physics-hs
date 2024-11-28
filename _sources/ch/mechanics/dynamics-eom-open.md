@@ -15,8 +15,13 @@ Una barca di massa $M_0$ è stata caricata con $N$ palle di cannone, ciascuna di
 
 Viene chiesto di determinare la velocità della barca dopo $n \le N$ spari.
 
-**Soluzione**
+**Soluzione.**
 ```{dropdown} Approccio 1. Conservazione della quantità di moto di un sistema chiuso costituito dalla barca e dalla palla di cannone sparata.
+Non agendo altre forze nette sul sistema, la quantità di moto del sistema chiuso è conservata tra un istante di tempo precedente e successivo allo sparo $n$-esimo.
+
+$$M_{n+1} v_{n+1} = M_{n} v_{n} - m ( v_e - v_{n+1} )$$
+
+
 ```
 
 ```{dropdown} Approccio 2. Conservazione della quantità di moto di un sistema aperto costituito dalla barca.
