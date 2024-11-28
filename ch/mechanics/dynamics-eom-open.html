@@ -574,11 +574,14 @@ La quantità di moto del sistema al tempo <span class="math notranslate nohighli
 <p>Nel caso in cui si possano trascurare le forze esterne agenti sul sistema rispetto alla spinta, l’equazione di moto fornisce una relazione differenziale tra la massa <span class="math notranslate nohighlight">\(M(t)\)</span> e la velocità <span class="math notranslate nohighlight">\(\vec{v}\)</span> del sistema,</p>
 <div class="math notranslate nohighlight">
 \[M \dot{\vec{v}} = \dot{M} \vec{v}_e^{rel} \ .\]</div>
-<p>Spostando tutto da una parte dell’uguale, e dividendo per la massa <span class="math notranslate nohighlight">\(M\)</span>, e ricordando che <span class="math notranslate nohighlight">\(\frac{d}{dt} \ln x(t) = \frac{\dot{x}(t)}{x(t)}\)</span>, assumendo che la velocità relativa di efflusso sia costante, si può integrare la relazione</p>
+<p>Spostando tutto da una parte dell’uguale, e dividendo per la massa <span class="math notranslate nohighlight">\(M\)</span>, e ricordando che <span class="math notranslate nohighlight">\(\frac{d}{dt} \ln x(t) = \frac{\dot{x}(t)}{x(t)}\)</span>, assumendo che la velocità relativa di efflusso sia costante, si può riscrivere l’equazione in termini di una derivata in tempo nulla,</p>
 <div class="math notranslate nohighlight">
 \[\begin{aligned}
-  0 = \dot{\vec{v}} - \frac{\dot{M}}{M} \vec{v}_e^{rel}
+  0 = \dot{\vec{v}} - \frac{\dot{M}}{M} \vec{v}_e^{rel} = \dfrac{d}{dt} \left( \vec{v} - \vec{v}^{rel}_e \ln \frac{M}{M_0} \right) \ ,
 \end{aligned}\]</div>
+<p>che implica la costanza della funzione derivata,</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}_2 - \ln \frac{M_2}{M_0} \vec{v}^{rel}_e = \vec{v}_1 - \ln \frac{M_1}{M_0} \vec{v}^{rel}_e\]</div>
 </div>
 </div></div>
 </div>

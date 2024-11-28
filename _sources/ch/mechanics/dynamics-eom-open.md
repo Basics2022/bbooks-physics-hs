@@ -45,11 +45,15 @@ Nel caso in cui si possano trascurare le forze esterne agenti sul sistema rispet
 
 $$M \dot{\vec{v}} = \dot{M} \vec{v}_e^{rel} \ .$$
 
-Spostando tutto da una parte dell'uguale, e dividendo per la massa $M$, e ricordando che $\frac{d}{dt} \ln x(t) = \frac{\dot{x}(t)}{x(t)}$, assumendo che la velocità relativa di efflusso sia costante, si può integrare la relazione
+Spostando tutto da una parte dell'uguale, e dividendo per la massa $M$, e ricordando che $\frac{d}{dt} \ln x(t) = \frac{\dot{x}(t)}{x(t)}$, assumendo che la velocità relativa di efflusso sia costante, si può riscrivere l'equazione in termini di una derivata in tempo nulla,
 
 $$\begin{aligned}
-  0 = \dot{\vec{v}} - \frac{\dot{M}}{M} \vec{v}_e^{rel}
+  0 = \dot{\vec{v}} - \frac{\dot{M}}{M} \vec{v}_e^{rel} = \dfrac{d}{dt} \left( \vec{v} - \vec{v}^{rel}_e \ln \frac{M}{M_0} \right) \ ,
 \end{aligned}$$
+
+che implica la costanza della funzione derivata,
+
+$$\vec{v}_2 - \ln \frac{M_2}{M_0} \vec{v}^{rel}_e = \vec{v}_1 - \ln \frac{M_1}{M_0} \vec{v}^{rel}_e$$
 
 
 
