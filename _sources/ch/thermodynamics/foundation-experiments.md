@@ -52,7 +52,12 @@ $$P V = \text{const}$$
 
 valida per un sistema chiuso a temperatura $T$ costante. Al tempo delle attività sperimentali di Boyle, il manometro di Torricelli era uno strumento disponibile per una misura sufficientemente accurata della pressione, mentre non erano ancora disponibili strumenti accurati per la misura della temperatura del gas contenuto all'interno del sistema. Le attività di Boyle assumevano quindi una stabilità sufficiente della temperatura dell'ambiente all'interno dela quale era svolto l'esperimento, insieme all'equilibrio termico tra sistema e ambiente.
 
-<span style="color:red"> **todo** dettagli dell'esperimento </span>
+<!-- <span style="color:red"> **todo** dettagli dell'esperimento </span> -->
+
+````{list-table}
+:header-rows: 0
+* - ![](../../media/boyle.svg)
+````
 
 ```{prf:example} **todo** Esercizi su manometro di Torricelli
 ```
