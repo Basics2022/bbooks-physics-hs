@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>14.4.1. Ciclo Otto &#8212; Fisica per le superiori</title>
+    <title>14.4. Macchine termiche e cicli termodinamici &#8212; Fisica per le superiori</title>
   
   
   
@@ -65,14 +65,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/heat-engine-otto';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/heat-engine-industrial';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="14.4.2. Ciclo Diesel" href="heat-engine-diesel.html" />
-    <link rel="prev" title="14.4. Macchine termiche e cicli termodinamici" href="heat-engine-industrial.html" />
+    <link rel="next" title="14.4.1. Ciclo Otto" href="heat-engine-otto.html" />
+    <link rel="prev" title="14.3. Secondo principio della termodinamica per cicli termodinamici" href="heat-engine-second-principle.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -268,8 +266,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="heat-engine-td-cycles.html">14.1. Cicli termodinamici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="heat-engine-carnot.html">14.2. Macchina termica di Carnot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="heat-engine-second-principle.html">14.3. Secondo principio della termodinamica per cicli termodinamici</a></li>
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="heat-engine-industrial.html">14.4. Macchine termiche e cicli termodinamici</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">14.4.1. Ciclo Otto</a></li>
+<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">14.4. Macchine termiche e cicli termodinamici</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="heat-engine-otto.html">14.4.1. Ciclo Otto</a></li>
 <li class="toctree-l3"><a class="reference internal" href="heat-engine-diesel.html">14.4.2. Ciclo Diesel</a></li>
 <li class="toctree-l3"><a class="reference internal" href="heat-engine-joule-brayton.html">14.4.3. Ciclo Joule-Brayton</a></li>
 <li class="toctree-l3"><a class="reference internal" href="heat-engine-rankine.html">14.4.4. Ciclo Rankine</a></li>
@@ -386,7 +384,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/edit/master/ch/thermodynamics/heat-engine-otto.md" target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/edit/master/ch/thermodynamics/heat-engine-industrial.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -403,7 +401,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/thermodynamics/heat-engine-otto.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/thermodynamics/heat-engine-industrial.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Apri un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -433,7 +431,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/thermodynamics/heat-engine-otto.md" target="_blank"
+      <li><a href="../../_sources/ch/thermodynamics/heat-engine-industrial.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -504,9 +502,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -517,23 +513,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Ciclo Otto</h1>
+    <h1>Macchine termiche e cicli termodinamici</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contenuti </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-otto-reale">14.4.1.1. Ciclo Otto reale</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-otto-ideale">14.4.1.2. Ciclo Otto ideale</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rendimento-del-ciclo-otto">14.4.1.3. Rendimento del ciclo Otto</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzionamento-di-un-motore-a-combustione-interna">14.4.1.4. Funzionamento di un motore a combustione interna</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempio">14.4.1.5. Esempio</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -543,60 +527,12 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="ciclo-otto">
-<span id="physics-hs-thermodynamics-heat-engine-otto"></span><h1><span class="section-number">14.4.1. </span>Ciclo Otto<a class="headerlink" href="#ciclo-otto" title="Permalink to this heading">#</a></h1>
-<p><strong>Storia e applicazioni.</strong></p>
-<div class="section" id="ciclo-otto-reale">
-<h2><span class="section-number">14.4.1.1. </span>Ciclo Otto reale<a class="headerlink" href="#ciclo-otto-reale" title="Permalink to this heading">#</a></h2>
-<p>…</p>
-</div>
-<div class="section" id="ciclo-otto-ideale">
-<h2><span class="section-number">14.4.1.2. </span>Ciclo Otto ideale<a class="headerlink" href="#ciclo-otto-ideale" title="Permalink to this heading">#</a></h2>
-<p>Un modello ideale del ciclo Otto è formato da:</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(0 \rightarrow 1\)</span> aspirazione a pressione costante, <span class="math notranslate nohighlight">\(P_1\)</span>. Durante l’aspirazione, il sistema è aperto: le valvole di aspirazione sono aperte per far entrare l’aria in camera di combustione. Alla fine dell’aspirazione, le valvole vengono chiuse e il sistema di interesse è un sistema chiuso</p></li>
-<li><p><span class="math notranslate nohighlight">\(1 \rightarrow 2\)</span> compressione adiabatica in sistema chiuso</p></li>
-<li><p><span class="math notranslate nohighlight">\(2 \rightarrow 3\)</span> combustione a volume costante: la combustione avviene in maniera sufficientemente veloce da poter essere modellata come una trasformazione termodinamica a volume costante, in corrispondenza del punto morto superiore; in prima approssimazione, si può trascurare il flusso di massa del combustibile e la variazione delle proprietà chimico-fisiche del fluido di lavoro; la reazione di combustione produce il calore in ingresso al sistema</p></li>
-<li><p><span class="math notranslate nohighlight">\(3 \rightarrow 4\)</span> espansione adiabatica</p></li>
-<li><p><span class="math notranslate nohighlight">\(4 \rightarrow 1\)</span>, <span class="math notranslate nohighlight">\(1 \rightarrow 0\)</span> scarico libero e scarico forzato. <strong>todo</strong> in prima approssimazione, la parte di scarico al punto morto inferiore non produce lavoro poiché <span class="math notranslate nohighlight">\(\Delta V_{14} = 0\)</span> e la fase di scarico forzata è equilibrata dalla fase di aspirazione.</p></li>
-</ul>
-</div>
-<div class="section" id="rendimento-del-ciclo-otto">
-<h2><span class="section-number">14.4.1.3. </span>Rendimento del ciclo Otto<a class="headerlink" href="#rendimento-del-ciclo-otto" title="Permalink to this heading">#</a></h2>
-<div class="math notranslate nohighlight">
-\[\eta = 1 + \dfrac{\Delta Q_{41}}{\Delta Q_{23}}
-       = 1 + \dfrac{m \, c_V \, (T_1 - T_4)}{m \, c_V \, (T_3 - T_2)}
-       = 1 + \dfrac{T_1 - T_4}{T_3 - T_2}
-\]</div>
-<p>Usando le condizioni, <strong>todo</strong> <em>usare direttamente le espressioni delle adiabatiche ideali ricavate nella sezione delle trasformazioni termodinamiche con gas ideali</em></p>
-<div class="math notranslate nohighlight">
-\[V_2 = V_3 \qquad , \qquad V_1 = V_4\]</div>
-<div class="math notranslate nohighlight">
-\[P_1 \, V_1^{\gamma} = P_2 \, V_2^{\gamma}\]</div>
-<div class="math notranslate nohighlight">
-\[P_3 \, V_3^{\gamma} = P_4 \, V_4^{\gamma}\]</div>
-<p>e la legge dei gas ideali, <span class="math notranslate nohighlight">\(P V = m R T\)</span>, assumendo che sia un’equazione di stato adatta a descrivere il fluido di lavoro, per riscrivere l’equazione delle trasformazioni adiabatiche</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  T_1 \, V_1^{\gamma-1} &amp; = T_2 \, V_2^{\gamma-1} \\
-  T_3 \, V_3^{\gamma-1} &amp; = T_4 \, V_4^{\gamma-1}
-\end{aligned}
-\begin{aligned}
-  &amp; \qquad \rightarrow \qquad  (T_4 - T_1) \, V_1^{\gamma-1} = (T_3 - T_2) \, V_2^{\gamma - 1} \\
-  &amp; \qquad \rightarrow \qquad  \dfrac{T_4 - T_1}{T_3 - T_2} = \left( \dfrac{V_2}{V_1} \right)^{\gamma-1} = \dfrac{1}{\beta^{\gamma - 1}} \\
-\end{aligned}
-\end{split}\]</div>
-<p>è possibile riscrivere l’espressione del rendimento del ciclo Otto in funzione unicamente del rapporto di compressione volumetrico <span class="math notranslate nohighlight">\(\beta := \dfrac{V_1}{V_2}\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[\eta = 1 - \dfrac{1}{\beta^{\gamma-1}} \ .\]</div>
-</div>
-<div class="section" id="funzionamento-di-un-motore-a-combustione-interna">
-<h2><span class="section-number">14.4.1.4. </span>Funzionamento di un motore a combustione interna<a class="headerlink" href="#funzionamento-di-un-motore-a-combustione-interna" title="Permalink to this heading">#</a></h2>
-<p><strong>todo</strong></p>
-</div>
-<div class="section" id="esempio">
-<h2><span class="section-number">14.4.1.5. </span>Esempio<a class="headerlink" href="#esempio" title="Permalink to this heading">#</a></h2>
-<p><strong>todo</strong></p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="macchine-termiche-e-cicli-termodinamici">
+<span id="physics-hs-thermodynamics-heat-engine-industrial"></span><h1><span class="section-number">14.4. </span>Macchine termiche e cicli termodinamici<a class="headerlink" href="#macchine-termiche-e-cicli-termodinamici" title="Permalink to this heading">#</a></h1>
+<p><strong>Cicli diretti/cicli inversi</strong></p>
+<p><strong>Cicli TD</strong> Otto, Diesel, Joule-Brayton, Rankine,…</p>
+<p><strong>Applicazioni</strong> Motori ICE, produzione energia elettrica, refrigerazione,…</p>
+<div class="toctree-wrapper compound">
 </div>
 </div>
 
@@ -631,20 +567,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="heat-engine-industrial.html"
+       href="heat-engine-second-principle.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">14.4. </span>Macchine termiche e cicli termodinamici</p>
+        <p class="prev-next-title"><span class="section-number">14.3. </span>Secondo principio della termodinamica per cicli termodinamici</p>
       </div>
     </a>
     <a class="right-next"
-       href="heat-engine-diesel.html"
+       href="heat-engine-otto.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">14.4.2. </span>Ciclo Diesel</p>
+        <p class="prev-next-title"><span class="section-number">14.4.1. </span>Ciclo Otto</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -654,24 +590,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contenuti
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-otto-reale">14.4.1.1. Ciclo Otto reale</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-otto-ideale">14.4.1.2. Ciclo Otto ideale</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rendimento-del-ciclo-otto">14.4.1.3. Rendimento del ciclo Otto</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzionamento-di-un-motore-a-combustione-interna">14.4.1.4. Funzionamento di un motore a combustione interna</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempio">14.4.1.5. Esempio</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
