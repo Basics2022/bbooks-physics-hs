@@ -45,5 +45,6 @@ Nel caso in cui si possano trascurare le forze esterne agenti sul sistema rispet
 
 $$M \dot{\vec{v}} = \dot{M} \vec{v}_e^{rel} \ .$$
 
+Spostando tutto da una parte dell'uguale, e dividendo per la massa $M$, e ricordando che $\frac{d}{dt} \ln x(t) = \frac{\dot{x}(t)}{x(t)}$
 
 ```
