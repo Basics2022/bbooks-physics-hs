@@ -41,8 +41,6 @@ $$\begin{aligned}
   & = \frac{m}{M} v_p^{rel} \sum_{k = 0}^{n} \frac{1}{1 - (1+k) \frac{m}{M}} \ .
 \end{aligned}$$
 
-$$\vec{v}_{n+1} - \vec{v}_n = \frac{m}{M_{n+1}} \vec{v}_p^{rel} \ .$$
-
 
 **oss.** L'equazione ... può essere riscritta mettendo in evidenza le variazioni delle grandezze fisiche velocità e massa
 
@@ -61,6 +59,8 @@ $$\begin{aligned}
   \vec{0} & = M_{n+1} \vec{v}_{n+1} - M_{n} \vec{v}_n + m \vec{v}_p  \\
           & = M_{n+1} \vec{v}_{n+1} - M_{n} \vec{v}_n + m ( \vec{v}_p^{rel} + \vec{v}_n )  \\
 \end{aligned}$$
+
+$$\vec{v}_{n+1} - \vec{v}_n = \frac{m}{M_{n+1}} \vec{v}_p^{rel} \ .$$
 
 ```
 
