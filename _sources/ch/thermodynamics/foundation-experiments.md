@@ -32,7 +32,7 @@ L'esperienza di Torricelli:
 
 
 ```{note} Il "quasi"-vuoto
-
+:class: dropdown
 ```
 
 ````{list-table}
