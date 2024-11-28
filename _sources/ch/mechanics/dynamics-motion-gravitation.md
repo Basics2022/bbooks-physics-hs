@@ -4,6 +4,18 @@
 :read-time: "{sub-ref}`wordcount-minutes` min read"
 ```
 
+---
+jupytext:
+    formats: md:myst
+    text_representation:
+        extension: .md
+        format_name: myst
+kernelspec:
+    dispaly_name: Python 3(ipykernel)
+    language: python
+    name: python3
+---
+
 (physics-hs:mechanics:dynamics:motion:gravitation)=
 # Gravitazione
 
