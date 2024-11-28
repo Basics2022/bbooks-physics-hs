@@ -5845,8 +5845,21 @@ L’indagine di Boyle e Hooke su gas sufficientemente rarefatti produce come ris
 \sphinxAtStartPar
 valida per un sistema chiuso a temperatura \(T\) costante. Al tempo delle attività sperimentali di Boyle, il manometro di Torricelli era uno strumento disponibile per una misura sufficientemente accurata della pressione, mentre non erano ancora disponibili strumenti accurati per la misura della temperatura del gas contenuto all’interno del sistema. Le attività di Boyle assumevano quindi una stabilità sufficiente della temperatura dell’ambiente all’interno dela quale era svolto l’esperimento, insieme all’equilibrio termico tra sistema e ambiente.
 
+
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|}
+\hline
+
 \sphinxAtStartPar
- \sphinxstylestrong{todo} dettagli dell’esperimento 
+\sphinxincludegraphics{{boyle}.png}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
 \label{ch/thermodynamics/foundation-experiments:example-0}
 \begin{sphinxadmonition}{note}{Example 11.2.1 (\sphinxstylestrong{todo} Esercizi su manometro di Torricelli)}
 
@@ -6341,27 +6354,36 @@ In questo capitolo vengono presentati i princìpi della termodinamica classica, 
 I princìpi della termodinamica vengono introdotti per \sphinxstylestrong{sistemi chiusi}, e successivamente estesi ai sistemi aperti.
 
 
-
+\begin{itemize}
+\item {} 
 \sphinxAtStartPar
 Il {\hyperref[\detokenize{ch/thermodynamics/principles-lavoisier:physics-hs-thermodynamics-foundation-principles-lavoisier}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{principio di conservazione della massa \sphinxhyphen{} di Lavoisier}}}}} valido in meccanica classica, riassumibile con la formula \sphinxstyleemphasis{«nulla si crea, nulla si distrugge, ma tutto si trasforma»}, asserisce che in un sistema chiuso la massa è costante,
 \begin{equation*}
 \begin{split}d M = 0 \ .\end{split}
 \end{equation*}
+\item {} 
 \sphinxAtStartPar
 Il {\hyperref[\detokenize{ch/thermodynamics/principles-first:physics-hs-thermodynamics-foundation-principles-first}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{primo principio della termodinamica}}}}} fornisce la forma generale del bilancio dell’energia \sphinxstyleemphasis{totale} di un sistema chiuso, riconoscendo il lavoro delle forze esterne \(\delta L^{ext}\) e il calore \(\delta Q^{ext}\) scambiato dal sistema con l’ambiente esterno come le cause della variazione dell’energia totale del sistema.
 \begin{equation*}
 \begin{split}d E^{tot} = \delta L^{ext} + \delta Q^{ext} \ .\end{split}
 \end{equation*}
+\item {} 
 \sphinxAtStartPar
 L’opera di \sphinxstylestrong{Gibbs} fornisce {\hyperref[\detokenize{ch/thermodynamics/principles-gibbs-phase-rule:physics-hs-thermodynamics-foundation-principles-gibbs-phase-rule}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{i concetti necessari e una formalizzazione matematica}}}}} rigorosa della termodinamica classica. Vengono introdotti i concetti di energia interna, variabile di stato, la regola delle fasi di Gibbs; vengono poi presentati alcuni {\hyperref[\detokenize{ch/thermodynamics/principles-phase-diagrams:physics-hs-thermodynamics-foundation-principles-phase-diagrams}]{\sphinxcrossref{\DUrole{std,std-ref}{diagrammi di fase}}}} per la rappresentazione dello stato di un sistema e le trasformazioni termodinamiche e che verranno utilizzati nei capitoli successivi.
 
+\item {} 
 \sphinxAtStartPar
 Il {\hyperref[\detokenize{ch/thermodynamics/principles-second:physics-hs-thermodynamics-foundation-principles-second}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{secondo principio della termodinamica}}}}} traduce le tendenze naturali: la dissipazione dell’energia meccanica macroscopica e la trasmissione del calore da un corpo caldo a un corpo freddo, in un principio formulabile in termini di \sphinxstylestrong{entropia},
+
+\end{itemize}
 \begin{equation*}
 \begin{split}d S \le \frac{\delta Q}{T} \ .\end{split}
-\end{equation*}
+\end{equation*}\begin{itemize}
+\item {} 
 \sphinxAtStartPar
 Infine, i bilanci delle quantità fisiche per {\hyperref[\detokenize{ch/thermodynamics/principles-open:physics-hs-thermodynamics-foundation-principles-open}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{sistemi aperti}}}}} vengono ricavati modificando i bilanci per sistemi chiusi, introducendo i termini di \sphinxstylestrong{flusso delle grandezze fisiche dovuti al trasporto di materia} attraverso la frontiera del sistema.
+
+\end{itemize}
 
 
 
@@ -6389,29 +6411,6 @@ questo principio cessa di valere nell’ambito della relatività di Einstein, ch
 \end{itemize}
 
 
-\subsection{Densità}
-\label{\detokenize{ch/thermodynamics/principles-lavoisier:densita}}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-massa quantità estensiva \(M\)
-
-\item {} 
-\sphinxAtStartPar
-densità quantità specifica/intensiva \(\rho = \frac{\Delta M}{\Delta V}\) (massa, volume sono quantità estensive)
-
-\end{itemize}
-\phantomsection \label{exercise:ch/thermodynamics/principles-lavoisier-exercise-0}
-
-\begin{sphinxadmonition}{note}{Exercise 12.1.1}
-
-
-\end{sphinxadmonition}
-\phantomsection \label{exercise:ch/thermodynamics/principles-lavoisier-exercise-1}
-
-\begin{sphinxadmonition}{note}{Exercise 12.1.2}
-
-
-\end{sphinxadmonition}
 
 \sphinxstepscope
 
@@ -6484,7 +6483,28 @@ Il bilancio dell’energia interna per un sistema chiuso diventa quindi
 \end{equation*}
 
 \subsection{Regola delle fasi di Gibbs}
-\label{\detokenize{ch/thermodynamics/principles-gibbs-phase-rule:regola-delle-fasi-di-gibbs}}\label{\detokenize{ch/thermodynamics/principles-gibbs-phase-rule:physics-hs-thermodynamics-foundation-principles-gibbs-phase-rule-gibbs-phase-rule}}\label{ch/thermodynamics/principles-gibbs-phase-rule:proposition-3}
+\label{\detokenize{ch/thermodynamics/principles-gibbs-phase-rule:regola-delle-fasi-di-gibbs}}\label{\detokenize{ch/thermodynamics/principles-gibbs-phase-rule:physics-hs-thermodynamics-foundation-principles-gibbs-phase-rule-gibbs-phase-rule}}\label{ch/thermodynamics/principles-gibbs-phase-rule:definition-3}
+\begin{sphinxadmonition}{note}{Definition 12.3.3 (Fase)}
+
+
+
+\sphinxAtStartPar
+Una fase è definita come una porzione di un sistema chimico\sphinxhyphen{}fisico caratterizzata da proprietà chimico\sphinxhyphen{}fisiche (macroscopiche) uniformi.
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+discussione delle proprietà
+
+\item {} 
+\sphinxAtStartPar
+esempi: miscela di gas miscibili costituisce una fase sola, nella quale non è possibile distinguere macroscopicamente i suoi componenti elementari; liquidi non miscibili rimangono macroscopicamente separati e quindi costituiscono più fasi, delle quali è possibile distinguere macroscopicamente composizioni chimiche differenti;…
+
+\end{itemize}
+\label{ch/thermodynamics/principles-gibbs-phase-rule:proposition-4}
 \begin{sphinxadmonition}{note}{Proposition 12.3.1 (Regola delle fasi di Gibbs)}
 
 
@@ -6558,7 +6578,7 @@ Fare esempi che chiariscano la definizione di fase (es: solidi o liquidi puri ra
 discutere il ruolo delle frazioni di fase di un singolo componente e il fatto che non sono variabili di stato; esempio passaggio di fase liquido\sphinxhyphen{}vapore: l’equilibrio è determinato dal valore di \(P\) (o di \(T\)), la frazione di vapore è una conseguenza di altre variabili estensive del sistema.
 
 \end{itemize}
-\label{ch/thermodynamics/principles-gibbs-phase-rule:example-4}
+\label{ch/thermodynamics/principles-gibbs-phase-rule:example-5}
 \begin{sphinxadmonition}{note}{Example 12.3.2 (Sistema chiuso contentente un monocomponente (o non\sphinxhyphen{}reagente), monofase, elettricamente neutro (o non\sphinxhyphen{}soggetto a campo elettromagnetico))}
 
 
@@ -6571,7 +6591,7 @@ In un sistema composto da un gas comprimibile, monocomponente e monofase (gassos
 \sphinxAtStartPar
 variabili di stato per definire lo stato del sistema.
 \end{sphinxadmonition}
-\label{ch/thermodynamics/principles-gibbs-phase-rule:example-5}
+\label{ch/thermodynamics/principles-gibbs-phase-rule:example-6}
 \begin{sphinxadmonition}{note}{Example 12.3.3 (Sistema aperto contentente un monocomponente (o non\sphinxhyphen{}reagente), monofase, elettricamente neutro (o non\sphinxhyphen{}soggetto a campo elettromagnetico))}
 
 
@@ -6579,7 +6599,7 @@ variabili di stato per definire lo stato del sistema.
 \sphinxAtStartPar
 In un sistema aperto, la variazione di energia del sistema dipende anche dalla variazione della quantità di gas contenuto in esso. Quindi, in generale esistono \(W = 2\) modi per far variare l’eneergia del sistema: tramite il lavoro di compressione, o tramite un flusso di materia all’interno del sistema. Servono quindi \(F=3\) variabili di stato per definire lo stato del sistema.
 \end{sphinxadmonition}
-\label{ch/thermodynamics/principles-gibbs-phase-rule:example-6}
+\label{ch/thermodynamics/principles-gibbs-phase-rule:example-7}
 \begin{sphinxadmonition}{note}{Example 12.3.4 (Miscela reattiva di gas in un sistema chiuso)}
 
 
@@ -6600,7 +6620,7 @@ l’energia del sistema dipende dal lavoro meccanico di compressione della misce
 \sphinxAtStartPar
 La reazione è quindi determinata da 1 solo parametro. La variazione di energia del sistema è quindi determinata da \(W=2\) processi: dal lavoro di compressione fatto sul sistema, e dallo stato della reazione. Per determinare lo stato del sistema servono quindi \(F=3\) variabili di stato indipendenti, come ad esempio \sphinxstylestrong{todo} \(T\), \(P\), \(n_A\)? Non servono i potenziali chimici \(\mu_A\), \(\mu_B\), \(\mu_{A_a B_b}\)? Sono unicamente determinati?
 \end{sphinxadmonition}
-\label{ch/thermodynamics/principles-gibbs-phase-rule:example-7}
+\label{ch/thermodynamics/principles-gibbs-phase-rule:example-8}
 \begin{sphinxadmonition}{note}{Example 12.3.5 (Sistema monocomponente durante una transizione di fase)}
 
 
@@ -6616,7 +6636,7 @@ variabile di stato.
 \sphinxAtStartPar
 \sphinxstylestrong{Punto critico.} Il punto critico nel piano delle fasi di un sistema mono\sphinxhyphen{}componente definisce la condizione in cui sono simultaneamente presenti nel sistema \(P = 3\) fasi. Secondo la regola delle fasi di Gibbs, lo stato del sistema è determinato da \(F = 0\) variabili di stato: lo stato del sistema nel punto critico è univocamente definito, senza alcun grado di libertà.
 \end{sphinxadmonition}
-\label{ch/thermodynamics/principles-gibbs-phase-rule:example-8}
+\label{ch/thermodynamics/principles-gibbs-phase-rule:example-9}
 \begin{sphinxadmonition}{note}{Example 12.3.6 (Solido)}
 
 
@@ -6624,7 +6644,7 @@ variabile di stato.
 \sphinxAtStartPar
 In assenza di altri fenomeni fisici, l’unica forma di lavoro in un solido è quella legata al lavoro di deformazione, \(\delta L^{int,rev} = \sigma_{ij} \, d \varepsilon_{ij} dV\). Il tensore di deformazione è del secondo ordine e simmetrico, e ha quindi 6 componenti indipendenti nello spazio 3\sphinxhyphen{}dimensionale, e quindi \(W=6\)
 \end{sphinxadmonition}
-\label{ch/thermodynamics/principles-gibbs-phase-rule:example-9}
+\label{ch/thermodynamics/principles-gibbs-phase-rule:example-10}
 \begin{sphinxadmonition}{note}{Example 12.3.7 (Miscele solide)}
 
 
@@ -6635,7 +6655,7 @@ Fasi nelle miscele solide \sphinxstylestrong{todo}
 
 \end{itemize}
 \end{sphinxadmonition}
-\label{ch/thermodynamics/principles-gibbs-phase-rule:example-10}
+\label{ch/thermodynamics/principles-gibbs-phase-rule:example-11}
 \begin{sphinxadmonition}{note}{Example 12.3.8 (Influenza del campo elettromagnetico)}
 
 
@@ -6668,7 +6688,16 @@ dE & = \left. \dfrac{\partial E}{\partial S} \right|_{\mathbf{X}} d S
 \end{aligned}\end{split}
 \end{equation*}
 \sphinxAtStartPar
-avendo definito \(F_k\) le forze generalizzate associate agli spostamenti generalizzati \(dX_k\) e introdotto la definizione delle variabili \(T\) ed \(S\) di cui sarà chiaro il significato a breve.
+avendo definito \(F_k\) le forze generalizzate associate agli spostamenti generalizzati \(dX_k\) e introdotto la definizione delle variabili \(T\) ed \(S\), che corrispondono alle grandezze fisiche temperatura ed entropia, come descritto in seguito \sphinxstylestrong{todo}.
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+con questo formalismo è immediato formulare il \sphinxstylestrong{secondo} e il \sphinxstylestrong{terzo principio della termodinamica} come \(dS \ge \frac{\delta Q^{ext}}{T}\), e \(T \ge 0\)
+
+\end{itemize}
 
 \sphinxAtStartPar
 L’espressione del differenziale dell’energia interna può essere confrontata con il bilancio dell’energia interna scritto in termini del calore apportato al sistema e del lavoro interno,
@@ -6737,7 +6766,7 @@ con \(\vec{e}\), \(\vec{h}\) campi elettrico e magnetico, \(\vec{p}\), \(\vec{m}
 \(\phi\) potenziale elettrico, \(q\) carica elettrica (per sistemi aperti, altrimenti o \(dq \equiv 0\) o si starebbe creando carica elettrica netta!)
 
 \end{itemize}
-\label{ch/thermodynamics/principles-gibbs-phase-rule:example-11}
+\label{ch/thermodynamics/principles-gibbs-phase-rule:example-12}
 \begin{sphinxadmonition}{note}{Example 12.3.9 (Sistema gassoso chiuso monocomponente)}
 
 
@@ -6747,7 +6776,7 @@ L’energia del sistema, \(E(S,V)\)
 \begin{equation*}
 \begin{split}dE = T \, dS - P \, dV\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/thermodynamics/principles-gibbs-phase-rule:example-12}
+\label{ch/thermodynamics/principles-gibbs-phase-rule:example-13}
 \begin{sphinxadmonition}{note}{Example 12.3.10 (Sistema gassoso aperto monocomponente)}
 
 
@@ -6757,7 +6786,7 @@ L’energia del sistema, \(E(S,V,N)\)
 \begin{equation*}
 \begin{split}dE = T \, dS - P \, dV + \mu \, dN\end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/thermodynamics/principles-gibbs-phase-rule:example-13}
+\label{ch/thermodynamics/principles-gibbs-phase-rule:example-14}
 \begin{sphinxadmonition}{note}{Example 12.3.11 (Miscela reattiva di gas in un sistema chiuso)}
 
 
@@ -6773,7 +6802,7 @@ L’energia del sistema
 \sphinxAtStartPar
 avendo indicato con \(n_k\) i coefficienti stechiomentrici (con segno) della reazione, e con \(N\) una quantità che identifica l’equilibrio della reazione, in maniera tale da poter scrivere la variazione di ogni componente come \(d N_k = n_k \, d N\).
 \end{sphinxadmonition}
-\label{ch/thermodynamics/principles-gibbs-phase-rule:example-14}
+\label{ch/thermodynamics/principles-gibbs-phase-rule:example-15}
 \begin{sphinxadmonition}{note}{Example 12.3.12 (Miscela monocomponente durante una transizione di fase)}
 
 
@@ -6781,7 +6810,7 @@ avendo indicato con \(n_k\) i coefficienti stechiomentrici (con segno) della rea
 \sphinxAtStartPar
 \sphinxstylestrong{todo} come trattare la frazione delle fasi?
 \end{sphinxadmonition}
-\label{ch/thermodynamics/principles-gibbs-phase-rule:example-15}
+\label{ch/thermodynamics/principles-gibbs-phase-rule:example-16}
 \begin{sphinxadmonition}{note}{Example 12.3.13 (Solido)}
 
 
@@ -6791,7 +6820,7 @@ Sistema solido di volume iniziale \(V\) con stato di sforzo e deformazione unifo
 \begin{equation*}
 \begin{split}dE = T \, dS - V \, \sigma_{ij} \, d \varepsilon_{ij} \end{split}
 \end{equation*}\end{sphinxadmonition}
-\label{ch/thermodynamics/principles-gibbs-phase-rule:example-16}
+\label{ch/thermodynamics/principles-gibbs-phase-rule:example-17}
 \begin{sphinxadmonition}{note}{Example 12.3.14 (Miscele solide)}
 
 
@@ -6799,7 +6828,7 @@ Sistema solido di volume iniziale \(V\) con stato di sforzo e deformazione unifo
 \sphinxAtStartPar
 \sphinxstylestrong{todo}
 \end{sphinxadmonition}
-\label{ch/thermodynamics/principles-gibbs-phase-rule:example-17}
+\label{ch/thermodynamics/principles-gibbs-phase-rule:example-18}
 \begin{sphinxadmonition}{note}{Example 12.3.15 (Influenza del campo magnetico)}
 
 
@@ -11082,11 +11111,14 @@ K.Schwarzschild scopre la relazione tra il colore (e quindi la temperatura) e la
 \bigletter{definition\sphinxhyphen{}2}
 \item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}2}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{definition-2}}
 \indexspace
+\bigletter{definition\sphinxhyphen{}3}
+\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}3}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{definition-3}}
+\indexspace
 \bigletter{example\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/thermodynamics/foundation\sphinxhyphen{}experiments}\sphinxstyleindexpageref{ch/thermodynamics/foundation-experiments:\detokenize{example-0}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}open}\sphinxstyleindexpageref{ch/thermodynamics/principles-open:\detokenize{example-0}}
 \indexspace
 \bigletter{example\sphinxhyphen{}1}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/thermodynamics/foundation\sphinxhyphen{}experiments}\sphinxstyleindexpageref{ch/thermodynamics/foundation-experiments:\detokenize{example-1}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-1}}
 \indexspace
 \bigletter{example\sphinxhyphen{}10}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}10}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-10}}
@@ -11112,20 +11144,20 @@ K.Schwarzschild scopre la relazione tra il colore (e quindi la temperatura) e la
 \bigletter{example\sphinxhyphen{}17}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}17}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-17}}
 \indexspace
+\bigletter{example\sphinxhyphen{}18}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}18}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-18}}
+\indexspace
 \bigletter{example\sphinxhyphen{}2}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/thermodynamics/foundation\sphinxhyphen{}experiments}\sphinxstyleindexpageref{ch/thermodynamics/foundation-experiments:\detokenize{example-2}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}open}\sphinxstyleindexpageref{ch/thermodynamics/principles-open:\detokenize{example-2}}
 \indexspace
 \bigletter{example\sphinxhyphen{}3}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/thermodynamics/foundation\sphinxhyphen{}experiments}\sphinxstyleindexpageref{ch/thermodynamics/foundation-experiments:\detokenize{example-3}}
 \indexspace
-\bigletter{example\sphinxhyphen{}4}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}4}\sphinxstyleindexextra{ch/thermodynamics/foundation\sphinxhyphen{}experiments}\sphinxstyleindexpageref{ch/thermodynamics/foundation-experiments:\detokenize{example-4}}
-\indexspace
 \bigletter{example\sphinxhyphen{}5}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/thermodynamics/foundation\sphinxhyphen{}experiments}\sphinxstyleindexpageref{ch/thermodynamics/foundation-experiments:\detokenize{example-5}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-5}}
 \indexspace
 \bigletter{example\sphinxhyphen{}6}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}6}\sphinxstyleindexextra{ch/thermodynamics/foundation\sphinxhyphen{}experiments}\sphinxstyleindexpageref{ch/thermodynamics/foundation-experiments:\detokenize{example-6}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}6}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-6}}
 \indexspace
 \bigletter{example\sphinxhyphen{}7}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}7}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-7}}
@@ -11136,8 +11168,8 @@ K.Schwarzschild scopre la relazione tra il colore (e quindi la temperatura) e la
 \bigletter{example\sphinxhyphen{}9}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}9}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-9}}
 \indexspace
-\bigletter{proposition\sphinxhyphen{}3}
-\item\relax\sphinxstyleindexentry{proposition\sphinxhyphen{}3}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{proposition-3}}
+\bigletter{proposition\sphinxhyphen{}4}
+\item\relax\sphinxstyleindexentry{proposition\sphinxhyphen{}4}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{proposition-4}}
 \end{sphinxtheindex}
 
 \renewcommand{\indexname}{Indice}

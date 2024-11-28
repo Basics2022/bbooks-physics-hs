@@ -11,6 +11,7 @@ ossia *"nulla si crea, nulla si distrugge, tutto si trasforma"*.
 
 - questo principio cessa di valere nell'ambito della relatività di Einstein, che riconosce l'equivalenza massa-energia: massa ed energia sono due rappresentazioni di un unica grandezza fisica e sono coinvolte in un'equazione di bilancio, che nel caso particolare di una corpo in quiete si riduce alla celebre espressione $E = m c^2$
 
+<!--
 ## Densità
 - massa quantità estensiva $M$
 - densità quantità specifica/intensiva $\rho = \frac{\Delta M}{\Delta V}$ (massa, volume sono quantità estensive)
@@ -19,3 +20,4 @@ ossia *"nulla si crea, nulla si distrugge, tutto si trasforma"*.
 ```
 ```{exercise} 
 ```
+-->

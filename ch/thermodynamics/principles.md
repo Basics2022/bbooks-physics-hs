@@ -7,21 +7,21 @@ I princìpi della termodinamica vengono introdotti per **sistemi chiusi**, e suc
 <!--
 Ricordando che la termodinamica classica fornisce una descrizione macroscopica mediata della dinamica microscopica di sistemi composti da molti componenti elementari, il livello di dettaglio microscopico può essere usato per fornire un significato alle variabili termodinamiche usate nella descrizione macroscopica.
 -->
-Il [**principio di conservazione della massa - di Lavoisier**](physics-hs:thermodynamics:foundation:principles:lavoisier) valido in meccanica classica, riassumibile con la formula *"nulla si crea, nulla si distrugge, ma tutto si trasforma"*, asserisce che in un sistema chiuso la massa è costante,
+- Il [**principio di conservazione della massa - di Lavoisier**](physics-hs:thermodynamics:foundation:principles:lavoisier) valido in meccanica classica, riassumibile con la formula *"nulla si crea, nulla si distrugge, ma tutto si trasforma"*, asserisce che in un sistema chiuso la massa è costante,
 
   $$d M = 0 \ .$$
 
-Il [**primo principio della termodinamica**](physics-hs:thermodynamics:foundation:principles:first) fornisce la forma generale del bilancio dell'energia *totale* di un sistema chiuso, riconoscendo il lavoro delle forze esterne $\delta L^{ext}$ e il calore $\delta Q^{ext}$ scambiato dal sistema con l'ambiente esterno come le cause della variazione dell'energia totale del sistema.
+- Il [**primo principio della termodinamica**](physics-hs:thermodynamics:foundation:principles:first) fornisce la forma generale del bilancio dell'energia *totale* di un sistema chiuso, riconoscendo il lavoro delle forze esterne $\delta L^{ext}$ e il calore $\delta Q^{ext}$ scambiato dal sistema con l'ambiente esterno come le cause della variazione dell'energia totale del sistema.
 
   $$d E^{tot} = \delta L^{ext} + \delta Q^{ext} \ .$$
 
-L'opera di **Gibbs** fornisce [**i concetti necessari e una formalizzazione matematica**](physics-hs:thermodynamics:foundation:principles:gibbs-phase-rule) rigorosa della termodinamica classica. Vengono introdotti i concetti di energia interna, variabile di stato, la regola delle fasi di Gibbs; vengono poi presentati alcuni [diagrammi di fase](physics-hs:thermodynamics:foundation:principles:phase-diagrams) per la rappresentazione dello stato di un sistema e le trasformazioni termodinamiche e che verranno utilizzati nei capitoli successivi.
+- L'opera di **Gibbs** fornisce [**i concetti necessari e una formalizzazione matematica**](physics-hs:thermodynamics:foundation:principles:gibbs-phase-rule) rigorosa della termodinamica classica. Vengono introdotti i concetti di energia interna, variabile di stato, la regola delle fasi di Gibbs; vengono poi presentati alcuni [diagrammi di fase](physics-hs:thermodynamics:foundation:principles:phase-diagrams) per la rappresentazione dello stato di un sistema e le trasformazioni termodinamiche e che verranno utilizzati nei capitoli successivi.
 
-Il [**secondo principio della termodinamica**](physics-hs:thermodynamics:foundation:principles:second) traduce le tendenze naturali: la dissipazione dell'energia meccanica macroscopica e la trasmissione del calore da un corpo caldo a un corpo freddo, in un principio formulabile in termini di **entropia**,
+- Il [**secondo principio della termodinamica**](physics-hs:thermodynamics:foundation:principles:second) traduce le tendenze naturali: la dissipazione dell'energia meccanica macroscopica e la trasmissione del calore da un corpo caldo a un corpo freddo, in un principio formulabile in termini di **entropia**,
 
-$$d S \le \frac{\delta Q}{T} \ .$$
+$$d S \ge \frac{\delta Q}{T} \ .$$
 
-Infine, i bilanci delle quantità fisiche per [**sistemi aperti**](physics-hs:thermodynamics:foundation:principles:open) vengono ricavati modificando i bilanci per sistemi chiusi, introducendo i termini di **flusso delle grandezze fisiche dovuti al trasporto di materia** attraverso la frontiera del sistema.
+- Infine, i bilanci delle quantità fisiche per [**sistemi aperti**](physics-hs:thermodynamics:foundation:principles:open) vengono ricavati modificando i bilanci per sistemi chiusi, introducendo i termini di **flusso delle grandezze fisiche dovuti al trasporto di materia** attraverso la frontiera del sistema.
 
 <!--
 <span style="color:red">Sistemare come presentazione! I contenuti vengono divisi nelle sezioni successive.</span>

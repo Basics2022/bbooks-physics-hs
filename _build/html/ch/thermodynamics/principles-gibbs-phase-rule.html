@@ -577,7 +577,17 @@ Non sono variabili di stato il lavoro o il calore scambiato dal sistema. <strong
 </div>
 <div class="section" id="regola-delle-fasi-di-gibbs">
 <span id="physics-hs-thermodynamics-foundation-principles-gibbs-phase-rule-gibbs-phase-rule"></span><h2><span class="section-number">12.3.3. </span>Regola delle fasi di Gibbs<a class="headerlink" href="#regola-delle-fasi-di-gibbs" title="Permalink to this heading">#</a></h2>
-<div class="proof proposition admonition" id="proposition-3">
+<div class="proof definition admonition" id="definition-3">
+<p class="admonition-title"><span class="caption-number">Definition 12.3 </span> (Fase)</p>
+<div class="definition-content section" id="proof-content">
+<p>Una fase è definita come una porzione di un sistema chimico-fisico caratterizzata da proprietà chimico-fisiche (macroscopiche) uniformi.</p>
+</div>
+</div><p><strong>todo</strong></p>
+<ul class="simple">
+<li><p>discussione delle proprietà</p></li>
+<li><p>esempi: miscela di gas miscibili costituisce una fase sola, nella quale non è possibile distinguere macroscopicamente i suoi componenti elementari; liquidi non miscibili rimangono macroscopicamente separati e quindi costituiscono più fasi, delle quali è possibile distinguere macroscopicamente composizioni chimiche differenti;…</p></li>
+</ul>
+<div class="proof proposition admonition" id="proposition-4">
 <p class="admonition-title"><span class="caption-number">Proposition 12.1 </span> (Regola delle fasi di Gibbs)</p>
 <div class="proposition-content section" id="proof-content">
 <p>Lo stato termodinamico (di equilibrio) di un sistema è identificato da un numero <span class="math notranslate nohighlight">\(F\)</span> di variabili di stato <strong>intensive</strong> indipendenti, determinato dalla <strong>regola delle fasi di Gibbs</strong>,</p>
@@ -621,7 +631,7 @@ In generele, queste variabili sono legate da alcune condizioni:</p>
 <li><p>Fare esempi che chiariscano la definizione di fase (es: solidi o liquidi puri rappresentano fasi a sé stanti), e di componente indipendente (es: reazioni chimiche, senza componenti in eccesso, determinano dei vincoli che riducono il numero di sostanze indipendenti, grazie ai rapporti stechiometrici tra le sostanze)</p></li>
 <li><p>discutere il ruolo delle frazioni di fase di un singolo componente e il fatto che non sono variabili di stato; esempio passaggio di fase liquido-vapore: l’equilibrio è determinato dal valore di <span class="math notranslate nohighlight">\(P\)</span> (o di <span class="math notranslate nohighlight">\(T\)</span>), la frazione di vapore è una conseguenza di altre variabili estensive del sistema.</p></li>
 </ul>
-<div class="proof example dropdown admonition" id="example-4">
+<div class="proof example dropdown admonition" id="example-5">
 <p class="admonition-title"><span class="caption-number">Example 12.2 </span> (Sistema chiuso contentente un monocomponente (o non-reagente), monofase, elettricamente neutro (o non-soggetto a campo elettromagnetico))</p>
 <div class="example-content section" id="proof-content">
 <p>In un sistema composto da un gas comprimibile, monocomponente e monofase (gassosa), elettricamente neutro, <strong>todo</strong> <em>altro?</em>, l’unica forma di lavoro interno è quello legato alla compressione, <span class="math notranslate nohighlight">\(\delta L^{int,rev} = P dV\)</span>, e quindi <span class="math notranslate nohighlight">\(W = 1\)</span>. Per questo sistema servono quindi,</p>
@@ -629,12 +639,12 @@ In generele, queste variabili sono legate da alcune condizioni:</p>
 \[F = C - P + 1 + W = 1 - 1 + 1 + 1 = 2 \ ,\]</div>
 <p>variabili di stato per definire lo stato del sistema.</p>
 </div>
-</div><div class="proof example dropdown admonition" id="example-5">
+</div><div class="proof example dropdown admonition" id="example-6">
 <p class="admonition-title"><span class="caption-number">Example 12.3 </span> (Sistema aperto contentente un monocomponente (o non-reagente), monofase, elettricamente neutro (o non-soggetto a campo elettromagnetico))</p>
 <div class="example-content section" id="proof-content">
 <p>In un sistema aperto, la variazione di energia del sistema dipende anche dalla variazione della quantità di gas contenuto in esso. Quindi, in generale esistono <span class="math notranslate nohighlight">\(W = 2\)</span> modi per far variare l’eneergia del sistema: tramite il lavoro di compressione, o tramite un flusso di materia all’interno del sistema. Servono quindi <span class="math notranslate nohighlight">\(F=3\)</span> variabili di stato per definire lo stato del sistema.</p>
 </div>
-</div><div class="proof example dropdown admonition" id="example-6">
+</div><div class="proof example dropdown admonition" id="example-7">
 <p class="admonition-title"><span class="caption-number">Example 12.4 </span> (Miscela reattiva di gas in un sistema chiuso)</p>
 <div class="example-content section" id="proof-content">
 <p>In una miscela reattiva di gas formata dai due composti <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> in equilibrio secondo la reazione di equilibrio</p>
@@ -648,7 +658,7 @@ In generele, queste variabili sono legate da alcune condizioni:</p>
 \end{aligned}\end{split}\]</div>
 <p>La reazione è quindi determinata da 1 solo parametro. La variazione di energia del sistema è quindi determinata da <span class="math notranslate nohighlight">\(W=2\)</span> processi: dal lavoro di compressione fatto sul sistema, e dallo stato della reazione. Per determinare lo stato del sistema servono quindi <span class="math notranslate nohighlight">\(F=3\)</span> variabili di stato indipendenti, come ad esempio <strong>todo</strong> <span class="math notranslate nohighlight">\(T\)</span>, <span class="math notranslate nohighlight">\(P\)</span>, <span class="math notranslate nohighlight">\(n_A\)</span>? Non servono i potenziali chimici <span class="math notranslate nohighlight">\(\mu_A\)</span>, <span class="math notranslate nohighlight">\(\mu_B\)</span>, <span class="math notranslate nohighlight">\(\mu_{A_a B_b}\)</span>? Sono unicamente determinati?</p>
 </div>
-</div><div class="proof example dropdown admonition" id="example-7">
+</div><div class="proof example dropdown admonition" id="example-8">
 <p class="admonition-title"><span class="caption-number">Example 12.5 </span> (Sistema monocomponente durante una transizione di fase)</p>
 <div class="example-content section" id="proof-content">
 <p><strong>Transizione di fase del primo ordine.</strong> Durante una transione di fase del primo ordine, sono simultaneamente presenti nel sistema <span class="math notranslate nohighlight">\(P = 2\)</span> fasi. Secondo la regola delle fasi di Gibbs, lo stato del sistema è determinato da</p>
@@ -657,19 +667,19 @@ In generele, queste variabili sono legate da alcune condizioni:</p>
 <p>variabile di stato.</p>
 <p><strong>Punto critico.</strong> Il punto critico nel piano delle fasi di un sistema mono-componente definisce la condizione in cui sono simultaneamente presenti nel sistema <span class="math notranslate nohighlight">\(P = 3\)</span> fasi. Secondo la regola delle fasi di Gibbs, lo stato del sistema è determinato da <span class="math notranslate nohighlight">\(F = 0\)</span> variabili di stato: lo stato del sistema nel punto critico è univocamente definito, senza alcun grado di libertà.</p>
 </div>
-</div><div class="proof example dropdown admonition" id="example-8">
+</div><div class="proof example dropdown admonition" id="example-9">
 <p class="admonition-title"><span class="caption-number">Example 12.6 </span> (Solido)</p>
 <div class="example-content section" id="proof-content">
 <p>In assenza di altri fenomeni fisici, l’unica forma di lavoro in un solido è quella legata al lavoro di deformazione, <span class="math notranslate nohighlight">\(\delta L^{int,rev} = \sigma_{ij} \, d \varepsilon_{ij} dV\)</span>. Il tensore di deformazione è del secondo ordine e simmetrico, e ha quindi 6 componenti indipendenti nello spazio 3-dimensionale, e quindi <span class="math notranslate nohighlight">\(W=6\)</span></p>
 </div>
-</div><div class="proof example dropdown admonition" id="example-9">
+</div><div class="proof example dropdown admonition" id="example-10">
 <p class="admonition-title"><span class="caption-number">Example 12.7 </span> (Miscele solide)</p>
 <div class="example-content section" id="proof-content">
 <ul class="simple">
 <li><p>Fasi nelle miscele solide <strong>todo</strong></p></li>
 </ul>
 </div>
-</div><div class="proof example dropdown admonition" id="example-10">
+</div><div class="proof example dropdown admonition" id="example-11">
 <p class="admonition-title"><span class="caption-number">Example 12.8 </span> (Influenza del campo elettromagnetico)</p>
 <div class="example-content section" id="proof-content">
 <ul class="simple">
@@ -690,7 +700,11 @@ dE &amp; = \left. \dfrac{\partial E}{\partial S} \right|_{\mathbf{X}} d S
      + \left. \dfrac{\partial E}{\partial X_k} \right|_{S} d X_k  = \\
    &amp; = T \, d S + \sum_k F_k \, d X_k \ ,
 \end{aligned}\end{split}\]</div>
-<p>avendo definito <span class="math notranslate nohighlight">\(F_k\)</span> le forze generalizzate associate agli spostamenti generalizzati <span class="math notranslate nohighlight">\(dX_k\)</span> e introdotto la definizione delle variabili <span class="math notranslate nohighlight">\(T\)</span> ed <span class="math notranslate nohighlight">\(S\)</span> di cui sarà chiaro il significato a breve.</p>
+<p>avendo definito <span class="math notranslate nohighlight">\(F_k\)</span> le forze generalizzate associate agli spostamenti generalizzati <span class="math notranslate nohighlight">\(dX_k\)</span> e introdotto la definizione delle variabili <span class="math notranslate nohighlight">\(T\)</span> ed <span class="math notranslate nohighlight">\(S\)</span>, che corrispondono alle grandezze fisiche temperatura ed entropia, come descritto in seguito <strong>todo</strong>.</p>
+<p><strong>todo</strong></p>
+<ul class="simple">
+<li><p><span style="color:red">con questo formalismo è immediato formulare il <strong>secondo</strong> e il <strong>terzo principio della termodinamica</strong> come <span class="math notranslate nohighlight">\(dS \ge \frac{\delta Q^{ext}}{T}\)</span>, e <span class="math notranslate nohighlight">\(T \ge 0\)</span></span></p></li>
+</ul>
 <p>L’espressione del differenziale dell’energia interna può essere confrontata con il bilancio dell’energia interna scritto in termini del calore apportato al sistema e del lavoro interno,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
@@ -742,21 +756,21 @@ $$\frac{d E_1}{d T_1} = -\frac{d E_2}{d T_2} \frac{d T_2}{d T_1}$$
 <li><p>con <span class="math notranslate nohighlight">\(\vec{e}\)</span>, <span class="math notranslate nohighlight">\(\vec{h}\)</span> campi elettrico e magnetico, <span class="math notranslate nohighlight">\(\vec{p}\)</span>, <span class="math notranslate nohighlight">\(\vec{m}\)</span> polarizzazione e magnetizzazione</p></li>
 <li><p><span class="math notranslate nohighlight">\(\phi\)</span> potenziale elettrico, <span class="math notranslate nohighlight">\(q\)</span> carica elettrica (per sistemi aperti, altrimenti o <span class="math notranslate nohighlight">\(dq \equiv 0\)</span> o si starebbe creando carica elettrica netta!)</p></li>
 </ul>
-<div class="proof example dropdown admonition" id="example-11">
+<div class="proof example dropdown admonition" id="example-12">
 <p class="admonition-title"><span class="caption-number">Example 12.9 </span> (Sistema gassoso chiuso monocomponente)</p>
 <div class="example-content section" id="proof-content">
 <p>L’energia del sistema, <span class="math notranslate nohighlight">\(E(S,V)\)</span></p>
 <div class="math notranslate nohighlight">
 \[dE = T \, dS - P \, dV\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-12">
+</div><div class="proof example dropdown admonition" id="example-13">
 <p class="admonition-title"><span class="caption-number">Example 12.10 </span> (Sistema gassoso aperto monocomponente)</p>
 <div class="example-content section" id="proof-content">
 <p>L’energia del sistema, <span class="math notranslate nohighlight">\(E(S,V,N)\)</span></p>
 <div class="math notranslate nohighlight">
 \[dE = T \, dS - P \, dV + \mu \, dN\]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-13">
+</div><div class="proof example dropdown admonition" id="example-14">
 <p class="admonition-title"><span class="caption-number">Example 12.11 </span> (Miscela reattiva di gas in un sistema chiuso)</p>
 <div class="example-content section" id="proof-content">
 <p>L’energia del sistema</p>
@@ -767,24 +781,24 @@ $$\frac{d E_1}{d T_1} = -\frac{d E_2}{d T_2} \frac{d T_2}{d T_1}$$
 \end{aligned}\end{split}\]</div>
 <p>avendo indicato con <span class="math notranslate nohighlight">\(n_k\)</span> i coefficienti stechiomentrici (con segno) della reazione, e con <span class="math notranslate nohighlight">\(N\)</span> una quantità che identifica l’equilibrio della reazione, in maniera tale da poter scrivere la variazione di ogni componente come <span class="math notranslate nohighlight">\(d N_k = n_k \, d N\)</span>.</p>
 </div>
-</div><div class="proof example dropdown admonition" id="example-14">
+</div><div class="proof example dropdown admonition" id="example-15">
 <p class="admonition-title"><span class="caption-number">Example 12.12 </span> (Miscela monocomponente durante una transizione di fase)</p>
 <div class="example-content section" id="proof-content">
 <p><strong>todo</strong> come trattare la frazione delle fasi?</p>
 </div>
-</div><div class="proof example dropdown admonition" id="example-15">
+</div><div class="proof example dropdown admonition" id="example-16">
 <p class="admonition-title"><span class="caption-number">Example 12.13 </span> (Solido)</p>
 <div class="example-content section" id="proof-content">
 <p>Sistema solido di volume iniziale <span class="math notranslate nohighlight">\(V\)</span> con stato di sforzo e deformazione uniforme, e piccole deformazioni</p>
 <div class="math notranslate nohighlight">
 \[dE = T \, dS - V \, \sigma_{ij} \, d \varepsilon_{ij} \]</div>
 </div>
-</div><div class="proof example dropdown admonition" id="example-16">
+</div><div class="proof example dropdown admonition" id="example-17">
 <p class="admonition-title"><span class="caption-number">Example 12.14 </span> (Miscele solide)</p>
 <div class="example-content section" id="proof-content">
 <p><strong>todo</strong></p>
 </div>
-</div><div class="proof example dropdown admonition" id="example-17">
+</div><div class="proof example dropdown admonition" id="example-18">
 <p class="admonition-title"><span class="caption-number">Example 12.15 </span> (Influenza del campo magnetico)</p>
 <div class="example-content section" id="proof-content">
 <div class="math notranslate nohighlight">

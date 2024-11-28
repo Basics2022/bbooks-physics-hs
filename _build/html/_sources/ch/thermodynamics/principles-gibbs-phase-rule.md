@@ -38,6 +38,13 @@ $$d E = \delta Q^{ext} - \delta L^{int} \ .$$
 
 (physics-hs:thermodynamics:foundation:principles:gibbs-phase-rule:gibbs-phase-rule)=
 ## Regola delle fasi di Gibbs
+```{prf:definition} Fase
+Una fase è definita come una porzione di un sistema chimico-fisico caratterizzata da proprietà chimico-fisiche (macroscopiche) uniformi. 
+```
+**todo**
+- discussione delle proprietà
+- esempi: miscela di gas miscibili costituisce una fase sola, nella quale non è possibile distinguere macroscopicamente i suoi componenti elementari; liquidi non miscibili rimangono macroscopicamente separati e quindi costituiscono più fasi, delle quali è possibile distinguere macroscopicamente composizioni chimiche differenti;...
+
 ```{prf:proposition} Regola delle fasi di Gibbs
 Lo stato termodinamico (di equilibrio) di un sistema è identificato da un numero $F$ di variabili di stato **intensive** indipendenti, determinato dalla **regola delle fasi di Gibbs**,
 
@@ -153,7 +160,10 @@ dE & = \left. \dfrac{\partial E}{\partial S} \right|_{\mathbf{X}} d S
    & = T \, d S + \sum_k F_k \, d X_k \ ,
 \end{aligned}$$
 
-avendo definito $F_k$ le forze generalizzate associate agli spostamenti generalizzati $dX_k$ e introdotto la definizione delle variabili $T$ ed $S$ di cui sarà chiaro il significato a breve.
+avendo definito $F_k$ le forze generalizzate associate agli spostamenti generalizzati $dX_k$ e introdotto la definizione delle variabili $T$ ed $S$, che corrispondono alle grandezze fisiche temperatura ed entropia, come descritto in seguito **todo**.
+
+**todo**
+- <span style="color:red">con questo formalismo è immediato formulare il **secondo** e il **terzo principio della termodinamica** come $dS \ge \frac{\delta Q^{ext}}{T}$, e $T \ge 0$</span>
 
 L'espressione del differenziale dell'energia interna può essere confrontata con il bilancio dell'energia interna scritto in termini del calore apportato al sistema e del lavoro interno,
 
