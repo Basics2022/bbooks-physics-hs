@@ -2,7 +2,7 @@
 # Esperienze ed esperimenti
 
 ## Esperienza di Torricelli 
-Torricelli dimostra che[^torricelli]
+Torricellii(1608-1647) dimostra che[^torricelli]
 
 > "viviamo sul fondo di un oceano d'aria, la quale [...] si sa che pesa, e tanto"
 
@@ -12,9 +12,12 @@ Torricelli immerge completamente un tubo di vetro in un bagno di mercurio, $\tex
 
 $$P_0 + \rho_{\text{Hg}} \, g h = P_{atm} \ ,$$
 
-trascurando la pressione $P_0$ rispetto a $P_{atm}$, e usando il valore $\rho_{\text{Hg}} = 13580 \, \frac{\text{kg}}{\text{m}^3}$ per la densità del mercurio liquido, si ottiene una misura della pressione ambiente,
+trascurando la pressione $P_0$ rispetto a $P_{atm}$, e usando il valore $\rho_{\text{Hg}} = 13580 \, \frac{\text{kg}}{\text{m}^3}$ per la densità del mercurio liquido, si ottiene una misura della pressione ambiente espressa con il SI di misure attualmente in uso,
 
-$$P_{atm} = \rho_{\text{Hg}} \, g h = $$
+$$P_{atm} \sim \rho_{\text{Hg}} \, g h = 101143 \, \text{Pa} \ ,$$
+
+in buon accordo con le misure attuali della stazione meteorologica di dell'Osservatorio Ximeniano, stazione metereologica di riferimento per il centro della città di Firenze, città dove Torricelli lavrò presso i Medici durante gli ultimi anni della sua vita: la pressione media annua è di circa $10080 \, \text{Pa}$ presso l'Osservatorio che si trova a $75 \, \text{m} \ \text{s.l.m}$
+La misura è stata espressa usando il *Pascal*, $\text{Pa}$, come unità di misura derivata per la pressione nel SI. Con questa esperienza, Torricelli aveva costruito uno strumento per la misura della pressione atmosferica.
 
 
 <span style="color:red"> **todo** dettagli dell'esperimento </span>
