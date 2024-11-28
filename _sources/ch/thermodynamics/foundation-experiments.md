@@ -10,7 +10,11 @@ In particolare, l'esperienza di Torricelli permette di misurare il peso dell'ari
 
 Torricelli immerge completamente un tubo di vetro in un bagno di mercurio, $\text{Hg}$, riempiendolo completamente. Successivamente, gira con l'estremità chiusa verso l'alto e osserva che nel tubo rimane mercurio fino a un'altezza di circa $h \sim 760 \text{mm}$ sopra il pelo libero del mercurio nel contenitore. Il mercurio non esce completamente dal tubo, poiché la superficie libera del mercurio nella bacinella è soggetta alla pressione atmosferica, $P_{atm}$, dell'ambiente nel quale viene svolto l'esperimento. Nella parte superiore del tubo si forma una condizione di "quasi"-vuoto (**todo** *discussa sotto*), con pressione $P_0 \ll P_{atm}$. La legge di Stevino (1548-1620), permette di mettere in relazione la pressione in due punti all'interno dello stesso fluido in quiete,
 
-$$P_0 + \rho_{\text{Hg}} g h = P_{atm} \ ,$$
+$$P_0 + \rho_{\text{Hg}} \, g h = P_{atm} \ ,$$
+
+trascurando la pressione $P_0$ rispetto a $P_{atm}$, e usando il valore $\rho_{\text{Hg}} = 13580 \, \frac{\text{kg}}{\text{m}^3}$ per la densità del mercurio liquido, si ottiene una misura della pressione ambiente,
+
+$$P_{atm} = \rho_{\text{Hg}} \, g h = $$
 
 
 <span style="color:red"> **todo** dettagli dell'esperimento </span>
