@@ -24,7 +24,7 @@ Non agendo altre forze nette sul sistema, la quantità di moto del sistema chius
 $$\begin{aligned}
   M_{n} v_{n} 
   & = M_{n+1} v_{n+1} + m v_{p,n+1} \\
-  & = ( M_{n} - m ) v_{n+1} + m ( v_{n} + v^{rel}_{n+1} ) \\
+  & = ( M_{n} - m ) v_{n+1} + m ( v_{n} + v^{p,rel} ) \\
 \end{aligned}$$
 
 $$v_{n+1} = \frac{N}{}$$
