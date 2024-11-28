@@ -2,7 +2,7 @@
 # Esperienze ed esperimenti
 
 ## Esperienza di Torricelli 
-Torricellii(1608-1647) dimostra che[^torricelli]
+Torricelli (1608-1647) dimostra che[^torricelli]
 
 [^torricelli]: Lettera a Michelangelo Ricci, 2 giugno 1664, in Prefazione alle *Lezioni accademiche* di E.Torricelli
 
