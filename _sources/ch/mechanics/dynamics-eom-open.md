@@ -67,9 +67,8 @@ $$\vec{v}_{n+1} - \vec{v}_n = \frac{m}{M_{n+1}} \vec{v}_p^{rel} \ .$$
 
 ````
 ````{prf:example} Sistemi discreti - Moto di una giostra per reazione
-<!--
 :class: dropdown
--->
+
 Una giostra è libera di ruotare attorno al suo centro, grazie a una cerniera cilindrica. Sulla giostra, sono state caricate delle palline di massa $m$, posizionate al bordo della giostra, che vengono lanciate in direzione tangenziale alla giostra da un marchingegno che riesce a fornire alle palline una velocità relativa rispetto alla velocità prima del lancio uguale a $v_p^{rel}$. La giostra ha raggio $R$ e massa $M$.
 
 <!--
