@@ -163,7 +163,7 @@ dE & = \left. \dfrac{\partial E}{\partial S} \right|_{\mathbf{X}} d S
 avendo definito $F_k$ le forze generalizzate associate agli spostamenti generalizzati $dX_k$ e introdotto la definizione delle variabili $T$ ed $S$, che corrispondono alle grandezze fisiche temperatura ed entropia, come descritto in seguito **todo**.
 
 **todo**
-- <span style="color:red">con questo formalismo è immediato formulare il secondo e il terzo principio della termodinamica come $dS \ge \frac{\delta Q^{ext}}{T}$, e $T \ge 0$</span>
+- <span style="color:red">con questo formalismo è immediato formulare il **secondo** e il **terzo principio della termodinamica** come $dS \ge \frac{\delta Q^{ext}}{T}$, e $T \ge 0$</span>
 
 L'espressione del differenziale dell'energia interna può essere confrontata con il bilancio dell'energia interna scritto in termini del calore apportato al sistema e del lavoro interno,
 
