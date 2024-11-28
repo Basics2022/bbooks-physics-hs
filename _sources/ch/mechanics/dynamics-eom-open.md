@@ -35,7 +35,7 @@ $$\begin{aligned}
 
 **oss.** E' possibile riscrivere l'equazione ... mettendo in evidenza le variazione $\Delta v_{n+1} = v_{n+1} - v_n$, $\Delta M_{n+1} = M_{n+1} - M_{n}$
 
-$$\Delta v_{n+1} = - \frac{\Dleta M_{n+1}}{M_{n+1}} v_p^{rel} \ .$$
+$$\Delta v_{n+1} = - \frac{\Delta M_{n+1}}{M_{n+1}} v_p^{rel} \ .$$
 
 ```
 
