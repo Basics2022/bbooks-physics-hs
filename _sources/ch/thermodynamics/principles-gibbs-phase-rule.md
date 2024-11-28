@@ -38,6 +38,13 @@ $$d E = \delta Q^{ext} - \delta L^{int} \ .$$
 
 (physics-hs:thermodynamics:foundation:principles:gibbs-phase-rule:gibbs-phase-rule)=
 ## Regola delle fasi di Gibbs
+```{prf:definition} Fase
+Una fase è definita come una porzione di un sistema chimico-fisico caratterizzata da proprietà chimico-fisiche (macroscopiche) uniformi. 
+```
+**todo**
+- discussione delle proprietà
+- esempi: miscela di gas miscibili costituisce una fase sola, nella quale non è possibile distinguere macroscopicamente i suoi componenti elementari; liquidi non miscibili rimangono macroscopicamente separati e quindi costituiscono più fasi, delle quali è possibile distinguere macroscopicamente composizioni chimiche differenti;...
+
 ```{prf:proposition} Regola delle fasi di Gibbs
 Lo stato termodinamico (di equilibrio) di un sistema è identificato da un numero $F$ di variabili di stato **intensive** indipendenti, determinato dalla **regola delle fasi di Gibbs**,
 
