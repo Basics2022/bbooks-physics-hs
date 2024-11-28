@@ -62,12 +62,12 @@ La misura del volume $V_{gas}$ occupato dal gas è immediata. Lo svolgimento del
 
 **todo** *aggiungere tabella e/o grafico, per uno o più gas*
 
-Usando il mercurio come liquido, $\text{Hg}$, e partendo da una condizione di riferimento a pressione ambiente in cui il volume occupato dal gas è $V_0$, si osserva che a una differenza della quota delle colonnine $\Delta h = n \cdot 760 \text{mm}$ corrisponde un volume $\frac{V}{1+n}$.
-
 ````{list-table}
 :header-rows: 0
 * - ![](../../media/boyle.svg)
 ````
+
+Usando il mercurio come liquido, $\text{Hg}$, e partendo da una condizione di riferimento a pressione ambiente in cui il volume occupato dal gas è $V_0$, si osserva che a una differenza della quota delle colonnine $\Delta h = n \cdot 760 \, \text{mm}$ corrisponde un volume $\frac{V}{1+n}$.
 
 ```{exercise}
 ```
