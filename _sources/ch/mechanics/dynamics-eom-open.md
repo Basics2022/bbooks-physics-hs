@@ -17,6 +17,8 @@ In questa sezione si presentano i bilanci di massa, quantità di moto e energia 
 
 ```
 ```{prf:example} Sistemi continui - Equazione della spinta per i razzi - Tsiolkovski
+:class: dropdown
+
 L'equazione della spinta per i razzi - di Tsiolkovski **todo** *un po' di storia? riferimento all'astronomia? riferimenti alla dinamica gravitazionale?* - è una prima approssimazione del moto di un razzo a reazione, cioè che usa lo scarico di gas ad alta velocità come mezzo di spinta. Il sistema formato dalla struttura del razzo e il contenuto di combustibile e gas all'interno della struttura del razzo è un sistema aperto, che può scambiare materia attraverso la sezione dell'ugello. L'equazione permette di ricavare la velocità del razzo in funzione dell'espulsione della massa e della velocità effettiva, relativa, di espulsione dei gas dal razzo. L'equazione può essere ricavata usando i bilanci di massa e di quantità di moto per sistemi aperti, 
 
 $$\begin{aligned}
@@ -57,7 +59,7 @@ $$\vec{v}_2 - \ln \frac{M_2}{M_0} \vec{v}^{rel}_e = \vec{v}_1 - \ln \frac{M_1}{M
 
 che può essere riscritta come
 
-$$\vec{v}_2 - \vec{v}_1 = \ln \frac{M_2}{M_1} \vec{v}^{rel}_e \ .$$
+$$\vec{v}_2 - \vec{v}_1 =  \vec{v}^{rel}_e \, \ln \frac{M_2}{M_1}\ .$$
 
 
 
