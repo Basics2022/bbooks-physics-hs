@@ -10,17 +10,15 @@ In questa sezione si presentano i bilanci di massa, quantità di moto e energia 
 
 
 ## Esempi
-Sistemi discreti:
-```{prf:example} Moto di una barca per reazione
+```{prf:example} Sistemi discreti - Moto di una barca per reazione
 
 ```
-```{prf:example} Moto di una giostra per reazione
+```{prf:example} Sistemi discreti - Moto di una giostra per reazione
 
 ```
+```{prf:example} Sistemi continui - Equazione della spinta per i razzi - Tsiolkovski
+Si ricava qui l'equazione del moto di un razzo di massa iniziale $M_0$
 
-### Sistemi continui
-```{prf:example} Equazione della spinta per i razzi - Tsiolkovski
-
-
+$$\dfrac{d}{dt} M_{v_t} + \Phi_{\partial v_t}(\rho)$$
 
 ```

@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/dynamics-eom-open';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
@@ -521,10 +523,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">9.4.1. Esempi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-continui">9.4.1.1. Sistemi continui</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">9.4.1. Esempi</a></li>
 </ul>
             </nav>
         </div>
@@ -542,23 +541,22 @@ document.write(`
 <p>In questa sezione si presentano i bilanci di massa, quantità di moto e energia cinetica per sistemi aperti; pur non potendo dare una dimostrazione rigorosa, si mostra il procedimento generale per ricavare un bilancio per un sistema aperto dal corrisponte bilancio per un sistema chiuso.</p>
 <div class="section" id="esempi">
 <h2><span class="section-number">9.4.1. </span>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h2>
-<p>Sistemi discreti:</p>
 <div class="proof example admonition" id="example-0">
-<p class="admonition-title"><span class="caption-number">Example 9.2 </span> (Moto di una barca per reazione)</p>
+<p class="admonition-title"><span class="caption-number">Example 9.2 </span> (Sistemi discreti - Moto di una barca per reazione)</p>
 <div class="example-content section" id="proof-content">
 </div>
 </div><div class="proof example admonition" id="example-1">
-<p class="admonition-title"><span class="caption-number">Example 9.3 </span> (Moto di una giostra per reazione)</p>
+<p class="admonition-title"><span class="caption-number">Example 9.3 </span> (Sistemi discreti - Moto di una giostra per reazione)</p>
 <div class="example-content section" id="proof-content">
 </div>
-</div><div class="section" id="sistemi-continui">
-<h3><span class="section-number">9.4.1.1. </span>Sistemi continui<a class="headerlink" href="#sistemi-continui" title="Permalink to this heading">#</a></h3>
-<div class="proof example admonition" id="example-2">
-<p class="admonition-title"><span class="caption-number">Example 9.4 </span> (Equazione della spinta per i razzi - Tsiolkovski)</p>
+</div><div class="proof example admonition" id="example-2">
+<p class="admonition-title"><span class="caption-number">Example 9.4 </span> (Sistemi continui - Equazione della spinta per i razzi - Tsiolkovski)</p>
 <div class="example-content section" id="proof-content">
+<p>Si ricava qui l’equazione del moto di un razzo di massa iniziale <span class="math notranslate nohighlight">\(M_0\)</span></p>
+<div class="math notranslate nohighlight">
+\[\dfrac{d}{dt} M_{v_t} + \Phi_{\partial v_t}(\rho)\]</div>
 </div>
 </div></div>
-</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -624,10 +622,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">9.4.1. Esempi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-continui">9.4.1.1. Sistemi continui</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">9.4.1. Esempi</a></li>
 </ul>
   </nav></div>
 
