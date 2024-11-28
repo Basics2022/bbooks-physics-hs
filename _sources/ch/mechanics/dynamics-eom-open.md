@@ -37,8 +37,13 @@ $$\dot{M} \vec{v} + M \dot{\vec{v}} + \dot{m}_e \vec{v}_e = M(t) \vec{g} + \vec{
 
 Scrivendo la velocità di efflusso come somma della velocità del baricentro e della velocità relativa al baricentro, $\vec{v}_e = \vec{v} + \vec{v}_e^{rel}$, usando l'equazione della massa $\dot{m}_e = - \dot{M}$, si può riscrivere l'equazione
 
-$$M \dot{\vec{v}} = \dot{M} \vec{v}_e^{rel} = M(t) \vec{g} + \vec{F}^{aero} \ ,$$
+$$M \dot{\vec{v}} = \dot{M} \vec{v}_e^{rel} + M(t) \vec{g} + \vec{F}^{aero} \ ,$$
 
 e riconoscere il termine $\dot{M} \vec{v}_e^{rel}$ come la spinta generata sul razzo dall'efflusso dei gas.
+
+Nel caso in cui si possano trascurare le forze esterne agenti sul sistema rispetto alla spinta, l'equazione di moto fornisce una relazione differenziale tra la massa $M(t)$ e la velocità $\vec{v}$ del sistema,
+
+$$M \dot{\vec{v}} = \dot{M} \vec{v}_e^{rel} \ .$$
+
 
 ```
