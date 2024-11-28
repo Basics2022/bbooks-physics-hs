@@ -37,7 +37,9 @@ kernelspec:
 ## Legge di gravitazione universale
 $$\vec{F}_{10} = G \, m_0 \, m_1 \frac{\vec{r}_{01}}{\left|\vec{r}_{01}\right|^3}$$
 
+
 ```{code-cell}
+import numpy as np
 import matplotlib.pyplot as plt
 
 x = np.arange(5)
