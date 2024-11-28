@@ -37,7 +37,8 @@ La velocità $v_{n+1}$ può quindi essere riportata alla velocità $v_0$ sommand
 
 $$\begin{aligned}
   v_{n+1} - v_0 & = v_{n+1} - v_n + v_n - v_{n-1} + \dots + v_1 - v_0 = \\
-  & = \frac{m}{M - (1+n) m} v_p^{rel} +  \frac{m}{M - n m} v_p^{rel} + \frac{m}{M-m} v^{rel}_p
+  & = \frac{m}{M - (1+n) m} v_p^{rel} +  \frac{m}{M - n m} v_p^{rel} + \dots + \frac{m}{M-m} v^{rel}_p = \\
+  & = \frac{m}{M} v_p^{rel} \sum_{k = 0}^{n} \frac{1}{1 - (1+k) \frac{m}{M}}
 \end{aligned}$$
 
 
