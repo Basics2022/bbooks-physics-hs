@@ -17,6 +17,12 @@ L'esperienza di Torricelli:
 
 [^torricelli]: Lettera a Michelangelo Ricci, 2 giugno 1664, in Prefazione alle *Lezioni accademiche* di E.Torricelli
 
+````{list-table}
+:header-rows: 0
+* - ![](../../media/torricelli-0.svg)
+  - ![](../../media/torricelli-1.svg)
+````
+
 ## Prime esperienze sui gas - esperimento di Boyle
 L'indagine di Boyle e Hooke su gas sufficientemente rarefatti produce come risultato la legge di Boyle,
 
