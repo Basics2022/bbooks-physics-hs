@@ -102,8 +102,11 @@ per ricavare una relazione che lega la variazione di velocità angolare alla var
 
 $$\begin{aligned}
   \Omega_{n+1} - \Omega_n & =  \frac{m R}{I_{z,n+1}} v_p^{rel} = \\
-                          & = - \frac{\Delta I_{z}/R}{I_{z,n+1}} v_p^{rel} = \\
+                          & = - \frac{\Delta I_{z}}{I_{z,n+1}} \frac{v_p^{rel}}{R} = \\
+                          & =  \frac{m R}{I - (n+1) mR^2} v_p^{rel} = \ ,
 \end{aligned}$$
+
+essendo $I = I_0 + N m R^2$ l'inerzia iniziale dell'intero sistema.
 
 
 
