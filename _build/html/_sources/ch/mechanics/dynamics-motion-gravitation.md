@@ -1,8 +1,21 @@
+---
+jupytext:
+    formats: md:myst
+    text_representation:
+        extension: .md
+        format_name: myst
+kernelspec:
+    dispaly_name: Python 3(ipykernel)
+    language: python
+    name: python3
+---
+
 ```{article-info}
 :author: basics
 :date: "{sub-ref}`today`"
 :read-time: "{sub-ref}`wordcount-minutes` min read"
 ```
+
 
 (physics-hs:mechanics:dynamics:motion:gravitation)=
 # Gravitazione
@@ -23,6 +36,21 @@
 
 ## Legge di gravitazione universale
 $$\vec{F}_{10} = G \, m_0 \, m_1 \frac{\vec{r}_{01}}{\left|\vec{r}_{01}\right|^3}$$
+
+<!--
+```{code-cell}
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.arange(5)
+y = 2*x
+
+plt.figure()
+plt.plot(x,y)
+plt.show()
+
+```
+-->
 
 ## Problema dei due corpi
 
