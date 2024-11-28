@@ -1,2 +1,2 @@
-()=
+(physics-hs:program)=
 # Programma 
