@@ -16,7 +16,7 @@ La termodinamica è la branca della fisica che si occupa dell'energia, della tra
 
 ````
 
-La termodinamica classica fornisce una descrizione macroscopica, media, di sistemi complessi costituiti da un gran numero di componenti elementari a livello microscopico: un [**modello atomistico**]() della materia fornisce una descrizione di dettaglio a livello microscopico, questo modello contiene molte più informazioni di quelle necessarie in molti ambiti, e risulta non pratico; la **termodinamica classica** fornisce una descrizione macroscopica, la [**meccanica statistica**]() fornisce il ponte tra le due descrizioni
+La **termodinamica classica** fornisce una **descrizione macroscopica**, media, di sistemi complessi costituiti da un gran numero di componenti elementari in **equilibrio** statistico a livello microscopico. Sebbene il [**modello atomistico**]() della materia rappresenti uno dei più grandi successi della storia della scienza secondo Feynman, per la sua utilità nella comprensione intima di molti fenomeni fisici, in molte occasioni questo modello contiene troppe informazioni - molte più informazioni di quelle necessarie in molti ambiti - e risulta non pratico: così, ad esempio possiamo descrivere le condizioni in una stanza in termini di temperatura - una **(!)** variabile macroscopica, due se aggiungiamo l'informazione di pressione - e non descrivendo la dinamica delle $N$ molecole dei gas che formano l'aria che respiriamo - per le quali servirebbero $\sim 10^{26}$ grandezze fisiche per una stanza di $10 \, m^3$, o comunque $\sim 10^{19}$ per ogni $\text{cm}^3$. La [**meccanica statistica**]() fornisce il ponte tra le due descrizioni, ritrovando la termodinamica classica come media della descrizione microscopica.
 
 ```{dropdown} Feynman e la teoria atomica
 La prima lezione[^feynman-atomic] di fisica delle lezioni di fisica di Feynman, *The Feynman Lectures on Physics, Volume I* [^feynman] riguarda la teoria atomica. Feynman riconosce il ruolo fondamentale della teoria atomica nella scienza,
@@ -25,6 +25,7 @@ La prima lezione[^feynman-atomic] di fisica delle lezioni di fisica di Feynman, 
 
 ```
 
+<!--
 La termodinamica classica costituisce una teoria fisica macroscopica per sistemi complessi in equilibrio statistico, almeno locale, in termini di grandezze fisiche macroscopiche:
 - come ad esempio pressione, temperatura, energia interna, calore, entropia,... che possano essere facilmente misurate
 - che permettano di descrivere lo stato macroscopico di un sistema con un numero ristretto di variabili
@@ -41,6 +42,7 @@ Le sezioni successive entrano nei dettagli:
 - meccanismi di trasmissione del calore
 
 ---
+-->
 
 [^feynman]: [https://www.feynmanlectures.caltech.edu/I_toc.html](https://www.feynmanlectures.caltech.edu/I_toc.html)
 [^feynman-atomic]: [https://www.feynmanlectures.caltech.edu/I_01.html](https://www.feynmanlectures.caltech.edu/I_01.html)

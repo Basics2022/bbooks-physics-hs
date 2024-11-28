@@ -23,6 +23,7 @@ parts:
     - file: ch/intro/physical_quantities-charge
     - file: ch/intro/physical_quantities-mole
     - file: ch/intro/physical_quantities-luminosity
+  - file: ch/intro/scientific-method
 - caption: Meccanica classica
   numbered: True
   chapters:

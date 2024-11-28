@@ -2,20 +2,48 @@
 # Esperienze ed esperimenti
 
 ## Esperienza di Torricelli 
-Torricelli dimostra che[^torricelli]
+Torricelli (1608-1647) dimostra che[^torricelli]
+
+[^torricelli]: Lettera a Michelangelo Ricci, 2 giugno 1664, in Prefazione alle *Lezioni accademiche* di E.Torricelli
 
 > "viviamo sul fondo di un oceano d'aria, la quale [...] si sa che pesa, e tanto"
 
 In particolare, l'esperienza di Torricelli permette di misurare il peso dell'aria nell'atmosfera ed esprimerlo in termini di pressione atmosferica.
 
-<span style="color:red"> **todo** dettagli dell'esperimento </span>
+Torricelli immerge completamente un tubo di vetro in un bagno di mercurio, $\text{Hg}$, riempiendolo completamente. Successivamente, gira con l'estremità chiusa verso l'alto e osserva che nel tubo rimane mercurio fino a un'altezza di circa $h \sim 760 \text{mm}$ sopra il pelo libero del mercurio nel contenitore. Il mercurio non esce completamente dal tubo, poiché la superficie libera del mercurio nella bacinella è soggetta alla pressione atmosferica, $P_{atm}$, dell'ambiente nel quale viene svolto l'esperimento. Nella parte superiore del tubo si forma una condizione di "quasi"-vuoto (**todo** *discussa sotto*), con pressione $P_0 \ll P_{atm}$. La [**legge di Stevino**](physics-hs:mechanics:statics:fluid:stevino) (1548-1620), permette di mettere in relazione la pressione in due punti all'interno dello stesso fluido in quiete,
+
+$$P_0 + \rho_{\text{Hg}} \, g h = P_{atm} \ ,$$
+
+trascurando la pressione $P_0$ rispetto a $P_{atm}$, e usando il valore $\rho_{\text{Hg}} = 13580 \, \frac{\text{kg}}{\text{m}^3}$ per la densità del mercurio liquido, si ottiene una misura della pressione ambiente espressa con il SI di misure attualmente in uso,
+
+$$P_{atm} \sim \rho_{\text{Hg}} \, g h = 101143 \, \text{Pa} \ ,$$
+
+in buon accordo con le misure attuali della stazione meteorologica di dell'Osservatorio Ximeniano, stazione metereologica di riferimento per il centro della città di Firenze, città dove Torricelli lavrò presso i Medici durante gli ultimi anni della sua vita: la pressione media annua è di circa $10080 \, \text{Pa}$ presso l'Osservatorio che si trova a $75 \, \text{m} \ \text{s.l.m}.$
+
+La misura è stata espressa usando il *Pascal*, $\text{Pa}$, come unità di misura derivata per la pressione nel SI. Con questa esperienza, Torricelli aveva costruito uno strumento per la misura della pressione atmosferica: non essendo ancora affermato il SI di misura, Torricelli usava l'altezza della colonnina dello strumento così costruito come misura della pressione. Attualmente, la conversione tra le due misure di pressione è
+
+$$760 \, \text{mm}_{\text{Hg}} = 101325 \, \text{Pa} \ .$$
+
 
 L'esperienza di Torricelli:
 - introduce il concetto di **pressione** atmosferica e nei gas in generale, come forza per unità di superficie che un gas esercita sulle pareti di un contenitore, o di una superficie esposta al gas;
 - introduce il **manometro di Torricelli** come strumento per la misura della pressione atmosferica e nei gas in generale;
 - è una delle prime esperienze dell'esistenza del **vuoto**, in contrasto con l'*horror vacui* aristotelico, principio secondo il quale la natura rifugge il vuoto, riempiendolo costantemente
 
-[^torricelli]: Lettera a Michelangelo Ricci, 2 giugno 1664, in Prefazione alle *Lezioni accademiche* di E.Torricelli
+
+```{dropdown} Il "quasi"-vuoto
+Nella parte superiore del tubo c'è *vapore di mercurio*, in equilibrio con la superficie libera del mercurio all'interno del tubo. A una temperatura data, la pressione che identifica la condizione di equilibrio tra le due fasi - il numero di molecole per unità di tempo di $\text{Hg}$ che passano dalla fase liquida al vapore è uguale al numero delle molecole per unità di tempo che passano dal vapore alla fase liquida - è definita **pressione di vapore**, $p_v$. La pressione di vapore per $\text{Hg}$ a temperatura ambiente è circa $p_{v, \text{Hg}}(T=20 \, \text{°C}) = 0.1727 \, \text{Pa}$, dell'ordine di $10^{-6}$ - un millionesimo - della pressione atmosferica. Dal confronto di questi valori, segue la semplificazione della pressione $P_0$ nella legge di Stevino, e l'approssimazione di vuoto all'interno del tubo almeno per quanto riguarda gli effetti meccanici sulla colonnina di mercurio.
+```
+
+```{dropdown} Sensibilità della misura alle condizioni metereologiche e alla quota
+**todo** *...*
+```
+
+````{list-table}
+:header-rows: 0
+* - ![](../../media/torricelli-0.svg)
+  - ![](../../media/torricelli-1.svg)
+````
 
 ## Prime esperienze sui gas - esperimento di Boyle
 L'indagine di Boyle e Hooke su gas sufficientemente rarefatti produce come risultato la legge di Boyle,
@@ -24,7 +52,12 @@ $$P V = \text{const}$$
 
 valida per un sistema chiuso a temperatura $T$ costante. Al tempo delle attività sperimentali di Boyle, il manometro di Torricelli era uno strumento disponibile per una misura sufficientemente accurata della pressione, mentre non erano ancora disponibili strumenti accurati per la misura della temperatura del gas contenuto all'interno del sistema. Le attività di Boyle assumevano quindi una stabilità sufficiente della temperatura dell'ambiente all'interno dela quale era svolto l'esperimento, insieme all'equilibrio termico tra sistema e ambiente.
 
-<span style="color:red"> **todo** dettagli dell'esperimento </span>
+<!-- <span style="color:red"> **todo** dettagli dell'esperimento </span> -->
+
+````{list-table}
+:header-rows: 0
+* - ![](../../media/boyle.svg)
+````
 
 ```{prf:example} **todo** Esercizi su manometro di Torricelli
 ```
