@@ -54,15 +54,23 @@ valida per un sistema chiuso a temperatura $T$ costante. Al tempo delle attivit�
 
 <!-- <span style="color:red"> **todo** dettagli dell'esperimento </span> -->
 
+L'esperimento avviene in un tubo a forma di $\text{U}$ con un'estremità chiusa. Un liquido di densità nota $\rho$ viene usato per isolare il gas oggetto di studio dall'ambiente esterno, a pressione ambiente. Il materiale del tubo è un buon conduttore così che si può immaginare che per variazioni lente della configurazione, la temperatura è uguale temperatura dell'ambiente in cui si svolge l'esperimento, considerabile costante con buona approssimazione. L'esperimento si svolge aggiungendo liquido dall'estremità aperta del tubo. Usando la legge di Stevino, si può stimare/misurare la pressione del gas misurando la differenza di quota del liquido nelle due colonnine,
+
+$$P_{gas} = P_{atm} + \rho \, g \, h$$.
+
 ````{list-table}
 :header-rows: 0
 * - ![](../../media/boyle.svg)
 ````
 
+```{exercise}
+```
+<!--
 ```{prf:example} **todo** Esercizi su manometro di Torricelli
 ```
 ```{prf:example} **todo** Esercizi su legge di Boyle
 ```
+-->
 
 ## Dilatazione sostanze
 Con le esperienze discusse fino ad ora non è ancora possibile associare nessuna grandezza fisica alla percezione comune di caldo o freddo. <span style="color:red">Confusione temperatura-calore **todo** *ref*</span>
