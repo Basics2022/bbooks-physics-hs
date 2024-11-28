@@ -29,7 +29,7 @@ $$\begin{aligned}
 
 $$\begin{aligned}
   v_{n+1} - v_n & = \frac{m}{M_n - m} v_p^{rel} = \\
-  & = \frac{m}{M_0 + (N-n)m - m} v^{p,rel}
+  & = \frac{m}{M_0 + (N-n)m - m} v^{p,rel} = \\
   & = \frac{m}{M - (1+n) m} v^{p,rel}
 \end{aligned}$$
 
