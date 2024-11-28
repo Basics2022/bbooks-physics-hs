@@ -27,7 +27,7 @@ $$\begin{aligned}
   & = ( M_{n} - m ) v_{n+1} + m ( v_{n} + v^{p,rel} ) \\
 \end{aligned}$$
 
-$$v_{n+1} = \frac{N}{}$$
+$$v_{n+1} - v_n = \frac{m}{M_n - m} v^{p,rel}$$
 
 ```
 
