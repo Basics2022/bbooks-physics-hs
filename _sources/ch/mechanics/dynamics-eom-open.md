@@ -77,6 +77,10 @@ Il bilancio del momento della quantità di moto rispetto al centro della giostra
 
 $$\Delta L_{0,z} + \Delta t \, \Phi(\rho \vec{r} \times \vec{v}) = \vec{0}$$
 
+$$\begin{aligned}
+ I_{z,n+1} \Omega_{n+1} - I_{z,n} \Omega_n
+\end{aligned}$$
+
 ```
 
 ````
