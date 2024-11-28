@@ -357,37 +357,6 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<div class="dropdown dropdown-launch-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
-    <i class="fas fa-rocket"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://colab.research.google.com/github/Basics2022/bbooks-physics-hs/blob/master/ch/mechanics/dynamics-motion-gravitation.md" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch onColab"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  
-    <img src="../../_static/images/logo_colab.png">
-  </span>
-<span class="btn__text-container">Colab</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
-
-
-
-
-
 <div class="dropdown dropdown-source-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
     <i class="fab fa-github"></i>
@@ -457,23 +426,6 @@ const thebe_selector_output = ".output, .cell_output"
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="../../_sources/ch/mechanics/dynamics-motion-gravitation.ipynb" target="_blank"
-   class="btn btn-sm btn-download-notebook-button dropdown-item"
-   title="Scarica il file del taccuino"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-code"></i>
-  </span>
-<span class="btn__text-container">.ipynb</span>
-</a>
-</li>
-      
       
       
       
@@ -588,7 +540,20 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="sd-container-fluid sd-sphinx-override sd-p-0 sd-mt-2 sd-mb-4 docutils">
+  <!--
+---
+jupytext:
+    formats: md:myst
+    text_representation:
+        extension: .md
+        format_name: myst
+kernelspec:
+    dispaly_name: Python 3(ipykernel)
+    language: python
+    name: python3
+---
+-->
+<div class="sd-container-fluid sd-sphinx-override sd-p-0 sd-mt-2 sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-gx-2 sd-gy-1 docutils">
 <div class="sd-col sd-d-flex-row sd-align-minor-center docutils">
 <div class="sd-container-fluid sd-sphinx-override docutils">
@@ -626,20 +591,6 @@ document.write(`
 <h2><span class="section-number">9.6.1. </span>Legge di gravitazione universale<a class="headerlink" href="#legge-di-gravitazione-universale" title="Permalink to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
 \[\vec{F}_{10} = G \, m_0 \, m_1 \frac{\vec{r}_{01}}{\left|\vec{r}_{01}\right|^3}\]</div>
-<!--
-```{code-cell}
-import numpy as np
-import matplotlib.pyplot as plt
-
-x = np.arange(5)
-y = 2*x
-
-plt.figure()
-plt.plot(x,y)
-plt.show()
-
-```
--->
 </div>
 <div class="section" id="problema-dei-due-corpi">
 <h2><span class="section-number">9.6.2. </span>Problema dei due corpi<a class="headerlink" href="#problema-dei-due-corpi" title="Permalink to this heading">#</a></h2>
@@ -806,7 +757,8 @@ a & = \frac{1}{2} \left( r(0)+r(\pi) \right) = \\
   & = \frac{\Omega^2}{GM} \left[ \frac{1}{1+\frac{A \Omega^2}{GM}} + \frac{1}{1-\frac{A \Omega^2}{GM}} \right] = \\
   & = \dfrac{2}{ \left(\frac{GM}{\Omega^2} \right)^2 - A^2}
 \end{aligned}$$
---></div>
+-->
+</div>
 </div>
 </div>
 
