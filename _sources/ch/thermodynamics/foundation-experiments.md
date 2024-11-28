@@ -58,6 +58,8 @@ L'esperimento avviene in un tubo a forma di $\text{U}$ con un'estremità chiusa.
 
 $$P_{gas} = P_{atm} + \rho \, g \, h \ .$$
 
+La misura del volume $V_{gas}$ occupato dal gas è immediata. Lo svolgimento dell'esperimento per diversi gas mostra una dipendenza inversamente proporzionale tra le misure $P_{gas,k}$, $V_{gas,k}$
+
 ````{list-table}
 :header-rows: 0
 * - ![](../../media/boyle.svg)
