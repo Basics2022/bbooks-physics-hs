@@ -66,10 +66,20 @@ $$\vec{v}_{n+1} - \vec{v}_n = \frac{m}{M_{n+1}} \vec{v}_p^{rel} \ .$$
 ```
 
 ````
-```{prf:example} Sistemi discreti - Moto di una giostra per reazione
+````{prf:example} Sistemi discreti - Moto di una giostra per reazione
 :class: dropdown
 
+```{dropdown} Approccio 1. Conservazione della quantità di moto di un sistema chiuso costituito dalla giostra e dalla palla.
 ```
+
+```{dropdown} Approccio 2. Conservazione della quantità di moto di un sistema aperto costituito dalla giostra.
+Il bilancio del momento della quantità di moto rispetto al centro della giostra attorno all'asse di rotazione è
+
+$$\Delta L_{0,z} + \Delta t \, \Phi(\rho \vec{r} \times \vec{v}) = \vec{0}$$
+
+```
+
+````
 
 ```{prf:example} Sistemi continui - Equazione della spinta per i razzi - Tsiolkovski
 :class: dropdown
