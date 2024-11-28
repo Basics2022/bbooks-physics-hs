@@ -58,7 +58,11 @@ L'esperimento avviene in un tubo a forma di $\text{U}$ con un'estremità chiusa.
 
 $$P_{gas} = P_{atm} + \rho \, g \, h \ .$$
 
-La misura del volume $V_{gas}$ occupato dal gas è immediata. Lo svolgimento dell'esperimento per diversi gas mostra una dipendenza inversamente proporzionale tra le misure $P_{gas,k}$, $V_{gas,k}$
+La misura del volume $V_{gas}$ occupato dal gas è immediata. Lo svolgimento dell'esperimento per diversi gas mostra una dipendenza inversamente proporzionale tra le misure $P_{gas,k}$, $V_{gas,k}$.
+
+**todo** *aggiungere tabella e/o grafico, per uno o più gas*
+
+Usando il mercurio come liquido, $\text{Hg}$, e partendo da una condizione di riferimento a pressione ambiente in cui il volume occupato dal gas è $V_0$, si osserva che a una differenza della quota delle colonnine $\Delta h = n \cdot 760 \text{mm}$ corrisponde un volume $\frac{V}{1+n}$.
 
 ````{list-table}
 :header-rows: 0
