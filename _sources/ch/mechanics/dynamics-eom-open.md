@@ -51,6 +51,9 @@ $$\Delta v_{n+1} = - \frac{\Delta M_{n+1}}{M_{n+1}} v_p^{rel} \ .$$
 ```
 
 ```{dropdown} Approccio 2. Conservazione della quantità di moto di un sistema aperto costituito dalla barca.
+
+$$\Delta \vec{Q} + \Delta \Phi_(\rho \vec{v}) = \vec{0} \ ,$$
+
 ```
 
 ````
