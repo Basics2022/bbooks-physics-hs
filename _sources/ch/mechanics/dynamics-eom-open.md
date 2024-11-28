@@ -57,7 +57,7 @@ $$\Delta v_{n+1} = - \frac{\Delta M_{n+1}}{M_{n+1}} v_p^{rel} \ .$$
 $$\Delta \vec{Q} + \Delta t \, \Phi(\rho \vec{v}) = \vec{0} \ ,$$
 
 $$\begin{aligned}
-  \vec{0} & = M_{n+1} \vec{v}_{n+1} - M_{n} \vec{v}_n + m \vec{v}_p  \\
+  \vec{0} & = M_{n+1} \vec{v}_{n+1} - M_{n} \vec{v}_n + m \vec{v}_p =  \\
           & = M_{n+1} \vec{v}_{n+1} - M_{n} \vec{v}_n + m ( \vec{v}_p^{rel} + \vec{v}_n )  \\
 \end{aligned}$$
 
@@ -82,7 +82,8 @@ Il bilancio del momento della quantità di moto rispetto al centro della giostra
 $$\Delta L_{0,z} + \Delta t \, \Phi(\rho \vec{r} \times \vec{v}) = \vec{0}$$
 
 $$\begin{aligned}
-  0 & = I_{z,n+1} \Omega_{n+1} - I_{z,n} \Omega_n \\
+  0 & = I_{z,n+1} \Omega_{n+1} - I_{z,n} \Omega_n + m R v_p =  \\
+    & = I_{z,n+1} \Omega_{n+1} - I_{z,n} \Omega_n + m R ( R \Omega + v_p^{rel} ) =  \\
 \end{aligned}$$
 
 ```
