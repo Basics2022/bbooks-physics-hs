@@ -101,7 +101,8 @@ $$\begin{aligned}
 per ricavare una relazione che lega la variazione di velocità angolare alla variazione di inerzia e al numero di palle lanciate,
 
 $$\begin{aligned}
-  \Omega_{n+1} - \Omega_n =  \frac{m R}{I_{z,n+1}} v_p^{rel} \ .
+  \Omega_{n+1} - \Omega_n & =  \frac{m R}{I_{z,n+1}} v_p^{rel} = \\
+                          & = - \frac{\Delta I_{z}/R}{I_{z,n+1}} v_p^{rel} = \\
 \end{aligned}$$
 
 
