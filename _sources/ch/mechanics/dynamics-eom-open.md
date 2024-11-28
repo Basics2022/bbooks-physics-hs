@@ -33,7 +33,10 @@ $$\begin{aligned}
 Usando l'equazione della massa, segue immediatamente $\dot{M}_{v(t)} = - \dot{m}_e$.
 La quantità di moto del sistema al tempo $t$ può essere scritta come prodotto della massa $M_{v(t)}(t)$ e la velocità del baricentro $\vec{v}_G(t)$ del sistema contenuto nel volume $v(t)$. La risultante delle forze è la somma delle forze di volume, tipicamente il peso, e le forze agenti sulla superficie del volume $v(t)$, tipicamente le forze aerodinamiche. L'equazione della quantità di moto può quindi essere riscritta come
 
-$$\dot{M} \vec{v} + M \dot{\vec{v}} + \dot{m}_e \vec{v}_e = M(t) \vec{g} + \vec{F}^{aero}$$
+$$\dot{M} \vec{v} + M \dot{\vec{v}} + \dot{m}_e \vec{v}_e = M(t) \vec{g} + \vec{F}^{aero} \ .$$
 
+Scrivendo la velocità di efflusso come somma della velocità del baricentro e della velocità relativa al baricentro, $\vec{v}_e = \vec{v} + \vec{v}_e^{rel}$, usando l'equazione della massa $\dot{m}_e = - \dot{M}$, si può riscrivere l'equazione
+
+$$M \dot{\vec{v}} - \dot{M} \vec{v}_e^{rel} = M(t) \vec{g} + \vec{F}^{aero} \ .$$
 
 ```
