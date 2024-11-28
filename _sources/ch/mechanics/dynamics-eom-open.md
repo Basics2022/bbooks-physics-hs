@@ -17,6 +17,8 @@ Viene chiesto di determinare la velocità della barca dopo $n \le N$ spari.
 
 **Soluzione.**
 ```{dropdown} Approccio 1. Conservazione della quantità di moto di un sistema chiuso costituito dalla barca e dalla palla di cannone sparata.
+:open:
+
 Non agendo altre forze nette sul sistema, la quantità di moto del sistema chiuso è conservata tra un istante di tempo precedente e successivo allo sparo $n$-esimo.
 
 $$\begin{aligned}
