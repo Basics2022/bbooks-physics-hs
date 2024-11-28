@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/foundation';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
@@ -559,7 +561,7 @@ document.write(`
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 </div>
-</details><p>La termodinamica classica fornisce una descrizione macroscopica, media, di sistemi complessi costituiti da un gran numero di componenti elementari a livello microscopico: un <a class="reference internal" href="../thermodynamics.html"><span class="doc std std-doc"><strong>modello atomistico</strong></span></a> della materia fornisce una descrizione di dettaglio a livello microscopico, questo modello contiene molte più informazioni di quelle necessarie in molti ambiti, e risulta non pratico; la <strong>termodinamica classica</strong> fornisce una descrizione macroscopica, la <a class="reference internal" href="../thermodynamics.html"><span class="doc std std-doc"><strong>meccanica statistica</strong></span></a> fornisce il ponte tra le due descrizioni</p>
+</details><p>La <strong>termodinamica classica</strong> fornisce una <strong>descrizione macroscopica</strong>, media, di sistemi complessi costituiti da un gran numero di componenti elementari in <strong>equilibrio</strong> statistico a livello microscopico. Un <a class="reference internal" href="../thermodynamics.html"><span class="doc std std-doc"><strong>modello atomistico</strong></span></a> della materia fornisce una descrizione di dettaglio a livello microscopico: mentre un modello più dettagliato può essere utile per la comprensione di alcune osservazioni macrosopiche, in molte occasioni questo modello contiene molte più informazioni di quelle necessarie in molti ambiti, e risulta non pratico: così, ad esempio descriviamo le condizioni in una stanza in termini di temperatura - una <strong>(!)</strong> variabile macroscopica - e non descrivendo la dinamica delle <span class="math notranslate nohighlight">\(N\)</span> molecole dei gas che formano l’aria che respiriamo - per le quali servirebbero <span class="math notranslate nohighlight">\(\sim 10^26\)</span> grandezze fisiche per una stanza di <span class="math notranslate nohighlight">\(10 \, m^3\)</span>, o comunque <span class="math notranslate nohighlight">\(\sim 10^19\)</span> per ogni <span class="math notranslate nohighlight">\(\text{cm}^3\)</span>. La <a class="reference internal" href="../thermodynamics.html"><span class="doc std std-doc"><strong>meccanica statistica</strong></span></a> fornisce il ponte tra le due descrizioni, ritrovando la termodinamica classica come media della descrizione microscopica.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Feynman e la teoria atomica<div class="sd-summary-down docutils">
@@ -572,22 +574,24 @@ Feynman e la teoria atomica<div class="sd-summary-down docutils">
 <div><p class="sd-card-text">If, in some cataclysm, all of scientific knowledge were to be destroyed, and only one sentence passed on to the next generations of creatures, what statement would contain the most information in the fewest words? I believe it is the atomic hypothesis (or the atomic fact, or whatever you wish to call it) that all things are made of atoms—little particles that move around in perpetual motion, attracting each other when they are a little distance apart, but repelling upon being squeezed into one another. In that one sentence, you will see, there is an enormous amount of information about the world, if just a little imagination and thinking are applied.</p>
 </div></blockquote>
 </div>
-</details><p>La termodinamica classica costituisce una teoria fisica macroscopica per sistemi complessi in equilibrio statistico, almeno locale, in termini di grandezze fisiche macroscopiche:</p>
-<ul class="simple">
-<li><p>come ad esempio pressione, temperatura, energia interna, calore, entropia,… che possano essere facilmente misurate</p></li>
-<li><p>che permettano di descrivere lo stato macroscopico di un sistema con un numero ristretto di variabili</p></li>
-<li><p>che permettano di formulare una teoria matematica consistente, partendo da alcuni princìpi fondamentali in accordo con l’esperienza sperimentale</p></li>
-</ul>
-<p><strong>Contenuti.</strong></p>
-<p>Questa <strong>introduzione</strong> alla materia presenta parte da una <a class="reference internal" href="foundation-history.html#physics-hs-thermodynamics-foundation-history"><span class="std std-ref">breve cronologia</span></a> delle esperienze rilevanti per lo sviluppo della termodinamica classica; segue la discussione in dettaglio alcune di queste <a class="reference internal" href="foundation-experiments.html#physics-hs-thermodynamics-foundation-experiments"><span class="std std-ref">esperienze</span></a>, utili poi per formulare la teoria e i modelli; una breve descrizione del <a class="reference internal" href="foundation-atomic-theory.html#physics-hs-thermodynamics-foundation-atomic-theory"><span class="std std-ref">modello atomico</span></a> della materia conclude l’introduzione.</p>
-<p>Le sezioni successive entrano nei dettagli:</p>
-<ul class="simple">
-<li><p>principi della termodinamica classica (conservazione massa, bilancio di energia totale, irreversibilità,…); sviluppo di una teoria matematica (Gibbs)</p></li>
-<li><p>modelli dei sistemi: equazioni di stato</p></li>
-<li><p>applicazioni tecniche: cicli termodinamici e macchine termiche</p></li>
-<li><p>meccanismi di trasmissione del calore</p></li>
-</ul>
-<hr class="docutils" />
+</details><!--
+La termodinamica classica costituisce una teoria fisica macroscopica per sistemi complessi in equilibrio statistico, almeno locale, in termini di grandezze fisiche macroscopiche:
+- come ad esempio pressione, temperatura, energia interna, calore, entropia,... che possano essere facilmente misurate
+- che permettano di descrivere lo stato macroscopico di un sistema con un numero ristretto di variabili
+- che permettano di formulare una teoria matematica consistente, partendo da alcuni princìpi fondamentali in accordo con l'esperienza sperimentale
+
+**Contenuti.**
+
+Questa **introduzione** alla materia presenta parte da una [breve cronologia](physics-hs:thermodynamics:foundation:history) delle esperienze rilevanti per lo sviluppo della termodinamica classica; segue la discussione in dettaglio alcune di queste [esperienze](physics-hs:thermodynamics:foundation:experiments), utili poi per formulare la teoria e i modelli; una breve descrizione del [modello atomico](physics-hs:thermodynamics:foundation:atomic-theory) della materia conclude l'introduzione.
+
+Le sezioni successive entrano nei dettagli:
+- principi della termodinamica classica (conservazione massa, bilancio di energia totale, irreversibilità,...); sviluppo di una teoria matematica (Gibbs) 
+- modelli dei sistemi: equazioni di stato
+- applicazioni tecniche: cicli termodinamici e macchine termiche
+- meccanismi di trasmissione del calore
+
+---
+-->
 <!--
 **Concetti e primi strumenti.**
 - Temperatura, pressione
