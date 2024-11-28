@@ -24,6 +24,19 @@
 ## Legge di gravitazione universale
 $$\vec{F}_{10} = G \, m_0 \, m_1 \frac{\vec{r}_{01}}{\left|\vec{r}_{01}\right|^3}$$
 
+```{python}
+import matplotlib.pyplot as plt
+
+x = np.arange(5)
+y = 2*x
+
+plt.figure()
+plt.plot(x,y)
+plt.show()
+
+```
+
+
 ## Problema dei due corpi
 
 In meccanica classica, il problema dei due corpi si riferisce alla dinamica di un sistema formato da due corpi puntiformi soggetti unicamente alla mutua interazione gravitazionale, descritta dalla legge di gravitazione universale di Newton.
