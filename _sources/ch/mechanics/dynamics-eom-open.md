@@ -17,8 +17,11 @@ In questa sezione si presentano i bilanci di massa, quantità di moto e energia 
 
 ```
 ```{prf:example} Sistemi continui - Equazione della spinta per i razzi - Tsiolkovski
-Si ricava qui l'equazione del moto di un razzo di massa iniziale $M_0$
+Si ricava qui l'equazione del moto di un razzo di massa iniziale $M_0$,
 
 $$\dfrac{d M_{v_t}}{dt} + \Phi_{\partial v_t}(\rho) = 0$$
+
+$$\dfrac{d vec{Q}_{v_t}}{dt} + \vec{\Phi}_{\partial v_t}(\rho \vec{v}) = \vec{R}^{ext}$$
+
 
 ```
