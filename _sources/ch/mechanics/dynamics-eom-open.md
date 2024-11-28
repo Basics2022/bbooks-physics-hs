@@ -45,6 +45,12 @@ Nel caso in cui si possano trascurare le forze esterne agenti sul sistema rispet
 
 $$M \dot{\vec{v}} = \dot{M} \vec{v}_e^{rel} \ .$$
 
-Spostando tutto da una parte dell'uguale, e dividendo per la massa $M$, e ricordando che $\frac{d}{dt} \ln x(t) = \frac{\dot{x}(t)}{x(t)}$
+Spostando tutto da una parte dell'uguale, e dividendo per la massa $M$, e ricordando che $\frac{d}{dt} \ln x(t) = \frac{\dot{x}(t)}{x(t)}$, assumendo che la velocità relativa di efflusso sia costante, si può integrare la relazione
+
+$$\begin{aligned}
+  0 = \dot{\vec{v}} - \frac{\dot{M}}{M} \vec{v}_e^{rel}
+\end{aligned}$$
+
+
 
 ```
