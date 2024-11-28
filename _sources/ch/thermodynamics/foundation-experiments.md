@@ -31,8 +31,12 @@ L'esperienza di Torricelli:
 - è una delle prime esperienze dell'esistenza del **vuoto**, in contrasto con l'*horror vacui* aristotelico, principio secondo il quale la natura rifugge il vuoto, riempiendolo costantemente
 
 
-```{note} Il "quasi"-vuoto
-:class: dropdown
+```{dropdown} Il "quasi"-vuoto
+Nella parte superiore del tubo c'è *vapore di mercurio*, in equilibrio con la superficie libera del mercurio all'interno del tubo. A una temperatura data, la pressione che identifica la condizione di equilibrio tra le due fasi - il numero di molecole per unità di tempo di $\text{Hg}$ che passano dalla fase liquida al vapore è uguale al numero delle molecole per unità di tempo che passano dal vapore alla fase liquida - è definita **pressione di vapore**, $p_v$. La pressione di vapore per $\text{Hg}$ a temperatura ambiente è circa $p_{v, \text{Hg}}(T=20 \, \text{°C}) = 0.1727 \, \text{Pa}$, dell'ordine di $10^{-6}$ - un millionesimo - della pressione atmosferica. Dal confronto di questi valori, segue la semplificazione della pressione $P_0$ nella legge di Stevino, e l'approssimazione di vuoto all'interno del tubo almeno per quanto riguarda gli effetti meccanici sulla colonnina di mercurio.
+```
+
+```{dropdown} Sensibilità della misura alle condizioni metereologiche e alla quota
+**todo** *...*
 ```
 
 ````{list-table}
