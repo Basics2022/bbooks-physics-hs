@@ -31,6 +31,9 @@ $$
   \vec{M}_H^{ext} = \vec{0} \ , \quad \dot{\vec{x}}_H \times \vec{Q} = \vec{0} \qquad  \rightarrow \qquad \vec{L}_H = \text{const.}
 $$
 
+```{prf:example} Rotazione di una ballerina
+```
+
 **Conservazione del momento dell'energia cinetica.**
 L'equazione di bilancio dell'energia cinetica di un sistema chiuso garantisce che il momento della quantità di moto di un sistema chiuso è costante se la risultante della potenza di tutte le azioni agenti sul sistema è nulla, 
 

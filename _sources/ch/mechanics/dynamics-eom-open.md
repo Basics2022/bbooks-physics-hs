@@ -11,11 +11,16 @@ In questa sezione si presentano i bilanci di massa, quantità di moto e energia 
 
 ## Esempi
 Sistemi discreti:
-- moto di una barca gettando pietre
-- moto di una giostra gettando pietre in direzione tangenziale
+```{prf:example} Moto di una barca per reazione
+
+```
+```{prf:example} Moto di una giostra per reazione
+
+```
 
 ### Sistemi continui
-```{prf:example} Equazione della spinta per i razzi
-Equazione della spinta per i razzi
-- equazione della spinta per razzi
+```{prf:example} Equazione della spinta per i razzi - Tsiolkovski
+
+
+
 ```
