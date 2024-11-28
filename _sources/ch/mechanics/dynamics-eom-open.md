@@ -31,8 +31,9 @@ $$\begin{aligned}
 \end{aligned}$$
 
 Usando l'equazione della massa, segue immediatamente $\dot{M}_{v(t)} = - \dot{m}_e$.
+La quantità di moto del sistema al tempo $t$ può essere scritta come prodotto della massa $M_{v(t)}(t)$ e la velocità del baricentro $\vec{v}_G(t)$ del sistema contenuto nel volume $v(t)$. La risultante delle forze è la somma delle forze di volume, tipicamente il peso, e le forze agenti sulla superficie del volume $v(t)$, tipicamente le forze aerodinamiche. L'equazione della quantità di moto può quindi essere riscritta come
 
-La quantità di moto del sistema al tempo $t$ può essere scritta come prodotto della massa $M(t)$ e la velocità del baricentro $\vec{v}_G(t)$ del sistema contenuto nel volume $v(t)$. La risultante delle forze è la somma delle forze di volume, tipicamente il peso, e le forze agenti sulla superficie del volume $v(t)$, tipicamente le forze aerodinamiche. Il flusso di quantità di moto attraverso la frontiera del sistema $\partial v(t)$, assumendo
+$$\dot{M} \vec{v} + M \dot{\vec{v}} + \dot{m}_e \vec{v}_e = M(t) \vec{g} + \vec{F}^{aero}$$
 
 
 ```
