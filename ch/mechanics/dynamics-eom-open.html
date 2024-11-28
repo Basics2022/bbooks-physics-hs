@@ -545,7 +545,7 @@ document.write(`
 <p class="admonition-title"><span class="caption-number">Example 9.2 </span> (Sistemi discreti - Moto di una barca per reazione)</p>
 <div class="example-content section" id="proof-content">
 <p>Una barca di massa <span class="math notranslate nohighlight">\(M\)</span> è stata caricata con <span class="math notranslate nohighlight">\(N\)</span> palle di cannone, ciascuna di massa <span class="math notranslate nohighlight">\(m\)</span>, così che la massa totale è <span class="math notranslate nohighlight">\(M = M_0 + N m\)</span>. La barca si muove lungo una traiettoria rettilinea, inizialmente con velocità <span class="math notranslate nohighlight">\(\vec{v}_0 = v_0 \hat{x}\)</span>. Sulla barca è presente un cannone in grado di sparare i proiettili esattamente nella stessa direzione della traiettoria, con un a velocità relativa di <span class="math notranslate nohighlight">\(\vec{v}_p - \vec{v}^- = \vec{v}_p^{rel,-} = - v^{rel} \hat{x}\)</span>, con <span class="math notranslate nohighlight">\(v^{rel} &gt; 0\)</span>, rispetto alla velocità della barca <strong>prima dello sparo</strong>, <span class="math notranslate nohighlight">\(\vec{v}^-\)</span>.</p>
-<p>Viene chiesto di determinare la velocità della barca dopo <span class="math notranslate nohighlight">\(n \le N\)</span> spari.</p>
+<p>Viene chiesto di determinare la velocità della barca dopo <span class="math notranslate nohighlight">\(n \le N\)</span> spari. <strong>todo</strong> <em>e di determinare dopo quanti spari, i proiettili vengono sparati nella stessa direzione «assoluta» in cui si muove la barca</em></p>
 <p><strong>Soluzione.</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -604,6 +604,8 @@ Approccio 2. Conservazione della quantità di moto di un sistema aperto costitui
 <!--
 :class: dropdown
 -->
+<p>Una giostra è libera di ruotare attorno al suo centro, grazie a una cerniera cilindrica. Sulla giostra, sono state caricate delle palline di massa <span class="math notranslate nohighlight">\(m\)</span>, posizionate al bordo della giostra, che vengono lanciate in direzione tangenziale alla giostra da un marchingegno che riesce a fornire alle palline una velocità relativa rispetto alla velocità prima del lancio uguale a <span class="math notranslate nohighlight">\(v_p^{rel}\)</span>. La giostra ha raggio <span class="math notranslate nohighlight">\(R\)</span> e massa <span class="math notranslate nohighlight">\(M\)</span>.</p>
+<p>Viene chiesto di determinare la velocità angolare della giostra dopo <span class="math notranslate nohighlight">\(n \le N\)</span> lanci. <strong>todo</strong> <em>e di determinare dopo quanti lanci, le palline vengono sparate nella stessa direzione «assoluta» in cui gira la giostra</em></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Approccio 1. Conservazione della quantità di moto di un sistema chiuso costituito dalla giostra e dalla palla.<div class="sd-summary-down docutils">
@@ -625,7 +627,7 @@ Approccio 2. Conservazione della quantità di moto di un sistema aperto costitui
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
   0 &amp; = I_{z,n+1} \Omega_{n+1} - I_{z,n} \Omega_n + m R v_p =  \\
-    &amp; = I_{z,n+1} \Omega_{n+1} - I_{z,n} \Omega_n + m R ( R \Omega + v_p^{rel} ) =  \\
+    &amp; = I_{z,n+1} \Omega_{n+1} - I_{z,n} \Omega_n + m R ( R \Omega_n + v_p^{rel} ) =  \\
 \end{aligned}\end{split}\]</div>
 </div>
 </details></div>
