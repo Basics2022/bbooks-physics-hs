@@ -11,6 +11,7 @@ In questa sezione si presentano i bilanci di massa, quantità di moto e energia 
 
 ## Esempi
 ```{prf:example} Sistemi discreti - Moto di una barca per reazione
+Una barca di massa $M_0$ è stata caricata con $N$ palle di cannone, ciascuna di massa $m$, così che la massa totale è $M_N = M_0 + N \, m$. La barca si muove lungo una traiettoria rettilinea, inizialmente con velocità $\vec{v}_0 = v_0 \hat{x}$. Sulla barca è presente un cannone in grado di sparare i proiettili esattamente nella stessa direzione della traiettoria, con un a velocità relativa di $\vec{v}_p - \vec{v}^- = \vec{v}_p^{rel,-} = - v^{rel} \hat{x}$, con $v^{rel} > 0$, rispetto alla velocità della barca **prima dello sparo**, $\vec{v}^-$.
 
 ```
 ```{prf:example} Sistemi discreti - Moto di una giostra per reazione
