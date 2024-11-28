@@ -95,13 +95,13 @@ Poichè il momento di inerzia tra un lancio e un altro diminuisce di una quantit
 $$\begin{aligned}
   0 & = I_{z,n+1} \Omega_{n+1} - I_{z,n} \Omega_n + m R v_p =  \\
     & = I_{z,n+1} \Omega_{n+1} - I_{z,n} \Omega_n + m R ( R \Omega_n + v_p^{rel} ) \\
-    & = I_{z,n+1} \Omega_{n+1} - I_{z,n+1} \Omega_n + m R v_p^{rel} )
+    & = I_{z,n+1} \Omega_{n+1} - I_{z,n+1} \Omega_n + m R v_p^{rel}
 \end{aligned}$$
 
 per ricavare una relazione che lega la variazione di velocità angolare alla variazione di inerzia e al numero di palle lanciate,
 
 $$\begin{aligned}
-  \Omega_{n+1} - \Omega_n = 
+  \Omega_{n+1} - \Omega_n =  \frac{m R}{I_{z,n+1}} v_p^{rel} \ .
 \end{aligned}$$
 
 
