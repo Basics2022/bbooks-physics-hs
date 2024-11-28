@@ -72,8 +72,13 @@ $$\vec{v}_{n+1} - \vec{v}_n = \frac{m}{M_{n+1}} \vec{v}_p^{rel} \ .$$
 -->
 Una giostra è libera di ruotare attorno al suo centro, grazie a una cerniera cilindrica. Sulla giostra, sono state caricate delle palline di massa $m$, posizionate al bordo della giostra, che vengono lanciate in direzione tangenziale alla giostra da un marchingegno che riesce a fornire alle palline una velocità relativa rispetto alla velocità prima del lancio uguale a $v_p^{rel}$. La giostra ha raggio $R$ e massa $M$.
 
+<!--
+*Suggerimento.* Il momento della quantità di moto è una grandezza fisica additiva. Il momento della quantità di moto di una massa puntiforme rispetto a un punto è $$\vec{L}_i = m_i \vec{r}_i \times \vec{v}_i$$
+-->
+
 Viene chiesto di determinare la velocità angolare della giostra dopo $n \le N$ lanci. **todo** *e di determinare dopo quanti lanci, le palline vengono sparate nella stessa direzione "assoluta" in cui gira la giostra*
 
+**todo** *Ripetere l'esercizio con le palline inizialmente posizionate sull'asse, poi trasportate sul bordo della giostra prima di essere lanciate.* *Primo trasferimento usando la conservazione del momento della quantità di moto, come una ballerina che cambia $I$, poi lancio...*
 
 ```{dropdown} Approccio 1. Conservazione della quantità di moto di un sistema chiuso costituito dalla giostra e dalla palla.
 ```
@@ -85,10 +90,21 @@ Il bilancio del momento della quantità di moto rispetto al centro della giostra
 
 $$\Delta L_{0,z} + \Delta t \, \Phi(\rho \vec{r} \times \vec{v}) = \vec{0}$$
 
+Poichè il momento di inerzia tra un lancio e un altro diminuisce di una quantità costante dovuta al lancio di una pallina,  $I_{z,n+1} = I_{z,n} - m R^2$, si può riscrivere l'equazione di bilancio
+
 $$\begin{aligned}
   0 & = I_{z,n+1} \Omega_{n+1} - I_{z,n} \Omega_n + m R v_p =  \\
-    & = I_{z,n+1} \Omega_{n+1} - I_{z,n} \Omega_n + m R ( R \Omega_n + v_p^{rel} ) =  \\
+    & = I_{z,n+1} \Omega_{n+1} - I_{z,n} \Omega_n + m R ( R \Omega_n + v_p^{rel} ) \\
+    & = I_{z,n+1} \Omega_{n+1} - I_{z,n+1} \Omega_n + m R v_p^{rel} )
 \end{aligned}$$
+
+per ricavare una relazione che lega la variazione di velocità angolare alla variazione di inerzia e al numero di palle lanciate,
+
+$$\begin{aligned}
+  \Omega_{n+1} - \Omega_n = 
+\end{aligned}$$
+
+
 
 ```
 
