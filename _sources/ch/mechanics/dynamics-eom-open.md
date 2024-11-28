@@ -24,13 +24,18 @@ Non agendo altre forze nette sul sistema, la quantità di moto del sistema chius
 $$\begin{aligned}
   M_{n} v_{n} 
   & = M_{n+1} v_{n+1} + m v_{p,n+1} \\
-  & = ( M_{n} - m ) v_{n+1} + m ( v_{n} + v^{p,rel} ) \\
+  & = ( M_{n} - m ) v_{n+1} + m ( v_{n} + v_p^{rel} ) \\
 \end{aligned}$$
 
 $$\begin{aligned}
-  v_{n+1} - v_n & = \frac{m}{M_n - m} v^{p,rel} = \\
+  v_{n+1} - v_n & = \frac{m}{M_n - m} v_p^{rel} = \\
   & = \frac{m}{M + (N-n)m - m} v^{p,rel}
 \end{aligned}$$
+
+
+**oss.** E' possibile riscrivere l'equazione ... mettendo in evidenza le variazione $\Delta v_{n+1} = v_{n+1} - v_n$, $\Delta M_{n+1} = M_{n+1} - M_{n}$
+
+$$\Delta v_{n+1} = - \frac{\Dleta M_{n+1}}{M_{n+1}} v_p^{rel} \ .$$
 
 ```
 
