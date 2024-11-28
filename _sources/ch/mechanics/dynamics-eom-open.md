@@ -53,7 +53,11 @@ $$\begin{aligned}
 
 che implica la costanza della funzione derivata,
 
-$$\vec{v}_2 - \ln \frac{M_2}{M_0} \vec{v}^{rel}_e = \vec{v}_1 - \ln \frac{M_1}{M_0} \vec{v}^{rel}_e$$
+$$\vec{v}_2 - \ln \frac{M_2}{M_0} \vec{v}^{rel}_e = \vec{v}_1 - \ln \frac{M_1}{M_0} \vec{v}^{rel}_e \ ,$$
+
+che può essere riscritta come
+
+$$\vec{v}_2 - \vec{v}_1 = \ln \frac{M_2}{M_1} \vec{v}^{rel}_e \ .$$
 
 
 
