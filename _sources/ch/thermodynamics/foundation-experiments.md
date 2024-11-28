@@ -4,6 +4,8 @@
 ## Esperienza di Torricelli 
 Torricellii(1608-1647) dimostra che[^torricelli]
 
+[^torricelli]: Lettera a Michelangelo Ricci, 2 giugno 1664, in Prefazione alle *Lezioni accademiche* di E.Torricelli
+
 > "viviamo sul fondo di un oceano d'aria, la quale [...] si sa che pesa, e tanto"
 
 In particolare, l'esperienza di Torricelli permette di misurare il peso dell'aria nell'atmosfera ed esprimerlo in termini di pressione atmosferica.
@@ -28,7 +30,10 @@ L'esperienza di Torricelli:
 - introduce il **manometro di Torricelli** come strumento per la misura della pressione atmosferica e nei gas in generale;
 - è una delle prime esperienze dell'esistenza del **vuoto**, in contrasto con l'*horror vacui* aristotelico, principio secondo il quale la natura rifugge il vuoto, riempiendolo costantemente
 
-[^torricelli]: Lettera a Michelangelo Ricci, 2 giugno 1664, in Prefazione alle *Lezioni accademiche* di E.Torricelli
+
+```{note} Il "quasi"-vuoto
+
+```
 
 ````{list-table}
 :header-rows: 0
