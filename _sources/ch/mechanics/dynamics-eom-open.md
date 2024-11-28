@@ -24,6 +24,12 @@ $$\begin{aligned}
   \dfrac{d \vec{Q}_{v(t)}}{dt} & + \vec{\Phi}_{\partial v(t)}(\rho \vec{v}) = \vec{R}_{v(t)}^{ext}
 \end{aligned}$$
 
+applicando alcune semplificazioni ragionevoli per un modello di prima approssimazione. Assumendo che le proprietà (densità, velocità) siano uniformi sulla superficie dell'ugello, i flussi uscenti di massa e quantità di moto possono essere scritti come
+
+$$\begin{aligned}
+  \Phi_{\partial v(t)}(\rho) = \dot{m}_e \qquad m \qquad \Phi_{\partial v(t)}(\rho \vec{v}) = \dot{m}_e \vec{v} \ ,
+\end{aligned}$$
+
 La quantità di moto del sistema al tempo $t$ può essere scritta come prodotto della massa $M(t)$ e la velocità del baricentro $\vec{v}_G(t)$ del sistema contenuto nel volume $v(t)$. La risultante delle forze è la somma delle forze di volume, tipicamente il peso, e le forze agenti sulla superficie del volume $v(t)$, tipicamente le forze aerodinamiche. Il flusso di quantità di moto attraverso la frontiera del sistema $\partial v(t)$, assumendo
 
 
