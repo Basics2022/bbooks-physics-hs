@@ -29,11 +29,14 @@ $$\begin{aligned}
 
 $$\begin{aligned}
   v_{n+1} - v_n & = \frac{m}{M_n - m} v_p^{rel} = \\
-  & = \frac{m}{M + (N-n)m - m} v^{p,rel}
+  & = \frac{m}{M_0 + (N-n)m - m} v^{p,rel}
+  & = \frac{m}{M - (1+n) m} v^{p,rel}
 \end{aligned}$$
 
 
-**oss.** E' possibile riscrivere l'equazione ... mettendo in evidenza le variazione $\Delta v_{n+1} = v_{n+1} - v_n$, $\Delta M_{n+1} = M_{n+1} - M_{n}$
+**oss.** L'equazione ... può essere riscritta mettendo in evidenza le variazioni delle grandezze fisiche velocità e massa
+
+$\Delta v_{n+1} = v_{n+1} - v_n$, $\Delta M_{n+1} = M_{n+1} - M_{n}$
 
 $$\Delta v_{n+1} = - \frac{\Delta M_{n+1}}{M_{n+1}} v_p^{rel} \ .$$
 
