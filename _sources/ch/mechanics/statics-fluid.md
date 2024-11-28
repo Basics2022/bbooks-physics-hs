@@ -9,5 +9,12 @@ Gli equilibri globali sono una diretta conseguenza degli equilibri locali, e del
 
 ## Strutture
 
+(physics-hs:mechanics:statics:fluid:fluid)=
 ## Fluidi
-- Stevino e principio di Archimede
+
+(physics-hs:mechanics:statics:fluid:stevino)=
+### Legge di Stevino
+
+(physics-hs:mechanics:statics:fluid:archimede)=
+### Legge di Archimede
+
