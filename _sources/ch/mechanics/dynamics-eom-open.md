@@ -33,6 +33,12 @@ $$\begin{aligned}
   & = \frac{m}{M - (1+n) m} v^{p,rel}
 \end{aligned}$$
 
+La velocità $v_{n+1}$ può quindi essere riportata alla velocità $v_0$ sommando gli $n$ contributi $v_{n+1} - v_{n}$, $v_{n} - v_{n-1}$,...
+
+$$\begin{aligned}
+  v_{n+1} - v_0 & = v_{n+1} - v_n + v_n - v_{n-1} + \dots + v_1 - v_0 = \\
+\end{aligned}$$
+
 
 **oss.** L'equazione ... può essere riscritta mettendo in evidenza le variazioni delle grandezze fisiche velocità e massa
 
