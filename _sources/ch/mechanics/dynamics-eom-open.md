@@ -29,15 +29,15 @@ $$\begin{aligned}
 
 $$\begin{aligned}
   v_{n+1} - v_n & = \frac{m}{M_n - m} v_p^{rel} = \\
-  & = \frac{m}{M_0 + (N-n)m - m} v^{p,rel} = \\
-  & = \frac{m}{M - (1+n) m} v^{p,rel}
+  & = \frac{m}{M_0 + (N-n)m - m} v_p^{rel} = \\
+  & = \frac{m}{M - (1+n) m} v_p^{rel}
 \end{aligned}$$
 
 La velocità $v_{n+1}$ può quindi essere riportata alla velocità $v_0$ sommando gli $n$ contributi $v_{n+1} - v_{n}$, $v_{n} - v_{n-1}$,...
 
 $$\begin{aligned}
   v_{n+1} - v_0 & = v_{n+1} - v_n + v_n - v_{n-1} + \dots + v_1 - v_0 = \\
-  & = \frac{m}{M - (1+n) m} v^{p,rel} +  \frac{m}{M - n m} v^{p,rel}
+  & = \frac{m}{M - (1+n) m} v_p^{rel} +  \frac{m}{M - n m} v_p^{rel} + \frac{m}{M-m} v^{rel}_p
 \end{aligned}$$
 
 
