@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/dynamics-eom-open';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
@@ -300,10 +302,11 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Fisica moderna</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../modern.html">19. Fisica del XX secolo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modern/intro-radioactivity.html">20. Radioattività</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modern/intro-coupling.html">21. Fenomeni termo-elettrici nella materia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modern/intro-photography.html">22. Fotografia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modern/astronomy.html">23. Sviluppi dell’astronomia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/intro.html">20. Introduzione alla fisica del XX secolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/intro-radioactivity.html">21. Radioattività</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/intro-coupling.html">22. Fenomeni termo-elettrici nella materia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/intro-photography.html">23. Fotografia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/astronomy.html">24. Sviluppi dell’astronomia</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
 <ul class="nav bd-sidenav">
@@ -534,18 +537,152 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="equazioni-cardinali-della-dinamica-per-sistemi-aperti">
 <span id="physics-hs-mechanics-dynamics-eom-open"></span><h1><span class="section-number">9.4. </span>Equazioni cardinali della dinamica per sistemi aperti<a class="headerlink" href="#equazioni-cardinali-della-dinamica-per-sistemi-aperti" title="Permalink to this heading">#</a></h1>
+<p>Nelle sezioni precedenti, i <a class="reference internal" href="dynamics-eom.html#physics-hs-mechanics-dynamics-eom"><span class="std std-ref">principi della dinamica</span></a>, le <a class="reference internal" href="dynamics-eom.html#physics-hs-mechanics-dynamics-eom"><span class="std std-ref">equazioni cardinali</span></a> e le <a class="reference internal" href="dynamics-conservation.html#physics-hs-mechanics-dynamics-conservation"><span class="std std-ref">leggi di conservazione</span></a> sono state presentate per i <strong>sistemi chiusi</strong>, che non scambiano massa con l’ambiente esterno.</p>
+<p>In questa sezione si presentano i bilanci di massa, quantità di moto e energia cinetica per sistemi aperti; pur non potendo dare una dimostrazione rigorosa, si mostra il procedimento generale per ricavare un bilancio per un sistema aperto dal corrisponte bilancio per un sistema chiuso.</p>
 <div class="section" id="esempi">
 <h2><span class="section-number">9.4.1. </span>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h2>
-<p>Sistemi discreti:</p>
-<ul class="simple">
-<li><p>moto di una barca gettando pietre</p></li>
-<li><p>moto di una giostra gettando pietre in direzione tangenziale</p></li>
-</ul>
-<p>Sistemi continui</p>
-<ul class="simple">
-<li><p>equazione della spinta per razzi</p></li>
-</ul>
+<div class="proof example dropdown admonition" id="example-0">
+<p class="admonition-title"><span class="caption-number">Example 9.2 </span> (Sistemi discreti - Moto di una barca per reazione)</p>
+<div class="example-content section" id="proof-content">
+<p>Una barca di massa <span class="math notranslate nohighlight">\(M\)</span> è stata caricata con <span class="math notranslate nohighlight">\(N\)</span> palle di cannone, ciascuna di massa <span class="math notranslate nohighlight">\(m\)</span>, così che la massa totale è <span class="math notranslate nohighlight">\(M = M_0 + N m\)</span>. La barca si muove lungo una traiettoria rettilinea, inizialmente con velocità <span class="math notranslate nohighlight">\(\vec{v}_0 = v_0 \hat{x}\)</span>. Sulla barca è presente un cannone in grado di sparare i proiettili esattamente nella stessa direzione della traiettoria, con un a velocità relativa di <span class="math notranslate nohighlight">\(\vec{v}_p - \vec{v}^- = \vec{v}_p^{rel,-} = - v^{rel} \hat{x}\)</span>, con <span class="math notranslate nohighlight">\(v^{rel} &gt; 0\)</span>, rispetto alla velocità della barca <strong>prima dello sparo</strong>, <span class="math notranslate nohighlight">\(\vec{v}^-\)</span>.</p>
+<p>Viene chiesto di determinare la velocità della barca dopo <span class="math notranslate nohighlight">\(n \le N\)</span> spari. <strong>todo</strong> <em>e di determinare dopo quanti spari, i proiettili vengono sparati nella stessa direzione «assoluta» in cui si muove la barca</em></p>
+<p><strong>Soluzione.</strong></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Approccio 1. Conservazione della quantità di moto di un sistema chiuso costituito dalla barca e dalla palla di cannone sparata.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<!-- :open: -->
+<p class="sd-card-text">Non agendo altre forze nette sul sistema, la quantità di moto del sistema chiuso è conservata tra un istante di tempo precedente e successivo allo sparo <span class="math notranslate nohighlight">\(n\)</span>-esimo.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  M_{n} v_{n} 
+  &amp; = M_{n+1} v_{n+1} + m v_{p,n+1} \\
+  &amp; = ( M_{n} - m ) v_{n+1} + m ( v_{n} + v_p^{rel} ) \\
+\end{aligned}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  v_{n+1} - v_n &amp; = \frac{m}{M_n - m} v_p^{rel} = \\
+  &amp; = \frac{m}{M_0 + (N-n)m - m} v_p^{rel} = \\
+  &amp; = \frac{m}{M - (1+n) m} v_p^{rel}
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">La velocità <span class="math notranslate nohighlight">\(v_{n+1}\)</span> può quindi essere riportata alla velocità <span class="math notranslate nohighlight">\(v_0\)</span> sommando gli <span class="math notranslate nohighlight">\(n\)</span> contributi <span class="math notranslate nohighlight">\(v_{n+1} - v_{n}\)</span>, <span class="math notranslate nohighlight">\(v_{n} - v_{n-1}\)</span>,…</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  v_{n+1} - v_0 &amp; = v_{n+1} - v_n + v_n - v_{n-1} + \dots + v_1 - v_0 = \\
+  &amp; = \frac{m}{M - (1+n) m} v_p^{rel} +  \frac{m}{M - n m} v_p^{rel} + \dots + \frac{m}{M-m} v^{rel}_p = \\
+  &amp; = \frac{m}{M} v_p^{rel} \sum_{k = 0}^{n} \frac{1}{1 - (1+k) \frac{m}{M}} \ .
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text"><strong>oss.</strong> L’equazione … può essere riscritta mettendo in evidenza le variazioni delle grandezze fisiche velocità e massa</p>
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(\Delta v_{n+1} = v_{n+1} - v_n\)</span>, <span class="math notranslate nohighlight">\(\Delta M_{n+1} = M_{n+1} - M_{n}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\Delta v_{n+1} = - \frac{\Delta M_{n+1}}{M_{n+1}} v_p^{rel} \ .\]</div>
 </div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Approccio 2. Conservazione della quantità di moto di un sistema aperto costituito dalla barca.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[\Delta \vec{Q} + \Delta t \, \Phi(\rho \vec{v}) = \vec{0} \ ,\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{0} &amp; = M_{n+1} \vec{v}_{n+1} - M_{n} \vec{v}_n + m \vec{v}_p =  \\
+          &amp; = M_{n+1} \vec{v}_{n+1} - M_{n} \vec{v}_n + m ( \vec{v}_p^{rel} + \vec{v}_n )  \\
+\end{aligned}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\vec{v}_{n+1} - \vec{v}_n = \frac{m}{M_{n+1}} \vec{v}_p^{rel} \ .\]</div>
+</div>
+</details></div>
+</div><div class="proof example admonition" id="example-1">
+<p class="admonition-title"><span class="caption-number">Example 9.3 </span> (Sistemi discreti - Moto di una giostra per reazione)</p>
+<div class="example-content section" id="proof-content">
+<!--
+:class: dropdown
+-->
+<p>Una giostra è libera di ruotare attorno al suo centro, grazie a una cerniera cilindrica. Sulla giostra, sono state caricate delle palline di massa <span class="math notranslate nohighlight">\(m\)</span>, posizionate al bordo della giostra, che vengono lanciate in direzione tangenziale alla giostra da un marchingegno che riesce a fornire alle palline una velocità relativa rispetto alla velocità prima del lancio uguale a <span class="math notranslate nohighlight">\(v_p^{rel}\)</span>. La giostra ha raggio <span class="math notranslate nohighlight">\(R\)</span> e massa <span class="math notranslate nohighlight">\(M\)</span>.</p>
+<!--
+*Suggerimento.* Il momento della quantità di moto è una grandezza fisica additiva. Il momento della quantità di moto di una massa puntiforme rispetto a un punto è $$\vec{L}_i = m_i \vec{r}_i \times \vec{v}_i$$
+-->
+<p>Viene chiesto di determinare la velocità angolare della giostra dopo <span class="math notranslate nohighlight">\(n \le N\)</span> lanci. <strong>todo</strong> <em>e di determinare dopo quanti lanci, le palline vengono sparate nella stessa direzione «assoluta» in cui gira la giostra</em></p>
+<p><strong>todo</strong> <em>Ripetere l’esercizio con le palline inizialmente posizionate sull’asse, poi trasportate sul bordo della giostra prima di essere lanciate.</em> <em>Primo trasferimento usando la conservazione del momento della quantità di moto, come una ballerina che cambia <span class="math notranslate nohighlight">\(I\)</span>, poi lancio…</em></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Approccio 1. Conservazione della quantità di moto di un sistema chiuso costituito dalla giostra e dalla palla.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Approccio 2. Conservazione della quantità di moto di un sistema aperto costituito dalla giostra.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Il bilancio del momento della quantità di moto rispetto al centro della giostra attorno all’asse di rotazione è</p>
+<div class="math notranslate nohighlight">
+\[\Delta L_{0,z} + \Delta t \, \Phi(\rho \vec{r} \times \vec{v}) = \vec{0}\]</div>
+<p class="sd-card-text">Poichè il momento di inerzia tra un lancio e un altro diminuisce di una quantità costante dovuta al lancio di una pallina,  <span class="math notranslate nohighlight">\(I_{z,n+1} = I_{z,n} - m R^2\)</span>, si può riscrivere l’equazione di bilancio</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  0 &amp; = I_{z,n+1} \Omega_{n+1} - I_{z,n} \Omega_n + m R v_p =  \\
+    &amp; = I_{z,n+1} \Omega_{n+1} - I_{z,n} \Omega_n + m R ( R \Omega_n + v_p^{rel} ) \\
+    &amp; = I_{z,n+1} \Omega_{n+1} - I_{z,n+1} \Omega_n + m R v_p^{rel}
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">per ricavare una relazione che lega la variazione di velocità angolare alla variazione di inerzia e al numero di palle lanciate,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \Omega_{n+1} - \Omega_n &amp; =  \frac{m R}{I_{z,n+1}} v_p^{rel} = \\
+                          &amp; = - \frac{\Delta I_{z}}{I_{z,n+1}} \frac{v_p^{rel}}{R} = \\
+                          &amp; =  \frac{m R}{I - (n+1) mR^2} v_p^{rel} = \ ,
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">essendo <span class="math notranslate nohighlight">\(I = I_0 + N m R^2\)</span> l’inerzia iniziale dell’intero sistema.</p>
+</div>
+</details></div>
+</div><div class="proof example dropdown admonition" id="example-2">
+<p class="admonition-title"><span class="caption-number">Example 9.4 </span> (Sistemi continui - Equazione della spinta per i razzi - Tsiolkovski)</p>
+<div class="example-content section" id="proof-content">
+<p>L’equazione della spinta per i razzi - di Tsiolkovski <strong>todo</strong> <em>un po” di storia? riferimento all’astronomia? riferimenti alla dinamica gravitazionale?</em> - è una prima approssimazione del moto di un razzo a reazione, cioè che usa lo scarico di gas ad alta velocità come mezzo di spinta. Il sistema formato dalla struttura del razzo e il contenuto di combustibile e gas all’interno della struttura del razzo è un sistema aperto, che può scambiare materia attraverso la sezione dell’ugello. L’equazione permette di ricavare la velocità del razzo in funzione dell’espulsione della massa e della velocità effettiva, relativa, di espulsione dei gas dal razzo. L’equazione può essere ricavata usando i bilanci di massa e di quantità di moto per sistemi aperti,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \dfrac{d M_{v(t)}}{dt} &amp; + \Phi_{\partial v(t)}(\rho) = 0 \\
+  \dfrac{d \vec{Q}_{v(t)}}{dt} &amp; + \vec{\Phi}_{\partial v(t)}(\rho \vec{v}) = \vec{R}_{v(t)}^{ext}
+\end{aligned}\end{split}\]</div>
+<p>applicando alcune semplificazioni ragionevoli per un modello di prima approssimazione. Assumendo che le proprietà (densità, velocità) siano uniformi sulla superficie dell’ugello, i flussi uscenti di massa e quantità di moto possono essere scritti nei termini del flusso di massa <span class="math notranslate nohighlight">\(\dot{m}_e\)</span> attraverso l’ugello,</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+  \Phi_{\partial v(t)}(\rho) = \dot{m}_e \qquad , \qquad \Phi_{\partial v(t)}(\rho \vec{v}) = \dot{m}_e \vec{v} \ ,
+\end{aligned}\]</div>
+<p>Usando l’equazione della massa, segue immediatamente <span class="math notranslate nohighlight">\(\dot{M}_{v(t)} = - \dot{m}_e\)</span>.
+La quantità di moto del sistema al tempo <span class="math notranslate nohighlight">\(t\)</span> può essere scritta come prodotto della massa <span class="math notranslate nohighlight">\(M_{v(t)}(t)\)</span> e la velocità del baricentro <span class="math notranslate nohighlight">\(\vec{v}_G(t)\)</span> del sistema contenuto nel volume <span class="math notranslate nohighlight">\(v(t)\)</span>. La risultante delle forze è la somma delle forze di volume, tipicamente il peso, e le forze agenti sulla superficie del volume <span class="math notranslate nohighlight">\(v(t)\)</span>, tipicamente le forze aerodinamiche. L’equazione della quantità di moto può quindi essere riscritta come</p>
+<div class="math notranslate nohighlight">
+\[\dot{M} \vec{v} + M \dot{\vec{v}} + \dot{m}_e \vec{v}_e = M(t) \vec{g} + \vec{F}^{aero} \ .\]</div>
+<p>Scrivendo la velocità di efflusso come somma della velocità del baricentro e della velocità relativa al baricentro, <span class="math notranslate nohighlight">\(\vec{v}_e = \vec{v} + \vec{v}_e^{rel}\)</span>, usando l’equazione della massa <span class="math notranslate nohighlight">\(\dot{m}_e = - \dot{M}\)</span>, si può riscrivere l’equazione</p>
+<div class="math notranslate nohighlight">
+\[M \dot{\vec{v}} = \dot{M} \vec{v}_e^{rel} + M(t) \vec{g} + \vec{F}^{aero} \ ,\]</div>
+<p>e riconoscere il termine <span class="math notranslate nohighlight">\(\dot{M} \vec{v}_e^{rel}\)</span> come la spinta generata sul razzo dall’efflusso dei gas.</p>
+<p>Nel caso in cui si possano trascurare le forze esterne agenti sul sistema rispetto alla spinta, l’equazione di moto fornisce una relazione differenziale tra la massa <span class="math notranslate nohighlight">\(M(t)\)</span> e la velocità <span class="math notranslate nohighlight">\(\vec{v}\)</span> del sistema,</p>
+<div class="math notranslate nohighlight">
+\[M \dot{\vec{v}} = \dot{M} \vec{v}_e^{rel} \ .\]</div>
+<p>Spostando tutto da una parte dell’uguale, e dividendo per la massa <span class="math notranslate nohighlight">\(M\)</span>, e ricordando che <span class="math notranslate nohighlight">\(\frac{d}{dt} \ln x(t) = \frac{\dot{x}(t)}{x(t)}\)</span>, assumendo che la velocità relativa di efflusso sia costante, si può riscrivere l’equazione in termini di una derivata in tempo nulla,</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+  0 = \dot{\vec{v}} - \frac{\dot{M}}{M} \vec{v}_e^{rel} = \dfrac{d}{dt} \left( \vec{v} - \vec{v}^{rel}_e \ln \frac{M}{M_0} \right) \ ,
+\end{aligned}\]</div>
+<p>che implica la costanza della funzione derivata,</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}_2 - \ln \frac{M_2}{M_0} \vec{v}^{rel}_e = \vec{v}_1 - \ln \frac{M_1}{M_0} \vec{v}^{rel}_e \ ,\]</div>
+<p>che può essere riscritta come</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}_2 - \vec{v}_1 =  \vec{v}^{rel}_e \, \ln \frac{M_2}{M_1}\ .\]</div>
+</div>
+</div></div>
 </div>
 
     <script type="text/x-thebe-config">
