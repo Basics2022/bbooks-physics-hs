@@ -1,17 +1,18 @@
-(physics-hs:thermodynamics:foundation:principles:second)=
-# Secondo principio della termodinamica
+(physics-hs:thermodynamics:principles:second)=
+# Secondo principio della termodinamica - enunciato di Clausius
 
-## Enunciato di Clausius
-L'enunciato di Clausis del secondo principio della termodinamica può essere formulato in maniera abbastanza naturale con il formalismo introdotto.
+L'enunciato di Clausis del secondo principio della termodinamica può essere formulato in maniera abbastanza naturale con il formalismo introdotto. Esistono altri due celebri enunciati del secondo principio della termodinamica, l'enunciato di Planck e di Kelvin, che verranno presentati nell'ambito delle macchine termiche.
 
-### Sistemi semplici
+(physics-hs:thermodynamics:principles:second:simple)=
+## Sistemi semplici
  La variazione elementare di entropia $d S$ di un sistema semplice chiuso a temperatura uniforme $T$ è maggiore o uguale al rapporto tra il flusso di calore elementare introdotto nel sistema e la temperatura del sistema stesso,
   
   $$dS = \underbrace{\dfrac{\delta^+ D}{T}}_{\ge 0} + \dfrac{\delta Q^{ext}}{T} \ge \dfrac{\delta Q^{ext}}{T} \ .$$
 
 Questo è l'enunciato di Clausius del secondo principio della termodinamica per sistemi semplici con temperatura omogenea.
 
-### Sistemi composti
+(physics-hs:thermodynamics:principles:second:composite)=
+## Sistemi composti
 **todo** definizione di sistema composto. Avviene conduzione tra i sotto-sistemi.
 
 L'entropia in termodinamica classica è una grandezza fisica estensiva: l'entropia di un sistema composto da $N$ sotto-sistemi semplici è la somma dell'entropia dei sotto-sistemi,
@@ -21,8 +22,8 @@ $$S = \sum_{n=1:N} S_n \ .$$
 Il bilancio dell'entropia del singolo sotto-sistema che scambia calore con gli altri sotto-sistemi e l'ambiente esterno viene scritto come
 
   $$\begin{aligned}
-    dS_i & = \dfrac{\delta Q^{ext,i}_i}{T_i} - \dfrac{\delta D_i}{T_i} = \\
-         & = \dfrac{\delta Q^{ext}_i}{T_i} + \dfrac{\sum_{k \ne i} \delta Q_{ik}}{T_i} - \dfrac{\delta D_i}{T_i} \ge \\
+    dS_i & = \dfrac{\delta Q^{ext,i}_i}{T_i} + \dfrac{\delta^+ D_i}{T_i} = \\
+         & = \dfrac{\delta Q^{ext}_i}{T_i} + \dfrac{\sum_{k \ne i} \delta Q_{ik}}{T_i} + \dfrac{\delta^+ D_i}{T_i} \ge \\
          & \ge \dfrac{\delta Q^{ext}_i}{T_i} + \dfrac{\sum_{k \ne i} \delta Q_{ik}}{T_i} \ . 
   \end{aligned}$$
 
@@ -41,6 +42,7 @@ $$\delta Q_{ik} \left( \dfrac{1}{T_i} - \dfrac{1}{T_k} \right) \ge 0 \ .$$
 
 **todo** *aggiungere riferimento alla tendenza naturale nella trasmissione del calore*
 
+(physics-hs:thermodynamics:principles:second:universe)=
 ## Aumento dell'entropia nell'universo
 Se consideriamo l'universo come il sistema chiuso e isolato (ma sarà vero? E chi lo sa? Forse è sensato che lo sia, ma tante cose che sembrano sensate oggi saranno fregnacce tra qualche anno) formato da un sistema di interesse $sys$ e dall'ambiente esterno $env$.
 

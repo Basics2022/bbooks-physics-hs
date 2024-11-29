@@ -182,7 +182,6 @@ $$\begin{cases}
 \end{cases}$$
 
 ```{dropdown} Temperatura, $\ T, \ $ ed entropia, $\ S$
-:open:
 
 In assenza di lavoro esterno compiuto sul sitema, e in assenza di dissipazione $\delta^+ D = 0$, segue che 
 
@@ -202,9 +201,6 @@ $$
 
 La quantità $S = S_1 + S_2$ è non decrescente.
 
-Nel caso generale di un sistema semplice usando la definizione $dS = \frac{\delta U}{T} = \frac{\delta Q^{ext} + \delta^+ D}{T}$ e ricordando che la dissipazione è non negativa, $\delta^+ D \ge 0$, segue che
-
-$$d S \ge \frac{\delta Q^{ext}}{T} \ .$$
 
 <!--
 $$E_1(T_1) + E_2(T_2) = E = \text{const}$$
@@ -214,6 +210,26 @@ $$\frac{d E_1}{d T_1} = -\frac{d E_2}{d T_2} \frac{d T_2}{d T_1}$$
 
 ```
 
+```{dropdown} Secondo e terzo principio della termodinamica
+Il formalismo introdotto in questa sezione permette di formulare in maniera abbastanza naturale il secondo principio e una versione del terzo principio della termodinamica.
+
+Questa formulazione del terzo prinicpio della termodinamica afferma che la temperatura termodinamica è sempre positiva,
+
+$$ T:= \left.\frac{\partial E}{\partial S}\right|_{\mathbf{X}} > 0 \ .$$
+
+**todo** *Aggiungere qualche parola sul significato, in termini di agitazione molecolare e di probabilitaà*
+
+Nei casi in cui questa forma o conseguenza del terzo principio della termodinamica sia valida, il secondo principio della termodinamica è una conseguenza della non-negatività della dissipazione e del meccanismo di trasmissione di calore, come sarà discusso più in dettaglio nella discussione dei [sistemi composti](physics-hs:thermodynamics:principles:second:composite).
+
+Nel caso generale di un **sistema semplice**, usando la definizione $dS = \frac{\delta U}{T} = \frac{\delta Q^{ext} + \delta^+ D}{T}$, la non negatività della dissipazione, $\delta^+ D \ge 0$, implica che
+
+$$d S \ge \frac{\delta Q^{ext}}{T} \ .$$
+
+Questa è un'espressione dell'[enunciato di Clausius del secondo principio della termodinamica](physics-hs:thermodynamics:principles:second).
+
+**todo** **oss** *Il terzo principio della termodinamica: 1. sembra non essere un principio; 2. per alcuni sistemi con energia limitata la definizione di temperatura $T := \left( \frac{\partial E}{\partial S} \right)$ produce una temperatura negativa* **todo** *aggiungere una sezione su meccanica statistica?*.
+
+```
 
 Da L.E. Reichl, A Modern Course in Statistical Physics, con qualche incoerenza **todo** *controllare!*
 

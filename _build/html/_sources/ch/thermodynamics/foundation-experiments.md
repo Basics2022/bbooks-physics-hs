@@ -168,7 +168,22 @@ Nel 1738, D.Bernoulli pubblica la sua *Hydrodynamica* dove discute il moto dei f
 <span style="color:red"> dettagli </span>
 
 ## Calorimetria: calore latente e calore specifico
-Gli studi di **J.Black** attorno alla metà del XVIII secolo sul raggiungimento dell'equilibrio termico e sulle transizione di fase aiutano a distinguere i concetti di temperatura e di calore, sui quali c'era ancora confusione e nessuna teoria affermata soddisfacente.
+Gli studi di **J.Black** (1728-1799) attorno alla metà del XVIII secolo sul raggiungimento dell'equilibrio termico e sulle transizione di fase aiutano a distinguere i concetti di temperatura e di calore, sui quali c'era ancora confusione e nessuna teoria affermata soddisfacente.
+
+Gli studi sul raggiungimento dell'equilibrio termico di due sistemi sui quali non è compiuto lavoro, permisero a J.Black di osservare che:
+- per due sistemi composti dalla stessa sostanza, la variazione di temperatura è inversamente proporzionale alle loro masse;
+- per sistemi composti da sostanze diverse, la variazione di temperatura dipende da una proprietà del materiale definita poi *calore specifico*
+
+e di trarre delle conclusioni che, usando i termini moderni, possono essere espresse come:
+- due corpi posti a contatto con temperatura iniziale diversa, raggiungono una temperatura di equilibrio che dipende dalle loro temperature iniziali, dalla loro massa, e dalla loro sostanza;
+- la temperatura $T$ misurata è una grandezza fisica legata a una grandezza fisica che caratterizza lo stato del sistema, che oggi può essere identificata con un'energia termica interna al sistema, dovuta all'agitazione dei suoi componenti elementari a livello microscopico;
+- il calore è un meccanismo di trasmissione dell'energia tra i due sistemi, che in generale non coinvolge lavoro in una descrizione macroscopica, ma che è dovuto alla *diffusione* dello stato di agitazione a livello microscopico dei componenti elementari della materia; nel caso dei due sistemi a contatto, il calore assorbito da un sistema è uguale al calore rilasciato dall'altro sistema;
+- le variazioni di energia interna termica di un sistema sono dovute all'apporto di calore,
+
+  $$dE_i = \delta Q_{ij}$$
+
+Gli studi sul cambiamento di fase, gli permisero di verificare che questi avvengono a temperatura costante
+
 - sistemi fisici sul quale non viene compiuto lavoro, scambiano tra di loro calore per raggiungere l'equilibrio termico
   - la quantità di calore "entrante" in un sistema, ne fa variare la temperatura. La variazione di temperatura nel sistema è inversamente proporzionale alla sua massa,
 
