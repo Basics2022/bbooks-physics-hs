@@ -241,8 +241,6 @@ $$c_{\text{H$_2$O},P} = 1000 \, \frac{\text{cal}}{\text{kg} \, \text{°C}} \ .$$
 **Oss.** Fissato il valore assoluto del calore specifico dell'acqua, è possibile ottenere i valori assoluti dei calori specifici e i calori latenti di tutte le sostanze analizzate, delle quali si esprimevano le proprietà unicamente in proporzione al calore specifico dell'acqua.
 
 ```
-```{prf:example} Equivalenza calore - lavoro (Carnot, Meyer, Joule,...)
-```
 
 
 ## Esperienze sui gas, ed equazione di stato dei gas perfetti
