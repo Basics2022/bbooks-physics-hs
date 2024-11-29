@@ -282,7 +282,7 @@ Il peso ha massa $m = 30 \, \text{kg}$ e viene lasciato cadere per un'altezza $h
 
 Questa osservazione, opportunamente verificata tramite il metodo scientifico, permette di trovare il fattore di conversione tra il lavoro svolto dal mulinello sul fluido e un equivalente apporto di calore al sistema che produrrebbe lo stesso aumento di temperatura
 
-$$m_{H$_2$O} \, c_{\text{H$_2$O}} \Delta T = m g h$$
+$$m_{\text{H$_2$O}} \, c_{\text{H$_2$O}} \Delta T = m g h$$
 
 $$\begin{aligned}
   1 \, \text{kg} \cdot 1000 \frac{\text{cal}}{\text{kg} \, \text{°C}} \cdot 0.140 \text{°C} & = 30 \text{kg} \cdot 9.81 \frac{m}{s^2} \cdot 1 \text{m} \\
