@@ -236,9 +236,14 @@ La definizione di questa unità di misura, permette di esprimere il valore assol
 
 $$c_{\text{H$_2$O},P} = 1000 \, \frac{\text{cal}}{\text{kg} \, \text{°C}} \ .$$
 
-
 **oss.** Come spesso accade nella storia della scienza, il valore assoluto del calore specifico è in realtà relativo alla - espresso nella - nuova unità di misura introdotta; una volta assegnato un carattere assoluto alla nuova unità di misura, possiamo considerare le altre grandezze espresse relativamente a lei come assolute.
+
+**Oss.** Fissato il valore assoluto del calore specifico dell'acqua, è possibile ottenere i valori assoluti dei calori specifici e i calori latenti di tutte le sostanze analizzate, delle quali si esprimevano le proprietà unicamente in proporzione al calore specifico dell'acqua.
+
 ```
+```{prf:example} Equivalenza calore - lavoro (Carnot, Meyer, Joule,...)
+```
+
 
 ## Esperienze sui gas, ed equazione di stato dei gas perfetti
 - Boyle: $PV = \text{const.}$
@@ -251,18 +256,37 @@ L'equazione di stato dei gas perfetti riassume questi risultati
 $$\dfrac{P V}{T n} = R = \text{const.}$$
 
 
-## Lavoro, ... **todo**
+## Energia, Lavoro e Calore
 
 <!--```{margin}
 **todo**<br> Diatriba sulla priorità sulla formulazione del principio di conservazione dell'energia: von Meyer; Joule; successivamente Hemlholtz; Tyndall - scienziato e uno dei primi alpinisti - uno dei pochi a riconoscere il contributo di von Meyer
 ```-->
 
-- Rivoluzione industriale
-- 1798, B.Thompson, *An Inquiry Concerning the Source of the Heat Which is Excited by Friction*, oggi può essere interpretato come un lavoro che identificava l'attrito come fenomeno di dissipazione dell'energia meccanica "utile"/"macroscopica" e della sua conversione in calore;
-- 1824, S.Carnot, *Riflessioni sulla forza motrice del fuoco* 
-- 1840-42, J.von Meyer, medico, chimico e fisico, intuisce il principio di conservazione dell'energia, *"che non può essere né creata né distrutta"* **ref** *Remarks on the Forces of Nature*, 1841
-- 1842-45, J.P.Joule *The Mechanical Equivalent of Heat*
-- 1850, R.Clausius
+La prima rivoluzione industriale iniziata alla fine del XVIII secolo fu determinata dall'innovazione tecnologica, che permise l'introduzione delle **macchine a vapore** come macchine in grado di **convertire il calore** generato dalla combustione di **combustibili fossili** in **lavoro meccanico** utile all'industrializzazione della società.
+Il legame tra calore e lavoro evidente nelle applicazioni tecniche, venne ulteriormente investigato verso la fine del XVIII secolo e l'inizio del XIX secolo:
+- il lavoro del 1798 di B.Thompson, *An Inquiry Concerning the Source of the Heat Which is Excited by Friction*, oggi può essere interpretato il primo lavoro che identificava l'attrito come fenomeno di dissipazione dell'energia meccanica "utile"/"macroscopica" e della sua conversione in calore;
+- nel 1824, **S.Carnot** pubblicava le sue *Riflessioni sulla forza motrice del fuoco*, uno studio teorico sul funzionamento delle macchine termiche, in grado di convertire calore in lavoro meccanico, che si proponeva di indagare i fattori che influenzavano il rendimento dell'efficienza delle macchine termiche, inteso come rapporto tra lavoro meccanico prodotto rispetto al calore fornito. La scoperta dell'**efficienza massima** di una macchina termica costituisce un passo fondamentale verso la formulazione del secondo principio della termodinamica;
+- i lavori sull'equivalenza tra calore e lavoro conducono alla formulazione del **primo principio della termodinamica**, che conduce al principio di conservazione dell'energia; il medico, chimico e fisico J.von Meyer intuisce il principio di conservazione dell'energia, come una grandezza fisica *"che non può essere né creata né distrutta"*[^vonmeyer-remarks]; il lavoro di J.P.Joule[^joule-equivalent] evidenza l'equivalenza di calore e lavoro come grandezze omogenee, trovando il fattore di conversione puro tra la *caloria*, allora utilizzata come unità di misura del calore, e quella che prenderà il nome di *Joule*, intesa come unità di misura del lavoro,
+
+  $$1 \, \text{cal} = 4.184 \, \text{J}$$
+
+- 1850, R.Clausius: *secondo principio della termodinamica*: lavoro e calore non sono equivalenti **todo**
+
+[^vonmeyer-remarks]: *Remarks on the Forces of Nature*, 1841
+[^joule-equivalent]: *The Mechanical Equivalent of Heat*,...
+
+```{prf:example} Equivalenza calore-lavoro - Esperienza di Joule
+
+
+
+```
+
+```{prf:example} Non-equivalenza calore-lavoro - verso il secondo principio della termodinamica
+Senza entrare nei dettagli, e limitandoci all'esperienza di Joule, è ragionevole attendersi di non osservare mai la dinamica in del sistema in direzione opposta: non si osserverà mai - se lo osservate chiamatemi - che spontaneamente il peso salga, il filo si ri-arrotoli sulla puleggia, mentre il liquido all'interno del calorimetro si raffredda.
+
+Mentre il primo principio della termodinamica non esclude questa possibilità, essa è esclusa dal secondo principio della termodinamica che postula una direzione dell'evoluzione spontanea dei sistemi.
+
+```
 
 ## Formalismo e prìncipi della termodinamica classica
 **todo**
