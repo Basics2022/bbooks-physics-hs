@@ -9,7 +9,7 @@ Esistono due enunciati equivalenti del secondo principio della termodinamica per
 Una macchina termodinamica che scambia calore unicamente con una sorgente a temperatura costante, in un ciclo non può assorbire calore e trasformarlo interamente in lavoro utile.
 ```
 
-```{dropdown} Dall'enunciato di Clausius
+```{dropdown} Enunciato di Kelvin dall'enunciato di Clausius
 
 Il primo principio della termodinamica è un bilancio di energia totale del sistema, in termini del calore "entrante" nel sistema $\delta Q^{ext}$ dall'ambiente esterno e del lavoro fatto sul sistema $\delta L^{ext}$ o del lavoro fatto dal sistema sull'ambiente esterno $\delta L^{sys} = - \delta L^{ext}$,
 
@@ -39,5 +39,5 @@ In altri termini, una macchina termica che scambia calore unicamente con una sor
 ```{prf:proposition} Enunciato di Planck
 Non è possibile trasferire calore da una sorgente a temperatura $T_2$ a una sorgente a temperatura maggiore $T_1 > T_2$ con una macchina termica che non assorba lavoro.
 ```
-```{dropdown}
+```{dropdown} Enunciato di Planck dall'enunciato di Clausius
 ```

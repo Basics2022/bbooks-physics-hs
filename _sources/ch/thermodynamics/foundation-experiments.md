@@ -168,7 +168,13 @@ Nel 1738, D.Bernoulli pubblica la sua *Hydrodynamica* dove discute il moto dei f
 <span style="color:red"> dettagli </span>
 
 ## Calorimetria: calore latente e calore specifico
-Gli studi di **J.Black** attorno alla metà del XVIII secolo sul raggiungimento dell'equilibrio termico e sulle transizione di fase aiutano a distinguere i concetti di temperatura e di calore, sui quali c'era ancora confusione e nessuna teoria affermata soddisfacente.
+Gli studi di **J.Black** (1728-1799) attorno alla metà del XVIII secolo sul raggiungimento dell'equilibrio termico e sulle transizione di fase aiutano a distinguere i concetti di temperatura e di calore, sui quali c'era ancora confusione e nessuna teoria affermata soddisfacente.
+
+Gli studi sul raggiungimento dell'equilibrio termico di due sistemi sui quali non è cpmpiuto lavoro, permisero a J.Black di osservare che:
+- per due sistemi composti dalla stessa sostanza, la variazione di temperatura è inversamente proporzionale alle loro masse;
+- per sistemi composti da sostanze diverse, la variazione di temperatura dipende da una proprietà del materiale definita poi *calore specifico*
+
+
 - sistemi fisici sul quale non viene compiuto lavoro, scambiano tra di loro calore per raggiungere l'equilibrio termico
   - la quantità di calore "entrante" in un sistema, ne fa variare la temperatura. La variazione di temperatura nel sistema è inversamente proporzionale alla sua massa,
 
