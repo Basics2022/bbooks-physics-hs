@@ -1,9 +1,9 @@
 (physics-hs:thermodynamics:foundation:principles:second)=
-# Secondo principio della termodinamica
+# Secondo principio della termodinamica - enunciato di Clausius
 
-## Enunciato di Clausius
 L'enunciato di Clausis del secondo principio della termodinamica può essere formulato in maniera abbastanza naturale con il formalismo introdotto.
 
+(physics-hs:thermodynamics:foundation:principles:simple)=
 ### Sistemi semplici
  La variazione elementare di entropia $d S$ di un sistema semplice chiuso a temperatura uniforme $T$ è maggiore o uguale al rapporto tra il flusso di calore elementare introdotto nel sistema e la temperatura del sistema stesso,
   
@@ -11,6 +11,7 @@ L'enunciato di Clausis del secondo principio della termodinamica può essere for
 
 Questo è l'enunciato di Clausius del secondo principio della termodinamica per sistemi semplici con temperatura omogenea.
 
+(physics-hs:thermodynamics:foundation:principles:composite)=
 ### Sistemi composti
 **todo** definizione di sistema composto. Avviene conduzione tra i sotto-sistemi.
 

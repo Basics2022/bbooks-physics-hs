@@ -215,13 +215,14 @@ Il formalismo introdotto in questa sezione permette di formulare in maniera abba
 
 Questa formulazione del terzo prinicpio della termodinamica afferma che la temperatura termodinamica è sempre positiva,
 
-$$\left.\frac{\partial E}{\partial S}\right|_{\mathbf{X}} > 0 \ .$$
+$$ T:= \left.\frac{\partial E}{\partial S}\right|_{\mathbf{X}} > 0 \ .$$
 
+**todo** *Aggiungere qualche parola sul significato, in termini di agitazione molecolare e di probabilitaà*
 
-Nel caso generale di un sistema semplice usando la definizione $dS = \frac{\delta U}{T} = \frac{\delta Q^{ext} + \delta^+ D}{T}$ e ricordando che la dissipazione è non negativa, $\delta^+ D \ge 0$, segue che
+Nei casi in cui questa forma o conseguenza del terzo principio della termodinamica si valida, il secondo principio della termodinamica è una conseguenza della non-negatività della temperatura e del meccanismo di trasmissione di calore, come sarà discusso più in dettaglio nella discussione dei [sistemi composti](physics-hs:thermodynamics:foundation:principles:second:composite).
+Nel caso generale di un **sistema semplice** usando la definizione $dS = \frac{\delta U}{T} = \frac{\delta Q^{ext} + \delta^+ D}{T}$ e ricordando che la dissipazione è non negativa, $\delta^+ D \ge 0$, segue che
 
 $$d S \ge \frac{\delta Q^{ext}}{T} \ .$$
-
 
 **todo** **oss** *Il terzo principio della termodinamica: 1. sembra non essere un principio; 2. per alcuni sistemi con energia limitata la definizione di temperatura $T := \left( \frac{\partial E}{\partial S} \right)$ produce una temperatura negativa* **todo** *aggiungere una sezione su meccanica statistica?*.
 
