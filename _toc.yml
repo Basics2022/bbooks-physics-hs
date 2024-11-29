@@ -37,6 +37,7 @@ parts:
     - file: ch/mechanics/kinematics-rigid
     - file: ch/mechanics/kinematics-deformable
     - file: ch/mechanics/kinematics-relative
+    - file: ch/mechanics/kinematics-problems
   - file: ch/mechanics/actions
     sections:
     - file: ch/mechanics/actions-types
@@ -95,7 +96,9 @@ parts:
       - file: ch/thermodynamics/ideal-gas-formulas
 #   - file: ch/thermodynamics/real-gas
 #   - file: ch/thermodynamics/solids
-    - file: ch/thermodynamics/humid-air
+    - file: ch/thermodynamics/gas-mixture
+      sections:
+      - file: ch/thermodynamics/humid-air
     - file: ch/thermodynamics/elastic-solid-1d
   - file: ch/thermodynamics/heat-engine
     sections:
