@@ -182,7 +182,6 @@ $$\begin{cases}
 \end{cases}$$
 
 ```{dropdown} Temperatura, $\ T, \ $ ed entropia, $\ S$
-:open:
 
 In assenza di lavoro esterno compiuto sul sitema, e in assenza di dissipazione $\delta^+ D = 0$, segue che 
 
@@ -202,9 +201,6 @@ $$
 
 La quantità $S = S_1 + S_2$ è non decrescente.
 
-Nel caso generale di un sistema semplice usando la definizione $dS = \frac{\delta U}{T} = \frac{\delta Q^{ext} + \delta^+ D}{T}$ e ricordando che la dissipazione è non negativa, $\delta^+ D \ge 0$, segue che
-
-$$d S \ge \frac{\delta Q^{ext}}{T} \ .$$
 
 <!--
 $$E_1(T_1) + E_2(T_2) = E = \text{const}$$
@@ -214,6 +210,14 @@ $$\frac{d E_1}{d T_1} = -\frac{d E_2}{d T_2} \frac{d T_2}{d T_1}$$
 
 ```
 
+```{dropdown} Secondo e terzo principio della termodinamica
+Il formalismo introdotto in questa sezione permette di formulare in maniera abbastanza naturale il secondo principio e una versione del terzo principio della termodinamica (**todo** *che sembra non essere un principio, ma anche questa dovrà essere risolta una volta per tutte*).
+
+Nel caso generale di un sistema semplice usando la definizione $dS = \frac{\delta U}{T} = \frac{\delta Q^{ext} + \delta^+ D}{T}$ e ricordando che la dissipazione è non negativa, $\delta^+ D \ge 0$, segue che
+
+$$d S \ge \frac{\delta Q^{ext}}{T} \ .$$
+
+```
 
 Da L.E. Reichl, A Modern Course in Statistical Physics, con qualche incoerenza **todo** *controllare!*
 
