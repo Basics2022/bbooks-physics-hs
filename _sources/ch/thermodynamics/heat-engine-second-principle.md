@@ -22,8 +22,8 @@ Si considera ora lo stato di una macchina che scambia calore con una sorgente es
 
 $$\begin{aligned}
   0 & = \oint_{\gamma} \dfrac{d E^{tot}}{T^{ext}} = \\
-    & = \oint_{\gamma} \dfrac{\delta Q^{ext}}{T^{ext}} - \oint_{\gamma} \dfrac{\delta L}{T^{ext}} \le & \delta Q^{ext} \left(\dfrac{1}{T_1} - \dfrac{1}{T} \right) \le 0 \\
-    & \le \oint_{\gamma} \dfrac{\delta Q^{ext}}{T} - \dfrac{L}{T^{ext}} \le \\
+    & = \oint_{\gamma} \dfrac{\delta Q^{ext}}{T^{ext}} - \oint_{\gamma} \dfrac{\delta L}{T^{ext}} \le & \text{since } \delta Q^{ext} \left(\dfrac{1}{T_1} - \dfrac{1}{T} \right) \le 0 \\
+    & \le \oint_{\gamma} \dfrac{\delta Q^{ext}}{T} - \dfrac{L}{T^{ext}} \le & \text{since } dS \ge \frac{\delta Q}{T} \\
     & \le \underbrace{ \oint_{\gamma} d S}_{=0} - \dfrac{L}{T^{ext}} \ ,
 \end{aligned}$$
 
