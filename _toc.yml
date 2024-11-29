@@ -77,7 +77,7 @@ parts:
     - file: ch/thermodynamics/foundation-experiments
     - file: ch/thermodynamics/foundation-atomic-theory
     - file: ch/thermodynamics/foundation-vocabulary
-#   - file: ch/thermodynamics/foundation-problems
+    - file: ch/thermodynamics/foundation-problems
   - file: ch/thermodynamics/principles
     sections:
     - file: ch/thermodynamics/principles-lavoisier
@@ -86,6 +86,7 @@ parts:
     - file: ch/thermodynamics/principles-phase-diagrams
     - file: ch/thermodynamics/principles-second
     - file: ch/thermodynamics/principles-open
+    - file: ch/thermodynamics/principles-problems
   - file: ch/thermodynamics/matter
     sections:
     - file: ch/thermodynamics/ideal-gas
@@ -94,12 +95,15 @@ parts:
       - file: ch/thermodynamics/ideal-gas-expressions
       - file: ch/thermodynamics/ideal-gas-kinetic-theory
       - file: ch/thermodynamics/ideal-gas-formulas
+#     - file: ch/thermodynamics/ideal-gas-problems
 #   - file: ch/thermodynamics/real-gas
 #   - file: ch/thermodynamics/solids
     - file: ch/thermodynamics/gas-mixture
       sections:
       - file: ch/thermodynamics/humid-air
+#     - file: ch/thermodynamics/gas-mixture-problems
     - file: ch/thermodynamics/elastic-solid-1d
+    - file: ch/thermodynamics/matter-problems
   - file: ch/thermodynamics/heat-engine
     sections:
     - file: ch/thermodynamics/heat-engine-td-cycles
@@ -111,8 +115,10 @@ parts:
       - file: ch/thermodynamics/heat-engine-diesel
       - file: ch/thermodynamics/heat-engine-joule-brayton
       - file: ch/thermodynamics/heat-engine-rankine
-      - file: ch/thermodynamics/heat-engine-problems
+    - file: ch/thermodynamics/heat-engine-problems
   - file: ch/thermodynamics/heat-transmission
+    sections:
+    - file: ch/thermodynamics/heat-transmission-problems
 - caption: Elettromagnetismo
   numbered: True
   chapters:
