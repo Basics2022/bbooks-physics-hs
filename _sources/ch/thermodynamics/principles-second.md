@@ -21,8 +21,8 @@ $$S = \sum_{n=1:N} S_n \ .$$
 Il bilancio dell'entropia del singolo sotto-sistema che scambia calore con gli altri sotto-sistemi e l'ambiente esterno viene scritto come
 
   $$\begin{aligned}
-    dS_i & = \dfrac{\delta Q^{ext,i}_i}{T_i} - \dfrac{\delta D_i}{T_i} = \\
-         & = \dfrac{\delta Q^{ext}_i}{T_i} + \dfrac{\sum_{k \ne i} \delta Q_{ik}}{T_i} - \dfrac{\delta D_i}{T_i} \ge \\
+    dS_i & = \dfrac{\delta Q^{ext,i}_i}{T_i} + \dfrac{\delta^+ D_i}{T_i} = \\
+         & = \dfrac{\delta Q^{ext}_i}{T_i} + \dfrac{\sum_{k \ne i} \delta Q_{ik}}{T_i} + \dfrac{\delta^+ D_i}{T_i} \ge \\
          & \ge \dfrac{\delta Q^{ext}_i}{T_i} + \dfrac{\sum_{k \ne i} \delta Q_{ik}}{T_i} \ . 
   \end{aligned}$$
 
