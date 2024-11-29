@@ -278,13 +278,17 @@ Il legame tra calore e lavoro evidente nelle applicazioni tecniche, venne ulteri
 ```{prf:example} Equivalenza calore-lavoro - Esperienza di Joule
 Un peso è collegato tramite un filo a un mulinello che può ruotare e compiere lavoro su un fluido contenuto all'interno di un calorimetro, in prima approssimazione considerabile un sistema perfettamente isolato termicamente nell'intervallo di tempo in cui si svolge l'esperimento.
 
-Il peso ha massa $m = 30 \, \text{kg}$ e viene lasciato cadere per un'altezza $h = 2 \, \text{m}$, dove viene fermato. Il calorimetro contiene $V = 1 \, \text{l}$ di acqua inizialmente a temperatura $T_{in} = 14.5 \, \text{°C}$. Una volta trascorso il tempo necessario al fluido per tornare allo stato di quiete, un termometro graduato con passo $\Delta T_{meas} = 0.002 \text{°C}$ permette di misurare una variazione di temperatura di $\Delta T = T_{fin} - T_{in} = 0.14 \, \text{°C}$.
+Il peso ha massa $m = 30 \, \text{kg}$ e viene lasciato cadere per un'altezza $h = 2 \, \text{m}$, dove viene fermato. Il calorimetro contiene $V = 1 \, \text{l}$ di acqua inizialmente a temperatura $T_{in} = 14.5 \, \text{°C}$. Una volta trascorso il tempo necessario al fluido per tornare allo stato di quiete, un termometro graduato con passo $\Delta T_{meas} = 0.002 \text{°C}$ permette di misurare una variazione di temperatura di $\Delta T = T_{fin} - T_{in} = 0.140 \, \text{°C}$.
 
 Questa osservazione, opportunamente verificata tramite il metodo scientifico, permette di trovare il fattore di conversione tra il lavoro svolto dal mulinello sul fluido e un equivalente apporto di calore al sistema che produrrebbe lo stesso aumento di temperatura
 
 $$m_{H$_2$O} \, c_{\text{H$_2$O}} \Delta T = m g h$$
 
-$$1 \, \text{kg} \, 1000 \frac{\text{cal}}{\text{kg} \, \text{°C}} \, 0.14 \text{°C}  = 30 \text{kg} \cdot 9.81 \frac{m}{s^2} \cdot 1 \text{m} \ .$$
+$$\begin{aligned}
+  1 \, \text{kg} \cdot 1000 \frac{\text{cal}}{\text{kg} \, \text{°C}} \cdot 0.140 \text{°C} & = 30 \text{kg} \cdot 9.81 \frac{m}{s^2} \cdot 1 \text{m} \\
+  141 \, \text{cal} & = 588 \, \text{J} \\
+  1 \, \text{cal} & = 4.20 \text{J}
+\end{aligned}$$
 
 ```
 
