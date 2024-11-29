@@ -211,11 +211,19 @@ $$\frac{d E_1}{d T_1} = -\frac{d E_2}{d T_2} \frac{d T_2}{d T_1}$$
 ```
 
 ```{dropdown} Secondo e terzo principio della termodinamica
-Il formalismo introdotto in questa sezione permette di formulare in maniera abbastanza naturale il secondo principio e una versione del terzo principio della termodinamica (**todo** *che sembra non essere un principio, ma anche questa dovrà essere risolta una volta per tutte*).
+Il formalismo introdotto in questa sezione permette di formulare in maniera abbastanza naturale il secondo principio e una versione del terzo principio della termodinamica.
+
+Questa formulazione del terzo prinicpio della termodinamica afferma che la temperatura termodinamica è sempre positiva,
+
+$$\left.\frac{\partial E}{\partial S}\right|_{\mathbf{X}} > 0 \ .$$
+
 
 Nel caso generale di un sistema semplice usando la definizione $dS = \frac{\delta U}{T} = \frac{\delta Q^{ext} + \delta^+ D}{T}$ e ricordando che la dissipazione è non negativa, $\delta^+ D \ge 0$, segue che
 
 $$d S \ge \frac{\delta Q^{ext}}{T} \ .$$
+
+
+**todo** **oss** *Il terzo principio della termodinamica: 1. sembra non essere un principio; 2. per alcuni sistemi con energia limitata la definizione di temperatura $T := \left( \frac{\partial E}{\partial S} \right)$ produce una temperatura negativa* **todo** *aggiungere una sezione su meccanica statistica?*.
 
 ```
 
