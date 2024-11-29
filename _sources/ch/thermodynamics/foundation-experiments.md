@@ -172,15 +172,14 @@ Gli studi di **J.Black** (1728-1799) attorno alla metà del XVIII secolo sul rag
 
 Gli studi sul raggiungimento dell'equilibrio termico di due sistemi sui quali non è compiuto lavoro, permisero a J.Black di osservare che:
 - per due sistemi composti dalla stessa sostanza, la variazione di temperatura è inversamente proporzionale alle loro masse;
-- per sistemi composti da sostanze diverse, la variazione di temperatura dipende da una proprietà del materiale definita poi *calore specifico*
+- per sistemi composti da sostanze diverse, la variazione di temperatura dipende dalle condizioni in cui avviene l'esperimento (es. pressione costante, volume costante,...) e da una proprietà del materiale definita poi *calore specifico*, $c_x$
 
 e di trarre delle conclusioni che, usando i termini moderni, possono essere espresse come:
 - due corpi posti a contatto con temperatura iniziale diversa, raggiungono una temperatura di equilibrio che dipende dalle loro temperature iniziali, dalla loro massa, e dalla loro sostanza;
 - la temperatura $T$ misurata è una grandezza fisica legata a una grandezza fisica che caratterizza lo stato del sistema, che oggi può essere identificata con un'energia termica interna al sistema, dovuta all'agitazione dei suoi componenti elementari a livello microscopico;
 - il calore è un meccanismo di trasmissione dell'energia tra i due sistemi, che in generale non coinvolge lavoro in una descrizione macroscopica, ma che è dovuto alla *diffusione* dello stato di agitazione a livello microscopico dei componenti elementari della materia; nel caso dei due sistemi a contatto, il calore assorbito da un sistema è uguale al calore rilasciato dall'altro sistema;
-- le variazioni di energia interna termica di un sistema sono dovute all'apporto di calore,
+- le variazioni di energia interna termica di un sistema sono dovute all'apporto di calore.
 
-  $$dE_i = \delta Q_{ij}$$
 
 Gli studi sul cambiamento di fase, gli permisero di verificare che questi avvengono a temperatura costante
 
@@ -213,9 +212,26 @@ Gli studi sul cambiamento di fase, gli permisero di verificare che questi avveng
 
     Viene definito **calore latente di fusione** il coefficiente $L_{sl}$ di proporzionalità tra il calore entrante nel sistema durante la trasformazione di fase e la quantità di massa liquefatta $\delta m_l$.
 
-```{prf:example} Esercizi calorimetria - ...
+```{prf:example}
+Si mescolano due masse uguali di acqua inizialmente a temperatura $T_1 = 20 \text{°C}$ e $T_2 = 70 \text{°C}$. 
+
+Successivamente si ripete l'esperimento, mescolando una massa di acqua a temperatura $T_1$ doppia rispetto alla massa di acqua a $T_2$.
 ```
-```{prf:example} Caldo-freddo: temperatura e calore
+```{prf:example}
+Mescolando una massa uguale di due sostanze inizialmente a temperatura $T_1$  e $T_2$, dopo aver misurato la temperatura di equilibrio $T_e$, si chiede di determinare il rapporto tra i loro calori specifici nelle condizioni di prova.
+```
+```{prf:example}
+Mescolando una massa uguale di due sostanze inizialmente a temperatura $T_1$  e $T_2$, dopo aver misurato la temperatura di equilibrio $T_e$, si chiede di determinare il rapporto tra i loro calori specifici nelle condizioni di prova.
+```
+```{prf:example}
+Un sistema contente una massa $m_1$ di acqua inizialmente a $T_1$ gradi viene messo a contatto con un sistema contentente una massa $m_2$ di ghiaccio a $T_2 = \text{°C}$ a pressione ambiente. La condizione iniziale del sistema 1 non è sufficiente a far sciogliere l'intera massa di ghiaccio ma solo $m_{2,l} < m_2$. L'equilibrio tra i due sistemi viene quidi raggiunto a temperatura $T=0 \text{°C}$. Si chiede di determinare il rapporto tra il calore latente di fusione e il calore specifico dell'acqua.
+
+```
+```{prf:example} Caloria come unità di misura del calore - N.Clément
+Il Conservatoire national des arts and métiers (CNAM) è una delle tre istituzioni create durante la Rivoluzione francese per l'insegnamento superiore scientifico. N.Clément, professore di chimica presso il CNAM, e coinvolto in studi sul calore e sull'equivalenza calore-lavoro insieme a Carnot, definisce la *caloria* come unità di misura del calore, come la quantità di calore necessaria a creare l'aumento di $1 \text{°C}$ da $14.5 \text{°C}$ a $15.5 \text{°C}$ di un grammo di acqua distillata a pressione atmosferica.
+
+$$1 \, \text{cal} = 1 \cdot 10^{-3} \, text{kg} c_{\text{H$_2$O}} \, 1 \text{°C}$$
+
 ```
 
 ## Esperienze sui gas, ed equazione di stato dei gas perfetti
