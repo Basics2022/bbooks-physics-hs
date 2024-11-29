@@ -1,7 +1,7 @@
 (physics-hs:thermodynamics:principles:second)=
 # Secondo principio della termodinamica - enunciato di Clausius
 
-L'enunciato di Clausis del secondo principio della termodinamica può essere formulato in maniera abbastanza naturale con il formalismo introdotto.
+L'enunciato di Clausis del secondo principio della termodinamica può essere formulato in maniera abbastanza naturale con il formalismo introdotto. Esistono altri due celebri enunciati del secondo principio della termodinamica, l'enunciato di Planck e di Kelvin, che verranno presentati nell'ambito delle macchine termiche.
 
 (physics-hs:thermodynamics:principles:second:simple)=
 ## Sistemi semplici

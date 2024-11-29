@@ -248,7 +248,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="principles-first.html">12.2. Primo principio della termodinamica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principles-gibbs-phase-rule.html">12.3. Gibbs: energia interna, regola delle fasi e funzioni multi-variabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principles-phase-diagrams.html">12.4. Diagrammi termodinamici</a></li>
-<li class="toctree-l2"><a class="reference internal" href="principles-second.html">12.5. Secondo principio della termodinamica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="principles-second.html">12.5. Secondo principio della termodinamica - enunciato di Clausius</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principles-open.html">12.6. Sistemi aperti</a></li>
 </ul>
 </li>
@@ -504,7 +504,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -520,6 +522,15 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enunciato-di-kelvin">14.3.1. Enunciato di Kelvin</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enunciato-di-planck">14.3.2. Enunciato di Planck</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -532,8 +543,14 @@ document.write(`
   <div class="tex2jax_ignore mathjax_ignore section" id="secondo-principio-della-termodinamica-per-cicli-termodinamici">
 <span id="physics-hs-thermodynamics-heat-engine-second-principle"></span><h1><span class="section-number">14.3. </span>Secondo principio della termodinamica per cicli termodinamici<a class="headerlink" href="#secondo-principio-della-termodinamica-per-cicli-termodinamici" title="Permalink to this heading">#</a></h1>
 <p>Esistono due enunciati equivalenti del secondo principio della termodinamica per una macchina termica che realizza un ciclo termodinamico.</p>
-<p><strong>Enunciato di Kelvin.</strong> Una macchina termodinamica non può trasformare in lavoro tutto il calore assorbito da una sorgente a temperatura costante.</p>
-<div class="math notranslate nohighlight">
+<div class="section" id="enunciato-di-kelvin">
+<span id="physics-hs-thermodynamics-heat-engine-second-principle-kelvin"></span><h2><span class="section-number">14.3.1. </span>Enunciato di Kelvin<a class="headerlink" href="#enunciato-di-kelvin" title="Permalink to this heading">#</a></h2>
+<div class="proof proposition admonition" id="proposition-0">
+<p class="admonition-title"><span class="caption-number">Proposition 14.1 </span> (Enunciato di Kelvin)</p>
+<div class="proposition-content section" id="proof-content">
+<p>Una macchina termodinamica non può trasformare in lavoro tutto il calore assorbito da una sorgente a temperatura costante.</p>
+</div>
+</div><div class="math notranslate nohighlight">
 \[d E^{tot} = \delta Q^{ext} + \delta L^{ext} = \delta Q^{ext} - \delta L\]</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
@@ -546,8 +563,16 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[L \le 0 \ ,\]</div>
 <p>cioè che una macchina termica che scambia calore unicamente con una sorgente a temperatura costante produce un lavoro negativo, ossia assorbe lavoro esterno, e cede calore.</p>
-<p><strong>Enunciato di Planck.</strong> Non è possibile trasferire calore da una sorgente a temperatura <span class="math notranslate nohighlight">\(T_2\)</span> a una sorgente a temperatura maggiore <span class="math notranslate nohighlight">\(T_1 &gt; T_2\)</span> con una macchina termica che non assorba lavoro.</p>
-<p><strong>todo</strong> dim</p>
+</div>
+<div class="section" id="enunciato-di-planck">
+<span id="physics-hs-thermodynamics-heat-engine-second-principle-planck"></span><h2><span class="section-number">14.3.2. </span>Enunciato di Planck<a class="headerlink" href="#enunciato-di-planck" title="Permalink to this heading">#</a></h2>
+<div class="proof proposition admonition" id="proposition-1">
+<p class="admonition-title"><span class="caption-number">Proposition 14.2 </span> (Enunciato di Planck)</p>
+<div class="proposition-content section" id="proof-content">
+<p>Non è possibile trasferire calore da una sorgente a temperatura <span class="math notranslate nohighlight">\(T_2\)</span> a una sorgente a temperatura maggiore <span class="math notranslate nohighlight">\(T_1 &gt; T_2\)</span> con una macchina termica che non assorba lavoro.</p>
+</div>
+</div><p><strong>todo</strong> dim</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -604,6 +629,21 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enunciato-di-kelvin">14.3.1. Enunciato di Kelvin</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enunciato-di-planck">14.3.2. Enunciato di Planck</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
