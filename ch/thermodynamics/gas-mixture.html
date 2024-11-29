@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>13.2.1. Aria umida &#8212; Fisica per le superiori</title>
+    <title>13.2. Miscele di gas &#8212; Fisica per le superiori</title>
   
   
   
@@ -65,14 +65,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/humid-air';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/gas-mixture';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="13.3. Solidi elastici" href="elastic-solid-1d.html" />
-    <link rel="prev" title="13.2. Miscele di gas" href="gas-mixture.html" />
+    <link rel="next" title="13.2.1. Aria umida" href="humid-air.html" />
+    <link rel="prev" title="13.1.4. Caratteristiche dei gas perfetti" href="ideal-gas-formulas.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -260,8 +258,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l3"><a class="reference internal" href="ideal-gas-formulas.html">13.1.4. Caratteristiche dei gas perfetti</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="gas-mixture.html">13.2. Miscele di gas</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">13.2.1. Aria umida</a></li>
+<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">13.2. Miscele di gas</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="humid-air.html">13.2.1. Aria umida</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="elastic-solid-1d.html">13.3. Solidi elastici</a></li>
@@ -389,7 +387,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/edit/master/ch/thermodynamics/humid-air.md" target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/edit/master/ch/thermodynamics/gas-mixture.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -406,7 +404,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/thermodynamics/humid-air.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/thermodynamics/gas-mixture.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Apri un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -436,7 +434,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/thermodynamics/humid-air.md" target="_blank"
+      <li><a href="../../_sources/ch/thermodynamics/gas-mixture.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -507,9 +505,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -520,32 +516,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Aria umida</h1>
+    <h1>Miscele di gas</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contenuti </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizioni">13.2.1.1. Definizioni</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aria-secca-e-vapore-acqueo">13.2.1.2. Aria secca e vapore acqueo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regola-delle-fasi-di-gibbs">13.2.1.3. Regola delle fasi di Gibbs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#misure-di-umidita">13.2.1.4. Misure di umidità</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#umidita-specifica-o-titolo-x">13.2.1.4.1. Umidità specifica o titolo, <span class="math notranslate nohighlight">\(x\)</span></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#umidita-relativa">13.2.1.4.2. Umidità relativa</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entalpia-dell-aria-umida">13.2.1.5. Entalpia dell’aria umida</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabelle">13.2.1.6. Tabelle</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagrammi">13.2.1.7. Diagrammi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#temperature-e-misure-di-umidita">13.2.1.8. Temperature e misure di umidità</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazioni-dell-aria-umida">13.2.1.9. Trasformazioni dell’aria umida</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">13.2.1.10. Esercizi</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -555,170 +530,13 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="aria-umida">
-<span id="physics-hs-thermodynamics-matter-humid-air"></span><h1><span class="section-number">13.2.1. </span>Aria umida<a class="headerlink" href="#aria-umida" title="Permalink to this heading">#</a></h1>
-<div class="section" id="definizioni">
-<h2><span class="section-number">13.2.1.1. </span>Definizioni<a class="headerlink" href="#definizioni" title="Permalink to this heading">#</a></h2>
-<p>L”<strong>aria atmosferica</strong> può essere pensata come una miscela di aria secca (a sua volta miscela di gas N<span class="math notranslate nohighlight">\(_2\)</span> al 78%, O<span class="math notranslate nohighlight">\(_2\)</span> al 21%, Ar circa all’1%, e altre tracce di gas) i cui rapporti rimangono inalterati in intervalli ragionevoli di condizioni termodinamiche) e di vapore acqueo, acqua allo stato di vapore.</p>
-<p>Viene definita <strong>pressione parziale</strong>, <span class="math notranslate nohighlight">\(p_i\)</span>, dovuta a un componente <span class="math notranslate nohighlight">\(i\)</span> di una miscela, la pressione che ci sarebbe nel sistema se ci fosse solo il componente scelto nell’intero volume del sistema. La <strong>legge di Dalton</strong> sulle pressioni parziali afferma che la pressione in una miscela di gas è la somma delle pressioni parziali dei suoi componenti,</p>
-<div class="math notranslate nohighlight">
-\[p = \sum_i p_i\]</div>
-<p>Le quantità estensive possono essere scritte come somma delle quantità riferite a ogni singolo componente (nell”<strong>ipotesi</strong> che non ci siano interazioni? Ad esempio, l’energia della miscela di 2 componenti è uguale alla somma dei contributi di energia associati ai singoli componenti)</p>
-<div class="math notranslate nohighlight">
-\[E = \sum_i E_i \quad , \quad H = \sum_i H_i \quad , \quad \dots\]</div>
-</div>
-<div class="section" id="aria-secca-e-vapore-acqueo">
-<h2><span class="section-number">13.2.1.2. </span>Aria secca e vapore acqueo<a class="headerlink" href="#aria-secca-e-vapore-acqueo" title="Permalink to this heading">#</a></h2>
-<p>Nell’ipotesi che i componenti in fase gassosa possano essere modellati con la legge dei gas ideali.</p>
-<p>La massa molare media dell”<strong>aria secca</strong> <span class="math notranslate nohighlight">\(M_m^{a.s.}\)</span> e la costante specifica del gas <span class="math notranslate nohighlight">\(R^{a.s.}\)</span> sono</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-M_m^{a.s.}
-  &amp; = 0.78 \, M_{m, N_2} + 0.21 \, M_{m, O_2} + 0.01 \, M_{m, Ar} = \\ 
-  &amp; = 0.78 \cdot 28 \frac{kg}{kmol} + 0.21 \cdot 32 \frac{kg}{kmol} + 0.01 \cdot 40 \frac{kg}{kmol} = 28.96 \frac{kg}{kmol}
-\end{aligned}\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[R^{a.s.} = \frac{R}{M_m^{a.s.}} = \frac{8314 \frac{J \, kmol}{K}}{ 28.96 \frac{kg}{kmol} } = 287.1 \frac{J}{kg \, K}\]</div>
-<p>La massa molare media del <strong>vapore acqueo</strong> <span class="math notranslate nohighlight">\(M_m^{v}\)</span> e la costante specifica del gas <span class="math notranslate nohighlight">\(R^{v}\)</span> sono</p>
-<div class="math notranslate nohighlight">
-\[\begin{aligned}
-M_m^{v} = M_{m, H_2 O} = 2 \cdot 1 \frac{kg}{kmol} + 16 \frac{kg}{kmol} = 18 \frac{kg}{kmol}
-\end{aligned}\]</div>
-<div class="math notranslate nohighlight">
-\[R^{v} = \frac{R}{M_m^{v}} = \frac{8314 \frac{J \, kmol}{K}}{ 18 \frac{kg}{kmol} } = 461.9 \frac{J}{kg \, K}\]</div>
-</div>
-<div class="section" id="regola-delle-fasi-di-gibbs">
-<h2><span class="section-number">13.2.1.3. </span>Regola delle fasi di Gibbs<a class="headerlink" href="#regola-delle-fasi-di-gibbs" title="Permalink to this heading">#</a></h2>
-<p>La regola delle fasi di Gibbs prevede che un sistema con <span class="math notranslate nohighlight">\(C=2\)</span> componenti indipendenti, aria secca e vapore acqueo, e <span class="math notranslate nohighlight">\(P\)</span> fasiè determinato dal valore di</p>
-<div class="math notranslate nohighlight">
-\[F = C - P + 2 = 4 - P \]</div>
-<p>variabili intensive. Nel caso ci sia una fase sola, <span class="math notranslate nohighlight">\(P=1\)</span>, il sistema è determinato da <span class="math notranslate nohighlight">\(F = 3\)</span> variabili intensive indipendenti, come ad esempio pressione, temperatura e composizione; nel caso coesistano <span class="math notranslate nohighlight">\(P=2\)</span> fasi, il sistema è determinato da <span class="math notranslate nohighlight">\(F = 2\)</span> variabili intensive indipendenti, poiché si aggiunge un vincolo tra pressione e temperatura in condizioni di equilibrio di più fasi, che può essere scritto come uguaglianza tra i potenziali chimici del componente nelle due fasi,</p>
-<div class="math notranslate nohighlight">
-\[\mu_{l}(P,T) = \mu_{v}(P,T) \ .\]</div>
-</div>
-<div class="section" id="misure-di-umidita">
-<h2><span class="section-number">13.2.1.4. </span>Misure di umidità<a class="headerlink" href="#misure-di-umidita" title="Permalink to this heading">#</a></h2>
-<div class="section" id="umidita-specifica-o-titolo-x">
-<h3><span class="section-number">13.2.1.4.1. </span>Umidità specifica o titolo, <span class="math notranslate nohighlight">\(x\)</span><a class="headerlink" href="#umidita-specifica-o-titolo-x" title="Permalink to this heading">#</a></h3>
-<p>Rapporto tra frazione di vapore acqueo e aria secca nello stesso volume di aria umida,</p>
-<div class="math notranslate nohighlight">
-\[x = \frac{m_v}{m_a}\]</div>
-<p>Assumendo che la fase gassosa si comporti come miscela di gas ideali, si può scrivere</p>
-<div class="math notranslate nohighlight">
-\[x = \frac{m_v}{m_a} = \frac{\rho_v}{\rho_a} = \frac{R_a \, T}{p_a} \frac{p_v}{R_v \, T} = \frac{287.1}{461.9} \frac{p_v}{p_a} = 0.622 \, \frac{p_v}{p_a} = 0.622 \, \frac{p_v}{p - p_v} \ ,\]</div>
-<p>ricordando che <span class="math notranslate nohighlight">\(p = p_v + p_a\)</span></p>
-</div>
-<div class="section" id="umidita-relativa">
-<h3><span class="section-number">13.2.1.4.2. </span>Umidità relativa<a class="headerlink" href="#umidita-relativa" title="Permalink to this heading">#</a></h3>
-<p>L’umidità relativa è il rapporto tra la massa di vapore <span class="math notranslate nohighlight">\(m_v\)</span> contenuta nell’aria umida rispetto alla massa di vapore <span class="math notranslate nohighlight">\(m_{v,sat}\)</span> che sarebbe contenuta nel sistema nella condizionie di saturazione alla stessa temperatura,</p>
-<div class="math notranslate nohighlight">
-\[\varphi = \frac{m_v}{m_{v,sat}}\]</div>
-<div class="math notranslate nohighlight">
-\[\varphi = \frac{m_v}{m_{v,sat}} = \frac{\rho_v}{\rho_{v,sat}} = \frac{R_v \, T}{p_{v,sat}} \frac{p_v}{R_v \, T} = \frac{p_v}{p_{v,sat}} \ ,\]</div>
-<p>e quindi</p>
-<div class="math notranslate nohighlight">
-\[x = 0.622 \, \frac{p_v}{p - p_v} = 0.622 \, \frac{ \varphi p_{v,sat} }{p - \varphi p_{v,sat}}\]</div>
-</div>
-</div>
-<div class="section" id="entalpia-dell-aria-umida">
-<h2><span class="section-number">13.2.1.5. </span>Entalpia dell’aria umida<a class="headerlink" href="#entalpia-dell-aria-umida" title="Permalink to this heading">#</a></h2>
-<p>Nell’ipotesi che l’aria umida si comporti come miscela ideale, la sua entalpia è la somma dell’entalpia di aria secca e vapore acqueo,</p>
-<div class="math notranslate nohighlight">
-\[H = \sum_i H_i
-  = H_{as} + H_v = m_{as} h_{as} + m_v h_v
-  = m_{as} \left( h_{as} + \frac{m_v}{m_{as}} h_v \right)
-  = m_{as} \left( h_{as} + x \, h_v \right)
-\]</div>
-<p>Nell’ipotesi di gas ideale biatomico (come N<span class="math notranslate nohighlight">\(_2\)</span> e O<span class="math notranslate nohighlight">\(_2\)</span> di cui è composta al 99%), l’entalpia specifica dell’aria secca è proporzionale alla temperatura,</p>
-<div class="math notranslate nohighlight">
-\[h_a = c_{p,a} T \ ,\]</div>
-<p>con <span class="math notranslate nohighlight">\(c_{p,a} = \frac{7}{2} R^{a.s.} = \frac{7}{2} \, 287.1 \frac{J}{kg \, K} = 1005 \frac{J}{kg \, K}\)</span>.</p>
-<p>L’entalpia del vapore temperatura <span class="math notranslate nohighlight">\(T\)</span> è l’energia necessaria a pressione <span class="math notranslate nohighlight">\(P\)</span> costante a vaporizzare un kg di acqua satura alla temperatura di <span class="math notranslate nohighlight">\(T_{l,sat}(P)\)</span> e del calore necessario a portare il valore alla temperatura <span class="math notranslate nohighlight">\(T\)</span></p>
-<div class="math notranslate nohighlight">
-\[H_v = m_v \, \left( r(P) + c_{p,v} \, (T-T_{l,sat}(P) \right) \ , \]</div>
-<p>essendo <span class="math notranslate nohighlight">\(r\)</span> il calore latente di vaporizzazione alla pressione <span class="math notranslate nohighlight">\(P\)</span>, e <span class="math notranslate nohighlight">\(c_{p,v}\)</span> il calore specifico a pressione costante del vapore d’acqua.</p>
-<p>Ad esempio, a <span class="math notranslate nohighlight">\(T = 0°C\)</span>, il calore latente di fusione e il calore specifico a pressione costante valgono <span class="math notranslate nohighlight">\(r(T = 0°C) = 2501 \, \frac{kJ}{kg}\)</span> e <span class="math notranslate nohighlight">\(c_{p,v} = 1875 \frac{J}{kg \, K}\)</span> a <span class="math notranslate nohighlight">\(T = 0°C\)</span>.</p>
-<p><strong>todo</strong> <em>controllare! Errore? Esistono tabelle con valori tabulati che descrivono il comportamento non-ideale?</em> Nel caso il vapore d’acqua si comportasse come un gas ideale con una molecola tri-atomica con atomi non allineati, con <span class="math notranslate nohighlight">\(f = 6\)</span> gradi di libertà rigidi che contribuiscono all’energia interna, si avrebbe <span class="math notranslate nohighlight">\(c_{v,v} = 3 R^{v}\)</span>, <span class="math notranslate nohighlight">\(c_{p,v} = 4 R^{v} = 4 \cdot 461.9 \frac{J}{kg \, K} = 1847.6 \frac{J}{kg \, K}\)</span>.</p>
-</div>
-<div class="section" id="tabelle">
-<h2><span class="section-number">13.2.1.6. </span>Tabelle<a class="headerlink" href="#tabelle" title="Permalink to this heading">#</a></h2>
+  <div class="tex2jax_ignore mathjax_ignore section" id="miscele-di-gas">
+<span id="physics-hs-thermodynamics-matter-gases-mixture"></span><h1><span class="section-number">13.2. </span>Miscele di gas<a class="headerlink" href="#miscele-di-gas" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
-<li><p>delle condizioni di saturazione, T, p, <span class="math notranslate nohighlight">\(\rho\)</span>, h, s, in condizioni di liquido o vapore saturo</p></li>
-<li><p>del vapore surriscaldato</p></li>
-<li><p>del liquido sottoraffreddato</p></li>
+<li><p>miscele di gas non reagenti: qui</p></li>
+<li><p>aria umida: <em>link</em></p></li>
 </ul>
-</div>
-<div class="section" id="diagrammi">
-<h2><span class="section-number">13.2.1.7. </span>Diagrammi<a class="headerlink" href="#diagrammi" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>diagramma di Mollier, o psicrometrico: assi <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(h\)</span>, solitamente costruito alla pressione <span class="math notranslate nohighlight">\(P_0 = 1 \, atm\)</span></p></li>
-<li><p>diagramma ASHRAE: assi <span class="math notranslate nohighlight">\(T\)</span> di bulbo secco, <span class="math notranslate nohighlight">\(x\)</span></p></li>
-</ul>
-</div>
-<div class="section" id="temperature-e-misure-di-umidita">
-<h2><span class="section-number">13.2.1.8. </span>Temperature e misure di umidità<a class="headerlink" href="#temperature-e-misure-di-umidita" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Temperatura di bulbo secco</p></li>
-<li><p>Temperatura di rugiada: temperatura di saturazione, attraverso un processo di raffreddamento a <span class="math notranslate nohighlight">\(p\)</span> e <span class="math notranslate nohighlight">\(x\)</span> costanti</p></li>
-<li><p>Temperatura di bulbo bagnato: temperatura alla quale si porta l’acqua in condizioni di scambio di calore convettivo forzato (? <span class="math notranslate nohighlight">\(v \in [3, 40] \, m/s\)</span>) con l’aria; l’aria lambisce la garza, l’acqua tende a evaporare assorbendo calore (dall’aria?); all’equilibrio, l’acqua è a <span class="math notranslate nohighlight">\(T_{H_2} &lt; T_{a}\)</span></p></li>
-<li><p>Temperatura di saturazione adiabatica: coincide con la temperatura di bulbo bagnato?</p></li>
-</ul>
-</div>
-<div class="section" id="trasformazioni-dell-aria-umida">
-<h2><span class="section-number">13.2.1.9. </span>Trasformazioni dell’aria umida<a class="headerlink" href="#trasformazioni-dell-aria-umida" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Miscelamento adiabatico di due portate di aria umida</p>
-<ul>
-<li><p>Sistema aperto in regime stazionario, senza lavoro o calore apportato al sistema; bilanci di:</p>
-<ul>
-<li><p>massa a.s.</p></li>
-<li><p>massa v</p></li>
-<li><p>energia (flussi di entaplia)</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>Riscaldamento sensibile di una portata di aria umida</p></li>
-<li><p>Raffreddamento sensibile di una portata di aria umida</p>
-<ul>
-<li><p>Sistema aperto in regime stazionario, con scambi di calore</p>
-<ul>
-<li><p>bilancio massa è banale</p></li>
-<li><p>bilancio energia <span class="math notranslate nohighlight">\(\dot{Q} = \dot{m} \Delta h\)</span></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>Raffreddamento con deumidificazione</p>
-<ul>
-<li><p>Sistema aperto in regime stazionario, con scambi di calore; <span class="math notranslate nohighlight">\(\dot{m}_L\)</span> di solito trascurabile</p>
-<ul>
-<li><p>bilancio di massa, e approssimazioni <span class="math notranslate nohighlight">\(0 = \dot{m}_1 + \dot{m}_L - \dot{m}_2\)</span>, <span class="math notranslate nohighlight">\(\dot{m}_1 \sim \dot{m}_2\)</span></p></li>
-<li><p>bilancio di energia <span class="math notranslate nohighlight">\(Q_{12} = \dot{m}(h_2 - h_1) + \dot{m}_l h_l\)</span></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>Umidificazione dell’aria per iniezione di acqua</p>
-<ul>
-<li><p>Sistema aperto in regime stazionario, con scambi di calore</p>
-<ul>
-<li><p>approssimazione della massa di aria secca <span class="math notranslate nohighlight">\(\sim\)</span> massa aria umida: <span class="math notranslate nohighlight">\(m_{i} = m_{i,a} + m_{i,v} \sim m_{i,a}\)</span></p></li>
-<li><p>massa volume: <span class="math notranslate nohighlight">\(\dot{m}_{v,1} + \dot{m}_v = \dot{m}_{v,2}\)</span></p></li>
-<li><p>massa aria: <span class="math notranslate nohighlight">\(\dot{m}_{a,1} = \dot{m}_{a,2}\)</span></p></li>
-<li><p>bilancio di energia: <span class="math notranslate nohighlight">\(\dot{m}_{1} h_1 + \dot{m}_v h_v = \dot{m}_2 h_2\)</span></p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="esercizi">
-<h2><span class="section-number">13.2.1.10. </span>Esercizi<a class="headerlink" href="#esercizi" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Evaporazione di una pozzanghera; evapo-traspirazione: metodi di Penman-Monteith,…</p></li>
-<li><p>Applicazioni di condizionamento</p></li>
-</ul>
+<div class="toctree-wrapper compound">
 </div>
 </div>
 
@@ -753,20 +571,20 @@ M_m^{v} = M_{m, H_2 O} = 2 \cdot 1 \frac{kg}{kmol} + 16 \frac{kg}{kmol} = 18 \fr
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="gas-mixture.html"
+       href="ideal-gas-formulas.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">13.2. </span>Miscele di gas</p>
+        <p class="prev-next-title"><span class="section-number">13.1.4. </span>Caratteristiche dei gas perfetti</p>
       </div>
     </a>
     <a class="right-next"
-       href="elastic-solid-1d.html"
+       href="humid-air.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">13.3. </span>Solidi elastici</p>
+        <p class="prev-next-title"><span class="section-number">13.2.1. </span>Aria umida</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -776,33 +594,6 @@ M_m^{v} = M_{m, H_2 O} = 2 \cdot 1 \frac{kg}{kmol} + 16 \frac{kg}{kmol} = 18 \fr
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contenuti
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definizioni">13.2.1.1. Definizioni</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aria-secca-e-vapore-acqueo">13.2.1.2. Aria secca e vapore acqueo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regola-delle-fasi-di-gibbs">13.2.1.3. Regola delle fasi di Gibbs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#misure-di-umidita">13.2.1.4. Misure di umidità</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#umidita-specifica-o-titolo-x">13.2.1.4.1. Umidità specifica o titolo, <span class="math notranslate nohighlight">\(x\)</span></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#umidita-relativa">13.2.1.4.2. Umidità relativa</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entalpia-dell-aria-umida">13.2.1.5. Entalpia dell’aria umida</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabelle">13.2.1.6. Tabelle</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagrammi">13.2.1.7. Diagrammi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#temperature-e-misure-di-umidita">13.2.1.8. Temperature e misure di umidità</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformazioni-dell-aria-umida">13.2.1.9. Trasformazioni dell’aria umida</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">13.2.1.10. Esercizi</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
