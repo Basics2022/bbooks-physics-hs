@@ -219,10 +219,13 @@ $$ T:= \left.\frac{\partial E}{\partial S}\right|_{\mathbf{X}} > 0 \ .$$
 
 **todo** *Aggiungere qualche parola sul significato, in termini di agitazione molecolare e di probabilitaà*
 
-Nei casi in cui questa forma o conseguenza del terzo principio della termodinamica si valida, il secondo principio della termodinamica è una conseguenza della non-negatività della temperatura e del meccanismo di trasmissione di calore, come sarà discusso più in dettaglio nella discussione dei [sistemi composti](physics-hs:thermodynamics:principles:second:composite).
-Nel caso generale di un **sistema semplice** usando la definizione $dS = \frac{\delta U}{T} = \frac{\delta Q^{ext} + \delta^+ D}{T}$ e ricordando che la dissipazione è non negativa, $\delta^+ D \ge 0$, segue che
+Nei casi in cui questa forma o conseguenza del terzo principio della termodinamica sia valida, il secondo principio della termodinamica è una conseguenza della non-negatività della dissipazione e del meccanismo di trasmissione di calore, come sarà discusso più in dettaglio nella discussione dei [sistemi composti](physics-hs:thermodynamics:principles:second:composite).
+
+Nel caso generale di un **sistema semplice**, usando la definizione $dS = \frac{\delta U}{T} = \frac{\delta Q^{ext} + \delta^+ D}{T}$, la non negatività della dissipazione, $\delta^+ D \ge 0$, implica che
 
 $$d S \ge \frac{\delta Q^{ext}}{T} \ .$$
+
+Questa è un'espressione dell'[enunciato di Clausius del secondo principio della termodinamica](physics-hs:thermodynamics:principles:second).
 
 **todo** **oss** *Il terzo principio della termodinamica: 1. sembra non essere un principio; 2. per alcuni sistemi con energia limitata la definizione di temperatura $T := \left( \frac{\partial E}{\partial S} \right)$ produce una temperatura negativa* **todo** *aggiungere una sezione su meccanica statistica?*.
 
