@@ -212,10 +212,36 @@ Gli studi sul cambiamento di fase, gli permisero di verificare che questi avveng
 
     Viene definito **calore latente di fusione** il coefficiente $L_{sl}$ di proporzionalità tra il calore entrante nel sistema durante la trasformazione di fase e la quantità di massa liquefatta $\delta m_l$.
 
-```{prf:example} Esercizi calorimetria - ...
+```{prf:example}
+Si mescolano due masse uguali di acqua inizialmente a temperatura $T_1 = 20 \text{°C}$ e $T_2 = 70 \text{°C}$. 
+
+Successivamente si ripete l'esperimento, mescolando una massa di acqua a temperatura $T_1$ doppia rispetto alla massa di acqua a $T_2$.
 ```
-```{prf:example} Caldo-freddo: temperatura e calore
+```{prf:example}
+Mescolando una massa uguale di due sostanze inizialmente a temperatura $T_1$  e $T_2$, dopo aver misurato la temperatura di equilibrio $T_e$, si chiede di determinare il rapporto tra i loro calori specifici nelle condizioni di prova.
 ```
+```{prf:example}
+Mescolando una massa uguale di due sostanze inizialmente a temperatura $T_1$  e $T_2$, dopo aver misurato la temperatura di equilibrio $T_e$, si chiede di determinare il rapporto tra i loro calori specifici nelle condizioni di prova.
+```
+```{prf:example}
+Un sistema contente una massa $m_1$ di acqua inizialmente a $T_1$ gradi viene messo a contatto con un sistema contentente una massa $m_2$ di ghiaccio a $T_2 = \text{°C}$ a pressione ambiente. La condizione iniziale del sistema 1 non è sufficiente a far sciogliere l'intera massa di ghiaccio ma solo $m_{2,l} < m_2$. L'equilibrio tra i due sistemi viene quidi raggiunto a temperatura $T=0 \text{°C}$. Si chiede di determinare il rapporto tra il calore latente di fusione e il calore specifico dell'acqua.
+
+```
+```{prf:example} Caloria come unità di misura del calore - N.Clément
+Il Conservatoire national des arts and métiers (CNAM) è una delle tre istituzioni create durante la Rivoluzione francese per l'insegnamento superiore scientifico. N.Clément, professore di chimica presso il CNAM, e coinvolto in studi sul calore e sull'equivalenza calore-lavoro insieme a Carnot, definisce la *caloria* come unità di misura del calore, come la quantità di calore necessaria a creare l'aumento di $1 \text{°C}$ da $14.5 \text{°C}$ a $15.5 \text{°C}$ di un grammo di acqua distillata a pressione atmosferica,
+
+$$1 \, \text{cal} = 1 \cdot 10^{-3} \, \text{kg} \cdot c_{\text{H$_2$O},P} \cdot 1 \text{°C} \ ,$$
+
+La definizione di questa unità di misura, permette di esprimere il valore assoluto della misura della calore specifico dell'acqua a pressione atmosferica a $T = 14.5 \text{°C}$,
+
+$$c_{\text{H$_2$O},P} = 1000 \, \frac{\text{cal}}{\text{kg} \, \text{°C}} \ .$$
+
+**oss.** Come spesso accade nella storia della scienza, il valore assoluto del calore specifico è in realtà relativo alla - espresso nella - nuova unità di misura introdotta; una volta assegnato un carattere assoluto alla nuova unità di misura, possiamo considerare le altre grandezze espresse relativamente a lei come assolute.
+
+**Oss.** Fissato il valore assoluto del calore specifico dell'acqua, è possibile ottenere i valori assoluti dei calori specifici e i calori latenti di tutte le sostanze analizzate, delle quali si esprimevano le proprietà unicamente in proporzione al calore specifico dell'acqua.
+
+```
+
 
 ## Esperienze sui gas, ed equazione di stato dei gas perfetti
 - Boyle: $PV = \text{const.}$
@@ -228,18 +254,48 @@ L'equazione di stato dei gas perfetti riassume questi risultati
 $$\dfrac{P V}{T n} = R = \text{const.}$$
 
 
-## Lavoro, ... **todo**
+## Energia, Lavoro e Calore
 
 <!--```{margin}
 **todo**<br> Diatriba sulla priorità sulla formulazione del principio di conservazione dell'energia: von Meyer; Joule; successivamente Hemlholtz; Tyndall - scienziato e uno dei primi alpinisti - uno dei pochi a riconoscere il contributo di von Meyer
 ```-->
 
-- Rivoluzione industriale
-- 1798, B.Thompson, *An Inquiry Concerning the Source of the Heat Which is Excited by Friction*, oggi può essere interpretato come un lavoro che identificava l'attrito come fenomeno di dissipazione dell'energia meccanica "utile"/"macroscopica" e della sua conversione in calore;
-- 1824, S.Carnot, *Riflessioni sulla forza motrice del fuoco* 
-- 1840-42, J.von Meyer, medico, chimico e fisico, intuisce il principio di conservazione dell'energia, *"che non può essere né creata né distrutta"* **ref** *Remarks on the Forces of Nature*, 1841
-- 1842-45, J.P.Joule *The Mechanical Equivalent of Heat*
-- 1850, R.Clausius
+La prima rivoluzione industriale iniziata alla fine del XVIII secolo fu determinata dall'innovazione tecnologica, che permise l'introduzione delle **macchine a vapore** come macchine in grado di **convertire il calore** generato dalla combustione di **combustibili fossili** in **lavoro meccanico** utile all'industrializzazione della società.
+Il legame tra calore e lavoro evidente nelle applicazioni tecniche, venne ulteriormente investigato verso la fine del XVIII secolo e l'inizio del XIX secolo:
+- il lavoro del 1798 di B.Thompson, *An Inquiry Concerning the Source of the Heat Which is Excited by Friction*, oggi può essere interpretato il primo lavoro che identificava l'attrito come fenomeno di dissipazione dell'energia meccanica "utile"/"macroscopica" e della sua conversione in calore;
+- nel 1824, **S.Carnot** pubblicava le sue *Riflessioni sulla forza motrice del fuoco*, uno studio teorico sul funzionamento delle macchine termiche, in grado di convertire calore in lavoro meccanico, che si proponeva di indagare i fattori che influenzavano il rendimento dell'efficienza delle macchine termiche, inteso come rapporto tra lavoro meccanico prodotto rispetto al calore fornito. La scoperta dell'**efficienza massima** di una macchina termica costituisce un passo fondamentale verso la formulazione del secondo principio della termodinamica;
+- i lavori sull'equivalenza tra calore e lavoro conducono alla formulazione del **primo principio della termodinamica**, che conduce al principio di conservazione dell'energia; il medico, chimico e fisico J.von Meyer intuisce il principio di conservazione dell'energia, come una grandezza fisica *"che non può essere né creata né distrutta"*[^vonmeyer-remarks]; il lavoro di J.P.Joule[^joule-equivalent] evidenza l'equivalenza di calore e lavoro come grandezze omogenee, trovando il fattore di conversione puro tra la *caloria*, allora utilizzata come unità di misura del calore, e quella che prenderà il nome di *Joule*, intesa come unità di misura del lavoro,
+
+  $$1 \, \text{cal} = 4.184 \, \text{J}$$
+
+- 1850, R.Clausius: *secondo principio della termodinamica*: lavoro e calore non sono equivalenti **todo**
+
+[^vonmeyer-remarks]: *Remarks on the Forces of Nature*, 1841
+[^joule-equivalent]: *The Mechanical Equivalent of Heat*,...
+
+```{prf:example} Equivalenza calore-lavoro - Esperienza di Joule
+Un peso è collegato tramite un filo a un mulinello che può ruotare e compiere lavoro su un fluido contenuto all'interno di un calorimetro, in prima approssimazione considerabile un sistema perfettamente isolato termicamente nell'intervallo di tempo in cui si svolge l'esperimento.
+
+Il peso ha massa $m = 30 \, \text{kg}$ e viene lasciato cadere per un'altezza $h = 2 \, \text{m}$, dove viene fermato. Il calorimetro contiene $V = 1 \, \text{l}$ di acqua inizialmente a temperatura $T_{in} = 14.5 \, \text{°C}$. Una volta trascorso il tempo necessario al fluido per tornare allo stato di quiete, un termometro graduato con passo $\Delta T_{meas} = 0.002 \text{°C}$ permette di misurare una variazione di temperatura di $\Delta T = T_{fin} - T_{in} = 0.140 \, \text{°C}$.
+
+Questa osservazione, opportunamente verificata tramite il metodo scientifico, permette di trovare il fattore di conversione tra il lavoro svolto dal mulinello sul fluido e un equivalente apporto di calore al sistema che produrrebbe lo stesso aumento di temperatura
+
+$$m_{\text{H$_2$O}} \, c_{\text{H$_2$O}} \Delta T = m g h$$
+
+$$\begin{aligned}
+  1 \, \text{kg} \cdot 1000 \frac{\text{cal}}{\text{kg} \, \text{°C}} \cdot 0.140 \text{°C} & = 30 \text{kg} \cdot 9.81 \frac{m}{s^2} \cdot 1 \text{m} \\
+  141 \, \text{cal} & = 588 \, \text{J} \\
+  1 \, \text{cal} & = 4.20 \text{J}
+\end{aligned}$$
+
+```
+
+```{prf:example} Non-equivalenza calore-lavoro - verso il secondo principio della termodinamica
+Senza entrare nei dettagli, e limitandoci all'esperienza di Joule, è ragionevole attendersi di non osservare mai la dinamica in del sistema in direzione opposta: non si osserverà mai - se lo osservate chiamatemi - che spontaneamente il peso salga, il filo si ri-arrotoli sulla puleggia, mentre il liquido all'interno del calorimetro si raffredda.
+
+Mentre il primo principio della termodinamica non esclude questa possibilità, essa è esclusa dal secondo principio della termodinamica che postula una direzione dell'evoluzione spontanea dei sistemi.
+
+```
 
 ## Formalismo e prìncipi della termodinamica classica
 **todo**
