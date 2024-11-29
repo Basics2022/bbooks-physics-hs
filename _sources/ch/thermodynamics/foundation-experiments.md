@@ -230,11 +230,11 @@ Un sistema contente una massa $m_1$ di acqua inizialmente a $T_1$ gradi viene me
 ```{prf:example} Caloria come unità di misura del calore - N.Clément
 Il Conservatoire national des arts and métiers (CNAM) è una delle tre istituzioni create durante la Rivoluzione francese per l'insegnamento superiore scientifico. N.Clément, professore di chimica presso il CNAM, e coinvolto in studi sul calore e sull'equivalenza calore-lavoro insieme a Carnot, definisce la *caloria* come unità di misura del calore, come la quantità di calore necessaria a creare l'aumento di $1 \text{°C}$ da $14.5 \text{°C}$ a $15.5 \text{°C}$ di un grammo di acqua distillata a pressione atmosferica,
 
-$$1 \, \text{cal} = 1 \cdot 10^{-3} \, \text{kg} \, c_{\text{H$_2$O},P} \, 1 \text{°C} \ ,$$
+$$1 \, \text{cal} = 1 \cdot 10^{-3} \, \text{kg} \cdot c_{\text{H$_2$O},P} \cdot 1 \text{°C} \ ,$$
 
 La definizione di questa unità di misura, permette di esprimere il valore assoluto della misura della calore specifico dell'acqua a pressione atmosferica a $T = 14.5 \text{°C}$,
 
-$$x_{\text{H$_2$O},P} = 1000 \, \frac{\text{cal}}{\text{kg} \, \text{°C}} \ .$$
+$$c_{\text{H$_2$O},P} = 1000 \, \frac{\text{cal}}{\text{kg} \, \text{°C}} \ .$$
 
 
 **oss.** Come spesso accade nella storia della scienza, il valore assoluto del calore specifico è in realtà relativo alla - espresso nella - nuova unità di misura introdotta; una volta assegnato un carattere assoluto alla nuova unità di misura, possiamo considerare le altre grandezze espresse relativamente a lei come assolute.
