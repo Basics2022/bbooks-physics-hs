@@ -557,7 +557,7 @@ Dall’enunciato di Clausius<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Il primo principio della termodinamica è un bilancio di energia totale del sistema, in termini del calore «entrante» nel sistema <span class="math notranslate nohighlight">\(\delta Q^{ext}\)</span> dall’ambiente esterno e del lavoro fatto sul sistema <span class="math notranslate nohighlight">\(\delta L^{ext}\)</span> o del lavoro fatto dal sistema $<span class="math notranslate nohighlight">\( sull'ambiente esterno \)</span>\delta L^{sys} = - \delta L^{ext}$,</p>
+<p class="sd-card-text">Il primo principio della termodinamica è un bilancio di energia totale del sistema, in termini del calore «entrante» nel sistema <span class="math notranslate nohighlight">\(\delta Q^{ext}\)</span> dall’ambiente esterno e del lavoro fatto sul sistema <span class="math notranslate nohighlight">\(\delta L^{ext}\)</span> o del lavoro fatto dal sistema sull’ambiente esterno <span class="math notranslate nohighlight">\(\delta L^{sys} = - \delta L^{ext}\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[d E^{tot} = \delta Q^{ext} + \delta L^{ext} = \delta Q^{ext} - \delta L^{sys} \ .\]</div>
 <p class="sd-card-text">Nel regime periodico tipico delle macchine termiche, lo stato del sistema compie un percorso chiuso <span class="math notranslate nohighlight">\(\gamma\)</span> nel suo spazio delle fasi. Lo stato del sistema alla fine di un ciclo (e inizio di un nuovo ciclo) coincide con lo stato all’inizio del ciclo. Poiché l’energia del sistema dipende dallo stato, l’energia del sistema alla fine del ciclo termodinamico è uguale all’energia del sistema all’inizio del ciclo. Se si descrive il ciclo termodinamico con una curva chiusa <span class="math notranslate nohighlight">\(\gamma\)</span> nello spazio delle fasi del sistema, la considerazione fatta può essere scritta <span class="math notranslate nohighlight">\(\oint_{\gamma} dE = 0\)</span>.</p>
@@ -567,12 +567,12 @@ Dall’enunciato di Clausius<div class="sd-summary-down docutils">
   0 &amp; = \oint_{\gamma} \dfrac{d E^{tot}}{T^{ext}} = \\
     &amp; = \oint_{\gamma} \dfrac{\delta Q^{ext}}{T^{ext}} - \oint_{\gamma} \dfrac{\delta L}{T^{ext}} \le &amp; \text{since } \delta Q^{ext} \left(\dfrac{1}{T_1} - \dfrac{1}{T} \right) \le 0 \\
     &amp; \le \oint_{\gamma} \dfrac{\delta Q^{ext}}{T} - \dfrac{L}{T^{ext}} \le &amp; \text{since } dS \ge \frac{\delta Q}{T} \\
-    &amp; \le \underbrace{ \oint_{\gamma} d S}_{=0} - \dfrac{L}{T^{ext}} \ ,
+    &amp; \le \underbrace{ \oint_{\gamma} d S}_{=0} - \dfrac{L}{T^{ext}} \ , % \text{since $S$ funzione di stato}
 \end{aligned}\end{split}\]</div>
-<p class="sd-card-text">che implica</p>
+<p class="sd-card-text">che, insieme alla non-negatività della temperatura <span class="math notranslate nohighlight">\(T^{ext} &gt;0\)</span>, implica che il lavoro fatto in un ciclo da una macchina che assorbe calore da una sorgente a temperatura costante è non-positivo,</p>
 <div class="math notranslate nohighlight">
-\[L \le 0 \ ,\]</div>
-<p class="sd-card-text">cioè che una macchina termica che scambia calore unicamente con una sorgente a temperatura costante produce un lavoro negativo, ossia assorbe lavoro esterno, e cede calore.</p>
+\[L \le 0 \ .\]</div>
+<p class="sd-card-text">In altri termini, una macchina termica che scambia calore unicamente con una sorgente a temperatura costante assorbe lavoro dall’ambiente esterno e cede calore, <span class="math notranslate nohighlight">\(\Delta Q^{ext} = \Delta L \le 0\)</span>.</p>
 </div>
 </details></div>
 <div class="section" id="enunciato-di-planck">

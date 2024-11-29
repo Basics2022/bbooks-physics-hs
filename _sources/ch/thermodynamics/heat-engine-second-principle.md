@@ -12,7 +12,7 @@ Una macchina termodinamica non può trasformare in lavoro tutto il calore assorb
 ```{dropdown} Dall'enunciato di Clausius
 :open:
 
-Il primo principio della termodinamica è un bilancio di energia totale del sistema, in termini del calore "entrante" nel sistema $\delta Q^{ext}$ dall'ambiente esterno e del lavoro fatto sul sistema $\delta L^{ext}$ o del lavoro fatto dal sistema $$ sull'ambiente esterno $\delta L^{sys} = - \delta L^{ext}$,
+Il primo principio della termodinamica è un bilancio di energia totale del sistema, in termini del calore "entrante" nel sistema $\delta Q^{ext}$ dall'ambiente esterno e del lavoro fatto sul sistema $\delta L^{ext}$ o del lavoro fatto dal sistema sull'ambiente esterno $\delta L^{sys} = - \delta L^{ext}$,
 
 $$d E^{tot} = \delta Q^{ext} + \delta L^{ext} = \delta Q^{ext} - \delta L^{sys} \ .$$
 
@@ -24,14 +24,14 @@ $$\begin{aligned}
   0 & = \oint_{\gamma} \dfrac{d E^{tot}}{T^{ext}} = \\
     & = \oint_{\gamma} \dfrac{\delta Q^{ext}}{T^{ext}} - \oint_{\gamma} \dfrac{\delta L}{T^{ext}} \le & \text{since } \delta Q^{ext} \left(\dfrac{1}{T_1} - \dfrac{1}{T} \right) \le 0 \\
     & \le \oint_{\gamma} \dfrac{\delta Q^{ext}}{T} - \dfrac{L}{T^{ext}} \le & \text{since } dS \ge \frac{\delta Q}{T} \\
-    & \le \underbrace{ \oint_{\gamma} d S}_{=0} - \dfrac{L}{T^{ext}} \ ,
+    & \le \underbrace{ \oint_{\gamma} d S}_{=0} - \dfrac{L}{T^{ext}} \ , % \text{since $S$ funzione di stato}
 \end{aligned}$$
 
-che implica
+che, insieme alla non-negatività della temperatura $T^{ext} >0$, implica che il lavoro fatto in un ciclo da una macchina che assorbe calore da una sorgente a temperatura costante è non-positivo,
 
-$$L \le 0 \ ,$$
+$$L \le 0 \ .$$
 
-cioè che una macchina termica che scambia calore unicamente con una sorgente a temperatura costante produce un lavoro negativo, ossia assorbe lavoro esterno, e cede calore.
+In altri termini, una macchina termica che scambia calore unicamente con una sorgente a temperatura costante assorbe lavoro dall'ambiente esterno e cede calore, $\Delta Q^{ext} = \Delta L \le 0$.
 ```
 
 
