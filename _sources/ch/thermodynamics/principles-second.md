@@ -1,9 +1,9 @@
-(physics-hs:thermodynamics:foundation:principles:second)=
+(physics-hs:thermodynamics:principles:second)=
 # Secondo principio della termodinamica - enunciato di Clausius
 
 L'enunciato di Clausis del secondo principio della termodinamica può essere formulato in maniera abbastanza naturale con il formalismo introdotto.
 
-(physics-hs:thermodynamics:foundation:principles:simple)=
+(physics-hs:thermodynamics:principles:second:simple)=
 ## Sistemi semplici
  La variazione elementare di entropia $d S$ di un sistema semplice chiuso a temperatura uniforme $T$ è maggiore o uguale al rapporto tra il flusso di calore elementare introdotto nel sistema e la temperatura del sistema stesso,
   
@@ -11,7 +11,7 @@ L'enunciato di Clausis del secondo principio della termodinamica può essere for
 
 Questo è l'enunciato di Clausius del secondo principio della termodinamica per sistemi semplici con temperatura omogenea.
 
-(physics-hs:thermodynamics:foundation:principles:composite)=
+(physics-hs:thermodynamics:principles:second:composite)=
 ## Sistemi composti
 **todo** definizione di sistema composto. Avviene conduzione tra i sotto-sistemi.
 
@@ -42,6 +42,7 @@ $$\delta Q_{ik} \left( \dfrac{1}{T_i} - \dfrac{1}{T_k} \right) \ge 0 \ .$$
 
 **todo** *aggiungere riferimento alla tendenza naturale nella trasmissione del calore*
 
+(physics-hs:thermodynamics:principles:second:universe)=
 ## Aumento dell'entropia nell'universo
 Se consideriamo l'universo come il sistema chiuso e isolato (ma sarà vero? E chi lo sa? Forse è sensato che lo sia, ma tante cose che sembrano sensate oggi saranno fregnacce tra qualche anno) formato da un sistema di interesse $sys$ e dall'ambiente esterno $env$.
 
