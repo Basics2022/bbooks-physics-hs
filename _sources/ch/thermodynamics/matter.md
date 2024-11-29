@@ -1,11 +1,13 @@
 (physics-hs:thermodynamics:matter)=
 # Stati della materia
 
+In questo capitolo vengono discussi diversi stati della materia (**todo** *descrizione qualitativa della struttura miscroscopica e dei cambiamenti di fase*) e presentati alcuni modelli che descrivono il comportamento di alcune sostanze.
+E' probabilmente utile sottolineare che le equazioni che descrivono il comportamento di alcune sostanze non sono princìpi fisici, ma sono *equazioni di stato* o *equazioni costitutive* che ne legano le variabili di stato. In particolare, vengono discusse le equazioni costitutive di:
 
-**Gas ideali.** Leggi sperimentali; legge dei gas perfetti; teorica cinetica dei gas
+- **gas ideali**, approssimazione dei gas reali per gas sufficientemente rarefatti ad alta temperatura e bassa pressione, condizioni nelle quali è possibile trascurare le dimensioni delle molecole e l'interazione tra di esse: la dimensione delle molecole è trascurabile quando la densità è sufficientemente bassa, l'interazione tra le molecole è trascurabile rispetto alla loro energia cinetica termica quando la temperatura è sufficientemente alta. Vengono presentati i risultati delle [esperienze fondamentali](physics-hs:thermodynamics:matter:gases:ideal:experiments) che hanno consentito di formulare le legge dei gas ideali; successivamente vengono presentate [diverse espressioni della legge dei gas ideali](physics-hs:thermodynamics:matter:gases:ideal:expressions), che permettono di introdurre alcune costanti fondamentali della natura, come la costante di Boltzmann, la costante universale dei gas e il numero di Avogadro; viene presentata la [teoria cinetica dei gas](physics-hs:thermodynamics:matter:gases:ideal:kinetic-theory) di D.Bernoulli, come modello della dinamica microscopica delle molecole di un gas ideale; successivamente vengono discusse alcune [proprietà dei gas ideali]((physics-hs:thermodynamics:matter:gases:ideal:formulas)) (come l'energia e l'entalpia); infine (**todo** sì?) viene discusso il modello di **van der Waals** per i gas reali, che consente una descrizione migliore del comportamento dei gas ad alta pressione e basse temperature, cioè quando vengono meno le condizioni necessarie a un comportamento ideale.
 
-**Miscele di gas.** Miscele ideali di gas; aria umida
+- **miscele di gas.** Miscele ideali di gas; aria umida
 
-**Solidi elastici.**
+- **solidi elastici.**
 
 
