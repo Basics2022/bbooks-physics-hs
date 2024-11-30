@@ -16,6 +16,14 @@ In una reazione chimica, la sostanza A si trasforma in B con una variazione di m
 Durante una reazione tra due gas in un sistema chiuso, i gas A e B si combinano per formare il gas C. Se il volume e la temperatura del sistema sono costanti, calcola la massa di C se la massa iniziale di A è $20 \, \text{g}$ e di B è $15 \, \text{g}$.
 ```
 
+```{exercise} Conservazione della Massa in una Reazione di Sintesi
+Durante una reazione chimica, $10 \, \text{g}$ di idrogeno e $80 \, \text{g}$ di ossigeno reagiscono per formare acqua. Se la massa totale prima e dopo la reazione è la stessa, calcola la massa di acqua prodotta, verificando il principio di Lavoisier.
+```
+
+```{exercise} Verifica della Conservazione della Massa in un Processo di Combinazione
+In un processo di combinazione chimica, $30 \, \text{g}$ di due sostanze A e B reagiscono per formare una sostanza C. Se la massa di C è $58 \, \text{g}$, verifica se la legge della conservazione della massa è rispettata nel sistema chiuso.
+```
+
 ---
 
 ## Prima Legge della Termodinamica (Conservazione dell'Energia)
@@ -30,6 +38,19 @@ Un gas ideale subisce una trasformazione isoentropica in cui il volume cambia da
 
 ```{exercise} Calore Assorbito in una Trasformazione Adiabatica
 Un gas ideale compie una trasformazione adiabatica. Se il volume del gas cambia da $V_1 = 2 \, \text{m}^3$ a $V_2 = 1 \, \text{m}^3$ e la temperatura iniziale è $T_1 = 350 \, \text{K}$, calcola il calore assorbito o ceduto durante la trasformazione.
+```
+
+
+```{exercise} Energia Interna in un Ciclo Isocoro
+Un gas ideale subisce una trasformazione isocora in cui la temperatura cambia da $T_1 = 300 \, \text{K}$ a $T_2 = 600 \, \text{K}$. Se il volume del gas è mantenuto costante, calcola la variazione di energia interna.
+```
+
+```{exercise} Lavoro di Espansione Isotermica
+Un gas ideale subisce una trasformazione isotermica a $T = 273 \, \text{K}$ in cui il volume cambia da $V_1 = 1 \, \text{m}^3$ a $V_2 = 2 \, \text{m}^3$. Calcola il lavoro compiuto dal gas durante questa espansione.
+```
+
+```{exercise} Energia Termica in una Trasformazione Isocora
+Un gas ideale è riscaldato in un recipiente rigido da $T_1 = 250 \, \text{K}$ a $T_2 = 350 \, \text{K}$. Se il gas ha un volume fisso e un calore specifico a volume costante $c_V = 3 \, \text{J/g}^\circ \text{C}$, calcola il calore assorbito dal gas.
 ```
 
 ---
@@ -48,6 +69,18 @@ Durante una trasformazione irreversibile di un gas, la variazione di entropia è
 Un motore termico opera secondo il ciclo Carnot tra due sorgenti termiche a $T_1 = 600 \, \text{K}$ e $T_2 = 300 \, \text{K}$. Calcola l'efficienza del ciclo e la quantità di calore ceduto alla sorgente fredda, se il calore assorbito dalla sorgente calda è $Q_1 = 1200 \, \text{J}$.
 ```
 
+```{exercise} Espansione Irreversibile e Entropia
+Un gas ideale subisce un'espansione irreversibile in cui il volume aumenta da $V_1 = 2 \, \text{m}^3$ a $V_2 = 4 \, \text{m}^3$ mantenendo la temperatura costante a $T = 300 \, \text{K}$. Calcola la variazione di entropia durante l'espansione irreversibile.
+```
+
+```{exercise} Entropia in un Ciclo di Carnot
+Un motore termico opera secondo un ciclo Carnot, con la temperatura del serbatoio caldo a $T_1 = 500 \, \text{K}$ e quella del serbatoio freddo a $T_2 = 300 \, \text{K}$. Se il calore assorbito dal serbatoio caldo è $Q_1 = 1000 \, \text{J}$, calcola la variazione di entropia durante il ciclo.
+```
+
+```{exercise} Generazione di Entropia in una Espansione
+Un gas ideale subisce una trasformazione adiabatica in cui il volume aumenta da $V_1 = 1 \, \text{m}^3$ a $V_2 = 3 \, \text{m}^3$. Calcola la variazione di entropia, sapendo che questa espansione è irreversibile.
+```
+
 ---
 
 ## Regola delle Fasi di Gibbs
@@ -62,6 +95,18 @@ Considera un sistema costituito da una miscela di due solidi e un liquido. Deter
 
 ```{exercise} Equilibrio di Fasi e Soluzione di Gibbs
 Un sistema contiene una sostanza pura in equilibrio tra le fasi solida e liquida. Se la pressione è mantenuta costante, calcola il numero di fasi in equilibrio a una temperatura di $T = 150 \, \text{K}$.
+```
+
+```{exercise} Fasi di un Sistema Multicomponente
+In un sistema composto da tre fasi, solido, liquido e vapore, il numero di gradi di libertà è determinato dal numero di componenti del sistema. Se il sistema è un composto binario, calcola il numero di gradi di libertà usando la regola delle fasi di Gibbs.
+```
+
+```{exercise} Equilibrio di Fase in un Sistema Binario
+Un sistema binario è costituito da due sostanze, A e B, e in un certo punto del diagramma di fase si trovano in equilibrio. Se la pressione è di $P = 1 \, \text{atm}$, calcola il numero di gradi di libertà del sistema al punto di equilibrio tra solido e liquido.
+```
+
+```{exercise} Numero di Fasi in una Miscela di Sostanze
+In un sistema ternario composto da tre sostanze, che si trovano in tre fasi (solido, liquido, gas), calcola il numero di gradi di libertà del sistema, se il numero di componenti è $C = 3$.
 ```
 
 ---
@@ -83,6 +128,19 @@ Un gas viene compresso a temperatura costante da un volume $V_1 = 1 \, \text{m}^
 ```{exercise} Cambiamento di Stato e Diagramma di Fase
 Un liquido subisce un cambiamento di fase da liquido a vapore. Se il processo avviene a una temperatura di $T = 100^\circ \text{C}$ e la pressione è $P = 1 \, \text{atm}$, determina se questo processo avviene lungo la curva di saturazione del diagramma di fase.
 ```
+
+```{exercise} Diagramma di Fase per il Carbonio
+Considera il diagramma di fase del carbonio, che include le fasi solida, liquida e gassosa. Determina i cambiamenti di fase di una quantità di carbonio quando la temperatura cambia da $T_1 = 500 \, \text{K}$ a $T_2 = 1000 \, \text{K}$, con la pressione costante.
+```
+
+```{exercise} Diagramma di Fase per una Sostanza Pura
+Un gas puro subisce una trasformazione a temperatura costante, e il diagramma di fase mostra la transizione tra le fasi solida e liquida. Calcola il calore necessario per fondere una quantità di questa sostanza a una temperatura di $T = 300 \, \text{K}$ e pressione di $P = 1 \, \text{atm}$.
+```
+
+```{exercise} Trasformazioni di Fase di un Liquido
+Un liquido subisce una vaporizzazione isoterma a $T = 373 \, \text{K}$ e una pressione di $P = 1 \, \text{atm}$. Determina il volume del vapore prodotto e il lavoro svolto durante la vaporizzazione, sapendo che il calore latente di vaporizzazione è $L = 2.25 \times 10^6 \, \text{J/kg}$.
+```
+
 
 ---
 
@@ -108,6 +166,24 @@ In uno scambiatore di calore, un fluido entra a $T_1 = 350 \, \text{K}$ e lascia
 Un fluido entra in un sistema aperto con una velocità di $v_1 = 5 \, \text{m/s}$ e lascia il sistema con una velocità di $v_2 = 3 \, \text{m/s}$. Se il flusso di massa del fluido è $m = 10 \, \text{kg/s}$, calcola l'energia scambiata dal fluido durante il processo.
 ```
 
+```{exercise} Espansione in una Turbina
+Un fluido entra in una turbina con una velocità di $v_1 = 15 \, \text{m/s}$ e una pressione di $P_1 = 500 \, \text{kPa}$ e lascia la turbina con una velocità di $v_2 = 5 \, \text{m/s}$ e una pressione di $P_2 = 200 \, \text{kPa}$. Calcola il lavoro eseguito dalla turbina durante il processo.
+```
+
+```{exercise} Compressore Adiabatico
+In un compressore adiabatico, il gas entra con una temperatura di $T_1 = 300 \, \text{K}$ e pressione di $P_1 = 1 \, \text{atm}$ e viene compresso ad una temperatura finale di $T_2 = 400 \, \text{K}$ e pressione di $P_2 = 4 \, \text{atm}$. Calcola il lavoro necessario per comprimere il gas.
+```
+
+```{exercise} Lavoro in una Camera di Combustione
+In una camera di combustione, il gas di alimentazione ha una temperatura di $T_1 = 300 \, \text{K}$ e una pressione di $P_1 = 1 \, \text{atm}$. Se il gas di uscita ha una temperatura di $T_2 = 1200 \, \text{K}$, calcola il lavoro netto prodotto dalla combustione.
+```
+
+```{exercise} Efficienza di uno Scambiatore di Calore
+Un fluido entra in uno scambiatore di calore con una temperatura di $T_1 = 300 \, \text{K}$ e lascia lo scambiatore a $T_2 = 250 \, \text{K}$. Calcola l'efficienza dello scambiatore di calore, sapendo che il fluido riceve $Q = 1000 \, \text{J}$ di calore.
+```
+
+```{exercise} Energia Recuperata da un Compressore
+Un compressore riceve gas a una pressione di $P_1 = 2 \, \text{atm}$ e temperatura $T_1 = 300 \, \text{K}$ e lo comprime ad una pressione di $P_2 = 6 \, \text{atm}$ e temperatura $T_2 = 500 \, \text{K}$. Calcola l'energia
 ---
 
 
