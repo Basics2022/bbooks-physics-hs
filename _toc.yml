@@ -44,6 +44,7 @@ parts:
     - file: ch/mechanics/actions-work
     - file: ch/mechanics/actions-conservative
     - file: ch/mechanics/actions-examples
+    - file: ch/mechanics/actions-problems
   - file: ch/mechanics/statics
     sections:
     - file: ch/mechanics/statics-point
@@ -55,6 +56,7 @@ parts:
     - file: ch/mechanics/inertia-point
     - file: ch/mechanics/inertia-points
     - file: ch/mechanics/inertia-continuum
+    - file: ch/mechanics/inertia-problems
   - file: ch/mechanics/dynamics
     sections:
     - file: ch/mechanics/dynamics-principles
@@ -67,6 +69,7 @@ parts:
     - file: ch/mechanics/dynamics-eom-open
     - file: ch/mechanics/dynamics-collisions
     - file: ch/mechanics/dynamics-motion-gravitation
+    - file: ch/mechanics/dynamics-problems
 - caption: Termodinamica
   numbered: True
   chapters:

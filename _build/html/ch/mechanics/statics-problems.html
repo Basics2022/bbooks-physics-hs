@@ -205,6 +205,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="actions-work.html">7.2. Lavoro e potenza</a></li>
 <li class="toctree-l2"><a class="reference internal" href="actions-conservative.html">7.3. Azioni conservative</a></li>
 <li class="toctree-l2"><a class="reference internal" href="actions-examples.html">7.4. Esempi di forze</a></li>
+<li class="toctree-l2"><a class="reference internal" href="actions-problems.html">7.5. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="statics.html">8. Statica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
@@ -514,7 +515,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -530,6 +533,17 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-del-punto-materiale">8.4.1. Statica del punto materiale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-punti-materiali">8.4.2. Sistemi di punti materiali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-del-corpo-rigido">8.4.3. Statica del corpo rigido</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miscellanea">8.4.4. Miscellanea</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -541,6 +555,158 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="problemi">
 <span id="physics-hs-mechanics-statics-problems"></span><h1><span class="section-number">8.4. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h1>
+<p>Questa pagina contiene esercizi di statica suddivisi in quattro categorie: <strong>statica del punto materiale</strong>, <strong>sistemi di punti materiali</strong>, <strong>corpi rigidi</strong>, e una sezione <strong>varia</strong>. Gli esercizi sono progettati per studenti con una buona conoscenza della statica e delle sue applicazioni.</p>
+<div class="section" id="statica-del-punto-materiale">
+<h2><span class="section-number">8.4.1. </span>Statica del punto materiale<a class="headerlink" href="#statica-del-punto-materiale" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.1 </span> (Equilibrio di un punto materiale)</p>
+<div class="section" id="exercise-content">
+<p>Un punto materiale è soggetto a due forze: <span class="math notranslate nohighlight">\(F_1 = 20 \, \text{N}\)</span> inclinata di <span class="math notranslate nohighlight">\(30^\circ\)</span> rispetto all’orizzontale e <span class="math notranslate nohighlight">\(F_2 = 10 \, \text{N}\)</span> orizzontale. Determina una terza forza <span class="math notranslate nohighlight">\(F_3\)</span> necessaria per mantenere il punto in equilibrio.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-1">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.2 </span> (Forza normale e attrito)</p>
+<div class="section" id="exercise-content">
+<p>Un blocco di <span class="math notranslate nohighlight">\(10 \, \text{kg}\)</span> è fermo su un piano inclinato di <span class="math notranslate nohighlight">\(20^\circ\)</span>. Calcola la forza normale e la forza di attrito statico necessarie per mantenere l’equilibrio.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-2">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.3 </span> (Corde in equilibrio)</p>
+<div class="section" id="exercise-content">
+<p>Un punto materiale è sospeso mediante due corde: la prima forma un angolo di <span class="math notranslate nohighlight">\(45^\circ\)</span> con l’orizzontale, e la seconda un angolo di <span class="math notranslate nohighlight">\(60^\circ\)</span>. La massa sospesa è <span class="math notranslate nohighlight">\(15 \, \text{kg}\)</span>. Calcola le tensioni nelle due corde.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-3">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.4 </span> (Equilibrio su un piano inclinato)</p>
+<div class="section" id="exercise-content">
+<p>Un blocco di massa <span class="math notranslate nohighlight">\(5 \, \text{kg}\)</span> è posizionato su un piano inclinato liscio di <span class="math notranslate nohighlight">\(30^\circ\)</span>. Qual è la forza <span class="math notranslate nohighlight">\(F\)</span> necessaria per mantenerlo fermo, applicata parallelamente al piano?</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-4">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.5 </span> (Forze in una rete di cavi)</p>
+<div class="section" id="exercise-content">
+<p>Un palo verticale è tenuto in posizione da due cavi inclinati. Il primo cavo forma un angolo di <span class="math notranslate nohighlight">\(40^\circ\)</span> con l’orizzontale e il secondo <span class="math notranslate nohighlight">\(50^\circ\)</span>. Se il peso del palo è <span class="math notranslate nohighlight">\(200 \, \text{N}\)</span>, calcola le tensioni nei cavi.</p>
+</div>
+</div>
+</div>
+<div class="section" id="sistemi-di-punti-materiali">
+<h2><span class="section-number">8.4.2. </span>Sistemi di punti materiali<a class="headerlink" href="#sistemi-di-punti-materiali" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-5">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.6 </span> (Centro di massa di due punti)</p>
+<div class="section" id="exercise-content">
+<p>Due masse, <span class="math notranslate nohighlight">\(m_1 = 3 \, \text{kg}\)</span> e <span class="math notranslate nohighlight">\(m_2 = 7 \, \text{kg}\)</span>, sono posizionate rispettivamente nei punti <span class="math notranslate nohighlight">\(A(0, 0)\)</span> e <span class="math notranslate nohighlight">\(B(4, 0)\)</span>. Determina la posizione del centro di massa del sistema.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-6">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.7 </span> (Equilibrio di un sistema di tre punti)</p>
+<div class="section" id="exercise-content">
+<p>Tre masse, <span class="math notranslate nohighlight">\(m_1 = 2 \, \text{kg}\)</span>, <span class="math notranslate nohighlight">\(m_2 = 3 \, \text{kg}\)</span>, e <span class="math notranslate nohighlight">\(m_3 = 5 \, \text{kg}\)</span>, sono posizionate nei punti <span class="math notranslate nohighlight">\(A(0, 0)\)</span>, <span class="math notranslate nohighlight">\(B(0, 3)\)</span> e <span class="math notranslate nohighlight">\(C(4, 0)\)</span>. Calcola il centro di massa del sistema.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-7">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.8 </span> (Forza risultante su un sistema)</p>
+<div class="section" id="exercise-content">
+<p>Un sistema è composto da due blocchi, <span class="math notranslate nohighlight">\(m_1 = 10 \, \text{kg}\)</span> e <span class="math notranslate nohighlight">\(m_2 = 15 \, \text{kg}\)</span>, collegati da una fune inestensibile. Il sistema è posto su una superficie orizzontale liscia e viene tirato con una forza di <span class="math notranslate nohighlight">\(50 \, \text{N}\)</span>. Calcola l’accelerazione del sistema e la tensione nella fune.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-8">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.9 </span> (Forze interne e centro di massa)</p>
+<div class="section" id="exercise-content">
+<p>Un sistema di tre masse uguali <span class="math notranslate nohighlight">\(m = 2 \, \text{kg}\)</span> si trova nei punti <span class="math notranslate nohighlight">\(A(1, 0)\)</span>, <span class="math notranslate nohighlight">\(B(0, 1)\)</span> e <span class="math notranslate nohighlight">\(C(-1, 0)\)</span>. Qual è la forza risultante se tutte le masse sono soggette a una forza <span class="math notranslate nohighlight">\(F = 5 \, \text{N}\)</span> diretta lungo <span class="math notranslate nohighlight">\(x\)</span>?</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-9">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.10 </span> (Centro di massa su un piano inclinato)</p>
+<div class="section" id="exercise-content">
+<p>Due blocchi di massa <span class="math notranslate nohighlight">\(m_1 = 3 \, \text{kg}\)</span> e <span class="math notranslate nohighlight">\(m_2 = 7 \, \text{kg}\)</span> sono collegati e posti su un piano inclinato di <span class="math notranslate nohighlight">\(30^\circ\)</span>. Trova la posizione del centro di massa rispetto al punto più basso del piano.</p>
+</div>
+</div>
+</div>
+<div class="section" id="statica-del-corpo-rigido">
+<h2><span class="section-number">8.4.3. </span>Statica del corpo rigido<a class="headerlink" href="#statica-del-corpo-rigido" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-10">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.11 </span> (Bilancia a due bracci)</p>
+<div class="section" id="exercise-content">
+<p>Una bilancia a due bracci ha lunghezza totale <span class="math notranslate nohighlight">\(1,2 \, \text{m}\)</span> e il fulcro è posto al centro. Se una massa di <span class="math notranslate nohighlight">\(5 \, \text{kg}\)</span> è appesa a <span class="math notranslate nohighlight">\(20 \, \text{cm}\)</span> dal fulcro su un lato, qual è la massa necessaria dall’altro lato per bilanciare il sistema?</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-11">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.12 </span> (Porta incernierata)</p>
+<div class="section" id="exercise-content">
+<p>Una porta rettangolare larga <span class="math notranslate nohighlight">\(1,0 \, \text{m}\)</span> e alta <span class="math notranslate nohighlight">\(2,0 \, \text{m}\)</span> ha una massa di <span class="math notranslate nohighlight">\(20 \, \text{kg}\)</span>. Qual è la forza esercitata dalle cerniere superiori e inferiori in condizioni di equilibrio statico?</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-12">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.13 </span> (Traversa uniformemente caricata)</p>
+<div class="section" id="exercise-content">
+<p>Una trave orizzontale lunga <span class="math notranslate nohighlight">\(6,0 \, \text{m}\)</span> e del peso di <span class="math notranslate nohighlight">\(200 \, \text{N}\)</span> è sostenuta alle estremità. Un peso di <span class="math notranslate nohighlight">\(100 \, \text{N}\)</span> è appeso a <span class="math notranslate nohighlight">\(2,0 \, \text{m}\)</span> da un’estremità. Calcola le reazioni vincolari alle estremità della trave.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-13">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.14 </span> (Scale in equilibrio)</p>
+<div class="section" id="exercise-content">
+<p>Una scala lunga <span class="math notranslate nohighlight">\(5,0 \, \text{m}\)</span> e del peso di <span class="math notranslate nohighlight">\(50 \, \text{N}\)</span> è appoggiata su un muro liscio e sul pavimento ruvido. Se la scala forma un angolo di <span class="math notranslate nohighlight">\(60^\circ\)</span> con il pavimento, calcola la forza di attrito necessaria per mantenerla ferma.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-14">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.15 </span> (Braccio di leva con peso)</p>
+<div class="section" id="exercise-content">
+<p>Un’asta di <span class="math notranslate nohighlight">\(4,0 \, \text{m}\)</span> è sospesa orizzontalmente su un perno a <span class="math notranslate nohighlight">\(1,0 \, \text{m}\)</span> da un’estremità. Una forza <span class="math notranslate nohighlight">\(F = 80 \, \text{N}\)</span> agisce verso il basso a <span class="math notranslate nohighlight">\(2,0 \, \text{m}\)</span> dall’estremità opposta. Determina la reazione vincolare al perno.</p>
+</div>
+</div>
+</div>
+<div class="section" id="miscellanea">
+<h2><span class="section-number">8.4.4. </span>Miscellanea<a class="headerlink" href="#miscellanea" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-15">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.16 </span> (Trave con cavo)</p>
+<div class="section" id="exercise-content">
+<p>Una trave lunga <span class="math notranslate nohighlight">\(6,0 \, \text{m}\)</span> e del peso di <span class="math notranslate nohighlight">\(300 \, \text{N}\)</span> è fissata a una parete con una cerniera e sostenuta da un cavo a <span class="math notranslate nohighlight">\(4,0 \, \text{m}\)</span> dall’estremità della parete. Il cavo forma un angolo di <span class="math notranslate nohighlight">\(30^\circ\)</span> con la trave. Calcola la tensione nel cavo.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-16">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.17 </span> (Sistema articolato)</p>
+<div class="section" id="exercise-content">
+<p>Una struttura triangolare è composta da tre aste rigide uguali di lunghezza <span class="math notranslate nohighlight">\(2,0 \, \text{m}\)</span> e connesse in modo articolato. Calcola le forze interne negli elementi se il triangolo è appeso in equilibrio verticale e caricato con <span class="math notranslate nohighlight">\(F = 100 \, \text{N}\)</span> alla sommità.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-17">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.18 </span> (Fune con tensione)</p>
+<div class="section" id="exercise-content">
+<p>Una fune orizzontale lunga <span class="math notranslate nohighlight">\(3,0 \, \text{m}\)</span> sostiene un peso di <span class="math notranslate nohighlight">\(50 \, \text{N}\)</span> al centro. Se gli estremi sono fissati a un’altezza uguale e la fune forma un angolo di <span class="math notranslate nohighlight">\(10^\circ\)</span> agli estremi, calcola la tensione massima nella fune.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-18">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.19 </span> (Struttura con due travi)</p>
+<div class="section" id="exercise-content">
+<p>Due travi di uguale lunghezza <span class="math notranslate nohighlight">\(L = 4,0 \, \text{m}\)</span> sono connesse ad angolo retto e fissate a una parete. Una forza <span class="math notranslate nohighlight">\(F = 200 \, \text{N}\)</span> agisce verticalmente verso il basso sul punto di connessione. Calcola le reazioni alle estremità fissate.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-19">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.20 </span> (Equilibrio di un ponte)</p>
+<div class="section" id="exercise-content">
+<p>Un ponte di lunghezza <span class="math notranslate nohighlight">\(20,0 \, \text{m}\)</span> e peso <span class="math notranslate nohighlight">\(10.000 \, \text{N}\)</span> è sostenuto a entrambe le estremità. Un veicolo di <span class="math notranslate nohighlight">\(2.000 \, \text{N}\)</span> è fermo a <span class="math notranslate nohighlight">\(5,0 \, \text{m}\)</span> da un’estremità. Calcola le reazioni vincolari alle estremità.</p>
+</div>
+</div>
 <!-- Esercizio ************************************************************* -->
 <!-- Esercizio ************************************************************* -->
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
@@ -1039,6 +1205,7 @@ Soluzione.<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 </div>
 </details></div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1094,6 +1261,23 @@ Soluzione.<div class="sd-summary-down docutils">
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-del-punto-materiale">8.4.1. Statica del punto materiale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-punti-materiali">8.4.2. Sistemi di punti materiali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-del-corpo-rigido">8.4.3. Statica del corpo rigido</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miscellanea">8.4.4. Miscellanea</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

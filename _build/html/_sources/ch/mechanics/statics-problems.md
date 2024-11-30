@@ -1,6 +1,98 @@
 (physics-hs:mechanics:statics:problems)=
 # Problemi
 
+Questa pagina contiene esercizi di statica suddivisi in quattro categorie: **statica del punto materiale**, **sistemi di punti materiali**, **corpi rigidi**, e una sezione **varia**. Gli esercizi sono progettati per studenti con una buona conoscenza della statica e delle sue applicazioni.
+
+## Statica del punto materiale
+
+```{exercise} Equilibrio di un punto materiale
+Un punto materiale è soggetto a due forze: $F_1 = 20 \, \text{N}$ inclinata di $30^\circ$ rispetto all'orizzontale e $F_2 = 10 \, \text{N}$ orizzontale. Determina una terza forza $F_3$ necessaria per mantenere il punto in equilibrio.
+```
+
+```{exercise} Forza normale e attrito
+Un blocco di $10 \, \text{kg}$ è fermo su un piano inclinato di $20^\circ$. Calcola la forza normale e la forza di attrito statico necessarie per mantenere l’equilibrio.
+```
+
+```{exercise} Corde in equilibrio
+Un punto materiale è sospeso mediante due corde: la prima forma un angolo di $45^\circ$ con l'orizzontale, e la seconda un angolo di $60^\circ$. La massa sospesa è $15 \, \text{kg}$. Calcola le tensioni nelle due corde.
+```
+
+```{exercise} Equilibrio su un piano inclinato
+Un blocco di massa $5 \, \text{kg}$ è posizionato su un piano inclinato liscio di $30^\circ$. Qual è la forza $F$ necessaria per mantenerlo fermo, applicata parallelamente al piano?
+```
+
+```{exercise} Forze in una rete di cavi
+Un palo verticale è tenuto in posizione da due cavi inclinati. Il primo cavo forma un angolo di $40^\circ$ con l'orizzontale e il secondo $50^\circ$. Se il peso del palo è $200 \, \text{N}$, calcola le tensioni nei cavi.
+```
+
+## Sistemi di punti materiali
+
+```{exercise} Centro di massa di due punti
+Due masse, $m_1 = 3 \, \text{kg}$ e $m_2 = 7 \, \text{kg}$, sono posizionate rispettivamente nei punti $A(0, 0)$ e $B(4, 0)$. Determina la posizione del centro di massa del sistema.
+```
+
+```{exercise} Equilibrio di un sistema di tre punti
+Tre masse, $m_1 = 2 \, \text{kg}$, $m_2 = 3 \, \text{kg}$, e $m_3 = 5 \, \text{kg}$, sono posizionate nei punti $A(0, 0)$, $B(0, 3)$ e $C(4, 0)$. Calcola il centro di massa del sistema.
+```
+
+```{exercise} Forza risultante su un sistema
+Un sistema è composto da due blocchi, $m_1 = 10 \, \text{kg}$ e $m_2 = 15 \, \text{kg}$, collegati da una fune inestensibile. Il sistema è posto su una superficie orizzontale liscia e viene tirato con una forza di $50 \, \text{N}$. Calcola l’accelerazione del sistema e la tensione nella fune.
+```
+
+```{exercise} Forze interne e centro di massa
+Un sistema di tre masse uguali $m = 2 \, \text{kg}$ si trova nei punti $A(1, 0)$, $B(0, 1)$ e $C(-1, 0)$. Qual è la forza risultante se tutte le masse sono soggette a una forza $F = 5 \, \text{N}$ diretta lungo $x$?
+```
+
+```{exercise} Centro di massa su un piano inclinato
+Due blocchi di massa $m_1 = 3 \, \text{kg}$ e $m_2 = 7 \, \text{kg}$ sono collegati e posti su un piano inclinato di $30^\circ$. Trova la posizione del centro di massa rispetto al punto più basso del piano.
+```
+
+## Statica del corpo rigido
+
+```{exercise} Bilancia a due bracci
+Una bilancia a due bracci ha lunghezza totale $1,2 \, \text{m}$ e il fulcro è posto al centro. Se una massa di $5 \, \text{kg}$ è appesa a $20 \, \text{cm}$ dal fulcro su un lato, qual è la massa necessaria dall'altro lato per bilanciare il sistema?
+```
+
+```{exercise} Porta incernierata
+Una porta rettangolare larga $1,0 \, \text{m}$ e alta $2,0 \, \text{m}$ ha una massa di $20 \, \text{kg}$. Qual è la forza esercitata dalle cerniere superiori e inferiori in condizioni di equilibrio statico?
+```
+
+```{exercise} Traversa uniformemente caricata
+Una trave orizzontale lunga $6,0 \, \text{m}$ e del peso di $200 \, \text{N}$ è sostenuta alle estremità. Un peso di $100 \, \text{N}$ è appeso a $2,0 \, \text{m}$ da un'estremità. Calcola le reazioni vincolari alle estremità della trave.
+```
+
+```{exercise} Scale in equilibrio
+Una scala lunga $5,0 \, \text{m}$ e del peso di $50 \, \text{N}$ è appoggiata su un muro liscio e sul pavimento ruvido. Se la scala forma un angolo di $60^\circ$ con il pavimento, calcola la forza di attrito necessaria per mantenerla ferma.
+```
+
+```{exercise} Braccio di leva con peso
+Un'asta di $4,0 \, \text{m}$ è sospesa orizzontalmente su un perno a $1,0 \, \text{m}$ da un'estremità. Una forza $F = 80 \, \text{N}$ agisce verso il basso a $2,0 \, \text{m}$ dall’estremità opposta. Determina la reazione vincolare al perno.
+```
+
+## Miscellanea
+
+```{exercise} Trave con cavo
+Una trave lunga $6,0 \, \text{m}$ e del peso di $300 \, \text{N}$ è fissata a una parete con una cerniera e sostenuta da un cavo a $4,0 \, \text{m}$ dall'estremità della parete. Il cavo forma un angolo di $30^\circ$ con la trave. Calcola la tensione nel cavo.
+```
+
+```{exercise} Sistema articolato
+Una struttura triangolare è composta da tre aste rigide uguali di lunghezza $2,0 \, \text{m}$ e connesse in modo articolato. Calcola le forze interne negli elementi se il triangolo è appeso in equilibrio verticale e caricato con $F = 100 \, \text{N}$ alla sommità.
+```
+
+```{exercise} Fune con tensione
+Una fune orizzontale lunga $3,0 \, \text{m}$ sostiene un peso di $50 \, \text{N}$ al centro. Se gli estremi sono fissati a un’altezza uguale e la fune forma un angolo di $10^\circ$ agli estremi, calcola la tensione massima nella fune.
+```
+
+```{exercise} Struttura con due travi
+Due travi di uguale lunghezza $L = 4,0 \, \text{m}$ sono connesse ad angolo retto e fissate a una parete. Una forza $F = 200 \, \text{N}$ agisce verticalmente verso il basso sul punto di connessione. Calcola le reazioni alle estremità fissate.
+```
+
+```{exercise} Equilibrio di un ponte
+Un ponte di lunghezza $20,0 \, \text{m}$ e peso $10.000 \, \text{N}$ è sostenuto a entrambe le estremità. Un veicolo di $2.000 \, \text{N}$ è fermo a $5,0 \, \text{m}$ da un’estremità. Calcola le reazioni vincolari alle estremità.
+```
+
+
+
 <!-- Esercizio ************************************************************* -->
 ````{only} latex
 
@@ -441,6 +533,10 @@ Data la massa $m$ della massa puntiforme appeso tramite due fili inestensibili i
 
 ```{dropdown} Soluzione.
 ```
+
+
+
+
 
 <!-- Esercizio ************************************************************* -->
 ::::{grid}
