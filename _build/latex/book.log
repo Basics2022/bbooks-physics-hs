@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.16)  30 NOV 2024 13:29
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.16)  30 NOV 2024 13:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1652,17 +1652,17 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 7.
 [1
 
-] [2])
+] [2] [3])
 \tf@toc=\write7
 \openout7 = `book.toc'.
 
- [3] [4
-
-]
+ [4]
 LaTeX Info: Redefining \rmfamily on input line 126.
 LaTeX Info: Redefining \sffamily on input line 126.
 LaTeX Info: Redefining \ttfamily on input line 126.
- [1]
+ [1
+
+]
 LaTeX Info: Redefining \rmfamily on input line 126.
 LaTeX Info: Redefining \sffamily on input line 126.
 LaTeX Info: Redefining \ttfamily on input line 126.
@@ -2493,327 +2493,400 @@ LaTeX Info: Redefining \rmfamily on input line 12956.
 LaTeX Info: Redefining \sffamily on input line 12956.
 LaTeX Info: Redefining \ttfamily on input line 12956.
  [184]
-File: electric-current.png Graphic file (type bmp)
-<electric-current.png>
-File: electric-current-solids.png Graphic file (type bmp)
-<electric-current-solids.png>
-File: electric-current.png Graphic file (type bmp)
-<electric-current.png>
-File: electric-current-solids.png Graphic file (type bmp)
-<electric-current-solids.png>
-LaTeX Info: Redefining \rmfamily on input line 13016.
-LaTeX Info: Redefining \sffamily on input line 13016.
-LaTeX Info: Redefining \ttfamily on input line 13016.
+LaTeX Info: Redefining \rmfamily on input line 13046.
+LaTeX Info: Redefining \sffamily on input line 13046.
+LaTeX Info: Redefining \ttfamily on input line 13046.
  [185]
-LaTeX Info: Redefining \rmfamily on input line 13100.
-LaTeX Info: Redefining \sffamily on input line 13100.
-LaTeX Info: Redefining \ttfamily on input line 13100.
+LaTeX Info: Redefining \rmfamily on input line 13134.
+LaTeX Info: Redefining \sffamily on input line 13134.
+LaTeX Info: Redefining \ttfamily on input line 13134.
  [186]
-LaTeX Info: Redefining \rmfamily on input line 13175.
-LaTeX Info: Redefining \sffamily on input line 13175.
-LaTeX Info: Redefining \ttfamily on input line 13175.
+LaTeX Info: Redefining \rmfamily on input line 13221.
+LaTeX Info: Redefining \sffamily on input line 13221.
+LaTeX Info: Redefining \ttfamily on input line 13221.
  [187]
-LaTeX Info: Redefining \rmfamily on input line 13240.
-LaTeX Info: Redefining \sffamily on input line 13240.
-LaTeX Info: Redefining \ttfamily on input line 13240.
+File: electric-current.png Graphic file (type bmp)
+<electric-current.png>
+File: electric-current-solids.png Graphic file (type bmp)
+<electric-current-solids.png>
+File: electric-current.png Graphic file (type bmp)
+<electric-current.png>
+File: electric-current-solids.png Graphic file (type bmp)
+<electric-current-solids.png>
+LaTeX Info: Redefining \rmfamily on input line 13258.
+LaTeX Info: Redefining \sffamily on input line 13258.
+LaTeX Info: Redefining \ttfamily on input line 13258.
  [188]
-LaTeX Info: Redefining \rmfamily on input line 13288.
-LaTeX Info: Redefining \sffamily on input line 13288.
-LaTeX Info: Redefining \ttfamily on input line 13288.
+LaTeX Info: Redefining \rmfamily on input line 13336.
+LaTeX Info: Redefining \sffamily on input line 13336.
+LaTeX Info: Redefining \ttfamily on input line 13336.
 
 [189]
-LaTeX Info: Redefining \rmfamily on input line 13358.
-LaTeX Info: Redefining \sffamily on input line 13358.
-LaTeX Info: Redefining \ttfamily on input line 13358.
+LaTeX Info: Redefining \rmfamily on input line 13420.
+LaTeX Info: Redefining \sffamily on input line 13420.
+LaTeX Info: Redefining \ttfamily on input line 13420.
  [190]
-LaTeX Info: Redefining \rmfamily on input line 13417.
-LaTeX Info: Redefining \sffamily on input line 13417.
-LaTeX Info: Redefining \ttfamily on input line 13417.
+LaTeX Info: Redefining \rmfamily on input line 13501.
+LaTeX Info: Redefining \sffamily on input line 13501.
+LaTeX Info: Redefining \ttfamily on input line 13501.
  [191]
-LaTeX Info: Redefining \rmfamily on input line 13417.
-LaTeX Info: Redefining \sffamily on input line 13417.
-LaTeX Info: Redefining \ttfamily on input line 13417.
- [192
+LaTeX Info: Redefining \rmfamily on input line 13569.
+LaTeX Info: Redefining \sffamily on input line 13569.
+LaTeX Info: Redefining \ttfamily on input line 13569.
+ [192]
+LaTeX Info: Redefining \rmfamily on input line 13634.
+LaTeX Info: Redefining \sffamily on input line 13634.
+LaTeX Info: Redefining \ttfamily on input line 13634.
+ [193]
+LaTeX Info: Redefining \rmfamily on input line 13682.
+LaTeX Info: Redefining \sffamily on input line 13682.
+LaTeX Info: Redefining \ttfamily on input line 13682.
+ [194]
+LaTeX Info: Redefining \rmfamily on input line 13752.
+LaTeX Info: Redefining \sffamily on input line 13752.
+LaTeX Info: Redefining \ttfamily on input line 13752.
+ [195]
+LaTeX Info: Redefining \rmfamily on input line 13840.
+LaTeX Info: Redefining \sffamily on input line 13840.
+LaTeX Info: Redefining \ttfamily on input line 13840.
+ [196]
+LaTeX Info: Redefining \rmfamily on input line 13921.
+LaTeX Info: Redefining \sffamily on input line 13921.
+LaTeX Info: Redefining \ttfamily on input line 13921.
+ [197]
+LaTeX Info: Redefining \rmfamily on input line 14002.
+LaTeX Info: Redefining \sffamily on input line 14002.
+LaTeX Info: Redefining \ttfamily on input line 14002.
+ [198]
+LaTeX Info: Redefining \rmfamily on input line 14095.
+LaTeX Info: Redefining \sffamily on input line 14095.
+LaTeX Info: Redefining \ttfamily on input line 14095.
+ [199]
+LaTeX Info: Redefining \rmfamily on input line 14176.
+LaTeX Info: Redefining \sffamily on input line 14176.
+LaTeX Info: Redefining \ttfamily on input line 14176.
+ [200]
+LaTeX Info: Redefining \rmfamily on input line 14257.
+LaTeX Info: Redefining \sffamily on input line 14257.
+LaTeX Info: Redefining \ttfamily on input line 14257.
 
-]
+[201]
+LaTeX Info: Redefining \rmfamily on input line 14289.
+LaTeX Info: Redefining \sffamily on input line 14289.
+LaTeX Info: Redefining \ttfamily on input line 14289.
+ [202]
 Capitolo 19.
 
-Underfull \hbox (badness 5091) in paragraph at lines 13472--13474
+Underfull \hbox (badness 5091) in paragraph at lines 14344--14346
 []\TU/FreeSerif(0)/m/n/10 A queste discipline, si aggiunge l”\TU/FreeSerif(0)/b
 /n/10 ottica todo\TU/FreeSerif(0)/m/n/10 …non sempre è possibile fare una disti
 nzione netta tra le
  []
 
-[193]
-LaTeX Info: Redefining \rmfamily on input line 13553.
-LaTeX Info: Redefining \sffamily on input line 13553.
-LaTeX Info: Redefining \ttfamily on input line 13553.
- [194]
-LaTeX Info: Redefining \rmfamily on input line 13659.
-LaTeX Info: Redefining \sffamily on input line 13659.
-LaTeX Info: Redefining \ttfamily on input line 13659.
- [195]
-LaTeX Info: Redefining \rmfamily on input line 13689.
-LaTeX Info: Redefining \sffamily on input line 13689.
-LaTeX Info: Redefining \ttfamily on input line 13689.
- [196]
-Capitolo 20.
-[197
+[203
 
 ]
-LaTeX Info: Redefining \rmfamily on input line 13735.
-LaTeX Info: Redefining \sffamily on input line 13735.
-LaTeX Info: Redefining \ttfamily on input line 13735.
- [198
-
-] [199] [200]
-Capitolo 21.
-[201
-
-]
-LaTeX Info: Redefining \rmfamily on input line 13954.
-LaTeX Info: Redefining \sffamily on input line 13954.
-LaTeX Info: Redefining \ttfamily on input line 13954.
- [202]
-LaTeX Info: Redefining \rmfamily on input line 14003.
-LaTeX Info: Redefining \sffamily on input line 14003.
-LaTeX Info: Redefining \ttfamily on input line 14003.
- [203]
-LaTeX Info: Redefining \rmfamily on input line 14003.
-LaTeX Info: Redefining \sffamily on input line 14003.
-LaTeX Info: Redefining \ttfamily on input line 14003.
- [204
-
-]
-Capitolo 22.
-[205]
-LaTeX Info: Redefining \rmfamily on input line 14011.
-LaTeX Info: Redefining \sffamily on input line 14011.
-LaTeX Info: Redefining \ttfamily on input line 14011.
- [206
-
-]
-Capitolo 23.
-[207]
-LaTeX Info: Redefining \rmfamily on input line 14163.
-LaTeX Info: Redefining \sffamily on input line 14163.
-LaTeX Info: Redefining \ttfamily on input line 14163.
+LaTeX Info: Redefining \rmfamily on input line 14425.
+LaTeX Info: Redefining \sffamily on input line 14425.
+LaTeX Info: Redefining \ttfamily on input line 14425.
+ [204]
+LaTeX Info: Redefining \rmfamily on input line 14541.
+LaTeX Info: Redefining \sffamily on input line 14541.
+LaTeX Info: Redefining \ttfamily on input line 14541.
+ [205]
+LaTeX Info: Redefining \rmfamily on input line 14632.
+LaTeX Info: Redefining \sffamily on input line 14632.
+LaTeX Info: Redefining \ttfamily on input line 14632.
+ [206]
+LaTeX Info: Redefining \rmfamily on input line 14709.
+LaTeX Info: Redefining \sffamily on input line 14709.
+LaTeX Info: Redefining \ttfamily on input line 14709.
+ [207]
+LaTeX Info: Redefining \rmfamily on input line 14797.
+LaTeX Info: Redefining \sffamily on input line 14797.
+LaTeX Info: Redefining \ttfamily on input line 14797.
  [208]
-LaTeX Info: Redefining \rmfamily on input line 14239.
-LaTeX Info: Redefining \sffamily on input line 14239.
-LaTeX Info: Redefining \ttfamily on input line 14239.
+LaTeX Info: Redefining \rmfamily on input line 14878.
+LaTeX Info: Redefining \sffamily on input line 14878.
+LaTeX Info: Redefining \ttfamily on input line 14878.
  [209]
-LaTeX Info: Redefining \rmfamily on input line 14282.
-LaTeX Info: Redefining \sffamily on input line 14282.
-LaTeX Info: Redefining \ttfamily on input line 14282.
+LaTeX Info: Redefining \rmfamily on input line 14959.
+LaTeX Info: Redefining \sffamily on input line 14959.
+LaTeX Info: Redefining \ttfamily on input line 14959.
  [210]
-Capitolo 24.
-[211
+LaTeX Info: Redefining \rmfamily on input line 15039.
+LaTeX Info: Redefining \sffamily on input line 15039.
+LaTeX Info: Redefining \ttfamily on input line 15039.
+ [211]
+LaTeX Info: Redefining \rmfamily on input line 15089.
+LaTeX Info: Redefining \sffamily on input line 15089.
+LaTeX Info: Redefining \ttfamily on input line 15089.
+ [212]
+Capitolo 20.
+[213
 
 ]
-LaTeX Info: Redefining \rmfamily on input line 14341.
-LaTeX Info: Redefining \sffamily on input line 14341.
-LaTeX Info: Redefining \ttfamily on input line 14341.
- [212
+LaTeX Info: Redefining \rmfamily on input line 15234.
+LaTeX Info: Redefining \sffamily on input line 15234.
+LaTeX Info: Redefining \ttfamily on input line 15234.
+ [214]
+LaTeX Info: Redefining \rmfamily on input line 15302.
+LaTeX Info: Redefining \sffamily on input line 15302.
+LaTeX Info: Redefining \ttfamily on input line 15302.
+ [215]
+LaTeX Info: Redefining \rmfamily on input line 15302.
+LaTeX Info: Redefining \sffamily on input line 15302.
+LaTeX Info: Redefining \ttfamily on input line 15302.
+ [216
 
-]
-Capitolo 25.
-[213]
-LaTeX Info: Redefining \rmfamily on input line 14360.
-LaTeX Info: Redefining \sffamily on input line 14360.
-LaTeX Info: Redefining \ttfamily on input line 14360.
- [214
-
-]
-Capitolo 26.
-[215]
-LaTeX Info: Redefining \rmfamily on input line 14510.
-LaTeX Info: Redefining \sffamily on input line 14510.
-LaTeX Info: Redefining \ttfamily on input line 14510.
- [216] [217
-
-] [218]
-Capitolo 27.
+] [217] [218]
+Capitolo 21.
 [219
 
 ]
-LaTeX Info: Redefining \rmfamily on input line 14523.
-LaTeX Info: Redefining \sffamily on input line 14523.
-LaTeX Info: Redefining \ttfamily on input line 14523.
- [220
+LaTeX Info: Redefining \rmfamily on input line 15521.
+LaTeX Info: Redefining \sffamily on input line 15521.
+LaTeX Info: Redefining \ttfamily on input line 15521.
+ [220]
+LaTeX Info: Redefining \rmfamily on input line 15570.
+LaTeX Info: Redefining \sffamily on input line 15570.
+LaTeX Info: Redefining \ttfamily on input line 15570.
+ [221]
+LaTeX Info: Redefining \rmfamily on input line 15570.
+LaTeX Info: Redefining \sffamily on input line 15570.
+LaTeX Info: Redefining \ttfamily on input line 15570.
+ [222
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 14526--14527
+Capitolo 22.
+[223]
+LaTeX Info: Redefining \rmfamily on input line 15578.
+LaTeX Info: Redefining \sffamily on input line 15578.
+LaTeX Info: Redefining \ttfamily on input line 15578.
+ [224
+
+]
+Capitolo 23.
+[225]
+LaTeX Info: Redefining \rmfamily on input line 15730.
+LaTeX Info: Redefining \sffamily on input line 15730.
+LaTeX Info: Redefining \ttfamily on input line 15730.
+ [226]
+LaTeX Info: Redefining \rmfamily on input line 15806.
+LaTeX Info: Redefining \sffamily on input line 15806.
+LaTeX Info: Redefining \ttfamily on input line 15806.
+ [227]
+LaTeX Info: Redefining \rmfamily on input line 15849.
+LaTeX Info: Redefining \sffamily on input line 15849.
+LaTeX Info: Redefining \ttfamily on input line 15849.
+ [228]
+Capitolo 24.
+[229
+
+]
+LaTeX Info: Redefining \rmfamily on input line 15908.
+LaTeX Info: Redefining \sffamily on input line 15908.
+LaTeX Info: Redefining \ttfamily on input line 15908.
+ [230
+
+]
+Capitolo 25.
+[231]
+LaTeX Info: Redefining \rmfamily on input line 15927.
+LaTeX Info: Redefining \sffamily on input line 15927.
+LaTeX Info: Redefining \ttfamily on input line 15927.
+ [232
+
+]
+Capitolo 26.
+[233]
+LaTeX Info: Redefining \rmfamily on input line 16077.
+LaTeX Info: Redefining \sffamily on input line 16077.
+LaTeX Info: Redefining \ttfamily on input line 16077.
+ [234] [235
+
+] [236]
+Capitolo 27.
+[237
+
+]
+LaTeX Info: Redefining \rmfamily on input line 16090.
+LaTeX Info: Redefining \sffamily on input line 16090.
+LaTeX Info: Redefining \ttfamily on input line 16090.
+ [238
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 16093--16094
 []\TU/FreeMono(0)/m/n/10 definition-0 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)
 /m/it/10 ch/thermodynamics/principles-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14526--14527
+Underfull \hbox (badness 10000) in paragraph at lines 16093--16094
 \TU/FreeSerif(0)/m/it/10 gibbs-phase-rule\TU/FreeSerif(0)/m/n/10 ),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14529--14530
+Underfull \hbox (badness 10000) in paragraph at lines 16096--16097
 []\TU/FreeMono(0)/m/n/10 definition-2 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)
 /m/it/10 ch/thermodynamics/principles-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14529--14530
+Underfull \hbox (badness 10000) in paragraph at lines 16096--16097
 \TU/FreeSerif(0)/m/it/10 gibbs-phase-rule\TU/FreeSerif(0)/m/n/10 ),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14532--14533
+Underfull \hbox (badness 10000) in paragraph at lines 16099--16100
 []\TU/FreeMono(0)/m/n/10 definition-3 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)
 /m/it/10 ch/thermodynamics/principles-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14532--14533
+Underfull \hbox (badness 10000) in paragraph at lines 16099--16100
 \TU/FreeSerif(0)/m/it/10 gibbs-phase-rule\TU/FreeSerif(0)/m/n/10 ),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14541--14542
+Underfull \hbox (badness 10000) in paragraph at lines 16108--16109
 []\TU/FreeMono(0)/m/n/10 example-10 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)/m
 /it/10 ch/thermodynamics/principles-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14541--14542
+Underfull \hbox (badness 10000) in paragraph at lines 16108--16109
 \TU/FreeSerif(0)/m/it/10 gibbs-phase-rule\TU/FreeSerif(0)/m/n/10 ),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14544--14545
+Underfull \hbox (badness 10000) in paragraph at lines 16111--16112
 []\TU/FreeMono(0)/m/n/10 example-11 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)/m
 /it/10 ch/thermodynamics/principles-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14544--14545
+Underfull \hbox (badness 10000) in paragraph at lines 16111--16112
 \TU/FreeSerif(0)/m/it/10 gibbs-phase-rule\TU/FreeSerif(0)/m/n/10 ),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14547--14548
+Underfull \hbox (badness 10000) in paragraph at lines 16114--16115
 []\TU/FreeMono(0)/m/n/10 example-12 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)/m
 /it/10 ch/thermodynamics/principles-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14547--14548
+Underfull \hbox (badness 10000) in paragraph at lines 16114--16115
 \TU/FreeSerif(0)/m/it/10 gibbs-phase-rule\TU/FreeSerif(0)/m/n/10 ),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14550--14551
+Underfull \hbox (badness 10000) in paragraph at lines 16117--16118
 []\TU/FreeMono(0)/m/n/10 example-13 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)/m
 /it/10 ch/thermodynamics/principles-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14550--14551
+Underfull \hbox (badness 10000) in paragraph at lines 16117--16118
 \TU/FreeSerif(0)/m/it/10 gibbs-phase-rule\TU/FreeSerif(0)/m/n/10 ),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14553--14554
+Underfull \hbox (badness 10000) in paragraph at lines 16120--16121
 []\TU/FreeMono(0)/m/n/10 example-14 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)/m
 /it/10 ch/thermodynamics/principles-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14553--14554
+Underfull \hbox (badness 10000) in paragraph at lines 16120--16121
 \TU/FreeSerif(0)/m/it/10 gibbs-phase-rule\TU/FreeSerif(0)/m/n/10 ),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14556--14557
+Underfull \hbox (badness 10000) in paragraph at lines 16123--16124
 []\TU/FreeMono(0)/m/n/10 example-15 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)/m
 /it/10 ch/thermodynamics/principles-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14556--14557
+Underfull \hbox (badness 10000) in paragraph at lines 16123--16124
 \TU/FreeSerif(0)/m/it/10 gibbs-phase-rule\TU/FreeSerif(0)/m/n/10 ),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14559--14560
+Underfull \hbox (badness 10000) in paragraph at lines 16126--16127
 []\TU/FreeMono(0)/m/n/10 example-16 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)/m
 /it/10 ch/thermodynamics/principles-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14559--14560
+Underfull \hbox (badness 10000) in paragraph at lines 16126--16127
 \TU/FreeSerif(0)/m/it/10 gibbs-phase-rule\TU/FreeSerif(0)/m/n/10 ),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14562--14563
+Underfull \hbox (badness 10000) in paragraph at lines 16129--16130
 []\TU/FreeMono(0)/m/n/10 example-17 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)/m
 /it/10 ch/thermodynamics/principles-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14562--14563
+Underfull \hbox (badness 10000) in paragraph at lines 16129--16130
 \TU/FreeSerif(0)/m/it/10 gibbs-phase-rule\TU/FreeSerif(0)/m/n/10 ),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14565--14566
+Underfull \hbox (badness 10000) in paragraph at lines 16132--16133
 []\TU/FreeMono(0)/m/n/10 example-18 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)/m
 /it/10 ch/thermodynamics/principles-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14565--14566
+Underfull \hbox (badness 10000) in paragraph at lines 16132--16133
 \TU/FreeSerif(0)/m/it/10 gibbs-phase-rule\TU/FreeSerif(0)/m/n/10 ),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14571--14572
+Underfull \hbox (badness 10000) in paragraph at lines 16138--16139
 []\TU/FreeMono(0)/m/n/10 example-3 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)/m/
 it/10 ch/thermodynamics/foundation-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14574--14575
+Underfull \hbox (badness 10000) in paragraph at lines 16141--16142
 []\TU/FreeMono(0)/m/n/10 example-4 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)/m/
 it/10 ch/thermodynamics/foundation-
  []
 
-[221
+[239
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 14592--14593
+Underfull \hbox (badness 10000) in paragraph at lines 16159--16160
 []\TU/FreeMono(0)/m/n/10 proposition-0 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0
 )/m/it/10 ch/thermodynamics/heat-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14592--14593
+Underfull \hbox (badness 10000) in paragraph at lines 16159--16160
 \TU/FreeSerif(0)/m/it/10 engine-second-principle\TU/FreeSerif(0)/m/n/10 ),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14595--14596
+Underfull \hbox (badness 10000) in paragraph at lines 16162--16163
 []\TU/FreeMono(0)/m/n/10 proposition-1 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0
 )/m/it/10 ch/thermodynamics/heat-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14595--14596
+Underfull \hbox (badness 10000) in paragraph at lines 16162--16163
 \TU/FreeSerif(0)/m/it/10 engine-second-principle\TU/FreeSerif(0)/m/n/10 ),
  []
 
-LaTeX Info: Redefining \rmfamily on input line 14599.
-LaTeX Info: Redefining \sffamily on input line 14599.
-LaTeX Info: Redefining \ttfamily on input line 14599.
-[222
+LaTeX Info: Redefining \rmfamily on input line 16166.
+LaTeX Info: Redefining \sffamily on input line 16166.
+LaTeX Info: Redefining \ttfamily on input line 16166.
+[240
 
 ] (./book.ind)
 The property list \polyglossia@langsetup contains the pairs (without outer
@@ -2850,26 +2923,26 @@ braces):
 >  {italian/babelname}  =>  {italian}
 >  {italian/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {italian/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 14603.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 14603.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 16170.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 16170.
  (./book.aux
 LaTeX Info: Redefining \rmfamily on input line 20.
 LaTeX Info: Redefining \sffamily on input line 20.
 LaTeX Info: Redefining \ttfamily on input line 20.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 14603.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 14603
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 16170.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 16170
 .
 Package rerunfilecheck Info: File `book.out' has not changed.
-(rerunfilecheck)             Checksum: 42763AC550DC26F55D7DF18E315D057F;31161.
+(rerunfilecheck)             Checksum: 6A3D3946ED65C734B66BF887F3CFD122;31972.
  ) 
 Here is how much of TeX's memory you used:
- 43353 strings out of 481789
- 1007257 string characters out of 5937152
+ 43556 strings out of 481789
+ 1021014 string characters out of 5937152
  1670687 words of memory out of 5000000
- 59488 multiletter control sequences out of 15000+600000
- 540136 words of font info for 125 fonts, out of 8000000 for 9000
+ 59688 multiletter control sequences out of 15000+600000
+ 540160 words of font info for 128 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
  71i,26n,109p,2123b,2278s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on book.pdf (228 pages).
+Output written on book.pdf (246 pages).
