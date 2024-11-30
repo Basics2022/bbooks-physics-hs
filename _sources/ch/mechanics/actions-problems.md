@@ -1,4 +1,4 @@
-# Esercizi su Forze, Momenti, Lavoro e Potenza
+# Problemi
 
 Questa pagina contiene una serie di esercizi di fisica classica sulle azioni come forze, momenti, lavoro e potenza. Gli esercizi sono progettati per studenti di liceo con una buona comprensione della meccanica. Prova a risolvere gli esercizi senza guardare le soluzioni e verifica la tua comprensione!
 
