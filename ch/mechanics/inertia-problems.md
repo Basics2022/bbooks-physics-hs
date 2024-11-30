@@ -62,6 +62,14 @@ Calcola il momento di inerzia di un disco di massa $m = 10 \, \text{kg}$ e raggi
 Un disco di massa $m = 8 \, \text{kg}$ e raggio $R = 4 \, \text{m}$ ruota con una velocità angolare $\omega = 6 \, \text{rad/s}$. Calcola la sua energia cinetica totale.
 ```
 
+```{exercise} Momento Angolare di un Corpo Rigido
+Un corpo rigido ruota attorno a un asse con velocità angolare $\omega = 4 \, \text{rad/s}$. Se la massa totale del corpo è $m = 6 \, \text{kg}$ e il raggio di rotazione medio è $r = 2 \, \text{m}$, calcola il momento angolare del corpo.
+```
+
+```{exercise} Energia Cinetica di un Corpo Rigido in Rotazione e Traslazione
+Un corpo rigido di massa $m = 5 \, \text{kg}$ e raggio $r = 3 \, \text{m}$ si muove in traslazione con velocità $v = 2 \, \text{m/s}$ e ruota attorno a un asse con velocità angolare $\omega = 4 \, \text{rad/s}$. Calcola l'energia cinetica totale del corpo.
+```
+
 ```{exercise} Momento di Inerzia di una Barra
 Calcola il momento di inerzia di una barra di lunghezza $L = 2 \, \text{m}$ e massa $m = 4 \, \text{kg}$ rispetto a un asse che passa per un’estremità e perpendicolare alla barra.
 ```

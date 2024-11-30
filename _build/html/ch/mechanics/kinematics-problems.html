@@ -198,6 +198,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="kinematics-deformable.html">6.3. Cinematica dei sistemi deformabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kinematics-relative.html">6.4. Cinematica relativa</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">6.5. Problemi</a></li>
+
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="actions.html">7. Azioni</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -205,6 +206,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="actions-work.html">7.2. Lavoro e potenza</a></li>
 <li class="toctree-l2"><a class="reference internal" href="actions-conservative.html">7.3. Azioni conservative</a></li>
 <li class="toctree-l2"><a class="reference internal" href="actions-examples.html">7.4. Esempi di forze</a></li>
+<li class="toctree-l2"><a class="reference internal" href="actions-problems.html">7.5. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="statics.html">8. Statica</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -218,6 +220,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="inertia-point.html">9.3. Inerzia e grandezze dinamiche di un punto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="inertia-points.html">9.4. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione discreta di massa</a></li>
 <li class="toctree-l2"><a class="reference internal" href="inertia-continuum.html">9.5. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inertia-problems.html">9.6. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="dynamics.html">10. Dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -232,6 +235,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="dynamics-eom-open.html">10.4. Equazioni cardinali della dinamica per sistemi aperti</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-collisions.html">10.5. Collisioni</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-motion-gravitation.html">10.6. Gravitazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-problems.html">10.7. Problemi</a></li>
 </ul>
 </li>
 </ul>
@@ -537,9 +541,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-del-punto">6.5.1. Cinematica del punto</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-del-corpo-rigido">6.5.2. Cinematica del corpo rigido</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">6.5. Problemi</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">6.6. Problemi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-dei-punti-materiali">6.6.1. Cinematica dei Punti Materiali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-dei-corpi-rigidi">6.6.2. Cinematica dei Corpi Rigidi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-relativa">6.6.3. Cinematica Relativa</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettoria-di-un-punto-su-un-disco-che-rotola-su-una-superficie-piana">6.6.4. Traiettoria di un Punto su un Disco che Rotola su una Superficie Piana</a></li>
 </ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -562,7 +573,7 @@ document.write(`
 <p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>30 nov 2024</p>
 </div>
 <div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>2 min read</p>
+<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>5 min read</p>
 </div>
 </div>
 </div>
@@ -571,8 +582,13 @@ document.write(`
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="problemi">
 <span id="physics-hs-mechanics-kinematics-problems"></span><h1><span class="section-number">6.5. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h1>
-<div class="section" id="cinematica-del-punto">
-<h2><span class="section-number">6.5.1. </span>Cinematica del punto<a class="headerlink" href="#cinematica-del-punto" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="id1">
+<h1><span class="section-number">6.6. </span>Problemi<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<p>Questa pagina contiene esercizi di cinematica per punti materiali, corpi rigidi e cinematica relativa, con alcuni esercizi sulla traiettoria di un punto su un disco che rotola su una superficie piana e su superfici circolari.</p>
+<hr class="docutils" />
+<div class="section" id="cinematica-dei-punti-materiali">
+<h2><span class="section-number">6.6.1. </span>Cinematica dei Punti Materiali<a class="headerlink" href="#cinematica-dei-punti-materiali" title="Permalink to this heading">#</a></h2>
 <div class="exercise admonition" id="ch/mechanics/kinematics-problems-exercise-0">
 
 <p class="admonition-title"><span class="caption-number">Exercise 6.1 </span> (Velocità media)</p>
@@ -671,9 +687,151 @@ document.write(`
 <div class="section" id="exercise-content">
 </div>
 </div>
+<div class="exercise admonition" id="ch/mechanics/kinematics-problems-exercise-12">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.13 </span> (Velocità di un Punto in Movimento Rettilineo Uniforme)</p>
+<div class="section" id="exercise-content">
+<p>Un punto materiale si muove lungo una retta con velocità costante di <span class="math notranslate nohighlight">\(v = 10 \, \text{m/s}\)</span>. Calcola la posizione del punto al tempo <span class="math notranslate nohighlight">\(t = 5 \, \text{s}\)</span>, se parte dalla posizione iniziale <span class="math notranslate nohighlight">\(x_0 = 0 \, \text{m}\)</span>.</p>
 </div>
-<div class="section" id="cinematica-del-corpo-rigido">
-<h2><span class="section-number">6.5.2. </span>Cinematica del corpo rigido<a class="headerlink" href="#cinematica-del-corpo-rigido" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="exercise admonition" id="ch/mechanics/kinematics-problems-exercise-13">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.14 </span> (Accelerazione di un Punto in Movimento Uniformemente Accelerato)</p>
+<div class="section" id="exercise-content">
+<p>Un punto materiale parte da fermo e accelera uniformemente con accelerazione <span class="math notranslate nohighlight">\(a = 2 \, \text{m/s}^2\)</span>. Calcola la velocità e la posizione del punto dopo <span class="math notranslate nohighlight">\(t = 3 \, \text{s}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/kinematics-problems-exercise-14">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.15 </span> (Traiettoria di un Punto in Movimento Parabolico)</p>
+<div class="section" id="exercise-content">
+<p>Un punto materiale è lanciato con velocità iniziale <span class="math notranslate nohighlight">\(v_0 = 10 \, \text{m/s}\)</span> sotto un angolo di <span class="math notranslate nohighlight">\(30^\circ\)</span> rispetto all’orizzontale. Calcola la distanza orizzontale percorsa dal punto dopo <span class="math notranslate nohighlight">\(t = 2 \, \text{s}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/kinematics-problems-exercise-15">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.16 </span> (Traiettoria di un Punto in Movimento Circolare Uniforme)</p>
+<div class="section" id="exercise-content">
+<p>Un punto materiale si muove lungo una traiettoria circolare con raggio <span class="math notranslate nohighlight">\(r = 5 \, \text{m}\)</span> e velocità angolare costante <span class="math notranslate nohighlight">\(\omega = 2 \, \text{rad/s}\)</span>. Calcola la velocità lineare del punto.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/kinematics-problems-exercise-16">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.17 </span> (Accelerazione di un Punto in Movimento Circolare Non Uniforme)</p>
+<div class="section" id="exercise-content">
+<p>Un punto materiale si muove lungo una traiettoria circolare con raggio <span class="math notranslate nohighlight">\(r = 4 \, \text{m}\)</span> e velocità angolare che aumenta uniformemente con accelerazione angolare <span class="math notranslate nohighlight">\(\alpha = 0.5 \, \text{rad/s}^2\)</span>. Calcola l’accelerazione centripeta e tangenziale del punto al tempo <span class="math notranslate nohighlight">\(t = 3 \, \text{s}\)</span>.</p>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="cinematica-dei-corpi-rigidi">
+<h2><span class="section-number">6.6.2. </span>Cinematica dei Corpi Rigidi<a class="headerlink" href="#cinematica-dei-corpi-rigidi" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/mechanics/kinematics-problems-exercise-17">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.18 </span> (Velocità di un Punto su un Corpo Rigido in Rotazione)</p>
+<div class="section" id="exercise-content">
+<p>Un corpo rigido ruota con velocità angolare costante <span class="math notranslate nohighlight">\(\omega = 5 \, \text{rad/s}\)</span>. Calcola la velocità di un punto situato a <span class="math notranslate nohighlight">\(r = 3 \, \text{m}\)</span> dall’asse di rotazione.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/kinematics-problems-exercise-18">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.19 </span> (Accelerazione di un Punto su un Corpo Rigido in Rotazione)</p>
+<div class="section" id="exercise-content">
+<p>Un corpo rigido ruota con velocità angolare variabile <span class="math notranslate nohighlight">\(\omega(t) = 3t \, \text{rad/s}\)</span>, dove <span class="math notranslate nohighlight">\(t\)</span> è il tempo in secondi. Calcola l’accelerazione tangenziale di un punto situato a <span class="math notranslate nohighlight">\(r = 4 \, \text{m}\)</span> dall’asse di rotazione al tempo <span class="math notranslate nohighlight">\(t = 2 \, \text{s}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/kinematics-problems-exercise-19">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.20 </span> (Traiettoria di un Punto su un Corpo Rigido in Traslazione e Rotazione)</p>
+<div class="section" id="exercise-content">
+<p>Un corpo rigido si muove in traslazione con velocità costante <span class="math notranslate nohighlight">\(v = 6 \, \text{m/s}\)</span> e contemporaneamente ruota con velocità angolare costante <span class="math notranslate nohighlight">\(\omega = 3 \, \text{rad/s}\)</span>. Calcola la velocità di un punto situato a <span class="math notranslate nohighlight">\(r = 2 \, \text{m}\)</span> dall’asse di rotazione, rispetto a un sistema di riferimento fisso.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/kinematics-problems-exercise-20">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.21 </span> (Momento Angolare di un Corpo Rigido)</p>
+<div class="section" id="exercise-content">
+<p>Un corpo rigido ruota attorno a un asse con velocità angolare <span class="math notranslate nohighlight">\(\omega = 4 \, \text{rad/s}\)</span>. Se la massa totale del corpo è <span class="math notranslate nohighlight">\(m = 6 \, \text{kg}\)</span> e il raggio di rotazione medio è <span class="math notranslate nohighlight">\(r = 2 \, \text{m}\)</span>, calcola il momento angolare del corpo.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/kinematics-problems-exercise-21">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.22 </span> (Energia Cinetica di un Corpo Rigido in Rotazione e Traslazione)</p>
+<div class="section" id="exercise-content">
+<p>Un corpo rigido di massa <span class="math notranslate nohighlight">\(m = 5 \, \text{kg}\)</span> e raggio <span class="math notranslate nohighlight">\(r = 3 \, \text{m}\)</span> si muove in traslazione con velocità <span class="math notranslate nohighlight">\(v = 2 \, \text{m/s}\)</span> e ruota attorno a un asse con velocità angolare <span class="math notranslate nohighlight">\(\omega = 4 \, \text{rad/s}\)</span>. Calcola l’energia cinetica totale del corpo.</p>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="cinematica-relativa">
+<h2><span class="section-number">6.6.3. </span>Cinematica Relativa<a class="headerlink" href="#cinematica-relativa" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/mechanics/kinematics-problems-exercise-22">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.23 </span> (Velocità Relativa di Due Punti su un Corpo Rigido)</p>
+<div class="section" id="exercise-content">
+<p>Due punti <span class="math notranslate nohighlight">\(P_1\)</span> e <span class="math notranslate nohighlight">\(P_2\)</span> sono situati su un corpo rigido che ruota attorno a un asse con velocità angolare <span class="math notranslate nohighlight">\(\omega = 2 \, \text{rad/s}\)</span>. Le distanze dall’asse di rotazione sono <span class="math notranslate nohighlight">\(r_1 = 4 \, \text{m}\)</span> e <span class="math notranslate nohighlight">\(r_2 = 6 \, \text{m}\)</span>. Calcola la velocità relativa tra i due punti.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/kinematics-problems-exercise-23">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.24 </span> (Velocità Relativa di Due Punti in Movimento Circolare)</p>
+<div class="section" id="exercise-content">
+<p>Due punti, <span class="math notranslate nohighlight">\(P_1\)</span> e <span class="math notranslate nohighlight">\(P_2\)</span>, si muovono lungo traiettorie circolari concentriche con raggio rispettivamente <span class="math notranslate nohighlight">\(r_1 = 3 \, \text{m}\)</span> e <span class="math notranslate nohighlight">\(r_2 = 5 \, \text{m}\)</span>, e velocità angolari rispettivamente <span class="math notranslate nohighlight">\(\omega_1 = 4 \, \text{rad/s}\)</span> e <span class="math notranslate nohighlight">\(\omega_2 = 6 \, \text{rad/s}\)</span>. Calcola la velocità relativa tra i due punti.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/kinematics-problems-exercise-24">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.25 </span> (Accelerazione Relativa di Due Punti su un Corpo Rigido)</p>
+<div class="section" id="exercise-content">
+<p>Due punti su un corpo rigido in rotazione hanno velocità angolari <span class="math notranslate nohighlight">\(\omega_1 = 3 \, \text{rad/s}\)</span> e <span class="math notranslate nohighlight">\(\omega_2 = 5 \, \text{rad/s}\)</span>. Calcola l’accelerazione relativa tra i due punti, se le distanze dall’asse di rotazione sono rispettivamente <span class="math notranslate nohighlight">\(r_1 = 4 \, \text{m}\)</span> e <span class="math notranslate nohighlight">\(r_2 = 6 \, \text{m}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/kinematics-problems-exercise-25">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.26 </span> (Traiettoria Relativa di Due Punti su un Corpo Rigido)</p>
+<div class="section" id="exercise-content">
+<p>Due punti <span class="math notranslate nohighlight">\(P_1\)</span> e <span class="math notranslate nohighlight">\(P_2\)</span> si muovono lungo un corpo rigido che ruota con velocità angolare <span class="math notranslate nohighlight">\(\omega = 2 \, \text{rad/s}\)</span>. Le distanze dall’asse di rotazione sono <span class="math notranslate nohighlight">\(r_1 = 3 \, \text{m}\)</span> e <span class="math notranslate nohighlight">\(r_2 = 4 \, \text{m}\)</span>. Calcola la traiettoria relativa di <span class="math notranslate nohighlight">\(P_2\)</span> rispetto a <span class="math notranslate nohighlight">\(P_1\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/kinematics-problems-exercise-26">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.27 </span> (Forza Centripeta e Accelerazione Relativa)</p>
+<div class="section" id="exercise-content">
+<p>Un corpo rigido ruota con velocità angolare costante <span class="math notranslate nohighlight">\(\omega = 3 \, \text{rad/s}\)</span>. Se un punto A è situato a una distanza <span class="math notranslate nohighlight">\(r = 5 \, \text{m}\)</span> dall’asse di rotazione e un altro punto B è situato a <span class="math notranslate nohighlight">\(r = 7 \, \text{m}\)</span>, calcola la forza centripeta e l’accelerazione relativa tra i due punti.</p>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="traiettoria-di-un-punto-su-un-disco-che-rotola-su-una-superficie-piana">
+<h2><span class="section-number">6.6.4. </span>Traiettoria di un Punto su un Disco che Rotola su una Superficie Piana<a class="headerlink" href="#traiettoria-di-un-punto-su-un-disco-che-rotola-su-una-superficie-piana" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/mechanics/kinematics-problems-exercise-27">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.28 </span> (Traiettoria di un Punto su un Disco in Rotolamento)</p>
+<div class="section" id="exercise-content">
+<p>Un disco di raggio <span class="math notranslate nohighlight">\(R = 4 \, \text{m}\)</span> e massa <span class="math notranslate nohighlight">\(m = 6 \, \text{kg}\)</span> rotola senza slittamento su una superficie piana. Calcola la traiettoria di un punto situato a <span class="math notranslate nohighlight">\(r = 2 \, \text{m}\)</span> dal centro del disco.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/kinematics-problems-exercise-28">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.29 </span> (Traiettoria di un Punto su un Disco in Rotolamento Completo)</p>
+<div class="section" id="exercise-content">
+<p>Un disco di raggio <span class="math notranslate nohighlight">\(R = 3 \, \text{m}\)</span> rotola senza slittamento su una superficie piana. Calcola la traiettoria di un punto situato a una distanza <span class="math notranslate nohighlight">\(r = R\)</span> dal centro del disco durante un completo ciclo di rotolamento.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/kinematics-problems-exercise-29">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.30 </span> (Velocità di un Punto su un Disco che Rotola)</p>
+<div class="section" id="exercise-content">
+<p>Un disco di raggio <span class="math notranslate nohighlight">\(R = 5 \, \text{m}\)</span> e velocità di traslazione <span class="math notranslate nohighlight">\(v = 4 \, \text{m/s}\)</span> rotola senza slittamento su una superficie piana. Calcola la velocità di un punto situato a <span class="math notranslate nohighlight">\(r = 2 \, \text{m}\)</span> dal centro del disco.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/mechanics/kinematics-problems-exercise-30">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.31 </span> (Accelerazione di un Punto su un Disco in Rotolamento)</p>
+<div class="section" id="exercise-content">
+<p>Un disco di raggio <span class="math notranslate nohighlight">\(R = 3 \, \text{m}\)</span> ruota senza slittamento con velocità angolare $\omega</p>
+</div>
+</div>
 </div>
 </div>
 
@@ -740,9 +898,16 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-del-punto">6.5.1. Cinematica del punto</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-del-corpo-rigido">6.5.2. Cinematica del corpo rigido</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">6.5. Problemi</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">6.6. Problemi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-dei-punti-materiali">6.6.1. Cinematica dei Punti Materiali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-dei-corpi-rigidi">6.6.2. Cinematica dei Corpi Rigidi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-relativa">6.6.3. Cinematica Relativa</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettoria-di-un-punto-su-un-disco-che-rotola-su-una-superficie-piana">6.6.4. Traiettoria di un Punto su un Disco che Rotola su una Superficie Piana</a></li>
 </ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
