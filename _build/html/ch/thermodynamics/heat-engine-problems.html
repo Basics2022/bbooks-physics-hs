@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/heat-engine-problems';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
@@ -196,6 +198,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-deformable.html">6.3. Cinematica dei sistemi deformabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-relative.html">6.4. Cinematica relativa</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-problems.html">6.5. Problemi</a></li>
+
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/actions.html">7. Azioni</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -515,7 +518,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -531,6 +536,16 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-di-carnot">14.5.1. Ciclo di Carnot</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cicli-termodinamici">14.5.2. Cicli termodinamici</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cicli-reali">14.5.3. Cicli reali</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -542,6 +557,252 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="problemi">
 <span id="physics-hs-thermodynamics-heat-engine-problems"></span><h1><span class="section-number">14.5. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h1>
+<div class="section" id="ciclo-di-carnot">
+<h2><span class="section-number">14.5.1. </span>Ciclo di Carnot<a class="headerlink" href="#ciclo-di-carnot" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.1 </span> (Efficienza di un Ciclo di Carnot)</p>
+<div class="section" id="exercise-content">
+<p>Un motore di Carnot lavora tra una temperatura alta <span class="math notranslate nohighlight">\(T_1 = 500 \, \text{K}\)</span> e una temperatura bassa <span class="math notranslate nohighlight">\(T_2 = 300 \, \text{K}\)</span>. Calcola l’efficienza termica del ciclo e discuti la relazione tra le temperature e l’efficienza.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-1">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.2 </span> (Lavoro nel Ciclo di Carnot)</p>
+<div class="section" id="exercise-content">
+<p>Un motore di Carnot lavora tra <span class="math notranslate nohighlight">\(T_1 = 400 \, \text{K}\)</span> e <span class="math notranslate nohighlight">\(T_2 = 250 \, \text{K}\)</span>. Se il calore assorbito dal serbatoio caldo è <span class="math notranslate nohighlight">\(Q_1 = 800 \, \text{J}\)</span>, calcola il lavoro netto prodotto dal motore.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-2">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.3 </span> (Calore Prodotto in un Ciclo di Carnot)</p>
+<div class="section" id="exercise-content">
+<p>In un ciclo di Carnot, il motore assorbe <span class="math notranslate nohighlight">\(Q_1 = 1000 \, \text{J}\)</span> dal serbatoio caldo a <span class="math notranslate nohighlight">\(T_1 = 600 \, \text{K}\)</span> e cede una quantità di calore <span class="math notranslate nohighlight">\(Q_2\)</span>. Se la temperatura del serbatoio freddo è <span class="math notranslate nohighlight">\(T_2 = 300 \, \text{K}\)</span>, calcola <span class="math notranslate nohighlight">\(Q_2\)</span> e discuti la legge di Carnot.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-3">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.4 </span> (Efficacia di un Ciclo di Carnot)</p>
+<div class="section" id="exercise-content">
+<p>Un motore di Carnot opera tra <span class="math notranslate nohighlight">\(T_1 = 700 \, \text{K}\)</span> e <span class="math notranslate nohighlight">\(T_2 = 350 \, \text{K}\)</span>. Se il calore rilasciato al serbatoio freddo è di <span class="math notranslate nohighlight">\(Q_2 = 500 \, \text{J}\)</span>, calcola l’efficienza del ciclo e discuti le implicazioni nella produzione di energia.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-4">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.5 </span> (Ciclo di Carnot e Lavoro Netto)</p>
+<div class="section" id="exercise-content">
+<p>Un ciclo di Carnot lavora con un serbatoio caldo a <span class="math notranslate nohighlight">\(T_1 = 500 \, \text{K}\)</span> e un serbatoio freddo a <span class="math notranslate nohighlight">\(T_2 = 250 \, \text{K}\)</span>. Se il motore compie 100 cicli, e ad ogni ciclo assorbe <span class="math notranslate nohighlight">\(Q_1 = 1000 \, \text{J}\)</span>, calcola il lavoro netto prodotto dopo 100 cicli.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-5">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.6 </span> (Ciclo di Carnot Ideale)</p>
+<div class="section" id="exercise-content">
+<p>Un motore di Carnot lavora tra una temperatura alta <span class="math notranslate nohighlight">\(T_1 = 600 \, \text{K}\)</span> e una temperatura bassa <span class="math notranslate nohighlight">\(T_2 = 300 \, \text{K}\)</span>. Se il calore assorbito dal serbatoio caldo è <span class="math notranslate nohighlight">\(Q_1 = 500 \, \text{J}\)</span>, calcola il lavoro netto prodotto dal motore.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-6">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.7 </span> (Efficienza di un Ciclo di Carnot)</p>
+<div class="section" id="exercise-content">
+<p>Un ciclo di Carnot è utilizzato per generare lavoro. Se il ciclo è operante tra <span class="math notranslate nohighlight">\(T_1 = 800 \, \text{K}\)</span> e <span class="math notranslate nohighlight">\(T_2 = 300 \, \text{K}\)</span>, calcola l’efficienza termica del ciclo e discuti le implicazioni pratiche dell’efficienza in un’applicazione energetica reale.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-7">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.8 </span> (Lavoro in un Ciclo di Carnot Reversibile)</p>
+<div class="section" id="exercise-content">
+<p>Un motore reversibile di Carnot opera tra <span class="math notranslate nohighlight">\(T_H = 600 \, \text{K}\)</span> e <span class="math notranslate nohighlight">\(T_C = 300 \, \text{K}\)</span>. Se il calore assorbito dal serbatoio caldo è <span class="math notranslate nohighlight">\(Q_H = 800 \, \text{J}\)</span>, calcola il lavoro netto e</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-8">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.9 </span> (Entropia in un Ciclo di Carnot)</p>
+<div class="section" id="exercise-content">
+<p>In un ciclo di Carnot, il gas ideale subisce un’espansione isoterma a <span class="math notranslate nohighlight">\(T_1 = 500 \, \text{K}\)</span> e una compressione isoterma a <span class="math notranslate nohighlight">\(T_2 = 300 \, \text{K}\)</span>. Se il calore assorbito è <span class="math notranslate nohighlight">\(Q_1 = 1000 \, \text{J}\)</span>, calcola la variazione di entropia del sistema e dell’ambiente.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-9">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.10 </span> (Entropia Totale in un Ciclo di Carnot)</p>
+<div class="section" id="exercise-content">
+<p>Un motore di Carnot opera tra due serbatoi a temperature <span class="math notranslate nohighlight">\(T_1 = 600 \, \text{K}\)</span> e <span class="math notranslate nohighlight">\(T_2 = 300 \, \text{K}\)</span>. Se il calore cede <span class="math notranslate nohighlight">\(Q_2 = 500 \, \text{J}\)</span> al serbatoio freddo, calcola la variazione totale di entropia per l’universo composto dal sistema e dall’ambiente esterno.</p>
+</div>
+</div>
+</div>
+<div class="section" id="cicli-termodinamici">
+<h2><span class="section-number">14.5.2. </span>Cicli termodinamici<a class="headerlink" href="#cicli-termodinamici" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-10">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.11 </span> (Ciclo Adiabatico Ideale)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale subisce un’espansione adiabática ideale, in cui la temperatura iniziale è <span class="math notranslate nohighlight">\(T_1 = 500 \, \text{K}\)</span> e il volume iniziale è <span class="math notranslate nohighlight">\(V_1 = 0.1 \, \text{m}^3\)</span>. Se il gas si espande a <span class="math notranslate nohighlight">\(V_2 = 0.2 \, \text{m}^3\)</span>, calcola la temperatura finale <span class="math notranslate nohighlight">\(T_2\)</span> e discuti la trasformazione.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-11">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.12 </span> (Ciclo Isobaro Semplice)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale subisce una trasformazione isobara (a pressione costante) da un volume iniziale <span class="math notranslate nohighlight">\(V_1 = 1 \, \text{m}^3\)</span> a un volume finale <span class="math notranslate nohighlight">\(V_2 = 2 \, \text{m}^3\)</span>. Se la temperatura iniziale è <span class="math notranslate nohighlight">\(T_1 = 300 \, \text{K}\)</span>, calcola il lavoro svolto dal gas e la variazione di entropia.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-12">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.13 </span> (Ciclo Isocoro Ideale)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale subisce una trasformazione isocora (a volume costante) tra due temperature <span class="math notranslate nohighlight">\(T_1 = 200 \, \text{K}\)</span> e <span class="math notranslate nohighlight">\(T_2 = 400 \, \text{K}\)</span>. Se il calore fornito è <span class="math notranslate nohighlight">\(Q = 500 \, \text{J}\)</span>, calcola il lavoro compiuto e discuti la relazione con il ciclo Carnot.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-13">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.14 </span> (Ciclo di Espansione e Compressione Isoterma)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale subisce una trasformazione isoterma durante un’espansione da un volume iniziale <span class="math notranslate nohighlight">\(V_1 = 0.5 \, \text{m}^3\)</span> a un volume finale <span class="math notranslate nohighlight">\(V_2 = 1 \, \text{m}^3\)</span>, mantenendo la temperatura costante <span class="math notranslate nohighlight">\(T = 300 \, \text{K}\)</span>. Calcola il lavoro svolto e la variazione di entropia durante l’espansione.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-14">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.15 </span> (Ciclo Isoterma con Rendimento Inferiore al Carnot)</p>
+<div class="section" id="exercise-content">
+<p>Un motore ideale subisce una trasformazione isoterma a <span class="math notranslate nohighlight">\(T = 300 \, \text{K}\)</span>, ma ha un’efficienza inferiore a quella di Carnot. Se il calore assorbito dal serbatoio caldo è <span class="math notranslate nohighlight">\(Q_1 = 1000 \, \text{J}\)</span> e la quantità di calore rilasciato è <span class="math notranslate nohighlight">\(Q_2 = 600 \, \text{J}\)</span>, calcola l’efficienza e confronta con quella di Carnot.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-15">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.16 </span> (Entropia dell’Universo in un Ciclo Reversibile)</p>
+<div class="section" id="exercise-content">
+<p>Un ciclo reversibile di Carnot prende <span class="math notranslate nohighlight">\(Q_1 = 800 \, \text{J}\)</span> dal serbatoio caldo e cede <span class="math notranslate nohighlight">\(Q_2\)</span> al serbatoio freddo, con <span class="math notranslate nohighlight">\(T_1 = 400 \, \text{K}\)</span> e <span class="math notranslate nohighlight">\(T_2 = 200 \, \text{K}\)</span>. Calcola la variazione di entropia totale dell’universo (sistema + ambiente).</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-16">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.17 </span> (Entropia in un Ciclo Isoterma)</p>
+<div class="section" id="exercise-content">
+<p>In un ciclo isoterma a temperatura costante <span class="math notranslate nohighlight">\(T = 350 \, \text{K}\)</span>, un gas ideale assorbe <span class="math notranslate nohighlight">\(Q = 1000 \, \text{J}\)</span> durante un’espansione. Calcola la variazione di entropia del sistema e discuti l’interpretazione fisica dell’entropia.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-17">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.18 </span> (Variazione di Entropia in una Trasformazione Adiabatica)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale subisce una compressione adiabatica. Se la temperatura iniziale è <span class="math notranslate nohighlight">\(T_1 = 350 \, \text{K}\)</span> e la pressione iniziale è <span class="math notranslate nohighlight">\(P_1 = 2 \, \text{atm}\)</span>, calcola la variazione di entropia durante la compressione.</p>
+</div>
+</div>
+</div>
+<div class="section" id="cicli-reali">
+<h2><span class="section-number">14.5.3. </span>Cicli reali<a class="headerlink" href="#cicli-reali" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-18">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.19 </span> (Ciclo Otto Ideale)</p>
+<div class="section" id="exercise-content">
+<p>Un motore a combustione interna funziona secondo il ciclo Otto. Il volume minimo è <span class="math notranslate nohighlight">\(V_{\text{min}} = 0.5 \, \text{L}\)</span> e il volume massimo è <span class="math notranslate nohighlight">\(V_{\text{max}} = 1.5 \, \text{L}\)</span>. Se la temperatura all’inizio della compressione è <span class="math notranslate nohighlight">\(T_1 = 300 \, \text{K}\)</span> e la pressione è <span class="math notranslate nohighlight">\(P_1 = 1 \, \text{atm}\)</span>, calcola la temperatura e la pressione alla fine della compressione (<span class="math notranslate nohighlight">\(V_{\text{min}}\)</span>).</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-19">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.20 </span> (Ciclo Diesel Ideale)</p>
+<div class="section" id="exercise-content">
+<p>Un motore Diesel segue un ciclo di compressione con una relazione di compressione <span class="math notranslate nohighlight">\(r = 18\)</span>. Se la temperatura all’inizio della compressione è <span class="math notranslate nohighlight">\(T_1 = 300 \, \text{K}\)</span>, calcola la temperatura alla fine della compressione.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-20">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.21 </span> (Lavoro e Calore in un Ciclo Rankine)</p>
+<div class="section" id="exercise-content">
+<p>Un ciclo Rankine ideale viene usato in una centrale termoelettrica. Il vapore entra nella turbina a <span class="math notranslate nohighlight">\(T_1 = 500 \, \text{K}\)</span> e <span class="math notranslate nohighlight">\(P_1 = 10 \, \text{MPa}\)</span> e si espande a <span class="math notranslate nohighlight">\(T_2 = 300 \, \text{K}\)</span> e <span class="math notranslate nohighlight">\(P_2 = 10 \, \text{kPa}\)</span>. Calcola il lavoro compiuto dalla turbina e il calore ceduto al condensatore.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-21">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.22 </span> (Efficienza di un Ciclo Rankine)</p>
+<div class="section" id="exercise-content">
+<p>Un impianto Rankine opera con un calore in ingresso di <span class="math notranslate nohighlight">\(Q_1 = 1200 \, \text{kJ}\)</span>. Se il calore ceduto al condensatore è <span class="math notranslate nohighlight">\(Q_2 = 800 \, \text{kJ}\)</span>, calcola l’efficienza del ciclo e discuti le sue applicazioni in centrali elettriche.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-22">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.23 </span> (Ciclo Joule-Brayton Ideale)</p>
+<div class="section" id="exercise-content">
+<p>Un motore a turbina a gas segue il ciclo Joule-Brayton. L’aria entra nel compressore con temperatura <span class="math notranslate nohighlight">\(T_1 = 300 \, \text{K}\)</span> e pressione <span class="math notranslate nohighlight">\(P_1 = 1 \, \text{atm}\)</span> e viene compressa a <span class="math notranslate nohighlight">\(P_2 = 10 \, \text{atm}\)</span> e temperatura <span class="math notranslate nohighlight">\(T_2 = 600 \, \text{K}\)</span>. Calcola la temperatura di scarico del gas dalla turbina.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-23">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.24 </span> (Energia in un Ciclo Joule-Brayton)</p>
+<div class="section" id="exercise-content">
+<p>Un motore a turbina a gas segue un ciclo Joule-Brayton, con compressore e turbina adiabatici. Se l’aria entra nel compressore con <span class="math notranslate nohighlight">\(T_1 = 300 \, \text{K}\)</span> e pressione <span class="math notranslate nohighlight">\(P_1 = 1 \, \text{atm}\)</span>, calcola il lavoro compiuto dalla turbina se il gas ha un calore specifico <span class="math notranslate nohighlight">\(c_p = 1005 \, \text{J/kg K}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-24">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.25 </span> (Calore in un Ciclo Otto)</p>
+<div class="section" id="exercise-content">
+<p>Un motore a ciclo Otto con una compressione adiabaticamente ideale subisce una combustione a <span class="math notranslate nohighlight">\(T_1 = 400 \, \text{K}\)</span> e <span class="math notranslate nohighlight">\(P_1 = 2 \, \text{atm}\)</span>. Se il volume minimo è <span class="math notranslate nohighlight">\(V_1 = 0.5 \, \text{L}\)</span> e il volume massimo è <span class="math notranslate nohighlight">\(V_2 = 1.5 \, \text{L}\)</span>, calcola la quantità di calore prodotto durante il ciclo.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-25">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.26 </span> (Ciclo Rankine con Supercaldo)</p>
+<div class="section" id="exercise-content">
+<p>Un ciclo Rankine utilizza un vapore surriscaldato. Se la temperatura iniziale è <span class="math notranslate nohighlight">\(T_1 = 550 \, \text{K}\)</span> e la pressione di ingresso è <span class="math notranslate nohighlight">\(P_1 = 10 \, \text{MPa}\)</span>, calcola il lavoro prodotto dalla turbina se il vapore si espande fino a <span class="math notranslate nohighlight">\(P_2 = 10 \, \text{kPa}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-26">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.27 </span> (Frigorifero Ideale)</p>
+<div class="section" id="exercise-content">
+<p>Un frigorifero ideale ha un ciclo frigorifero che lavora tra <span class="math notranslate nohighlight">\(T_H = 300 \, \text{K}\)</span> e <span class="math notranslate nohighlight">\(T_C = 270 \, \text{K}\)</span>. Se il frigorifero sottrae calore <span class="math notranslate nohighlight">\(Q_C = 200 \, \text{kJ}\)</span> dalla zona fredda, calcola il lavoro necessario per far funzionare il frigorifero.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-27">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.28 </span> (Efficacia di un Frigorifero)</p>
+<div class="section" id="exercise-content">
+<p>Un frigorifero funziona tra un serbatoio caldo a <span class="math notranslate nohighlight">\(T_H = 300 \, \text{K}\)</span> e uno freddo a <span class="math notranslate nohighlight">\(T_C = 270 \, \text{K}\)</span>. Se il frigorifero preleva <span class="math notranslate nohighlight">\(Q_C = 200 \, \text{kJ}\)</span> dal comparto freddo, calcola il lavoro necessario e l’efficienza energetica del processo.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-28">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.29 </span> (Pompa di Calore)</p>
+<div class="section" id="exercise-content">
+<p>Una pompa di calore ideale preleva <span class="math notranslate nohighlight">\(Q_C = 300 \, \text{kJ}\)</span> dalla zona fredda a <span class="math notranslate nohighlight">\(T_C = 250 \, \text{K}\)</span> e rilascia calore <span class="math notranslate nohighlight">\(Q_H = 500 \, \text{kJ}\)</span> alla zona calda a <span class="math notranslate nohighlight">\(T_H = 300 \, \text{K}\)</span>. Calcola il lavoro consumato dalla pompa di calore e l’efficienza energetica del processo.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-29">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.30 </span> (Ciclo Otto e Potenza)</p>
+<div class="section" id="exercise-content">
+<p>Un motore a ciclo Otto ha un volume minimo <span class="math notranslate nohighlight">\(V_1 = 0.5 \, \text{L}\)</span> e volume massimo <span class="math notranslate nohighlight">\(V_2 = 1.5 \, \text{L}\)</span>. Se il motore genera una potenza di <span class="math notranslate nohighlight">\(P = 10 \, \text{kW}\)</span> durante un ciclo, calcola il lavoro medio per ciclo e la durata di ogni ciclo.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-30">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.31 </span> (Efficacia di una Pompa di Calore)</p>
+<div class="section" id="exercise-content">
+<p>Una pompa di calore ha un Coefficiente di Prestazione (COP) di <span class="math notranslate nohighlight">\(4\)</span> e preleva calore <span class="math notranslate nohighlight">\(Q_C = 400 \, \text{kJ}\)</span> dalla zona fredda. Calcola il lavoro necessario per il funzionamento della pompa.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-31">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.32 </span> (Ottimizzazione del Ciclo Rankine)</p>
+<div class="section" id="exercise-content">
+<p>Un ciclo Rankine ideale ha una temperatura di ingresso del vapore di <span class="math notranslate nohighlight">\(T_1 = 600 \, \text{K}\)</span> e una temperatura di uscita di <span class="math notranslate nohighlight">\(T_2 = 300 \, \text{K}\)</span>. Se il calore in ingresso al ciclo è <span class="math notranslate nohighlight">\(Q_1 = 1000 \, \text{kJ}\)</span>, calcola l’efficienza del ciclo e suggerisci come migliorarla.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-32">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.33 </span> (Motore a Combustione Interna e Efficienza)</p>
+<div class="section" id="exercise-content">
+<p>Un motore a combustione interna segue un ciclo Otto. Se la temperatura alla fine della compressione è <span class="math notranslate nohighlight">\(T_2 = 600 \, \text{K}\)</span> e il volume minimo è <span class="math notranslate nohighlight">\(V_1 = 1 \, \text{L}\)</span>, calcola la pressione finale e discuti la relazione tra efficienza e rapporto di compressione.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/heat-engine-problems-exercise-33">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14.34 </span> (Ciclo Diesel in Centrale Elettrica)</p>
+<div class="section" id="exercise-content">
+<p>In una centrale termoelettrica, viene utilizzato un motore a ciclo Diesel. Se il volume massimo è <span class="math notranslate nohighlight">\(V_{\text{max}} = 5 \, \text{L}\)</span> e la temperatura di ingresso è <span class="math notranslate nohighlight">\(T_1 = 350 \, \text{K}\)</span>, calcola il calore ceduto dal motore e discuti l’efficienza del ciclo.</p>
+</div>
+</div>
 <!-- Esercizio ************************************************************* -->
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
@@ -602,6 +863,7 @@ Soluzione.<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 </div>
 </details></div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -657,6 +919,22 @@ Soluzione.<div class="sd-summary-down docutils">
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-di-carnot">14.5.1. Ciclo di Carnot</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cicli-termodinamici">14.5.2. Cicli termodinamici</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cicli-reali">14.5.3. Cicli reali</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

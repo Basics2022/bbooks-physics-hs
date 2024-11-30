@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/matter-problems';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
@@ -196,6 +198,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-deformable.html">6.3. Cinematica dei sistemi deformabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-relative.html">6.4. Cinematica relativa</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-problems.html">6.5. Problemi</a></li>
+
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/actions.html">7. Azioni</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -543,6 +546,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miscele-di-gas">13.4.3. Miscele di gas</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aria-umida">13.4.4. Aria umida</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solidi-elastici-lineari">13.4.5. Solidi elastici lineari</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">13.4.6. Gas ideali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miscele-di-gas-e-aria-umida">13.4.7. Miscele di gas e aria umida</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#termodinamica-di-solidi-elastici">13.4.8. Termodinamica di solidi elastici</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-vari">13.4.9. Problemi vari</a></li>
 </ul>
             </nav>
         </div>
@@ -570,6 +577,246 @@ document.write(`
 </div>
 <div class="section" id="solidi-elastici-lineari">
 <h2><span class="section-number">13.4.5. </span>Solidi elastici lineari<a class="headerlink" href="#solidi-elastici-lineari" title="Permalink to this heading">#</a></h2>
+</div>
+<hr class="docutils" />
+<div class="section" id="id1">
+<h2><span class="section-number">13.4.6. </span>Gas ideali<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.1 </span> (Proprietà di un Gas Ideale)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale viene contenuto in un recipiente rigido con volume <span class="math notranslate nohighlight">\(V = 10 \, \text{L}\)</span>. Se la temperatura iniziale del gas è <span class="math notranslate nohighlight">\(T = 300 \, \text{K}\)</span> e la pressione è <span class="math notranslate nohighlight">\(P = 2 \, \text{atm}\)</span>, calcola la quantità di sostanza (in moli) contenuta nel recipiente.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-1">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.2 </span> (Lavoro di Espansione Isobara)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale subisce un’espansione isobara da <span class="math notranslate nohighlight">\(V_1 = 2 \, \text{L}\)</span> a <span class="math notranslate nohighlight">\(V_2 = 5 \, \text{L}\)</span> mantenendo la temperatura costante a <span class="math notranslate nohighlight">\(T = 350 \, \text{K}\)</span>. Calcola il lavoro compiuto dal gas durante questa espansione.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-2">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.3 </span> (Lavoro in una Trasformazione Isotermica)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale subisce una trasformazione isotermica a <span class="math notranslate nohighlight">\(T = 273 \, \text{K}\)</span>. Se il volume iniziale del gas è <span class="math notranslate nohighlight">\(V_1 = 1 \, \text{m}^3\)</span> e il volume finale è <span class="math notranslate nohighlight">\(V_2 = 3 \, \text{m}^3\)</span>, calcola il lavoro compiuto dal gas.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-3">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.4 </span> (Calore in una Trasformazione Isocora)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale subisce una trasformazione isocora da <span class="math notranslate nohighlight">\(T_1 = 300 \, \text{K}\)</span> a <span class="math notranslate nohighlight">\(T_2 = 600 \, \text{K}\)</span>. Calcola il calore assorbito dal gas, sapendo che il calore specifico a volume costante è <span class="math notranslate nohighlight">\(c_V = 5 \, \text{J/mol}^\circ \text{C}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-4">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.5 </span> (Trasformazione Adiabatica)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale subisce una trasformazione adiabatica, in cui il volume passa da <span class="math notranslate nohighlight">\(V_1 = 10 \, \text{L}\)</span> a <span class="math notranslate nohighlight">\(V_2 = 20 \, \text{L}\)</span>. Se la temperatura iniziale del gas è <span class="math notranslate nohighlight">\(T_1 = 300 \, \text{K}\)</span>, calcola la temperatura finale <span class="math notranslate nohighlight">\(T_2\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-5">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.6 </span> (Energia Interna in una Trasformazione Isocora)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale subisce una trasformazione isocora da <span class="math notranslate nohighlight">\(T_1 = 300 \, \text{K}\)</span> a <span class="math notranslate nohighlight">\(T_2 = 600 \, \text{K}\)</span>. Se la quantità di gas è <span class="math notranslate nohighlight">\(n = 2 \, \text{mol}\)</span> e il calore specifico a volume costante è <span class="math notranslate nohighlight">\(c_V = 5 \, \text{J/mol}^\circ \text{C}\)</span>, calcola la variazione di energia interna del gas.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-6">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.7 </span> (Energia di un Gas Ideale)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale ha una temperatura di <span class="math notranslate nohighlight">\(T = 250 \, \text{K}\)</span> e un volume di <span class="math notranslate nohighlight">\(V = 15 \, \text{L}\)</span>. Calcola l’energia interna del gas, considerando che il gas è monoatomico e il calore specifico a volume costante è <span class="math notranslate nohighlight">\(c_V = 3 \, \text{J/mol}^\circ \text{C}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-7">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.8 </span> (Entropia in una Trasformazione Isotermica)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale subisce una trasformazione isotermica da <span class="math notranslate nohighlight">\(V_1 = 5 \, \text{L}\)</span> a <span class="math notranslate nohighlight">\(V_2 = 10 \, \text{L}\)</span>, mantenendo la temperatura costante a <span class="math notranslate nohighlight">\(T = 300 \, \text{K}\)</span>. Calcola la variazione di entropia del gas durante il processo.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-8">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.9 </span> (Legge dei Gasi Ideali in un Ciclo)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale subisce una trasformazione ciclica che include una fase isotermica e una adiabatico. Se il gas entra nel ciclo a <span class="math notranslate nohighlight">\(T = 300 \, \text{K}\)</span> e il volume è <span class="math notranslate nohighlight">\(V = 1 \, \text{L}\)</span>, calcola la pressione del gas alla fine del ciclo, se la temperatura finale è <span class="math notranslate nohighlight">\(T = 600 \, \text{K}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-9">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.10 </span> (Calore in una Trasformazione Isobara)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale subisce una trasformazione isobara in cui la temperatura cambia da <span class="math notranslate nohighlight">\(T_1 = 300 \, \text{K}\)</span> a <span class="math notranslate nohighlight">\(T_2 = 600 \, \text{K}\)</span>. Se la quantità di sostanza è <span class="math notranslate nohighlight">\(n = 1 \, \text{mol}\)</span> e la costante dei gas è <span class="math notranslate nohighlight">\(R = 8.314 \, \text{J/mol K}\)</span>, calcola il calore ceduto o assorbito durante questa trasformazione.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-10">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.11 </span> (Comportamento di un Gas Ideale in un Serbatoio)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale viene contenuto in un recipiente rigido a <span class="math notranslate nohighlight">\(T = 300 \, \text{K}\)</span> e <span class="math notranslate nohighlight">\(P = 1 \, \text{atm}\)</span>. Se il volume del recipiente è <span class="math notranslate nohighlight">\(10 \, \text{L}\)</span>, calcola la quantità di sostanza (in moli) contenuta nel recipiente.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-11">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.12 </span> (Lavoro in una Espansione Isocora)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale subisce una trasformazione isocora. Se il gas è riscaldato da <span class="math notranslate nohighlight">\(T_1 = 300 \, \text{K}\)</span> a <span class="math notranslate nohighlight">\(T_2 = 600 \, \text{K}\)</span>, calcola il lavoro compiuto durante questa trasformazione.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-12">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.13 </span> (Entalpia in un Ciclo)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale subisce una trasformazione ciclica che comprende una fase isobara e una adiabatica. Calcola il lavoro netto prodotto dal gas durante il ciclo, sapendo che il gas è ideale e il volume iniziale è <span class="math notranslate nohighlight">\(V_1 = 1 \, \text{L}\)</span> e finale è <span class="math notranslate nohighlight">\(V_2 = 5 \, \text{L}\)</span>.</p>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="miscele-di-gas-e-aria-umida">
+<h2><span class="section-number">13.4.7. </span>Miscele di gas e aria umida<a class="headerlink" href="#miscele-di-gas-e-aria-umida" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-13">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.14 </span> (Miscele di Gas Ideali)</p>
+<div class="section" id="exercise-content">
+<p>Due gas ideali, A e B, sono mescolati in un contenitore con un volume di <span class="math notranslate nohighlight">\(V = 10 \, \text{L}\)</span>, una temperatura di <span class="math notranslate nohighlight">\(T = 300 \, \text{K}\)</span>, e una pressione di <span class="math notranslate nohighlight">\(P = 2 \, \text{atm}\)</span>. Se il gas A ha una pressione parziale di <span class="math notranslate nohighlight">\(P_A = 1 \, \text{atm}\)</span>, calcola la quantità di moli di gas A e B nel recipiente.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-14">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.15 </span> (Aria Umida – Umidità Relativa)</p>
+<div class="section" id="exercise-content">
+<p>In un sistema di aria umida, la temperatura dell’aria è <span class="math notranslate nohighlight">\(T = 20 \, \text{°C}\)</span> e l’umidità relativa è <span class="math notranslate nohighlight">\(80\%\)</span>. Se la pressione totale è <span class="math notranslate nohighlight">\(P = 1 \, \text{atm}\)</span>, calcola la pressione parziale del vapore acqueo.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-15">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.16 </span> (Miscele di Gas Ideali con Temperatura Variabile)</p>
+<div class="section" id="exercise-content">
+<p>Una miscela di gas ideali subisce una trasformazione a volume costante. Se la temperatura iniziale è <span class="math notranslate nohighlight">\(T_1 = 400 \, \text{K}\)</span> e la temperatura finale è <span class="math notranslate nohighlight">\(T_2 = 800 \, \text{K}\)</span>, calcola il rapporto tra la pressione finale e quella iniziale, sapendo che la miscela è composta da un gas A e un gas B.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-16">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.17 </span> (Equilibrio dell’Aria Umida)</p>
+<div class="section" id="exercise-content">
+<p>In un sistema di aria umida, la temperatura e l’umidità relativa cambiano da <span class="math notranslate nohighlight">\(T_1 = 300 \, \text{K}\)</span> e umidità relativa <span class="math notranslate nohighlight">\(70\%\)</span> a <span class="math notranslate nohighlight">\(T_2 = 280 \, \text{K}\)</span> e umidità relativa <span class="math notranslate nohighlight">\(50\%\)</span>. Calcola la variazione di energia interna del sistema durante il cambiamento.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-17">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.18 </span> (Calcolo dell’Umidità Assoluta)</p>
+<div class="section" id="exercise-content">
+<p>In un sistema di aria umida a <span class="math notranslate nohighlight">\(T = 300 \, \text{K}\)</span> e con umidità relativa del <span class="math notranslate nohighlight">\(60\%\)</span>, calcola la densità del vapore acqueo in <span class="math notranslate nohighlight">\( \text{g/m}^3\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-18">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.19 </span> (Miscele di Gas Ideali – Energia Interna)</p>
+<div class="section" id="exercise-content">
+<p>Una miscela di gas ideali A e B è contenuta in un recipiente di volume <span class="math notranslate nohighlight">\(V = 5 \, \text{L}\)</span> e temperatura <span class="math notranslate nohighlight">\(T = 350 \, \text{K}\)</span>. Se la pressione totale è <span class="math notranslate nohighlight">\(P = 3 \, \text{atm}\)</span>, calcola la variazione di energia interna della miscela durante una trasformazione a volume costante.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-19">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.20 </span> (Equilibrio dell’Aria Umida – Energia)</p>
+<div class="section" id="exercise-content">
+<p>In un sistema di aria umida con temperatura <span class="math notranslate nohighlight">\(T = 300 \, \text{K}\)</span> e umidità relativa del <span class="math notranslate nohighlight">\(80\%\)</span>, calcola l’energia termica totale del sistema contenente <span class="math notranslate nohighlight">\(1 \, \text{m}^3\)</span> di aria umida.</p>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="termodinamica-di-solidi-elastici">
+<h2><span class="section-number">13.4.8. </span>Termodinamica di solidi elastici<a class="headerlink" href="#termodinamica-di-solidi-elastici" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-20">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.21 </span> (Deformazione di una Barra Elastico-Linieare)</p>
+<div class="section" id="exercise-content">
+<p>Una barra elastica di acciaio ha una lunghezza di <span class="math notranslate nohighlight">\(L = 2 \, \text{m}\)</span> e un modulo di elasticità di <span class="math notranslate nohighlight">\(E = 200 \, \text{GPa}\)</span>. Se una forza di <span class="math notranslate nohighlight">\(F = 5000 \, \text{N}\)</span> viene applicata lungo l’asse longitudinale, calcola la deformazione della barra.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-21">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.22 </span> (Riscaldamento di una Barra Elastico-Linieare)</p>
+<div class="section" id="exercise-content">
+<p>Una barra elastica di lunghezza <span class="math notranslate nohighlight">\(L = 1 \, \text{m}\)</span> è riscaldata da una temperatura di <span class="math notranslate nohighlight">\(T_1 = 20 \, \text{°C}\)</span> a <span class="math notranslate nohighlight">\(T_2 = 100 \, \text{°C}\)</span>. Se il coefficiente di dilatazione lineare dell’acciaio è <span class="math notranslate nohighlight">\( \alpha = 12 \times 10^{-6} \, \text{°C}^{-1}\)</span>, calcola la variazione di lunghezza della barra.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-22">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.23 </span> (Comportamento Meccanico di una Barra Elastico-Linieare)</p>
+<div class="section" id="exercise-content">
+<p>Una barra elastica di acciaio di lunghezza <span class="math notranslate nohighlight">\(L = 1 \, \text{m}\)</span> è sottoposta a una sollecitazione meccanica che causa una deformazione di <span class="math notranslate nohighlight">\(2 \, \text{mm}\)</span>. Se il modulo di elasticità è <span class="math notranslate nohighlight">\(E = 200 \, \text{GPa}\)</span>, calcola la forza applicata.</p>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="problemi-vari">
+<h2><span class="section-number">13.4.9. </span>Problemi vari<a class="headerlink" href="#problemi-vari" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-23">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.24 </span> (Energia Termica di un Sistema di Gas Ideali)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale subisce un’espansione isotermica, ma con un cambio nella composizione. Se la temperatura iniziale è di <span class="math notranslate nohighlight">\(T = 300 \, \text{K}\)</span> e il volume cambia da <span class="math notranslate nohighlight">\(V_1 = 1 \, \text{m}^3\)</span> a <span class="math notranslate nohighlight">\(V_2 = 3 \, \text{m}^3\)</span>, calcola l’energia termica trasferita.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-24">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.25 </span> (Energia in un Ciclo di Carnot)</p>
+<div class="section" id="exercise-content">
+<p>Un motore di Carnot opera tra una temperatura alta di <span class="math notranslate nohighlight">\(T_1 = 600 \, \text{K}\)</span> e una temperatura bassa di <span class="math notranslate nohighlight">\(T_2 = 300 \, \text{K}\)</span>. Se il calore assorbito nel serbatoio caldo è <span class="math notranslate nohighlight">\(Q_1 = 500 \, \text{J}\)</span>, calcola il lavoro netto eseguito dal motore.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-25">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.26 </span> (Calore Latente in una Fase Solida-Liquida)</p>
+<div class="section" id="exercise-content">
+<p>Un campione di una sostanza solida si fonde a <span class="math notranslate nohighlight">\(T_m = 350 \, \text{K}\)</span>. Se la massa del campione è di <span class="math notranslate nohighlight">\(m = 100 \, \text{g}\)</span> e il calore latente di fusione è <span class="math notranslate nohighlight">\(L_f = 10 \, \text{J/g}\)</span>, calcola la quantità di calore necessario per fondere tutto il campione.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-26">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.27 </span> (Equilibrio Termico in un Sistema di Due Corpi)</p>
+<div class="section" id="exercise-content">
+<p>Un corpo caldo di temperatura <span class="math notranslate nohighlight">\(T_1 = 400 \, \text{K}\)</span> e un corpo freddo di temperatura <span class="math notranslate nohighlight">\(T_2 = 280 \, \text{K}\)</span> vengono messi in contatto. Se il calore specifico di ciascun corpo è <span class="math notranslate nohighlight">\(c_1 = c_2 = 0.5 \, \text{J/g K}\)</span> e le masse sono uguali, calcola la temperatura finale.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-27">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.28 </span> (Dilatazione Termica di una Piastra)</p>
+<div class="section" id="exercise-content">
+<p>Una piastra di metallo di superficie <span class="math notranslate nohighlight">\(A = 2 \, \text{m}^2\)</span> e lunghezza <span class="math notranslate nohighlight">\(L = 1 \, \text{m}\)</span> è riscaldata di <span class="math notranslate nohighlight">\(\Delta T = 50 \, \text{°C}\)</span>. Calcola la dilatazione termica della piastra, se il coefficiente di dilatazione lineare è <span class="math notranslate nohighlight">\( \alpha = 10^{-5} \, \text{°C}^{-1}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-28">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.29 </span> (Trasformazione Isoentropica)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale subisce una trasformazione isoentropica. Se la temperatura iniziale è <span class="math notranslate nohighlight">\(T_1 = 300 \, \text{K}\)</span> e il volume è <span class="math notranslate nohighlight">\(V_1 = 1 \, \text{L}\)</span>, calcola la pressione finale <span class="math notranslate nohighlight">\(P_2\)</span> se il volume finale è <span class="math notranslate nohighlight">\(V_2 = 2 \, \text{L}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-29">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.30 </span> (Lavoro in una Trasformazione Adiabática)</p>
+<div class="section" id="exercise-content">
+<p>Un gas ideale subisce una trasformazione adiabatica. Se la temperatura iniziale è <span class="math notranslate nohighlight">\(T_1 = 300 \, \text{K}\)</span> e il volume iniziale è <span class="math notranslate nohighlight">\(V_1 = 2 \, \text{L}\)</span>, calcola il lavoro fatto dal gas se il volume finale è <span class="math notranslate nohighlight">\(V_2 = 4 \, \text{L}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-30">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.31 </span> (Equilibrio Termico in un Sistema)</p>
+<div class="section" id="exercise-content">
+<p>Due oggetti con temperature iniziali di <span class="math notranslate nohighlight">\(T_1 = 350 \, \text{K}\)</span> e <span class="math notranslate nohighlight">\(T_2 = 200 \, \text{K}\)</span> vengono messi in contatto. Se i calori specifici sono uguali, calcola la temperatura finale del sistema.</p>
+</div>
+</div>
+<div class="exercise admonition" id="ch/thermodynamics/matter-problems-exercise-31">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13.32 </span> (Lavoro di Compressore)</p>
+<div class="section" id="exercise-content">
+<p>Un compressore riceve gas a temperatura <span class="math notranslate nohighlight">\(T_1 = 300 \, \text{K}\)</span> e pressione <span class="math notranslate nohighlight">\(P_1 = 2 \, \text{atm}\)</span> e lo comprime a <span class="math notranslate nohighlight">\(T_2 = 600 \, \text{K}\)</span> e pressione <span class="math notranslate nohighlight">\(P_2 = 6 \, \text{atm}\)</span>. Calcola il lavoro necessario per comprimere il gas.</p>
+</div>
+</div>
 </div>
 </div>
 
@@ -641,6 +888,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miscele-di-gas">13.4.3. Miscele di gas</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aria-umida">13.4.4. Aria umida</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solidi-elastici-lineari">13.4.5. Solidi elastici lineari</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">13.4.6. Gas ideali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miscele-di-gas-e-aria-umida">13.4.7. Miscele di gas e aria umida</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#termodinamica-di-solidi-elastici">13.4.8. Termodinamica di solidi elastici</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-vari">13.4.9. Problemi vari</a></li>
 </ul>
   </nav></div>
 
