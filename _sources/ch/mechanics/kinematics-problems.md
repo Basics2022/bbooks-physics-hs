@@ -21,7 +21,7 @@ Due auto stanno viaggiando lungo un'autostrada con una distanza iniziale di $\De
 ```
 ```{exercise}
 Supponendo che il tempo di reazione dell'automibilista medio è $\Delta t = 1 \, \text{s}$, si determini la distanza di sicurezza da mantenere per evitare un'incidente su una strada in cui la velocità massima è di $120 \text{km/h}$, nei casi in cui:
-1. si assume che l'auto considerata e l'auto che la precede abbia la stessa decelerazione massima uguale a $a = 1 \, \text{m/s^2}$
+1. si assume che l'auto considerata e l'auto che la precede abbia la stessa decelerazione massima uguale a $a = 1 \, \text{m/s}^2$
 2. si assume che l'imprevisto sia fermo sulla carreggiata davanti all'auto considerata.
 
 ```

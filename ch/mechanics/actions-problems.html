@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>5. Introduzione alla meccanica classica &#8212; Fisica per le superiori</title>
+    <title>Esercizi su Forze, Momenti, Lavoro e Potenza &#8212; Fisica per le superiori</title>
   
   
   
@@ -65,12 +65,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/actions-problems';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="5.2. Modelli" href="models.html" />
-    <link rel="prev" title="4. Meccanica classica" href="../mechanics.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -184,9 +182,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../intro/scientific-method.html">3. Il metodo scientifico</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Meccanica classica</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../mechanics.html">4. Meccanica classica</a></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">5. Introduzione alla meccanica classica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="intro.html">5. Introduzione alla meccanica classica</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="models.html">5.2. Modelli</a></li>
 </ul>
 </li>
@@ -394,7 +392,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/edit/master/ch/mechanics/intro.md" target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/edit/master/ch/mechanics/actions-problems.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -411,7 +409,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/mechanics/intro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/mechanics/actions-problems.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Apri un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -441,7 +439,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/mechanics/intro.md" target="_blank"
+      <li><a href="../../_sources/ch/mechanics/actions-problems.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -525,7 +523,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introduzione alla meccanica classica</h1>
+    <h1>Esercizi su Forze, Momenti, Lavoro e Potenza</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -535,12 +533,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#breve-storia">5.1. Breve storia</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#osservazioni-astronomiche">5.1.1. Osservazioni astronomiche</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#galileo">5.1.2. Galileo</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newton">5.1.3. Newton</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-1-forza-risultante">Esercizio 1: Forza risultante</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-2-momento-di-una-forza">Esercizio 2: Momento di una forza</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-3-lavoro-di-una-forza">Esercizio 3: Lavoro di una forza</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-4-energia-potenziale-gravitazionale">Esercizio 4: Energia potenziale gravitazionale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-5-potenza-meccanica">Esercizio 5: Potenza meccanica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-6-attrito-dinamico">Esercizio 6: Attrito dinamico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-7-equilibrio-di-un-asta">Esercizio 7: Equilibrio di un’asta</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-8-velocita-angolare-e-momento-torcente">Esercizio 8: Velocità angolare e momento torcente</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-9-lavoro-in-un-piano-inclinato">Esercizio 9: Lavoro in un piano inclinato</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-10-conservazione-dell-energia">Esercizio 10: Conservazione dell’energia</a></li>
 </ul>
             </nav>
         </div>
@@ -552,83 +554,90 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="sd-container-fluid sd-sphinx-override sd-p-0 sd-mt-2 sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-2 sd-gx-2 sd-gy-1 docutils">
-<div class="sd-col sd-d-flex-row sd-align-minor-center docutils">
-<div class="sd-container-fluid sd-sphinx-override docutils">
-<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-gx-3 sd-gy-1 docutils">
-<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0">basics</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="esercizi-su-forze-momenti-lavoro-e-potenza">
+<h1>Esercizi su Forze, Momenti, Lavoro e Potenza<a class="headerlink" href="#esercizi-su-forze-momenti-lavoro-e-potenza" title="Permalink to this heading">#</a></h1>
+<p>Questa pagina contiene una serie di esercizi di fisica classica sulle azioni come forze, momenti, lavoro e potenza. Gli esercizi sono progettati per studenti di liceo con una buona comprensione della meccanica. Prova a risolvere gli esercizi senza guardare le soluzioni e verifica la tua comprensione!</p>
+<hr class="docutils" />
+<p>{exercise}</p>
+<div class="section" id="esercizio-1-forza-risultante">
+<h2>Esercizio 1: Forza risultante<a class="headerlink" href="#esercizio-1-forza-risultante" title="Permalink to this heading">#</a></h2>
+<p>Un corpo di massa (5 , \text{kg}) è soggetto a due forze: (F_1 = 10 , \text{N}) verso est e (F_2 = 15 , \text{N}) verso nord. Calcola la forza risultante in modulo e direzione.</p>
+<p><em>Suggerimento</em>: Usa il teorema di Pitagora per il modulo e una funzione trigonometrica per l’angolo.
+{/exercise}</p>
+<hr class="docutils" />
+<p>{exercise}</p>
 </div>
-<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>30 nov 2024</p>
+<div class="section" id="esercizio-2-momento-di-una-forza">
+<h2>Esercizio 2: Momento di una forza<a class="headerlink" href="#esercizio-2-momento-di-una-forza" title="Permalink to this heading">#</a></h2>
+<p>Un’asta di (2 , \text{m}) ruota attorno a un asse perpendicolare al suo centro. Una forza di (8 , \text{N}) viene applicata perpendicolarmente a un’estremità. Calcola il momento della forza rispetto all’asse di rotazione.</p>
+<p><em>Suggerimento</em>: ( M = F \cdot d ).
+{/exercise}</p>
+<hr class="docutils" />
+<p>{exercise}</p>
 </div>
-<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>1 min read</p>
+<div class="section" id="esercizio-3-lavoro-di-una-forza">
+<h2>Esercizio 3: Lavoro di una forza<a class="headerlink" href="#esercizio-3-lavoro-di-una-forza" title="Permalink to this heading">#</a></h2>
+<p>Un blocco di (10 , \text{kg}) viene spinto lungo una superficie piana con una forza costante di (50 , \text{N}), applicata orizzontalmente, per una distanza di (5 , \text{m}). Calcola il lavoro compiuto dalla forza.</p>
+<p><em>Suggerimento</em>: Usa la formula ( L = F \cdot d \cdot \cos\theta ), con (\theta = 0^\circ).
+{/exercise}</p>
+<hr class="docutils" />
+<p>{exercise}</p>
 </div>
+<div class="section" id="esercizio-4-energia-potenziale-gravitazionale">
+<h2>Esercizio 4: Energia potenziale gravitazionale<a class="headerlink" href="#esercizio-4-energia-potenziale-gravitazionale" title="Permalink to this heading">#</a></h2>
+<p>Un corpo di massa (3 , \text{kg}) viene sollevato verticalmente di (2 , \text{m}). Calcola la variazione di energia potenziale gravitazionale.</p>
+<p><em>Suggerimento</em>: ( \Delta U = m \cdot g \cdot h ), con (g = 9,81 , \text{m/s}^2).
+{/exercise}</p>
+<hr class="docutils" />
+<p>{exercise}</p>
 </div>
+<div class="section" id="esercizio-5-potenza-meccanica">
+<h2>Esercizio 5: Potenza meccanica<a class="headerlink" href="#esercizio-5-potenza-meccanica" title="Permalink to this heading">#</a></h2>
+<p>Una macchina solleva un peso di (200 , \text{kg}) ad un’altezza di (5 , \text{m}) in (10 , \text{s}). Qual è la potenza sviluppata?</p>
+<p><em>Suggerimento</em>: Usa la formula ( P = \frac{L}{t} ), dove ( L = m \cdot g \cdot h ).
+{/exercise}</p>
+<hr class="docutils" />
+<p>{exercise}</p>
 </div>
+<div class="section" id="esercizio-6-attrito-dinamico">
+<h2>Esercizio 6: Attrito dinamico<a class="headerlink" href="#esercizio-6-attrito-dinamico" title="Permalink to this heading">#</a></h2>
+<p>Un blocco di massa (15 , \text{kg}) scivola su una superficie con coefficiente di attrito dinamico (\mu_d = 0,2). Calcola la forza di attrito dinamico.</p>
+<p><em>Suggerimento</em>: ( F_{\text{attrito}} = \mu_d \cdot N ), dove (N = m \cdot g).
+{/exercise}</p>
+<hr class="docutils" />
+<p>{exercise}</p>
 </div>
+<div class="section" id="esercizio-7-equilibrio-di-un-asta">
+<h2>Esercizio 7: Equilibrio di un’asta<a class="headerlink" href="#esercizio-7-equilibrio-di-un-asta" title="Permalink to this heading">#</a></h2>
+<p>Un’asta uniforme di lunghezza (4 , \text{m}) e peso (50 , \text{N}) è supportata a (1 , \text{m}) da un’estremità. Qual è la forza necessaria per mantenere l’equilibrio all’altra estremità?</p>
+<p><em>Suggerimento</em>: Usa la condizione di equilibrio dei momenti: ( \sum M = 0 ).
+{/exercise}</p>
+<hr class="docutils" />
+<p>{exercise}</p>
 </div>
+<div class="section" id="esercizio-8-velocita-angolare-e-momento-torcente">
+<h2>Esercizio 8: Velocità angolare e momento torcente<a class="headerlink" href="#esercizio-8-velocita-angolare-e-momento-torcente" title="Permalink to this heading">#</a></h2>
+<p>Una ruota ha un momento d’inerzia di (2 , \text{kg·m}^2) e inizia a ruotare da ferma quando è applicato un momento torcente costante di (10 , \text{N·m}). Qual è la velocità angolare dopo (4 , \text{s})?</p>
+<p><em>Suggerimento</em>: Usa ( M = I \cdot \alpha ) e la relazione tra accelerazione angolare e velocità angolare: ( \omega = \alpha \cdot t ).
+{/exercise}</p>
+<hr class="docutils" />
+<p>{exercise}</p>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="introduzione-alla-meccanica-classica">
-<span id="physics-hs-mechanics-intro"></span><h1><span class="section-number">5. </span>Introduzione alla meccanica classica<a class="headerlink" href="#introduzione-alla-meccanica-classica" title="Permalink to this heading">#</a></h1>
-<ul class="simple">
-<li><p>Prime esperienze:</p>
-<ul>
-<li><p>astronomia</p></li>
-<li><p>Galileo, la relatività, gravità</p></li>
-<li><p>Hooke, le molle e i dinamometri</p></li>
-</ul>
-</li>
-<li><p>Grandezze fisiche, strumenti di misura e concetti:</p>
-<ul>
-<li><p>spazio, tempo, massa; velocità, accelerazione, quantità di moto,…</p></li>
-<li><p>cos’è lo spazio? cos’è il tempo? cos’è la massa? cos’è una forza?</p></li>
-</ul>
-</li>
-</ul>
-<div class="section" id="breve-storia">
-<h2><span class="section-number">5.1. </span>Breve storia<a class="headerlink" href="#breve-storia" title="Permalink to this heading">#</a></h2>
-<div class="section" id="osservazioni-astronomiche">
-<h3><span class="section-number">5.1.1. </span>Osservazioni astronomiche<a class="headerlink" href="#osservazioni-astronomiche" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>leggi di Keplero</p></li>
-</ul>
+<div class="section" id="esercizio-9-lavoro-in-un-piano-inclinato">
+<h2>Esercizio 9: Lavoro in un piano inclinato<a class="headerlink" href="#esercizio-9-lavoro-in-un-piano-inclinato" title="Permalink to this heading">#</a></h2>
+<p>Un corpo di massa (20 , \text{kg}) viene spinto lungo un piano inclinato di (5 , \text{m}) con un’inclinazione di (30^\circ). La forza applicata è parallela al piano e uguale a (120 , \text{N}). Calcola il lavoro compiuto.</p>
+<p><em>Suggerimento</em>: Usa ( L = F \cdot d \cdot \cos\theta ), considerando (\theta = 0^\circ) perché la forza è parallela al piano.
+{/exercise}</p>
+<hr class="docutils" />
+<p>{exercise}</p>
 </div>
-<div class="section" id="galileo">
-<h3><span class="section-number">5.1.2. </span>Galileo<a class="headerlink" href="#galileo" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>inerzia e relatività</p></li>
-<li><p>esperimenti sulla caduta dei gravi</p></li>
-<li><p>pendolo</p></li>
-<li><p>osservazioni astronomiche: lune di Giove e verifica della legge di Keplero?</p></li>
-</ul>
-</div>
-<div class="section" id="newton">
-<h3><span class="section-number">5.1.3. </span>Newton<a class="headerlink" href="#newton" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>grandezze e concetti per lo sviluppo della teoria:</p>
-<ul>
-<li><p>spazio e tempo assoluti; massa come quantità di materia</p>
-<ul>
-<li><p>ma cosa sono? o meglio, come si misurano? Cenni agli orologi meccanici (pendolo, molle ed escapement clocks), per la misura del tempo assoluto</p></li>
-<li><p>modelli e astrazione</p></li>
-</ul>
-</li>
-<li><p>equazioni della dinamica in termini di forza che causa la quantità di moto</p></li>
-</ul>
-</li>
-<li><p>strumenti matematici:</p>
-<ul>
-<li><p>dalla geometria analitica al calcolo infinitesimale</p></li>
-</ul>
-</li>
-<li><p>legge di gravitazione universale: l’origine del moto dei gravi è la stessa del moto dei corpi celesti</p></li>
-</ul>
-</div>
-</div>
-<div class="toctree-wrapper compound">
+<div class="section" id="esercizio-10-conservazione-dell-energia">
+<h2>Esercizio 10: Conservazione dell’energia<a class="headerlink" href="#esercizio-10-conservazione-dell-energia" title="Permalink to this heading">#</a></h2>
+<p>Un corpo di massa (2 , \text{kg}) scivola senza attrito da un’altezza di (10 , \text{m}). Calcola la sua velocità al suolo utilizzando il principio di conservazione dell’energia.</p>
+<p><em>Suggerimento</em>: L’energia potenziale iniziale si trasforma completamente in energia cinetica: ( m \cdot g \cdot h = \frac{1}{2} m \cdot v^2 ).
+{/exercise}</p>
+<hr class="docutils" />
+<p>Prova a risolvere questi esercizi e controlla le tue risposte confrontandole con i risultati corretti!</p>
 </div>
 </div>
 
@@ -662,24 +671,6 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="../mechanics.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">4. </span>Meccanica classica</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="models.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">5.2. </span>Modelli</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -695,12 +686,16 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#breve-storia">5.1. Breve storia</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#osservazioni-astronomiche">5.1.1. Osservazioni astronomiche</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#galileo">5.1.2. Galileo</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newton">5.1.3. Newton</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-1-forza-risultante">Esercizio 1: Forza risultante</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-2-momento-di-una-forza">Esercizio 2: Momento di una forza</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-3-lavoro-di-una-forza">Esercizio 3: Lavoro di una forza</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-4-energia-potenziale-gravitazionale">Esercizio 4: Energia potenziale gravitazionale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-5-potenza-meccanica">Esercizio 5: Potenza meccanica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-6-attrito-dinamico">Esercizio 6: Attrito dinamico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-7-equilibrio-di-un-asta">Esercizio 7: Equilibrio di un’asta</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-8-velocita-angolare-e-momento-torcente">Esercizio 8: Velocità angolare e momento torcente</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-9-lavoro-in-un-piano-inclinato">Esercizio 9: Lavoro in un piano inclinato</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-10-conservazione-dell-energia">Esercizio 10: Conservazione dell’energia</a></li>
 </ul>
   </nav></div>
 
