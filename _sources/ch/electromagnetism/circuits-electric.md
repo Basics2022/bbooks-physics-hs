@@ -3,8 +3,6 @@
 
 ## Approssimazione circuitale - leggi di Kirchhoff
 
-
-
 ## Componenti discreti
 ### Resistenza elettrica
 La legge costitutiva della resistenza elettrica è
