@@ -122,6 +122,10 @@ parts:
   - file: ch/thermodynamics/heat-transmission
     sections:
     - file: ch/thermodynamics/heat-transmission-problems
+- caption: Fenomeni ondulatori
+  numbered: True
+  chapters:
+  - file: ch/waves/intro
 - caption: Elettromagnetismo
   numbered: True
   chapters:
