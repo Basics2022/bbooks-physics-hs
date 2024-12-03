@@ -1,6 +1,11 @@
 (physics-hs:electromagnetism:em-waves)=
 # Onde elettromagnetiche
 
+- modello matematico
+- prova sperimentale
+- applicazioni
+- spettro elettromagnetico; intensità fenomeni ondulatori e potenza trasportata
+
 **Equazioni di Maxwell - il modello matematico.** Le equazioni di Maxwell forniscono un modello matematico per i fenomeni dell'elettromagnetismo classico. Sotto opportune condizioni, le equazioni prevedono la possibilità che il campo elettromagnetico possa propagarsi come un fenomeno ondulatorio. La rapida oscillazione di un cariche elettriche - e quindi una corrente alternata ad alta frequenza - è una sorgente di onde elettromagnetiche: un modello di questa sorgente è un dipolo oscillante, una realizzazione pratica fondamentale sono le antenne per le trasissioni di onde EM.
 
 Ai tempi, non era ancora chiaro che la luce visibile fosse un effetto EM, un esempio di onde EM con una particolare lunghezza d'onda e frequenza percepibile dall'occhio umano, i nostri percettori della vista.
@@ -19,6 +24,8 @@ Le equazioni di Maxwell prevedevano una velocità di propagazione delle onde EM 
 - con la velocità di propagazione prevista dal modello di Maxwell, e simile alle misure della velocità della luce.
 
 **todo** *descrizione esperimento, e qualche dettaglio sull'apparato sperimentale, e semplice modello matematico con l'elettrotecnica sviluppata nel capiolo precedente* **risonanza**
+
+**todo** *commento dei video allegati, se necessario*
 
 Hertz fece altre esperienze significative:
 - in un esperimento del 1887 sulle onde elettromagnetiche osserva l'**effetto fotoelettrico**, riportando l'osservazione senza fornire una spiegazione - che non aveva, e che verrà data da A.Einstein nel suo *annus mirabilis* 1905, alle origini della meccanica quantitica - ma di cui evidenza la necessità di ulteriori indagini
