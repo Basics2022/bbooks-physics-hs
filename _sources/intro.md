@@ -20,10 +20,8 @@ Questo libro fa parte del materiale pensato per [le scuole superiori](https://ba
 
 ````
 
-```{iframe} ./media/test_applet.html
-```
 ```{raw} html
-<iframe src="./projectile_motion.html" width="800" height="450" style="border:none;"></iframe>
+<iframe src="./media/test_applet.html" width="800" height="450" style="border:none;"></iframe>
 ```
 <!--
 **basics-books project.**
