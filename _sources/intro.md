@@ -21,7 +21,7 @@ Questo libro fa parte del materiale pensato per [le scuole superiori](https://ba
 ````
 
 ```{raw} html
-<iframe src="./../../media/test_applet.html" width="800" height="450" style="border:none;"></iframe>
+<iframe src="./../../media/test_applet.html" width="450" height="300" style="border:none;"></iframe>
 ```
 <!--
 **basics-books project.**
