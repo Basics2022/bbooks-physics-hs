@@ -137,7 +137,10 @@ $$\begin{cases}
    \end{cases}
    $$
 
-   $L = v_0 t^*$
+   $$\begin{aligned} 
+       x^* = L = v_0 t^* \quad & , \quad   y^* = \frac{1}{2} \frac{q}{m} E \left( \frac{L}{v_0} \right)^2 \\
+     v_x^* = v_0         \quad & , \quad v_y^* =             \frac{q}{m} E \frac{L}{v_0} \\
+   \end{aligned}$$
 
 - **Campo magnetico**
 
@@ -150,9 +153,13 @@ $$\begin{cases}
   \begin{cases}
     x(t) \sim v_0 t  \\
     y(t) = 0 \\
-    z(t) \sim \frac{1}{2} v_0 \frac{q}{m} B t^2 \\
+    z(t) \sim \frac{1}{2} \frac{q}{m} v_0 B t^2 \\
   \end{cases}$$
 
+   $$\begin{aligned} 
+       x^* = L = v_0 t^* \quad & , \quad   y^* = \frac{1}{2} \frac{q}{m} v_0 B \left( \frac{L}{v_0} \right)^2 \\
+     v_x^* = v_0         \quad & , \quad v_y^* =             \frac{q}{m} v_0 B \frac{L}{v_0} \\
+   \end{aligned}$$
 
 
 ```
