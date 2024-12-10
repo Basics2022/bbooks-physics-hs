@@ -217,7 +217,7 @@ $$v_{z, \infty}(E) = \frac{m g + q E}{c} = \frac{m g}{c} + \frac{E}{c} q \ ,$$
 
 considerata nota dalle misure. Confrontando la velocità limite misurata per due valori del campo elettrico, si può eliminare la dipendenza dalla massa e ottenere 
 
-$$v_{z, \infty}(E_2) - v_{z, \infty}(E_1) = \frac{E_2 - E_1}{c} q \qquad \rightarrow qquad q = \frac{c \left(v_{z,\infty}(E_2)- v_{z,\infty}(E_1) \right)}{E_2 - E_1}$$
+$$v_{z, \infty}(E_2) - v_{z, \infty}(E_1) = \frac{E_2 - E_1}{c} q \qquad \rightarrow \qquad q = \frac{c \left(v_{z,\infty}(E_2)- v_{z,\infty}(E_1) \right)}{E_2 - E_1}$$
 
 ```
 
