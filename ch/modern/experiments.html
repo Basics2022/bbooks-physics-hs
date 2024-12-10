@@ -878,46 +878,45 @@ Inserendo l’espressione <span class="math notranslate nohighlight">\(\dot{\the
 <div class="math notranslate nohighlight">
 \[r(\theta) = \frac{\Omega^2}{c} \frac{1}{A \dfrac{\, \Omega^2}{c} \cos \theta + B \dfrac{\, \Omega^2}{c} \sin \theta - 1}\]</div>
 <p class="sd-card-text"><strong>todo</strong> <em>Perché si possono considerare <span class="math notranslate nohighlight">\(A &gt; 0\)</span> e tale da ottenere un’iperbole quando <span class="math notranslate nohighlight">\(B = 0\)</span>?</em></p>
-<p class="sd-card-text">Scelta della direzione di riferimento: direzione del perielio: <span class="math notranslate nohighlight">\(r(\theta=0) = \min r\)</span>, <span class="math notranslate nohighlight">\(B = 0\)</span>,</p>
-<p class="sd-card-text">Scelte diverse si ottengono da una trasformazione di coordinate con una rotazione dell’asse di riferimento: <span class="math notranslate nohighlight">\(\theta_1 = \theta - \theta_0\)</span>, e quindi</p>
-<div class="math notranslate nohighlight">
-\[r(\theta) = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos \theta} = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos (\theta_1 + \theta_0 )} = \frac{\Omega^2}{GM}\frac{1}{1 + \underbrace{\frac{A\Omega^2}{GM} \cos \theta_0}_{= A_1} \cos \theta_1 \underbrace{- \frac{A \Omega^2}{GM} \sin \theta_0}_{= B_1} \sin \theta_1 }\]</div>
-<p class="sd-card-text">Il confronto con l’equazione delle coniche in coordinate polari, permette di riconoscere l’eccentricità, <span class="math notranslate nohighlight">\(e\)</span> e il prodotto <span class="math notranslate nohighlight">\(e \, D\)</span> dell’eccentricità per la distanza <span class="math notranslate nohighlight">\(D\)</span> tra fuoco e direttrice,</p>
-<div class="math notranslate nohighlight">
-\[e = \frac{A \Omega^2}{GM} \qquad , \qquad e \, D = \frac{\Omega^2}{GM}\]</div>
-<div class="math notranslate nohighlight">
-\[r(\theta) = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos \theta}\]</div>
-<div class="math notranslate nohighlight">
-\[r(\theta) = \frac{e \, D}{1 + e \, \cos \theta}\]</div>
+<p class="sd-card-text"><em>Scelta della direzione di riferimento:</em></p>
+<ul class="simple">
+<li><p class="sd-card-text"><em>direzione del perielio: <span class="math notranslate nohighlight">\(r(\theta=0) = \min r\)</span>, <span class="math notranslate nohighlight">\(B = 0\)</span>,?</em></p></li>
+</ul>
+<p class="sd-card-text"><strong>todo</strong> <em>Finire esercizio (nel file sorgente ci sono linee commentate che possono essere utili); aggiungere immagini; calcolare sezione d’urto e distribuzione urti e confronto con risultati di Rutherford</em></p>
 <!--
-$$e = - \frac{A \Omega^2}{GM}$$
-$$e D = \frac{\Omega^2}{GM}$$
-$$D= -\frac{1}{A}$$
+Scelte diverse si ottengono da una trasformazione di coordinate con una rotazione dell'asse di riferimento: $\theta_1 = \theta - \theta_0$, e quindi
 
-$$c = \frac{e^2}{1-e^2} D$$
-$$a = \frac{c}{e} = \frac{e}{1-e^2} D$$
-$$b = \sqrt{a^2 - c^2} = \sqrt{\frac{1 - e^2}{e^2}} c = \sqrt{\frac{1 - e^2}{e^2}}  \frac{e^2}{1-e^2} D = \frac{e D}{\sqrt{1-e^2}} = a \, \sqrt{1-e^2} $$
--->
-<p class="sd-card-text">Poiché la velocità areolare è costante, il periodo dell’orbita è uguale al raggporto tra l’area dell’ellisse e la velocità areaolare,</p>
-<div class="math notranslate nohighlight">
-\[T = \frac{\pi a b}{\Omega} = \pi \frac{a^2 \sqrt{1-e^2}}{\Omega} = \]</div>
-<div class="math notranslate nohighlight">
-\[1-e^2 = 1 - \left(\frac{A \Omega^2}{GM} \right)^2 = \frac{\Omega^2}{GM \, a} \]</div>
-<div class="math notranslate nohighlight">
-\[\rightarrow \qquad \frac{\sqrt{1-e^2}}{\Omega} = \frac{1}{\sqrt{GM} \sqrt{a}}\]</div>
-<div class="math notranslate nohighlight">
-\[\rightarrow \qquad T = \pi \frac{a^{\frac{3}{2}}}{\sqrt{GM}}\]</div>
-<div class="math notranslate nohighlight">
-\[
+$$r(\theta) = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos \theta} = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos (\theta_1 + \theta_0 )} = \frac{\Omega^2}{GM}\frac{1}{1 + \underbrace{\frac{A\Omega^2}{GM} \cos \theta_0}_{= A_1} \cos \theta_1 \underbrace{- \frac{A \Omega^2}{GM} \sin \theta_0}_{= B_1} \sin \theta_1 }$$
+
+Il confronto con l'equazione delle coniche in coordinate polari, permette di riconoscere l'eccentricità, $e$ e il prodotto $e \, D$ dell'eccentricità per la distanza $D$ tra fuoco e direttrice,
+
+$$e = \frac{A \Omega^2}{GM} \qquad , \qquad e \, D = \frac{\Omega^2}{GM}$$
+
+$$r(\theta) = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos \theta}$$
+$$r(\theta) = \frac{e \, D}{1 + e \, \cos \theta}$$
+
+Poiché la velocità areolare è costante, il periodo dell'orbita è uguale al raggporto tra l'area dell'ellisse e la velocità areaolare,
+
+$$T = \frac{\pi a b}{\Omega} = \pi \frac{a^2 \sqrt{1-e^2}}{\Omega} = $$
+
+$$1-e^2 = 1 - \left(\frac{A \Omega^2}{GM} \right)^2 = \frac{\Omega^2}{GM \, a} $$
+
+$$\rightarrow \qquad \frac{\sqrt{1-e^2}}{\Omega} = \frac{1}{\sqrt{GM} \sqrt{a}}$$
+
+$$\rightarrow \qquad T = \pi \frac{a^{\frac{3}{2}}}{\sqrt{GM}}$$
+
+$$
  2a = \frac{\Omega^2}{GM+A \Omega^2} + \frac{\Omega^2}{GM-A \Omega^2} 
     = \Omega^2 \frac{2 GM }{(GM)^2 - A^2 \Omega^4}
-\]</div>
-<div class="math notranslate nohighlight">
-\[A^2 \Omega^4 = (GM)^2 - \frac{GM \, \Omega^2}{a}\]</div>
-<div class="math notranslate nohighlight">
-\[\frac{\Omega^2}{GM}\frac{1}{a} = 1 - \left(\frac{A \Omega^2}{GM}\right)^2\]</div>
-<div class="math notranslate nohighlight">
-\[\frac{1}{a} = \left( 1 - \left(\frac{A \Omega^2}{GM}\right)^2 \right) \frac{GM}{\Omega^2}\]</div>
+$$
+
+$$A^2 \Omega^4 = (GM)^2 - \frac{GM \, \Omega^2}{a}$$
+
+$$\frac{\Omega^2}{GM}\frac{1}{a} = 1 - \left(\frac{A \Omega^2}{GM}\right)^2$$
+
+$$\frac{1}{a} = \left( 1 - \left(\frac{A \Omega^2}{GM}\right)^2 \right) \frac{GM}{\Omega^2}$$
+
+-->
 </div>
 </details></div>
 <div class="section" id="lo-spin-stern-gerlach">
