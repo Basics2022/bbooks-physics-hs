@@ -27,10 +27,11 @@ $$m_P \frac{ d^2 \vec{r}_P}{dt^2} = q_P \left[ \vec{e}(\vec{r}_P(t),t) - \vec{b}
 
 Una volta inteso che le quantità che compaiono nell'equazione sono riferite al punto $P$, per alleggerire un po' la notazione si fanno cadere i pedici $_P$.
 
-In generale, l'equazione del moto è un'equazione differenziale del secondo ordine non lineare, se il campo magnetico dipende dallo spazio o se il campo elettrico varia linearmente nello spazio. Nel caso in cui il campo elettromagnetico è costante (costante in tempo) e uniforme (costante in spazio), l'equazione del moto è lineare,
+In generale, l'equazione del moto è un'equazione differenziale del secondo ordine non lineare, se il campo magnetico dipende dallo spazio o se il campo elettrico varia linearmente nello spazio. Se il campo elettromagnetico è costante (costante in tempo) e uniforme (costante in spazio), $\vec{e}(\vec{r},t) = \vec{E}$, l'equazione del moto,
 
 $$m \ddot{\vec{r}} = q \left[ \vec{e} - \vec{b} \times \dot{\vec{r}} \right] \ .$$
 
+è una ODE lineare a coefficienti costanti.
 
 
 
