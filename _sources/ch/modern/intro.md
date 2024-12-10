@@ -71,6 +71,11 @@ $$\begin{cases}
   \ddot{z} =   \frac{q B}{m} \dot{x} \\
 \end{cases}$$
 
+$$\begin{cases}
+  \ddot{v}_x + \left(\frac{q B}{m}\right)^2 v_x = 0 \\
+  \ddot{v}_y = 0                                    \\
+  \ddot{v}_z + \left(\frac{q B}{m}\right)^2 v_z = 0 \\
+\end{cases}$$
 
 
 ```
