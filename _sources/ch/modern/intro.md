@@ -142,6 +142,10 @@ $$\begin{cases}
      v_x^* = v_0         \quad & , \quad v_y^* =             \frac{q}{m} E \frac{L}{v_0} \\
    \end{aligned}$$
 
+   Il rapporto $r_e = \frac{v_y^*}{v_x^*}$ può essere facilmente misurato e quindi considerarsi noto
+
+   $$\frac{q}{m} = \frac{1}{E} \frac{r_e}{t^*} $$
+
 - **Campo magnetico**
 
   $$\begin{cases}
@@ -161,6 +165,11 @@ $$\begin{cases}
      v_x^* = v_0         \quad & , \quad v_y^* =             \frac{q}{m} v_0 B \frac{L}{v_0} \\
    \end{aligned}$$
 
+   Il rapporto $r_b = \frac{v_y^*}{v_x^*}$ può essere facilmente misurato e quindi considerarsi noto
+
+   $$\frac{q}{m} = \frac{1}{v_0 B} \frac{r_b}{t^*} $$
+
+   Avnedo due espressioni per $\frac{q}{m}$ nelle quali compare il tempo $t^*$ come fattore, possiamo valutarne il rapporto
 
 ```
 
