@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>17. Introduzione ai fenomeni ondulatori &#8212; Fisica per le superiori</title>
+    <title>11. Cenni di meccanica del continuo &#8212; Fisica per le superiori</title>
   
   
   
@@ -65,12 +65,14 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/waves/intro';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/continuum/intro';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="18. Introduzione all’elettromagnetismo" href="../electromagnetism/intro.html" />
-    <link rel="prev" title="16.1. Problemi" href="../thermodynamics/heat-transmission-problems.html" />
+    <link rel="next" title="12. Introduzione alla termodinamica" href="../thermodynamics/foundation.html" />
+    <link rel="prev" title="10.7. Problemi" href="../mechanics/dynamics-problems.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -238,8 +240,8 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Cenni di meccanica del continuo</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../continuum/intro.html">11. Cenni di meccanica del continuo</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">11. Cenni di meccanica del continuo</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Termodinamica</span></p>
 <ul class="nav bd-sidenav">
@@ -296,8 +298,8 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Fenomeni ondulatori</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">17. Introduzione ai fenomeni ondulatori</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../waves/intro.html">17. Introduzione ai fenomeni ondulatori</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Elettromagnetismo</span></p>
 <ul class="nav bd-sidenav">
@@ -430,7 +432,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/edit/master/ch/waves/intro.md" target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/edit/master/ch/continuum/intro.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -447,7 +449,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/waves/intro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/continuum/intro.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Apri un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -477,7 +479,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/waves/intro.md" target="_blank"
+      <li><a href="../../_sources/ch/continuum/intro.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -548,7 +550,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -559,11 +563,26 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introduzione ai fenomeni ondulatori</h1>
+    <h1>Cenni di meccanica del continuo</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fluidi">11.1. Fluidi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-dei-fluidi">11.1.1. Statica dei fluidi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dinamica-dei-fluidi">11.1.2. Dinamica dei fluidi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-di-quantita-di-moto-energia-e-teorema-di-bernoulli">11.1.3. Bilancio di quantità di moto, energia e teorema di Bernoulli</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-stokes">11.1.4. Legge di Stokes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solidi">11.2. Solidi</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -573,8 +592,48 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="introduzione-ai-fenomeni-ondulatori">
-<span id="physics-hs-waves-intro"></span><h1><span class="section-number">17. </span>Introduzione ai fenomeni ondulatori<a class="headerlink" href="#introduzione-ai-fenomeni-ondulatori" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="cenni-di-meccanica-del-continuo">
+<span id="physics-hs-continuum"></span><h1><span class="section-number">11. </span>Cenni di meccanica del continuo<a class="headerlink" href="#cenni-di-meccanica-del-continuo" title="Permalink to this heading">#</a></h1>
+<p><strong>Contenuti.</strong></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Fluidi<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Solidi<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><div class="section" id="fluidi">
+<span id="continuum-fluids"></span><h2><span class="section-number">11.1. </span>Fluidi<a class="headerlink" href="#fluidi" title="Permalink to this heading">#</a></h2>
+<div class="section" id="statica-dei-fluidi">
+<span id="fluids-statics"></span><h3><span class="section-number">11.1.1. </span>Statica dei fluidi<a class="headerlink" href="#statica-dei-fluidi" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="dinamica-dei-fluidi">
+<span id="fluids-dynamics"></span><h3><span class="section-number">11.1.2. </span>Dinamica dei fluidi<a class="headerlink" href="#dinamica-dei-fluidi" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="bilancio-di-quantita-di-moto-energia-e-teorema-di-bernoulli">
+<span id="fluids-dynamics-bernoulli"></span><h3><span class="section-number">11.1.3. </span>Bilancio di quantità di moto, energia e teorema di Bernoulli<a class="headerlink" href="#bilancio-di-quantita-di-moto-energia-e-teorema-di-bernoulli" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="legge-di-stokes">
+<span id="fluids-dynamics-stokes"></span><h3><span class="section-number">11.1.4. </span>Legge di Stokes<a class="headerlink" href="#legge-di-stokes" title="Permalink to this heading">#</a></h3>
+<p>L’interazione tra un fluido e un corpo di piccole dimensioni in moto relativo rispetto al fluido con <em>velocità relativa</em> <span class="math notranslate nohighlight">\(\vec{v}_{rel}\)</span> rispetto alla velocità del fluido locale si manifesta come una forza di resistenza aerodinamica. Per un corpo sferico di raggio <span class="math notranslate nohighlight">\(R\)</span>, la formula di Stokes fornisce un’espressione <em>esatta</em> (<em>esatta all’interno del modello usato</em>) di questa forza</p>
+<div class="math notranslate nohighlight">
+\[\vec{F} = - 6 \pi \mu R \vec{v}_{rel} \ .\]</div>
+<p>La formula di Stokes fornisce un’espressione della resistenza aerodinamcia lineare rispetto alla velocità relativa.</p>
+<p><strong>todo</strong> <em>Commentare effetto di \text{Re}. Cogliere l’occasione per un po” di analisi dimensionale per ottenere la formula <span class="math notranslate nohighlight">\(\vec{F} = \frac{1}{2} \rho |\vec{v}|^2 \vec{c}_F(\text{Re}, \text{M})\)</span>…</em></p>
+</div>
+</div>
+<div class="section" id="solidi">
+<span id="continuum-solids"></span><h2><span class="section-number">11.2. </span>Solidi<a class="headerlink" href="#solidi" title="Permalink to this heading">#</a></h2>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -590,7 +649,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./ch/waves"
+            path: "./ch/continuum"
         },
         predefinedOutput: true
     }
@@ -608,20 +667,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../thermodynamics/heat-transmission-problems.html"
+       href="../mechanics/dynamics-problems.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">16.1. </span>Problemi</p>
+        <p class="prev-next-title"><span class="section-number">10.7. </span>Problemi</p>
       </div>
     </a>
     <a class="right-next"
-       href="../electromagnetism/intro.html"
+       href="../thermodynamics/foundation.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">18. </span>Introduzione all’elettromagnetismo</p>
+        <p class="prev-next-title"><span class="section-number">12. </span>Introduzione alla termodinamica</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -631,6 +690,27 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fluidi">11.1. Fluidi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-dei-fluidi">11.1.1. Statica dei fluidi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dinamica-dei-fluidi">11.1.2. Dinamica dei fluidi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-di-quantita-di-moto-energia-e-teorema-di-bernoulli">11.1.3. Bilancio di quantità di moto, energia e teorema di Bernoulli</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-stokes">11.1.4. Legge di Stokes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solidi">11.2. Solidi</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

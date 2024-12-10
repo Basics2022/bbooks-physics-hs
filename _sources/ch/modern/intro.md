@@ -4,8 +4,6 @@
 ## Scoperta dell'elettrone - J.J.Thomson
 
 ```{dropdown} Moto di una carica in un campo elettromagnetico uniforme stazionario
-:open:
-
 Una volta scelto un sistema di riferimento (*così da poter identificare la posizione di un punto nello spazio con un vettore posizione $\vec{r} = R-O$ rispetto all'origine*), il campo elettromagnetico (rispetto al sistema di riferimento, **todo** *aggiungere sezione su relatività per elettromagnetismo, anche galileiana come approssimazione a bassa velocità*) in una regione dello spazio viene rappresentato dai campi vettoriali, 
 
 $$\vec{e}(\vec{r},t) \, \quad \vec{b}(\vec{r},t) \ ,$$
@@ -179,12 +177,20 @@ $$\begin{cases}
 
    si arriva alla stima 
 
-   $$\frac{q}{m} = \ .$$
+   $$\frac{q}{m} = \frac{r_b^2}{r_e} \frac{E}{BL} \ .$$
 
 ```
 
 
 ## Misura della carica dell'elettrone - Millikan
+
+```{dropdown}
+:open:
+
+L'eseperimento sfrutta la [legge di Stokes](fluids:dynamics:stokes)
+
+```
+
 
 ## Modello atomico di Rutherford - Geiger-Mardsen
 
