@@ -167,11 +167,19 @@ $$\begin{cases}
 
    Il rapporto $r_b = \frac{v_y^*}{v_x^*}$ può essere facilmente misurato e quindi considerarsi noto
 
-   $$\frac{q}{m} = \frac{r_b v_0}{B L} \qquad \rightarrow \qqua v_0 \frac{q}{m} \frac{BL}{r_b}$$
+   $$\frac{q}{m} = \frac{r_b v_0}{B L} $$
+
+   **Stima del rapport $\frac{q}{m}$** Esprimendo $v_0$ in funzione di $\frac{q}{m}$,
+
+   $$ \qquad \rightarrow \qquad v_0 = \frac{q}{m} \frac{BL}{r_b}$$
 
    e sostituendo $v_0$ nell'espressione del rapporto che coinvolge il campo elettrico
 
-   $$$\frac{q}{m} = \frac{r_e}{EL}$
+   $$\frac{q}{m} = \frac{r_e}{EL} \left(\frac{q}{m}\right)^2 \left( \frac{B L}{r_b} \right)^2 \ ,$$
+
+   si arriva alla stima 
+
+   $$\frac{q}{m} = \ .$$
 
 ```
 
