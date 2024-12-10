@@ -63,8 +63,13 @@ $$
 
 $$
 \vec{B} \times \vec{v} = \left|\begin{matrix} \hat{x} & \hat{y} & \hat{z} \\ 0 & B & 0 \\ v_x & v_y & v_z \end{matrix}\right| =  \hat{x} B v_z - \hat{z} B v_x 
-
 $$
+
+$$\begin{cases}
+  \ddot{x} = - \frac{q B}{m} \dot{z} \\
+  \ddot{y} = 0                       \\
+  \ddot{z} =   \frac{q B}{m} \dot{x} \\
+\end{cases}$$
 
 
 
