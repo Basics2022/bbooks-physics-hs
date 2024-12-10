@@ -185,8 +185,6 @@ $$\begin{cases}
 ## Misura della carica dell'elettrone - Millikan
 
 ```{dropdown} Misura della carica dell'elettrone
-:open:
-
 L'esperimento permette di stimare la carica dell'elettrone grazie alle misure sul moto in un fluido di gocce d'olio cariche elettricamente. Vengono confrontate almeno due condizioni differenti, identificate dall'intensità nota del campo elettrico $\vec{E}$ applicato al sistema, che si manifesta come forza  $\vec{F}^{el} = q \vec{E}$ sul moto di una corpo con carica elettrica $q$.
 
 Il confronto tra le velocità limite $v_{\infty,E}$ e $v_{\infty,0}$ nelle due condizioni permette di ottenere un misura della carica $q$ del corpo in esame.
@@ -223,8 +221,17 @@ $$v_{z, \infty}(E_2) - v_{z, \infty}(E_1) = \frac{E_2 - E_1}{c} q \qquad \righta
 
 
 ## Modello atomico di Rutherford - Geiger-Mardsen
+```{dropdown} Scattering
+:open:
+
+
+
+```
 
 ## Lo spin - Stern-Gerlach
+```{dropdown} Moto di un dipolo magnetico in un campo magnetico non uniforme
+:open:
 
+```
 
 
