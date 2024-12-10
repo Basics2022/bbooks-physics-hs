@@ -112,12 +112,12 @@ v_y(t) = 0 \\
 v_z(t) = v_0 \sin \Omega t \\
 \end{cases}$$
 
-mentre la posizione, integrando e applicando le condizioni iniziali,
+mentre la posizione, integrando e applicando le condizioni iniziali, e ricorando che $\Omega = \frac{q B}{m}$
 
 $$\begin{cases}
-  x(t) = \frac{v_0}{\Omega} \sin \Omega t  \\
+  x(t) = \frac{v_0}{B} \frac{m}{q} \sin \Omega t  \\
   y(t) = 0 \\
-  z(t) = \frac{v_0}{\Omega} \left[ 1 - \cos \Omega t \right] \\
+  z(t) = \frac{v_0}{B} \frac{m}{q} \left[ 1 - \cos \Omega t \right] \\
 \end{cases}$$
 
 
