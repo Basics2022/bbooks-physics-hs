@@ -167,9 +167,11 @@ $$\begin{cases}
 
    Il rapporto $r_b = \frac{v_y^*}{v_x^*}$ può essere facilmente misurato e quindi considerarsi noto
 
-   $$\frac{q}{m} = \frac{r_b v_0}{B L} $$
+   $$\frac{q}{m} = \frac{r_b v_0}{B L} \qquad \rightarrow \qqua v_0 \frac{q}{m} \frac{BL}{r_b}$$
 
-   Avnedo due espressioni per $\frac{q}{m}$ nelle quali compare il tempo $t^*$ come fattore, possiamo valutarne il rapporto
+   e sostituendo $v_0$ nell'espressione del rapporto che coinvolge il campo elettrico
+
+   $$$\frac{q}{m} = \frac{r_e}{EL}$
 
 ```
 
