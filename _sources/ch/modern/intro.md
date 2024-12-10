@@ -120,6 +120,38 @@ $$\begin{cases}
   z(t) = \frac{v_0}{B} \frac{m}{q} \left[ 1 - \cos \left( \frac{q}{m} B t \right) \right] \\
 \end{cases}$$
 
+**Soluzioni per piccole deviazioni** con campo elettromagnetico presente solo nella regione $x \in [0, L]$,
+- **Campo elettrico**
+  
+   $$
+   \begin{cases}
+     x(t) = v_0 t \\
+     y(t) = \frac{1}{2} \frac{q E}{m} t^2 \\
+     z(t) =   0   \\
+   \end{cases}
+   \qquad , \qquad
+   \begin{cases}
+     v_x(t) = v_0 \\
+     v_y(t) = \frac{q E}{m} t \\
+     v_z(t) =   0 \\
+   \end{cases}
+   $$
+
+- **Campo magnetico**
+
+  $$\begin{cases}
+  v_x(t) = v_0 \cos \Omega t  \\
+  v_y(t) = 0 \\
+  v_z(t) = v_0 \sin \Omega t \\
+  \end{cases}
+  \qquad , \qquad
+  \begin{cases}
+    x(t) = \frac{v_0}{B} \frac{m}{q} \sin \left( \frac{q}{m} B t \right)  \\
+    y(t) = 0 \\
+    z(t) = \frac{v_0}{B} \frac{m}{q} \left[ 1 - \cos \left( \frac{q}{m} B t \right) \right] \\
+  \end{cases}$$
+
+
 
 ```
 
