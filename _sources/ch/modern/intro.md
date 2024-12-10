@@ -6,7 +6,7 @@
 ```{exercise} Moto di una carica in un campo elettromagnetico uniforme stazionario
 Una volta scelto un sistema di riferimento (*così da poter identificare la posizione di un punto nello spazio con un vettore posizione $\vec{r} = R-O$ rispetto all'origine), il campo elettromagnetico (rispetto al sistema di riferimento, **todo** *aggiungere sezione su relatività per elettromagnetismo, anche galileiana come approssimazione a bassa velocità*) in una regione dello spazio viene rappresentato dai campi vettoriali, 
 
-$$\vec{e}(\vec{r},t) \, \quad \vec{b}(\vec{r},t) \ ,$
+$$\vec{e}(\vec{r},t) \, \quad \vec{b}(\vec{r},t) \ ,$$
 
 che permettono di esprimere il campo elettrico e il campo magnetico come funzioni della variabile spazio $\vec{r}$ e tempo $t$.
 
