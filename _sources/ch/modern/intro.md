@@ -125,30 +125,32 @@ $$\begin{cases}
   
    $$
    \begin{cases}
-     x(t) = v_0 t \\
-     y(t) = \frac{1}{2} \frac{q E}{m} t^2 \\
-     z(t) =   0   \\
-   \end{cases}
-   \qquad , \qquad
-   \begin{cases}
      v_x(t) = v_0 \\
      v_y(t) = \frac{q E}{m} t \\
      v_z(t) =   0 \\
    \end{cases}
+   \qquad , \qquad
+   \begin{cases}
+     x(t) = v_0 t \\
+     y(t) = \frac{1}{2} \frac{q E}{m} t^2 \\
+     z(t) =   0   \\
+   \end{cases}
    $$
+
+   $L = v_0 t^*$
 
 - **Campo magnetico**
 
   $$\begin{cases}
   v_x(t) \sim v_0  \\
   v_y(t) = 0 \\
-  v_z(t) = v_0 \frac{q}{m} B t \\
+  v_z(t) \sim v_0 \frac{q}{m} B t \\
   \end{cases}
   \qquad , \qquad
   \begin{cases}
-    x(t) = v_0 t  \\
+    x(t) \sim v_0 t  \\
     y(t) = 0 \\
-    z(t) = \frac{1}{2} v_0 \frac{q}{m} B t^2 \\
+    z(t) \sim \frac{1}{2} v_0 \frac{q}{m} B t^2 \\
   \end{cases}$$
 
 
