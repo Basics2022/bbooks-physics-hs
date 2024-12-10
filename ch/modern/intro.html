@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/modern/intro';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
@@ -284,7 +286,6 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l3"><a class="reference internal" href="../thermodynamics/heat-engine-rankine.html">14.4.4. Ciclo Rankine</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/heat-engine-problems.html">14.5. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../thermodynamics/heat-transmission.html">15. Meccanismi di trasmissione del calore</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -545,7 +546,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -561,6 +564,17 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scoperta-dell-elettrone-j-j-thompson">22.1. Scoperta dell’elettrone - J.J.Thompson</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#misura-della-carica-dell-elettrone-millikan">22.2. Misura della carica dell’elettrone - Millikan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modello-atomico-di-rutherford-geiger-mardsen">22.3. Modello atomico di Rutherford - Geiger-Mardsen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lo-spin-stern-gerlach">22.4. Lo spin - Stern-Gerlach</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -572,7 +586,27 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="introduzione-alla-fisica-del-xx-secolo">
 <span id="physics-hs-modern-intro"></span><h1><span class="section-number">22. </span>Introduzione alla fisica del XX secolo<a class="headerlink" href="#introduzione-alla-fisica-del-xx-secolo" title="Permalink to this heading">#</a></h1>
-<p><strong>todo</strong></p>
+<div class="section" id="scoperta-dell-elettrone-j-j-thompson">
+<h2><span class="section-number">22.1. </span>Scoperta dell’elettrone - J.J.Thompson<a class="headerlink" href="#scoperta-dell-elettrone-j-j-thompson" title="Permalink to this heading">#</a></h2>
+<div class="exercise admonition" id="ch/modern/intro-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 22.1 </span> (Moto di una carica in un campo elettromagnetico uniforme stazionario)</p>
+<div class="section" id="exercise-content">
+<p>Una carica elettica di intensità <span class="math notranslate nohighlight">\(q\)</span> in moto con una velocità <span class="math notranslate nohighlight">\(\vec{v}_P\)</span> in un punto dello spazio <span class="math notranslate nohighlight">\(\vec{r}\)</span> in cui è presente un campo elettromagnetico <span class="math notranslate nohighlight">\(\vec{e}(\vec{r})\)</span>, <span class="math notranslate nohighlight">\(\vec{b}(\bec{r})\)</span> è soggetta alla forza di Lorentz,</p>
+<div class="math notranslate nohighlight">
+\[\vec{F} = q \left( \vec{e}(\vec{r},t) - \vec{b}(\vec{r},t) \times \vec{v}_P(t) \right)\]</div>
+</div>
+</div>
+</div>
+<div class="section" id="misura-della-carica-dell-elettrone-millikan">
+<h2><span class="section-number">22.2. </span>Misura della carica dell’elettrone - Millikan<a class="headerlink" href="#misura-della-carica-dell-elettrone-millikan" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="modello-atomico-di-rutherford-geiger-mardsen">
+<h2><span class="section-number">22.3. </span>Modello atomico di Rutherford - Geiger-Mardsen<a class="headerlink" href="#modello-atomico-di-rutherford-geiger-mardsen" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="lo-spin-stern-gerlach">
+<h2><span class="section-number">22.4. </span>Lo spin - Stern-Gerlach<a class="headerlink" href="#lo-spin-stern-gerlach" title="Permalink to this heading">#</a></h2>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -629,6 +663,23 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scoperta-dell-elettrone-j-j-thompson">22.1. Scoperta dell’elettrone - J.J.Thompson</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#misura-della-carica-dell-elettrone-millikan">22.2. Misura della carica dell’elettrone - Millikan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modello-atomico-di-rutherford-geiger-mardsen">22.3. Modello atomico di Rutherford - Geiger-Mardsen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lo-spin-stern-gerlach">22.4. Lo spin - Stern-Gerlach</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
