@@ -298,10 +298,10 @@ $$\ddot{r} = \dot{\theta} \frac{d}{d \theta} \left( - \Omega \frac{dz}{d \theta}
 
 e la componente radiale dell'equazione di moto,
 
-$$-z^2 \Omega^2 z'' - z^3 \Omega^2 = - G M z^2$$
+$$-z^2 \Omega^2 z'' - z^3 \Omega^2 = c \, z^2$$
 $$ z'' + z  = \frac{G M}{\Omega^2}$$
 
-$$z(\theta) = \frac{G M}{\Omega^2} + A \cos(\theta) + B \sin(\theta) \ .$$
+$$z(\theta) = - \frac{c}{\Omega^2} + A \cos(\theta) + B \sin(\theta) \ .$$
 
 e quindi
 
