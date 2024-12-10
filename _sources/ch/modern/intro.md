@@ -99,9 +99,21 @@ $$\begin{cases}
 \end{cases}
 \qquad \rightarrow \qquad
 \begin{cases}
-  Bx = 0 \ , \quad B_z = v_0 \\
-  Bx = 0 \ , \quad B_z = v_0 \\
+  B_x = 0  \\
+  A_y = 0 \\
+  B_z = v_0 \\
 \end{cases}$$
+
+la velocità diventa
+
+$$\begin{cases}
+v_x = A_x \cos \Omega t + B_x \sin \Omega t \\
+v_y = A_y t + B_y                           \\
+v_z = A_z \cos \Omega t + B_z \sin \Omega t \\
+\end{cases}$$
+
+mentre la posizione, integrando e applicando le condizioni iniziali,
+
 
 ```
 
