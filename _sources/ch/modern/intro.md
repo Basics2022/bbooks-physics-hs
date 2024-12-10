@@ -33,19 +33,28 @@ $$m \ddot{\vec{r}} = q \left[ \vec{E} - \vec{B} \times \dot{\vec{r}} \right] \ .
 
 è una ODE lineare a coefficienti costanti, risolvibile in forma analitica.
 
-**Esperimento di J.J.Thomson.** $\vec{E} = E \hat{y}$, $\vec{B} = B \hat{z}$,
+**Esperimento di J.J.Thomson.** 
+Condizioni iniziali $\vec{r} = \vec{0}$, $\vec{v}(0) = v_0 \hat{x}$
+
+**Campo elettrico.** $\vec{E} = E \hat{y}$
+
+$$\begin{cases}
+  \ddot{x} =                  \\
+  \ddot{y} = \frac{q}{m} E    \\
+  \ddot{z} =                  \\
+\end{cases}$$
+
+$$\begin{cases}
+  x(t) = v_0 t \\
+  y(t) = \frac{1}{2} \frac{q E}{m} t^2 \\
+  z(t) =   0   \\
+\end{cases}$$
+
 
 $$
 \vec{B} \times \vec{v} = \left|\begin{matrix} \hat{x} & \hat{y} & \hat{z} \\ 0 & 0 & B \\ v_x & v_y & v_z \end{matrix}\right| = -\hat{x} B v_y + \hat{y} B v_x 
 
 $$
-
-$$\begin{cases}
-  \ddot{x} = \frac{q}{m} \left[       B v_y \right] \\
-  \ddot{y} = \frac{q}{m} \left[ E_y - B v_x \right] \\
-  \ddot{z} = \frac{q}{m} \left[             \right] \\
-\end{cases}$$
-
 
 
 
