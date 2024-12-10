@@ -23,7 +23,14 @@ $$\vec{F}_P(t) = q_P \left[ \vec{e}(\vec{r}_P(t),t) - \vec{b}(\vec{r}_P(t),t) \t
 
 e l'equazione del moto per la carica è
 
-$$m \frac{ d^2 \vec{r}_P}{dt^2} = q_P \left[ \vec{e}(\vec{r}_P(t),t) - \vec{b}(\vec{r}_P(t),t) \times \frac{d \vec{r}_P}{dt} \right] $$
+$$m_P \frac{ d^2 \vec{r}_P}{dt^2} = q_P \left[ \vec{e}(\vec{r}_P(t),t) - \vec{b}(\vec{r}_P(t),t) \times \frac{d \vec{r}_P}{dt} \right] \ .$$
+
+Una volta inteso che le quantità che compaiono nell'equazione sono riferite al punto $P$, per alleggerire un po' la notazione si fanno cadere i pedici $_P$.
+
+In generale, l'equazione del moto è un'equazione differenziale del secondo ordine non lineare, se il campo magnetico dipende dallo spazio o se il campo elettrico varia linearmente nello spazio. Nel caso in cui il campo elettromagnetico è costante (costante in tempo) e uniforme (costante in spazio), l'equazione del moto è lineare,
+
+$$m \ddot{\vec{r}} = q \left[ \vec{e} - \vec{b} \times \dot{\vec{r}} \right] \ .$$
+
 
 
 
