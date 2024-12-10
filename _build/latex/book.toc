@@ -131,6 +131,7 @@
 \contentsline {subsection}{\numberline {12.1.3}Bilancio di quantità di moto, energia e teorema di Bernoulli}{97}{subsection.12.1.3}%
 \contentsline {subsection}{\numberline {12.1.4}Legge di Stokes}{97}{subsection.12.1.4}%
 \contentsline {section}{\numberline {12.2}Solidi}{98}{section.12.2}%
+\contentsline {section}{\numberline {12.3}todo}{98}{section.12.3}%
 \contentsline {part}{V\hspace {1em}Termodinamica}{99}{part.5}%
 \contentsline {chapter}{\numberline {13}Introduzione alla termodinamica}{101}{chapter.13}%
 \contentsline {section}{\numberline {13.1}Breve storia della termodinamica}{102}{section.13.1}%
@@ -267,6 +268,13 @@
 \contentsline {section}{\numberline {17.1}Problemi}{165}{section.17.1}%
 \contentsline {part}{VI\hspace {1em}Fenomeni ondulatori}{169}{part.6}%
 \contentsline {chapter}{\numberline {18}Introduzione ai fenomeni ondulatori}{171}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Effetti associati}{171}{section.18.1}%
+\contentsline {subsection}{\numberline {18.1.1}Riflessione}{171}{subsection.18.1.1}%
+\contentsline {subsection}{\numberline {18.1.2}Rifrazione}{171}{subsection.18.1.2}%
+\contentsline {subsection}{\numberline {18.1.3}Interferenza}{171}{subsection.18.1.3}%
+\contentsline {subsection}{\numberline {18.1.4}Diffrazione}{171}{subsection.18.1.4}%
+\contentsline {subsection}{\numberline {18.1.5}Polarizzazione}{171}{subsection.18.1.5}%
+\contentsline {section}{\numberline {18.2}Ottica}{171}{section.18.2}%
 \contentsline {part}{VII\hspace {1em}Elettromagnetismo}{173}{part.7}%
 \contentsline {chapter}{\numberline {19}Introduzione all’elettromagnetismo}{175}{chapter.19}%
 \contentsline {section}{\numberline {19.1}Breve storia dell’elettromagnetismo}{175}{section.19.1}%
@@ -358,20 +366,26 @@
 \contentsline {chapter}{\numberline {22}Onde elettromagnetiche}{217}{chapter.22}%
 \contentsline {section}{\numberline {22.1}Problemi}{218}{section.22.1}%
 \contentsline {part}{VIII\hspace {1em}Fisica moderna}{221}{part.8}%
-\contentsline {chapter}{\numberline {23}Fisica del XX secolo}{223}{chapter.23}%
-\contentsline {section}{\numberline {23.1}Struttura del capitolo}{223}{section.23.1}%
-\contentsline {subsection}{\numberline {23.1.1}Domande}{223}{subsection.23.1.1}%
-\contentsline {subsection}{\numberline {23.1.2}Macro\sphinxhyphen {}argomenti}{223}{subsection.23.1.2}%
-\contentsline {subsubsection}{Materia e luce}{223}{subsubsection*.519}%
-\contentsline {subsubsection}{Relatività di Einstein}{224}{subsubsection*.520}%
-\contentsline {subsection}{\numberline {23.1.3}Esperienze}{224}{subsection.23.1.3}%
-\contentsline {subsection}{\numberline {23.1.4}Tecniche di misura}{224}{subsection.23.1.4}%
-\contentsline {chapter}{\numberline {24}Introduzione alla fisica del XX secolo}{227}{chapter.24}%
-\contentsline {chapter}{\numberline {25}Esperimenti}{229}{chapter.25}%
-\contentsline {section}{\numberline {25.1}Scoperta dell’elettrone \sphinxhyphen {} J.J.Thomson}{229}{section.25.1}%
-\contentsline {section}{\numberline {25.2}Misura della carica dell’elettrone \sphinxhyphen {} Millikan}{231}{section.25.2}%
-\contentsline {section}{\numberline {25.3}Modello atomico di Rutherford \sphinxhyphen {} Geiger\sphinxhyphen {}Mardsen}{232}{section.25.3}%
-\contentsline {section}{\numberline {25.4}Lo spin \sphinxhyphen {} Stern\sphinxhyphen {}Gerlach}{232}{section.25.4}%
+\contentsline {chapter}{\numberline {23}Introduzione alla fisica del XX secolo}{223}{chapter.23}%
+\contentsline {chapter}{\numberline {24}Esperienze}{225}{chapter.24}%
+\contentsline {section}{\numberline {24.1}Studi sui solidi}{225}{section.24.1}%
+\contentsline {subsection}{\numberline {24.1.1}Effetti termoelettrici: Seebeck, Peltier, Thomson}{225}{subsection.24.1.1}%
+\contentsline {subsection}{\numberline {24.1.2}Piroelettricità}{225}{subsection.24.1.2}%
+\contentsline {subsection}{\numberline {24.1.3}Piezoelettricità}{226}{subsection.24.1.3}%
+\contentsline {section}{\numberline {24.2}Interazione luce\sphinxhyphen {}materia}{226}{section.24.2}%
+\contentsline {subsection}{\numberline {24.2.1}Spettrografia}{226}{subsection.24.2.1}%
+\contentsline {subsection}{\numberline {24.2.2}Effetto fotoelettrico}{226}{subsection.24.2.2}%
+\contentsline {subsection}{\numberline {24.2.3}Radiazione di corpo nero}{226}{subsection.24.2.3}%
+\contentsline {subsection}{\numberline {24.2.4}Calore specifico dei solidi}{226}{subsection.24.2.4}%
+\contentsline {section}{\numberline {24.3}Relatività}{226}{section.24.3}%
+\contentsline {subsection}{\numberline {24.3.1}Relatività speciale}{226}{subsection.24.3.1}%
+\contentsline {subsection}{\numberline {24.3.2}Relatività generale}{226}{subsection.24.3.2}%
+\contentsline {chapter}{\numberline {25}Esperimenti}{227}{chapter.25}%
+\contentsline {section}{\numberline {25.1}Scoperta dell’elettrone \sphinxhyphen {} J.J.Thomson}{227}{section.25.1}%
+\contentsline {section}{\numberline {25.2}La radioattività \sphinxhyphen {} Esperimento dei coniugi Curie}{229}{section.25.2}%
+\contentsline {section}{\numberline {25.3}Misura della carica dell’elettrone \sphinxhyphen {} Millikan}{230}{section.25.3}%
+\contentsline {section}{\numberline {25.4}Modello atomico di Rutherford \sphinxhyphen {} Geiger\sphinxhyphen {}Mardsen}{230}{section.25.4}%
+\contentsline {section}{\numberline {25.5}Lo spin \sphinxhyphen {} Stern\sphinxhyphen {}Gerlach}{232}{section.25.5}%
 \contentsline {chapter}{\numberline {26}Radioattività}{233}{chapter.26}%
 \contentsline {section}{\numberline {26.1}Storia}{233}{section.26.1}%
 \contentsline {subsection}{\numberline {26.1.1}Raggi X}{233}{subsection.26.1.1}%
@@ -388,4 +402,4 @@
 \contentsline {section}{\numberline {29.1}Breve storia}{241}{section.29.1}%
 \contentsline {part}{IX\hspace {1em}Indice}{243}{part.9}%
 \contentsline {chapter}{\numberline {30}Indice}{245}{chapter.30}%
-\contentsline {chapter}{Proof Index}{247}{section*.521}%
+\contentsline {chapter}{Proof Index}{247}{section*.519}%

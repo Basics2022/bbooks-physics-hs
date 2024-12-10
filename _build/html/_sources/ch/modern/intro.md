@@ -1,13 +1,7 @@
 (physics-hs:modern:intro)=
 # Introduzione alla fisica del XX secolo
 
-<!-- LLM summary -->
-Alla fine del XIX secolo, la fisica sembrava basarsi su teorie consolidate come meccanica, termodinamica ed elettromagnetismo; il riconoscimento della luce come fenomeno ondulatorio elettromagnetico sembrava risolvere la disputa sulla natura della luce come fenomeno continuo, continuo così come i modelli utilizzati per fluidi e solidi che hanno contribuito alla rivoluzione tecnica e industriale. Mentre in chimica si cercava di mettere insieme i dettagli di un modello atomico discreto, in fisica questo faceva fatica a essere accettato, nonostante i lavori di Clausius, Maxwell e Boltzmann.
-
-Tuttavia, le teorie sviluppate non erano tra di loro compatibili e non erano in grado di spiegare alcune osservazioni sperimentali come gli spettri atomici discreti, la radiazione del corpo nero, l’effetto fotoelettrico. Ulteriori indagini sulla natura della materia - e la sua stabilità -, della luce e delle loro interazioni portarono all'accettazione del modello atomistico della materia.
-Il riconoscimento della costanza della velocità della luce come costante universale portarono alla formulazione della relatività (ristretta) di Einstein, in cui veniva risolta l'imcompatibilità tra meccanica ed elettromagnetismo. La formulazione di una nuova teoria meccanica (quantistica) per i fenomeni su scale atomiche misero in evidenza il comportamento "duale" di luce e materia come onda e particella.
-La teoria della relatività generale di Einstein completava la rivoluzione, imponendosi come nuova teoria della gravitazione in grado di spiegare le osservazioni astronomiche che risultavano anomale con il modello di gravitazione di Newton.
-
+Neanche il tempo di pensare che le teorie di meccanica, termodinamica ed elettromagnetismo fornisssero un modello completo, soddisfacente e concluso della fisica, che indagini più dettagliate sulla natura pù intima di materia, luce e gravitazione portarono in pochi anni alla rivoluzione relativistica e quantistica che avrebbero sconvolto la fisica e, ancora di più la storia dell'umanità, aprendo allo sviluppo tecnologico del XX secolo che dura tutt'oggi.
 
 ````{only} html
 **Contenuti.**
@@ -20,6 +14,15 @@ La teoria della relatività generale di Einstein completava la rivoluzione, impo
 ```
 
 ````
+
+<!-- LLM summary + my updates -->
+Alla fine del XIX secolo, la fisica sembrava basarsi su teorie consolidate come meccanica, termodinamica ed elettromagnetismo; il riconoscimento della luce come fenomeno ondulatorio elettromagnetico sembrava risolvere la disputa sulla natura della luce come fenomeno continuo, continuo così come i modelli utilizzati per fluidi e solidi che hanno contribuito alla rivoluzione tecnica e industriale. Mentre in chimica si cercava di mettere insieme i dettagli di un modello atomico discreto, in fisica questo faceva fatica a essere accettato, nonostante i lavori di Clausius, Maxwell e Boltzmann.
+
+Tuttavia, le teorie sviluppate non erano tra di loro compatibili e non erano in grado di spiegare alcune osservazioni sperimentali come gli spettri atomici discreti, la radiazione del corpo nero, l’effetto fotoelettrico. Ulteriori indagini sulla natura della materia - e la sua stabilità -, della luce e delle loro interazioni portarono all'accettazione del modello atomistico della materia.
+Il riconoscimento della costanza della velocità della luce come costante universale portarono alla formulazione della relatività (ristretta) di Einstein, in cui veniva risolta l'imcompatibilità tra meccanica ed elettromagnetismo. La formulazione di una nuova teoria meccanica (quantistica) per i fenomeni su scale atomiche misero in evidenza il comportamento "duale" di luce e materia come onda e particella.
+La teoria della relatività generale di Einstein completava la rivoluzione, imponendosi come nuova teoria della gravitazione in grado di spiegare le osservazioni astronomiche che risultavano anomale con il modello di gravitazione di Newton.
+
+
 
 <!-- original version
 Alla fine del XIX secolo, la fisica ha a disposizione alcune teorie mature - meccanica, teromdinamica, ed eletteromagnetismo - per la descrizione e la previsione di fenomeni fisicie applicazioni di successo.

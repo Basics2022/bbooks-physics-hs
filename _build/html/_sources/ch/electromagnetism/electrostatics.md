@@ -1,6 +1,7 @@
 (physics-hs:electromagnetism:electrostatics)=
 # Elettrostatica
 
+(physics-hs:electromagnetism:electrostatics:coulomb)=
 ## Legge di Coulomb
 
 Date due cariche elettriche puntiformi $q_1$, $q_2$, nella posizione $P_1$, $P_2$ nello spazio, la forza 

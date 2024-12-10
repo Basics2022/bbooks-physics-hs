@@ -36,9 +36,11 @@ kernelspec:
   - punti lagrangiani. Esempio: telescopio Webb
 -->
 
+(physics-hs:mechanics:dynamics:motion:gravitation:newton)=
 ## Legge di gravitazione universale
 $$\vec{F}_{10} = G \, m_0 \, m_1 \frac{\vec{r}_{01}}{\left|\vec{r}_{01}\right|^3}$$
 
+(physics-hs:mechanics:dynamics:motion:gravitation:two-bodies)=
 ## Problema dei due corpi
 
 In meccanica classica, il problema dei due corpi si riferisce alla dinamica di un sistema formato da due corpi puntiformi soggetti unicamente alla mutua interazione gravitazionale, descritta dalla legge di gravitazione universale di Newton.
@@ -71,6 +73,7 @@ Le equazioni del moto in questi due sistemi di riferimento possono essere scritt
 
 $$m_1 \, \ddot{\vec{r}} = - G M m_1 \frac{\vec{r}}{r^3} \ .$$
 
+(physics-hs:mechanics:dynamics:motion:gravitation:two-bodies:energy-and-conics)=
 ### Traiettorie, coniche, ed energia
 
 E' possibile dimostrare che il moto di ognuno dei due corpi è un moto piano, e che la traiettoria avviene descrive una conica.
@@ -99,7 +102,7 @@ Poiché $\frac{1}{2}\dot{r}^2 \ge 0$, il moto è possibile per tutti i valori di
 - $E = 0$ è un caso limite che separa le orbite chiuse e le orbite aperte: a $E = 0$ è associata un'orbita parabolica
 - per $E > 0$ le orbite aperte sono iperboliche
 
-
+(physics-hs:mechanics:dynamics:motion:gravitation:two-bodies:kepler)=
 ### Traiettorie chiuse e leggi di Keplero
 
 **Prima legge.** Un pianeta descrive un'orbita ellittica attorno al Sole, che si trova in uno dei due fuochi.
