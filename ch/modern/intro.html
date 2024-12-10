@@ -767,12 +767,12 @@ Misura della carica dell’elettrone<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">L’esperimento permette di stimare la carica dell’elettrone grazie alle misure sul moto in un fluido di gocce d’olio cariche elettricamente. Vengono confrontate due condizioni differenti: una in cui viene applicato un campo elettrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> che si manifesta sul moto di una carica di intensità <span class="math notranslate nohighlight">\(q\)</span> con una forza <span class="math notranslate nohighlight">\(\vec{F}^{el} = q \vec{E}\)</span>; l’altra senza applicazinoe del campo.</p>
+<p class="sd-card-text">L’esperimento permette di stimare la carica dell’elettrone grazie alle misure sul moto in un fluido di gocce d’olio cariche elettricamente. Vengono confrontate almeno due condizioni differenti, identificate dall’intensità nota del campo elettrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> applicato al sistema, che si manifesta come forza  <span class="math notranslate nohighlight">\(\vec{F}^{el} = q \vec{E}\)</span> sul moto di una corpo con carica elettrica <span class="math notranslate nohighlight">\(q\)</span>.</p>
 <p class="sd-card-text">Il confronto tra le velocità limite <span class="math notranslate nohighlight">\(v_{\infty,E}\)</span> e <span class="math notranslate nohighlight">\(v_{\infty,0}\)</span> nelle due condizioni permette di ottenere un misura della carica <span class="math notranslate nohighlight">\(q\)</span> del corpo in esame.</p>
 <p class="sd-card-text">Nell’esperimento di Millikan è impossibile controllare la carica esatta di ogni goccia d’olio. Ripetendo l’esperimento più volte su un gran numero di gocce si osserva che la misura della carica di queste gocce restituisce valori multipli di una carica «elementare», che viene considerata la carica dell’elettrone.</p>
 <p class="sd-card-text">L’esperimento sfrutta la <a class="reference internal" href="../continuum/intro.html#fluids-dynamics-stokes"><span class="std std-ref">legge di Stokes</span></a>, che prevede una resistenza aerodinamica lineare tra la forza agente su un corpo di piccole dimensioni e la sua velocità relativa al fluido nel quale si muove,</p>
 <div class="math notranslate nohighlight">
-\[\vec{F}^{aero} = - 6 \pi \mu R \vec{v}_rel = - c \vec{v} \ ,\]</div>
+\[\vec{F}^{aero} = - 6 \pi \mu R \vec{v}_{rel} = - c \vec{v} \ ,\]</div>
 <p class="sd-card-text">avendo indicato con <span class="math notranslate nohighlight">\(c\)</span> la costante di proporzionalità (per ogni goccia, bisogna stimare <span class="math notranslate nohighlight">\(R\)</span>, qua lo supponiamo misurato e quindi noto), e considerato il fluido a riposo.</p>
 <p class="sd-card-text">Se il campo elettrico <span class="math notranslate nohighlight">\(\vec{E} = E \hat{z}\)</span> è allineato con la gravità locale, <span class="math notranslate nohighlight">\(\vec{g} = g \hat{z}\)</span>, la componente lungo questa direzione dell’equazione di moto della goccia è</p>
 <div class="math notranslate nohighlight">
@@ -783,6 +783,9 @@ Misura della carica dell’elettrone<div class="sd-summary-down docutils">
 <p class="sd-card-text">Integrando in tempo con la condizione iniziale <span class="math notranslate nohighlight">\(v_z(0) = v_0\)</span>, si può esprimere la velocità in funzione del tempo,</p>
 <div class="math notranslate nohighlight">
 \[v_z(t; E) = v_0 + \left[ \frac{m g + q E}{c} - v_0 \right] (1 - e^{-\frac{c}{m}t}) \ .\]</div>
+<p class="sd-card-text">Facendo tendere <span class="math notranslate nohighlight">\(t \rightarrow +\infty\)</span>, si ottiene la velocità limite</p>
+<div class="math notranslate nohighlight">
+\[v_{z, \infty}(E) = \frac{m g + q E}{c}\]</div>
 </div>
 </details></div>
 <div class="section" id="modello-atomico-di-rutherford-geiger-mardsen">
