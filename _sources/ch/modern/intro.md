@@ -59,8 +59,10 @@ $$
 $$
 
 
+**Campo magnetico.** $\vec{B} = B \hat{y}$
+
 $$
-\vec{B} \times \vec{v} = \left|\begin{matrix} \hat{x} & \hat{y} & \hat{z} \\ 0 & 0 & B \\ v_x & v_y & v_z \end{matrix}\right| = -\hat{x} B v_y + \hat{y} B v_x 
+\vec{B} \times \vec{v} = \left|\begin{matrix} \hat{x} & \hat{y} & \hat{z} \\ 0 & B & 0 \\ v_x & v_y & v_z \end{matrix}\right| =  \hat{x} B v_z - \hat{z} B v_x 
 
 $$
 
