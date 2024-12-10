@@ -70,6 +70,7 @@ parts:
     - file: ch/mechanics/dynamics-collisions
     - file: ch/mechanics/dynamics-motion-gravitation
     - file: ch/mechanics/dynamics-problems
+#   - file: ch/mechanics/dynamics-sims
 - caption: Termodinamica
   numbered: True
   chapters:
@@ -118,7 +119,7 @@ parts:
       - file: ch/thermodynamics/heat-engine-diesel
       - file: ch/thermodynamics/heat-engine-joule-brayton
       - file: ch/thermodynamics/heat-engine-rankine
-    - file: ch/thermodynamics/heat-engine-problems
+    # - file: ch/thermodynamics/heat-engine-problems
   - file: ch/thermodynamics/heat-transmission
     sections:
     - file: ch/thermodynamics/heat-transmission-problems

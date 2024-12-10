@@ -21,6 +21,11 @@ Questo libro fa parte del materiale pensato per [le scuole superiori](https://ba
 ````
 
 <!--
+```{raw} html
+<iframe src="./../../media/test_applet.html" width="450" height="300" style="border:none;"></iframe>
+```
+-->
+<!--
 **basics-books project.**
 Questo materiale fa parte del progetto **basics-books**. Il materiale prodotto è navigabile partendo dalla [landing page](https://basics2022.github.io/bbooks), e pubblicamente disponibile nel [repository](https://github.com/Basics2022).
 

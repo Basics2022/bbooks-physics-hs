@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projectile Motion Simulation</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+    #controls {
+      margin-bottom: 20px;
+    }
+    .label {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <span class="label">Initial Velocity (m/s):</span>
+    <input type="number" id="velocity" value="20" step="1" min="1" max="100">
+    <span class="label">Launch Angle (°):</span>
+    <input type="number" id="angle" value="45" step="1" min="0" max="90">
+    <button onclick="resetSimulation()">Run Simulation</button>
+  </div>
+  <div id="equations">
+    <p><strong>Equations of Motion:</strong></p>
+    <p>\( x(t) = v_x t \)</p>
+    <p>\( y(t) = v_y t - \frac{1}{2} g t^2 \)</p>
+  </div>
+  <div id="simulation"></div>
+  <script>
+    // Simulation parameters
+    let g = 9.81; // Gravity (m/s^2)
+    let velocity = 20; // Initial velocity (m/s)
+    let angle = 45; // Launch angle (degrees)
+    let vx, vy; // Components of velocity
+    let t = 0; // Simulation time
+    let points = []; // Stores trajectory points
+
+    // Setup simulation
+    function setup() {
+      const canvas = createCanvas(800, 400);
+      canvas.parent("simulation");
+      resetSimulation();
+    }
+
+    function resetSimulation() {
+      // Retrieve user inputs
+      velocity = parseFloat(document.getElementById("velocity").value);
+      angle = parseFloat(document.getElementById("angle").value);
+
+      // Calculate velocity components
+      const radAngle = radians(angle);
+      vx = velocity * cos(radAngle);
+      vy = velocity * sin(radAngle);
+
+      // Reset simulation variables
+      t = 0;
+      points = [];
+      clear();
+      loop();
+    }
+
+    function draw() {
+      background(220);
+
+      // Update simulation
+      t += 0.05; // Increment time
+      const x = vx * t;
+      const y = vy * t - 0.5 * g * t ** 2;
+
+      // Stop when the projectile hits the ground
+      if (y <= 0 && t > 0) {
+        noLoop();
+      } else {
+        points.push({ x: x, y: y });
+      }
+
+      // Draw ground
+      stroke(0);
+      line(0, height - 20, width, height - 20);
+
+      // Draw trajectory
+      noFill();
+      stroke(255, 0, 0);
+      strokeWeight(2);
+      beginShape();
+      for (let pt of points) {
+        const px = map(pt.x, 0, width, 0, width);
+        const py = height - 20 - map(pt.y, 0, height, 0, height);
+        vertex(px, py);
+      }
+      endShape();
+
+      // Draw current position
+      if (points.length > 0) {
+        const lastPt = points[points.length - 1];
+        const px = map(lastPt.x, 0, width, 0, width);
+        const py = height - 20 - map(lastPt.y, 0, height, 0, height);
+        fill(0);
+        ellipse(px, py, 10, 10);
+      }
+    }
+  </script>
+</body>
+</html>
+
