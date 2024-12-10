@@ -39,16 +39,24 @@ Condizioni iniziali $\vec{r} = \vec{0}$, $\vec{v}(0) = v_0 \hat{x}$
 **Campo elettrico.** $\vec{E} = E \hat{y}$
 
 $$\begin{cases}
-  \ddot{x} =                  \\
+  \ddot{x} = 0                \\
   \ddot{y} = \frac{q}{m} E    \\
-  \ddot{z} =                  \\
+  \ddot{z} = 0                \\
 \end{cases}$$
 
-$$\begin{cases}
+$$
+\begin{cases}
   x(t) = v_0 t \\
   y(t) = \frac{1}{2} \frac{q E}{m} t^2 \\
   z(t) =   0   \\
-\end{cases}$$
+\end{cases}
+\qquad , \qquad
+\begin{cases}
+  v_x(t) = v_0 \\
+  v_y(t) = \frac{q E}{m} t \\
+  v_z(t) =   0 \\
+\end{cases}
+$$
 
 
 $$
