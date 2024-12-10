@@ -140,15 +140,15 @@ $$\begin{cases}
 - **Campo magnetico**
 
   $$\begin{cases}
-  v_x(t) = v_0 \cos \Omega t  \\
+  v_x(t) \sim v_0  \\
   v_y(t) = 0 \\
-  v_z(t) = v_0 \sin \Omega t \\
+  v_z(t) = v_0 \frac{q}{m} B t \\
   \end{cases}
   \qquad , \qquad
   \begin{cases}
-    x(t) = \frac{v_0}{B} \frac{m}{q} \sin \left( \frac{q}{m} B t \right)  \\
+    x(t) = v_0 t  \\
     y(t) = 0 \\
-    z(t) = \frac{v_0}{B} \frac{m}{q} \left[ 1 - \cos \left( \frac{q}{m} B t \right) \right] \\
+    z(t) = \frac{1}{2} v_0 \frac{q}{m} B t^2 \\
   \end{cases}$$
 
 
