@@ -305,7 +305,7 @@ $$z(\theta) = - \frac{c}{\Omega^2} + A \cos(\theta) + B \sin(\theta) \ .$$
 
 e quindi
 
-$$r(\theta) = \frac{\Omega^2}{G M}\frac{1}{1 + A \dfrac{\, \Omega^2}{GM} \cos \theta + B \dfrac{\, \Omega^2}{GM} \sin \theta}$$
+$$r(\theta) = - \frac{\Omega^2}{c} \frac{1}{1 + a \dfrac{\, \Omega^2}{c} \cos \theta + b \dfrac{\, \Omega^2}{c} \sin \theta}$$
 
 Scelta della direzione di riferimento: direzione del perielio: $r(\theta=0) = \min r$, $B = 0$,
 
