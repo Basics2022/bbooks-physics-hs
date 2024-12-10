@@ -107,12 +107,18 @@ $$\begin{cases}
 la velocità diventa
 
 $$\begin{cases}
-v_x = A_x \cos \Omega t + B_x \sin \Omega t \\
-v_y = A_y t + B_y                           \\
-v_z = A_z \cos \Omega t + B_z \sin \Omega t \\
+v_x(t) = v_0 \cos \Omega t  \\
+v_y(t) = 0 \\
+v_z(t) = v_0 \sin \Omega t \\
 \end{cases}$$
 
 mentre la posizione, integrando e applicando le condizioni iniziali,
+
+$$\begin{cases}
+  x(t) = \frac{v_0}{\Omega} \sin \Omega t  \\
+  y(t) = 0 \\
+  z(t) = \frac{v_0}{\Omega} \left[ 1 - \cos \Omega t \right] \\
+\end{cases}$$
 
 
 ```
