@@ -245,11 +245,11 @@ $$m \ddot{\vec{r}} = c \, \frac{\vec{r}}{r^3} \ .$$
 
 **Moto piano.**  E' immediato dimostrare che il moto è piano, cioè che la posizione e la velocità del pianeta sono sempre ortogonali a una direzione costante.
 
-$$\frac{d}{dt} \left( \vec{r} \times \vec{v} \right) = \underbrace{\vec{v} \times \vec{v}}_{=\vec{0}} + \vec{r} \times \vec{a}  = c \, \underbrace{\vec{r} \times \frac{\vec{r}}{r^3}}_{=\vec{0}} = \vec{0} \ .$$
+$$\frac{d}{dt} \left( \vec{r} \times \vec{v} \right) = \underbrace{\vec{v} \times \vec{v}}_{=\vec{0}} + \vec{r} \times \vec{a}  = \frac{c}{m} \, \underbrace{\vec{r} \times \frac{\vec{r}}{r^3}}_{=\vec{0}} = \vec{0} \ .$$
 
 Poiché il vettore $\vec{r} \times \vec{v} =: \frac{L}{m} \hat{k}$ è costante, è costante sia il suo valore assoluto sia la sua direzione: affinché $\vec{r} \times \vec{v}$ sia allineato con $\hat{k}$, i vettori $\vec{r}$, $\vec{v}$ devono essere ortogonali a $\hat{k}$.
 
-**Coordinate polari.** Per descrivere il moto piano di un punto, si può usare un sistema di coordinate 2-dimensionale. Si sceglie un sistema di coordinate polari con origine coincidente con il Sole. La posizione del pianeta è identificata dal raggio vettore
+**Coordinate polari.** Per descrivere il moto piano di un punto, si può usare un sistema di coordinate 2-dimensionale. Si sceglie un sistema di coordinate polari con origine coincidente con il corpo di carica $Q$. La posizione del pianeta è identificata dal raggio vettore
 
 $$\vec{r} = r \, \hat{r} \ ,$$
 
@@ -282,10 +282,10 @@ Dall'espressione della velocità angolare costante, si può ricavare il legame t
 
 $$\dot{\theta} = \frac{\Omega}{r^2} \ .$$
 
-Usando le coordinate polari, l'equazione del moto $m \ddot{\vec{r}} = -G M m \frac{\vec{r}}{r^3}$ viene scritta in componenti,
+Usando le coordinate polari, l'equazione del moto $m \ddot{\vec{r}} = c \, \frac{\vec{r}}{r^3}$ viene scritta in componenti,
 
 $$\begin{aligned}
-r      & : \ m (\ddot{r} - r\dot{\theta}^2) = - G M m \frac{1}{r^2} \\
+r      & : \ m (\ddot{r} - r\dot{\theta}^2) = c \, \frac{1}{r^2} \\
 \theta & : \ m ( 2 \dot{r} \dot{\theta} + r \ddot{\theta}^2 ) = 0
 \end{aligned}$$
 
