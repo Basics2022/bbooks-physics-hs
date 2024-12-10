@@ -36,7 +36,7 @@ $$m \ddot{\vec{r}} = q \left[ \vec{E} - \vec{B} \times \dot{\vec{r}} \right] \ .
 **Esperimento di J.J.Thomson.** $\vec{E} = E \hat{y}$, $\vec{B} = B \hat{z}$,
 
 $$
-\vec{B} \times \vec{v} = \left|\begin{matrix} \hat{x} & \hat{y} & \hat{z} \\ 0 & 0 & B \\ v_x & v_y & v_z \end{matrix}\right| =
+\vec{B} \times \vec{v} = \left|\begin{matrix} \hat{x} & \hat{y} & \hat{z} \\ 0 & 0 & B \\ v_x & v_y & v_z \end{matrix}\right| = -\hat{x} B v_y + \hat{y} B v_x 
 
 $$
 
