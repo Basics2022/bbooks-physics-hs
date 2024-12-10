@@ -1,7 +1,7 @@
 (physics-hs:modern:intro)=
 # Introduzione alla fisica del XX secolo
 
-## Scoperta dell'elettrone - J.J.Thompson
+## Scoperta dell'elettrone - J.J.Thomson
 
 ```{dropdown} Moto di una carica in un campo elettromagnetico uniforme stazionario
 :open:
@@ -32,6 +32,20 @@ In generale, l'equazione del moto è un'equazione differenziale del secondo ordi
 $$m \ddot{\vec{r}} = q \left[ \vec{E} - \vec{B} \times \dot{\vec{r}} \right] \ .$$
 
 è una ODE lineare a coefficienti costanti, risolvibile in forma analitica.
+
+**Esperimento di J.J.Thomson.** $\vec{E} = E \hat{y}$, $\vec{B} = B \hat{z}$,
+
+$$
+\vec{B} \times \vec{v} = \begin{matrix} \hat{x} & \hat{y} & \hat{z} \\ 0 & 0 & B \\ v_x & v_y & v_z \end{matrix} =
+
+$$
+
+$$\begin{cases}
+  \ddot{x} = \frac{q}{m} \left[ E_x \right] \\
+  \ddot{y} = \frac{q}{m} \left[ E_x \right] \\
+  \ddot{z} = \frac{q}{m} \left[ E_x \right] \\
+\end{cases}$$
+
 
 
 

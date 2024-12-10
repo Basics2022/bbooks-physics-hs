@@ -1,7 +1,7 @@
 (modern:experiments)=
 # Esperimenti
 
-## Scoperta dell'elettrone - J.J.Thompson
+## Scoperta dell'elettrone - J.J.Thomson
 
 ## Misura della carica dell'elettrone - Millikan
 
