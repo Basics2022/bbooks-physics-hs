@@ -1,7 +1,7 @@
 (physics-hs:modern:intro)=
 # Introduzione alla fisica del XX secolo
 
-Mentre alla fine del XIX secolo la fisica poteva sembrare una materia risolta, le indagini sulla natura pù intima di materia, luce e gravitazione portarno alla rivoluzione relativistica e quantistica che avrebbero aperto allo sviluppo tecnologico del XX secolo che dura tutt'oggi.
+Neanche il tempo di pensare che le teorie di meccanica, termodinamica ed elettromagnetismo fornisssero un modello completo, soddisfacente e concluso della fisica, che indagini più dettagliate sulla natura pù intima di materia, luce e gravitazione portarono in pochi anni alla rivoluzione relativistica e quantistica che avrebbero sconvolto la fisica e, ancora di più la storia dell'umanità, aprendo allo sviluppo tecnologico del XX secolo che dura tutt'oggi.
 
 ````{only} html
 **Contenuti.**
