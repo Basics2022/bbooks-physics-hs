@@ -71,6 +71,11 @@ parts:
     - file: ch/mechanics/dynamics-motion-gravitation
     - file: ch/mechanics/dynamics-problems
 #   - file: ch/mechanics/dynamics-sims
+- caption: Cenni di meccanica del continuo
+  numbered: True
+  chapters:
+# - file: ch/continuum 
+  - file: ch/continuum/intro 
 - caption: Termodinamica
   numbered: True
   chapters:
@@ -169,8 +174,9 @@ parts:
 - caption: Fisica moderna
   numbered: True
   chapters:
-  - file: ch/modern.md
+#  - file: ch/modern.md
   - file: ch/modern/intro.md
+  - file: ch/modern/experiments.md
   - file: ch/modern/intro-radioactivity.md
   - file: ch/modern/intro-coupling.md
   - file: ch/modern/intro-photography.md

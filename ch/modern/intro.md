@@ -1,194 +1,47 @@
 (physics-hs:modern:intro)=
 # Introduzione alla fisica del XX secolo
 
-## Scoperta dell'elettrone - J.J.Thomson
+<!-- LLM summary -->
+Alla fine del XIX secolo, la fisica sembrava basarsi su teorie consolidate come meccanica, termodinamica ed elettromagnetismo; il riconoscimento della luce come fenomeno ondulatorio elettromagnetico sembrava risolvere la disputa sulla natura della luce come fenomeno continuo, continuo così come i modelli utilizzati per fluidi e solidi che hanno contribuito alla rivoluzione tecnica e industriale. Mentre in chimica si cercava di mettere insieme i dettagli di un modello atomico discreto, in fisica questo faceva fatica a essere accettato, nonostante i lavori di Clausius, Maxwell e Boltzmann.
 
-```{dropdown} Moto di una carica in un campo elettromagnetico uniforme stazionario
-:open:
-
-Una volta scelto un sistema di riferimento (*così da poter identificare la posizione di un punto nello spazio con un vettore posizione $\vec{r} = R-O$ rispetto all'origine*), il campo elettromagnetico (rispetto al sistema di riferimento, **todo** *aggiungere sezione su relatività per elettromagnetismo, anche galileiana come approssimazione a bassa velocità*) in una regione dello spazio viene rappresentato dai campi vettoriali, 
-
-$$\vec{e}(\vec{r},t) \, \quad \vec{b}(\vec{r},t) \ ,$$
-
-che permettono di esprimere il campo elettrico e il campo magnetico come funzioni della variabile spazio $\vec{r}$ e tempo $t$.
-
-La posizione di un punto $P$ nello spazio è identificata dal raggio vettore $\vec{r}_P(t)$, in generale funzione del tempo per punti in moto. La velocità e l'accelerazione del punto $P$ riferite al sistema di coordinate scelto sono rispettivamente la derivata prima e seconda del raggio vettore,
-
-$$\vec{v}_P(t) = \frac{d \vec{r}_P}{d t} \ , \quad
-  \vec{v}_P(t) = \frac{d \vec{r}_P}{d t} \ .$$
-
-Una carica elettica di intensità $q_P$ in moto con una velocità $\vec{v}_P$ in un punto dello spazio $\vec{r}_P(t)$ in cui è presente un campo elettromagnetico $\vec{e}(\vec{r}_P,t)$, $\vec{b}(\vec{r}_P,t)$ è soggetta alla **forza di Lorentz**,
-
-$$\vec{F}_P(t) = q_P \left[ \vec{e}(\vec{r}_P(t),t) - \vec{b}(\vec{r}_P(t),t) \times \vec{v}_P(t) \right] \ .$$
-
-e l'equazione del moto per la carica è
-
-$$m_P \frac{ d^2 \vec{r}_P}{dt^2} = q_P \left[ \vec{e}(\vec{r}_P(t),t) - \vec{b}(\vec{r}_P(t),t) \times \frac{d \vec{r}_P}{dt} \right] \ .$$
-
-Una volta inteso che le quantità che compaiono nell'equazione sono riferite al punto $P$, per alleggerire un po' la notazione si fanno cadere i pedici $_P$.
-
-In generale, l'equazione del moto è un'equazione differenziale del secondo ordine non lineare, se il campo magnetico dipende dallo spazio o se il campo elettrico varia linearmente nello spazio. Se il campo elettromagnetico è costante (costante in tempo) e uniforme (costante in spazio), $\vec{e}(\vec{r},t) = \vec{E}$, $\vec{b}(\vec{r},t) = \vec{B}$, l'equazione del moto,
-
-$$m \ddot{\vec{r}} = q \left[ \vec{E} - \vec{B} \times \dot{\vec{r}} \right] \ .$$
-
-è una ODE lineare a coefficienti costanti, risolvibile in forma analitica.
-
-**Esperimento di J.J.Thomson.** 
-Condizioni iniziali $\vec{r} = \vec{0}$, $\vec{v}(0) = v_0 \hat{x}$
-
-**Campo elettrico.** $\vec{E} = E \hat{y}$
-
-$$\begin{cases}
-  \ddot{x} = 0                \\
-  \ddot{y} = \frac{q}{m} E    \\
-  \ddot{z} = 0                \\
-\end{cases}$$
-
-$$
-\begin{cases}
-  x(t) = v_0 t \\
-  y(t) = \frac{1}{2} \frac{q E}{m} t^2 \\
-  z(t) =   0   \\
-\end{cases}
-\qquad , \qquad
-\begin{cases}
-  v_x(t) = v_0 \\
-  v_y(t) = \frac{q E}{m} t \\
-  v_z(t) =   0 \\
-\end{cases}
-$$
+Tuttavia, le teorie sviluppate non erano tra di loro compatibili e non erano in grado di spiegare alcune osservazioni sperimentali come gli spettri atomici discreti, la radiazione del corpo nero, l’effetto fotoelettrico. Ulteriori indagini sulla natura della materia - e la sua stabilità -, della luce e delle loro interazioni portarono all'accettazione del modello atomistico della materia.
+Il riconoscimento della costanza della velocità della luce come costante universale portarono alla formulazione della relatività (ristretta) di Einstein, in cui veniva risolta l'imcompatibilità tra meccanica ed elettromagnetismo. La formulazione di una nuova teoria meccanica (quantistica) per i fenomeni su scale atomiche misero in evidenza il comportamento "duale" di luce e materia come onda e particella.
+La teoria della relatività generale di Einstein completava la rivoluzione, imponendosi come nuova teoria della gravitazione in grado di spiegare le osservazioni astronomiche che risultavano anomale con il modello di gravitazione di Newton.
 
 
-**Campo magnetico.** $\vec{B} = B \hat{y}$
+````{only} html
+**Contenuti.**
 
-$$
-\vec{B} \times \vec{v} = \left|\begin{matrix} \hat{x} & \hat{y} & \hat{z} \\ 0 & B & 0 \\ v_x & v_y & v_z \end{matrix}\right| =  \hat{x} B v_z - \hat{z} B v_x 
-$$
-
-$$\begin{cases}
-  \ddot{x} = - \frac{q B}{m} \dot{z} \\
-  \ddot{y} = 0                       \\
-  \ddot{z} =   \frac{q B}{m} \dot{x} \\
-\end{cases}$$
-
-$$\begin{cases}
-  \ddot{v}_x + \left(\frac{q B}{m}\right)^2 v_x = 0 \\
-  \ddot{v}_y = 0                                    \\
-  \ddot{v}_z + \left(\frac{q B}{m}\right)^2 v_z = 0 \\
-\end{cases}$$
-
-$$\begin{cases}
-v_x = A_x \cos \Omega t + B_x \sin \Omega t \\
-v_y = A_y t + B_y                           \\
-v_z = A_z \cos \Omega t + B_z \sin \Omega t \\
-\end{cases}
-\qquad \rightarrow \text{i.c.} \rightarrow \qquad
-\begin{cases}
- A_x = v_0 \\
- B_y = 0 \\
- A_z = 0
-\end{cases}
-$$
-
-Usando le equazioni del moto
-
-$$\begin{cases}
-  - v_0 \Omega \sin \Omega t + B_x \Omega \cos \Omega t = - \frac{q B}{m} B_z \sin \Omega t \\
-  A_y = 0 \\
-  B_z \Omega \cos \Omega t = \frac{q B}{m} \left( v_0 \cos \Omega t +  B_x \sin \Omega t \right) \\
-\end{cases}
-\qquad \rightarrow \qquad
-\begin{cases}
-  B_x = 0  \\
-  A_y = 0 \\
-  B_z = v_0 \\
-\end{cases}$$
-
-la velocità diventa
-
-$$\begin{cases}
-v_x(t) = v_0 \cos \Omega t  \\
-v_y(t) = 0 \\
-v_z(t) = v_0 \sin \Omega t \\
-\end{cases}$$
-
-mentre la posizione, integrando e applicando le condizioni iniziali, e ricorando che $\Omega = \frac{q B}{m}$
-
-$$\begin{cases}
-  x(t) = \frac{v_0}{B} \frac{m}{q} \sin \left( \frac{q}{m} B t \right)  \\
-  y(t) = 0 \\
-  z(t) = \frac{v_0}{B} \frac{m}{q} \left[ 1 - \cos \left( \frac{q}{m} B t \right) \right] \\
-\end{cases}$$
-
-**Soluzioni per piccole deviazioni** con campo elettromagnetico presente solo nella regione $x \in [0, L]$,
-- **Campo elettrico**
-  
-   $$
-   \begin{cases}
-     v_x(t) = v_0 \\
-     v_y(t) = \frac{q E}{m} t \\
-     v_z(t) =   0 \\
-   \end{cases}
-   \qquad , \qquad
-   \begin{cases}
-     x(t) = v_0 t \\
-     y(t) = \frac{1}{2} \frac{q E}{m} t^2 \\
-     z(t) =   0   \\
-   \end{cases}
-   $$
-
-   $$\begin{aligned} 
-       x^* = L = v_0 t^* \quad & , \quad   y^* = \frac{1}{2} \frac{q}{m} E \left( \frac{L}{v_0} \right)^2 \\
-     v_x^* = v_0         \quad & , \quad v_y^* =             \frac{q}{m} E \frac{L}{v_0} \\
-   \end{aligned}$$
-
-   Il rapporto $r_e = \frac{v_y^*}{v_x^*}$ può essere facilmente misurato e quindi considerarsi noto
-
-   $$\frac{q}{m} = \frac{r_e v_0^2}{E L} $$
-
-- **Campo magnetico**
-
-  $$\begin{cases}
-  v_x(t) \sim v_0  \\
-  v_y(t) = 0 \\
-  v_z(t) \sim v_0 \frac{q}{m} B t \\
-  \end{cases}
-  \qquad , \qquad
-  \begin{cases}
-    x(t) \sim v_0 t  \\
-    y(t) = 0 \\
-    z(t) \sim \frac{1}{2} \frac{q}{m} v_0 B t^2 \\
-  \end{cases}$$
-
-   $$\begin{aligned} 
-       x^* = L = v_0 t^* \quad & , \quad   y^* = \frac{1}{2} \frac{q}{m} v_0 B \left( \frac{L}{v_0} \right)^2 \\
-     v_x^* = v_0         \quad & , \quad v_y^* =             \frac{q}{m} v_0 B \frac{L}{v_0} \\
-   \end{aligned}$$
-
-   Il rapporto $r_b = \frac{v_y^*}{v_x^*}$ può essere facilmente misurato e quindi considerarsi noto
-
-   $$\frac{q}{m} = \frac{r_b v_0}{B L} $$
-
-   **Stima del rapport $\frac{q}{m}$** Esprimendo $v_0$ in funzione di $\frac{q}{m}$,
-
-   $$ \qquad \rightarrow \qquad v_0 = \frac{q}{m} \frac{BL}{r_b}$$
-
-   e sostituendo $v_0$ nell'espressione del rapporto che coinvolge il campo elettrico
-
-   $$\frac{q}{m} = \frac{r_e}{EL} \left(\frac{q}{m}\right)^2 \left( \frac{B L}{r_b} \right)^2 \ ,$$
-
-   si arriva alla stima 
-
-   $$\frac{q}{m} = \frac{r_b^2}{r_e} \frac{E}{BL} \ .$$
-
+```{dropdown}
+```
+```{dropdown}
+```
+```{dropdown}
 ```
 
+````
 
-## Misura della carica dell'elettrone - Millikan
+<!-- original version
+Alla fine del XIX secolo, la fisica ha a disposizione alcune teorie mature - meccanica, teromdinamica, ed eletteromagnetismo - per la descrizione e la previsione di fenomeni fisicie applicazioni di successo.
 
-## Modello atomico di Rutherford - Geiger-Mardsen
+L'identificazione della luce come fenomeno ondulatorio sembra poi fornire una risposta definitiva all'indagine sulla natura della luce. Un modello continuo della luce si accompagna ai modelli continui usati in meccanica per la descrizione dei fluidi e dei solidi che, insieme alla termodinamica hanno permesso il forte progresso tecnico e industriale del secolo.
 
-## Lo spin - Stern-Gerlach
+Il modello atomico, discreto, della natura sembra evidente ai chimici, ma fatica a trovare spazio in fisica.
 
+Ma quando sembra che la materia abbia raggiunto uno stato definitivo, si iniziano a intravvedere delle crepe con nuove esperienze che non riescono ad essere spiegate con le teorie formulate fino ad allora: effetti di interazione materia/elettricità  (piezoelettrico, Peltier,...), luce/materia (spettro di corpo nero, effetto fotoelettrico), spettri di assorbimento ed emissione discreti, fluorescenza e fosforescenza. A queste esperienze, si aggiunge l'incompatibilità tra la teoria meccanica classica e l'elettromagnetismo (che porterà alla relatività ristretta) e alcune osservazioni astronomiche (precessione perielio di Mercurio) sono discordi con la teoria classica della gravitazione di Newton (e questo porterà alla relatività generale).
 
+Nuove e più approfondite indagini sulla natura della materia e della luce e sulla loro interazione, condurranno all'affermazione di una nuova meccanica, a una nuova teoria della gravitazione e all'affermazione del modello atomico della materia (approccio di meccanica statistica): a partire dall'indagine sulla stabilità della materia (la radioattività) verranno formulati modelli di atomo, e successivamente a una teoria in grado di descrivere i fenomeni a livello atomico: la meccanica quantistica. 
+-->
+
+<!-- LLM cleaned version
+Alla fine del XIX secolo, la fisica dispone di teorie consolidate come la meccanica classica, la termodinamica e l’elettromagnetismo, che offrono strumenti efficaci per descrivere e prevedere fenomeni fisici e per sviluppare applicazioni tecnologiche di grande successo.
+
+La luce, identificata come un fenomeno ondulatorio, sembra finalmente risolvere l’antico dibattito sulla sua natura. Questo modello continuo della luce si integra perfettamente con i modelli utilizzati in meccanica per descrivere fluidi e solidi, e insieme alla termodinamica, ha contribuito in modo determinante ai progressi tecnici e industriali del secolo.
+
+Tuttavia, mentre la chimica adotta un modello discreto della materia basato sull’esistenza degli atomi, in fisica questa visione fatica a trovare piena accettazione.
+
+Proprio quando sembra che la descrizione della materia sia ormai definitiva, iniziano a emergere risultati sperimentali che mettono in crisi le teorie consolidate. Tra questi, fenomeni di interazione tra materia ed elettricità (effetti piezoelettrico, Peltier), tra luce e materia (spettro del corpo nero, effetto fotoelettrico), spettri di assorbimento ed emissione discreti, fluorescenza e fosforescenza. A queste sfide si aggiunge l’incompatibilità tra la teoria meccanica classica e l’elettromagnetismo, che condurrà allo sviluppo della relatività ristretta, e alcune discrepanze nelle osservazioni astronomiche, come la precessione del perielio di Mercurio, che mettono in discussione la gravitazione newtoniana e preludono alla relatività generale.
+
+Le indagini sempre più approfondite sulla natura della materia, della luce e della loro interazione condurranno a una vera rivoluzione scientifica. Da queste esplorazioni nasceranno una nuova meccanica, una teoria della gravitazione rinnovata e l'affermazione definitiva del modello atomico della materia, consolidato grazie all’approccio statistico. L’indagine sulla stabilità della materia e il fenomeno della radioattività apriranno la strada alla formulazione di modelli atomici e, infine, alla nascita di una teoria capace di descrivere i fenomeni su scala atomica: la meccanica quantistica.
+-->
 

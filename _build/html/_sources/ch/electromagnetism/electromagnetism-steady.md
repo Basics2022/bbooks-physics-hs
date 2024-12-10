@@ -153,6 +153,7 @@ $$\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S $$
 
 ## Modelli microscopici del magnetismo
 
+(physics-hs:electromagnetism:lorentz)=
 ## Moto di una carica elettrica in un campo elettromagnetico
 Forza di Lorentz
 
