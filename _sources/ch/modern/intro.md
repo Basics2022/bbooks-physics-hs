@@ -15,7 +15,7 @@ La posizione di un punto $P$ nello spazio è identificata dal raggio vettore $\v
 $$\vec{v}_P(t) = \frac{d \vec{r}_P}{d t} \ , \quad
   \vec{v}_P(t) = \frac{d \vec{r}_P}{d t} \ .$$
 
-Una carica elettica di intensità $q_P$ in moto con una velocità $\vec{v}_P$ in un punto dello spazio $\vec{r}_P(t)$ in cui è presente un campo elettromagnetico $\vec{e}(\vec{r}_P,t)$, $\vec{b}(\vec{r}_P,t)$ è soggetta alla **forza di Lorentz**,
+Una carica elettica di intensità $q_P$ in moto con una velocità $\vec{v}_P$ in un punto dello spazio $\vec{r}_P(t)$ in cui è presente un campo elettromagnetico $\vec{e}(\vec{r}_P,t)$, $\vec{b}(\vec{r}_P,t)$ è soggetta alla [forza di Lorentz](physics-hs:electromagnetism:lorentz),
 
 $$\vec{F}_P(t) = q_P \left[ \vec{e}(\vec{r}_P(t),t) - \vec{b}(\vec{r}_P(t),t) \times \vec{v}_P(t) \right] \ .$$
 
