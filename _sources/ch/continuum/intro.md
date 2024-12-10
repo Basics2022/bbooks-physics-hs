@@ -36,3 +36,17 @@ La formula di Stokes fornisce un'espressione della resistenza aerodinamcia linea
 (continuum:solids)=
 ## Solidi
 
+- Solidi elastici
+
+
+## todo
+- Cenni di propagazione perturbazioni come onde, es:
+  - fluidi:
+    - pressione e acustica, piccole perturbazioni e urti
+    - onde con superficie libera (mare, rubinetto,...)
+  - perturbazioni nei solidi:
+    - corda di una chitarra; altri esempi con elementi 1d
+    - esempi con membrane (es, nostro orecchio)
+    - esempi di propagazione in mezzi (più o meno) continui
+    - onde sismiche
+

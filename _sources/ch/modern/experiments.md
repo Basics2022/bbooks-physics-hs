@@ -181,6 +181,15 @@ $$\begin{cases}
 
 ```
 
+## La radioattività - Esperimento dei coniugi Curie
+
+```{dropdown}
+- Elettroscopio [piezoelettrico](physics-hs:modern:intro:experiences:piezoel)
+- ...
+
+
+```
+
 
 ## Misura della carica dell'elettrone - Millikan
 
