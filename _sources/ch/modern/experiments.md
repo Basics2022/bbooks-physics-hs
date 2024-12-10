@@ -239,13 +239,13 @@ $$\vec{F} = \frac{q Q}{4 \pi \varepsilon} \frac{\vec{r}}{r^3} = c \, \frac{\vec{
 
 Si osservi che per la (quasi) analogia formale tra la [forza di Coulomb](physics-hs:electromagnetism:electrostatics:coulomb) e la [legge di gravitazione universale di Newton](physics-hs:mechanics:dynamics:motion:gravitation:newton), questo problema ha delle similitudini con il [problema dei due corpi](physics-hs:mechanics:dynamics:motion:gravitation:two-bodies) soggetti alla mutua interazione gravitazionale.
 
-**Moto piano.** Siano $\vec{r}$, $\vec{v}$ la posizione e la velocità del pianeta rispetto al Sole. La forza di gravità agente sul pianeta è
+L'equazione dinamica del corpo è quindi
 
-$$\vec{F} = c \frac{\vec{r}}{r^3} \ .$$
+$$m \ddot{\vec{r}} = c \, \frac{\vec{r}}{r^3} \ .$$
 
-E' facile dimostrare che il moto è piano, cioè che la posizione e la velocità del pianeta sono sempre ortogonali a una direzione costante.
+**Moto piano.**  E' immediato dimostrare che il moto è piano, cioè che la posizione e la velocità del pianeta sono sempre ortogonali a una direzione costante.
 
-$$\frac{d}{dt} \left( \vec{r} \times \vec{v} \right) = \underbrace{\vec{v} \times \vec{v}}_{=\vec{0}} + \vec{r} \times \vec{a}  = - G M m \underbrace{\vec{r} \times \frac{\vec{r}}{r^3}}_{=\vec{0}} = \vec{0} \ .$$
+$$\frac{d}{dt} \left( \vec{r} \times \vec{v} \right) = \underbrace{\vec{v} \times \vec{v}}_{=\vec{0}} + \vec{r} \times \vec{a}  = c \, \underbrace{\vec{r} \times \frac{\vec{r}}{r^3}}_{=\vec{0}} = \vec{0} \ .$$
 
 Poiché il vettore $\vec{r} \times \vec{v} =: \frac{L}{m} \hat{k}$ è costante, è costante sia il suo valore assoluto sia la sua direzione: affinché $\vec{r} \times \vec{v}$ sia allineato con $\hat{k}$, i vettori $\vec{r}$, $\vec{v}$ devono essere ortogonali a $\hat{k}$.
 
