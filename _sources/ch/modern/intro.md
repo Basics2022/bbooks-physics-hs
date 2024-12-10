@@ -90,6 +90,13 @@ v_z = A_z \cos \Omega t + B_z \sin \Omega t \\
 \end{cases}
 $$
 
+Usando le equazioni del moto
+$$\begin{cases}
+  - v_0 \Omega \sin \Omega t + B_x \Omega \cos \Omega t = - \frac{q B}{m} B_z \sin \Omega t 
+  A_y = 0
+  B_z \Omega \cos \Omega t = \frac{q B}{m} B_x \sin \Omega t 
+\end{cases}$$
+
 ```
 
 
