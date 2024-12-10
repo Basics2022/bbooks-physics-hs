@@ -817,6 +817,106 @@ Scattering<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Si vuole studiare il moto di una corpo puntiforme di massa <span class="math notranslate nohighlight">\(m\)</span> e carica elettrica <span class="math notranslate nohighlight">\(q\)</span>, rispetto a un corpo di carica elettrica <span class="math notranslate nohighlight">\(Q\)</span> (concorde per scattering) e soggetto al campo elettrico generato dalla carica <span class="math notranslate nohighlight">\(Q\)</span> e quindi a una forza</p>
+<div class="math notranslate nohighlight">
+\[\vec{F} = \frac{q Q}{4 \pi \varepsilon} \frac{\vec{r}}{r^3} \ .\]</div>
+<p class="sd-card-text">Si osservi che per la (quasi) analogia formale tra la <a class="reference internal" href="../electromagnetism/electrostatics.html#physics-hs-electromagnetism-electrostatics-coulomb"><span class="std std-ref">forza di Coulomb</span></a> e la <a class="reference internal" href="../mechanics/dynamics-motion-gravitation.html#physics-hs-mechanics-dynamics-motion-gravitation-newton"><span class="std std-ref">legge di gravitazione universale di Newton</span></a>, questo problema ha delle similitudini con il <a class="reference internal" href="../mechanics/dynamics-motion-gravitation.html#physics-hs-mechanics-dynamics-motion-gravitation-two-bodies"><span class="std std-ref">problema dei due corpi</span></a> soggetti alla mutua interazione gravitazionale.</p>
+<p class="sd-card-text"><strong>Moto piano.</strong> Siano <span class="math notranslate nohighlight">\(\vec{r}\)</span>, <span class="math notranslate nohighlight">\(\vec{v}\)</span> la posizione e la velocità del pianeta rispetto al Sole. La forza di gravità agente sul pianeta è</p>
+<div class="math notranslate nohighlight">
+\[\vec{F} = - G M m \frac{\vec{r}}{r^3} \ .\]</div>
+<p class="sd-card-text">E” facile dimostrare che il moto è piano, cioè che la posizione e la velocità del pianeta sono sempre ortogonali a una direzione costante.</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt} \left( \vec{r} \times \vec{v} \right) = \underbrace{\vec{v} \times \vec{v}}_{=\vec{0}} + \vec{r} \times \vec{a}  = - G M m \underbrace{\vec{r} \times \frac{\vec{r}}{r^3}}_{=\vec{0}} = \vec{0} \ .\]</div>
+<p class="sd-card-text">Poiché il vettore <span class="math notranslate nohighlight">\(\vec{r} \times \vec{v} =: \frac{L}{m} \hat{k}\)</span> è costante, è costante sia il suo valore assoluto sia la sua direzione: affinché <span class="math notranslate nohighlight">\(\vec{r} \times \vec{v}\)</span> sia allineato con <span class="math notranslate nohighlight">\(\hat{k}\)</span>, i vettori <span class="math notranslate nohighlight">\(\vec{r}\)</span>, <span class="math notranslate nohighlight">\(\vec{v}\)</span> devono essere ortogonali a <span class="math notranslate nohighlight">\(\hat{k}\)</span>.</p>
+<p class="sd-card-text"><strong>Coordinate polari.</strong> Per descrivere il moto piano di un punto, si può usare un sistema di coordinate 2-dimensionale. Si sceglie un sistema di coordinate polari con origine coincidente con il Sole. La posizione del pianeta è identificata dal raggio vettore</p>
+<div class="math notranslate nohighlight">
+\[\vec{r} = r \, \hat{r} \ ,\]</div>
+<p class="sd-card-text">e la derivate dei versori radiale e azimuthale valgono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\dot{\hat{r}}      &amp; =   \dot{\theta} \hat{\theta} \\
+\dot{\hat{\theta}} &amp; = - \dot{\theta} \hat{r} \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">La posizione, la velocità e l’accelerazione del pianeta possono essere scritte come</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\vec{r} &amp; = r \, \hat{r} \\
+\vec{v} &amp; = \dot{r} \, \hat{r} + r \dot{\theta} \, \hat{\theta} \\
+\vec{a} &amp; = \left[ \ddot{r} - r \dot{\theta}^2 \right] \, \hat{r} +  \left[ 2 \dot{r} \dot{\theta} + r \ddot{\theta} \right] \, \hat{\theta}  \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">La <strong>velocità areolare</strong>, <span class="math notranslate nohighlight">\(\vec{\Omega} = \frac{1}{2} \vec{r} \times \vec{v} \)</span> è costante e uguale a</p>
+<div class="math notranslate nohighlight">
+\[\vec{\Omega} = \frac{1}{2} \frac{L}{m} \hat{k} = \frac{1}{2} r^2 \dot{\theta} \, \hat{k} \ .\]</div>
+<!--
+Il **periodo** $T$
+
+$$T = \frac{A}{\Omega} = \frac{\pi \, a \, b}{\Omega} \ .$$
+-->
+<p class="sd-card-text">Dall’espressione della velocità angolare costante, si può ricavare il legame tra <span class="math notranslate nohighlight">\(\dot{\theta}\)</span> ed <span class="math notranslate nohighlight">\(r\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\dot{\theta} = \frac{\Omega}{r^2} \ .\]</div>
+<p class="sd-card-text">Usando le coordinate polari, l’equazione del moto <span class="math notranslate nohighlight">\(m \ddot{\vec{r}} = -G M m \frac{\vec{r}}{r^3}\)</span> viene scritta in componenti,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+r      &amp; : \ m (\ddot{r} - r\dot{\theta}^2) = - G M m \frac{1}{r^2} \\
+\theta &amp; : \ m ( 2 \dot{r} \dot{\theta} + r \ddot{\theta}^2 ) = 0
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text"><strong>Traiettoria, <span class="math notranslate nohighlight">\(r(\theta)\)</span>.</strong>
+Inserendo l’espressione <span class="math notranslate nohighlight">\(\dot{\theta} = \frac{\Omega}{r^2}\)</span> nella componente radiale, e definendo la funzione <span class="math notranslate nohighlight">\(z = \frac{1}{r}\)</span>, le derivate nel tempo della coordinata radiale possono essere riscritte come</p>
+<div class="math notranslate nohighlight">
+\[\dot{r} = -\frac{1}{z^2}\frac{d z}{d \theta} \dot{\theta} = -\Omega \frac{dz}{d\theta} \]</div>
+<div class="math notranslate nohighlight">
+\[\ddot{r} = \dot{\theta} \frac{d}{d \theta} \left( - \Omega \frac{dz}{d \theta} \right) = - z^2 \Omega^2 z''(\theta)\]</div>
+<p class="sd-card-text">e la componente radiale dell’equazione di moto,</p>
+<div class="math notranslate nohighlight">
+\[-z^2 \Omega^2 z'' - z^3 \Omega^2 = - G M z^2\]</div>
+<div class="math notranslate nohighlight">
+\[ z'' + z  = \frac{G M}{\Omega^2}\]</div>
+<div class="math notranslate nohighlight">
+\[z(\theta) = \frac{G M}{\Omega^2} + A \cos(\theta) + B \sin(\theta) \ .\]</div>
+<p class="sd-card-text">e quindi</p>
+<div class="math notranslate nohighlight">
+\[r(\theta) = \frac{\Omega^2}{G M}\frac{1}{1 + A \dfrac{\, \Omega^2}{GM} \cos \theta + B \dfrac{\, \Omega^2}{GM} \sin \theta}\]</div>
+<p class="sd-card-text">Scelta della direzione di riferimento: direzione del perielio: <span class="math notranslate nohighlight">\(r(\theta=0) = \min r\)</span>, <span class="math notranslate nohighlight">\(B = 0\)</span>,</p>
+<p class="sd-card-text">Scelte diverse si ottengono da una trasformazione di coordinate con una rotazione dell’asse di riferimento: <span class="math notranslate nohighlight">\(\theta_1 = \theta - \theta_0\)</span>, e quindi</p>
+<div class="math notranslate nohighlight">
+\[r(\theta) = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos \theta} = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos (\theta_1 + \theta_0 )} = \frac{\Omega^2}{GM}\frac{1}{1 + \underbrace{\frac{A\Omega^2}{GM} \cos \theta_0}_{= A_1} \cos \theta_1 \underbrace{- \frac{A \Omega^2}{GM} \sin \theta_0}_{= B_1} \sin \theta_1 }\]</div>
+<p class="sd-card-text">Il confronto con l’equazione delle coniche in coordinate polari, permette di riconoscere l’eccentricità, <span class="math notranslate nohighlight">\(e\)</span> e il prodotto <span class="math notranslate nohighlight">\(e \, D\)</span> dell’eccentricità per la distanza <span class="math notranslate nohighlight">\(D\)</span> tra fuoco e direttrice,</p>
+<div class="math notranslate nohighlight">
+\[e = \frac{A \Omega^2}{GM} \qquad , \qquad e \, D = \frac{\Omega^2}{GM}\]</div>
+<div class="math notranslate nohighlight">
+\[r(\theta) = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos \theta}\]</div>
+<div class="math notranslate nohighlight">
+\[r(\theta) = \frac{e \, D}{1 + e \, \cos \theta}\]</div>
+<!--
+$$e = - \frac{A \Omega^2}{GM}$$
+$$e D = \frac{\Omega^2}{GM}$$
+$$D= -\frac{1}{A}$$
+
+$$c = \frac{e^2}{1-e^2} D$$
+$$a = \frac{c}{e} = \frac{e}{1-e^2} D$$
+$$b = \sqrt{a^2 - c^2} = \sqrt{\frac{1 - e^2}{e^2}} c = \sqrt{\frac{1 - e^2}{e^2}}  \frac{e^2}{1-e^2} D = \frac{e D}{\sqrt{1-e^2}} = a \, \sqrt{1-e^2} $$
+-->
+<p class="sd-card-text">Poiché la velocità areolare è costante, il periodo dell’orbita è uguale al raggporto tra l’area dell’ellisse e la velocità areaolare,</p>
+<div class="math notranslate nohighlight">
+\[T = \frac{\pi a b}{\Omega} = \pi \frac{a^2 \sqrt{1-e^2}}{\Omega} = \]</div>
+<div class="math notranslate nohighlight">
+\[1-e^2 = 1 - \left(\frac{A \Omega^2}{GM} \right)^2 = \frac{\Omega^2}{GM \, a} \]</div>
+<div class="math notranslate nohighlight">
+\[\rightarrow \qquad \frac{\sqrt{1-e^2}}{\Omega} = \frac{1}{\sqrt{GM} \sqrt{a}}\]</div>
+<div class="math notranslate nohighlight">
+\[\rightarrow \qquad T = \pi \frac{a^{\frac{3}{2}}}{\sqrt{GM}}\]</div>
+<div class="math notranslate nohighlight">
+\[
+ 2a = \frac{\Omega^2}{GM+A \Omega^2} + \frac{\Omega^2}{GM-A \Omega^2} 
+    = \Omega^2 \frac{2 GM }{(GM)^2 - A^2 \Omega^4}
+\]</div>
+<div class="math notranslate nohighlight">
+\[A^2 \Omega^4 = (GM)^2 - \frac{GM \, \Omega^2}{a}\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{\Omega^2}{GM}\frac{1}{a} = 1 - \left(\frac{A \Omega^2}{GM}\right)^2\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{1}{a} = \left( 1 - \left(\frac{A \Omega^2}{GM}\right)^2 \right) \frac{GM}{\Omega^2}\]</div>
 </div>
 </details></div>
 <div class="section" id="lo-spin-stern-gerlach">
