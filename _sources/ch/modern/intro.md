@@ -77,6 +77,18 @@ $$\begin{cases}
   \ddot{v}_z + \left(\frac{q B}{m}\right)^2 v_z = 0 \\
 \end{cases}$$
 
+$$\begin{cases}
+v_x = A_x \cos \Omega t + B_x \sin \Omega t \\
+v_y = A_y t + B_y                           \\
+v_z = A_z \cos \Omega t + B_z \sin \Omega t \\
+\end{cases}
+\qquad \rightarrow \text{i.c.} \rightarrow \qquad
+\begin{cases}
+ A_x = v_0 \\
+ B_y = 0 \\
+ A_z = 0
+\end{cases}
+$$
 
 ```
 
