@@ -307,7 +307,7 @@ e quindi
 
 $$r(\theta) = \frac{\Omega^2}{c} \frac{1}{A \dfrac{\, \Omega^2}{c} \cos \theta + B \dfrac{\, \Omega^2}{c} \sin \theta - 1}$$
 
-**todo** *Perché si possono considerare $A > 0$ e tale da ottenere un'iperbole quando $B = 0$?$
+**todo** *Perché si possono considerare $A > 0$ e tale da ottenere un'iperbole quando $B = 0$?*
 
 Scelta della direzione di riferimento: direzione del perielio: $r(\theta=0) = \min r$, $B = 0$,
 
