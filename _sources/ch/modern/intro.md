@@ -41,9 +41,9 @@ $$
 $$
 
 $$\begin{cases}
-  \ddot{x} = \frac{q}{m} \left[ E_x \right] \\
-  \ddot{y} = \frac{q}{m} \left[ E_x \right] \\
-  \ddot{z} = \frac{q}{m} \left[ E_x \right] \\
+  \ddot{x} = \frac{q}{m} \left[       B v_y \right] \\
+  \ddot{y} = \frac{q}{m} \left[ E_y - B v_x \right] \\
+  \ddot{z} = \frac{q}{m} \left[             \right] \\
 \end{cases}$$
 
 
