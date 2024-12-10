@@ -184,10 +184,33 @@ $$\begin{cases}
 
 ## Misura della carica dell'elettrone - Millikan
 
-```{dropdown}
+```{dropdown} Misura della carica dell'elettrone
 :open:
 
-L'eseperimento sfrutta la [legge di Stokes](fluids:dynamics:stokes)
+L'esperimento permette di stimare la carica dell'elettrone grazie alle misure sul moto in un fluido di gocce d'olio cariche elettricamente. Vengono confrontate due condizioni differenti: una in cui viene applicato un campo elettrico $\vec{E}$ che si manifesta sul moto di una carica di intensità $q$ con una forza $\vec{F}^{el} = q \vec{E}$; l'altra senza applicazinoe del campo.
+
+Il confronto tra le velocità limite $v_{\infty,E}$ e $v_{\infty,0}$ nelle due condizioni permette di ottenere un misura della carica $q$ del corpo in esame.
+
+Nell'esperimento di Millikan è impossibile controllare la carica esatta di ogni goccia d'olio. Ripetendo l'esperimento più volte su un gran numero di gocce si osserva che la misura della carica di queste gocce restituisce valori multipli di una carica "elementare", che viene considerata la carica dell'elettrone.
+
+L'esperimento sfrutta la [legge di Stokes](fluids:dynamics:stokes), che prevede una resistenza aerodinamica lineare tra la forza agente su un corpo di piccole dimensioni e la sua velocità relativa al fluido nel quale si muove,
+
+$$\vec{F}^{aero} = - 6 \pi \mu R \vec{v}_rel = - c \vec{v} \ ,$$
+
+avendo indicato con $c$ la costante di proporzionalità (per ogni goccia, bisogna stimare $R$, qua lo supponiamo misurato e quindi noto), e considerato il fluido a riposo.
+
+Se il campo elettrico $\vec{E} = E \hat{z}$ è allineato con la gravità locale, $\vec{g} = g \hat{z}$, la componente lungo questa direzione dell'equazione di moto della goccia è
+
+$$m \ddot{z} = F^{peso}_z + F^{aero}_z + F^{el}_z = m g - c \dot{z} + q E$$
+
+che può essere riscritta in termini della componente $z$ della velocità,
+
+$$m \dot{v}_z + c v_z = m q + q E \ .$$
+
+Integrando in tempo con la condizione iniziale $v_z(0) = v_0$, si può esprimere la velocità in funzione del tempo,
+
+$$v_z(t; E) = v_0 + \left[ \frac{m g + q E}{c} - v_0 \right] (1 - e^{-\frac{c}{m}t}) \ .$$
+
 
 ```
 
