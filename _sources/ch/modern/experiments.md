@@ -235,13 +235,13 @@ $$v_{z, \infty}(E_2) - v_{z, \infty}(E_1) = \frac{E_2 - E_1}{c} q \qquad \righta
 
 Si vuole studiare il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$, rispetto a un corpo di carica elettrica $Q$ (concorde per scattering) e soggetto al campo elettrico generato dalla carica $Q$ e quindi a una forza
 
-$$\vec{F} = \frac{q Q}{4 \pi \varepsilon} \frac{\vec{r}}{r^3} \ .$$
+$$\vec{F} = \frac{q Q}{4 \pi \varepsilon} \frac{\vec{r}}{r^3} = c \, \frac{\vec{r}}{r^3} \ .$$
 
 Si osservi che per la (quasi) analogia formale tra la [forza di Coulomb](physics-hs:electromagnetism:electrostatics:coulomb) e la [legge di gravitazione universale di Newton](physics-hs:mechanics:dynamics:motion:gravitation:newton), questo problema ha delle similitudini con il [problema dei due corpi](physics-hs:mechanics:dynamics:motion:gravitation:two-bodies) soggetti alla mutua interazione gravitazionale.
 
 **Moto piano.** Siano $\vec{r}$, $\vec{v}$ la posizione e la velocità del pianeta rispetto al Sole. La forza di gravità agente sul pianeta è
 
-$$\vec{F} = - G M m \frac{\vec{r}}{r^3} \ .$$
+$$\vec{F} = c \frac{\vec{r}}{r^3} \ .$$
 
 E' facile dimostrare che il moto è piano, cioè che la posizione e la velocità del pianeta sono sempre ortogonali a una direzione costante.
 
