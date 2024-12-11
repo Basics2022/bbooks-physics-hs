@@ -233,7 +233,10 @@ $$v_{z, \infty}(E_2) - v_{z, \infty}(E_1) = \frac{E_2 - E_1}{c} q \qquad \righta
 ```{dropdown} Scattering
 :open:
 
-Gli esperimenti condotti da Geiger[^geiger] e Mardsen sotto la supervisione di Rutherford a Manchester consistono in esperimenti di scattering, in cui un raggio di particelle-$\alpha$[^alpha-particle]
+Gli esperimenti condotti da Geiger[^geiger] e Mardsen sotto la supervisione di Rutherford a Manchester consistono in esperimenti di scattering, in cui un fascio di particelle-$\alpha$[^alpha-particle] viene direzionato contro una sottile lamina di oro. Le particelle-$\alpha$ interagiscono con la lamina e vengono deviate. In questo esperimento si osserva che un grandissimo di numero di particelle subisce una deviazione minima, come se non interagissero con la struttura dell'oro; al crescere dell'angolo di deviazione diminuisce il numero misurato di particelle che hanno subito quella deviazione; alcune particelle subiscono anche una deviazione maggiore di $90°$, inclusa una deviazione di $180°$ corrispondente a un "rimbalzo normale" sulla lamina: la frequenza di questi eventi è sempre più piccola ma non nulla.
+
+La spiegazione dell'esperimento da parte di Rutherford è alla base del suo modello atomico. La materia è formata da atomi che hanno un **nucleo** positivo di dimensioni estremamente compatte (**todo** *stima delle dimensioni da parte di Rutherford e misura di oggi*), attorno al quale sono disposte le cariche negative. **todo** *poca attenzione alle cariche negative fino al modello di **Bohr**. Atomo con nucleo positivo e cariche negative che possono trovarsi in orbite ben definite, discrete, caratterizzate da numeri atomici interi.*
+
 Si vuole studiare il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$, rispetto a un corpo di carica elettrica $Q$ (concorde per scattering) e soggetto al campo elettrico generato dalla carica $Q$ e quindi a una forza
 
 [^geiger]: Geiger quello del contatore di radiazioni, quello che gracchia
