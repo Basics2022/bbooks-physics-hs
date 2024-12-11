@@ -69,6 +69,7 @@ parts:
     - file: ch/mechanics/dynamics-eom-open
     - file: ch/mechanics/dynamics-collisions
     - file: ch/mechanics/dynamics-motion-gravitation
+    - file: ch/mechanics/dynamics-central
     - file: ch/mechanics/dynamics-problems
 #   - file: ch/mechanics/dynamics-sims
 - caption: Cenni di meccanica del continuo
