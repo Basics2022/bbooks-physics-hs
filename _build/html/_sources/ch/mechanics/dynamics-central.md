@@ -82,6 +82,7 @@ $$\begin{cases}
 
 ```
 
+(physics-hs:mechanics:dynamics:motion:central:energy)=
 ```{dropdown} Costanza dell'energia
 Moltiplicando scalarmente l'equazione del moto {eq}`eq:central:r-2:eom` per il vettore velocità $\dot{\vec{r}}$ si ottiene il bilancio dell'energia meccanica
 
@@ -100,7 +101,7 @@ $$\begin{aligned}
  E & = \frac{1}{2} m |\dot{\vec{r}}|^2 + \frac{c}{r} = \\
    & = \frac{1}{2} m \left( \dot{r}^2 + r^2 \dot{\theta}^2 \right) + \frac{c}{r} = \\
    & = \frac{1}{2} m \dot{r}^2 + \frac{1}{2} \frac{l^2}{m r^2} + \frac{c}{r} \\
-\end{aligned}$$
+\end{aligned}$$ (eq:dynamics:central:r-2:energy)
 
 dopo aver espresso il momento angolare in coordinate polari 
 
@@ -112,6 +113,7 @@ $$\dot{\theta} = \frac{l}{m r^2} \ .$$ (eq:theta-ang-mom)
 
 ```
 
+(physics-hs:mechanics:dynamics:motion:central:trajectory)=
 ```{dropdown} Traiettorie e coniche
 
 Si cerca la traiettoria $r(\theta)$ descritta nel moto del corpo. L'equazione del moto assume una forma semplice da risolvere dopo aver introdotto la funzione $z = \frac{1}{r}$. Si calcolano le derivate sfruttando l'espressione della funzione $z$, e l'espressione {eq}`eq:theta-ang-mom` della derivata della coordinata angolare
@@ -133,7 +135,7 @@ la cui soluzione è $z(\theta) = A \cos \theta + B \sin \theta - \frac{m c}{l^2}
 
 $$r(\theta) = \frac{1}{- \frac{m c}{l^2} + A \cos \theta + B \sin \theta} \ .$$
 
-Questa equazione rappresenta la più generale equazione delle [coniche](). L'arbitrarietà nella scelta della direzione dalla quale misurare gli angoli può essere utilizzata per riscrivere il denominatore,
+Questa equazione rappresenta la più generale equazione delle [coniche in coordinate polari](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic_geometry/analytic_geometry_2d/conics.html). L'arbitrarietà nella scelta della direzione dalla quale misurare gli angoli può essere utilizzata per riscrivere il denominatore,
 
 $$A \cos \theta + B \sin \theta 
  & = \sqrt{A^2+B^2} \left[ \underbrace{\frac{A}{\sqrt{A^2+B^2}}}_{\cos \phi} \cos \theta + \underbrace{\frac{B}{\sqrt{A^2+B^2}}}_{\sin \phi} \sin \theta \right] = \\
@@ -148,101 +150,53 @@ $$\begin{aligned}
   & = \frac{1}{-\frac{m c}{l^2} + \sqrt{A^2 + B^2} \cos(\theta-\phi) } = \\
   & = \frac{ \frac{l^2}{m|c|} }{ - \text{sign}(c) + \frac{l^2}{m |c|} \sqrt{A^2 + B^2} \cos(\theta-\phi)} = \\
   & = \frac{ed}{-\text{sign}(c) + e \cos(\theta-\phi)} \ .
-\end{aligned}$$
+\end{aligned}$$ (eq:dynamics:central:r-2:trajectory:conics)
 
 ```
 
-```{dropdown} Coefficienti della traiettoria in funzione dell'energia e del momento angolare
-:open:
+(physics-hs:mechanics:dynamics:motion:central:trajectory-el)=
+```{dropdown} Equazione della traiettoria in funzione dell'energia e del momento angolare
+
+Manipolando i risultati ottenuti, si vuole esprimere l'equazione della traiettoria {eq}`eq:dynamics:central:r-2:trajectory:conics` in termini delle costanti del moto, l'energia $E$ e il momento angolare $l$. Si valuta la derivata nel tempo dell'equazione {eq}`eq:trajectory:conics`
 
 $$
 \dot{r} = \frac{ - e^2 d \sin(\theta-\phi) }{\left( -\text{sign}(c) + e \cos(\theta-\phi) \right)^2} \dot{\theta}
-=  \frac{r^2}{d}  \frac{l}{m r^2} \sin(\theta-\phi) = \frac{l}{m d} \sin(\theta-\phi)
+= - \frac{r^2}{d}  \frac{l}{m r^2} \sin(\theta-\phi) = - \frac{l}{m d} \sin(\theta-\phi)
 $$
 
-con $d = \frac{1}{\sqrt{A^2 + B^2}}$.
+con $d = \frac{1}{\sqrt{A^2 + B^2}}$, $ed = \frac{l^2}{m |c|}$, e si inserisce nell'espressione dell'energia {eq}`eq:dynamics:central:r-2:energy`
 
 $$\begin{aligned}
   E & = \frac{1}{2} m \dot{r}^2 + \frac{1}{2} \frac{l^2}{m r^2} + \frac{c}{r} = \\
-    & = \frac{1}{2} m \frac{l^2}{m^2 d^2} \sin^2(\theta-\phi) + \frac{1}{2} \frac{l^2}{m \left(\frac{l^2}{mc}\right)^2} \left( -\text{sign}(c) + e \cos(\theta-\phi)  \right)^2 + c \frac{-\text{sign}(c) + e \cos(\theta-\phi)}{ \frac{l^2}{m c} } = \\
-    & = \frac{l^2}{2md^2} \sin^2(\theta-\phi) + \frac{m c^2}{2 l^2} \left( 1 - 2\text{sign}(c) e \cos(\theta-\phi) + e^2 \cos^2(\theta-\phi) \right) + \frac{m c^2}{l^2} \left( -\text{sign}(c) + e \cos(\theta-\phi) \right)
+    & = \frac{1}{2} m \frac{l^2}{m^2 d^2} \sin^2(\theta-\phi) + \frac{1}{2} \frac{l^2}{m \left(\frac{l^2}{m |c|}\right)^2} \left( -\text{sign}(c) + e \cos(\theta-\phi)  \right)^2 + c \frac{-\text{sign}(c) + e \cos(\theta-\phi)}{ \frac{l^2}{m |c|} } = \\
+    & = \frac{l^2}{2md^2} \sin^2(\theta-\phi) + \frac{m c^2}{2 l^2} \left( 1 - 2\text{sign}(c) e \cos(\theta-\phi) + e^2 \cos^2(\theta-\phi) \right) + \frac{m c^2}{l^2} \left( - 1 + \text{sign}(c) e \cos(\theta-\phi) \right) = \\
+    & = \frac{l^2}{2md^2} \sin^2(\theta-\phi) + \frac{1}{d^2} \frac{l^4}{m^2 c^2} \frac{m c^2}{2 l^2} \cos^2(\theta-\phi) 
+     - \frac{m c^2}{2 l^2} = \\ 
+    & = \frac{l^2}{2md^2} - \frac{m c^2}{2 l^2} \ ,
 \end{aligned}$$
+
+per ricavare i coefficienti dell'equazione generale delle coniche in funzione dei parametri fisici del problema,
+
+$$\begin{aligned}
+  \frac{1}{d^2} & = \frac{2m}{l^2} \left( E + \frac{m c^2}{2 l^2} \right) \\ 
+  e & = \frac{l^2}{m |c|} \frac{1}{d} = \frac{l^2}{m |c|}\frac{m|c|}{l^2} \sqrt{1 + \frac{2 E l^2}{m |c|^2}} =  \sqrt{1 + \frac{2 E l^2}{m |c|^2}}
+\end{aligned}$$
+
+L'equazione delle coniche può quindi essere riscritta come
+
+$$r(\theta) = \frac{\frac{l^2}{m|c|}}{-\text{sign}(c) + \sqrt{1 + 2 \frac{E l^2}{m|c|^2}} \cos(\theta-\phi)} \ .$$ (eq:dynamics:central:r-2:trajectory:el)
+
+L'espressione dell'eccentricità permette di stabilire il legame tra i valori delle costanti del moto $E$, $l$ e il tipo di conica che descrive la traiettoria
+
+$$\begin{array}{lcc}
+\textbf{Conica} & \textbf{e} & \textbf{E} \\ \hline
+\text{circonferenza} & 0           & -\frac{m|c|^2}{2l^2} \\ 
+\text{ellisse}       & \in [0,1)   & \in \left[-\frac{m|c|^2}{2l^2}, 0 \right) \\ 
+\text{parabola}      & 1           & 0                    \\ 
+\text{iperbole}      & > 1         & > 0                  \\ 
+\end{array}$$
+
+**Osservazione.** Giunti verso la fine di un libro sulla meccanica, dovrebbe fare storcere il naso parlare in termini di valore assoluto di energia (almeno per quanto riguarda la meccanica classica). Questo è possibile, poiché la costante additiva arbitraria è stata fissata (implitamente, **todo** *essere più espliciti nella sezione*) nella sezione sulla [costanza dell'energia](physics-hs:mechanics:dynamics:motion:central:energy), ponendo uguale a zero la condizione di quiete a distanza infinita dal centro.
 
 ```
 
-
-
-**Traiettoria, $r(\theta)$.**
-Inserendo l'espressione $\dot{\theta} = \frac{\Omega}{r^2}$ nella componente radiale, e definendo la funzione $z = \frac{1}{r}$, le derivate nel tempo della coordinata radiale possono essere riscritte come
-
-$$\dot{r} = -\frac{1}{z^2}\frac{d z}{d \theta} \dot{\theta} = -\Omega \frac{dz}{d\theta} $$
-
-$$\ddot{r} = \dot{\theta} \frac{d}{d \theta} \left( - \Omega \frac{dz}{d \theta} \right) = - z^2 \Omega^2 z''(\theta)$$
-
-e la componente radiale dell'equazione di moto,
-
-$$-z^2 \Omega^2 z'' - z^3 \Omega^2 = - G M z^2$$
-$$ z'' + z  = \frac{G M}{\Omega^2}$$
-
-$$z(\theta) = \frac{G M}{\Omega^2} + A \cos(\theta) + B \sin(\theta) \ .$$
-
-e quindi
-
-$$r(\theta) = \frac{\Omega^2}{G M}\frac{1}{1 + A \dfrac{\, \Omega^2}{GM} \cos \theta + B \dfrac{\, \Omega^2}{GM} \sin \theta}$$
-
-Scelta della direzione di riferimento: direzione del perielio: $r(\theta=0) = \min r$, $B = 0$,
-
-Scelte diverse si ottengono da una trasformazione di coordinate con una rotazione dell'asse di riferimento: $\theta_1 = \theta - \theta_0$, e quindi
-
-$$r(\theta) = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos \theta} = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos (\theta_1 + \theta_0 )} = \frac{\Omega^2}{GM}\frac{1}{1 + \underbrace{\frac{A\Omega^2}{GM} \cos \theta_0}_{= A_1} \cos \theta_1 \underbrace{- \frac{A \Omega^2}{GM} \sin \theta_0}_{= B_1} \sin \theta_1 }$$
-
-Il confronto con l'equazione delle coniche in coordinate polari, permette di riconoscere l'eccentricità, $e$ e il prodotto $e \, D$ dell'eccentricità per la distanza $D$ tra fuoco e direttrice,
-
-$$e = \frac{A \Omega^2}{GM} \qquad , \qquad e \, D = \frac{\Omega^2}{GM}$$
-
-$$r(\theta) = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos \theta}$$
-$$r(\theta) = \frac{e \, D}{1 + e \, \cos \theta}$$
-
-
-
-<!--
-$$e = - \frac{A \Omega^2}{GM}$$
-$$e D = \frac{\Omega^2}{GM}$$
-$$D= -\frac{1}{A}$$
-
-$$c = \frac{e^2}{1-e^2} D$$
-$$a = \frac{c}{e} = \frac{e}{1-e^2} D$$
-$$b = \sqrt{a^2 - c^2} = \sqrt{\frac{1 - e^2}{e^2}} c = \sqrt{\frac{1 - e^2}{e^2}}  \frac{e^2}{1-e^2} D = \frac{e D}{\sqrt{1-e^2}} = a \, \sqrt{1-e^2} $$
--->
-
-Poiché la velocità areolare è costante, il periodo dell'orbita è uguale al raggporto tra l'area dell'ellisse e la velocità areaolare,
-
-$$T = \frac{\pi a b}{\Omega} = \pi \frac{a^2 \sqrt{1-e^2}}{\Omega} = $$
-
-$$1-e^2 = 1 - \left(\frac{A \Omega^2}{GM} \right)^2 = \frac{\Omega^2}{GM \, a} $$
-
-$$\rightarrow \qquad \frac{\sqrt{1-e^2}}{\Omega} = \frac{1}{\sqrt{GM} \sqrt{a}}$$
-
-$$\rightarrow \qquad T = \pi \frac{a^{\frac{3}{2}}}{\sqrt{GM}}$$
-
-
-$$
- 2a = \frac{\Omega^2}{GM+A \Omega^2} + \frac{\Omega^2}{GM-A \Omega^2} 
-    = \Omega^2 \frac{2 GM }{(GM)^2 - A^2 \Omega^4}
-$$
-
-$$A^2 \Omega^4 = (GM)^2 - \frac{GM \, \Omega^2}{a}$$
-
-$$\frac{\Omega^2}{GM}\frac{1}{a} = 1 - \left(\frac{A \Omega^2}{GM}\right)^2$$
-
-$$\frac{1}{a} = \left( 1 - \left(\frac{A \Omega^2}{GM}\right)^2 \right) \frac{GM}{\Omega^2}$$
-
-<!--
-Il semiasse maggiore è dato da
-
-$$\begin{aligned}
-a & = \frac{1}{2} \left( r(0)+r(\pi) \right) = \\
-  & = \frac{\Omega^2}{GM} \left[ \frac{1}{1+\frac{A \Omega^2}{GM}} + \frac{1}{1-\frac{A \Omega^2}{GM}} \right] = \\
-  & = \dfrac{2}{ \left(\frac{GM}{\Omega^2} \right)^2 - A^2}
-\end{aligned}$$
--->

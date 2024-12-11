@@ -233,7 +233,84 @@ $$v_{z, \infty}(E_2) - v_{z, \infty}(E_1) = \frac{E_2 - E_1}{c} q \qquad \righta
 ```{dropdown} Scattering
 :open:
 
+Gli esperimenti condotti da Geiger[^geiger] e Mardsen sotto la supervisione di Rutherford a Manchester consistono in esperimenti di scattering, in cui un fascio di particelle-$\alpha$[^alpha-particle] viene direzionato contro una sottile lamina di oro. Le particelle-$\alpha$ interagiscono con la lamina e vengono deviate. In questo esperimento si osserva che un grandissimo di numero di particelle subisce una deviazione minima, come se non interagissero con la struttura dell'oro; al crescere dell'angolo di deviazione diminuisce il numero misurato di particelle che hanno subito quella deviazione; alcune particelle subiscono anche una deviazione maggiore di $90°$, inclusa una deviazione di $180°$ corrispondente a un "rimbalzo normale" sulla lamina: la frequenza di questi eventi è sempre più piccola ma non nulla.
+
+La spiegazione dell'esperimento da parte di Rutherford è alla base del suo modello atomico: la distribuzione delle particelle-$\alpha$ misurata è compatibile un'interazione elettrica tra cariche positive puntiformi. Rutherford quindi ipotizza che la materia sia formata da atomi quasi del tutto "vuoti": le cariche positive sono concentrate in un **nucleo** di dimensioni estremamente compatte (**todo** *stima delle dimensioni da parte di Rutherford e misura di oggi*), attorno al quale sono disposte le cariche negative. **todo** *poca attenzione alle cariche negative fino al modello di **Bohr**. Atomo con nucleo positivo e cariche negative che possono trovarsi in orbite ben definite, discrete, caratterizzate da numeri atomici interi.*
+
+Qui si costruisce un problema di scattering tra due corpi puntiformi dotati di carica con lo stesso segno. Si assume che il corpo "bersaglio" rimane in quiete (*ad esempio, particella "proiettile" leggera e lenta; se questa ipotesi non è valida, bisogna considerare il "rinculo" della particella "bersaglio"*). Questo è un caso particolare di [moto centrale](physics-hs:mechanics:dynamics:motion:central:r-2), con forza inversamente proporzionale al quadrato della distanza. Infatti, scegliendo come origine il centro della carica bersaglio, la forza agente sulla carica proiettile è
+
+$$\vec{F} = \frac{q_1 q_2}{4\pi\varepsilon} \frac{\vec{r}}{|\vec{r}|^3} \ ,$$
+
+e l'equazione del moto è
+
+$$m \ddot{\vec{r}} = \frac{q_1 q_2}{4\pi\varepsilon} \frac{\vec{r}}{|\vec{r}|^3} = c \frac{\vec{r}}{|\vec{r}|^3} \ .$$
+
+Poiché la forza è repulsiva, la traiettoria della particella proiettile è un'iperbole per qualsiasi valore dei parametri del problema. L'equazione della traiettoria è data dall'espressione {eq}`eq:dynamics:central:r-2:trajectory:el`,
+
+$$r(\theta) = \frac{\frac{l^2}{m|c|}}{-1 + \sqrt{1 + 2 \frac{E l^2}{m|c|^2}} \cos(\theta-\phi)} \ ,$$
+
+avendo usato $\text{sign}(c) = 1$, poiché la costante $c = \frac{q_1 q_2}{4\pi\varepsilon}$ è positiva per due cariche di segno uguale.
+
+Le caratteristiche geometriche di questa traiettoria possono essere ricavate confrontanto l'espressione della traiettoria con l'espressione generale delle [coniche in coordinate polari](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic_geometry/analytic_geometry_2d/conics.html). In particolare,
+- l'eccentricità è
+
+  $$e = \sqrt{1+2\frac{E l^2}{m c^2}}$$
+
+- il coefficiente $d = $
+
+- i coefficienti $a$, $b$, $c$ dell'iperbole
+
+  $$a = \frac{c}{e} \qquad , \qquad b = \frac{\sqrt{e^2-1}}{e} c$$
+
+Usando questi parametri geometrici è possibile determinare l'angolo di deflessione,
+
+$$\delta = \pi - 2 \theta^* \ ,$$
+
+con 
+
+$$\tan \theta^* = \frac{b}{a} = \sqrt{e^2-1} = \sqrt{1 + 2 \frac{E l^2}{m c^2} - 1} = \sqrt{2 \frac{E l^2}{m c^2}} \ . $$
+
+$$\theta^* = \frac{\pi - \delta}{2}$$
+
+$$\tan \theta^* = \tan\left( \frac{\pi}{2} - \frac{\delta}{2} \right) = \frac{1}{\tan \frac{\delta}{2} } $$
+
+$$\delta = 2 \text{atan} \sqrt{ \frac{m c^2}{2 E l^2} }$$
+
+Il momento e l'energia vengono valutati all'infinito, $E = \frac{1}{2} m v_{\infty}^2$, $l = m h v_{\infty}$, avendo definito $v_{\infty}$ il modulo della velocità all'infinito e $h$ il coefficiente di impatto della traiettoria, cioè la distanza tra la tangente all'infinito e il punto bersaglio,
+
+$$\delta = 2 \, \text{atan} \sqrt{ \frac{m c^2}{2 \frac{1}{2} m v_{\infty}^2 m^2 h^2 v_{\infty}^2} } = 2 \, \text{atan} \left( \frac{c}{m h v_{\infty}^2} \right) $$
+
+**Sezione d'urto.**
+
+$$2 \pi h dh = - 2 \pi R \, R \, \sin \delta \, d \delta \, r $$
+
+con $r$ la densità relativa tra sezione di uscita e sezione di ingresso
+
+$$\sigma = r \, R^2 = - \frac{h}{\sin \delta} \frac{dh}{d \delta}$$
+
+$$h = \frac{c}{m v_{\infty}^2} \frac{1}{\tan \frac{\delta}{2}}$$
+
+$$\frac{dh}{d \delta} = - \frac{c}{m v_{\infty}^2} \frac{1}{\tan^2 \frac{\delta}{2}} \frac{1}{2} \frac{1}{\cos^2 \frac{\delta}{2}} = - \frac{c}{2 m v_{\infty}^2} \frac{1}{\sin^2 \frac{\delta}{2}} $$
+
+Riscrivendo $\sin \delta = 2 \sin \frac{\delta}{2} \cos \frac{\delta}{2}$, la sezione d'urto diventa
+
+$$\begin{aligned}
+  \sigma & = - \frac{h}{\sin \delta} \frac{dh}{d\delta} = \frac{c}{m v_{\infty}^2} \frac{\cos \frac{\delta}{2}}{\sin \frac{\delta}{2}} \frac{1}{2 \sin \frac{\delta}{2} \cos \frac{\delta}{2}} \frac{c}{2 m v_{\infty}^2} \frac{1}{\sin^2 \frac{\delta}{2}} \\
+\end{aligned}$$
+
+$$
+\qquad \rightarrow \qquad \sigma^2 = \left(\frac{c}{2 m v_{\infty}^2}\right)^2 \frac{1}{\sin^4 \frac{\delta}{2}} \ .
+$$
+
+
+
+**todo** *Finire esercizio (nel file sorgente ci sono linee commentate che possono essere utili); aggiungere immagini; calcolare sezione d'urto e distribuzione urti e confronto con risultati di Rutherford*
+
+<!--
 Si vuole studiare il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$, rispetto a un corpo di carica elettrica $Q$ (concorde per scattering) e soggetto al campo elettrico generato dalla carica $Q$ e quindi a una forza
+
+[^geiger]: Geiger quello del contatore di radiazioni, quello che gracchia
+[^alpha-particle]: particelle $\alpha$ sono isotopi di $\text{He}^{2+}$, cioè atomi di elio ai quali mancano due elettroni, quindi carichi positivamente. Questo è quello che interessa a noi qui. **todo** aggiungere riferimento a radioattività
 
 $$\vec{F} = \frac{q Q}{4 \pi \varepsilon} \frac{\vec{r}}{r^3} = c \, \frac{\vec{r}}{r^3} \ .$$
 
@@ -272,12 +349,6 @@ La **velocità areolare**, $\vec{\Omega} = \frac{1}{2} \vec{r} \times \vec{v} $ 
 
 $$\vec{\Omega} = \frac{1}{2} \frac{L}{m} \hat{k} = \frac{1}{2} r^2 \dot{\theta} \, \hat{k} \ .$$
 
-<!--
-Il **periodo** $T$
-
-$$T = \frac{A}{\Omega} = \frac{\pi \, a \, b}{\Omega} \ .$$
--->
-
 Dall'espressione della velocità angolare costante, si può ricavare il legame tra $\dot{\theta}$ ed $r$,
 
 $$\dot{\theta} = \frac{\Omega}{r^2} \ .$$
@@ -312,7 +383,7 @@ $$r(\theta) = \frac{\Omega^2}{c} \frac{1}{A \dfrac{\, \Omega^2}{c} \cos \theta +
 *Scelta della direzione di riferimento:*
 - *direzione del perielio: $r(\theta=0) = \min r$, $B = 0$,?*
 
-**todo** *Finire esercizio (nel file sorgente ci sono linee commentate che possono essere utili); aggiungere immagini; calcolare sezione d'urto e distribuzione urti e confronto con risultati di Rutherford*
+-->
 
 <!--
 Scelte diverse si ottengono da una trasformazione di coordinate con una rotazione dell'asse di riferimento: $\theta_1 = \theta - \theta_0$, e quindi

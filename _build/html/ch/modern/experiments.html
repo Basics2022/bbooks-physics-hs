@@ -818,72 +818,143 @@ Scattering<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Si vuole studiare il moto di una corpo puntiforme di massa <span class="math notranslate nohighlight">\(m\)</span> e carica elettrica <span class="math notranslate nohighlight">\(q\)</span>, rispetto a un corpo di carica elettrica <span class="math notranslate nohighlight">\(Q\)</span> (concorde per scattering) e soggetto al campo elettrico generato dalla carica <span class="math notranslate nohighlight">\(Q\)</span> e quindi a una forza</p>
+<p class="sd-card-text">Gli esperimenti condotti da Geiger[^geiger] e Mardsen sotto la supervisione di Rutherford a Manchester consistono in esperimenti di scattering, in cui un fascio di particelle-<span class="math notranslate nohighlight">\(\alpha\)</span>[^alpha-particle] viene direzionato contro una sottile lamina di oro. Le particelle-<span class="math notranslate nohighlight">\(\alpha\)</span> interagiscono con la lamina e vengono deviate. In questo esperimento si osserva che un grandissimo di numero di particelle subisce una deviazione minima, come se non interagissero con la struttura dell’oro; al crescere dell’angolo di deviazione diminuisce il numero misurato di particelle che hanno subito quella deviazione; alcune particelle subiscono anche una deviazione maggiore di <span class="math notranslate nohighlight">\(90°\)</span>, inclusa una deviazione di <span class="math notranslate nohighlight">\(180°\)</span> corrispondente a un «rimbalzo normale» sulla lamina: la frequenza di questi eventi è sempre più piccola ma non nulla.</p>
+<p class="sd-card-text">La spiegazione dell’esperimento da parte di Rutherford è alla base del suo modello atomico: la distribuzione delle particelle-<span class="math notranslate nohighlight">\(\alpha\)</span> misurata è compatibile un’interazione elettrica tra cariche positive puntiformi. Rutherford quindi ipotizza che la materia sia formata da atomi quasi del tutto «vuoti»: le cariche positive sono concentrate in un <strong>nucleo</strong> di dimensioni estremamente compatte (<strong>todo</strong> <em>stima delle dimensioni da parte di Rutherford e misura di oggi</em>), attorno al quale sono disposte le cariche negative. <strong>todo</strong> <em>poca attenzione alle cariche negative fino al modello di <strong>Bohr</strong>. Atomo con nucleo positivo e cariche negative che possono trovarsi in orbite ben definite, discrete, caratterizzate da numeri atomici interi.</em></p>
+<p class="sd-card-text">Qui si costruisce un problema di scattering tra due corpi puntiformi dotati di carica con lo stesso segno. Si assume che il corpo «bersaglio» rimane in quiete (<em>ad esempio, particella «proiettile» leggera e lenta; se questa ipotesi non è valida, bisogna considerare il «rinculo» della particella «bersaglio»</em>). Questo è un caso particolare di <a class="reference internal" href="../mechanics/dynamics-central.html#physics-hs-mechanics-dynamics-motion-central-r-2"><span class="std std-ref">moto centrale</span></a>, con forza inversamente proporzionale al quadrato della distanza. Infatti, scegliendo come origine il centro della carica bersaglio, la forza agente sulla carica proiettile è</p>
 <div class="math notranslate nohighlight">
-\[\vec{F} = \frac{q Q}{4 \pi \varepsilon} \frac{\vec{r}}{r^3} = c \, \frac{\vec{r}}{r^3} \ .\]</div>
-<p class="sd-card-text">Si osservi che per la (quasi) analogia formale tra la <a class="reference internal" href="../electromagnetism/electrostatics.html#physics-hs-electromagnetism-electrostatics-coulomb"><span class="std std-ref">forza di Coulomb</span></a> e la <a class="reference internal" href="../mechanics/dynamics-motion-gravitation.html#physics-hs-mechanics-dynamics-motion-gravitation-newton"><span class="std std-ref">legge di gravitazione universale di Newton</span></a>, questo problema ha delle similitudini con il <a class="reference internal" href="../mechanics/dynamics-motion-gravitation.html#physics-hs-mechanics-dynamics-motion-gravitation-two-bodies"><span class="std std-ref">problema dei due corpi</span></a> soggetti alla mutua interazione gravitazionale.</p>
-<p class="sd-card-text">L’equazione dinamica del corpo è quindi</p>
+\[\vec{F} = \frac{q_1 q_2}{4\pi\varepsilon} \frac{\vec{r}}{|\vec{r}|^3} \ ,\]</div>
+<p class="sd-card-text">e l’equazione del moto è</p>
 <div class="math notranslate nohighlight">
-\[m \ddot{\vec{r}} = c \, \frac{\vec{r}}{r^3} \ .\]</div>
-<p class="sd-card-text"><strong>Moto piano.</strong>  E” immediato dimostrare che il moto è piano, cioè che la posizione e la velocità del pianeta sono sempre ortogonali a una direzione costante.</p>
+\[m \ddot{\vec{r}} = \frac{q_1 q_2}{4\pi\varepsilon} \frac{\vec{r}}{|\vec{r}|^3} = c \frac{\vec{r}}{|\vec{r}|^3} \ .\]</div>
+<p class="sd-card-text">Poiché la forza è repulsiva, la traiettoria della particella proiettile è un’iperbole per qualsiasi valore dei parametri del problema. L’equazione della traiettoria è data dall’espressione <a class="reference internal" href="../mechanics/dynamics-central.html#equation-eq-dynamics-central-r-2-trajectory-el">(10.6)</a>,</p>
 <div class="math notranslate nohighlight">
-\[\frac{d}{dt} \left( \vec{r} \times \vec{v} \right) = \underbrace{\vec{v} \times \vec{v}}_{=\vec{0}} + \vec{r} \times \vec{a}  = \frac{c}{m} \, \underbrace{\vec{r} \times \frac{\vec{r}}{r^3}}_{=\vec{0}} = \vec{0} \ .\]</div>
-<p class="sd-card-text">Poiché il vettore <span class="math notranslate nohighlight">\(\vec{r} \times \vec{v} =: \frac{L}{m} \hat{k}\)</span> è costante, è costante sia il suo valore assoluto sia la sua direzione: affinché <span class="math notranslate nohighlight">\(\vec{r} \times \vec{v}\)</span> sia allineato con <span class="math notranslate nohighlight">\(\hat{k}\)</span>, i vettori <span class="math notranslate nohighlight">\(\vec{r}\)</span>, <span class="math notranslate nohighlight">\(\vec{v}\)</span> devono essere ortogonali a <span class="math notranslate nohighlight">\(\hat{k}\)</span>.</p>
-<p class="sd-card-text"><strong>Coordinate polari.</strong> Per descrivere il moto piano di un punto, si può usare un sistema di coordinate 2-dimensionale. Si sceglie un sistema di coordinate polari con origine coincidente con il corpo di carica <span class="math notranslate nohighlight">\(Q\)</span>. La posizione del pianeta è identificata dal raggio vettore</p>
+\[r(\theta) = \frac{\frac{l^2}{m|c|}}{-1 + \sqrt{1 + 2 \frac{E l^2}{m|c|^2}} \cos(\theta-\phi)} \ ,\]</div>
+<p class="sd-card-text">avendo usato <span class="math notranslate nohighlight">\(\text{sign}(c) = 1\)</span>, poiché la costante <span class="math notranslate nohighlight">\(c = \frac{q_1 q_2}{4\pi\varepsilon}\)</span> è positiva per due cariche di segno uguale.</p>
+<p class="sd-card-text">Le caratteristiche geometriche di questa traiettoria possono essere ricavate confrontanto l’espressione della traiettoria con l’espressione generale delle <a class="reference external" href="https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic_geometry/analytic_geometry_2d/conics.html">coniche in coordinate polari</a>. In particolare,</p>
+<ul>
+<li><p class="sd-card-text">l’eccentricità è</p>
 <div class="math notranslate nohighlight">
-\[\vec{r} = r \, \hat{r} \ ,\]</div>
-<p class="sd-card-text">e la derivate dei versori radiale e azimuthale valgono</p>
+\[e = \sqrt{1+2\frac{E l^2}{m c^2}}\]</div>
+</li>
+<li><p class="sd-card-text">il coefficiente <span class="math notranslate nohighlight">\(d = \)</span></p></li>
+<li><p class="sd-card-text">i coefficienti <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, <span class="math notranslate nohighlight">\(c\)</span> dell’iperbole</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-\dot{\hat{r}}      &amp; =   \dot{\theta} \hat{\theta} \\
-\dot{\hat{\theta}} &amp; = - \dot{\theta} \hat{r} \\
-\end{aligned}\end{split}\]</div>
-<p class="sd-card-text">La posizione, la velocità e l’accelerazione del pianeta possono essere scritte come</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-\vec{r} &amp; = r \, \hat{r} \\
-\vec{v} &amp; = \dot{r} \, \hat{r} + r \dot{\theta} \, \hat{\theta} \\
-\vec{a} &amp; = \left[ \ddot{r} - r \dot{\theta}^2 \right] \, \hat{r} +  \left[ 2 \dot{r} \dot{\theta} + r \ddot{\theta} \right] \, \hat{\theta}  \\
-\end{aligned}\end{split}\]</div>
-<p class="sd-card-text">La <strong>velocità areolare</strong>, <span class="math notranslate nohighlight">\(\vec{\Omega} = \frac{1}{2} \vec{r} \times \vec{v} \)</span> è costante e uguale a</p>
-<div class="math notranslate nohighlight">
-\[\vec{\Omega} = \frac{1}{2} \frac{L}{m} \hat{k} = \frac{1}{2} r^2 \dot{\theta} \, \hat{k} \ .\]</div>
-<!--
-Il **periodo** $T$
-
-$$T = \frac{A}{\Omega} = \frac{\pi \, a \, b}{\Omega} \ .$$
--->
-<p class="sd-card-text">Dall’espressione della velocità angolare costante, si può ricavare il legame tra <span class="math notranslate nohighlight">\(\dot{\theta}\)</span> ed <span class="math notranslate nohighlight">\(r\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[\dot{\theta} = \frac{\Omega}{r^2} \ .\]</div>
-<p class="sd-card-text">Usando le coordinate polari, l’equazione del moto <span class="math notranslate nohighlight">\(m \ddot{\vec{r}} = c \, \frac{\vec{r}}{r^3}\)</span> viene scritta in componenti,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-r      &amp; : \ m (\ddot{r} - r\dot{\theta}^2) = c \, \frac{1}{r^2} \\
-\theta &amp; : \ m ( 2 \dot{r} \dot{\theta} + r \ddot{\theta}^2 ) = 0
-\end{aligned}\end{split}\]</div>
-<p class="sd-card-text"><strong>Traiettoria, <span class="math notranslate nohighlight">\(r(\theta)\)</span>.</strong>
-Inserendo l’espressione <span class="math notranslate nohighlight">\(\dot{\theta} = \frac{\Omega}{r^2}\)</span> nella componente radiale, e definendo la funzione <span class="math notranslate nohighlight">\(z = \frac{1}{r}\)</span>, le derivate nel tempo della coordinata radiale possono essere riscritte come</p>
-<div class="math notranslate nohighlight">
-\[\dot{r} = -\frac{1}{z^2}\frac{d z}{d \theta} \dot{\theta} = -\Omega \frac{dz}{d\theta} \]</div>
-<div class="math notranslate nohighlight">
-\[\ddot{r} = \dot{\theta} \frac{d}{d \theta} \left( - \Omega \frac{dz}{d \theta} \right) = - z^2 \Omega^2 z''(\theta)\]</div>
-<p class="sd-card-text">e la componente radiale dell’equazione di moto,</p>
-<div class="math notranslate nohighlight">
-\[-z^2 \Omega^2 z'' - z^3 \Omega^2 = c \, z^2\]</div>
-<div class="math notranslate nohighlight">
-\[ z'' + z  = -\frac{c}{\Omega^2}\]</div>
-<div class="math notranslate nohighlight">
-\[z(\theta) = - \frac{c}{\Omega^2} + A \cos(\theta) + B \sin(\theta) \ .\]</div>
-<p class="sd-card-text">e quindi</p>
-<div class="math notranslate nohighlight">
-\[r(\theta) = \frac{\Omega^2}{c} \frac{1}{A \dfrac{\, \Omega^2}{c} \cos \theta + B \dfrac{\, \Omega^2}{c} \sin \theta - 1}\]</div>
-<p class="sd-card-text"><strong>todo</strong> <em>Perché si possono considerare <span class="math notranslate nohighlight">\(A &gt; 0\)</span> e tale da ottenere un’iperbole quando <span class="math notranslate nohighlight">\(B = 0\)</span>?</em></p>
-<p class="sd-card-text"><em>Scelta della direzione di riferimento:</em></p>
-<ul class="simple">
-<li><p class="sd-card-text"><em>direzione del perielio: <span class="math notranslate nohighlight">\(r(\theta=0) = \min r\)</span>, <span class="math notranslate nohighlight">\(B = 0\)</span>,?</em></p></li>
+\[a = \frac{c}{e} \qquad , \qquad b = \frac{\sqrt{e^2-1}}{e} c\]</div>
+</li>
 </ul>
+<p class="sd-card-text">Usando questi parametri geometrici è possibile determinare l’angolo di deflessione,</p>
+<div class="math notranslate nohighlight">
+\[\delta = \pi - 2 \theta^* \ ,\]</div>
+<p class="sd-card-text">con</p>
+<div class="math notranslate nohighlight">
+\[\tan \theta^* = \frac{b}{a} = \sqrt{e^2-1} = \sqrt{1 + 2 \frac{E l^2}{m c^2} - 1} = \sqrt{2 \frac{E l^2}{m c^2}} \ . \]</div>
+<div class="math notranslate nohighlight">
+\[\theta^* = \frac{\pi - \delta}{2}\]</div>
+<div class="math notranslate nohighlight">
+\[\tan \theta^* = \tan\left( \frac{\pi}{2} - \frac{\delta}{2} \right) = \frac{1}{\tan \frac{\delta}{2} } \]</div>
+<div class="math notranslate nohighlight">
+\[\delta = 2 \text{atan} \sqrt{ \frac{m c^2}{2 E l^2} }\]</div>
+<p class="sd-card-text">Il momento e l’energia vengono valutati all’infinito, <span class="math notranslate nohighlight">\(E = \frac{1}{2} m v_{\infty}^2\)</span>, <span class="math notranslate nohighlight">\(l = m h v_{\infty}\)</span>, avendo definito <span class="math notranslate nohighlight">\(v_{\infty}\)</span> il modulo della velocità all’infinito e <span class="math notranslate nohighlight">\(h\)</span> il coefficiente di impatto della traiettoria, cioè la distanza tra la tangente all’infinito e il punto bersaglio,</p>
+<div class="math notranslate nohighlight">
+\[\delta = 2 \, \text{atan} \sqrt{ \frac{m c^2}{2 \frac{1}{2} m v_{\infty}^2 m^2 h^2 v_{\infty}^2} } = 2 \, \text{atan} \left( \frac{c}{m h v_{\infty}^2} \right) \]</div>
+<p class="sd-card-text"><strong>Sezione d’urto.</strong></p>
+<div class="math notranslate nohighlight">
+\[2 \pi h dh = - 2 \pi R \, R \, \sin \delta \, d \delta \, r \]</div>
+<p class="sd-card-text">con <span class="math notranslate nohighlight">\(r\)</span> la densità relativa tra sezione di uscita e sezione di ingresso</p>
+<div class="math notranslate nohighlight">
+\[\sigma = r \, R^2 = - \frac{h}{\sin \delta} \frac{dh}{d \delta}\]</div>
+<div class="math notranslate nohighlight">
+\[h = \frac{c}{m v_{\infty}^2} \frac{1}{\tan \frac{\delta}{2}}\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{dh}{d \delta} = - \frac{c}{m v_{\infty}^2} \frac{1}{\tan^2 \frac{\delta}{2}} \frac{1}{2} \frac{1}{\cos^2 \frac{\delta}{2}} = - \frac{c}{2 m v_{\infty}^2} \frac{1}{\sin^2 \frac{\delta}{2}} \]</div>
+<p class="sd-card-text">Riscrivendo <span class="math notranslate nohighlight">\(\sin \delta = 2 \sin \frac{\delta}{2} \cos \frac{\delta}{2}\)</span>, la sezione d’urto diventa</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \sigma &amp; = - \frac{h}{\sin \delta} \frac{dh}{d\delta} = \frac{c}{m v_{\infty}^2} \frac{\cos \frac{\delta}{2}}{\sin \frac{\delta}{2}} \frac{1}{2 \sin \frac{\delta}{2} \cos \frac{\delta}{2}} \frac{c}{2 m v_{\infty}^2} \frac{1}{\sin^2 \frac{\delta}{2}} \\
+\end{aligned}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+\qquad \rightarrow \qquad \sigma^2 = \left(\frac{c}{2 m v_{\infty}^2}\right)^2 \frac{1}{\sin^4 \frac{\delta}{2}} \ .
+\]</div>
 <p class="sd-card-text"><strong>todo</strong> <em>Finire esercizio (nel file sorgente ci sono linee commentate che possono essere utili); aggiungere immagini; calcolare sezione d’urto e distribuzione urti e confronto con risultati di Rutherford</em></p>
+<!--
+Si vuole studiare il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$, rispetto a un corpo di carica elettrica $Q$ (concorde per scattering) e soggetto al campo elettrico generato dalla carica $Q$ e quindi a una forza
+
+[^geiger]: Geiger quello del contatore di radiazioni, quello che gracchia
+[^alpha-particle]: particelle $\alpha$ sono isotopi di $\text{He}^{2+}$, cioè atomi di elio ai quali mancano due elettroni, quindi carichi positivamente. Questo è quello che interessa a noi qui. **todo** aggiungere riferimento a radioattività
+
+$$\vec{F} = \frac{q Q}{4 \pi \varepsilon} \frac{\vec{r}}{r^3} = c \, \frac{\vec{r}}{r^3} \ .$$
+
+Si osservi che per la (quasi) analogia formale tra la [forza di Coulomb](physics-hs:electromagnetism:electrostatics:coulomb) e la [legge di gravitazione universale di Newton](physics-hs:mechanics:dynamics:motion:gravitation:newton), questo problema ha delle similitudini con il [problema dei due corpi](physics-hs:mechanics:dynamics:motion:gravitation:two-bodies) soggetti alla mutua interazione gravitazionale.
+
+L'equazione dinamica del corpo è quindi
+
+$$m \ddot{\vec{r}} = c \, \frac{\vec{r}}{r^3} \ .$$
+
+**Moto piano.**  E' immediato dimostrare che il moto è piano, cioè che la posizione e la velocità del pianeta sono sempre ortogonali a una direzione costante.
+
+$$\frac{d}{dt} \left( \vec{r} \times \vec{v} \right) = \underbrace{\vec{v} \times \vec{v}}_{=\vec{0}} + \vec{r} \times \vec{a}  = \frac{c}{m} \, \underbrace{\vec{r} \times \frac{\vec{r}}{r^3}}_{=\vec{0}} = \vec{0} \ .$$
+
+Poiché il vettore $\vec{r} \times \vec{v} =: \frac{L}{m} \hat{k}$ è costante, è costante sia il suo valore assoluto sia la sua direzione: affinché $\vec{r} \times \vec{v}$ sia allineato con $\hat{k}$, i vettori $\vec{r}$, $\vec{v}$ devono essere ortogonali a $\hat{k}$.
+
+**Coordinate polari.** Per descrivere il moto piano di un punto, si può usare un sistema di coordinate 2-dimensionale. Si sceglie un sistema di coordinate polari con origine coincidente con il corpo di carica $Q$. La posizione del pianeta è identificata dal raggio vettore
+
+$$\vec{r} = r \, \hat{r} \ ,$$
+
+e la derivate dei versori radiale e azimuthale valgono
+
+$$\begin{aligned}
+\dot{\hat{r}}      & =   \dot{\theta} \hat{\theta} \\
+\dot{\hat{\theta}} & = - \dot{\theta} \hat{r} \\
+\end{aligned}$$
+
+La posizione, la velocità e l'accelerazione del pianeta possono essere scritte come
+
+$$\begin{aligned}
+\vec{r} & = r \, \hat{r} \\
+\vec{v} & = \dot{r} \, \hat{r} + r \dot{\theta} \, \hat{\theta} \\
+\vec{a} & = \left[ \ddot{r} - r \dot{\theta}^2 \right] \, \hat{r} +  \left[ 2 \dot{r} \dot{\theta} + r \ddot{\theta} \right] \, \hat{\theta}  \\
+\end{aligned}$$
+
+La **velocità areolare**, $\vec{\Omega} = \frac{1}{2} \vec{r} \times \vec{v} $ è costante e uguale a 
+
+$$\vec{\Omega} = \frac{1}{2} \frac{L}{m} \hat{k} = \frac{1}{2} r^2 \dot{\theta} \, \hat{k} \ .$$
+
+Dall'espressione della velocità angolare costante, si può ricavare il legame tra $\dot{\theta}$ ed $r$,
+
+$$\dot{\theta} = \frac{\Omega}{r^2} \ .$$
+
+Usando le coordinate polari, l'equazione del moto $m \ddot{\vec{r}} = c \, \frac{\vec{r}}{r^3}$ viene scritta in componenti,
+
+$$\begin{aligned}
+r      & : \ m (\ddot{r} - r\dot{\theta}^2) = c \, \frac{1}{r^2} \\
+\theta & : \ m ( 2 \dot{r} \dot{\theta} + r \ddot{\theta}^2 ) = 0
+\end{aligned}$$
+
+**Traiettoria, $r(\theta)$.**
+Inserendo l'espressione $\dot{\theta} = \frac{\Omega}{r^2}$ nella componente radiale, e definendo la funzione $z = \frac{1}{r}$, le derivate nel tempo della coordinata radiale possono essere riscritte come
+
+$$\dot{r} = -\frac{1}{z^2}\frac{d z}{d \theta} \dot{\theta} = -\Omega \frac{dz}{d\theta} $$
+
+$$\ddot{r} = \dot{\theta} \frac{d}{d \theta} \left( - \Omega \frac{dz}{d \theta} \right) = - z^2 \Omega^2 z''(\theta)$$
+
+e la componente radiale dell'equazione di moto,
+
+$$-z^2 \Omega^2 z'' - z^3 \Omega^2 = c \, z^2$$
+$$ z'' + z  = -\frac{c}{\Omega^2}$$
+
+$$z(\theta) = - \frac{c}{\Omega^2} + A \cos(\theta) + B \sin(\theta) \ .$$
+
+e quindi
+
+$$r(\theta) = \frac{\Omega^2}{c} \frac{1}{A \dfrac{\, \Omega^2}{c} \cos \theta + B \dfrac{\, \Omega^2}{c} \sin \theta - 1}$$
+
+**todo** *Perché si possono considerare $A > 0$ e tale da ottenere un'iperbole quando $B = 0$?*
+
+*Scelta della direzione di riferimento:*
+- *direzione del perielio: $r(\theta=0) = \min r$, $B = 0$,?*
+
+-->
 <!--
 Scelte diverse si ottengono da una trasformazione di coordinate con una rotazione dell'asse di riferimento: $\theta_1 = \theta - \theta_0$, e quindi
 

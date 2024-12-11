@@ -101,7 +101,7 @@ $$\begin{aligned}
  E & = \frac{1}{2} m |\dot{\vec{r}}|^2 + \frac{c}{r} = \\
    & = \frac{1}{2} m \left( \dot{r}^2 + r^2 \dot{\theta}^2 \right) + \frac{c}{r} = \\
    & = \frac{1}{2} m \dot{r}^2 + \frac{1}{2} \frac{l^2}{m r^2} + \frac{c}{r} \\
-\end{aligned}$$
+\end{aligned}$$ (eq:dynamics:central:r-2:energy)
 
 dopo aver espresso il momento angolare in coordinate polari 
 
@@ -135,7 +135,7 @@ la cui soluzione è $z(\theta) = A \cos \theta + B \sin \theta - \frac{m c}{l^2}
 
 $$r(\theta) = \frac{1}{- \frac{m c}{l^2} + A \cos \theta + B \sin \theta} \ .$$
 
-Questa equazione rappresenta la più generale equazione delle [coniche](). L'arbitrarietà nella scelta della direzione dalla quale misurare gli angoli può essere utilizzata per riscrivere il denominatore,
+Questa equazione rappresenta la più generale equazione delle [coniche in coordinate polari](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic_geometry/analytic_geometry_2d/conics.html). L'arbitrarietà nella scelta della direzione dalla quale misurare gli angoli può essere utilizzata per riscrivere il denominatore,
 
 $$A \cos \theta + B \sin \theta 
  & = \sqrt{A^2+B^2} \left[ \underbrace{\frac{A}{\sqrt{A^2+B^2}}}_{\cos \phi} \cos \theta + \underbrace{\frac{B}{\sqrt{A^2+B^2}}}_{\sin \phi} \sin \theta \right] = \\
@@ -150,20 +150,21 @@ $$\begin{aligned}
   & = \frac{1}{-\frac{m c}{l^2} + \sqrt{A^2 + B^2} \cos(\theta-\phi) } = \\
   & = \frac{ \frac{l^2}{m|c|} }{ - \text{sign}(c) + \frac{l^2}{m |c|} \sqrt{A^2 + B^2} \cos(\theta-\phi)} = \\
   & = \frac{ed}{-\text{sign}(c) + e \cos(\theta-\phi)} \ .
-\end{aligned}$$
+\end{aligned}$$ (eq:dynamics:central:r-2:trajectory:conics)
 
 ```
 
 (physics-hs:mechanics:dynamics:motion:central:trajectory-el)=
-```{dropdown} Coefficienti della traiettoria in funzione dell'energia e del momento angolare
-:open:
+```{dropdown} Equazione della traiettoria in funzione dell'energia e del momento angolare
+
+Manipolando i risultati ottenuti, si vuole esprimere l'equazione della traiettoria {eq}`eq:dynamics:central:r-2:trajectory:conics` in termini delle costanti del moto, l'energia $E$ e il momento angolare $l$. Si valuta la derivata nel tempo dell'equazione {eq}`eq:trajectory:conics`
 
 $$
 \dot{r} = \frac{ - e^2 d \sin(\theta-\phi) }{\left( -\text{sign}(c) + e \cos(\theta-\phi) \right)^2} \dot{\theta}
 = - \frac{r^2}{d}  \frac{l}{m r^2} \sin(\theta-\phi) = - \frac{l}{m d} \sin(\theta-\phi)
 $$
 
-con $d = \frac{1}{\sqrt{A^2 + B^2}}$, $ed = \frac{l^2}{m |c|}$
+con $d = \frac{1}{\sqrt{A^2 + B^2}}$, $ed = \frac{l^2}{m |c|}$, e si inserisce nell'espressione dell'energia {eq}`eq:dynamics:central:r-2:energy`
 
 $$\begin{aligned}
   E & = \frac{1}{2} m \dot{r}^2 + \frac{1}{2} \frac{l^2}{m r^2} + \frac{c}{r} = \\
@@ -174,23 +175,23 @@ $$\begin{aligned}
     & = \frac{l^2}{2md^2} - \frac{m c^2}{2 l^2} \ ,
 \end{aligned}$$
 
-e quindi si ricavano i coefficienti dell'equazione generale delle coniche in funzione dei parametri fisici del problema,
+per ricavare i coefficienti dell'equazione generale delle coniche in funzione dei parametri fisici del problema,
 
 $$\begin{aligned}
-  \frac{1}{d^2} & = \frac{2m}{l^2} \left( E + \frac{m c^2}{2 l^2} \right) 
+  \frac{1}{d^2} & = \frac{2m}{l^2} \left( E + \frac{m c^2}{2 l^2} \right) \\ 
   e & = \frac{l^2}{m |c|} \frac{1}{d} = \frac{l^2}{m |c|}\frac{m|c|}{l^2} \sqrt{1 + \frac{2 E l^2}{m |c|^2}} =  \sqrt{1 + \frac{2 E l^2}{m |c|^2}}
 \end{aligned}$$
 
 L'equazione delle coniche può quindi essere riscritta come
 
-$$r(\theta) = \frac{\frac{l^2}{m|c|}}{-\text{sign}(c) + \sqrt{1 + 2 \frac{E l}{m|c|^2}} \cos(\theta-\phi)} \ .$$
+$$r(\theta) = \frac{\frac{l^2}{m|c|}}{-\text{sign}(c) + \sqrt{1 + 2 \frac{E l^2}{m|c|^2}} \cos(\theta-\phi)} \ .$$ (eq:dynamics:central:r-2:trajectory:el)
 
 L'espressione dell'eccentricità permette di stabilire il legame tra i valori delle costanti del moto $E$, $l$ e il tipo di conica che descrive la traiettoria
 
 $$\begin{array}{lcc}
-\text{\textbf{Conica}} & \text{\textbf{e}} & \text{\textbf{E}} \\
+\textbf{Conica} & \textbf{e} & \textbf{E} \\ \hline
 \text{circonferenza} & 0           & -\frac{m|c|^2}{2l^2} \\ 
-\text{ellisse}       & \in [0,1)   & \in \left[-\frac{m|c|^2}{2l^2}, 0 \right] \\ 
+\text{ellisse}       & \in [0,1)   & \in \left[-\frac{m|c|^2}{2l^2}, 0 \right) \\ 
 \text{parabola}      & 1           & 0                    \\ 
 \text{iperbole}      & > 1         & > 0                  \\ 
 \end{array}$$
