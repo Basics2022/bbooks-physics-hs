@@ -718,7 +718,7 @@ Traiettorie e coniche<div class="sd-summary-down docutils">
 <p class="sd-card-text">la cui soluzione è <span class="math notranslate nohighlight">\(z(\theta) = A \cos \theta + B \sin \theta - \frac{m c}{l^2}\)</span> o, in termini del raggio <span class="math notranslate nohighlight">\(r\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[r(\theta) = \frac{1}{- \frac{m c}{l^2} + A \cos \theta + B \sin \theta} \ .\]</div>
-<p class="sd-card-text">Questa equazione rappresenta la più generale equazione delle <a class="reference internal" href="../mechanics.html"><span class="doc std std-doc">coniche</span></a>. L’arbitrarietà nella scelta della direzione dalla quale misurare gli angoli può essere utilizzata per riscrivere il denominatore,</p>
+<p class="sd-card-text">Questa equazione rappresenta la più generale equazione delle <a class="reference external" href="https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic_geometry/analytic_geometry_2d/conics.html">coniche in coordinate polari</a>. L’arbitrarietà nella scelta della direzione dalla quale misurare gli angoli può essere utilizzata per riscrivere il denominatore,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}A \cos \theta + B \sin \theta 
  &amp; = \sqrt{A^2+B^2} \left[ \underbrace{\frac{A}{\sqrt{A^2+B^2}}}_{\cos \phi} \cos \theta + \underbrace{\frac{B}{\sqrt{A^2+B^2}}}_{\sin \phi} \sin \theta \right] = \\
@@ -726,8 +726,8 @@ Traiettorie e coniche<div class="sd-summary-down docutils">
  &amp; = \sqrt{A^2+B^2} \cos( \theta - \phi ) \ .
 \end{split}\]</div>
 <p class="sd-card-text">per riscrivere l’equazione</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
+<div class="math notranslate nohighlight" id="equation-eq-trajectory-conics">
+<span class="eqno">(10.4)<a class="headerlink" href="#equation-eq-trajectory-conics" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{aligned}
  r(\theta)
   &amp; = \frac{1}{-\frac{m c}{l^2} + \sqrt{A^2 + B^2} \cos(\theta-\phi) } = \\
   &amp; = \frac{ \frac{l^2}{m|c|} }{ - \text{sign}(c) + \frac{l^2}{m |c|} \sqrt{A^2 + B^2} \cos(\theta-\phi)} = \\
@@ -741,12 +741,13 @@ Equazione della traiettoria in funzione dell’energia e del momento angolare<di
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Manipolando i risultati ottenuti, si vuole esprimere l’equazione della traiettoria <a class="reference internal" href="#equation-eq-trajectory-conics">(10.4)</a> in termini delle costanti del moto, l’energia <span class="math notranslate nohighlight">\(E\)</span> e il momento angolare <span class="math notranslate nohighlight">\(l\)</span>. Si valuta la derivata nel tempo dell’equazione <a class="reference internal" href="#equation-eq-trajectory-conics">(10.4)</a></p>
 <div class="math notranslate nohighlight">
 \[
 \dot{r} = \frac{ - e^2 d \sin(\theta-\phi) }{\left( -\text{sign}(c) + e \cos(\theta-\phi) \right)^2} \dot{\theta}
 = - \frac{r^2}{d}  \frac{l}{m r^2} \sin(\theta-\phi) = - \frac{l}{m d} \sin(\theta-\phi)
 \]</div>
-<p class="sd-card-text">con <span class="math notranslate nohighlight">\(d = \frac{1}{\sqrt{A^2 + B^2}}\)</span>, <span class="math notranslate nohighlight">\(ed = \frac{l^2}{m |c|}\)</span></p>
+<p class="sd-card-text">con <span class="math notranslate nohighlight">\(d = \frac{1}{\sqrt{A^2 + B^2}}\)</span>, <span class="math notranslate nohighlight">\(ed = \frac{l^2}{m |c|}\)</span>, e si inserisce nell’espressione dell’energia</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
   E &amp; = \frac{1}{2} m \dot{r}^2 + \frac{1}{2} \frac{l^2}{m r^2} + \frac{c}{r} = \\
