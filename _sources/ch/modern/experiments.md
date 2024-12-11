@@ -266,8 +266,13 @@ Usando questi parametri geometrici è possibile determinare l'angolo di deflessi
 
 $$\delta = \pi - 2 \theta^* \ ,$$
 
-con $\tan \theta^* = \frac{b}{a} = \sqrt{e^2-1} = 1 + 2 \frac{E l^2}{m c^2} - 1 = 2 \frac{E l^2}{m c^2} \ . $ 
+con 
 
+$$\tan \theta^* = \frac{b}{a} = \sqrt{e^2-1} = 1 + 2 \frac{E l^2}{m c^2} - 1 = 2 \frac{E l^2}{m c^2} \ . $$
+
+$$\theta^* = \frac{\pi - \delta}{2}$$
+
+$$\tan \theta^* = \tan\left( \frac{\pi}{2} - \frac{\delta}{2} \right) = \frac{1}{\tan \frac{\delta}{2} } $$
 
 
 
