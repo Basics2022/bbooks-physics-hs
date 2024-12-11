@@ -187,13 +187,13 @@ $$r(\theta) = \frac{\frac{l^2}{m|c|}}{-\text{sign}(c) + \sqrt{1 + 2 \frac{E l}{m
 
 L'espressione dell'eccentricità permette di stabilire il legame tra i valori delle costanti del moto $E$, $l$ e il tipo di conica che descrive la traiettoria
 
-$$\begin{table}{lcc}
-\text{\textbf{Conica}} & \text{\textbf{e}} & \text{\textbf{E}} \\
+$$\begin{array}{lcc}
+\text{**Conica**} & \text{**e**} & \text{**E**} \\
 \text{circonferenza} & 0           & -\frac{m|c|^2}{2l^2} \\ 
 \text{ellisse}       & \in [0,1)   & \in \left[-\frac{m|c|^2}{2l^2}, 0 \right] \\ 
 \text{parabola}      & 1           & 0                    \\ 
 \text{iperbole}      & > 1         & > 0                  \\ 
-\end{table}$$
+\end{array}$$
 
 **Osservazione.** Giunti verso la fine di un libro sulla meccanica, dovrebbe fare storcere il naso parlare in termini di valore assoluto di energia (almeno per quanto riguarda la meccanica classica). Questo è possibile, poiché la costante additiva arbitraria è stata fissata (implitamente, **todo** *essere più espliciti nella sezione*) nella sezione sulla [costanza dell'energia](physics-hs:mechanics:dynamics:motion:central:energy), ponendo uguale a zero la condizione di quiete a distanza infinita dal centro.
 
