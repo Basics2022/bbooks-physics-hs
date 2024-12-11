@@ -156,7 +156,6 @@ $$\begin{aligned}
 
 (physics-hs:mechanics:dynamics:motion:central:trajectory-el)=
 ```{dropdown} Equazione della traiettoria in funzione dell'energia e del momento angolare
-:open:
 
 Manipolando i risultati ottenuti, si vuole esprimere l'equazione della traiettoria {eq}`eq:trajectory:conics` in termini delle costanti del moto, l'energia $E$ e il momento angolare $l$. Si valuta la derivata nel tempo dell'equazione {eq}`eq:trajectory:conics`
 
