@@ -280,6 +280,18 @@ Il momento e l'energia vengono valutati all'infinito, $E = \frac{1}{2} m v_{\inf
 
 $$\delta = 2 \, \text{atan} \sqrt{ \frac{m c^2}{2 \frac{1}{2} m v_{\infty}^2 m^2 h^2 v_{\infty}^2} } = 2 \, \text{atan} \left( \frac{c}{m h v_{\infty}^2} \right) $$
 
+**Sezione d'urto.**
+
+$$2 \pi h dh = 2 \pi R \, R \, \sin \delta d \delta r $$
+
+$$\sigma = r \, R^2 = \frac{h}{\sin \delta} \frac{dh}{d \delta}$$
+
+$$h = \frac{c}{m v_{\infty}^2} \frac{1}{\tan \frac{\delta}{2}}$$
+
+$$\frac{dh}{d \delta} = \frac{c}{m v_{\infty}^2} \frac{1}{\tan^2 \frac{\delta}{2}}$$
+
+
+
 
 **todo** *Finire esercizio (nel file sorgente ci sono linee commentate che possono essere utili); aggiungere immagini; calcolare sezione d'urto e distribuzione urti e confronto con risultati di Rutherford*
 
