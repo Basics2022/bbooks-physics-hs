@@ -665,7 +665,7 @@ Equazioni in coordinate polari<div class="sd-summary-down docutils">
  \theta \ &amp; : \quad m \left( 2 \dot{r} \dot{\theta} + r \ddot{\theta} \right) = 0 \ .
 \end{cases}\end{split}\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" id="physics-hs-mechanics-dynamics-motion-central-energy">
 <summary class="sd-summary-title sd-card-header">
 Costanza dell’energia<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -695,7 +695,7 @@ Costanza dell’energia<div class="sd-summary-down docutils">
 <div class="math notranslate nohighlight" id="equation-eq-theta-ang-mom">
 <span class="eqno">(10.3)<a class="headerlink" href="#equation-eq-theta-ang-mom" title="Permalink a questa equazione">#</a></span>\[\dot{\theta} = \frac{l}{m r^2} \ .\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" id="physics-hs-mechanics-dynamics-motion-central-trajectory">
 <summary class="sd-summary-title sd-card-header">
 Traiettorie e coniche<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -718,73 +718,65 @@ Traiettorie e coniche<div class="sd-summary-down docutils">
 <p class="sd-card-text">la cui soluzione è <span class="math notranslate nohighlight">\(z(\theta) = A \cos \theta + B \sin \theta - \frac{m c}{l^2}\)</span> o, in termini del raggio <span class="math notranslate nohighlight">\(r\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[r(\theta) = \frac{1}{- \frac{m c}{l^2} + A \cos \theta + B \sin \theta} \ .\]</div>
+<p class="sd-card-text">Questa equazione rappresenta la più generale equazione delle <a class="reference internal" href="../mechanics.html"><span class="doc std std-doc">coniche</span></a>. L’arbitrarietà nella scelta della direzione dalla quale misurare gli angoli può essere utilizzata per riscrivere il denominatore,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A \cos \theta + B \sin \theta 
+ &amp; = \sqrt{A^2+B^2} \left[ \underbrace{\frac{A}{\sqrt{A^2+B^2}}}_{\cos \phi} \cos \theta + \underbrace{\frac{B}{\sqrt{A^2+B^2}}}_{\sin \phi} \sin \theta \right] = \\
+ &amp; = \sqrt{A^2+B^2} \left[ \cos \phi \cos \theta + \sin \phi \sin \theta \right] = \\
+ &amp; = \sqrt{A^2+B^2} \cos( \theta - \phi ) \ .
+\end{split}\]</div>
+<p class="sd-card-text">per riscrivere l’equazione</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ r(\theta)
+  &amp; = \frac{1}{-\frac{m c}{l^2} + \sqrt{A^2 + B^2} \cos(\theta-\phi) } = \\
+  &amp; = \frac{ \frac{l^2}{m|c|} }{ - \text{sign}(c) + \frac{l^2}{m |c|} \sqrt{A^2 + B^2} \cos(\theta-\phi)} = \\
+  &amp; = \frac{ed}{-\text{sign}(c) + e \cos(\theta-\phi)} \ .
+\end{aligned}\end{split}\]</div>
 </div>
-</details><p><strong>Traiettoria, <span class="math notranslate nohighlight">\(r(\theta)\)</span>.</strong>
-Inserendo l’espressione <span class="math notranslate nohighlight">\(\dot{\theta} = \frac{\Omega}{r^2}\)</span> nella componente radiale, e definendo la funzione <span class="math notranslate nohighlight">\(z = \frac{1}{r}\)</span>, le derivate nel tempo della coordinata radiale possono essere riscritte come</p>
-<div class="math notranslate nohighlight">
-\[\dot{r} = -\frac{1}{z^2}\frac{d z}{d \theta} \dot{\theta} = -\Omega \frac{dz}{d\theta} \]</div>
-<div class="math notranslate nohighlight">
-\[\ddot{r} = \dot{\theta} \frac{d}{d \theta} \left( - \Omega \frac{dz}{d \theta} \right) = - z^2 \Omega^2 z''(\theta)\]</div>
-<p>e la componente radiale dell’equazione di moto,</p>
-<div class="math notranslate nohighlight">
-\[-z^2 \Omega^2 z'' - z^3 \Omega^2 = - G M z^2\]</div>
-<div class="math notranslate nohighlight">
-\[ z'' + z  = \frac{G M}{\Omega^2}\]</div>
-<div class="math notranslate nohighlight">
-\[z(\theta) = \frac{G M}{\Omega^2} + A \cos(\theta) + B \sin(\theta) \ .\]</div>
-<p>e quindi</p>
-<div class="math notranslate nohighlight">
-\[r(\theta) = \frac{\Omega^2}{G M}\frac{1}{1 + A \dfrac{\, \Omega^2}{GM} \cos \theta + B \dfrac{\, \Omega^2}{GM} \sin \theta}\]</div>
-<p>Scelta della direzione di riferimento: direzione del perielio: <span class="math notranslate nohighlight">\(r(\theta=0) = \min r\)</span>, <span class="math notranslate nohighlight">\(B = 0\)</span>,</p>
-<p>Scelte diverse si ottengono da una trasformazione di coordinate con una rotazione dell’asse di riferimento: <span class="math notranslate nohighlight">\(\theta_1 = \theta - \theta_0\)</span>, e quindi</p>
-<div class="math notranslate nohighlight">
-\[r(\theta) = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos \theta} = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos (\theta_1 + \theta_0 )} = \frac{\Omega^2}{GM}\frac{1}{1 + \underbrace{\frac{A\Omega^2}{GM} \cos \theta_0}_{= A_1} \cos \theta_1 \underbrace{- \frac{A \Omega^2}{GM} \sin \theta_0}_{= B_1} \sin \theta_1 }\]</div>
-<p>Il confronto con l’equazione delle coniche in coordinate polari, permette di riconoscere l’eccentricità, <span class="math notranslate nohighlight">\(e\)</span> e il prodotto <span class="math notranslate nohighlight">\(e \, D\)</span> dell’eccentricità per la distanza <span class="math notranslate nohighlight">\(D\)</span> tra fuoco e direttrice,</p>
-<div class="math notranslate nohighlight">
-\[e = \frac{A \Omega^2}{GM} \qquad , \qquad e \, D = \frac{\Omega^2}{GM}\]</div>
-<div class="math notranslate nohighlight">
-\[r(\theta) = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos \theta}\]</div>
-<div class="math notranslate nohighlight">
-\[r(\theta) = \frac{e \, D}{1 + e \, \cos \theta}\]</div>
-<!--
-$$e = - \frac{A \Omega^2}{GM}$$
-$$e D = \frac{\Omega^2}{GM}$$
-$$D= -\frac{1}{A}$$
-
-$$c = \frac{e^2}{1-e^2} D$$
-$$a = \frac{c}{e} = \frac{e}{1-e^2} D$$
-$$b = \sqrt{a^2 - c^2} = \sqrt{\frac{1 - e^2}{e^2}} c = \sqrt{\frac{1 - e^2}{e^2}}  \frac{e^2}{1-e^2} D = \frac{e D}{\sqrt{1-e^2}} = a \, \sqrt{1-e^2} $$
--->
-<p>Poiché la velocità areolare è costante, il periodo dell’orbita è uguale al raggporto tra l’area dell’ellisse e la velocità areaolare,</p>
-<div class="math notranslate nohighlight">
-\[T = \frac{\pi a b}{\Omega} = \pi \frac{a^2 \sqrt{1-e^2}}{\Omega} = \]</div>
-<div class="math notranslate nohighlight">
-\[1-e^2 = 1 - \left(\frac{A \Omega^2}{GM} \right)^2 = \frac{\Omega^2}{GM \, a} \]</div>
-<div class="math notranslate nohighlight">
-\[\rightarrow \qquad \frac{\sqrt{1-e^2}}{\Omega} = \frac{1}{\sqrt{GM} \sqrt{a}}\]</div>
-<div class="math notranslate nohighlight">
-\[\rightarrow \qquad T = \pi \frac{a^{\frac{3}{2}}}{\sqrt{GM}}\]</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" id="physics-hs-mechanics-dynamics-motion-central-trajectory-el" open="open">
+<summary class="sd-summary-title sd-card-header">
+Coefficienti della traiettoria in funzione dell’energia e del momento angolare<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[
- 2a = \frac{\Omega^2}{GM+A \Omega^2} + \frac{\Omega^2}{GM-A \Omega^2} 
-    = \Omega^2 \frac{2 GM }{(GM)^2 - A^2 \Omega^4}
+\dot{r} = \frac{ - e^2 d \sin(\theta-\phi) }{\left( -\text{sign}(c) + e \cos(\theta-\phi) \right)^2} \dot{\theta}
+= - \frac{r^2}{d}  \frac{l}{m r^2} \sin(\theta-\phi) = - \frac{l}{m d} \sin(\theta-\phi)
 \]</div>
+<p class="sd-card-text">con <span class="math notranslate nohighlight">\(d = \frac{1}{\sqrt{A^2 + B^2}}\)</span>, <span class="math notranslate nohighlight">\(ed = \frac{l^2}{m |c|}\)</span></p>
 <div class="math notranslate nohighlight">
-\[A^2 \Omega^4 = (GM)^2 - \frac{GM \, \Omega^2}{a}\]</div>
+\[\begin{split}\begin{aligned}
+  E &amp; = \frac{1}{2} m \dot{r}^2 + \frac{1}{2} \frac{l^2}{m r^2} + \frac{c}{r} = \\
+    &amp; = \frac{1}{2} m \frac{l^2}{m^2 d^2} \sin^2(\theta-\phi) + \frac{1}{2} \frac{l^2}{m \left(\frac{l^2}{m |c|}\right)^2} \left( -\text{sign}(c) + e \cos(\theta-\phi)  \right)^2 + c \frac{-\text{sign}(c) + e \cos(\theta-\phi)}{ \frac{l^2}{m |c|} } = \\
+    &amp; = \frac{l^2}{2md^2} \sin^2(\theta-\phi) + \frac{m c^2}{2 l^2} \left( 1 - 2\text{sign}(c) e \cos(\theta-\phi) + e^2 \cos^2(\theta-\phi) \right) + \frac{m c^2}{l^2} \left( - 1 + \text{sign}(c) e \cos(\theta-\phi) \right) = \\
+    &amp; = \frac{l^2}{2md^2} \sin^2(\theta-\phi) + \frac{1}{d^2} \frac{l^4}{m^2 c^2} \frac{m c^2}{2 l^2} \cos^2(\theta-\phi) 
+     - \frac{m c^2}{2 l^2} = \\ 
+    &amp; = \frac{l^2}{2md^2} - \frac{m c^2}{2 l^2} \ ,
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">e quindi si ricavano i coefficienti dell’equazione generale delle coniche in funzione dei parametri fisici del problema,</p>
 <div class="math notranslate nohighlight">
-\[\frac{\Omega^2}{GM}\frac{1}{a} = 1 - \left(\frac{A \Omega^2}{GM}\right)^2\]</div>
+\[\begin{aligned}
+  \frac{1}{d^2} &amp; = \frac{2m}{l^2} \left( E + \frac{m c^2}{2 l^2} \right) 
+  e &amp; = \frac{l^2}{m |c|} \frac{1}{d} = \frac{l^2}{m |c|}\frac{m|c|}{l^2} \sqrt{1 + \frac{2 E l^2}{m |c|^2}} =  \sqrt{1 + \frac{2 E l^2}{m |c|^2}}
+\end{aligned}\]</div>
+<p class="sd-card-text">L’equazione delle coniche può quindi essere riscritta come</p>
 <div class="math notranslate nohighlight">
-\[\frac{1}{a} = \left( 1 - \left(\frac{A \Omega^2}{GM}\right)^2 \right) \frac{GM}{\Omega^2}\]</div>
-<!--
-Il semiasse maggiore è dato da
-
-$$\begin{aligned}
-a & = \frac{1}{2} \left( r(0)+r(\pi) \right) = \\
-  & = \frac{\Omega^2}{GM} \left[ \frac{1}{1+\frac{A \Omega^2}{GM}} + \frac{1}{1-\frac{A \Omega^2}{GM}} \right] = \\
-  & = \dfrac{2}{ \left(\frac{GM}{\Omega^2} \right)^2 - A^2}
-\end{aligned}$$
--->
+\[r(\theta) = \frac{\frac{l^2}{m|c|}}{-\text{sign}(c) + \sqrt{1 + 2 \frac{E l}{m|c|^2}} \cos(\theta-\phi)} \ .\]</div>
+<p class="sd-card-text">L’espressione dell’eccentricità permette di stabilire il legame tra i valori delle costanti del moto <span class="math notranslate nohighlight">\(E\)</span>, <span class="math notranslate nohighlight">\(l\)</span> e il tipo di conica che descrive la traiettoria</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{array}{lcc}
+\text{\textbf{Conica}} &amp; \text{\textbf{e}} &amp; \text{\textbf{E}} \\
+\text{circonferenza} &amp; 0           &amp; -\frac{m|c|^2}{2l^2} \\ 
+\text{ellisse}       &amp; \in [0,1)   &amp; \in \left[-\frac{m|c|^2}{2l^2}, 0 \right] \\ 
+\text{parabola}      &amp; 1           &amp; 0                    \\ 
+\text{iperbole}      &amp; &gt; 1         &amp; &gt; 0                  \\ 
+\end{array}\end{split}\]</div>
+<p class="sd-card-text"><strong>Osservazione.</strong> Giunti verso la fine di un libro sulla meccanica, dovrebbe fare storcere il naso parlare in termini di valore assoluto di energia (almeno per quanto riguarda la meccanica classica). Questo è possibile, poiché la costante additiva arbitraria è stata fissata (implitamente, <strong>todo</strong> <em>essere più espliciti nella sezione</em>) nella sezione sulla <a class="reference internal" href="#physics-hs-mechanics-dynamics-motion-central-energy"><span class="std std-ref">costanza dell’energia</span></a>, ponendo uguale a zero la condizione di quiete a distanza infinita dal centro.</p>
 </div>
+</details></div>
 </div>
 
     <script type="text/x-thebe-config">
