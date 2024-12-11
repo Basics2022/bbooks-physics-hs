@@ -150,14 +150,14 @@ $$\begin{aligned}
   & = \frac{1}{-\frac{m c}{l^2} + \sqrt{A^2 + B^2} \cos(\theta-\phi) } = \\
   & = \frac{ \frac{l^2}{m|c|} }{ - \text{sign}(c) + \frac{l^2}{m |c|} \sqrt{A^2 + B^2} \cos(\theta-\phi)} = \\
   & = \frac{ed}{-\text{sign}(c) + e \cos(\theta-\phi)} \ .
-\end{aligned}$$ (eq:trajectory:conics)
+\end{aligned}$$ (eq:dynamics:central:r-2:trajectory:conics)
 
 ```
 
 (physics-hs:mechanics:dynamics:motion:central:trajectory-el)=
 ```{dropdown} Equazione della traiettoria in funzione dell'energia e del momento angolare
 
-Manipolando i risultati ottenuti, si vuole esprimere l'equazione della traiettoria {eq}`eq:trajectory:conics` in termini delle costanti del moto, l'energia $E$ e il momento angolare $l$. Si valuta la derivata nel tempo dell'equazione {eq}`eq:trajectory:conics`
+Manipolando i risultati ottenuti, si vuole esprimere l'equazione della traiettoria {eq}`eq:dynamics:central:r-2:trajectory:conics` in termini delle costanti del moto, l'energia $E$ e il momento angolare $l$. Si valuta la derivata nel tempo dell'equazione {eq}`eq:trajectory:conics`
 
 $$
 \dot{r} = \frac{ - e^2 d \sin(\theta-\phi) }{\left( -\text{sign}(c) + e \cos(\theta-\phi) \right)^2} \dot{\theta}
@@ -184,7 +184,7 @@ $$\begin{aligned}
 
 L'equazione delle coniche può quindi essere riscritta come
 
-$$r(\theta) = \frac{\frac{l^2}{m|c|}}{-\text{sign}(c) + \sqrt{1 + 2 \frac{E l}{m|c|^2}} \cos(\theta-\phi)} \ .$$
+$$r(\theta) = \frac{\frac{l^2}{m|c|}}{-\text{sign}(c) + \sqrt{1 + 2 \frac{E l}{m|c|^2}} \cos(\theta-\phi)} \ .$$ (eq:dynamics:central:r-2:trajectory:el)
 
 L'espressione dell'eccentricità permette di stabilire il legame tra i valori delle costanti del moto $E$, $l$ e il tipo di conica che descrive la traiettoria
 

@@ -237,7 +237,20 @@ Gli esperimenti condotti da Geiger[^geiger] e Mardsen sotto la supervisione di R
 
 La spiegazione dell'esperimento da parte di Rutherford è alla base del suo modello atomico: la distribuzione delle particelle-$\alpha$ misurata è compatibile un'interazione elettrica tra cariche positive puntiformi. Rutherford quindi ipotizza che la materia sia formata da atomi quasi del tutto "vuoti": le cariche positive sono concentrate in un **nucleo** di dimensioni estremamente compatte (**todo** *stima delle dimensioni da parte di Rutherford e misura di oggi*), attorno al quale sono disposte le cariche negative. **todo** *poca attenzione alle cariche negative fino al modello di **Bohr**. Atomo con nucleo positivo e cariche negative che possono trovarsi in orbite ben definite, discrete, caratterizzate da numeri atomici interi.*
 
-Qui si costruisce un problema di scattering tra due corpi puntiformi dotati di carica con lo stesso segno. Si assume che il corpo "bersaglio" rimane in quiete (*ad esempio, particella "proiettile" leggera e lenta; se questa ipotesi non è valida, bisogna considerare il "rinculo" della particella "bersaglio"*)
+Qui si costruisce un problema di scattering tra due corpi puntiformi dotati di carica con lo stesso segno. Si assume che il corpo "bersaglio" rimane in quiete (*ad esempio, particella "proiettile" leggera e lenta; se questa ipotesi non è valida, bisogna considerare il "rinculo" della particella "bersaglio"*). Questo è un caso particolare di [moto centrale](physics-hs:mechanics:dynamics:motion:central:r-2), con forza inversamente proporzionale al quadrato della distanza. Infatti, scegliendo come origine il centro della carica bersaglio, la forza agente sulla carica proiettile è
+
+$$\vec{F} = \frac{q_1 q_2}{4\pi\varepsilon} \frac{\vec{r}}{|\vec{r}|^3} \ ,$$
+
+e l'equazione del moto è
+
+$$m \ddot{\vec{r}} = \frac{q_1 q_2}{4\pi\varepsilon} \frac{\vec{r}}{|\vec{r}|^3} = c \frac{\vec{r}}{|\vec{r}|^3} \ .$$
+
+Poiché la forza è repulsiva, la traiettoria della particella proiettile è un'iperbole per qualsiasi valore dei parametri del problema. L'equazione della traiettoria è data dall'espressione {eq}`eq:dynamics:central:r-2:trajectory:el`,
+
+$$r(\theta) = \frac{\frac{l^2}{m|c|}}{-\text{sign}(c) + \sqrt{1 + 2 \frac{E l}{m|c|^2}} \cos(\theta-\phi)} \ .$$
+
+
+
 
 
 **todo** *Finire esercizio (nel file sorgente ci sono linee commentate che possono essere utili); aggiungere immagini; calcolare sezione d'urto e distribuzione urti e confronto con risultati di Rutherford*
