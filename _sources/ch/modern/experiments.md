@@ -247,7 +247,26 @@ $$m \ddot{\vec{r}} = \frac{q_1 q_2}{4\pi\varepsilon} \frac{\vec{r}}{|\vec{r}|^3}
 
 Poiché la forza è repulsiva, la traiettoria della particella proiettile è un'iperbole per qualsiasi valore dei parametri del problema. L'equazione della traiettoria è data dall'espressione {eq}`eq:dynamics:central:r-2:trajectory:el`,
 
-$$r(\theta) = \frac{\frac{l^2}{m|c|}}{-\text{sign}(c) + \sqrt{1 + 2 \frac{E l}{m|c|^2}} \cos(\theta-\phi)} \ .$$
+$$r(\theta) = \frac{\frac{l^2}{m|c|}}{-1 + \sqrt{1 + 2 \frac{E l^2}{m|c|^2}} \cos(\theta-\phi)} \ ,$$
+
+avendo usato $\text{sign}(c) = 1$, poiché la costante $c = \frac{q_1 q_2}{4\pi\varepsilon}$ è positiva per due cariche di segno uguale.
+
+Le caratteristiche geometriche di questa traiettoria possono essere ricavate confrontanto l'espressione della traiettoria con l'espressione generale delle [coniche in coordinate polari](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic_geometry/analytic_geometry_2d/conics.html). In particolare,
+- l'eccentricità è
+
+  $$e = \sqrt{1+2\frac{E l^2}{m c^2}}$$
+
+- il coefficiente $d = $
+
+- i coefficienti $a$, $b$, $c$ dell'iperbole
+
+  $$a = \frac{c}{e} \qquad , \qquad b = \frac{\sqrt{e^2-1}}{e} c$$
+
+Usando questi parametri geometrici è possibile determinare l'angolo di deflessione,
+
+$$\delta = \pi - 2 \theta^* \ ,$$
+
+con $\tan \theta^* = \frac{b}{a} = \sqrt{e^2-1} = 1 + 2 \frac{E l^2}{m c^2} - 1 = 2 \frac{E l^2}{m c^2} \ . $ 
 
 
 

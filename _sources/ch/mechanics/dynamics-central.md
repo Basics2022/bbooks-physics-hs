@@ -184,7 +184,7 @@ $$\begin{aligned}
 
 L'equazione delle coniche può quindi essere riscritta come
 
-$$r(\theta) = \frac{\frac{l^2}{m|c|}}{-\text{sign}(c) + \sqrt{1 + 2 \frac{E l}{m|c|^2}} \cos(\theta-\phi)} \ .$$ (eq:dynamics:central:r-2:trajectory:el)
+$$r(\theta) = \frac{\frac{l^2}{m|c|}}{-\text{sign}(c) + \sqrt{1 + 2 \frac{E l^2}{m|c|^2}} \cos(\theta-\phi)} \ .$$ (eq:dynamics:central:r-2:trajectory:el)
 
 L'espressione dell'eccentricità permette di stabilire il legame tra i valori delle costanti del moto $E$, $l$ e il tipo di conica che descrive la traiettoria
 

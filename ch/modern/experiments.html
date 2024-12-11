@@ -828,7 +828,24 @@ Scattering<div class="sd-summary-down docutils">
 \[m \ddot{\vec{r}} = \frac{q_1 q_2}{4\pi\varepsilon} \frac{\vec{r}}{|\vec{r}|^3} = c \frac{\vec{r}}{|\vec{r}|^3} \ .\]</div>
 <p class="sd-card-text">Poiché la forza è repulsiva, la traiettoria della particella proiettile è un’iperbole per qualsiasi valore dei parametri del problema. L’equazione della traiettoria è data dall’espressione <a class="reference internal" href="../mechanics/dynamics-central.html#equation-eq-dynamics-central-r-2-trajectory-el">(10.6)</a>,</p>
 <div class="math notranslate nohighlight">
-\[r(\theta) = \frac{\frac{l^2}{m|c|}}{-\text{sign}(c) + \sqrt{1 + 2 \frac{E l}{m|c|^2}} \cos(\theta-\phi)} \ .\]</div>
+\[r(\theta) = \frac{\frac{l^2}{m|c|}}{-1 + \sqrt{1 + 2 \frac{E l^2}{m|c|^2}} \cos(\theta-\phi)} \ ,\]</div>
+<p class="sd-card-text">avendo usato <span class="math notranslate nohighlight">\(\text{sign}(c) = 1\)</span>, poiché la costante <span class="math notranslate nohighlight">\(c = \frac{q_1 q_2}{4\pi\varepsilon}\)</span> è positiva per due cariche di segno uguale.</p>
+<p class="sd-card-text">Le caratteristiche geometriche di questa traiettoria possono essere ricavate confrontanto l’espressione della traiettoria con l’espressione generale delle <a class="reference external" href="https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic_geometry/analytic_geometry_2d/conics.html">coniche in coordinate polari</a>. In particolare,</p>
+<ul>
+<li><p class="sd-card-text">l’eccentricità è</p>
+<div class="math notranslate nohighlight">
+\[e = \sqrt{1+2\frac{E l^2}{m c^2}}\]</div>
+</li>
+<li><p class="sd-card-text">il coefficiente <span class="math notranslate nohighlight">\(d = \)</span></p></li>
+<li><p class="sd-card-text">i coefficienti <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, <span class="math notranslate nohighlight">\(c\)</span> dell’iperbole</p>
+<div class="math notranslate nohighlight">
+\[a = \frac{c}{e} \qquad , \qquad b = \frac{\sqrt{e^2-1}}{e} c\]</div>
+</li>
+</ul>
+<p class="sd-card-text">Usando questi parametri geometrici è possibile determinare l’angolo di deflessione,</p>
+<div class="math notranslate nohighlight">
+\[\delta = \pi - 2 \theta^* \ ,\]</div>
+<p class="sd-card-text">con <span class="math notranslate nohighlight">\(\tan \theta^* = \frac{b}{a} = \sqrt{e^2-1} = 1 + 2 \frac{E l^2}{m c^2} - 1 = 2 \frac{E l^2}{m c^2} \ . \)</span></p>
 <p class="sd-card-text"><strong>todo</strong> <em>Finire esercizio (nel file sorgente ci sono linee commentate che possono essere utili); aggiungere immagini; calcolare sezione d’urto e distribuzione urti e confronto con risultati di Rutherford</em></p>
 <!--
 Si vuole studiare il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$, rispetto a un corpo di carica elettrica $Q$ (concorde per scattering) e soggetto al campo elettrico generato dalla carica $Q$ e quindi a una forza
