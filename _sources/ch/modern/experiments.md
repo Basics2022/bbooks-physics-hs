@@ -268,13 +268,15 @@ $$\delta = \pi - 2 \theta^* \ ,$$
 
 con 
 
-$$\tan \theta^* = \frac{b}{a} = \sqrt{e^2-1} = 1 + 2 \frac{E l^2}{m c^2} - 1 = 2 \frac{E l^2}{m c^2} \ . $$
+$$\tan \theta^* = \frac{b}{a} = \sqrt{e^2-1} = \sqrt{1 + 2 \frac{E l^2}{m c^2} - 1} = \sqrt{2 \frac{E l^2}{m c^2}} \ . $$
 
 $$\theta^* = \frac{\pi - \delta}{2}$$
 
 $$\tan \theta^* = \tan\left( \frac{\pi}{2} - \frac{\delta}{2} \right) = \frac{1}{\tan \frac{\delta}{2} } $$
 
+$$\delta = 2 \atan \frac{m c^2}{2 E l^2}$$
 
+Il momento e l'energia vengono valutati all'infinito
 
 
 **todo** *Finire esercizio (nel file sorgente ci sono linee commentate che possono essere utili); aggiungere immagini; calcolare sezione d'urto e distribuzione urti e confronto con risultati di Rutherford*
