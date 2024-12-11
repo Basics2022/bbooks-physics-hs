@@ -237,7 +237,7 @@ Gli esperimenti condotti da Geiger[^geiger] e Mardsen sotto la supervisione di R
 
 La spiegazione dell'esperimento da parte di Rutherford è alla base del suo modello atomico: la distribuzione delle particelle-$\alpha$ misurata è compatibile un'interazione elettrica tra cariche positive puntiformi. Rutherford quindi ipotizza che la materia sia formata da atomi quasi del tutto "vuoti": le cariche positive sono concentrate in un **nucleo** di dimensioni estremamente compatte (**todo** *stima delle dimensioni da parte di Rutherford e misura di oggi*), attorno al quale sono disposte le cariche negative. **todo** *poca attenzione alle cariche negative fino al modello di **Bohr**. Atomo con nucleo positivo e cariche negative che possono trovarsi in orbite ben definite, discrete, caratterizzate da numeri atomici interi.*
 
-Qui si costruisce un problema di scattering tra due corpi puntiformi dotati di carica con lo stesso segno. Si assume che un corpo puntiforme rimanga in quiete (*ad esempio, particella "proiettile" leggera e lenta; se questa ipotesi non è valida, bisogna considerare il "rinculo" della particella "bersaglio"*)
+Qui si costruisce un problema di scattering tra due corpi puntiformi dotati di carica con lo stesso segno. Si assume che il corpo "bersaglio" rimane in quiete (*ad esempio, particella "proiettile" leggera e lenta; se questa ipotesi non è valida, bisogna considerare il "rinculo" della particella "bersaglio"*)
 
 <!--
 Si vuole studiare il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$, rispetto a un corpo di carica elettrica $Q$ (concorde per scattering) e soggetto al campo elettrico generato dalla carica $Q$ e quindi a una forza
