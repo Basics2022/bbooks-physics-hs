@@ -231,7 +231,6 @@ $$v_{z, \infty}(E_2) - v_{z, \infty}(E_1) = \frac{E_2 - E_1}{c} q \qquad \righta
 
 ## Modello atomico di Rutherford - Geiger-Mardsen
 ```{dropdown} Scattering
-:open:
 
 Gli esperimenti condotti da Geiger[^geiger] e Mardsen sotto la supervisione di Rutherford a Manchester consistono in esperimenti di scattering, in cui un fascio di particelle-$\alpha$[^alpha-particle] viene direzionato contro una sottile lamina di oro. Le particelle-$\alpha$ interagiscono con la lamina e vengono deviate. In questo esperimento si osserva che un grandissimo di numero di particelle subisce una deviazione minima, come se non interagissero con la struttura dell'oro; al crescere dell'angolo di deviazione diminuisce il numero misurato di particelle che hanno subito quella deviazione; alcune particelle subiscono anche una deviazione maggiore di $90°$, inclusa una deviazione di $180°$ corrispondente a un "rimbalzo normale" sulla lamina: la frequenza di questi eventi è sempre più piccola ma non nulla.
 
@@ -295,130 +294,17 @@ $$\frac{dh}{d \delta} = - \frac{c}{m v_{\infty}^2} \frac{1}{\tan^2 \frac{\delta}
 Riscrivendo $\sin \delta = 2 \sin \frac{\delta}{2} \cos \frac{\delta}{2}$, la sezione d'urto diventa
 
 $$\begin{aligned}
-  \sigma & = - \frac{h}{\sin \delta} \frac{dh}{d\delta} = \frac{c}{m v_{\infty}^2} \frac{\cos \frac{\delta}{2}}{\sin \frac{\delta}{2}} \frac{1}{2 \sin \frac{\delta}{2} \cos \frac{\delta}{2}} \frac{c}{2 m v_{\infty}^2} \frac{1}{\sin^2 \frac{\delta}{2}} \\
+  \sigma(\delta) & = - \frac{h}{\sin \delta} \frac{dh}{d\delta} = \frac{c}{m v_{\infty}^2} \frac{\cos \frac{\delta}{2}}{\sin \frac{\delta}{2}} \frac{1}{2 \sin \frac{\delta}{2} \cos \frac{\delta}{2}} \frac{c}{2 m v_{\infty}^2} \frac{1}{\sin^2 \frac{\delta}{2}} \\
 \end{aligned}$$
 
 $$
-\qquad \rightarrow \qquad \sigma^2 = \left(\frac{c}{2 m v_{\infty}^2}\right)^2 \frac{1}{\sin^4 \frac{\delta}{2}} \ .
+\qquad \rightarrow \qquad \sigma(\delta) = \left(\frac{c}{2 m v_{\infty}^2}\right)^2 \frac{1}{\sin^4 \frac{\delta}{2}} \ .
 $$
 
 
 
 **todo** *Finire esercizio (nel file sorgente ci sono linee commentate che possono essere utili); aggiungere immagini; calcolare sezione d'urto e distribuzione urti e confronto con risultati di Rutherford*
 
-<!--
-Si vuole studiare il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$, rispetto a un corpo di carica elettrica $Q$ (concorde per scattering) e soggetto al campo elettrico generato dalla carica $Q$ e quindi a una forza
-
-[^geiger]: Geiger quello del contatore di radiazioni, quello che gracchia
-[^alpha-particle]: particelle $\alpha$ sono isotopi di $\text{He}^{2+}$, cioè atomi di elio ai quali mancano due elettroni, quindi carichi positivamente. Questo è quello che interessa a noi qui. **todo** aggiungere riferimento a radioattività
-
-$$\vec{F} = \frac{q Q}{4 \pi \varepsilon} \frac{\vec{r}}{r^3} = c \, \frac{\vec{r}}{r^3} \ .$$
-
-Si osservi che per la (quasi) analogia formale tra la [forza di Coulomb](physics-hs:electromagnetism:electrostatics:coulomb) e la [legge di gravitazione universale di Newton](physics-hs:mechanics:dynamics:motion:gravitation:newton), questo problema ha delle similitudini con il [problema dei due corpi](physics-hs:mechanics:dynamics:motion:gravitation:two-bodies) soggetti alla mutua interazione gravitazionale.
-
-L'equazione dinamica del corpo è quindi
-
-$$m \ddot{\vec{r}} = c \, \frac{\vec{r}}{r^3} \ .$$
-
-**Moto piano.**  E' immediato dimostrare che il moto è piano, cioè che la posizione e la velocità del pianeta sono sempre ortogonali a una direzione costante.
-
-$$\frac{d}{dt} \left( \vec{r} \times \vec{v} \right) = \underbrace{\vec{v} \times \vec{v}}_{=\vec{0}} + \vec{r} \times \vec{a}  = \frac{c}{m} \, \underbrace{\vec{r} \times \frac{\vec{r}}{r^3}}_{=\vec{0}} = \vec{0} \ .$$
-
-Poiché il vettore $\vec{r} \times \vec{v} =: \frac{L}{m} \hat{k}$ è costante, è costante sia il suo valore assoluto sia la sua direzione: affinché $\vec{r} \times \vec{v}$ sia allineato con $\hat{k}$, i vettori $\vec{r}$, $\vec{v}$ devono essere ortogonali a $\hat{k}$.
-
-**Coordinate polari.** Per descrivere il moto piano di un punto, si può usare un sistema di coordinate 2-dimensionale. Si sceglie un sistema di coordinate polari con origine coincidente con il corpo di carica $Q$. La posizione del pianeta è identificata dal raggio vettore
-
-$$\vec{r} = r \, \hat{r} \ ,$$
-
-e la derivate dei versori radiale e azimuthale valgono
-
-$$\begin{aligned}
-\dot{\hat{r}}      & =   \dot{\theta} \hat{\theta} \\
-\dot{\hat{\theta}} & = - \dot{\theta} \hat{r} \\
-\end{aligned}$$
-
-La posizione, la velocità e l'accelerazione del pianeta possono essere scritte come
-
-$$\begin{aligned}
-\vec{r} & = r \, \hat{r} \\
-\vec{v} & = \dot{r} \, \hat{r} + r \dot{\theta} \, \hat{\theta} \\
-\vec{a} & = \left[ \ddot{r} - r \dot{\theta}^2 \right] \, \hat{r} +  \left[ 2 \dot{r} \dot{\theta} + r \ddot{\theta} \right] \, \hat{\theta}  \\
-\end{aligned}$$
-
-La **velocità areolare**, $\vec{\Omega} = \frac{1}{2} \vec{r} \times \vec{v} $ è costante e uguale a 
-
-$$\vec{\Omega} = \frac{1}{2} \frac{L}{m} \hat{k} = \frac{1}{2} r^2 \dot{\theta} \, \hat{k} \ .$$
-
-Dall'espressione della velocità angolare costante, si può ricavare il legame tra $\dot{\theta}$ ed $r$,
-
-$$\dot{\theta} = \frac{\Omega}{r^2} \ .$$
-
-Usando le coordinate polari, l'equazione del moto $m \ddot{\vec{r}} = c \, \frac{\vec{r}}{r^3}$ viene scritta in componenti,
-
-$$\begin{aligned}
-r      & : \ m (\ddot{r} - r\dot{\theta}^2) = c \, \frac{1}{r^2} \\
-\theta & : \ m ( 2 \dot{r} \dot{\theta} + r \ddot{\theta}^2 ) = 0
-\end{aligned}$$
-
-**Traiettoria, $r(\theta)$.**
-Inserendo l'espressione $\dot{\theta} = \frac{\Omega}{r^2}$ nella componente radiale, e definendo la funzione $z = \frac{1}{r}$, le derivate nel tempo della coordinata radiale possono essere riscritte come
-
-$$\dot{r} = -\frac{1}{z^2}\frac{d z}{d \theta} \dot{\theta} = -\Omega \frac{dz}{d\theta} $$
-
-$$\ddot{r} = \dot{\theta} \frac{d}{d \theta} \left( - \Omega \frac{dz}{d \theta} \right) = - z^2 \Omega^2 z''(\theta)$$
-
-e la componente radiale dell'equazione di moto,
-
-$$-z^2 \Omega^2 z'' - z^3 \Omega^2 = c \, z^2$$
-$$ z'' + z  = -\frac{c}{\Omega^2}$$
-
-$$z(\theta) = - \frac{c}{\Omega^2} + A \cos(\theta) + B \sin(\theta) \ .$$
-
-e quindi
-
-$$r(\theta) = \frac{\Omega^2}{c} \frac{1}{A \dfrac{\, \Omega^2}{c} \cos \theta + B \dfrac{\, \Omega^2}{c} \sin \theta - 1}$$
-
-**todo** *Perché si possono considerare $A > 0$ e tale da ottenere un'iperbole quando $B = 0$?*
-
-*Scelta della direzione di riferimento:*
-- *direzione del perielio: $r(\theta=0) = \min r$, $B = 0$,?*
-
--->
-
-<!--
-Scelte diverse si ottengono da una trasformazione di coordinate con una rotazione dell'asse di riferimento: $\theta_1 = \theta - \theta_0$, e quindi
-
-$$r(\theta) = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos \theta} = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos (\theta_1 + \theta_0 )} = \frac{\Omega^2}{GM}\frac{1}{1 + \underbrace{\frac{A\Omega^2}{GM} \cos \theta_0}_{= A_1} \cos \theta_1 \underbrace{- \frac{A \Omega^2}{GM} \sin \theta_0}_{= B_1} \sin \theta_1 }$$
-
-Il confronto con l'equazione delle coniche in coordinate polari, permette di riconoscere l'eccentricità, $e$ e il prodotto $e \, D$ dell'eccentricità per la distanza $D$ tra fuoco e direttrice,
-
-$$e = \frac{A \Omega^2}{GM} \qquad , \qquad e \, D = \frac{\Omega^2}{GM}$$
-
-$$r(\theta) = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos \theta}$$
-$$r(\theta) = \frac{e \, D}{1 + e \, \cos \theta}$$
-
-Poiché la velocità areolare è costante, il periodo dell'orbita è uguale al raggporto tra l'area dell'ellisse e la velocità areaolare,
-
-$$T = \frac{\pi a b}{\Omega} = \pi \frac{a^2 \sqrt{1-e^2}}{\Omega} = $$
-
-$$1-e^2 = 1 - \left(\frac{A \Omega^2}{GM} \right)^2 = \frac{\Omega^2}{GM \, a} $$
-
-$$\rightarrow \qquad \frac{\sqrt{1-e^2}}{\Omega} = \frac{1}{\sqrt{GM} \sqrt{a}}$$
-
-$$\rightarrow \qquad T = \pi \frac{a^{\frac{3}{2}}}{\sqrt{GM}}$$
-
-$$
- 2a = \frac{\Omega^2}{GM+A \Omega^2} + \frac{\Omega^2}{GM-A \Omega^2} 
-    = \Omega^2 \frac{2 GM }{(GM)^2 - A^2 \Omega^4}
-$$
-
-$$A^2 \Omega^4 = (GM)^2 - \frac{GM \, \Omega^2}{a}$$
-
-$$\frac{\Omega^2}{GM}\frac{1}{a} = 1 - \left(\frac{A \Omega^2}{GM}\right)^2$$
-
-$$\frac{1}{a} = \left( 1 - \left(\frac{A \Omega^2}{GM}\right)^2 \right) \frac{GM}{\Omega^2}$$
-
--->
 
 ```
 
