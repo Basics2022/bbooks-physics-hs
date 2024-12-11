@@ -575,8 +575,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-coniche-ed-energia">10.7.1. Traiettorie, coniche, ed energia</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-chiuse-e-leggi-di-keplero">10.7.2. Traiettorie chiuse e leggi di Keplero</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forza-proporzionale-alla-distanza">10.7.1. Forza proporzionale alla distanza</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forza-inversamente-proporzionale-al-quadrato-della-distanza">10.7.2. Forza inversamente proporzionale al quadrato della distanza</a></li>
 </ul>
             </nav>
         </div>
@@ -596,111 +596,130 @@ document.write(`
 <p>cioè la forza ha direzione radiale e la sua intensità dipende solo dalla distanza dal centro.</p>
 <p><strong>Esempi.</strong> Alcuni esempi che possono essere rappresentati come moti centrali sono:</p>
 <ul class="simple">
-<li><p>il moto di una massa vincolata a terra con una molla, <span class="math notranslate nohighlight">\(\vec{F} = - k r \hat{r}\)</span></p></li>
-<li><p>il moto di due corpi con massa soggetti alla mutua interazione gravitazionale, <span class="math notranslate nohighlight">\(\vec{F} = - G m_1 m_2\frac{\vec{r}}{|\vec{r}|^3}\)</span></p></li>
-<li><p>il moto di due corpi con carica elettrica soggetti alla mutua interazione elettrica, <span class="math notranslate nohighlight">\(\vec{F} = \frac{q_1 q_2}{4\pi\varepsilon} \frac{\vec{r}}{|\vec{r}|^3}\)</span></p></li>
+<li><p>il moto di una massa vincolata a terra con una molla, <span class="math notranslate nohighlight">\(\vec{F} = - k \vec{r} = - k r \hat{r} \propto r\)</span></p></li>
+<li><p>il moto di due corpi con massa soggetti alla mutua interazione gravitazionale, <span class="math notranslate nohighlight">\(\vec{F} = - G m_1 m_2\frac{\vec{r}}{|\vec{r}|^3} = - G m_1 m_2\frac{1}{|\vec{r}|^2} \hat{r} \propto \frac{1}{r^2}\)</span></p></li>
+<li><p>il moto di due corpi con carica elettrica soggetti alla mutua interazione elettrica, <span class="math notranslate nohighlight">\(\vec{F} = \frac{q_1 q_2}{4\pi\varepsilon} \frac{\vec{r}}{|\vec{r}|^3} = \frac{q_1 q_2}{4\pi\varepsilon} \frac{1}{|\vec{r}|^2} \hat{r} \propto \frac{1}{r^2}\)</span></p></li>
 </ul>
 <p>Nel primo caso, l’intensità della forza ha una dipendenza lineare con la distanza dal centro; negli altri due casi, l’intensità della forza è inversamente proporzionale al quadrato della distanza dal centro. Si noti la (quasi) uguaglianza formale tra l’interazione gravitazionale soggetta alla legge di gravitazione universale di Newton e l’interazione elettrica soggetta alla forza di Coulomb. I due casi hanno però una differenza fondamentale: nel caso di interazione gravitazionale due corpi si attraggono sempre, nel caso di interazione elettrica, due corpi con carica di segno opposto si attraggono mentre due corpi con carica di segno uguale si respingono.</p>
-<p>In meccanica classica, il problema dei due corpi si riferisce alla dinamica di un sistema formato da due corpi puntiformi soggetti unicamente alla mutua interazione gravitazionale, descritta dalla legge di gravitazione universale di Newton.</p>
-<p>Il sistema formato dai due punti è un sistema chiuso e isolato, sul quale non agiscono azioni esterne. La quantità di moto rispetto a un sistema di riferimento inerziale rimane quindi costante. Rimane quindi costante la velocità del centro di massa <span class="math notranslate nohighlight">\(G\)</span>,</p>
+<p>Nelle sezioni successive vengono discussi i casi di <a class="reference internal" href="../mechanics.html"><span class="doc std std-doc">forza proporzionale alla distanza</span></a> e <a class="reference internal" href="../mechanics.html"><span class="doc std std-doc">forza proporzionale al quadrato della distanza</span></a>.</p>
+<div class="section" id="forza-proporzionale-alla-distanza">
+<span id="physics-hs-mechanics-dynamics-motion-central-r"></span><h2><span class="section-number">10.7.1. </span>Forza proporzionale alla distanza<a class="headerlink" href="#forza-proporzionale-alla-distanza" title="Permalink to this heading">#</a></h2>
+<p>L’equazione del moto di un corpo soggetto a un campo di forze centrali con intensità proporzionale alla distanza dal centro è</p>
 <div class="math notranslate nohighlight">
-\[G = \frac{m_0 \, P_0 + m_1 \, P_1}{m_0 + m_1} \ ,\]</div>
-<p>ed è possibile definire un sistema di riferimento inerziale con origine nel centro di massa del sistema. Il raggio vettore tra i due corpi può quindi essere riscritto,</p>
-<div class="math notranslate nohighlight">
-\[P_1 - G = P_1 - \frac{m_0 \, P_0 + m_1 \, P_1}{m_0 + m_1} = \frac{ - m_0 \, P_0 + m_0 \, P_1}{m_0 + m_1} = \frac{m_0}{m_0 + m_1}(P_1 - P_0) \ .\]</div>
-<p>L’equazione del moto per il corpo <span class="math notranslate nohighlight">\(1\)</span> nel sistema di riferimento inerziale con origine in <span class="math notranslate nohighlight">\(G\)</span> segue il secondo principio della dinamica. L’equazione del moto può essere scritto in termini del raggio vettore tra corpo <span class="math notranslate nohighlight">\(1\)</span> e centro di massa,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  m_1 \dfrac{d^2}{dt^2}(P_1-G) &amp; = - G m_0 m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} = \\
-                               &amp; = - G \dfrac{(m_0 + m_1)^2}{m_0} m_1 \frac{P_1 - G}{|P_1 - G|^3} 
-\end{aligned}\end{split}\]</div>
-<p>o in termini del raggio vettore tra i due corpi <span class="math notranslate nohighlight">\(P_1 - P_0\)</span></p>
-<div class="math notranslate nohighlight">
-\[
-  \frac{m_0 m_1}{m_0 + m_1} \dfrac{d^2}{dt^2}(P_1-P_0) = - G m_0 m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} 
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-  m_1 \dfrac{d^2}{dt^2}(P_1-P_0) = - G ( m_0 + m_1 ) m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} 
-\]</div>
-<p>Le equazioni del moto in questi due sistemi di riferimento possono essere scritte nella forma</p>
-<div class="math notranslate nohighlight">
-\[m_1 \, \ddot{\vec{r}} = - G M m_1 \frac{\vec{r}}{r^3} \ .\]</div>
-<div class="section" id="traiettorie-coniche-ed-energia">
-<h2><span class="section-number">10.7.1. </span>Traiettorie, coniche, ed energia<a class="headerlink" href="#traiettorie-coniche-ed-energia" title="Permalink to this heading">#</a></h2>
-<p>E” possibile dimostrare che il moto di ognuno dei due corpi è un moto piano, e che la traiettoria avviene descrive una conica.</p>
-<ul class="simple">
-<li><p><strong>todo</strong> Dimostrare che il moto è piano</p></li>
-<li><p><strong>todo</strong> Dimostrare che la traiettoria è una conica</p></li>
-</ul>
-<p>Il tipo di curva conica dipende da una grandezza scalare che può essere ricondotta a un’energia. Il prodotto scalare della velocità <span class="math notranslate nohighlight">\(\dot{\vec{r}}\)</span> con l’equazione del moto, permette di ricavare un principio di conservazione dell’energia,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  0 &amp; = \dot{\vec{r}} \cdot \left( m \ddot{\vec{r}} + G M m \frac{\vec{r}}{r^3} \right) = \\
-    &amp; = \dfrac{d}{dt} \left( \frac{1}{2} m \left|\dot{\vec{r}}\right|^2 - G M m \frac{1}{r}\right) = \dfrac{d E^{mec}}{dt}
-\end{aligned}\end{split}\]</div>
-<p>Usando il sistema di coordinate polari, e la costanza della velocità angolare <span class="math notranslate nohighlight">\(\Omega = \frac{1}{2}{r^2}{\dot{\theta}}\)</span>, si può scrivere</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  \frac{E^{mec}}{m} &amp; = \frac{1}{2} \dot{r}^2 + \frac{1}{2} r^2 \dot{\theta}^2 - \frac{G M}{r} = \\
-                    &amp; = \frac{1}{2} \dot{r}^2 + 2 \frac{\Omega^2}{r^2} - \frac{G M}{r} = \\
-                    &amp; = \frac{1}{2} \dot{r}^2 + v_r(r) \ .
-\end{aligned}\end{split}\]</div>
-<p>Poiché <span class="math notranslate nohighlight">\(\frac{1}{2}\dot{r}^2 \ge 0\)</span>, il moto è possibile per tutti i valori di <span class="math notranslate nohighlight">\(r\)</span> tali che <span class="math notranslate nohighlight">\(\frac{E}{m} \ge v_r(r)\)</span>. Il valore di <span class="math notranslate nohighlight">\(E\)</span> identifica le traiettorie. <strong>todo</strong> <em>aggiungere grafici</em></p>
-<ul class="simple">
-<li><p>esiste un valore minimo di <span class="math notranslate nohighlight">\(E\)</span>: questo valore è associato a un’orbita circolare</p></li>
-<li><p>per <span class="math notranslate nohighlight">\(E_{min} \le E \le 0\)</span> esistono due soluzioni dell’equazione <span class="math notranslate nohighlight">\(\frac{E}{m} - v_r(r) = 0\)</span>: orbite chiuse, ellittiche o circolari (per <span class="math notranslate nohighlight">\(E = E_{min}\)</span>)</p></li>
-<li><p><span class="math notranslate nohighlight">\(E = 0\)</span> è un caso limite che separa le orbite chiuse e le orbite aperte: a <span class="math notranslate nohighlight">\(E = 0\)</span> è associata un’orbita parabolica</p></li>
-<li><p>per <span class="math notranslate nohighlight">\(E &gt; 0\)</span> le orbite aperte sono iperboliche</p></li>
-</ul>
+\[m \ddot{\vec{r}} = -k \vec{r}\]</div>
+<p><strong>todo</strong></p>
 </div>
-<div class="section" id="traiettorie-chiuse-e-leggi-di-keplero">
-<h2><span class="section-number">10.7.2. </span>Traiettorie chiuse e leggi di Keplero<a class="headerlink" href="#traiettorie-chiuse-e-leggi-di-keplero" title="Permalink to this heading">#</a></h2>
-<p><strong>Prima legge.</strong> Un pianeta descrive un’orbita ellittica attorno al Sole, che si trova in uno dei due fuochi.</p>
-<p><strong>Seconda legge legge.</strong> Considerando l’area descritta dal moto del pianeta attorno al Sole, la velocità angolare è costante lungo la traiettoria.</p>
-<p><strong>Terza legge.</strong> In un sistema di pianeti, il quadrato del periodo delle orbite descritte dai pianeti è proporzionale al cubo del semiasse maggiore della traiettoria, <span class="math notranslate nohighlight">\(T^2 \propto a^3\)</span>.</p>
-<p><span style="color:red"><strong>todo</strong> rispetto a quale sistema di riferimento? Serve l’approssimazione che la massa del Sole sia <span class="math notranslate nohighlight">\(&gt;&gt;\)</span> delle masse dei pianeti, se si considera inerziale un sistema di coordinate con origine nel Sole? O bisogna/si può usare un sistema inerziale con origine nel centro di massa del sistema (considerato isolato)</span></p>
-<p><strong>Moto piano.</strong> Siano <span class="math notranslate nohighlight">\(\vec{r}\)</span>, <span class="math notranslate nohighlight">\(\vec{v}\)</span> la posizione e la velocità del pianeta rispetto al Sole. La forza di gravità agente sul pianeta è</p>
+<div class="section" id="forza-inversamente-proporzionale-al-quadrato-della-distanza">
+<span id="physics-hs-mechanics-dynamics-motion-central-r-2"></span><h2><span class="section-number">10.7.2. </span>Forza inversamente proporzionale al quadrato della distanza<a class="headerlink" href="#forza-inversamente-proporzionale-al-quadrato-della-distanza" title="Permalink to this heading">#</a></h2>
+<p>L’equazione del moto di un corpo soggetto a un campo di forze centrali con intensità inversamente proporzionale al quadrato della distanza dal centro è</p>
+<div class="math notranslate nohighlight" id="equation-eq-central-r-2-eom">
+<span class="eqno">(10.1)<a class="headerlink" href="#equation-eq-central-r-2-eom" title="Permalink a questa equazione">#</a></span>\[m \ddot{\vec{r}} = c \frac{\vec{r}}{\vec{|\vec{r}|^3}} \ ,\]</div>
+<p>…<strong>todo</strong> <em>bla bla</em></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" id="physics-hs-mechanics-dynamics-motion-central-plane">
+<summary class="sd-summary-title sd-card-header">
+Moto piano<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Il moto avviene in un piano identificato dalla posizione e dalla velocità (iniziale). Nel caso in cui la velocità risulta allineata con la direzione radiale si verifica solo nel caso degenere in cui il moto è rettilineo: se la velocità è allineata alla direzione radiale in un istante temporale, lo è sempre; viene da sé, che in ogni altro caso di moto centrale, la velocità non ha mai direzione radiale.</p>
+<p class="sd-card-text">Poiché il vettore <span class="math notranslate nohighlight">\(\vec{r} \times \vec{v}\)</span> è costante,</p>
 <div class="math notranslate nohighlight">
-\[\vec{F} = - G M m \frac{\vec{r}}{r^3} \ .\]</div>
-<p>E” facile dimostrare che il moto è piano, cioè che la posizione e la velocità del pianeta sono sempre ortogonali a una direzione costante.</p>
+\[\frac{d}{dt} \left( \vec{r} \times \dot{\vec{r}} \right) = \underbrace{\dot{\vec{r}} \times \dot{\vec{r}}}_{= \vec{0}} + \vec{r} \times \ddot{\vec{r}} = \underbrace{\vec{r} \times c \frac{\vec{r}}{|\vec{r}|^3}}_{=\vec{0}} = \vec{0} \ ,\]</div>
+<p class="sd-card-text">si può concludere che il moto avviene nel piano identificato dai vettori posizione <span class="math notranslate nohighlight">\(\vec{r}\)</span> e velocità <span class="math notranslate nohighlight">\(\vec{v}\)</span>. Indichiamo la direzione normale al piano con il versore <span class="math notranslate nohighlight">\(\hat{k}\)</span>.
+Poiché il moto è piano, può essere studiato con un sistema di coordinate 2-dimensionale. Si sceglie qui un sistema di <a class="reference internal" href="#physics-hs-mechanics-dynamics-motion-central-polar"><span class="std std-ref">coordiante polari</span></a>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" id="physics-hs-mechanics-dynamics-motion-central-ang-mom">
+<summary class="sd-summary-title sd-card-header">
+Costanza del momento angolare e della velocità areolare<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Il <strong>momento angolare</strong> <span class="math notranslate nohighlight">\(\vec{l}\)</span> del corpo attorno al centro del campo, è il prodotto della massa <span class="math notranslate nohighlight">\(m\)</span> per il vettore <span class="math notranslate nohighlight">\(\vec{r} \times \vec{v}\)</span> costante,</p>
 <div class="math notranslate nohighlight">
-\[\frac{d}{dt} \left( \vec{r} \times \vec{v} \right) = \underbrace{\vec{v} \times \vec{v}}_{=\vec{0}} + \vec{r} \times \vec{a}  = - G M m \underbrace{\vec{r} \times \frac{\vec{r}}{r^3}}_{=\vec{0}} = \vec{0} \ .\]</div>
-<p>Poiché il vettore <span class="math notranslate nohighlight">\(\vec{r} \times \vec{v} =: \frac{L}{m} \hat{k}\)</span> è costante, è costante sia il suo valore assoluto sia la sua direzione: affinché <span class="math notranslate nohighlight">\(\vec{r} \times \vec{v}\)</span> sia allineato con <span class="math notranslate nohighlight">\(\hat{k}\)</span>, i vettori <span class="math notranslate nohighlight">\(\vec{r}\)</span>, <span class="math notranslate nohighlight">\(\vec{v}\)</span> devono essere ortogonali a <span class="math notranslate nohighlight">\(\hat{k}\)</span>.</p>
-<p><strong>Coordinate polari.</strong> Per descrivere il moto piano di un punto, si può usare un sistema di coordinate 2-dimensionale. Si sceglie un sistema di coordinate polari con origine coincidente con il Sole. La posizione del pianeta è identificata dal raggio vettore</p>
+\[\vec{l} = m \vec{r} \times \vec{v} \ ,\]</div>
+<p class="sd-card-text">ed è quindi <strong>costante</strong> a sua volta. La <strong>velocità areolare</strong>, definita come l’area descritta <span class="math notranslate nohighlight">\(\hat{k} dA = \frac{1}{2} \vec{r} \times d \vec{r}\)</span> (area del triangolino elementare che ha come base lo spostamento elementare <span class="math notranslate nohighlight">\(d \vec{r}\)</span>) per unità di tempo <span class="math notranslate nohighlight">\(dt\)</span>, risulta essere uguale alla metà del vettore <span class="math notranslate nohighlight">\(\vec{r} \times \vec{v}\)</span></p>
 <div class="math notranslate nohighlight">
-\[\vec{r} = r \, \hat{r} \ ,\]</div>
-<p>e la derivate dei versori radiale e azimuthale valgono</p>
+\[\vec{\Omega} = \frac{1}{2} \vec{r} \times \vec{v} = \frac{\vec{l}}{2 m} \ ,\]</div>
+<p class="sd-card-text">ed è quindi <strong>costante</strong> a sua volta.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" id="physics-hs-mechanics-dynamics-motion-central-polar">
+<summary class="sd-summary-title sd-card-header">
+Equazioni in coordinate polari<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Poiché il <a class="reference internal" href="#physics-hs-mechanics-dynamics-motion-central-plane"><span class="std std-ref">moto è piano</span></a>, è possibile introdurre un sistema di coordinate polari. La posizione di un punto è identificato dal vettore  <span class="math notranslate nohighlight">\(\vec{r} = r \hat{r}\)</span>, la velocità e l’accelerazione si ricavano derivando nel tempo,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-\dot{\hat{r}}      &amp; =   \dot{\theta} \hat{\theta} \\
-\dot{\hat{\theta}} &amp; = - \dot{\theta} \hat{r} \\
+ \vec{r} &amp; = r \hat{r} \\
+ \vec{v} &amp; =  \dot{\vec{r}} = \dot{r} \hat{r} + r \dot{\theta} \hat{\theta} \\
+ \vec{a} &amp; = \ddot{\vec{r}} = \left( \ddot{r} - r \dot{\theta}^2 \right) \hat{r} + \left( 2 \dot{r} \dot{\theta} + r \ddot{\theta} \right) \hat{\theta} \\
 \end{aligned}\end{split}\]</div>
-<p>La posizione, la velocità e l’accelerazione del pianeta possono essere scritte come</p>
+<p class="sd-card-text">e l’equazione del moto <a class="reference internal" href="#equation-eq-central-r-2-eom">(10.1)</a> può essere scritta nelle sue componenti radiale e tangenziale</p>
+<div class="math notranslate nohighlight" id="equation-eq-central-r-2-eom-coords">
+<span class="eqno">(10.2)<a class="headerlink" href="#equation-eq-central-r-2-eom-coords" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{cases}
+ r      \ &amp; : \quad m \left( \ddot{r} - r \dot{\theta}^2 \right) = c \frac{1}{r^2} \\
+ \theta \ &amp; : \quad m \left( 2 \dot{r} \dot{\theta} + r \ddot{\theta} \right) = 0 \ .
+\end{cases}\end{split}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Costanza dell’energia<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Moltiplicando scalarmente l’equazione del moto <a class="reference internal" href="#equation-eq-central-r-2-eom">(10.1)</a> per il vettore velocità <span class="math notranslate nohighlight">\(\dot{\vec{r}}\)</span> si ottiene il bilancio dell’energia meccanica</p>
+<div class="math notranslate nohighlight">
+\[0
+ = \dot{\vec{r}} \cdot \left[ m \ddot{\vec{r}} - c \frac{\vec{r}}{|\vec{r}|^3} \right] 
+ = \dfrac{d}{dt} \left[ \frac{1}{2} m |\dot{r}|^2 + \frac{c}{r} \right] \ ,
+\]</div>
+<p class="sd-card-text">che si traduce nella legge di conservazione dell’energia meccanica,</p>
+<div class="math notranslate nohighlight">
+\[E = \frac{1}{2} m |\dot{\vec{r}}|^2 + \frac{c}{r} = \text{const.}\]</div>
+<p class="sd-card-text">L’energia meccanica può essere riscritta usando le coordiante polari <span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(\theta\)</span> e la costanza del momento angolare <span class="math notranslate nohighlight">\(\vec{l}\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-\vec{r} &amp; = r \, \hat{r} \\
-\vec{v} &amp; = \dot{r} \, \hat{r} + r \dot{\theta} \, \hat{\theta} \\
-\vec{a} &amp; = \left[ \ddot{r} - r \dot{\theta}^2 \right] \, \hat{r} +  \left[ 2 \dot{r} \dot{\theta} + r \ddot{\theta} \right] \, \hat{\theta}  \\
+ E &amp; = \frac{1}{2} m |\dot{\vec{r}}|^2 + \frac{c}{r} = \\
+   &amp; = \frac{1}{2} m \left( \dot{r}^2 + r^2 \dot{\theta}^2 \right) + \frac{c}{r} = \\
+   &amp; = \frac{1}{2} m \dot{r}^2 + \frac{1}{2} \frac{l^2}{m r^2} + \frac{c}{r} \\
 \end{aligned}\end{split}\]</div>
-<p>La <strong>velocità areolare</strong>, <span class="math notranslate nohighlight">\(\vec{\Omega} = \frac{1}{2} \vec{r} \times \vec{v} \)</span> è costante e uguale a</p>
+<p class="sd-card-text">dopo aver espresso il momento angolare in coordinate polari</p>
 <div class="math notranslate nohighlight">
-\[\vec{\Omega} = \frac{1}{2} \frac{L}{m} \hat{k} = \frac{1}{2} r^2 \dot{\theta} \, \hat{k} \ .\]</div>
-<!--
-Il **periodo** $T$
-
-$$T = \frac{A}{\Omega} = \frac{\pi \, a \, b}{\Omega} \ .$$
--->
-<p>Dall’espressione della velocità angolare costante, si può ricavare il legame tra <span class="math notranslate nohighlight">\(\dot{\theta}\)</span> ed <span class="math notranslate nohighlight">\(r\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[\dot{\theta} = \frac{\Omega}{r^2} \ .\]</div>
-<p>Usando le coordinate polari, l’equazione del moto <span class="math notranslate nohighlight">\(m \ddot{\vec{r}} = -G M m \frac{\vec{r}}{r^3}\)</span> viene scritta in componenti,</p>
+\[\vec{l} = l \hat{k} = m \vec{r} \times \vec{v} = m r^2 \dot{\theta} \hat{k} \ ,\]</div>
+<p class="sd-card-text">per poter esprimere la derivata nel tempo dell’angolo <span class="math notranslate nohighlight">\(\theta\)</span> in fuzione del momento angolare <span class="math notranslate nohighlight">\(l\)</span>, e del raggio <span class="math notranslate nohighlight">\(r\)</span></p>
+<div class="math notranslate nohighlight" id="equation-eq-theta-ang-mom">
+<span class="eqno">(10.3)<a class="headerlink" href="#equation-eq-theta-ang-mom" title="Permalink a questa equazione">#</a></span>\[\dot{\theta} = \frac{l}{m r^2} \ .\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Traiettorie e coniche<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Si cerca la traiettoria <span class="math notranslate nohighlight">\(r(\theta)\)</span> descritta nel moto del corpo. L’equazione del moto assume una forma semplice da risolvere dopo aver introdotto la funzione <span class="math notranslate nohighlight">\(z = \frac{1}{r}\)</span>. Si calcolano le derivate sfruttando l’espressione della funzione <span class="math notranslate nohighlight">\(z\)</span>, e l’espressione <a class="reference internal" href="#equation-eq-theta-ang-mom">(10.3)</a> della derivata della coordinata angolare</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-r      &amp; : \ m (\ddot{r} - r\dot{\theta}^2) = - G M m \frac{1}{r^2} \\
-\theta &amp; : \ m ( 2 \dot{r} \dot{\theta} + r \ddot{\theta}^2 ) = 0
+   \dot{r} &amp; = -\frac{1}{z^2} z'(\theta) \dot{\theta} = -\frac{1}{z^2} \frac{l}{m r^2} z'(\theta) = - \frac{l}{m} z'(\theta) \\
+  \ddot{r} &amp; = - \frac{l}{m} \dot{\theta} z''(\theta) = - z^2 \frac{l^2}{m^2} z''(\theta) \\
 \end{aligned}\end{split}\]</div>
-<p><strong>Traiettoria, <span class="math notranslate nohighlight">\(r(\theta)\)</span>.</strong>
+<p class="sd-card-text">Esprimendo la componente radiale dell’equazione del moto <a class="reference internal" href="#equation-eq-central-r-2-eom-coords">(10.2)</a> si ottiene un’equazione differenziale ordinaria lineare a coefficienti costanti del secondo ordine,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  &amp; - m z^2 \frac{l^2}{m^2} z'' - m \frac{1}{z} \frac{l^2 z^4}{m^2} = c z^2 \\
+\end{aligned}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[ \quad \rightarrow \quad z'' + z = - \frac{m c }{l^2} \ ,\]</div>
+<p class="sd-card-text">la cui soluzione è <span class="math notranslate nohighlight">\(z(\theta) = A \cos \theta + B \sin \theta - \frac{m c}{l^2}\)</span> o, in termini del raggio <span class="math notranslate nohighlight">\(r\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[r(\theta) = \frac{1}{- \frac{m c}{l^2} + A \cos \theta + B \sin \theta} \ .\]</div>
+</div>
+</details><p><strong>Traiettoria, <span class="math notranslate nohighlight">\(r(\theta)\)</span>.</strong>
 Inserendo l’espressione <span class="math notranslate nohighlight">\(\dot{\theta} = \frac{\Omega}{r^2}\)</span> nella componente radiale, e definendo la funzione <span class="math notranslate nohighlight">\(z = \frac{1}{r}\)</span>, le derivate nel tempo della coordinata radiale possono essere riscritte come</p>
 <div class="math notranslate nohighlight">
 \[\dot{r} = -\frac{1}{z^2}\frac{d z}{d \theta} \dot{\theta} = -\Omega \frac{dz}{d\theta} \]</div>
@@ -831,8 +850,8 @@ a & = \frac{1}{2} \left( r(0)+r(\pi) \right) = \\
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-coniche-ed-energia">10.7.1. Traiettorie, coniche, ed energia</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-chiuse-e-leggi-di-keplero">10.7.2. Traiettorie chiuse e leggi di Keplero</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forza-proporzionale-alla-distanza">10.7.1. Forza proporzionale alla distanza</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forza-inversamente-proporzionale-al-quadrato-della-distanza">10.7.2. Forza inversamente proporzionale al quadrato della distanza</a></li>
 </ul>
   </nav></div>
 

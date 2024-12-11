@@ -8,132 +8,135 @@ $$\vec{F}(\vec{r}) = F_r(|\vec{r}|) \hat{r} \ ,$$
 cioè la forza ha direzione radiale e la sua intensità dipende solo dalla distanza dal centro.
 
 **Esempi.** Alcuni esempi che possono essere rappresentati come moti centrali sono:
-- il moto di una massa vincolata a terra con una molla, $\vec{F} = - k r \hat{r}$
-- il moto di due corpi con massa soggetti alla mutua interazione gravitazionale, $\vec{F} = - G m_1 m_2\frac{\vec{r}}{|\vec{r}|^3}$
-- il moto di due corpi con carica elettrica soggetti alla mutua interazione elettrica, $\vec{F} = \frac{q_1 q_2}{4\pi\varepsilon} \frac{\vec{r}}{|\vec{r}|^3}$
+- il moto di una massa vincolata a terra con una molla, $\vec{F} = - k \vec{r} = - k r \hat{r} \propto r$
+- il moto di due corpi con massa soggetti alla mutua interazione gravitazionale, $\vec{F} = - G m_1 m_2\frac{\vec{r}}{|\vec{r}|^3} = - G m_1 m_2\frac{1}{|\vec{r}|^2} \hat{r} \propto \frac{1}{r^2}$
+- il moto di due corpi con carica elettrica soggetti alla mutua interazione elettrica, $\vec{F} = \frac{q_1 q_2}{4\pi\varepsilon} \frac{\vec{r}}{|\vec{r}|^3} = \frac{q_1 q_2}{4\pi\varepsilon} \frac{1}{|\vec{r}|^2} \hat{r} \propto \frac{1}{r^2}$
 
 Nel primo caso, l'intensità della forza ha una dipendenza lineare con la distanza dal centro; negli altri due casi, l'intensità della forza è inversamente proporzionale al quadrato della distanza dal centro. Si noti la (quasi) uguaglianza formale tra l'interazione gravitazionale soggetta alla legge di gravitazione universale di Newton e l'interazione elettrica soggetta alla forza di Coulomb. I due casi hanno però una differenza fondamentale: nel caso di interazione gravitazionale due corpi si attraggono sempre, nel caso di interazione elettrica, due corpi con carica di segno opposto si attraggono mentre due corpi con carica di segno uguale si respingono.
 
-In meccanica classica, il problema dei due corpi si riferisce alla dinamica di un sistema formato da due corpi puntiformi soggetti unicamente alla mutua interazione gravitazionale, descritta dalla legge di gravitazione universale di Newton.
+Nelle sezioni successive vengono discussi i casi di [forza proporzionale alla distanza]() e [forza proporzionale al quadrato della distanza]().
 
-Il sistema formato dai due punti è un sistema chiuso e isolato, sul quale non agiscono azioni esterne. La quantità di moto rispetto a un sistema di riferimento inerziale rimane quindi costante. Rimane quindi costante la velocità del centro di massa $G$,
+(physics-hs:mechanics:dynamics:motion:central:r)=
+## Forza proporzionale alla distanza
 
-$$G = \frac{m_0 \, P_0 + m_1 \, P_1}{m_0 + m_1} \ ,$$
+L'equazione del moto di un corpo soggetto a un campo di forze centrali con intensità proporzionale alla distanza dal centro è
 
-ed è possibile definire un sistema di riferimento inerziale con origine nel centro di massa del sistema. Il raggio vettore tra i due corpi può quindi essere riscritto,
+$$m \ddot{\vec{r}} = -k \vec{r}$$
 
-$$P_1 - G = P_1 - \frac{m_0 \, P_0 + m_1 \, P_1}{m_0 + m_1} = \frac{ - m_0 \, P_0 + m_0 \, P_1}{m_0 + m_1} = \frac{m_0}{m_0 + m_1}(P_1 - P_0) \ .$$
+**todo**
 
-L'equazione del moto per il corpo $1$ nel sistema di riferimento inerziale con origine in $G$ segue il secondo principio della dinamica. L'equazione del moto può essere scritto in termini del raggio vettore tra corpo $1$ e centro di massa,
+
+(physics-hs:mechanics:dynamics:motion:central:r-2)=
+## Forza inversamente proporzionale al quadrato della distanza
+
+L'equazione del moto di un corpo soggetto a un campo di forze centrali con intensità inversamente proporzionale al quadrato della distanza dal centro è
+
+$$m \ddot{\vec{r}} = c \frac{\vec{r}}{\vec{|\vec{r}|^3}} \ ,$$ (eq:central:r-2:eom)
+
+...**todo** *bla bla*
+
+
+(physics-hs:mechanics:dynamics:motion:central:plane)=
+```{dropdown} Moto piano
+Il moto avviene in un piano identificato dalla posizione e dalla velocità (iniziale). Nel caso in cui la velocità risulta allineata con la direzione radiale si verifica solo nel caso degenere in cui il moto è rettilineo: se la velocità è allineata alla direzione radiale in un istante temporale, lo è sempre; viene da sé, che in ogni altro caso di moto centrale, la velocità non ha mai direzione radiale.
+
+Poiché il vettore $\vec{r} \times \vec{v}$ è costante,
+
+$$\frac{d}{dt} \left( \vec{r} \times \dot{\vec{r}} \right) = \underbrace{\dot{\vec{r}} \times \dot{\vec{r}}}_{= \vec{0}} + \vec{r} \times \ddot{\vec{r}} = \underbrace{\vec{r} \times c \frac{\vec{r}}{|\vec{r}|^3}}_{=\vec{0}} = \vec{0} \ ,$$
+
+si può concludere che il moto avviene nel piano identificato dai vettori posizione $\vec{r}$ e velocità $\vec{v}$. Indichiamo la direzione normale al piano con il versore $\hat{k}$.
+Poiché il moto è piano, può essere studiato con un sistema di coordinate 2-dimensionale. Si sceglie qui un sistema di [coordiante polari](physics-hs:mechanics:dynamics:motion:central:polar).
+
+```
+
+(physics-hs:mechanics:dynamics:motion:central:ang-mom)=
+```{dropdown} Costanza del momento angolare e della velocità areolare
+Il **momento angolare** $\vec{l}$ del corpo attorno al centro del campo, è il prodotto della massa $m$ per il vettore $\vec{r} \times \vec{v}$ costante,
+
+$$\vec{l} = m \vec{r} \times \vec{v} \ ,$$
+
+ed è quindi **costante** a sua volta. La **velocità areolare**, definita come l'area descritta $\hat{k} dA = \frac{1}{2} \vec{r} \times d \vec{r}$ (area del triangolino elementare che ha come base lo spostamento elementare $d \vec{r}$) per unità di tempo $dt$, risulta essere uguale alla metà del vettore $\vec{r} \times \vec{v}$
+
+$$\vec{\Omega} = \frac{1}{2} \vec{r} \times \vec{v} = \frac{\vec{l}}{2 m} \ ,$$
+
+ed è quindi **costante** a sua volta.
+
+```
+
+(physics-hs:mechanics:dynamics:motion:central:polar)=
+```{dropdown} Equazioni in coordinate polari
+Poiché il [moto è piano](physics-hs:mechanics:dynamics:motion:central:plane), è possibile introdurre un sistema di coordinate polari. La posizione di un punto è identificato dal vettore  $\vec{r} = r \hat{r}$, la velocità e l'accelerazione si ricavano derivando nel tempo,
 
 $$\begin{aligned}
-  m_1 \dfrac{d^2}{dt^2}(P_1-G) & = - G m_0 m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} = \\
-                               & = - G \dfrac{(m_0 + m_1)^2}{m_0} m_1 \frac{P_1 - G}{|P_1 - G|^3} 
+ \vec{r} & = r \hat{r} \\
+ \vec{v} & =  \dot{\vec{r}} = \dot{r} \hat{r} + r \dot{\theta} \hat{\theta} \\
+ \vec{a} & = \ddot{\vec{r}} = \left( \ddot{r} - r \dot{\theta}^2 \right) \hat{r} + \left( 2 \dot{r} \dot{\theta} + r \ddot{\theta} \right) \hat{\theta} \\
 \end{aligned}$$
 
-o in termini del raggio vettore tra i due corpi $P_1 - P_0$
+e l'equazione del moto {eq}`eq:central:r-2:eom` può essere scritta nelle sue componenti radiale e tangenziale
 
+$$\begin{cases}
+ r      \ & : \quad m \left( \ddot{r} - r \dot{\theta}^2 \right) = c \frac{1}{r^2} \\
+ \theta \ & : \quad m \left( 2 \dot{r} \dot{\theta} + r \ddot{\theta} \right) = 0 \ .
+\end{cases}$$ (eq:central:r-2:eom:coords)
+
+```
+
+```{dropdown} Costanza dell'energia
+Moltiplicando scalarmente l'equazione del moto {eq}`eq:central:r-2:eom` per il vettore velocità $\dot{\vec{r}}$ si ottiene il bilancio dell'energia meccanica
+
+$$0
+ = \dot{\vec{r}} \cdot \left[ m \ddot{\vec{r}} - c \frac{\vec{r}}{|\vec{r}|^3} \right] 
+ = \dfrac{d}{dt} \left[ \frac{1}{2} m |\dot{r}|^2 + \frac{c}{r} \right] \ ,
 $$
-  \frac{m_0 m_1}{m_0 + m_1} \dfrac{d^2}{dt^2}(P_1-P_0) = - G m_0 m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} 
-$$
-$$
-  m_1 \dfrac{d^2}{dt^2}(P_1-P_0) = - G ( m_0 + m_1 ) m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} 
-$$
 
-Le equazioni del moto in questi due sistemi di riferimento possono essere scritte nella forma
+che si traduce nella legge di conservazione dell'energia meccanica,
 
-$$m_1 \, \ddot{\vec{r}} = - G M m_1 \frac{\vec{r}}{r^3} \ .$$
+$$E = \frac{1}{2} m |\dot{\vec{r}}|^2 + \frac{c}{r} = \text{const.}$$
 
-(physics-hs:mechanics:dynamics:motion:gravitation:two-bodies:energy-and-conics)=
-### Traiettorie, coniche, ed energia
-
-E' possibile dimostrare che il moto di ognuno dei due corpi è un moto piano, e che la traiettoria avviene descrive una conica.
-
-- **todo** Dimostrare che il moto è piano
-- **todo** Dimostrare che la traiettoria è una conica
-
-Il tipo di curva conica dipende da una grandezza scalare che può essere ricondotta a un'energia. Il prodotto scalare della velocità $\dot{\vec{r}}$ con l'equazione del moto, permette di ricavare un principio di conservazione dell'energia,
+L'energia meccanica può essere riscritta usando le coordiante polari $r$, $\theta$ e la costanza del momento angolare $\vec{l}$,
 
 $$\begin{aligned}
-  0 & = \dot{\vec{r}} \cdot \left( m \ddot{\vec{r}} + G M m \frac{\vec{r}}{r^3} \right) = \\
-    & = \dfrac{d}{dt} \left( \frac{1}{2} m \left|\dot{\vec{r}}\right|^2 - G M m \frac{1}{r}\right) = \dfrac{d E^{mec}}{dt}
+ E & = \frac{1}{2} m |\dot{\vec{r}}|^2 + \frac{c}{r} = \\
+   & = \frac{1}{2} m \left( \dot{r}^2 + r^2 \dot{\theta}^2 \right) + \frac{c}{r} = \\
+   & = \frac{1}{2} m \dot{r}^2 + \frac{1}{2} \frac{l^2}{m r^2} + \frac{c}{r} \\
 \end{aligned}$$
 
-Usando il sistema di coordinate polari, e la costanza della velocità angolare $\Omega = \frac{1}{2}{r^2}{\dot{\theta}}$, si può scrivere
+dopo aver espresso il momento angolare in coordinate polari 
+
+$$\vec{l} = l \hat{k} = m \vec{r} \times \vec{v} = m r^2 \dot{\theta} \hat{k} \ ,$$
+
+per poter esprimere la derivata nel tempo dell'angolo $\theta$ in fuzione del momento angolare $l$, e del raggio $r$
+
+$$\dot{\theta} = \frac{l}{m r^2} \ .$$ (eq:theta-ang-mom)
+
+```
+
+```{dropdown} Traiettorie e coniche
+:open:
+
+Si cerca la traiettoria $r(\theta)$ descritta nel moto del corpo. L'equazione del moto assume una forma semplice da risolvere dopo aver introdotto la funzione $z = \frac{1}{r}$. Si calcolano le derivate sfruttando l'espressione della funzione $z$, e l'espressione {eq}`eq:theta-ang-mom` della derivata della coordinata angolare
 
 $$\begin{aligned}
-  \frac{E^{mec}}{m} & = \frac{1}{2} \dot{r}^2 + \frac{1}{2} r^2 \dot{\theta}^2 - \frac{G M}{r} = \\
-                    & = \frac{1}{2} \dot{r}^2 + 2 \frac{\Omega^2}{r^2} - \frac{G M}{r} = \\
-                    & = \frac{1}{2} \dot{r}^2 + v_r(r) \ .
+   \dot{r} & = -\frac{1}{z^2} z'(\theta) \dot{\theta} = -\frac{1}{z^2} \frac{l}{m r^2} z'(\theta) = - \frac{l}{m} z'(\theta) \\
+  \ddot{r} & = - \frac{l}{m} \dot{\theta} z''(\theta) = - z^2 \frac{l^2}{m^2} z''(\theta) \\
 \end{aligned}$$
 
-Poiché $\frac{1}{2}\dot{r}^2 \ge 0$, il moto è possibile per tutti i valori di $r$ tali che $\frac{E}{m} \ge v_r(r)$. Il valore di $E$ identifica le traiettorie. **todo** *aggiungere grafici*
-- esiste un valore minimo di $E$: questo valore è associato a un'orbita circolare
-- per $E_{min} \le E \le 0$ esistono due soluzioni dell'equazione $\frac{E}{m} - v_r(r) = 0$: orbite chiuse, ellittiche o circolari (per $E = E_{min}$)
-- $E = 0$ è un caso limite che separa le orbite chiuse e le orbite aperte: a $E = 0$ è associata un'orbita parabolica
-- per $E > 0$ le orbite aperte sono iperboliche
-
-(physics-hs:mechanics:dynamics:motion:gravitation:two-bodies:kepler)=
-### Traiettorie chiuse e leggi di Keplero
-
-**Prima legge.** Un pianeta descrive un'orbita ellittica attorno al Sole, che si trova in uno dei due fuochi.
-
-**Seconda legge legge.** Considerando l'area descritta dal moto del pianeta attorno al Sole, la velocità angolare è costante lungo la traiettoria.
-
-**Terza legge.** In un sistema di pianeti, il quadrato del periodo delle orbite descritte dai pianeti è proporzionale al cubo del semiasse maggiore della traiettoria, $T^2 \propto a^3$.
-
-
-<span style="color:red">**todo** rispetto a quale sistema di riferimento? Serve l'approssimazione che la massa del Sole sia $>>$ delle masse dei pianeti, se si considera inerziale un sistema di coordinate con origine nel Sole? O bisogna/si può usare un sistema inerziale con origine nel centro di massa del sistema (considerato isolato)</span>
-
-**Moto piano.** Siano $\vec{r}$, $\vec{v}$ la posizione e la velocità del pianeta rispetto al Sole. La forza di gravità agente sul pianeta è
-
-$$\vec{F} = - G M m \frac{\vec{r}}{r^3} \ .$$
-
-E' facile dimostrare che il moto è piano, cioè che la posizione e la velocità del pianeta sono sempre ortogonali a una direzione costante.
-
-$$\frac{d}{dt} \left( \vec{r} \times \vec{v} \right) = \underbrace{\vec{v} \times \vec{v}}_{=\vec{0}} + \vec{r} \times \vec{a}  = - G M m \underbrace{\vec{r} \times \frac{\vec{r}}{r^3}}_{=\vec{0}} = \vec{0} \ .$$
-
-Poiché il vettore $\vec{r} \times \vec{v} =: \frac{L}{m} \hat{k}$ è costante, è costante sia il suo valore assoluto sia la sua direzione: affinché $\vec{r} \times \vec{v}$ sia allineato con $\hat{k}$, i vettori $\vec{r}$, $\vec{v}$ devono essere ortogonali a $\hat{k}$.
-
-**Coordinate polari.** Per descrivere il moto piano di un punto, si può usare un sistema di coordinate 2-dimensionale. Si sceglie un sistema di coordinate polari con origine coincidente con il Sole. La posizione del pianeta è identificata dal raggio vettore
-
-$$\vec{r} = r \, \hat{r} \ ,$$
-
-e la derivate dei versori radiale e azimuthale valgono
+Esprimendo la componente radiale dell'equazione del moto {eq}`eq:central:r-2:eom:coords` si ottiene un'equazione differenziale ordinaria lineare a coefficienti costanti del secondo ordine,
 
 $$\begin{aligned}
-\dot{\hat{r}}      & =   \dot{\theta} \hat{\theta} \\
-\dot{\hat{\theta}} & = - \dot{\theta} \hat{r} \\
+  & - m z^2 \frac{l^2}{m^2} z'' - m \frac{1}{z} \frac{l^2 z^4}{m^2} = c z^2 \\
 \end{aligned}$$
 
-La posizione, la velocità e l'accelerazione del pianeta possono essere scritte come
+$$ \quad \rightarrow \quad z'' + z = - \frac{m c }{l^2} \ ,$$
 
-$$\begin{aligned}
-\vec{r} & = r \, \hat{r} \\
-\vec{v} & = \dot{r} \, \hat{r} + r \dot{\theta} \, \hat{\theta} \\
-\vec{a} & = \left[ \ddot{r} - r \dot{\theta}^2 \right] \, \hat{r} +  \left[ 2 \dot{r} \dot{\theta} + r \ddot{\theta} \right] \, \hat{\theta}  \\
-\end{aligned}$$
+la cui soluzione è $z(\theta) = A \cos \theta + B \sin \theta - \frac{m c}{l^2}$ o, in termini del raggio $r$,
 
-La **velocità areolare**, $\vec{\Omega} = \frac{1}{2} \vec{r} \times \vec{v} $ è costante e uguale a 
+$$r(\theta) = \frac{1}{- \frac{m c}{l^2} + A \cos \theta + B \sin \theta} \ .$$
 
-$$\vec{\Omega} = \frac{1}{2} \frac{L}{m} \hat{k} = \frac{1}{2} r^2 \dot{\theta} \, \hat{k} \ .$$
 
-<!--
-Il **periodo** $T$
+```
 
-$$T = \frac{A}{\Omega} = \frac{\pi \, a \, b}{\Omega} \ .$$
--->
-
-Dall'espressione della velocità angolare costante, si può ricavare il legame tra $\dot{\theta}$ ed $r$,
-
-$$\dot{\theta} = \frac{\Omega}{r^2} \ .$$
-
-Usando le coordinate polari, l'equazione del moto $m \ddot{\vec{r}} = -G M m \frac{\vec{r}}{r^3}$ viene scritta in componenti,
-
-$$\begin{aligned}
-r      & : \ m (\ddot{r} - r\dot{\theta}^2) = - G M m \frac{1}{r^2} \\
-\theta & : \ m ( 2 \dot{r} \dot{\theta} + r \ddot{\theta}^2 ) = 0
-\end{aligned}$$
 
 **Traiettoria, $r(\theta)$.**
 Inserendo l'espressione $\dot{\theta} = \frac{\Omega}{r^2}$ nella componente radiale, e definendo la funzione $z = \frac{1}{r}$, le derivate nel tempo della coordinata radiale possono essere riscritte come
