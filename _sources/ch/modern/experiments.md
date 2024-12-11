@@ -233,7 +233,11 @@ $$v_{z, \infty}(E_2) - v_{z, \infty}(E_1) = \frac{E_2 - E_1}{c} q \qquad \righta
 ```{dropdown} Scattering
 :open:
 
+Gli esperimenti condotti da Geiger[^geiger] e Mardsen sotto la supervisione di Rutherford a Manchester consistono in esperimenti di scattering, in cui un raggio di particelle-$\alpha$[^alpha-particle]
 Si vuole studiare il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$, rispetto a un corpo di carica elettrica $Q$ (concorde per scattering) e soggetto al campo elettrico generato dalla carica $Q$ e quindi a una forza
+
+[^geiger]: Geiger quello del contatore di radiazioni, quello che gracchia
+[^alpha-particle]: particelle $\alpha$ sono isotopi di $\text{He}^{2+}$, cioè atomi di elio ai quali mancano due elettroni, quindi carichi positivamente. Questo è quello che interessa a noi qui. **todo** aggiungere riferimento a radioattività
 
 $$\vec{F} = \frac{q Q}{4 \pi \varepsilon} \frac{\vec{r}}{r^3} = c \, \frac{\vec{r}}{r^3} \ .$$
 
