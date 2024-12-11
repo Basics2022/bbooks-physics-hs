@@ -288,7 +288,7 @@ $$\sigma = r \, R^2 = \frac{h}{\sin \delta} \frac{dh}{d \delta}$$
 
 $$h = \frac{c}{m v_{\infty}^2} \frac{1}{\tan \frac{\delta}{2}}$$
 
-$$\frac{dh}{d \delta} = \frac{c}{m v_{\infty}^2} \frac{1}{\tan^2 \frac{\delta}{2}}$$
+$$\frac{dh}{d \delta} = - \frac{c}{m v_{\infty}^2} \frac{1}{\tan^2 \frac{\delta}{2}} \frac{1}{2} \frac{1}{\cos^2 \frac{\delta}{2}}$$
 
 
 
