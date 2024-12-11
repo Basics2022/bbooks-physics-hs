@@ -188,7 +188,7 @@ $$r(\theta) = \frac{\frac{l^2}{m|c|}}{-\text{sign}(c) + \sqrt{1 + 2 \frac{E l}{m
 L'espressione dell'eccentricità permette di stabilire il legame tra i valori delle costanti del moto $E$, $l$ e il tipo di conica che descrive la traiettoria
 
 $$\begin{array}{lcc}
-\textbf{Conica} & \textbf{e} & \textbf{E} \\
+\textbf{Conica} & \textbf{e} & \textbf{E} \\ \hline
 \text{circonferenza} & 0           & -\frac{m|c|^2}{2l^2} \\ 
 \text{ellisse}       & \in [0,1)   & \in \left[-\frac{m|c|^2}{2l^2}, 0 \right) \\ 
 \text{parabola}      & 1           & 0                    \\ 
