@@ -299,7 +299,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 $$
-\qquad \rightarrow \qquad \left(\frac{c}{2 m v_{\infty}^2}\right)^2 \frac{1}{\sin^4 \frac{\delta}{2}} \.
+\qquad \rightarrow \qquad \sigma^2 = \left(\frac{c}{2 m v_{\infty}^2}\right)^2 \frac{1}{\sin^4 \frac{\delta}{2}} \ .
 $$
 
 
