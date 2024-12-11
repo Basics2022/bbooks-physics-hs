@@ -294,7 +294,13 @@ $$\frac{dh}{d \delta} = - \frac{c}{m v_{\infty}^2} \frac{1}{\tan^2 \frac{\delta}
 
 Riscrivendo $\sin \delta = 2 \sin \frac{\delta}{2} \cos \frac{\delta}{2}$, la sezione d'urto diventa
 
-$$\sigma = - \frac{h}{\sin \delta} \frac{dh}{d\delta} = \frac{c}{m v_{\infty}^2} \frac{\cos \frac{\delta}{2}}{\sin \frac{\delta}{2}} \frac{1}{2 \sin \frac{\delta}{2} \cos \frac{\delta}{2}} \frac{c}{2 m v_{\infty}^2} \frac{1}{\sin^2 \frac{\delta}{2}}$$
+$$\begin{aligned}
+  \sigma & = - \frac{h}{\sin \delta} \frac{dh}{d\delta} = \frac{c}{m v_{\infty}^2} \frac{\cos \frac{\delta}{2}}{\sin \frac{\delta}{2}} \frac{1}{2 \sin \frac{\delta}{2} \cos \frac{\delta}{2}} \frac{c}{2 m v_{\infty}^2} \frac{1}{\sin^2 \frac{\delta}{2}} \\
+\end{aligned}$$
+
+$$
+\qquad \rightarrow \qquad \left(\frac{c}{2 m v_{\infty}^2}\right)^2 \frac{1}{\sin^4 \frac{\delta}{2}} \.
+$$
 
 
 
