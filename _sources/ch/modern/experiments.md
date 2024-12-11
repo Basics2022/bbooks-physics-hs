@@ -282,14 +282,19 @@ $$\delta = 2 \, \text{atan} \sqrt{ \frac{m c^2}{2 \frac{1}{2} m v_{\infty}^2 m^2
 
 **Sezione d'urto.**
 
-$$2 \pi h dh = 2 \pi R \, R \, \sin \delta d \delta r $$
+$$2 \pi h dh = - 2 \pi R \, R \, \sin \delta \, d \delta \, r $$
 
-$$\sigma = r \, R^2 = \frac{h}{\sin \delta} \frac{dh}{d \delta}$$
+con $r$ la densità relativa tra sezione di uscita e sezione di ingresso
+
+$$\sigma = r \, R^2 = - \frac{h}{\sin \delta} \frac{dh}{d \delta}$$
 
 $$h = \frac{c}{m v_{\infty}^2} \frac{1}{\tan \frac{\delta}{2}}$$
 
-$$\frac{dh}{d \delta} = - \frac{c}{m v_{\infty}^2} \frac{1}{\tan^2 \frac{\delta}{2}} \frac{1}{2} \frac{1}{\cos^2 \frac{\delta}{2}}$$
+$$\frac{dh}{d \delta} = - \frac{c}{m v_{\infty}^2} \frac{1}{\tan^2 \frac{\delta}{2}} \frac{1}{2} \frac{1}{\cos^2 \frac{\delta}{2}} = - \frac{c}{2 m v_{\infty}^2} \frac{1}{\sin^2 \frac{\delta}{2}} $$
 
+Riscrivendo $\sin \delta = 2 \sin \frac{\delta}{2} \cos \frac{\delta}{2}$, la sezione d'urto diventa
+
+$$\sigma = - \frac{h}{\sin \delta} \frac{dh}{d\delta} = \frac{c}{m v_{\infty}^2} \frac{\cos \frac{\delta}{2}}{\sin \frac{\delta}{2}} \frac{1}{2 \sin \frac{\delta}{2} \cos \frac{\delta}{2}} \frac{c}{2 m v_{\infty}^2} \frac{1}{\sin^2 \frac{\delta}{2}}$$
 
 
 

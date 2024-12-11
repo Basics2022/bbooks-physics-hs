@@ -859,13 +859,17 @@ Scattering<div class="sd-summary-down docutils">
 \[\delta = 2 \, \text{atan} \sqrt{ \frac{m c^2}{2 \frac{1}{2} m v_{\infty}^2 m^2 h^2 v_{\infty}^2} } = 2 \, \text{atan} \left( \frac{c}{m h v_{\infty}^2} \right) \]</div>
 <p class="sd-card-text"><strong>Sezione d’urto.</strong></p>
 <div class="math notranslate nohighlight">
-\[2 \pi h dh = 2 \pi R \, R \, \sin \delta d \delta r \]</div>
+\[2 \pi h dh = - 2 \pi R \, R \, \sin \delta \, d \delta \, r \]</div>
+<p class="sd-card-text">con <span class="math notranslate nohighlight">\(r\)</span> la densità relativa tra sezione di uscita e sezione di ingresso</p>
 <div class="math notranslate nohighlight">
-\[\sigma = r \, R^2 = \frac{h}{\sin \delta} \frac{dh}{d \delta}\]</div>
+\[\sigma = r \, R^2 = - \frac{h}{\sin \delta} \frac{dh}{d \delta}\]</div>
 <div class="math notranslate nohighlight">
 \[h = \frac{c}{m v_{\infty}^2} \frac{1}{\tan \frac{\delta}{2}}\]</div>
 <div class="math notranslate nohighlight">
-\[\frac{dh}{d \delta} = - \frac{c}{m v_{\infty}^2} \frac{1}{\tan^2 \frac{\delta}{2}} \frac{1}{2} \frac{1}{\cos^2 \frac{\delta}{2}}\]</div>
+\[\frac{dh}{d \delta} = - \frac{c}{m v_{\infty}^2} \frac{1}{\tan^2 \frac{\delta}{2}} \frac{1}{2} \frac{1}{\cos^2 \frac{\delta}{2}} = - \frac{c}{2 m v_{\infty}^2} \frac{1}{\sin^2 \frac{\delta}{2}} \]</div>
+<p class="sd-card-text">Riscrivendo <span class="math notranslate nohighlight">\(\sin \delta = 2 \sin \frac{\delta}{2} \cos \frac{\delta}{2}\)</span>, la sezione d’urto diventa</p>
+<div class="math notranslate nohighlight">
+\[\sigma = - \frac{h}{\sin \delta} \frac{dh}{d\delta} = \frac{c}{m v_{\infty}^2} \frac{\cos \frac{\delta}{2}}{\sin \frac{\delta}{2}} \frac{1}{2 \sin \frac{\delta}{2} \cos \frac{\delta}{2}} \frac{c}{2 m v_{\infty}^2} \frac{1}{\sin^2 \frac{\delta}{2}}\]</div>
 <p class="sd-card-text"><strong>todo</strong> <em>Finire esercizio (nel file sorgente ci sono linee commentate che possono essere utili); aggiungere immagini; calcolare sezione d’urto e distribuzione urti e confronto con risultati di Rutherford</em></p>
 <!--
 Si vuole studiare il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$, rispetto a un corpo di carica elettrica $Q$ (concorde per scattering) e soggetto al campo elettrico generato dalla carica $Q$ e quindi a una forza
