@@ -155,7 +155,7 @@ $$\begin{aligned}
 ```
 
 (physics-hs:mechanics:dynamics:motion:central:trajectory-el)=
-```{dropdown} Coefficienti della traiettoria in funzione dell'energia e del momento angolare
+```{dropdown} Equazione della traiettoria in funzione dell'energia e del momento angolare
 :open:
 
 $$
