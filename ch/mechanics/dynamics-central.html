@@ -682,8 +682,8 @@ Costanza dell’energia<div class="sd-summary-down docutils">
 <div class="math notranslate nohighlight">
 \[E = \frac{1}{2} m |\dot{\vec{r}}|^2 + \frac{c}{r} = \text{const.}\]</div>
 <p class="sd-card-text">L’energia meccanica può essere riscritta usando le coordiante polari <span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(\theta\)</span> e la costanza del momento angolare <span class="math notranslate nohighlight">\(\vec{l}\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
+<div class="math notranslate nohighlight" id="equation-eq-dynamics-central-r-2-energy">
+<span class="eqno">(10.3)<a class="headerlink" href="#equation-eq-dynamics-central-r-2-energy" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{aligned}
  E &amp; = \frac{1}{2} m |\dot{\vec{r}}|^2 + \frac{c}{r} = \\
    &amp; = \frac{1}{2} m \left( \dot{r}^2 + r^2 \dot{\theta}^2 \right) + \frac{c}{r} = \\
    &amp; = \frac{1}{2} m \dot{r}^2 + \frac{1}{2} \frac{l^2}{m r^2} + \frac{c}{r} \\
@@ -693,7 +693,7 @@ Costanza dell’energia<div class="sd-summary-down docutils">
 \[\vec{l} = l \hat{k} = m \vec{r} \times \vec{v} = m r^2 \dot{\theta} \hat{k} \ ,\]</div>
 <p class="sd-card-text">per poter esprimere la derivata nel tempo dell’angolo <span class="math notranslate nohighlight">\(\theta\)</span> in fuzione del momento angolare <span class="math notranslate nohighlight">\(l\)</span>, e del raggio <span class="math notranslate nohighlight">\(r\)</span></p>
 <div class="math notranslate nohighlight" id="equation-eq-theta-ang-mom">
-<span class="eqno">(10.3)<a class="headerlink" href="#equation-eq-theta-ang-mom" title="Permalink a questa equazione">#</a></span>\[\dot{\theta} = \frac{l}{m r^2} \ .\]</div>
+<span class="eqno">(10.4)<a class="headerlink" href="#equation-eq-theta-ang-mom" title="Permalink a questa equazione">#</a></span>\[\dot{\theta} = \frac{l}{m r^2} \ .\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" id="physics-hs-mechanics-dynamics-motion-central-trajectory">
 <summary class="sd-summary-title sd-card-header">
@@ -702,7 +702,7 @@ Traiettorie e coniche<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Si cerca la traiettoria <span class="math notranslate nohighlight">\(r(\theta)\)</span> descritta nel moto del corpo. L’equazione del moto assume una forma semplice da risolvere dopo aver introdotto la funzione <span class="math notranslate nohighlight">\(z = \frac{1}{r}\)</span>. Si calcolano le derivate sfruttando l’espressione della funzione <span class="math notranslate nohighlight">\(z\)</span>, e l’espressione <a class="reference internal" href="#equation-eq-theta-ang-mom">(10.3)</a> della derivata della coordinata angolare</p>
+<p class="sd-card-text">Si cerca la traiettoria <span class="math notranslate nohighlight">\(r(\theta)\)</span> descritta nel moto del corpo. L’equazione del moto assume una forma semplice da risolvere dopo aver introdotto la funzione <span class="math notranslate nohighlight">\(z = \frac{1}{r}\)</span>. Si calcolano le derivate sfruttando l’espressione della funzione <span class="math notranslate nohighlight">\(z\)</span>, e l’espressione <a class="reference internal" href="#equation-eq-theta-ang-mom">(10.4)</a> della derivata della coordinata angolare</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
    \dot{r} &amp; = -\frac{1}{z^2} z'(\theta) \dot{\theta} = -\frac{1}{z^2} \frac{l}{m r^2} z'(\theta) = - \frac{l}{m} z'(\theta) \\
@@ -727,7 +727,7 @@ Traiettorie e coniche<div class="sd-summary-down docutils">
 \end{split}\]</div>
 <p class="sd-card-text">per riscrivere l’equazione</p>
 <div class="math notranslate nohighlight" id="equation-eq-trajectory-conics">
-<span class="eqno">(10.4)<a class="headerlink" href="#equation-eq-trajectory-conics" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{aligned}
+<span class="eqno">(10.5)<a class="headerlink" href="#equation-eq-trajectory-conics" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{aligned}
  r(\theta)
   &amp; = \frac{1}{-\frac{m c}{l^2} + \sqrt{A^2 + B^2} \cos(\theta-\phi) } = \\
   &amp; = \frac{ \frac{l^2}{m|c|} }{ - \text{sign}(c) + \frac{l^2}{m |c|} \sqrt{A^2 + B^2} \cos(\theta-\phi)} = \\
@@ -741,13 +741,13 @@ Equazione della traiettoria in funzione dell’energia e del momento angolare<di
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Manipolando i risultati ottenuti, si vuole esprimere l’equazione della traiettoria <a class="reference internal" href="#equation-eq-trajectory-conics">(10.4)</a> in termini delle costanti del moto, l’energia <span class="math notranslate nohighlight">\(E\)</span> e il momento angolare <span class="math notranslate nohighlight">\(l\)</span>. Si valuta la derivata nel tempo dell’equazione <a class="reference internal" href="#equation-eq-trajectory-conics">(10.4)</a></p>
+<p class="sd-card-text">Manipolando i risultati ottenuti, si vuole esprimere l’equazione della traiettoria <a class="reference internal" href="#equation-eq-trajectory-conics">(10.5)</a> in termini delle costanti del moto, l’energia <span class="math notranslate nohighlight">\(E\)</span> e il momento angolare <span class="math notranslate nohighlight">\(l\)</span>. Si valuta la derivata nel tempo dell’equazione <a class="reference internal" href="#equation-eq-trajectory-conics">(10.5)</a></p>
 <div class="math notranslate nohighlight">
 \[
 \dot{r} = \frac{ - e^2 d \sin(\theta-\phi) }{\left( -\text{sign}(c) + e \cos(\theta-\phi) \right)^2} \dot{\theta}
 = - \frac{r^2}{d}  \frac{l}{m r^2} \sin(\theta-\phi) = - \frac{l}{m d} \sin(\theta-\phi)
 \]</div>
-<p class="sd-card-text">con <span class="math notranslate nohighlight">\(d = \frac{1}{\sqrt{A^2 + B^2}}\)</span>, <span class="math notranslate nohighlight">\(ed = \frac{l^2}{m |c|}\)</span>, e si inserisce nell’espressione dell’energia</p>
+<p class="sd-card-text">con <span class="math notranslate nohighlight">\(d = \frac{1}{\sqrt{A^2 + B^2}}\)</span>, <span class="math notranslate nohighlight">\(ed = \frac{l^2}{m |c|}\)</span>, e si inserisce nell’espressione dell’energia <a class="reference internal" href="#equation-eq-dynamics-central-r-2-energy">(10.3)</a></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
   E &amp; = \frac{1}{2} m \dot{r}^2 + \frac{1}{2} \frac{l^2}{m r^2} + \frac{c}{r} = \\
@@ -757,12 +757,12 @@ Equazione della traiettoria in funzione dell’energia e del momento angolare<di
      - \frac{m c^2}{2 l^2} = \\ 
     &amp; = \frac{l^2}{2md^2} - \frac{m c^2}{2 l^2} \ ,
 \end{aligned}\end{split}\]</div>
-<p class="sd-card-text">e quindi si ricavano i coefficienti dell’equazione generale delle coniche in funzione dei parametri fisici del problema,</p>
+<p class="sd-card-text">per ricavare i coefficienti dell’equazione generale delle coniche in funzione dei parametri fisici del problema,</p>
 <div class="math notranslate nohighlight">
-\[\begin{aligned}
-  \frac{1}{d^2} &amp; = \frac{2m}{l^2} \left( E + \frac{m c^2}{2 l^2} \right) 
+\[\begin{split}\begin{aligned}
+  \frac{1}{d^2} &amp; = \frac{2m}{l^2} \left( E + \frac{m c^2}{2 l^2} \right) \\ 
   e &amp; = \frac{l^2}{m |c|} \frac{1}{d} = \frac{l^2}{m |c|}\frac{m|c|}{l^2} \sqrt{1 + \frac{2 E l^2}{m |c|^2}} =  \sqrt{1 + \frac{2 E l^2}{m |c|^2}}
-\end{aligned}\]</div>
+\end{aligned}\end{split}\]</div>
 <p class="sd-card-text">L’equazione delle coniche può quindi essere riscritta come</p>
 <div class="math notranslate nohighlight">
 \[r(\theta) = \frac{\frac{l^2}{m|c|}}{-\text{sign}(c) + \sqrt{1 + 2 \frac{E l}{m|c|^2}} \cos(\theta-\phi)} \ .\]</div>

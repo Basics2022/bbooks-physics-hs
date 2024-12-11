@@ -101,7 +101,7 @@ $$\begin{aligned}
  E & = \frac{1}{2} m |\dot{\vec{r}}|^2 + \frac{c}{r} = \\
    & = \frac{1}{2} m \left( \dot{r}^2 + r^2 \dot{\theta}^2 \right) + \frac{c}{r} = \\
    & = \frac{1}{2} m \dot{r}^2 + \frac{1}{2} \frac{l^2}{m r^2} + \frac{c}{r} \\
-\end{aligned}$$
+\end{aligned}$$ (eq:dynamics:central:r-2:energy)
 
 dopo aver espresso il momento angolare in coordinate polari 
 
@@ -164,7 +164,7 @@ $$
 = - \frac{r^2}{d}  \frac{l}{m r^2} \sin(\theta-\phi) = - \frac{l}{m d} \sin(\theta-\phi)
 $$
 
-con $d = \frac{1}{\sqrt{A^2 + B^2}}$, $ed = \frac{l^2}{m |c|}$, e si inserisce nell'espressione dell'energia 
+con $d = \frac{1}{\sqrt{A^2 + B^2}}$, $ed = \frac{l^2}{m |c|}$, e si inserisce nell'espressione dell'energia {eq}`eq:dynamics:central:r-2:energy`
 
 $$\begin{aligned}
   E & = \frac{1}{2} m \dot{r}^2 + \frac{1}{2} \frac{l^2}{m r^2} + \frac{c}{r} = \\
@@ -175,10 +175,10 @@ $$\begin{aligned}
     & = \frac{l^2}{2md^2} - \frac{m c^2}{2 l^2} \ ,
 \end{aligned}$$
 
-e quindi si ricavano i coefficienti dell'equazione generale delle coniche in funzione dei parametri fisici del problema,
+per ricavare i coefficienti dell'equazione generale delle coniche in funzione dei parametri fisici del problema,
 
 $$\begin{aligned}
-  \frac{1}{d^2} & = \frac{2m}{l^2} \left( E + \frac{m c^2}{2 l^2} \right) 
+  \frac{1}{d^2} & = \frac{2m}{l^2} \left( E + \frac{m c^2}{2 l^2} \right) \\ 
   e & = \frac{l^2}{m |c|} \frac{1}{d} = \frac{l^2}{m |c|}\frac{m|c|}{l^2} \sqrt{1 + \frac{2 E l^2}{m |c|^2}} =  \sqrt{1 + \frac{2 E l^2}{m |c|^2}}
 \end{aligned}$$
 
