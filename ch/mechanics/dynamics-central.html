@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>9. Inerzia &#8212; Fisica per le superiori</title>
+    <title>10.7. Moti centrali &#8212; Fisica per le superiori</title>
   
   
   
@@ -65,12 +65,14 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/inertia';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/dynamics-central';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="9.3. Inerzia e grandezze dinamiche di un punto" href="inertia-point.html" />
-    <link rel="prev" title="8.4. Problemi" href="statics-problems.html" />
+    <link rel="next" title="10.8. Problemi" href="dynamics-problems.html" />
+    <link rel="prev" title="10.6. Gravitazione" href="dynamics-motion-gravitation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -214,14 +216,14 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="statics-problems.html">8.4. Problemi</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">9. Inerzia</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="inertia.html">9. Inerzia</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="inertia-point.html">9.3. Inerzia e grandezze dinamiche di un punto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="inertia-points.html">9.4. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione discreta di massa</a></li>
 <li class="toctree-l2"><a class="reference internal" href="inertia-continuum.html">9.5. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa</a></li>
 <li class="toctree-l2"><a class="reference internal" href="inertia-problems.html">9.6. Problemi</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="dynamics.html">10. Dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="dynamics.html">10. Dinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="dynamics-principles.html">10.1. Princìpi della dinamica di Newton</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="dynamics-eom.html">10.2. Equazioni cardinali della dinamica per sistemi chiusi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-point.html">10.2.1. Equazioni cardinali della dinamica per un punto</a></li>
@@ -233,7 +235,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="dynamics-eom-open.html">10.4. Equazioni cardinali della dinamica per sistemi aperti</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-collisions.html">10.5. Collisioni</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-motion-gravitation.html">10.6. Gravitazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-central.html">10.7. Moti centrali</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">10.7. Moti centrali</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-problems.html">10.8. Problemi</a></li>
 </ul>
 </li>
@@ -432,7 +434,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/edit/master/ch/mechanics/inertia.md" target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/edit/master/ch/mechanics/dynamics-central.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -449,7 +451,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/mechanics/inertia.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/mechanics/dynamics-central.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Apri un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -479,7 +481,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/mechanics/inertia.md" target="_blank"
+      <li><a href="../../_sources/ch/mechanics/dynamics-central.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -563,7 +565,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Inerzia</h1>
+    <h1>Moti centrali</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -573,8 +575,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#massa-e-distribuzione-di-massa">9.1. Massa e distribuzione di massa</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantita-dinamiche">9.2. Quantità dinamiche</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-coniche-ed-energia">10.7.1. Traiettorie, coniche, ed energia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-chiuse-e-leggi-di-keplero">10.7.2. Traiettorie chiuse e leggi di Keplero</a></li>
 </ul>
             </nav>
         </div>
@@ -586,50 +588,183 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="sd-container-fluid sd-sphinx-override sd-p-0 sd-mt-2 sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-2 sd-gx-2 sd-gy-1 docutils">
-<div class="sd-col sd-d-flex-row sd-align-minor-center docutils">
-<div class="sd-container-fluid sd-sphinx-override docutils">
-<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-gx-3 sd-gy-1 docutils">
-<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0">basics</p>
-</div>
-<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>11 dic 2024</p>
-</div>
-<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>1 min read</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="inerzia">
-<span id="physics-hs-mechanics-inertia"></span><h1><span class="section-number">9. </span>Inerzia<a class="headerlink" href="#inerzia" title="Permalink to this heading">#</a></h1>
-<div class="section" id="massa-e-distribuzione-di-massa">
-<h2><span class="section-number">9.1. </span>Massa e distribuzione di massa<a class="headerlink" href="#massa-e-distribuzione-di-massa" title="Permalink to this heading">#</a></h2>
-<p>La massa è la grandezza fisica che rappresenta la quantità di materia (<strong>todo</strong> <em>Non confonderla con la mole, definita come quantità di sostanza, una volta affermatasi la teoria atomica</em>)</p>
-<p>In meccanica classica, la può essere definita in maniera operativa:</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="moti-centrali">
+<span id="physics-hs-mechanics-dynamics-motion-central"></span><h1><span class="section-number">10.7. </span>Moti centrali<a class="headerlink" href="#moti-centrali" title="Permalink to this heading">#</a></h1>
+<p>In meccanica, un moto centrale è definito come il moto di un corpo soggetto a un campo di forze con simmetria sferica rispetto a un punto <span class="math notranslate nohighlight">\(C\)</span>. Scegliendo questo punto come oridine di un sistema di riferimento, ogni punto dello spazio risulta determinato dal raggio vettore <span class="math notranslate nohighlight">\(\vec{r}\)</span> tra il centro e il punto. Un campo di forze centrale può essere scritto come</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}(\vec{r}) = F_r(|\vec{r}|) \hat{r} \ ,\]</div>
+<p>cioè la forza ha direzione radiale e la sua intensità dipende solo dalla distanza dal centro.</p>
+<p><strong>Esempi.</strong> Alcuni esempi che possono essere rappresentati come moti centrali sono:</p>
 <ul class="simple">
-<li><p>tramite la sua <a class="reference internal" href="actions-examples.html#physics-hs-mechanics-actions-gravitation"><span class="std std-ref">interazione gravitazionale</span></a> con altri corpi dotati di massa</p></li>
-<li><p>come una misura della resistenza di un sistema ai cambiamenti del suo stato di moto in risposta a una forza applicata, come sarà chiaro dalle equazioni della <a class="reference internal" href="dynamics.html#physics-hs-mechanics-dynamics"><span class="std std-ref">dinamica</span></a></p></li>
+<li><p>il moto di una massa vincolata a terra con una molla, <span class="math notranslate nohighlight">\(\vec{F} = - k r \hat{r}\)</span></p></li>
+<li><p>il moto di due corpi con massa soggetti alla mutua interazione gravitazionale, <span class="math notranslate nohighlight">\(\vec{F} = - G m_1 m_2\frac{\vec{r}}{|\vec{r}|^3}\)</span></p></li>
+<li><p>il moto di due corpi con carica elettrica soggetti alla mutua interazione elettrica, <span class="math notranslate nohighlight">\(\vec{F} = \frac{q_1 q_2}{4\pi\varepsilon} \frac{\vec{r}}{|\vec{r}|^3}\)</span></p></li>
+</ul>
+<p>Nel primo caso, l’intensità della forza ha una dipendenza lineare con la distanza dal centro; negli altri due casi, l’intensità della forza è inversamente proporzionale al quadrato della distanza dal centro. Si noti la (quasi) uguaglianza formale tra l’interazione gravitazionale soggetta alla legge di gravitazione universale di Newton e l’interazione elettrica soggetta alla forza di Coulomb. I due casi hanno però una differenza fondamentale: nel caso di interazione gravitazionale due corpi si attraggono sempre, nel caso di interazione elettrica, due corpi con carica di segno opposto si attraggono mentre due corpi con carica di segno uguale si respingono.</p>
+<p>In meccanica classica, il problema dei due corpi si riferisce alla dinamica di un sistema formato da due corpi puntiformi soggetti unicamente alla mutua interazione gravitazionale, descritta dalla legge di gravitazione universale di Newton.</p>
+<p>Il sistema formato dai due punti è un sistema chiuso e isolato, sul quale non agiscono azioni esterne. La quantità di moto rispetto a un sistema di riferimento inerziale rimane quindi costante. Rimane quindi costante la velocità del centro di massa <span class="math notranslate nohighlight">\(G\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[G = \frac{m_0 \, P_0 + m_1 \, P_1}{m_0 + m_1} \ ,\]</div>
+<p>ed è possibile definire un sistema di riferimento inerziale con origine nel centro di massa del sistema. Il raggio vettore tra i due corpi può quindi essere riscritto,</p>
+<div class="math notranslate nohighlight">
+\[P_1 - G = P_1 - \frac{m_0 \, P_0 + m_1 \, P_1}{m_0 + m_1} = \frac{ - m_0 \, P_0 + m_0 \, P_1}{m_0 + m_1} = \frac{m_0}{m_0 + m_1}(P_1 - P_0) \ .\]</div>
+<p>L’equazione del moto per il corpo <span class="math notranslate nohighlight">\(1\)</span> nel sistema di riferimento inerziale con origine in <span class="math notranslate nohighlight">\(G\)</span> segue il secondo principio della dinamica. L’equazione del moto può essere scritto in termini del raggio vettore tra corpo <span class="math notranslate nohighlight">\(1\)</span> e centro di massa,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  m_1 \dfrac{d^2}{dt^2}(P_1-G) &amp; = - G m_0 m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} = \\
+                               &amp; = - G \dfrac{(m_0 + m_1)^2}{m_0} m_1 \frac{P_1 - G}{|P_1 - G|^3} 
+\end{aligned}\end{split}\]</div>
+<p>o in termini del raggio vettore tra i due corpi <span class="math notranslate nohighlight">\(P_1 - P_0\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+  \frac{m_0 m_1}{m_0 + m_1} \dfrac{d^2}{dt^2}(P_1-P_0) = - G m_0 m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} 
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+  m_1 \dfrac{d^2}{dt^2}(P_1-P_0) = - G ( m_0 + m_1 ) m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} 
+\]</div>
+<p>Le equazioni del moto in questi due sistemi di riferimento possono essere scritte nella forma</p>
+<div class="math notranslate nohighlight">
+\[m_1 \, \ddot{\vec{r}} = - G M m_1 \frac{\vec{r}}{r^3} \ .\]</div>
+<div class="section" id="traiettorie-coniche-ed-energia">
+<h2><span class="section-number">10.7.1. </span>Traiettorie, coniche, ed energia<a class="headerlink" href="#traiettorie-coniche-ed-energia" title="Permalink to this heading">#</a></h2>
+<p>E” possibile dimostrare che il moto di ognuno dei due corpi è un moto piano, e che la traiettoria avviene descrive una conica.</p>
+<ul class="simple">
+<li><p><strong>todo</strong> Dimostrare che il moto è piano</p></li>
+<li><p><strong>todo</strong> Dimostrare che la traiettoria è una conica</p></li>
+</ul>
+<p>Il tipo di curva conica dipende da una grandezza scalare che può essere ricondotta a un’energia. Il prodotto scalare della velocità <span class="math notranslate nohighlight">\(\dot{\vec{r}}\)</span> con l’equazione del moto, permette di ricavare un principio di conservazione dell’energia,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  0 &amp; = \dot{\vec{r}} \cdot \left( m \ddot{\vec{r}} + G M m \frac{\vec{r}}{r^3} \right) = \\
+    &amp; = \dfrac{d}{dt} \left( \frac{1}{2} m \left|\dot{\vec{r}}\right|^2 - G M m \frac{1}{r}\right) = \dfrac{d E^{mec}}{dt}
+\end{aligned}\end{split}\]</div>
+<p>Usando il sistema di coordinate polari, e la costanza della velocità angolare <span class="math notranslate nohighlight">\(\Omega = \frac{1}{2}{r^2}{\dot{\theta}}\)</span>, si può scrivere</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \frac{E^{mec}}{m} &amp; = \frac{1}{2} \dot{r}^2 + \frac{1}{2} r^2 \dot{\theta}^2 - \frac{G M}{r} = \\
+                    &amp; = \frac{1}{2} \dot{r}^2 + 2 \frac{\Omega^2}{r^2} - \frac{G M}{r} = \\
+                    &amp; = \frac{1}{2} \dot{r}^2 + v_r(r) \ .
+\end{aligned}\end{split}\]</div>
+<p>Poiché <span class="math notranslate nohighlight">\(\frac{1}{2}\dot{r}^2 \ge 0\)</span>, il moto è possibile per tutti i valori di <span class="math notranslate nohighlight">\(r\)</span> tali che <span class="math notranslate nohighlight">\(\frac{E}{m} \ge v_r(r)\)</span>. Il valore di <span class="math notranslate nohighlight">\(E\)</span> identifica le traiettorie. <strong>todo</strong> <em>aggiungere grafici</em></p>
+<ul class="simple">
+<li><p>esiste un valore minimo di <span class="math notranslate nohighlight">\(E\)</span>: questo valore è associato a un’orbita circolare</p></li>
+<li><p>per <span class="math notranslate nohighlight">\(E_{min} \le E \le 0\)</span> esistono due soluzioni dell’equazione <span class="math notranslate nohighlight">\(\frac{E}{m} - v_r(r) = 0\)</span>: orbite chiuse, ellittiche o circolari (per <span class="math notranslate nohighlight">\(E = E_{min}\)</span>)</p></li>
+<li><p><span class="math notranslate nohighlight">\(E = 0\)</span> è un caso limite che separa le orbite chiuse e le orbite aperte: a <span class="math notranslate nohighlight">\(E = 0\)</span> è associata un’orbita parabolica</p></li>
+<li><p>per <span class="math notranslate nohighlight">\(E &gt; 0\)</span> le orbite aperte sono iperboliche</p></li>
 </ul>
 </div>
-<div class="section" id="quantita-dinamiche">
-<h2><span class="section-number">9.2. </span>Quantità dinamiche<a class="headerlink" href="#quantita-dinamiche" title="Permalink to this heading">#</a></h2>
-<p>Come sarà chiaro nello sviluppo delle <a class="reference internal" href="dynamics-eom-proof-points.html#physics-hs-mechanics-dynamics-eom-points"><span class="std std-ref">equazioni di moto di un sistema</span></a>, la definizione di alcune grandezze dinamiche additive risulta naturale, fornendo dei concetti utili e sintetici per la costruzione di un modello e l’interpretazione dei fenomeni fisici.</p>
-<p>Queste grandezze dinamiche combinano la massa e la sua distribuzione con le grandezze cinematiche del sistema. In particolare, risulta utile definire tre grandezze:</p>
-<ul class="simple">
-<li><p>quantità di moto</p></li>
-<li><p>momento della quantità di moto</p></li>
-<li><p>energia cinetica</p></li>
-</ul>
-<p>Le <a class="reference internal" href="dynamics-eom.html#physics-hs-mechanics-dynamics-eom"><span class="std std-ref">equazioni del moto</span></a> dei sistemi rappresentano delle equazioni differenziali che mettono in relazione la variazione di queste quantità dinamiche con la causa di queste variazioni, in generale riconducibile ad <a class="reference internal" href="actions.html#physics-hs-mechanics-actions"><span class="std std-ref">azioni</span></a> agenti sul sistema.</p>
-<p>Sotto opportune ipotesi, queste grandezze dinamiche sono costanti del moto, come descritto dalle <a class="reference internal" href="dynamics-conservation.html#physics-hs-mechanics-dynamics-conservation"><span class="std std-ref">leggi di conservazione</span></a>.</p>
-<p>Le 3 grandezze dinamiche possono avere espressioni diverse, a seconda del sistema di interesse. Nel caso di corpi rigidi, queste possono essere espresse in termini di velocità di un punto materiale e della velocità angolare del corpo.</p>
-</div>
-<div class="toctree-wrapper compound">
+<div class="section" id="traiettorie-chiuse-e-leggi-di-keplero">
+<h2><span class="section-number">10.7.2. </span>Traiettorie chiuse e leggi di Keplero<a class="headerlink" href="#traiettorie-chiuse-e-leggi-di-keplero" title="Permalink to this heading">#</a></h2>
+<p><strong>Prima legge.</strong> Un pianeta descrive un’orbita ellittica attorno al Sole, che si trova in uno dei due fuochi.</p>
+<p><strong>Seconda legge legge.</strong> Considerando l’area descritta dal moto del pianeta attorno al Sole, la velocità angolare è costante lungo la traiettoria.</p>
+<p><strong>Terza legge.</strong> In un sistema di pianeti, il quadrato del periodo delle orbite descritte dai pianeti è proporzionale al cubo del semiasse maggiore della traiettoria, <span class="math notranslate nohighlight">\(T^2 \propto a^3\)</span>.</p>
+<p><span style="color:red"><strong>todo</strong> rispetto a quale sistema di riferimento? Serve l’approssimazione che la massa del Sole sia <span class="math notranslate nohighlight">\(&gt;&gt;\)</span> delle masse dei pianeti, se si considera inerziale un sistema di coordinate con origine nel Sole? O bisogna/si può usare un sistema inerziale con origine nel centro di massa del sistema (considerato isolato)</span></p>
+<p><strong>Moto piano.</strong> Siano <span class="math notranslate nohighlight">\(\vec{r}\)</span>, <span class="math notranslate nohighlight">\(\vec{v}\)</span> la posizione e la velocità del pianeta rispetto al Sole. La forza di gravità agente sul pianeta è</p>
+<div class="math notranslate nohighlight">
+\[\vec{F} = - G M m \frac{\vec{r}}{r^3} \ .\]</div>
+<p>E” facile dimostrare che il moto è piano, cioè che la posizione e la velocità del pianeta sono sempre ortogonali a una direzione costante.</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt} \left( \vec{r} \times \vec{v} \right) = \underbrace{\vec{v} \times \vec{v}}_{=\vec{0}} + \vec{r} \times \vec{a}  = - G M m \underbrace{\vec{r} \times \frac{\vec{r}}{r^3}}_{=\vec{0}} = \vec{0} \ .\]</div>
+<p>Poiché il vettore <span class="math notranslate nohighlight">\(\vec{r} \times \vec{v} =: \frac{L}{m} \hat{k}\)</span> è costante, è costante sia il suo valore assoluto sia la sua direzione: affinché <span class="math notranslate nohighlight">\(\vec{r} \times \vec{v}\)</span> sia allineato con <span class="math notranslate nohighlight">\(\hat{k}\)</span>, i vettori <span class="math notranslate nohighlight">\(\vec{r}\)</span>, <span class="math notranslate nohighlight">\(\vec{v}\)</span> devono essere ortogonali a <span class="math notranslate nohighlight">\(\hat{k}\)</span>.</p>
+<p><strong>Coordinate polari.</strong> Per descrivere il moto piano di un punto, si può usare un sistema di coordinate 2-dimensionale. Si sceglie un sistema di coordinate polari con origine coincidente con il Sole. La posizione del pianeta è identificata dal raggio vettore</p>
+<div class="math notranslate nohighlight">
+\[\vec{r} = r \, \hat{r} \ ,\]</div>
+<p>e la derivate dei versori radiale e azimuthale valgono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\dot{\hat{r}}      &amp; =   \dot{\theta} \hat{\theta} \\
+\dot{\hat{\theta}} &amp; = - \dot{\theta} \hat{r} \\
+\end{aligned}\end{split}\]</div>
+<p>La posizione, la velocità e l’accelerazione del pianeta possono essere scritte come</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\vec{r} &amp; = r \, \hat{r} \\
+\vec{v} &amp; = \dot{r} \, \hat{r} + r \dot{\theta} \, \hat{\theta} \\
+\vec{a} &amp; = \left[ \ddot{r} - r \dot{\theta}^2 \right] \, \hat{r} +  \left[ 2 \dot{r} \dot{\theta} + r \ddot{\theta} \right] \, \hat{\theta}  \\
+\end{aligned}\end{split}\]</div>
+<p>La <strong>velocità areolare</strong>, <span class="math notranslate nohighlight">\(\vec{\Omega} = \frac{1}{2} \vec{r} \times \vec{v} \)</span> è costante e uguale a</p>
+<div class="math notranslate nohighlight">
+\[\vec{\Omega} = \frac{1}{2} \frac{L}{m} \hat{k} = \frac{1}{2} r^2 \dot{\theta} \, \hat{k} \ .\]</div>
+<!--
+Il **periodo** $T$
+
+$$T = \frac{A}{\Omega} = \frac{\pi \, a \, b}{\Omega} \ .$$
+-->
+<p>Dall’espressione della velocità angolare costante, si può ricavare il legame tra <span class="math notranslate nohighlight">\(\dot{\theta}\)</span> ed <span class="math notranslate nohighlight">\(r\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\dot{\theta} = \frac{\Omega}{r^2} \ .\]</div>
+<p>Usando le coordinate polari, l’equazione del moto <span class="math notranslate nohighlight">\(m \ddot{\vec{r}} = -G M m \frac{\vec{r}}{r^3}\)</span> viene scritta in componenti,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+r      &amp; : \ m (\ddot{r} - r\dot{\theta}^2) = - G M m \frac{1}{r^2} \\
+\theta &amp; : \ m ( 2 \dot{r} \dot{\theta} + r \ddot{\theta}^2 ) = 0
+\end{aligned}\end{split}\]</div>
+<p><strong>Traiettoria, <span class="math notranslate nohighlight">\(r(\theta)\)</span>.</strong>
+Inserendo l’espressione <span class="math notranslate nohighlight">\(\dot{\theta} = \frac{\Omega}{r^2}\)</span> nella componente radiale, e definendo la funzione <span class="math notranslate nohighlight">\(z = \frac{1}{r}\)</span>, le derivate nel tempo della coordinata radiale possono essere riscritte come</p>
+<div class="math notranslate nohighlight">
+\[\dot{r} = -\frac{1}{z^2}\frac{d z}{d \theta} \dot{\theta} = -\Omega \frac{dz}{d\theta} \]</div>
+<div class="math notranslate nohighlight">
+\[\ddot{r} = \dot{\theta} \frac{d}{d \theta} \left( - \Omega \frac{dz}{d \theta} \right) = - z^2 \Omega^2 z''(\theta)\]</div>
+<p>e la componente radiale dell’equazione di moto,</p>
+<div class="math notranslate nohighlight">
+\[-z^2 \Omega^2 z'' - z^3 \Omega^2 = - G M z^2\]</div>
+<div class="math notranslate nohighlight">
+\[ z'' + z  = \frac{G M}{\Omega^2}\]</div>
+<div class="math notranslate nohighlight">
+\[z(\theta) = \frac{G M}{\Omega^2} + A \cos(\theta) + B \sin(\theta) \ .\]</div>
+<p>e quindi</p>
+<div class="math notranslate nohighlight">
+\[r(\theta) = \frac{\Omega^2}{G M}\frac{1}{1 + A \dfrac{\, \Omega^2}{GM} \cos \theta + B \dfrac{\, \Omega^2}{GM} \sin \theta}\]</div>
+<p>Scelta della direzione di riferimento: direzione del perielio: <span class="math notranslate nohighlight">\(r(\theta=0) = \min r\)</span>, <span class="math notranslate nohighlight">\(B = 0\)</span>,</p>
+<p>Scelte diverse si ottengono da una trasformazione di coordinate con una rotazione dell’asse di riferimento: <span class="math notranslate nohighlight">\(\theta_1 = \theta - \theta_0\)</span>, e quindi</p>
+<div class="math notranslate nohighlight">
+\[r(\theta) = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos \theta} = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos (\theta_1 + \theta_0 )} = \frac{\Omega^2}{GM}\frac{1}{1 + \underbrace{\frac{A\Omega^2}{GM} \cos \theta_0}_{= A_1} \cos \theta_1 \underbrace{- \frac{A \Omega^2}{GM} \sin \theta_0}_{= B_1} \sin \theta_1 }\]</div>
+<p>Il confronto con l’equazione delle coniche in coordinate polari, permette di riconoscere l’eccentricità, <span class="math notranslate nohighlight">\(e\)</span> e il prodotto <span class="math notranslate nohighlight">\(e \, D\)</span> dell’eccentricità per la distanza <span class="math notranslate nohighlight">\(D\)</span> tra fuoco e direttrice,</p>
+<div class="math notranslate nohighlight">
+\[e = \frac{A \Omega^2}{GM} \qquad , \qquad e \, D = \frac{\Omega^2}{GM}\]</div>
+<div class="math notranslate nohighlight">
+\[r(\theta) = \frac{\Omega^2}{GM}\frac{1}{1 + \frac{A\Omega^2}{GM} \cos \theta}\]</div>
+<div class="math notranslate nohighlight">
+\[r(\theta) = \frac{e \, D}{1 + e \, \cos \theta}\]</div>
+<!--
+$$e = - \frac{A \Omega^2}{GM}$$
+$$e D = \frac{\Omega^2}{GM}$$
+$$D= -\frac{1}{A}$$
+
+$$c = \frac{e^2}{1-e^2} D$$
+$$a = \frac{c}{e} = \frac{e}{1-e^2} D$$
+$$b = \sqrt{a^2 - c^2} = \sqrt{\frac{1 - e^2}{e^2}} c = \sqrt{\frac{1 - e^2}{e^2}}  \frac{e^2}{1-e^2} D = \frac{e D}{\sqrt{1-e^2}} = a \, \sqrt{1-e^2} $$
+-->
+<p>Poiché la velocità areolare è costante, il periodo dell’orbita è uguale al raggporto tra l’area dell’ellisse e la velocità areaolare,</p>
+<div class="math notranslate nohighlight">
+\[T = \frac{\pi a b}{\Omega} = \pi \frac{a^2 \sqrt{1-e^2}}{\Omega} = \]</div>
+<div class="math notranslate nohighlight">
+\[1-e^2 = 1 - \left(\frac{A \Omega^2}{GM} \right)^2 = \frac{\Omega^2}{GM \, a} \]</div>
+<div class="math notranslate nohighlight">
+\[\rightarrow \qquad \frac{\sqrt{1-e^2}}{\Omega} = \frac{1}{\sqrt{GM} \sqrt{a}}\]</div>
+<div class="math notranslate nohighlight">
+\[\rightarrow \qquad T = \pi \frac{a^{\frac{3}{2}}}{\sqrt{GM}}\]</div>
+<div class="math notranslate nohighlight">
+\[
+ 2a = \frac{\Omega^2}{GM+A \Omega^2} + \frac{\Omega^2}{GM-A \Omega^2} 
+    = \Omega^2 \frac{2 GM }{(GM)^2 - A^2 \Omega^4}
+\]</div>
+<div class="math notranslate nohighlight">
+\[A^2 \Omega^4 = (GM)^2 - \frac{GM \, \Omega^2}{a}\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{\Omega^2}{GM}\frac{1}{a} = 1 - \left(\frac{A \Omega^2}{GM}\right)^2\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{1}{a} = \left( 1 - \left(\frac{A \Omega^2}{GM}\right)^2 \right) \frac{GM}{\Omega^2}\]</div>
+<!--
+Il semiasse maggiore è dato da
+
+$$\begin{aligned}
+a & = \frac{1}{2} \left( r(0)+r(\pi) \right) = \\
+  & = \frac{\Omega^2}{GM} \left[ \frac{1}{1+\frac{A \Omega^2}{GM}} + \frac{1}{1-\frac{A \Omega^2}{GM}} \right] = \\
+  & = \dfrac{2}{ \left(\frac{GM}{\Omega^2} \right)^2 - A^2}
+\end{aligned}$$
+-->
 </div>
 </div>
 
@@ -664,20 +799,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="statics-problems.html"
+       href="dynamics-motion-gravitation.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">8.4. </span>Problemi</p>
+        <p class="prev-next-title"><span class="section-number">10.6. </span>Gravitazione</p>
       </div>
     </a>
     <a class="right-next"
-       href="inertia-point.html"
+       href="dynamics-problems.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">9.3. </span>Inerzia e grandezze dinamiche di un punto</p>
+        <p class="prev-next-title"><span class="section-number">10.8. </span>Problemi</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -696,8 +831,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#massa-e-distribuzione-di-massa">9.1. Massa e distribuzione di massa</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantita-dinamiche">9.2. Quantità dinamiche</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-coniche-ed-energia">10.7.1. Traiettorie, coniche, ed energia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-chiuse-e-leggi-di-keplero">10.7.2. Traiettorie chiuse e leggi di Keplero</a></li>
 </ul>
   </nav></div>
 
