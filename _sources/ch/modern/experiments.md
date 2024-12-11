@@ -278,7 +278,7 @@ $$\delta = 2 \text{atan} \sqrt{ \frac{m c^2}{2 E l^2} }$$
 
 Il momento e l'energia vengono valutati all'infinito, $E = \frac{1}{2} m v_{\infty}^2$, $l = m h v_{\infty}$, avendo definito $v_{\infty}$ il modulo della velocità all'infinito e $h$ il coefficiente di impatto della traiettoria, cioè la distanza tra la tangente all'infinito e il punto bersaglio,
 
-$$\delta = 2 \, \text{atan} \sqrt{ \frac{m c^2}{2 \frac{1}{2} m v_{\infty}^2 m^2 h^2 v_{\infty}^2} } = 2 \, \text{atan} \left( \frac{c}{m h v_{\infty}^2 \right) $$
+$$\delta = 2 \, \text{atan} \sqrt{ \frac{m c^2}{2 \frac{1}{2} m v_{\infty}^2 m^2 h^2 v_{\infty}^2} } = 2 \, \text{atan} \left( \frac{c}{m h v_{\infty}^2} \right) $$
 
 
 **todo** *Finire esercizio (nel file sorgente ci sono linee commentate che possono essere utili); aggiungere immagini; calcolare sezione d'urto e distribuzione urti e confronto con risultati di Rutherford*
