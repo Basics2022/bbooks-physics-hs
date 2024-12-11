@@ -274,7 +274,7 @@ $$\theta^* = \frac{\pi - \delta}{2}$$
 
 $$\tan \theta^* = \tan\left( \frac{\pi}{2} - \frac{\delta}{2} \right) = \frac{1}{\tan \frac{\delta}{2} } $$
 
-$$\delta = 2 \atan \frac{m c^2}{2 E l^2}$$
+$$\delta = 2 \text{atan} \frac{m c^2}{2 E l^2}$$
 
 Il momento e l'energia vengono valutati all'infinito
 
