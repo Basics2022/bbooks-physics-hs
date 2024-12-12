@@ -11,8 +11,6 @@
 
 ## Solidi elastici lineari
 
----
-
 ## Gas ideali
 
 ```{exercise} Proprietà di un Gas Ideale

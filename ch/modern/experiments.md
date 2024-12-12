@@ -232,11 +232,15 @@ $$v_{z, \infty}(E_2) - v_{z, \infty}(E_1) = \frac{E_2 - E_1}{c} q \qquad \righta
 ## Modello atomico di Rutherford - Geiger-Mardsen
 ```{dropdown} Scattering
 
-Gli esperimenti condotti da Geiger[^geiger] e Mardsen sotto la supervisione di Rutherford a Manchester consistono in esperimenti di scattering, in cui un fascio di particelle-$\alpha$[^alpha-particle] viene direzionato contro una sottile lamina di oro. Le particelle-$\alpha$ interagiscono con la lamina e vengono deviate. In questo esperimento si osserva che un grandissimo di numero di particelle subisce una deviazione minima, come se non interagissero con la struttura dell'oro; al crescere dell'angolo di deviazione diminuisce il numero misurato di particelle che hanno subito quella deviazione; alcune particelle subiscono anche una deviazione maggiore di $90°$, inclusa una deviazione di $180°$ corrispondente a un "rimbalzo normale" sulla lamina: la frequenza di questi eventi è sempre più piccola ma non nulla.
+**Esperimento e modello atomico di Rutherford.** Gli esperimenti condotti da Geiger[^geiger] e Mardsen sotto la supervisione di Rutherford a Manchester consistono in esperimenti di scattering, in cui un fascio di particelle-$\alpha$[^alpha-particle] viene direzionato contro una sottile lamina di oro. Le particelle-$\alpha$ interagiscono con la lamina e vengono deviate. In questo esperimento si osserva che un grandissimo di numero di particelle subisce una deviazione minima, come se non interagissero con la struttura dell'oro; al crescere dell'angolo di deviazione diminuisce il numero misurato di particelle che hanno subito quella deviazione; alcune particelle subiscono anche una deviazione maggiore di $90°$, inclusa una deviazione di $180°$ corrispondente a un "rimbalzo normale" sulla lamina: la frequenza di questi eventi è sempre più piccola ma non nulla.
+
+[^geiger]: Lo stesso Geiger dal quale prende il nome il contatore Geiger, quello strumento di misura della radiazioni gracchiante che magari si è incontrato in qualche documentario su radioattività, nucleare, o in qualche film apocalittico di società post-nucleari...
+
+[^alpha-particle]: Le particelle-$\alpha$ sono isotopi $\text{He}^{2+}$, atomi di elio che hanno 2 elettroni in meno. Per quanto ci interessa qui, le particelle-$\alpha$ sono particelle cariche positivamente.
 
 La spiegazione dell'esperimento da parte di Rutherford è alla base del suo modello atomico: la distribuzione delle particelle-$\alpha$ misurata è compatibile un'interazione elettrica tra cariche positive puntiformi. Rutherford quindi ipotizza che la materia sia formata da atomi quasi del tutto "vuoti": le cariche positive sono concentrate in un **nucleo** di dimensioni estremamente compatte (**todo** *stima delle dimensioni da parte di Rutherford e misura di oggi*), attorno al quale sono disposte le cariche negative. **todo** *poca attenzione alle cariche negative fino al modello di **Bohr**. Atomo con nucleo positivo e cariche negative che possono trovarsi in orbite ben definite, discrete, caratterizzate da numeri atomici interi.*
 
-Qui si costruisce un problema di scattering tra due corpi puntiformi dotati di carica con lo stesso segno. Si assume che il corpo "bersaglio" rimane in quiete (*ad esempio, particella "proiettile" leggera e lenta; se questa ipotesi non è valida, bisogna considerare il "rinculo" della particella "bersaglio"*). Questo è un caso particolare di [moto centrale](physics-hs:mechanics:dynamics:motion:central:r-2), con forza inversamente proporzionale al quadrato della distanza. Infatti, scegliendo come origine il centro della carica bersaglio, la forza agente sulla carica proiettile è
+**Scattering come problema di due corpi.** Qui si costruisce un problema di scattering tra due corpi puntiformi dotati di carica con lo stesso segno. Si assume che il corpo "bersaglio" rimane in quiete (*ad esempio, particella "proiettile" leggera e lenta; se questa ipotesi non è valida, bisogna considerare il "rinculo" della particella "bersaglio"*). Questo è un caso particolare di [moto centrale](physics-hs:mechanics:dynamics:motion:central:r-2), con forza inversamente proporzionale al quadrato della distanza. Infatti, scegliendo come origine il centro della carica bersaglio, la forza agente sulla carica proiettile è
 
 $$\vec{F} = \frac{q_1 q_2}{4\pi\varepsilon} \frac{\vec{r}}{|\vec{r}|^3} \ ,$$
 
@@ -250,14 +254,16 @@ $$r(\theta) = \frac{\frac{l^2}{m|c|}}{-1 + \sqrt{1 + 2 \frac{E l^2}{m|c|^2}} \co
 
 avendo usato $\text{sign}(c) = 1$, poiché la costante $c = \frac{q_1 q_2}{4\pi\varepsilon}$ è positiva per due cariche di segno uguale.
 
-Le caratteristiche geometriche di questa traiettoria possono essere ricavate confrontanto l'espressione della traiettoria con l'espressione generale delle [coniche in coordinate polari](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic_geometry/analytic_geometry_2d/conics.html). In particolare,
+**Caratteristiche geometriche della traiettoria - angolo di deflessione.** Le caratteristiche geometriche di questa traiettoria possono essere ricavate confrontanto l'espressione della traiettoria con l'espressione generale delle [coniche in coordinate polari](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic_geometry/analytic_geometry_2d/conics.html). In particolare,
 - l'eccentricità è
 
   $$e = \sqrt{1+2\frac{E l^2}{m c^2}}$$
 
+<!--
 - il coefficiente $d = $
+-->
 
-- i coefficienti $a$, $b$, $c$ dell'iperbole
+- il coefficienti $a$, $b$ dell'iperbole possono essere espressi in funzione dell'eccentricità e della semi-distanza tra i fuochi $c$
 
   $$a = \frac{c}{e} \qquad , \qquad b = \frac{\sqrt{e^2-1}}{e} c$$
 
@@ -301,9 +307,10 @@ $$
 \qquad \rightarrow \qquad \sigma(\delta) = \left(\frac{c}{2 m v_{\infty}^2}\right)^2 \frac{1}{\sin^4 \frac{\delta}{2}} \ .
 $$
 
+Questa espressione della sezione d'urto ha un buon accordo con i dati sperimentali registrati da Geiger e Mardsen, e portano quindi Rutherford a postulare l'interazione come interazione tra due particelle con carica uguale, la particelle-$\alpha$ proiettile e il nucleo degli atomi, sufficientemente compatti e lontani gli uni dagli altri da poter trascurare le interazioni di una particella-$\alpha$ con più nuclei della sottile lamina d'oro.
 
-
-**todo** *Finire esercizio (nel file sorgente ci sono linee commentate che possono essere utili); aggiungere immagini; calcolare sezione d'urto e distribuzione urti e confronto con risultati di Rutherford*
+**todo**
+- *discussione degli effetti di rinculo, e dei risultati con proeittili ad alta energia...*
 
 
 ```

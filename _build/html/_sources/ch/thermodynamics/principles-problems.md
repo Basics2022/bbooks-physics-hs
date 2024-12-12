@@ -184,7 +184,7 @@ Un fluido entra in uno scambiatore di calore con una temperatura di $T_1 = 300 \
 
 ```{exercise} Energia Recuperata da un Compressore
 Un compressore riceve gas a una pressione di $P_1 = 2 \, \text{atm}$ e temperatura $T_1 = 300 \, \text{K}$ e lo comprime ad una pressione di $P_2 = 6 \, \text{atm}$ e temperatura $T_2 = 500 \, \text{K}$. Calcola l'energia
----
+```
 
 
 

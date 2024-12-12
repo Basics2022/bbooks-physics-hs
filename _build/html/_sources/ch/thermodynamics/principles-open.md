@@ -57,8 +57,11 @@ $$\dfrac{d}{dt} E^{tot}_{v_t} = P^{ext,mech}_{v_t} + \dot{Q}^{ext} - \sum_k \dot
 avendo introdotto la definizione di entalpia totale specifica, $h^{tot} = e^{tot} + \frac{P}{\rho} = e + \frac{P}{\rho} + \frac{|\vec{v}|^2}{2}$.
 
 ```{prf:example} Turbina
+:label: thermodynamics:principles:open:ex:turbine
 ```
 ```{prf:example} Compressore
+:label: thermodynamics:principles:open:ex:compressor
 ```
 ```{prf:example} Camera di combustione
+:label: thermodynamics:principles:open:ex:comb-chamber
 ```

@@ -1,4 +1,4 @@
-(physics-hs:electromagnetism:intro:problems)=
+(physics-hs:electromagnetism:em:problems)=
 # Problemi
 
 ## Elettrostatica

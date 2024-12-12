@@ -32,6 +32,8 @@ $$
 $$
 
 ```{prf:example} Rotazione di una ballerina
+:label: mechanics:dynamics:dancer
+
 ```
 
 **Conservazione del momento dell'energia cinetica.**

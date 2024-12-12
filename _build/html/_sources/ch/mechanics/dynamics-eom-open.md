@@ -12,6 +12,7 @@ In questa sezione si presentano i bilanci di massa, quantità di moto e energia 
 ## Esempi
 ````{prf:example} Sistemi discreti - Moto di una barca per reazione
 :class: dropdown
+:label: mechanics:dynamics:open:ex:boat
 
 Una barca di massa $M$ è stata caricata con $N$ palle di cannone, ciascuna di massa $m$, così che la massa totale è $M = M_0 + N m$. La barca si muove lungo una traiettoria rettilinea, inizialmente con velocità $\vec{v}_0 = v_0 \hat{x}$. Sulla barca è presente un cannone in grado di sparare i proiettili esattamente nella stessa direzione della traiettoria, con un a velocità relativa di $\vec{v}_p - \vec{v}^- = \vec{v}_p^{rel,-} = - v^{rel} \hat{x}$, con $v^{rel} > 0$, rispetto alla velocità della barca **prima dello sparo**, $\vec{v}^-$.
 
@@ -68,6 +69,7 @@ $$\vec{v}_{n+1} - \vec{v}_n = \frac{m}{M_{n+1}} \vec{v}_p^{rel} \ .$$
 ````
 ````{prf:example} Sistemi discreti - Moto di una giostra per reazione
 :class: dropdown
+:label: mechanics:dynamics:open:ex:carousel
 
 Una giostra è libera di ruotare attorno al suo centro, grazie a una cerniera cilindrica. Sulla giostra, sono state caricate delle palline di massa $m$, posizionate al bordo della giostra, che vengono lanciate in direzione tangenziale alla giostra da un marchingegno che riesce a fornire alle palline una velocità relativa rispetto alla velocità prima del lancio uguale a $v_p^{rel}$. La giostra ha raggio $R$ e massa $M$.
 
@@ -115,6 +117,7 @@ essendo $I = I_0 + N m R^2$ l'inerzia iniziale dell'intero sistema.
 
 ```{prf:example} Sistemi continui - Equazione della spinta per i razzi - Tsiolkovski
 :class: dropdown
+:label: mechanics:dynamics:open:ex:rockets
 
 L'equazione della spinta per i razzi - di Tsiolkovski **todo** *un po' di storia? riferimento all'astronomia? riferimenti alla dinamica gravitazionale?* - è una prima approssimazione del moto di un razzo a reazione, cioè che usa lo scarico di gas ad alta velocità come mezzo di spinta. Il sistema formato dalla struttura del razzo e il contenuto di combustibile e gas all'interno della struttura del razzo è un sistema aperto, che può scambiare materia attraverso la sezione dell'ugello. L'equazione permette di ricavare la velocità del razzo in funzione dell'espulsione della massa e della velocità effettiva, relativa, di espulsione dei gas dal razzo. L'equazione può essere ricavata usando i bilanci di massa e di quantità di moto per sistemi aperti, 
 

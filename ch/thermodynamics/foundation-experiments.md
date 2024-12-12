@@ -149,10 +149,13 @@ Scala di temperatura assoluta
 
 <!-- Esercizi su scale di temperatura e dilatazione termica -->
 ```{prf:example} Anello di Gravesande
+:label: thermodynamics:history:th-expansion:gravesande
 ```
 ```{prf:example} Giunzione binari e ponti
+:label: thermodynamics:history:th-expansion:junctions
 ```
 ```{prf:example} Pendolo
+:label: thermodynamics:history:th-expansion:pendulum
 ```
 <!--
 ```{prf:example} Forno
@@ -213,21 +216,26 @@ Gli studi sul cambiamento di fase, gli permisero di verificare che questi avveng
     Viene definito **calore latente di fusione** il coefficiente $L_{sl}$ di proporzionalità tra il calore entrante nel sistema durante la trasformazione di fase e la quantità di massa liquefatta $\delta m_l$.
 
 ```{prf:example}
+:label: thermodynamics:history:heat-capacity:1
 Si mescolano due masse uguali di acqua inizialmente a temperatura $T_1 = 20 \text{°C}$ e $T_2 = 70 \text{°C}$. 
 
 Successivamente si ripete l'esperimento, mescolando una massa di acqua a temperatura $T_1$ doppia rispetto alla massa di acqua a $T_2$.
 ```
 ```{prf:example}
+:label: thermodynamics:history:heat-capacity:2
 Mescolando una massa uguale di due sostanze inizialmente a temperatura $T_1$  e $T_2$, dopo aver misurato la temperatura di equilibrio $T_e$, si chiede di determinare il rapporto tra i loro calori specifici nelle condizioni di prova.
 ```
 ```{prf:example}
+:label: thermodynamics:history:heat-capacity:3
 Mescolando una massa uguale di due sostanze inizialmente a temperatura $T_1$  e $T_2$, dopo aver misurato la temperatura di equilibrio $T_e$, si chiede di determinare il rapporto tra i loro calori specifici nelle condizioni di prova.
 ```
 ```{prf:example}
+:label: thermodynamics:history:heat-capacity:4
 Un sistema contente una massa $m_1$ di acqua inizialmente a $T_1$ gradi viene messo a contatto con un sistema contentente una massa $m_2$ di ghiaccio a $T_2 = \text{°C}$ a pressione ambiente. La condizione iniziale del sistema 1 non è sufficiente a far sciogliere l'intera massa di ghiaccio ma solo $m_{2,l} < m_2$. L'equilibrio tra i due sistemi viene quidi raggiunto a temperatura $T=0 \text{°C}$. Si chiede di determinare il rapporto tra il calore latente di fusione e il calore specifico dell'acqua.
 
 ```
 ```{prf:example} Caloria come unità di misura del calore - N.Clément
+:label: thermodynamics:history:heat-capacity:unit
 Il Conservatoire national des arts and métiers (CNAM) è una delle tre istituzioni create durante la Rivoluzione francese per l'insegnamento superiore scientifico. N.Clément, professore di chimica presso il CNAM, e coinvolto in studi sul calore e sull'equivalenza calore-lavoro insieme a Carnot, definisce la *caloria* come unità di misura del calore, come la quantità di calore necessaria a creare l'aumento di $1 \text{°C}$ da $14.5 \text{°C}$ a $15.5 \text{°C}$ di un grammo di acqua distillata a pressione atmosferica,
 
 $$1 \, \text{cal} = 1 \cdot 10^{-3} \, \text{kg} \cdot c_{\text{H$_2$O},P} \cdot 1 \text{°C} \ ,$$
@@ -274,6 +282,7 @@ Il legame tra calore e lavoro evidente nelle applicazioni tecniche, venne ulteri
 [^joule-equivalent]: *The Mechanical Equivalent of Heat*,...
 
 ```{prf:example} Equivalenza calore-lavoro - Esperienza di Joule
+:label: thermodynamics:history:heat-work:joule
 Un peso è collegato tramite un filo a un mulinello che può ruotare e compiere lavoro su un fluido contenuto all'interno di un calorimetro, in prima approssimazione considerabile un sistema perfettamente isolato termicamente nell'intervallo di tempo in cui si svolge l'esperimento.
 
 Il peso ha massa $m = 30 \, \text{kg}$ e viene lasciato cadere per un'altezza $h = 2 \, \text{m}$, dove viene fermato. Il calorimetro contiene $V = 1 \, \text{l}$ di acqua inizialmente a temperatura $T_{in} = 14.5 \, \text{°C}$. Una volta trascorso il tempo necessario al fluido per tornare allo stato di quiete, un termometro graduato con passo $\Delta T_{meas} = 0.002 \text{°C}$ permette di misurare una variazione di temperatura di $\Delta T = T_{fin} - T_{in} = 0.140 \, \text{°C}$.
@@ -291,6 +300,7 @@ $$\begin{aligned}
 ```
 
 ```{prf:example} Non-equivalenza calore-lavoro - verso il secondo principio della termodinamica
+:label: thermodynamics:history:heat-work:second
 Senza entrare nei dettagli, e limitandoci all'esperienza di Joule, è ragionevole attendersi di non osservare mai la dinamica in del sistema in direzione opposta: non si osserverà mai - se lo osservate chiamatemi - che spontaneamente il peso salga, il filo si ri-arrotoli sulla puleggia, mentre il liquido all'interno del calorimetro si raffredda.
 
 Mentre il primo principio della termodinamica non esclude questa possibilità, essa è esclusa dal secondo principio della termodinamica che postula una direzione dell'evoluzione spontanea dei sistemi.
