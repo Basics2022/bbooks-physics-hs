@@ -56,6 +56,10 @@ $$\dot{Q}_V = - \Phi_{\partial V}(\vec{j}) = - I_{\partial V}$$
 - **todo** esempi/esercizi con misura della corrente e della carica elettrica, con strumenti di misura (misura o modello di strumento, come bilance)
 
 ## Conduzione
+Spiegazione moderna:
+- **solidi conduttori** (quali sono le caratteristiche chimiche?): sono presenti portatori di carica "liberi", non associati a un singolo atomo della struttura del solido: questi sono definiti **elettroni di conduzione**
+- solidi isolanti: non ci sono portatori di carica condivisi
+- gas neutri: non ci sono portatori di carica liberi; molecole elettricamente neutre; isolante perfetto. E' necessaria una causa esterna che produca la **ionizzazione** di alcune delle molecole del gas, cioè la separazione di elettroni dalla restante parte dell'atomo (che diventa uno ione, con carica elettrica positiva). Un gas ionizzato costituito da elettroni e ioni liveri con carica netta nulla è definito **plasma**
 
 ### Conduzione nei solidi "di Ohm"
 
@@ -90,7 +94,7 @@ avendo introdotto la differenza di potenziale elementare $d v$ tra gli estremi d
 (physics-hs:electromagnetism:electric-current:gas)=
 ### Conduzione nei gas
 **todo** *blabla*
-- fenomeno fisico: ionizzazione
+- fenomeno fisico: ionizzazione; necessario campo elettrico intenso **(!)**
 - apparati sperimentali: tubo di Crookes, attuatori al plasma,...
 - spiegazione (immediata utilizzando modello atomistico della materia): campo elettrico elevato "strappa" $e^-$ dagli atomi dei gas (rarefatti). Un atomo inizialmente neutro viene **ionizzato**: gli elettroni hanno carica negativa, lo ione (l'atomo al quale sono stati sottratti gli elettroni) ha carica positiva. Queste due entità hanno ora carica elettrica netta, e subiscono l'accelerazione dovuta all'interazione con un campo elettrico, che si manifesta con la [forza di Lorenz](physics-hs:electromagnetism:lorentz) $\vec{F} = q \vec{e}$ agente sulle particelle cariche. L'equazione del moto è $m \ddot{r} = q \vec{e}$. Il moto di corpi di carica diversa si sviluppa quindi in due direzioni opposte:
   - moto delle cariche positive nella stessa direzione del campo elettrico
