@@ -157,7 +157,7 @@ $$\begin{aligned}
 (physics-hs:mechanics:dynamics:motion:central:trajectory-el)=
 ```{dropdown} Equazione della traiettoria in funzione dell'energia e del momento angolare
 
-Manipolando i risultati ottenuti, si vuole esprimere l'equazione della traiettoria {eq}`eq:dynamics:central:r-2:trajectory:conics` in termini delle costanti del moto, l'energia $E$ e il momento angolare $l$. Si valuta la derivata nel tempo dell'equazione {eq}`eq:trajectory:conics`
+Manipolando i risultati ottenuti, si vuole esprimere l'equazione della traiettoria {eq}`eq:dynamics:central:r-2:trajectory:conics` in termini delle costanti del moto, l'energia $E$ e il momento angolare $l$. Si valuta la derivata nel tempo dell'equazione {eq}`eq:dynamics:central:r-2:trajectory:conics`
 
 $$
 \dot{r} = \frac{ - e^2 d \sin(\theta-\phi) }{\left( -\text{sign}(c) + e \cos(\theta-\phi) \right)^2} \dot{\theta}
