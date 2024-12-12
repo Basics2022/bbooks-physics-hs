@@ -4,6 +4,10 @@
 (modern:experiments:thomson:electron)=
 ## Scoperta dell'elettrone - J.J.Thomson
 
+**todo** 
+- link a [conduzione di corrente elettrica nei gas](physics-hs:electromagnetism:electric-current:gas)
+- cenni all'esperimento di Goldstein (1886), che si era concentrato solo sul raggio "sbagliato"
+
 ```{dropdown} Moto di una carica in un campo elettromagnetico uniforme stazionario
 Una volta scelto un sistema di riferimento (*così da poter identificare la posizione di un punto nello spazio con un vettore posizione $\vec{r} = R-O$ rispetto all'origine*), il campo elettromagnetico (rispetto al sistema di riferimento, **todo** *aggiungere sezione su relatività per elettromagnetismo, anche galileiana come approssimazione a bassa velocità*) in una regione dello spazio viene rappresentato dai campi vettoriali, 
 
