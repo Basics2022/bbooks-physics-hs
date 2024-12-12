@@ -7,6 +7,7 @@
 **todo** 
 - link a [conduzione di corrente elettrica nei gas](physics-hs:electromagnetism:electric-current:gas)
 - cenni all'esperimento di Goldstein (1886), che si era concentrato solo sul raggio "sbagliato"
+- cenni all'esperimento di Hertz (1887), fallito a causa di un apparato sperimentale inadeguato. **todo** *collegamento a logica, conoscenza ed epistemologia e [criterio di Fisher](https://basics2022.github.io/bbooks-programming-hs/ch/statistics/hp-test.html#statistics-hs-inference-hp-test)*
 
 ```{dropdown} Moto di una carica in un campo elettromagnetico uniforme stazionario
 Una volta scelto un sistema di riferimento (*così da poter identificare la posizione di un punto nello spazio con un vettore posizione $\vec{r} = R-O$ rispetto all'origine*), il campo elettromagnetico (rispetto al sistema di riferimento, **todo** *aggiungere sezione su relatività per elettromagnetismo, anche galileiana come approssimazione a bassa velocità*) in una regione dello spazio viene rappresentato dai campi vettoriali, 

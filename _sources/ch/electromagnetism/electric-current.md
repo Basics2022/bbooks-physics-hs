@@ -59,6 +59,7 @@ $$\dot{Q}_V = - \Phi_{\partial V}(\vec{j}) = - I_{\partial V}$$
 Spiegazione moderna:
 - **solidi conduttori** (quali sono le caratteristiche chimiche?): sono presenti portatori di carica "liberi", non associati a un singolo atomo della struttura del solido: questi sono definiti **elettroni di conduzione**
 - solidi isolanti: non ci sono portatori di carica condivisi
+- liquidi: **(?)**, liquidi puri (esistono), soluzioni,...
 - gas neutri: non ci sono portatori di carica liberi; molecole elettricamente neutre; isolante perfetto. E' necessaria una causa esterna che produca la **ionizzazione** di alcune delle molecole del gas, cioè la separazione di elettroni dalla restante parte dell'atomo (che diventa uno ione, con carica elettrica positiva). Un gas ionizzato costituito da elettroni e ioni liveri con carica netta nulla è definito **plasma**
 
 ### Conduzione nei solidi "di Ohm"
