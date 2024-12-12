@@ -1,8 +1,6 @@
 (physics-hs:modern:intro:experiences)=
 # Esperienze ed esperimenti
 
-## Studi sui solidi
-
 Metodi:
 - cristallografia...Già a metà del XIX secolo. Trattare qui o in [ottica](physics-hs:waves:optics) per la [diffrazione](physics-hs:waves:effects:diffraction)?
 
@@ -10,6 +8,12 @@ Metodi:
 
 - **todo** *link a [effetti foto-termo-elettro-meccanici](physics-hs:electromagnetism:thermoelectric-effects)*
 - **todo** *link a spettrografia in [ottica](physics-hs:waves:optics) o nella sezione sulle [onde EM](physics-hs:electromagnetism:em-waves)*
+
+(physics-hs:modern:intro:experiences:matter)=
+## Materia
+Indagine sulla struttura della materia. Teoria atomistica. Meccanica statistica (Boltzmann)
+- teoria atomistica e **meccanica statistica**: la materia è formata da componenti "elementari" discreti; molti sistemi macroscopici sono formati da un numero enorme di componenti elementari a livello microscopico; la meccanica statistica (Boltzmann, Maxwell, Gibbs) fornisce gli strumenti per conciliare il comportamento micrsocopico con il comportamento macroscopico;
+- esperimenti di conduzione sui gas nei **tubi di Crookes**
 
 (physics-hs:modern:intro:experiences:light-matter)=
 ## Interazione luce-materia

@@ -87,8 +87,17 @@ avendo introdotto la differenza di potenziale elementare $d v$ tra gli estremi d
 
    $$dR = \frac{\rho_R \, d\ell}{A} \ .$$
 
+(physics-hs:electromagnetism:electric-current:gas)=
 ### Conduzione nei gas
-### Conduzione nei vuoto?
+**todo** *blabla*
+- spiegazione (immediata utilizzando modello atomistico della materia): campo elettrico elevato "strappa" $e^-$ dagli atomi dei gas (rarefatti). Un atomo inizialmente neutro viene **ionizzato**: gli elettroni hanno carica negativa, lo ione (l'atomo al quale sono stati sottratti gli elettroni) ha carica positiva. Queste due entità hanno ora carica elettrica netta, e subiscono l'accelerazione dovuta all'interazione con un campo elettrico: il loro moto si sviluppa quindi in due direzioni diverse:
+  - 
+  - 
+Esperimenti:
+- Goldstein (1886) si concentra sul moto delle cariche positive: tubi di Crookes con sostanze diverse producono "particelle" (**todo** *Goldstein aveva in mente la natura discreta di quello che stava osservando? In quali termini si esprimeva?*) con rapporto $\frac{\text{carica}}{\text{massa}}$ caratteristici della sostanza, ma diversi da sostanza a sostanza. Spiegazione di oggi: gli ioni di sostanze diverse hanno massa e carica che dipendono dalla sostanza di partenza
+- [Thomson](modern:experiments:thomson:electron) (1897) si concentra sul moto delle cariche negative, scoprendo che il rapporto $\frac{\text{massa}}{\text{carica}}$ è indipendente dalla sostanza contenuta nel tubo di Crookes. Viene scoperto/introdotto il concetto di elettrone, come unità di carica "elementare".
+- Rontgen e i raggi X **todo** *link a Rontgen: raggi X, Becquerel: fosforescenza, emissione di raggi e radioattività naturale; coniugi Curie*
+
 ### Conduzione nei semiconduttori
  cenni all'elettronica: diodi, transistor, ...
 

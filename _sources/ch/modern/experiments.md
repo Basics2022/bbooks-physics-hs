@@ -1,6 +1,7 @@
 (modern:experiments)=
 # Esperimenti
 
+(modern:experiments:thomson:electron)=
 ## Scoperta dell'elettrone - J.J.Thomson
 
 ```{dropdown} Moto di una carica in un campo elettromagnetico uniforme stazionario
