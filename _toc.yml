@@ -170,6 +170,7 @@ parts:
   - file: ch/electromagnetism/em-waves
     sections:
     - file: ch/electromagnetism/em-waves-problems
+  - file: ch/electromagnetism/thermoelectric-effects
 # - file: ch/electromagnetism/...
 # - file: ch/electromagnetism/...
 - caption: Fisica moderna

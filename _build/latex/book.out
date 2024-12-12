@@ -310,99 +310,101 @@
 \BOOKMARK [2][-]{subsection.20.2.3}{Conduzione}{section.20.2}% 310
 \BOOKMARK [3][-]{subsubsection*.351}{Conduzione nei solidi «di Ohm»}{subsection.20.2.3}% 311
 \BOOKMARK [3][-]{subsubsection*.352}{Conduzione\040nei\040gas}{subsection.20.2.3}% 312
-\BOOKMARK [3][-]{subsubsection*.353}{Conduzione\040nei\040vuoto?}{subsection.20.2.3}% 313
-\BOOKMARK [3][-]{subsubsection*.354}{Conduzione\040nei\040semiconduttori}{subsection.20.2.3}% 314
-\BOOKMARK [2][-]{subsection.20.2.4}{Problemi}{section.20.2}% 315
-\BOOKMARK [1][-]{section.20.3}{Magnetismo\040ed\040elettromagnetismo\040in\040regime\040stazionario}{chapter.20}% 316
-\BOOKMARK [2][-]{subsection.20.3.1}{Esperienze\040elementari\040su\040campo\040magnetico}{section.20.3}% 317
-\BOOKMARK [2][-]{subsection.20.3.2}{Esperienza\040di\040Faraday}{section.20.3}% 318
-\BOOKMARK [3][-]{subsubsection*.372}{Il\040galvanometro}{subsection.20.3.2}% 319
-\BOOKMARK [2][-]{subsection.20.3.3}{Esperienze\040di\040Oersted\040e\040Ampere}{section.20.3}% 320
-\BOOKMARK [3][-]{subsubsection*.373}{Legge di Ampére}{subsection.20.3.3}% 321
-\BOOKMARK [3][-]{subsubsection*.374}{Legge\040di\040Biot-Savart}{subsection.20.3.3}% 322
-\BOOKMARK [3][-]{subsubsection*.375}{Formula\040generale}{subsection.20.3.3}% 323
-\BOOKMARK [4][-]{paragraph*.376}{Filo\040rettilineo\040infinito}{subsubsection*.375}% 324
-\BOOKMARK [3][-]{subsubsection*.377}{Esempi:\040spira\040e\040solenoide}{subsection.20.3.3}% 325
-\BOOKMARK [4][-]{paragraph*.378}{Spira\040circolare}{subsubsection*.377}% 326
-\BOOKMARK [4][-]{paragraph*.379}{Solenoide\040rettilineo}{subsubsection*.377}% 327
-\BOOKMARK [4][-]{paragraph*.380}{Solenoide\040toroidale}{subsubsection*.377}% 328
-\BOOKMARK [2][-]{subsection.20.3.4}{Verso\040le\040equazioni\040di\040Maxwell}{section.20.3}% 329
-\BOOKMARK [3][-]{subsubsection*.381}{Legge\040di\040Gauss\040per\040il\040flusso\040del\040campo\040magnetico}{subsection.20.3.4}% 330
-\BOOKMARK [3][-]{subsubsection*.382}{Legge di Ampére}{subsection.20.3.4}% 331
-\BOOKMARK [2][-]{subsection.20.3.5}{Modelli\040microscopici\040del\040magnetismo}{section.20.3}% 332
-\BOOKMARK [2][-]{subsection.20.3.6}{Moto\040di\040una\040carica\040elettrica\040in\040un\040campo\040elettromagnetico}{section.20.3}% 333
-\BOOKMARK [2][-]{subsection.20.3.7}{Problemi}{section.20.3}% 334
-\BOOKMARK [1][-]{section.20.4}{Induzione\040ed\040elettromagnetismo}{chapter.20}% 335
-\BOOKMARK [2][-]{subsection.20.4.1}{Legge di Faraday per l’induzione elettromagnetica}{section.20.4}% 336
-\BOOKMARK [2][-]{subsection.20.4.2}{Correzione di Maxwell dell’equazione di Ampére}{section.20.4}% 337
-\BOOKMARK [2][-]{subsection.20.4.3}{Equazioni di Maxwell dell’elettromagnetismo}{section.20.4}% 338
-\BOOKMARK [2][-]{subsection.20.4.4}{Problemi}{section.20.4}% 339
-\BOOKMARK [0][-]{chapter.21}{Fondamenti\040di\040elettrotecnica}{part.7}% 340
-\BOOKMARK [1][-]{section.21.1}{Circuiti\040elettrici}{chapter.21}% 341
-\BOOKMARK [2][-]{subsection.21.1.1}{Approssimazione\040circuitale\040-\040leggi\040di\040Kirchhoff}{section.21.1}% 342
-\BOOKMARK [2][-]{subsection.21.1.2}{Componenti\040discreti}{section.21.1}% 343
-\BOOKMARK [3][-]{subsubsection*.435}{Resistenza\040elettrica}{subsection.21.1.2}% 344
-\BOOKMARK [3][-]{subsubsection*.436}{Condensatore}{subsection.21.1.2}% 345
-\BOOKMARK [3][-]{subsubsection*.437}{Induttore}{subsection.21.1.2}% 346
-\BOOKMARK [3][-]{subsubsection*.438}{Generatore\040di\040tensione}{subsection.21.1.2}% 347
-\BOOKMARK [3][-]{subsubsection*.439}{Generatore\040di\040corrente}{subsection.21.1.2}% 348
-\BOOKMARK [2][-]{subsection.21.1.3}{Regimi\040di\040funzionamento}{section.21.1}% 349
-\BOOKMARK [3][-]{subsubsection*.440}{Regime\040stazionario}{subsection.21.1.3}% 350
-\BOOKMARK [3][-]{subsubsection*.441}{Transitori}{subsection.21.1.3}% 351
-\BOOKMARK [3][-]{subsubsection*.442}{Regime\040periodico}{subsection.21.1.3}% 352
-\BOOKMARK [4][-]{paragraph*.443}{Sistemi\040trifase}{subsubsection*.442}% 353
-\BOOKMARK [2][-]{subsection.21.1.4}{Problemi}{section.21.1}% 354
-\BOOKMARK [2][-]{subsection.21.1.5}{Circuiti\040in\040Regime\040Stazionario}{section.21.1}% 355
-\BOOKMARK [3][-]{subsubsection*.455}{Circuiti\040in\040Regime\040Transitorio}{subsection.21.1.5}% 356
-\BOOKMARK [3][-]{subsubsection*.465}{Circuiti\040in\040Regime\040Periodico}{subsection.21.1.5}% 357
-\BOOKMARK [1][-]{section.21.2}{Circuiti\040magnetici}{chapter.21}% 358
-\BOOKMARK [2][-]{subsection.21.2.1}{Approssimazinoe\040circuitale\040-\040leggi\040di\040Kirchhoff}{section.21.2}% 359
-\BOOKMARK [2][-]{subsection.21.2.2}{Trasformatore}{section.21.2}% 360
-\BOOKMARK [2][-]{subsection.21.2.3}{Problemi}{section.21.2}% 361
-\BOOKMARK [1][-]{section.21.3}{Sistemi\040elettromeccanici\040e\040macchine\040elettriche}{chapter.21}% 362
-\BOOKMARK [2][-]{subsection.21.3.1}{Motori\040e\040generatori\040elettrici}{section.21.3}% 363
-\BOOKMARK [3][-]{subsubsection*.492}{Esempio\040elementare}{subsection.21.3.1}% 364
-\BOOKMARK [3][-]{subsubsection*.493}{Motori\040elettrici\040in\040DC}{subsection.21.3.1}% 365
-\BOOKMARK [3][-]{subsubsection*.494}{Motori\040elettrici\040in\040AC}{subsection.21.3.1}% 366
-\BOOKMARK [2][-]{subsection.21.3.2}{Serratura\040magnetica}{section.21.3}% 367
-\BOOKMARK [2][-]{subsection.21.3.3}{Problemi}{section.21.3}% 368
-\BOOKMARK [0][-]{chapter.22}{Onde\040elettromagnetiche}{part.7}% 369
-\BOOKMARK [1][-]{section.22.1}{Problemi}{chapter.22}% 370
-\BOOKMARK [-1][-]{part.8}{VIII\040Fisica\040moderna}{}% 371
-\BOOKMARK [0][-]{chapter.23}{Introduzione\040alla\040fisica\040del\040XX\040secolo}{part.8}% 372
-\BOOKMARK [0][-]{chapter.24}{Esperienze}{part.8}% 373
-\BOOKMARK [1][-]{section.24.1}{Studi\040sui\040solidi}{chapter.24}% 374
-\BOOKMARK [2][-]{subsection.24.1.1}{Effetti\040termoelettrici:\040Seebeck,\040Peltier,\040Thomson}{section.24.1}% 375
-\BOOKMARK [2][-]{subsection.24.1.2}{Piroelettricità}{section.24.1}% 376
-\BOOKMARK [2][-]{subsection.24.1.3}{Piezoelettricità}{section.24.1}% 377
-\BOOKMARK [1][-]{section.24.2}{Interazione\040luce-materia}{chapter.24}% 378
-\BOOKMARK [2][-]{subsection.24.2.1}{Spettrografia}{section.24.2}% 379
-\BOOKMARK [2][-]{subsection.24.2.2}{Effetto\040fotoelettrico}{section.24.2}% 380
-\BOOKMARK [2][-]{subsection.24.2.3}{Radiazione\040di\040corpo\040nero}{section.24.2}% 381
-\BOOKMARK [2][-]{subsection.24.2.4}{Calore\040specifico\040dei\040solidi}{section.24.2}% 382
-\BOOKMARK [1][-]{section.24.3}{Relatività}{chapter.24}% 383
-\BOOKMARK [2][-]{subsection.24.3.1}{Relatività speciale}{section.24.3}% 384
-\BOOKMARK [2][-]{subsection.24.3.2}{Relatività generale}{section.24.3}% 385
-\BOOKMARK [0][-]{chapter.25}{Esperimenti}{part.8}% 386
-\BOOKMARK [1][-]{section.25.1}{Scoperta dell’elettrone - J.J.Thomson}{chapter.25}% 387
-\BOOKMARK [1][-]{section.25.2}{La radioattività - Esperimento dei coniugi Curie}{chapter.25}% 388
-\BOOKMARK [1][-]{section.25.3}{Misura della carica dell’elettrone - Millikan}{chapter.25}% 389
-\BOOKMARK [1][-]{section.25.4}{Modello\040atomico\040di\040Rutherford\040-\040Geiger-Mardsen}{chapter.25}% 390
-\BOOKMARK [1][-]{section.25.5}{Lo\040spin\040-\040Stern-Gerlach}{chapter.25}% 391
-\BOOKMARK [0][-]{chapter.26}{Radioattività}{part.8}% 392
-\BOOKMARK [1][-]{section.26.1}{Storia}{chapter.26}% 393
-\BOOKMARK [2][-]{subsection.26.1.1}{Raggi\040X}{section.26.1}% 394
-\BOOKMARK [2][-]{subsection.26.1.2}{Radioattività}{section.26.1}% 395
-\BOOKMARK [2][-]{subsection.26.1.3}{J.J.Thomson}{section.26.1}% 396
-\BOOKMARK [2][-]{subsection.26.1.4}{E.Rutherford}{section.26.1}% 397
-\BOOKMARK [2][-]{subsection.26.1.5}{N.Bohr}{section.26.1}% 398
-\BOOKMARK [1][-]{section.26.2}{Applicazioni}{chapter.26}% 399
-\BOOKMARK [1][-]{section.26.3}{Riferimenti}{chapter.26}% 400
-\BOOKMARK [1][-]{section.26.4}{Esercizi}{chapter.26}% 401
-\BOOKMARK [0][-]{chapter.27}{Fenomeni\040termo-elettrici\040nella\040materia}{part.8}% 402
-\BOOKMARK [0][-]{chapter.28}{Fotografia}{part.8}% 403
-\BOOKMARK [0][-]{chapter.29}{Sviluppi dell’astronomia}{part.8}% 404
-\BOOKMARK [1][-]{section.29.1}{Breve\040storia}{chapter.29}% 405
-\BOOKMARK [-1][-]{part.9}{IX\040Indice}{}% 406
-\BOOKMARK [0][-]{chapter.30}{Indice}{part.9}% 407
-\BOOKMARK [0][-]{section*.527}{Proof\040Index}{part.9}% 408
+\BOOKMARK [3][-]{subsubsection*.353}{Conduzione\040nei\040semiconduttori}{subsection.20.2.3}% 313
+\BOOKMARK [2][-]{subsection.20.2.4}{Problemi}{section.20.2}% 314
+\BOOKMARK [1][-]{section.20.3}{Magnetismo\040ed\040elettromagnetismo\040in\040regime\040stazionario}{chapter.20}% 315
+\BOOKMARK [2][-]{subsection.20.3.1}{Esperienze\040elementari\040su\040campo\040magnetico}{section.20.3}% 316
+\BOOKMARK [2][-]{subsection.20.3.2}{Esperienza\040di\040Faraday}{section.20.3}% 317
+\BOOKMARK [3][-]{subsubsection*.371}{Il\040galvanometro}{subsection.20.3.2}% 318
+\BOOKMARK [2][-]{subsection.20.3.3}{Esperienze\040di\040Oersted\040e\040Ampere}{section.20.3}% 319
+\BOOKMARK [3][-]{subsubsection*.372}{Legge di Ampére}{subsection.20.3.3}% 320
+\BOOKMARK [3][-]{subsubsection*.373}{Legge\040di\040Biot-Savart}{subsection.20.3.3}% 321
+\BOOKMARK [3][-]{subsubsection*.374}{Formula\040generale}{subsection.20.3.3}% 322
+\BOOKMARK [4][-]{paragraph*.375}{Filo\040rettilineo\040infinito}{subsubsection*.374}% 323
+\BOOKMARK [3][-]{subsubsection*.376}{Esempi:\040spira\040e\040solenoide}{subsection.20.3.3}% 324
+\BOOKMARK [4][-]{paragraph*.377}{Spira\040circolare}{subsubsection*.376}% 325
+\BOOKMARK [4][-]{paragraph*.378}{Solenoide\040rettilineo}{subsubsection*.376}% 326
+\BOOKMARK [4][-]{paragraph*.379}{Solenoide\040toroidale}{subsubsection*.376}% 327
+\BOOKMARK [2][-]{subsection.20.3.4}{Verso\040le\040equazioni\040di\040Maxwell}{section.20.3}% 328
+\BOOKMARK [3][-]{subsubsection*.380}{Legge\040di\040Gauss\040per\040il\040flusso\040del\040campo\040magnetico}{subsection.20.3.4}% 329
+\BOOKMARK [3][-]{subsubsection*.381}{Legge di Ampére}{subsection.20.3.4}% 330
+\BOOKMARK [2][-]{subsection.20.3.5}{Modelli\040microscopici\040del\040magnetismo}{section.20.3}% 331
+\BOOKMARK [2][-]{subsection.20.3.6}{Moto\040di\040una\040carica\040elettrica\040in\040un\040campo\040elettromagnetico}{section.20.3}% 332
+\BOOKMARK [2][-]{subsection.20.3.7}{Problemi}{section.20.3}% 333
+\BOOKMARK [1][-]{section.20.4}{Induzione\040ed\040elettromagnetismo}{chapter.20}% 334
+\BOOKMARK [2][-]{subsection.20.4.1}{Legge di Faraday per l’induzione elettromagnetica}{section.20.4}% 335
+\BOOKMARK [2][-]{subsection.20.4.2}{Correzione di Maxwell dell’equazione di Ampére}{section.20.4}% 336
+\BOOKMARK [2][-]{subsection.20.4.3}{Equazioni di Maxwell dell’elettromagnetismo}{section.20.4}% 337
+\BOOKMARK [2][-]{subsection.20.4.4}{Problemi}{section.20.4}% 338
+\BOOKMARK [0][-]{chapter.21}{Fondamenti\040di\040elettrotecnica}{part.7}% 339
+\BOOKMARK [1][-]{section.21.1}{Circuiti\040elettrici}{chapter.21}% 340
+\BOOKMARK [2][-]{subsection.21.1.1}{Approssimazione\040circuitale\040-\040leggi\040di\040Kirchhoff}{section.21.1}% 341
+\BOOKMARK [2][-]{subsection.21.1.2}{Componenti\040discreti}{section.21.1}% 342
+\BOOKMARK [3][-]{subsubsection*.434}{Resistenza\040elettrica}{subsection.21.1.2}% 343
+\BOOKMARK [3][-]{subsubsection*.435}{Condensatore}{subsection.21.1.2}% 344
+\BOOKMARK [3][-]{subsubsection*.436}{Induttore}{subsection.21.1.2}% 345
+\BOOKMARK [3][-]{subsubsection*.437}{Generatore\040di\040tensione}{subsection.21.1.2}% 346
+\BOOKMARK [3][-]{subsubsection*.438}{Generatore\040di\040corrente}{subsection.21.1.2}% 347
+\BOOKMARK [2][-]{subsection.21.1.3}{Regimi\040di\040funzionamento}{section.21.1}% 348
+\BOOKMARK [3][-]{subsubsection*.439}{Regime\040stazionario}{subsection.21.1.3}% 349
+\BOOKMARK [3][-]{subsubsection*.440}{Transitori}{subsection.21.1.3}% 350
+\BOOKMARK [3][-]{subsubsection*.441}{Regime\040periodico}{subsection.21.1.3}% 351
+\BOOKMARK [4][-]{paragraph*.442}{Sistemi\040trifase}{subsubsection*.441}% 352
+\BOOKMARK [2][-]{subsection.21.1.4}{Problemi}{section.21.1}% 353
+\BOOKMARK [2][-]{subsection.21.1.5}{Circuiti\040in\040Regime\040Stazionario}{section.21.1}% 354
+\BOOKMARK [3][-]{subsubsection*.454}{Circuiti\040in\040Regime\040Transitorio}{subsection.21.1.5}% 355
+\BOOKMARK [3][-]{subsubsection*.464}{Circuiti\040in\040Regime\040Periodico}{subsection.21.1.5}% 356
+\BOOKMARK [1][-]{section.21.2}{Circuiti\040magnetici}{chapter.21}% 357
+\BOOKMARK [2][-]{subsection.21.2.1}{Approssimazinoe\040circuitale\040-\040leggi\040di\040Kirchhoff}{section.21.2}% 358
+\BOOKMARK [2][-]{subsection.21.2.2}{Trasformatore}{section.21.2}% 359
+\BOOKMARK [2][-]{subsection.21.2.3}{Problemi}{section.21.2}% 360
+\BOOKMARK [1][-]{section.21.3}{Sistemi\040elettromeccanici\040e\040macchine\040elettriche}{chapter.21}% 361
+\BOOKMARK [2][-]{subsection.21.3.1}{Motori\040e\040generatori\040elettrici}{section.21.3}% 362
+\BOOKMARK [3][-]{subsubsection*.491}{Esempio\040elementare}{subsection.21.3.1}% 363
+\BOOKMARK [3][-]{subsubsection*.492}{Motori\040elettrici\040in\040DC}{subsection.21.3.1}% 364
+\BOOKMARK [3][-]{subsubsection*.493}{Motori\040elettrici\040in\040AC}{subsection.21.3.1}% 365
+\BOOKMARK [2][-]{subsection.21.3.2}{Serratura\040magnetica}{section.21.3}% 366
+\BOOKMARK [2][-]{subsection.21.3.3}{Problemi}{section.21.3}% 367
+\BOOKMARK [0][-]{chapter.22}{Onde\040elettromagnetiche}{part.7}% 368
+\BOOKMARK [1][-]{section.22.1}{Luce}{chapter.22}% 369
+\BOOKMARK [2][-]{subsection.22.1.1}{Spettrografia}{section.22.1}% 370
+\BOOKMARK [1][-]{section.22.2}{Problemi}{chapter.22}% 371
+\BOOKMARK [0][-]{chapter.23}{Effetti\040foto-termo-elettro-meccanici}{part.7}% 372
+\BOOKMARK [1][-]{section.23.1}{Effetti\040termoelettrici:\040Seebeck,\040Peltier,\040Thomson}{chapter.23}% 373
+\BOOKMARK [1][-]{section.23.2}{Piroelettricità}{chapter.23}% 374
+\BOOKMARK [1][-]{section.23.3}{Piezoelettricità}{chapter.23}% 375
+\BOOKMARK [1][-]{section.23.4}{Effetto\040fotoelettrico}{chapter.23}% 376
+\BOOKMARK [-1][-]{part.8}{VIII\040Fisica\040moderna}{}% 377
+\BOOKMARK [0][-]{chapter.24}{Introduzione\040alla\040fisica\040del\040XX\040secolo}{part.8}% 378
+\BOOKMARK [0][-]{chapter.25}{Esperienze\040ed\040esperimenti}{part.8}% 379
+\BOOKMARK [1][-]{section.25.1}{Materia}{chapter.25}% 380
+\BOOKMARK [1][-]{section.25.2}{Interazione\040luce-materia}{chapter.25}% 381
+\BOOKMARK [2][-]{subsection.25.2.1}{Effetto\040fotoelettrico}{section.25.2}% 382
+\BOOKMARK [2][-]{subsection.25.2.2}{Radiazione\040di\040corpo\040nero}{section.25.2}% 383
+\BOOKMARK [2][-]{subsection.25.2.3}{Calore\040specifico\040dei\040solidi}{section.25.2}% 384
+\BOOKMARK [1][-]{section.25.3}{Relatività}{chapter.25}% 385
+\BOOKMARK [2][-]{subsection.25.3.1}{Relatività speciale}{section.25.3}% 386
+\BOOKMARK [2][-]{subsection.25.3.2}{Relatività generale}{section.25.3}% 387
+\BOOKMARK [0][-]{chapter.26}{Esperimenti}{part.8}% 388
+\BOOKMARK [1][-]{section.26.1}{Scoperta dell’elettrone - J.J.Thomson}{chapter.26}% 389
+\BOOKMARK [1][-]{section.26.2}{La radioattività - Esperimento dei coniugi Curie}{chapter.26}% 390
+\BOOKMARK [1][-]{section.26.3}{Misura della carica dell’elettrone - Millikan}{chapter.26}% 391
+\BOOKMARK [1][-]{section.26.4}{Modello\040atomico\040di\040Rutherford\040-\040Geiger-Mardsen}{chapter.26}% 392
+\BOOKMARK [1][-]{section.26.5}{Lo\040spin\040-\040Stern-Gerlach}{chapter.26}% 393
+\BOOKMARK [0][-]{chapter.27}{Radioattività}{part.8}% 394
+\BOOKMARK [1][-]{section.27.1}{Storia}{chapter.27}% 395
+\BOOKMARK [2][-]{subsection.27.1.1}{Raggi\040X}{section.27.1}% 396
+\BOOKMARK [2][-]{subsection.27.1.2}{Radioattività}{section.27.1}% 397
+\BOOKMARK [2][-]{subsection.27.1.3}{J.J.Thomson}{section.27.1}% 398
+\BOOKMARK [2][-]{subsection.27.1.4}{E.Rutherford}{section.27.1}% 399
+\BOOKMARK [2][-]{subsection.27.1.5}{N.Bohr}{section.27.1}% 400
+\BOOKMARK [1][-]{section.27.2}{Applicazioni}{chapter.27}% 401
+\BOOKMARK [1][-]{section.27.3}{Riferimenti}{chapter.27}% 402
+\BOOKMARK [1][-]{section.27.4}{Esercizi}{chapter.27}% 403
+\BOOKMARK [0][-]{chapter.28}{Fenomeni\040termo-elettrici\040nella\040materia}{part.8}% 404
+\BOOKMARK [0][-]{chapter.29}{Fotografia}{part.8}% 405
+\BOOKMARK [0][-]{chapter.30}{Sviluppi dell’astronomia}{part.8}% 406
+\BOOKMARK [1][-]{section.30.1}{Breve\040storia}{chapter.30}% 407
+\BOOKMARK [-1][-]{part.9}{IX\040Indice}{}% 408
+\BOOKMARK [0][-]{chapter.31}{Indice}{part.9}% 409
+\BOOKMARK [0][-]{section*.526}{Proof\040Index}{part.9}% 410

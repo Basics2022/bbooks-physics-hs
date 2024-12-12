@@ -34,7 +34,23 @@ Hertz fece altre esperienze significative:
 **todo** *controllare citazioni* H.R.Hertz riteneva inutile ai fini pratici la sua scoperta (!), cosa presto smentita da Marconi...
 
 **Marconi - le applicazioni.** **todo** *due parole sul contensto storico, la stesura dei cavi sottomarini e transoceanici del telegrafo - in cui erano coinvolti anche personaggi del calibro di Kelvin -, e rivoluzione della radio per le comunicazioni*
- 
+
+
+(physics-hs:electromagnetism:em-waves:light)=
+## Luce
+
+(physics-hs:electromagnetism:em-waves:spectrography)=
+### Spettrografia
+Diffrazione per scomporre la luce in uno spettro:
+- prisma
+- seguendo la *teoria ondulatoria della luce* di Young, Arago e Fresnel, **Fraunhofer** (1815) sviluppa i **reticoli di** [**diffrazione**](physics-hs:waves:effects:diffraction) per sfruttarne l'interferenza, effetto tipico dei fenomeni che hanno *comportamento ondulatorio*; questo progresso tecnologico consente un miglioramento della risoluzione spettrale e la costruzione di strumenti universali affidabili per la spettroscopia
+- verso la metà del XIX secolo vengono svolti i primi lavori sistematici sugli spettri di emissione e di assorbimento di diverse sostanze; si scoprono gli spettri discreti di emissione e di assorbimento (che coincidono per la stessa sostanza) e che questi possono essere usati per riconoscere la composizione chimica delle sostanze;
+- Kirchhoff riconosce le condizioni per l'emissioni di spettri continui e discreti
+- 1895, Rontgen scopre i raggi $X$, poi identificati come radiazione elettromagnetica - come la luce - ad alta frequenza
+- ...
+
+**Applicazioni.** **todo** *storiche: analisi chimiche, cristallografia,...; moderne: applicazioni in medicina,...*
+
 **Riferimenti.**
 [^emwave-bragg]: [Onde magnetiche, con Sir L.Bragg](https://www.youtube.com/watch?v=Vwjcn4Vl2iw) per la Royal institution
 [^emwave-fst]: [Esperimenti di Hertz con le onde elettromagnetiche](https://www.youtube.com/watch?v=xNTHbiKmwNQ) della Fondazione Scienza e Tecnica di Firenze
