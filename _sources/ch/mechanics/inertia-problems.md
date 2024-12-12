@@ -4,7 +4,7 @@ Questa pagina contiene esercizi sull'inerzia dei sistemi meccanici, con valutazi
 
 ---
 
-### Punti Materiali
+## Punti Materiali
 
 ```{exercise} Momento di Inerzia di un Punto
 Un punto materiale di massa $m = 5 \, \text{kg}$ si trova a una distanza $r = 3 \, \text{m}$ da un asse di rotazione. Calcola il momento di inerzia di questo punto rispetto a tale asse.
@@ -28,7 +28,7 @@ Un punto materiale di massa $m = 2 \, \text{kg}$ ruota attorno a un asse con vel
 
 ---
 
-### Sistemi di Punti Materiali
+## Sistemi di Punti Materiali
 
 ```{exercise} Momento di Inerzia di un Sistema di Punti
 Tre masse, $m_1 = 2 \, \text{kg}$, $m_2 = 3 \, \text{kg}$, e $m_3 = 4 \, \text{kg}$, sono disposte su un piano cartesiano nelle seguenti posizioni: $(1, 0)$, $(0, 2)$, e $(-1, -1)$. Calcola il momento di inerzia totale del sistema rispetto all'asse $z$ (perpendicolare al piano).
@@ -52,7 +52,7 @@ Un sistema di punti materiali con masse $m_1 = 2 \, \text{kg}$, $m_2 = 3 \, \tex
 
 ---
 
-### Sistemi con Distribuzione Continua di Massa
+## Sistemi con Distribuzione Continua di Massa
 
 ```{exercise} Momento di Inerzia di un Disco
 Calcola il momento di inerzia di un disco di massa $m = 10 \, \text{kg}$ e raggio $R = 5 \, \text{m}$ rispetto all'asse centrale e perpendicolare al piano del disco.

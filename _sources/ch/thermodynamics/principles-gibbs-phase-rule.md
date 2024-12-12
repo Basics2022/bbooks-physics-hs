@@ -225,7 +225,7 @@ Nel caso generale di un **sistema semplice**, usando la definizione $dS = \frac{
 
 $$d S \ge \frac{\delta Q^{ext}}{T} \ .$$
 
-Questa è un'espressione dell'[enunciato di Clausius del secondo principio della termodinamica](physics-hs:thermodynamics:principles:second).
+Questa è un'espressione dell'[enunciato di Clausius del secondo principio della termodinamica](physics-hs:thermodynamics:foundation:principles:second).
 
 **todo** **oss** *Il terzo principio della termodinamica: 1. sembra non essere un principio; 2. per alcuni sistemi con energia limitata la definizione di temperatura $T := \left( \frac{\partial E}{\partial S} \right)$ produce una temperatura negativa* **todo** *aggiungere una sezione su meccanica statistica?*.
 
