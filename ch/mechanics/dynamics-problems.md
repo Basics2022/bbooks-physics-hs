@@ -1,3 +1,4 @@
+(physics-hs:mechanics:dynamics:problems)=
 # Problemi
 
 Questa pagina contiene esercizi di dinamica relativi a diversi argomenti: **moto di un punto materiale**, **moto di sistemi di punti materiali**, **moto di corpi rigidi in due dimensioni**, **urti e collisioni**, **gravitazione**, **equilibrio** e **stabilità**. Alcuni esercizi richiedono l'uso di principi di conservazione.

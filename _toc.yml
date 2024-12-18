@@ -71,6 +71,7 @@ parts:
     - file: ch/mechanics/dynamics-motion-gravitation
     - file: ch/mechanics/dynamics-central
     - file: ch/mechanics/dynamics-problems
+#   - file: ch/mechanics/dynamics-problems-extra
 #   - file: ch/mechanics/dynamics-sims
 - caption: Cenni di meccanica del continuo
   numbered: True
