@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6.3. Cinematica dei sistemi deformabili &#8212; Fisica per le superiori</title>
+    <title>10.9. Altri problemi &#8212; Fisica per le superiori</title>
   
   
   
@@ -65,12 +65,14 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/kinematics-deformable';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/mechanics/dynamics-problems-extra';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="6.4. Cinematica relativa" href="kinematics-relative.html" />
-    <link rel="prev" title="6.2. Cinematica di un corpo rigido" href="kinematics-rigid.html" />
+    <link rel="next" title="11. Cenni di meccanica del continuo" href="../continuum/intro.html" />
+    <link rel="prev" title="10.8. Problemi" href="dynamics-problems.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -190,10 +192,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="models.html">5.2. Modelli</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="kinematics.html">6. Cinematica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="kinematics.html">6. Cinematica</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="kinematics-point.html">6.1. Cinematica del punto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kinematics-rigid.html">6.2. Cinematica di un corpo rigido</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">6.3. Cinematica dei sistemi deformabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kinematics-deformable.html">6.3. Cinematica dei sistemi deformabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kinematics-relative.html">6.4. Cinematica relativa</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kinematics-problems.html">6.5. Problemi</a></li>
 
@@ -221,7 +223,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="inertia-problems.html">9.6. Problemi</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="dynamics.html">10. Dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="dynamics.html">10. Dinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="dynamics-principles.html">10.1. Princìpi della dinamica di Newton</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="dynamics-eom.html">10.2. Equazioni cardinali della dinamica per sistemi chiusi</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="dynamics-eom-proof-point.html">10.2.1. Equazioni cardinali della dinamica per un punto</a></li>
@@ -235,6 +237,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="dynamics-motion-gravitation.html">10.6. Gravitazione</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-central.html">10.7. Moti centrali</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-problems.html">10.8. Problemi</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">10.9. Altri problemi</a></li>
 </ul>
 </li>
 </ul>
@@ -433,7 +436,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/edit/master/ch/mechanics/kinematics-deformable.md" target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/edit/master/ch/mechanics/dynamics-problems-extra.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -450,7 +453,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/mechanics/kinematics-deformable.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/mechanics/dynamics-problems-extra.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Apri un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -480,7 +483,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/mechanics/kinematics-deformable.md" target="_blank"
+      <li><a href="../../_sources/ch/mechanics/dynamics-problems-extra.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -562,7 +565,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Cinematica dei sistemi deformabili</h1>
+    <h1>Altri problemi</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -576,27 +579,115 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="sd-container-fluid sd-sphinx-override sd-p-0 sd-mt-2 sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-2 sd-gx-2 sd-gy-1 docutils">
-<div class="sd-col sd-d-flex-row sd-align-minor-center docutils">
-<div class="sd-container-fluid sd-sphinx-override docutils">
-<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-gx-3 sd-gy-1 docutils">
-<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0">basics</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="altri-problemi">
+<span id="physics-hs-mechanics-dynamics-problems-extra"></span><h1><span class="section-number">10.9. </span>Altri problemi<a class="headerlink" href="#altri-problemi" title="Permalink to this heading">#</a></h1>
+<p>Questi problemi sono pensati per persone con un livello di preparazione maggiore; alcuni esercizi potrebbero richiedere degli strumenti matematici che non sono a disposizione dal fruitore medio, e nemmeno a uno sopra la media, di questo materiale.</p>
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-extra-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 10.38 </span> (Conservazione del momento angolare, nell’esperimento della ruota)</p>
+<div class="section" id="exercise-content">
+<p>Si considera una piattaforma libera di ruotare rispetto all’asse <span class="math notranslate nohighlight">\(z\)</span> di sistema di riferimento cartesiano inerziale <span class="math notranslate nohighlight">\(Oxyz\)</span>. L’angolo di rotazione è indicato con <span class="math notranslate nohighlight">\(\theta\)</span>. Sulla piattaforma è montata una ruota, libera di ruotare attorno all’asse passante per il suo mozzo. Il mozzo è a sua volta libero di ruotare rispetto all’asse <span class="math notranslate nohighlight">\(x_1\)</span> solidale con la piattaforma.</p>
+<p>La piattaforma è inizialmente ferma, mentre la ruota è in moto con velocità angolare <span class="math notranslate nohighlight">\(\vec{\omega}^b_{0} = \omega^b_{0} \hat{y}_2\)</span>. La ruota viene girata da una coppia interna in modo tale da portare l’asse <span class="math notranslate nohighlight">\(\hat{x}_2\)</span> allineato con l’asse <span class="math notranslate nohighlight">\(z\)</span>. Si chiede di determinare lo stato finale del sistema.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione con le leggi di conservazione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 </div>
-<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>18 dic 2024</p>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Soluzione con le equazione del moto<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Si introducono i seguenti sistemi di riferimento per studiare il moto del sistema, ed esprimere le rotazioni come rotazioni parziali:</p>
+<ul class="simple">
+<li><p class="sd-card-text">il sistema <span class="math notranslate nohighlight">\(Oxyz\)</span> inerziale</p></li>
+<li><p class="sd-card-text">il sistema <span class="math notranslate nohighlight">\(Ox_1 y_1 z_1\)</span> solidale con la piattaforma, ruotato di un angolo <span class="math notranslate nohighlight">\(\theta\)</span> rispetto a <span class="math notranslate nohighlight">\(O x y z\)</span> attorno all’asse <span class="math notranslate nohighlight">\(z\)</span></p></li>
+<li><p class="sd-card-text">il sistema <span class="math notranslate nohighlight">\(Ox_2 y_2 z_2\)</span> solidale con il mozzo della ruota, ruotato di un angolo <span class="math notranslate nohighlight">\(\phi\)</span> rispetto a <span class="math notranslate nohighlight">\(O x_1 y_1 z_1\)</span> attorno all’asse <span class="math notranslate nohighlight">\(x_1\)</span></p></li>
+<li><p class="sd-card-text">il sistema <span class="math notranslate nohighlight">\(Ox_3 y_3 z_3\)</span> solidale con la ruota. <em>Data la simmetria della ruota, si può evitare di introdurre questo sistema di riferimento</em></p></li>
+</ul>
+<p class="sd-card-text">Le leggi di trasformazione dei vettori di queste basi sono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+  \hat{x} = \cos \theta \hat{x}_1 - \sin \theta \hat{y}_1 \\
+  \hat{y} = \sin \theta \hat{x}_1 + \cos \theta \hat{y}_1 \\
+  \hat{z} = \hat{z}_1 \\
+\end{cases}
+\quad , \quad
+\begin{cases}
+  \hat{x}_1 = \cos \theta \hat{x} + \sin \theta \hat{y} \\
+  \hat{y}_1 =-\sin \theta \hat{x} + \cos \theta \hat{y} \\
+  \hat{z}_1 = \hat{z} \\
+\end{cases}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+  \hat{x}_1 = \hat{x}_2 \\
+  \hat{y}_1 = \cos \phi \hat{y}_2 - \sin \phi \hat{z}_2 \\
+  \hat{z}_1 = \sin \phi \hat{y}_2 + \cos \phi \hat{z}_2 \\
+\end{cases}
+\quad , \quad
+\begin{cases}
+  \hat{x}_2 = \hat{x}_1 \\
+  \hat{y}_2 = \cos \phi \hat{y}_1 + \sin \phi \hat{z}_1 \\
+  \hat{z}_2 =-\sin \phi \hat{y}_1 + \cos \phi \hat{z}_1 \\
+\end{cases}
+\end{split}\]</div>
+<p class="sd-card-text">La ruota e la piattaforma vengono modellati come corpi rigidi. Le loro proprietà inerziali sono quindi costanti rispetto ai sistemi di riferimento materiali, solidali con essi,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \mathbb{I}_G^p &amp; = I^p_x \hat{x} \hat{x} + I^p_x \hat{y} \hat{y} + I^p_z \hat{z} \hat{z} \\
+  \mathbb{I}_G^w &amp; = I^w_x \hat{x}_2 \hat{x}_2 + I^w_y \hat{y}_2 \hat{y}_2 + I^w_x \hat{z}_2 \hat{z}_2 \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Le equazioni dinamica del bilancio della quantità di moto di un corpo rigido è</p>
+<div class="math notranslate nohighlight">
+\[\dot{\Gamma}_H = - \dot{\vec{x}}_H \times \vec{Q} + \vec{M}_H^e \ ,\]</div>
+<p class="sd-card-text">e se viene riferita al centro di massa <span class="math notranslate nohighlight">\(G\)</span> del sistema, l’equazione dinamica diventa <span class="math notranslate nohighlight">\(\dot{\Gamma}_G = \vec{M}_G^e\)</span>, con il momento della quantità di moto <span class="math notranslate nohighlight">\(\vec{\Gamma}_G = \mathbb{I}_G \cdot \vec{\omega}\)</span>.</p>
+<p class="sd-card-text">Le velocità angolari di piattaforma e ruota sono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{\omega}^p &amp; = \dot{\theta} \hat{z} \\
+  \vec{\omega}^w
+  &amp; = \dot{\theta} \hat{z} + \dot{\phi} \hat{x}_1 + \dot{\psi} \hat{y}_2 = \\
+  &amp; = \dot{\theta} (\sin \phi \hat{y}_2 + \cos \phi \hat{z}_2) + \dot{\phi} \hat{x}_2 + \dot{\psi} \hat{y}_2 = \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">I momenti angolari di piattaforma e ruota sono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{\Gamma}_G^p &amp; = \mathbb{I}_G^p \cdot \vec{\omega}^p = I_z^p \dot{\theta} \hat{z} \\
+  \vec{\Gamma}_G^w 
+  &amp; = \mathbb{I}_G^w \cdot \vec{\omega}^w = \\
+  &amp; = [I^w_x \hat{x}_2 \hat{x}_2 + I^w_y \hat{y}_2 \hat{y}_2 + I^w_x \hat{z}_2 \hat{z}_2] \cdot [ \dot{\phi} \hat{x}_2 + ( \dot{\theta} \sin \phi + \dot{\psi} ) \hat{y}_2 + \dot{\theta} \cos \phi \hat{z}_2 ] \\
+  &amp; =  I^w_x \dot{\phi} \hat{x}_2 + I^w_y (\dot{\theta} \sin \phi + \dot{\psi} ) \hat{y}_2 + I^w_z \dot{\theta} \cos \phi \hat{z}_2 = \\
+  &amp; =  I^w_x \dot{\phi} \hat{x}_1 + I^w_y (\dot{\theta} \sin \phi + \dot{\psi} ) (\cos \phi \hat{y}_1 + \sin \phi \hat{z}_1) + I^w_z \dot{\theta} \cos \phi (-\sin \phi \hat{y}_1 + \cos \phi \hat{z}_1) = \\
+  &amp; =  I^w_x \dot{\phi} \hat{x}_1 + \hat{y}_1 \left( ( I^w_y - I^w_z) \dot{\theta} \sin \phi \cos \phi + \dot{\psi} \cos \phi \right) + \hat{z}_1 \left( I^w_y \dot{\theta} \sin^2 \phi + I^w_z \dot{\theta} \cos^2 \phi + I^w_y \dot{\psi} \sin \phi  \right) = \\
+  &amp; = I^w_x \left( \ddot{\phi} \hat{x}_1 + \dot{\phi} \dot{\theta} \hat{y}_1 \right) + \hat{y}_1 \frac{d}{dt}() - \dot{\theta} \hat{x}_1 () + \hat{z}_1 \frac{d}{dt} \left( \right)
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">L’energia cinetica dei due corpi è</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  K^p &amp; = \frac{1}{2} \vec{\omega}^p \cdot \mathbb{I}^p_G \cdot \vec{\omega}^p = \\
+      &amp; = \frac{1}{2} I^p_z \dot{\theta}^2 \\
+  K^w 
+  &amp; = \frac{1}{2} \vec{\omega}^w \cdot \mathbb{I}^w_G \cdot \vec{\omega}^w = \\
+  &amp; = \frac{1}{2} [\dot{\phi} \hat{x}_2 + ( \dot{\theta} \sin \phi + \dot{\psi} ) \hat{y}_2 + \dot{\theta} \cos \phi \hat{z}_2] \cdot [ I^w_x \dot{\phi} \hat{x}_2 + I^w_y (\dot{\theta} \sin \phi + \dot{\psi} ) \hat{y}_2 + I^w_z \dot{\theta} \cos \phi \hat{z}_2 ] = \\
+  &amp; = \frac{1}{2} [ I^w_x \dot{\phi}^2 + I^w_y(\dot{\theta}\sin\phi + \dot{\psi})^2 + I^w_z \dot{\theta}^2 ]
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">I momenti esterni agenti sulla ruota sono dovuti ai vincoli e alle azioni (interne al sistema complessivo) scambiate con la piattaforma; i momenti esterni agenti sulla piattaforma includono anche le reazioni vincolari a terra.</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+  \vec{M}^{wp} = \dots
+\end{aligned}\]</div>
+<!--  \vec{M}^{wp} = M_{x,1} \hat{x}_1 + M_{y,1} \hat{y}_1 + M_{z,1} \hat{z}_1 + M_{x,2} \hat{x}_2 + M_{z,2} \hat{z}_2 = -->
 </div>
-<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>0 min read</p>
+</details></div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="cinematica-dei-sistemi-deformabili">
-<h1><span class="section-number">6.3. </span>Cinematica dei sistemi deformabili<a class="headerlink" href="#cinematica-dei-sistemi-deformabili" title="Permalink to this heading">#</a></h1>
 </div>
 
     <script type="text/x-thebe-config">
@@ -630,20 +721,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="kinematics-rigid.html"
+       href="dynamics-problems.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">6.2. </span>Cinematica di un corpo rigido</p>
+        <p class="prev-next-title"><span class="section-number">10.8. </span>Problemi</p>
       </div>
     </a>
     <a class="right-next"
-       href="kinematics-relative.html"
+       href="../continuum/intro.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">6.4. </span>Cinematica relativa</p>
+        <p class="prev-next-title"><span class="section-number">11. </span>Cenni di meccanica del continuo</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

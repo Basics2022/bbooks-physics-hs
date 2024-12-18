@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/waves/intro';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
@@ -574,15 +576,22 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effetti-associati">17.1. Effetti associati</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#riflessione">17.1.1. Riflessione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rifrazione">17.1.2. Rifrazione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interferenza">17.1.3. Interferenza</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diffrazione">17.1.4. Diffrazione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#polarizzazione">17.1.5. Polarizzazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equazione-delle-onde-in-diversi-sistemi">17.1. Equazione delle onde in diversi sistemi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-meccanici">17.1.1. Sistemi meccanici</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fluidi">17.1.2. Fluidi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">17.1.3. </a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ottica">17.2. Ottica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effetti-associati">17.2. Effetti associati</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#riflessione">17.2.1. Riflessione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rifrazione">17.2.2. Rifrazione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interferenza">17.2.3. Interferenza</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diffrazione">17.2.4. Diffrazione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#polarizzazione">17.2.5. Polarizzazione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effetto-doppler">17.2.6. Effetto Doppler</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ottica">17.3. Ottica</a></li>
 </ul>
             </nav>
         </div>
@@ -596,30 +605,76 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="introduzione-ai-fenomeni-ondulatori">
 <span id="physics-hs-waves-intro"></span><h1><span class="section-number">17. </span>Introduzione ai fenomeni ondulatori<a class="headerlink" href="#introduzione-ai-fenomeni-ondulatori" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Onde meccaniche nei mezzi continui:</p>
+<ul>
+<li><p>nei solidi</p>
+<ul>
+<li><p>elastici</p></li>
+<li><p>onde sismiche</p></li>
+</ul>
+</li>
+<li><p>nei fluidi</p>
+<ul>
+<li><p>onde di pressione (densità e altre proprietà meccaniche) e suono</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Onde EM; lo spettro EM comprende</p>
+<ul>
+<li><p>onde radio, micro, IR, luce visibile, UV, <span class="math notranslate nohighlight">\(\gamma\)</span>, <span class="math notranslate nohighlight">\(X\)</span></p></li>
+</ul>
+</li>
+</ul>
+<p>()=</p>
+<div class="section" id="equazione-delle-onde-in-diversi-sistemi">
+<h2><span class="section-number">17.1. </span>Equazione delle onde in diversi sistemi<a class="headerlink" href="#equazione-delle-onde-in-diversi-sistemi" title="Permalink to this heading">#</a></h2>
+<div class="section" id="sistemi-meccanici">
+<h3><span class="section-number">17.1.1. </span>Sistemi meccanici<a class="headerlink" href="#sistemi-meccanici" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Azione assiale</p></li>
+<li><p>Torsione</p></li>
+</ul>
+</div>
+<div class="section" id="fluidi">
+<h3><span class="section-number">17.1.2. </span>Fluidi<a class="headerlink" href="#fluidi" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Pressione</p></li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h3><span class="section-number">17.1.3. </span><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+</div>
+</div>
 <div class="section" id="effetti-associati">
-<span id="physics-hs-waves-effects"></span><h2><span class="section-number">17.1. </span>Effetti associati<a class="headerlink" href="#effetti-associati" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-waves-effects"></span><h2><span class="section-number">17.2. </span>Effetti associati<a class="headerlink" href="#effetti-associati" title="Permalink to this heading">#</a></h2>
 <div class="section" id="riflessione">
-<span id="physics-hs-waves-effects-reflection"></span><h3><span class="section-number">17.1.1. </span>Riflessione<a class="headerlink" href="#riflessione" title="Permalink to this heading">#</a></h3>
+<span id="physics-hs-waves-effects-reflection"></span><h3><span class="section-number">17.2.1. </span>Riflessione<a class="headerlink" href="#riflessione" title="Permalink to this heading">#</a></h3>
 </div>
 <div class="section" id="rifrazione">
-<span id="physics-hs-waves-effects-refraction"></span><h3><span class="section-number">17.1.2. </span>Rifrazione<a class="headerlink" href="#rifrazione" title="Permalink to this heading">#</a></h3>
+<span id="physics-hs-waves-effects-refraction"></span><h3><span class="section-number">17.2.2. </span>Rifrazione<a class="headerlink" href="#rifrazione" title="Permalink to this heading">#</a></h3>
 </div>
 <div class="section" id="interferenza">
-<span id="physics-hs-waves-effects-interference"></span><h3><span class="section-number">17.1.3. </span>Interferenza<a class="headerlink" href="#interferenza" title="Permalink to this heading">#</a></h3>
+<span id="physics-hs-waves-effects-interference"></span><h3><span class="section-number">17.2.3. </span>Interferenza<a class="headerlink" href="#interferenza" title="Permalink to this heading">#</a></h3>
 </div>
 <div class="section" id="diffrazione">
-<span id="physics-hs-waves-effects-diffraction"></span><h3><span class="section-number">17.1.4. </span>Diffrazione<a class="headerlink" href="#diffrazione" title="Permalink to this heading">#</a></h3>
+<span id="physics-hs-waves-effects-diffraction"></span><h3><span class="section-number">17.2.4. </span>Diffrazione<a class="headerlink" href="#diffrazione" title="Permalink to this heading">#</a></h3>
 </div>
 <div class="section" id="polarizzazione">
-<span id="physics-hs-waves-effects-polarization"></span><h3><span class="section-number">17.1.5. </span>Polarizzazione<a class="headerlink" href="#polarizzazione" title="Permalink to this heading">#</a></h3>
+<span id="physics-hs-waves-effects-polarization"></span><h3><span class="section-number">17.2.5. </span>Polarizzazione<a class="headerlink" href="#polarizzazione" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Onde EM</p></li>
 <li><p>Onde sismiche S, shear, di taglio</p></li>
+<li><p>Onde EM</p></li>
 </ul>
+</div>
+<div class="section" id="effetto-doppler">
+<span id="physics-hs-waves-effects-doppler"></span><h3><span class="section-number">17.2.6. </span>Effetto Doppler<a class="headerlink" href="#effetto-doppler" title="Permalink to this heading">#</a></h3>
+<p>Quando la sorgente e l’osservatore sono in moto relativo, la frequenza percepita dall’osservatore è diversa dalla frequenza emessa dalla sorgente.</p>
 </div>
 </div>
 <div class="section" id="ottica">
-<span id="physics-hs-waves-optics"></span><h2><span class="section-number">17.2. </span>Ottica<a class="headerlink" href="#ottica" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-waves-optics"></span><h2><span class="section-number">17.3. </span>Ottica<a class="headerlink" href="#ottica" title="Permalink to this heading">#</a></h2>
 </div>
 </div>
 
@@ -686,15 +741,22 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effetti-associati">17.1. Effetti associati</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#riflessione">17.1.1. Riflessione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rifrazione">17.1.2. Rifrazione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interferenza">17.1.3. Interferenza</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diffrazione">17.1.4. Diffrazione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#polarizzazione">17.1.5. Polarizzazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equazione-delle-onde-in-diversi-sistemi">17.1. Equazione delle onde in diversi sistemi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-meccanici">17.1.1. Sistemi meccanici</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fluidi">17.1.2. Fluidi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">17.1.3. </a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ottica">17.2. Ottica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effetti-associati">17.2. Effetti associati</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#riflessione">17.2.1. Riflessione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rifrazione">17.2.2. Rifrazione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interferenza">17.2.3. Interferenza</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diffrazione">17.2.4. Diffrazione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#polarizzazione">17.2.5. Polarizzazione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effetto-doppler">17.2.6. Effetto Doppler</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ottica">17.3. Ottica</a></li>
 </ul>
   </nav></div>
 
