@@ -7,7 +7,7 @@
 Il moto uniforme è un moto rettilineo.
 
 ```{dropdown} Dimostrazione
-:label: kinematics-notes-uniform
+:name: kinematics-notes-uniform
 ```
 
 ### Moto uniformemente accelerato, $\ \dot{r}_P(t) = \vec{a}$ 
@@ -16,5 +16,5 @@ Il moto uniformemente accelerato è un moto piano. Data la posizione del punto $
 Se i vettori velocità e accelerazione sono allineati (con direzione concorde o opposta), il moto si svolge lungo una retta.
 
 ```{dropdown} Dimostrazione
-:label: kinematics-notes-const-a
+:name: kinematics-notes-const-a
 ```
