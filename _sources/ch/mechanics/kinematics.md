@@ -1,3 +1,4 @@
+<!--
 ````{only} html
 ```{article-info}
 :author: basics
@@ -5,6 +6,7 @@
 :read-time: "{sub-ref}`wordcount-minutes` min read"
 ```
 ````
+-->
 
 (physics-hs:mechanics:kinematics)=
 # Cinematica

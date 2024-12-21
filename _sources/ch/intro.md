@@ -1,6 +1,7 @@
 (physics-hs:intro)=
 # Introduzione alla fisica
 
+**Contenuti.**
 - Metodo scientifico:
   - ricerca di princìpi fisici in accordo con le attività sperimentali
   - deduzione di una teoria, a partire dai princìpi
@@ -15,3 +16,4 @@
 - **Astrazione** e costruzione di **modelli**, con il linguaggio matematico
 - Rappresentazione dei dati
   - ...
+- Sapere attuale
