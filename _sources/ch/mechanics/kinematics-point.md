@@ -11,6 +11,13 @@
 (physics-hs:mechanics:kinematics:point)=
 # Cinematica del punto
 
+## Prime definizioni
+Quantità vettoriali...
+- spostamento, composizione spostamenti
+- velocità media, velocità puntuale
+- accelerazione media, accelerazione puntuale
+
+## Configurazione e stato in un moto regolare (differenziabile)
 La cinematica di un punto $P(t)$ è completamente definita dalla sua posizione nello spazio in funzione del tempo. La configurazione di un sistema puntiforme in un istante temporale è data dalla sua posizione rispetto a un punto $O$ preso come origine, come riferimento. Lo stato di un sistema puntiforme in un determinato istante temporale è definito dalla sua posizione e dalla sua velocità. Rispetto a un'origine considerata indipendente dal tempo, la posizione del punto $P$ è definita dal vettore euclideo $\vec{r}_P(t) = P(t) - O$ che congiunge l'origine $O$ con il punto $P$, la velocità e l'accelerazione sono rispettivamente la derivata prima e seconda della posizione rispetto al tempo,
 
 $$\begin{aligned}
@@ -18,7 +25,6 @@ $$\begin{aligned}
    \vec{v}_P(t) & := \frac{d \vec{r}_P}{dt}(t) & \text{(velocità di $P$ rispetto a $O$)} \\
    \vec{a}_P(t) & := \frac{d^2 \vec{r}_P}{dt^2}(t) = \frac{d \vec{v}_P}{dt}(t) & \text{(accelerazione di $P$ rispetto a $O$)} \\
 \end{aligned}$$
-
 
 (physics-hs:mechanics:kinematics:point:motion)=
 ## Moti particolari
