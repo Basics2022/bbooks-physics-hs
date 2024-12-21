@@ -1,3 +1,4 @@
+<!--
 ````{only} html
 ```{article-info}
 :author: basics
@@ -5,6 +6,7 @@
 :read-time: "{sub-ref}`wordcount-minutes` min read"
 ```
 ````
+-->
 
 (physics-hs:mechanics:kinematics:point)=
 # Cinematica del punto
@@ -132,7 +134,7 @@ $$\begin{cases}
 
 che permettono di identificare il punto $P$ con il raggio vettore rispetto all'origine
 
-$$\vec{r}_P = R \cos \theta_P(t) \hat{x} + R \sin \theta_P(t) \hat{y} \ .$$
+$$\vec{r}_P(t) = R \cos \theta_P(t) \hat{x} + R \sin \theta_P(t) \hat{y} \ .$$
 
 - Definizione vettori $\hat{r}$, $\hat{\theta}$ **todo** *dipendenza di questi versori dalla posizione di $P$ nello spazio, e quindi in generale dal tempo
 - La velocità e l'accelerazione del punto **todo**
@@ -159,9 +161,6 @@ e la derivata nel tempo della coordinata $\theta_P$ è costante **todo**
 ### Moto armonico lungo un segmento
 Un moto armonico lungo un segmento può essere definito come la proiezione di un punto che compie un moto circolare uniforme su una circonferenza che ha il segmento come diametro **todo**
 
-
-
-## Problemi
 
 
 
