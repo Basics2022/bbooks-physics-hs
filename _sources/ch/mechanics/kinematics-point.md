@@ -14,16 +14,14 @@ La cinematica di un punto $P(t)$ è completamente definita dalla sua posizione n
 $$\begin{aligned}
    \vec{r}_P(t) & := P(t) - O & \text{(posizione di $P$ rispetto a $O$)} \\
    \vec{v}_P(t) & := \frac{d \vec{r}_P}{dt}(t) & \text{(velocità di $P$ rispetto a $O$)} \\
-   \vec{a}_P(t) & := \frac{d^2 \vec{r}_P}{dt^2}(t) = \frac{d \vec{v}_P}{dt} & \text{(accelerazione di $P$ rispetto a $O$)} \\
+   \vec{a}_P(t) & := \frac{d^2 \vec{r}_P}{dt^2}(t) = \frac{d \vec{v}_P}{dt}(t) & \text{(accelerazione di $P$ rispetto a $O$)} \\
 \end{aligned}$$
 
-**Posizione di un punto.** $P(t) - O = \vec{r}_P(t)$
 
-**Velocità di un punto.** $\vec{v}_P = \dfrac{d \vec{r}_P}{dt}$
-
-**Accelerazione di un punto.** $\vec{a}_P = \dfrac{d \vec{v}_P}{dt} = \dfrac{d^2 \vec{r}_P}{d t^2}$
-
+(physics-hs:mechanics:kinematics:point:motion)=
 ## Moti particolari
+
+(physics-hs:mechanics:kinematics:point:motion:a-0)=
 ### Moto non accelerato
 Un moto non accelerato di un punto $P$ rispetto a un sistema di riferimento con origine in $O$ può essere definito dalla condizione di accelerazione nulla 
 
@@ -78,6 +76,7 @@ accompagnata da condizioni tra di loro compatibili (**todo** *fare esempio di co
 **todo** moto rettilineo; uso dei sistemi di riferimento
 </span>
 
+(physics-hs:mechanics:kinematics:point:motion:a)=
 ### Moto uniformemente accelerato
 Un moto uniformemente accelerato di un punto $P$ rispetto a un sistema di riferimento con origine in $O$ può essere definito dalla condizione di accelerazione costante
 
