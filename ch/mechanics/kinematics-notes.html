@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Note e dimostrazioni &#8212; Fisica per le superiori</title>
+    <title>7.7. Note e dimostrazioni &#8212; Fisica per le superiori</title>
   
   
   
@@ -71,6 +71,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
+    <link rel="next" title="8. Azioni" href="actions.html" />
+    <link rel="prev" title="7.6. Soluzioni" href="kinematics-sol.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -186,18 +188,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../intro/current-status.html">5. Stato corrente</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Meccanica classica</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="intro.html">6. Introduzione alla meccanica classica</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="intro-history.html">6.1. Esperienze e breve storia delle origini della meccanica classica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="intro-vocabulary.html">6.2. Concetti in meccanica classica</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="kinematics.html">7. Cinematica</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="kinematics.html">7. Cinematica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="kinematics-point.html">7.1. Cinematica del punto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kinematics-rigid.html">7.2. Cinematica di un corpo rigido</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kinematics-deformable.html">7.3. Cinematica dei sistemi deformabili</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kinematics-relative.html">7.4. Cinematica relativa</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kinematics-problems.html">7.5. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kinematics-sol.html">7.6. Soluzioni</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">7.7. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="actions.html">8. Azioni</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -575,9 +579,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-del-punto">Cinematica del punto</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-uniforme-ddot-r-p-t-vec-0">Moto uniforme, <span class="math notranslate nohighlight">\(\ \ddot{r}_P(t) = \vec{0}\)</span></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-uniformemente-accelerato-dot-r-p-t-vec-a">Moto uniformemente accelerato, <span class="math notranslate nohighlight">\(\ \dot{r}_P(t) = \vec{a}\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-del-punto">7.7.1. Cinematica del punto</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-uniforme-ddot-r-p-t-vec-0">7.7.1.1. Moto uniforme, <span class="math notranslate nohighlight">\(\ \ddot{r}_P(t) = \vec{0}\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-uniformemente-accelerato-dot-r-p-t-vec-a">7.7.1.2. Moto uniformemente accelerato, <span class="math notranslate nohighlight">\(\ \dot{r}_P(t) = \vec{a}\)</span></a></li>
 </ul>
 </li>
 </ul>
@@ -592,15 +596,15 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="note-e-dimostrazioni">
-<span id="physics-hs-mechanics-kinematics-notes"></span><h1>Note e dimostrazioni<a class="headerlink" href="#note-e-dimostrazioni" title="Permalink to this heading">#</a></h1>
+<span id="physics-hs-mechanics-kinematics-notes"></span><h1><span class="section-number">7.7. </span>Note e dimostrazioni<a class="headerlink" href="#note-e-dimostrazioni" title="Permalink to this heading">#</a></h1>
 <div class="section" id="cinematica-del-punto">
-<h2>Cinematica del punto<a class="headerlink" href="#cinematica-del-punto" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">7.7.1. </span>Cinematica del punto<a class="headerlink" href="#cinematica-del-punto" title="Permalink to this heading">#</a></h2>
 <div class="section" id="moto-uniforme-ddot-r-p-t-vec-0">
-<h3>Moto uniforme, <span class="math notranslate nohighlight">\(\ \ddot{r}_P(t) = \vec{0}\)</span><a class="headerlink" href="#moto-uniforme-ddot-r-p-t-vec-0" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">7.7.1.1. </span>Moto uniforme, <span class="math notranslate nohighlight">\(\ \ddot{r}_P(t) = \vec{0}\)</span><a class="headerlink" href="#moto-uniforme-ddot-r-p-t-vec-0" title="Permalink to this heading">#</a></h3>
 <p>Il moto uniforme è un moto rettilineo.</p>
 </div>
 <div class="section" id="moto-uniformemente-accelerato-dot-r-p-t-vec-a">
-<h3>Moto uniformemente accelerato, <span class="math notranslate nohighlight">\(\ \dot{r}_P(t) = \vec{a}\)</span><a class="headerlink" href="#moto-uniformemente-accelerato-dot-r-p-t-vec-a" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">7.7.1.2. </span>Moto uniformemente accelerato, <span class="math notranslate nohighlight">\(\ \dot{r}_P(t) = \vec{a}\)</span><a class="headerlink" href="#moto-uniformemente-accelerato-dot-r-p-t-vec-a" title="Permalink to this heading">#</a></h3>
 <p>Il moto uniformemente accelerato è un moto piano. Data la posizione del punto <span class="math notranslate nohighlight">\(P\)</span> in un istante, e la sua velocità <span class="math notranslate nohighlight">\(\dot{\vec{r}}_P(t) = \vec{v}_P(t)\)</span>, il moto si svolge nel piano passante per <span class="math notranslate nohighlight">\(P\)</span>, nel quale giacciono i vettori velocità <span class="math notranslate nohighlight">\(\vec{v}_P(t)\)</span> e accelerazione <span class="math notranslate nohighlight">\(\vec{a}\)</span>.</p>
 <p>Se i vettori velocità e accelerazione sono allineati (con direzione concorde o opposta), il moto si svolge lungo una retta.</p>
 </div>
@@ -637,6 +641,24 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="kinematics-sol.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">precedente</p>
+        <p class="prev-next-title"><span class="section-number">7.6. </span>Soluzioni</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="actions.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">successivo</p>
+        <p class="prev-next-title"><span class="section-number">8. </span>Azioni</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -652,9 +674,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-del-punto">Cinematica del punto</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-uniforme-ddot-r-p-t-vec-0">Moto uniforme, <span class="math notranslate nohighlight">\(\ \ddot{r}_P(t) = \vec{0}\)</span></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-uniformemente-accelerato-dot-r-p-t-vec-a">Moto uniformemente accelerato, <span class="math notranslate nohighlight">\(\ \dot{r}_P(t) = \vec{a}\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-del-punto">7.7.1. Cinematica del punto</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-uniforme-ddot-r-p-t-vec-0">7.7.1.1. Moto uniforme, <span class="math notranslate nohighlight">\(\ \ddot{r}_P(t) = \vec{0}\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-uniformemente-accelerato-dot-r-p-t-vec-a">7.7.1.2. Moto uniformemente accelerato, <span class="math notranslate nohighlight">\(\ \dot{r}_P(t) = \vec{a}\)</span></a></li>
 </ul>
 </li>
 </ul>
