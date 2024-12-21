@@ -11,7 +11,7 @@
 (physics-hs:mechanics:intro)=
 # Introduzione alla meccanica classica
 
-La meccanica classica si occupa del moto 
+La meccanica classica si occupa del moto che hanno dimensioni e velocità caratteristiche dell'esperienza quotidiana, o di quella che poteva essere l'esperienza quotidiana dell'uomo del XIX secolo. <!-- Facendo riferimento ai [regimi qualitativi della fisica](physics-hs:intro:current-status:regimes), la meccanica classica  -->
 
 ````{only} html
 **Contenuti.**
