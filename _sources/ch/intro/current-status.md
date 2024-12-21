@@ -16,7 +16,7 @@ Spinta all'unificazione delle teorie, verso una teoria del tutto. Ricerca delle 
 
 (physics-hs:intro:current-status:regimes)=
 ## Regimi e teorie
-**Regimi.** In base alle grandezze caratteristiche del problema (relative ad alcune costanti della natura), si possono qualitativamente distinguere diversi ambiti, ben descritti da diverse teorie e modelli fisici.
+In base alle grandezze caratteristiche del problema (relative ad alcune costanti della natura), si possono qualitativamente distinguere diversi ambiti, ben descritti da diverse teorie e modelli fisici.
 
 Qualitativamente,
 - la **fisica classica** fornisce un buon modello per lo studio di sistemi con:
