@@ -621,7 +621,13 @@ document.write(`
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="cinematica-del-punto">
 <span id="physics-hs-mechanics-kinematics-point"></span><h1><span class="section-number">7.1. </span>Cinematica del punto<a class="headerlink" href="#cinematica-del-punto" title="Permalink to this heading">#</a></h1>
-<p>La cinematica di un punto <span class="math notranslate nohighlight">\(P(t)\)</span> è completamente definita dalla sua posizione nello spazio in funzione del tempo.</p>
+<p>La cinematica di un punto <span class="math notranslate nohighlight">\(P(t)\)</span> è completamente definita dalla sua posizione nello spazio in funzione del tempo. La configurazione di un sistema puntiforme in un istante temporale è data dalla sua posizione rispetto a un punto <span class="math notranslate nohighlight">\(O\)</span> preso come origine, come riferimento. Lo stato di un sistema puntiforme in un determinato istante temporale è definito dalla sua posizione e dalla sua velocità. Rispetto a un’origine considerata indipendente dal tempo, la posizione del punto <span class="math notranslate nohighlight">\(P\)</span> è definita dal vettore euclideo <span class="math notranslate nohighlight">\(\vec{r}_P(t) = P(t) - O\)</span> che congiunge l’origine <span class="math notranslate nohighlight">\(O\)</span> con il punto <span class="math notranslate nohighlight">\(P\)</span>, la velocità e l’accelerazione sono rispettivamente la derivata prima e seconda della posizione rispetto al tempo,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+   \vec{r}_P(t) &amp; := P(t) - O &amp; \text{(posizione di $P$ rispetto a $O$)} \\
+   \vec{v}_P(t) &amp; := \frac{d \vec{r}_P}{dt}(t) &amp; \text{(velocità di $P$ rispetto a $O$)} \\
+   \vec{a}_P(t) &amp; := \frac{d^2 \vec{r}_P}{dt^2}(t) = \frac{d \vec{v}_P}{dt} &amp; \text{(accelerazione di $P$ rispetto a $O$)} \\
+\end{aligned}\end{split}\]</div>
 <p><strong>Posizione di un punto.</strong> <span class="math notranslate nohighlight">\(P(t) - O = \vec{r}_P(t)\)</span></p>
 <p><strong>Velocità di un punto.</strong> <span class="math notranslate nohighlight">\(\vec{v}_P = \dfrac{d \vec{r}_P}{dt}\)</span></p>
 <p><strong>Accelerazione di un punto.</strong> <span class="math notranslate nohighlight">\(\vec{a}_P = \dfrac{d \vec{v}_P}{dt} = \dfrac{d^2 \vec{r}_P}{d t^2}\)</span></p>
