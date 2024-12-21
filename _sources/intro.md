@@ -9,7 +9,7 @@ Questo libro fa parte del materiale pensato per [le scuole superiori](https://ba
 
 ```{dropdown} [Introduzione alla fisica](physics-hs:intro)
 ```
-```{dropdown} [Meccanica classica](physics-hs:mechanics)
+```{dropdown} [Meccanica classica](physics-hs:mechanics:intro)
 ```
 ```{dropdown} [Termodinamica](physics-hs:thermodynamics:intro)
 ```
