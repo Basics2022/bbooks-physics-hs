@@ -18,7 +18,7 @@ Spinta all'unificazione delle teorie, verso una teoria del tutto. Ricerca delle 
 
 Qualitativamente,
 - la **fisica classica** fornisce un buon modello per lo studio di sistemi con:
-  - scale di lunghezza "molto maggiori" delle dimensioni atomiche e sufficientemente limitate da poter considerare l'interazione tra due corpi come istantanea, $\Delta t_{delay} = \frac{L}{c} << 1$;
+  - scale di lunghezza "molto maggiori" delle dimensioni atomiche e sufficientemente limitate da poter considerare l'interazione tra due corpi come istantanea, $\Delta t_{delay} = \frac{L}{c} \ll 1$;
   - velocità caratteristiche molto minori di $c$
 - la **fisica quantistica** fornisce un buon modello per lo studio di sistemi a livello molecolare, atomico e sub-atomico
 - la **fisica di Einstein** fornisce un buon modello per lo studio di sistemi in cui non è possibile assumere trascurabile le interazioni istantanee 
