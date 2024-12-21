@@ -72,7 +72,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
     <link rel="next" title="7.1. Cinematica del punto" href="kinematics-point.html" />
-    <link rel="prev" title="6.3. Concetti in meccanica classica" href="intro-vocabulary.html" />
+    <link rel="prev" title="6.2. Concetti in meccanica classica" href="intro-vocabulary.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -191,8 +191,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="intro.html">6. Introduzione alla meccanica classica</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="intro-history.html">6.1. Esperienze e breve storia delle origini della meccanica classica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="models.html">6.2. Modelli</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-vocabulary.html">6.3. Concetti in meccanica classica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro-vocabulary.html">6.2. Concetti in meccanica classica</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">7. Cinematica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -593,9 +592,17 @@ document.write(`
 <div class="tex2jax_ignore mathjax_ignore section" id="cinematica">
 <span id="physics-hs-mechanics-kinematics"></span><h1><span class="section-number">7. </span>Cinematica<a class="headerlink" href="#cinematica" title="Permalink to this heading">#</a></h1>
 <p>La cinematica si occupa della descrizione del moto dei sistemi, senza indagarne le cause. La cinematica si occupa della descrizione dello stato di un sistema, e della sua variazione, nello spazio.</p>
-<p>La <strong>configurazione di un sistema</strong> è definita da un insieme di variabili indipendenti, o coordinate, dette <strong>gradi di libertà</strong>.  Il numero di gradi di libertà di un sistema dipende dalla dimensione dello spazio nel quale avviene il moto, dal numero e dal tipo degli elementi che lo compongono e dai vincoli che connettono gli elementi del sistema tra di loro o con l’ambiente esterno.
-In generale, in meccanica classica lo <strong>stato di un sistema</strong> è definito dalla sua configurazione e dalla derivata prima nel tempo delle variabili che definiscono i gradi di libertà: questo è sensato per sistemi meccanici la cui dinamica è governata da equazioni differenziali ordinarie del secondo ordine.</p>
-<p>La configurazione di un <strong>punto</strong> libero nello <a class="reference external" href="https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic_geometry/euclidean_space.html">spazio euclideo <span class="math notranslate nohighlight">\(E^n\)</span></a> (<span class="math notranslate nohighlight">\(n=2\)</span> piano, <span class="math notranslate nohighlight">\(n=3\)</span> spazio) è definita dalla sua posizione nello spazio, tramite un insieme di <span class="math notranslate nohighlight">\(n\)</span> coordinate:</p>
+<div class="proof definition admonition" id="definition-0">
+<p class="admonition-title"><span class="caption-number">Definition 7.1 </span> (Configurazione di un sistema)</p>
+<div class="definition-content section" id="proof-content">
+<p>La <strong>configurazione di un sistema</strong> è definita da un insieme di variabili indipendenti, o coordinate, dette <strong>gradi di libertà</strong>.  Il numero di gradi di libertà di un sistema dipende dalla dimensione dello spazio nel quale avviene il moto, dal numero e dal tipo degli elementi che lo compongono e dai vincoli che connettono gli elementi del sistema tra di loro o con l’ambiente esterno.</p>
+</div>
+</div><div class="proof definition admonition" id="definition-1">
+<p class="admonition-title"><span class="caption-number">Definition 7.2 </span> (Stato di un sistema)</p>
+<div class="definition-content section" id="proof-content">
+<p>In generale, in meccanica classica lo <strong>stato di un sistema</strong> è definito dalla sua configurazione e dalla derivata prima nel tempo delle variabili che definiscono i gradi di libertà: questo è sensato per sistemi meccanici la cui dinamica è governata da equazioni differenziali ordinarie del secondo ordine.</p>
+</div>
+</div><p>La configurazione di un <strong>punto</strong> libero nello <a class="reference external" href="https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic_geometry/euclidean_space.html">spazio euclideo <span class="math notranslate nohighlight">\(E^n\)</span></a> (<span class="math notranslate nohighlight">\(n=2\)</span> piano, <span class="math notranslate nohighlight">\(n=3\)</span> spazio) è definita dalla sua posizione nello spazio, tramite un insieme di <span class="math notranslate nohighlight">\(n\)</span> coordinate:</p>
 <ul class="simple">
 <li><p>un punto libero nel piano ha 2 gradi di libertà (traslazione);</p></li>
 <li><p>un punto libero nello spazio ha 3 gradi di libertà (traslazione).</p></li>
@@ -645,7 +652,7 @@ In generale, in meccanica classica lo <strong>stato di un sistema</strong> è de
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">6.3. </span>Concetti in meccanica classica</p>
+        <p class="prev-next-title"><span class="section-number">6.2. </span>Concetti in meccanica classica</p>
       </div>
     </a>
     <a class="right-next"
