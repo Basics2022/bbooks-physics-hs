@@ -1,4 +1,4 @@
-(physics-hs:intro:current-status)=
+(physics-hs:intro:measurements)=
 # Misura
 
 ## Strumenti di misura
