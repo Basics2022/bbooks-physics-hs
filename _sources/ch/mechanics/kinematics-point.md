@@ -117,6 +117,7 @@ accompagnata da condizioni tra di loro compatibili che identifichino unicamente 
 **todo** moto piano (rettilineo se $\vec{a}$, $\vec{v}_0$ sono allineati); uso dei sistemi di riferimento
 </span>
 
+(physics-hs:mechanics:kinematics:point:motion:circular)=
 ### Moto circolare
 La cinematica di un punto su una traiettoria circolare (**todo** è un vincolo!) può essere rappresentato usando un sistema di **coordinate polari** con origine coincidente con il centro della circonferenza
 
@@ -139,11 +140,12 @@ $$\vec{r}_P = R \cos \theta_P(t) \hat{x} + R \sin \theta_P(t) \hat{y} \ .$$
 
 $$\begin{cases}
   \vec{v}_P(t) & = R \dot{\theta}(t) \left( -\sin \theta_P(t) \hat{x} + \cos \theta_P(t) \hat{y} \right) = R \dot{\theta}(t) \hat{\theta}(t) \\
-  \vec{a}_P(t) & = R \ddot{\theta}(t) \left( -\sin \theta_P(t) \hat{x} + \cos \theta_P(t) \hat{y} \right) + \\
-               & + R \ddot{\theta}^2(t) \left( -\cos \theta_P(t) \hat{x} - \sin \theta_P(t) \hat{y} \right)     
-                 = R \ddot{\theta}(t) \hat{\theta}(t) - R \dot{\theta}^2(t) \hat{r}(t) \ .
+  \vec{a}_P(t) & =   R \ddot{\theta}(t) \left( -\sin \theta_P(t) \hat{x} + \cos \theta_P(t) \hat{y} \right) + \\
+               & \ + R \ddot{\theta}^2(t) \left( -\cos \theta_P(t) \hat{x} - \sin \theta_P(t) \hat{y} \right)     
+                 =   R \ddot{\theta}(t) \hat{\theta}(t) - R \dot{\theta}^2(t) \hat{r}(t) \ .
 \end{cases}$$
 
+(physics-hs:mechanics:kinematics:point:motion:circular-uniform)=
 #### Moto circolare uniforme
 Il moto circolare uniforme ha modulo della velocità costante, 
 
@@ -153,8 +155,8 @@ e la derivata nel tempo della coordinata $\theta_P$ è costante **todo**
 
 - **todo** pulsazione, periodo, frequenza,...
 
+(physics-hs:mechanics:kinematics:point:motion:harmonic)=
 ### Moto armonico lungo un segmento
-
 Un moto armonico lungo un segmento può essere definito come la proiezione di un punto che compie un moto circolare uniforme su una circonferenza che ha il segmento come diametro **todo**
 
 
