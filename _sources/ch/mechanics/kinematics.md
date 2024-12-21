@@ -14,9 +14,13 @@
 La cinematica si occupa della descrizione del moto dei sistemi, senza indagarne le cause. La cinematica si occupa della descrizione dello stato di un sistema, e della sua variazione, nello spazio.
 
 ```{prf:definition} Configurazione di un sistema
+:label: system-configuration
+
 La **configurazione di un sistema** è definita da un insieme di variabili indipendenti, o coordinate, dette **gradi di libertà**.  Il numero di gradi di libertà di un sistema dipende dalla dimensione dello spazio nel quale avviene il moto, dal numero e dal tipo degli elementi che lo compongono e dai vincoli che connettono gli elementi del sistema tra di loro o con l'ambiente esterno.
 ```
 ```{prf:definition} Stato di un sistema
+:label: system-state
+
 In generale, in meccanica classica lo **stato di un sistema** è definito dalla sua configurazione e dalla derivata prima nel tempo delle variabili che definiscono i gradi di libertà: questo è sensato per sistemi meccanici la cui dinamica è governata da equazioni differenziali ordinarie del secondo ordine.
 ```
 
