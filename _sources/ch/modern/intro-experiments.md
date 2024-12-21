@@ -20,7 +20,7 @@ Indagine sulla struttura della materia. Teoria atomistica. Meccanica statistica 
 
 - **todo** *riassunto storia esperimenti luce; elettromagnetismo la riconosce come fenomeno ondulatorio continuo; ma...*
 
-(physics-hs:modern:intro:experiences:photoel)=
+(physics-hs:modern:intro:experiences:photoelectric)=
 ### Effetto fotoelettrico
 
 (physics-hs:modern:intro:experiences:blackbody)=
