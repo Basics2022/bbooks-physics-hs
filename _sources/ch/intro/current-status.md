@@ -5,7 +5,7 @@
 
 Progresso di inizio XX secolo:
 - rifiuto della interazione a distanza, esistenza di una velocità massima **finita** $c$ (elevata per l'esperienza quotidiana, ma finita) della trasmissione delle informazioni
-- limiti nella conoscenza possibile tramite misura per sistemi di dimensioni ridotte; incertezza paragonabile al valore della [quantità misurata](physics-hs:intro:current-status)
+- limiti nella conoscenza possibile tramite misura per sistemi di dimensioni ridotte; incertezza paragonabile al valore della [quantità misurata](physics-hs:intro:measurements)
 
 Spinta all'unificazione delle teorie, verso una teoria del tutto. Ricerca delle particelle "elementari". Ma cosa è davvero elementare?
 
