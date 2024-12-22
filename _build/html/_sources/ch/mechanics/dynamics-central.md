@@ -14,7 +14,7 @@ cioè la forza ha direzione radiale e la sua intensità dipende solo dalla dista
 
 Nel primo caso, l'intensità della forza ha una dipendenza lineare con la distanza dal centro; negli altri due casi, l'intensità della forza è inversamente proporzionale al quadrato della distanza dal centro. Si noti la (quasi) uguaglianza formale tra l'interazione gravitazionale soggetta alla legge di gravitazione universale di Newton e l'interazione elettrica soggetta alla forza di Coulomb. I due casi hanno però una differenza fondamentale: nel caso di interazione gravitazionale due corpi si attraggono sempre, nel caso di interazione elettrica, due corpi con carica di segno opposto si attraggono mentre due corpi con carica di segno uguale si respingono.
 
-Nelle sezioni successive vengono discussi i casi di [forza proporzionale alla distanza]() e [forza proporzionale al quadrato della distanza]().
+Nelle sezioni successive vengono discussi i casi di [forza proporzionale alla distanza](physics-hs:mechanics:dynamics:motion:central:r) e [forza proporzionale al quadrato della distanza](physics-hs:mechanics:dynamics:motion:central:r-2).
 
 (physics-hs:mechanics:dynamics:motion:central:r)=
 ## Forza proporzionale alla distanza

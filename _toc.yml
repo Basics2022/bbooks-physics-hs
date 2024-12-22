@@ -24,13 +24,17 @@ parts:
     - file: ch/intro/physical_quantities-mole
     - file: ch/intro/physical_quantities-luminosity
   - file: ch/intro/scientific-method
+  - file: ch/intro/measurements
+  - file: ch/intro/current-status
 - caption: Meccanica classica
   numbered: True
   chapters:
-  - file: ch/mechanics
+# - file: ch/mechanics
   - file: ch/mechanics/intro
     sections:
-    - file: ch/mechanics/models
+    - file: ch/mechanics/intro-history
+#   - file: ch/mechanics/models
+    - file: ch/mechanics/intro-vocabulary
   - file: ch/mechanics/kinematics
     sections:
     - file: ch/mechanics/kinematics-point
@@ -38,6 +42,8 @@ parts:
     - file: ch/mechanics/kinematics-deformable
     - file: ch/mechanics/kinematics-relative
     - file: ch/mechanics/kinematics-problems
+    - file: ch/mechanics/kinematics-sol
+    - file: ch/mechanics/kinematics-notes
   - file: ch/mechanics/actions
     sections:
     - file: ch/mechanics/actions-types
@@ -61,16 +67,18 @@ parts:
     sections:
     - file: ch/mechanics/dynamics-principles
     - file: ch/mechanics/dynamics-eom
-      sections:
-      - file: ch/mechanics/dynamics-eom-proof-point
-      - file: ch/mechanics/dynamics-eom-proof-points
-      - file: ch/mechanics/dynamics-eom-proof-rigid-2d
+#     sections:
+#     - file: ch/mechanics/dynamics-eom-proof-point
+#     - file: ch/mechanics/dynamics-eom-proof-points
+#     - file: ch/mechanics/dynamics-eom-proof-rigid-2d
     - file: ch/mechanics/dynamics-conservation
     - file: ch/mechanics/dynamics-eom-open
     - file: ch/mechanics/dynamics-collisions
     - file: ch/mechanics/dynamics-motion-gravitation
     - file: ch/mechanics/dynamics-central
     - file: ch/mechanics/dynamics-problems
+    - file: ch/mechanics/dynamics-sol
+    - file: ch/mechanics/dynamics-notes
 #   - file: ch/mechanics/dynamics-problems-extra
 #   - file: ch/mechanics/dynamics-sims
 - caption: Cenni di meccanica del continuo

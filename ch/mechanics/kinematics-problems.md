@@ -1,3 +1,4 @@
+<!--
 ````{only} html
 ```{article-info}
 :author: basics
@@ -5,10 +6,9 @@
 :read-time: "{sub-ref}`wordcount-minutes` min read"
 ```
 ````
+-->
 
 (physics-hs:mechanics:kinematics:problems)=
-# Problemi
-
 # Problemi
 
 Questa pagina contiene esercizi di cinematica per punti materiali, corpi rigidi e cinematica relativa, con alcuni esercizi sulla traiettoria di un punto su un disco che rotola su una superficie piana e su superfici circolari.

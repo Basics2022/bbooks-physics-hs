@@ -26,8 +26,6 @@ Alcuni esempi di variabili intensive ed estensive:
 
 Le **variabili specifiche** sono ricavate come rapporto tra due variabili estensive. Come casi comuni, il denominatore è la massa del sistema o il volume del sistema. Le variaibli specifiche sono variabili intensive. Alcuni esempi di variabili specifiche sono: volume specifico (inverso della densità), energia specifica, entropia specifica, capacità termica specifica,...
 
-
-
 ## Sistema, ambiente esterno
 - **Sistema.** Oggetto di interesse del problema
 - **Ambiente esterno.** Tutto quello che non fa parte del sistema di interesse, e che può interagire con esso.

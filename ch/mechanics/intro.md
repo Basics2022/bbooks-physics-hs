@@ -1,3 +1,4 @@
+<!--
 ````{only} html
 ```{article-info}
 :author: basics
@@ -5,35 +6,34 @@
 :read-time: "{sub-ref}`wordcount-minutes` min read"
 ```
 ````
+-->
 
 (physics-hs:mechanics:intro)=
 # Introduzione alla meccanica classica
 
-- Prime esperienze:
-  - astronomia
-  - Galileo, la relatività, gravità
-  - Hooke, le molle e i dinamometri
-- Grandezze fisiche, strumenti di misura e concetti:
-  - spazio, tempo, massa; velocità, accelerazione, quantità di moto,...
-  - cos'è lo spazio? cos'è il tempo? cos'è la massa? cos'è una forza?
+La meccanica classica si occupa del moto che hanno dimensioni e velocità caratteristiche dell'esperienza quotidiana, o di quella che poteva essere l'esperienza quotidiana dell'uomo del XIX secolo. 
 
-## Breve storia
-### Osservazioni astronomiche
-- leggi di Keplero
+````{only} html
+**Contenuti.**
 
-### Galileo
-- inerzia e relatività
-- esperimenti sulla caduta dei gravi
-- pendolo
-- osservazioni astronomiche: lune di Giove e verifica della legge di Keplero?
+```{dropdown} [Cinematica](physics-hs:mechanics:kinematics)
+```
+```{dropdown} [Azioni](physics-hs:mechanics:actions)
+```
+```{dropdown} [Statica](physics-hs:mechanics:statics)
+```
+```{dropdown} [Inerzia](physics-hs:mechanics:inertia)
+```
+```{dropdown} [Dinamica](physics-hs:mechanics:dynamics)
+```
 
-### Newton
-- grandezze e concetti per lo sviluppo della teoria:
-  - spazio e tempo assoluti; massa come quantità di materia
-    - ma cosa sono? o meglio, come si misurano? Cenni agli orologi meccanici (pendolo, molle ed escapement clocks), per la misura del tempo assoluto
-    - modelli e astrazione
-  - equazioni della dinamica in termini di forza che causa la quantità di moto
-- strumenti matematici:
-  - dalla geometria analitica al calcolo infinitesimale
-- legge di gravitazione universale: l'origine del moto dei gravi è la stessa del moto dei corpi celesti
+````
 
+La **meccanica classica** fornisce un buon modello **deterministico** per sistemi formati da un numero limitato di corpi. Per un numero molto grande di corpi oggetto di indagine, l'approccio della meccanica classica può risultare impraticabile (per necessità di capacità di conto) o comunque poco efficiente (si farebbe un grande sforzo per ottenere gli stessi risultati ottenibili molto più facilmente e velocemente con altri approcci): in questi casi, può essere utile un approccio *statistico* come quello adottato dalla [termodinamica classica](physics-hs:thermodynamics:intro).
+                                            
+
+Facendo riferimento ai [regimi qualitativi della fisica](physics-hs:intro:current-status:regimes), la meccanica classica è una buoona teoria per i fenomeni di dimensioni molto maggiori alle dimensioni atomiche ma inferiori a dimensioni astronomiche (per le quali non si può trascurare la velocità finita di trasmissione delle informazioni, e per velocità molto inferiori rispetto alla velocità della luce $c$. Nonostante questi limiti (superati dalla fisica quantistica e dalla fisica di Einstein), la meccanica classica risulta ancora impescindibile, come prima introduzione alla fisica e per il gran numero di fenomeni che ricade all'interno dei limiti di validità del modello classico: *ponti, strade, case, auto, bici, aerei,... vengono progettati con modelli di meccanica classica*.
+
+```{note} Determinismo e meccanicismo
+**todo** *Riferimento al pensiero filosofico, e al fallimento di alcuni modelli deterministici: sistemi meccanici "classici" sensibili a perturbazioni (chaos; esempio: difficoltà nel fare le previsioni del tempo, "battiti d'ali di farfalle" e altre formule abusate); fisica quantistica;...*
+```

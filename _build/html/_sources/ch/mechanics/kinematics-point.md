@@ -1,3 +1,4 @@
+<!--
 ````{only} html
 ```{article-info}
 :author: basics
@@ -5,19 +6,30 @@
 :read-time: "{sub-ref}`wordcount-minutes` min read"
 ```
 ````
+-->
 
 (physics-hs:mechanics:kinematics:point)=
 # Cinematica del punto
 
-La cinematica di un punto $P(t)$ è completamente definita dalla sua posizione nello spazio in funzione del tempo. 
+## Prime definizioni
+Quantità vettoriali...
+- spostamento, composizione spostamenti
+- velocità media, velocità puntuale
+- accelerazione media, accelerazione puntuale
 
-**Posizione di un punto.** $P(t) - O = \vec{r}_P(t)$
+## Configurazione e stato in un moto regolare (differenziabile)
+La cinematica di un punto $P(t)$ è completamente definita dalla sua posizione nello spazio in funzione del tempo. La configurazione di un sistema puntiforme in un istante temporale è data dalla sua posizione rispetto a un punto $O$ preso come origine, come riferimento. Lo stato di un sistema puntiforme in un determinato istante temporale è definito dalla sua posizione e dalla sua velocità. Rispetto a un'origine considerata indipendente dal tempo, la posizione del punto $P$ è definita dal vettore euclideo $\vec{r}_P(t) = P(t) - O$ che congiunge l'origine $O$ con il punto $P$, la velocità e l'accelerazione sono rispettivamente la derivata prima e seconda della posizione rispetto al tempo,
 
-**Velocità di un punto.** $\vec{v}_P = \dfrac{d \vec{r}_P}{dt}$
+$$\begin{aligned}
+   \vec{r}_P(t) & := P(t) - O & \text{(posizione di $P$ rispetto a $O$)} \\
+   \vec{v}_P(t) & := \frac{d \vec{r}_P}{dt}(t) & \text{(velocità di $P$ rispetto a $O$)} \\
+   \vec{a}_P(t) & := \frac{d^2 \vec{r}_P}{dt^2}(t) = \frac{d \vec{v}_P}{dt}(t) & \text{(accelerazione di $P$ rispetto a $O$)} \\
+\end{aligned}$$
 
-**Accelerazione di un punto.** $\vec{a}_P = \dfrac{d \vec{v}_P}{dt} = \dfrac{d^2 \vec{r}_P}{d t^2}$
-
+(physics-hs:mechanics:kinematics:point:motion)=
 ## Moti particolari
+
+(physics-hs:mechanics:kinematics:point:motion:a-0)=
 ### Moto non accelerato
 Un moto non accelerato di un punto $P$ rispetto a un sistema di riferimento con origine in $O$ può essere definito dalla condizione di accelerazione nulla 
 
@@ -72,6 +84,7 @@ accompagnata da condizioni tra di loro compatibili (**todo** *fare esempio di co
 **todo** moto rettilineo; uso dei sistemi di riferimento
 </span>
 
+(physics-hs:mechanics:kinematics:point:motion:a)=
 ### Moto uniformemente accelerato
 Un moto uniformemente accelerato di un punto $P$ rispetto a un sistema di riferimento con origine in $O$ può essere definito dalla condizione di accelerazione costante
 
@@ -112,6 +125,7 @@ accompagnata da condizioni tra di loro compatibili che identifichino unicamente 
 **todo** moto piano (rettilineo se $\vec{a}$, $\vec{v}_0$ sono allineati); uso dei sistemi di riferimento
 </span>
 
+(physics-hs:mechanics:kinematics:point:motion:circular)=
 ### Moto circolare
 La cinematica di un punto su una traiettoria circolare (**todo** è un vincolo!) può essere rappresentato usando un sistema di **coordinate polari** con origine coincidente con il centro della circonferenza
 
@@ -126,7 +140,7 @@ $$\begin{cases}
 
 che permettono di identificare il punto $P$ con il raggio vettore rispetto all'origine
 
-$$\vec{r}_P = R \cos \theta_P(t) \hat{x} + R \sin \theta_P(t) \hat{y} \ .$$
+$$\vec{r}_P(t) = R \cos \theta_P(t) \hat{x} + R \sin \theta_P(t) \hat{y} \ .$$
 
 - Definizione vettori $\hat{r}$, $\hat{\theta}$ **todo** *dipendenza di questi versori dalla posizione di $P$ nello spazio, e quindi in generale dal tempo
 - La velocità e l'accelerazione del punto **todo**
@@ -139,6 +153,7 @@ $$\begin{cases}
                  = R \ddot{\theta}(t) \hat{\theta}(t) - R \dot{\theta}^2(t) \hat{r}(t) \ .
 \end{cases}$$
 
+(physics-hs:mechanics:kinematics:point:motion:circular-uniform)=
 #### Moto circolare uniforme
 Il moto circolare uniforme ha modulo della velocità costante, 
 
@@ -148,13 +163,10 @@ e la derivata nel tempo della coordinata $\theta_P$ è costante **todo**
 
 - **todo** pulsazione, periodo, frequenza,...
 
+(physics-hs:mechanics:kinematics:point:motion:harmonic)=
 ### Moto armonico lungo un segmento
-
 Un moto armonico lungo un segmento può essere definito come la proiezione di un punto che compie un moto circolare uniforme su una circonferenza che ha il segmento come diametro **todo**
 
-
-
-## Problemi
 
 
 
