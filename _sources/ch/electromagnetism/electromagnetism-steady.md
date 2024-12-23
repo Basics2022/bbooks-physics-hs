@@ -11,7 +11,7 @@ L'esperienza di Faraday riconosce che su un tratto elementare $d \vec{\ell}$ di 
 
 $$d \vec{F} = - i \, \vec{b} \times d \vec{\ell} \ .$$ (eq:faraday:force)
 
-Riconoscendo che il risultato è frutto dell'applicazione del modello di [conduttore con sezione piccola](physics-hs:electromagnetism:circuits-electric:electric-cable)si può riscrivere l'espressione della forza in termini di densità di corrente elettrica usando la relazione {eq}`eq:cable:current-current-density`, e cercando la densità volumentrica di forza $\vec{f}$, tale che $d \vec{F} = \vec{f} dV = \vec{f} A d \ell$,
+Riconoscendo che il risultato è frutto dell'applicazione del modello di [conduttore con sezione piccola](physics-hs:electromagnetism:circuits-electric:electric-cable) si può riscrivere l'espressione della forza in termini di densità di corrente elettrica usando la relazione {eq}`eq:cable:current-current-density`, e cercando la densità volumentrica di forza $\vec{f}$, tale che $d \vec{F} = \vec{f} dV = \vec{f} A d \ell$,
 
 $$\vec{f} A d \ell = - j A \vec{b} \times \vec{\ell} = - \rho v A \vec{b} \times \hat{t} \ell = - A \vec{b} \times \vec{j} d \ell$$
 
