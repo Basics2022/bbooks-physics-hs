@@ -1,15 +1,18 @@
 (physics-hs:electromagnetism:electromagnetism-steady)=
 # Magnetismo ed elettromagnetismo in regime stazionario
 
+(physics-hs:electromagnetism:electromagnetism-steady:experience)=
 ## Esperienze elementari su campo magnetico
 - cos'è? come costruire un campo magnetico? o avere multipli di un campo magnetico?
 
+(physics-hs:electromagnetism:electromagnetism-steady:experience-faraday)=
 ## Esperienza di Faraday
 
 $$d \vec{F} = - i \, \vec{b} \times d \vec{\ell} \ .$$
 
 **todo** ha senso associarla a Faraday? Nessuno la conosceva prima? Galvani, Volta,... come misuravano la corrente elettrica?
 
+(physics-hs:electromagnetism:electromagnetism-steady:experience-faraday:galvanometer)=
 ### Il galvanometro
 
 Il galvanometro è uno strumento utilizzato per la misura della corrente elettrica. Sfrutta l'azione meccanica osservata nell'esperienza di Faraday
@@ -19,18 +22,15 @@ Il momento meccanico generato dalla corrente nel cavo elettrico equilibria un mo
 **todo** *Serve questo riferimento qui?*
 - azioni elettro-meccaniche:..., cenni al motore elettrico in corrente continua? serve accoppiamento $\vec{e} \leftrightarrow \vec{b}$ di Faraday
 
-
+(physics-hs:electromagnetism:electromagnetism-steady:experience-oersted-ampere)=
 ## Esperienze di Oersted e Ampere
 
 - interazione tra corrente elettrica e campo magnetico, in regime stazionario:
   - esperienze di Oesrted e Ampére:
 
-### Legge di Ampére
-Forza (<span style="color:red">**todo** per unità di lunghezza; usare notazione vettoriale per indicare la direzione della forza</span>) scambiata tra due cavi percorsi da corrente elettrica
+**Legge di Ampére.** Forza (<span style="color:red">**todo** per unità di lunghezza; usare notazione vettoriale per indicare la direzione della forza</span>) scambiata tra due cavi percorsi da corrente elettrica
 
 $$\frac{F}{L} = \frac{\mu}{2 \pi} \frac{i_1 \, i_2}{d}$$
-
-### Legge di Biot-Savart
 Confrontando la legge di Ampére con l'esperienza di Faraday, è possibile ricavare l'espressione del campo magnetico prodotto da un cavo infinito percorso da corrente elettrica,
 
 $$b = \frac{\mu}{2 \pi} \frac{i}{d}$$
@@ -39,12 +39,16 @@ $$b = \frac{\mu}{2 \pi} \frac{i}{d}$$
 - campo magnetico prodotto da un cavo rettilineo infinito
 - campo magnetico prodotto da un solenoide: lineare infinito, toroidale
 
-### Formula generale
-Contributo elementare
 
-$$d \vec{b}(\vec{r}_0) = - \frac{\mu}{4 \pi} i(\vec{r}) \frac{ \vec{r}_0 - \vec{r} }{| \vec{r}_0 - \vec{r} |^3} \times d \vec{\ell}(\vec{r})$$
+(physics-hs:electromagnetism:electromagnetism-steady:biot-savart)=
+## Legge di Biot-Savart
+La legge di Biot-Savart permette di generalizzare i risultati dell'esperienza di Ampére. Il contributo elementare al campo magnetico $\vec{b}(\mathbf{r}_0)$ nel punto dello spazio $\vec{r}_0$ dovuto a un cavo elettrico[^ref:electric-cable] di lunghezza elementare $d \ell$ percorso da corrente elettrica $i$ è dato dalla formula
+
+$$d \vec{b}(\vec{r}_0) = - \frac{\mu}{4 \pi} i(\vec{r}) \frac{ \vec{r}_0 - \vec{r} }{| \vec{r}_0 - \vec{r} |^3} \times d \vec{\ell}(\vec{r}) \ .$$
 
 $$\vec{b}(\vec{r}_0) = - \frac{\mu}{4 \pi} \int_{\gamma(\vec{r})} i(\vec{r})  \frac{ \vec{r}_0 - \vec{r} }{| \vec{r}_0 - \vec{r} |^3}\times d \vec{\ell}(\vec{r})$$
+
+[^ref:electric-cable]: Fare riferimento alla sezione sul [cavo elettrico](electric-current:cable), e l'approssimazione circuitale di cavi elettrici.
 
 #### Filo rettilineo infinito
 
