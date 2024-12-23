@@ -193,7 +193,11 @@ $$\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S $$
 (physics-hs:electromagnetism:magnetism:micro)=
 ## Modelli microscopici del magnetismo
 
-**todo** *correnti di Ampére. Una carica elettrica in movimento (passare da Biot-Savart a carica, da corrente a carica discreta) genera un campo magnetico; un'$e^-$ in moto attorno al nucleo - qualsiasi cosa sia, sia l'elettrone, sia il suo movimento - quindi genera un campo magnetico; a questo contributo, si aggiunge un momento magnetico intrinsceco di* **spin**
+**todo** *correnti di Ampére. Una carica elettrica in movimento (passare da Biot-Savart a carica, da corrente a carica discreta) genera un campo magnetico; un'$e^-$ in moto attorno al nucleo - qualsiasi cosa sia, sia l'elettrone, sia il suo movimento - quindi genera un campo magnetico, comportandosi come una spira (o un dipolo magnetico); a questo contributo, si aggiunge un momento magnetico intrinsceco di* **spin** *, come dimostrato dall'[esperimento di Stern-Gerlach](modern:experiments:stern-gerlach).*
+
+*L'allineamento dei momenti magnetici degli atomi appartenenti a una vasta regione di un mezzo macroscopico si manifesta come magentismo del mezzo*
+
+**todo** *aggiungere dettagli, temperatura di Curie,...*
 
 
 (physics-hs:electromagnetism:lorentz)=
@@ -204,11 +208,14 @@ $$\vec{F}^{Lorentz} = q \left[\vec{e}(P) - \vec{b}(P) \times \vec{v}_P \right]$$
 
 definita **forza di Lorentz**.
 
-
 Nell'ipotesi di risultante nulla degli effetti del campo elettromagnetico generato da un sistema su se stesso[^motion:electromagnetic-field], l'equazione dinamica che governa il moto del sistema è
 
   $$m \ddot{ \vec{r}_P } = \vec{R}^{ext} = q \left[ \vec{e}(P) + \vec{b}(P) \times \dot{\vec{r}_P} \right] + \vec{F}^{\text{non EM}}$$
 
 [^motion:electromagnetic-field]: Il campo elettromagnetico generato dalla carica nell'istante $t$ non influenza il moto della carica stessa allo stesso istante. xPerché evidenziare il tempo $t$? Perché il campo EM si propaga nello spazio e nel tempoe quindi il moto di una carica al tempo $t$ può essere influenzato dal campo elettromagnetico generato da una carica in qualche istante precedente (serve riflessione?)...
+
+Esempi dell'applicazioni della legge di Lorentz si ritrovano negli esperimenti condotti a cavallo della 1900 nell'indagine sulla struttura della materia e sui suoi componenti elementari, come:
+- l'[esperimento di Thomson](modern:experiments:thomson:electron)
+- ...
 
 - **todo** esempi
