@@ -56,7 +56,8 @@ Nel caso in cui il materiale sia neutro, la densità di carica elettrica è null
 
 (electric-current:cable)=
 ```{example} Corrente in un cavo elettrico di piccola sezione
-**todo**
+Modello di cavo elettrico usato nell'[approssimazione circuitale](physics-hs:electromagnetism:circuits-electric)...
+
 ```
 
 <!--
