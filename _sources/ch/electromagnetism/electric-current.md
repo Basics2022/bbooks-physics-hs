@@ -143,12 +143,14 @@ Queste relazioni che ben descrivono il comportamento di cavi elettrici conduttor
 (physics-hs:electromagnetism:electric-current:solids:dielectric)=
 ### Solidi dielettrici
 
+**todo**
+
 (physics-hs:electromagnetism:electric-current:gas)=
 ### Conduzione nei gas
 **todo** *blabla*
 - fenomeno fisico: ionizzazione; necessario campo elettrico intenso **(!)**
 - apparati sperimentali: tubo di Crookes, attuatori al plasma,...
-- spiegazione (immediata utilizzando modello atomistico della materia): campo elettrico elevato "strappa" $e^-$ dagli atomi dei gas (rarefatti). Un atomo inizialmente neutro viene **ionizzato**: gli elettroni hanno carica negativa, lo ione (l'atomo al quale sono stati sottratti gli elettroni) ha carica positiva. Queste due entità hanno ora carica elettrica netta, e subiscono l'accelerazione dovuta all'interazione con un campo elettrico, che si manifesta con la [forza di Lorenz](physics-hs:electromagnetism:lorentz) $\vec{F} = q \vec{e}$ agente sulle particelle cariche. L'equazione del moto è $m \ddot{r} = q \vec{e}$. Il moto di corpi di carica diversa si sviluppa quindi in due direzioni opposte:
+- spiegazione (immediata utilizzando modello atomistico della materia): campo elettrico elevato "strappa" $e^-$ dagli atomi dei gas (rarefatti). Un atomo inizialmente neutro viene **ionizzato**: gli elettroni hanno carica negativa, lo ione (l'atomo al quale sono stati sottratti gli elettroni) ha carica positiva. Queste due entità hanno ora carica elettrica netta, e subiscono l'accelerazione dovuta all'interazione con un campo elettrico, che si manifesta con la [forza di Lorentz](physics-hs:electromagnetism:lorentz) $\vec{F} = q \vec{e}$ agente sulle particelle cariche. L'equazione del moto è $m \ddot{r} = q \vec{e}$. Il moto di corpi di carica diversa si sviluppa quindi in due direzioni opposte:
   - moto delle cariche positive nella stessa direzione del campo elettrico
   - moto delle cariche negative in direzione opposta al campo elettrico
 Esperimenti:

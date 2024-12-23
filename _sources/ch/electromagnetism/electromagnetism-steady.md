@@ -157,7 +157,7 @@ $$\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S $$
 ## Moto di una carica elettrica in un campo elettromagnetico
 Forza di Lorentz
 
-$$\vec{F}^{Lorentz} = q \left(\vec{e}(P) + \vec{b}(P) \times \vec{v} \right)$$
+$$\vec{F}^{Lorentz} = q \left(\vec{e}(P) - \vec{b}(P) \times \vec{v} \right)$$ (eq:force:lorentz)
 
 Moto di una carica elettrica in un campo elettromagnetico, nell'ipotesi di effetto nullo su di essa del proprio campo elettrico
 
