@@ -35,7 +35,6 @@ Hertz fece altre esperienze significative:
 
 **Marconi - le applicazioni.** **todo** *due parole sul contensto storico, la stesura dei cavi sottomarini e transoceanici del telegrafo - in cui erano coinvolti anche personaggi del calibro di Kelvin -, e rivoluzione della radio per le comunicazioni*
 
-
 (physics-hs:electromagnetism:em-waves:hertz)=
 ## Esperimenti di Hertz
 
