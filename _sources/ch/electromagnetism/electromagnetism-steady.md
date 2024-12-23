@@ -151,7 +151,10 @@ La correzione di Maxwell non è altro che l'aggiunta del termine $\dot{\Phi}_{\p
 $$\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S $$
 
 
+(physics-hs:electromagnetism:magnetism:micro)=
 ## Modelli microscopici del magnetismo
+
+
 
 (physics-hs:electromagnetism:lorentz)=
 ## Moto di una carica elettrica in un campo elettromagnetico
