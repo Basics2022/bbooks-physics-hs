@@ -25,5 +25,17 @@ Qualitativamente,
 - la **fisica quantistica** fornisce un buon modello per lo studio di sistemi a livello molecolare, atomico e sub-atomico
 - la **fisica di Einstein** fornisce un buon modello per lo studio di sistemi in cui non è possibile assumere trascurabile le interazioni istantanee 
 
+(physics-hs:intro:current-status:micro-macro)=
+## Teoria atomistica
+La materia è formata da componenti elementari. Cosa si intende per elementari? Quanto elementari? 
 
-
+A seconda del livello di dettaglio e dell'ambito di interesse, è necessario utilizzare un *modello microscopico* che consideri la natura *discreta* della materia, oppure è possibile usare un *rappresentazione macroscopica* *continua* del fenomeno fisico.
+- sistemi macroscopici sono formati da un numero enorme di componenti elementari
+- il modello macroscopico è evidenza della dinamica microscopica, e spesso ne rispecchia le caratteristiche medie
+- esempi:
+  - meccanica del continuo e termodinamica:
+    - densità di massa è una grandezza macroscopica, evidenza macroscopica del numero di componenti elementari dotati di massa in un determinato volume
+    - temperatura è una grandezza macroscopica, evidenza macroscopica del moto di agitazione dei componenti elementari a livello microscopico
+    - pressione e sforzo sono grandezze sono grandezze fisiche, evidenze macroscopiche delle interazioni (legami e "urti") tra i componenti elementari a livello microscopico
+    - densità di corrente è una grandezza fisica, evidenza macroscopica del numero di componenti elementari dotati di carica in un determinato volume
+    - [corrente elettrica](physics-hs:electromagnetism:electric-current) è una grandezza fisica, evidenza macroscopica del numero di cariche elementari che attraversano una superficie in un intervallo di tempo elementare

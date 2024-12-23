@@ -321,6 +321,7 @@ Questa espressione della sezione d'urto ha un buon accordo con i dati sperimenta
 
 ```
 
+(modern:experiments:stern-gerlach)=
 ## Lo spin - Stern-Gerlach
 ```{dropdown} Moto di un dipolo magnetico in un campo magnetico non uniforme
 :open:

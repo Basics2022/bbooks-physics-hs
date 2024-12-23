@@ -1,28 +1,50 @@
 (physics-hs:electromagnetism:circuits-electric)=
 # Circuiti elettrici
 
-## Approssimazione circuitale - leggi di Kirchhoff
+(physics-hs:electromagnetism:circuits-electric:electric-cable)=
+## Cavi elettrici
+Nell'ambito dell'approssimazione circuitale, i cavi elettrici con sezione ridotta rispetto alle dimensioni del circuito possono essere trattati come elementi 1-dimensionali, delle curve con proprietà geometriche (linea media, sezione) e fisiche (resistività).
 
-## Componenti discreti
+La dimensione ridotta della sezione permette quindi di trascurare la tridimensionalità del problema generale e di assumere che le grandezze siano uniformi su ogni sezione - o non tanto diverse dal loro valore medio: la velocità media *di deriva* $\vec{v}$ delle cariche e quindi la [densità di corrente](electric-current-density:def), $\vec{j} = \rho \vec{v}$, ha la stessa direzione dell'asse locale del conduttore.
+
+La corrente può quindi essere espressa come
+
+$$i = \vec{j} \cdot \hat{n} A \simeq j A \ ,$$
+
+avendo indicato con $\hat{n}$ la normale della sezione e $A$ la superficie della sezione del cavo, e potendo considerare solo il valore scalare delle grandezze fisiche se si considera una sezione perpendicolare all'asse del cavo elettrico.
+
+**todo** *aggiungere immagine*
+
+(physics-hs:electromagnetism:circuits-electric:kirchhoff-laws)=
+## Leggi di Kirchhoff
+
+(physics-hs:electromagnetism:circuits-electric:components)=
+## Componenti
+
+(physics-hs:electromagnetism:circuits-electric:components:resistor)=
 ### Resistenza elettrica
 La legge costitutiva della resistenza elettrica è
 
 $$v = R i$$
 
+(physics-hs:electromagnetism:circuits-electric:components:capacitor)=
 ### Condensatore
 La legge costitutiva di un condensatore è
 
 $$i = C \dot{v}$$
 
+(physics-hs:electromagnetism:circuits-electric:components:inductor)=
 ### Induttore
 La legge costitutiva di un induttore è
 
 $$v = L \dot{i}$$
 
+(physics-hs:electromagnetism:circuits-electric:components:generator-v)=
 ### Generatore di tensione
 
 $$v = e$$
 
+(physics-hs:electromagnetism:circuits-electric:components:generator-i)=
 ### Generatore di corrente
 
 $$i = a$$

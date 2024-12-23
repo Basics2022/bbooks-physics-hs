@@ -1,6 +1,7 @@
 (physics-hs:electromagnetism:electromagnetism-steady:problems)=
 # Problemi
 
+<!--
 ```{exercise} Legge di Ampère
 Calcola il campo magnetico generato da un filo conduttore infinito percorso da corrente $I = 10 \, \text{A}$ a una distanza $r = 0.1 \, \text{m}$ dal filo.
 ```
@@ -116,3 +117,4 @@ Calcola il campo magnetico a una distanza di $r = 0.2 \, \text{m}$ da un filo co
 ```{exercise} Effetto Hall
 In un conduttore semiconduttore di silicio con densità di carica $n = 10^{19} \, \text{m}^{-3}$ e corrente di $I = 5 \, \text{A}$, calcola il voltaggio Hall in presenza di un campo magnetico $B = 0.1 \, \text{T}$.
 ```
+-->

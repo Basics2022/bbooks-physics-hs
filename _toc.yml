@@ -154,28 +154,30 @@ parts:
   - file: ch/electromagnetism/em
     sections:
     - file: ch/electromagnetism/electrostatics
-      sections:
-      - file: ch/electromagnetism/electrostatics-problems
+#     sections:
+#     - file: ch/electromagnetism/electrostatics-problems
     - file: ch/electromagnetism/electric-current
-      sections:
-      - file: ch/electromagnetism/electric-current-problems
+#     sections:
+#     - file: ch/electromagnetism/electric-current-problems
     - file: ch/electromagnetism/electromagnetism-steady
       sections:
       - file: ch/electromagnetism/electromagnetism-steady-problems
+      - file: ch/electromagnetism/electromagnetism-steady-sol
+      - file: ch/electromagnetism/electromagnetism-steady-notes
     - file: ch/electromagnetism/electromagnetism-general
-      sections:
-      - file: ch/electromagnetism/electromagnetism-general-problems
+#     sections:
+#     - file: ch/electromagnetism/electromagnetism-general-problems
   - file: ch/electromagnetism/electrical-engineering
     sections:
     - file: ch/electromagnetism/circuits-electric
-      sections:
-      - file: ch/electromagnetism/circuits-electric-problems
+#     sections:
+#     - file: ch/electromagnetism/circuits-electric-problems
     - file: ch/electromagnetism/circuits-magnetic
-      sections:
-      - file: ch/electromagnetism/circuits-magnetic-problems
+#     sections:
+#     - file: ch/electromagnetism/circuits-magnetic-problems
     - file: ch/electromagnetism/electric-machines
-      sections:
-      - file: ch/electromagnetism/electric-machines-problems
+#     sections:
+#     - file: ch/electromagnetism/electric-machines-problems
   - file: ch/electromagnetism/em-waves
     sections:
     - file: ch/electromagnetism/em-waves-problems
