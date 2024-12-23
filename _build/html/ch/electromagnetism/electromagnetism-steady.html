@@ -329,7 +329,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="em-waves.html">22. Onde elettromagnetiche</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="em-waves-problems.html">22.2. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="em-waves-problems.html">22.3. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="thermoelectric-effects.html">23. Effetti foto-termo-elettro-meccanici</a></li>
@@ -569,13 +569,13 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi-di-campi-magnetici-generati-da-corrente-in-cavi-elettrici">20.3.4.1. Esempi di campi magnetici generati da corrente in cavi elettrici</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verso-le-equazioni-di-maxwell">20.3.5. Verso le equazioni di Maxwell</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gauss-per-il-flusso-del-campo-magnetico">20.3.5.1. Legge di Gauss per il flusso del campo magnetico</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-ampere">20.3.5.2. Legge di Ampére</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelli-microscopici-del-magnetismo">20.3.5. Modelli microscopici del magnetismo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-di-una-carica-elettrica-in-un-campo-elettromagnetico">20.3.6. Moto di una carica elettrica in un campo elettromagnetico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verso-le-equazioni-di-maxwell">20.3.7. Verso le equazioni di Maxwell</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gauss-per-il-flusso-del-campo-magnetico">20.3.7.1. Legge di Gauss per il flusso del campo magnetico</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-ampere">20.3.7.2. Legge di Ampére</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelli-microscopici-del-magnetismo">20.3.6. Modelli microscopici del magnetismo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-di-una-carica-elettrica-in-un-campo-elettromagnetico">20.3.7. Moto di una carica elettrica in un campo elettromagnetico</a></li>
 </ul>
             </nav>
         </div>
@@ -597,8 +597,15 @@ document.write(`
 </div>
 <div class="section" id="esperienza-di-faraday">
 <span id="physics-hs-electromagnetism-electromagnetism-steady-experience-faraday"></span><h2><span class="section-number">20.3.2. </span>Esperienza di Faraday<a class="headerlink" href="#esperienza-di-faraday" title="Permalink to this heading">#</a></h2>
+<p>L’esperienza di Faraday riconosce che su un tratto elementare <span class="math notranslate nohighlight">\(d \vec{\ell}\)</span> di un cavo elettrico percorso da corrente <span class="math notranslate nohighlight">\(i\)</span> in un campo magnetico <span class="math notranslate nohighlight">\(\vec{b}\)</span> agisce una forza elementare</p>
+<div class="math notranslate nohighlight" id="equation-eq-faraday-force">
+<span class="eqno">(20.5)<a class="headerlink" href="#equation-eq-faraday-force" title="Permalink a questa equazione">#</a></span>\[d \vec{F} = - i \, \vec{b} \times d \vec{\ell} \ .\]</div>
+<p>Riconoscendo che il risultato è frutto dell’applicazione del modello di <a class="reference internal" href="circuits-electric.html#physics-hs-electromagnetism-circuits-electric-electric-cable"><span class="std std-ref">conduttore con sezione piccola</span></a> si può riscrivere l’espressione della forza in termini di densità di corrente elettrica usando la relazione <a class="reference internal" href="circuits-electric.html#equation-eq-cable-current-current-density">(21.1)</a>, e cercando la densità volumentrica di forza <span class="math notranslate nohighlight">\(\vec{f}\)</span>, tale che <span class="math notranslate nohighlight">\(d \vec{F} = \vec{f} dV = \vec{f} A d \ell\)</span>,</p>
 <div class="math notranslate nohighlight">
-\[d \vec{F} = - i \, \vec{b} \times d \vec{\ell} \ .\]</div>
+\[\vec{f} A d \ell = - j A \vec{b} \times \vec{\ell} = - \rho v A \vec{b} \times \hat{t} \ell = - A \vec{b} \times \vec{j} d \ell\]</div>
+<p>e quindi</p>
+<div class="math notranslate nohighlight">
+\[\vec{f} = - \vec{b} \times \vec{j} \ .\]</div>
 <p><strong>todo</strong> ha senso associarla a Faraday? Nessuno la conosceva prima? Galvani, Volta,… come misuravano la corrente elettrica?</p>
 <div class="section" id="il-galvanometro">
 <span id="physics-hs-electromagnetism-electromagnetism-steady-experience-faraday-galvanometer"></span><h3><span class="section-number">20.3.2.1. </span>Il galvanometro<a class="headerlink" href="#il-galvanometro" title="Permalink to this heading">#</a></h3>
@@ -606,7 +613,8 @@ document.write(`
 <p>Il momento meccanico generato dalla corrente nel cavo elettrico equilibria un momento generato da componenti meccanici «noti», realizzabili e tarabili con la precisione richiesta.</p>
 <p><strong>todo</strong> <em>Serve questo riferimento qui?</em></p>
 <ul class="simple">
-<li><p>azioni elettro-meccaniche:…, cenni al motore elettrico in corrente continua? serve accoppiamento <span class="math notranslate nohighlight">\(\vec{e} \leftrightarrow \vec{b}\)</span> di Faraday</p></li>
+<li><p>spostare a fine capitolo</p></li>
+<li><p>azioni elettro-meccaniche:…, cenni al motore elettrico in corrente continua? serve accoppiamento <span class="math notranslate nohighlight">\(\vec{e} \leftrightarrow \vec{b}\)</span> di Faraday? No in corrente continua</p></li>
 </ul>
 </div>
 </div>
@@ -625,20 +633,16 @@ document.write(`
 <p>Confrontando la legge di Ampére con l’esperienza di Faraday, è possibile ricavare l’espressione del campo magnetico prodotto da un cavo infinito percorso da corrente elettrica,</p>
 <div class="math notranslate nohighlight">
 \[b = \frac{\mu}{2 \pi} \frac{i}{d}\]</div>
-<p><strong>todo</strong></p>
-<ul class="simple">
-<li><p>campo magnetico prodotto da un cavo rettilineo infinito</p></li>
-<li><p>campo magnetico prodotto da un solenoide: lineare infinito, toroidale</p></li>
-</ul>
+<p><strong>todo</strong> <em>immagini</em></p>
 </div>
 <div class="section" id="legge-di-biot-savart">
 <span id="physics-hs-electromagnetism-electromagnetism-steady-biot-savart"></span><h2><span class="section-number">20.3.4. </span>Legge di Biot-Savart<a class="headerlink" href="#legge-di-biot-savart" title="Permalink to this heading">#</a></h2>
 <p>La legge di Biot-Savart permette di generalizzare i risultati dell’esperienza di Ampére. Il contributo elementare al campo magnetico <span class="math notranslate nohighlight">\(\vec{b}(\vec{r}_0)\)</span> nel punto dello spazio <span class="math notranslate nohighlight">\(\vec{r}_0\)</span> dovuto a un cavo elettrico<a class="footnote-reference brackets" href="#ref-electric-cable" id="id1">1</a> di lunghezza elementare <span class="math notranslate nohighlight">\(d \ell\)</span> posizionato nel punto dello spazio <span class="math notranslate nohighlight">\(\vec{r}\)</span> e percorso da corrente elettrica <span class="math notranslate nohighlight">\(i\)</span> è dato dalla formula</p>
 <div class="math notranslate nohighlight" id="equation-eq-biot-savart-differential">
-<span class="eqno">(20.5)<a class="headerlink" href="#equation-eq-biot-savart-differential" title="Permalink a questa equazione">#</a></span>\[d \vec{b}(\vec{r}_0) = - \frac{\mu}{4 \pi} i(\vec{r}) \frac{ \vec{r}_0 - \vec{r} }{| \vec{r}_0 - \vec{r} |^3} \times d \vec{\ell}(\vec{r}) \ .\]</div>
-<p>Di conseguenza, il contributo dovuto alla corrente in un cavo elettrico descritto dal percorso <span class="math notranslate nohighlight">\(\gamma(\vec{r})\)</span> è la somma dei contributi elementari <a class="reference internal" href="#equation-eq-biot-savart-differential">(20.5)</a>, per fenomeni continui l’integrale</p>
+<span class="eqno">(20.6)<a class="headerlink" href="#equation-eq-biot-savart-differential" title="Permalink a questa equazione">#</a></span>\[d \vec{b}(\vec{r}_0) = - \frac{\mu}{4 \pi} i(\vec{r}) \frac{ \vec{r}_0 - \vec{r} }{| \vec{r}_0 - \vec{r} |^3} \times d \vec{\ell}(\vec{r}) \ .\]</div>
+<p>Di conseguenza, il contributo dovuto alla corrente in un cavo elettrico descritto dal percorso <span class="math notranslate nohighlight">\(\gamma(\vec{r})\)</span> è la somma dei contributi elementari <a class="reference internal" href="#equation-eq-biot-savart-differential">(20.6)</a>, per fenomeni continui l’integrale</p>
 <div class="math notranslate nohighlight" id="equation-eq-biot-savart-integral">
-<span class="eqno">(20.6)<a class="headerlink" href="#equation-eq-biot-savart-integral" title="Permalink a questa equazione">#</a></span>\[\vec{b}(\vec{r}_0) = - \frac{\mu}{4 \pi} \int_{\gamma(\vec{r})} i(\vec{r})  \frac{ \vec{r}_0 - \vec{r} }{| \vec{r}_0 - \vec{r} |^3}\times d \vec{\ell}(\vec{r}) \ .\]</div>
+<span class="eqno">(20.7)<a class="headerlink" href="#equation-eq-biot-savart-integral" title="Permalink a questa equazione">#</a></span>\[\vec{b}(\vec{r}_0) = - \frac{\mu}{4 \pi} \int_{\gamma(\vec{r})} i(\vec{r})  \frac{ \vec{r}_0 - \vec{r} }{| \vec{r}_0 - \vec{r} |^3}\times d \vec{\ell}(\vec{r}) \ .\]</div>
 <p><strong>todo</strong> <em>aggiungere immagini per Biot-Savart</em></p>
 <p><strong>todo</strong> <em>fare una sezione nel capitolo, per descrivere l’approccio comune ai fenomeni elettromagnetici, in cui compaiono «punti potenzianti» (attivi, dove c’è la causa di un fenomeno; qui il punto <span class="math notranslate nohighlight">\(\vec{r}\)</span> dove c’è il cavo conduttore) e «punti potenziati» (passivi, dove si osserva la conseguenza di un fenomeno; qui il punto <span class="math notranslate nohighlight">\(\vec{r}_0\)</span> dove si misura il campo magnetico)</em></p>
 <div class="section" id="esempi-di-campi-magnetici-generati-da-corrente-in-cavi-elettrici">
@@ -725,54 +729,17 @@ Nell'ipotesi in cui il raggio $R$ dell'anello sia molto maggiore del raggio dell
 -->
 </div>
 </div>
-<div class="section" id="verso-le-equazioni-di-maxwell">
-<h2><span class="section-number">20.3.5. </span>Verso le equazioni di Maxwell<a class="headerlink" href="#verso-le-equazioni-di-maxwell" title="Permalink to this heading">#</a></h2>
-<div class="section" id="legge-di-gauss-per-il-flusso-del-campo-magnetico">
-<h3><span class="section-number">20.3.5.1. </span>Legge di Gauss per il flusso del campo magnetico<a class="headerlink" href="#legge-di-gauss-per-il-flusso-del-campo-magnetico" title="Permalink to this heading">#</a></h3>
-<div class="math notranslate nohighlight">
-\[\Phi_{\partial V}(\vec{b}) = 0\]</div>
-<p><strong>todo</strong> <em>interpretazione: inesistenza del monopolo magnetico? linee di campo chiuse?</em></p>
-</div>
-<div class="section" id="legge-di-ampere">
-<h3><span class="section-number">20.3.5.2. </span>Legge di Ampére<a class="headerlink" href="#legge-di-ampere" title="Permalink to this heading">#</a></h3>
-<div class="math notranslate nohighlight">
-\[\oint_{\ell_S} \vec{h} \cdot \hat{t} = \Gamma_{\ell_S}(\vec{h}) = \Phi_{S}(\vec{j}) = i_S \ ,\]</div>
-<p>essendo <span class="math notranslate nohighlight">\(\ell_S = \partial S\)</span> il contorno - chiuso - della superficie <span class="math notranslate nohighlight">\(S\)</span>.</p>
-<ul class="simple">
-<li><p>Questa equazione è valida <strong>solo</strong> in un regime elettrostatico: la forma generale dell’equazione di Ampére prevede un termine dipendente dal tempo, che è identicamente nullo nel regime elettrostatico.</p></li>
-<li><p>Senza questo termine, l’equazione non sarebbe consistente con l’equazione del bilancio della carica elettrica <strong>todo</strong> (aggiungere riferimento): la correzione di questa inconsistenza da parte di Maxwell è stata l’ultima azione, fondamentale, per ottenere un sistema di equazioni che governano i fenomeni elettromagnetici; la stessa modifica permette anche di riconoscere che i fenomeni EM sono fenomeni ondulatori; il calcolo della misura della velocità di propoagazione delle onde EM, confrontata con le misure disponibili della velocità della luce, permisero di riconoscere la luce come fenomeno EM</p></li>
-</ul>
-<p>Per dimostrare l’incongruenza, è sufficiente applicare la legge di Ampére a una superficie che è il contorno di un volume chiuso, e che quindi ha contorno nullo,</p>
-<div class="math notranslate nohighlight">
-\[S = \partial V  \qquad , \qquad  \partial S = \ell_S = \emptyset\]</div>
-<p>In questo caso, la legge di Ampére diventa</p>
-<div class="math notranslate nohighlight">
-\[0 = i_{\partial V} \ ,\]</div>
-<p>mentre le leggi di conservazione della carica elettrica e la legge di Gauss per il campo elettrico</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  \dot{Q}_V &amp; = - i_{\partial V} \\
-  \Phi_{\partial V}(\vec{d}) &amp; = Q_V \\
-\end{aligned}\end{split}\]</div>
-<p>implicano</p>
-<div class="math notranslate nohighlight">
-\[i_{\partial V} = - \dot{Q}_V = - \dot{\Phi}_{\partial V}(\vec{d}) \ .\]</div>
-<p>La correzione di Maxwell non è altro che l’aggiunta del termine <span class="math notranslate nohighlight">\(\dot{\Phi}_{\partial V}(\vec{d})\)</span> all’equazione di Ampére per renderla compatibile con le altre equazioni dell’elettromagnetismo. Con questa modifica, l”<strong>equazione di Ampére-Maxwell</strong> diventa</p>
-<div class="math notranslate nohighlight">
-\[\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S \]</div>
-</div>
-</div>
 <div class="section" id="modelli-microscopici-del-magnetismo">
-<span id="physics-hs-electromagnetism-magnetism-micro"></span><h2><span class="section-number">20.3.6. </span>Modelli microscopici del magnetismo<a class="headerlink" href="#modelli-microscopici-del-magnetismo" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-electromagnetism-magnetism-micro"></span><h2><span class="section-number">20.3.5. </span>Modelli microscopici del magnetismo<a class="headerlink" href="#modelli-microscopici-del-magnetismo" title="Permalink to this heading">#</a></h2>
 <p><strong>todo</strong> <em>correnti di Ampére. Una carica elettrica in movimento (passare da Biot-Savart a carica, da corrente a carica discreta) genera un campo magnetico; un”<span class="math notranslate nohighlight">\(e^-\)</span> in moto attorno al nucleo - qualsiasi cosa sia, sia l’elettrone, sia il suo movimento - quindi genera un campo magnetico, comportandosi come una spira (o un dipolo magnetico); a questo contributo, si aggiunge un momento magnetico intrinsceco di</em> <strong>spin</strong> <em>, come dimostrato dall”<a class="reference internal" href="../modern/experiments.html#modern-experiments-stern-gerlach"><span class="std std-ref">esperimento di Stern-Gerlach</span></a>.</em></p>
 <p><em>L’allineamento dei momenti magnetici degli atomi appartenenti a una vasta regione di un mezzo macroscopico si manifesta come magentismo del mezzo</em></p>
 <p><strong>todo</strong> <em>aggiungere dettagli, temperatura di Curie,…</em></p>
 </div>
 <div class="section" id="moto-di-una-carica-elettrica-in-un-campo-elettromagnetico">
-<span id="physics-hs-electromagnetism-lorentz"></span><h2><span class="section-number">20.3.7. </span>Moto di una carica elettrica in un campo elettromagnetico<a class="headerlink" href="#moto-di-una-carica-elettrica-in-un-campo-elettromagnetico" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-electromagnetism-lorentz"></span><h2><span class="section-number">20.3.6. </span>Moto di una carica elettrica in un campo elettromagnetico<a class="headerlink" href="#moto-di-una-carica-elettrica-in-un-campo-elettromagnetico" title="Permalink to this heading">#</a></h2>
 <p>Il moto di una corpo puntiforme di massa <span class="math notranslate nohighlight">\(m\)</span> e carica elettrica <span class="math notranslate nohighlight">\(q\)</span> in una regione dello spazio nel quale è presente un campo elettromagnetico <span class="math notranslate nohighlight">\(\vec{e}(\vec{r},t)\)</span>, <span class="math notranslate nohighlight">\(\vec{b}(\vec{r},t)\)</span> è soggetto a una forza esterna,</p>
 <div class="math notranslate nohighlight" id="equation-eq-force-lorentz">
-<span class="eqno">(20.7)<a class="headerlink" href="#equation-eq-force-lorentz" title="Permalink a questa equazione">#</a></span>\[\vec{F}^{Lorentz} = q \left[\vec{e}(P) - \vec{b}(P) \times \vec{v}_P \right]\]</div>
+<span class="eqno">(20.8)<a class="headerlink" href="#equation-eq-force-lorentz" title="Permalink a questa equazione">#</a></span>\[\vec{F}^{Lorentz} = q \left[\vec{e}(P) - \vec{b}(P) \times \vec{v}_P \right]\]</div>
 <p>definita <strong>forza di Lorentz</strong>.</p>
 <p>Nell’ipotesi di risultante nulla degli effetti del campo elettromagnetico generato da un sistema su se stesso<a class="footnote-reference brackets" href="#motion-electromagnetic-field" id="id2">2</a>, l’equazione dinamica che governa il moto del sistema è</p>
 <div class="math notranslate nohighlight">
@@ -783,6 +750,32 @@ Nell'ipotesi in cui il raggio $R$ dell'anello sia molto maggiore del raggio dell
 <li><p>…</p></li>
 <li><p><strong>todo</strong> esempi</p></li>
 </ul>
+</div>
+<div class="section" id="verso-le-equazioni-di-maxwell">
+<span id="physics-hs-electromagnetism-electromagnetism-steady-maxwell"></span><h2><span class="section-number">20.3.7. </span>Verso le equazioni di Maxwell<a class="headerlink" href="#verso-le-equazioni-di-maxwell" title="Permalink to this heading">#</a></h2>
+<p>Fare riferimento a:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="electrostatics.html#physics-hs-electromagnetism-electrostatics-maxwell"><span class="std std-ref">equazioni di Maxwell per l’elettrostatica</span></a></p></li>
+<li><p><a class="reference internal" href="#physics-hs-electromagnetism-electromagnetism-steady-maxwell"><span class="std std-ref">equazioni di Maxwell e principi dell’elettromagnetismo classico in regime stazionario</span></a></p></li>
+<li><p><a class="reference internal" href="electromagnetism-general.html#physics-hs-electromagnetism-electromagnetism-general-maxwell"><span class="std std-ref">equazioni di Maxwell e principi dell’elettromagnetismo classico</span></a></p></li>
+</ul>
+<div class="section" id="legge-di-gauss-per-il-flusso-del-campo-magnetico">
+<span id="physics-hs-electromagnetism-electromagnetism-steady-maxwell-gauss-b"></span><h3><span class="section-number">20.3.7.1. </span>Legge di Gauss per il flusso del campo magnetico<a class="headerlink" href="#legge-di-gauss-per-il-flusso-del-campo-magnetico" title="Permalink to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\Phi_{\partial V}(\vec{b}) = 0\]</div>
+<p><strong>todo</strong> <em>interpretazione: inesistenza del monopolo magnetico? linee di campo chiuse?</em></p>
+</div>
+<div class="section" id="legge-di-ampere">
+<span id="physics-hs-electromagnetism-electromagnetism-steady-maxwell-ampere"></span><h3><span class="section-number">20.3.7.2. </span>Legge di Ampére<a class="headerlink" href="#legge-di-ampere" title="Permalink to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\oint_{\ell_S} \vec{h} \cdot \hat{t} = \Gamma_{\ell_S}(\vec{h}) = \Phi_{S}(\vec{j}) = i_S \ ,\]</div>
+<p>essendo <span class="math notranslate nohighlight">\(\ell_S = \partial S\)</span> il contorno - chiuso - della superficie <span class="math notranslate nohighlight">\(S\)</span>.</p>
+<p>Non abbiamo ancora finito l’indagine sui fenomeni elettromagnetici. Le equazioni che abbiamo trovato finora:</p>
+<ul class="simple">
+<li><p>sono <strong>incomplete</strong>, nel senso che non riescono a descrivere il fenomeno fisico dell”<a class="reference internal" href="electromagnetism-general.html#physics-hs-electromagnetism-electromagnetism-general-em-induction"><span class="std std-ref">induzione elettromagnetica</span></a>, e di questo non possiamo accorgercene senza ulteriori esperienze</p></li>
+<li><p>tra di loro <strong>incongruenti</strong>, contraddittorie, e di questo possiamo accorgercene confrontando la legge di Ampére</p></li>
+</ul>
+<p>Sono necessarie quindi due «correzioni» delle equazioni, per includere fenomeni <strong>non stazionari</strong>, in generale più difficili da cogliere: una correzione sarà necessaria per poter descrivere l’induzione elettromagnetica, l’altra per rendere l’equazione di Ampére compatibile con il <span class="xref myst">principio di conservazione della carica elettrica</span>. Questi due interventi vengono discussi nel capitolo successivo e sono legati ai nomi di due giganti della scienza, rispettivamente M.Faraday e J.C.Maxwell.</p>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="ref-electric-cable"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
@@ -792,6 +785,7 @@ Nell'ipotesi in cui il raggio $R$ dell'anello sia molto maggiore del raggio dell
 <dd><p>Il campo elettromagnetico generato dalla carica nell’istante <span class="math notranslate nohighlight">\(t\)</span> non influenza il moto della carica stessa allo stesso istante. xPerché evidenziare il tempo <span class="math notranslate nohighlight">\(t\)</span>? Perché il campo EM si propaga nello spazio e nel tempoe quindi il moto di una carica al tempo <span class="math notranslate nohighlight">\(t\)</span> può essere influenzato dal campo elettromagnetico generato da una carica in qualche istante precedente (serve riflessione?)…</p>
 </dd>
 </dl>
+</div>
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -870,13 +864,13 @@ Nell'ipotesi in cui il raggio $R$ dell'anello sia molto maggiore del raggio dell
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi-di-campi-magnetici-generati-da-corrente-in-cavi-elettrici">20.3.4.1. Esempi di campi magnetici generati da corrente in cavi elettrici</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verso-le-equazioni-di-maxwell">20.3.5. Verso le equazioni di Maxwell</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gauss-per-il-flusso-del-campo-magnetico">20.3.5.1. Legge di Gauss per il flusso del campo magnetico</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-ampere">20.3.5.2. Legge di Ampére</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelli-microscopici-del-magnetismo">20.3.5. Modelli microscopici del magnetismo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-di-una-carica-elettrica-in-un-campo-elettromagnetico">20.3.6. Moto di una carica elettrica in un campo elettromagnetico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verso-le-equazioni-di-maxwell">20.3.7. Verso le equazioni di Maxwell</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gauss-per-il-flusso-del-campo-magnetico">20.3.7.1. Legge di Gauss per il flusso del campo magnetico</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-ampere">20.3.7.2. Legge di Ampére</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelli-microscopici-del-magnetismo">20.3.6. Modelli microscopici del magnetismo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-di-una-carica-elettrica-in-un-campo-elettromagnetico">20.3.7. Moto di una carica elettrica in un campo elettromagnetico</a></li>
 </ul>
   </nav></div>
 

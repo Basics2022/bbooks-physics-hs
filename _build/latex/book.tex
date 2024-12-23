@@ -12702,6 +12702,26 @@ Per materiali lineari isotropi,
 
 \subsection{Verso le equazioni di Maxwell}
 \label{\detokenize{ch/electromagnetism/electrostatics:verso-le-equazioni-di-maxwell}}\label{\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-maxwell}}
+\sphinxAtStartPar
+In questa sezione vengono riassunti i risultati del capitolo in due equazioni che faranno parte delle equazioni di Maxwell e in generale dei principi dell’elettromagnetismo classico.
+
+\sphinxAtStartPar
+Fare riferimento a:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-maxwell}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni di Maxwell per l’elettrostatica}}}}
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-maxwell}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni di Maxwell e principi dell’elettromagnetismo classico in regime stazionario}}}}
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/electromagnetism/electromagnetism-general:physics-hs-electromagnetism-electromagnetism-general-maxwell}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni di Maxwell e principi dell’elettromagnetismo classico}}}}
+
+\end{itemize}
+
 
 \subsubsection{Legge di Gauss per il flusso del campo elettrico}
 \label{\detokenize{ch/electromagnetism/electrostatics:legge-di-gauss-per-il-flusso-del-campo-elettrico}}\label{\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-maxwell-gauss}}\begin{equation*}
@@ -13111,8 +13131,21 @@ cos’è? come costruire un campo magnetico? o avere multipli di un campo magnet
 
 
 \subsection{Esperienza di Faraday}
-\label{\detokenize{ch/electromagnetism/electromagnetism-steady:esperienza-di-faraday}}\label{\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-experience-faraday}}\begin{equation*}
+\label{\detokenize{ch/electromagnetism/electromagnetism-steady:esperienza-di-faraday}}\label{\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-experience-faraday}}
+\sphinxAtStartPar
+L’esperienza di Faraday riconosce che su un tratto elementare \(d \vec{\ell}\) di un cavo elettrico percorso da corrente \(i\) in un campo magnetico \(\vec{b}\) agisce una forza elementare
+\begin{equation}\label{equation:ch/electromagnetism/electromagnetism-steady:eq:faraday:force}
 \begin{split}d \vec{F} = - i \, \vec{b} \times d \vec{\ell} \ .\end{split}
+\end{equation}
+\sphinxAtStartPar
+Riconoscendo che il risultato è frutto dell’applicazione del modello di {\hyperref[\detokenize{ch/electromagnetism/circuits-electric:physics-hs-electromagnetism-circuits-electric-electric-cable}]{\sphinxcrossref{\DUrole{std,std-ref}{conduttore con sezione piccola}}}} si può riscrivere l’espressione della forza in termini di densità di corrente elettrica usando la relazione \eqref{equation:ch/electromagnetism/circuits-electric:eq:cable:current-current-density}, e cercando la densità volumentrica di forza \(\vec{f}\), tale che \(d \vec{F} = \vec{f} dV = \vec{f} A d \ell\),
+\begin{equation*}
+\begin{split}\vec{f} A d \ell = - j A \vec{b} \times \vec{\ell} = - \rho v A \vec{b} \times \hat{t} \ell = - A \vec{b} \times \vec{j} d \ell\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi
+\begin{equation*}
+\begin{split}\vec{f} = - \vec{b} \times \vec{j} \ .\end{split}
 \end{equation*}
 \sphinxAtStartPar
 \sphinxstylestrong{todo} ha senso associarla a Faraday? Nessuno la conosceva prima? Galvani, Volta,… come misuravano la corrente elettrica?
@@ -13131,7 +13164,11 @@ Il momento meccanico generato dalla corrente nel cavo elettrico equilibria un mo
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-azioni elettro\sphinxhyphen{}meccaniche:…, cenni al motore elettrico in corrente continua? serve accoppiamento \(\vec{e} \leftrightarrow \vec{b}\) di Faraday
+spostare a fine capitolo
+
+\item {} 
+\sphinxAtStartPar
+azioni elettro\sphinxhyphen{}meccaniche:…, cenni al motore elettrico in corrente continua? serve accoppiamento \(\vec{e} \leftrightarrow \vec{b}\) di Faraday? No in corrente continua
 
 \end{itemize}
 
@@ -13161,17 +13198,7 @@ Confrontando la legge di Ampére con l’esperienza di Faraday, è possibile ric
 \begin{split}b = \frac{\mu}{2 \pi} \frac{i}{d}\end{split}
 \end{equation*}
 \sphinxAtStartPar
-\sphinxstylestrong{todo}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-campo magnetico prodotto da un cavo rettilineo infinito
-
-\item {} 
-\sphinxAtStartPar
-campo magnetico prodotto da un solenoide: lineare infinito, toroidale
-
-\end{itemize}
+\sphinxstylestrong{todo} \sphinxstyleemphasis{immagini}
 
 
 \subsection{Legge di Biot\sphinxhyphen{}Savart}
@@ -13241,63 +13268,6 @@ Solenoide toroidale
 
 
 
-\subsection{Verso le equazioni di Maxwell}
-\label{\detokenize{ch/electromagnetism/electromagnetism-steady:verso-le-equazioni-di-maxwell}}
-
-\subsubsection{Legge di Gauss per il flusso del campo magnetico}
-\label{\detokenize{ch/electromagnetism/electromagnetism-steady:legge-di-gauss-per-il-flusso-del-campo-magnetico}}\begin{equation*}
-\begin{split}\Phi_{\partial V}(\vec{b}) = 0\end{split}
-\end{equation*}
-\sphinxAtStartPar
-\sphinxstylestrong{todo} \sphinxstyleemphasis{interpretazione: inesistenza del monopolo magnetico? linee di campo chiuse?}
-
-
-\subsubsection{Legge di Ampére}
-\label{\detokenize{ch/electromagnetism/electromagnetism-steady:legge-di-ampere}}\begin{equation*}
-\begin{split}\oint_{\ell_S} \vec{h} \cdot \hat{t} = \Gamma_{\ell_S}(\vec{h}) = \Phi_{S}(\vec{j}) = i_S \ ,\end{split}
-\end{equation*}
-\sphinxAtStartPar
-essendo \(\ell_S = \partial S\) il contorno \sphinxhyphen{} chiuso \sphinxhyphen{} della superficie \(S\).
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Questa equazione è valida \sphinxstylestrong{solo} in un regime elettrostatico: la forma generale dell’equazione di Ampére prevede un termine dipendente dal tempo, che è identicamente nullo nel regime elettrostatico.
-
-\item {} 
-\sphinxAtStartPar
-Senza questo termine, l’equazione non sarebbe consistente con l’equazione del bilancio della carica elettrica \sphinxstylestrong{todo} (aggiungere riferimento): la correzione di questa inconsistenza da parte di Maxwell è stata l’ultima azione, fondamentale, per ottenere un sistema di equazioni che governano i fenomeni elettromagnetici; la stessa modifica permette anche di riconoscere che i fenomeni EM sono fenomeni ondulatori; il calcolo della misura della velocità di propoagazione delle onde EM, confrontata con le misure disponibili della velocità della luce, permisero di riconoscere la luce come fenomeno EM
-
-\end{itemize}
-
-\sphinxAtStartPar
-Per dimostrare l’incongruenza, è sufficiente applicare la legge di Ampére a una superficie che è il contorno di un volume chiuso, e che quindi ha contorno nullo,
-\begin{equation*}
-\begin{split}S = \partial V  \qquad , \qquad  \partial S = \ell_S = \emptyset\end{split}
-\end{equation*}
-\sphinxAtStartPar
-In questo caso, la legge di Ampére diventa
-\begin{equation*}
-\begin{split}0 = i_{\partial V} \ ,\end{split}
-\end{equation*}
-\sphinxAtStartPar
-mentre le leggi di conservazione della carica elettrica e la legge di Gauss per il campo elettrico
-\begin{equation*}
-\begin{split}\begin{aligned}
-  \dot{Q}_V & = - i_{\partial V} \\
-  \Phi_{\partial V}(\vec{d}) & = Q_V \\
-\end{aligned}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-implicano
-\begin{equation*}
-\begin{split}i_{\partial V} = - \dot{Q}_V = - \dot{\Phi}_{\partial V}(\vec{d}) \ .\end{split}
-\end{equation*}
-\sphinxAtStartPar
-La correzione di Maxwell non è altro che l’aggiunta del termine \(\dot{\Phi}_{\partial V}(\vec{d})\) all’equazione di Ampére per renderla compatibile con le altre equazioni dell’elettromagnetismo. Con questa modifica, l”\sphinxstylestrong{equazione di Ampére\sphinxhyphen{}Maxwell} diventa
-\begin{equation*}
-\begin{split}\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S \end{split}
-\end{equation*}
-
 \subsection{Modelli microscopici del magnetismo}
 \label{\detokenize{ch/electromagnetism/electromagnetism-steady:modelli-microscopici-del-magnetismo}}\label{\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-magnetism-micro}}
 \sphinxAtStartPar
@@ -13345,6 +13315,58 @@ l”{\hyperref[\detokenize{ch/modern/experiments:modern-experiments-thomson-elec
 \sphinxstylestrong{todo} esempi
 
 \end{itemize}
+
+
+\subsection{Verso le equazioni di Maxwell}
+\label{\detokenize{ch/electromagnetism/electromagnetism-steady:verso-le-equazioni-di-maxwell}}\label{\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-maxwell}}
+\sphinxAtStartPar
+Fare riferimento a:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-maxwell}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni di Maxwell per l’elettrostatica}}}}
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-maxwell}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni di Maxwell e principi dell’elettromagnetismo classico in regime stazionario}}}}
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/electromagnetism/electromagnetism-general:physics-hs-electromagnetism-electromagnetism-general-maxwell}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni di Maxwell e principi dell’elettromagnetismo classico}}}}
+
+\end{itemize}
+
+
+\subsubsection{Legge di Gauss per il flusso del campo magnetico}
+\label{\detokenize{ch/electromagnetism/electromagnetism-steady:legge-di-gauss-per-il-flusso-del-campo-magnetico}}\label{\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-maxwell-gauss-b}}\begin{equation*}
+\begin{split}\Phi_{\partial V}(\vec{b}) = 0\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{interpretazione: inesistenza del monopolo magnetico? linee di campo chiuse?}
+
+
+\subsubsection{Legge di Ampére}
+\label{\detokenize{ch/electromagnetism/electromagnetism-steady:legge-di-ampere}}\label{\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-maxwell-ampere}}\begin{equation*}
+\begin{split}\oint_{\ell_S} \vec{h} \cdot \hat{t} = \Gamma_{\ell_S}(\vec{h}) = \Phi_{S}(\vec{j}) = i_S \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+essendo \(\ell_S = \partial S\) il contorno \sphinxhyphen{} chiuso \sphinxhyphen{} della superficie \(S\).
+
+\sphinxAtStartPar
+Non abbiamo ancora finito l’indagine sui fenomeni elettromagnetici. Le equazioni che abbiamo trovato finora:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+sono \sphinxstylestrong{incomplete}, nel senso che non riescono a descrivere il fenomeno fisico dell”{\hyperref[\detokenize{ch/electromagnetism/electromagnetism-general:physics-hs-electromagnetism-electromagnetism-general-em-induction}]{\sphinxcrossref{\DUrole{std,std-ref}{induzione elettromagnetica}}}}, e di questo non possiamo accorgercene senza ulteriori esperienze
+
+\item {} 
+\sphinxAtStartPar
+tra di loro \sphinxstylestrong{incongruenti}, contraddittorie, e di questo possiamo accorgercene confrontando la legge di Ampére
+
+\end{itemize}
+
+\sphinxAtStartPar
+Sono necessarie quindi due «correzioni» delle equazioni, per includere fenomeni \sphinxstylestrong{non stazionari}, in generale più difficili da cogliere: una correzione sarà necessaria per poter descrivere l’induzione elettromagnetica, l’altra per rendere l’equazione di Ampére compatibile con il \DUrole{xref,myst}{principio di conservazione della carica elettrica}. Questi due interventi vengono discussi nel capitolo successivo e sono legati ai nomi di due giganti della scienza, rispettivamente M.Faraday e J.C.Maxwell.
 
 
 \bigskip\hrule\bigskip
@@ -13444,7 +13466,7 @@ Il flusso del campo magnetico attraverso le sezioni del toro vale
 \label{\detokenize{ch/electromagnetism/electromagnetism-general:induzione-ed-elettromagnetismo}}\label{\detokenize{ch/electromagnetism/electromagnetism-general:physics-hs-electromagnetism-electromagnetism-general}}\label{\detokenize{ch/electromagnetism/electromagnetism-general::doc}}
 
 \subsection{Legge di Faraday per l’induzione elettromagnetica}
-\label{\detokenize{ch/electromagnetism/electromagnetism-general:legge-di-faraday-per-l-induzione-elettromagnetica}}\begin{itemize}
+\label{\detokenize{ch/electromagnetism/electromagnetism-general:legge-di-faraday-per-l-induzione-elettromagnetica}}\label{\detokenize{ch/electromagnetism/electromagnetism-general:physics-hs-electromagnetism-electromagnetism-general-em-induction}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 legge di Faraday: corrente indotta
@@ -13477,22 +13499,72 @@ generazione/trasporto/trasformazione/consumo
 
 
 \subsection{Correzione di Maxwell dell’equazione di Ampére}
-\label{\detokenize{ch/electromagnetism/electromagnetism-general:correzione-di-maxwell-dell-equazione-di-ampere}}
-\sphinxAtStartPar
- Qui o nella sezione di magnetismo ed elettromagnetismo statico? 
-\begin{itemize}
+\label{\detokenize{ch/electromagnetism/electromagnetism-general:correzione-di-maxwell-dell-equazione-di-ampere}}\label{\detokenize{ch/electromagnetism/electromagnetism-general:physics-hs-electromagnetism-electromagnetism-general-ampere-maxwell}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-correzione di Maxwell della legge di Ampére, per renderla consistente con l’equazione di bilancio della carica elettrica
+Correzione fondamentale per ricavare equazioni di bilancio dei fenomeni elettromagnetici che prevedessero la trasmissione di perturbazioni del campo come onde: il riconoscimento dei fenomeni elettromagnetici come fenomeni ondulatori con una velocità di trasmissione paragonabile alla velocità della luce nota allora permisero di riconoscere la \sphinxstyleemphasis{luce come fenomeno elettromagnetico}, come {\hyperref[\detokenize{ch/electromagnetism/em-waves:physics-hs-electromagnetism-em-waves}]{\sphinxcrossref{\DUrole{std,std-ref}{onda elettromagnetica}}}}. Alle equazioni di Maxwell, seguì la {\hyperref[\detokenize{ch/electromagnetism/em-waves:physics-hs-electromagnetism-em-waves-hertz}]{\sphinxcrossref{\DUrole{std,std-ref}{verifica sperimentale di Hertz}}}}.
+
+\item {} 
+\sphinxAtStartPar
+La {\hyperref[\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-maxwell-ampere}]{\sphinxcrossref{\DUrole{std,std-ref}{legge di Ampére}}}} equazione è valida \sphinxstylestrong{solo} in un regime elettrostatico: la forma generale dell’equazione di Ampére prevede un termine dipendente dal tempo, che è identicamente nullo nel regime elettrostatico.
+
+\item {} 
+\sphinxAtStartPar
+Senza questo termine, l’equazione non sarebbe consistente con la {\hyperref[\detokenize{ch/electromagnetism/electric-current:physics-hs-electromagnetism-charge-conservation}]{\sphinxcrossref{\DUrole{std,std-ref}{conservazione della carica elettrica}}}}: la correzione di questa inconsistenza da parte di Maxwell è stata l’ultima azione, fondamentale, per ottenere un sistema di equazioni che governano i fenomeni elettromagnetici; la stessa modifica permette anche di riconoscere che i fenomeni EM sono fenomeni ondulatori; il calcolo della misura della velocità di propoagazione delle onde EM, confrontata con le misure disponibili della velocità della luce, permisero di riconoscere la luce come fenomeno EM
 
 \end{itemize}
 
+\sphinxAtStartPar
+Per dimostrare l’incongruenza, è sufficiente applicare la legge di Ampére a una superficie che è il contorno di un volume chiuso, e che quindi ha contorno nullo,
+\begin{equation*}
+\begin{split}S = \partial V  \qquad , \qquad  \partial S = \ell_S = \emptyset\end{split}
+\end{equation*}
+\sphinxAtStartPar
+In questo caso, la legge di Ampére diventa
+\begin{equation*}
+\begin{split}0 = i_{\partial V} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+mentre le leggi di conservazione della carica elettrica e la legge di Gauss per il campo elettrico
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \dot{Q}_V & = - i_{\partial V} \\
+  \Phi_{\partial V}(\vec{d}) & = Q_V \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+implicano
+\begin{equation*}
+\begin{split}i_{\partial V} = - \dot{Q}_V = - \dot{\Phi}_{\partial V}(\vec{d}) \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La correzione di Maxwell non è altro che l’aggiunta del termine \(\dot{\Phi}_{\partial V}(\vec{d})\) all’equazione di Ampére per renderla compatibile con le altre equazioni dell’elettromagnetismo. Con questa modifica, l”\sphinxstylestrong{equazione di Ampére\sphinxhyphen{}Maxwell} diventa
+\begin{equation*}
+\begin{split}\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S \end{split}
+\end{equation*}
 
 \subsection{Equazioni di Maxwell dell’elettromagnetismo}
-\label{\detokenize{ch/electromagnetism/electromagnetism-general:equazioni-di-maxwell-dell-elettromagnetismo}}\begin{itemize}
+\label{\detokenize{ch/electromagnetism/electromagnetism-general:equazioni-di-maxwell-dell-elettromagnetismo}}\label{\detokenize{ch/electromagnetism/electromagnetism-general:physics-hs-electromagnetism-electromagnetism-general-maxwell}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 le equazioni di Maxwell: le equazioni complete dell’elettromagnetismo
+
+\end{itemize}
+
+\sphinxAtStartPar
+Fare riferimento a:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-maxwell}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni di Maxwell per l’elettrostatica}}}}
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-maxwell}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni di Maxwell e principi dell’elettromagnetismo classico in regime stazionario}}}}
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/electromagnetism/electromagnetism-general:physics-hs-electromagnetism-electromagnetism-general-maxwell}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni di Maxwell e principi dell’elettromagnetismo classico}}}}
 
 \end{itemize}
 
@@ -13576,9 +13648,9 @@ La dimensione ridotta della sezione permette quindi di trascurare la tridimensio
 
 \sphinxAtStartPar
 La corrente può quindi essere espressa come
-\begin{equation*}
+\begin{equation}\label{equation:ch/electromagnetism/circuits-electric:eq:cable:current-current-density}
 \begin{split}i = \vec{j} \cdot \hat{n} A \simeq j A \ ,\end{split}
-\end{equation*}
+\end{equation}
 \sphinxAtStartPar
 avendo indicato con \(\hat{n}\) la normale della sezione e \(A\) la superficie della sezione del cavo, e potendo considerare solo il valore scalare delle grandezze fisiche se si considera una sezione perpendicolare all’asse del cavo elettrico.
 
@@ -13878,6 +13950,9 @@ condusse un esperimento fallimentare con il quale pensò di dimostrare che i rag
 \sphinxstylestrong{Marconi \sphinxhyphen{} le applicazioni.} \sphinxstylestrong{todo} \sphinxstyleemphasis{due parole sul contensto storico, la stesura dei cavi sottomarini e transoceanici del telegrafo \sphinxhyphen{} in cui erano coinvolti anche personaggi del calibro di Kelvin \sphinxhyphen{}, e rivoluzione della radio per le comunicazioni}
 
 
+\section{Esperimenti di Hertz}
+\label{\detokenize{ch/electromagnetism/em-waves:esperimenti-di-hertz}}\label{\detokenize{ch/electromagnetism/em-waves:physics-hs-electromagnetism-em-waves-hertz}}
+
 \section{Luce}
 \label{\detokenize{ch/electromagnetism/em-waves:luce}}\label{\detokenize{ch/electromagnetism/em-waves:physics-hs-electromagnetism-em-waves-light}}
 
@@ -13938,7 +14013,7 @@ cercare pubblicazioni di Hertz
 \section{Problemi}
 \label{\detokenize{ch/electromagnetism/em-waves-problems:problemi}}\label{\detokenize{ch/electromagnetism/em-waves-problems:physics-hs-electromagnetism-em-waves-problems}}\label{\detokenize{ch/electromagnetism/em-waves-problems::doc}}\phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 22.2.1 (Velocità della Luce)}
+\begin{sphinxadmonition}{note}{Exercise 22.3.1 (Velocità della Luce)}
 
 
 
@@ -13947,7 +14022,7 @@ Calcola la velocità della luce in un vuoto utilizzando la costante dielettrica 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 22.2.2 (Frequenza e Lunghezza d’Onda)}
+\begin{sphinxadmonition}{note}{Exercise 22.3.2 (Frequenza e Lunghezza d’Onda)}
 
 
 
@@ -13956,7 +14031,7 @@ Un’onda elettromagnetica ha una frequenza di \(f = 60 \, \text{MHz}\). Calcola
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 22.2.3 (Energia di un Foton)}
+\begin{sphinxadmonition}{note}{Exercise 22.3.3 (Energia di un Foton)}
 
 
 
@@ -13965,7 +14040,7 @@ Calcola l’energia di un fotone di luce con una lunghezza d’onda di \(500 \, 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 22.2.4 (Legge di Snell per Onde Elettromagnetiche)}
+\begin{sphinxadmonition}{note}{Exercise 22.3.4 (Legge di Snell per Onde Elettromagnetiche)}
 
 
 
@@ -13974,7 +14049,7 @@ Un’onda elettromagnetica passa dall’aria (indice di rifrazione \(n_1 = 1\)) 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 22.2.5 (Direzione del Campo Elettrico in un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 22.3.5 (Direzione del Campo Elettrico in un’onda Elettromagnetica)}
 
 
 
@@ -13983,7 +14058,7 @@ In un’onda elettromagnetica che si propaga lungo l’asse \(z\), con il campo 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 22.2.6 (Intensità di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 22.3.6 (Intensità di un’onda Elettromagnetica)}
 
 
 
@@ -13992,7 +14067,7 @@ Se l’intensità di un’onda elettromagnetica è \(I = 8 \, \text{W/m}^2\) e l
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 22.2.7 (Energia Mediata da un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 22.3.7 (Energia Mediata da un’onda Elettromagnetica)}
 
 
 
@@ -14001,7 +14076,7 @@ Un’onda elettromagnetica ha una frequenza di \(f = 100 \, \text{MHz}\). Se l�
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 22.2.8 (Propagazione in un Medio Dielettrico)}
+\begin{sphinxadmonition}{note}{Exercise 22.3.8 (Propagazione in un Medio Dielettrico)}
 
 
 
@@ -14010,7 +14085,7 @@ Un’onda elettromagnetica si propaga in un materiale con costante dielettrica \
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 22.2.9 (Polarizzazione di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 22.3.9 (Polarizzazione di un’onda Elettromagnetica)}
 
 
 
@@ -14019,7 +14094,7 @@ Un’onda elettromagnetica viene polarizzata attraverso un filtro lineare. Se la
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 22.2.10 (Effetto Doppler per Onde Elettromagnetiche)}
+\begin{sphinxadmonition}{note}{Exercise 22.3.10 (Effetto Doppler per Onde Elettromagnetiche)}
 
 
 
@@ -14028,7 +14103,7 @@ Un’onda elettromagnetica ha una frequenza \(f = 5 \, \text{GHz}\) e viene osse
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 22.2.11 (Energia per Unità di Volume di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 22.3.11 (Energia per Unità di Volume di un’onda Elettromagnetica)}
 
 
 
@@ -14037,7 +14112,7 @@ Calcola l’energia per unità di volume in un’onda elettromagnetica che ha un
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 22.2.12 (Onda Elettromagnetica nel Vuoto)}
+\begin{sphinxadmonition}{note}{Exercise 22.3.12 (Onda Elettromagnetica nel Vuoto)}
 
 
 
@@ -14046,7 +14121,7 @@ Una radiazione elettromagnetica ha una frequenza di \(f = 2 \, \text{GHz}\). Cal
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 22.2.13 (Impedenza di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 22.3.13 (Impedenza di un’onda Elettromagnetica)}
 
 
 
@@ -14055,7 +14130,7 @@ In un’onda elettromagnetica nel vuoto, calcola l’impedenza, sapendo che la p
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 22.2.14 (Spettro Elettromagnetico)}
+\begin{sphinxadmonition}{note}{Exercise 22.3.14 (Spettro Elettromagnetico)}
 
 
 
@@ -14064,7 +14139,7 @@ Un’onda elettromagnetica appartiene alla banda delle microonde con una frequen
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 22.2.15 (Legge di Ampère\sphinxhyphen{}Maxwell)}
+\begin{sphinxadmonition}{note}{Exercise 22.3.15 (Legge di Ampère\sphinxhyphen{}Maxwell)}
 
 
 
@@ -14073,7 +14148,7 @@ Utilizzando la legge di Ampère\sphinxhyphen{}Maxwell, calcola la corrente indot
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-15}
 
-\begin{sphinxadmonition}{note}{Exercise 22.2.16 (Direzione di Propagazione di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 22.3.16 (Direzione di Propagazione di un’onda Elettromagnetica)}
 
 
 
@@ -14082,7 +14157,7 @@ In un’onda elettromagnetica che si propaga lungo l’asse \(z\) con il campo e
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-16}
 
-\begin{sphinxadmonition}{note}{Exercise 22.2.17 (Potenza Trasportata da un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 22.3.17 (Potenza Trasportata da un’onda Elettromagnetica)}
 
 
 
@@ -14091,7 +14166,7 @@ Calcola la potenza trasportata da un’onda elettromagnetica con una intensità 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-17}
 
-\begin{sphinxadmonition}{note}{Exercise 22.2.18 (Riflessione e Rifrazione di Onde Elettromagnetiche)}
+\begin{sphinxadmonition}{note}{Exercise 22.3.18 (Riflessione e Rifrazione di Onde Elettromagnetiche)}
 
 
 
