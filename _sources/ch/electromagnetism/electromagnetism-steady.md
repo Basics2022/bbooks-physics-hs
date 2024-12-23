@@ -93,6 +93,7 @@ $$\begin{aligned}
                      & =   \frac{\mu}{4 \pi} i \hat{\theta} \int_{\theta=0}^{\pi} \frac{1}{R} \sin \theta \, d \theta = \\
                      & =   \frac{\mu \, i}{2 \pi \, R} \hat{\theta} \ .
 \end{aligned}$$
+```
 
 ```{dropdown} Spira circolare - campo magnetico sull'asse
 Sfruttando la simmetria cilindrica del problema, è possibile calcolare il campo magnetico $$ sull'asse di una spira circolare
