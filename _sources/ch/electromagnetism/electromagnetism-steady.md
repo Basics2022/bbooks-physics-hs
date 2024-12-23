@@ -66,7 +66,7 @@ Le formule vengono ricavate in [appendice](physics-hs:electromagnetism:electroma
 
 - Spira circolare, campo magnetico sull'asse
     
-  $$\vec{b}(z,r=0) = \frac{\mu \, i}{2 \, R} \frac{1}{\left(1 + \left(\frac{z}{R}\right)^2 \right)^{3/2}} \hat{z} $$
+  $$\vec{b}(z,r=0) = \frac{\mu \, i}{2 \, R} \frac{1}{\left[1 + \left(\dfrac{z}{R}\right)^2 \right]^{3/2}} \hat{z} $$
 
 - Solenoide rettilineo infinito. Il campo magnetico è nullo al di fuori del solenoide e uniforme all'interno, allineato lungo l'asse e con intensità
 
