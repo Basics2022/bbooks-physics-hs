@@ -193,6 +193,7 @@ $$\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S $$
 (physics-hs:electromagnetism:magnetism:micro)=
 ## Modelli microscopici del magnetismo
 
+**todo** *correnti di Ampére. Una carica elettrica in movimento (passare da Biot-Savart a carica, da corrente a carica discreta) genera un campo magnetico; un'$e^-$ in moto attorno al nucleo - qualsiasi cosa sia, sia l'elettrone, sia il suo movimento - quindi genera un campo magnetico; a questo contributo, si aggiunge un momento magnetico intrinsceco di* **spin**
 
 
 (physics-hs:electromagnetism:lorentz)=
