@@ -9,7 +9,7 @@ La dimensione ridotta della sezione permette quindi di trascurare la tridimensio
 
 La corrente può quindi essere espressa come
 
-$$i = \vec{j} \cdot \hat{n} A \simeq j A \ ,$$
+$$i = \vec{j} \cdot \hat{n} A \simeq j A \ ,$$ (eq:cable:current-current-density)
 
 avendo indicato con $\hat{n}$ la normale della sezione e $A$ la superficie della sezione del cavo, e potendo considerare solo il valore scalare delle grandezze fisiche se si considera una sezione perpendicolare all'asse del cavo elettrico.
 
