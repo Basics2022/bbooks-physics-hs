@@ -184,6 +184,12 @@ $$\vec{d} := \varepsilon \vec{e} = \varepsilon_0 \vec{e} + \vec{p}$$
 
 (physics-hs:electromagnetism:electrostatics:maxwell)=
 ## Verso le equazioni di Maxwell
+In questa sezione vengono riassunti i risultati del capitolo in due equazioni che faranno parte delle equazioni di Maxwell e in generale dei principi dell'elettromagnetismo classico.
+
+Fare riferimento a:
+- [equazioni di Maxwell per l'elettrostatica](physics-hs:electromagnetism:electrostatics:maxwell)
+- [equazioni di Maxwell e principi dell'elettromagnetismo classico in regime stazionario](physics-hs:electromagnetism:electromagnetism-steady:maxwell)
+- [equazioni di Maxwell e principi dell'elettromagnetismo classico](physics-hs:electromagnetism:electromagnetism-general:maxwell)
 
 (physics-hs:electromagnetism:electrostatics:maxwell:gauss)=
 ### Legge di Gauss per il flusso del campo elettrico

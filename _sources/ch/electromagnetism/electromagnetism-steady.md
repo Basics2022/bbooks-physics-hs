@@ -29,7 +29,8 @@ Il galvanometro è uno strumento utilizzato per la misura della corrente elettri
 Il momento meccanico generato dalla corrente nel cavo elettrico equilibria un momento generato da componenti meccanici "noti", realizzabili e tarabili con la precisione richiesta.
 
 **todo** *Serve questo riferimento qui?*
-- azioni elettro-meccaniche:..., cenni al motore elettrico in corrente continua? serve accoppiamento $\vec{e} \leftrightarrow \vec{b}$ di Faraday
+- spostare a fine capitolo
+- azioni elettro-meccaniche:..., cenni al motore elettrico in corrente continua? serve accoppiamento $\vec{e} \leftrightarrow \vec{b}$ di Faraday? No in corrente continua
 
 (physics-hs:electromagnetism:electromagnetism-steady:experience-oersted-ampere)=
 ## Esperienze di Oersted e Ampere
@@ -44,10 +45,7 @@ Confrontando la legge di Ampére con l'esperienza di Faraday, è possibile ricav
 
 $$b = \frac{\mu}{2 \pi} \frac{i}{d}$$
 
-**todo**
-- campo magnetico prodotto da un cavo rettilineo infinito
-- campo magnetico prodotto da un solenoide: lineare infinito, toroidale
-
+**todo** *immagini*
 
 (physics-hs:electromagnetism:electromagnetism-steady:biot-savart)=
 ## Legge di Biot-Savart
@@ -157,7 +155,46 @@ $$\Phi(\vec{b}) = \oint_{S} b(r) \, dS =  \mu \frac{N \, i}{2 \pi}\int_{\rho=0}^
 Nell'ipotesi in cui il raggio $R$ dell'anello sia molto maggiore del raggio della sezione del toro, si può approssimare il campo come uniforme, $b =$
 -->
 
+
+
+(physics-hs:electromagnetism:magnetism:micro)=
+## Modelli microscopici del magnetismo
+
+**todo** *correnti di Ampére. Una carica elettrica in movimento (passare da Biot-Savart a carica, da corrente a carica discreta) genera un campo magnetico; un'$e^-$ in moto attorno al nucleo - qualsiasi cosa sia, sia l'elettrone, sia il suo movimento - quindi genera un campo magnetico, comportandosi come una spira (o un dipolo magnetico); a questo contributo, si aggiunge un momento magnetico intrinsceco di* **spin** *, come dimostrato dall'[esperimento di Stern-Gerlach](modern:experiments:stern-gerlach).*
+
+*L'allineamento dei momenti magnetici degli atomi appartenenti a una vasta regione di un mezzo macroscopico si manifesta come magentismo del mezzo*
+
+**todo** *aggiungere dettagli, temperatura di Curie,...*
+
+
+(physics-hs:electromagnetism:lorentz)=
+## Moto di una carica elettrica in un campo elettromagnetico
+Il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$ in una regione dello spazio nel quale è presente un campo elettromagnetico $\vec{e}(\vec{r},t)$, $\vec{b}(\vec{r},t)$ è soggetto a una forza esterna,
+
+$$\vec{F}^{Lorentz} = q \left[\vec{e}(P) - \vec{b}(P) \times \vec{v}_P \right]$$ (eq:force:lorentz)
+
+definita **forza di Lorentz**.
+
+Nell'ipotesi di risultante nulla degli effetti del campo elettromagnetico generato da un sistema su se stesso[^motion:electromagnetic-field], l'equazione dinamica che governa il moto del sistema è
+
+  $$m \ddot{ \vec{r}_P } = \vec{R}^{ext} = q \left[ \vec{e}(P) + \vec{b}(P) \times \dot{\vec{r}_P} \right] + \vec{F}^{\text{non EM}}$$
+
+[^motion:electromagnetic-field]: Il campo elettromagnetico generato dalla carica nell'istante $t$ non influenza il moto della carica stessa allo stesso istante. xPerché evidenziare il tempo $t$? Perché il campo EM si propaga nello spazio e nel tempoe quindi il moto di una carica al tempo $t$ può essere influenzato dal campo elettromagnetico generato da una carica in qualche istante precedente (serve riflessione?)...
+
+Esempi dell'applicazioni della legge di Lorentz si ritrovano negli esperimenti condotti a cavallo della 1900 nell'indagine sulla struttura della materia e sui suoi componenti elementari, come:
+- l'[esperimento di Thomson](modern:experiments:thomson:electron)
+- ...
+
+- **todo** esempi
+
+
+(physics-hs:electromagnetism:electromagnetism-steady:maxwell)=
 ## Verso le equazioni di Maxwell
+
+Fare riferimento a:
+- [equazioni di Maxwell per l'elettrostatica](physics-hs:electromagnetism:electrostatics:maxwell)
+- [equazioni di Maxwell e principi dell'elettromagnetismo classico in regime stazionario](physics-hs:electromagnetism:electromagnetism-steady:maxwell)
+- [equazioni di Maxwell e principi dell'elettromagnetismo classico](physics-hs:electromagnetism:electromagnetism-general:maxwell)
 
 ### Legge di Gauss per il flusso del campo magnetico
 
@@ -197,34 +234,3 @@ $$i_{\partial V} = - \dot{Q}_V = - \dot{\Phi}_{\partial V}(\vec{d}) \ .$$
 La correzione di Maxwell non è altro che l'aggiunta del termine $\dot{\Phi}_{\partial V}(\vec{d})$ all'equazione di Ampére per renderla compatibile con le altre equazioni dell'elettromagnetismo. Con questa modifica, l'**equazione di Ampére-Maxwell** diventa
 
 $$\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S $$
-
-
-(physics-hs:electromagnetism:magnetism:micro)=
-## Modelli microscopici del magnetismo
-
-**todo** *correnti di Ampére. Una carica elettrica in movimento (passare da Biot-Savart a carica, da corrente a carica discreta) genera un campo magnetico; un'$e^-$ in moto attorno al nucleo - qualsiasi cosa sia, sia l'elettrone, sia il suo movimento - quindi genera un campo magnetico, comportandosi come una spira (o un dipolo magnetico); a questo contributo, si aggiunge un momento magnetico intrinsceco di* **spin** *, come dimostrato dall'[esperimento di Stern-Gerlach](modern:experiments:stern-gerlach).*
-
-*L'allineamento dei momenti magnetici degli atomi appartenenti a una vasta regione di un mezzo macroscopico si manifesta come magentismo del mezzo*
-
-**todo** *aggiungere dettagli, temperatura di Curie,...*
-
-
-(physics-hs:electromagnetism:lorentz)=
-## Moto di una carica elettrica in un campo elettromagnetico
-Il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$ in una regione dello spazio nel quale è presente un campo elettromagnetico $\vec{e}(\vec{r},t)$, $\vec{b}(\vec{r},t)$ è soggetto a una forza esterna,
-
-$$\vec{F}^{Lorentz} = q \left[\vec{e}(P) - \vec{b}(P) \times \vec{v}_P \right]$$ (eq:force:lorentz)
-
-definita **forza di Lorentz**.
-
-Nell'ipotesi di risultante nulla degli effetti del campo elettromagnetico generato da un sistema su se stesso[^motion:electromagnetic-field], l'equazione dinamica che governa il moto del sistema è
-
-  $$m \ddot{ \vec{r}_P } = \vec{R}^{ext} = q \left[ \vec{e}(P) + \vec{b}(P) \times \dot{\vec{r}_P} \right] + \vec{F}^{\text{non EM}}$$
-
-[^motion:electromagnetic-field]: Il campo elettromagnetico generato dalla carica nell'istante $t$ non influenza il moto della carica stessa allo stesso istante. xPerché evidenziare il tempo $t$? Perché il campo EM si propaga nello spazio e nel tempoe quindi il moto di una carica al tempo $t$ può essere influenzato dal campo elettromagnetico generato da una carica in qualche istante precedente (serve riflessione?)...
-
-Esempi dell'applicazioni della legge di Lorentz si ritrovano negli esperimenti condotti a cavallo della 1900 nell'indagine sulla struttura della materia e sui suoi componenti elementari, come:
-- l'[esperimento di Thomson](modern:experiments:thomson:electron)
-- ...
-
-- **todo** esempi
