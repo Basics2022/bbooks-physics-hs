@@ -94,7 +94,7 @@ $$\begin{aligned}
                      & =   \frac{\mu \, i}{2 \pi \, R} \hat{\theta} \ .
 \end{aligned}$$
 
-```{Spira circolare - campo magnetico sull'asse}
+```{dropdown} Spira circolare - campo magnetico sull'asse
 Sfruttando la simmetria cilindrica del problema, è possibile calcolare il campo magnetico $$ sull'asse di una spira circolare
 
 $$\cos \phi = \frac{R}{r} \qquad , \qquad
