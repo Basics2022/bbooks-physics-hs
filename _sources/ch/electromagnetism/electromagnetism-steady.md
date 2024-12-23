@@ -7,7 +7,7 @@
 
 (physics-hs:electromagnetism:electromagnetism-steady:experience-faraday)=
 ## Esperienza di Faraday
-L'esperienza di Faraday riconosce che su un tratto elementare $d \vec{\ell}$ di un cavo elettrico percorso da corrente $i$ in un campo magnetico $\bec{b}$ agisce una forza elementare
+L'esperienza di Faraday riconosce che su un tratto elementare $d \vec{\ell}$ di un cavo elettrico percorso da corrente $i$ in un campo magnetico $\vec{b}$ agisce una forza elementare
 
 $$d \vec{F} = - i \, \vec{b} \times d \vec{\ell} \ .$$ (eq:faraday:force)
 
