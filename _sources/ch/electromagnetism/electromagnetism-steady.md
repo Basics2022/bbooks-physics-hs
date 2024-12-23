@@ -59,7 +59,26 @@ In questa sezione si mostra il campo magnetico prodotto dalla corrente elettrica
 
 Le formule vengono ricavate in [appendice](physics-hs:electromagnetism:electromagnetism-steady:notes:biot-savart), usando lla forma generale della legge di Biot-Savart, e quando possibile delle considerazioni sulla geometria e sulle simmetrie dei problemi.
 
+````{only} latex
+- Conduttore rettilineo infinito
 
+  $$ \vec{b}(\vec{r}) =   \frac{\mu \, i}{2 \pi \, r} \hat{\theta} \ .$$
+
+- Spira circolare, campo magnetico sull'asse
+    
+  $$\vec{b}(z,r=0) = \frac{\mu \, i}{2 \, R} \frac{1}{\left(1 + \left(\frac{z}{R}\right)^2 \right)^{3/2}} \hat{z} $$
+
+- Solenoide rettilineo infinito. Il campo magnetico è nullo al di fuori del solenoide e uniforme all'interno, allineato lungo l'asse e con intensità
+
+  $$b = \mu \frac{N}{\ell} \, i$$
+  $$\phi = \dots$$
+
+- Solenoide toroidale
+
+  $$b() = \dots$$
+  $$\phi = \dots$$
+
+````
 
 ````{only} html
 ```{dropdown} Filo rettilineo infinito
