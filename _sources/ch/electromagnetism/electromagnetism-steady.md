@@ -44,16 +44,25 @@ $$b = \frac{\mu}{2 \pi} \frac{i}{d}$$
 ## Legge di Biot-Savart
 La legge di Biot-Savart permette di generalizzare i risultati dell'esperienza di Ampére. Il contributo elementare al campo magnetico $\vec{b}(\vec{r}_0)$ nel punto dello spazio $\vec{r}_0$ dovuto a un cavo elettrico[^ref:electric-cable] di lunghezza elementare $d \ell$ posizionato nel punto dello spazio $\vec{r}$ e percorso da corrente elettrica $i$ è dato dalla formula
 
-$$d \vec{b}(\vec{r}_0) = - \frac{\mu}{4 \pi} i(\vec{r}) \frac{ \vec{r}_0 - \vec{r} }{| \vec{r}_0 - \vec{r} |^3} \times d \vec{\ell}(\vec{r}) \ .$$
+$$d \vec{b}(\vec{r}_0) = - \frac{\mu}{4 \pi} i(\vec{r}) \frac{ \vec{r}_0 - \vec{r} }{| \vec{r}_0 - \vec{r} |^3} \times d \vec{\ell}(\vec{r}) \ .$$ (eq:biot-savart:differential)
 
-**todo** *fare una sezione nel capitolo, per descrivere l'approccio comune ai fenomeni elettromagnetici, in cui compaiono "punti potenzianti" (attivi, dove c'è la causa di un fenomeno; qui il punto $\vec{r}$ dove c'è il cavo conduttore) e "punti potenziati" (passivi, dove si osserva la conseguenza di un fenomeno; qui il punto $\vec{r}_0$ dove si misura il campo magnetico)*
+Di conseguenza, il contributo dovuto alla corrente in un cavo elettrico descritto dal percorso $\gamma(\vec{r})$ è la somma dei contributi elementari {eq}`eq:biot-savart:differential`, per fenomeni continui l'integrale
 
-$$\vec{b}(\vec{r}_0) = - \frac{\mu}{4 \pi} \int_{\gamma(\vec{r})} i(\vec{r})  \frac{ \vec{r}_0 - \vec{r} }{| \vec{r}_0 - \vec{r} |^3}\times d \vec{\ell}(\vec{r})$$
+$$\vec{b}(\vec{r}_0) = - \frac{\mu}{4 \pi} \int_{\gamma(\vec{r})} i(\vec{r})  \frac{ \vec{r}_0 - \vec{r} }{| \vec{r}_0 - \vec{r} |^3}\times d \vec{\ell}(\vec{r}) \ .$$ (eq:biot-savart:integral)
 
 [^ref:electric-cable]: Fare riferimento alla sezione sul [cavo elettrico](electric-current:cable), e l'approssimazione circuitale di cavi elettrici.
 
-#### Filo rettilineo infinito
+**todo** *fare una sezione nel capitolo, per descrivere l'approccio comune ai fenomeni elettromagnetici, in cui compaiono "punti potenzianti" (attivi, dove c'è la causa di un fenomeno; qui il punto $\vec{r}$ dove c'è il cavo conduttore) e "punti potenziati" (passivi, dove si osserva la conseguenza di un fenomeno; qui il punto $\vec{r}_0$ dove si misura il campo magnetico)*
 
+### Esempi di campi magnetici generati da corrente in cavi elettrici
+In questa sezione si mostra il campo magnetico prodotto dalla corrente elettrica che passa in un cavi elettrici con particolari configurazioni: il cavo rettilineo infinito, la spira circolare, il solenoide infinito rettilineo, il solenoide toroidale. Queste configurazioni possono essere considerate delle idealizzazioni di casi reali, e costituiscono una buona approssimazione nel caso in cui si possano trascurare *effetti di bordo*. (**todo** *discutere*)
+
+Le formule vengono ricavata in appendice, partendo dalla forma generale della legge di Biot-Savart.
+
+
+
+````{only} html
+```{dropdown} Filo rettilineo infinito
 $$z = R \, \tan \theta$$
 $$dz = R \frac{1}{\cos^2 \theta} \, d \theta$$
 $$r^2 = R^2 + z^2 = R^2 \left(1+\frac{\sin^2 \theta}{\cos^2 \theta} \right) = R^2 \frac{1}{\cos^2 \theta}$$
@@ -65,13 +74,9 @@ $$\begin{aligned}
                      & =   \frac{\mu}{4 \pi} i \hat{\theta} \int_{\theta=0}^{\pi} \frac{1}{R} \sin \theta \, d \theta = \\
                      & =   \frac{\mu \, i}{2 \pi \, R} \hat{\theta} \ .
 \end{aligned}$$
+````
 
-
-
-### Esempi: spira e solenoide
-
-#### Spira circolare
-
+```{Spira circolare - campo magnetico sull'asse}
 Sfruttando la simmetria cilindrica del problema, è possibile calcolare il campo magnetico $$ sull'asse di una spira circolare
 
 $$\cos \phi = \frac{R}{r} \qquad , \qquad
@@ -84,8 +89,9 @@ $$\begin{aligned}
    & = \frac{\mu \, i}{2} \frac{R^2}{(R^2 + z^2)^{3/2}} \hat{z}  =
        \frac{\mu \, i}{2 \, R} \frac{1}{\left(1 + \left(\frac{z}{R}\right)^2 \right)^{3/2}} \hat{z} 
 \end{aligned}$$
+```
 
-#### Solenoide rettilineo
+```{dropdown} Solenoide rettilineo
 
 Applicando la legge di Ampére,
 
@@ -96,8 +102,9 @@ $$b = \mu \frac{N}{\ell} \, i$$
 Il flusso del campo magnetico (uniforme) vale quindi
 
 $$\phi = b \, A = \mu \frac{N \, A}{\ell} \, i$$
+```
 
-#### Solenoide toroidale
+```{dropdown} Solenoide toroidale
 
 Applicando la legge di Ampère,
 
@@ -110,6 +117,9 @@ Il flusso del campo magnetico attraverso le sezioni del toro vale
 $$\Phi(\vec{b}) = \oint_{S} b(r) \, dS =  \mu \frac{N \, i}{2 \pi}\int_{\rho=0}^{a} \int_{\alpha=0}^{2\pi} \frac{1}{R - \rho \cos \alpha} \rho \, d \rho \, d \alpha  = $$
 
 **todo**
+```
+
+````
 
 <!--
 Nell'ipotesi in cui il raggio $R$ dell'anello sia molto maggiore del raggio della sezione del toro, si può approssimare il campo come uniforme, $b =$
