@@ -71,7 +71,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="20.3.5. Problemi" href="electromagnetism-steady-problems.html" />
+    <link rel="next" title="20.3.8. Problemi" href="electromagnetism-steady-problems.html" />
     <link rel="prev" title="20.2. Corrente elettrica" href="electric-current.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -314,9 +314,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="electrostatics.html">20.1. Elettrostatica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="electric-current.html">20.2. Corrente elettrica</a></li>
 <li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">20.3. Magnetismo ed elettromagnetismo in regime stazionario</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="electromagnetism-steady-problems.html">20.3.5. Problemi</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electromagnetism-steady-sol.html">20.3.6. Soluzioni</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electromagnetism-steady-notes.html">20.3.7. Note e dimostrazioni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electromagnetism-steady-problems.html">20.3.8. Problemi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electromagnetism-steady-sol.html">20.3.9. Soluzioni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electromagnetism-steady-notes.html">20.3.10. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="electromagnetism-general.html">20.4. Induzione ed elettromagnetismo</a></li>
@@ -569,6 +569,13 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi-di-campi-magnetici-generati-da-corrente-in-cavi-elettrici">20.3.4.1. Esempi di campi magnetici generati da corrente in cavi elettrici</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verso-le-equazioni-di-maxwell">20.3.5. Verso le equazioni di Maxwell</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gauss-per-il-flusso-del-campo-magnetico">20.3.5.1. Legge di Gauss per il flusso del campo magnetico</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-ampere">20.3.5.2. Legge di Ampére</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelli-microscopici-del-magnetismo">20.3.6. Modelli microscopici del magnetismo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-di-una-carica-elettrica-in-un-campo-elettromagnetico">20.3.7. Moto di una carica elettrica in un campo elettromagnetico</a></li>
 </ul>
             </nav>
         </div>
@@ -657,8 +664,7 @@ Filo rettilineo infinito<div class="sd-summary-down docutils">
                      &amp; =   \frac{\mu}{4 \pi} i \hat{\theta} \int_{\theta=0}^{\pi} \frac{1}{R} \sin \theta \, d \theta = \\
                      &amp; =   \frac{\mu \, i}{2 \pi \, R} \hat{\theta} \ .
 \end{aligned}\end{split}\]</div>
-</div>
-</details><div class="highlight-{Spira notranslate"><div class="highlight"><pre><span></span>Sfruttando la simmetria cilindrica del problema, è possibile calcolare il campo magnetico $$ sull&#39;asse di una spira circolare
+<div class="highlight-{Spira notranslate"><div class="highlight"><pre><span></span>Sfruttando la simmetria cilindrica del problema, è possibile calcolare il campo magnetico $$ sull&#39;asse di una spira circolare
 
 $$\cos \phi = \frac{R}{r} \qquad , \qquad
 r^2 = R^2 + z^2$$
@@ -672,7 +678,8 @@ $$\begin{aligned}
 \end{aligned}$$
 </pre></div>
 </div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Solenoide rettilineo<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -705,83 +712,72 @@ Solenoide toroidale<div class="sd-summary-down docutils">
 \[\Phi(\vec{b}) = \oint_{S} b(r) \, dS =  \mu \frac{N \, i}{2 \pi}\int_{\rho=0}^{a} \int_{\alpha=0}^{2\pi} \frac{1}{R - \rho \cos \alpha} \rho \, d \rho \, d \alpha  = \]</div>
 <p class="sd-card-text"><strong>todo</strong></p>
 </div>
-</details><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-&lt;!--
-Nell&#39;ipotesi in cui il raggio $R$ dell&#39;anello sia molto maggiore del raggio della sezione del toro, si può approssimare il campo come uniforme, $b =$
---&gt;
-
-## Verso le equazioni di Maxwell
-
-### Legge di Gauss per il flusso del campo magnetico
-
-  $$\Phi_{\partial V}(\vec{b}) = 0$$
-
-**todo** *interpretazione: inesistenza del monopolo magnetico? linee di campo chiuse?*
-
-### Legge di Ampére
-
-  $$\oint_{\ell_S} \vec{h} \cdot \hat{t} = \Gamma_{\ell_S}(\vec{h}) = \Phi_{S}(\vec{j}) = i_S \ ,$$
-
-  essendo $\ell_S = \partial S$ il contorno - chiuso - della superficie $S$.
-
-- Questa equazione è valida **solo** in un regime elettrostatico: la forma generale dell&#39;equazione di Ampére prevede un termine dipendente dal tempo, che è identicamente nullo nel regime elettrostatico.
-
-- Senza questo termine, l&#39;equazione non sarebbe consistente con l&#39;equazione del bilancio della carica elettrica **todo** (aggiungere riferimento): la correzione di questa inconsistenza da parte di Maxwell è stata l&#39;ultima azione, fondamentale, per ottenere un sistema di equazioni che governano i fenomeni elettromagnetici; la stessa modifica permette anche di riconoscere che i fenomeni EM sono fenomeni ondulatori; il calcolo della misura della velocità di propoagazione delle onde EM, confrontata con le misure disponibili della velocità della luce, permisero di riconoscere la luce come fenomeno EM
-
-Per dimostrare l&#39;incongruenza, è sufficiente applicare la legge di Ampére a una superficie che è il contorno di un volume chiuso, e che quindi ha contorno nullo,
-
-$$S = \partial V  \qquad , \qquad  \partial S = \ell_S = \emptyset$$
-
-In questo caso, la legge di Ampére diventa
-
-$$0 = i_{\partial V} \ ,$$
-
-mentre le leggi di conservazione della carica elettrica e la legge di Gauss per il campo elettrico
-
-$$\begin{aligned}
+</details><!--
+Nell'ipotesi in cui il raggio $R$ dell'anello sia molto maggiore del raggio della sezione del toro, si può approssimare il campo come uniforme, $b =$
+-->
+</div>
+</div>
+<div class="section" id="verso-le-equazioni-di-maxwell">
+<h2><span class="section-number">20.3.5. </span>Verso le equazioni di Maxwell<a class="headerlink" href="#verso-le-equazioni-di-maxwell" title="Permalink to this heading">#</a></h2>
+<div class="section" id="legge-di-gauss-per-il-flusso-del-campo-magnetico">
+<h3><span class="section-number">20.3.5.1. </span>Legge di Gauss per il flusso del campo magnetico<a class="headerlink" href="#legge-di-gauss-per-il-flusso-del-campo-magnetico" title="Permalink to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\Phi_{\partial V}(\vec{b}) = 0\]</div>
+<p><strong>todo</strong> <em>interpretazione: inesistenza del monopolo magnetico? linee di campo chiuse?</em></p>
+</div>
+<div class="section" id="legge-di-ampere">
+<h3><span class="section-number">20.3.5.2. </span>Legge di Ampére<a class="headerlink" href="#legge-di-ampere" title="Permalink to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\oint_{\ell_S} \vec{h} \cdot \hat{t} = \Gamma_{\ell_S}(\vec{h}) = \Phi_{S}(\vec{j}) = i_S \ ,\]</div>
+<p>essendo <span class="math notranslate nohighlight">\(\ell_S = \partial S\)</span> il contorno - chiuso - della superficie <span class="math notranslate nohighlight">\(S\)</span>.</p>
+<ul class="simple">
+<li><p>Questa equazione è valida <strong>solo</strong> in un regime elettrostatico: la forma generale dell’equazione di Ampére prevede un termine dipendente dal tempo, che è identicamente nullo nel regime elettrostatico.</p></li>
+<li><p>Senza questo termine, l’equazione non sarebbe consistente con l’equazione del bilancio della carica elettrica <strong>todo</strong> (aggiungere riferimento): la correzione di questa inconsistenza da parte di Maxwell è stata l’ultima azione, fondamentale, per ottenere un sistema di equazioni che governano i fenomeni elettromagnetici; la stessa modifica permette anche di riconoscere che i fenomeni EM sono fenomeni ondulatori; il calcolo della misura della velocità di propoagazione delle onde EM, confrontata con le misure disponibili della velocità della luce, permisero di riconoscere la luce come fenomeno EM</p></li>
+</ul>
+<p>Per dimostrare l’incongruenza, è sufficiente applicare la legge di Ampére a una superficie che è il contorno di un volume chiuso, e che quindi ha contorno nullo,</p>
+<div class="math notranslate nohighlight">
+\[S = \partial V  \qquad , \qquad  \partial S = \ell_S = \emptyset\]</div>
+<p>In questo caso, la legge di Ampére diventa</p>
+<div class="math notranslate nohighlight">
+\[0 = i_{\partial V} \ ,\]</div>
+<p>mentre le leggi di conservazione della carica elettrica e la legge di Gauss per il campo elettrico</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
   \dot{Q}_V &amp; = - i_{\partial V} \\
   \Phi_{\partial V}(\vec{d}) &amp; = Q_V \\
-\end{aligned}$$
-
-implicano 
-
-$$i_{\partial V} = - \dot{Q}_V = - \dot{\Phi}_{\partial V}(\vec{d}) \ .$$
-
-La correzione di Maxwell non è altro che l&#39;aggiunta del termine $\dot{\Phi}_{\partial V}(\vec{d})$ all&#39;equazione di Ampére per renderla compatibile con le altre equazioni dell&#39;elettromagnetismo. Con questa modifica, l&#39;**equazione di Ampére-Maxwell** diventa
-
-$$\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S $$
-
-
-(physics-hs:electromagnetism:magnetism:micro)=
-## Modelli microscopici del magnetismo
-
-
-
-(physics-hs:electromagnetism:lorentz)=
-## Moto di una carica elettrica in un campo elettromagnetico
-Il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$ in una regione dello spazio nel quale è presente un campo elettromagnetico $\vec{e}(\vec{r},t)$, $\vec{b}(\vec{r},t)$ è soggetto a una forza esterna,
-
-$$\vec{F}^{Lorentz} = q \left[\vec{e}(P) - \vec{b}(P) \times \vec{v}_P \right]$$ (eq:force:lorentz)
-
-definita **forza di Lorentz**.
-
-
-Nell&#39;ipotesi di risultante nulla degli effetti del campo elettromagnetico generato da un sistema su se stesso[^motion:electromagnetic-field], l&#39;equazione dinamica che governa il moto del sistema è
-
-  $$m \ddot{ \vec{r}_P } = \vec{R}^{ext} = q \left[ \vec{e}(P) + \vec{b}(P) \times \dot{\vec{r}_P} \right] + \vec{F}^{\text{non EM}}$$
-
-[^motion:electromagnetic-field]: Il campo elettromagnetico generato dalla carica nell&#39;istante $t$ non influenza il moto della carica stessa allo stesso istante. xPerché evidenziare il tempo $t$? Perché il campo EM si propaga nello spazio e nel tempoe quindi il moto di una carica al tempo $t$ può essere influenzato dal campo elettromagnetico generato da una carica in qualche istante precedente (serve riflessione?)...
-
-- **todo** esempi
-</pre></div>
+\end{aligned}\end{split}\]</div>
+<p>implicano</p>
+<div class="math notranslate nohighlight">
+\[i_{\partial V} = - \dot{Q}_V = - \dot{\Phi}_{\partial V}(\vec{d}) \ .\]</div>
+<p>La correzione di Maxwell non è altro che l’aggiunta del termine <span class="math notranslate nohighlight">\(\dot{\Phi}_{\partial V}(\vec{d})\)</span> all’equazione di Ampére per renderla compatibile con le altre equazioni dell’elettromagnetismo. Con questa modifica, l”<strong>equazione di Ampére-Maxwell</strong> diventa</p>
+<div class="math notranslate nohighlight">
+\[\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S \]</div>
 </div>
+</div>
+<div class="section" id="modelli-microscopici-del-magnetismo">
+<span id="physics-hs-electromagnetism-magnetism-micro"></span><h2><span class="section-number">20.3.6. </span>Modelli microscopici del magnetismo<a class="headerlink" href="#modelli-microscopici-del-magnetismo" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="moto-di-una-carica-elettrica-in-un-campo-elettromagnetico">
+<span id="physics-hs-electromagnetism-lorentz"></span><h2><span class="section-number">20.3.7. </span>Moto di una carica elettrica in un campo elettromagnetico<a class="headerlink" href="#moto-di-una-carica-elettrica-in-un-campo-elettromagnetico" title="Permalink to this heading">#</a></h2>
+<p>Il moto di una corpo puntiforme di massa <span class="math notranslate nohighlight">\(m\)</span> e carica elettrica <span class="math notranslate nohighlight">\(q\)</span> in una regione dello spazio nel quale è presente un campo elettromagnetico <span class="math notranslate nohighlight">\(\vec{e}(\vec{r},t)\)</span>, <span class="math notranslate nohighlight">\(\vec{b}(\vec{r},t)\)</span> è soggetto a una forza esterna,</p>
+<div class="math notranslate nohighlight" id="equation-eq-force-lorentz">
+<span class="eqno">(20.7)<a class="headerlink" href="#equation-eq-force-lorentz" title="Permalink a questa equazione">#</a></span>\[\vec{F}^{Lorentz} = q \left[\vec{e}(P) - \vec{b}(P) \times \vec{v}_P \right]\]</div>
+<p>definita <strong>forza di Lorentz</strong>.</p>
+<p>Nell’ipotesi di risultante nulla degli effetti del campo elettromagnetico generato da un sistema su se stesso<a class="footnote-reference brackets" href="#motion-electromagnetic-field" id="id2">2</a>, l’equazione dinamica che governa il moto del sistema è</p>
+<div class="math notranslate nohighlight">
+\[m \ddot{ \vec{r}_P } = \vec{R}^{ext} = q \left[ \vec{e}(P) + \vec{b}(P) \times \dot{\vec{r}_P} \right] + \vec{F}^{\text{non EM}}\]</div>
+<ul class="simple">
+<li><p><strong>todo</strong> esempi</p></li>
+</ul>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="ref-electric-cable"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
 <dd><p>Fare riferimento alla sezione sul <a class="reference internal" href="electric-current.html#electric-current-cable"><span class="std std-ref">cavo elettrico</span></a>, e l’approssimazione circuitale di cavi elettrici.</p>
 </dd>
+<dt class="label" id="motion-electromagnetic-field"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>Il campo elettromagnetico generato dalla carica nell’istante <span class="math notranslate nohighlight">\(t\)</span> non influenza il moto della carica stessa allo stesso istante. xPerché evidenziare il tempo <span class="math notranslate nohighlight">\(t\)</span>? Perché il campo EM si propaga nello spazio e nel tempoe quindi il moto di una carica al tempo <span class="math notranslate nohighlight">\(t\)</span> può essere influenzato dal campo elettromagnetico generato da una carica in qualche istante precedente (serve riflessione?)…</p>
+</dd>
 </dl>
-</div>
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -831,7 +827,7 @@ Nell&#39;ipotesi di risultante nulla degli effetti del campo elettromagnetico ge
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">20.3.5. </span>Problemi</p>
+        <p class="prev-next-title"><span class="section-number">20.3.8. </span>Problemi</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -860,6 +856,13 @@ Nell&#39;ipotesi di risultante nulla degli effetti del campo elettromagnetico ge
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi-di-campi-magnetici-generati-da-corrente-in-cavi-elettrici">20.3.4.1. Esempi di campi magnetici generati da corrente in cavi elettrici</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verso-le-equazioni-di-maxwell">20.3.5. Verso le equazioni di Maxwell</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gauss-per-il-flusso-del-campo-magnetico">20.3.5.1. Legge di Gauss per il flusso del campo magnetico</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-ampere">20.3.5.2. Legge di Ampére</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelli-microscopici-del-magnetismo">20.3.6. Modelli microscopici del magnetismo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-di-una-carica-elettrica-in-un-campo-elettromagnetico">20.3.7. Moto di una carica elettrica in un campo elettromagnetico</a></li>
 </ul>
   </nav></div>
 
