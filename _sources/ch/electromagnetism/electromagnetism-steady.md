@@ -196,41 +196,23 @@ Fare riferimento a:
 - [equazioni di Maxwell e principi dell'elettromagnetismo classico in regime stazionario](physics-hs:electromagnetism:electromagnetism-steady:maxwell)
 - [equazioni di Maxwell e principi dell'elettromagnetismo classico](physics-hs:electromagnetism:electromagnetism-general:maxwell)
 
+(physics-hs:electromagnetism:electromagnetism-steady:maxwell:gauss-b)=
 ### Legge di Gauss per il flusso del campo magnetico
 
   $$\Phi_{\partial V}(\vec{b}) = 0$$
 
 **todo** *interpretazione: inesistenza del monopolo magnetico? linee di campo chiuse?*
 
+(physics-hs:electromagnetism:electromagnetism-steady:maxwell:ampere)=
 ### Legge di Ampére
 
   $$\oint_{\ell_S} \vec{h} \cdot \hat{t} = \Gamma_{\ell_S}(\vec{h}) = \Phi_{S}(\vec{j}) = i_S \ ,$$
 
   essendo $\ell_S = \partial S$ il contorno - chiuso - della superficie $S$.
 
-- Questa equazione è valida **solo** in un regime elettrostatico: la forma generale dell'equazione di Ampére prevede un termine dipendente dal tempo, che è identicamente nullo nel regime elettrostatico.
+Non abbiamo ancora finito l'indagine sui fenomeni elettromagnetici. Le equazioni che abbiamo trovato finora:
+- sono **incomplete**, nel senso che non riescono a descrivere il fenomeno fisico dell'[induzione elettromagnetica](physics-hs:electromagnetism:electromagnetism-general:em-induction), e di questo non possiamo accorgercene senza ulteriori esperienze
+- tra di loro **incongruenti**, contraddittorie, e di questo possiamo accorgercene confrontando la legge di Ampére 
 
-- Senza questo termine, l'equazione non sarebbe consistente con l'equazione del bilancio della carica elettrica **todo** (aggiungere riferimento): la correzione di questa inconsistenza da parte di Maxwell è stata l'ultima azione, fondamentale, per ottenere un sistema di equazioni che governano i fenomeni elettromagnetici; la stessa modifica permette anche di riconoscere che i fenomeni EM sono fenomeni ondulatori; il calcolo della misura della velocità di propoagazione delle onde EM, confrontata con le misure disponibili della velocità della luce, permisero di riconoscere la luce come fenomeno EM
+Sono necessarie quindi due "correzioni" delle equazioni, per includere fenomeni **non stazionari**, in generale più difficili da cogliere: una correzione sarà necessaria per poter descrivere l'induzione elettromagnetica, l'altra per rendere l'equazione di Ampére compatibile con il [principio di conservazione della carica elettrica](). Questi due interventi vengono discussi nel capitolo successivo e sono legati ai nomi di due giganti della scienza, rispettivamente M.Faraday e J.C.Maxwell.
 
-Per dimostrare l'incongruenza, è sufficiente applicare la legge di Ampére a una superficie che è il contorno di un volume chiuso, e che quindi ha contorno nullo,
-
-$$S = \partial V  \qquad , \qquad  \partial S = \ell_S = \emptyset$$
-
-In questo caso, la legge di Ampére diventa
-
-$$0 = i_{\partial V} \ ,$$
-
-mentre le leggi di conservazione della carica elettrica e la legge di Gauss per il campo elettrico
-
-$$\begin{aligned}
-  \dot{Q}_V & = - i_{\partial V} \\
-  \Phi_{\partial V}(\vec{d}) & = Q_V \\
-\end{aligned}$$
-
-implicano 
-
-$$i_{\partial V} = - \dot{Q}_V = - \dot{\Phi}_{\partial V}(\vec{d}) \ .$$
-
-La correzione di Maxwell non è altro che l'aggiunta del termine $\dot{\Phi}_{\partial V}(\vec{d})$ all'equazione di Ampére per renderla compatibile con le altre equazioni dell'elettromagnetismo. Con questa modifica, l'**equazione di Ampére-Maxwell** diventa
-
-$$\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S $$

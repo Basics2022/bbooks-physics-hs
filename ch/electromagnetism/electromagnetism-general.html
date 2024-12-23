@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/electromagnetism/electromagnetism-general';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
@@ -327,7 +329,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="em-waves.html">22. Onde elettromagnetiche</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="em-waves-problems.html">22.2. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="em-waves-problems.html">22.3. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="thermoelectric-effects.html">23. Effetti foto-termo-elettro-meccanici</a></li>
@@ -574,7 +576,7 @@ document.write(`
   <div class="tex2jax_ignore mathjax_ignore section" id="induzione-ed-elettromagnetismo">
 <span id="physics-hs-electromagnetism-electromagnetism-general"></span><h1><span class="section-number">20.4. </span>Induzione ed elettromagnetismo<a class="headerlink" href="#induzione-ed-elettromagnetismo" title="Permalink to this heading">#</a></h1>
 <div class="section" id="legge-di-faraday-per-l-induzione-elettromagnetica">
-<h2><span class="section-number">20.4.1. </span>Legge di Faraday per l’induzione elettromagnetica<a class="headerlink" href="#legge-di-faraday-per-l-induzione-elettromagnetica" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-electromagnetism-electromagnetism-general-em-induction"></span><h2><span class="section-number">20.4.1. </span>Legge di Faraday per l’induzione elettromagnetica<a class="headerlink" href="#legge-di-faraday-per-l-induzione-elettromagnetica" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>legge di Faraday: corrente indotta</p></li>
 <li><p>corrente alternata:</p>
@@ -591,11 +593,30 @@ document.write(`
 </ul>
 </div>
 <div class="section" id="correzione-di-maxwell-dell-equazione-di-ampere">
-<h2><span class="section-number">20.4.2. </span>Correzione di Maxwell dell’equazione di Ampére<a class="headerlink" href="#correzione-di-maxwell-dell-equazione-di-ampere" title="Permalink to this heading">#</a></h2>
-<p><span style="color:red"> Qui o nella sezione di magnetismo ed elettromagnetismo statico? </span></p>
+<span id="physics-hs-electromagnetism-electromagnetism-general-ampere-maxwell"></span><h2><span class="section-number">20.4.2. </span>Correzione di Maxwell dell’equazione di Ampére<a class="headerlink" href="#correzione-di-maxwell-dell-equazione-di-ampere" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>correzione di Maxwell della legge di Ampére, per renderla consistente con l’equazione di bilancio della carica elettrica</p></li>
+<li><p>Correzione fondamentale per ricavare equazioni di bilancio dei fenomeni elettromagnetici che prevedessero la trasmissione di perturbazioni del campo come onde: il riconoscimento dei fenomeni elettromagnetici come fenomeni ondulatori con una velocità di trasmissione paragonabile alla velocità della luce nota allora permisero di riconoscere la <em>luce come fenomeno elettromagnetico</em>, come <a class="reference internal" href="em-waves.html#physics-hs-electromagnetism-em-waves"><span class="std std-ref">onda elettromagnetica</span></a>. Alle equazioni di Maxwell, seguì la <a class="reference internal" href="em-waves.html#physics-hs-electromagnetism-em-waves-hertz"><span class="std std-ref">verifica sperimentale di Hertz</span></a>.</p></li>
+<li><p>La <a class="reference internal" href="electromagnetism-steady.html#physics-hs-electromagnetism-electromagnetism-steady-maxwell-ampere"><span class="std std-ref">legge di Ampére</span></a> equazione è valida <strong>solo</strong> in un regime elettrostatico: la forma generale dell’equazione di Ampére prevede un termine dipendente dal tempo, che è identicamente nullo nel regime elettrostatico.</p></li>
+<li><p>Senza questo termine, l’equazione non sarebbe consistente con la <a class="reference internal" href="electric-current.html#physics-hs-electromagnetism-charge-conservation"><span class="std std-ref">conservazione della carica elettrica</span></a>: la correzione di questa inconsistenza da parte di Maxwell è stata l’ultima azione, fondamentale, per ottenere un sistema di equazioni che governano i fenomeni elettromagnetici; la stessa modifica permette anche di riconoscere che i fenomeni EM sono fenomeni ondulatori; il calcolo della misura della velocità di propoagazione delle onde EM, confrontata con le misure disponibili della velocità della luce, permisero di riconoscere la luce come fenomeno EM</p></li>
 </ul>
+<p>Per dimostrare l’incongruenza, è sufficiente applicare la legge di Ampére a una superficie che è il contorno di un volume chiuso, e che quindi ha contorno nullo,</p>
+<div class="math notranslate nohighlight">
+\[S = \partial V  \qquad , \qquad  \partial S = \ell_S = \emptyset\]</div>
+<p>In questo caso, la legge di Ampére diventa</p>
+<div class="math notranslate nohighlight">
+\[0 = i_{\partial V} \ ,\]</div>
+<p>mentre le leggi di conservazione della carica elettrica e la legge di Gauss per il campo elettrico</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \dot{Q}_V &amp; = - i_{\partial V} \\
+  \Phi_{\partial V}(\vec{d}) &amp; = Q_V \\
+\end{aligned}\end{split}\]</div>
+<p>implicano</p>
+<div class="math notranslate nohighlight">
+\[i_{\partial V} = - \dot{Q}_V = - \dot{\Phi}_{\partial V}(\vec{d}) \ .\]</div>
+<p>La correzione di Maxwell non è altro che l’aggiunta del termine <span class="math notranslate nohighlight">\(\dot{\Phi}_{\partial V}(\vec{d})\)</span> all’equazione di Ampére per renderla compatibile con le altre equazioni dell’elettromagnetismo. Con questa modifica, l”<strong>equazione di Ampére-Maxwell</strong> diventa</p>
+<div class="math notranslate nohighlight">
+\[\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S \]</div>
 </div>
 <div class="section" id="equazioni-di-maxwell-dell-elettromagnetismo">
 <span id="physics-hs-electromagnetism-electromagnetism-general-maxwell"></span><h2><span class="section-number">20.4.3. </span>Equazioni di Maxwell dell’elettromagnetismo<a class="headerlink" href="#equazioni-di-maxwell-dell-elettromagnetismo" title="Permalink to this heading">#</a></h2>
