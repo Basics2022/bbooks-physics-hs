@@ -251,7 +251,7 @@ $$\Gamma_{\partial S}(\vec{e}) = 0$$
 ```
 (physics-hs:electromagnetism:lorentz:electric)=
 ## Moto di una carica in un campo elettrico
-Il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$ in una regione dello spazio nel quale c'è un campo elettrico $\vec{e}(\vec{r})$ è soggetto a una forza esterna,
+Il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$ in una regione dello spazio nel quale c'è un campo elettrico $\vec{e}(\vec{r},t)$ è soggetto a una forza esterna,
 
 $$\vec{F}^{el} = q \, \vec{e}(P) \ ,$$ (eq:force:lorentz:electric)
 
