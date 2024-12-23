@@ -6,19 +6,20 @@
 Vengono qui dimostrate le espressioni dei campi magnetici generati da conduttori elettrici con geometria particolare, mostrati nella sezione sulla [legge di Biot-Savart](physics-hs:electromagnetism:electromagnetism-steady:biot-savart).
 
 ```{dropdown} Filo rettilineo infinito
-Si usa un sistema di coordinate polari,
+Si usa la parametrizzazione
 
 $$z = R \, \tan \theta$$
 $$dz = R \frac{1}{\cos^2 \theta} \, d \theta$$
 $$r^2 = R^2 + z^2 = R^2 \left(1+\frac{\sin^2 \theta}{\cos^2 \theta} \right) = R^2 \frac{1}{\cos^2 \theta}$$
 
-Usando la formula di Biot-Savart {eq}`eq:biot-savart:integral`
+per calcolare il campo magnetico con la formula di Biot-Savart {eq}`eq:biot-savart:integral`
 
 $$\begin{aligned}
   \vec{b}(\vec{r}_0) & = - \frac{\mu}{4 \pi} i \int_{z=-\infty}^{\infty} \hat{\theta} \frac{r}{r^2} \sin \theta dz = \\
                      & = - \frac{\mu}{4 \pi} i \hat{\theta} \int_{\theta=\pi}^{0} \frac{\cos^2 \theta}{R^2} \sin \theta R \frac{1}{\cos^2 \theta} \, d \theta = \\
                      & =   \frac{\mu}{4 \pi} i \hat{\theta} \int_{\theta=0}^{\pi} \frac{1}{R} \sin \theta \, d \theta = \\
                      & =   \frac{\mu \, i}{2 \pi \, R} \hat{\theta} \ .
+\end{aligned}$$
 ```
 
 ```{dropdown} Spira circolare

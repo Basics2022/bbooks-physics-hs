@@ -583,19 +583,21 @@ Filo rettilineo infinito<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Si usa un sistema di coordinate polari,</p>
+<p class="sd-card-text">Si usa la parametrizzazione</p>
 <div class="math notranslate nohighlight">
 \[z = R \, \tan \theta\]</div>
 <div class="math notranslate nohighlight">
 \[dz = R \frac{1}{\cos^2 \theta} \, d \theta\]</div>
 <div class="math notranslate nohighlight">
 \[r^2 = R^2 + z^2 = R^2 \left(1+\frac{\sin^2 \theta}{\cos^2 \theta} \right) = R^2 \frac{1}{\cos^2 \theta}\]</div>
-<p class="sd-card-text">Usando la formula di Biot-Savart <a class="reference internal" href="electromagnetism-steady.html#equation-eq-biot-savart-integral">(20.6)</a></p>
-<p class="sd-card-text">$$\begin{aligned}
-\vec{b}(\vec{r}<em>0) &amp; = - \frac{\mu}{4 \pi} i \int</em>{z=-\infty}^{\infty} \hat{\theta} \frac{r}{r^2} \sin \theta dz = \
-&amp; = - \frac{\mu}{4 \pi} i \hat{\theta} \int_{\theta=\pi}^{0} \frac{\cos^2 \theta}{R^2} \sin \theta R \frac{1}{\cos^2 \theta} , d \theta = \
-&amp; =   \frac{\mu}{4 \pi} i \hat{\theta} \int_{\theta=0}^{\pi} \frac{1}{R} \sin \theta , d \theta = \
-&amp; =   \frac{\mu , i}{2 \pi , R} \hat{\theta} \ .</p>
+<p class="sd-card-text">per calcolare il campo magnetico con la formula di Biot-Savart <a class="reference internal" href="electromagnetism-steady.html#equation-eq-biot-savart-integral">(20.6)</a></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{b}(\vec{r}_0) &amp; = - \frac{\mu}{4 \pi} i \int_{z=-\infty}^{\infty} \hat{\theta} \frac{r}{r^2} \sin \theta dz = \\
+                     &amp; = - \frac{\mu}{4 \pi} i \hat{\theta} \int_{\theta=\pi}^{0} \frac{\cos^2 \theta}{R^2} \sin \theta R \frac{1}{\cos^2 \theta} \, d \theta = \\
+                     &amp; =   \frac{\mu}{4 \pi} i \hat{\theta} \int_{\theta=0}^{\pi} \frac{1}{R} \sin \theta \, d \theta = \\
+                     &amp; =   \frac{\mu \, i}{2 \pi \, R} \hat{\theta} \ .
+\end{aligned}\end{split}\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
