@@ -42,9 +42,11 @@ $$b = \frac{\mu}{2 \pi} \frac{i}{d}$$
 
 (physics-hs:electromagnetism:electromagnetism-steady:biot-savart)=
 ## Legge di Biot-Savart
-La legge di Biot-Savart permette di generalizzare i risultati dell'esperienza di Ampére. Il contributo elementare al campo magnetico $\vec{b}(\mathbf{r}_0)$ nel punto dello spazio $\vec{r}_0$ dovuto a un cavo elettrico[^ref:electric-cable] di lunghezza elementare $d \ell$ percorso da corrente elettrica $i$ è dato dalla formula
+La legge di Biot-Savart permette di generalizzare i risultati dell'esperienza di Ampére. Il contributo elementare al campo magnetico $\vec{b}(\mathbf{r}_0)$ nel punto dello spazio $\vec{r}_0$ dovuto a un cavo elettrico[^ref:electric-cable] di lunghezza elementare $d \ell$ posizionato nel punto dello spazio $\vec{r}$ e percorso da corrente elettrica $i$ è dato dalla formula
 
 $$d \vec{b}(\vec{r}_0) = - \frac{\mu}{4 \pi} i(\vec{r}) \frac{ \vec{r}_0 - \vec{r} }{| \vec{r}_0 - \vec{r} |^3} \times d \vec{\ell}(\vec{r}) \ .$$
+
+**todo** *fare una sezione nel capitolo, per descrivere l'approccio comune ai fenomeni elettromagnetici, in cui compaiono "punti potenzianti" (attivi, dove c'è la causa di un fenomeno; qui il punto $\vec{r}$ dove c'è il cavo conduttore) e "punti potenziati" (passivi, dove si osserva la conseguenza di un fenomeno; qui il punto $\vec{r}_0$ dove si misura il campo magnetico)*
 
 $$\vec{b}(\vec{r}_0) = - \frac{\mu}{4 \pi} \int_{\gamma(\vec{r})} i(\vec{r})  \frac{ \vec{r}_0 - \vec{r} }{| \vec{r}_0 - \vec{r} |^3}\times d \vec{\ell}(\vec{r})$$
 
