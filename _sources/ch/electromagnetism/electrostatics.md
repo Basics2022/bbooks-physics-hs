@@ -257,12 +257,11 @@ $$\vec{F}^{el} = q \, \vec{e}(P) \ ,$$ (eq:force:lorentz:electric)
 
 Come si vedrà in seguito nell'ambito dell'elettromagnetismo, questa espressione della forza è un caso particolare della [forza di Lorentz](physics-hs:electromagnetism:lorentz), cioè la forza agente su una carica elettrica immersa in un campo elettromagnetico, nel caso in cui il campo magnetico sia nullo, $\vec{b} = \vec{0}$, o nelle altre condizioni che annullano il termine $\vec{b} \times \vec{v}$ nella formulaa {eq}`eq:force:lorentz`.
 
+Nell'ipotesi di risultante nulla degli effetti del campo elettrico di un sistema su se stesso[^motion:electric-field], l'equazione dinamica che governa il moto della carica è 
 
+  $$m \ddot{ \vec{r} } = \vec{R}^{ext} = q \, \vec{e}(P) + \vec{F}^{\text{non }\vec{e}} \ .$$
 
-L'equazione del moto diventa quindi
-
-  $$m \ddot{ \vec{r} } = \vec{R}^{ext} = q \, \vec{e}(P) + \vec{F}^{\text{non }\vec{e}}$$
-
+[^motion:electric-field]: Il campo elettrico generato dalla carica nell'istante $t$ non influenza il moto della carica stessa allo stesso istante.
 
 - **todo** esempi
 
