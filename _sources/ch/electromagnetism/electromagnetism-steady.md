@@ -155,16 +155,16 @@ $$\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S $$
 
 (physics-hs:electromagnetism:lorentz)=
 ## Moto di una carica elettrica in un campo elettromagnetico
-Il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$ in una regione dello spazio nel quale è presente un campo elettrimagnetico $\vec{e}(\vec{r})$, $\vec{b}(\vec{r},t)$ è soggetto a una forza esterna,
+Il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$ in una regione dello spazio nel quale è presente un campo elettromagnetico $\vec{e}(\vec{r})$, $\vec{b}(\vec{r},t)$ è soggetto a una forza esterna,
 
-$$\vec{F}^{Lorentz} = q \left(\vec{e}(P) - \vec{b}(P) \times \vec{v} \right)$$ (eq:force:lorentz)
+$$\vec{F}^{Lorentz} = q \left(\vec{e}(P) - \vec{b}(P) \times \vec{v}_P \right)$$ (eq:force:lorentz)
 
 definita **forza di Lorentz**.
 
 
 Nell'ipotesi di risultante nulla degli effetti del campo elettromagnetico generato da un sistema su se stesso[^motion:electromagnetic-field], l'equazione dinamica che governa il moto del sistema è
 
-  $$m \ddot{ \vec{r} } = \vec{R}^{ext} = q \left( \vec{e}(P) + \vec{b}(P) \times \dot{\vec{r}} \right) + \vec{F}^{\text{non EM}}$$
+  $$m \ddot{ \vec{r}_P } = \vec{R}^{ext} = q \left( \vec{e}(P) + \vec{b}(P) \times \dot{\vec{r}_P} \right) + \vec{F}^{\text{non EM}}$$
 
 [^motion:electromagnetic-field]: Il campo elettromagnetico generato dalla carica nell'istante $t$ non influenza il moto della carica stessa allo stesso istante. xPerché evidenziare il tempo $t$? Perché il campo EM si propaga nello spazio e nel tempoe quindi il moto di una carica al tempo $t$ può essere influenzato dal campo elettromagnetico generato da una carica in qualche istante precedente (serve riflessione?)...
 
