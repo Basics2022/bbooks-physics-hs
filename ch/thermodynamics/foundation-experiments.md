@@ -1,6 +1,7 @@
 (physics-hs:thermodynamics:foundation:experiments)=
 # Esperienze ed esperimenti
 
+(physics-hs:thermodynamics:foundation:experiments:torricelli)=
 ## Esperienza di Torricelli 
 Torricelli (1608-1647) dimostra che[^torricelli]
 
@@ -78,6 +79,7 @@ Usando il mercurio come liquido, $\text{Hg}$, e partendo da una condizione di ri
 ```
 -->
 
+(physics-hs:thermodynamics:foundation:experiments:dilation)=
 ## Dilatazione sostanze
 Con le esperienze discusse fino ad ora non è ancora possibile associare nessuna grandezza fisica alla percezione comune di caldo o freddo. <span style="color:red">Confusione temperatura-calore **todo** *ref*</span>
 
@@ -104,6 +106,7 @@ $$f(T) = f(T_0) + f'(T_0) \, ( T - T_0 ) + o(T-T_0) \sim f(T_0) + f'(T_0) \, ( T
 Possiamo quindi interpretare l'esperienza riguardo alla dilatazione lineare delle sostanze in funzione della temperatura, considerando che la nostra esperienza quotidiana avviene in un intervallo limitato di condizioni rispetto a quelle disponibili in natura: limitandoci all'intervallo di temperatura anche se non sono ancora state introdotte le scale di temperatura, ma supponendo di avere una minima familiarità almeno con la scala centigrada Celsius, tanto da sapere che la temperatura del corpo umano è circa $36\text{°C}$, l'acqua bolle attorno ai $100\text{°C}$ e ghiaccia attorno agli $0\text{°C}$, limitandoci all'intervallo di temperatura, gran parte delle nostre esperienze nella vita quotidiana si svolge in un intervallo tra i $-20\text{°C}$ del frigorifero di casa ai $100\text{°C}$ dell'acqua che bolle in pentola; la temperatura minima raggiungibile è $-273.15\text{°C}$, la temperatura di un metallo fuso è dell'ordine di $1000\text{°C}$, i corpi celesti possono raggiungere temperature dell'ordine dei $10^4-10^{12}\text{°C}$.
 ```
 
+(physics-hs:thermodynamics:foundation:experiments:t-scales)=
 ## Scale di temperatura
 **Scale di temperatura empiriche.** Le esperienze sulla dilatazione dei corpi conducono alla definizione delle **scale empiriche** di temperatura: assunta la linearità del fenomeno, una scala di temperatura viene definita da due condizioni facilmente replicabili in laboratorio per la costruzione/taratura degli strumenti, e che permettono di determinare una temperatura di riferimento da usare come origine e un'unità di misura che determini l'ampiezza del grado della scala di temperatura.
 
@@ -111,6 +114,7 @@ Possiamo quindi interpretare l'esperienza riguardo alla dilatazione lineare dell
 
 <span style="color:red"> spostare termodinamica e teoria atomica all'inizio dell'introduzione, $\sim$ Feynman?</span>
 
+(physics-hs:thermodynamics:foundation:experiments:t-scales:empirical)=
 ### Scale empiriche
 Una scala empirica di temperatura viene definita usando due condizioni facilmente replicabili in laboratorio per definire l'origine della scala e l'ampiezza del grado. Così, nella prima metà del XVIII secolo vennero definite alcune scale di temperatura. Le definizioni originali subirono spesso modifiche in seguito a cambi di scelte delle condizioni di riferimento, producendo come risultato delle scale con origine e ampiezza del grado diversa <span style="color:red">formule di conversione</span>
 <!--
@@ -139,6 +143,7 @@ Le scelte rocambolesche e definite in maniera imprecisa non costituivano delle c
 
 Per rendere più pratica la misura e adeguarsi al verso delle altre scale, un anno dopo la morte di Celsius, la scala fu invertita da **Linneo** (lo stesso Linneo, biologo, che si dilettava con la classificazione di piante e animali, padre della classificazione scientifica degli organismi viventi, usata tuttora).
 
+(physics-hs:thermodynamics:foundation:experiments:t-scales:td)=
 ### Scala termodinamica
 Scala di temperatura assoluta
 - <span style="color:red"> Esperimenti sui gas, estrapolando i dati sperimentali delle [leggi di Charles](physics-hs:thermodynamics:matter:gases:ideal:experiments:charles) e di [Gay-Lussac](physics-hs:thermodynamics:matter:gases:ideal:experiments:gay-lussac)</span>
@@ -162,14 +167,17 @@ Scala di temperatura assoluta
 ```
 -->
 
+(physics-hs:thermodynamics:foundation:experiments:th-equilibrium)=
 ## Equilibrio termico
 <span style="color:red"> **todo** Qui? Prima? </span>
 
+(physics-hs:thermodynamics:foundation:experiments:kinetic-theory)=
 ## Teoria cinetica dei gas
 Nel 1738, D.Bernoulli pubblica la sua *Hydrodynamica* dove discute il moto dei fluidi e presenta un modello atomistico per la dinamica microscopica delle molecole di un gas, che costituisce uno dei primi contributi allo sviluppo della teoria cinetica dei gas e alla meccanica statistica, fornendo un legame tra la dinamica microscopica delle molecole del gas e le grandezze fisiche tipiche di una descrizione macroscopica del sistema, pressione e <span style="color:red"> temperatura **todo** *anche la temperatura*? </span>
 
 <span style="color:red"> dettagli </span>
 
+(physics-hs:thermodynamics:foundation:experiments:calorimetry)=
 ## Calorimetria: calore latente e calore specifico
 Gli studi di **J.Black** (1728-1799) attorno alla metà del XVIII secolo sul raggiungimento dell'equilibrio termico e sulle transizione di fase aiutano a distinguere i concetti di temperatura e di calore, sui quali c'era ancora confusione e nessuna teoria affermata soddisfacente.
 
@@ -251,6 +259,7 @@ $$c_{\text{H$_2$O},P} = 1000 \, \frac{\text{cal}}{\text{kg} \, \text{°C}} \ .$$
 ```
 
 
+(physics-hs:thermodynamics:foundation:experiments:gas)=
 ## Esperienze sui gas, ed equazione di stato dei gas perfetti
 - Boyle: $PV = \text{const.}$
 - Charles: $V \propto T$
@@ -262,6 +271,7 @@ L'equazione di stato dei gas perfetti riassume questi risultati
 $$\dfrac{P V}{T n} = R = \text{const.}$$
 
 
+(physics-hs:thermodynamics:foundation:experiments:heat-work)=
 ## Energia, Lavoro e Calore
 
 <!--```{margin}
@@ -307,6 +317,7 @@ Mentre il primo principio della termodinamica non esclude questa possibilità, e
 
 ```
 
+(physics-hs:thermodynamics:foundation:experiments:gibbs)=
 ## Formalismo e prìncipi della termodinamica classica
 **todo**
 
@@ -314,6 +325,7 @@ Mentre il primo principio della termodinamica non esclude questa possibilità, e
   - funzioni di stato (energia interna,...), regola delle fasi, spazio di fase,...
 - si possono formulare i prìncipi della termodinamica
 
+(physics-hs:thermodynamics:foundation:experiments:stat-mech)=
 ## Meccanica statistica
 - Maxwell
 - Gibbs

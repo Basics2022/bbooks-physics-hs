@@ -42,6 +42,8 @@ $$i_{\partial V} = - \dot{Q}_V = - \dot{\Phi}_{\partial V}(\vec{d}) \ .$$
 
 La correzione di Maxwell non è altro che l'aggiunta del termine $\dot{\Phi}_{\partial V}(\vec{d})$ all'equazione di Ampére per renderla compatibile con le altre equazioni dell'elettromagnetismo. Con questa modifica, l'**equazione di Ampére-Maxwell** diventa
 
+**todo** *aggiungere immagine sul sistema del condensatore.*
+
 $$\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S $$
 (physics-hs:electromagnetism:electromagnetism-general:maxwell)=
 ## Equazioni di Maxwell dell'elettromagnetismo
