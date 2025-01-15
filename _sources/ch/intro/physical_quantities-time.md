@@ -1,6 +1,12 @@
 (physics-hs:intro:physical-quantities::time)=
 # Tempo
 
+Il tempo è una grandezza fisica associata all'esperienza quotidiana del susseguirsi di eventi. 
+
+Tuttavia, l'esperienza può essere ingannevole (Kairos e Chronos)
+
+**Strumenti e scale di temperatura.**
+
 **Prime esperienze e strumenti.**
 - tempo scandito dall'astronomia:
   - osservazioni astronomiche degli astri
