@@ -65,13 +65,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/intro/physical_quantities';</script>
     <link rel="shortcut icon" href="../../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="2.1. Spazio" href="physical_quantities-space.html" />
+    <link rel="next" title="2.2. Spazio" href="physical_quantities-space.html" />
     <link rel="prev" title="1. Introduzione alla fisica" href="../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -174,13 +172,13 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../intro.html">1. Introduzione alla fisica</a></li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">2. Grandezze fisiche</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-space.html">2.1. Spazio</a></li>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-mass.html">2.2. Quantità di materia</a></li>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-time.html">2.3. Tempo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-temperature.html">2.4. Temperatura</a></li>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-charge.html">2.5. Carica e corrente elettrica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-mole.html">2.6. Quantità di sostanza, la mole</a></li>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-luminosity.html">2.7. Intensità luminosa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-space.html">2.2. Spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-mass.html">2.3. Quantità di materia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-time.html">2.4. Tempo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-temperature.html">2.5. Temperatura</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-charge.html">2.6. Carica e corrente elettrica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-mole.html">2.7. Quantità di sostanza, la mole</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-luminosity.html">2.8. Intensità luminosa</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="scientific-method.html">3. Il metodo scientifico</a></li>
@@ -536,7 +534,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -552,6 +552,17 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-di-misura">2.1. Sistema di misura</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-di-misura-internazionale">2.1.1. Sistema di misura internazionale</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -563,56 +574,51 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="grandezze-fisiche">
 <span id="physics-hs-intro-physical-quantities"></span><h1><span class="section-number">2. </span>Grandezze fisiche<a class="headerlink" href="#grandezze-fisiche" title="Permalink to this heading">#</a></h1>
+<p>Una grandezza fisica è una proprietà di un sistema o di un fenomeno fisico che può essere <a class="reference internal" href="measurements.html#physics-hs-intro-measurements"><span class="std std-ref">misurata</span></a> e il cui valore può essere espresso in relazione a un’unità di misura.</p>
+<div class="section" id="sistema-di-misura">
+<h2><span class="section-number">2.1. </span>Sistema di misura<a class="headerlink" href="#sistema-di-misura" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Come conosciamo il mondo? Come misuriamo il mondo?</p></li>
-<li><p>Necessità di avere delle grandezze di riferimento stabili o facilmente riproducibili in maniera precisa, da usare come unità di misura delle grandezze fisiche.</p></li>
-<li><p>Nell’antichità, dall’esperienza:</p>
-<ul>
-<li><p>spazio:</p>
-<ul>
-<li><p>importanza di misurare le distanze (es. distanze da percorrere), le aree (es. misura dei campi,…), e i volumi</p></li>
-<li><p>grandezze di riferimento: lunghezze ideali di parti anatomiche umane: cubito, pollice, piede,…</p></li>
+<li><p>grandezze fondamentali e derivate</p></li>
+<li><p>unità di misura</p></li>
 </ul>
-</li>
-<li><p>tempo:</p>
-<ul>
-<li><p>alternanza di luce e buio, alternanza delle stagioni, alternanza di configurazioni degli astri osservati dalla terra; queste alternanze scandiscono</p></li>
-<li><p>grandezze di riferimento: intervalli temporali scanditi dalla natura</p></li>
-</ul>
-</li>
-<li><p>peso:</p>
-<ul>
-<li><p>misura della quantità di merce, quantità di denaro o materiali preziosi, per le prescrizioni mediche (apothecary,…)</p></li>
-<li><p>grandezze di riferimento: grano (basato su un seme ideale di cereale), libbra (dallo strumento usato per la misura del peso/massa, <em>libra</em> = bilancia)</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>In epoca moderna:</p>
-<ul>
-<li><p>aggiornamento delle grandezze di riferimento</p>
-<ul>
-<li><p>Parigi tra fine XVIII e XIX secolo:</p>
-<ul>
-<li><p>lunghezza: metro (1791) come <span class="math notranslate nohighlight">\(1/10.000.000\)</span> la distanza tra l’equatore e il polo nord sul meridiano terrestre passante per Parigi</p></li>
-<li><p>tempo: <strong>todo</strong></p></li>
-<li><p><strong>todo</strong></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>nuove grandezze fisiche misurate nelle nuove scienze, chimica, termodinamica ed elettromagnetismo:</p>
-<ul>
-<li><p>quantità di sostanza</p></li>
-<li><p>temperatura</p></li>
-<li><p>corrente elettrica</p></li>
-<li><p>luminosità</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>XX-XXI secolo: continuo aggiornamento delle unità di misura, usando definizioni più precise e replicabili, tramite misure non disponibili solo qualche decennio prima</p></li>
-</ul>
+<div class="section" id="sistema-di-misura-internazionale">
+<h3><span class="section-number">2.1.1. </span>Sistema di misura internazionale<a class="headerlink" href="#sistema-di-misura-internazionale" title="Permalink to this heading">#</a></h3>
+<p>Breve storia.
+Brevissima storia. Inizialmente unità di misura convenzionali, facilmente riconducibili all’esperienza quotidiana degli esseri umani ai tempi in cui le unità vengono definite.
+Possibilmente, riconducibili a grandezze fisiche facilmente replicabili in maniera stabile. Recentemente, dopo la scoperta di alcune grandezze costanti in natura, le unità di misura «classiche» sono state ri-definite in termini di queste costanti della natura e mantenendo il loro valore originale.</p>
+<p><strong>Massa, lunghezza e tempo.</strong></p>
+<p><strong>Temperatura.</strong></p>
+<p><strong>Quantità di sostanza.</strong></p>
+<p><strong>Carica elettrica.</strong></p>
+<p><strong>Intensità luminosa.</strong></p>
+<!--
+- Come conosciamo il mondo? Come misuriamo il mondo?
+- Necessità di avere delle grandezze di riferimento stabili o facilmente riproducibili in maniera precisa, da usare come unità di misura delle grandezze fisiche.
+- Nell'antichità, dall'esperienza:
+  - spazio:
+    - importanza di misurare le distanze (es. distanze da percorrere), le aree (es. misura dei campi,...), e i volumi
+    - grandezze di riferimento: lunghezze ideali di parti anatomiche umane: cubito, pollice, piede,...
+  - tempo: 
+    - alternanza di luce e buio, alternanza delle stagioni, alternanza di configurazioni degli astri osservati dalla terra; queste alternanze scandiscono
+    - grandezze di riferimento: intervalli temporali scanditi dalla natura
+  - peso:
+    - misura della quantità di merce, quantità di denaro o materiali preziosi, per le prescrizioni mediche (apothecary,...)
+    - grandezze di riferimento: grano (basato su un seme ideale di cereale), libbra (dallo strumento usato per la misura del peso/massa, *libra* = bilancia)
+- In epoca moderna:
+  - aggiornamento delle grandezze di riferimento
+    - Parigi tra fine XVIII e XIX secolo:
+      - lunghezza: metro (1791) come $1/10.000.000$ la distanza tra l'equatore e il polo nord sul meridiano terrestre passante per Parigi
+      - tempo: **todo**
+      - **todo**
+  - nuove grandezze fisiche misurate nelle nuove scienze, chimica, termodinamica ed elettromagnetismo:
+    - quantità di sostanza
+    - temperatura
+    - corrente elettrica
+    - luminosità
+- XX-XXI secolo: continuo aggiornamento delle unità di misura, usando definizioni più precise e replicabili, tramite misure non disponibili solo qualche decennio prima
+-->
+</div>
+</div>
 <div class="toctree-wrapper compound">
 </div>
 </div>
@@ -661,7 +667,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">2.1. </span>Spazio</p>
+        <p class="prev-next-title"><span class="section-number">2.2. </span>Spazio</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -671,6 +677,23 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-di-misura">2.1. Sistema di misura</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-di-misura-internazionale">2.1.1. Sistema di misura internazionale</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
