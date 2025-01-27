@@ -607,19 +607,19 @@ document.write(`
 <li><p>nelle regioni esterne alle pareti di eventuali condensatori presenti nel sistema, la derivata nel tempo del flusso del campo di spostamente è trascurabile,</p></li>
 <li><p>il campo magnetico <span class="math notranslate nohighlight">\(\vec{b}\)</span> e la sua derivata nel tempo sono rilevanti solo in alcune regioni dello spazio, e quindi confinati a componenti dotati di induttanze - come possono essere motori elettrici.</p></li>
 </ol>
-<p>Al di fuori di queste regioni le equazioni di Maxwell <a class="reference internal" href="electromagnetism-general.html#equation-eq-principles-maxwell">(20.12)</a> si riducono quindi alle equazioni in regime stazionario</p>
+<p>Al di fuori di queste regioni le equazioni di Maxwell <a class="reference internal" href="electromagnetism-general.html#equation-eq-principles-maxwell">(20.16)</a> si riducono quindi alle equazioni in regime stazionario</p>
 <div class="math notranslate nohighlight" id="equation-eq-principles-maxwell-el-circuit">
 <span class="eqno">(21.1)<a class="headerlink" href="#equation-eq-principles-maxwell-el-circuit" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{cases}
-  \Phi_V(\vec{d}) = Q_f \\
+  \Phi_{\partial V}(\vec{d}) = Q_f \\
   \Gamma_{\partial S}(\vec{e}) + \dot{\Phi}_S(\vec{b}) = 0 \\
-  \Phi_V(\vec{b}) = 0 \\
+  \Phi_{\partial V}(\vec{b}) = 0 \\
   \Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_S(\vec{d}) = \Phi_S(\vec{j}_f)
 \end{cases}
 \qquad \rightarrow \qquad
 \begin{cases}
-  \Phi_V(\vec{d}) = Q_f \\
+  \Phi_{\partial V}(\vec{d}) = Q_f \\
   \Gamma_{\partial S}(\vec{e}) = 0 \\
-  \Phi_V(\vec{b}) = 0 \\
+  \Phi_{\partial V}(\vec{b}) = 0 \\
   \Gamma_{\partial S}(\vec{h}) = \Phi_S(\vec{j}_f)
 \end{cases}\end{split}\]</div>
 <p>Anche se non è possibile fornirne una dimostrazione in termini semplici, queste approssimazioni hanno una conseguenza fondamentale: a bassa frequenza,</p>
@@ -645,7 +645,7 @@ document.write(`
 <div class="section" id="leggi-di-kirchhoff">
 <span id="physics-hs-electromagnetism-circuits-electric-kirchhoff-laws"></span><h2><span class="section-number">21.1.3. </span>Leggi di Kirchhoff<a class="headerlink" href="#leggi-di-kirchhoff" title="Permalink to this heading">#</a></h2>
 <p>Le leggi di Kirchhoff trasformano l’equazioni di governo del problema elettromagnetico opportunamente semplificate nell’ambito delle basse frequnze nelle due leggi fondamentali dei circuiti.</p>
-<p><strong>Legge ai nodi.</strong> La somma delle correnti entranti in un nodo di un circuito elettrico è nulla. Questa legge è una conseguenza della legge del bilancio della carica <a class="reference internal" href="electromagnetism-general.html#equation-eq-principles-charge">(20.11)</a> per un sistema di volume nullo - o sistema che non può accumulare carica, <span class="math notranslate nohighlight">\(\dot{Q}_V\)</span>, come si considera un cavo di un circuito elettrico operante a bassa frequenza.</p>
+<p><strong>Legge ai nodi.</strong> La somma delle correnti entranti in un nodo di un circuito elettrico è nulla. Questa legge è una conseguenza della legge del bilancio della carica <a class="reference internal" href="electromagnetism-general.html#equation-eq-principles-charge">(20.15)</a> per un sistema di volume nullo - o sistema che non può accumulare carica, <span class="math notranslate nohighlight">\(\dot{Q}_V\)</span>, come si considera un cavo di un circuito elettrico operante a bassa frequenza.</p>
 <div class="math notranslate nohighlight">
 \[0 = \Phi_{\partial V}(\vec{j}) = \sum_{k} \vec{j}_k \cdot \hat{n}_k \, A_k = \sum_{k} i_k \ ,\]</div>
 <p>dove la somma viene svolta su tutti i conduttori <span class="math notranslate nohighlight">\(k\)</span> collegati al nodo considerato.</p>
@@ -665,7 +665,7 @@ I componenti sono caratterizzati dalla loro legge costitutiva - determinata dall
 <p><strong>todo</strong> Immagini delle due convenzioni</p>
 <div class="section" id="resistenza-elettrica">
 <span id="physics-hs-electromagnetism-circuits-electric-components-resistor"></span><h3><span class="section-number">21.1.4.1. </span>Resistenza elettrica<a class="headerlink" href="#resistenza-elettrica" title="Permalink to this heading">#</a></h3>
-<p>La legge costitutiva della <a class="reference internal" href="electric-current.html#physics-hs-electromagnetism-electric-current-solids-conductor-ohm"><span class="std std-ref">resistenza elettrica lineare</span></a> è determinata dalla legge di Ohm <a class="reference internal" href="electric-current.html#equation-ohm-integral-first-r">(20.5)</a> per resistenze lineari</p>
+<p>La legge costitutiva della <a class="reference internal" href="electric-current.html#physics-hs-electromagnetism-electric-current-solids-conductor-ohm"><span class="std std-ref">resistenza elettrica lineare</span></a> è determinata dalla legge di Ohm <a class="reference internal" href="electric-current.html#equation-ohm-integral-first-r">(20.6)</a> per resistenze lineari</p>
 <div class="math notranslate nohighlight">
 \[v = R i \ ,\]</div>
 <p>avendo usato la convenzione degli utilizzatori.</p>
@@ -771,45 +771,41 @@ I componenti sono caratterizzati dalla loro legge costitutiva - determinata dall
 <p><strong>Analisi potenza.</strong></p>
 <div class="section" id="sistemi-trifase">
 <span id="physics-hs-electromagnetism-circuits-electric-regimes-ac-tri"></span><h4><span class="section-number">21.1.7.3.1. </span>Sistemi trifase<a class="headerlink" href="#sistemi-trifase" title="Permalink to this heading">#</a></h4>
-<p>Vantaggi:</p>
+<p>I sistemi attuali di produzione, trasporto e gli utilizzatori basati su motori elettrici utilizzano molto frequentemente sistemi con <strong>corrente alternata trifase</strong>, poiché risulta la configurazione migliore che</p>
 <ul class="simple">
-<li><p>funzionamento generatori ed utilizzatori naturale</p></li>
-<li><p>trasformazione in AC naturale</p></li>
-<li><p>trasmissione efficiente</p></li>
-<li><p>dalle leggi fisiche alle leggi di Kirchhoff, ipotesi (validità e non-validità dell’approccio circuitale)</p></li>
-<li><p>componenti:</p>
-<ul>
-<li><p>resistenze</p></li>
-<li><p>condensatori</p></li>
-<li><p>induttori</p></li>
-<li><p>generatori</p></li>
+<li><p>permette la generazione/utilizzo di un campo magnetico rotante, fondamentale per l’utilizzo di generatori e motori elettrici</p></li>
+<li><p>consente un trasporto ottimale in termini di costi, con un numero minimo di conduttori, perdite ridotte, e trasformazione efficiente.</p></li>
 </ul>
-</li>
-<li><p>regimi di funzionamento: in DC, (trascurando gli effetti EM: no campi magnetici esterni, <em>ogni circuito è una spira</em>…), e in AC</p>
-<ul>
-<li><p>stazionario</p>
-<ul>
-<li><p>bilancio di energia: «generatori» di energia elettrica, «perdite» nelle resistenze</p>
-<ul>
-<li><p>approfondimenti:</p></li>
-<li><p>pile <span style="color:red"> Collegamento ad altre parti: termodinamica? chimica?</span></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>transitorio:</p>
-<ul>
-<li><p>esempio: carica/scarica condensatore</p></li>
-</ul>
-</li>
-<li><p>armonico, AC:</p>
-<ul>
+<p><strong>todo</strong></p>
+<ul class="simple">
+<li><p>esempi motori</p></li>
+<li><p>collegamento stella-triangolo</p></li>
 <li><p>…</p></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
+<!--
+Vantaggi:
+- funzionamento generatori ed utilizzatori naturale
+- trasformazione in AC naturale
+- trasmissione efficiente
+
+- dalle leggi fisiche alle leggi di Kirchhoff, ipotesi (validità e non-validità dell'approccio circuitale)
+
+- componenti:
+  - resistenze
+  - condensatori
+  - induttori
+  - generatori
+
+- regimi di funzionamento: in DC, (trascurando gli effetti EM: no campi magnetici esterni, *ogni circuito è una spira*...), e in AC
+  - stazionario
+    - bilancio di energia: "generatori" di energia elettrica, "perdite" nelle resistenze
+      - approfondimenti:
+      - pile <span style="color:red"> Collegamento ad altre parti: termodinamica? chimica?</span>
+  - transitorio:
+    - esempio: carica/scarica condensatore
+  - armonico, AC:
+    - ... 
+-->
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="circuit-math-pde-ode"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>

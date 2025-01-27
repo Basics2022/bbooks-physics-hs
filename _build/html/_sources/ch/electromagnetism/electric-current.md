@@ -79,7 +79,7 @@ $$\Delta i = \Phi_{\Delta S}(\vec{j}) = \vec{j} \cdot \hat{n} \Delta S = \frac{\
 ## Principio di conservazione della carica elettrica
 Il principio di conservazione della carica elettrica afferma che la carica elettrica non si crea né si distrugge. E' quindi possibile scrivere il bilancio di carica elettrica per un volume $V$,
 
-$$\dot{Q}_V = - \Phi_{\partial V}(\vec{j}) = - I_{\partial V} \ .$$ (eq:current:charge-equation)
+$$\dot{Q}_V = - \Phi_{\partial V}(\vec{j}) = - i_{\partial V} \ .$$ (eq:current:charge-equation)
 
 La variazione di carica elettrica per unità di tempo contenuta all'interno del volume è uguale alla carica elettrica netta entrante nel volume attraverso la sua superficie, cioè la corrente elettrica attraverso la sua superficie $\partial V$.
 
@@ -147,6 +147,10 @@ Per componenti di lunghezza $\ell$ e resistenza $R$ finita, l'equazione {eq}`ohm
 
 (physics-hs:electromagnetism:electric-current:solids:dielectric)=
 ### Solidi dielettrici
+
+I fenomeni elettromagnetici nei solidi possono essere rappresentati come sovrapposizione degli effetti dovuti a cariche elettriche di natura diversa: 
+- **cariche libere** di muoversi all'interno della struttura del materiale (come gli elettroni di conduzione nei metalli)
+- **cariche vincolate** al reticolo degli atomi, che si manifestano sotto forma di **polarizzazione** e **magnetizzazione** del materiale, come risposta del materiale a un campo elettromagnetico esterno.
 
 **todo**
 

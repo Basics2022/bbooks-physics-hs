@@ -10,16 +10,16 @@ L'ingegneria elettrica si occupa principamente di sistemi con correnti intense m
 Al di fuori di queste regioni le equazioni di Maxwell {eq}`eq:principles:maxwell` si riducono quindi alle equazioni in regime stazionario
 
 $$\begin{cases}
-  \Phi_V(\vec{d}) = Q_f \\
+  \Phi_{\partial V}(\vec{d}) = Q_f \\
   \Gamma_{\partial S}(\vec{e}) + \dot{\Phi}_S(\vec{b}) = 0 \\
-  \Phi_V(\vec{b}) = 0 \\
+  \Phi_{\partial V}(\vec{b}) = 0 \\
   \Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_S(\vec{d}) = \Phi_S(\vec{j}_f)
 \end{cases}
 \qquad \rightarrow \qquad
 \begin{cases}
-  \Phi_V(\vec{d}) = Q_f \\
+  \Phi_{\partial V}(\vec{d}) = Q_f \\
   \Gamma_{\partial S}(\vec{e}) = 0 \\
-  \Phi_V(\vec{b}) = 0 \\
+  \Phi_{\partial V}(\vec{b}) = 0 \\
   \Gamma_{\partial S}(\vec{h}) = \Phi_S(\vec{j}_f)
 \end{cases}$$ (eq:principles:maxwell:el-circuit)
 
@@ -193,6 +193,17 @@ con $V \in \mathbb{C}$. **todo**
 
 (physics-hs:electromagnetism:circuits-electric:regimes:ac-tri)=
 #### Sistemi trifase
+
+I sistemi attuali di produzione, trasporto e gli utilizzatori basati su motori elettrici utilizzano molto frequentemente sistemi con **corrente alternata trifase**, poiché risulta la configurazione migliore che
+- permette la generazione/utilizzo di un campo magnetico rotante, fondamentale per l'utilizzo di generatori e motori elettrici
+- consente un trasporto ottimale in termini di costi, con un numero minimo di conduttori, perdite ridotte, e trasformazione efficiente.
+
+**todo**
+- esempi motori
+- collegamento stella-triangolo
+- ...
+
+<!--
 Vantaggi:
 - funzionamento generatori ed utilizzatori naturale
 - trasformazione in AC naturale
@@ -215,3 +226,4 @@ Vantaggi:
     - esempio: carica/scarica condensatore
   - armonico, AC:
     - ... 
+-->

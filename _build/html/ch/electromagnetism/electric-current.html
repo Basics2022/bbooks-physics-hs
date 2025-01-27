@@ -652,7 +652,7 @@ $$\Delta i = \Phi_{\Delta S}(\vec{j}) = \vec{j} \cdot \hat{n} \Delta S = \frac{\
 <span id="physics-hs-electromagnetism-charge-conservation"></span><h2><span class="section-number">20.2.2. </span>Principio di conservazione della carica elettrica<a class="headerlink" href="#principio-di-conservazione-della-carica-elettrica" title="Permalink to this heading">#</a></h2>
 <p>Il principio di conservazione della carica elettrica afferma che la carica elettrica non si crea né si distrugge. E” quindi possibile scrivere il bilancio di carica elettrica per un volume <span class="math notranslate nohighlight">\(V\)</span>,</p>
 <div class="math notranslate nohighlight" id="equation-eq-current-charge-equation">
-<span class="eqno">(20.2)<a class="headerlink" href="#equation-eq-current-charge-equation" title="Permalink a questa equazione">#</a></span>\[\dot{Q}_V = - \Phi_{\partial V}(\vec{j}) = - I_{\partial V} \ .\]</div>
+<span class="eqno">(20.3)<a class="headerlink" href="#equation-eq-current-charge-equation" title="Permalink a questa equazione">#</a></span>\[\dot{Q}_V = - \Phi_{\partial V}(\vec{j}) = - i_{\partial V} \ .\]</div>
 <p>La variazione di carica elettrica per unità di tempo contenuta all’interno del volume è uguale alla carica elettrica netta entrante nel volume attraverso la sua superficie, cioè la corrente elettrica attraverso la sua superficie <span class="math notranslate nohighlight">\(\partial V\)</span>.</p>
 <p>In parole povere, la differenza di carica elettrica tra due istanti del sistema è uguale alla carica che è entrata meno la carica che è uscita.</p>
 <ul class="simple">
@@ -682,7 +682,7 @@ $$\Delta i = \Phi_{\Delta S}(\vec{j}) = \vec{j} \cdot \hat{n} \Delta S = \frac{\
 <div class="definition-content section" id="proof-content">
 <p>In un conduttore di Ohm, il campo elettrico <span class="math notranslate nohighlight">\(\vec{e}(\vec{r},t)\)</span> è proporzionale alla densità di corrente elettrica <span class="math notranslate nohighlight">\(\vec{j}(\vec{r},t)\)</span>. Per un solido isotropo, senza direzioni preferenziali, la <strong>forma locale - differenziale - della legge di Ohm</strong>:</p>
 <div class="math notranslate nohighlight" id="equation-ohm-local">
-<span class="eqno">(20.3)<a class="headerlink" href="#equation-ohm-local" title="Permalink a questa equazione">#</a></span>\[
+<span class="eqno">(20.4)<a class="headerlink" href="#equation-ohm-local" title="Permalink a questa equazione">#</a></span>\[
 \vec{j}(P) = \sigma(P) \, \vec{e}(P)
 \qquad \ , \qquad
 \vec{e}(P) = \rho_R(P) \, \vec{j}(P)
@@ -702,18 +702,23 @@ $$\Delta i = \Phi_{\Delta S}(\vec{j}) = \vec{j} \cdot \hat{n} \Delta S = \frac{\
 <div class="definition-content section" id="proof-content">
 <p><strong>Prima legge di Ohm.</strong> La differenza di potenziale <span class="math notranslate nohighlight">\(dv\)</span> agli estremi di un cavo di lunghezza elementare <span class="math notranslate nohighlight">\(d \ell\)</span> è proporzionale alla corrente <span class="math notranslate nohighlight">\(i\)</span>che passa nel conduttore, tramite la resistenza elettrica elementare, <span class="math notranslate nohighlight">\(d R\)</span>,</p>
 <div class="math notranslate nohighlight" id="equation-ohm-integral-first">
-<span class="eqno">(20.4)<a class="headerlink" href="#equation-ohm-integral-first" title="Permalink a questa equazione">#</a></span>\[dv = - dR \, i \ .\]</div>
-<p>Per componenti di lunghezza <span class="math notranslate nohighlight">\(\ell\)</span> e resistenza <span class="math notranslate nohighlight">\(R\)</span> finita, l’equazione <a class="reference internal" href="#equation-ohm-integral-first">(20.4)</a> diventa</p>
+<span class="eqno">(20.5)<a class="headerlink" href="#equation-ohm-integral-first" title="Permalink a questa equazione">#</a></span>\[dv = - dR \, i \ .\]</div>
+<p>Per componenti di lunghezza <span class="math notranslate nohighlight">\(\ell\)</span> e resistenza <span class="math notranslate nohighlight">\(R\)</span> finita, l’equazione <a class="reference internal" href="#equation-ohm-integral-first">(20.5)</a> diventa</p>
 <div class="math notranslate nohighlight" id="equation-ohm-integral-first-r">
-<span class="eqno">(20.5)<a class="headerlink" href="#equation-ohm-integral-first-r" title="Permalink a questa equazione">#</a></span>\[\Delta v = - R \, i \ .\]</div>
+<span class="eqno">(20.6)<a class="headerlink" href="#equation-ohm-integral-first-r" title="Permalink a questa equazione">#</a></span>\[\Delta v = - R \, i \ .\]</div>
 <p><strong>Seconda legge di Ohm.</strong> La resistenza elettrica di un cavo è direttamente proporzionale alla resistività del materiale, alla lunghezza del cavo, e inversamente proporzionale alla sezione del cavo,</p>
 <div class="math notranslate nohighlight" id="equation-ohm-integral-second">
-<span class="eqno">(20.6)<a class="headerlink" href="#equation-ohm-integral-second" title="Permalink a questa equazione">#</a></span>\[dR = \frac{\rho_R \, d\ell}{A} \ .\]</div>
+<span class="eqno">(20.7)<a class="headerlink" href="#equation-ohm-integral-second" title="Permalink a questa equazione">#</a></span>\[dR = \frac{\rho_R \, d\ell}{A} \ .\]</div>
 </div>
 </div></div>
 </div>
 <div class="section" id="solidi-dielettrici">
 <span id="physics-hs-electromagnetism-electric-current-solids-dielectric"></span><h3><span class="section-number">20.2.3.2. </span>Solidi dielettrici<a class="headerlink" href="#solidi-dielettrici" title="Permalink to this heading">#</a></h3>
+<p>I fenomeni elettromagnetici nei solidi possono essere rappresentati come sovrapposizione degli effetti dovuti a cariche elettriche di natura diversa:</p>
+<ul class="simple">
+<li><p><strong>cariche libere</strong> di muoversi all’interno della struttura del materiale (come gli elettroni di conduzione nei metalli)</p></li>
+<li><p><strong>cariche vincolate</strong> al reticolo degli atomi, che si manifestano sotto forma di <strong>polarizzazione</strong> e <strong>magnetizzazione</strong> del materiale, come risposta del materiale a un campo elettromagnetico esterno.</p></li>
+</ul>
 <p><strong>todo</strong></p>
 </div>
 <div class="section" id="conduzione-nei-gas">

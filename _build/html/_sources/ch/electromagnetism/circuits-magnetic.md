@@ -15,7 +15,7 @@ permettono di ricavare un'approssimazione circuitale dei sistemi elettromagnetic
 
 [^dispersed-flux]: Modelli un po' più di dettaglio che sfruttano comunque l'approccio circuitale considerano il **flusso disperso**, cioè il campo megnetico non confinato nel traferro, ma è non nullo anche nello spazio attorno ad esso.
 
-
+(physics-hs:electromagnetism:circuits-magnetic:kirchhoff-laws)=
 ## Leggi di Kirchhoff per i circuiti magnetici
 Le leggi di Kirchhoff per i circuiti magnetici si ricavano struttando l'analogia tra il sistema {eq}`eq:principles:maxwell:mag-circuit` e il sistema formato dalla conservazione della carica e della legge di Faraday in una regione di spazio in cui il campo elettrico è conservativo,
 
@@ -42,6 +42,7 @@ La differenza maggiore è la presenza del termine $\Phi_S(\vec{j}_f)$ che opera 
 - dalle leggi fisiche alle leggi di Kirchhoff per i circuiti magnetici, ipotesi (validità e non-validità dell'approccio circuitale)
 -->
 
+(physics-hs:electromagnetism:circuits-magnetic:transformer)=
 ## Trasformatore
 - esempi:
   - trasformatori ideali
