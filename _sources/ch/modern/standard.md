@@ -3,6 +3,7 @@
 
 Risorse:
 - [video INFN - Il laboratorio dei raggi cosmici (D.Domenici)](https://www.youtube.com/watch?v=G3Dv7NV62UQ)
+- [La Fisica Che Non Ti Aspetti - Modello Standard](https://www.youtube.com/playlist?list=PL576SS1k0w9ihuwjA__7UBpx4MwVuUVac)
 
 ## Breve cronologia
 - Indagine sulla natura atomica della materia
@@ -18,6 +19,8 @@ Risorse:
   - muone. Misura della vita media di $2 \, \mu s$
   - ...
   - 1947, G.Occhialini, 
+
+- 1964, M.Gell-Mann e G.Zweig propongono l'esistenza dei quark, come particelle che costituiscono i protoni
 
 - **Collider.**
   - ...
@@ -52,3 +55,21 @@ $$s = \gamma v t \sim 18 \, km$$
 
 **Radioattività.** Ogni anno un essere umano assorbe circa $4 \, m Sv / \text{anno}$ (milli-sievert), di cui solo il 13% dovuti ai raggi cosmici. Un essere umano in 6 mesi sulla ISS assorbe circa $100 \, m Sv$. Per una missione spaziale più prolungata, come una spedizione su Marte, si raggiungerebbero circa $1000 \, m Sv$, quantità che inizia a essere preoccupante per un essere umano.
 
+## Il modello standard
+Il modello standard rientra in una teoria più ampia, la teoria quantistica dei campi.
+
+### Introduzione
+
+### Lagrangiana
+
+### Forze e interazione fondamentali
+
+### I leptoni
+
+### L'antimateria
+
+### I quark
+
+### Il bosone di Higgs
+
+### Supersimmetria
