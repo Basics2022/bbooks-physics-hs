@@ -166,7 +166,7 @@ Se un cortocircuito si manifesta in un'intera maglia, questa è percorsa da corr
 
 Il regime di funzionamento di un circuito in corrente continua prevede che il valore della corrente elettrica e delle variabili del sistema siano costanti - nella vita reale, "sufficientemente costanti".
 
-In questo regime di funzionamento, i condensatori si comportano come cirtuiti aperti, poiché $i = C \frac{dv}{dt} = 0$; gli induttori si comprano come cortocircuiti, $v = L \frac{d i}{d t} = 0$.
+In questo regime di funzionamento, i condensatori si comportano come [cirtuiti aperti](physics-hs:electromagnetism:circuits-electric:circuits:open), poiché $i = C \frac{dv}{dt} = 0$; gli induttori si comprano come [cortocircuiti](physics-hs:electromagnetism:circuits-electric:circuits:short), $v = L \frac{d i}{d t} = 0$.
 
 (physics-hs:electromagnetism:circuits-electric:regimes:dt)=
 ### Transitorio
