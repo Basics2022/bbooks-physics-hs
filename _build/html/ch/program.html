@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/program';</script>
     <link rel="shortcut icon" href="../_static/favicon.svg"/>
     <link rel="index" title="Indice" href="../genindex.html" />
@@ -172,13 +174,13 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="intro.html">1. Introduzione alla fisica</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="intro/physical_quantities.html">2. Grandezze fisiche</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-space.html">2.1. Spazio</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-mass.html">2.2. Quantità di materia</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-time.html">2.3. Tempo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-temperature.html">2.4. Temperatura</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-charge.html">2.5. Carica e corrente elettrica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-mole.html">2.6. Quantità di sostanza, la mole</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-luminosity.html">2.7. Intensità luminosa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-space.html">2.2. Spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-mass.html">2.3. Quantità di materia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-time.html">2.4. Tempo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-temperature.html">2.5. Temperatura</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-charge.html">2.6. Carica e corrente elettrica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-mole.html">2.7. Quantità di sostanza, la mole</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro/physical_quantities-luminosity.html">2.8. Intensità luminosa</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="intro/scientific-method.html">3. Il metodo scientifico</a></li>
@@ -341,6 +343,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="modern/intro-coupling.html">28. Fenomeni termo-elettrici nella materia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modern/intro-photography.html">29. Fotografia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modern/astronomy.html">30. Sviluppi dell’astronomia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modern/standard.html">31. Introduzione al modello standard</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
 <ul class="nav bd-sidenav">
@@ -534,7 +537,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -550,6 +555,16 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#come-usare-questo-materiale">Come usare questo materiale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#texttt-todo-list"><span class="math notranslate nohighlight">\(\texttt{todo}\)</span> list</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#programma-attuale">Programma attuale</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -561,6 +576,39 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="programma">
 <span id="physics-hs-program"></span><h1>Programma<a class="headerlink" href="#programma" title="Permalink to this heading">#</a></h1>
+<div class="section" id="come-usare-questo-materiale">
+<h2>Come usare questo materiale<a class="headerlink" href="#come-usare-questo-materiale" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="texttt-todo-list">
+<h2><span class="math notranslate nohighlight">\(\texttt{todo}\)</span> list<a class="headerlink" href="#texttt-todo-list" title="Permalink to this heading">#</a></h2>
+<p>In un futuro prossimo - si spera - verranno aggiunti:</p>
+<ul class="simple">
+<li><p>soluzione dettagliata degli esercizi delle olimpiadi di fisica</p>
+<ul>
+<li><p>livello nazionale</p></li>
+<li><p>livello internazionale<a class="footnote-reference brackets" href="#oli-int" id="id1">1</a></p></li>
+</ul>
+</li>
+<li><p>una sezione - o un nuovo bbook - sulla tecnica della società contemporanea, che possa possa avvicinare la teoria alla pratica, e lo studente alle tematiche tecniche della società in cui viviamo,  come:</p>
+<ul>
+<li><p>la produzione/trasporto/distribuzione di energia elettrica e non;</p></li>
+<li><p>i mezzi di trasporto</p></li>
+<li><p>le connessioni</p></li>
+<li><p>lo spazio e i satelliti con orbita geocentrica
+La descrizione generale di questi sistemi verrà resa quantitativa quando e quanto possibile con la descrizione dei sistemi o di parte di essi tramite modelli semplificati costruibili con gli strumenti studiati.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="programma-attuale">
+<h2>Programma attuale<a class="headerlink" href="#programma-attuale" title="Permalink to this heading">#</a></h2>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="oli-int"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p><a class="reference external" href="https://olifis.it/index.php/problemi-olifis/problemi-di-primo-livello">https://olifis.it/index.php/problemi-olifis/problemi-di-primo-livello</a></p>
+</dd>
+</dl>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -617,6 +665,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#come-usare-questo-materiale">Come usare questo materiale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#texttt-todo-list"><span class="math notranslate nohighlight">\(\texttt{todo}\)</span> list</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#programma-attuale">Programma attuale</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

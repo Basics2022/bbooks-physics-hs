@@ -195,6 +195,7 @@ parts:
   - file: ch/modern/intro-coupling.md
   - file: ch/modern/intro-photography.md
   - file: ch/modern/astronomy.md
+  - file: ch/modern/standard.md
 - caption: Indice
   chapters:
   - file: genindex.md

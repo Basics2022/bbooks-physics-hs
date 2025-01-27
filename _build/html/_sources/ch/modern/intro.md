@@ -15,6 +15,31 @@ Neanche il tempo di pensare che le teorie di meccanica, termodinamica ed elettro
 
 ````
 
+**Riferimenti.**
+```{dropdown} INFN - Pomeriggi di scienza 2020 dell'INFN
+[Sei seminari](https://edu.lnf.infn.it/researchers-home-2020/) organizzati dai laboratori nazionali di Frascati dell'Istituto Nazionale di Fisica Nucleare
+- Rivoluzione della fisica moderna
+- Il laboratorio dei raggi cosmici
+- I quark e l'ultimo dei bosoni
+- Dai buchi neri alle onde gravitazionali: tutte le vittorie di Einstein
+- A caccia della materia oscura
+- Dai laboratori alla società
+```
+```{dropdown} CURIUSS - video divulgativi
+Video divulgativi disponibili sul canale youtube [CURIUSS](https://www.youtube.com/@curiuss)
+- Relatività
+- Meccanica quantistica
+  - La storia della radioattività (serie)
+  - Il principio di indeterminazione - breve storia delle origini della meccanica quantistica
+  - Antimateria (serie)
+- Astronomia
+  - Geni impolverati: Henrietta Lewitt e la misura dell'universo; Cecilia Payne-Gaposckin e la composizione delle stelle; la scoperta dei buchi neri; la materia oscura
+  - Buchi neri
+  - Cosmologia: energia oscura e la teoria del big bang
+  - Materia oscura
+
+```
+
 <!-- LLM summary + my updates -->
 Alla fine del XIX secolo, la fisica sembrava basarsi su teorie consolidate come meccanica, termodinamica ed elettromagnetismo; il riconoscimento della luce come fenomeno ondulatorio elettromagnetico sembrava risolvere la disputa sulla natura della luce come fenomeno continuo, continuo così come i modelli utilizzati per fluidi e solidi che hanno contribuito alla rivoluzione tecnica e industriale. Mentre in chimica si cercava di mettere insieme i dettagli di un modello atomico discreto, in fisica questo faceva fatica a essere accettato, nonostante i lavori di Clausius, Maxwell e Boltzmann.
 
