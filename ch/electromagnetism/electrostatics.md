@@ -68,6 +68,7 @@ $$\vec{F}_1 = \vec{F}_{12} + \vec{F}_{13} = \frac{q_1 \, q_2}{4 \pi \varepsilon}
 - **PSCE**
 -->
 
+(physics-hs:electromagnetism:electrostatics:charge:measurement)=
 ### Misura della carica elettrica
 Un elettrometro è uno strumento di misura della carica elettrica. Una versione rudimentale di un elettrometro è la bilancia di torsione usata da Coulomb nei suoi esperimenti.
 
@@ -78,6 +79,7 @@ Il momento generato dalla forza di Coulomb sulla carica elettrica incognita $q_1
 ```{figure} ../../media/electrostatics-torsion-balance-coulomb.png
 ```
 
+(physics-hs:electromagnetism:electrostatics:e-field)=
 ## Il campo elettrico
 Data una distribuzione di cariche nello spazio, è possibile descriverla tramite l'effetto che avrebbe su una carica qualsiasi posta in un punto arbitrario dello spazio, introducendo la definizione di campo elettrico.
 
@@ -99,6 +101,7 @@ $$\vec{F} = q \, \vec{e}(P) \ .$$
 
 - **todo** Poichè il PSCE vale per la forza, il **PSCE** vale per il campo elettrico
 
+(physics-hs:electromagnetism:electrostatics:e-field:conservative)=
 ### Campo conservativo
 Come mostrato (**todo** <span style="color:red"> ah sì? fare riferimenti qui?</span>) per il campo gravitazionale, anche il campo elettrostatico è un campo conservativo.
 
@@ -119,6 +122,7 @@ con $\vec{r}_i = P - P_i$. Poichè il PSCE vale per la forza e il campo elettric
 
 $$V_i(P) = \frac{1}{4 \pi \varepsilon} \sum_i \frac{q_{i}}{\left|\vec{r}_{i}\right|} $$
 
+(physics-hs:electromagnetism:electrostatics:e-field:energy)=
 ### Energia potenziale di una distribuzione di cariche
 
 L'energia potenziale di un sistema di cariche è uguale al lavoro (<span style="color:red">delle forze esterne = - lavoro forza elettrica</span>) fatto per costruire tale distribuzione. Poiché in meccanica classica l'energia è definita a meno di una costante additiva arbitraria, si può considerare la condizione di riferimento con le cariche poste all'"infinito" o, meglio, infinitamente distanti una dalle altre.
@@ -172,6 +176,7 @@ $$
 $$
 ```
 
+(physics-hs:electromagnetism:electrostatics:e-field:media)=
 ## Campo elettrico nei materiali
 
 - polarizzazione...
@@ -228,6 +233,7 @@ $$\Phi_{\partial V}(\vec{d}) = Q_V$$
 
 ```
 
+(physics-hs:electromagnetism:electrostatics:maxwell:faraday)=
 ### Legge di Faraday, in elettrostatica
 - La legge di Faraday in elettrostatica è una diretta conseguenza della conservatività del campo elettrico
 
@@ -271,8 +277,10 @@ Nell'ipotesi di risultante nulla degli effetti del campo elettrico di un sistema
 
 - **todo** esempi
 
+(physics-hs:electromagnetism:electrostatics:capacitor)=
 ## Condensatore
 
+(physics-hs:electromagnetism:electrostatics:capacitor:flat)=
 ### Condensatore infinito piano
 $$e = \frac{\sigma}{\varepsilon}$$
 

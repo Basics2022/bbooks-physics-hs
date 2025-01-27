@@ -73,3 +73,18 @@ Il modello standard rientra in una teoria più ampia, la teoria quantistica dei 
 ### Il bosone di Higgs
 
 ### Supersimmetria
+
+## Dizionario
+
+**Bosoni e fermioni.** Bosoni possono occupare lo stesso stato quantistico, i fermioni no (rispettano il principio di esclusione di Pauli); i bosoni hanno spin intero, i fermioni spin frazionario.
+
+**Interazioni.** Gravitazionale (non inclusa nel modello standard), forte, elettromagnetica e debole.
+- elettromagnetica
+- debole
+- forte
+
+**Bosoni di gauge.** Particelle che moderano le interazioni. Sono perturbazioni dei campi.
+
+
+
+

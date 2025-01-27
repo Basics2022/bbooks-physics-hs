@@ -131,11 +131,15 @@ Queste relazioni che ben descrivono il comportamento di cavi elettrici conduttor
 
 ```{prf:definition} Leggi di Ohm per cavi elettrici
 
- - **Prima legge di Ohm.** La differenza di potenziale agli estremi di un cavo di lunghezza elementare è proporzionale alla corrente, tramite la resistenza elettrica elementare,
+**Prima legge di Ohm.** La differenza di potenziale $dv$ agli estremi di un cavo di lunghezza elementare $d \ell$ è proporzionale alla corrente $i$che passa nel conduttore, tramite la resistenza elettrica elementare, $d R$,
 
-   $$dv = - dR \, i \ ,$$ (ohm:integral:first)
+   $$dv = - dR \, i \ .$$ (ohm:integral:first)
 
- - **Seconda legge di Ohm.** La resistenza elettrica di un cavo è direttamente proporzionale alla resistività del materiale, alla lunghezza del cavo, e inversamente proporzionale alla sezione del cavo,
+Per componenti di lunghezza $\ell$ e resistenza $R$ finita, l'equazione {eq}`ohm:integral:first` diventa
+
+   $$\Delta v = - R \, i \ .$$ (ohm:integral:first:R)
+
+**Seconda legge di Ohm.** La resistenza elettrica di un cavo è direttamente proporzionale alla resistività del materiale, alla lunghezza del cavo, e inversamente proporzionale alla sezione del cavo,
 
    $$dR = \frac{\rho_R \, d\ell}{A} \ .$$ (ohm:integral:second)
 
