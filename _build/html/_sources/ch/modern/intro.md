@@ -39,6 +39,11 @@ Video divulgativi disponibili sul canale youtube [CURIUSS](https://www.youtube.c
   - Materia oscura
 
 ```
+```{dropdown} La Fisica Che Non Ti Aspetti
+- ...
+- Modello Standard
+- ...
+```
 
 <!-- LLM summary + my updates -->
 Alla fine del XIX secolo, la fisica sembrava basarsi su teorie consolidate come meccanica, termodinamica ed elettromagnetismo; il riconoscimento della luce come fenomeno ondulatorio elettromagnetico sembrava risolvere la disputa sulla natura della luce come fenomeno continuo, continuo così come i modelli utilizzati per fluidi e solidi che hanno contribuito alla rivoluzione tecnica e industriale. Mentre in chimica si cercava di mettere insieme i dettagli di un modello atomico discreto, in fisica questo faceva fatica a essere accettato, nonostante i lavori di Clausius, Maxwell e Boltzmann.
