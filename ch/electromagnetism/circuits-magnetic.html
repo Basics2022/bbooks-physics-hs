@@ -562,7 +562,10 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approssimazione-circuitale">21.2.1. Approssimazione circuitale</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leggi-di-kirchhoff-per-i-circuiti-magnetici">21.2.2. Leggi di Kirchhoff per i circuiti magnetici</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformatore">21.2.3. Trasformatore</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformatore">21.2.3. Trasformatore</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformatore-ideale">21.2.3.1. Trasformatore ideale</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -607,26 +610,50 @@ document.write(`
 <li><p>e quindi tra la corrente elettrica <span class="math notranslate nohighlight">\(i = \int_S \hat{n} \cdot \vec{j} \sim j A\)</span> e il flusso di campo magnetico <span class="math notranslate nohighlight">\(\phi = \int_{S} \hat{n} \cdot \vec{b} \sim b A\)</span></p></li>
 <li><p>tra il campo elettrico <span class="math notranslate nohighlight">\(\vec{e}\)</span> e il campo di magnetizzazione <span class="math notranslate nohighlight">\(\vec{h}\)</span></p></li>
 </ul>
-<p>La differenza maggiore è la presenza del termine <span class="math notranslate nohighlight">\(\Phi_S(\vec{j}_f)\)</span> che opera da generatore di campo di magnetizzazione, come si potrebbe riconoscere nella legge di Ampere-Maxwell isolando i generatori di tensione, o come avviene in <a class="reference internal" href="electric-machines.html#physics-hs-electromagnetism-electric-machines"><span class="std std-ref">circuiti elettro(magneto)meccanici</span></a> in cui in alcune zone del dominio la derivata nel tempo del flusso del campo magnetico non è nulla, come discusso in seguito.</p>
+<p>La differenza maggiore è la presenza del termine <span class="math notranslate nohighlight">\(\Phi_S(\vec{j}_f)\)</span> che opera da generatore di campo di magnetizzazione, come si potrebbe riconoscere nella legge di Ampére-Maxwell isolando i generatori di tensione, o come avviene in <a class="reference internal" href="electric-machines.html#physics-hs-electromagnetism-electric-machines"><span class="std std-ref">circuiti elettro(magneto)meccanici</span></a> in cui in alcune zone del dominio la derivata nel tempo del flusso del campo magnetico non è nulla, come discusso in seguito.</p>
+<p>I <em>«generatori di flusso magnetico»</em> si trovano in corrispondenza di induttori. Assumendo un flusso perfettamente concatenato a un induttore con <span class="math notranslate nohighlight">\(N\)</span> avvolgimenti, l’intensità del generatore di flusso magnetico è</p>
+<div class="math notranslate nohighlight">
+\[m := \Phi_{S_{ind}}(\vec{j}_f) = N i \ .\]</div>
+<p>Utilizzando l’equazione di Faraday si ottiene la relazione tra la differenza di tensione ai capi dell’induttore e il flusso del campo magnetico concatenato (<span class="math notranslate nohighlight">\(N\)</span> volte) alla superficie che ha come contorno il conduttore del solenoide, si ottiene la relazion</p>
+<div class="math notranslate nohighlight" id="equation-eq-v-phi">
+<span class="eqno">(21.5)<a class="headerlink" href="#equation-eq-v-phi" title="Permalink a questa equazione">#</a></span>\[v := \Gamma_{\partial S}(\vec{e}) = \dot{\Phi}_{S}(\vec{b}) = \dfrac{d \psi}{dt} = \dfrac{d}{dt} \left( N \phi \right) = N \dot{\phi} \]</div>
+<!--
+= N \dfrac{d}{dt} \left( b A \right) = N \dfrac{d}{dt} \left( \mu \dfrac{N}{\ell} A \, i  \right)
+-->
 <!--
 - dalle leggi fisiche alle leggi di Kirchhoff per i circuiti magnetici, ipotesi (validità e non-validità dell'approccio circuitale)
 -->
 </div>
 <div class="section" id="trasformatore">
 <span id="physics-hs-electromagnetism-circuits-magnetic-transformer"></span><h2><span class="section-number">21.2.3. </span>Trasformatore<a class="headerlink" href="#trasformatore" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>esempi:</p>
-<ul>
-<li><p>trasformatori ideali</p></li>
-</ul>
-</li>
-</ul>
+<p>I trasformatori sono sistemi che operano in corrente alternata per poter sfruttare il <a class="reference internal" href="electromagnetism-general.html#physics-hs-electromagnetism-electromagnetism-general-em-induction"><span class="std std-ref">fenomeno di induzione magnetica</span></a> per connettere due circuiti, il circuito primario (alimentato esternamente) e il circuito secondario (collegato al carico, all’utilizzatore), modificando il valore della tensione e della corrente del circuito secondario rispetto al primario.</p>
+<div class="section" id="trasformatore-ideale">
+<span id="physics-hs-electromagnetism-circuits-magnetic-transformer-ideal"></span><h3><span class="section-number">21.2.3.1. </span>Trasformatore ideale<a class="headerlink" href="#trasformatore-ideale" title="Permalink to this heading">#</a></h3>
+<p>Un trasformatore ideale non ha flussi dispersi. Il flusso <span class="math notranslate nohighlight">\(\phi\)</span> è perfettamente confinato nel traferro ed è concatentao ai due induttori del trasformatore,</p>
+<div class="math notranslate nohighlight">
+\[\phi_1 = \phi_2 \ .\]</div>
+<p>Usando la relazione <a class="reference internal" href="#equation-eq-v-phi">(21.5)</a> tra tensione ai capi degli induttori e la derivata dei flussi concatenati si ricava la relazione tra il numero di avvolgimenti e le differenze di tensione ai capi degli induttori</p>
+<div class="math notranslate nohighlight" id="equation-eq-transformer-ideal-v-ratio">
+<span class="eqno">(21.7)<a class="headerlink" href="#equation-eq-transformer-ideal-v-ratio" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{cases}
+  v_1 = N_1 \dot{\phi}_1 \\
+  v_2 = N_2 \dot{\phi}_2 \\
+\end{cases}
+\qquad \rightarrow \qquad
+\dfrac{v_2}{v_1} = \dfrac{N_2}{N_1} \ .
+\end{split}\]</div>
+<p>La relazione tra le correnti agli avvolgimenti è (<strong>todo</strong> <em>Quale equazione utilizzare per ricavare il rapporto dell’intensità di corrente?</em>)</p>
+<div class="math notranslate nohighlight" id="equation-eq-transformer-ideal-v-ratio">
+<span class="eqno">(21.7)<a class="headerlink" href="#equation-eq-transformer-ideal-v-ratio" title="Permalink a questa equazione">#</a></span>\[\dfrac{i_2}{i_1} = \dfrac{N_1}{N_2}\]</div>
+<p>Usando le due relazioni tra le tensioni e le correnti alle due porte elettriche, è facile osservare che il modello di trasformatore ideale non dissipa potenza, essendo la potenza uscente dall’avvolgimento secondario uguale alla potenza entrante nel sistema tramite l’avvolgimento primario,</p>
+<div class="math notranslate nohighlight">
+\[P_2 = i_2 v_2 = i_1 \dfrac{N_1}{N_2} v_1 \dfrac{N_2}{N_1} = i_1 v_1 = P_1 \ .\]</div>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="dispersed-flux"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
 <dd><p>Modelli un po” più di dettaglio che sfruttano comunque l’approccio circuitale considerano il <strong>flusso disperso</strong>, cioè il campo megnetico non confinato nel traferro, ma è non nullo anche nello spazio attorno ad esso.</p>
 </dd>
 </dl>
+</div>
 </div>
 </div>
 
@@ -695,7 +722,10 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approssimazione-circuitale">21.2.1. Approssimazione circuitale</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leggi-di-kirchhoff-per-i-circuiti-magnetici">21.2.2. Leggi di Kirchhoff per i circuiti magnetici</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformatore">21.2.3. Trasformatore</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformatore">21.2.3. Trasformatore</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trasformatore-ideale">21.2.3.1. Trasformatore ideale</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
