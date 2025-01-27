@@ -48,7 +48,28 @@ $$\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S $$
 (physics-hs:electromagnetism:electromagnetism-general:maxwell)=
 ## Equazioni di Maxwell dell'elettromagnetismo
 
+<!--
 - le equazioni di Maxwell: le equazioni complete dell'elettromagnetismo
+-->
+
+Giunti alla fine del capitolo sui fondamenti dell'elettromagnetismo classico, si è finalmente pronti per elencare la forma generale delle equazioni fondamentali che governano i fenomeni elettromagnetici.
+
+**Principio di conservazione della carica elettrica.** Come già discusso nel [capitolo sulla corrente elettrica](physics-hs:electromagnetism:electric-current), vale il [principio di conservazione della carica elettrica](physics-hs:electromagnetism:charge-conservation): la carica elettrica non si crea, e non si distrugge. La variazione di carica elettrica contenuta in un volume $V$ è quindi uguale al flusso di carica attraverso il suo contorno $\partial V$, come già descritto dall'equazione {eq}`eq:current:charge-equation`,
+
+$$\dot{Q}_V = - \Phi_{\partial V}(\vec{j}) = - I_{\partial V} \ .$$ (eq:principles:charge)
+
+**Equazioni di Maxwell in forma integrale.**
+
+$$\begin{cases}
+  \Phi_V(\vec{d}) = Q_f \\
+  \Gamma_{\partial S}(\vec{e}) + \dot{\Phi}_S(\vec{b}) = 0 \\
+  \Phi_V(\vec{b}) = 0 \\
+  \Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_S(\vec{d}) = \Phi_S(\vec{j}_f)
+\end{cases}$$ (eq:principles:maxwell)
+
+**Forza di Lorentz.** La forza agente su una carica elettrica di intensità $q$ in moto in un campo elettromagnetico $\vec{e}(P,t)$, $\vec{b}(P, t)$è descritta dall'espressione {eq}`eq:force:lorentz`
+
+$$\vec{F}_P(t) = q \left[ \vec{e}(P(t), t) - \vec{b}(P(t), t) \times \vec{v}_P(t) \right] \ .$$ (eq:principles:lorentz)
 
 Fare riferimento a:
 - [equazioni di Maxwell per l'elettrostatica](physics-hs:electromagnetism:electrostatics:maxwell)

@@ -237,7 +237,7 @@ $$\Phi_{\partial V}(\vec{d}) = Q_V$$
 ### Legge di Faraday, in elettrostatica
 - La legge di Faraday in elettrostatica è una diretta conseguenza della conservatività del campo elettrico
 
-  $$\Gamma_{\ell}(\vec{e}) = \oint_{\ell} \vec{e} \cdot \hat{t} = 0 \ .$$
+  $$\Gamma_{\ell}(\vec{e}) = \oint_{\ell} \vec{e} \cdot \hat{t} = 0 \ .$$ (eq:faraday:steady)
 
 - Questa equazione è valida **solo** in un regime elettrostatico: la forma generale dell'equazione di Faraday prevede un termine dipendente dal tempo, che è identicamente nullo nel regime elettrostatico.
 

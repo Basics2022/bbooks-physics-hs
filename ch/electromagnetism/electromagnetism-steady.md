@@ -160,7 +160,7 @@ Nell'ipotesi in cui il raggio $R$ dell'anello sia molto maggiore del raggio dell
 (physics-hs:electromagnetism:magnetism:micro)=
 ## Modelli microscopici del magnetismo
 
-**todo** *correnti di Ampére. Una carica elettrica in movimento (passare da Biot-Savart a carica, da corrente a carica discreta) genera un campo magnetico; un'$e^-$ in moto attorno al nucleo - qualsiasi cosa sia, sia l'elettrone, sia il suo movimento - quindi genera un campo magnetico, comportandosi come una spira (o un dipolo magnetico); a questo contributo, si aggiunge un momento magnetico intrinsceco di* **spin** *, come dimostrato dall'[esperimento di Stern-Gerlach](modern:experiments:stern-gerlach).*
+**todo** *correnti di Ampére. Una carica elettrica in movimento (passare da Biot-Savart a carica, da corrente a carica discreta) genera un campo magnetico; un'$e^-$ in moto attorno al nucleo - qualsiasi cosa sia, sia l'elettrone, sia il suo movimento - quindi genera un campo magnetico, comportandosi come una spira (o un dipolo magnetico); a questo contributo, si aggiunge un momento magnetico intrinsceco di* **spin**, *come dimostrato dall'[esperimento di Stern-Gerlach](modern:experiments:stern-gerlach).*
 
 *L'allineamento dei momenti magnetici degli atomi appartenenti a una vasta regione di un mezzo macroscopico si manifesta come magentismo del mezzo*
 
@@ -169,9 +169,9 @@ Nell'ipotesi in cui il raggio $R$ dell'anello sia molto maggiore del raggio dell
 
 (physics-hs:electromagnetism:lorentz)=
 ## Moto di una carica elettrica in un campo elettromagnetico
-Il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$ in una regione dello spazio nel quale è presente un campo elettromagnetico $\vec{e}(\vec{r},t)$, $\vec{b}(\vec{r},t)$ è soggetto a una forza esterna,
+Il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$ in una regione dello spazio nel quale è presente un campo elettromagnetico $\vec{e}(P, t)$, $\vec{b}(P,t)$ è soggetto a una forza esterna,
 
-$$\vec{F}^{Lorentz} = q \left[\vec{e}(P) - \vec{b}(P) \times \vec{v}_P \right]$$ (eq:force:lorentz)
+$$\vec{F}^{Lorentz}(t) = q \left[\vec{e}(P,t) - \vec{b}(P,t) \times \vec{v}_P(t) \right]$$ (eq:force:lorentz)
 
 definita **forza di Lorentz**.
 
@@ -179,12 +179,11 @@ Nell'ipotesi di risultante nulla degli effetti del campo elettromagnetico genera
 
   $$m \ddot{ \vec{r}_P } = \vec{R}^{ext} = q \left[ \vec{e}(P) + \vec{b}(P) \times \dot{\vec{r}_P} \right] + \vec{F}^{\text{non EM}}$$
 
-[^motion:electromagnetic-field]: Il campo elettromagnetico generato dalla carica nell'istante $t$ non influenza il moto della carica stessa allo stesso istante. xPerché evidenziare il tempo $t$? Perché il campo EM si propaga nello spazio e nel tempoe quindi il moto di una carica al tempo $t$ può essere influenzato dal campo elettromagnetico generato da una carica in qualche istante precedente (serve riflessione?)...
+[^motion:electromagnetic-field]: Il campo elettromagnetico generato dalla carica nell'istante $t$ non influenza il moto della carica stessa allo stesso istante. Perché evidenziare il tempo $t$? Perché il campo EM si propaga nello spazio e nel tempoe quindi il moto di una carica al tempo $t$ può essere influenzato dal campo elettromagnetico generato da una carica - anche se stessa (se c'è riflessione...) - in qualche istante precedente.
 
 Esempi dell'applicazioni della legge di Lorentz si ritrovano negli esperimenti condotti a cavallo della 1900 nell'indagine sulla struttura della materia e sui suoi componenti elementari, come:
 - l'[esperimento di Thomson](modern:experiments:thomson:electron)
 - ...
-
 - **todo** esempi
 
 
@@ -199,20 +198,30 @@ Fare riferimento a:
 (physics-hs:electromagnetism:electromagnetism-steady:maxwell:gauss-b)=
 ### Legge di Gauss per il flusso del campo magnetico
 
-  $$\Phi_{\partial V}(\vec{b}) = 0$$
+  $$\Phi_{\partial V}(\vec{b}) = 0$$ (eq:gauss:b)
 
 **todo** *interpretazione: inesistenza del monopolo magnetico? linee di campo chiuse?*
 
 (physics-hs:electromagnetism:electromagnetism-steady:maxwell:ampere)=
-### Legge di Ampére
+### Legge di Ampére in regime stazionario
 
-  $$\oint_{\ell_S} \vec{h} \cdot \hat{t} = \Gamma_{\ell_S}(\vec{h}) = \Phi_{S}(\vec{j}) = i_S \ ,$$
+  $$\oint_{\ell_S} \vec{h} \cdot \hat{t} = \Gamma_{\ell_S}(\vec{h}) = \Phi_{S}(\vec{j}) = i_S \ ,$$ (eq:ampere:steady)
 
   essendo $\ell_S = \partial S$ il contorno - chiuso - della superficie $S$.
 
 Non abbiamo ancora finito l'indagine sui fenomeni elettromagnetici. Le equazioni che abbiamo trovato finora:
 - sono **incomplete**, nel senso che non riescono a descrivere il fenomeno fisico dell'[induzione elettromagnetica](physics-hs:electromagnetism:electromagnetism-general:em-induction), e di questo non possiamo accorgercene senza ulteriori esperienze
-- tra di loro **incongruenti**, contraddittorie, e di questo possiamo accorgercene confrontando la legge di Ampére 
+- tra di loro **incongruenti**, contraddittorie, e di questo possiamo accorgercene confrontando la legge di Ampére in regime stazionario {eq}`eq:ampere:steady` con l'[equazione di bilancio della carica elettrica](physics-hs:electromagnetism:charge-conservation) {eq}`eq:current:charge-equation`. La legge di Ampéere in regime stazionario {eq}`eq:ampere:steady` per una superficie chiusa $S = \partial V$ si riduce a 
+
+   $$\Phi_{\partial V}(\vec{j}) = 0 \ ,$$
+
+   poiché il contorno $\partial \ell$ di una superficie chiusa $S = \partial V$ non ha estensione, non esiste. Confrondando questa equazione con la legge di bilancio della carica elettrica,
+
+   $$\dot{Q}_V = - \Phi_{\partial V}(\vec{j}) \ ,$$
+
+   si sarebbe tentati di concludere che $\dot{Q}_V \equiv 0$ per ogni volume $V$, cioè non è possibile cambiare la carica elettrica contenuta in qualsiasi volume $V$. Questa conclusione dimostra una chiara incongruenza con l'esperienza, e la sua [soluzione da parte di Maxwell](physics-hs:electromagnetism:electromagnetism-general:ampere-maxwell) sarà un contributo decisivo per formulare un insieme di princìpi fisici consistente dei fenomeni elettromagnetici, e riconoscerne il carattere ondulatorio.
+
+
 
 Sono necessarie quindi due "correzioni" delle equazioni, per includere fenomeni **non stazionari**, in generale più difficili da cogliere: una correzione sarà necessaria per poter descrivere l'induzione elettromagnetica, l'altra per rendere l'equazione di Ampére compatibile con il [principio di conservazione della carica elettrica](). Questi due interventi vengono discussi nel capitolo successivo e sono legati ai nomi di due giganti della scienza, rispettivamente M.Faraday e J.C.Maxwell.
 

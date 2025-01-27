@@ -12946,9 +12946,9 @@ Avendo dimostrato la legge di Gauss per una carica puntiforme attraverso una sup
 \item {} 
 \sphinxAtStartPar
 La legge di Faraday in elettrostatica è una diretta conseguenza della conservatività del campo elettrico
-\begin{equation*}
+\begin{equation}\label{equation:ch/electromagnetism/electrostatics:eq:faraday:steady}
 \begin{split}\Gamma_{\ell}(\vec{e}) = \oint_{\ell} \vec{e} \cdot \hat{t} = 0 \ .\end{split}
-\end{equation*}
+\end{equation}
 \item {} 
 \sphinxAtStartPar
 Questa equazione è valida \sphinxstylestrong{solo} in un regime elettrostatico: la forma generale dell’equazione di Faraday prevede un termine dipendente dal tempo, che è identicamente nullo nel regime elettrostatico.
@@ -13111,13 +13111,13 @@ Nel caso in cui il materiale sia neutro, la densità di carica elettrica è null
 
 
 
-\subsection{Legge di conservazione della carica elettrica}
-\label{\detokenize{ch/electromagnetism/electric-current:legge-di-conservazione-della-carica-elettrica}}\label{\detokenize{ch/electromagnetism/electric-current:physics-hs-electromagnetism-charge-conservation}}
+\subsection{Principio di conservazione della carica elettrica}
+\label{\detokenize{ch/electromagnetism/electric-current:principio-di-conservazione-della-carica-elettrica}}\label{\detokenize{ch/electromagnetism/electric-current:physics-hs-electromagnetism-charge-conservation}}
 \sphinxAtStartPar
 Il principio di conservazione della carica elettrica afferma che la carica elettrica non si crea né si distrugge. E” quindi possibile scrivere il bilancio di carica elettrica per un volume \(V\),
-\begin{equation*}
-\begin{split}\dot{Q}_V = - \Phi_{\partial V}(\vec{j}) = - I_{\partial V} \ .\end{split}
-\end{equation*}
+\begin{equation}\label{equation:ch/electromagnetism/electric-current:eq:current:charge-equation}
+\begin{split}\dot{Q}_V = - \Phi_{\partial V}(\vec{j}) = - i_{\partial V} \ .\end{split}
+\end{equation}
 \sphinxAtStartPar
 La variazione di carica elettrica per unità di tempo contenuta all’interno del volume è uguale alla carica elettrica netta entrante nel volume attraverso la sua superficie, cioè la corrente elettrica attraverso la sua superficie \(\partial V\).
 
@@ -13222,6 +13222,19 @@ Per componenti di lunghezza \(\ell\) e resistenza \(R\) finita, l’equazione \e
 
 \subsubsection{Solidi dielettrici}
 \label{\detokenize{ch/electromagnetism/electric-current:solidi-dielettrici}}\label{\detokenize{ch/electromagnetism/electric-current:physics-hs-electromagnetism-electric-current-solids-dielectric}}
+\sphinxAtStartPar
+I fenomeni elettromagnetici nei solidi possono essere rappresentati come sovrapposizione degli effetti dovuti a cariche elettriche di natura diversa:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{cariche libere} di muoversi all’interno della struttura del materiale (come gli elettroni di conduzione nei metalli)
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{cariche vincolate} al reticolo degli atomi, che si manifestano sotto forma di \sphinxstylestrong{polarizzazione} e \sphinxstylestrong{magnetizzazione} del materiale, come risposta del materiale a un campo elettromagnetico esterno.
+
+\end{itemize}
+
 \sphinxAtStartPar
 \sphinxstylestrong{todo}
 
@@ -13450,7 +13463,7 @@ Solenoide toroidale
 \subsection{Modelli microscopici del magnetismo}
 \label{\detokenize{ch/electromagnetism/electromagnetism-steady:modelli-microscopici-del-magnetismo}}\label{\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-magnetism-micro}}
 \sphinxAtStartPar
-\sphinxstylestrong{todo} \sphinxstyleemphasis{correnti di Ampére. Una carica elettrica in movimento (passare da Biot\sphinxhyphen{}Savart a carica, da corrente a carica discreta) genera un campo magnetico; un”\(e^-\) in moto attorno al nucleo \sphinxhyphen{} qualsiasi cosa sia, sia l’elettrone, sia il suo movimento \sphinxhyphen{} quindi genera un campo magnetico, comportandosi come una spira (o un dipolo magnetico); a questo contributo, si aggiunge un momento magnetico intrinsceco di} \sphinxstylestrong{spin} \sphinxstyleemphasis{, come dimostrato dall”{\hyperref[\detokenize{ch/modern/experiments:modern-experiments-stern-gerlach}]{\sphinxcrossref{\DUrole{std,std-ref}{esperimento di Stern\sphinxhyphen{}Gerlach}}}}.}
+\sphinxstylestrong{todo} \sphinxstyleemphasis{correnti di Ampére. Una carica elettrica in movimento (passare da Biot\sphinxhyphen{}Savart a carica, da corrente a carica discreta) genera un campo magnetico; un”\(e^-\) in moto attorno al nucleo \sphinxhyphen{} qualsiasi cosa sia, sia l’elettrone, sia il suo movimento \sphinxhyphen{} quindi genera un campo magnetico, comportandosi come una spira (o un dipolo magnetico); a questo contributo, si aggiunge un momento magnetico intrinsceco di} \sphinxstylestrong{spin}, \sphinxstyleemphasis{come dimostrato dall”{\hyperref[\detokenize{ch/modern/experiments:modern-experiments-stern-gerlach}]{\sphinxcrossref{\DUrole{std,std-ref}{esperimento di Stern\sphinxhyphen{}Gerlach}}}}.}
 
 \sphinxAtStartPar
 \sphinxstyleemphasis{L’allineamento dei momenti magnetici degli atomi appartenenti a una vasta regione di un mezzo macroscopico si manifesta come magentismo del mezzo}
@@ -13462,9 +13475,9 @@ Solenoide toroidale
 \subsection{Moto di una carica elettrica in un campo elettromagnetico}
 \label{\detokenize{ch/electromagnetism/electromagnetism-steady:moto-di-una-carica-elettrica-in-un-campo-elettromagnetico}}\label{\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-lorentz}}
 \sphinxAtStartPar
-Il moto di una corpo puntiforme di massa \(m\) e carica elettrica \(q\) in una regione dello spazio nel quale è presente un campo elettromagnetico \(\vec{e}(\vec{r},t)\), \(\vec{b}(\vec{r},t)\) è soggetto a una forza esterna,
+Il moto di una corpo puntiforme di massa \(m\) e carica elettrica \(q\) in una regione dello spazio nel quale è presente un campo elettromagnetico \(\vec{e}(P, t)\), \(\vec{b}(P,t)\) è soggetto a una forza esterna,
 \begin{equation}\label{equation:ch/electromagnetism/electromagnetism-steady:eq:force:lorentz}
-\begin{split}\vec{F}^{Lorentz} = q \left[\vec{e}(P) - \vec{b}(P) \times \vec{v}_P \right]\end{split}
+\begin{split}\vec{F}^{Lorentz}(t) = q \left[\vec{e}(P,t) - \vec{b}(P,t) \times \vec{v}_P(t) \right]\end{split}
 \end{equation}
 \sphinxAtStartPar
 definita \sphinxstylestrong{forza di Lorentz}.
@@ -13472,7 +13485,7 @@ definita \sphinxstylestrong{forza di Lorentz}.
 \sphinxAtStartPar
 Nell’ipotesi di risultante nulla degli effetti del campo elettromagnetico generato da un sistema su se stesso%
 \begin{footnote}[2]\sphinxAtStartFootnote
-Il campo elettromagnetico generato dalla carica nell’istante \(t\) non influenza il moto della carica stessa allo stesso istante. xPerché evidenziare il tempo \(t\)? Perché il campo EM si propaga nello spazio e nel tempoe quindi il moto di una carica al tempo \(t\) può essere influenzato dal campo elettromagnetico generato da una carica in qualche istante precedente (serve riflessione?)…
+Il campo elettromagnetico generato dalla carica nell’istante \(t\) non influenza il moto della carica stessa allo stesso istante. Perché evidenziare il tempo \(t\)? Perché il campo EM si propaga nello spazio e nel tempoe quindi il moto di una carica al tempo \(t\) può essere influenzato dal campo elettromagnetico generato da una carica \sphinxhyphen{} anche se stessa (se c’è riflessione…) \sphinxhyphen{} in qualche istante precedente.
 %
 \end{footnote}, l’equazione dinamica che governa il moto del sistema è
 \begin{equation*}
@@ -13517,17 +13530,17 @@ Fare riferimento a:
 
 
 \subsubsection{Legge di Gauss per il flusso del campo magnetico}
-\label{\detokenize{ch/electromagnetism/electromagnetism-steady:legge-di-gauss-per-il-flusso-del-campo-magnetico}}\label{\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-maxwell-gauss-b}}\begin{equation*}
+\label{\detokenize{ch/electromagnetism/electromagnetism-steady:legge-di-gauss-per-il-flusso-del-campo-magnetico}}\label{\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-maxwell-gauss-b}}\begin{equation}\label{equation:ch/electromagnetism/electromagnetism-steady:eq:gauss:b}
 \begin{split}\Phi_{\partial V}(\vec{b}) = 0\end{split}
-\end{equation*}
+\end{equation}
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{interpretazione: inesistenza del monopolo magnetico? linee di campo chiuse?}
 
 
-\subsubsection{Legge di Ampére}
-\label{\detokenize{ch/electromagnetism/electromagnetism-steady:legge-di-ampere}}\label{\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-maxwell-ampere}}\begin{equation*}
+\subsubsection{Legge di Ampére in regime stazionario}
+\label{\detokenize{ch/electromagnetism/electromagnetism-steady:legge-di-ampere-in-regime-stazionario}}\label{\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-maxwell-ampere}}\begin{equation}\label{equation:ch/electromagnetism/electromagnetism-steady:eq:ampere:steady}
 \begin{split}\oint_{\ell_S} \vec{h} \cdot \hat{t} = \Gamma_{\ell_S}(\vec{h}) = \Phi_{S}(\vec{j}) = i_S \ ,\end{split}
-\end{equation*}
+\end{equation}
 \sphinxAtStartPar
 essendo \(\ell_S = \partial S\) il contorno \sphinxhyphen{} chiuso \sphinxhyphen{} della superficie \(S\).
 
@@ -13540,7 +13553,17 @@ sono \sphinxstylestrong{incomplete}, nel senso che non riescono a descrivere il 
 
 \item {} 
 \sphinxAtStartPar
-tra di loro \sphinxstylestrong{incongruenti}, contraddittorie, e di questo possiamo accorgercene confrontando la legge di Ampére
+tra di loro \sphinxstylestrong{incongruenti}, contraddittorie, e di questo possiamo accorgercene confrontando la legge di Ampére in regime stazionario \eqref{equation:ch/electromagnetism/electromagnetism-steady:eq:ampere:steady} con l”{\hyperref[\detokenize{ch/electromagnetism/electric-current:physics-hs-electromagnetism-charge-conservation}]{\sphinxcrossref{\DUrole{std,std-ref}{equazione di bilancio della carica elettrica}}}} \eqref{equation:ch/electromagnetism/electric-current:eq:current:charge-equation}. La legge di Ampéere in regime stazionario \eqref{equation:ch/electromagnetism/electromagnetism-steady:eq:ampere:steady} per una superficie chiusa \(S = \partial V\) si riduce a
+\begin{equation*}
+\begin{split}\Phi_{\partial V}(\vec{j}) = 0 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+poiché il contorno \(\partial \ell\) di una superficie chiusa \(S = \partial V\) non ha estensione, non esiste. Confrondando questa equazione con la legge di bilancio della carica elettrica,
+\begin{equation*}
+\begin{split}\dot{Q}_V = - \Phi_{\partial V}(\vec{j}) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+si sarebbe tentati di concludere che \(\dot{Q}_V \equiv 0\) per ogni volume \(V\), cioè non è possibile cambiare la carica elettrica contenuta in qualsiasi volume \(V\). Questa conclusione dimostra una chiara incongruenza con l’esperienza, e la sua {\hyperref[\detokenize{ch/electromagnetism/electromagnetism-general:physics-hs-electromagnetism-electromagnetism-general-ampere-maxwell}]{\sphinxcrossref{\DUrole{std,std-ref}{soluzione da parte di Maxwell}}}} sarà un contributo decisivo per formulare un insieme di princìpi fisici consistente dei fenomeni elettromagnetici, e riconoscerne il carattere ondulatorio.
 
 \end{itemize}
 
@@ -13643,38 +13666,35 @@ Il flusso del campo magnetico attraverso le sezioni del toro vale
 
 \section{Induzione ed elettromagnetismo}
 \label{\detokenize{ch/electromagnetism/electromagnetism-general:induzione-ed-elettromagnetismo}}\label{\detokenize{ch/electromagnetism/electromagnetism-general:physics-hs-electromagnetism-electromagnetism-general}}\label{\detokenize{ch/electromagnetism/electromagnetism-general::doc}}
+\sphinxAtStartPar
+Nella sezione precedente sono stati discussi alcuni fenomeni elettromagnetici in regime stazionario, mostrando come fenomeni elettrici possano indurre fenomeni magnetici \sphinxhyphen{} ad esempio, un cavo percorso da corrente elettrica genera un campo magnetico nello spazio circostante \sphinxhyphen{} mentre non si osservano fenomeni elettrici prodotti da fenomeni magnetici.
+
+\sphinxAtStartPar
+In questa sezione, vengono discussi i fenomeni elettromagnetici in regime instazionario, mostrando la dipendenza reciproca dei fenomeni magnetici da quelli elettrici (come già mostrato nella legge di Ampére, che comunque verrà {\hyperref[\detokenize{ch/electromagnetism/electromagnetism-general:physics-hs-electromagnetism-electromagnetism-general-ampere-maxwell}]{\sphinxcrossref{\DUrole{std,std-ref}{corretta da Maxwell}}}} per un termine instazionario), e dei fenomeni elettrici da quelli magnetici: questa dipendenza, che prende il nome di {\hyperref[\detokenize{ch/electromagnetism/electromagnetism-general:physics-hs-electromagnetism-electromagnetism-general-em-induction}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{induzione elettromagnetica}}}}}, inizialmente riconosciuta da Faraday nei primi decenni del XIX secolo, è il principio fisico sul quale si basa il funzionamento di un enorme numero di applicazioni tecnologiche contemporanee, come:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+i {\hyperref[\detokenize{ch/electromagnetism/electric-machines:physics-hs-electromagnetism-electric-machines-motor}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{generatori} elettrici}}}}, come quelli impiegati nelle centrali elettriche, che convertono altre forme di energia in energia meccanica e infine in energia elettrica
+
+\item {} 
+\sphinxAtStartPar
+i {\hyperref[\detokenize{ch/electromagnetism/electric-machines:physics-hs-electromagnetism-electric-machines-motor}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{motori} elettrici}}}}, che convertono l’energia elettrica in energia meccanica), come quelli utilizzati nei sistemi di trasporto (treni, e recentemente automobili e altri mezzi) o negli elettrodomestici
+
+\item {} 
+\sphinxAtStartPar
+i {\hyperref[\detokenize{ch/electromagnetism/circuits-magnetic:physics-hs-electromagnetism-circuits-magnetic-transformer}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{trasformatori}}}}}, sistemi che consentono di variare la tensione e la corrente tra circuiti differenti, attualmente impiegati nei sistemi contemporanei tra le fasi di produzione, trasporto e utilizzo dell’energia elettrica: tra la produzione e il trasporto viene innalzata la tensione per ridurre le predite durante il trasporto; per motivi di sicurezza e e soddisfare le caratteristiche degli utilizzatori, la tensione viene poi ridotta all’ingresso delle città e successivamente fino agli utilizzi industriali o domestici.
+
+\end{itemize}
+
 
 \subsection{Legge di Faraday per l’induzione elettromagnetica}
-\label{\detokenize{ch/electromagnetism/electromagnetism-general:legge-di-faraday-per-l-induzione-elettromagnetica}}\label{\detokenize{ch/electromagnetism/electromagnetism-general:physics-hs-electromagnetism-electromagnetism-general-em-induction}}\begin{itemize}
-\item {} 
+\label{\detokenize{ch/electromagnetism/electromagnetism-general:legge-di-faraday-per-l-induzione-elettromagnetica}}\label{\detokenize{ch/electromagnetism/electromagnetism-general:physics-hs-electromagnetism-electromagnetism-general-em-induction}}
 \sphinxAtStartPar
-legge di Faraday: corrente indotta
+La legge di Faraday riconosce che la circuitazione del campo elettromagnetico lungo un circuito \(\partial S\) non è identicamente nulla nel caso instazionario, come dimostrato dall’equazione \eqref{equation:ch/electromagnetism/electrostatics:eq:faraday:steady} per i {\hyperref[\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-maxwell-faraday}]{\sphinxcrossref{\DUrole{std,std-ref}{fenomeni elettrostatici}}}}, ma è uguale alla derivata temporale del flusso del campo magnetico \(\vec{b}\) attraverso la superficie \(S\),
+\begin{equation}\label{equation:ch/electromagnetism/electromagnetism-general:eq:faraday}
+\begin{split}\Gamma_{\partial S}(\vec{e}) = - \dot{\Phi}_S(\vec{b}) \ .\end{split}
+\end{equation}
 
-\item {} 
-\sphinxAtStartPar
-corrente alternata:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-principi e applicazioni:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-trasformatori
-
-\item {} 
-\sphinxAtStartPar
-generatori e motori elettrici
-
-\item {} 
-\sphinxAtStartPar
-generazione/trasporto/trasformazione/consumo
-
-\end{itemize}
-
-\end{itemize}
-
-\end{itemize}
 
 
 \subsection{Correzione di Maxwell dell’equazione di Ampére}
@@ -13718,21 +13738,40 @@ implicano
 \end{equation*}
 \sphinxAtStartPar
 La correzione di Maxwell non è altro che l’aggiunta del termine \(\dot{\Phi}_{\partial V}(\vec{d})\) all’equazione di Ampére per renderla compatibile con le altre equazioni dell’elettromagnetismo. Con questa modifica, l”\sphinxstylestrong{equazione di Ampére\sphinxhyphen{}Maxwell} diventa
-
-\sphinxAtStartPar
-\sphinxstylestrong{todo} \sphinxstyleemphasis{aggiungere immagine sul sistema del condensatore.}
 \begin{equation*}
 \begin{split}\Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_{S}(\vec{d}) = i_S \end{split}
 \end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{aggiungere immagine sul sistema del condensatore.}
+
 
 \subsection{Equazioni di Maxwell dell’elettromagnetismo}
-\label{\detokenize{ch/electromagnetism/electromagnetism-general:equazioni-di-maxwell-dell-elettromagnetismo}}\label{\detokenize{ch/electromagnetism/electromagnetism-general:physics-hs-electromagnetism-electromagnetism-general-maxwell}}\begin{itemize}
-\item {} 
+\label{\detokenize{ch/electromagnetism/electromagnetism-general:equazioni-di-maxwell-dell-elettromagnetismo}}\label{\detokenize{ch/electromagnetism/electromagnetism-general:physics-hs-electromagnetism-electromagnetism-general-maxwell}}
+
+
 \sphinxAtStartPar
-le equazioni di Maxwell: le equazioni complete dell’elettromagnetismo
+Giunti alla fine del capitolo sui fondamenti dell’elettromagnetismo classico, si è finalmente pronti per elencare la forma generale delle equazioni fondamentali che governano i fenomeni elettromagnetici.
 
-\end{itemize}
-
+\sphinxAtStartPar
+\sphinxstylestrong{Principio di conservazione della carica elettrica.} Come già discusso nel {\hyperref[\detokenize{ch/electromagnetism/electric-current:physics-hs-electromagnetism-electric-current}]{\sphinxcrossref{\DUrole{std,std-ref}{capitolo sulla corrente elettrica}}}}, vale il {\hyperref[\detokenize{ch/electromagnetism/electric-current:physics-hs-electromagnetism-charge-conservation}]{\sphinxcrossref{\DUrole{std,std-ref}{principio di conservazione della carica elettrica}}}}: la carica elettrica non si crea, e non si distrugge. La variazione di carica elettrica contenuta in un volume \(V\) è quindi uguale al flusso di carica attraverso il suo contorno \(\partial V\), come già descritto dall’equazione \eqref{equation:ch/electromagnetism/electric-current:eq:current:charge-equation},
+\begin{equation}\label{equation:ch/electromagnetism/electromagnetism-general:eq:principles:charge}
+\begin{split}\dot{Q}_V = - \Phi_{\partial V}(\vec{j}) = - i_{\partial V} \ .\end{split}
+\end{equation}
+\sphinxAtStartPar
+\sphinxstylestrong{Equazioni di Maxwell in forma integrale.}
+\begin{equation}\label{equation:ch/electromagnetism/electromagnetism-general:eq:principles:maxwell}
+\begin{split}\begin{cases}
+  \Phi_V(\partial \vec{d}) = Q_{V,f} \\
+  \Gamma_{\partial S}(\vec{e}) + \dot{\Phi}_S(\vec{b}) = 0 \\
+  \Phi_V(\partial \vec{b}) = 0 \\
+  \Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_S(\vec{d}) = \Phi_S(\vec{j}_f)
+\end{cases}\end{split}
+\end{equation}
+\sphinxAtStartPar
+\sphinxstylestrong{Forza di Lorentz.} La forza agente su una carica elettrica di intensità \(q\) in moto in un campo elettromagnetico \(\vec{e}(P,t)\), \(\vec{b}(P, t)\)è descritta dall’espressione \eqref{equation:ch/electromagnetism/electromagnetism-steady:eq:force:lorentz}
+\begin{equation}\label{equation:ch/electromagnetism/electromagnetism-general:eq:principles:lorentz}
+\begin{split}\vec{F}_P(t) = q \left[ \vec{e}(P(t), t) - \vec{b}(P(t), t) \times \vec{v}_P(t) \right] \ .\end{split}
+\end{equation}
 \sphinxAtStartPar
 Fare riferimento a:
 \begin{itemize}
@@ -13819,6 +13858,9 @@ Il regime fisico di applicazione dell’elettrotecnica consente di semplificare 
 
 \section{Circuiti elettrici}
 \label{\detokenize{ch/electromagnetism/circuits-electric:circuiti-elettrici}}\label{\detokenize{ch/electromagnetism/circuits-electric:physics-hs-electromagnetism-circuits-electric}}\label{\detokenize{ch/electromagnetism/circuits-electric::doc}}
+
+\subsection{Approssimazione circuitale}
+\label{\detokenize{ch/electromagnetism/circuits-electric:approssimazione-circuitale}}\label{\detokenize{ch/electromagnetism/circuits-electric:physics-hs-electromagnetism-circuits-electric-approx}}
 \sphinxAtStartPar
 L’ingegneria elettrica si occupa principamente di sistemi con correnti intense ma bassa frequenza. In questo regime di funzionamento, le equazioni di Maxwell che governano i fenomeni elettromagnetici possono essere semplificate
 \begin{enumerate}
@@ -13834,16 +13876,22 @@ il campo magnetico \(\vec{b}\) e la sua derivata nel tempo sono rilevanti solo i
 \end{enumerate}
 
 \sphinxAtStartPar
-Al di fuori di queste regioni le equazioni di Maxwell si riducono quindi alle equazioni in regime stazionario
-\begin{equation*}
-\begin{split}\begin{aligned}
-  \Phi_{\partial V}(\vec{e}) = 
-\end{aligned}
+Al di fuori di queste regioni le equazioni di Maxwell \eqref{equation:ch/electromagnetism/electromagnetism-general:eq:principles:maxwell} si riducono quindi alle equazioni in regime stazionario
+\begin{equation}\label{equation:ch/electromagnetism/circuits-electric:eq:principles:maxwell:el-circuit}
+\begin{split}\begin{cases}
+  \Phi_{\partial V}(\vec{d}) = Q_f \\
+  \Gamma_{\partial S}(\vec{e}) + \dot{\Phi}_S(\vec{b}) = 0 \\
+  \Phi_{\partial V}(\vec{b}) = 0 \\
+  \Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_S(\vec{d}) = \Phi_S(\vec{j}_f)
+\end{cases}
 \qquad \rightarrow \qquad
-\begin{aligned}
-  \Phi_{\partial V}(\vec{e}) = 
-\end{aligned}\end{split}
-\end{equation*}
+\begin{cases}
+  \Phi_{\partial V}(\vec{d}) = Q_f \\
+  \Gamma_{\partial S}(\vec{e}) = 0 \\
+  \Phi_{\partial V}(\vec{b}) = 0 \\
+  \Gamma_{\partial S}(\vec{h}) = \Phi_S(\vec{j}_f)
+\end{cases}\end{split}
+\end{equation}
 \sphinxAtStartPar
 Anche se non è possibile fornirne una dimostrazione in termini semplici, queste approssimazioni hanno una conseguenza fondamentale: a bassa frequenza,
 \begin{itemize}
@@ -13854,9 +13902,9 @@ i componenti elettrici possono essere analizzati \sphinxstylestrong{«agli effet
 \item {} 
 \sphinxAtStartPar
 si può trascurare la trasmissione del campo elettromagnetico come onde elettromagnetiche, anche la potenza irradiata tramite queste è trascurabile. Il bilancio di energia dei componenti di un sistema elettrico può essere riportato alla potenza trasmessa tramite i morsetti della porta elettrica, che assume l’espressione \(P = v i\): la variazione di energia interna di un componente è uguale alla potenza trasferita tramite la sua porta elettrica,
-\begin{equation*}
+\begin{equation}\label{equation:ch/electromagnetism/circuits-electric:eq:el-circuit:power}
 \begin{split}\dfrac{d E}{dt} = v i\end{split}
-\end{equation*}
+\end{equation}
 \item {} 
 \sphinxAtStartPar
 poiché non avviene la trasmissione di onde elettromagnetiche, il problema elettromagnetico a basse frequenze è molto semplificato rispetto al problema elettromagnetico generale: mentre il problema elettromagnetico generale prevede che venga risolto il campo elettromagnetico in tutte le regioni dello spazio, l’approccio circuitale permette \sphinxhyphen{} quando applicabile \sphinxhyphen{} di considerare solo i componenti elettromegnetici collegati tramite conduttori che sotituiscono il sistema.%
@@ -13894,7 +13942,7 @@ avendo indicato con \(\hat{n}\) la normale della sezione e \(A\) la superficie d
 Le leggi di Kirchhoff trasformano l’equazioni di governo del problema elettromagnetico opportunamente semplificate nell’ambito delle basse frequnze nelle due leggi fondamentali dei circuiti.
 
 \sphinxAtStartPar
-\sphinxstylestrong{Legge ai nodi.} La somma delle correnti entranti in un nodo di un circuito elettrico è nulla. Questa legge è una conseguenza della legge del bilancio della carica per un sistema di volume nullo \sphinxhyphen{} o sistema che non può accumulare carica, come si considera un cavo di un circuito elettrico operante a bassa frequenza.
+\sphinxstylestrong{Legge ai nodi.} La somma delle correnti entranti in un nodo di un circuito elettrico è nulla. Questa legge è una conseguenza della legge del bilancio della carica \eqref{equation:ch/electromagnetism/electromagnetism-general:eq:principles:charge} per un sistema di volume nullo \sphinxhyphen{} o sistema che non può accumulare carica, \(\dot{Q}_V\), come si considera un cavo di un circuito elettrico operante a bassa frequenza.
 \begin{equation*}
 \begin{split}0 = \Phi_{\partial V}(\vec{j}) = \sum_{k} \vec{j}_k \cdot \hat{n}_k \, A_k = \sum_{k} i_k \ ,\end{split}
 \end{equation*}
@@ -13904,7 +13952,7 @@ dove la somma viene svolta su tutti i conduttori \(k\) collegati al nodo conside
 \sphinxAtStartPar
 \sphinxstylestrong{Legge alle maglie.} La somma delle tensioni su una maglia di un circuito elettrico è nulla, nelle regioni in cui la derivata del flusso del campo magnetico è trascurabile \sphinxhyphen{} ad esempio, fuori da motori elettrici e trasformatori. Questa legge è una conseguenza della legge di Faraday nel caso in cui la derivata del flusso del campo magnetico sia nulla, e che quindi il campo elettrico possa essere scritto in termini di potenziale elettrico
 \begin{equation*}
-\begin{split}0 = \Gamma_{\ell}(\vec{e}) = \sum_{k} \Delta v_k \ ,\end{split}
+\begin{split}0 = \Gamma_{\partial S}(\vec{e}) = \sum_{k} \Delta v_k \ ,\end{split}
 \end{equation*}
 \sphinxAtStartPar
 dove la somma viene svolta su tutti i lati \(k\) della maglia del circuito considerata.
@@ -13914,15 +13962,15 @@ dove la somma viene svolta su tutti i lati \(k\) della maglia del circuito consi
 \label{\detokenize{ch/electromagnetism/circuits-electric:componenti}}\label{\detokenize{ch/electromagnetism/circuits-electric:physics-hs-electromagnetism-circuits-electric-components}}
 \sphinxAtStartPar
 In questa sezione vengonoo presentati i principali componenti che possono costituire un circuito, nella sezione successiva vengono analizzate alcuni possibili collegamenti di questi componenti e alcuni circuiti elementari.
-I componenti sono caratterizzati dalla loro legge costitutiva \sphinxhyphen{} determinata dalla loro natura e struttura interna \sphinxhyphen{} ma che descrive completamente il componente elettrico «agli effetti esterni», cioè ai morsetti della sua porta elettrica, in termini di corrente \(i\) e differenza di tensione ai morsetti. Per completezza, e per uniformarsi a quello che viene fatto comunemente, si introducono le due convenzioni di segno di differenza di tensione e corrente per due classi di componenti:
+I componenti sono caratterizzati dalla loro legge costitutiva \sphinxhyphen{} determinata dalla loro natura e struttura interna \sphinxhyphen{} ma che descrive completamente il componente elettrico «agli effetti esterni», cioè ai morsetti della sua porta elettrica, in termini di corrente \(i\) e differenza di tensione ai morsetti. Per completezza, e per uniformarsi a quello che viene fatto comunemente, si introducono le due \sphinxstylestrong{convenzioni di segno} di differenza di tensione e corrente per due classi di componenti:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-generatori, componenti che producono potenza elettrica
+\sphinxstylestrong{generatori}, componenti che producono potenza elettrica
 
 \item {} 
 \sphinxAtStartPar
-utilizzatori, componenti che \sphinxhyphen{} tipicamente \sphinxhyphen{} assorbono potenza elettrica
+\sphinxstylestrong{utilizzatori}, componenti che \sphinxhyphen{} tipicamente \sphinxhyphen{} assorbono potenza elettrica
 
 \end{itemize}
 
@@ -14073,97 +14121,57 @@ Tipici problemi di transitorio tra due condizioni stazionarie sono le dinamiche 
 
 \subsubsection{Regime periodico \sphinxhyphen{} la corrente alternata}
 \label{\detokenize{ch/electromagnetism/circuits-electric:regime-periodico-la-corrente-alternata}}\label{\detokenize{ch/electromagnetism/circuits-electric:physics-hs-electromagnetism-circuits-electric-regimes-ac}}
+\sphinxAtStartPar
+Il regime periodico armonico è caratteristico del funzionamento dei circuiti elettr(omagnetici) in corrente alternata, che abbiamo in molti reti elettriche contemporanee, dalla produzione (tramite generatori), alla trasformazione ad alta tensione per un trasporto efficiente su grandi distanze, l trasporto (anche se si sta diffondendo un nuovo tipo di trasporto in corrente continua ad alta tensione, \sphinxstyleemphasis{HVDC}), alla trasformazione a media e poi bassa tensione per la distribuzione e l’utilizzo.
+
+\sphinxAtStartPar
+Utilizzando il formalismo dei \sphinxstylestrong{fasori} per rappresentare grandezze periodiche armoniche a frequenza costante \(f = \frac{\Omega}{2 \pi}\), si può scrivere
+\begin{equation*}
+\begin{split}v(t) = V e^{-i \Omega t} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con \(V \in \mathbb{C}\). \sphinxstylestrong{todo}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Analisi circuiti.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Analisi potenza.}
+
 
 \paragraph{Sistemi trifase}
 \label{\detokenize{ch/electromagnetism/circuits-electric:sistemi-trifase}}\label{\detokenize{ch/electromagnetism/circuits-electric:physics-hs-electromagnetism-circuits-electric-regimes-ac-tri}}
 \sphinxAtStartPar
-Vantaggi:
+I sistemi attuali di produzione, trasporto e gli utilizzatori basati su motori elettrici utilizzano molto frequentemente sistemi con \sphinxstylestrong{corrente alternata trifase}, poiché risulta la configurazione migliore che
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-funzionamento generatori ed utilizzatori naturale
+permette la generazione/utilizzo di un campo magnetico rotante, fondamentale per l’utilizzo di generatori e motori elettrici
 
 \item {} 
 \sphinxAtStartPar
-trasformazione in AC naturale
-
-\item {} 
-\sphinxAtStartPar
-trasmissione efficiente
-
-\item {} 
-\sphinxAtStartPar
-dalle leggi fisiche alle leggi di Kirchhoff, ipotesi (validità e non\sphinxhyphen{}validità dell’approccio circuitale)
-
-\item {} 
-\sphinxAtStartPar
-componenti:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-resistenze
-
-\item {} 
-\sphinxAtStartPar
-condensatori
-
-\item {} 
-\sphinxAtStartPar
-induttori
-
-\item {} 
-\sphinxAtStartPar
-generatori
+consente un trasporto ottimale in termini di costi, con un numero minimo di conduttori, perdite ridotte, e trasformazione efficiente.
 
 \end{itemize}
 
-\item {} 
 \sphinxAtStartPar
-regimi di funzionamento: in DC, (trascurando gli effetti EM: no campi magnetici esterni, \sphinxstyleemphasis{ogni circuito è una spira}…), e in AC
+\sphinxstylestrong{todo}
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-stazionario
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-bilancio di energia: «generatori» di energia elettrica, «perdite» nelle resistenze
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-approfondimenti:
+esempi motori
 
 \item {} 
 \sphinxAtStartPar
-pile  Collegamento ad altre parti: termodinamica? chimica?
+collegamento stella\sphinxhyphen{}triangolo
 
-\end{itemize}
-
-\end{itemize}
-
-\item {} 
-\sphinxAtStartPar
-transitorio:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-esempio: carica/scarica condensatore
-
-\end{itemize}
-
-\item {} 
-\sphinxAtStartPar
-armonico, AC:
-\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 …
 
 \end{itemize}
 
-\end{itemize}
 
-\end{itemize}
 
 
 \bigskip\hrule\bigskip
@@ -14175,17 +14183,66 @@ armonico, AC:
 \section{Circuiti magnetici}
 \label{\detokenize{ch/electromagnetism/circuits-magnetic:circuiti-magnetici}}\label{\detokenize{ch/electromagnetism/circuits-magnetic:physics-hs-electromagnetism-circuits-magnetic}}\label{\detokenize{ch/electromagnetism/circuits-magnetic::doc}}
 
-\subsection{Approssimazinoe circuitale \sphinxhyphen{} leggi di Kirchhoff}
-\label{\detokenize{ch/electromagnetism/circuits-magnetic:approssimazinoe-circuitale-leggi-di-kirchhoff}}\begin{itemize}
+\subsection{Approssimazione circuitale}
+\label{\detokenize{ch/electromagnetism/circuits-magnetic:approssimazione-circuitale}}\label{\detokenize{ch/electromagnetism/circuits-magnetic:physics-hs-electromagnetism-circuits-magnetic-approx}}
+\sphinxAtStartPar
+Le leggi di Gauss per il campo magnetico e la legge di Ampére\sphinxhyphen{}Maxwell nel regime di bassa frequenza \eqref{equation:ch/electromagnetism/circuits-electric:eq:principles:maxwell:el-circuit}, nel quale il termine \(\dot{\Phi}_S(\vec{d})\) è trascurabile,
+\begin{equation}\label{equation:ch/electromagnetism/circuits-magnetic:eq:principles:maxwell:mag-circuit}
+\begin{split}\begin{cases}
+  \Phi_{\partial V}(\vec{b}) = 0 \\
+  \Gamma_{\partial S}(\vec{h}) = \Phi_S(\vec{j}_f) \ ,
+\end{cases}\end{split}
+\end{equation}
+\sphinxAtStartPar
+permettono di ricavare un’approssimazione circuitale dei sistemi elettromagnetici, che possono essere rappresentati tramite circuiti magnetici come prima approssimazione ingegneristica, soprattutto in presenza di \sphinxstylestrong{componenti ferromagnetici} che funzionino da «conduttore di campo magnetico», in \sphinxstylestrong{analogia} ai cavi elettrici in materiale conduttore che funzionano da conduttori di corrente nei circuiti elettrici: così come il moto delle cariche in un circuito elettrico non sfuggono dal cavo elettrico \sphinxhyphen{} nei regimi di funzionamento «normali» nei circuiti \sphinxhyphen{}, allo stesso modo il campo magnetico è in gran parte confinato al traferro%
+\begin{footnote}[1]\sphinxAtStartFootnote
+Modelli un po” più di dettaglio che sfruttano comunque l’approccio circuitale considerano il \sphinxstylestrong{flusso disperso}, cioè il campo megnetico non confinato nel traferro, ma è non nullo anche nello spazio attorno ad esso.
+%
+\end{footnote}.
+
+
+\subsection{Leggi di Kirchhoff per i circuiti magnetici}
+\label{\detokenize{ch/electromagnetism/circuits-magnetic:leggi-di-kirchhoff-per-i-circuiti-magnetici}}\label{\detokenize{ch/electromagnetism/circuits-magnetic:physics-hs-electromagnetism-circuits-magnetic-kirchhoff-laws}}
+\sphinxAtStartPar
+Le leggi di Kirchhoff per i circuiti magnetici si ricavano struttando l’analogia tra il sistema \eqref{equation:ch/electromagnetism/circuits-magnetic:eq:principles:maxwell:mag-circuit} e il sistema formato dalla conservazione della carica e della legge di Faraday in una regione di spazio in cui il campo elettrico è conservativo,
+\begin{equation*}
+\begin{split}
+\begin{cases}
+  \Phi_{\partial V}(\vec{j}) = 0 \\
+  \Gamma_{\partial S}(\vec{e}) = 0 \\
+\end{cases}
+\qquad , \qquad
+\begin{cases}
+  \Phi_{\partial V}(\vec{b}) = 0 \\
+  \Gamma_{\partial S}(\vec{h}) = \Phi_S(\vec{j}_f) \ ,
+\end{cases}
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+riconoscendo l’analogia formale tra:
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-dalle leggi fisiche alle leggi di Kirchhoff per i circuiti magnetici, ipotesi (validità e non\sphinxhyphen{}validità dell’approccio circuitale)
+tra la densità di corrente elettrica \(\vec{j}\) e il campo magnetico \(\vec{b}\),
+
+\item {} 
+\sphinxAtStartPar
+e quindi tra la corrente elettrica \(i = \int_S \hat{n} \cdot \vec{j} \sim j A\) e il flusso di campo magnetico \(\phi = \int_{S} \hat{n} \cdot \vec{b} \sim b A\)
+
+\item {} 
+\sphinxAtStartPar
+tra il campo elettrico \(\vec{e}\) e il campo di magnetizzazione \(\vec{h}\)
 
 \end{itemize}
 
+\sphinxAtStartPar
+La differenza maggiore è la presenza del termine \(\Phi_S(\vec{j}_f)\) che opera da generatore di campo di magnetizzazione, come si potrebbe riconoscere nella legge di Ampere\sphinxhyphen{}Maxwell isolando i generatori di tensione, o come avviene in {\hyperref[\detokenize{ch/electromagnetism/electric-machines:physics-hs-electromagnetism-electric-machines}]{\sphinxcrossref{\DUrole{std,std-ref}{circuiti elettro(magneto)meccanici}}}} in cui in alcune zone del dominio la derivata nel tempo del flusso del campo magnetico non è nulla, come discusso in seguito.
+
+
+
 
 \subsection{Trasformatore}
-\label{\detokenize{ch/electromagnetism/circuits-magnetic:trasformatore}}\begin{itemize}
+\label{\detokenize{ch/electromagnetism/circuits-magnetic:trasformatore}}\label{\detokenize{ch/electromagnetism/circuits-magnetic:physics-hs-electromagnetism-circuits-magnetic-transformer}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 esempi:
@@ -14198,17 +14255,41 @@ trasformatori ideali
 
 \end{itemize}
 
+
+\bigskip\hrule\bigskip
+
+
 \sphinxstepscope
 
 
 \section{Sistemi elettromeccanici e macchine elettriche}
 \label{\detokenize{ch/electromagnetism/electric-machines:sistemi-elettromeccanici-e-macchine-elettriche}}\label{\detokenize{ch/electromagnetism/electric-machines:physics-hs-electromagnetism-electric-machines}}\label{\detokenize{ch/electromagnetism/electric-machines::doc}}
+\sphinxAtStartPar
+I sistemi elettromeccanici permettono di convertire energia elettromagnetica in energia meccanica. Alcuni esempi fondamentali sono i motori elettrici (che convertono energia elettromagnetica in energia meccanica) e i generatori elettrici (che convertono energia meccanica in energia elettromagnetica), che sfruttano il fenomeno di \DUrole{xref,myst}{induzione elettromagnetica} descritto dalla legge di Faraday,
+\begin{equation*}
+\begin{split}\Gamma_{\partial S}(\vec{e}) = \dot{\Phi}_{S}(\vec{b}) \ .\end{split}
+\end{equation*}
 
 \subsection{Motori e generatori elettrici}
-\label{\detokenize{ch/electromagnetism/electric-machines:motori-e-generatori-elettrici}}
+\label{\detokenize{ch/electromagnetism/electric-machines:motori-e-generatori-elettrici}}\label{\detokenize{ch/electromagnetism/electric-machines:physics-hs-electromagnetism-electric-machines-motor}}
 
-\subsubsection{Esempio elementare}
-\label{\detokenize{ch/electromagnetism/electric-machines:esempio-elementare}}
+\subsubsection{Esempi elementari}
+\label{\detokenize{ch/electromagnetism/electric-machines:esempi-elementari}}\label{ch/electromagnetism/electric-machines:example-0}
+\begin{sphinxadmonition}{note}{Example 21.3.1 (Variazione di area di una spira)}
+
+
+\end{sphinxadmonition}
+\label{ch/electromagnetism/electric-machines:example-1}
+\begin{sphinxadmonition}{note}{Example 21.3.2 (Variazione di orientazione di una spira)}
+
+
+\end{sphinxadmonition}
+\label{ch/electromagnetism/electric-machines:example-2}
+\begin{sphinxadmonition}{note}{Example 21.3.3 (Variazione del campo magnetico)}
+
+
+\end{sphinxadmonition}
+
 
 \subsubsection{Motori elettrici in DC}
 \label{\detokenize{ch/electromagnetism/electric-machines:motori-elettrici-in-dc}}
@@ -15950,6 +16031,9 @@ forte
 \bigletter{electric\sphinxhyphen{}current\sphinxhyphen{}density}
 \item\relax\sphinxstyleindexentry{electric\sphinxhyphen{}current\sphinxhyphen{}density}\sphinxstyleindexextra{ch/electromagnetism/electric\sphinxhyphen{}current}\sphinxstyleindexpageref{ch/electromagnetism/electric-current:\detokenize{electric-current-density}}
 \indexspace
+\bigletter{example\sphinxhyphen{}0}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/electromagnetism/electric\sphinxhyphen{}machines}\sphinxstyleindexpageref{ch/electromagnetism/electric-machines:\detokenize{example-0}}
+\indexspace
 \bigletter{example\sphinxhyphen{}1}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-1}}
 \indexspace
@@ -15979,6 +16063,9 @@ forte
 \indexspace
 \bigletter{example\sphinxhyphen{}18}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}18}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-18}}
+\indexspace
+\bigletter{example\sphinxhyphen{}2}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/electromagnetism/electric\sphinxhyphen{}machines}\sphinxstyleindexpageref{ch/electromagnetism/electric-machines:\detokenize{example-2}}
 \indexspace
 \bigletter{example\sphinxhyphen{}5}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-5}}

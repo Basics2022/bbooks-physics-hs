@@ -1,25 +1,33 @@
 (physics-hs:electromagnetism:circuits-electric)=
 # Circuiti elettrici
 
+(physics-hs:electromagnetism:circuits-electric:approx)=
+## Approssimazione circuitale
 L'ingegneria elettrica si occupa principamente di sistemi con correnti intense ma bassa frequenza. In questo regime di funzionamento, le equazioni di Maxwell che governano i fenomeni elettromagnetici possono essere semplificate
 1. nelle regioni esterne alle pareti di eventuali condensatori presenti nel sistema, la derivata nel tempo del flusso del campo di spostamente è trascurabile,
 2. il campo magnetico $\vec{b}$ e la sua derivata nel tempo sono rilevanti solo in alcune regioni dello spazio, e quindi confinati a componenti dotati di induttanze - come possono essere motori elettrici.
 
-Al di fuori di queste regioni le equazioni di Maxwell si riducono quindi alle equazioni in regime stazionario
+Al di fuori di queste regioni le equazioni di Maxwell {eq}`eq:principles:maxwell` si riducono quindi alle equazioni in regime stazionario
 
-$$\begin{aligned}
-  \Phi_{\partial V}(\vec{e}) = 
-\end{aligned}
+$$\begin{cases}
+  \Phi_{\partial V}(\vec{d}) = Q_f \\
+  \Gamma_{\partial S}(\vec{e}) + \dot{\Phi}_S(\vec{b}) = 0 \\
+  \Phi_{\partial V}(\vec{b}) = 0 \\
+  \Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_S(\vec{d}) = \Phi_S(\vec{j}_f)
+\end{cases}
 \qquad \rightarrow \qquad
-\begin{aligned}
-  \Phi_{\partial V}(\vec{e}) = 
-\end{aligned}$$
+\begin{cases}
+  \Phi_{\partial V}(\vec{d}) = Q_f \\
+  \Gamma_{\partial S}(\vec{e}) = 0 \\
+  \Phi_{\partial V}(\vec{b}) = 0 \\
+  \Gamma_{\partial S}(\vec{h}) = \Phi_S(\vec{j}_f)
+\end{cases}$$ (eq:principles:maxwell:el-circuit)
 
 Anche se non è possibile fornirne una dimostrazione in termini semplici, queste approssimazioni hanno una conseguenza fondamentale: a bassa frequenza,
 - i componenti elettrici possono essere analizzati **"agli effetti esterni"**: ogni componente componente ha il proprio comportamento caratteristico determinato dalla sua natura e descritto dalla sua equazione costitutiva, ma si interfaccia con l'esterno solo tramite i **morsetti della porta elettrica**, nella stra-grande maggior parte dei casi i cavi elettrici con i quali il componente può essere collegato ad altri componenti in un circuito
 - si può trascurare la trasmissione del campo elettromagnetico come onde elettromagnetiche, anche la potenza irradiata tramite queste è trascurabile. Il bilancio di energia dei componenti di un sistema elettrico può essere riportato alla potenza trasmessa tramite i morsetti della porta elettrica, che assume l'espressione $P = v i$: la variazione di energia interna di un componente è uguale alla potenza trasferita tramite la sua porta elettrica,
 
-  $$\dfrac{d E}{dt} = v i$$
+  $$\dfrac{d E}{dt} = v i$$ (eq:el-circuit:power)
 
 - poiché non avviene la trasmissione di onde elettromagnetiche, il problema elettromagnetico a basse frequenze è molto semplificato rispetto al problema elettromagnetico generale: mentre il problema elettromagnetico generale prevede che venga risolto il campo elettromagnetico in tutte le regioni dello spazio, l'approccio circuitale permette - quando applicabile - di considerare solo i componenti elettromegnetici collegati tramite conduttori che sotituiscono il sistema.[^circuit-math:pde-ode] 
 
@@ -44,7 +52,7 @@ avendo indicato con $\hat{n}$ la normale della sezione e $A$ la superficie della
 
 Le leggi di Kirchhoff trasformano l'equazioni di governo del problema elettromagnetico opportunamente semplificate nell'ambito delle basse frequnze nelle due leggi fondamentali dei circuiti.
 
-**Legge ai nodi.** La somma delle correnti entranti in un nodo di un circuito elettrico è nulla. Questa legge è una conseguenza della legge del bilancio della carica per un sistema di volume nullo - o sistema che non può accumulare carica, come si considera un cavo di un circuito elettrico operante a bassa frequenza.
+**Legge ai nodi.** La somma delle correnti entranti in un nodo di un circuito elettrico è nulla. Questa legge è una conseguenza della legge del bilancio della carica {eq}`eq:principles:charge` per un sistema di volume nullo - o sistema che non può accumulare carica, $\dot{Q}_V$, come si considera un cavo di un circuito elettrico operante a bassa frequenza.
 
 $$0 = \Phi_{\partial V}(\vec{j}) = \sum_{k} \vec{j}_k \cdot \hat{n}_k \, A_k = \sum_{k} i_k \ ,$$
 
@@ -52,7 +60,7 @@ dove la somma viene svolta su tutti i conduttori $k$ collegati al nodo considera
 
 **Legge alle maglie.** La somma delle tensioni su una maglia di un circuito elettrico è nulla, nelle regioni in cui la derivata del flusso del campo magnetico è trascurabile - ad esempio, fuori da motori elettrici e trasformatori. Questa legge è una conseguenza della legge di Faraday nel caso in cui la derivata del flusso del campo magnetico sia nulla, e che quindi il campo elettrico possa essere scritto in termini di potenziale elettrico
 
-$$0 = \Gamma_{\ell}(\vec{e}) = \sum_{k} \Delta v_k \ ,$$
+$$0 = \Gamma_{\partial S}(\vec{e}) = \sum_{k} \Delta v_k \ ,$$
 
 dove la somma viene svolta su tutti i lati $k$ della maglia del circuito considerata.
 
@@ -60,9 +68,9 @@ dove la somma viene svolta su tutti i lati $k$ della maglia del circuito conside
 ## Componenti
 
 In questa sezione vengonoo presentati i principali componenti che possono costituire un circuito, nella sezione successiva vengono analizzate alcuni possibili collegamenti di questi componenti e alcuni circuiti elementari.
-I componenti sono caratterizzati dalla loro legge costitutiva - determinata dalla loro natura e struttura interna - ma che descrive completamente il componente elettrico "agli effetti esterni", cioè ai morsetti della sua porta elettrica, in termini di corrente $i$ e differenza di tensione ai morsetti. Per completezza, e per uniformarsi a quello che viene fatto comunemente, si introducono le due convenzioni di segno di differenza di tensione e corrente per due classi di componenti:
-- generatori, componenti che producono potenza elettrica
-- utilizzatori, componenti che - tipicamente - assorbono potenza elettrica
+I componenti sono caratterizzati dalla loro legge costitutiva - determinata dalla loro natura e struttura interna - ma che descrive completamente il componente elettrico "agli effetti esterni", cioè ai morsetti della sua porta elettrica, in termini di corrente $i$ e differenza di tensione ai morsetti. Per completezza, e per uniformarsi a quello che viene fatto comunemente, si introducono le due **convenzioni di segno** di differenza di tensione e corrente per due classi di componenti:
+- **generatori**, componenti che producono potenza elettrica
+- **utilizzatori**, componenti che - tipicamente - assorbono potenza elettrica
 
 **todo** Immagini delle due convenzioni
 
@@ -170,8 +178,7 @@ Tipici problemi di transitorio tra due condizioni stazionarie sono le dinamiche 
 (physics-hs:electromagnetism:circuits-electric:regimes:ac)=
 ### Regime periodico - la corrente alternata
 
-Il regime periodico armonico è caratteristico del funzionamento dei circuiti elettr(omagnetici) in corrente alternata, che abbiamo in molti reti elettriche contemporanee, dalla produzione (tramite generatori), alla trasformazione ad alta tensione per un trasporto efficiente su grandi distanze, l trasporto (anche se si sta diffondendo un nuovo tipo di trasporto in corrente continua ad alta tensione, *HVDC*, ), alla trasformazione a media e poi bassa tensione per la distribuzione e l'utilizzo.
-
+Il regime periodico armonico è caratteristico del funzionamento dei circuiti elettr(omagnetici) in corrente alternata, che abbiamo in molti reti elettriche contemporanee, dalla produzione (tramite generatori), alla trasformazione ad alta tensione per un trasporto efficiente su grandi distanze, l trasporto (anche se si sta diffondendo un nuovo tipo di trasporto in corrente continua ad alta tensione, *HVDC*), alla trasformazione a media e poi bassa tensione per la distribuzione e l'utilizzo.
 
 Utilizzando il formalismo dei **fasori** per rappresentare grandezze periodiche armoniche a frequenza costante $f = \frac{\Omega}{2 \pi}$, si può scrivere
 
@@ -179,14 +186,28 @@ $$v(t) = V e^{-i \Omega t} \ ,$$
 
 con $V \in \mathbb{C}$. **todo** 
 
+**Analisi circuiti.**
+
+**Analisi potenza.**
+
 
 (physics-hs:electromagnetism:circuits-electric:regimes:ac-tri)=
 #### Sistemi trifase
+
+I sistemi attuali di produzione, trasporto e gli utilizzatori basati su motori elettrici utilizzano molto frequentemente sistemi con **corrente alternata trifase**, poiché risulta la configurazione migliore che
+- permette la generazione/utilizzo di un campo magnetico rotante, fondamentale per l'utilizzo di generatori e motori elettrici
+- consente un trasporto ottimale in termini di costi, con un numero minimo di conduttori, perdite ridotte, e trasformazione efficiente.
+
+**todo**
+- esempi motori
+- collegamento stella-triangolo
+- ...
+
+<!--
 Vantaggi:
 - funzionamento generatori ed utilizzatori naturale
 - trasformazione in AC naturale
 - trasmissione efficiente
-
 
 - dalle leggi fisiche alle leggi di Kirchhoff, ipotesi (validità e non-validità dell'approccio circuitale)
 
@@ -205,3 +226,4 @@ Vantaggi:
     - esempio: carica/scarica condensatore
   - armonico, AC:
     - ... 
+-->

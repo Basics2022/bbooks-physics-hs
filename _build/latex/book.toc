@@ -331,7 +331,7 @@
 \contentsline {section}{\numberline {21.2}Corrente elettrica}{197}{section.21.2}%
 \contentsline {subsection}{\numberline {21.2.1}Definizioni}{197}{subsection.21.2.1}%
 \contentsline {subsubsection}{Densità di corrente elettrica}{197}{subsubsection*.336}%
-\contentsline {subsection}{\numberline {21.2.2}Legge di conservazione della carica elettrica}{198}{subsection.21.2.2}%
+\contentsline {subsection}{\numberline {21.2.2}Principio di conservazione della carica elettrica}{198}{subsection.21.2.2}%
 \contentsline {subsection}{\numberline {21.2.3}Corrente elettrica nella materia}{198}{subsection.21.2.3}%
 \contentsline {subsubsection}{Solidi conduttori}{199}{subsubsection*.338}%
 \contentsline {paragraph}{Conduttori di Ohm}{199}{paragraph*.339}%
@@ -350,44 +350,46 @@
 \contentsline {subsection}{\numberline {21.3.6}Moto di una carica elettrica in un campo elettromagnetico}{203}{subsection.21.3.6}%
 \contentsline {subsection}{\numberline {21.3.7}Verso le equazioni di Maxwell}{203}{subsection.21.3.7}%
 \contentsline {subsubsection}{Legge di Gauss per il flusso del campo magnetico}{204}{subsubsection*.347}%
-\contentsline {subsubsection}{Legge di Ampére}{204}{subsubsection*.348}%
+\contentsline {subsubsection}{Legge di Ampére in regime stazionario}{204}{subsubsection*.348}%
 \contentsline {subsection}{\numberline {21.3.8}Problemi}{204}{subsection.21.3.8}%
 \contentsline {subsection}{\numberline {21.3.9}Soluzioni}{204}{subsection.21.3.9}%
 \contentsline {subsection}{\numberline {21.3.10}Note e dimostrazioni}{204}{subsection.21.3.10}%
 \contentsline {subsubsection}{Legge di Biot\sphinxhyphen {}Savart}{204}{subsubsection*.349}%
 \contentsline {section}{\numberline {21.4}Induzione ed elettromagnetismo}{206}{section.21.4}%
 \contentsline {subsection}{\numberline {21.4.1}Legge di Faraday per l’induzione elettromagnetica}{206}{subsection.21.4.1}%
-\contentsline {subsection}{\numberline {21.4.2}Correzione di Maxwell dell’equazione di Ampére}{206}{subsection.21.4.2}%
+\contentsline {subsection}{\numberline {21.4.2}Correzione di Maxwell dell’equazione di Ampére}{207}{subsection.21.4.2}%
 \contentsline {subsection}{\numberline {21.4.3}Equazioni di Maxwell dell’elettromagnetismo}{207}{subsection.21.4.3}%
 \contentsline {chapter}{\numberline {22}Fondamenti di elettrotecnica}{209}{chapter.22}%
 \contentsline {section}{\numberline {22.1}Circuiti elettrici}{210}{section.22.1}%
-\contentsline {subsection}{\numberline {22.1.1}Cavi elettrici}{210}{subsection.22.1.1}%
-\contentsline {subsection}{\numberline {22.1.2}Leggi di Kirchhoff}{211}{subsection.22.1.2}%
-\contentsline {subsection}{\numberline {22.1.3}Componenti}{211}{subsection.22.1.3}%
+\contentsline {subsection}{\numberline {22.1.1}Approssimazione circuitale}{210}{subsection.22.1.1}%
+\contentsline {subsection}{\numberline {22.1.2}Cavi elettrici}{210}{subsection.22.1.2}%
+\contentsline {subsection}{\numberline {22.1.3}Leggi di Kirchhoff}{211}{subsection.22.1.3}%
+\contentsline {subsection}{\numberline {22.1.4}Componenti}{211}{subsection.22.1.4}%
 \contentsline {subsubsection}{Resistenza elettrica}{211}{subsubsection*.351}%
-\contentsline {subsubsection}{Condensatore}{211}{subsubsection*.352}%
+\contentsline {subsubsection}{Condensatore}{212}{subsubsection*.352}%
 \contentsline {subsubsection}{Induttore}{212}{subsubsection*.353}%
 \contentsline {subsubsection}{Generatore di tensione}{212}{subsubsection*.354}%
 \contentsline {subsubsection}{Generatore di corrente}{212}{subsubsection*.355}%
 \contentsline {subsubsection}{Diodo}{212}{subsubsection*.356}%
-\contentsline {subsection}{\numberline {22.1.4}Collegamenti in serie e in parallelo}{212}{subsection.22.1.4}%
-\contentsline {subsection}{\numberline {22.1.5}Casi particolari}{213}{subsection.22.1.5}%
+\contentsline {subsection}{\numberline {22.1.5}Collegamenti in serie e in parallelo}{212}{subsection.22.1.5}%
+\contentsline {subsection}{\numberline {22.1.6}Casi particolari}{213}{subsection.22.1.6}%
 \contentsline {subsubsection}{Circuito aperto}{213}{subsubsection*.357}%
 \contentsline {subsubsection}{Cortocircuito}{213}{subsubsection*.358}%
-\contentsline {subsection}{\numberline {22.1.6}Regimi di funzionamento}{213}{subsection.22.1.6}%
-\contentsline {subsubsection}{Regime stazionario \sphinxhyphen {} la corrente continua}{213}{subsubsection*.359}%
+\contentsline {subsection}{\numberline {22.1.7}Regimi di funzionamento}{214}{subsection.22.1.7}%
+\contentsline {subsubsection}{Regime stazionario \sphinxhyphen {} la corrente continua}{214}{subsubsection*.359}%
 \contentsline {subsubsection}{Transitorio}{214}{subsubsection*.360}%
 \contentsline {subsubsection}{Regime periodico \sphinxhyphen {} la corrente alternata}{214}{subsubsection*.361}%
 \contentsline {paragraph}{Sistemi trifase}{214}{paragraph*.362}%
-\contentsline {section}{\numberline {22.2}Circuiti magnetici}{214}{section.22.2}%
-\contentsline {subsection}{\numberline {22.2.1}Approssimazinoe circuitale \sphinxhyphen {} leggi di Kirchhoff}{214}{subsection.22.2.1}%
-\contentsline {subsection}{\numberline {22.2.2}Trasformatore}{215}{subsection.22.2.2}%
-\contentsline {section}{\numberline {22.3}Sistemi elettromeccanici e macchine elettriche}{215}{section.22.3}%
-\contentsline {subsection}{\numberline {22.3.1}Motori e generatori elettrici}{215}{subsection.22.3.1}%
-\contentsline {subsubsection}{Esempio elementare}{215}{subsubsection*.363}%
-\contentsline {subsubsection}{Motori elettrici in DC}{215}{subsubsection*.364}%
-\contentsline {subsubsection}{Motori elettrici in AC}{215}{subsubsection*.365}%
-\contentsline {subsection}{\numberline {22.3.2}Serratura magnetica}{215}{subsection.22.3.2}%
+\contentsline {section}{\numberline {22.2}Circuiti magnetici}{215}{section.22.2}%
+\contentsline {subsection}{\numberline {22.2.1}Approssimazione circuitale}{215}{subsection.22.2.1}%
+\contentsline {subsection}{\numberline {22.2.2}Leggi di Kirchhoff per i circuiti magnetici}{215}{subsection.22.2.2}%
+\contentsline {subsection}{\numberline {22.2.3}Trasformatore}{215}{subsection.22.2.3}%
+\contentsline {section}{\numberline {22.3}Sistemi elettromeccanici e macchine elettriche}{216}{section.22.3}%
+\contentsline {subsection}{\numberline {22.3.1}Motori e generatori elettrici}{216}{subsection.22.3.1}%
+\contentsline {subsubsection}{Esempi elementari}{216}{subsubsection*.364}%
+\contentsline {subsubsection}{Motori elettrici in DC}{216}{subsubsection*.365}%
+\contentsline {subsubsection}{Motori elettrici in AC}{216}{subsubsection*.366}%
+\contentsline {subsection}{\numberline {22.3.2}Serratura magnetica}{216}{subsection.22.3.2}%
 \contentsline {chapter}{\numberline {23}Onde elettromagnetiche}{217}{chapter.23}%
 \contentsline {section}{\numberline {23.1}Esperimenti di Hertz}{218}{section.23.1}%
 \contentsline {section}{\numberline {23.2}Luce}{218}{section.23.2}%
@@ -444,4 +446,4 @@
 \contentsline {section}{\numberline {32.4}Dizionario}{251}{section.32.4}%
 \contentsline {part}{IX\hspace {1em}Indice}{253}{part.9}%
 \contentsline {chapter}{\numberline {33}Indice}{255}{chapter.33}%
-\contentsline {chapter}{Proof Index}{257}{section*.388}%
+\contentsline {chapter}{Proof Index}{257}{section*.389}%
