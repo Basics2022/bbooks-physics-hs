@@ -1,6 +1,35 @@
 (physics-hs:intro:physical-quantities)=
 # Grandezze fisiche
 
+Una grandezza fisica è una proprietà di un sistema o di un fenomeno fisico che può essere [misurata](physics-hs:intro:measurements) e il cui valore può essere espresso in relazione a un'unità di misura.
+
+
+## Sistema di misura
+
+- grandezze fondamentali e derivate
+- unità di misura
+
+### Sistema di misura internazionale
+
+Breve storia.
+Brevissima storia. Inizialmente unità di misura convenzionali, facilmente riconducibili all'esperienza quotidiana degli esseri umani ai tempi in cui le unità vengono definite.
+Possibilmente, riconducibili a grandezze fisiche facilmente replicabili in maniera stabile. Recentemente, dopo la scoperta di alcune grandezze costanti in natura, le unità di misura "classiche" sono state ri-definite in termini di queste costanti della natura e mantenendo il loro valore originale.
+
+
+
+**Massa, lunghezza e tempo.**
+
+**Temperatura.**
+
+**Quantità di sostanza.**
+
+**Carica elettrica.**
+
+**Intensità luminosa.**
+
+
+
+<!--
 - Come conosciamo il mondo? Come misuriamo il mondo?
 - Necessità di avere delle grandezze di riferimento stabili o facilmente riproducibili in maniera precisa, da usare come unità di misura delle grandezze fisiche.
 - Nell'antichità, dall'esperienza:
@@ -25,4 +54,4 @@
     - corrente elettrica
     - luminosità
 - XX-XXI secolo: continuo aggiornamento delle unità di misura, usando definizioni più precise e replicabili, tramite misure non disponibili solo qualche decennio prima
-
+-->

@@ -174,13 +174,13 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../intro.html">1. Introduzione alla fisica</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="physical_quantities.html">2. Grandezze fisiche</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-space.html">2.1. Spazio</a></li>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-mass.html">2.2. Quantità di materia</a></li>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-time.html">2.3. Tempo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-temperature.html">2.4. Temperatura</a></li>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-charge.html">2.5. Carica e corrente elettrica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-mole.html">2.6. Quantità di sostanza, la mole</a></li>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-luminosity.html">2.7. Intensità luminosa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-space.html">2.2. Spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-mass.html">2.3. Quantità di materia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-time.html">2.4. Tempo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-temperature.html">2.5. Temperatura</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-charge.html">2.6. Carica e corrente elettrica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-mole.html">2.7. Quantità di sostanza, la mole</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-luminosity.html">2.8. Intensità luminosa</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="scientific-method.html">3. Il metodo scientifico</a></li>
@@ -343,6 +343,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../modern/intro-coupling.html">28. Fenomeni termo-elettrici nella materia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/intro-photography.html">29. Fotografia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/astronomy.html">30. Sviluppi dell’astronomia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/standard.html">31. Introduzione al modello standard</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
 <ul class="nav bd-sidenav">
@@ -559,8 +560,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strumenti-di-misura">4.1. Strumenti di misura</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#misura-ed-errori">4.2. Misura ed errori</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strumenti-di-misura">4.1. Strumenti di misura</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#caratteristiche-della-misura">4.1.1. Caratteristiche della misura</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -574,14 +577,44 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="misura">
 <span id="physics-hs-intro-measurements"></span><h1><span class="section-number">4. </span>Misura<a class="headerlink" href="#misura" title="Permalink to this heading">#</a></h1>
-<div class="section" id="strumenti-di-misura">
-<span id="physics-hs-intro-measurements-instruments"></span><h2><span class="section-number">4.1. </span>Strumenti di misura<a class="headerlink" href="#strumenti-di-misura" title="Permalink to this heading">#</a></h2>
+<p>L’attività di misurazione consiste nell’assegnazione di un valore - o meglio di un intervallo di valori che tenga conto dell” - alla grandezza fisica oggetto dell’operazione, confrontata con una <a class="reference internal" href="#physics-hs-intro-measurements-homogeneous"><span class="std std-ref">grandezza fisica omogenea</span></a> di riferimento, chiamata unità di misura.</p>
+<p>Una grandezza fisica può quindi essere espressa come il prodotto di un valore numerico <span class="math notranslate nohighlight">\(\{ M \}\)</span> e un’unità di misura <span class="math notranslate nohighlight">\([M]\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[M = \{ M \} [ M ] \ .\]</div>
+<div class="proof definition admonition" id="definition-0">
+<span id="physics-hs-intro-measurements-homogeneous"></span><p class="admonition-title"><span class="caption-number">Definition 4.1 </span> (Grandezze fisiche omogenee)</p>
+<div class="definition-content section" id="proof-content">
+<p>Due <strong>grandezze fisiche omogenee</strong> sono grandezze fisiche della stessa natura, che - in maniera equivalente:</p>
 <ul class="simple">
-<li><p>sensibilità</p></li>
-<li><p>precisione</p></li>
-<li><p>fondo scala</p></li>
-<li><p>Risposta (strumenti di ordine <span class="math notranslate nohighlight">\(0\)</span>, <span class="math notranslate nohighlight">\(1\)</span>, <span class="math notranslate nohighlight">\(2\)</span>)</p></li>
+<li><p>possono essere riferite alla stessa unità di misura</p></li>
+<li><p>possono essere confrontate con un rapporto che restituisce un valore numerico - privo di dimensioni fisiche</p></li>
+<li><p>hanno le stesse dimensioni fisiche.</p></li>
 </ul>
+</div>
+</div><div class="section" id="strumenti-di-misura">
+<span id="physics-hs-intro-measurements-instruments"></span><h2><span class="section-number">4.1. </span>Strumenti di misura<a class="headerlink" href="#strumenti-di-misura" title="Permalink to this heading">#</a></h2>
+<div class="section" id="caratteristiche-della-misura">
+<h3><span class="section-number">4.1.1. </span>Caratteristiche della misura<a class="headerlink" href="#caratteristiche-della-misura" title="Permalink to this heading">#</a></h3>
+<p><strong>Accuratezza.</strong> E” una misura della differenza tra il valoremedio di una serie di misure e il <em>valore vero</em> della grandezza misurata.</p>
+<div class="admonition-valore-vero admonition">
+<p class="admonition-title">Valore vero</p>
+<p><strong>todo</strong></p>
+</div>
+<p><strong>Precisione.</strong> Dispersione delle misure, indipendentemente dall’accuratezza della misura, quantificabile con la varianza, la deviazione standard o altri indicatori di dispersione delle misure.</p>
+<p><strong>Ripetibilità e riproducibilità.</strong> I concetti di ripetibilità e riproducibilità sono indicatori di <em>precisione</em> che quantificano l’accordo tra una serie di misure della stessa grandezze fisica.</p>
+<p>Il termine ripetibilità si riferisce a misurazioni svolte nelle stesse condizioni (metodo, operatore, strumento di misura, luogo dell’esperimento), il concetto di riproducibilità si riferisce a misurazioni in cui viene modificata almeno una delle condizioni.</p>
+<p>Esempi di errori di repricabilità sono: variazioni proprie della grandezza misurata, errori di lettura, disturbi sui sistemi di misura (interferenza elettromagnetica, vibrazioni, variazioni nelle condizioni ambientali,…).</p>
+<p>Errori di riproducibilità possono evidenziare errori sistematici nel processo di misura, come ad esempio: errore nell’impostazione, posizione e/o orientamento, alimentazione dello strumento, oltre a metodologie inadeguate o comportamenti fraudolenti da parte degli autori dell’attività.</p>
+<div class="admonition-crisi-di-riproducibilita admonition">
+<p class="admonition-title">Crisi di riproducibilità</p>
+<!--:class: tip -->
+<p><strong>todo</strong></p>
+</div>
+<p><strong>Fondo scala.</strong></p>
+<p><strong>Risoluzione.</strong></p>
+<p><strong>Linearità.</strong></p>
+<p><strong>Sensibilità.</strong></p>
+<p><strong>Risposta degli strumenti.</strong> (strumenti di ordine <span class="math notranslate nohighlight">\(0\)</span>, <span class="math notranslate nohighlight">\(1\)</span>, <span class="math notranslate nohighlight">\(2\)</span>)</p>
 <p>Rimandare qui dal capitolo sulle <a class="reference external" href="https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/ode.html">equazioni ordinarie differenziali (ODE)</a> del materiale di <a class="reference external" href="https://basics2022.github.io/bbooks-math-miscellanea-hs/intro.html">matematica</a>.</p>
 <div class="exercise admonition" id="instrument-order-zero-exercise">
 
@@ -605,8 +638,6 @@ document.write(`
 </div>
 </div>
 </div>
-<div class="section" id="misura-ed-errori">
-<span id="physics-hs-intro-measurements-errors"></span><h2><span class="section-number">4.2. </span>Misura ed errori<a class="headerlink" href="#misura-ed-errori" title="Permalink to this heading">#</a></h2>
 </div>
 </div>
 
@@ -673,8 +704,10 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strumenti-di-misura">4.1. Strumenti di misura</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#misura-ed-errori">4.2. Misura ed errori</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strumenti-di-misura">4.1. Strumenti di misura</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#caratteristiche-della-misura">4.1.1. Caratteristiche della misura</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
