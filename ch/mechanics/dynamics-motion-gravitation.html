@@ -561,9 +561,10 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gravitazione-universale">11.6.1. Legge di gravitazione universale</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-dei-due-corpi">11.6.2. Problema dei due corpi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-coniche-ed-energia">11.6.2.1. Traiettorie, coniche, ed energia</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-chiuse-e-leggi-di-keplero">11.6.2.2. Traiettorie chiuse e leggi di Keplero</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leggi-di-keplero">11.6.2. Leggi di Keplero</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-dei-due-corpi">11.6.3. Problema dei due corpi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-coniche-ed-energia">11.6.3.1. Traiettorie, coniche, ed energia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-chiuse-e-leggi-di-keplero">11.6.3.2. Traiettorie chiuse e leggi di Keplero</a></li>
 </ul>
 </li>
 </ul>
@@ -590,25 +591,13 @@ kernelspec:
     name: python3
 ---
 -->
-<div class="sd-container-fluid sd-sphinx-override sd-p-0 sd-mt-2 sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-2 sd-gx-2 sd-gy-1 docutils">
-<div class="sd-col sd-d-flex-row sd-align-minor-center docutils">
-<div class="sd-container-fluid sd-sphinx-override docutils">
-<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-gx-3 sd-gy-1 docutils">
-<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0">basics</p>
-</div>
-<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>28 gen 2025</p>
-</div>
-<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>3 min read</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<!--
+```{article-info}
+:author: basics
+:date: "{sub-ref}`today`"
+:read-time: "{sub-ref}`wordcount-minutes` min read"
+```
+-->
 <div class="tex2jax_ignore mathjax_ignore section" id="gravitazione">
 <span id="physics-hs-mechanics-dynamics-motion-gravitation"></span><h1><span class="section-number">11.6. </span>Gravitazione<a class="headerlink" href="#gravitazione" title="Permalink to this heading">#</a></h1>
 <!--
@@ -624,13 +613,40 @@ kernelspec:
 - problema dei 3 corpi:
   - punti lagrangiani. Esempio: telescopio Webb
 -->
+<p>Newton formula anche la prima teoria della gravitazione, riconoscendola come causa unica del moto dei corpi celesti e della caduta dei corpi nei pressi della superficie terrestre.</p>
 <div class="section" id="legge-di-gravitazione-universale">
 <span id="physics-hs-mechanics-dynamics-motion-gravitation-newton"></span><h2><span class="section-number">11.6.1. </span>Legge di gravitazione universale<a class="headerlink" href="#legge-di-gravitazione-universale" title="Permalink to this heading">#</a></h2>
+<p>La <strong>legge di gravitazione universale</strong> formulata da Newton prevede che un corpo di massa <span class="math notranslate nohighlight">\(m_1\)</span> che si trova nel punto <span class="math notranslate nohighlight">\(P_1\)</span> è soggetto alla forza di attrazione</p>
 <div class="math notranslate nohighlight">
-\[\vec{F}_{10} = G \, m_0 \, m_1 \frac{\vec{r}_{01}}{\left|\vec{r}_{01}\right|^3}\]</div>
+\[\vec{F}_{10} = G \, m_0 \, m_1 \frac{P_0 - P_1}{\ \left| P_0 - P_1 \right|^3} \ ,\]</div>
+<p>verso un corpo di massa <span class="math notranslate nohighlight">\(m_0\)</span> che si trova nel punto <span class="math notranslate nohighlight">\(P_0\)</span>. La direzione della forza è lungo la congiungente dei due punti. L’intensità della forza è proporzionale alle due masse, e all’inverso del quadrato della loro distanza, con la costante di proporzionalità</p>
+<div class="math notranslate nohighlight">
+\[G = 6.67 \cdot 10^{-11} \dfrac{N \, m^2}{kg^2} \ ,\]</div>
+<p>che prende il nome di <strong>costante di gravitazione universale</strong>.</p>
 </div>
+<div class="section" id="leggi-di-keplero">
+<h2><span class="section-number">11.6.2. </span>Leggi di Keplero<a class="headerlink" href="#leggi-di-keplero" title="Permalink to this heading">#</a></h2>
+<p>Le equazioni della dinamica e la legge di gravitazione universale da lui formulate, permise a Newton di dimostrare le <strong>tre leggi di Keplero</strong> che descrivono il moto <em>limitato</em> (<strong>todo</strong> <em>trovare sinonimo</em>) di due corpi celesti, come ad esempio il moto di un pianeta rispetto al Sole, o il moto di un satellite rispetto al pianeta di riferimento.</p>
+<div class="proof definition admonition" id="definition-0">
+<p class="admonition-title"><span class="caption-number">Definition 11.1 </span> (Prima legge di Keplero)</p>
+<div class="definition-content section" id="proof-content">
+<p>Il moto di un pianeta rispetto al Sole descrive una traiettoria ellittica, e il Sole si trova in uno dei suoi fuochi.</p>
+</div>
+</div><div class="proof definition admonition" id="definition-1">
+<p class="admonition-title"><span class="caption-number">Definition 11.2 </span> (Seconda legge di Keplero)</p>
+<div class="definition-content section" id="proof-content">
+<p>Il moto di un pianeta rispetto al Sole ha una velocità areolare costante.</p>
+</div>
+</div><div class="proof definition admonition" id="definition-2">
+<p class="admonition-title"><span class="caption-number">Definition 11.3 </span> (Prima legge di Keplero)</p>
+<div class="definition-content section" id="proof-content">
+<p>Il periodo <span class="math notranslate nohighlight">\(T\)</span> dell’orbita è in relazione al semiasse maggiore <span class="math notranslate nohighlight">\(a\)</span></p>
+<div class="math notranslate nohighlight">
+\[T = \pi \dfrac{a^{\frac{3}{2}}}{\sqrt{GM}} \ \quad , \quad T^2 \sim a^3\]</div>
+</div>
+</div></div>
 <div class="section" id="problema-dei-due-corpi">
-<span id="physics-hs-mechanics-dynamics-motion-gravitation-two-bodies"></span><h2><span class="section-number">11.6.2. </span>Problema dei due corpi<a class="headerlink" href="#problema-dei-due-corpi" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-mechanics-dynamics-motion-gravitation-two-bodies"></span><h2><span class="section-number">11.6.3. </span>Problema dei due corpi<a class="headerlink" href="#problema-dei-due-corpi" title="Permalink to this heading">#</a></h2>
 <p>In meccanica classica, il problema dei due corpi si riferisce alla dinamica di un sistema formato da due corpi puntiformi soggetti unicamente alla mutua interazione gravitazionale, descritta dalla legge di gravitazione universale di Newton.</p>
 <p>Il sistema formato dai due punti è un sistema chiuso e isolato, sul quale non agiscono azioni esterne. La quantità di moto rispetto a un sistema di riferimento inerziale rimane quindi costante. Rimane quindi costante la velocità del centro di massa <span class="math notranslate nohighlight">\(G\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -657,7 +673,7 @@ kernelspec:
 <div class="math notranslate nohighlight">
 \[m_1 \, \ddot{\vec{r}} = - G M m_1 \frac{\vec{r}}{r^3} \ .\]</div>
 <div class="section" id="traiettorie-coniche-ed-energia">
-<span id="physics-hs-mechanics-dynamics-motion-gravitation-two-bodies-energy-and-conics"></span><h3><span class="section-number">11.6.2.1. </span>Traiettorie, coniche, ed energia<a class="headerlink" href="#traiettorie-coniche-ed-energia" title="Permalink to this heading">#</a></h3>
+<span id="physics-hs-mechanics-dynamics-motion-gravitation-two-bodies-energy-and-conics"></span><h3><span class="section-number">11.6.3.1. </span>Traiettorie, coniche, ed energia<a class="headerlink" href="#traiettorie-coniche-ed-energia" title="Permalink to this heading">#</a></h3>
 <p>E” possibile dimostrare che il moto di ognuno dei due corpi è un moto piano, e che la traiettoria avviene descrive una conica.</p>
 <ul class="simple">
 <li><p><strong>todo</strong> Dimostrare che il moto è piano</p></li>
@@ -685,7 +701,7 @@ kernelspec:
 </ul>
 </div>
 <div class="section" id="traiettorie-chiuse-e-leggi-di-keplero">
-<span id="physics-hs-mechanics-dynamics-motion-gravitation-two-bodies-kepler"></span><h3><span class="section-number">11.6.2.2. </span>Traiettorie chiuse e leggi di Keplero<a class="headerlink" href="#traiettorie-chiuse-e-leggi-di-keplero" title="Permalink to this heading">#</a></h3>
+<span id="physics-hs-mechanics-dynamics-motion-gravitation-two-bodies-kepler"></span><h3><span class="section-number">11.6.3.2. </span>Traiettorie chiuse e leggi di Keplero<a class="headerlink" href="#traiettorie-chiuse-e-leggi-di-keplero" title="Permalink to this heading">#</a></h3>
 <p><strong>Prima legge.</strong> Un pianeta descrive un’orbita ellittica attorno al Sole, che si trova in uno dei due fuochi.</p>
 <p><strong>Seconda legge legge.</strong> Considerando l’area descritta dal moto del pianeta attorno al Sole, la velocità angolare è costante lungo la traiettoria.</p>
 <p><strong>Terza legge.</strong> In un sistema di pianeti, il quadrato del periodo delle orbite descritte dai pianeti è proporzionale al cubo del semiasse maggiore della traiettoria, <span class="math notranslate nohighlight">\(T^2 \propto a^3\)</span>.</p>
@@ -863,9 +879,10 @@ a & = \frac{1}{2} \left( r(0)+r(\pi) \right) = \\
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gravitazione-universale">11.6.1. Legge di gravitazione universale</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-dei-due-corpi">11.6.2. Problema dei due corpi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-coniche-ed-energia">11.6.2.1. Traiettorie, coniche, ed energia</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-chiuse-e-leggi-di-keplero">11.6.2.2. Traiettorie chiuse e leggi di Keplero</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leggi-di-keplero">11.6.2. Leggi di Keplero</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-dei-due-corpi">11.6.3. Problema dei due corpi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-coniche-ed-energia">11.6.3.1. Traiettorie, coniche, ed energia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-chiuse-e-leggi-di-keplero">11.6.3.2. Traiettorie chiuse e leggi di Keplero</a></li>
 </ul>
 </li>
 </ul>
