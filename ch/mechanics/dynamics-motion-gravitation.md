@@ -12,12 +12,13 @@ kernelspec:
 ---
 -->
 
+<!--
 ```{article-info}
 :author: basics
 :date: "{sub-ref}`today`"
 :read-time: "{sub-ref}`wordcount-minutes` min read"
 ```
-
+-->
 
 (physics-hs:mechanics:dynamics:motion:gravitation)=
 # Gravitazione
@@ -35,10 +36,39 @@ kernelspec:
 - problema dei 3 corpi:
   - punti lagrangiani. Esempio: telescopio Webb
 -->
+Newton formula anche la prima teoria della gravitazione, riconoscendola come causa unica del moto dei corpi celesti e della caduta dei corpi nei pressi della superficie terrestre.
 
 (physics-hs:mechanics:dynamics:motion:gravitation:newton)=
 ## Legge di gravitazione universale
-$$\vec{F}_{10} = G \, m_0 \, m_1 \frac{\vec{r}_{01}}{\left|\vec{r}_{01}\right|^3}$$
+ La **legge di gravitazione universale** formulata da Newton prevede che un corpo di massa $m_1$ che si trova nel punto $P_1$ è soggetto alla forza di attrazione
+
+$$\vec{F}_{10} = G \, m_0 \, m_1 \frac{P_0 - P_1}{\ \left| P_0 - P_1 \right|^3} \ ,$$
+
+verso un corpo di massa $m_0$ che si trova nel punto $P_0$. La direzione della forza è lungo la congiungente dei due punti. L'intensità della forza è proporzionale alle due masse, e all'inverso del quadrato della loro distanza, con la costante di proporzionalità
+
+$$G = 6.67 \cdot 10^{-11} \dfrac{N \, m^2}{kg^2} \ ,$$
+
+che prende il nome di **costante di gravitazione universale**.
+
+## Leggi di Keplero
+Le equazioni della dinamica e la legge di gravitazione universale da lui formulate, permise a Newton di dimostrare le **tre leggi di Keplero** che descrivono il moto *limitato* (**todo** *trovare sinonimo*) di due corpi celesti, come ad esempio il moto di un pianeta rispetto al Sole, o il moto di un satellite rispetto al pianeta di riferimento.
+
+```{prf:definition} Prima legge di Keplero
+Il moto di un pianeta rispetto al Sole descrive una traiettoria ellittica, e il Sole si trova in uno dei suoi fuochi.
+
+```
+```{prf:definition} Seconda legge di Keplero
+Il moto di un pianeta rispetto al Sole ha una velocità areolare costante.
+
+```
+```{prf:definition} Prima legge di Keplero
+Il periodo $T$ dell'orbita è in relazione al semiasse maggiore $a$
+
+$$T = \pi \dfrac{a^{\frac{3}{2}}}{\sqrt{GM}} \ \quad , \quad T^2 \sim a^3$$
+
+```
+
+
 
 (physics-hs:mechanics:dynamics:motion:gravitation:two-bodies)=
 ## Problema dei due corpi
