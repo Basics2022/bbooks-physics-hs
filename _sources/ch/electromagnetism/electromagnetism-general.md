@@ -77,9 +77,9 @@ $$\dot{Q}_V = - \Phi_{\partial V}(\vec{j}) = - i_{\partial V} \ .$$ (eq:principl
 **Equazioni di Maxwell in forma integrale.**
 
 $$\begin{cases}
-  \Phi_V(\partial \vec{d}) = Q_{V,f} \\
+  \Phi_{\partial V}(\vec{d}) = Q_{V,f} \\
   \Gamma_{\partial S}(\vec{e}) + \dot{\Phi}_S(\vec{b}) = 0 \\
-  \Phi_V(\partial \vec{b}) = 0 \\
+  \Phi_{\partial V}(\vec{b}) = 0 \\
   \Gamma_{\partial S}(\vec{h}) - \dot{\Phi}_S(\vec{d}) = \Phi_S(\vec{j}_f)
 \end{cases}$$ (eq:principles:maxwell)
 
