@@ -1,8 +1,10 @@
+<!--
 ```{article-info}
 :author: basics
 :date: "{sub-ref}`today`"
 :read-time: "{sub-ref}`wordcount-minutes` min read"
 ```
+-->
 
 (physics-hs:mechanics:actions:examples)=
 # Esempi di forze
@@ -22,6 +24,7 @@ $$G = 6.67 \cdot 10^{-11} \frac{N \, m^2}{kg^2}$$
 
 la **costante di gravitazione universale**, considerata una costante della natura. **todo**
 
+(physics-hs:mechanics:actions:gravitation:field)=
 ### Campo di gravità
 Il campo di gravità generato da una massa $m_2$ posta in $P_2$ è **todo** una funzione dello spazio che associa a ogni punto $P$ un vettore,
 
@@ -37,6 +40,7 @@ $$\vec{g}(\vec{r}_1) = \dfrac{\vec{F}_{12}}{m_1} = G \dfrac{m_2}{r_{12}^2} \hat{
 
 $$V(P) = - G \, m \, m_1 \frac{1}{|P - P_1|}$$
 
+(physics-hs:mechanics:actions:gravitation:earth)=
 ### Campo di gravità nei pressi della superficie terrestre
 All'interno di un dominio limitato nei pressi della superficie terrestre, è comune approssimare il campo di gravitazione terrestre come un campo uniforme, diretto lungo la verticale locale verso il centro della terra e di intensità $g = G \frac{M_E}{R_E^2}$.
 
@@ -67,15 +71,52 @@ $$\begin{aligned}
 
 
 ```
+
+(physics-hs:mechanics:actions:gravitation:spring)=
 ## Azioni elastiche: molle lineari
 
 Secondo la legge di Hooke, il comportamento di una molla elastica lineare ideale è descritto dall'equazione costitutiva
 
+$$\vec{F} = - k (P - P_0) \ ,$$ (eq:spring)
+
+essendo $\vec{F}$ la forza trasmessa dalla molla al corpo in $P$, $P_0$ l'altra estremità della molla, $k$ la costante elastica della molla.
+
+**todo** *Considerare il caso con lunghezza a riposo non nulla; discutere il caso 1-dimensionale; aggiungere esempi*
+
+<!--
 $$F = k (\ell - \ell_0) \ ,$$
 
 essendo $F$ il valore assoluto della forza trasmessa dalla molla, $k$ la costante elastica della molla, $\ell_0$ la lunghezza a riposo della molla, e $\ell$ la lunghezza nella configurazione considerata.
+-->
 
 **Energia potenziale.** 
+
+Il lavoro elementare della forza {eq}`eq:spring` di una molla elastica è
+
+$$\begin{aligned}
+ \delta L & = \vec{F} \cdot d \vec{r} = \\
+ & = - k (P-P_0) \cdot d \vec{r} = \\
+ & = - k (\vec{r} - \vec{r}_0) \cdot d \vec{r} = \\
+ & = - k (\vec{r} - \vec{r}_0) \cdot d ( \vec{r} - \vec{r}_0 ) = \\
+ & = - d \left( \dfrac{1}{2} k (\vec{r} - \vec{r}_0) \cdot (\vec{r} - \vec{r}_0) \right) = \\
+ & = - d \left(  \dfrac{1}{2} k \left| \vec{r} - \vec{r}_0 \right|^2 \right) \ ,
+\end{aligned}$$
+
+avendo qui ipotizzato che la costante elastica $k$ sia costante e che il punto $P_0$ non si muova. Nel caso in cui si spostano entrambi gli estremi della molla, il lavoro rotale compiuto dalla molla è la somma del lavoro fatto a entrambi gli estremi
+
+$$\begin{aligned}
+  \delta L
+  & = \vec{F}_1 \cdot d \vec{r}_1 + \vec{F}_2 \cdot d \vec{r}_2 = \\
+  & = \vec{F}_1 \cdot d \vec{r}_1 - \vec{F}_1 \cdot d \vec{r}_2 = \\
+  & = \vec{F}_1 \cdot \left( d \vec{r}_1 - \cdot d \vec{r}_2 \right) = \\
+  & = - k ( \vec{r}_1 - \vec{r}_2 ) \cdot d \left( \vec{r}_1 - \vec{r}_2 \right) = \\
+  & = - d \left( \dfrac{1}{2} k ( \vec{r}_1 - \vec{r}_2 ) \cdot \left( d \vec{r}_1 - \vec{r}_2 \right) \right) = \\
+  & = - d \left( \dfrac{1}{2} k | \vec{r}_1 - \vec{r}_2 |^2 \right) \ , 
+\end{aligned}$$
+
+poiché la forza all'estremità $1$ è uguale e contraria alla forza all'estremità $2$, $\vec{F}_1 = - \vec{F}_2$. 
+
+**todo** *Considerare il caso con lunghezza a riposo non nulla*
 
 $$\delta L =  F d \ell = k (\ell - \ell_0) d \ell$$
 
@@ -90,11 +131,11 @@ I vincoli ideali sono modelli di vincolo che **non compiono lavoro netto**, e pe
 
 $$\begin{aligned}
 P & = \vec{v}_1     \cdot \vec{F}_{21} + \vec{v}_2     \cdot \vec{F}_{12} 
-    + \symbf{\omega}_1 \cdot \vec{M}_{21} + \symbf{\omega}_2 \cdot \vec{M}_{12} = \\ 
+    + \vec{\omega}_1 \cdot \vec{M}_{21} + \vec{\omega}_2 \cdot \vec{M}_{12} = \\ 
   & = ( \vec{v}_1 - \vec{v}_2 ) \cdot \vec{F}_{21}
-    + ( \symbf{\omega}_1 - \symbf{\omega}_2 ) \cdot \vec{M}_{21} = \\ 
+    + ( \vec{\omega}_1 - \vec{\omega}_2 ) \cdot \vec{M}_{21} = \\ 
   & = \vec{v}^{rel}_{21} \cdot \vec{F}_{21}
-    + \symbf{\omega}^{rel}_{21} \cdot \vec{M}_{21} \ ,
+    + \vec{\omega}^{rel}_{21} \cdot \vec{M}_{21} \ ,
 \end{aligned}$$
 
 entrambi i termini sono nulli, o perché il moto relativo è nullo, o le azioni agiscono in direzione ortogonale ai moti relativi.
@@ -105,7 +146,7 @@ Il vincolo di incastro impedisce sia il moto sia la rotazione relativa,
 $$
 \begin{cases}
   \vec{0} = \vec{v}^{rel}_{21}     = \vec{v}_{2}     - \vec{v}_{1} \\
-  \vec{0} = \symbf{\omega}^{rel}_{21} = \symbf{\omega}_{2} - \symbf{\omega}_{1} \\
+  \vec{0} = \vec{\omega}^{rel}_{21} = \vec{\omega}_{2} - \vec{\omega}_{1} \\
 \end{cases}
 \qquad , \qquad
 \begin{cases}
@@ -121,7 +162,7 @@ $$
 \begin{cases}
   \quad \forall \ \vec{v}^{rel}_{\hat{t},21}     = \vec{v}_{\hat{t},2}     - \vec{v}_{\hat{t},1} \\
           0  = v^{rel}_{\hat{n},21}     = v_{\hat{n},2}     - v_{\hat{n},1} \\
-  \vec{0} = \symbf{\omega}^{rel}_{21} = \symbf{\omega}_{2} - \symbf{\omega}_{1} \\
+  \vec{0} = \vec{\omega}^{rel}_{21} = \vec{\omega}_{2} - \vec{\omega}_{1} \\
 \end{cases}
 \qquad , \qquad
 \begin{cases}
@@ -138,7 +179,7 @@ $$
 \begin{cases}
   \vec{0} = \vec{v}^{rel}_{21}     = \vec{v}_{2}     - \vec{v}_{1} \\
   \quad \forall \ \omega^{rel}_{\hat{t},21} = \omega_{\hat{t},2} - \omega_{\hat{t},1} \\
-  \vec{0} = \symbf{\omega}^{rel}_{\hat{n},21} = \symbf{\omega}_{\hat{n},2} - \symbf{\omega}_{\hat{n},1} \\
+  \vec{0} = \vec{\omega}^{rel}_{\hat{n},21} = \vec{\omega}_{\hat{n},2} - \vec{\omega}_{\hat{n},1} \\
 \end{cases}
 \qquad , \qquad
 \begin{cases}
@@ -154,7 +195,7 @@ Il vincolo di pattino impedisce il moto relativo, consentendo una rotazione gene
 $$
 \begin{cases}
   \vec{0} = \vec{v}^{rel}_{21}     = \vec{v}_{2}     - \vec{v}_{1} \\
-  \quad \forall \symbf{\omega}^{rel}_{21} = \symbf{\omega}_{2} - \symbf{\omega}_{1} \\
+  \quad \forall \vec{\omega}^{rel}_{21} = \vec{\omega}_{2} - \vec{\omega}_{1} \\
 \end{cases}
 \qquad , \qquad
 \begin{cases}
@@ -171,7 +212,7 @@ $$
   \quad \forall \ \vec{v}^{rel}_{\hat{t},21}     = \vec{v}_{\hat{t},2}     - \vec{v}_{\hat{t},1} \\
           0  = v^{rel}_{\hat{n},21}     = v_{\hat{n},2}     - v_{\hat{n},1} \\
   \quad \forall \ \omega^{rel}_{\hat{t},21} = \omega_{\hat{t},2} - \omega_{\hat{t},1} \\
-  \vec{0} = \symbf{\omega}^{rel}_{\hat{n},21} = \symbf{\omega}_{\hat{n},2} - \symbf{\omega}_{\hat{n},1} \\
+  \vec{0} = \vec{\omega}^{rel}_{\hat{n},21} = \vec{\omega}_{\hat{n},2} - \vec{\omega}_{\hat{n},1} \\
 \end{cases}
 \qquad , \qquad
 \begin{cases}

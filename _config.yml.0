@@ -12,60 +12,8 @@ execute:
 
 # Define the name of the latex output file for PDF builds
 latex:
-  latex_engine: xelatex
-  uset_jupyterbook_latex: true
   latex_documents:
     targetname: book.tex
-# latex_additional_preamble: |
-#   % Custom dropdown style
-#   \usepackage{tcolorbox}
-#   \usepackage{amsthm}
-#   \tcbuselibrary{listingsutf8}
-#   \tcbuselibrary{theorems}
-
-#   % Define a colored box for admonitions
-#   \newtcolorbox{customdropdown}[1][]{
-#     colback=blue!10,
-#     colframe=blue!50!black,
-#     fonttitle=\bfseries,
-#     title=#1,
-#     sharp corners,
-#     boxrule=0.5mm,
-#     left=3mm,
-#     right=3mm,
-#     top=1mm,
-#     bottom=1mm
-#   }
-#   
-#   % Define a new environment for definitions
-#   \theoremstyle{definition}
-#   \newtheorem{definition}{Definition}[section]
-
-#   % Optional: Redefine the appearance for definitions using tcolorbox
-#   \usepackage{tcolorbox}
-#   \tcolorboxenvironment{definition}{
-#     colback=green!5,
-#     colframe=green!60!black,
-#     fonttitle=\bfseries,
-#     sharp corners,
-#     boxrule=0.75mm,
-#   }
-    
-    
-#   % Custom definition style
-#   \newtcolorbox{customdefinition}[1][]{
-#     colback=green!5,
-#     colframe=green!50!black,
-#     fonttitle=\bfseries,
-#     title=Definition,
-#     sharp corners,
-#     boxrule=0.75mm,
-#     left=3mm,
-#     right=3mm,
-#     top=1mm,
-#     bottom=1mm,
-#     #1
-#   }
 
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
