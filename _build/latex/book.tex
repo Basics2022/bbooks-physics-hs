@@ -11850,7 +11850,7 @@ Onde viaggianti
 
 
 \end{sphinxadmonition}
-\label{ch/waves/intro:speed-of-wave}
+\label{ch/waves/intro:wave-speed}
 \begin{sphinxadmonition}{note}{Definition 18.2.3 (Velocità della perturbazione)}
 
 
@@ -11901,6 +11901,30 @@ Soluzione generale 3\sphinxhyphen{}dimensionale
 \sphinxAtStartPar
 La diffrazione è una conseguenza dell’incontro di un’onda con un ostacolo o un’apertura di dimensione parabonabile alla lunghezza d’onda ({\hyperref[\detokenize{ch/waves/intro:wave-length}]{\sphinxcrossref{Definition 18.2.2}}}) della perturbazione.
 
+\sphinxAtStartPar
+\sphinxstylestrong{Applicazioni ed esempi.} Spettroscopia
+\label{ch/waves/intro:example-3}
+\begin{sphinxadmonition}{note}{Example 18.3.1 (Doppia fenditura)}
+
+
+
+\sphinxAtStartPar
+Modello: diffrazione dovuta a due fessure sufficientmente ridotte da poter essere considerate sorgenti puntiformi (in fase, o no? discutere)
+\end{sphinxadmonition}
+\label{ch/waves/intro:example-4}
+\begin{sphinxadmonition}{note}{Example 18.3.2 (Singola fenditura)}
+
+
+
+\sphinxAtStartPar
+Modello: diffrazione dovuta alla sovrapposizione degli effetti di una distribuzione di sorgenti punti.
+\end{sphinxadmonition}
+\label{ch/waves/intro:example-5}
+\begin{sphinxadmonition}{note}{Example 18.3.3 (Reticolo di diffrazione)}
+
+
+\end{sphinxadmonition}
+
 
 \subsection{Polarizzazione}
 \label{\detokenize{ch/waves/intro:polarizzazione}}\label{\detokenize{ch/waves/intro:physics-hs-waves-effects-polarization}}\begin{itemize}
@@ -11949,6 +11973,71 @@ Nel caso di sorgente a velocità costante, \(x_s(t) = x_{s,0} + v_s t\), e ricet
 
 \section{Ottica}
 \label{\detokenize{ch/waves/intro:ottica}}\label{\detokenize{ch/waves/intro:physics-hs-waves-optics}}
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Equazione delle onde per il campo EM
+
+\end{itemize}
+\label{ch/waves/intro:refraction-index}
+\begin{sphinxadmonition}{note}{Definition 18.4.1 (Indice di rifrazione)}
+
+
+
+\sphinxAtStartPar
+L’indice di rifrazione \(n_i\) di un materiale omogeneo è una proprietà del materiale che può essere definita come rapporto della velocità di propagazione della luce nel vuoto \(c\) e nel materiale \(c_i\),
+\begin{equation*}
+\begin{split}n_i = \frac{c_0}{c_i} \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+
+
+\subsection{Ottica geometrica}
+\label{\detokenize{ch/waves/intro:ottica-geometrica}}\label{\detokenize{ch/waves/intro:physics-hs-waves-optics-geometric}}
+\sphinxAtStartPar
+\sphinxstylestrong{Approssimazione con raggi di luce.} I raggi luminosi sono qualitativamente delle linee geometriche che indicano la propagazione della luce. Essi possono essere definiti come delle curve perpendicolari in ogni punto ai fronti d’onda del campo elettromagnetico.
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleemphasis{discutere approssimazione geometrica, con raggi luminosi; quando vale?}
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleemphasis{aggiungere immagini per questa approssimazione: bridging EM field and geometrical optics, some examples: free space homogeneous medium; discontinuous medium; continuously varying in\sphinxhyphen{}homogeneous medium: miraggio e fata morgana}
+
+\end{itemize}
+
+
+\subsubsection{Princìpi dell’ottica geometrica}
+\label{\detokenize{ch/waves/intro:principi-dell-ottica-geometrica}}\label{\detokenize{ch/waves/intro:physics-hs-waves-optics-geometric-principles}}
+\sphinxAtStartPar
+\sphinxstylestrong{Propagazione rettilinea in un mezzo omogeneo.} In un mezzo omogeneo, con indice di rifrazione \(n\) ({\hyperref[\detokenize{ch/waves/intro:refraction-index}]{\sphinxcrossref{Definition 18.4.1}}}) uniforme, i raggi luminosi si propagano su traiettorie rettilinee.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Legge di Snell \sphinxhyphen{} riflessione e rifrazione tra mezzi discontinui.} Per soddisfare le condizioni di continuità del campo elettromagnetico in corrispondenza di una discontinuità di proprietà fisiche, un raggio che si propaga nel mezzo 1 e arriva alla discontinuità con il mezzo 2 formando un angolo \(\theta{1,i}\) con la direzione normale, in generale:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+viene riflesso con lo stesso angolo \(\theta_{1,r} = \theta_{1,i}\)
+
+\item {} 
+\sphinxAtStartPar
+viene trasmesso con angolo \(\theta_{2,t}\), tale che
+\begin{equation*}
+\begin{split}\frac{\sin \theta_{2,t}}{\sin \theta_{1,i}} = \dfrac{n_1}{n_2} = \dfrac{c_2}{c_1} \ .\end{split}
+\end{equation*}
+\end{itemize}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{Stabilire i coefficienti di riflessione e trasmissione. Scrivere sezione in physics\sphinxhyphen{}electromagnetism}
+
+
+\subsubsection{Lenti}
+\label{\detokenize{ch/waves/intro:lenti}}\label{\detokenize{ch/waves/intro:physics-hs-waves-optics-geometric-lenses}}
 \sphinxstepscope
 
 
@@ -16024,8 +16113,14 @@ forte
 \bigletter{example\sphinxhyphen{}2}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/electromagnetism/electric\sphinxhyphen{}machines}\sphinxstyleindexpageref{ch/electromagnetism/electric-machines:\detokenize{example-2}}
 \indexspace
+\bigletter{example\sphinxhyphen{}3}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/waves/intro}\sphinxstyleindexpageref{ch/waves/intro:\detokenize{example-3}}
+\indexspace
+\bigletter{example\sphinxhyphen{}4}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}4}\sphinxstyleindexextra{ch/waves/intro}\sphinxstyleindexpageref{ch/waves/intro:\detokenize{example-4}}
+\indexspace
 \bigletter{example\sphinxhyphen{}5}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-5}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/waves/intro}\sphinxstyleindexpageref{ch/waves/intro:\detokenize{example-5}}
 \indexspace
 \bigletter{example\sphinxhyphen{}6}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}6}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-6}}
@@ -16060,8 +16155,8 @@ forte
 \bigletter{proposition\sphinxhyphen{}4}
 \item\relax\sphinxstyleindexentry{proposition\sphinxhyphen{}4}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{proposition-4}}
 \indexspace
-\bigletter{speed\sphinxhyphen{}of\sphinxhyphen{}wave}
-\item\relax\sphinxstyleindexentry{speed\sphinxhyphen{}of\sphinxhyphen{}wave}\sphinxstyleindexextra{ch/waves/intro}\sphinxstyleindexpageref{ch/waves/intro:\detokenize{speed-of-wave}}
+\bigletter{refraction\sphinxhyphen{}index}
+\item\relax\sphinxstyleindexentry{refraction\sphinxhyphen{}index}\sphinxstyleindexextra{ch/waves/intro}\sphinxstyleindexpageref{ch/waves/intro:\detokenize{refraction-index}}
 \indexspace
 \bigletter{system\sphinxhyphen{}configuration}
 \item\relax\sphinxstyleindexentry{system\sphinxhyphen{}configuration}\sphinxstyleindexextra{ch/mechanics/kinematics}\sphinxstyleindexpageref{ch/mechanics/kinematics:\detokenize{system-configuration}}
@@ -16110,6 +16205,9 @@ forte
 \indexspace
 \bigletter{wave\sphinxhyphen{}length}
 \item\relax\sphinxstyleindexentry{wave\sphinxhyphen{}length}\sphinxstyleindexextra{ch/waves/intro}\sphinxstyleindexpageref{ch/waves/intro:\detokenize{wave-length}}
+\indexspace
+\bigletter{wave\sphinxhyphen{}speed}
+\item\relax\sphinxstyleindexentry{wave\sphinxhyphen{}speed}\sphinxstyleindexextra{ch/waves/intro}\sphinxstyleindexpageref{ch/waves/intro:\detokenize{wave-speed}}
 \end{sphinxtheindex}
 
 \renewcommand{\indexname}{Indice}
