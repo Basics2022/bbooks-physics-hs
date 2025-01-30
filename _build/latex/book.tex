@@ -87,7 +87,7 @@
         
 
 \title{Fisica per le superiori}
-\date{28 gen 2025}
+\date{30 gen 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -3464,7 +3464,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-28 gen 2025
+30 gen 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3597,7 +3597,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-28 gen 2025
+30 gen 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3685,7 +3685,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-28 gen 2025
+30 gen 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3841,7 +3841,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-28 gen 2025
+30 gen 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -4135,7 +4135,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-28 gen 2025
+30 gen 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -4434,7 +4434,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-28 gen 2025
+30 gen 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -11690,37 +11690,199 @@ onde radio, micro, IR, luce visibile, UV, \(\gamma\), \(X\)
 
 \end{itemize}
 
-\sphinxAtStartPar
-()=
-
 
 \section{Equazione delle onde in diversi sistemi}
-\label{\detokenize{ch/waves/intro:equazione-delle-onde-in-diversi-sistemi}}
+\label{\detokenize{ch/waves/intro:equazione-delle-onde-in-diversi-sistemi}}\label{\detokenize{ch/waves/intro:physics-hs-waves-equation-examples}}
+\sphinxAtStartPar
+In questa sezione viene discussa la comparsa dell’equazione delle onde in diversi ambiti della fisica.
+
 
 \subsection{Sistemi meccanici}
-\label{\detokenize{ch/waves/intro:sistemi-meccanici}}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Azione assiale
+\label{\detokenize{ch/waves/intro:sistemi-meccanici}}\label{\detokenize{ch/waves/intro:physics-hs-waves-equation-examples-mechanics}}
 
-\item {} 
+\subsubsection{Azione assiale \sphinxhyphen{} catena di molle lineari}
+\label{\detokenize{ch/waves/intro:azione-assiale-catena-di-molle-lineari}}\label{\detokenize{ch/waves/intro:physics-hs-waves-equation-examples-mechanics-axial}}\begin{equation*}
+\begin{split}M_j \ddot{U}_j(t) = F_{j,j-1} + F_{j,j+1} + F_j^{ext}(t) = K_{j,j-1} \left( U_{j-1}(t) - U_j(t) \right) + K_{j,j+1} \left( U_{j+1}(t) - U_{j}(t) \right) + f_j^{ext}\end{split}
+\end{equation*}
 \sphinxAtStartPar
-Torsione
+…
 
-\end{itemize}
+\sphinxAtStartPar
+Se le molle hanno tutte la stessa rigidezza, \(K\),
+\begin{equation}\label{equation:ch/waves/intro:eq:axial:discrete:index}
+\begin{split}M_j \ddot{U}_j(t) - K \left( U_{j-1}(t) - 2 U_j(t) + U_{j+1}(t) \right) =  F^e_j(t) \ .\end{split}
+\end{equation}
+\sphinxAtStartPar
+\sphinxstylestrong{Condizioni iniziali e condizioni al contorno.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Forma matriciale.} Il problema può essere riscritto usando il formalismo matriciale come
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \mathbf{M} \ddot{\mathbf{U}} + \mathbf{K} \mathbf{U} = \mathbf{F}^e \ ,
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con le matrici
+\begin{equation*}
+\begin{split}\mathbf{K} = K \begin{bmatrix}
+   2    & -1    &  0    &  0    & 0     & \dots & 0     \\
+  -1    &  2    & -1    &  0    & 0     & \dots & 0     \\ 
+   0    & -1    &  2    & -1    & 0     & \dots & 0     \\
+  \dots & \dots & \dots & \dots & \dots & \dots & \dots \\
+   0    & 0     & \dots & 0     &    2  & -1    &  0    \\  
+   0    & 0     & \dots & 0     &   -1  &  2    & -1    \\  
+\end{bmatrix}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\mathbf{M} = \begin{bmatrix}
+   M_1  &  0    &  0    &  \dots   & 0     \\
+   0    &  M_2  &  0    &  \dots   & 0     \\ 
+   0    &  0    &  M_3  &  \dots   & 0     \\
+  \dots & \dots & \dots &  \dots   & \dots \\
+   0    & 0     & \dots &  M_{n-1} & 0     \\  
+   0    & 0     & \dots &  0       & M_n   \\  
+\end{bmatrix}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\mathbf{U}(t) = \begin{bmatrix} U_0(t) & U_1(t) & \dots & U_n(t) \end{bmatrix}^T\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\mathbf{F}(t) = \begin{bmatrix} F_0(t) & F_1(t) & \dots & F_n(t) \end{bmatrix}^T\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Approssimazione di un problema continuo.} Gli elementi del vettore \(\mathbf{U}\) possono essere interpretati come i valori di una funzione del tempo e dello spazio, \(u(x,t)\), per determinati valori della variabile indipendente \(x\),
+\begin{equation*}
+\begin{split}U_j(t) = u(x_j, t) \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Se i punti di coordinata \(x_j\) hanno intervalli regolari,
+\begin{equation*}
+\begin{split}x_j = x_{j-1} + \Delta x \qquad , \qquad x_j = j \, \Delta x \qquad j = 0:n \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con \(\Delta x\) «sufficientemente piccolo», allora l’approssimazione in serie di Taylor
+\begin{equation*}
+\begin{split}\begin{aligned}
+  & u(x_i,t) \\
+  & u(x_i+\Delta x, t) = u(x_i,t) + \Delta x \partial_x u(x_i,t) + \dfrac{1}{2} \Delta x^2 \partial_{xx} u(x_i,t) + o(\Delta x^2) \\
+  & u(x_i-\Delta x, t) = u(x_i,t) - \Delta x \partial_x u(x_i,t) + \dfrac{1}{2} \Delta x^2 \partial_{xx} u(x_i,t) + o(\Delta x^2) \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+permette di riconoscere l’approssimazione centrata della derivata seconda \(\partial_{xx} u(x_i, t)\) valutata in \(x = x_i\),
+\begin{equation*}
+\begin{split}\partial_{xx} u(x_i,t) = \dfrac{u(x_i-\Delta x,t) - 2 u(x_i,t) + u(x_i+\Delta x,t)}{\Delta x^2}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}M_j \partial_{tt} u(x_j,t) - \Delta x^2 K \partial_{xx} u(x_j,t) = F_j(t) \end{split}
+\end{equation*}
+
+\subsubsection{Torsione \sphinxhyphen{} catena di molle rotazionali}
+\label{\detokenize{ch/waves/intro:torsione-catena-di-molle-rotazionali}}\label{\detokenize{ch/waves/intro:physics-hs-waves-equation-examples-mechanics-torsion}}\begin{equation*}
+\begin{split}I \partial_{tt} \theta(x_j,t) - \Delta x^2 K_t \partial_{xx} \theta(x_j,t) = M_j(t)\end{split}
+\end{equation*}
+
+\subsubsection{Filo teso}
+\label{\detokenize{ch/waves/intro:filo-teso}}\label{\detokenize{ch/waves/intro:physics-hs-waves-equation-examples-mechanics-string}}\begin{equation*}
+\begin{split}M_j \partial_{tt} u(x_j,t) - \Delta x^2 N_0 \partial_{xx} u(x_j,t) = F_j(t)\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Esempio: corde di strumenti musicali.
 
 
 \subsection{Fluidi}
-\label{\detokenize{ch/waves/intro:fluidi}}\begin{itemize}
+\label{\detokenize{ch/waves/intro:fluidi}}\label{\detokenize{ch/waves/intro:physics-hs-waves-equation-examples-fluids}}
+
+\subsubsection{Suono}
+\label{\detokenize{ch/waves/intro:suono}}\label{\detokenize{ch/waves/intro:physics-hs-waves-equation-examples-fluids-sound}}
+\sphinxAtStartPar
+La percezione umana dell’udito è legata alla trasduzione di perturbazioni di pressione di ampiezza limitata da parte del nostro sistema di misura che va dall’orecchio al nostro cervello, capace di percepire perturbazioni di frequenza compresa qualitativamente tra \(20 \, \text{Hz}\) e \(20.000 \, \text{Hz}\).
+
+\sphinxAtStartPar
+\sphinxstylestrong{Suono in un tubo.}
+
+\sphinxAtStartPar
+Poi da cancellare o riscrivere meglio per il livello
+\begin{equation*}
+\begin{split}P(\rho,s)\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}d P = \left( \dfrac{\partial P}{\partial \rho} \right)_s \, d \rho + \left( \dfrac{\partial P}{\partial s} \right)_{\rho} \, ds \end{split}
+\end{equation*}\begin{equation*}
+\begin{split}
+\begin{cases}
+  \dfrac{1}{c^2} \partial_t P + \rho_0 \partial_x u = 0 \\
+  \rho_0 \partial_t u + \partial_x P = 0 \\
+\end{cases}
+\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\dfrac{1}{c^2} \partial_{tt} P - \partial_{xx} P = 0\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Suono nello spazio.}
+\begin{equation*}
+\begin{split}\dfrac{1}{c^2} \partial_{tt} P - \nabla^2 P = 0\end{split}
+\end{equation*}
+
+\subsubsection{Onde su superficie libera}
+\label{\detokenize{ch/waves/intro:onde-su-superficie-libera}}\label{\detokenize{ch/waves/intro:physics-hs-waves-equation-examples-fluids-surface}}
+
+\subsection{Campo elettromagnetico}
+\label{\detokenize{ch/waves/intro:campo-elettromagnetico}}\label{\detokenize{ch/waves/intro:physics-hs-waves-equation-examples-em}}
+
+\section{Soluzioni particolari}
+\label{\detokenize{ch/waves/intro:soluzioni-particolari}}\label{\detokenize{ch/waves/intro:physics-hs-waves-equation-solutions}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-Pressione
+Onde stazionarie
+
+\item {} 
+\sphinxAtStartPar
+Onde viaggianti
 
 \end{itemize}
 
 
-\subsection{}
-\label{\detokenize{ch/waves/intro:id1}}
+\subsection{Frequenza, lunghezza d’onda e relazione con velocità di propagazione della perturbazione}
+\label{\detokenize{ch/waves/intro:frequenza-lunghezza-d-onda-e-relazione-con-velocita-di-propagazione-della-perturbazione}}\label{ch/waves/intro:wave-length}
+\begin{sphinxadmonition}{note}{Definition 18.2.2 (Frequenza)}
+
+
+\end{sphinxadmonition}
+\label{ch/waves/intro:wave-length}
+\begin{sphinxadmonition}{note}{Definition 18.2.2 (Lunghezza d’onda)}
+
+
+\end{sphinxadmonition}
+\label{ch/waves/intro:speed-of-wave}
+\begin{sphinxadmonition}{note}{Definition 18.2.3 (Velocità della perturbazione)}
+
+
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+Per i fenomeni fisici governati da problemi lineari, vale il \sphinxstylestrong{principio di sovrapposizione delle cause e degli effetti}. …
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Soluzione generale 1\sphinxhyphen{}dimensionale
+\begin{equation*}
+\begin{split}f(x,t) = A_{+}(x - c t) + A_{-}(x + ct)\end{split}
+\end{equation*}
+\end{itemize}
+\subsubsection*{Verifica della soluzione}
+\begin{equation*}
+\begin{split}\begin{aligned}
+\partial_x    f & = A'_+(x-ct) + A'_-(x+ct) \\
+\partial_{xx} f & = A''_+(x-ct) + A''_-(x+ct) \\
+\partial_t    f & = - c \, A'_+(x-ct) + c \, A'_-(x+ct) \\
+\partial_{tt} f & = c^2 \, A''_+(x-ct) + c^2 \,  A''_-(x+ct) \\
+\end{aligned}\end{split}
+\end{equation*}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Soluzione generale 3\sphinxhyphen{}dimensionale
+\begin{equation*}
+\begin{split}f(r,t) = \dfrac{A(r-ct)}{r}\end{split}
+\end{equation*}
+\end{itemize}
+
 
 \section{Effetti associati}
 \label{\detokenize{ch/waves/intro:effetti-associati}}\label{\detokenize{ch/waves/intro:physics-hs-waves-effects}}
@@ -11736,6 +11898,9 @@ Pressione
 
 \subsection{Diffrazione}
 \label{\detokenize{ch/waves/intro:diffrazione}}\label{\detokenize{ch/waves/intro:physics-hs-waves-effects-diffraction}}
+\sphinxAtStartPar
+La diffrazione è una conseguenza dell’incontro di un’onda con un ostacolo o un’apertura di dimensione parabonabile alla lunghezza d’onda ({\hyperref[\detokenize{ch/waves/intro:wave-length}]{\sphinxcrossref{Definition 18.2.2}}}) della perturbazione.
+
 
 \subsection{Polarizzazione}
 \label{\detokenize{ch/waves/intro:polarizzazione}}\label{\detokenize{ch/waves/intro:physics-hs-waves-effects-polarization}}\begin{itemize}
@@ -11754,6 +11919,32 @@ Onde EM
 \label{\detokenize{ch/waves/intro:effetto-doppler}}\label{\detokenize{ch/waves/intro:physics-hs-waves-effects-doppler}}
 \sphinxAtStartPar
 Quando la sorgente e l’osservatore sono in moto relativo, la frequenza percepita dall’osservatore è diversa dalla frequenza emessa dalla sorgente.
+\begin{equation*}
+\begin{split}A(t) = F \cos(\Omega t )\end{split}
+\end{equation*}
+
+
+\sphinxAtStartPar
+con \(t_{ret}\) l’istante di tempo in cui è stato emesso il segnale dalla sorgente che raggiunge il punto \(x\) nell’istante \(t > t_{ret}\) (causalità)
+\begin{equation*}
+\begin{split}\begin{aligned}
+ | x - x_s(t_{ret}) | & = \quad  c (t - t_{ret}) \\
+   x - x_s(t_{ret})   & = \pm c (t - t_{ret}) = \begin{cases} \quad c ( t-t_{ret} ) & , \quad x \ge x_s(t_{ret}) \\ - c ( t-t_{ret} ) & , \quad  x \le x_s(t_{ret}) \\ \end{cases}
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Nel caso di sorgente a velocità costante, \(x_s(t) = x_{s,0} + v_s t\), e ricettore a velocità costante \(x_r(t) = x_{r,0} + v_r t\).
+\begin{equation*}
+\begin{split}\begin{aligned}
+  x_r(t) -x_s(t_{ret}) & = \pm c ( t - t_{ret} ) \\
+  x_{r,0} + v_r t - x_{s,0} - v_s t_{ret} & = \pm c ( t - t_{ret} ) \\
+\end{aligned}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}(v_s \mp c) t_{ret} = (v_r \mp c) t + x_{r,0} - x_{s,0}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}t_{ret} = \dfrac{v_r \mp c}{v_s \mp c} t + \dfrac{x_{r,0} - x_{s,0}}{v_s \mp c}\end{split}
+\end{equation*}
+
 
 
 \section{Ottica}
@@ -15869,6 +16060,9 @@ forte
 \bigletter{proposition\sphinxhyphen{}4}
 \item\relax\sphinxstyleindexentry{proposition\sphinxhyphen{}4}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{proposition-4}}
 \indexspace
+\bigletter{speed\sphinxhyphen{}of\sphinxhyphen{}wave}
+\item\relax\sphinxstyleindexentry{speed\sphinxhyphen{}of\sphinxhyphen{}wave}\sphinxstyleindexextra{ch/waves/intro}\sphinxstyleindexpageref{ch/waves/intro:\detokenize{speed-of-wave}}
+\indexspace
 \bigletter{system\sphinxhyphen{}configuration}
 \item\relax\sphinxstyleindexentry{system\sphinxhyphen{}configuration}\sphinxstyleindexextra{ch/mechanics/kinematics}\sphinxstyleindexpageref{ch/mechanics/kinematics:\detokenize{system-configuration}}
 \indexspace
@@ -15913,6 +16107,9 @@ forte
 \indexspace
 \bigletter{thermodynamics:principles:open:ex:turbine}
 \item\relax\sphinxstyleindexentry{thermodynamics:principles:open:ex:turbine}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}open}\sphinxstyleindexpageref{ch/thermodynamics/principles-open:\detokenize{thermodynamics:principles:open:ex:turbine}}
+\indexspace
+\bigletter{wave\sphinxhyphen{}length}
+\item\relax\sphinxstyleindexentry{wave\sphinxhyphen{}length}\sphinxstyleindexextra{ch/waves/intro}\sphinxstyleindexpageref{ch/waves/intro:\detokenize{wave-length}}
 \end{sphinxtheindex}
 
 \renewcommand{\indexname}{Indice}
