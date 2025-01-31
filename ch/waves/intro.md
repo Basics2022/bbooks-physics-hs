@@ -274,15 +274,20 @@ $$n_i = \frac{c_0}{c_i} \ .$$
 #### Princìpi dell'ottica geometrica
 **Propagazione rettilinea in un mezzo omogeneo.** In un mezzo omogeneo, con indice di rifrazione $n$ ({prf:ref}`refraction-index`) uniforme, i raggi luminosi si propagano su traiettorie rettilinee.
 
-**Legge di Snell - riflessione e rifrazione tra mezzi discontinui.** Per soddisfare le condizioni di continuità del campo elettromagnetico in corrispondenza di una discontinuità di proprietà fisiche, un raggio che si propaga nel mezzo 1 e arriva alla discontinuità con il mezzo 2 formando un angolo $\theta{1,i}$ con la direzione normale, in generale:
-- viene riflesso con lo stesso angolo $\theta_{1,r} = \theta_{1,i}$
+**Legge di Snell - riflessione e rifrazione tra mezzi discontinui.** Per soddisfare le condizioni di continuità del campo elettromagnetico in corrispondenza di una discontinuità di proprietà fisiche, un raggio che si propaga nel mezzo 1 e incidente su una discontinuità con il mezzo 2 con un angolo $\theta{1,i}$ con la direzione normale, in generale:
+- viene riflesso con lo stesso angolo 
+
+   $$\theta_{1,r} = \theta_{1,i}$$
+
 - viene trasmesso con angolo $\theta_{2,t}$, tale che
 
    $$\frac{\sin \theta_{2,t}}{\sin \theta_{1,i}} = \dfrac{n_1}{n_2} = \dfrac{c_2}{c_1} \ .$$
 
 **todo** *Stabilire i coefficienti di riflessione e trasmissione. Scrivere sezione in physics-electromagnetism*
 
+**Riflessione totale.** Quando $\frac{c_2}{c_1} > 1$ esiste un angolo di incidenza limite oltre al quale non avviene trasmissione nel secondo mezzo. Il valore massimo della funzione $\sin$ è 1; la condizione limite, di riflessione totale si ottiene quando 
 
+$$1 = \sin \theta_{2,t} = \frac{c_2}{c_1} \sin \theta_{1,i} \qquad \rightarrow \qquad $$
 
 
 (physics-hs:waves:optics:geometric:lenses)=
