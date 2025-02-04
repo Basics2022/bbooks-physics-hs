@@ -181,33 +181,57 @@ $$
 $$
 ```
 
+```{prf:example} Il dipolo elettrico
+:label: electric-dipole
+
+```
+
+```{prf:example}
+
+```
+
 
 (physics-hs:electromagnetism:electrostatics:e-field:media)=
 ## Campo elettrico nei materiali
 
+L'interazione dei materiali con un campo elettrico viene descritta qui e nella sezione [Corrente elettrica nella materia](physics-hs:electromagnetism:electric-current:media) del capitolo successivo. E' frequente analizzare la risposta di un materiale a un campo elettrico utilizzando una classificazione delle cariche elettriche presenti nel materiale in **cariche libere** (cariche elettriche non vincolate ai singoli atomi del materiale, ma condivise tra di essi, come gli *elettroni di conduzione* nei *metalli*) e **cariche vincolate** (cariche elettriche vincolate ai rispettivi nuclei, come gli elettroni degli orbitali più interni in un solido metallico, o gli elettroni dei materiali non conduttori - che hanno tutti gli elettroni vincolati a singoli atomi, e non condivisi all'interno dell'intero materiale).
+
 A seconda della loro interazione con un campo elettrico e alla loro capacità di condurre corrente, i materiali possono essere classificati come:
-- materiali conduttori
-- materiali dielettrici
+- materiali conduttori:
+  - permettono il passaggio della corrente elettrica, cioè il moto di **cariche elettriche libere**
+  - non mostrano polarizzazione, poiché le cariche libere rispondono a un campo elettrico esterno, disponendosi in una configurazione tale da annullare il campo elettrico totale all'interno del conduttore, si veda []() e l'esempio della [gabbia di Faraday]()
+- materiali isolanti:
+  - non permettono il passaggio di corrente elettrica. 
+  - Alcuni materiali isolanti, detti **dielettrici**, rispondono comunque a un campo elettrico "esterno" sotto forma di polarizzazione, cioè con un'orientazione della distribuzione di carica locale associata ai singoli atomi del materiale.
 - materiali semi-conduttori
 
-In generale, i materiali isotropi e lineari delle due famiglie possono essere rappresentati dall'equazione costitutiva
+In generale, i materiali isotropi e lineari conduttori e dielettrici possono essere rappresentati da un'equazione costitutiva dall'espressione
 
 $$\vec{d} := \varepsilon_0 \vec{e} + \vec{p} = \varepsilon \vec{e} = \varepsilon_r \varepsilon_0 \vec{e} \ ,$$
 
-avendo introdotto $\vec{p}$ il campo di **polarizzazione** come risposta del materiale a campi elettrici esterni, e il campo di spostamento $\vec{d}$ che riassume gli effetti del campo elettrico "esterno" $\vec{e}$ e della polarizzazione locale del materiale $\vec{p}$. Nel caso di materiali isotropi e lineari, il campo di spostamento $\vec{d}$ è proporzionale al campo elettrico "esterno" $\vec{e}$ e il ceofficiente di proporzionalità è definito costante dielettrica del materiale, $\varepsilon$, e può essere scritta come prodotto della costante dielettrica del vuoto e la costante dielettrica relativa del materiale (adimensionale),
+avendo introdotto $\vec{p}$ il campo di **polarizzazione** ($\vec{p} = \varepsilon_0 ( \varepsilon_r - 1) \vec{e}$ per materiali isotropi lineari) come risposta del materiale a campi elettrici esterni, e il campo di spostamento $\vec{d}$ che riassume gli effetti del campo elettrico "esterno" $\vec{e}$ e della polarizzazione locale del materiale $\vec{p}$. Nel caso di materiali isotropi e lineari, il campo di spostamento $\vec{d}$ è proporzionale al campo elettrico "esterno" $\vec{e}$ e il ceofficiente di proporzionalità è definito costante dielettrica del materiale, $\varepsilon$, e può essere scritta come prodotto della costante dielettrica del vuoto e la costante dielettrica relativa del materiale (adimensionale),
 
 $$\varepsilon_r = \frac{\varepsilon}{\varepsilon_0} \ .$$
 
 Tipicamente:
-- materiali conduttori manifestano una polarizzazione trascurabile, $\varepsilon_r \sim 1$, $\varepsilon \sim \varepsilon_0$
+- i materiali conduttori che mostrano un polarizzazione trascurabile, $\vec{p} \sim \vec{0}$, hanno $\varepsilon_r \sim 1$, $\varepsilon \sim \varepsilon_0$. La risposta a un campo elettrico esterno si manifesta in una disposizione delle cariche libere
 - materiali dielettrici manifestano una polarizzazione che si manifesta con una costante dielettrica relativa, $\varepsilon_r > 1$, $\varepsilon > \varepsilon_0$
 
 
 ### Campo elettrostatico nei conduttori
-In condizioni statiche il campo elettrico nei conduttori è identicamente nullo. Le cariche elettriche (libere) si concentrano quindi in zone di superficie sottile e possono essere modellate in prima approssimazione con densità di carica superficiale.
+In condizioni statiche il campo elettrico nei conduttori è identicamente nullo. Le cariche elettriche (libere) si concentrano quindi in zone di superficie sottile e possono essere modellate in prima approssimazione con densità di carica superficiale. Se in una regione dello spazio il campo elettrico è identicamente nullo, allora i punti in quella regione hanno lo stesso pontenziale. E' quindi possibile affermare che nei punti all'interno di un materiale conduttore in condizioni di elettrostatica (o di resistività nulla o trascurabile, come sarà spiegato nel prossimo capitolo sulla [corrente elettrica](physics-hs:electromagnetism:electric-current) per la [conduzione nei solidi conduttori](physics-hs:electromagnetism:electric-current:solids:conductor)),
+
+- il campo elettrico è nullo $\vec{e}(P) = \vec{0}$
+- hanno lo stesso valore di potenziale, $v(P) = \overline{v}$, cioè sono **equipotenziali**.
 
 ```{note}
 Per materiali [conduttori di Ohm](physics-hs:electromagnetism:electric-current:solids:conductor:ohm), il campo elettrico è proporzionale alla [densità di corrente elettrica](electric-current-density:def) tramite la resistività del materiale. In condizioni statiche, il moto (medio) delle cariche è nullo; quindi la corrente elettrica è nulla; e quindi il campo elettrico all'interno del materiale conduttore è nullo.
+
+**todo** 
+- Motivare con criterio di minima energia
+- Mostrare esempi (con **effetto punta**):
+  - esempio 1-dimensionale, con soluzione analitica
+  - esempio 2-dimensionale, con script
 ```
 
 ```{prf:example} Distribuzione di carica in un guscio sferico conduttore - simmetria sferica
@@ -234,16 +258,21 @@ Quindi:
 
   $$\vec{e}(\vec{r}) = \frac{Q_a + Q_b}{4 \pi \varepsilon_0} \frac{\vec{r}}{|\vec{r}|^3}$$
 
+**todo** aggiungere esempio numerico?
+
 ```
 
 ```{prf:example} Gabbia di Faraday
 ```
 
 ### Campo elettrostatico nei dielettrici
-- polarizzazione...
+- polarizzazione: descrizione
+- polarizzazione equivalente a una distribuzione di volume di [dipoli elettrici](), vedi {prf:ref}`electric-dipole`, equivalente a una distribuzione di carica superficiale e una distribuzione di carica di volume solo se polarizzazione non uniforme
 
 ```{prf:example} Distribuzione di carica in un guscio sferico dielettrico senza carica netta - simmetria sferica
 :class: dropdown
+
+**todo** aggiungere la possibilità di cariche libere. E' necessario fare ipotesi sulla distribuzione delle cariche libere? O qualche principio fisico fornisce la loro distribuzione? $\nabla \cdot \vec{d} = \rho_f$
 
 ```
 
@@ -265,7 +294,9 @@ Fare riferimento a:
 (physics-hs:electromagnetism:electrostatics:maxwell:gauss)=
 ### Legge di Gauss per il flusso del campo elettrico
 
-  $$\Phi_{\partial V}(\vec{d}) = Q_V$$
+La legge di Gauss per il campo di spostamento $\vec{d} := \varepsilon_0 \vec{e} + \vec{p}$ afferma che il flusso del campo di spostamento attraverso una superficie chiusa $\partial V$ è uguale alla carica elettrica libera $Q_{V,f}$ contenuta nel volume $V$,
+
+  $$\Phi_{\partial V}(\vec{d}) = Q_{V,f} \ .$$
 
 ```{dropdown} Dimostrazione della legge di Gauss
 **Dimostrazione per una carica puntiforme e una superficie sferica.**
@@ -284,8 +315,11 @@ $$\Phi_{S^{sphere}}(\vec{d}) = 4 \, \pi \, r^2 \frac{1}{4 \, \pi \, r^2} q = q \
 **Dimostrazione per una carica puntiforme e per una superficie arbitraria.**
 Usando l'osservazione sull'andamento del campo, e la definizione di angolo solido
 
-$$\oint_S \frac{q}{4 \pi} \frac{1}{r^2} \hat{r} \cdot \hat{n} \, dS =
-\oint_{\Omega} \frac{q}{4 \pi}  \, d \Omega = q $$
+$$
+\oint_S \frac{q}{4 \pi} \frac{1}{r^2} \hat{r} \cdot \hat{n} \, dS =
+\frac{q}{4 \pi} \oint_S \frac{1}{r^2} \hat{r} \cdot \hat{n} \, dS =
+\frac{q}{4 \pi} \oint_{\Omega} d \Omega = q \ .
+$$
 
 
 **Dimostrazione per una distribuzione di carica qualsiasi e superficie arbitraria.**
@@ -303,15 +337,15 @@ $$\Phi_{\partial V}(\vec{d}) = Q_V$$
 ### Legge di Faraday, in elettrostatica
 - La legge di Faraday in elettrostatica è una diretta conseguenza della conservatività del campo elettrico
 
-  $$\Gamma_{\ell}(\vec{e}) = \oint_{\ell} \vec{e} \cdot \hat{t} = 0 \ .$$ (eq:faraday:steady)
+  $$\Gamma_{\partial S}(\vec{e}) = \oint_{\partial S} \vec{e} \cdot \hat{t} = 0 \ .$$ (eq:faraday:steady)
 
 - Questa equazione è valida **solo** in un regime elettrostatico: la forma generale dell'equazione di Faraday prevede un termine dipendente dal tempo, che è identicamente nullo nel regime elettrostatico.
 
 ```{dropdown} Dimostrazione della legge di Faraday
 **Dimostrazione per una carica puntiforme e un percorso circolare.**
-Il calcolo diretto della circuitazione del campo elettrico generato da una carica puntiforme lungo un percorso circolare di raggio $r$ centrato nella carica
+Il calcolo diretto della circuitazione del campo elettrico generato da una carica puntiforme lungo un percorso circolare $\partial S = \ell^{circle}$ di raggio $r$ centrato nella carica
 
-$$\Gamma_{\ell^{circle}}(\vec{e}) = \oint_{\ell^{circle}} \vec{e} \cdot \hat{t} = \oint_{S^{sphere}} \frac{1}{4 \pi \varepsilon}\frac{q}{r^2} \underbrace{\hat{r} \cdot \hat{t}}_{=0} = 0 \ ,  $$
+$$\Gamma_{\ell^{circle}}(\vec{e}) = \oint_{\ell^{circle}} \vec{e} \cdot \hat{t} = \oint_{\ell^{circle}} \frac{1}{4 \pi \varepsilon}\frac{q}{r^2} \underbrace{\hat{r} \cdot \hat{t}}_{=0} = 0 \ ,  $$
 
 poiché il versore tangente al percorso circolare è ortogonale al campo elettrico, diretto in direzione radiale.
 
@@ -332,38 +366,67 @@ $$\Gamma_{\partial S}(\vec{e}) = 0$$
 (physics-hs:electromagnetism:electrostatics:capacitor)=
 ## Condensatore
 
-Un condensatore è un componente elettrico in grado di immagazzinare l'energia associata a una distribuzione di cariche e un campo elettrico stazionario.  
+Un condensatore è un componente elettrico in grado di immagazzinare l'energia associata a una distribuzione di cariche e un campo elettrico stazionario. Un condensatore rimane elettricamente neutro e immagazzina l'energia grazie alla separazione di cariche positive e negative, creata grazie a una differenza di potenziale ai capi del condensatore. 
 
 (physics-hs:electromagnetism:electrostatics:capacitor:flat)=
-### Condensatore infinito piano
+### Condensatore piano
+
+Un condensatore piano viene qui studiato nell'approssimazione di condensatore piano infinito, per poter sfruttare la simmetria del problema trascurando gli effetti di bordo. Si ipotizza inoltre che le pareti del condensatore - le sue *armature* - siano sottili da poter rappresentare la distribuzione di carica elettrica come una densità superficiale sull'armatura.
+
+Sfruttando la simmetria del problema - omogeneo nelle direzioni parallele alle armature del condensatore - e applicando la [legge di Gauss per ilcampo di spostamento $\vec{d}$](physics-hs:electromagnetism:electrostatics:maxwell:gauss), si ottiene la relazione tra il campo elettrico tra le armature del condensatore, la densità di carica superficiale $\sigma$, e la costante dielettrica del mezzo tra le armature,
+
+**todo** aggiungere immagini e dettagli
+
 $$e = \frac{\sigma}{\varepsilon}$$
 
 $$Q = \sigma \, A$$
 
-$$\Delta V = \int_{\ell} \vec{e} \cdot d \vec{r} = \ell \, e$$
+$$v = \int_{\ell} \vec{e} \cdot d \vec{r} = \ell \, e$$
 
-$$ Q = \sigma \, A = \varepsilon \, e \, A = \frac{\varepsilon \, \ell}{A} \, \Delta V = C \, \Delta V \ ,$$
+$$ Q = \sigma \, A = \varepsilon \, e \, A = \frac{\varepsilon \, \ell}{A} \, v = C \, v \ ,$$
 
-$C$ capacità, $C = \frac{\varepsilon \, A}{\ell}$ capacità per un condensatore piano.
+definendo la capacità $C$ (vedi {prf:ref}`capacitor-capacity`) come costante di proporzionalità tra la carica elettrica immagazzinata nelle armature del condensatore e la differenza di potenziale ai capi del condensatore stesso, e avendo trovato l'espressione della capacità di un condensatore piano, 
+
+$$C = \frac{\varepsilon \, A}{\ell} \ .$$
+
+```{prf:definition} Capacità di un condensatore
+:label: capacitor-capacity
+
+La capacità di un condensatore può essere definita come il rapporto tra carica immagazzinata su un'armatura e differenza di potenziale tra le armature,
+
+$$C = \frac{Q}{v} \ .$$
+
+```
 
 ```{dropdown} Condensatore cilindrico
 **todo**
 ```
 
 ```{dropdown} Condensatore sferico
-Tra le sfere del condensatore, il campo elettrico è ha direzione radiale e valore assoluto $\propto r^{-2}$,
+Utilizzando il [teorema di Gauss per il campo di spostamento $\vec{d}$](physics-hs:electromagnetism:electrostatics:maxwell:gauss), tra le sfere del condensatore il campo elettrico è ha direzione radiale e valore assoluto $\propto r^{-2}$,
 
 $$\vec{e}(r) = \frac{1}{4 \pi \varepsilon} \frac{Q}{r^2} \hat{r} \ .$$
 
 dove la carica totale della superficie sferica con distribuzione di carica uniforme è data dal prodotto della densità superficiale di carica e la superficie, $Q = \sigma \, S_1 = \sigma \, 4 \pi \, R_1^2$.
 La differenza di potenziale tra le due armature è quindi
 
-$$\Delta V = - \int_{\ell} \vec{e}(r) \cdot \hat{r} = \int_{r=R_1}^{R_2} \frac{Q}{4 \pi r^2} dr = \frac{1}{4 \pi \varepsilon} \frac{1}{r} \bigg|_{R_1}^{R_2} = - \frac{1}{4 \pi \varepsilon} \left(\frac{1}{R_1} - \frac{1}{R_2} \right) \ , Q \ .$$
+$$v = - \int_{\ell} \vec{e}(r) \cdot \hat{r} = \int_{r=R_1}^{R_2} \frac{Q}{4 \pi r^2} dr = \frac{1}{4 \pi \varepsilon} \frac{1}{r} \bigg|_{R_1}^{R_2} = - \frac{1}{4 \pi \varepsilon} \left(\frac{1}{R_1} - \frac{1}{R_2} \right) \, Q \ .$$
 
-La formula precedente e la definizione di capacità, $$Q = C , \Delta V$$, consente di determinare la capacità di un condensatore sferico ideale,
+La formula precedente e la definizione di capacità, $Q = C \, v$, consente di determinare la capacità di un condensatore sferico ideale,
 
 $$C = 4 \pi \, \varepsilon \,  \frac{R_1 \, R_2}{R_2 - R_1} \ .$$
 ```
+
+### Bilancio di energia in un condensatore
+
+**todo** Definire l'energia immagazzinata nel condensatore e verificarne l'espressione con diverse forme di lavoro realizzabile:
+- lavoro elettrico?
+- lavoro meccanico?
+
+### Configurazioni di condensatori
+
+- condensatori in serie
+- condensatori in parallelo
 
 ## Moto di una carica in un campo elettrico
 Il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$ in una regione dello spazio nel quale c'è un campo elettrico $\vec{e}(\vec{r},t)$ è soggetto a una forza esterna,

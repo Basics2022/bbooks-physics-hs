@@ -588,7 +588,9 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore">20.1.5. Condensatore</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore-infinito-piano">20.1.5.1. Condensatore infinito piano</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore-piano">20.1.5.1. Condensatore piano</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-di-energia-in-un-condensatore">20.1.5.2. Bilancio di energia in un condensatore</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configurazioni-di-condensatori">20.1.5.3. Configurazioni di condensatori</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-di-una-carica-in-un-campo-elettrico">20.1.6. Moto di una carica in un campo elettrico</a></li>
@@ -776,36 +778,69 @@ Posizionando le cariche contemporanamente<div class="sd-summary-down docutils">
  L = \int_{\alpha = 0}^{1} dL (\alpha) =  - \int_{\alpha=0}^{1} \sum_{\{i,j\}, i \ne j} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{1}{r_{ij}}  \, d \alpha = - \sum_{\{i,j\}, i \ne j} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{1}{r_{ij}} \ .
 \]</div>
 </div>
-</details></div>
+</details><div class="proof example admonition" id="electric-dipole">
+<p class="admonition-title"><span class="caption-number">Example 20.1 </span> (Il dipolo elettrico)</p>
+<div class="example-content section" id="proof-content">
+</div>
+</div><div class="proof example admonition" id="example-1">
+<p class="admonition-title"><span class="caption-number">Example 20.2 </span></p>
+<div class="example-content section" id="proof-content">
+</div>
+</div></div>
 </div>
 <div class="section" id="campo-elettrico-nei-materiali">
 <span id="physics-hs-electromagnetism-electrostatics-e-field-media"></span><h2><span class="section-number">20.1.3. </span>Campo elettrico nei materiali<a class="headerlink" href="#campo-elettrico-nei-materiali" title="Permalink to this heading">#</a></h2>
+<p>L’interazione dei materiali con un campo elettrico viene descritta qui e nella sezione <a class="reference internal" href="electric-current.html#physics-hs-electromagnetism-electric-current-media"><span class="std std-ref">Corrente elettrica nella materia</span></a> del capitolo successivo. E” frequente analizzare la risposta di un materiale a un campo elettrico utilizzando una classificazione delle cariche elettriche presenti nel materiale in <strong>cariche libere</strong> (cariche elettriche non vincolate ai singoli atomi del materiale, ma condivise tra di essi, come gli <em>elettroni di conduzione</em> nei <em>metalli</em>) e <strong>cariche vincolate</strong> (cariche elettriche vincolate ai rispettivi nuclei, come gli elettroni degli orbitali più interni in un solido metallico, o gli elettroni dei materiali non conduttori - che hanno tutti gli elettroni vincolati a singoli atomi, e non condivisi all’interno dell’intero materiale).</p>
 <p>A seconda della loro interazione con un campo elettrico e alla loro capacità di condurre corrente, i materiali possono essere classificati come:</p>
 <ul class="simple">
-<li><p>materiali conduttori</p></li>
-<li><p>materiali dielettrici</p></li>
+<li><p>materiali conduttori:</p>
+<ul>
+<li><p>permettono il passaggio della corrente elettrica, cioè il moto di <strong>cariche elettriche libere</strong></p></li>
+<li><p>non mostrano polarizzazione, poiché le cariche libere rispondono a un campo elettrico esterno, disponendosi in una configurazione tale da annullare il campo elettrico totale all’interno del conduttore, si veda <span class="xref myst"></span> e l’esempio della <span class="xref myst">gabbia di Faraday</span></p></li>
+</ul>
+</li>
+<li><p>materiali isolanti:</p>
+<ul>
+<li><p>non permettono il passaggio di corrente elettrica.</p></li>
+<li><p>Alcuni materiali isolanti, detti <strong>dielettrici</strong>, rispondono comunque a un campo elettrico «esterno» sotto forma di polarizzazione, cioè con un’orientazione della distribuzione di carica locale associata ai singoli atomi del materiale.</p></li>
+</ul>
+</li>
 <li><p>materiali semi-conduttori</p></li>
 </ul>
-<p>In generale, i materiali isotropi e lineari delle due famiglie possono essere rappresentati dall’equazione costitutiva</p>
+<p>In generale, i materiali isotropi e lineari conduttori e dielettrici possono essere rappresentati da un’equazione costitutiva dall’espressione</p>
 <div class="math notranslate nohighlight">
 \[\vec{d} := \varepsilon_0 \vec{e} + \vec{p} = \varepsilon \vec{e} = \varepsilon_r \varepsilon_0 \vec{e} \ ,\]</div>
-<p>avendo introdotto <span class="math notranslate nohighlight">\(\vec{p}\)</span> il campo di <strong>polarizzazione</strong> come risposta del materiale a campi elettrici esterni, e il campo di spostamento <span class="math notranslate nohighlight">\(\vec{d}\)</span> che riassume gli effetti del campo elettrico «esterno» <span class="math notranslate nohighlight">\(\vec{e}\)</span> e della polarizzazione locale del materiale <span class="math notranslate nohighlight">\(\vec{p}\)</span>. Nel caso di materiali isotropi e lineari, il campo di spostamento <span class="math notranslate nohighlight">\(\vec{d}\)</span> è proporzionale al campo elettrico «esterno» <span class="math notranslate nohighlight">\(\vec{e}\)</span> e il ceofficiente di proporzionalità è definito costante dielettrica del materiale, <span class="math notranslate nohighlight">\(\varepsilon\)</span>, e può essere scritta come prodotto della costante dielettrica del vuoto e la costante dielettrica relativa del materiale (adimensionale),</p>
+<p>avendo introdotto <span class="math notranslate nohighlight">\(\vec{p}\)</span> il campo di <strong>polarizzazione</strong> (<span class="math notranslate nohighlight">\(\vec{p} = \varepsilon_0 ( \varepsilon_r - 1) \vec{e}\)</span> per materiali isotropi lineari) come risposta del materiale a campi elettrici esterni, e il campo di spostamento <span class="math notranslate nohighlight">\(\vec{d}\)</span> che riassume gli effetti del campo elettrico «esterno» <span class="math notranslate nohighlight">\(\vec{e}\)</span> e della polarizzazione locale del materiale <span class="math notranslate nohighlight">\(\vec{p}\)</span>. Nel caso di materiali isotropi e lineari, il campo di spostamento <span class="math notranslate nohighlight">\(\vec{d}\)</span> è proporzionale al campo elettrico «esterno» <span class="math notranslate nohighlight">\(\vec{e}\)</span> e il ceofficiente di proporzionalità è definito costante dielettrica del materiale, <span class="math notranslate nohighlight">\(\varepsilon\)</span>, e può essere scritta come prodotto della costante dielettrica del vuoto e la costante dielettrica relativa del materiale (adimensionale),</p>
 <div class="math notranslate nohighlight">
 \[\varepsilon_r = \frac{\varepsilon}{\varepsilon_0} \ .\]</div>
 <p>Tipicamente:</p>
 <ul class="simple">
-<li><p>materiali conduttori manifestano una polarizzazione trascurabile, <span class="math notranslate nohighlight">\(\varepsilon_r \sim 1\)</span>, <span class="math notranslate nohighlight">\(\varepsilon \sim \varepsilon_0\)</span></p></li>
+<li><p>i materiali conduttori che mostrano un polarizzazione trascurabile, <span class="math notranslate nohighlight">\(\vec{p} \sim \vec{0}\)</span>, hanno <span class="math notranslate nohighlight">\(\varepsilon_r \sim 1\)</span>, <span class="math notranslate nohighlight">\(\varepsilon \sim \varepsilon_0\)</span>. La risposta a un campo elettrico esterno si manifesta in una disposizione delle cariche libere</p></li>
 <li><p>materiali dielettrici manifestano una polarizzazione che si manifesta con una costante dielettrica relativa, <span class="math notranslate nohighlight">\(\varepsilon_r &gt; 1\)</span>, <span class="math notranslate nohighlight">\(\varepsilon &gt; \varepsilon_0\)</span></p></li>
 </ul>
 <div class="section" id="campo-elettrostatico-nei-conduttori">
 <h3><span class="section-number">20.1.3.1. </span>Campo elettrostatico nei conduttori<a class="headerlink" href="#campo-elettrostatico-nei-conduttori" title="Permalink to this heading">#</a></h3>
-<p>In condizioni statiche il campo elettrico nei conduttori è identicamente nullo. Le cariche elettriche (libere) si concentrano quindi in zone di superficie sottile e possono essere modellate in prima approssimazione con densità di carica superficiale.</p>
+<p>In condizioni statiche il campo elettrico nei conduttori è identicamente nullo. Le cariche elettriche (libere) si concentrano quindi in zone di superficie sottile e possono essere modellate in prima approssimazione con densità di carica superficiale. Se in una regione dello spazio il campo elettrico è identicamente nullo, allora i punti in quella regione hanno lo stesso pontenziale. E” quindi possibile affermare che nei punti all’interno di un materiale conduttore in condizioni di elettrostatica (o di resistività nulla o trascurabile, come sarà spiegato nel prossimo capitolo sulla <a class="reference internal" href="electric-current.html#physics-hs-electromagnetism-electric-current"><span class="std std-ref">corrente elettrica</span></a> per la <a class="reference internal" href="electric-current.html#physics-hs-electromagnetism-electric-current-solids-conductor"><span class="std std-ref">conduzione nei solidi conduttori</span></a>),</p>
+<ul class="simple">
+<li><p>il campo elettrico è nullo <span class="math notranslate nohighlight">\(\vec{e}(P) = \vec{0}\)</span></p></li>
+<li><p>hanno lo stesso valore di potenziale, <span class="math notranslate nohighlight">\(v(P) = \overline{v}\)</span>, cioè sono <strong>equipotenziali</strong>.</p></li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <p>Per materiali <a class="reference internal" href="electric-current.html#physics-hs-electromagnetism-electric-current-solids-conductor-ohm"><span class="std std-ref">conduttori di Ohm</span></a>, il campo elettrico è proporzionale alla <a class="reference internal" href="electric-current.html#electric-current-density-def"><span class="std std-ref">densità di corrente elettrica</span></a> tramite la resistività del materiale. In condizioni statiche, il moto (medio) delle cariche è nullo; quindi la corrente elettrica è nulla; e quindi il campo elettrico all’interno del materiale conduttore è nullo.</p>
+<p><strong>todo</strong></p>
+<ul class="simple">
+<li><p>Motivare con criterio di minima energia</p></li>
+<li><p>Mostrare esempi (con <strong>effetto punta</strong>):</p>
+<ul>
+<li><p>esempio 1-dimensionale, con soluzione analitica</p></li>
+<li><p>esempio 2-dimensionale, con script</p></li>
+</ul>
+</li>
+</ul>
 </div>
-<div class="proof example dropdown admonition" id="example-0">
-<p class="admonition-title"><span class="caption-number">Example 20.1 </span> (Distribuzione di carica in un guscio sferico conduttore - simmetria sferica)</p>
+<div class="proof example dropdown admonition" id="example-2">
+<p class="admonition-title"><span class="caption-number">Example 20.3 </span> (Distribuzione di carica in un guscio sferico conduttore - simmetria sferica)</p>
 <div class="example-content section" id="proof-content">
 <p><strong>todo</strong> Risolvere usando il <a class="reference internal" href="#physics-hs-electromagnetism-electrostatics-maxwell-gauss"><span class="std std-ref">teorema di Gauss</span></a> e quindi spostare dopo il capitolo sulle <a class="reference internal" href="#physics-hs-electromagnetism-electrostatics-maxwell"><span class="std std-ref">equazioni di Maxwell in elettrostatica</span></a>?</p>
 <p>Una carica puntiforme <span class="math notranslate nohighlight">\(Q_a\)</span> viene posta nel centro di un guscio sferico di un materiale conduttore a sua volta con con carica totale <span class="math notranslate nohighlight">\(Q_b\)</span>. Non ci sono altre cause del campo elettrico. Si vuole determinare la distribuzione di carica del problema e il campo elettrico nello spazio.</p>
@@ -824,20 +859,23 @@ Posizionando le cariche contemporanamente<div class="sd-summary-down docutils">
 \[\vec{e}(\vec{r}) = \frac{Q_a + Q_b}{4 \pi \varepsilon_0} \frac{\vec{r}}{|\vec{r}|^3}\]</div>
 </li>
 </ul>
+<p><strong>todo</strong> aggiungere esempio numerico?</p>
 </div>
-</div><div class="proof example admonition" id="example-1">
-<p class="admonition-title"><span class="caption-number">Example 20.2 </span> (Gabbia di Faraday)</p>
+</div><div class="proof example admonition" id="example-3">
+<p class="admonition-title"><span class="caption-number">Example 20.4 </span> (Gabbia di Faraday)</p>
 <div class="example-content section" id="proof-content">
 </div>
 </div></div>
 <div class="section" id="campo-elettrostatico-nei-dielettrici">
 <h3><span class="section-number">20.1.3.2. </span>Campo elettrostatico nei dielettrici<a class="headerlink" href="#campo-elettrostatico-nei-dielettrici" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p>polarizzazione…</p></li>
+<li><p>polarizzazione: descrizione</p></li>
+<li><p>polarizzazione equivalente a una distribuzione di volume di <span class="xref myst">dipoli elettrici</span>, vedi <a class="reference internal" href="#electric-dipole">Example 20.1</a>, equivalente a una distribuzione di carica superficiale e una distribuzione di carica di volume solo se polarizzazione non uniforme</p></li>
 </ul>
-<div class="proof example dropdown admonition" id="example-2">
-<p class="admonition-title"><span class="caption-number">Example 20.3 </span> (Distribuzione di carica in un guscio sferico dielettrico senza carica netta - simmetria sferica)</p>
+<div class="proof example dropdown admonition" id="example-4">
+<p class="admonition-title"><span class="caption-number">Example 20.5 </span> (Distribuzione di carica in un guscio sferico dielettrico senza carica netta - simmetria sferica)</p>
 <div class="example-content section" id="proof-content">
+<p><strong>todo</strong> aggiungere la possibilità di cariche libere. E” necessario fare ipotesi sulla distribuzione delle cariche libere? O qualche principio fisico fornisce la loro distribuzione? <span class="math notranslate nohighlight">\(\nabla \cdot \vec{d} = \rho_f\)</span></p>
 </div>
 </div><p>Per materiali lineari isotropi,</p>
 <div class="math notranslate nohighlight">
@@ -856,8 +894,9 @@ Posizionando le cariche contemporanamente<div class="sd-summary-down docutils">
 </ul>
 <div class="section" id="legge-di-gauss-per-il-flusso-del-campo-elettrico">
 <span id="physics-hs-electromagnetism-electrostatics-maxwell-gauss"></span><h3><span class="section-number">20.1.4.1. </span>Legge di Gauss per il flusso del campo elettrico<a class="headerlink" href="#legge-di-gauss-per-il-flusso-del-campo-elettrico" title="Permalink to this heading">#</a></h3>
+<p>La legge di Gauss per il campo di spostamento <span class="math notranslate nohighlight">\(\vec{d} := \varepsilon_0 \vec{e} + \vec{p}\)</span> afferma che il flusso del campo di spostamento attraverso una superficie chiusa <span class="math notranslate nohighlight">\(\partial V\)</span> è uguale alla carica elettrica libera <span class="math notranslate nohighlight">\(Q_{V,f}\)</span> contenuta nel volume <span class="math notranslate nohighlight">\(V\)</span>,</p>
 <div class="math notranslate nohighlight">
-\[\Phi_{\partial V}(\vec{d}) = Q_V\]</div>
+\[\Phi_{\partial V}(\vec{d}) = Q_{V,f} \ .\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Dimostrazione della legge di Gauss<div class="sd-summary-down docutils">
@@ -877,8 +916,11 @@ Il calcolo diretto del flusso del campo elettrico generato da una carica puntifo
 <p class="sd-card-text"><strong>Dimostrazione per una carica puntiforme e per una superficie arbitraria.</strong>
 Usando l’osservazione sull’andamento del campo, e la definizione di angolo solido</p>
 <div class="math notranslate nohighlight">
-\[\oint_S \frac{q}{4 \pi} \frac{1}{r^2} \hat{r} \cdot \hat{n} \, dS =
-\oint_{\Omega} \frac{q}{4 \pi}  \, d \Omega = q \]</div>
+\[
+\oint_S \frac{q}{4 \pi} \frac{1}{r^2} \hat{r} \cdot \hat{n} \, dS =
+\frac{q}{4 \pi} \oint_S \frac{1}{r^2} \hat{r} \cdot \hat{n} \, dS =
+\frac{q}{4 \pi} \oint_{\Omega} d \Omega = q \ .
+\]</div>
 <p class="sd-card-text"><strong>Dimostrazione per una distribuzione di carica qualsiasi e superficie arbitraria.</strong>
 Avendo dimostrato la legge di Gauss per una carica puntiforme attraverso una superficie arbitraria, la legge di Gauss per il campo <span class="math notranslate nohighlight">\(\vec{d}\)</span> generato da una distribuzione di carica qualsiasi segue immediatamente, ricordando che vale il PSCE</p>
 <div class="math notranslate nohighlight">
@@ -894,7 +936,7 @@ Avendo dimostrato la legge di Gauss per una carica puntiforme attraverso una sup
 <ul>
 <li><p>La legge di Faraday in elettrostatica è una diretta conseguenza della conservatività del campo elettrico</p>
 <div class="math notranslate nohighlight" id="equation-eq-faraday-steady">
-<span class="eqno">(20.1)<a class="headerlink" href="#equation-eq-faraday-steady" title="Permalink a questa equazione">#</a></span>\[\Gamma_{\ell}(\vec{e}) = \oint_{\ell} \vec{e} \cdot \hat{t} = 0 \ .\]</div>
+<span class="eqno">(20.1)<a class="headerlink" href="#equation-eq-faraday-steady" title="Permalink a questa equazione">#</a></span>\[\Gamma_{\partial S}(\vec{e}) = \oint_{\partial S} \vec{e} \cdot \hat{t} = 0 \ .\]</div>
 </li>
 <li><p>Questa equazione è valida <strong>solo</strong> in un regime elettrostatico: la forma generale dell’equazione di Faraday prevede un termine dipendente dal tempo, che è identicamente nullo nel regime elettrostatico.</p></li>
 </ul>
@@ -906,9 +948,9 @@ Dimostrazione della legge di Faraday<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><strong>Dimostrazione per una carica puntiforme e un percorso circolare.</strong>
-Il calcolo diretto della circuitazione del campo elettrico generato da una carica puntiforme lungo un percorso circolare di raggio <span class="math notranslate nohighlight">\(r\)</span> centrato nella carica</p>
+Il calcolo diretto della circuitazione del campo elettrico generato da una carica puntiforme lungo un percorso circolare <span class="math notranslate nohighlight">\(\partial S = \ell^{circle}\)</span> di raggio <span class="math notranslate nohighlight">\(r\)</span> centrato nella carica</p>
 <div class="math notranslate nohighlight">
-\[\Gamma_{\ell^{circle}}(\vec{e}) = \oint_{\ell^{circle}} \vec{e} \cdot \hat{t} = \oint_{S^{sphere}} \frac{1}{4 \pi \varepsilon}\frac{q}{r^2} \underbrace{\hat{r} \cdot \hat{t}}_{=0} = 0 \ ,  \]</div>
+\[\Gamma_{\ell^{circle}}(\vec{e}) = \oint_{\ell^{circle}} \vec{e} \cdot \hat{t} = \oint_{\ell^{circle}} \frac{1}{4 \pi \varepsilon}\frac{q}{r^2} \underbrace{\hat{r} \cdot \hat{t}}_{=0} = 0 \ ,  \]</div>
 <p class="sd-card-text">poiché il versore tangente al percorso circolare è ortogonale al campo elettrico, diretto in direzione radiale.</p>
 <p class="sd-card-text"><strong>Dimostrazione per una carica puntiforme e un percorso arbitrario.</strong></p>
 <p class="sd-card-text"><strong>Dimostrazione per una distribuzione di carica qualsiasi e percorso arbitrario.</strong>
@@ -924,19 +966,31 @@ Avendo dimostrato la legge di Faraday nel caso stazionario per una carica puntif
 </div>
 <div class="section" id="condensatore">
 <span id="physics-hs-electromagnetism-electrostatics-capacitor"></span><span id="physics-hs-electromagnetism-lorentz-electric"></span><h2><span class="section-number">20.1.5. </span>Condensatore<a class="headerlink" href="#condensatore" title="Permalink to this heading">#</a></h2>
-<p>Un condensatore è un componente elettrico in grado di immagazzinare l’energia associata a una distribuzione di cariche e un campo elettrico stazionario.</p>
-<div class="section" id="condensatore-infinito-piano">
-<span id="physics-hs-electromagnetism-electrostatics-capacitor-flat"></span><h3><span class="section-number">20.1.5.1. </span>Condensatore infinito piano<a class="headerlink" href="#condensatore-infinito-piano" title="Permalink to this heading">#</a></h3>
+<p>Un condensatore è un componente elettrico in grado di immagazzinare l’energia associata a una distribuzione di cariche e un campo elettrico stazionario. Un condensatore rimane elettricamente neutro e immagazzina l’energia grazie alla separazione di cariche positive e negative, creata grazie a una differenza di potenziale ai capi del condensatore.</p>
+<div class="section" id="condensatore-piano">
+<span id="physics-hs-electromagnetism-electrostatics-capacitor-flat"></span><h3><span class="section-number">20.1.5.1. </span>Condensatore piano<a class="headerlink" href="#condensatore-piano" title="Permalink to this heading">#</a></h3>
+<p>Un condensatore piano viene qui studiato nell’approssimazione di condensatore piano infinito, per poter sfruttare la simmetria del problema trascurando gli effetti di bordo. Si ipotizza inoltre che le pareti del condensatore - le sue <em>armature</em> - siano sottili da poter rappresentare la distribuzione di carica elettrica come una densità superficiale sull’armatura.</p>
+<p>Sfruttando la simmetria del problema - omogeneo nelle direzioni parallele alle armature del condensatore - e applicando la <a class="reference internal" href="#physics-hs-electromagnetism-electrostatics-maxwell-gauss"><span class="std std-ref">legge di Gauss per ilcampo di spostamento <span class="math notranslate nohighlight">\(\vec{d}\)</span></span></a>, si ottiene la relazione tra il campo elettrico tra le armature del condensatore, la densità di carica superficiale <span class="math notranslate nohighlight">\(\sigma\)</span>, e la costante dielettrica del mezzo tra le armature,</p>
+<p><strong>todo</strong> aggiungere immagini e dettagli</p>
 <div class="math notranslate nohighlight">
 \[e = \frac{\sigma}{\varepsilon}\]</div>
 <div class="math notranslate nohighlight">
 \[Q = \sigma \, A\]</div>
 <div class="math notranslate nohighlight">
-\[\Delta V = \int_{\ell} \vec{e} \cdot d \vec{r} = \ell \, e\]</div>
+\[v = \int_{\ell} \vec{e} \cdot d \vec{r} = \ell \, e\]</div>
 <div class="math notranslate nohighlight">
-\[ Q = \sigma \, A = \varepsilon \, e \, A = \frac{\varepsilon \, \ell}{A} \, \Delta V = C \, \Delta V \ ,\]</div>
-<p><span class="math notranslate nohighlight">\(C\)</span> capacità, <span class="math notranslate nohighlight">\(C = \frac{\varepsilon \, A}{\ell}\)</span> capacità per un condensatore piano.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+\[ Q = \sigma \, A = \varepsilon \, e \, A = \frac{\varepsilon \, \ell}{A} \, v = C \, v \ ,\]</div>
+<p>definendo la capacità <span class="math notranslate nohighlight">\(C\)</span> (vedi <a class="reference internal" href="#capacitor-capacity">Definition 20.1</a>) come costante di proporzionalità tra la carica elettrica immagazzinata nelle armature del condensatore e la differenza di potenziale ai capi del condensatore stesso, e avendo trovato l’espressione della capacità di un condensatore piano,</p>
+<div class="math notranslate nohighlight">
+\[C = \frac{\varepsilon \, A}{\ell} \ .\]</div>
+<div class="proof definition admonition" id="capacitor-capacity">
+<p class="admonition-title"><span class="caption-number">Definition 20.1 </span> (Capacità di un condensatore)</p>
+<div class="definition-content section" id="proof-content">
+<p>La capacità di un condensatore può essere definita come il rapporto tra carica immagazzinata su un’armatura e differenza di potenziale tra le armature,</p>
+<div class="math notranslate nohighlight">
+\[C = \frac{Q}{v} \ .\]</div>
+</div>
+</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Condensatore cilindrico<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -952,18 +1006,33 @@ Condensatore sferico<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Tra le sfere del condensatore, il campo elettrico è ha direzione radiale e valore assoluto <span class="math notranslate nohighlight">\(\propto r^{-2}\)</span>,</p>
+<p class="sd-card-text">Utilizzando il <a class="reference internal" href="#physics-hs-electromagnetism-electrostatics-maxwell-gauss"><span class="std std-ref">teorema di Gauss per il campo di spostamento <span class="math notranslate nohighlight">\(\vec{d}\)</span></span></a>, tra le sfere del condensatore il campo elettrico è ha direzione radiale e valore assoluto <span class="math notranslate nohighlight">\(\propto r^{-2}\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\vec{e}(r) = \frac{1}{4 \pi \varepsilon} \frac{Q}{r^2} \hat{r} \ .\]</div>
 <p class="sd-card-text">dove la carica totale della superficie sferica con distribuzione di carica uniforme è data dal prodotto della densità superficiale di carica e la superficie, <span class="math notranslate nohighlight">\(Q = \sigma \, S_1 = \sigma \, 4 \pi \, R_1^2\)</span>.
 La differenza di potenziale tra le due armature è quindi</p>
 <div class="math notranslate nohighlight">
-\[\Delta V = - \int_{\ell} \vec{e}(r) \cdot \hat{r} = \int_{r=R_1}^{R_2} \frac{Q}{4 \pi r^2} dr = \frac{1}{4 \pi \varepsilon} \frac{1}{r} \bigg|_{R_1}^{R_2} = - \frac{1}{4 \pi \varepsilon} \left(\frac{1}{R_1} - \frac{1}{R_2} \right) \ , Q \ .\]</div>
-<p class="sd-card-text">La formula precedente e la definizione di capacità, $<span class="math notranslate nohighlight">\(Q = C , \Delta V\)</span>$, consente di determinare la capacità di un condensatore sferico ideale,</p>
+\[v = - \int_{\ell} \vec{e}(r) \cdot \hat{r} = \int_{r=R_1}^{R_2} \frac{Q}{4 \pi r^2} dr = \frac{1}{4 \pi \varepsilon} \frac{1}{r} \bigg|_{R_1}^{R_2} = - \frac{1}{4 \pi \varepsilon} \left(\frac{1}{R_1} - \frac{1}{R_2} \right) \, Q \ .\]</div>
+<p class="sd-card-text">La formula precedente e la definizione di capacità, <span class="math notranslate nohighlight">\(Q = C \, v\)</span>, consente di determinare la capacità di un condensatore sferico ideale,</p>
 <div class="math notranslate nohighlight">
 \[C = 4 \pi \, \varepsilon \,  \frac{R_1 \, R_2}{R_2 - R_1} \ .\]</div>
 </div>
 </details></div>
+<div class="section" id="bilancio-di-energia-in-un-condensatore">
+<h3><span class="section-number">20.1.5.2. </span>Bilancio di energia in un condensatore<a class="headerlink" href="#bilancio-di-energia-in-un-condensatore" title="Permalink to this heading">#</a></h3>
+<p><strong>todo</strong> Definire l’energia immagazzinata nel condensatore e verificarne l’espressione con diverse forme di lavoro realizzabile:</p>
+<ul class="simple">
+<li><p>lavoro elettrico?</p></li>
+<li><p>lavoro meccanico?</p></li>
+</ul>
+</div>
+<div class="section" id="configurazioni-di-condensatori">
+<h3><span class="section-number">20.1.5.3. </span>Configurazioni di condensatori<a class="headerlink" href="#configurazioni-di-condensatori" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>condensatori in serie</p></li>
+<li><p>condensatori in parallelo</p></li>
+</ul>
+</div>
 </div>
 <div class="section" id="moto-di-una-carica-in-un-campo-elettrico">
 <h2><span class="section-number">20.1.6. </span>Moto di una carica in un campo elettrico<a class="headerlink" href="#moto-di-una-carica-in-un-campo-elettrico" title="Permalink to this heading">#</a></h2>
@@ -1106,7 +1175,9 @@ $$i = \dfrac{d}{dt} \left( A \, d \right) = \dfrac{d}{dt} \left( A \, \varepsilo
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore">20.1.5. Condensatore</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore-infinito-piano">20.1.5.1. Condensatore infinito piano</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore-piano">20.1.5.1. Condensatore piano</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-di-energia-in-un-condensatore">20.1.5.2. Bilancio di energia in un condensatore</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configurazioni-di-condensatori">20.1.5.3. Configurazioni di condensatori</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-di-una-carica-in-un-campo-elettrico">20.1.6. Moto di una carica in un campo elettrico</a></li>

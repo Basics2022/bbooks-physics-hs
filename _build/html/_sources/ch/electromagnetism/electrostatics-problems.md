@@ -2,12 +2,53 @@
 # Problemi
 
 - Esercizi su forza, campo elettrico, potenziale elettrico, lavoro, ed energia di sistemi di cariche puntniformi e campi elettrici assegnati (esempi, campo elettrico uniforme tra armature di condensatore piano
+
+- Distribuzioni di cariche
+
+```{exercise} Cariche puntiformi
+Date due cariche elettriche $q_1, \, q_2 > 0$ viene chiesto di:
+1. determinare la forza esercitata da una carica sull'altra;
+2. determinare e rappresentare (vettori e linee di campo) il campo elettrico nello spazio;
+3. determinare l'energia immagazzinata dal sistema, rispetto alla condizione di riferimento all'infinito
+4. data una terza carica $q_3$, 
+   - determinare la forza agente sulla carica $q_3$ in un punto qualsiasi dello spazio
+   - determinare eventuali punti di equilibrio della carica $q_3$
+   - determinare l'entità della carica $q_3$ affinché il sistema di cariche $q_1$, $q_2$, $q_3$ sia in equilibrio, e le condizioni in cui tale situazione può essere realizzata
+```
+
+```{exercise} Cariche puntiformi nel piano
+Date le cariche puntiformi di intensità $q_i$, $i=1:4$, poste ai vertici di un quadrato di lato $\ell$, si chiede di determinare:
+1. la forza agente sulle singole cariche
+2. l'energia potenziale immagazzinata nel sistema, rispetto alla condizione di riferimento con le cariche disposte all'ifinito
+3. il campo elettrico nel centro del quadrato
+4. il lavoro necessario per portare una quinta carica $q_5$ dall'infinito al centro del quadrato, e l'energia nel sistema composto dalle cinque cariche
+```
+
+```{exercise} 
+Data una carica puntiforme di intensità $q$ nel punto $P$ e un campo elettrico uniforme assegnato $\vec{e}(\vec{r}) = E \, \hat{x}$ viene chiesto di:
+1. determinare la forza esterna necessaria a mantenere la carica puntiforme ferma
+2. determinare e rappresentare il campo elettrico totale, calcolando i punti in cui il campo è nullo e altri luoghi geometrici particolari
+3. calcolare il lavoro compiuto per portare una carica $q_A$ dal punto $A_1$ al punto $A_2$
+```
+
+```{exercise}
+Considerando il sistema del'esercizio precedente, e vincolando la carica puntiforme a terra con una molla di costante elastica $k$ con lunghezza a riposo nulla, viene chiesto di:
+1. determinare il valore dell'energia del sistema nella configurazione del sistema con allungamento nullo
+2. determinare la condizione di equilibrio del sistema 
+3. verificare che le condizioni di equilibrio corrispondono a punti di estremo dell'energia del sistema rispetto alla posizione della carica $P$. In partiolare, l'equilibrio è stabile in corrispondenza dei punti di minimo locale dell'energia, instabile in corrispondenza dei punti di massimo locale dell'energia.
+```
+
 - Esercizi su sfere concentriche (conduttrici e no)
 - Esercizi su condensatori: relazioni tra grandezze ($v$, $C$, $Q$, $\varepsilon$, forza tra le armature...), energia immagazzinata, e lavoro meccanico su condensatore; lavoro meccanico per inserire o rimuovere dielettrico; combinazione di condensatori
 - Moto di cariche tra pareti di condensatore
 
-```{exercise} Lavoro meccanico su condensatore
+```{exercise} Lavoro meccanico su condensatore modificandone la geometria
 ```
+
+```{exercise} Lavoro necessario a inserire o rimuovere un dielettrico
+```
+
+
 
 
 - vecchi esercizi

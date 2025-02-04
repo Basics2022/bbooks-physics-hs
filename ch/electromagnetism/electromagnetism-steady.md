@@ -21,8 +21,25 @@ $$\vec{f} = - \vec{b} \times \vec{j} \ .$$
 
 **todo** ha senso associarla a Faraday? Nessuno la conosceva prima? Galvani, Volta,... come misuravano la corrente elettrica?
 
+(physics-hs:electromagnetism:electromagnetism-steady:experience-faraday:amperometer)=
+### L'amperometro
+
+L'amperometro è uno strumento per la misura della corrente elettrica. **todo** 
+- l'amperometro sfrutta l'esperienza di Faraday per misurare la corrente elettrica in un cavo, leggendo la rotazione di una bobina all'interno di un campo magnetico;
+- l'amperometro viene collegato in serie nel lato del circuito nel quale si vuole misurare la corrente elettrica
+
+(physics-hs:electromagnetism:electromagnetism-steady:experience-faraday:voltmeter)=
+### Il voltmetro
+
+Il voltmetro è uno strumento per la misura della differenza di tensione. **todo**
+- un modello rudimentale di voltmetro si basa su un amperometro in serie a una resistenza elettrica nota $R_{v}$ elevata, per ridurre l'**intrusività** dello strumento: maggiore è la resistenza, minore è la corrente che passa nel voltmetro. Nota la resistenza $R_v$ e letta l'intensità di corrente dalla misura dell'amperometro, la differenza di tensione è misurata usando la [legge di Ohm](physics-hs:electromagnetism:electric-current:solids:conductor:ohm) {eq}`ohm:integral:first:R` come $v = R_v i$
+- il voltmetro viene collegato in parallelo al componente del circuito ai capi del quale si vuole misurare la differenza di tensione.
+
+
 (physics-hs:electromagnetism:electromagnetism-steady:experience-faraday:galvanometer)=
 ### Il galvanometro
+
+**todo** *differenze tra galvanometro e amperometro?*
 
 Il galvanometro è uno strumento utilizzato per la misura della corrente elettrica. Sfrutta l'azione meccanica osservata nell'esperienza di Faraday
 

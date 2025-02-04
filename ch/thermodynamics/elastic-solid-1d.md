@@ -1,6 +1,7 @@
 (physics-hs:thermodynamics:matter:elastic:1d)=
 # Solidi elastici
 
+(physics-hs:thermodynamics:matter:elastic:1d:constitutive-equation)=
 ## Solido elastico lineare 1-dimensionale
 
 **Legge costitutiva lineare con espansione termica.**
@@ -135,3 +136,71 @@ $$\begin{aligned}
 
 **todo**
 <span style="color:red">Controllare! Non torna l'espressione della forza: c'è solo la temperatura, ma ci dovrebbe essere la differenza di temperatura rispetto a quella di riferimento?</span>
+
+(physics-hs:thermodynamics:matter:elastic:1d:dilation)=
+## Coefficienti di dilatazione
+
+Seguendo il metodo di misura della dilatazione utilizzando provini 1-dimensionali **todo** *controllare, aggiungere riferimenti*, la dilatazione termica nei solidi viene di solito definita utilizzando un **coefficiente di dilatazione lineare**,
+
+$$\alpha = \dfrac{1}{L_0}\left( \dfrac{\partial L}{\partial T} \right)_x \ ,$$
+
+qui misurato mantenendo la quantità fisica $x$ costante. In un intervallo di valori in cui il coefficiente di dilatazione può essere considerato costante o in cui i termini di secondo ordine in un'espansione in serie sono trascurabili, vale
+
+$$L(T,x) = L(T_0,x) + (T-T_0) \left(\dfrac{\partial L}{\partial T}\right)_{x} = L(T_0,x) + L(T_0, x) \alpha \Delta T = L_0 \left( 1 + \alpha \Delta T \right)$$
+
+### Coefficiente di dilatazione di superficie
+Per un solido isotropo si può definire il coefficiente di dilatazione di superficie, utilizzando il coefficiente di dilatazione lineare per rappresentare la dilatazione dei lati di un elemento quadrato,
+
+$$\begin{aligned}
+  S(T)
+  & = a(T) \, b(T) = \\
+  & = a_0 (1 + \alpha \Delta T) \, b_0 (1 + \alpha \Delta T) = \\ 
+  & = a_0 \, b_0 (1 + 2 \alpha \Delta T + \alpha^2 \Delta T^2) \sim \\
+  & = S_0 ( 1 + 2 \alpha \Delta T ) \ , 
+\end{aligned}$$
+
+si ricava nell'approssimazione lineare il coefficiente di dilatazione di superficie,
+
+$$\dfrac{1}{S_0}\left(\dfrac{\partial S}{\partial T}\right)_x = \alpha_s \sim 2 \alpha \ .$$
+
+### Coefficiente di dilatazione di volume
+Per un solido isotropo si può definire il coefficiente di dilatazione di volume, utilizzando il coefficiente di dilatazione lineare per rappresentare la dilatazione dei lati di un elemento cubico,
+
+$$\begin{aligned}
+  V(T)
+  & = a(T) \, b(T) \, c(T) = \\
+  & = a_0 (1 + \alpha \Delta T) \, b_0 (1 + \alpha \Delta T) \, c_0 (1+\alpha \Delta T) = \\ 
+  & = a_0 \, b_0 \, c_0 (1 + 3 \alpha \Delta T + 3 \alpha^2 \Delta T^2 +  \alpha^3 \Delta T^3) \sim \\
+  & = V_0 ( 1 + 3 \alpha \Delta T ) \ , 
+\end{aligned}$$
+
+si ricava nell'approssimazione lineare il coefficiente di dilatazione di superficie,
+
+$$ \dfrac{1}{V_0}\left(\dfrac{\partial V}{\partial T}\right)_x = \alpha_v \sim 3 \alpha \ .$$
+
+```{prf:example} Anello di Gravesande
+:label: thermodynamics:elastic-solid:gravesande
+
+{prf:ref}`thermodynamics:history:th-expansion:gravesande`
+```
+
+```{prf:example} Pendolo
+:label: thermodynamics:elastic-solid:pendulum
+
+```
+
+```{prf:example} Calettamento
+:label: thermodynamics:elastic-solid:interference
+
+Il calettamento a caldo o a freddo è un'operazione di unione di due componenti con una connessione a incastro, che sfrutta la dilatazione termica dei materiali. **todo** *esempi*
+
+$$L_1(T) = L_{1,0} (1 + \alpha_1 (T-T_0))$$
+
+$$F = k \Delta x$$
+
+$$\Delta L = \alpha_1 L_{1,0} ( T - T_0 )$$
+
+
+
+
+```

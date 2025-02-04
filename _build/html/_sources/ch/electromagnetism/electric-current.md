@@ -87,6 +87,7 @@ In parole povere, la differenza di carica elettrica tra due istanti del sistema 
 
 - **todo** esempi/esercizi con misura della corrente e della carica elettrica, con strumenti di misura (misura o modello di strumento, come bilance)
 
+(physics-hs:electromagnetism:electric-current:media)=
 ## Corrente elettrica nella materia
 In questa sezione viene discussa la conduzione della carica elettrica nella materia. Diversi materiali hanno proprietà e meccanismi di conduzione molto differenti, (facilmente) spiegabili con una descrizione del fenomeno a livello microscopico. Così, molto velocemnte:
 - i solidi conduttori (metalli,...) hanno ottime proprietà di conduzione, dovute alla presenza di elettroni (di conduzione) condivisi tra tutti gli atomi del materiale, non localizzati ma liberi di muoversi all'interno del materiale. L'applicazione di un campo elettrico di intensità modesta ne causa facilmente il moto, e quindi il materiale dimostra una buona conduzione.
