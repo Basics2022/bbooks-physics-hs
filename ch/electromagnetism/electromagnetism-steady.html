@@ -72,7 +72,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
     <link rel="next" title="20.3.8. Problemi" href="electromagnetism-steady-problems.html" />
-    <link rel="prev" title="20.2. Corrente elettrica" href="electric-current.html" />
+    <link rel="prev" title="20.2.5. Problemi" href="electric-current-problems.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -311,9 +311,17 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="em.html">20. Fondamenti di elettromagnetismo</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="electrostatics.html">20.1. Elettrostatica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="electric-current.html">20.2. Corrente elettrica</a></li>
-<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">20.3. Magnetismo ed elettromagnetismo in regime stazionario</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="electrostatics.html">20.1. Elettrostatica</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="electrostatics-problems.html">20.1.7. Problemi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrostatics-sol.html">20.1.8. Soluzioni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrostatics-notes.html">20.1.9. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="electric-current.html">20.2. Corrente elettrica</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="electric-current-problems.html">20.2.5. Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">20.3. Magnetismo ed elettromagnetismo in regime stazionario</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="electromagnetism-steady-problems.html">20.3.8. Problemi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electromagnetism-steady-sol.html">20.3.9. Soluzioni</a></li>
 <li class="toctree-l3"><a class="reference internal" href="electromagnetism-steady-notes.html">20.3.10. Note e dimostrazioni</a></li>
@@ -322,13 +330,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="electromagnetism-general.html">20.4. Induzione ed elettromagnetismo</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="electrical-engineering.html">21. Fondamenti di elettrotecnica</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="electrical-engineering.html">21. Fondamenti di elettrotecnica</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="circuits-electric.html">21.1. Circuiti elettrici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="circuits-magnetic.html">21.2. Circuiti magnetici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="electric-machines.html">21.3. Sistemi elettromeccanici e macchine elettriche</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="em-waves.html">22. Onde elettromagnetiche</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="em-waves.html">22. Onde elettromagnetiche</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="em-waves-problems.html">22.3. Problemi</a></li>
 </ul>
 </li>
@@ -562,7 +570,9 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienze-elementari-su-campo-magnetico">20.3.1. Esperienze elementari su campo magnetico</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienza-di-faraday">20.3.2. Esperienza di Faraday</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#il-galvanometro">20.3.2.1. Il galvanometro</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l-amperometro">20.3.2.1. L’amperometro</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#il-voltmetro">20.3.2.2. Il voltmetro</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#il-galvanometro">20.3.2.3. Il galvanometro</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienze-di-oersted-e-ampere">20.3.3. Esperienze di Oersted e Ampere</a></li>
@@ -608,8 +618,25 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\vec{f} = - \vec{b} \times \vec{j} \ .\]</div>
 <p><strong>todo</strong> ha senso associarla a Faraday? Nessuno la conosceva prima? Galvani, Volta,… come misuravano la corrente elettrica?</p>
+<div class="section" id="l-amperometro">
+<span id="physics-hs-electromagnetism-electromagnetism-steady-experience-faraday-amperometer"></span><h3><span class="section-number">20.3.2.1. </span>L’amperometro<a class="headerlink" href="#l-amperometro" title="Permalink to this heading">#</a></h3>
+<p>L’amperometro è uno strumento per la misura della corrente elettrica. <strong>todo</strong></p>
+<ul class="simple">
+<li><p>l’amperometro sfrutta l’esperienza di Faraday per misurare la corrente elettrica in un cavo, leggendo la rotazione di una bobina all’interno di un campo magnetico;</p></li>
+<li><p>l’amperometro viene collegato in serie nel lato del circuito nel quale si vuole misurare la corrente elettrica</p></li>
+</ul>
+</div>
+<div class="section" id="il-voltmetro">
+<span id="physics-hs-electromagnetism-electromagnetism-steady-experience-faraday-voltmeter"></span><h3><span class="section-number">20.3.2.2. </span>Il voltmetro<a class="headerlink" href="#il-voltmetro" title="Permalink to this heading">#</a></h3>
+<p>Il voltmetro è uno strumento per la misura della differenza di tensione. <strong>todo</strong></p>
+<ul class="simple">
+<li><p>un modello rudimentale di voltmetro si basa su un amperometro in serie a una resistenza elettrica nota <span class="math notranslate nohighlight">\(R_{v}\)</span> elevata, per ridurre l”<strong>intrusività</strong> dello strumento: maggiore è la resistenza, minore è la corrente che passa nel voltmetro. Nota la resistenza <span class="math notranslate nohighlight">\(R_v\)</span> e letta l’intensità di corrente dalla misura dell’amperometro, la differenza di tensione è misurata usando la <a class="reference internal" href="electric-current.html#physics-hs-electromagnetism-electric-current-solids-conductor-ohm"><span class="std std-ref">legge di Ohm</span></a> <a class="reference internal" href="electric-current.html#equation-ohm-integral-first-r">(20.6)</a> come <span class="math notranslate nohighlight">\(v = R_v i\)</span></p></li>
+<li><p>il voltmetro viene collegato in parallelo al componente del circuito ai capi del quale si vuole misurare la differenza di tensione.</p></li>
+</ul>
+</div>
 <div class="section" id="il-galvanometro">
-<span id="physics-hs-electromagnetism-electromagnetism-steady-experience-faraday-galvanometer"></span><h3><span class="section-number">20.3.2.1. </span>Il galvanometro<a class="headerlink" href="#il-galvanometro" title="Permalink to this heading">#</a></h3>
+<span id="physics-hs-electromagnetism-electromagnetism-steady-experience-faraday-galvanometer"></span><h3><span class="section-number">20.3.2.3. </span>Il galvanometro<a class="headerlink" href="#il-galvanometro" title="Permalink to this heading">#</a></h3>
+<p><strong>todo</strong> <em>differenze tra galvanometro e amperometro?</em></p>
 <p>Il galvanometro è uno strumento utilizzato per la misura della corrente elettrica. Sfrutta l’azione meccanica osservata nell’esperienza di Faraday</p>
 <p>Il momento meccanico generato dalla corrente nel cavo elettrico equilibria un momento generato da componenti meccanici «noti», realizzabili e tarabili con la precisione richiesta.</p>
 <p><strong>todo</strong> <em>Serve questo riferimento qui?</em></p>
@@ -830,12 +857,12 @@ Nell'ipotesi in cui il raggio $R$ dell'anello sia molto maggiore del raggio dell
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="electric-current.html"
+       href="electric-current-problems.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">20.2. </span>Corrente elettrica</p>
+        <p class="prev-next-title"><span class="section-number">20.2.5. </span>Problemi</p>
       </div>
     </a>
     <a class="right-next"
@@ -864,7 +891,9 @@ Nell'ipotesi in cui il raggio $R$ dell'anello sia molto maggiore del raggio dell
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienze-elementari-su-campo-magnetico">20.3.1. Esperienze elementari su campo magnetico</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienza-di-faraday">20.3.2. Esperienza di Faraday</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#il-galvanometro">20.3.2.1. Il galvanometro</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l-amperometro">20.3.2.1. L’amperometro</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#il-voltmetro">20.3.2.2. Il voltmetro</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#il-galvanometro">20.3.2.3. Il galvanometro</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienze-di-oersted-e-ampere">20.3.3. Esperienze di Oersted e Ampere</a></li>

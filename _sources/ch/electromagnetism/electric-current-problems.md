@@ -1,6 +1,11 @@
 (physics-hs:electromagnetism:electric-current:problems)=
 # Problemi
 
+- significato di corrente come flusso di carica elettrica per unità di tempo
+- circuiti elettrici: R, RC; soluzione di circuiti con leggi di Kirchhoff, in termini di corrente e voltaggio; flussi di potenza
+
+- vecchi problemi
+
 ```{exercise} Conservazione della Carica
 In un conduttore, la carica totale rimane invariata quando una corrente elettrica circola al suo interno. Se una carica di $Q = 4 \, \mu C$ entra nel conduttore in un intervallo di tempo di $t = 2 \, \text{ms}$, calcola l'intensità della corrente.
 ```
