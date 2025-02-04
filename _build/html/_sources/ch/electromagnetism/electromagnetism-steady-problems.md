@@ -1,6 +1,11 @@
 (physics-hs:electromagnetism:electromagnetism-steady:problems)=
 # Problemi
 
+- legge di Biot-Savart per diversi tipi di correnti: filo di sezione piccola; dettaglio all'interno di filo; bobina;
+- legge di Ampére e forza di Lorentz (esperienza di Faraday) su filo;
+- moto di cariche all'interno di campo elettromagnetico
+- 
+
 <!--
 ```{exercise} Legge di Ampère
 Calcola il campo magnetico generato da un filo conduttore infinito percorso da corrente $I = 10 \, \text{A}$ a una distanza $r = 0.1 \, \text{m}$ dal filo.

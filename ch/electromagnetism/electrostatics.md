@@ -133,13 +133,18 @@ $$E^{pot} = \sum_{\{i,j\}, i \ne j} V_{ij} = \sum_{\{i,j\}, i \ne j} \frac{1}{4 
 
 senza ripetere la sommatoria sulle coppie con gli elementi invertiti.
 
-Seguono due dimostrazioni di questa formula, ottenute costruendo il sistema di cariche dall'infinito in due maneire diverse.
+Questa espressione dell'energia immagazzinata nel sistema di cariche può essere dimostrata con il calcolo diretto del lavoro necessario per posizionare le cariche nello spazio. Di solito si considera una condizione di riferimento che fissa la costante arbitraria dell'energia per avere energia nulla quando le cariche sono all'infinito.
+Vengono qui date due dimostrazioni, seguendo due modi diversi per posizionare le cariche:
+- posizionando una carica alla volta
+- posizionando tutte le cariche contemporaneamente
+
+Vengono date due dimostrazioni per mostrare diversi approcci allo stesso problema, e per mettere in evidenza che il risultato dell'espressione dell'energia non dipende dal modo in cui si costruisce il sistema, coerentemente con la natura conservativa della forza elettrostatica (il lavoro non dipende dal percorso).
+
 
 <!--
 In assenza di altri fenomeni, l'energia potenziale del sistema di cariche è uguale al lavoro fatto per costruire il sistema di cariche. Ad esempio, si può costruire il sistema di cariche
 -->
 
-<span style="color:red"> **todo** </span>
 
 ```{dropdown} Posizionando una carica alla volta
 $$\begin{aligned}
@@ -176,10 +181,75 @@ $$
 $$
 ```
 
+
 (physics-hs:electromagnetism:electrostatics:e-field:media)=
 ## Campo elettrico nei materiali
 
+A seconda della loro interazione con un campo elettrico e alla loro capacità di condurre corrente, i materiali possono essere classificati come:
+- materiali conduttori
+- materiali dielettrici
+- materiali semi-conduttori
+
+In generale, i materiali isotropi e lineari delle due famiglie possono essere rappresentati dall'equazione costitutiva
+
+$$\vec{d} := \varepsilon_0 \vec{e} + \vec{p} = \varepsilon \vec{e} = \varepsilon_r \varepsilon_0 \vec{e} \ ,$$
+
+avendo introdotto $\vec{p}$ il campo di **polarizzazione** come risposta del materiale a campi elettrici esterni, e il campo di spostamento $\vec{d}$ che riassume gli effetti del campo elettrico "esterno" $\vec{e}$ e della polarizzazione locale del materiale $\vec{p}$. Nel caso di materiali isotropi e lineari, il campo di spostamento $\vec{d}$ è proporzionale al campo elettrico "esterno" $\vec{e}$ e il ceofficiente di proporzionalità è definito costante dielettrica del materiale, $\varepsilon$, e può essere scritta come prodotto della costante dielettrica del vuoto e la costante dielettrica relativa del materiale (adimensionale),
+
+$$\varepsilon_r = \frac{\varepsilon}{\varepsilon_0} \ .$$
+
+Tipicamente:
+- materiali conduttori manifestano una polarizzazione trascurabile, $\varepsilon_r \sim 1$, $\varepsilon \sim \varepsilon_0$
+- materiali dielettrici manifestano una polarizzazione che si manifesta con una costante dielettrica relativa, $\varepsilon_r > 1$, $\varepsilon > \varepsilon_0$
+
+
+### Campo elettrostatico nei conduttori
+In condizioni statiche il campo elettrico nei conduttori è identicamente nullo. Le cariche elettriche (libere) si concentrano quindi in zone di superficie sottile e possono essere modellate in prima approssimazione con densità di carica superficiale.
+
+```{note}
+Per materiali [conduttori di Ohm](physics-hs:electromagnetism:electric-current:solids:conductor:ohm), il campo elettrico è proporzionale alla [densità di corrente elettrica](electric-current-density:def) tramite la resistività del materiale. In condizioni statiche, il moto (medio) delle cariche è nullo; quindi la corrente elettrica è nulla; e quindi il campo elettrico all'interno del materiale conduttore è nullo.
+```
+
+```{prf:example} Distribuzione di carica in un guscio sferico conduttore - simmetria sferica
+:class: dropdown
+
+**todo** Risolvere usando il [teorema di Gauss](physics-hs:electromagnetism:electrostatics:maxwell:gauss) e quindi spostare dopo il capitolo sulle [equazioni di Maxwell in elettrostatica](physics-hs:electromagnetism:electrostatics:maxwell)?
+
+Una carica puntiforme $Q_a$ viene posta nel centro di un guscio sferico di un materiale conduttore a sua volta con con carica totale $Q_b$. Non ci sono altre cause del campo elettrico. Si vuole determinare la distribuzione di carica del problema e il campo elettrico nello spazio.
+
+Sfruttando il comportamento dei conduttori in elettrostatica, si stabilisce che la distribuzione di carica nel conduttore è concentrata sulle superficie del guscio sferico. La distribuzione superficiale di carica sulla superficie interna deve essere tale da annullare il campo elettrico generato dalla carica interna.
+
+Quindi:
+- per $r < R_1$: $\vec{e}(\vec{r}) = \frac{Q_a}{4 \pi \varepsilon_0}\frac{\vec{r}}{|\vec{r}|^3} $
+
+- su $r = R_1$: $\sigma_1 S_1 + Q_a = 0$ e quindi $\sigma_1 = -\frac{Q_a}{4 \pi R_1^2}$
+
+- per $r \in (R_1, R_2)$, $\vec{e}(\vec{r}) = \vec{0}$
+
+- su $r = R_2$: $\sigma_1 S_1 + \sigma_2 S_2 = Q_b$ e quindi 
+
+  $$\sigma_2 = - \frac{R_1^2}{R_2^2} \sigma_1 + \frac{Q_b}{4 \pi R_2^2} = \frac{Q_a + Q_b}{4 \pi R_2^2}$$
+
+- per $r > R_2$:
+
+  $$\vec{e}(\vec{r}) = \frac{Q_a + Q_b}{4 \pi \varepsilon_0} \frac{\vec{r}}{|\vec{r}|^3}$$
+
+```
+
+```{prf:example} Gabbia di Faraday
+```
+
+### Campo elettrostatico nei dielettrici
 - polarizzazione...
+
+```{prf:example} Distribuzione di carica in un guscio sferico dielettrico senza carica netta - simmetria sferica
+:class: dropdown
+
+**todo** aggiungere la possibilità di cariche libere. E' necessario fare ipotesi sulla distribuzione delle cariche libere? O qualche principio fisico fornisce la loro distribuzione? $\nabla \cdot \vec{d} = \rho_f$
+
+
+
+```
 
 Per materiali lineari isotropi,
 
@@ -262,23 +332,11 @@ $$\Gamma_{\partial S}(\vec{e}) = 0$$
 
 ```
 (physics-hs:electromagnetism:lorentz:electric)=
-## Moto di una carica in un campo elettrico
-Il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$ in una regione dello spazio nel quale c'è un campo elettrico $\vec{e}(\vec{r},t)$ è soggetto a una forza esterna,
-
-$$\vec{F}^{el} = q \, \vec{e}(P) \ ,$$ (eq:force:lorentz:electric)
-
-Come si vedrà in seguito nell'ambito dell'elettromagnetismo, questa espressione della forza è un caso particolare della [forza di Lorentz](physics-hs:electromagnetism:lorentz), cioè la forza agente su una carica elettrica immersa in un campo elettromagnetico, nel caso in cui il campo magnetico sia nullo, $\vec{b} = \vec{0}$, o nelle altre condizioni che annullano il termine $\vec{b} \times \vec{v}$ nella formulaa {eq}`eq:force:lorentz`.
-
-Nell'ipotesi di risultante nulla degli effetti del campo elettrico di un sistema su se stesso[^motion:electric-field], l'equazione dinamica che governa il moto della carica è 
-
-  $$m \ddot{ \vec{r} } = \vec{R}^{ext} = q \, \vec{e}(P) + \vec{F}^{\text{non }\vec{e}} \ .$$
-
-[^motion:electric-field]: Il campo elettrico generato dalla carica nell'istante $t$ non influenza il moto della carica stessa allo stesso istante.
-
-- **todo** esempi
 
 (physics-hs:electromagnetism:electrostatics:capacitor)=
 ## Condensatore
+
+Un condensatore è un componente elettrico in grado di immagazzinare l'energia associata a una distribuzione di cariche e un campo elettrico stazionario.  
 
 (physics-hs:electromagnetism:electrostatics:capacitor:flat)=
 ### Condensatore infinito piano
@@ -310,6 +368,21 @@ La formula precedente e la definizione di capacità, $$Q = C , \Delta V$$, conse
 
 $$C = 4 \pi \, \varepsilon \,  \frac{R_1 \, R_2}{R_2 - R_1} \ .$$
 ```
+
+## Moto di una carica in un campo elettrico
+Il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$ in una regione dello spazio nel quale c'è un campo elettrico $\vec{e}(\vec{r},t)$ è soggetto a una forza esterna,
+
+$$\vec{F}^{el} = q \, \vec{e}(P) \ ,$$ (eq:force:lorentz:electric)
+
+Come si vedrà in seguito nell'ambito dell'elettromagnetismo, questa espressione della forza è un caso particolare della [forza di Lorentz](physics-hs:electromagnetism:lorentz), cioè la forza agente su una carica elettrica immersa in un campo elettromagnetico, nel caso in cui il campo magnetico sia nullo, $\vec{b} = \vec{0}$, o nelle altre condizioni che annullano il termine $\vec{b} \times \vec{v}$ nella formulaa {eq}`eq:force:lorentz`.
+
+Nell'ipotesi di risultante nulla degli effetti del campo elettrico di un sistema su se stesso[^motion:electric-field], l'equazione dinamica che governa il moto della carica è 
+
+  $$m \ddot{ \vec{r} } = \vec{R}^{ext} = q \, \vec{e}(P) + \vec{F}^{\text{non }\vec{e}} \ .$$
+
+[^motion:electric-field]: Il campo elettrico generato dalla carica nell'istante $t$ non influenza il moto della carica stessa allo stesso istante.
+
+- **todo** esempi
 
 <!-- **todo** non qui! Spostare nella pagina riassuntiva delle equazioni di Maxwell?
 

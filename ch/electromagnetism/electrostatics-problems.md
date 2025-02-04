@@ -1,6 +1,17 @@
 (physics-hs:electromagnetism:electrostatics:problems)=
 # Problemi
 
+- Esercizi su forza, campo elettrico, potenziale elettrico, lavoro, ed energia di sistemi di cariche puntniformi e campi elettrici assegnati (esempi, campo elettrico uniforme tra armature di condensatore piano
+- Esercizi su sfere concentriche (conduttrici e no)
+- Esercizi su condensatori: relazioni tra grandezze ($v$, $C$, $Q$, $\varepsilon$, forza tra le armature...), energia immagazzinata, e lavoro meccanico su condensatore; lavoro meccanico per inserire o rimuovere dielettrico; combinazione di condensatori
+- Moto di cariche tra pareti di condensatore
+
+```{exercise} Lavoro meccanico su condensatore
+```
+
+
+- vecchi esercizi
+
 ```{exercise} Legge di Coulomb
 Due cariche di $q_1 = 3 \, \mu C$ e $q_2 = -2 \, \mu C$ sono separate da una distanza di $r = 0.5 \, \text{m}$. Calcola la forza tra le due cariche usando la legge di Coulomb.
 ```

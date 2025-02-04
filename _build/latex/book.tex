@@ -87,7 +87,7 @@
         
 
 \title{Fisica per le superiori}
-\date{30 gen 2025}
+\date{04 feb 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -3464,7 +3464,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-30 gen 2025
+04 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3597,7 +3597,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-30 gen 2025
+04 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3685,7 +3685,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-30 gen 2025
+04 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3841,7 +3841,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-30 gen 2025
+04 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -4135,7 +4135,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-30 gen 2025
+04 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -4434,7 +4434,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-30 gen 2025
+04 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -12018,12 +12018,14 @@ L’indice di rifrazione \(n_i\) di un materiale omogeneo è una proprietà del 
 \sphinxstylestrong{Propagazione rettilinea in un mezzo omogeneo.} In un mezzo omogeneo, con indice di rifrazione \(n\) ({\hyperref[\detokenize{ch/waves/intro:refraction-index}]{\sphinxcrossref{Definition 18.4.1}}}) uniforme, i raggi luminosi si propagano su traiettorie rettilinee.
 
 \sphinxAtStartPar
-\sphinxstylestrong{Legge di Snell \sphinxhyphen{} riflessione e rifrazione tra mezzi discontinui.} Per soddisfare le condizioni di continuità del campo elettromagnetico in corrispondenza di una discontinuità di proprietà fisiche, un raggio che si propaga nel mezzo 1 e arriva alla discontinuità con il mezzo 2 formando un angolo \(\theta{1,i}\) con la direzione normale, in generale:
+\sphinxstylestrong{Legge di Snell \sphinxhyphen{} riflessione e rifrazione tra mezzi discontinui.} Per soddisfare le condizioni di continuità del campo elettromagnetico in corrispondenza di una discontinuità di proprietà fisiche, un raggio che si propaga nel mezzo 1 e incidente su una discontinuità con il mezzo 2 con un angolo \(\theta{1,i}\) con la direzione normale, in generale:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-viene riflesso con lo stesso angolo \(\theta_{1,r} = \theta_{1,i}\)
-
+viene riflesso con lo stesso angolo
+\begin{equation*}
+\begin{split}\theta_{1,r} = \theta_{1,i}\end{split}
+\end{equation*}
 \item {} 
 \sphinxAtStartPar
 viene trasmesso con angolo \(\theta_{2,t}\), tale che
@@ -12035,6 +12037,11 @@ viene trasmesso con angolo \(\theta_{2,t}\), tale che
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{Stabilire i coefficienti di riflessione e trasmissione. Scrivere sezione in physics\sphinxhyphen{}electromagnetism}
 
+\sphinxAtStartPar
+\sphinxstylestrong{Riflessione totale.} Quando \(\frac{c_2}{c_1} > 1\) esiste un angolo di incidenza limite oltre al quale non avviene trasmissione nel secondo mezzo. Il valore massimo della funzione \(\sin\) è 1; la condizione limite, di riflessione totale si ottiene quando
+\begin{equation*}
+\begin{split}1 = \sin \theta_{2,t} = \frac{c_2}{c_1} \sin \theta_{1,i} \qquad \rightarrow \qquad \end{split}
+\end{equation*}
 
 \subsubsection{Lenti}
 \label{\detokenize{ch/waves/intro:lenti}}\label{\detokenize{ch/waves/intro:physics-hs-waves-optics-geometric-lenses}}
@@ -12829,12 +12836,23 @@ Per un sistema di cariche puntiformi, l’energia potenziale del sistema è ugua
 senza ripetere la sommatoria sulle coppie con gli elementi invertiti.
 
 \sphinxAtStartPar
-Seguono due dimostrazioni di questa formula, ottenute costruendo il sistema di cariche dall’infinito in due maneire diverse.
+Questa espressione dell’energia immagazzinata nel sistema di cariche può essere dimostrata con il calcolo diretto del lavoro necessario per posizionare le cariche nello spazio. Di solito si considera una condizione di riferimento che fissa la costante arbitraria dell’energia per avere energia nulla quando le cariche sono all’infinito.
+Vengono qui date due dimostrazioni, seguendo due modi diversi per posizionare le cariche:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+posizionando una carica alla volta
 
+\item {} 
+\sphinxAtStartPar
+posizionando tutte le cariche contemporaneamente
 
+\end{itemize}
 
 \sphinxAtStartPar
- \sphinxstylestrong{todo} 
+Vengono date due dimostrazioni per mostrare diversi approcci allo stesso problema, e per mettere in evidenza che il risultato dell’espressione dell’energia non dipende dal modo in cui si costruisce il sistema, coerentemente con la natura conservativa della forza elettrostatica (il lavoro non dipende dal percorso).
+
+
 \subsubsection*{Posizionando una carica alla volta}
 \begin{equation*}
 \begin{split}\begin{aligned}
@@ -12873,12 +12891,119 @@ e il lavoro diventa
 \end{equation*}
 
 \subsection{Campo elettrico nei materiali}
-\label{\detokenize{ch/electromagnetism/electrostatics:campo-elettrico-nei-materiali}}\label{\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-e-field-media}}\begin{itemize}
+\label{\detokenize{ch/electromagnetism/electrostatics:campo-elettrico-nei-materiali}}\label{\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-e-field-media}}
+\sphinxAtStartPar
+A seconda della loro interazione con un campo elettrico e alla loro capacità di condurre corrente, i materiali possono essere classificati come:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+materiali conduttori
+
+\item {} 
+\sphinxAtStartPar
+materiali dielettrici
+
+\item {} 
+\sphinxAtStartPar
+materiali semi\sphinxhyphen{}conduttori
+
+\end{itemize}
+
+\sphinxAtStartPar
+In generale, i materiali isotropi e lineari delle due famiglie possono essere rappresentati dall’equazione costitutiva
+\begin{equation*}
+\begin{split}\vec{d} := \varepsilon_0 \vec{e} + \vec{p} = \varepsilon \vec{e} = \varepsilon_r \varepsilon_0 \vec{e} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo introdotto \(\vec{p}\) il campo di \sphinxstylestrong{polarizzazione} come risposta del materiale a campi elettrici esterni, e il campo di spostamento \(\vec{d}\) che riassume gli effetti del campo elettrico «esterno» \(\vec{e}\) e della polarizzazione locale del materiale \(\vec{p}\). Nel caso di materiali isotropi e lineari, il campo di spostamento \(\vec{d}\) è proporzionale al campo elettrico «esterno» \(\vec{e}\) e il ceofficiente di proporzionalità è definito costante dielettrica del materiale, \(\varepsilon\), e può essere scritta come prodotto della costante dielettrica del vuoto e la costante dielettrica relativa del materiale (adimensionale),
+\begin{equation*}
+\begin{split}\varepsilon_r = \frac{\varepsilon}{\varepsilon_0} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Tipicamente:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+materiali conduttori manifestano una polarizzazione trascurabile, \(\varepsilon_r \sim 1\), \(\varepsilon \sim \varepsilon_0\)
+
+\item {} 
+\sphinxAtStartPar
+materiali dielettrici manifestano una polarizzazione che si manifesta con una costante dielettrica relativa, \(\varepsilon_r > 1\), \(\varepsilon > \varepsilon_0\)
+
+\end{itemize}
+
+
+\subsubsection{Campo elettrostatico nei conduttori}
+\label{\detokenize{ch/electromagnetism/electrostatics:campo-elettrostatico-nei-conduttori}}
+\sphinxAtStartPar
+In condizioni statiche il campo elettrico nei conduttori è identicamente nullo. Le cariche elettriche (libere) si concentrano quindi in zone di superficie sottile e possono essere modellate in prima approssimazione con densità di carica superficiale.
+
+\begin{sphinxadmonition}{note}{Nota:}
+\sphinxAtStartPar
+Per materiali {\hyperref[\detokenize{ch/electromagnetism/electric-current:physics-hs-electromagnetism-electric-current-solids-conductor-ohm}]{\sphinxcrossref{\DUrole{std,std-ref}{conduttori di Ohm}}}}, il campo elettrico è proporzionale alla {\hyperref[\detokenize{ch/electromagnetism/electric-current:electric-current-density-def}]{\sphinxcrossref{\DUrole{std,std-ref}{densità di corrente elettrica}}}} tramite la resistività del materiale. In condizioni statiche, il moto (medio) delle cariche è nullo; quindi la corrente elettrica è nulla; e quindi il campo elettrico all’interno del materiale conduttore è nullo.
+\end{sphinxadmonition}
+\label{ch/electromagnetism/electrostatics:example-0}
+\begin{sphinxadmonition}{note}{Example 20.1.1 (Distribuzione di carica in un guscio sferico conduttore \sphinxhyphen{} simmetria sferica)}
+
+
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} Risolvere usando il {\hyperref[\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-maxwell-gauss}]{\sphinxcrossref{\DUrole{std,std-ref}{teorema di Gauss}}}} e quindi spostare dopo il capitolo sulle {\hyperref[\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-maxwell}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni di Maxwell in elettrostatica}}}}?
+
+\sphinxAtStartPar
+Una carica puntiforme \(Q_a\) viene posta nel centro di un guscio sferico di un materiale conduttore a sua volta con con carica totale \(Q_b\). Non ci sono altre cause del campo elettrico. Si vuole determinare la distribuzione di carica del problema e il campo elettrico nello spazio.
+
+\sphinxAtStartPar
+Sfruttando il comportamento dei conduttori in elettrostatica, si stabilisce che la distribuzione di carica nel conduttore è concentrata sulle superficie del guscio sferico. La distribuzione superficiale di carica sulla superficie interna deve essere tale da annullare il campo elettrico generato dalla carica interna.
+
+\sphinxAtStartPar
+Quindi:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+per \(r < R_1\): \(\vec{e}(\vec{r}) = \frac{Q_a}{4 \pi \varepsilon_0}\frac{\vec{r}}{|\vec{r}|^3} \)
+
+\item {} 
+\sphinxAtStartPar
+su \(r = R_1\): \(\sigma_1 S_1 + Q_a = 0\) e quindi \(\sigma_1 = -\frac{Q_a}{4 \pi R_1^2}\)
+
+\item {} 
+\sphinxAtStartPar
+per \(r \in (R_1, R_2)\), \(\vec{e}(\vec{r}) = \vec{0}\)
+
+\item {} 
+\sphinxAtStartPar
+su \(r = R_2\): \(\sigma_1 S_1 + \sigma_2 S_2 = Q_b\) e quindi
+\begin{equation*}
+\begin{split}\sigma_2 = - \frac{R_1^2}{R_2^2} \sigma_1 + \frac{Q_b}{4 \pi R_2^2} = \frac{Q_a + Q_b}{4 \pi R_2^2}\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+per \(r > R_2\):
+\begin{equation*}
+\begin{split}\vec{e}(\vec{r}) = \frac{Q_a + Q_b}{4 \pi \varepsilon_0} \frac{\vec{r}}{|\vec{r}|^3}\end{split}
+\end{equation*}
+\end{itemize}
+\end{sphinxadmonition}
+\label{ch/electromagnetism/electrostatics:example-1}
+\begin{sphinxadmonition}{note}{Example 20.1.2 (Gabbia di Faraday)}
+
+
+\end{sphinxadmonition}
+
+
+\subsubsection{Campo elettrostatico nei dielettrici}
+\label{\detokenize{ch/electromagnetism/electrostatics:campo-elettrostatico-nei-dielettrici}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 polarizzazione…
 
 \end{itemize}
+\label{ch/electromagnetism/electrostatics:example-2}
+\begin{sphinxadmonition}{note}{Example 20.1.3 (Distribuzione di carica in un guscio sferico dielettrico \sphinxhyphen{} simmetria sferica)}
+
+
+\end{sphinxadmonition}
 
 \sphinxAtStartPar
 Per materiali lineari isotropi,
@@ -12990,34 +13115,11 @@ Avendo dimostrato la legge di Faraday nel caso stazionario per una carica puntif
 \begin{split}\Gamma_{\partial S}(\vec{e}) = 0\end{split}
 \end{equation*}
 
-\subsection{Moto di una carica in un campo elettrico}
-\label{\detokenize{ch/electromagnetism/electrostatics:moto-di-una-carica-in-un-campo-elettrico}}\label{\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-lorentz-electric}}
-\sphinxAtStartPar
-Il moto di una corpo puntiforme di massa \(m\) e carica elettrica \(q\) in una regione dello spazio nel quale c’è un campo elettrico \(\vec{e}(\vec{r},t)\) è soggetto a una forza esterna,
-\begin{equation}\label{equation:ch/electromagnetism/electrostatics:eq:force:lorentz:electric}
-\begin{split}\vec{F}^{el} = q \, \vec{e}(P) \ ,\end{split}
-\end{equation}
-\sphinxAtStartPar
-Come si vedrà in seguito nell’ambito dell’elettromagnetismo, questa espressione della forza è un caso particolare della {\hyperref[\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-lorentz}]{\sphinxcrossref{\DUrole{std,std-ref}{forza di Lorentz}}}}, cioè la forza agente su una carica elettrica immersa in un campo elettromagnetico, nel caso in cui il campo magnetico sia nullo, \(\vec{b} = \vec{0}\), o nelle altre condizioni che annullano il termine \(\vec{b} \times \vec{v}\) nella formulaa \eqref{equation:ch/electromagnetism/electromagnetism-steady:eq:force:lorentz}.
-
-\sphinxAtStartPar
-Nell’ipotesi di risultante nulla degli effetti del campo elettrico di un sistema su se stesso%
-\begin{footnote}[1]\sphinxAtStartFootnote
-Il campo elettrico generato dalla carica nell’istante \(t\) non influenza il moto della carica stessa allo stesso istante.
-%
-\end{footnote}, l’equazione dinamica che governa il moto della carica è
-\begin{equation*}
-\begin{split}m \ddot{ \vec{r} } = \vec{R}^{ext} = q \, \vec{e}(P) + \vec{F}^{\text{non }\vec{e}} \ .\end{split}
-\end{equation*}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\sphinxstylestrong{todo} esempi
-
-\end{itemize}
-
-
 \subsection{Condensatore}
-\label{\detokenize{ch/electromagnetism/electrostatics:condensatore}}\label{\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-capacitor}}
+\label{\detokenize{ch/electromagnetism/electrostatics:condensatore}}\label{\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-capacitor}}\label{\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-lorentz-electric}}
+\sphinxAtStartPar
+Un condensatore è un componente elettrico in grado di immagazzinare l’energia associata a una distribuzione di cariche e un campo elettrico stazionario.
+
 
 \subsubsection{Condensatore infinito piano}
 \label{\detokenize{ch/electromagnetism/electrostatics:condensatore-infinito-piano}}\label{\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-capacitor-flat}}\begin{equation*}
@@ -13054,9 +13156,313 @@ La formula precedente e la definizione di capacità, \$\(Q = C , \Delta V\)\$, c
 \begin{split}C = 4 \pi \, \varepsilon \,  \frac{R_1 \, R_2}{R_2 - R_1} \ .\end{split}
 \end{equation*}
 
+\subsection{Moto di una carica in un campo elettrico}
+\label{\detokenize{ch/electromagnetism/electrostatics:moto-di-una-carica-in-un-campo-elettrico}}
+\sphinxAtStartPar
+Il moto di una corpo puntiforme di massa \(m\) e carica elettrica \(q\) in una regione dello spazio nel quale c’è un campo elettrico \(\vec{e}(\vec{r},t)\) è soggetto a una forza esterna,
+\begin{equation}\label{equation:ch/electromagnetism/electrostatics:eq:force:lorentz:electric}
+\begin{split}\vec{F}^{el} = q \, \vec{e}(P) \ ,\end{split}
+\end{equation}
+\sphinxAtStartPar
+Come si vedrà in seguito nell’ambito dell’elettromagnetismo, questa espressione della forza è un caso particolare della {\hyperref[\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-lorentz}]{\sphinxcrossref{\DUrole{std,std-ref}{forza di Lorentz}}}}, cioè la forza agente su una carica elettrica immersa in un campo elettromagnetico, nel caso in cui il campo magnetico sia nullo, \(\vec{b} = \vec{0}\), o nelle altre condizioni che annullano il termine \(\vec{b} \times \vec{v}\) nella formulaa \eqref{equation:ch/electromagnetism/electromagnetism-steady:eq:force:lorentz}.
+
+\sphinxAtStartPar
+Nell’ipotesi di risultante nulla degli effetti del campo elettrico di un sistema su se stesso%
+\begin{footnote}[1]\sphinxAtStartFootnote
+Il campo elettrico generato dalla carica nell’istante \(t\) non influenza il moto della carica stessa allo stesso istante.
+%
+\end{footnote}, l’equazione dinamica che governa il moto della carica è
+\begin{equation*}
+\begin{split}m \ddot{ \vec{r} } = \vec{R}^{ext} = q \, \vec{e}(P) + \vec{F}^{\text{non }\vec{e}} \ .\end{split}
+\end{equation*}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{todo} esempi
+
+\end{itemize}
+
+
 
 
 \bigskip\hrule\bigskip
+
+
+\sphinxstepscope
+
+
+\subsection{Problemi}
+\label{\detokenize{ch/electromagnetism/electrostatics-problems:problemi}}\label{\detokenize{ch/electromagnetism/electrostatics-problems:physics-hs-electromagnetism-electrostatics-problems}}\label{\detokenize{ch/electromagnetism/electrostatics-problems::doc}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Esercizi su forza, campo elettrico, potenziale elettrico, lavoro, ed energia di sistemi di cariche puntniformi e campi elettrici assegnati (esempi, campo elettrico uniforme tra armature di condensatore piano
+
+\item {} 
+\sphinxAtStartPar
+Esercizi su sfere concentriche (conduttrici e no)
+
+\item {} 
+\sphinxAtStartPar
+Esercizi su condensatori: relazioni tra grandezze (\(v\), \(C\), \(Q\), \(\varepsilon\), forza tra le armature…), energia immagazzinata, e lavoro meccanico su condensatore; lavoro meccanico per inserire o rimuovere dielettrico; combinazione di condensatori
+
+\item {} 
+\sphinxAtStartPar
+Moto di cariche tra pareti di condensatore
+
+\end{itemize}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-0}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.1 (Lavoro meccanico su condensatore)}
+
+
+\end{sphinxadmonition}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+vecchi esercizi
+
+\end{itemize}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-1}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.2 (Legge di Coulomb)}
+
+
+
+\sphinxAtStartPar
+Due cariche di \(q_1 = 3 \, \mu C\) e \(q_2 = -2 \, \mu C\) sono separate da una distanza di \(r = 0.5 \, \text{m}\). Calcola la forza tra le due cariche usando la legge di Coulomb.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-2}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.3 (Forza Elettrica e Direzione)}
+
+
+
+\sphinxAtStartPar
+Due cariche puntiformi di carica \(q_1 = 4 \, \mu C\) e \(q_2 = -3 \, \mu C\) sono posizionate lungo l’asse \(x\), a \(x_1 = 2 \, \text{m}\) e \(x_2 = 6 \, \text{m}\). Calcola la forza che agisce su \(q_2\) a causa di \(q_1\).
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-3}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.4 (Campo Elettrico da una Carica Puntiforme)}
+
+
+
+\sphinxAtStartPar
+Calcola il campo elettrico a una distanza \(r = 2 \, \text{m}\) da una carica di \(q = 6 \, \mu C\).
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-4}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.5 (Potenziale Elettrico di una Carica Puntiforme)}
+
+
+
+\sphinxAtStartPar
+Calcola il potenziale elettrico creato da una carica di \(q = 3 \, \mu C\) a una distanza di \(r = 1 \, \text{m}\).
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-5}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.6 (Legge di Gauss)}
+
+
+
+\sphinxAtStartPar
+Calcola il flusso del campo elettrico attraverso una superficie sferica di raggio \(R = 2 \, \text{m}\) centrata in una carica di \(q = 5 \, \mu C\).
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-6}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.7 (Superficie Gaussiana con Distribuzione Sferica)}
+
+
+
+\sphinxAtStartPar
+Una carica distribuita uniformemente su una superficie sferica di raggio \(R = 0.2 \, \text{m}\) produce un campo elettrico all’interno di essa. Calcola la carica totale all’interno della superficie se il campo è di \(E = 1 \, \text{kV/m}\) a \(r = 0.1 \, \text{m}\).
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-7}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.8 (Campo Elettrico da una Distribuzione Continua di Carica)}
+
+
+
+\sphinxAtStartPar
+Calcola il campo elettrico prodotto da una distribuzione continua di carica su una linea di lunghezza \(L = 1 \, \text{m}\) e densità di carica lineare \(\lambda = 2 \, \mu C/\text{m}\) a una distanza \(r = 0.5 \, \text{m}\) dal centro della linea.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-8}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.9 (Energia Potenziale Elettrica tra Due Cariche)}
+
+
+
+\sphinxAtStartPar
+Calcola l’energia potenziale elettrica tra due cariche di \(q_1 = 1 \, \mu C\) e \(q_2 = 2 \, \mu C\) separate da una distanza di \(r = 0.3 \, \text{m}\).
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-9}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.10 (Legge di Faraday Stazionaria)}
+
+
+
+\sphinxAtStartPar
+Calcola il campo elettrico indotto da un campo magnetico stazionario di intensità \(B = 0.5 \, \text{T}\) che attraversa un solenoide di lunghezza \(L = 1 \, \text{m}\) e \(N = 100\) spire.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-10}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.11 (Moto di una Carica in un Campo Elettrico)}
+
+
+
+\sphinxAtStartPar
+Una particella di carica \(q = 5 \, \mu C\) si muove con velocità \(v = 3 \, \text{m/s}\) in un campo elettrico uniforme di intensità \(E = 4 \, \text{kV/m}\). Calcola la forza che agisce sulla particella.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-11}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.12 (Capacitore Piatto)}
+
+
+
+\sphinxAtStartPar
+Calcola la capacità di un condensatore a piatti paralleli con superficie dei piatti \(A = 1 \, \text{m}^2\) e separazione tra i piatti di \(d = 0.01 \, \text{m}\), se il dielettrico tra i piatti è l’aria con costante dielettrica \(\epsilon_0 = 8.85 \times 10^{-12} \, \text{F/m}\).
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-12}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.13 (Energia di un Condensatore)}
+
+
+
+\sphinxAtStartPar
+Calcola l’energia immagazzinata in un condensatore con capacità \(C = 2 \, \mu F\) e tensione applicata \(V = 10 \, \text{V}\).
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-13}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.14 (Energia Potenziale di un Condensatore)}
+
+
+
+\sphinxAtStartPar
+Un condensatore a piatti paralleli ha una capacità di \(C = 3 \, \mu F\) e viene caricato fino a \(V = 12 \, \text{V}\). Calcola l’energia potenziale immagazzinata nel condensatore.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-14}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.15 (Potenziale di un Condensatore)}
+
+
+
+\sphinxAtStartPar
+Calcola il potenziale elettrico tra due piatti di un condensatore a piatti paralleli con carica di \(Q = 5 \, \mu C\) e capacità di \(C = 2 \, \mu F\).
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-15}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.16 (Capacità di un Condensatore con Dielettrico)}
+
+
+
+\sphinxAtStartPar
+Un condensatore a piatti paralleli ha una capacità di \(C = 5 \, \mu F\) con aria come dielettrico. Se il dielettrico viene sostituito da materiale con costante dielettrica \(\epsilon_r = 2\), calcola la nuova capacità del condensatore.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-16}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.17 (Densità di Energia in un Campo Elettrico)}
+
+
+
+\sphinxAtStartPar
+Calcola la densità di energia in un campo elettrico con intensità \(E = 100 \, \text{kV/m}\) in un materiale con costante dielettrica \(\epsilon_r = 4\).
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-17}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.18 (Energia Potenziale di una Carica in un Condensatore)}
+
+
+
+\sphinxAtStartPar
+Calcola l’energia potenziale di una carica di \(q = 2 \, \mu C\) in un condensatore con tensione di \(V = 10 \, \text{V}\).
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-18}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.19 (Capacità di un Condensatore Sferico)}
+
+
+
+\sphinxAtStartPar
+Calcola la capacità di un condensatore sferico con raggio interno \(r_1 = 0.1 \, \text{m}\) e raggio esterno \(r_2 = 0.2 \, \text{m}\) nel vuoto.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-19}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.20 (Carica di un Condensatore)}
+
+
+
+\sphinxAtStartPar
+Un condensatore con capacità \(C = 10 \, \mu F\) è collegato a una batteria che fornisce una tensione di \(V = 20 \, \text{V}\). Calcola la carica immagazzinata nel condensatore.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-20}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.21 (Potenziale di una Carica in un Campo Elettrico Uniforme)}
+
+
+
+\sphinxAtStartPar
+Una carica di \(q = 2 \, \mu C\) è posta a una distanza di \(r = 0.5 \, \text{m}\) da un piano carico che crea un campo elettrico uniforme di \(E = 4 \, \text{kV/m}\). Calcola il potenziale in quel punto.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-21}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.22 (Legge di Coulomb in un Dielettrico)}
+
+
+
+\sphinxAtStartPar
+Due cariche di \(q_1 = 4 \, \mu C\) e \(q_2 = -6 \, \mu C\) sono separate da una distanza di \(r = 0.2 \, \text{m}\) in un dielettrico con costante \(\epsilon_r = 5\). Calcola la forza tra le due cariche.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-22}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.23 (Potenziale Elettrico di un Dipolo)}
+
+
+
+\sphinxAtStartPar
+Calcola il potenziale elettrico creato da un dipolo con momento dipolare \(p = 5 \, \mu C \cdot \text{m}\) a una distanza di \(r = 0.1 \, \text{m}\) lungo l’asse del dipolo.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-23}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.24 (Condensatore con Dielettrico Non Lineare)}
+
+
+
+\sphinxAtStartPar
+Calcola la capacità di un condensatore a piatti paralleli con costante dielettrica non lineare, con \(\epsilon_r = 10 + 2E\) dove \(E\) è il campo elettrico. Se il campo elettrico è \(E = 100 \, \text{kV/m}\), qual è la capacità?
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-24}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.25 (Forza su una Carica in un Campo Elettrico Non Uniforme)}
+
+
+
+\sphinxAtStartPar
+Una particella di carica \(q = 1 \, \mu C\) è posta in un campo elettrico che varia linearmente con la distanza. Calcola la forza che agisce sulla particella se il campo elettrico varia da \(E_1 = 5 \, \text{kV/m}\) a \(E_2 = 10 \, \text{kV/m}\) in un intervallo di \(r = 1 \, \text{m}\).
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-25}
+
+\begin{sphinxadmonition}{note}{Exercise 20.1.26 (Campo Elettrico all’Interno di una Sfera Carica)}
+
+
+
+\sphinxAtStartPar
+Calcola il campo elettrico all’interno di una sfera carica con densità di carica uniforme \(\rho = 3 \, \mu C/\text{m}^3\) e raggio \(R = 0.2 \, \text{m}\).
+\end{sphinxadmonition}
+
+
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+
+\end{sphinxVerbatim}
+
+\sphinxstepscope
+
+
+\subsection{Soluzioni}
+\label{\detokenize{ch/electromagnetism/electrostatics-sol:soluzioni}}\label{\detokenize{ch/electromagnetism/electrostatics-sol:physics-hs-electromagnetism-electrostatics-sol}}\label{\detokenize{ch/electromagnetism/electrostatics-sol::doc}}
+\sphinxstepscope
+
+
+\subsection{Note e dimostrazioni}
+\label{\detokenize{ch/electromagnetism/electrostatics-notes:note-e-dimostrazioni}}\label{\detokenize{ch/electromagnetism/electrostatics-notes:physics-hs-electromagnetism-electrostatics-notes}}\label{\detokenize{ch/electromagnetism/electrostatics-notes::doc}}
 
 
 \sphinxstepscope
@@ -13317,6 +13723,178 @@ generatori di «spinta»: generatori di tensione
 resistenza al moto: la resistenza elettica
 
 \end{itemize}
+
+\sphinxstepscope
+
+
+\subsection{Problemi}
+\label{\detokenize{ch/electromagnetism/electric-current-problems:problemi}}\label{\detokenize{ch/electromagnetism/electric-current-problems:physics-hs-electromagnetism-electric-current-problems}}\label{\detokenize{ch/electromagnetism/electric-current-problems::doc}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+significato di corrente come flusso di carica elettrica per unità di tempo
+
+\item {} 
+\sphinxAtStartPar
+circuiti elettrici: R, RC; soluzione di circuiti con leggi di Kirchhoff, in termini di corrente e voltaggio; flussi di potenza
+
+\item {} 
+\sphinxAtStartPar
+vecchi problemi
+
+\end{itemize}
+\phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-0}
+
+\begin{sphinxadmonition}{note}{Exercise 20.2.1 (Conservazione della Carica)}
+
+
+
+\sphinxAtStartPar
+In un conduttore, la carica totale rimane invariata quando una corrente elettrica circola al suo interno. Se una carica di \(Q = 4 \, \mu C\) entra nel conduttore in un intervallo di tempo di \(t = 2 \, \text{ms}\), calcola l’intensità della corrente.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-1}
+
+\begin{sphinxadmonition}{note}{Exercise 20.2.2 (Legge di Ohm)}
+
+
+
+\sphinxAtStartPar
+Calcola la corrente che attraversa un resistore con resistenza \(R = 10 \, \Omega\) quando viene applicata una tensione di \(V = 5 \, \text{V}\).
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-2}
+
+\begin{sphinxadmonition}{note}{Exercise 20.2.3 (Legge di Ohm in un Circuito)}
+
+
+
+\sphinxAtStartPar
+In un circuito serie con tre resistenze \(R_1 = 5 \, \Omega\), \(R_2 = 10 \, \Omega\), e \(R_3 = 15 \, \Omega\), applicando una tensione di \(V = 30 \, \text{V}\), calcola la corrente che circola nel circuito.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-3}
+
+\begin{sphinxadmonition}{note}{Exercise 20.2.4 (Resistenza di un Conduttore)}
+
+
+
+\sphinxAtStartPar
+Un conduttore ha una lunghezza di \(L = 2 \, \text{m}\), una sezione trasversale di \(A = 1 \, \text{mm}^2\), e una resistività di \(\rho = 1.7 \times 10^{-8} \, \Omega \, \text{m}\). Calcola la resistenza del conduttore.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-4}
+
+\begin{sphinxadmonition}{note}{Exercise 20.2.5 (Conduzione nei Gas)}
+
+
+
+\sphinxAtStartPar
+Considera un gas conduttore a temperatura \(T = 300 \, \text{K}\) e pressione \(P = 1 \, \text{atm}\). La sua resistività è \(\rho = 10^{-2} \, \Omega \, \text{m}\). Calcola la resistenza di un cilindro di gas lungo \(L = 1 \, \text{m}\) e con sezione trasversale \(A = 0.01 \, \text{m}^2\).
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-5}
+
+\begin{sphinxadmonition}{note}{Exercise 20.2.6 (Corrente nei Semiconduttori)}
+
+
+
+\sphinxAtStartPar
+In un semiconduttore di silicio, la mobilità degli elettroni è di \(1500 \, \text{cm}^2/\text{V}\text{s}\) e la densità di carica di portatori è di \(n = 10^{20} \, \text{m}^{-3}\). Calcola la corrente che attraversa un semiconduttore di lunghezza \(L = 2 \, \text{cm}\) e sezione trasversale \(A = 5 \, \text{mm}^2\) quando è applicata una tensione di \(V = 10 \, \text{V}\).
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-6}
+
+\begin{sphinxadmonition}{note}{Exercise 20.2.7 (Corrente Elettrica in un Conduttore)}
+
+
+
+\sphinxAtStartPar
+Un conduttore ha una resistenza di \(R = 5 \, \Omega\). Se una corrente di \(I = 0.2 \, \text{A}\) circola attraverso di esso, calcola la potenza dissipata nel conduttore.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-7}
+
+\begin{sphinxadmonition}{note}{Exercise 20.2.8 (Conduttività di un Materiale)}
+
+
+
+\sphinxAtStartPar
+Un materiale ha una conduttività \(\sigma = 1.5 \times 10^6 \, \text{S/m}\) e una lunghezza di \(L = 3 \, \text{m}\). Se viene applicata una tensione di \(V = 9 \, \text{V}\), calcola la corrente che attraversa il materiale.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-8}
+
+\begin{sphinxadmonition}{note}{Exercise 20.2.9 (La Corrente in un Conduttore)}
+
+
+
+\sphinxAtStartPar
+Se un conduttore ha una resistenza di \(R = 10 \, \Omega\) e una tensione di \(V = 20 \, \text{V}\), calcola la corrente che attraversa il conduttore.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-9}
+
+\begin{sphinxadmonition}{note}{Exercise 20.2.10 (Effetto Joule)}
+
+
+
+\sphinxAtStartPar
+Un filo di resistenza \(R = 0.5 \, \Omega\) trasporta una corrente di \(I = 2 \, \text{A}\) per un tempo di \(t = 5 \, \text{s}\). Calcola il calore dissipato nel filo.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-10}
+
+\begin{sphinxadmonition}{note}{Exercise 20.2.11 (Legge di Ohm per un Semiconduttore)}
+
+
+
+\sphinxAtStartPar
+In un semiconduttore con una resistività di \(\rho = 3 \times 10^{-4} \, \Omega \, \text{m}\) e una lunghezza di \(L = 0.02 \, \text{m}\), calcola la resistenza se la sezione trasversale è \(A = 1 \, \text{mm}^2\).
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-11}
+
+\begin{sphinxadmonition}{note}{Exercise 20.2.12 (Effetto della Temperatura sulla Resistenza)}
+
+
+
+\sphinxAtStartPar
+La resistenza di un filo metallico è di \(R = 10 \, \Omega\) a \(T_0 = 20 \, \text{°C}\). Se il coefficiente di temperatura della resistenza è \(\alpha = 0.004 \, \text{°C}^{-1}\), calcola la resistenza a \(T = 50 \, \text{°C}\).
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-12}
+
+\begin{sphinxadmonition}{note}{Exercise 20.2.13 (Energia Spesa in un Conduttore)}
+
+
+
+\sphinxAtStartPar
+Calcola l’energia spesa in un conduttore con resistenza \(R = 1 \, \Omega\) in cui circola una corrente di \(I = 0.5 \, \text{A}\) per un tempo di \(t = 10 \, \text{s}\).
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-13}
+
+\begin{sphinxadmonition}{note}{Exercise 20.2.14 (Conduzione nei Semiconduttori)}
+
+
+
+\sphinxAtStartPar
+Considera un semiconduttore di germanio con resistività \(\rho = 0.5 \, \Omega \, \text{m}\) e una lunghezza di \(L = 0.5 \, \text{m}\). Calcola la corrente che attraversa un semiconduttore di sezione trasversale \(A = 0.01 \, \text{m}^2\) quando viene applicata una tensione di \(V = 5 \, \text{V}\).
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-14}
+
+\begin{sphinxadmonition}{note}{Exercise 20.2.15 (Corrente in un Circuito Serie)}
+
+
+
+\sphinxAtStartPar
+In un circuito serie con tre resistenze \(R_1 = 2 \, \Omega\), \(R_2 = 3 \, \Omega\) e \(R_3 = 5 \, \Omega\) e una tensione totale di \(V = 12 \, \text{V}\), calcola la corrente che circola nel circuito.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-15}
+
+\begin{sphinxadmonition}{note}{Exercise 20.2.16 (Densità di Corrente in un Conduttore)}
+
+
+
+\sphinxAtStartPar
+Un conduttore di lunghezza \(L = 2 \, \text{m}\) e sezione trasversale \(A = 0.5 \, \text{mm}^2\) trasporta una corrente di \(I = 0.1 \, \text{A}\). Calcola la densità di corrente nel conduttore.
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-16}
+
+\begin{sphinxadmonition}{note}{Exercise 20.2.17 (Legge di Ohm per un Gas)}
+
+
+
+\sphinxAtStartPar
+Considera un gas ionizzato con densità di carica \(n = 10^{19} \, \text{m}^{-3}\) e mobilità degli ioni \(u = 0.2 \, \text{m}^2/\text{V} \cdot \text{s}\). Calcola la corrente che circola in un condotto di lunghezza \(L = 0.5 \, \text{m}\) quando viene applicata una tensione di \(V = 20 \, \text{V}\).
+\end{sphinxadmonition}
 
 \sphinxstepscope
 
@@ -13589,7 +14167,22 @@ Sono necessarie quindi due «correzioni» delle equazioni, per includere fenomen
 
 
 \subsection{Problemi}
-\label{\detokenize{ch/electromagnetism/electromagnetism-steady-problems:problemi}}\label{\detokenize{ch/electromagnetism/electromagnetism-steady-problems:physics-hs-electromagnetism-electromagnetism-steady-problems}}\label{\detokenize{ch/electromagnetism/electromagnetism-steady-problems::doc}}
+\label{\detokenize{ch/electromagnetism/electromagnetism-steady-problems:problemi}}\label{\detokenize{ch/electromagnetism/electromagnetism-steady-problems:physics-hs-electromagnetism-electromagnetism-steady-problems}}\label{\detokenize{ch/electromagnetism/electromagnetism-steady-problems::doc}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+legge di Biot\sphinxhyphen{}Savart per diversi tipi di correnti: filo di sezione piccola; dettaglio all’interno di filo; bobina;
+
+\item {} 
+\sphinxAtStartPar
+legge di Ampére e forza di Lorentz (esperienza di Faraday) su filo;
+
+\item {} 
+\sphinxAtStartPar
+moto di cariche all’interno di campo elettromagnetico
+
+\item {} 
+\end{itemize}
+
 
 
 \sphinxstepscope
@@ -16078,7 +16671,7 @@ forte
 \item\relax\sphinxstyleindexentry{electric\sphinxhyphen{}current\sphinxhyphen{}density}\sphinxstyleindexextra{ch/electromagnetism/electric\sphinxhyphen{}current}\sphinxstyleindexpageref{ch/electromagnetism/electric-current:\detokenize{electric-current-density}}
 \indexspace
 \bigletter{example\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/electromagnetism/electric\sphinxhyphen{}machines}\sphinxstyleindexpageref{ch/electromagnetism/electric-machines:\detokenize{example-0}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{example-0}}
 \indexspace
 \bigletter{example\sphinxhyphen{}1}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-1}}
@@ -16111,7 +16704,7 @@ forte
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}18}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-18}}
 \indexspace
 \bigletter{example\sphinxhyphen{}2}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/electromagnetism/electric\sphinxhyphen{}machines}\sphinxstyleindexpageref{ch/electromagnetism/electric-machines:\detokenize{example-2}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{example-2}}
 \indexspace
 \bigletter{example\sphinxhyphen{}3}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/waves/intro}\sphinxstyleindexpageref{ch/waves/intro:\detokenize{example-3}}
