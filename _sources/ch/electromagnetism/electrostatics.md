@@ -181,15 +181,42 @@ $$
 $$
 ```
 
-```{prf:example} Il dipolo elettrico
+````{prf:example} Il dipolo elettrico
 :label: electric-dipole
 
+Un dipolo elettrico viene definito come un sistema formato da due cariche di intensità $-q$ e $q$ poste in due punti dello spazio $P_{-}$, $P_{+} = P_{-}$ dal vettore $\vec{\ell}$,
+
+$$P_+ = P_{-} + \vec{\ell} \ ,$$
+
+nel limite per $|\vec{\ell}| \rightarrow 0$ e $q \rightarrow + \infty$ in modo tale da avere il prodotto 
+
+$$\vec{P} := q \vec{\ell} \ ,$$
+
+finito. Il vettore $\vec{P} = q \vec{\ell}$ è l'intensità del dipolo. 
+
+Il campo elettrico prodotto da un dipolo può essere calcolato usando il principio di sovrapposizione delle cause (le due cariche elettriche di intensità opposta) e gli effetti (i campi prodotti dalle due cariche), calcolando il limite per $|\vec{\ell}| \rightarrow 0$ e $q \rightarrow + \infty$ con $\vec{P} = q \vec{\ell}$ finito.
+
+Il modello di dipolo elettrico può essere utilizzato per rappresentare la **polarizzazione** di un [materiale dielettrico](physics-hs:electromagnetism:electrostatics:e-field:media:dielectrics).
+
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/dipole-field-1.png)
+  - ![](../../media/dipole-field-01.png)
 ```
 
-```{prf:example}
+````
 
+````{prf:example} Il dipolo elettrico in un campo elettrico esterno uniforme
+:label: electric-dipole-ext-e-field
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/dipole-ext-field-1.png)
+  - ![](../../media/dipole-ext-field-2.png)
 ```
 
+````
 
 (physics-hs:electromagnetism:electrostatics:e-field:media)=
 ## Campo elettrico nei materiali
@@ -218,6 +245,7 @@ Tipicamente:
 - materiali dielettrici manifestano una polarizzazione che si manifesta con una costante dielettrica relativa, $\varepsilon_r > 1$, $\varepsilon > \varepsilon_0$
 
 
+(physics-hs:electromagnetism:electrostatics:e-field:media:conductors)=
 ### Campo elettrostatico nei conduttori
 In condizioni statiche il campo elettrico nei conduttori è identicamente nullo. Le cariche elettriche (libere) si concentrano quindi in zone di superficie sottile e possono essere modellate in prima approssimazione con densità di carica superficiale. Se in una regione dello spazio il campo elettrico è identicamente nullo, allora i punti in quella regione hanno lo stesso pontenziale. E' quindi possibile affermare che nei punti all'interno di un materiale conduttore in condizioni di elettrostatica (o di resistività nulla o trascurabile, come sarà spiegato nel prossimo capitolo sulla [corrente elettrica](physics-hs:electromagnetism:electric-current) per la [conduzione nei solidi conduttori](physics-hs:electromagnetism:electric-current:solids:conductor)),
 
@@ -265,9 +293,39 @@ Quindi:
 ```{prf:example} Gabbia di Faraday
 ```
 
+(physics-hs:electromagnetism:electrostatics:e-field:media:dielectrics)=
 ### Campo elettrostatico nei dielettrici
 - polarizzazione: descrizione
 - polarizzazione equivalente a una distribuzione di volume di [dipoli elettrici](), vedi {prf:ref}`electric-dipole`, equivalente a una distribuzione di carica superficiale e una distribuzione di carica di volume solo se polarizzazione non uniforme
+
+A differenza dei materiali conduttori, gli elettroni sono localizzati attorno ai nuclei degli atomi del materiale e non esistono elettroni liberi di muoversi all'interno del materiale - come sono gli elettroni di conduzione nei conduttori. Quando un materiale dielettrico viene sottoposto a un campo elettrico esterno, esso risponde con una ridistribuzione locale di carica vincolata ai singoli atomi: benché ogni atomo rimanga elettricamente neutro, avviene una ridistribuzione delle cariche di segno opposto presenti all'interno di ogni atomo, che può quindi essere rappresentato come un [dipolo elettrico]().
+
+La ridistribuzione delle cariche elettriche all'interno del materiale crea a sua volta un campo elettrico, che in un modello continuo della materia può essere rappresentato come una densità di volume di dipoli elettrici, $\vec{p}(\vec{r},t)$: è possibile dimostrare che[^dipole-distribution-proof] distribuzione di dipoli elettrici nel volume corrisponde agli effetti di: 1) una densità di carica sulla superficie del volume di intensità $\vec{p} \cdot \hat{n}$ e 2) di una densità di volume di carica di intensità $\nabla \cdot \vec{p}$, termine nullo nel caso in cui la polarizzazione sia uniforme.
+
+[^dipole-distribution-proof]: Qua bisogna fidarsi e provare a verificare la ragionevolezza dell'affermazione, o avere gli strumenti matematici per comprendere la [dimostrazione](https://basics2022.github.io/bbooks-physics-electromagnetism/ch/media.html#distribuzione-continua-di-dipoli).
+
+Questa affermazione viene utilizzata per analizzare la risposta di un materiale dielettrico isotropo in un campo elettrico uniforme. Facendo riferimento alla figure **todo**, la polarizzazione è equivalente alla distribuzione di carica superficiale $\sigma_p = \vec{p} \cdot \hat{n} > 0$ sulla faccia di destra, $-\sigma_p$ sulla faccia di sinistra. Riconoscendo l'analogia con un [condensatore piano](physics-hs:electromagnetism:electrostatics:capacitor:flat), il campo elettrico all'esterno del dielettrico rimane invariato; all'interno del dielettrico, il campo elettrico vale
+
+$$\vec{e} = \vec{E} - \frac{\sigma_p}{\varepsilon_0} \hat{x} \ .$$
+
+Non essendoci cariche libere nel sistema, il campo di spostamento $\vec{d}$ è uniforme e quindi $\vec{d} = \varepsilon_0 \vec{E}$
+
+$$\vec{e} = \frac{1}{\varepsilon_0} \left( \vec{d} - \vec{p} \right) 
+  = \vec{E} - \frac{\vec{p}}{\varepsilon_0} 
+  = \vec{E} - \frac{\varepsilon_r - 1}{\varepsilon_r} \vec{E} 
+  = \frac{1}{\varepsilon_r} \vec{E}  \ .
+$$ 
+
+da cui 
+
+$$\vec{p} = \sigma_p \hat{x} = \frac{\varepsilon_r - 1}{\varepsilon_r} \vec{d} = \varepsilon_0 \frac{\varepsilon_r - 1}{ \varepsilon_r} \vec{E}  \ .$$
+
+
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/dielectric.png)
+```
 
 ```{prf:example} Distribuzione di carica in un guscio sferico dielettrico senza carica netta - simmetria sferica
 :class: dropdown
@@ -279,6 +337,18 @@ Quindi:
 Per materiali lineari isotropi,
 
 $$\vec{d} := \varepsilon \vec{e} = \varepsilon_0 \vec{e} + \vec{p}$$
+
+$$\begin{aligned}
+  \vec{d} & = \varepsilon \vec{e} = \varepsilon_r \varepsilon_0 \vec{e}  \\
+  \vec{p} & = \vec{d} - \varepsilon_0 \vec{e} = \varepsilon_0 (\varepsilon_r - 1) \vec{e} = \frac{\varepsilon_r - 1}{\varepsilon_r} \vec{d}  \\
+\end{aligned}$$
+
+Usando la relazione tra il campo di polarizzazione e la carica vincolata
+ 
+$$\Phi_{\partial V}(\vec{p}) = - Q_b \ ,$$
+$$\Phi_{\partial V}(\vec{d}) =   Q_f \ ,$$
+
+
 
 **todo** polarizzazione, cariche libere e cariche "vincolate"
 
@@ -372,6 +442,16 @@ Un condensatore è un componente elettrico in grado di immagazzinare l'energia a
 ### Condensatore piano
 
 Un condensatore piano viene qui studiato nell'approssimazione di condensatore piano infinito, per poter sfruttare la simmetria del problema trascurando gli effetti di bordo. Si ipotizza inoltre che le pareti del condensatore - le sue *armature* - siano sottili da poter rappresentare la distribuzione di carica elettrica come una densità superficiale sull'armatura.
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/capacitor.png)
+```
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/capacitor-dielectric.png)
+```
 
 Sfruttando la simmetria del problema - omogeneo nelle direzioni parallele alle armature del condensatore - e applicando la [legge di Gauss per ilcampo di spostamento $\vec{d}$](physics-hs:electromagnetism:electrostatics:maxwell:gauss), si ottiene la relazione tra il campo elettrico tra le armature del condensatore, la densità di carica superficiale $\sigma$, e la costante dielettrica del mezzo tra le armature,
 
