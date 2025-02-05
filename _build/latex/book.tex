@@ -14498,17 +14498,23 @@ e quindi
 \subsubsection{L’amperometro}
 \label{\detokenize{ch/electromagnetism/electromagnetism-steady:l-amperometro}}\label{\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-experience-faraday-amperometer}}
 \sphinxAtStartPar
-L’amperometro è uno strumento per la misura della corrente elettrica. \sphinxstylestrong{todo}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-l’amperometro sfrutta l’esperienza di Faraday per misurare la corrente elettrica in un cavo, leggendo la rotazione di una bobina all’interno di un campo magnetico;
+L’amperometro è uno strumento per la misura della corrente elettrica. L”{\hyperref[\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-experience-faraday}]{\sphinxcrossref{\DUrole{std,std-ref}{esperienza di Faraday}}}} sulla forza agente su un conduttore percorso da corrente in un campo magnetico può essere utilizzata per costruire un amperometro rudimentale. All’interno di questo amperometro una bobina ha come unico grado di libertà la rotazione attorno a un asse, e a questo grado di libertà è associata una rigidezza meccanica fornita ad esempio da una molla torsionale di costante elastica \(k\). La bobina è soggetta a un campo magnetico generato da un magnete permanente. La risultante delle azioni meccaniche agenti sulla bobina è un momento attorno all’asse di rotazione che per piccoli angoli di rotazione \(\theta\) vale \(M = N A B i\), essendo \(N\) il numero di avvolgimenti della bobina, \(A\) l’area della sezione rettangolare, \(B\) l’intensità del campo magnetico.
 
-\item {} 
 \sphinxAtStartPar
-l’amperometro viene collegato in serie nel lato del circuito nel quale si vuole misurare la corrente elettrica
+La condizione di equilibrio alla rotazione corrisponde all’equilibrio dei momenti,
+\begin{equation*}
+\begin{split}M = k \theta \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+dal quale è possibile ricavare la misura della corrente \(i\) all’interno dell’amperometro dalla lettura dell’angolo di rotazione della bobina,
+\begin{equation*}
+\begin{split}i = \frac{k}{N A B} \theta \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+L’amperometro viene collegato \sphinxstylestrong{in serie} nel lato del circuito nel quale si vuole misurare la corrente elettrica. Per ottenere un’intrusività ridotta dello strumento nel sistema, l’amperometro deve avere una resistenza elettrica ridotta per non modificare radicalmente l’impedenza (la resistenza in regime stazionario) del lato in cui si misura la corrente.
 
-\end{itemize}
+\sphinxAtStartPar
+Le azioni meccaniche, l’intrusività e la sensibilità di un amperometro vengono discussi come esercizio.
 
 
 \begin{savenotes}\sphinxattablestart
@@ -14583,16 +14589,33 @@ esperienze di Oesrted e Ampére:
 
 \end{itemize}
 
+
+\subsubsection{Esperienza di Oersted}
+\label{\detokenize{ch/electromagnetism/electromagnetism-steady:esperienza-di-oersted}}\label{\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-experience-oersted-ampere-oersted}}
+
+\subsubsection{Esperienza di Ampére}
+\label{\detokenize{ch/electromagnetism/electromagnetism-steady:esperienza-di-ampere}}\label{\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-experience-oersted-ampere-ampere}}
 \sphinxAtStartPar
-\sphinxstylestrong{Legge di Ampére.} Forza (\sphinxstylestrong{todo} per unità di lunghezza; usare notazione vettoriale per indicare la direzione della forza) scambiata tra due cavi percorsi da corrente elettrica
+L’apparato sperimentale per replicare l’esperienza di Ampére è formato da due cavi elettrici paralleli di lunghezza \(L\) a distanza \(d\) e percorsi da corrente \(i_1\), \(i_2\). La forza agente sul cavo \(2\) dovuta alla corrente che percorre il cavo \(1\) è diretta lungo la direzione che congiunge i due cavi, e ha intensità per unità di lunghezza
 \begin{equation*}
-\begin{split}\frac{F}{L} = \frac{\mu}{2 \pi} \frac{i_1 \, i_2}{d}\end{split}
+\begin{split}\frac{F}{L} = \frac{\mu}{2 \pi} \frac{i_1 \, i_2}{d} \ ,\end{split}
 \end{equation*}
 \sphinxAtStartPar
-Confrontando la legge di Ampére con l’esperienza di Faraday, è possibile ricavare l’espressione del campo magnetico prodotto da un cavo infinito percorso da corrente elettrica,
+positiva se il cavo \(2\) viene attratto in direzione del cavo \(1\).
+
+\sphinxAtStartPar
+Confrontando l’espressione della forza nell’esperienza di Ampére con l”{\hyperref[\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-experience-faraday}]{\sphinxcrossref{\DUrole{std,std-ref}{esperienza di Faraday}}}},
 \begin{equation*}
-\begin{split}b = \frac{\mu}{2 \pi} \frac{i}{d}\end{split}
+\begin{split}F = i_2 B_{21} L \ ,\end{split}
 \end{equation*}
+\sphinxAtStartPar
+è possibile ricavare l’espressione del campo magnetico prodotto da un cavo infinito percorso da corrente elettrica,
+\begin{equation*}
+\begin{split}B_{21} = \frac{\mu}{2 \pi} \frac{i_1}{d}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{direzione} del campo
+
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{immagini}
 
@@ -14795,8 +14818,49 @@ legge di Ampére e forza di Lorentz (esperienza di Faraday) su filo;
 \sphinxAtStartPar
 moto di cariche all’interno di campo elettromagnetico
 
-\item {} 
 \end{itemize}
+\phantomsection \label{exercise:ch/electromagnetism/electromagnetism-steady-problems-exercise-0}
+
+\begin{sphinxadmonition}{note}{Exercise 20.3.5 (Amperometro \sphinxhyphen{} Azioni agenti sulla bobina)}
+
+
+
+\sphinxAtStartPar
+Facendo riferimento all”{\hyperref[\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-experience-faraday-amperometer}]{\sphinxcrossref{\DUrole{std,std-ref}{amperometro rudimentale}}}}, si chiede di:
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+determinare le azioni agenti sui singoli lati della bobina
+
+\item {} 
+\sphinxAtStartPar
+determinare la risultante delle azioni in termini di forze e momenti riferiti al centro della bobina (centro della sezione, sull’asse di rotazione)
+
+\item {} 
+\sphinxAtStartPar
+determinare la condizione di equilibrio alla rotazione che determina la misura della corrente e le reazioni vincolari che deve reggere la cerniera
+
+\end{enumerate}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electromagnetism-steady-problems-exercise-1}
+
+\begin{sphinxadmonition}{note}{Exercise 20.3.6 (Amperometro \sphinxhyphen{} Intrusività)}
+
+
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electromagnetism-steady-problems-exercise-2}
+
+\begin{sphinxadmonition}{note}{Exercise 20.3.7 (Amperometro \sphinxhyphen{} Sensibilità)}
+
+
+\end{sphinxadmonition}
+\phantomsection \label{exercise:ch/electromagnetism/electromagnetism-steady-problems-exercise-3}
+
+\begin{sphinxadmonition}{note}{Exercise 20.3.8 (Voltmetro \sphinxhyphen{} Intrusività)}
+
+
+\end{sphinxadmonition}
 
 
 

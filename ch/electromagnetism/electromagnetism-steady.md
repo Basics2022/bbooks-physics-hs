@@ -48,9 +48,19 @@ $$\vec{f} = - \vec{b} \times \vec{j} \ .$$
 (physics-hs:electromagnetism:electromagnetism-steady:experience-faraday:amperometer)=
 ### L'amperometro
 
-L'amperometro è uno strumento per la misura della corrente elettrica. **todo** 
-- l'amperometro sfrutta l'esperienza di Faraday per misurare la corrente elettrica in un cavo, leggendo la rotazione di una bobina all'interno di un campo magnetico;
-- l'amperometro viene collegato in serie nel lato del circuito nel quale si vuole misurare la corrente elettrica
+L'amperometro è uno strumento per la misura della corrente elettrica. L'[esperienza di Faraday](physics-hs:electromagnetism:electromagnetism-steady:experience-faraday) sulla forza agente su un conduttore percorso da corrente in un campo magnetico può essere utilizzata per costruire un amperometro rudimentale. All'interno di questo amperometro una bobina ha come unico grado di libertà la rotazione attorno a un asse, e a questo grado di libertà è associata una rigidezza meccanica fornita ad esempio da una molla torsionale di costante elastica $k$. La bobina è soggetta a un campo magnetico generato da un magnete permanente. La risultante delle azioni meccaniche agenti sulla bobina è un momento attorno all'asse di rotazione che per piccoli angoli di rotazione $\theta$ vale $M = N A B i$, essendo $N$ il numero di avvolgimenti della bobina, $A$ l'area della sezione rettangolare, $B$ l'intensità del campo magnetico.
+
+La condizione di equilibrio alla rotazione corrisponde all'equilibrio dei momenti,
+
+$$M = k \theta \ ,$$
+
+dal quale è possibile ricavare la misura della corrente $i$ all'interno dell'amperometro dalla lettura dell'angolo di rotazione della bobina,
+
+$$i = \frac{k}{N A B} \theta \ .$$
+
+L'amperometro viene collegato **in serie** nel lato del circuito nel quale si vuole misurare la corrente elettrica. Per ottenere un'intrusività ridotta dello strumento nel sistema, l'amperometro deve avere una resistenza elettrica ridotta per non modificare radicalmente l'impedenza (la resistenza in regime stazionario) del lato in cui si misura la corrente.
+
+Le azioni meccaniche, l'intrusività e la sensibilità di un amperometro vengono discussi come esercizio.
 
 ```{list-table}
 :header-rows: 0
@@ -58,6 +68,22 @@ L'amperometro è uno strumento per la misura della corrente elettrica. **todo**
   - ![](../../media/amperometer-2.png)
   - ![](../../media/amperometer-3.png)
 ```
+
+````{only} html
+
+```{exercise} Amperometro - Azioni agenti sulla bobina
+:class: dropdown
+```
+
+```{exercise} Amperometro - Intrusività
+:class: dropdown
+```
+
+```{exercise} Amperometro - Sensibilità
+:class: dropdown
+```
+
+````
 
 (physics-hs:electromagnetism:electromagnetism-steady:experience-faraday:voltmeter)=
 ### Il voltmetro
@@ -73,6 +99,17 @@ Il voltmetro è uno strumento per la misura della differenza di tensione. **todo
   - ![](../../media/voltmeter-2.png)
   - ![](../../media/voltmeter-3.png)
 ```
+
+````{only} html
+
+```{exercise} Voltmetro - Intrusività
+:class: dropdown
+
+**todo**
+
+```
+
+````
 
 <!--
 (physics-hs:electromagnetism:electromagnetism-steady:experience-faraday:galvanometer)=
@@ -95,12 +132,27 @@ Il momento meccanico generato dalla corrente nel cavo elettrico equilibria un mo
 - interazione tra corrente elettrica e campo magnetico, in regime stazionario:
   - esperienze di Oesrted e Ampére:
 
-**Legge di Ampére.** Forza (<span style="color:red">**todo** per unità di lunghezza; usare notazione vettoriale per indicare la direzione della forza</span>) scambiata tra due cavi percorsi da corrente elettrica
+(physics-hs:electromagnetism:electromagnetism-steady:experience-oersted-ampere:oersted)=
+### Esperienza di Oersted
 
-$$\frac{F}{L} = \frac{\mu}{2 \pi} \frac{i_1 \, i_2}{d}$$
-Confrontando la legge di Ampére con l'esperienza di Faraday, è possibile ricavare l'espressione del campo magnetico prodotto da un cavo infinito percorso da corrente elettrica,
 
-$$b = \frac{\mu}{2 \pi} \frac{i}{d}$$
+(physics-hs:electromagnetism:electromagnetism-steady:experience-oersted-ampere:ampere)=
+### Esperienza di Ampére
+L'apparato sperimentale per replicare l'esperienza di Ampére è formato da due cavi elettrici paralleli di lunghezza $L$ a distanza $d$ e percorsi da corrente $i_1$, $i_2$. La forza agente sul cavo $2$ dovuta alla corrente che percorre il cavo $1$ è diretta lungo la direzione che congiunge i due cavi, e ha intensità per unità di lunghezza
+
+$$\frac{F}{L} = \frac{\mu}{2 \pi} \frac{i_1 \, i_2}{d} \ ,$$
+
+positiva se il cavo $2$ viene attratto in direzione del cavo $1$.
+
+Confrontando l'espressione della forza nell'esperienza di Ampére con l'[esperienza di Faraday](physics-hs:electromagnetism:electromagnetism-steady:experience-faraday), 
+
+$$F = i_2 B_{21} L \ ,$$
+
+è possibile ricavare l'espressione del campo magnetico prodotto da un cavo infinito percorso da corrente elettrica,
+
+$$B_{21} = \frac{\mu}{2 \pi} \frac{i_1}{d}$$
+
+**todo** *direzione* del campo
 
 **todo** *immagini*
 
