@@ -3,8 +3,10 @@
 
 In questo capitolo vengono presentate alcune applicazioni tecnologiche, che coinvolgono diverse forme di energia e la trasformazione di calore in lavoro meccanico (motori termici) o viceversa (frigoriferi).
 
-- macchine termiche si basano su cicli termodinamici, operando o in regime periodico a fasi o in ciclo continuo
-- Carnot affrontò lo studio teorico dei cicli termodinamici usati già da decenni in molte macchine protagoniste della rivoluzione industriale. Uno degli obiettivi pratici di Carnot era la ricerca delle condizioni per ottenere l'efficienza massima di un ciclo termodinamico: il ciclo di Carnot rappresenta il ciclo termodinamico con efficienza massima che opera tra due sorgenti di calore a temperatura costante
+Il funzionamento della maggioranza delle macchine termiche si basa sulla realizzazione di [cicli termodinamici](physics-hs:thermodynamics:heat-engine:td-cycles) su un fluido di lavoro, operando o in regime periodico a fasi o in ciclo continuo.
+
+Carnot affrontò lo studio teorico dei cicli termodinamici usati già da decenni in molte macchine protagoniste della rivoluzione industriale. Uno degli obiettivi pratici di Carnot era la ricerca delle condizioni per ottenere l'**efficienza massima** di un ciclo termodinamico, definita come rapporto tra lavoro meccanico fatto dalla macchina e calore immesso (almeno per le macchine dirette): il [ciclo di Carnot](physics-hs:thermodynamics:heat-engine:carnot) rappresenta il ciclo termodinamico con efficienza massima che opera tra due sorgenti di calore a temperatura costante.
+
 - I risultati di Carnot furono decisivi per la formulazione del secondo principio della termodinamica, da parte di Clausius; successivamente gli enunciati di Kelvin e Planck misero in connessione il secondo principio della termodinamica con i limiti dei cicli termodinamici: è impossibile assorbire calore da un'unica sorgente di calore a temperatura costante e trasformarlo interamente in lavoro meccanico; è impossibile trasferire calore da un sistema a un altro a temperatura maggiore senza fornire lavoro alla macchina.
 - Nonostante i risultati di efficienza massima del ciclo di Carnot, esso è di scarsa utilità pratica poiché difficile/impossibile/non pratico da realizzare: esso infatti richiederebbe un periodo del ciclo molto lungo che renderebbe impossibile soddisfare le prestazioni in termini di potenza richieste nelle applicazioni. Si studiano quindi i cicli termici utilizzati in molte applicazioni pratiche: ...
 
