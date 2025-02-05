@@ -574,7 +574,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#il-voltmetro">20.3.2.2. Il voltmetro</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienze-di-oersted-e-ampere">20.3.3. Esperienze di Oersted e Ampere</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienze-di-oersted-e-ampere">20.3.3. Esperienze di Oersted e Ampere</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienza-di-oersted">20.3.3.1. Esperienza di Oersted</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienza-di-ampere">20.3.3.2. Esperienza di Ampére</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-biot-savart">20.3.4. Legge di Biot-Savart</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi-di-campi-magnetici-generati-da-corrente-in-cavi-elettrici">20.3.4.1. Esempi di campi magnetici generati da corrente in cavi elettrici</a></li>
 </ul>
@@ -644,11 +648,15 @@ document.write(`
 --> 
 <div class="section" id="l-amperometro">
 <span id="physics-hs-electromagnetism-electromagnetism-steady-experience-faraday-amperometer"></span><h3><span class="section-number">20.3.2.1. </span>L’amperometro<a class="headerlink" href="#l-amperometro" title="Permalink to this heading">#</a></h3>
-<p>L’amperometro è uno strumento per la misura della corrente elettrica. <strong>todo</strong></p>
-<ul class="simple">
-<li><p>l’amperometro sfrutta l’esperienza di Faraday per misurare la corrente elettrica in un cavo, leggendo la rotazione di una bobina all’interno di un campo magnetico;</p></li>
-<li><p>l’amperometro viene collegato in serie nel lato del circuito nel quale si vuole misurare la corrente elettrica</p></li>
-</ul>
+<p>L’amperometro è uno strumento per la misura della corrente elettrica. L”<a class="reference internal" href="#physics-hs-electromagnetism-electromagnetism-steady-experience-faraday"><span class="std std-ref">esperienza di Faraday</span></a> sulla forza agente su un conduttore percorso da corrente in un campo magnetico può essere utilizzata per costruire un amperometro rudimentale. All’interno di questo amperometro una bobina ha come unico grado di libertà la rotazione attorno a un asse, e a questo grado di libertà è associata una rigidezza meccanica fornita ad esempio da una molla torsionale di costante elastica <span class="math notranslate nohighlight">\(k\)</span>. La bobina è soggetta a un campo magnetico generato da un magnete permanente. La risultante delle azioni meccaniche agenti sulla bobina è un momento attorno all’asse di rotazione che per piccoli angoli di rotazione <span class="math notranslate nohighlight">\(\theta\)</span> vale <span class="math notranslate nohighlight">\(M = N A B i\)</span>, essendo <span class="math notranslate nohighlight">\(N\)</span> il numero di avvolgimenti della bobina, <span class="math notranslate nohighlight">\(A\)</span> l’area della sezione rettangolare, <span class="math notranslate nohighlight">\(B\)</span> l’intensità del campo magnetico.</p>
+<p>La condizione di equilibrio alla rotazione corrisponde all’equilibrio dei momenti,</p>
+<div class="math notranslate nohighlight">
+\[M = k \theta \ ,\]</div>
+<p>dal quale è possibile ricavare la misura della corrente <span class="math notranslate nohighlight">\(i\)</span> all’interno dell’amperometro dalla lettura dell’angolo di rotazione della bobina,</p>
+<div class="math notranslate nohighlight">
+\[i = \frac{k}{N A B} \theta \ .\]</div>
+<p>L’amperometro viene collegato <strong>in serie</strong> nel lato del circuito nel quale si vuole misurare la corrente elettrica. Per ottenere un’intrusività ridotta dello strumento nel sistema, l’amperometro deve avere una resistenza elettrica ridotta per non modificare radicalmente l’impedenza (la resistenza in regime stazionario) del lato in cui si misura la corrente.</p>
+<p>Le azioni meccaniche, l’intrusività e la sensibilità di un amperometro vengono discussi come esercizio.</p>
 <table class="table">
 <colgroup>
 <col style="width: 33%" />
@@ -662,6 +670,24 @@ document.write(`
 </tr>
 </tbody>
 </table>
+<div class="exercise dropdown admonition" id="ch/electromagnetism/electromagnetism-steady-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 20.49 </span> (Amperometro - Azioni agenti sulla bobina)</p>
+<div class="section" id="exercise-content">
+</div>
+</div>
+<div class="exercise dropdown admonition" id="ch/electromagnetism/electromagnetism-steady-exercise-1">
+
+<p class="admonition-title"><span class="caption-number">Exercise 20.50 </span> (Amperometro - Intrusività)</p>
+<div class="section" id="exercise-content">
+</div>
+</div>
+<div class="exercise dropdown admonition" id="ch/electromagnetism/electromagnetism-steady-exercise-2">
+
+<p class="admonition-title"><span class="caption-number">Exercise 20.51 </span> (Amperometro - Sensibilità)</p>
+<div class="section" id="exercise-content">
+</div>
+</div>
 </div>
 <div class="section" id="il-voltmetro">
 <span id="physics-hs-electromagnetism-electromagnetism-steady-experience-faraday-voltmeter"></span><h3><span class="section-number">20.3.2.2. </span>Il voltmetro<a class="headerlink" href="#il-voltmetro" title="Permalink to this heading">#</a></h3>
@@ -683,6 +709,13 @@ document.write(`
 </tr>
 </tbody>
 </table>
+<div class="exercise dropdown admonition" id="ch/electromagnetism/electromagnetism-steady-exercise-3">
+
+<p class="admonition-title"><span class="caption-number">Exercise 20.52 </span> (Voltmetro - Intrusività)</p>
+<div class="section" id="exercise-content">
+<p><strong>todo</strong></p>
+</div>
+</div>
 <!--
 (physics-hs:electromagnetism:electromagnetism-steady:experience-faraday:galvanometer)=
 ### Il galvanometro
@@ -708,13 +741,24 @@ Il momento meccanico generato dalla corrente nel cavo elettrico equilibria un mo
 </ul>
 </li>
 </ul>
-<p><strong>Legge di Ampére.</strong> Forza (<span style="color:red"><strong>todo</strong> per unità di lunghezza; usare notazione vettoriale per indicare la direzione della forza</span>) scambiata tra due cavi percorsi da corrente elettrica</p>
+<div class="section" id="esperienza-di-oersted">
+<span id="physics-hs-electromagnetism-electromagnetism-steady-experience-oersted-ampere-oersted"></span><h3><span class="section-number">20.3.3.1. </span>Esperienza di Oersted<a class="headerlink" href="#esperienza-di-oersted" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="esperienza-di-ampere">
+<span id="physics-hs-electromagnetism-electromagnetism-steady-experience-oersted-ampere-ampere"></span><h3><span class="section-number">20.3.3.2. </span>Esperienza di Ampére<a class="headerlink" href="#esperienza-di-ampere" title="Permalink to this heading">#</a></h3>
+<p>L’apparato sperimentale per replicare l’esperienza di Ampére è formato da due cavi elettrici paralleli di lunghezza <span class="math notranslate nohighlight">\(L\)</span> a distanza <span class="math notranslate nohighlight">\(d\)</span> e percorsi da corrente <span class="math notranslate nohighlight">\(i_1\)</span>, <span class="math notranslate nohighlight">\(i_2\)</span>. La forza agente sul cavo <span class="math notranslate nohighlight">\(2\)</span> dovuta alla corrente che percorre il cavo <span class="math notranslate nohighlight">\(1\)</span> è diretta lungo la direzione che congiunge i due cavi, e ha intensità per unità di lunghezza</p>
 <div class="math notranslate nohighlight">
-\[\frac{F}{L} = \frac{\mu}{2 \pi} \frac{i_1 \, i_2}{d}\]</div>
-<p>Confrontando la legge di Ampére con l’esperienza di Faraday, è possibile ricavare l’espressione del campo magnetico prodotto da un cavo infinito percorso da corrente elettrica,</p>
+\[\frac{F}{L} = \frac{\mu}{2 \pi} \frac{i_1 \, i_2}{d} \ ,\]</div>
+<p>positiva se il cavo <span class="math notranslate nohighlight">\(2\)</span> viene attratto in direzione del cavo <span class="math notranslate nohighlight">\(1\)</span>.</p>
+<p>Confrontando l’espressione della forza nell’esperienza di Ampére con l”<a class="reference internal" href="#physics-hs-electromagnetism-electromagnetism-steady-experience-faraday"><span class="std std-ref">esperienza di Faraday</span></a>,</p>
 <div class="math notranslate nohighlight">
-\[b = \frac{\mu}{2 \pi} \frac{i}{d}\]</div>
+\[F = i_2 B_{21} L \ ,\]</div>
+<p>è possibile ricavare l’espressione del campo magnetico prodotto da un cavo infinito percorso da corrente elettrica,</p>
+<div class="math notranslate nohighlight">
+\[B_{21} = \frac{\mu}{2 \pi} \frac{i_1}{d}\]</div>
+<p><strong>todo</strong> <em>direzione</em> del campo</p>
 <p><strong>todo</strong> <em>immagini</em></p>
+</div>
 </div>
 <div class="section" id="legge-di-biot-savart">
 <span id="physics-hs-electromagnetism-electromagnetism-steady-biot-savart"></span><h2><span class="section-number">20.3.4. </span>Legge di Biot-Savart<a class="headerlink" href="#legge-di-biot-savart" title="Permalink to this heading">#</a></h2>
@@ -948,7 +992,11 @@ Nell'ipotesi in cui il raggio $R$ dell'anello sia molto maggiore del raggio dell
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#il-voltmetro">20.3.2.2. Il voltmetro</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienze-di-oersted-e-ampere">20.3.3. Esperienze di Oersted e Ampere</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienze-di-oersted-e-ampere">20.3.3. Esperienze di Oersted e Ampere</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienza-di-oersted">20.3.3.1. Esperienza di Oersted</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienza-di-ampere">20.3.3.2. Esperienza di Ampére</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-biot-savart">20.3.4. Legge di Biot-Savart</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi-di-campi-magnetici-generati-da-corrente-in-cavi-elettrici">20.3.4.1. Esempi di campi magnetici generati da corrente in cavi elettrici</a></li>
 </ul>

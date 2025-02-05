@@ -4,7 +4,27 @@
 - legge di Biot-Savart per diversi tipi di correnti: filo di sezione piccola; dettaglio all'interno di filo; bobina;
 - legge di Ampére e forza di Lorentz (esperienza di Faraday) su filo;
 - moto di cariche all'interno di campo elettromagnetico
-- 
+
+
+```{exercise} Amperometro - Azioni agenti sulla bobina
+
+Facendo riferimento all'[amperometro rudimentale](physics-hs:electromagnetism:electromagnetism-steady:experience-faraday:amperometer), si chiede di:
+1. determinare le azioni agenti sui singoli lati della bobina
+2. determinare la risultante delle azioni in termini di forze e momenti riferiti al centro della bobina (centro della sezione, sull'asse di rotazione)
+3. determinare la condizione di equilibrio alla rotazione che determina la misura della corrente e le reazioni vincolari che deve reggere la cerniera
+``` 
+
+```{exercise} Amperometro - Intrusività
+
+```
+
+```{exercise} Amperometro - Sensibilità
+
+```
+
+```{exercise} Voltmetro - Intrusività
+
+```
 
 <!--
 ```{exercise} Legge di Ampère
