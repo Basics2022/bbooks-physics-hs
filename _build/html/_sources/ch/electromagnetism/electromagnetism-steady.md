@@ -152,6 +152,8 @@ $$F = i_2 B_{21} L \ ,$$
 
 $$B_{21} = \frac{\mu}{2 \pi} \frac{i_1}{d}$$
 
+**todo** *direzione* del campo
+
 **todo** *immagini*
 
 (physics-hs:electromagnetism:electromagnetism-steady:biot-savart)=
