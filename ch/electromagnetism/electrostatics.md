@@ -446,7 +446,11 @@ Un condensatore piano viene qui studiato nell'approssimazione di condensatore pi
 ```{list-table}
 :header-rows: 0
 * - ![](../../media/capacitor.png)
-  - ![](../../media/capacitor-dielectric.png)
+```
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/capacitor-dielectric.png)
 ```
 
 Sfruttando la simmetria del problema - omogeneo nelle direzioni parallele alle armature del condensatore - e applicando la [legge di Gauss per ilcampo di spostamento $\vec{d}$](physics-hs:electromagnetism:electrostatics:maxwell:gauss), si ottiene la relazione tra il campo elettrico tra le armature del condensatore, la densità di carica superficiale $\sigma$, e la costante dielettrica del mezzo tra le armature,
