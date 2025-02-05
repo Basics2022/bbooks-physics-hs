@@ -717,6 +717,33 @@ $$\Delta i = \Phi_{\Delta S}(\vec{j}) = \vec{j} \cdot \hat{n} \Delta S = \frac{\
 <p><strong>Seconda legge di Ohm.</strong> La resistenza elettrica di un cavo è direttamente proporzionale alla resistività del materiale, alla lunghezza del cavo, e inversamente proporzionale alla sezione del cavo,</p>
 <div class="math notranslate nohighlight" id="equation-ohm-integral-second">
 <span class="eqno">(20.7)<a class="headerlink" href="#equation-ohm-integral-second" title="Permalink a questa equazione">#</a></span>\[dR = \frac{\rho_R \, d\ell}{A} \ .\]</div>
+<p>Nel caso di proprietà omogenee in un resistore di lunghezza <span class="math notranslate nohighlight">\(\ell\)</span>, la sua resistenza vale</p>
+<div class="math notranslate nohighlight">
+\[R = \int d R = \int_{\ell} \frac{\rho_R}{A} d \ell = \dfrac{\rho_R \ell}{A} \ .\]</div>
+</div>
+</div><div class="proof example admonition" id="example-4">
+<p class="admonition-title"><span class="caption-number">Example 20.7 </span> (Effetto della temperatura sulla resistenza)</p>
+<div class="example-content section" id="proof-content">
+<p>Assumendo una relazione lineare tra la resistività di un materiale e la sua temperatura,</p>
+<div class="math notranslate nohighlight">
+\[\rho_R(T) = \rho_{R,0} \left[ 1 + r (T - T_0) \right] \ ,\]</div>
+<p>e usando la definizione di <a class="reference internal" href="../thermodynamics/elastic-solid-1d.html#physics-hs-thermodynamics-matter-elastic-1d-dilation"><span class="std std-ref">coefficiente di dilatazione lineare</span></a> <span class="math notranslate nohighlight">\(\lambda = \frac{1}{L}\frac{\partial L}{\partial T}\)</span> per esprimere la variazione delle dimensioni geometriche del resistore,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  L(T) &amp; = L_0 \left[ 1 + \lambda   (T-T0) \right] \\
+  A(T) &amp; = A_0 \left[ 1 + 2 \lambda (T-T0) \right] \\
+\end{aligned}\end{split}\]</div>
+<p>si può esprimere la dipendenza della resistenza elettrica in funzione della temperatura,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ R = \dfrac{\rho_R \ell}{A} 
+ &amp; = \dfrac{\rho_{R,0} \ell_0}{A_0} \frac{\left( 1 + r \Delta T\right)\left( 1 + \lambda \Delta T \right)}{1 + 2 \lambda \Delta T} \sim \\
+ &amp; = \dfrac{\rho_{R,0} \ell_0}{A_0} \left[ 1 + \left( r - \lambda \right) \Delta T \right] = \\
+ &amp; = R_0 \left[ 1 + \left( r - \lambda \right) \Delta T \right] \ ,
+\end{aligned}\end{split}\]</div>
+<p>essendosi affidati alla bontà di un’approssimazione in serie al primo ordine per <span class="math notranslate nohighlight">\(\lambda \Delta T\)</span> «piccoli» per scrivere <span class="math notranslate nohighlight">\(\frac{1}{1 + 2 \lambda \Delta T} \sim 1 - 2 \lambda \Delta T + o(\Delta T)\)</span>. E” quindi possibile riconoscere la sensibilità della resistenza elettrica di un semplice resistore alla variazione di temperatura,</p>
+<div class="math notranslate nohighlight">
+\[\frac{R(T)- R(T_0)}{R(T_0)} = (r - \lambda) \Delta T \ .\]</div>
 </div>
 </div></div>
 </div>
@@ -754,6 +781,8 @@ Esperimenti:</p></li>
 </div>
 <div class="section" id="strumenti-misura-e-generazione">
 <span id="physics-hs-electromagnetism-electric-current-instruments"></span><h2><span class="section-number">20.2.4. </span>Strumenti: misura e generazione<a class="headerlink" href="#strumenti-misura-e-generazione" title="Permalink to this heading">#</a></h2>
+<p>L”<a class="reference internal" href="electromagnetism-steady.html#physics-hs-electromagnetism-electromagnetism-steady-experience-faraday-amperometer"><span class="std std-ref"><strong>amperometro</strong></span></a> e il <a class="reference internal" href="electromagnetism-steady.html#physics-hs-electromagnetism-electromagnetism-steady-experience-faraday-voltmeter"><span class="std std-ref"><strong>voltmetro</strong></span></a> sono gli strumenti per la misura della corrente elettrica e della differenza di tensione, rispettivamente.
+Alcuni semplici modelli - di una versione rudimentale - di questi strumenti è presentata nel prossimo capitolo, quando verranno trattate le azioni meccaniche agenti su un conduttore percorso da corrente elettrica immerso in un campo magnetico, principio fisico sul quale si basano i modelli rudimentali di amperometri e voltmetri.</p>
 <p><strong>todo</strong></p>
 <ul class="simple">
 <li><p>strumenti per misurare corrente e tensione: amperometro e voltmetro</p></li>

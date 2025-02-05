@@ -144,6 +144,39 @@ Per componenti di lunghezza $\ell$ e resistenza $R$ finita, l'equazione {eq}`ohm
 
    $$dR = \frac{\rho_R \, d\ell}{A} \ .$$ (ohm:integral:second)
 
+Nel caso di proprietà omogenee in un resistore di lunghezza $\ell$, la sua resistenza vale
+
+$$R = \int d R = \int_{\ell} \frac{\rho_R}{A} d \ell = \dfrac{\rho_R \ell}{A} \ .$$
+
+```
+
+```{prf:example} Effetto della temperatura sulla resistenza
+
+Assumendo una relazione lineare tra la resistività di un materiale e la sua temperatura,
+
+$$\rho_R(T) = \rho_{R,0} \left[ 1 + r (T - T_0) \right] \ ,$$
+
+e usando la definizione di [coefficiente di dilatazione lineare](physics-hs:thermodynamics:matter:elastic:1d:dilation) $\lambda = \frac{1}{L}\frac{\partial L}{\partial T}$ per esprimere la variazione delle dimensioni geometriche del resistore,
+
+$$\begin{aligned}
+  L(T) & = L_0 \left[ 1 + \lambda   (T-T0) \right] \\
+  A(T) & = A_0 \left[ 1 + 2 \lambda (T-T0) \right] \\
+\end{aligned}$$
+
+si può esprimere la dipendenza della resistenza elettrica in funzione della temperatura,
+
+$$\begin{aligned}
+ R = \dfrac{\rho_R \ell}{A} 
+ & = \dfrac{\rho_{R,0} \ell_0}{A_0} \frac{\left( 1 + r \Delta T\right)\left( 1 + \lambda \Delta T \right)}{1 + 2 \lambda \Delta T} \sim \\
+ & = \dfrac{\rho_{R,0} \ell_0}{A_0} \left[ 1 + \left( r - \lambda \right) \Delta T \right] = \\
+ & = R_0 \left[ 1 + \left( r - \lambda \right) \Delta T \right] \ ,
+\end{aligned}$$
+
+essendosi affidati alla bontà di un'approssimazione in serie al primo ordine per $\lambda \Delta T$ "piccoli" per scrivere $\frac{1}{1 + 2 \lambda \Delta T} \sim 1 - 2 \lambda \Delta T + o(\Delta T)$. E' quindi possibile riconoscere la sensibilità della resistenza elettrica di un semplice resistore alla variazione di temperatura,
+
+$$\frac{R(T)- R(T_0)}{R(T_0)} = (r - \lambda) \Delta T \ .$$
+
+
 ```
 
 (physics-hs:electromagnetism:electric-current:solids:dielectric)=
@@ -175,6 +208,10 @@ Esperimenti:
 
 (physics-hs:electromagnetism:electric-current:instruments)=
 ## Strumenti: misura e generazione
+
+L'[**amperometro**](physics-hs:electromagnetism:electromagnetism-steady:experience-faraday:amperometer) e il [**voltmetro**](physics-hs:electromagnetism:electromagnetism-steady:experience-faraday:voltmeter) sono gli strumenti per la misura della corrente elettrica e della differenza di tensione, rispettivamente.
+Alcuni semplici modelli - di una versione rudimentale - di questi strumenti è presentata nel prossimo capitolo, quando verranno trattate le azioni meccaniche agenti su un conduttore percorso da corrente elettrica immerso in un campo magnetico, principio fisico sul quale si basano i modelli rudimentali di amperometri e voltmetri.
+
 **todo**
   - strumenti per misurare corrente e tensione: amperometro e voltmetro
   - generatori di "spinta": generatori di tensione

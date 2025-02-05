@@ -155,6 +155,11 @@ Scala di temperatura assoluta
 <!-- Esercizi su scale di temperatura e dilatazione termica -->
 ```{prf:example} Anello di Gravesande
 :label: thermodynamics:history:th-expansion:gravesande
+
+L'anello di Gravesande è un esperimento di fisica ideato dal fisico olandese W.Gravesande nel XVIII secolo per illustrare la dilatazione termica dei materiali, osservando il passaggio di una sfera di metallo attraverso un anello.
+
+La [dilatazione termica di un solido](physics-hs:thermodynamics:matter:elastic:1d:dilation) può essere descritta con i coefficienti di dilatazione.
+
 ```
 ```{prf:example} Giunzione binari e ponti
 :label: thermodynamics:history:th-expansion:junctions
@@ -162,8 +167,14 @@ Scala di temperatura assoluta
 ```{prf:example} Pendolo
 :label: thermodynamics:history:th-expansion:pendulum
 ```
+
+```{prf:example} Calettamento
+:label: thermodynamics:history:th-exapnsion:interference
+
+```
 <!--
 ```{prf:example} Forno
+Instabilità termica?
 ```
 -->
 

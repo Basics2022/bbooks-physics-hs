@@ -181,9 +181,32 @@ $$
 $$
 ```
 
-```{prf:example} Il dipolo elettrico
+````{prf:example} Il dipolo elettrico
 :label: electric-dipole
 
+```{list-table}
+:header-rows: 0
+* - ![](../../media/dipole-field-1.png)
+  - ![](../../media/dipole-field-01.png)
+```
+
+````
+
+````{prf:example} Il dipolo elettrico in un campo elettrico esterno uniforme
+:label: electric-dipole-ext-e-field
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/dipole-field-1.png)
+  - ![](../../media/dipole-field-01.png)
+```
+
+````
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/dipole-ext-field-1.png)
+  - ![](../../media/dipole-ext-field-2.png)
 ```
 
 ```{prf:example}
@@ -268,6 +291,11 @@ Quindi:
 ### Campo elettrostatico nei dielettrici
 - polarizzazione: descrizione
 - polarizzazione equivalente a una distribuzione di volume di [dipoli elettrici](), vedi {prf:ref}`electric-dipole`, equivalente a una distribuzione di carica superficiale e una distribuzione di carica di volume solo se polarizzazione non uniforme
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/dielectric.png)
+```
 
 ```{prf:example} Distribuzione di carica in un guscio sferico dielettrico senza carica netta - simmetria sferica
 :class: dropdown
@@ -373,6 +401,13 @@ Un condensatore è un componente elettrico in grado di immagazzinare l'energia a
 
 Un condensatore piano viene qui studiato nell'approssimazione di condensatore piano infinito, per poter sfruttare la simmetria del problema trascurando gli effetti di bordo. Si ipotizza inoltre che le pareti del condensatore - le sue *armature* - siano sottili da poter rappresentare la distribuzione di carica elettrica come una densità superficiale sull'armatura.
 
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/capacitor.png)
+* - ![](../../media/capacitor-dielectric.png)
+```
+
 Sfruttando la simmetria del problema - omogeneo nelle direzioni parallele alle armature del condensatore - e applicando la [legge di Gauss per ilcampo di spostamento $\vec{d}$](physics-hs:electromagnetism:electrostatics:maxwell:gauss), si ottiene la relazione tra il campo elettrico tra le armature del condensatore, la densità di carica superficiale $\sigma$, e la costante dielettrica del mezzo tra le armature,
 
 **todo** aggiungere immagini e dettagli
@@ -399,7 +434,18 @@ $$C = \frac{Q}{v} \ .$$
 ```
 
 ```{dropdown} Condensatore cilindrico
-**todo**
+Utilizzando il [teorema di Gauss per il campo di spostamento $\vec{d}$](physics-hs:electromagnetism:electrostatics:maxwell:gauss), tra i cilindri del condensatore il campo elettrico è ha direzione radiale e valore assoluto $\propto r^{-1}$,
+
+$$\vec{e}(r) = \frac{1}{2 \pi \varepsilon} \frac{Q}{r} \hat{r} \ .$$
+
+dove la carica totale della superficie sferica con distribuzione di carica uniforme è data dal prodotto della densità superficiale di carica e la superficie, $Q = \sigma \, S_1 = \sigma \, 4 \pi \, R_1^2$.
+La differenza di potenziale tra le due armature è quindi
+
+$$v = \int_{\ell} \vec{e}(r) \cdot \hat{r} = \int_{r=R_1}^{R_2} \frac{Q}{2 \pi r} dr = \frac{1}{2 \pi \varepsilon} \left.\ln r \right|_{R_1}^{R_2} = \frac{1}{2 \pi \varepsilon} \ln \dfrac{R_2}{R_1} \, Q \ .$$
+
+La formula precedente e la definizione di capacità, $Q = C \, v$, consente di determinare la capacità di un condensatore sferico ideale,
+
+$$C = 2 \pi \, \varepsilon \,  \frac{1}{\ln \frac{R_2}{R_1}} \ .$$
 ```
 
 ```{dropdown} Condensatore sferico
@@ -410,7 +456,7 @@ $$\vec{e}(r) = \frac{1}{4 \pi \varepsilon} \frac{Q}{r^2} \hat{r} \ .$$
 dove la carica totale della superficie sferica con distribuzione di carica uniforme è data dal prodotto della densità superficiale di carica e la superficie, $Q = \sigma \, S_1 = \sigma \, 4 \pi \, R_1^2$.
 La differenza di potenziale tra le due armature è quindi
 
-$$v = - \int_{\ell} \vec{e}(r) \cdot \hat{r} = \int_{r=R_1}^{R_2} \frac{Q}{4 \pi r^2} dr = \frac{1}{4 \pi \varepsilon} \frac{1}{r} \bigg|_{R_1}^{R_2} = - \frac{1}{4 \pi \varepsilon} \left(\frac{1}{R_1} - \frac{1}{R_2} \right) \, Q \ .$$
+$$v = \int_{\ell} \vec{e}(r) \cdot \hat{r} = \int_{r=R_1}^{R_2} \frac{Q}{4 \pi r^2} dr = - \frac{1}{4 \pi \varepsilon} \frac{1}{r} \bigg|_{R_1}^{R_2} = \frac{1}{4 \pi \varepsilon} \left(\frac{1}{R_1} - \frac{1}{R_2} \right) \, Q \ .$$
 
 La formula precedente e la definizione di capacità, $Q = C \, v$, consente di determinare la capacità di un condensatore sferico ideale,
 
@@ -421,7 +467,17 @@ $$C = 4 \pi \, \varepsilon \,  \frac{R_1 \, R_2}{R_2 - R_1} \ .$$
 
 **todo** Definire l'energia immagazzinata nel condensatore e verificarne l'espressione con diverse forme di lavoro realizzabile:
 - lavoro elettrico?
-- lavoro meccanico?
+- lavoro meccanico? Un-comment
+
+<!--
+Dopo aver staccato l'alimentazione del condensatore, e connesso a terra le armature del condensatore una in maniera rigida e una con una molla lineare e allungamento nullo nella configurazione iniziale, si cerca la condizione di equilibrio.
+
+$$F = E \sigma A = \sigma A \frac{\sigma}{\varepsilon} = \frac{A}{\varepsilon} Q^2$$
+
+$$L = F \, x$$
+
+$$L^{molla} = \frac{1}{2} k x^2$$
+-->
 
 ### Configurazioni di condensatori
 
