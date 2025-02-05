@@ -21,12 +21,43 @@ $$\vec{f} = - \vec{b} \times \vec{j} \ .$$
 
 **todo** ha senso associarla a Faraday? Nessuno la conosceva prima? Galvani, Volta,... come misuravano la corrente elettrica?
 
+```{list-table}
+:header-rows: 0
+ 
+* - ![](../../media/electromagnetism/faraday-force-formula.png)
+  - ![](../../media/electromagnetism/faraday-force-experiment.png)
+
+```
+
+
+<!-- For latex build
+```{raw} latex
+\begin{figure}[h]
+  \centering
+  \begin{minipage}{0.45\textwidth}
+    \includegraphics[width=\linewidth]{../../media/electromagnetism/faraday-force-formula.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.45\textwidth}
+    \includegraphics[width=\linewidth]{../../media/electromagnetism/faraday-force-formula.png}
+  \end{minipage}
+\end{figure}
+```
+--> 
+
 (physics-hs:electromagnetism:electromagnetism-steady:experience-faraday:amperometer)=
 ### L'amperometro
 
 L'amperometro è uno strumento per la misura della corrente elettrica. **todo** 
 - l'amperometro sfrutta l'esperienza di Faraday per misurare la corrente elettrica in un cavo, leggendo la rotazione di una bobina all'interno di un campo magnetico;
 - l'amperometro viene collegato in serie nel lato del circuito nel quale si vuole misurare la corrente elettrica
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/amperometer-1.png)
+  - ![](../../media/amperometer-2.png)
+  - ![](../../media/amperometer-3.png)
+```
 
 (physics-hs:electromagnetism:electromagnetism-steady:experience-faraday:voltmeter)=
 ### Il voltmetro
@@ -36,6 +67,14 @@ Il voltmetro è uno strumento per la misura della differenza di tensione. **todo
 - il voltmetro viene collegato in parallelo al componente del circuito ai capi del quale si vuole misurare la differenza di tensione.
 
 
+```{list-table}
+:header-rows: 0
+* - ![](../../media/voltmeter-1.png)
+  - ![](../../media/voltmeter-2.png)
+  - ![](../../media/voltmeter-3.png)
+```
+
+<!--
 (physics-hs:electromagnetism:electromagnetism-steady:experience-faraday:galvanometer)=
 ### Il galvanometro
 
@@ -48,6 +87,7 @@ Il momento meccanico generato dalla corrente nel cavo elettrico equilibria un mo
 **todo** *Serve questo riferimento qui?*
 - spostare a fine capitolo
 - azioni elettro-meccaniche:..., cenni al motore elettrico in corrente continua? serve accoppiamento $\vec{e} \leftrightarrow \vec{b}$ di Faraday? No in corrente continua
+-->
 
 (physics-hs:electromagnetism:electromagnetism-steady:experience-oersted-ampere)=
 ## Esperienze di Oersted e Ampere
