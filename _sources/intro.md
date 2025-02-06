@@ -8,6 +8,9 @@ Questo libro fa parte del materiale pensato per [le scuole superiori](https://ba
 **Contenuti.**
 
 ```{dropdown} [Introduzione alla fisica](physics-hs:intro)
+
+Vengono presentati i fenomeni di interesse della fisica. Vengono introdotti i concetti di grandezza fisica e di misura: vengono presentati alcuni esempi di grandezze fisiche, il sistema internazionale di misura e presentate alcune caratteristiche degli strumenti e dell'attività di misura. Viene presentato il metodo scientifico, utilizzato per **inferire** tramite un processo di induzione le leggi fisiche. Infine, viene discusso lo stato attuale della fisica, senza nessuna pretesa di completezza ma con lo scopo di presentare alcuni modelli - come il modello atomico della materia - che torneranno utili all'interpretazione della natura e alla spiegazione dei fenomeni fisici trattati in seguito.
+
 ```
 ```{dropdown} [Meccanica classica](physics-hs:mechanics:intro)
 ```

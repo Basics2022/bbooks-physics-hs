@@ -18,6 +18,7 @@ Due **grandezze fisiche omogenee** sono grandezze fisiche della stessa natura, c
 (physics-hs:intro:measurements:instruments)=
 ## Strumenti di misura
 
+(physics-hs:intro:measurements:instruments:characteristics)=
 ### Caratteristiche della misura
 **Accuratezza.** E' una misura della differenza tra il valoremedio di una serie di misure e il *valore vero* della grandezza misurata.
 
@@ -67,4 +68,16 @@ Rimandare qui dal capitolo sulle [equazioni ordinarie differenziali (ODE)](https
 :label: instrument-order-two-exercise
 **todo**
 ```
+
+(physics-hs:intro:measurements:instruments:intrusivity)=
+### Intrusività
+L'intrusività di una misura può essere definita come la modifica del processo sotto indagine a causa della strumentazione necessaria alla misura delle grandezze di interesse.
+
+L'intrusività di alcuni strumenti verrà indagata durante il corso. Viene fatto qui un elenco degli strumenti di cui verrà discussa l'intrusività nel sistema:
+- meccanica:
+- termodinamica:
+- elettromagnetismo:
+  - [amperometro](physics-hs:electromagnetism:electromagnetism-steady:experience-faraday:amperometer)
+  - [voltmetro](physics-hs:electromagnetism:electromagnetism-steady:experience-faraday:voltmeter)
+
 
