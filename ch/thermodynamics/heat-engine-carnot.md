@@ -42,7 +42,7 @@ $$\begin{aligned}
   Q^{1}_{out} & = \int_{S = S_2}^{S_1} T \, dS = \int_{S = S_2}^{S_1} T_2 \, dS = - T_2 \Delta S \\
 \end{aligned}$$
 
-$$\eta_{C} = 1 + \frac{Q^{e,1}_{out}}{Q^{e,1}_{in}} = 1 + \frac{T_2 \, \Delta S}{T_1 \, \Delta S} = 1 - \dfrac{T_2}{T_1} \ .$$
+$$\eta_{C} = 1 + \frac{Q^{e,1}_{out}}{Q^{e,1}_{in}} = 1 + \frac{-T_2 \, \Delta S}{T_1 \, \Delta S} = 1 - \dfrac{T_2}{T_1} \ .$$
 
 
 **todo**

@@ -125,6 +125,7 @@ parts:
     - file: ch/thermodynamics/matter-problems
   - file: ch/thermodynamics/heat-engine
     sections:
+    - file: ch/thermodynamics/heat-engine-td-transformations
     - file: ch/thermodynamics/heat-engine-td-cycles
     - file: ch/thermodynamics/heat-engine-carnot
     - file: ch/thermodynamics/heat-engine-second-principle

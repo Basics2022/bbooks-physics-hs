@@ -9058,11 +9058,11 @@ Si consideri un sistema ad un componente, in grado di scambiare calore e con un 
 \sphinxAtStartPar
 Un sistema chiuso monofase formato da un gas non reagente, ha un unico modo \(W=1\) di manifestare lavoro interno reversibile, il lavoro meccanico di compressione, \(\delta L^{int,rev} = P dV\), in assenza di carica elettrica o altri meccanismi per compiere lavoro. Come conseguenza della {\hyperref[\detokenize{ch/thermodynamics/principles-gibbs-phase-rule:physics-hs-thermodynamics-foundation-principles-gibbs-phase-rule-gibbs-phase-rule}]{\sphinxcrossref{\DUrole{std,std-ref}{regola delle fasi di Gibbs}}}},
 \begin{equation*}
-\begin{split}F = C - P + W - 1 = 1 - 1 + 1 + 1 = 2 \ ,\end{split}
+\begin{split}F = C - P + W + 1 = 1 - 1 + 1 + 1 = 2 \ ,\end{split}
 \end{equation*}
 \sphinxAtStartPar
-il sistema ha due gradi di libertà, \(F=2\), cioè il suo stato è determinato da due variabili intensive indipendenti. Lo stato del sistema può quindi essere completamente rappresentato in uno spazio dimensionale, cioè in un piano di stato.
-Le due scelte discusse qui sono il piano di Clapeyron e il piano entropico.
+il sistema ha due gradi di libertà, \(F=2\), cioè il suo stato è determinato da due variabili intensive indipendenti. Lo stato del sistema può quindi essere completamente determinato da una coppia di variabili termodinamiche, e rappresentato in uno spazio 2\sphinxhyphen{}dimensionale \sphinxhyphen{} un piano di stato.
+Le due scelte discusse qui sono il piano di Clapeyron \(P-V\) e il piano entropico \(T-S\).
 
 
 
@@ -10246,10 +10246,17 @@ Essendo composta da molecole di gas biatomiche, i gradi di libertà della singol
 La variazione dell’entropia di un gas perfetto può essere scritta in diverse forme partendo dal primo principio della termodinamica e usando l’espressione dell’energia interna e la legge di stato dei gas perfetti per cambiare le variabili indipendenti,
 \begin{equation*}
 \begin{split}\begin{aligned}
-  ds & = \frac{1}{T} \left( d e + \frac{P}{\rho^2} d \rho \right) = \\
-     & = c_v \frac{dT}{T} + R_g \frac{d \rho}{\rho} = \\
-     & = c_P \frac{dT}{T} + R_g \frac{d P}{P} = \\
-     & = c_P \frac{d \rho}{\rho} + c_v \frac{d P}{P}  \ .
+  ds & = \frac{1}{T} \left( d e - \frac{P}{\rho^2} d \rho \right) = \\
+     & = c_v \frac{dT}{T} - R_g \frac{d \rho}{\rho} = \\
+     & = c_P \frac{dT}{T} - R_g \frac{d P}{P} = \\
+     & = -c_P \frac{d \rho}{\rho} + c_v \frac{d P}{P}  \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo usato la relazione
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \frac{d P}{P} & = \frac{d (\rho R T)}{P} = \frac{R T d \rho}{P} + \frac{\rho R d T}{P} = \frac{d \rho }{\rho} + \frac{d T}{T} \\
 \end{aligned}\end{split}
 \end{equation*}
 \sphinxstepscope
@@ -11147,7 +11154,7 @@ In questo capitolo vengono presentate alcune applicazioni tecnologiche, che coin
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{{\hyperref[\detokenize{ch/thermodynamics/heat-engine-td-cycles:physics-hs-thermodynamics-heat-engine-td-cycles}]{\sphinxcrossref{\DUrole{std,std-ref}{Cicli termodinamici}}}}.} Il funzionamento della maggioranza delle macchine termiche si basa sulla realizzazione di cicli termodinamici su un fluido di lavoro, operando o in regime periodico a fasi o in ciclo continuo. Per una macchina termica in regime periodico è utile ragionare in termini di lavoro e calore per periodo; per una macchina in ciclo continuo è utile ragionare in termini di potenza meccanica e flusso di calore per unità di tempo \sphinxstylestrong{(!!!)}. \sphinxstylestrong{todo} \sphinxstyleemphasis{fare riferimento a due cicli reali in diversi regimi di funzionamento \sphinxhyphen{} es. Otto vs. Joule\sphinxhyphen{}Brayton \sphinxhyphen{} e all’uso dei diagrammi termodinamici}
+\sphinxstylestrong{{\hyperref[\detokenize{ch/thermodynamics/heat-engine-td-transformations:physics-hs-thermodynamics-heat-engine-td-cycles}]{\sphinxcrossref{\DUrole{std,std-ref}{Cicli termodinamici}}}}.} Il funzionamento della maggioranza delle macchine termiche si basa sulla realizzazione di cicli termodinamici su un fluido di lavoro, operando o in regime periodico a fasi o in ciclo continuo. Per una macchina termica in regime periodico è utile ragionare in termini di lavoro e calore per periodo; per una macchina in ciclo continuo è utile ragionare in termini di potenza meccanica e flusso di calore per unità di tempo \sphinxstylestrong{(!!!)}. \sphinxstylestrong{todo} \sphinxstyleemphasis{fare riferimento a due cicli reali in diversi regimi di funzionamento \sphinxhyphen{} es. Otto vs. Joule\sphinxhyphen{}Brayton \sphinxhyphen{} e all’uso dei diagrammi termodinamici}
 
 \item {} 
 \sphinxAtStartPar
@@ -11170,6 +11177,251 @@ In questo capitolo, si analizzano alcuni componenti termo\sphinxhyphen{}meccanic
 Nel capitolo successivo vengono presentati alcuni dettagli dei {\hyperref[\detokenize{ch/thermodynamics/heat-transmission:physics-hs-thermodynamics-heat-transmission}]{\sphinxcrossref{\DUrole{std,std-ref}{meccanismi di trasmissione del calore}}}}; dopo aver presentato i princìpi fisici, vengono analizzati alcuni componenti termo\sphinxhyphen{}meccanici, sempre in termini di bilanci integrali di quantità fisiche.
 
 
+
+\sphinxstepscope
+
+
+\section{Trasformazioni termodinamiche}
+\label{\detokenize{ch/thermodynamics/heat-engine-td-transformations:trasformazioni-termodinamiche}}\label{\detokenize{ch/thermodynamics/heat-engine-td-transformations:physics-hs-thermodynamics-heat-engine-td-cycles}}\label{\detokenize{ch/thermodynamics/heat-engine-td-transformations::doc}}
+\sphinxAtStartPar
+…
+
+
+\subsection{Fluidi}
+\label{\detokenize{ch/thermodynamics/heat-engine-td-transformations:fluidi}}
+\sphinxAtStartPar
+Per un sistema \sphinxstylestrong{chiuso} composto da un volume di fluido monofase, che manifesta lavoro interno solo nella forma \(\delta L^{i,rev} = -P dV\)
+\begin{equation*}
+\begin{split}d E & = \delta Q^e - \delta L^i = \delta Q^e + \delta^+ D - \delta L^{i, rev} \end{split}
+\end{equation*}\begin{equation*}
+\begin{split}d E = T d S - P d V\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Trasformazione isocora, \(V \) cost.} Per una trasformazione isocora il volume del sistema non varia, \(d V = 0\). Quindi il lavoro interno reversibile è nullo, \(\delta L^{i,rev} = - P dV = 0\). Durante questa trasformazione segue quindi che la variazione di energia interna del sistema è uguale alla somma del contributo del calore immesso nel sistema e alla dissipazione,
+\begin{equation*}
+\begin{split}d E = \delta Q^e + \delta^+ D = T dS \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Nel caso di trasformazione ideale, per la quale si può trascurare la dissipazione, \(\delta^+ D = 0\),
+\begin{equation*}
+\begin{split}d E = \delta Q^e = T dS \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Trasformazione isoterma, \(T \) cost.} Per una trasformazione isoterna nessuno dei tre contributi di variazione di energia, calore e lavoro è nullo in generale. Il termine di calore+dissipazione lungo una trasformazione a temperatura costante \(T = \overline{T}\) assume però un’espressione molto semplice
+\begin{equation*}
+\begin{split}\int_{\gamma} T dS = \overline{T} \int_{\gamma_{1,2}} d S = \overline{T} (S_2 - S_1) = \overline{T} \Delta S_{1,2} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Nel caso di trasformazinoe ideale, per la quale si può trascurare la dissipazione, \(\delta^+ D = 0\), questo termine corrispende al calore immesso nel sistema, \(T d S = \delta Q\), e quindi
+\begin{equation*}
+\begin{split}Q_{12} = \overline{T} (S_2 - S_1) \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Trasformazione isobara, \(P \) cost.} Per una trasformazione isobara nessuno dei tre contributi di variazione di energia, calore e lavoro è nullo in generale. Il termine di lavoro interno ideale lungo una trasformazione a temperatura costante \(T = \overline{T}\) assume però un’espressione molto semplice
+\begin{equation*}
+\begin{split}\int_{\gamma} P dV = \overline{P} \int_{\gamma_{1,2}} d V = \overline{P} (V_2 - V_1) = \overline{P} \Delta V_{1,2} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Nel caso di trasformazinoe ideale, per la quale si può trascurare la dissipazione, \(\delta^+ D = 0\), e di trasformazione sufficientemente lenta da poter trascurare le variazioni di energia cinetica del sistema rispetto alle variazioni di energia interna, questo termine corrispende al lavoro fatto dal sistema,
+\begin{equation*}
+\begin{split}d K = \delta L^e + \delta L^i = \delta L^e + \delta L^{i,rev} - \delta^+ D \qquad \rightarrow \qquad \delta L := - \delta L^e \sim \delta L^{int,rev} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+o per una trasformazione finita
+\begin{equation*}
+\begin{split}\Delta L_{12} = \overline{P} (V_2 - V_1) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo definito il lavoro fatto dal sistema sull’ambiente esterno \(L\) come l’opposto del lavoro fatto dall’ambiente esterno sul sistema \(L^e\), \(L = - L^e\).
+
+\sphinxAtStartPar
+\sphinxstylestrong{Trasformazione adiabatica, \(\delta Q = 0\).} In una trasformazione adiabatica, senza apporto di calore, la variazione dell’energia interna è uguale all’opposto del lavoro interno del sistema o, nelle stesse ipotesi di contributo cinetico trascurabile discusse per le trasformazioni isobare, uguale al lavoro fatto dall’ambiente sul sistema
+\begin{equation*}
+\begin{split}d E = - \delta L^i = \delta L^{e} = - \delta L \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Nel caso di trasformazione ideale, \(\delta^+ D = 0\), \(\delta L^i = \delta L^{i,rev} = P dV\), si ottiene una trasformazione isentropica (Se \(\delta Q = 0\) e \(\delta^+ D = 0\) segue \(dS = 0\), vedi sotto) e l’espressione della variazione di energia
+\begin{equation*}
+\begin{split}d E = - P dV \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Trasformazione isentropica, \(S \) cost.} Una trasformazione isentropica è una trasformazione \sphinxstylestrong{adiabatica ideale}, senza dissipazione. Infatti, per una trasformazione adiabatica \(\delta Q = 0\), per una trasformazione senza dissipazione \(\delta^+ D = 0\) e segue immediatamente
+\begin{equation*}
+\begin{split}T d S = \delta Q + \delta^+ D = 0 \ .\end{split}
+\end{equation*}
+
+\subsubsection{Gas ideali}
+\label{\detokenize{ch/thermodynamics/heat-engine-td-transformations:gas-ideali}}
+\sphinxAtStartPar
+Per un {\hyperref[\detokenize{ch/thermodynamics/ideal-gas:physics-hs-thermodynamics-matter-gases-ideal}]{\sphinxcrossref{\DUrole{std,std-ref}{gas ideale}}}} si può utilizzare la sua equazione di stato
+\begin{equation*}
+\begin{split}P = \rho R_g T \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e l’espressione dell’energia interna in funzione solo della temperatura \sphinxstylestrong{todo} \sphinxstyleemphasis{riferimento}
+\begin{equation*}
+\begin{split}E = m c_v T \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e ottenere dei risultati un po” più espliciti. In questa sezione vengono considerate trasformazioni ideali e con termini cinetici trascurabili.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Trasformazione isocora, \(V \) cost.} La condizione di volume costante e sistema chiuso \sphinxhyphen{} massa costante \sphinxhyphen{} in condizioni di grandezze fisiche uniformi nello spazio corrisponde alla condizione di densità costante,
+\begin{equation*}
+\begin{split}\rho = \frac{m}{V} = \frac{\overline{m}}{\overline{V}} = \overline{\rho} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La legge dei gas quindi impone un legame lineare tra pressione e temperatura del sistema durante la trasformazione, \(P = \overline{\rho} R_g T\).
+
+\sphinxAtStartPar
+Il lavoro è identicamente nullo, \(d L^ì = 0\) e quindi la variazione di energia corrisponde alla variazione di calore immesso nel sistema
+\begin{equation*}
+\begin{split}T dS = \delta Q^e = d E = m c_v dT \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+da cui si può ricavare la variazione di entropia in funzione della variazione della temperatura,
+\begin{equation*}
+\begin{split}d S = m c_v \dfrac{d T}{T} \qquad \rightarrow \qquad \Delta S_{12} = m c_v \ln \dfrac{T_2}{T_1} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La trasformazione può essere rappresentata nei piani termodinamici \(P-V\) e \(T-S\) come delle curve parametrizzabili con un parametro libero,
+\begin{equation*}
+\begin{split}P = \overline{\rho} R T\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}e_2 - e_1 = c_v (T_2 - T_1) = \frac{c_v}{\overline{\rho} R} (P_2 - P_1)\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}d s = c_v \dfrac{dT}{T} \quad \rightarrow \quad s_2 - s_1 = c_v \ln \frac{T_2}{T_1} \end{split}
+\end{equation*}\begin{equation*}
+\begin{split}d s = c_v \dfrac{dP}{P} \quad \rightarrow \quad s_2 - s_1 = c_v \ln \frac{P_2}{P_1} \end{split}
+\end{equation*}
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|}
+\hline
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{td-transformations-v}.png}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Trasformazione isoterma, \(T \) cost.} Per una tasformazione isoterma \(P = \rho R_g \overline{T} = \frac{\overline{m}}{V} R_g \overline{T}\). La variazione di energia interna è nulla, poiché \(dT = 0\) implica \(d E = m c_v dT = 0\). Seque quindi che il lavoro fatto dal sistema è uguale al calore immesso in esso. Nel caso ideale
+\begin{equation*}
+\begin{split}\overline{T} dS = \delta Q^{e} = \delta L = P dV \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+da cui si può ricavare la variazione di entropia come
+\begin{equation*}
+\begin{split}d S = \overline{m} R_g \dfrac{d V}{V} \qquad \rightarrow \qquad \frac{Q_{12}}{\overline{T}} = \Delta S_{12} = \overline{m} R_g \ln \frac{V_2}{V_1} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La trasformazione può essere rappresentata nei piani termodinamici \(P-V\) e \(T-S\) come delle curve parametrizzabili con un parametro libero,
+\begin{equation*}
+\begin{split}P = \rho R \overline{T}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}e_2 = e_1 = c_v \overline{T}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}d s = R \dfrac{d\rho}{\rho} \quad \rightarrow \quad s_2 - s_1 = R \ln \frac{\rho_2}{\rho_1} = - R \ln \frac{V_2}{V_1} \end{split}
+\end{equation*}\begin{equation*}
+\begin{split}d s = R \dfrac{d P  }{P   } \quad \rightarrow \quad s_2 - s_1 = R \ln \frac{P_2}{P_1} \end{split}
+\end{equation*}
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|}
+\hline
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{td-transformations-t}.png}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Trasformazione isobara, \(P \) cost.}
+
+\sphinxAtStartPar
+…
+
+\sphinxAtStartPar
+La trasformazione può essere rappresentata nei piani termodinamici \(P-V\) e \(T-S\) come delle curve parametrizzabili con un parametro libero,
+\begin{equation*}
+\begin{split}\overline{P} = \rho R T\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}e_2 - e_1 = c_v (T_2 - T_1) = \frac{c_v}{R} \overline{P} (V_2 - V_1)\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}d s = c_P \dfrac{d\rho}{\rho} \quad \rightarrow \quad s_2 - s_1 = c_P \ln \frac{\rho_2}{\rho_1} = - c_P \ln \frac{V_2}{V_1} \end{split}
+\end{equation*}\begin{equation*}
+\begin{split}d s = c_P \dfrac{d T  }{T   } \quad \rightarrow \quad s_2 - s_1 = c_P \ln \frac{T_2}{T_1} \end{split}
+\end{equation*}
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|}
+\hline
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{td-transformations-p}.png}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Trasformazione isentropica, \(S \) cost.} Una trasformazione isentropica \sphinxhyphen{} adiabatica ideale con \(\delta Q = 0\), \(\delta^+ D = 0\), \(\delta S = 0\) \sphinxhyphen{} la variazione di energia interna del sistema è uguale al lavoro fatto sul sistema
+\begin{equation*}
+\begin{split}- P dV = \delta L^e = d E = \overline{m} c_v d T \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+da cui
+\begin{equation*}
+\begin{split}0 = ds = - R \frac{d P}{P} + c_P \frac{d T}{T} =  c_v \frac{d P}{P} - c_P \frac{d \rho}{\rho} = - R \frac{d \rho}{\rho} + c_v \frac{d T}{T} \end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+  \left(\frac{P_2}{P_1}      \right) & = \left(\frac{\rho_2}{\rho_1} \right)^{\gamma}  \\  
+  \left(\frac{P_2}{P_1}      \right) & = \left(\frac{T_2}{T_1}       \right)^{\frac{\gamma}{\gamma-1}}  \\
+  \left(\frac{\rho_2}{\rho_1}\right) & = \left(\frac{T_2}{T_1}       \right)^{\frac{1}{\gamma-1}}  \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo usato le relazioni
+\begin{equation*}
+\begin{split}c_P - c_v = R\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\gamma = \frac{c_P}{c_v}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+per calcolare i rapporti
+\begin{equation*}
+\begin{split}\begin{aligned}
+ \frac{c_P}{c_v} & = \gamma \\
+ \frac{c_P}{R}   & = \frac{\gamma}{\gamma - 1} \\
+ \frac{c_v}{R}   & = \frac{1}{\gamma - 1} \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+…
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|}
+\hline
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{td-transformations-s}.png}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
 
 \sphinxstepscope
 
@@ -11221,7 +11473,7 @@ Come sarà chiaro più tardi con l”{\hyperref[\detokenize{ch/thermodynamics/he
 \sphinxAtStartPar
 Ricordando l’osservazione fatta nell’introduzione riguardo le macchine in funzionamento periodico o in ciclo continuo, si definisce qui il rendimento delle macchine termiche in funzionamento periodico in termini di lavoro e calore per ogni ciclo; dovrebbe essere immediata l’estensione di questa definizione al caso di macchine termiche in funzionamento continuo in termini di potenza meccanica e flusso di calore per unità di tempo.
 \label{ch/thermodynamics/heat-engine-td-cycles:definition-0}
-\begin{sphinxadmonition}{note}{Definition 16.1.1 (Rendimento termodinamico)}
+\begin{sphinxadmonition}{note}{Definition 16.2.1 (Rendimento termodinamico)}
 
 
 
@@ -11232,7 +11484,7 @@ Il rendimento termodinamico di una macchina termica è definita come il rapporto
 \sphinxAtStartPar
 La definizione di rendimento termodinamico dipende quindi dallo scopo e dal funzionamento della macchina termica.
 \label{ch/thermodynamics/heat-engine-td-cycles:definition-1}
-\begin{sphinxadmonition}{note}{Definition 16.1.2 (Rendimento termodinamico \sphinxhyphen{} macchina termica diretta)}
+\begin{sphinxadmonition}{note}{Definition 16.2.2 (Rendimento termodinamico \sphinxhyphen{} macchina termica diretta)}
 
 
 
@@ -11302,7 +11554,7 @@ Il rendimento massimo di una macchina termica che scambia calore con due sistemi
   Q^{1}_{out} & = \int_{S = S_2}^{S_1} T \, dS = \int_{S = S_2}^{S_1} T_2 \, dS = - T_2 \Delta S \\
 \end{aligned}\end{split}
 \end{equation*}\begin{equation*}
-\begin{split}\eta_{C} = 1 + \frac{Q^{e,1}_{out}}{Q^{e,1}_{in}} = 1 + \frac{T_2 \, \Delta S}{T_1 \, \Delta S} = 1 - \dfrac{T_2}{T_1} \ .\end{split}
+\begin{split}\eta_{C} = 1 + \frac{Q^{e,1}_{out}}{Q^{e,1}_{in}} = 1 + \frac{-T_2 \, \Delta S}{T_1 \, \Delta S} = 1 - \dfrac{T_2}{T_1} \ .\end{split}
 \end{equation*}
 \sphinxAtStartPar
 \sphinxstylestrong{todo}
@@ -11346,7 +11598,7 @@ Esistono due enunciati equivalenti del secondo principio della termodinamica per
 
 \subsection{Enunciato di Kelvin}
 \label{\detokenize{ch/thermodynamics/heat-engine-second-principle:enunciato-di-kelvin}}\label{\detokenize{ch/thermodynamics/heat-engine-second-principle:physics-hs-thermodynamics-heat-engine-second-principle-kelvin}}\label{ch/thermodynamics/heat-engine-second-principle:proposition-0}
-\begin{sphinxadmonition}{note}{Proposition 16.3.1 (Enunciato di Kelvin)}
+\begin{sphinxadmonition}{note}{Proposition 16.4.1 (Enunciato di Kelvin)}
 
 
 
@@ -11384,7 +11636,7 @@ In altri termini, una macchina termica che scambia calore unicamente con una sor
 
 \subsection{Enunciato di Planck}
 \label{\detokenize{ch/thermodynamics/heat-engine-second-principle:enunciato-di-planck}}\label{\detokenize{ch/thermodynamics/heat-engine-second-principle:physics-hs-thermodynamics-heat-engine-second-principle-planck}}\label{ch/thermodynamics/heat-engine-second-principle:proposition-1}
-\begin{sphinxadmonition}{note}{Proposition 16.3.2 (Enunciato di Planck)}
+\begin{sphinxadmonition}{note}{Proposition 16.4.2 (Enunciato di Planck)}
 
 
 
