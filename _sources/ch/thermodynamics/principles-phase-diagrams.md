@@ -9,6 +9,7 @@ I diagrammi di fase forniscono degli strumenti per una rappresentazione grafica-
 
 Questa sezione si concentra su sistemi gassosi non reagenti monofase e sulla rappresentazione dello stato di tali sistemi nei piani di Clapeyron $P-V$ e nel piano entropico $T-S$. L'uso del diagramma di Mollier viene rimandato alla sezione sull'[aria umida](physics-hs:thermodynamics:matter:humid-air), <span style="color:red"> dopo aver introdotto i potenziali termodinamici per i gas, e le miscele?</span>
 
+(physics-hs:thermodynamics:foundation:principles:phase-diagrams:gas-1)=
 ## Diagramma di stato di un sistema mono-componente gassoso
 Si consideri un sistema ad un componente, in grado di scambiare calore e con un unico modo di manifestare il lavoro reversibile interno al sistema, quello meccanico dovuto a un'espansione isotropa del volume, $\delta L^{int,rev} = P \, d V$.
 
@@ -40,6 +41,7 @@ Esempi:
 - ...
 -->
 
+(physics-hs:thermodynamics:foundation:principles:phase-diagrams:gas-1:pv)=
 ### Piano di Clapeyron, P-V
 **Lavoro.**
 Nel caso di **sistemi chiusi** e **processi ideali**, il primo principio della termodinamica viene scritto
@@ -62,6 +64,7 @@ che ha l'immediata rappresentazione grafica corrispondente all'area (con segno) 
 **Esempi di trasformazioni.**
 ...
 
+(physics-hs:thermodynamics:foundation:principles:phase-diagrams:gas-1:ts)=
 ### Piano entropico, T-S
 Nel caso di trasformazioni ideali, il calore entrante nel sistema può essere identificato con il termines
 
