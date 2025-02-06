@@ -281,14 +281,15 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../thermodynamics/heat-engine.html">16. Fondamenti di fisica tecnica</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/heat-engine-td-cycles.html">16.1. Cicli termodinamici</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/heat-engine-carnot.html">16.2. Carnot e le «Riflessioni sulla forza motrice del fuoco»</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/heat-engine-second-principle.html">16.3. Secondo principio della termodinamica per cicli termodinamici</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../thermodynamics/heat-engine-industrial.html">16.4. Macchine termiche e cicli termodinamici</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../thermodynamics/heat-engine-otto.html">16.4.1. Ciclo Otto</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../thermodynamics/heat-engine-diesel.html">16.4.2. Ciclo Diesel</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../thermodynamics/heat-engine-joule-brayton.html">16.4.3. Ciclo Joule-Brayton</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../thermodynamics/heat-engine-rankine.html">16.4.4. Ciclo Rankine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/heat-engine-td-transformations.html">16.1. Trasformazioni termodinamiche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/heat-engine-td-cycles.html">16.2. Cicli termodinamici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/heat-engine-carnot.html">16.3. Carnot e le «Riflessioni sulla forza motrice del fuoco»</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/heat-engine-second-principle.html">16.4. Secondo principio della termodinamica per cicli termodinamici</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../thermodynamics/heat-engine-industrial.html">16.5. Macchine termiche e cicli termodinamici</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../thermodynamics/heat-engine-otto.html">16.5.1. Ciclo Otto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../thermodynamics/heat-engine-diesel.html">16.5.2. Ciclo Diesel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../thermodynamics/heat-engine-joule-brayton.html">16.5.3. Ciclo Joule-Brayton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../thermodynamics/heat-engine-rankine.html">16.5.4. Ciclo Rankine</a></li>
 </ul>
 </li>
 </ul>
@@ -655,7 +656,7 @@ document.write(`
 <p>dal quale è possibile ricavare la misura della corrente <span class="math notranslate nohighlight">\(i\)</span> all’interno dell’amperometro dalla lettura dell’angolo di rotazione della bobina,</p>
 <div class="math notranslate nohighlight">
 \[i = \frac{k}{N A B} \theta \ .\]</div>
-<p>L’amperometro viene collegato <strong>in serie</strong> nel lato del circuito nel quale si vuole misurare la corrente elettrica. Per ottenere un’intrusività ridotta dello strumento nel sistema, l’amperometro deve avere una resistenza elettrica ridotta per non modificare radicalmente l’impedenza (la resistenza in regime stazionario) del lato in cui si misura la corrente.</p>
+<p>L’amperometro viene collegato <strong>in serie</strong> nel lato del circuito nel quale si vuole misurare la corrente elettrica. Per ottenere un”<a class="reference internal" href="../intro/measurements.html#physics-hs-intro-measurements-instruments-intrusivity"><span class="std std-ref"><strong>intrusività</strong></span></a> ridotta dello strumento nel sistema, l’amperometro deve avere una resistenza elettrica ridotta per non modificare radicalmente l’impedenza (la resistenza in regime stazionario) del lato in cui si misura la corrente.</p>
 <p>Le azioni meccaniche, l’intrusività e la sensibilità di un amperometro vengono discussi come esercizio.</p>
 <table class="table">
 <colgroup>
@@ -693,8 +694,8 @@ document.write(`
 <span id="physics-hs-electromagnetism-electromagnetism-steady-experience-faraday-voltmeter"></span><h3><span class="section-number">20.3.2.2. </span>Il voltmetro<a class="headerlink" href="#il-voltmetro" title="Permalink to this heading">#</a></h3>
 <p>Il voltmetro è uno strumento per la misura della differenza di tensione. <strong>todo</strong></p>
 <ul class="simple">
-<li><p>un modello rudimentale di voltmetro si basa su un amperometro in serie a una resistenza elettrica nota <span class="math notranslate nohighlight">\(R_{v}\)</span> elevata, per ridurre l”<strong>intrusività</strong> dello strumento: maggiore è la resistenza, minore è la corrente che passa nel voltmetro. Nota la resistenza <span class="math notranslate nohighlight">\(R_v\)</span> e letta l’intensità di corrente dalla misura dell’amperometro, la differenza di tensione è misurata usando la <a class="reference internal" href="electric-current.html#physics-hs-electromagnetism-electric-current-solids-conductor-ohm"><span class="std std-ref">legge di Ohm</span></a> <a class="reference internal" href="electric-current.html#equation-ohm-integral-first-r">(20.6)</a> come <span class="math notranslate nohighlight">\(v = R_v i\)</span></p></li>
-<li><p>il voltmetro viene collegato in parallelo al componente del circuito ai capi del quale si vuole misurare la differenza di tensione.</p></li>
+<li><p>un modello rudimentale di voltmetro si basa su un amperometro in serie a una <strong>resistenza elettrica</strong> nota <span class="math notranslate nohighlight">\(R_{v}\)</span> <strong>elevata</strong>, per ridurre l”<a class="reference internal" href="../intro/measurements.html#physics-hs-intro-measurements-instruments-intrusivity"><span class="std std-ref"><strong>intrusività</strong></span></a> dello strumento: maggiore è la resistenza, minore è la corrente che passa nel voltmetro. Nota la resistenza <span class="math notranslate nohighlight">\(R_v\)</span> e letta l’intensità di corrente dalla misura dell’amperometro, la differenza di tensione è misurata usando la <a class="reference internal" href="electric-current.html#physics-hs-electromagnetism-electric-current-solids-conductor-ohm"><span class="std std-ref">legge di Ohm</span></a> <a class="reference internal" href="electric-current.html#equation-ohm-integral-first-r">(20.6)</a> come <span class="math notranslate nohighlight">\(v = R_v i\)</span></p></li>
+<li><p>il voltmetro viene collegato <strong>in parallelo</strong> al componente del circuito ai capi del quale si vuole misurare la differenza di tensione.</p></li>
 </ul>
 <table class="table">
 <colgroup>

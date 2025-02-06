@@ -58,7 +58,7 @@ dal quale è possibile ricavare la misura della corrente $i$ all'interno dell'am
 
 $$i = \frac{k}{N A B} \theta \ .$$
 
-L'amperometro viene collegato **in serie** nel lato del circuito nel quale si vuole misurare la corrente elettrica. Per ottenere un'intrusività ridotta dello strumento nel sistema, l'amperometro deve avere una resistenza elettrica ridotta per non modificare radicalmente l'impedenza (la resistenza in regime stazionario) del lato in cui si misura la corrente.
+L'amperometro viene collegato **in serie** nel lato del circuito nel quale si vuole misurare la corrente elettrica. Per ottenere un'[**intrusività**](physics-hs:intro:measurements:instruments:intrusivity) ridotta dello strumento nel sistema, l'amperometro deve avere una resistenza elettrica ridotta per non modificare radicalmente l'impedenza (la resistenza in regime stazionario) del lato in cui si misura la corrente.
 
 Le azioni meccaniche, l'intrusività e la sensibilità di un amperometro vengono discussi come esercizio.
 
@@ -89,8 +89,8 @@ Le azioni meccaniche, l'intrusività e la sensibilità di un amperometro vengono
 ### Il voltmetro
 
 Il voltmetro è uno strumento per la misura della differenza di tensione. **todo**
-- un modello rudimentale di voltmetro si basa su un amperometro in serie a una resistenza elettrica nota $R_{v}$ elevata, per ridurre l'**intrusività** dello strumento: maggiore è la resistenza, minore è la corrente che passa nel voltmetro. Nota la resistenza $R_v$ e letta l'intensità di corrente dalla misura dell'amperometro, la differenza di tensione è misurata usando la [legge di Ohm](physics-hs:electromagnetism:electric-current:solids:conductor:ohm) {eq}`ohm:integral:first:R` come $v = R_v i$
-- il voltmetro viene collegato in parallelo al componente del circuito ai capi del quale si vuole misurare la differenza di tensione.
+- un modello rudimentale di voltmetro si basa su un amperometro in serie a una **resistenza elettrica** nota $R_{v}$ **elevata**, per ridurre l'[**intrusività**](physics-hs:intro:measurements:instruments:intrusivity) dello strumento: maggiore è la resistenza, minore è la corrente che passa nel voltmetro. Nota la resistenza $R_v$ e letta l'intensità di corrente dalla misura dell'amperometro, la differenza di tensione è misurata usando la [legge di Ohm](physics-hs:electromagnetism:electric-current:solids:conductor:ohm) {eq}`ohm:integral:first:R` come $v = R_v i$
+- il voltmetro viene collegato **in parallelo** al componente del circuito ai capi del quale si vuole misurare la differenza di tensione.
 
 
 ```{list-table}
