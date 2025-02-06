@@ -71,7 +71,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon-sugar.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="16.2. Macchina termica di Carnot" href="heat-engine-carnot.html" />
+    <link rel="next" title="16.2. Carnot e le «Riflessioni sulla forza motrice del fuoco»" href="heat-engine-carnot.html" />
     <link rel="prev" title="16. Fondamenti di fisica tecnica" href="heat-engine.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -282,7 +282,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="heat-engine.html">16. Fondamenti di fisica tecnica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">16.1. Cicli termodinamici</a></li>
-<li class="toctree-l2"><a class="reference internal" href="heat-engine-carnot.html">16.2. Macchina termica di Carnot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-carnot.html">16.2. Carnot e le «Riflessioni sulla forza motrice del fuoco»</a></li>
 <li class="toctree-l2"><a class="reference internal" href="heat-engine-second-principle.html">16.3. Secondo principio della termodinamica per cicli termodinamici</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="heat-engine-industrial.html">16.4. Macchine termiche e cicli termodinamici</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="heat-engine-otto.html">16.4.1. Ciclo Otto</a></li>
@@ -545,7 +545,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -561,6 +563,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rendimento-termico">16.1.1. Rendimento termico</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -577,16 +587,49 @@ In un piano termodinamico, un ciclo termodinamico è rappresentato da una curva 
 <ul class="simple">
 <li><p><strong>todo.</strong> Sistemi aperti/sistemi chiusi</p></li>
 </ul>
-<p>Per un <strong>sistema chiuso</strong>, il primo principio della termodinamica</p>
+<p>Per un <strong>sistema chiuso</strong>, il primo principio della termodinamica rappresenta il bilancio di energia totale,</p>
 <div class="math notranslate nohighlight">
-\[d E^{tot} = \delta Q^e + \delta L^e\]</div>
-<p>Nell’ipotesi di regime periodico dello stato del sistema descritto da un ciclo termodinamico, alla fine del ciclo</p>
+\[d E^{tot} = \delta Q^e + \delta L^e \ ,\]</div>
+<p>L’energia è una variabile di stato del sistema (<strong>todo</strong> <em>riferimenti</em>), e quindi il suo valore alla fine di un ciclo termodinamico coincide con il suo valore all’inizio del ciclo. Nell’ipotesi di <strong>regime periodico</strong> dello stato del sistema descritto da un <strong>ciclo</strong> termodinamico, dopo un ciclo la differenza di energia del sistema è nulla, <span class="math notranslate nohighlight">\(\Delta E^{tot} = 0\)</span>,</p>
 <div class="math notranslate nohighlight">
-\[0 =  \oint_\gamma d E^{tot} = \oint_\gamma \delta Q^e + \oint_\gamma \delta L^e \ ,\]</div>
-<p>e da questo segue che il lavoro netto fatto dal sistema <span class="math notranslate nohighlight">\(-L^e\)</span> è uguale al calore netto entrato nel sistema <span class="math notranslate nohighlight">\(Q^e\)</span>,</p>
+\[0 = \underbrace{ \oint_\gamma d E^{tot} }_{\Delta E^{tot}} = \underbrace{\oint_\gamma \delta Q^e}_{Q^{e,1}} + \underbrace{\oint_\gamma \delta L^e}_{= L^{e,1}} \ ,\]</div>
+<p>e quindi il lavoro <strong>fatto dal sistema</strong> - definito come l’opposto del lavoro fatto sul sistema, <span class="math notranslate nohighlight">\(L^e\)</span> - in un ciclo, <span class="math notranslate nohighlight">\(L^1 := -L^{e,1}\)</span>, è uguale al calore netto immesso nel sistema in un ciclo, <span class="math notranslate nohighlight">\(Q^{e,1}\)</span>,</p>
 <div class="math notranslate nohighlight">
-\[-L^e = Q^e \ .\]</div>
-<p><strong>todo</strong> In un sistema in cui sia trascurabile l’energia cinetica del sistema sia trascurabile rispetto alla variazione di energia interna, si può approssimare <span class="math notranslate nohighlight">\(E^{tot} = K + E \approx E\)</span></p>
+\[L^{1} = Q^{e,1} \ .\]</div>
+<p>Come sarà chiaro più tardi con l”<a class="reference internal" href="heat-engine-second-principle.html#physics-hs-thermodynamics-heat-engine-second-principle-kelvin"><span class="std std-ref">enunuciato di Kelvin del secondo principio della termodinamica</span></a>, una macchina termica in funzionamento diretto - con l’obiettivo di produrre un lavoro meccanico positivo - scambia calore con l’ambiente esterno sia assorbendo sia rilasciando calore: tipicamente assorbe calore <span class="math notranslate nohighlight">\(Q^{e}_{in} &gt; 0\)</span> come meccanismo necessario al funzionamento della macchina (es. combustione, scambi di calore con sorgenti calde/riscaldate,…) e rilascia calore nell’ambiente <span class="math notranslate nohighlight">\(Q^{e}_{out} &lt; 0\)</span>. Separando il ciclo nelle fasi in cui viene rilasciato introdotto calore nel sistema e nelle fasi in cui il sistema rilascia calore nell’ambiente e - proprio volendo metterle in evidenza - nelle fasi adiabatiche in cui non c’è scambio di calore con l’ambiente</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \gamma &amp; = \gamma_{Q,in} \cup \gamma_{Q,out} \cup \gamma_{ad} \\
+  \emptyset &amp; = \gamma_{Q,in} \cap \gamma_{Q,out} \cap \gamma_{ad} \ ,
+\end{aligned}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+  Q^{e,1} = \oint_{\gamma} \delta Q^{e} 
+  = \int_{\gamma_{Q,in}} \delta Q^e + \int_{\gamma_{Q,out}} \delta Q^e + \int_{\gamma_{ad}} \delta Q^e 
+  = \underbrace{Q^{e,1}_{in}}_{&gt; 0} + \underbrace{Q^{e,1}_{out}}_{&lt; 0} + 0
+\end{aligned}\]</div>
+<div class="section" id="rendimento-termico">
+<span id="physics-hs-thermodynamics-heat-engine-td-cycles-efficiency"></span><h2><span class="section-number">16.1.1. </span>Rendimento termico<a class="headerlink" href="#rendimento-termico" title="Permalink to this heading">#</a></h2>
+<p>Ricordando l’osservazione fatta nell’introduzione riguardo le macchine in funzionamento periodico o in ciclo continuo, si definisce qui il rendimento delle macchine termiche in funzionamento periodico in termini di lavoro e calore per ogni ciclo; dovrebbe essere immediata l’estensione di questa definizione al caso di macchine termiche in funzionamento continuo in termini di potenza meccanica e flusso di calore per unità di tempo.</p>
+<div class="proof definition admonition" id="definition-0">
+<p class="admonition-title"><span class="caption-number">Definition 16.1 </span> (Rendimento termodinamico)</p>
+<div class="definition-content section" id="proof-content">
+<p>Il rendimento termodinamico di una macchina termica è definita come il rapporto tra l’effetto utile della macchina e l’apporto esterno.</p>
+</div>
+</div><p>La definizione di rendimento termodinamico dipende quindi dallo scopo e dal funzionamento della macchina termica.</p>
+<div class="proof definition admonition" id="definition-1">
+<p class="admonition-title"><span class="caption-number">Definition 16.2 </span> (Rendimento termodinamico - macchina termica diretta)</p>
+<div class="definition-content section" id="proof-content">
+<p>Una macchina termica in funzionamento diretto ha come obiettivo quello di convertire un apporto di calore <span class="math notranslate nohighlight">\(Q^{e}_{in} &gt; 0\)</span> in lavoro meccanico utile <span class="math notranslate nohighlight">\(L = -L^e &gt; 0\)</span>. Il rendimento di una macchina termica in funzionamento diretto è quindi</p>
+<div class="math notranslate nohighlight">
+\[\eta = \frac{L}{Q^{e}_{in}} \ .\]</div>
+</div>
+</div><p>Utilizzando la relazione tra calore e lavoro in un ciclo <strong>todo</strong> <em>ref</em>e riconoscendo i contributi netti entranti e uscenti di calore dal sistema, si può scrivere</p>
+<div class="math notranslate nohighlight">
+\[\eta = \frac{L}{Q_{in}} = \frac{Q_{in} + Q_{out}}{Q_{in}} = 1 + \frac{Q_{out}}{Q_{in}} = 1 - \frac{|Q_{out}|}{Q_{in}} \ .\]</div>
+<p><strong>todo</strong> In un sistema in cui sia trascurabile l’energia cinetica del sistema sia trascurabile rispetto alla variazione di energia interna, si può approssimare <span class="math notranslate nohighlight">\(E^{tot} = K + E \approx E\)</span>.</p>
+<p><strong>todo</strong> Per sistemi aperti, in regime stazionario…</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -633,7 +676,7 @@ In un piano termodinamico, un ciclo termodinamico è rappresentato da una curva 
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">16.2. </span>Macchina termica di Carnot</p>
+        <p class="prev-next-title"><span class="section-number">16.2. </span>Carnot e le «Riflessioni sulla forza motrice del fuoco»</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -643,6 +686,20 @@ In un piano termodinamico, un ciclo termodinamico è rappresentato da una curva 
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rendimento-termico">16.1.1. Rendimento termico</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

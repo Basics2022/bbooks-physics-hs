@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>16.2. Macchina termica di Carnot &#8212; Fisica per le superiori</title>
+    <title>16.2. Carnot e le «Riflessioni sulla forza motrice del fuoco» &#8212; Fisica per le superiori</title>
   
   
   
@@ -282,7 +282,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="heat-engine.html">16. Fondamenti di fisica tecnica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="heat-engine-td-cycles.html">16.1. Cicli termodinamici</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">16.2. Macchina termica di Carnot</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">16.2. Carnot e le «Riflessioni sulla forza motrice del fuoco»</a></li>
 <li class="toctree-l2"><a class="reference internal" href="heat-engine-second-principle.html">16.3. Secondo principio della termodinamica per cicli termodinamici</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="heat-engine-industrial.html">16.4. Macchine termiche e cicli termodinamici</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="heat-engine-otto.html">16.4.1. Ciclo Otto</a></li>
@@ -545,7 +545,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -556,11 +558,20 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Macchina termica di Carnot</h1>
+    <h1>Carnot e le «Riflessioni sulla forza motrice del fuoco»</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-di-carnot">16.2.1. Ciclo di Carnot</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-carnot">16.2.2. Teorema di Carnot</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -570,21 +581,64 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="macchina-termica-di-carnot">
-<span id="physics-hs-thermodynamics-heat-engine-carnot"></span><h1><span class="section-number">16.2. </span>Macchina termica di Carnot<a class="headerlink" href="#macchina-termica-di-carnot" title="Permalink to this heading">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="carnot-e-le-riflessioni-sulla-forza-motrice-del-fuoco">
+<span id="physics-hs-thermodynamics-heat-engine-carnot"></span><h1><span class="section-number">16.2. </span>Carnot e le «Riflessioni sulla forza motrice del fuoco»<a class="headerlink" href="#carnot-e-le-riflessioni-sulla-forza-motrice-del-fuoco" title="Permalink to this heading">#</a></h1>
+<p>Una <strong>macchina ideale</strong> è una macchina in cui:</p>
+<ul>
+<li><p>non si verificano fenomeni di dissipazione dell’energia meccanica <span class="math notranslate nohighlight">\(\delta^+ D = 0\)</span>, in cui i processi sono quasi-stazionari; i termini cinetici possono essere trascurati,</p>
 <div class="math notranslate nohighlight">
-\[d E^{tot} = \delta Q^{ext} + \delta L^{ext} \ ,\]</div>
+\[\begin{split}\begin{aligned}
+    K &amp; \sim 0 \\
+    E^{tot} &amp; = K + E \sim E \\
+    d K &amp; = \delta P^{tot} = \delta L^{e} + \delta L^{i} &amp; &amp; \quad \rightarrow \quad \delta L^{e} \sim - \delta L^i \\
+    d E^{tot} &amp; = \delta Q^{e} + \delta L^e              &amp; &amp; \quad \rightarrow \quad \delta E \sim \delta Q^{e} - \delta L^i
+  \end{aligned}\end{split}\]</div>
+</li>
+<li><p>la trasmissione del calore tra la macchina e le sorgenti di calore esterne avvengono con differenza di temperatura nulla</p></li>
+</ul>
+<!--
+$$d E^{tot} = \delta Q^{ext} + \delta L^{ext} \ ,$$
+
+$$dS = \dfrac{\delta Q^{ext}}{T} + \dfrac{\delta^+D}{T} \ge  \dfrac{\delta Q^{ext}}{T} \ .$$
+
+$$0 = \oint_{\gamma} d E^{tot} = \oint_{\gamma} \delta Q^{ext} + \oint_{\gamma} \delta L^{ext}$$
+
+Il lavoro fatto in un ciclo è
+
+$$\Delta L^{1-cycle} = - \Delta L^{ext} = \Delta Q^{ext} \ .$$
+-->
+<div class="section" id="ciclo-di-carnot">
+<span id="physics-hs-thermodynamics-heat-engine-carnot-td-cycle"></span><h2><span class="section-number">16.2.1. </span>Ciclo di Carnot<a class="headerlink" href="#ciclo-di-carnot" title="Permalink to this heading">#</a></h2>
+<p>Il ciclo di Carnot è formato da due adiabatiche ideali e due isoterme ideali.</p>
+<p>Per una trasformazione ideale rappresentata nel piano <span class="math notranslate nohighlight">\(T-S\)</span> dalla curva <span class="math notranslate nohighlight">\(\gamma\)</span>, il calore entrante nel sistema è uguale all’integrale <strong>todo</strong> <em>ref</em></p>
 <div class="math notranslate nohighlight">
-\[dS = \dfrac{\delta Q^{ext}}{T} + \dfrac{\delta^+ D}{T} \ge  \dfrac{\delta Q^{ext}}{T} \ .\]</div>
+\[\Delta Q = \int_{\gamma} T d S \ .\]</div>
+<p>La massimizzazione del rendimento di una macchina termica in funzionamento periodico diretto consiste nella massimizzazione di <span class="math notranslate nohighlight">\(Q^{e,1}_{in}\)</span> e la minimizzazione di <span class="math notranslate nohighlight">\(|Q^{e,1}_{out}|\)</span>.</p>
+<p>Il rendimento massimo di una macchina termica che scambia calore con due sistemi a temperatura costante <span class="math notranslate nohighlight">\(T_1 &gt; T_2\)</span> si ottiene con due trasformazioni isoterme con il sistema alla temperatura delle fonti di calore (e quindi estremamente lente, poiché avvengono con differenza di temperatura nulla o trascurabile <strong>todo</strong> <em>riferimento alla sezione sui meccanismi di trasmissione del calore</em>), e due trasformazioni adiabatiche ideali in cui il sistema non scambia calore con l’esterno.</p>
 <div class="math notranslate nohighlight">
-\[0 = \oint_{\gamma} d E^{tot} = \oint_{\gamma} \delta Q^{ext} + \oint_{\gamma} \delta L^{ext}\]</div>
-<p>Il lavoro fatto in un ciclo è</p>
+\[\begin{split}\begin{aligned}
+  Q^{1}_{in}  &amp; = \int_{S = S_1}^{S_2} T \, dS = \int_{S = S_1}^{S_2} T_1 \, dS =   T_1 \Delta S \\
+  Q^{1}_{out} &amp; = \int_{S = S_2}^{S_1} T \, dS = \int_{S = S_2}^{S_1} T_2 \, dS = - T_2 \Delta S \\
+\end{aligned}\end{split}\]</div>
 <div class="math notranslate nohighlight">
-\[\Delta L^{1-cycle} = - \Delta L^{ext} = \Delta Q^{ext} \ .\]</div>
-<p><strong>Ciclo di Carnot.</strong> Due adiabatiche ideali e due isoterme ideali.</p>
-<p><strong>Principio di Carnot.</strong> Il rendimento massimo di una macchina termica che scambia calore con due sorgenti di calore a temperatura costante <span class="math notranslate nohighlight">\(T_1\)</span>, <span class="math notranslate nohighlight">\(T_2 &lt; T_2\)</span> è</p>
+\[\eta_{C} = 1 + \frac{Q^{e,1}_{out}}{Q^{e,1}_{in}} = 1 + \frac{T_2 \, \Delta S}{T_1 \, \Delta S} = 1 - \dfrac{T_2}{T_1} \ .\]</div>
+<p><strong>todo</strong></p>
+<ul class="simple">
+<li><p>rappresentare il ciclo nel <a class="reference internal" href="principles-phase-diagrams.html#physics-hs-thermodynamics-foundation-principles-phase-diagrams-gas-1-ts"><span class="std std-ref">piano entropico <span class="math notranslate nohighlight">\(T-S\)</span></span></a>, ricordando il significato geometrico delle aree in questo piano, e (di)mostrando le conclusioni del <a class="reference internal" href="#physics-hs-thermodynamics-heat-engine-carnot-td-cycle-theorem"><span class="std std-ref">teorema di Carnot</span></a></p></li>
+<li><p>rappresentare un ciclo in cui le trasformazioni isoterme avvengono con una differenza finita di temperatura tra la macchina e i sistemi con cui la macchina scambia calore, mostrando:</p>
+<ul>
+<li><p>il rendimento confrontato al rendimento della macchina ideale</p></li>
+<li><p>la variazione di entropia nell’universo</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="teorema-di-carnot">
+<span id="physics-hs-thermodynamics-heat-engine-carnot-td-cycle-theorem"></span><h2><span class="section-number">16.2.2. </span>Teorema di Carnot<a class="headerlink" href="#teorema-di-carnot" title="Permalink to this heading">#</a></h2>
+<p>Il rendimento massimo di una macchina termica che scambia calore con due sorgenti di calore a temperatura costante <span class="math notranslate nohighlight">\(T_1\)</span>, <span class="math notranslate nohighlight">\(T_2 &lt; T_1\)</span> è quello del <a class="reference internal" href="#physics-hs-thermodynamics-heat-engine-carnot-td-cycle"><span class="std std-ref">ciclo di Carnot</span></a>. Quindi ogni macchina termica che scambia calore con due sorgenti di calore a temperatura costante <span class="math notranslate nohighlight">\(\eta\)</span> ha un’efficienza minore di quella di una macchina di Carnot che opera tra sorgenti di calore con le stesse temperature,</p>
 <div class="math notranslate nohighlight">
-\[\eta_C = 1 - \dfrac{T_2}{T_1} \ .\]</div>
+\[\eta \le \eta_C = 1 - \dfrac{T_2}{T_1} \ .\]</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -641,6 +695,21 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-di-carnot">16.2.1. Ciclo di Carnot</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-di-carnot">16.2.2. Teorema di Carnot</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
