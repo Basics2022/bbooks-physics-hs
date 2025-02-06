@@ -94,10 +94,16 @@ $$c_P = \frac{7}{2} \, R_g = \frac{7}{2} \, 287 \, \frac{\text{J}}{\text{kg} \te
 La variazione dell'entropia di un gas perfetto può essere scritta in diverse forme partendo dal primo principio della termodinamica e usando l'espressione dell'energia interna e la legge di stato dei gas perfetti per cambiare le variabili indipendenti,
 
 $$\begin{aligned}
-  ds & = \frac{1}{T} \left( d e + \frac{P}{\rho^2} d \rho \right) = \\
-     & = c_v \frac{dT}{T} + R_g \frac{d \rho}{\rho} = \\
-     & = c_P \frac{dT}{T} + R_g \frac{d P}{P} = \\
-     & = c_P \frac{d \rho}{\rho} + c_v \frac{d P}{P}  \ .
+  ds & = \frac{1}{T} \left( d e - \frac{P}{\rho^2} d \rho \right) = \\
+     & = c_v \frac{dT}{T} - R_g \frac{d \rho}{\rho} = \\
+     & = c_P \frac{dT}{T} - R_g \frac{d P}{P} = \\
+     & = -c_P \frac{d \rho}{\rho} + c_v \frac{d P}{P}  \ .
+\end{aligned}$$
+
+avendo usato la relazione
+
+$$\begin{aligned}
+  \frac{d P}{P} & = \frac{d (\rho R T)}{P} = \frac{R T d \rho}{P} + \frac{\rho R d T}{P} = \frac{d \rho }{\rho} + \frac{d T}{T} \\
 \end{aligned}$$
 
 

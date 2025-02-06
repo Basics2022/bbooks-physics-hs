@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>14. Princìpi della termodinamica &#8212; Fisica per le superiori</title>
+    <title>16.1. Trasformazioni termodinamiche &#8212; Fisica per le superiori</title>
   
   
   
@@ -67,12 +67,12 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/principles';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/heat-engine-td-transformations';</script>
     <link rel="shortcut icon" href="../../_static/favicon-sugar.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="14.1. Principio di Lavoisier" href="principles-lavoisier.html" />
-    <link rel="prev" title="13.5. Problemi" href="foundation-problems.html" />
+    <link rel="next" title="16.2. Cicli termodinamici" href="heat-engine-td-cycles.html" />
+    <link rel="prev" title="16. Fondamenti di fisica tecnica" href="heat-engine.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -254,7 +254,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="foundation-problems.html">13.5. Problemi</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">14. Princìpi della termodinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="principles.html">14. Princìpi della termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="principles-lavoisier.html">14.1. Principio di Lavoisier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principles-first.html">14.2. Primo principio della termodinamica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="principles-gibbs-phase-rule.html">14.3. Gibbs: energia interna, regola delle fasi e funzioni multi-variabili</a></li>
@@ -280,8 +280,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="matter-problems.html">15.4. Problemi</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="heat-engine.html">16. Fondamenti di fisica tecnica</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="heat-engine-td-transformations.html">16.1. Trasformazioni termodinamiche</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="heat-engine.html">16. Fondamenti di fisica tecnica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">16.1. Trasformazioni termodinamiche</a></li>
 <li class="toctree-l2"><a class="reference internal" href="heat-engine-td-cycles.html">16.2. Cicli termodinamici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="heat-engine-carnot.html">16.3. Carnot e le «Riflessioni sulla forza motrice del fuoco»</a></li>
 <li class="toctree-l2"><a class="reference internal" href="heat-engine-second-principle.html">16.4. Secondo principio della termodinamica per cicli termodinamici</a></li>
@@ -428,7 +428,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/edit/master/ch/thermodynamics/principles.md" target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/edit/master/ch/thermodynamics/heat-engine-td-transformations.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -445,7 +445,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/thermodynamics/principles.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/thermodynamics/heat-engine-td-transformations.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Apri un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -475,7 +475,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/thermodynamics/principles.md" target="_blank"
+      <li><a href="../../_sources/ch/thermodynamics/heat-engine-td-transformations.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -546,7 +546,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -557,11 +559,22 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Princìpi della termodinamica</h1>
+    <h1>Trasformazioni termodinamiche</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fluidi">16.1.1. Fluidi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gas-ideali">16.1.1.1. Gas ideali</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -571,76 +584,163 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="principi-della-termodinamica">
-<span id="physics-hs-thermodynamics-principles"></span><h1><span class="section-number">14. </span>Princìpi della termodinamica<a class="headerlink" href="#principi-della-termodinamica" title="Permalink to this heading">#</a></h1>
-<p>In questo capitolo vengono presentati i princìpi della termodinamica classica, i concetti e il formalismo matematico utili per formularli.
-I princìpi della termodinamica vengono introdotti per <strong>sistemi chiusi</strong>, e successivamente estesi ai sistemi aperti.</p>
-<!--
-Ricordando che la termodinamica classica fornisce una descrizione macroscopica mediata della dinamica microscopica di sistemi composti da molti componenti elementari, il livello di dettaglio microscopico può essere usato per fornire un significato alle variabili termodinamiche usate nella descrizione macroscopica.
--->
-<ul>
-<li><p>Il <a class="reference internal" href="principles-lavoisier.html#physics-hs-thermodynamics-foundation-principles-lavoisier"><span class="std std-ref"><strong>principio di conservazione della massa - di Lavoisier</strong></span></a> valido in meccanica classica, riassumibile con la formula <em>«nulla si crea, nulla si distrugge, ma tutto si trasforma»</em>, asserisce che in un sistema chiuso la massa è costante,</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="trasformazioni-termodinamiche">
+<span id="physics-hs-thermodynamics-heat-engine-td-cycles"></span><h1><span class="section-number">16.1. </span>Trasformazioni termodinamiche<a class="headerlink" href="#trasformazioni-termodinamiche" title="Permalink to this heading">#</a></h1>
+<p>…</p>
+<div class="section" id="fluidi">
+<h2><span class="section-number">16.1.1. </span>Fluidi<a class="headerlink" href="#fluidi" title="Permalink to this heading">#</a></h2>
+<p>Per un sistema <strong>chiuso</strong> composto da un volume di fluido monofase, che manifesta lavoro interno solo nella forma <span class="math notranslate nohighlight">\(\delta L^{i,rev} = -P dV\)</span></p>
 <div class="math notranslate nohighlight">
-\[d M = 0 \ .\]</div>
-</li>
-<li><p>Il <a class="reference internal" href="principles-first.html#physics-hs-thermodynamics-foundation-principles-first"><span class="std std-ref"><strong>primo principio della termodinamica</strong></span></a> fornisce la forma generale del bilancio dell’energia <em>totale</em> di un sistema chiuso, riconoscendo il lavoro delle forze esterne <span class="math notranslate nohighlight">\(\delta L^{ext}\)</span> e il calore <span class="math notranslate nohighlight">\(\delta Q^{ext}\)</span> scambiato dal sistema con l’ambiente esterno come le cause della variazione dell’energia totale del sistema.</p>
+\[d E &amp; = \delta Q^e - \delta L^i = \delta Q^e + \delta^+ D - \delta L^{i, rev} \]</div>
 <div class="math notranslate nohighlight">
-\[d E^{tot} = \delta L^{ext} + \delta Q^{ext} \ .\]</div>
-</li>
-<li><p>L’opera di <strong>Gibbs</strong> fornisce <a class="reference internal" href="principles-gibbs-phase-rule.html#physics-hs-thermodynamics-foundation-principles-gibbs-phase-rule"><span class="std std-ref"><strong>i concetti necessari e una formalizzazione matematica</strong></span></a> rigorosa della termodinamica classica. Vengono introdotti i concetti di energia interna, variabile di stato, la regola delle fasi di Gibbs; vengono poi presentati alcuni <a class="reference internal" href="principles-phase-diagrams.html#physics-hs-thermodynamics-foundation-principles-phase-diagrams"><span class="std std-ref">diagrammi di fase</span></a> per la rappresentazione dello stato di un sistema e le trasformazioni termodinamiche e che verranno utilizzati nei capitoli successivi.</p></li>
-<li><p>Il <a class="reference internal" href="principles-second.html#physics-hs-thermodynamics-foundation-principles-second"><span class="std std-ref"><strong>secondo principio della termodinamica</strong></span></a> traduce le tendenze naturali: la dissipazione dell’energia meccanica macroscopica e la trasmissione del calore da un corpo caldo a un corpo freddo, in un principio formulabile in termini di <strong>entropia</strong>,</p></li>
-</ul>
+\[d E = T d S - P d V\]</div>
+<p><strong>Trasformazione isocora, <span class="math notranslate nohighlight">\(V \)</span> cost.</strong> Per una trasformazione isocora il volume del sistema non varia, <span class="math notranslate nohighlight">\(d V = 0\)</span>. Quindi il lavoro interno reversibile è nullo, <span class="math notranslate nohighlight">\(\delta L^{i,rev} = - P dV = 0\)</span>. Durante questa trasformazione segue quindi che la variazione di energia interna del sistema è uguale alla somma del contributo del calore immesso nel sistema e alla dissipazione,</p>
 <div class="math notranslate nohighlight">
-\[d S \ge \frac{\delta Q}{T} \ .\]</div>
-<ul class="simple">
-<li><p>Infine, i bilanci delle quantità fisiche per <a class="reference internal" href="principles-open.html#physics-hs-thermodynamics-foundation-principles-open"><span class="std std-ref"><strong>sistemi aperti</strong></span></a> vengono ricavati modificando i bilanci per sistemi chiusi, introducendo i termini di <strong>flusso delle grandezze fisiche dovuti al trasporto di materia</strong> attraverso la frontiera del sistema.</p></li>
-</ul>
-<!--
-<span style="color:red">Sistemare come presentazione! I contenuti vengono divisi nelle sezioni successive.</span>
-
-In questa sezione vengono presentati i princìpi fondamentali della termodinamica classica. **todo**
-
-**Principio di conservazione della massa.**
-Nell'ambito della fisica classica, la massa di un sistema chiuso è costante.
-
-**Primo principio della termodinamica - bilancio dell'energia totale.**
-Il primo principio della termodinamica rappresenta il bilancio di energia totale per un sistema chiuso (**todo** *riferimenti a sistemi aperti e chiusi*),
-
-  $$d E^{tot} = \delta L^{ext} + \delta Q^{ext} \ . $$
-  
-  Usando il teorema dell'energia cinetica (**todo** riferimento alla meccanica), $dK = \delta L^{ext} + \delta L^{int}$, e la definizione di energia interna come differenza tra energia totale ed energia cinetica macroscopica, $E := E^{tot} - K$,
-  
-  $$d E = - \delta L^{int} + \delta Q^{ext} \ .$$
-
-**Regola delle fasi di Gibbs.**
-L'energia interna può essere scritta come funzione di stato, $E(S, X_k)$, **todo** con variabili indipendenti ...
-
-$$\begin{aligned}
-dE & = \left(\dfrac{\partial E}{\partial S}\right)_{\mathbf{X}} d S 
-     + \left(\dfrac{\partial E}{\partial X_k}\right)_{S} d X_k  = \\
-   & = T \, d S + \sum_k F_k \, d X_k
-\end{aligned}$$
-
-La variazione di energia interna rispetto alla variabile $S$ corrisponde alla temperatura,
-
-$$T = \left(\dfrac{\partial E}{\partial S}\right)_{\mathbf{X}} \ge 0 \ .$$
-
-
-**Secondo principio della termodinamica - irreversibilità.**
-
-- Secondo principio per sistemi semplici **todo** *temperatura uniforme*
-
-  $$\begin{aligned}
-    dE & = \delta Q^{ext} - \delta L^{int} = \\
-       & = \underbrace{\delta Q^{ext} + \delta^+ D}_{\delta U} - \delta L^{int, rev} = \\
-  \end{aligned}$$
-  
-  $$\begin{cases}
-  -\delta L^{int,rev} & = \displaystyle\sum_k F_k \, d X_k \\
-  \delta U            & = T \, dS
-  \end{cases}$$
--->
-<div class="toctree-wrapper compound">
+\[d E = \delta Q^e + \delta^+ D = T dS \ .\]</div>
+<p>Nel caso di trasformazione ideale, per la quale si può trascurare la dissipazione, <span class="math notranslate nohighlight">\(\delta^+ D = 0\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[d E = \delta Q^e = T dS \ .\]</div>
+<p><strong>Trasformazione isoterma, <span class="math notranslate nohighlight">\(T \)</span> cost.</strong> Per una trasformazione isoterna nessuno dei tre contributi di variazione di energia, calore e lavoro è nullo in generale. Il termine di calore+dissipazione lungo una trasformazione a temperatura costante <span class="math notranslate nohighlight">\(T = \overline{T}\)</span> assume però un’espressione molto semplice</p>
+<div class="math notranslate nohighlight">
+\[\int_{\gamma} T dS = \overline{T} \int_{\gamma_{1,2}} d S = \overline{T} (S_2 - S_1) = \overline{T} \Delta S_{1,2} \ .\]</div>
+<p>Nel caso di trasformazinoe ideale, per la quale si può trascurare la dissipazione, <span class="math notranslate nohighlight">\(\delta^+ D = 0\)</span>, questo termine corrispende al calore immesso nel sistema, <span class="math notranslate nohighlight">\(T d S = \delta Q\)</span>, e quindi</p>
+<div class="math notranslate nohighlight">
+\[Q_{12} = \overline{T} (S_2 - S_1) \ .\]</div>
+<p><strong>Trasformazione isobara, <span class="math notranslate nohighlight">\(P \)</span> cost.</strong> Per una trasformazione isobara nessuno dei tre contributi di variazione di energia, calore e lavoro è nullo in generale. Il termine di lavoro interno ideale lungo una trasformazione a temperatura costante <span class="math notranslate nohighlight">\(T = \overline{T}\)</span> assume però un’espressione molto semplice</p>
+<div class="math notranslate nohighlight">
+\[\int_{\gamma} P dV = \overline{P} \int_{\gamma_{1,2}} d V = \overline{P} (V_2 - V_1) = \overline{P} \Delta V_{1,2} \ .\]</div>
+<p>Nel caso di trasformazinoe ideale, per la quale si può trascurare la dissipazione, <span class="math notranslate nohighlight">\(\delta^+ D = 0\)</span>, e di trasformazione sufficientemente lenta da poter trascurare le variazioni di energia cinetica del sistema rispetto alle variazioni di energia interna, questo termine corrispende al lavoro fatto dal sistema,</p>
+<div class="math notranslate nohighlight">
+\[d K = \delta L^e + \delta L^i = \delta L^e + \delta L^{i,rev} - \delta^+ D \qquad \rightarrow \qquad \delta L := - \delta L^e \sim \delta L^{int,rev} \ .\]</div>
+<p>o per una trasformazione finita</p>
+<div class="math notranslate nohighlight">
+\[\Delta L_{12} = \overline{P} (V_2 - V_1) \ ,\]</div>
+<p>avendo definito il lavoro fatto dal sistema sull’ambiente esterno <span class="math notranslate nohighlight">\(L\)</span> come l’opposto del lavoro fatto dall’ambiente esterno sul sistema <span class="math notranslate nohighlight">\(L^e\)</span>, <span class="math notranslate nohighlight">\(L = - L^e\)</span>.</p>
+<p><strong>Trasformazione adiabatica, <span class="math notranslate nohighlight">\(\delta Q = 0\)</span>.</strong> In una trasformazione adiabatica, senza apporto di calore, la variazione dell’energia interna è uguale all’opposto del lavoro interno del sistema o, nelle stesse ipotesi di contributo cinetico trascurabile discusse per le trasformazioni isobare, uguale al lavoro fatto dall’ambiente sul sistema</p>
+<div class="math notranslate nohighlight">
+\[d E = - \delta L^i = \delta L^{e} = - \delta L \ .\]</div>
+<p>Nel caso di trasformazione ideale, <span class="math notranslate nohighlight">\(\delta^+ D = 0\)</span>, <span class="math notranslate nohighlight">\(\delta L^i = \delta L^{i,rev} = P dV\)</span>, si ottiene una trasformazione isentropica (Se <span class="math notranslate nohighlight">\(\delta Q = 0\)</span> e <span class="math notranslate nohighlight">\(\delta^+ D = 0\)</span> segue <span class="math notranslate nohighlight">\(dS = 0\)</span>, vedi sotto) e l’espressione della variazione di energia</p>
+<div class="math notranslate nohighlight">
+\[d E = - P dV \ .\]</div>
+<p><strong>Trasformazione isentropica, <span class="math notranslate nohighlight">\(S \)</span> cost.</strong> Una trasformazione isentropica è una trasformazione <strong>adiabatica ideale</strong>, senza dissipazione. Infatti, per una trasformazione adiabatica <span class="math notranslate nohighlight">\(\delta Q = 0\)</span>, per una trasformazione senza dissipazione <span class="math notranslate nohighlight">\(\delta^+ D = 0\)</span> e segue immediatamente</p>
+<div class="math notranslate nohighlight">
+\[T d S = \delta Q + \delta^+ D = 0 \ .\]</div>
+<div class="section" id="gas-ideali">
+<h3><span class="section-number">16.1.1.1. </span>Gas ideali<a class="headerlink" href="#gas-ideali" title="Permalink to this heading">#</a></h3>
+<p>Per un <a class="reference internal" href="ideal-gas.html#physics-hs-thermodynamics-matter-gases-ideal"><span class="std std-ref">gas ideale</span></a> si può utilizzare la sua equazione di stato</p>
+<div class="math notranslate nohighlight">
+\[P = \rho R_g T \ ,\]</div>
+<p>e l’espressione dell’energia interna in funzione solo della temperatura <strong>todo</strong> <em>riferimento</em></p>
+<div class="math notranslate nohighlight">
+\[E = m c_v T \ ,\]</div>
+<p>e ottenere dei risultati un po” più espliciti. In questa sezione vengono considerate trasformazioni ideali e con termini cinetici trascurabili.</p>
+<p><strong>Trasformazione isocora, <span class="math notranslate nohighlight">\(V \)</span> cost.</strong> La condizione di volume costante e sistema chiuso - massa costante - in condizioni di grandezze fisiche uniformi nello spazio corrisponde alla condizione di densità costante,</p>
+<div class="math notranslate nohighlight">
+\[\rho = \frac{m}{V} = \frac{\overline{m}}{\overline{V}} = \overline{\rho} \ .\]</div>
+<p>La legge dei gas quindi impone un legame lineare tra pressione e temperatura del sistema durante la trasformazione, <span class="math notranslate nohighlight">\(P = \overline{\rho} R_g T\)</span>.</p>
+<p>Il lavoro è identicamente nullo, <span class="math notranslate nohighlight">\(d L^ì = 0\)</span> e quindi la variazione di energia corrisponde alla variazione di calore immesso nel sistema</p>
+<div class="math notranslate nohighlight">
+\[T dS = \delta Q^e = d E = m c_v dT \ ,\]</div>
+<p>da cui si può ricavare la variazione di entropia in funzione della variazione della temperatura,</p>
+<div class="math notranslate nohighlight">
+\[d S = m c_v \dfrac{d T}{T} \qquad \rightarrow \qquad \Delta S_{12} = m c_v \ln \dfrac{T_2}{T_1} \ .\]</div>
+<p>La trasformazione può essere rappresentata nei piani termodinamici <span class="math notranslate nohighlight">\(P-V\)</span> e <span class="math notranslate nohighlight">\(T-S\)</span> come delle curve parametrizzabili con un parametro libero,</p>
+<div class="math notranslate nohighlight">
+\[P = \overline{\rho} R T\]</div>
+<div class="math notranslate nohighlight">
+\[e_2 - e_1 = c_v (T_2 - T_1) = \frac{c_v}{\overline{\rho} R} (P_2 - P_1)\]</div>
+<div class="math notranslate nohighlight">
+\[d s = c_v \dfrac{dT}{T} \quad \rightarrow \quad s_2 - s_1 = c_v \ln \frac{T_2}{T_1} \]</div>
+<div class="math notranslate nohighlight">
+\[d s = c_v \dfrac{dP}{P} \quad \rightarrow \quad s_2 - s_1 = c_v \ln \frac{P_2}{P_1} \]</div>
+<table class="table">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../_images/td-transformations-v.png" /></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Trasformazione isoterma, <span class="math notranslate nohighlight">\(T \)</span> cost.</strong> Per una tasformazione isoterma <span class="math notranslate nohighlight">\(P = \rho R_g \overline{T} = \frac{\overline{m}}{V} R_g \overline{T}\)</span>. La variazione di energia interna è nulla, poiché <span class="math notranslate nohighlight">\(dT = 0\)</span> implica <span class="math notranslate nohighlight">\(d E = m c_v dT = 0\)</span>. Seque quindi che il lavoro fatto dal sistema è uguale al calore immesso in esso. Nel caso ideale</p>
+<div class="math notranslate nohighlight">
+\[\overline{T} dS = \delta Q^{e} = \delta L = P dV \ ,\]</div>
+<p>da cui si può ricavare la variazione di entropia come</p>
+<div class="math notranslate nohighlight">
+\[d S = \overline{m} R_g \dfrac{d V}{V} \qquad \rightarrow \qquad \frac{Q_{12}}{\overline{T}} = \Delta S_{12} = \overline{m} R_g \ln \frac{V_2}{V_1} \ .\]</div>
+<p>La trasformazione può essere rappresentata nei piani termodinamici <span class="math notranslate nohighlight">\(P-V\)</span> e <span class="math notranslate nohighlight">\(T-S\)</span> come delle curve parametrizzabili con un parametro libero,</p>
+<div class="math notranslate nohighlight">
+\[P = \rho R \overline{T}\]</div>
+<div class="math notranslate nohighlight">
+\[e_2 = e_1 = c_v \overline{T}\]</div>
+<div class="math notranslate nohighlight">
+\[d s = R \dfrac{d\rho}{\rho} \quad \rightarrow \quad s_2 - s_1 = R \ln \frac{\rho_2}{\rho_1} = - R \ln \frac{V_2}{V_1} \]</div>
+<div class="math notranslate nohighlight">
+\[d s = R \dfrac{d P  }{P   } \quad \rightarrow \quad s_2 - s_1 = R \ln \frac{P_2}{P_1} \]</div>
+<table class="table">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../_images/td-transformations-t.png" /></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Trasformazione isobara, <span class="math notranslate nohighlight">\(P \)</span> cost.</strong></p>
+<p>…</p>
+<p>La trasformazione può essere rappresentata nei piani termodinamici <span class="math notranslate nohighlight">\(P-V\)</span> e <span class="math notranslate nohighlight">\(T-S\)</span> come delle curve parametrizzabili con un parametro libero,</p>
+<div class="math notranslate nohighlight">
+\[\overline{P} = \rho R T\]</div>
+<div class="math notranslate nohighlight">
+\[e_2 - e_1 = c_v (T_2 - T_1) = \frac{c_v}{R} \overline{P} (V_2 - V_1)\]</div>
+<div class="math notranslate nohighlight">
+\[d s = c_P \dfrac{d\rho}{\rho} \quad \rightarrow \quad s_2 - s_1 = c_P \ln \frac{\rho_2}{\rho_1} = - c_P \ln \frac{V_2}{V_1} \]</div>
+<div class="math notranslate nohighlight">
+\[d s = c_P \dfrac{d T  }{T   } \quad \rightarrow \quad s_2 - s_1 = c_P \ln \frac{T_2}{T_1} \]</div>
+<table class="table">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../_images/td-transformations-p.png" /></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Trasformazione isentropica, <span class="math notranslate nohighlight">\(S \)</span> cost.</strong> Una trasformazione isentropica - adiabatica ideale con <span class="math notranslate nohighlight">\(\delta Q = 0\)</span>, <span class="math notranslate nohighlight">\(\delta^+ D = 0\)</span>, <span class="math notranslate nohighlight">\(\delta S = 0\)</span> - la variazione di energia interna del sistema è uguale al lavoro fatto sul sistema</p>
+<div class="math notranslate nohighlight">
+\[- P dV = \delta L^e = d E = \overline{m} c_v d T \ ,\]</div>
+<p>da cui</p>
+<div class="math notranslate nohighlight">
+\[0 = ds = - R \frac{d P}{P} + c_P \frac{d T}{T} =  c_v \frac{d P}{P} - c_P \frac{d \rho}{\rho} = - R \frac{d \rho}{\rho} + c_v \frac{d T}{T} \]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \left(\frac{P_2}{P_1}      \right) &amp; = \left(\frac{\rho_2}{\rho_1} \right)^{\gamma}  \\  
+  \left(\frac{P_2}{P_1}      \right) &amp; = \left(\frac{T_2}{T_1}       \right)^{\frac{\gamma}{\gamma-1}}  \\
+  \left(\frac{\rho_2}{\rho_1}\right) &amp; = \left(\frac{T_2}{T_1}       \right)^{\frac{1}{\gamma-1}}  \\
+\end{aligned}\end{split}\]</div>
+<p>avendo usato le relazioni</p>
+<div class="math notranslate nohighlight">
+\[c_P - c_v = R\]</div>
+<div class="math notranslate nohighlight">
+\[\gamma = \frac{c_P}{c_v}\]</div>
+<p>per calcolare i rapporti</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ \frac{c_P}{c_v} &amp; = \gamma \\
+ \frac{c_P}{R}   &amp; = \frac{\gamma}{\gamma - 1} \\
+ \frac{c_v}{R}   &amp; = \frac{1}{\gamma - 1} \\
+\end{aligned}\end{split}\]</div>
+<p>…</p>
+<table class="table">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../_images/td-transformations-s.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 
@@ -675,20 +775,20 @@ $$T = \left(\dfrac{\partial E}{\partial S}\right)_{\mathbf{X}} \ge 0 \ .$$
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="foundation-problems.html"
+       href="heat-engine.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">13.5. </span>Problemi</p>
+        <p class="prev-next-title"><span class="section-number">16. </span>Fondamenti di fisica tecnica</p>
       </div>
     </a>
     <a class="right-next"
-       href="principles-lavoisier.html"
+       href="heat-engine-td-cycles.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">14.1. </span>Principio di Lavoisier</p>
+        <p class="prev-next-title"><span class="section-number">16.2. </span>Cicli termodinamici</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -698,6 +798,23 @@ $$T = \left(\dfrac{\partial E}{\partial S}\right)_{\mathbf{X}} \ge 0 \ .$$
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fluidi">16.1.1. Fluidi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gas-ideali">16.1.1.1. Gas ideali</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

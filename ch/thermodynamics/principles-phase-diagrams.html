@@ -281,14 +281,15 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="heat-engine.html">16. Fondamenti di fisica tecnica</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="heat-engine-td-cycles.html">16.1. Cicli termodinamici</a></li>
-<li class="toctree-l2"><a class="reference internal" href="heat-engine-carnot.html">16.2. Carnot e le «Riflessioni sulla forza motrice del fuoco»</a></li>
-<li class="toctree-l2"><a class="reference internal" href="heat-engine-second-principle.html">16.3. Secondo principio della termodinamica per cicli termodinamici</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="heat-engine-industrial.html">16.4. Macchine termiche e cicli termodinamici</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="heat-engine-otto.html">16.4.1. Ciclo Otto</a></li>
-<li class="toctree-l3"><a class="reference internal" href="heat-engine-diesel.html">16.4.2. Ciclo Diesel</a></li>
-<li class="toctree-l3"><a class="reference internal" href="heat-engine-joule-brayton.html">16.4.3. Ciclo Joule-Brayton</a></li>
-<li class="toctree-l3"><a class="reference internal" href="heat-engine-rankine.html">16.4.4. Ciclo Rankine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-td-transformations.html">16.1. Trasformazioni termodinamiche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-td-cycles.html">16.2. Cicli termodinamici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-carnot.html">16.3. Carnot e le «Riflessioni sulla forza motrice del fuoco»</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-second-principle.html">16.4. Secondo principio della termodinamica per cicli termodinamici</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="heat-engine-industrial.html">16.5. Macchine termiche e cicli termodinamici</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="heat-engine-otto.html">16.5.1. Ciclo Otto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="heat-engine-diesel.html">16.5.2. Ciclo Diesel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="heat-engine-joule-brayton.html">16.5.3. Ciclo Joule-Brayton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="heat-engine-rankine.html">16.5.4. Ciclo Rankine</a></li>
 </ul>
 </li>
 </ul>
@@ -599,9 +600,9 @@ document.write(`
 <p>Si consideri un sistema ad un componente, in grado di scambiare calore e con un unico modo di manifestare il lavoro reversibile interno al sistema, quello meccanico dovuto a un’espansione isotropa del volume, <span class="math notranslate nohighlight">\(\delta L^{int,rev} = P \, d V\)</span>.</p>
 <p>Un sistema chiuso monofase formato da un gas non reagente, ha un unico modo <span class="math notranslate nohighlight">\(W=1\)</span> di manifestare lavoro interno reversibile, il lavoro meccanico di compressione, <span class="math notranslate nohighlight">\(\delta L^{int,rev} = P dV\)</span>, in assenza di carica elettrica o altri meccanismi per compiere lavoro. Come conseguenza della <a class="reference internal" href="principles-gibbs-phase-rule.html#physics-hs-thermodynamics-foundation-principles-gibbs-phase-rule-gibbs-phase-rule"><span class="std std-ref">regola delle fasi di Gibbs</span></a>,</p>
 <div class="math notranslate nohighlight">
-\[F = C - P + W - 1 = 1 - 1 + 1 + 1 = 2 \ ,\]</div>
-<p>il sistema ha due gradi di libertà, <span class="math notranslate nohighlight">\(F=2\)</span>, cioè il suo stato è determinato da due variabili intensive indipendenti. Lo stato del sistema può quindi essere completamente rappresentato in uno spazio dimensionale, cioè in un piano di stato.
-Le due scelte discusse qui sono il piano di Clapeyron e il piano entropico.</p>
+\[F = C - P + W + 1 = 1 - 1 + 1 + 1 = 2 \ ,\]</div>
+<p>il sistema ha due gradi di libertà, <span class="math notranslate nohighlight">\(F=2\)</span>, cioè il suo stato è determinato da due variabili intensive indipendenti. Lo stato del sistema può quindi essere completamente determinato da una coppia di variabili termodinamiche, e rappresentato in uno spazio 2-dimensionale - un piano di stato.
+Le due scelte discusse qui sono il piano di Clapeyron <span class="math notranslate nohighlight">\(P-V\)</span> e il piano entropico <span class="math notranslate nohighlight">\(T-S\)</span>.</p>
 <!--
 <span style="color:red">Come applicarla? $P$, $T$ e concentrazioni? In una rappresentazione 3D del diagramma di stato, la superficie di stato è una superficie 2D, anche durante le transizioni di fase: queste sono descritte dalla composizione delle fasi, come frazioni molari. Queste non sono contate come gradi di libertà? I **gradi di libertà** sono cons le proprietà termodinamiche **intensive** indipendenti, come P,T</span>
 Applicando la regola delle fasi di Gibbs,...

@@ -15,10 +15,10 @@ Si consideri un sistema ad un componente, in grado di scambiare calore e con un 
 
 Un sistema chiuso monofase formato da un gas non reagente, ha un unico modo $W=1$ di manifestare lavoro interno reversibile, il lavoro meccanico di compressione, $\delta L^{int,rev} = P dV$, in assenza di carica elettrica o altri meccanismi per compiere lavoro. Come conseguenza della [regola delle fasi di Gibbs](physics-hs:thermodynamics:foundation:principles:gibbs-phase-rule:gibbs-phase-rule),
 
-$$F = C - P + W - 1 = 1 - 1 + 1 + 1 = 2 \ ,$$
+$$F = C - P + W + 1 = 1 - 1 + 1 + 1 = 2 \ ,$$
 
-il sistema ha due gradi di libertà, $F=2$, cioè il suo stato è determinato da due variabili intensive indipendenti. Lo stato del sistema può quindi essere completamente rappresentato in uno spazio dimensionale, cioè in un piano di stato.
-Le due scelte discusse qui sono il piano di Clapeyron e il piano entropico.
+il sistema ha due gradi di libertà, $F=2$, cioè il suo stato è determinato da due variabili intensive indipendenti. Lo stato del sistema può quindi essere completamente determinato da una coppia di variabili termodinamiche, e rappresentato in uno spazio 2-dimensionale - un piano di stato.
+Le due scelte discusse qui sono il piano di Clapeyron $P-V$ e il piano entropico $T-S$.
 
 <!--
 <span style="color:red">Come applicarla? $P$, $T$ e concentrazioni? In una rappresentazione 3D del diagramma di stato, la superficie di stato è una superficie 2D, anche durante le transizioni di fase: queste sono descritte dalla composizione delle fasi, come frazioni molari. Queste non sono contate come gradi di libertà? I **gradi di libertà** sono cons le proprietà termodinamiche **intensive** indipendenti, come P,T</span>

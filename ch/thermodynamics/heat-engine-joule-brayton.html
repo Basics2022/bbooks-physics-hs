@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>16.4.3. Ciclo Joule-Brayton &#8212; Fisica per le superiori</title>
+    <title>16.5.3. Ciclo Joule-Brayton &#8212; Fisica per le superiori</title>
   
   
   
@@ -71,8 +71,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon-sugar.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="16.4.4. Ciclo Rankine" href="heat-engine-rankine.html" />
-    <link rel="prev" title="16.4.2. Ciclo Diesel" href="heat-engine-diesel.html" />
+    <link rel="next" title="16.5.4. Ciclo Rankine" href="heat-engine-rankine.html" />
+    <link rel="prev" title="16.5.2. Ciclo Diesel" href="heat-engine-diesel.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -281,14 +281,15 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="heat-engine.html">16. Fondamenti di fisica tecnica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="heat-engine-td-cycles.html">16.1. Cicli termodinamici</a></li>
-<li class="toctree-l2"><a class="reference internal" href="heat-engine-carnot.html">16.2. Carnot e le «Riflessioni sulla forza motrice del fuoco»</a></li>
-<li class="toctree-l2"><a class="reference internal" href="heat-engine-second-principle.html">16.3. Secondo principio della termodinamica per cicli termodinamici</a></li>
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="heat-engine-industrial.html">16.4. Macchine termiche e cicli termodinamici</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="heat-engine-otto.html">16.4.1. Ciclo Otto</a></li>
-<li class="toctree-l3"><a class="reference internal" href="heat-engine-diesel.html">16.4.2. Ciclo Diesel</a></li>
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">16.4.3. Ciclo Joule-Brayton</a></li>
-<li class="toctree-l3"><a class="reference internal" href="heat-engine-rankine.html">16.4.4. Ciclo Rankine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-td-transformations.html">16.1. Trasformazioni termodinamiche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-td-cycles.html">16.2. Cicli termodinamici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-carnot.html">16.3. Carnot e le «Riflessioni sulla forza motrice del fuoco»</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heat-engine-second-principle.html">16.4. Secondo principio della termodinamica per cicli termodinamici</a></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="heat-engine-industrial.html">16.5. Macchine termiche e cicli termodinamici</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="heat-engine-otto.html">16.5.1. Ciclo Otto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="heat-engine-diesel.html">16.5.2. Ciclo Diesel</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">16.5.3. Ciclo Joule-Brayton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="heat-engine-rankine.html">16.5.4. Ciclo Rankine</a></li>
 </ul>
 </li>
 </ul>
@@ -568,10 +569,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-joule-brayton-aperto">16.4.3.1. Ciclo Joule-Brayton aperto</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-joule-brayton-chiuso">16.4.3.2. Ciclo Joule-Brayton chiuso</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rendimento-del-ciclo-joule-brayton">16.4.3.3. Rendimento del ciclo Joule-Brayton</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempio">16.4.3.4. Esempio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-joule-brayton-aperto">16.5.3.1. Ciclo Joule-Brayton aperto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-joule-brayton-chiuso">16.5.3.2. Ciclo Joule-Brayton chiuso</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rendimento-del-ciclo-joule-brayton">16.5.3.3. Rendimento del ciclo Joule-Brayton</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempio">16.5.3.4. Esempio</a></li>
 </ul>
             </nav>
         </div>
@@ -584,7 +585,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="ciclo-joule-brayton">
-<span id="physics-hs-thermodynamics-heat-engine-joule-brayton"></span><h1><span class="section-number">16.4.3. </span>Ciclo Joule-Brayton<a class="headerlink" href="#ciclo-joule-brayton" title="Permalink to this heading">#</a></h1>
+<span id="physics-hs-thermodynamics-heat-engine-joule-brayton"></span><h1><span class="section-number">16.5.3. </span>Ciclo Joule-Brayton<a class="headerlink" href="#ciclo-joule-brayton" title="Permalink to this heading">#</a></h1>
 <p><strong>Storia e applicazioni.</strong>
 Il ciclo Joule-Brayton rappresenta il ciclo termodinamico ideale per il funzionamento a ciclo continuo delle macchine a gas.</p>
 <p>Nelle moderne applicazioni, le turbine a gas possono operare</p>
@@ -595,10 +596,10 @@ Il ciclo Joule-Brayton rappresenta il ciclo termodinamico ideale per il funziona
 </ul>
 <p>Entrambe le configurazioni sono realizzate con macchine termiche continue, che sono <strong>sistemi aperti</strong> <strong>todo</strong> <em>scrivere la sezione per i sistemi aperti e aggiungere riferimento</em></p>
 <div class="section" id="ciclo-joule-brayton-aperto">
-<h2><span class="section-number">16.4.3.1. </span>Ciclo Joule-Brayton aperto<a class="headerlink" href="#ciclo-joule-brayton-aperto" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">16.5.3.1. </span>Ciclo Joule-Brayton aperto<a class="headerlink" href="#ciclo-joule-brayton-aperto" title="Permalink to this heading">#</a></h2>
 </div>
 <div class="section" id="ciclo-joule-brayton-chiuso">
-<h2><span class="section-number">16.4.3.2. </span>Ciclo Joule-Brayton chiuso<a class="headerlink" href="#ciclo-joule-brayton-chiuso" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">16.5.3.2. </span>Ciclo Joule-Brayton chiuso<a class="headerlink" href="#ciclo-joule-brayton-chiuso" title="Permalink to this heading">#</a></h2>
 <p>Un modello ideale del ciclo Joule-Brayton è formato da:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(1 \rightarrow 2\)</span> compressione adiabatica in compressore, tipicamente dinamico assiale - sistema aperto</p></li>
@@ -608,7 +609,7 @@ Il ciclo Joule-Brayton rappresenta il ciclo termodinamico ideale per il funziona
 </ul>
 </div>
 <div class="section" id="rendimento-del-ciclo-joule-brayton">
-<h2><span class="section-number">16.4.3.3. </span>Rendimento del ciclo Joule-Brayton<a class="headerlink" href="#rendimento-del-ciclo-joule-brayton" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">16.5.3.3. </span>Rendimento del ciclo Joule-Brayton<a class="headerlink" href="#rendimento-del-ciclo-joule-brayton" title="Permalink to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
 \[\eta = 1 + \dfrac{\dot{Q}_{41}}{\dot{Q}_{23}}
        = 1 + \dfrac{\dot{m} \, c_P \, (T_1 - T_4)}{\dot{m} \, c_P \, (T_3 - T_2)}
@@ -637,7 +638,7 @@ Il ciclo Joule-Brayton rappresenta il ciclo termodinamico ideale per il funziona
 \[\eta = 1 - \dfrac{1}{\beta^{\frac{\gamma-1}{\gamma}}} \ .\]</div>
 </div>
 <div class="section" id="esempio">
-<h2><span class="section-number">16.4.3.4. </span>Esempio<a class="headerlink" href="#esempio" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">16.5.3.4. </span>Esempio<a class="headerlink" href="#esempio" title="Permalink to this heading">#</a></h2>
 <p><strong>todo</strong></p>
 </div>
 </div>
@@ -678,7 +679,7 @@ Il ciclo Joule-Brayton rappresenta il ciclo termodinamico ideale per il funziona
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">16.4.2. </span>Ciclo Diesel</p>
+        <p class="prev-next-title"><span class="section-number">16.5.2. </span>Ciclo Diesel</p>
       </div>
     </a>
     <a class="right-next"
@@ -686,7 +687,7 @@ Il ciclo Joule-Brayton rappresenta il ciclo termodinamico ideale per il funziona
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">16.4.4. </span>Ciclo Rankine</p>
+        <p class="prev-next-title"><span class="section-number">16.5.4. </span>Ciclo Rankine</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -705,10 +706,10 @@ Il ciclo Joule-Brayton rappresenta il ciclo termodinamico ideale per il funziona
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-joule-brayton-aperto">16.4.3.1. Ciclo Joule-Brayton aperto</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-joule-brayton-chiuso">16.4.3.2. Ciclo Joule-Brayton chiuso</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rendimento-del-ciclo-joule-brayton">16.4.3.3. Rendimento del ciclo Joule-Brayton</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempio">16.4.3.4. Esempio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-joule-brayton-aperto">16.5.3.1. Ciclo Joule-Brayton aperto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciclo-joule-brayton-chiuso">16.5.3.2. Ciclo Joule-Brayton chiuso</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rendimento-del-ciclo-joule-brayton">16.5.3.3. Rendimento del ciclo Joule-Brayton</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempio">16.5.3.4. Esempio</a></li>
 </ul>
   </nav></div>
 
