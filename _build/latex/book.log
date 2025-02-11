@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.16)  10 FEB 2025 14:02
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2024.9.16)  11 FEB 2025 19:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3053,6 +3053,17 @@ LaTeX Info: Redefining \ttfamily on input line 17696.
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 17699--17700
 []\TU/FreeMono(0)/m/n/10 capacitor-capacity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17702--17703
+[]\TU/FreeMono(0)/m/n/10 definition-0 \TU/FreeSerif(0)/m/n/10 (\TU/FreeSerif(0)
+/m/it/10 ch/thermodynamics/principles-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17702--17703
+\TU/FreeSerif(0)/m/it/10 gibbs-phase-rule\TU/FreeSerif(0)/m/n/10 ),
  []
 
 
