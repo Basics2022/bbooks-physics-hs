@@ -15,6 +15,12 @@ Due **grandezze fisiche omogenee** sono grandezze fisiche della stessa natura, c
 - hanno le stesse dimensioni fisiche.
 ```
 
+(physics-hs:intro:measurements:unit-system)=
+## Sistema di misura
+...
+### Sistema internazionale di misura
+... qui o nella sezione sulle [grandezze fisiche](physics-hs:intro:physical-quantities)?
+
 (physics-hs:intro:measurements:instruments)=
 ## Strumenti di misura
 
