@@ -25,8 +25,8 @@ parts:
     - file: ch/intro/physical_quantities-luminosity
   - file: ch/intro/measurements
   - file: ch/intro/scientific-method
-  - file: ch/intro/current-status
   - file: ch/intro/sensing
+  - file: ch/intro/current-status
 - caption: Meccanica classica
   numbered: True
   chapters:

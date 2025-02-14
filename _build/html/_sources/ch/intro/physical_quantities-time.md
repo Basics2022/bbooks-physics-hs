@@ -1,4 +1,4 @@
-(physics-hs:intro:physical-quantities::time)=
+(physics-hs:intro:physical-quantities:time)=
 # Tempo
 
 Il tempo è una grandezza fisica associata all'esperienza quotidiana del susseguirsi di eventi. 

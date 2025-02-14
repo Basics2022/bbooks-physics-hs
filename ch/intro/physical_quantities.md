@@ -14,9 +14,17 @@ Il **sistema internazionale** di unità di misura (SI) usa sette **grandezze fis
 | intervallo di tempo          | $[T]$                | secondo               | $s$     |
 | massa                        | $[M]$                | chilogrammo           | $kg$    |
 | temperatura                  | $[\Theta]$           | Kelvin                | $K$     |
-| intensità di corrente        | $[I]$                | Ampére                | $A$     |
 | quantità di sostanza         | $[N]$                | mole                  | $mol$   |
+| intensità di corrente        | $[I]$                | Ampére                | $A$     |
 | intensità luminosa           | $[J]$                | candela               | $cd$    |
+
+- Nello studio della [meccanica classica](physics-hs:mechanics:intro) sono sufficienti le unità di misura di [**lunghezza**](physics-hs:intro:physical-quantities:space), [**tempo**](physics-hs:intro:physical-quantities:time) e [**massa**](physics-hs:intro:physical-quantities:mass).
+- Nello studio della [termodinamica classica](physics-hs:thermodynamics:intro) vengono introdotte le unità di misura di [**temperatura**](physics-hs:intro:physical-quantities:temperature) e [**quantità di sostanza**](physics-hs:intro:physical-quantities:mole). Entrambe sono riconducibili a una descrizione microscopica atomistica della materia: l'unità di misura della sostanza rappresenta il numero di molecole - componenti elementari discreti - presenti in un determinato volume, in determinate condizioni termodinamiche del sistema; la temperatura rappresenta una misura macroscopica - mediata - dell'agitazione molecolare (dell'energia) dei componenti elementari della materia.
+- Nello studio dell'[elettromagnetismo classico](physics-hs:electromagnetism:intro) viene introdotta l'unità di misura della corrente elettrica.
+
+ Infine, l'[**intensità luminosa**](physics-hs:intro:physical-quantities:luminosity) è un'unità di misura "strana", considerabile non necessaria: mentre tutte le altre unità di misura cercano di essere indipedenti dalla [percezione umana](physics-hs:intro:sensing), l'intensità luminosa rappresenta la **percezione dell'occhio umano** medio di quella parte di radiazione elettromagnetica che comunemente chiamiamo luce. L'intensità luminosa non è altro che la potenza (quantità fisica derivata) della radiazione elettromagnetica (con dimensioni fisiche derivabili dalle prime sei unità di misura fondamentali) "scalata" dalla percezione umana.
+
+Un'introduzione alle singole grandezze fisiche verrà presentata nelle prossime sezioni.
 
 **Multipli e sottomultipli.** A parte rare eccezioni[^multiples-exceptions], è comune usare multipli e sottomultipli delle unità di misura che siano potenze intere con base $10$. A parte il "residuo storico" del "chilo" nell'unità di misura della massa (il sistema CGS usava il grammo come unità di misura), non compaiono prefissi nelle unità di misura. I prefissi associati ai multipli e sottomultipli di una grandezza sono
 

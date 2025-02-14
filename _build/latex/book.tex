@@ -426,19 +426,6 @@ Kelvin
 \\
 \hline
 \sphinxAtStartPar
-intensità di corrente
-&
-\sphinxAtStartPar
-\([I]\)
-&
-\sphinxAtStartPar
-Ampére
-&
-\sphinxAtStartPar
-\(A\)
-\\
-\hline
-\sphinxAtStartPar
 quantità di sostanza
 &
 \sphinxAtStartPar
@@ -449,6 +436,19 @@ mole
 &
 \sphinxAtStartPar
 \(mol\)
+\\
+\hline
+\sphinxAtStartPar
+intensità di corrente
+&
+\sphinxAtStartPar
+\([I]\)
+&
+\sphinxAtStartPar
+Ampére
+&
+\sphinxAtStartPar
+\(A\)
 \\
 \hline
 \sphinxAtStartPar
@@ -467,6 +467,26 @@ candela
 \end{tabulary}
 \par
 \sphinxattableend\end{savenotes}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Nello studio della {\hyperref[\detokenize{ch/mechanics/intro:physics-hs-mechanics-intro}]{\sphinxcrossref{\DUrole{std,std-ref}{meccanica classica}}}} sono sufficienti le unità di misura di {\hyperref[\detokenize{ch/intro/physical_quantities-space:physics-hs-intro-physical-quantities-space}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{lunghezza}}}}}, {\hyperref[\detokenize{ch/intro/physical_quantities-time:physics-hs-intro-physical-quantities-time}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{tempo}}}}} e {\hyperref[\detokenize{ch/intro/physical_quantities-mass:physics-hs-intro-physical-quantities-mass}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{massa}}}}}.
+
+\item {} 
+\sphinxAtStartPar
+Nello studio della {\hyperref[\detokenize{ch/thermodynamics/foundation:physics-hs-thermodynamics-intro}]{\sphinxcrossref{\DUrole{std,std-ref}{termodinamica classica}}}} vengono introdotte le unità di misura di {\hyperref[\detokenize{ch/intro/physical_quantities-temperature:physics-hs-intro-physical-quantities-temperature}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{temperatura}}}}} e {\hyperref[\detokenize{ch/intro/physical_quantities-mole:physics-hs-intro-physical-quantities-mole}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{quantità di sostanza}}}}}. Entrambe sono riconducibili a una descrizione microscopica atomistica della materia: l’unità di misura della sostanza rappresenta il numero di molecole \sphinxhyphen{} componenti elementari discreti \sphinxhyphen{} presenti in un determinato volume, in determinate condizioni termodinamiche del sistema; la temperatura rappresenta una misura macroscopica \sphinxhyphen{} mediata \sphinxhyphen{} dell’agitazione molecolare (dell’energia) dei componenti elementari della materia.
+
+\item {} 
+\sphinxAtStartPar
+Nello studio dell”{\hyperref[\detokenize{ch/electromagnetism/intro:physics-hs-electromagnetism-intro}]{\sphinxcrossref{\DUrole{std,std-ref}{elettromagnetismo classico}}}} viene introdotta l’unità di misura della corrente elettrica.
+
+\end{itemize}
+
+\sphinxAtStartPar
+Infine, l”{\hyperref[\detokenize{ch/intro/physical_quantities-luminosity:physics-hs-intro-physical-quantities-luminosity}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{intensità luminosa}}}}} è un’unità di misura «strana», considerabile non necessaria: mentre tutte le altre unità di misura cercano di essere indipedenti dalla {\hyperref[\detokenize{ch/intro/sensing:physics-hs-intro-sensing}]{\sphinxcrossref{\DUrole{std,std-ref}{percezione umana}}}}, l’intensità luminosa rappresenta la \sphinxstylestrong{percezione dell’occhio umano} medio di quella parte di radiazione elettromagnetica che comunemente chiamiamo luce. L’intensità luminosa non è altro che la potenza (quantità fisica derivata) della radiazione elettromagnetica (con dimensioni fisiche derivabili dalle prime sei unità di misura fondamentali) «scalata» dalla percezione umana.
+
+\sphinxAtStartPar
+Un’introduzione alle singole grandezze fisiche verrà presentata nelle prossime sezioni.
 
 \sphinxAtStartPar
 \sphinxstylestrong{Multipli e sottomultipli.} A parte rare eccezioni%
@@ -1165,6 +1185,30 @@ Statistica e \sphinxhref{https://basics2022.github.io/bbooks-programming-hs/ch/s
 \sphinxstepscope
 
 
+\chapter{Sensi}
+\label{\detokenize{ch/intro/sensing:sensi}}\label{\detokenize{ch/intro/sensing:physics-hs-intro-sensing}}\label{\detokenize{ch/intro/sensing::doc}}
+\sphinxAtStartPar
+I nostri sensi ci ingannano o possono ingannarci. La percezione sensoriale avviene tramite una catena di misura che parte dai recettori e arriva alla rappresentazione che il nsotro cervello costruisce del fenomeno, tramite conversione dello stimolo in segnali di natura meccanica o elettro\sphinxhyphen{}chimica.
+
+\sphinxAtStartPar
+Esempi:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+temperatura e calore? (Termodinamica)
+
+\item {} 
+\sphinxAtStartPar
+spazio, tempo o spazio\sphinxhyphen{}tempo? (Relatività di Einstein)
+
+\end{itemize}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{Fare riferimenti ai capitoli…}
+
+\sphinxstepscope
+
+
 \chapter{Stato corrente}
 \label{\detokenize{ch/intro/current-status:stato-corrente}}\label{\detokenize{ch/intro/current-status:physics-hs-intro-current-status}}\label{\detokenize{ch/intro/current-status::doc}}
 \sphinxAtStartPar
@@ -1286,30 +1330,6 @@ densità di corrente è una grandezza fisica, evidenza macroscopica del numero d
 \end{itemize}
 
 \end{itemize}
-
-\sphinxstepscope
-
-
-\chapter{Sensi}
-\label{\detokenize{ch/intro/sensing:sensi}}\label{\detokenize{ch/intro/sensing:physics-hs-intro-sensing}}\label{\detokenize{ch/intro/sensing::doc}}
-\sphinxAtStartPar
-I nostri sensi ci ingannano o possono ingannarci. La percezione sensoriale avviene tramite una catena di misura che parte dai recettori e arriva alla rappresentazione che il nsotro cervello costruisce del fenomeno, tramite conversione dello stimolo in segnali di natura meccanica o elettro\sphinxhyphen{}chimica.
-
-\sphinxAtStartPar
-Esempi:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-temperatura e calore? (Termodinamica)
-
-\item {} 
-\sphinxAtStartPar
-spazio, tempo o spazio\sphinxhyphen{}tempo? (Relatività di Einstein)
-
-\end{itemize}
-
-\sphinxAtStartPar
-\sphinxstylestrong{todo} \sphinxstyleemphasis{Fare riferimenti ai capitoli…}
 
 \sphinxstepscope
 
