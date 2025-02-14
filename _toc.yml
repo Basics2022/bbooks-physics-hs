@@ -26,15 +26,16 @@ parts:
   - file: ch/intro/scientific-method
   - file: ch/intro/measurements
   - file: ch/intro/current-status
+  - file: ch/intro/sensing
 - caption: Meccanica classica
   numbered: True
   chapters:
 # - file: ch/mechanics
   - file: ch/mechanics/intro
     sections:
+    - file: ch/mechanics/intro-vocabulary
     - file: ch/mechanics/intro-history
 #   - file: ch/mechanics/models
-    - file: ch/mechanics/intro-vocabulary
   - file: ch/mechanics/kinematics
     sections:
     - file: ch/mechanics/kinematics-point

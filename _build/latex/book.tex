@@ -87,7 +87,7 @@
         
 
 \title{Fisica per le superiori}
-\date{11 feb 2025}
+\date{14 feb 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -350,7 +350,7 @@ Una grandezza fisica è una proprietà di un sistema o di un fenomeno fisico che
 
 
 \section{Sistema di misura}
-\label{\detokenize{ch/intro/physical_quantities:sistema-di-misura}}\begin{itemize}
+\label{\detokenize{ch/intro/physical_quantities:sistema-di-misura}}\label{\detokenize{ch/intro/physical_quantities:physics-hs-intro-physical-quantities-system}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 grandezze fondamentali e derivate
@@ -363,11 +363,31 @@ unità di misura
 
 
 \subsection{Sistema di misura internazionale}
-\label{\detokenize{ch/intro/physical_quantities:sistema-di-misura-internazionale}}
+\label{\detokenize{ch/intro/physical_quantities:sistema-di-misura-internazionale}}\label{\detokenize{ch/intro/physical_quantities:physics-hs-intro-physical-quantities-system-is}}
 \sphinxAtStartPar
-Breve storia.
-Brevissima storia. Inizialmente unità di misura convenzionali, facilmente riconducibili all’esperienza quotidiana degli esseri umani ai tempi in cui le unità vengono definite.
-Possibilmente, riconducibili a grandezze fisiche facilmente replicabili in maniera stabile. Recentemente, dopo la scoperta di alcune grandezze costanti in natura, le unità di misura «classiche» sono state ri\sphinxhyphen{}definite in termini di queste costanti della natura e mantenendo il loro valore originale.
+\sphinxstylestrong{Brevissima storia.}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Inizialmente unità di misura convenzionali, facilmente riconducibili all’esperienza quotidiana degli esseri umani ai tempi in cui le unità vengono definite.
+
+\item {} 
+\sphinxAtStartPar
+Successivamente%
+\begin{footnote}[1]\sphinxAtStartFootnote
+Storia della creazione dei principali sistemi di misura \sphinxstylestrong{todo} \sphinxstyleemphasis{link? Scrivere due parole?}
+%
+\end{footnote} unità di misura riconducibili a grandezze fisiche facilmente replicabili in maniera stabile in laboratorio.
+
+\item {} 
+\sphinxAtStartPar
+Recentemente, dopo la scoperta di alcune grandezze costanti in natura, le unità di misura «classiche» sono state ri\sphinxhyphen{}definite in termini di queste costanti della natura mantenendo il loro valore originale.%
+\begin{footnote}[2]\sphinxAtStartFootnote
+Il valore delle unità di misura classiche è stato mantenuto seguendo un criterio di \sphinxstylestrong{comodità}: la comodità di 1) non ridefinire tutto con una serie di conversioni e la comodità di 2) evitare l’utilizzo di unità di misura di dimesioni molto diverse rispetto alle grandezze che caratterizzano l’esperienza quotidiana, e quindi l’uso di valori numerici caratterizzati da potenze enormi o molto piccole. Ad esempio, una volta notato che la velocità della luce sembra essere una costante della natura, potrebbe sembrare naturale scegliere la velocità della luce o qualche suo sottomultiplo. Usando le unità di misura del sistema fondamentale, la velocità della luce è di circa \(c = 299792458 \, m/s \approx 3 \cdot 10^{8} \, m/s\). Definendo \(c\) come nuovaunità di misura della velocità, dovremmo esprimere un limite di velocità di \(v = 100 \, km/h = 27.28 \, m/s = 9.27 \cdot 10^{-8} \, c\): non proprio il massimo, se non ci si fa prima l’abitudine \sphinxhyphen{} e probaiblmente nemmeno dopo! Potremmo definire l’unità di misura per la velocità come \(10^{-8} \, c\) per non dover trattare la potenza nel valore numerico delle velocità di tutti i giorni. Oppure potremmo continuare a fare quello che facciamo: abbiamo ben presente quanto sono un metro o un chilometro, e quanto sono un secondo o un’ora, e possiamo continuare a usare i \(m/s\) o \(km/h\) come unità di misura derivate dal rapporto di una misura di lunghezza e una di tempo, immaginandoci la velocità come distanza percorsa in un intervallo di tempo (quantificate in unità di misura intelligibili per l’esperienza nella nostra vita quotidiana).
+%
+\end{footnote}
+
+\end{itemize}
 
 \sphinxAtStartPar
 \sphinxstylestrong{Massa, lunghezza e tempo.}
@@ -384,6 +404,10 @@ Possibilmente, riconducibili a grandezze fisiche facilmente replicabili in manie
 \sphinxAtStartPar
 \sphinxstylestrong{Intensità luminosa.}
 
+
+
+
+\bigskip\hrule\bigskip
 
 
 \sphinxstepscope
@@ -901,6 +925,30 @@ densità di corrente è una grandezza fisica, evidenza macroscopica del numero d
 \sphinxstepscope
 
 
+\chapter{Sensi}
+\label{\detokenize{ch/intro/sensing:sensi}}\label{\detokenize{ch/intro/sensing:physics-hs-intro-sensing}}\label{\detokenize{ch/intro/sensing::doc}}
+\sphinxAtStartPar
+I nostri sensi ci ingannano o possono ingannarci. La percezione sensoriale avviene tramite una catena di misura che parte dai recettori e arriva alla rappresentazione che il nsotro cervello costruisce del fenomeno, tramite conversione dello stimolo in segnali di natura meccanica o elettro\sphinxhyphen{}chimica.
+
+\sphinxAtStartPar
+Esempi:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+temperatura e calore? (Termodinamica)
+
+\item {} 
+\sphinxAtStartPar
+spazio, tempo o spazio\sphinxhyphen{}tempo? (Relatività di Einstein)
+
+\end{itemize}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{Fare riferimenti ai capitoli…}
+
+\sphinxstepscope
+
+
 \part{Meccanica classica}
 
 \sphinxstepscope
@@ -917,13 +965,180 @@ La meccanica classica si occupa del moto che hanno dimensioni e velocità caratt
 La \sphinxstylestrong{meccanica classica} fornisce un buon modello \sphinxstylestrong{deterministico} per sistemi formati da un numero limitato di corpi. Per un numero molto grande di corpi oggetto di indagine, l’approccio della meccanica classica può risultare impraticabile (per necessità di capacità di conto) o comunque poco efficiente (si farebbe un grande sforzo per ottenere gli stessi risultati ottenibili molto più facilmente e velocemente con altri approcci): in questi casi, può essere utile un approccio \sphinxstyleemphasis{statistico} come quello adottato dalla {\hyperref[\detokenize{ch/thermodynamics/foundation:physics-hs-thermodynamics-intro}]{\sphinxcrossref{\DUrole{std,std-ref}{termodinamica classica}}}}.
 
 \sphinxAtStartPar
-Facendo riferimento ai {\hyperref[\detokenize{ch/intro/current-status:physics-hs-intro-current-status-regimes}]{\sphinxcrossref{\DUrole{std,std-ref}{regimi qualitativi della fisica}}}}, la meccanica classica è una buoona teoria per i fenomeni di dimensioni molto maggiori alle dimensioni atomiche ma inferiori a dimensioni astronomiche (per le quali non si può trascurare la velocità finita di trasmissione delle informazioni, e per velocità molto inferiori rispetto alla velocità della luce \(c\). Nonostante questi limiti (superati dalla fisica quantistica e dalla fisica di Einstein), la meccanica classica risulta ancora impescindibile, come prima introduzione alla fisica e per il gran numero di fenomeni che ricade all’interno dei limiti di validità del modello classico: \sphinxstyleemphasis{ponti, strade, case, auto, bici, aerei,… vengono progettati con modelli di meccanica classica}.
+Facendo riferimento ai {\hyperref[\detokenize{ch/intro/current-status:physics-hs-intro-current-status-regimes}]{\sphinxcrossref{\DUrole{std,std-ref}{regimi qualitativi della fisica}}}}, la meccanica classica è una buona teoria per i fenomeni di dimensioni molto maggiori alle dimensioni atomiche ma inferiori a dimensioni astronomiche (per le quali non si può trascurare la velocità finita di trasmissione delle informazioni, e per velocità molto inferiori rispetto alla velocità della luce \(c\). Nonostante questi limiti (superati dalla fisica quantistica e dalla fisica di Einstein), la meccanica classica risulta ancora impescindibile, come prima introduzione alla fisica e per il gran numero di fenomeni che ricade all’interno dei limiti di validità del modello classico: \sphinxstyleemphasis{ponti, strade, case, auto, bici, aerei,… vengono progettati con modelli di meccanica classica}.
+
+\sphinxAtStartPar
+Gli argomenti di questa introduzione alla meccanica classica sono così organizzati:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+cinematica
+
+\item {} 
+\sphinxAtStartPar
+azioni
+
+\item {} 
+\sphinxAtStartPar
+statica
+
+\item {} 
+\sphinxAtStartPar
+inerzia
+
+\item {} 
+\sphinxAtStartPar
+dinamica
+
+\end{itemize}
 
 \begin{sphinxadmonition}{note}{Nota:}
 \sphinxAtStartPar
 Determinismo e meccanicismo
 \sphinxstylestrong{todo} \sphinxstyleemphasis{Riferimento al pensiero filosofico, e al fallimento di alcuni modelli deterministici: sistemi meccanici «classici» sensibili a perturbazioni (chaos; esempio: difficoltà nel fare le previsioni del tempo, «battiti d’ali di farfalle» e altre formule abusate); fisica quantistica;…}
 \end{sphinxadmonition}
+
+\sphinxstepscope
+
+
+\section{Concetti in meccanica classica}
+\label{\detokenize{ch/mechanics/intro-vocabulary:concetti-in-meccanica-classica}}\label{\detokenize{ch/mechanics/intro-vocabulary:physics-hs-mechanics-intro-vocabulary}}\label{\detokenize{ch/mechanics/intro-vocabulary::doc}}
+
+\subsection{Grandezze fisiche}
+\label{\detokenize{ch/mechanics/intro-vocabulary:grandezze-fisiche}}\label{\detokenize{ch/mechanics/intro-vocabulary:physics-hs-mechanics-intro-vocabulary-physical-dimensions}}
+
+\subsubsection{Grandezze fisiche fondentali}
+\label{\detokenize{ch/mechanics/intro-vocabulary:grandezze-fisiche-fondentali}}\label{\detokenize{ch/mechanics/intro-vocabulary:physics-hs-mechanics-intro-vocabulary-physical-dimensions-fundamental}}
+\sphinxAtStartPar
+Le grandezze fisiche fondamentali del {\hyperref[\detokenize{ch/intro/physical_quantities:physics-hs-intro-physical-quantities-system-is}]{\sphinxcrossref{\DUrole{std,std-ref}{sistema internazionale di misura}}}} coinvolte nello studio della meccanica classica sono: \sphinxstylestrong{spazio} \([L]\), \sphinxstylestrong{tempo} \([t]\) e \sphinxstylestrong{massa} \([m]\).
+
+
+\subsubsection{Grandezze fisiche derivate}
+\label{\detokenize{ch/mechanics/intro-vocabulary:grandezze-fisiche-derivate}}\label{\detokenize{ch/mechanics/intro-vocabulary:physics-hs-mechanics-intro-vocabulary-physical-dimensions-derived}}
+\sphinxAtStartPar
+Nello sviluppo della teoria matematica della meccanica classica risulta conveniente definire delle quantità fisiche, con le loro dimensioni fisiche derivate.
+
+\sphinxAtStartPar
+La \sphinxstylestrong{cinematica} si occupa di descrivere la posizione dei corpi nello spazio (pensato come euclideo) in funzione del tempo, indipendentemente dalle sue cause. La variazione della \sphinxstylestrong{posizione} \([L]\) di un punto nello spazio in funzione del tempo definisce la sua \sphinxstylestrong{velocità} \([L][t]^{-1}\), e la variazione della velocità nel tempo definisce l”\sphinxstylestrong{accelerazione} \([L][t]^{-2}\);%
+\begin{footnote}[1]\sphinxAtStartFootnote
+In maniera analoga ma diversa, l’orientazione di un corpo (rigido) nello spazio può essere definito tramite \sphinxstylestrong{angoli} \([1]\) o parametri riportabili ad essi; la variazione dell’orientazione del corpo in funzione del tempo viene rappresentata dalla sua \sphinxstylestrong{velocità angolare} \([t]^{-1}\); la variazione della velocità angolare nel tempo viene rappresentata dalla sua \sphinxstylestrong{accelerazione angolare} \([t]^{-2}\). Una trattazione completa delle rotazione e della dinamica dei corpi rigidi nello spazio 3\sphinxhyphen{}dimensionale è al di fuori degli obiettivi di un’introduzione alla meccanica classica, poiché \sphinxhyphen{} per non fare porcherie, almeno \sphinxhyphen{} richiederebbe una certa dimestichezza con strumenti matematici con i quali difficilmente si ha dimestichezza \sphinxhyphen{} o forse nemmeno li si è mai visti. In ogni modo, è disponibile il materiale pensato per l’università per una trattazione completa di rotazioni e \sphinxhref{https://basics2022.github.io/bbooks-physics-mechanics/intro.html}{meccanica classica}.
+%
+\end{footnote}
+
+\sphinxAtStartPar
+L”\sphinxstylestrong{inerzia} di un sistema rappresenta la sua resistenza al cambiamento del suo stato di moto, quando soggetto ad azioni e dipende dalla sua \sphinxstylestrong{massa} \([m]\) e dalla sua distribuzione nel sistema: per sistemi continui di dimensione finita è quindi importante consocerne la \sphinxstylestrong{densità} \([m][L]^{-n}\) per poterne stimare le proprietà di inerzia riassumibili nel momento statico \([m][L]\) e \sphinxstylestrong{momento di inerzia} \([m][L]^2\). La massa \sphinxhyphen{} e la sua distribuzione \sphinxhyphen{} e le quantità introdotte in cinematica possono essere combinate in \sphinxstyleemphasis{quantità dinamiche} che compaiono in dinamica nelle equazioni che governano il moto dei sistemi: in particolare vengono definiti i concetti di \sphinxstylestrong{quantità di moto} (massa per velocità) \([m][L][t]^{-1}\) e \sphinxstylestrong{momento della quantità di moto} (o \sphinxstylestrong{momento angolare}) \([m][L]^2[t]^{-1}\).
+
+\sphinxAtStartPar
+Le \sphinxstylestrong{azioni} sono quelle interazioni che possono agire su un sistema modificandone il moto, se questa modifica è consentita dai vincoli del sistema stesso. Vengono introdotte le \sphinxstylestrong{forze} \([m][L][t]^{-2}\) e i \sphinxstylestrong{momenti} \([m][L]^2[t]^{-2}\). Legati ai concetti di azioni, possono essere introdotti i concetti di \sphinxstylestrong{lavoro} («forza per spostamento) \([m][L]^2[t]^{-2}\) e di \sphinxstylestrong{potenza} (lavoro per unità di tempo) \([m][L]^2[t]^{-3}\); in alcuni casi, il lavoro fatto da azioni su un sistema contribuisce all’aumento di una quantità
+
+\sphinxAtStartPar
+La \sphinxstylestrong{dinamica} si occupa di descrivere il moto dei sistemi, cause incluse. Le equazioni della dinamica legano la variazione delle quantità dinamiche alle azioni agenti sul sistema.
+
+
+\subsection{Modelli}
+\label{\detokenize{ch/mechanics/intro-vocabulary:modelli}}
+\sphinxAtStartPar
+…
+
+\sphinxAtStartPar
+Muovere in una sezione «Introduzione alla meccanica», per rendere lo schema uniforme con Termodinamica ed Elettromagnetismo: prime esperienze; approccio di Newton (grandezze fisiche e concetti); modelli
+
+\sphinxAtStartPar
+Quando si costruisce una teoria scientifica, è spesso necessario compiere uno sforzo di astrazione (\sphinxstylestrong{todo} \sphinxstyleemphasis{come conosciamo? Discorso filosofico…}), di modellazione dei fenomeni di interesse. Un buon modello è in grado di rappresentare con la precisione (\sphinxstylestrong{todo} \sphinxstyleemphasis{o accuratezza?}) richiesta il fenomeno studiato, essere in accordo con attività sperimentali e garantire capacità di previsione che coinvolgono tali fenomeni.
+
+\sphinxAtStartPar
+Nello studio della meccanica e della fisica in generale, si è soliti distinguere gli elementi oggetti di studio da tutti gli altri elementi:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{sistema}, unione degli elementi oggetti di studio
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{ambiente esterno}, tutto quello che non fa parte del sistema
+
+\end{itemize}
+
+\sphinxAtStartPar
+In meccanica, è necessario uno sforzo di modellazione per costruire un modello matematico che rappresenti:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+i componenti meccanici, che costituiscono il sistema
+
+\item {} 
+\sphinxAtStartPar
+le connessioni tra componenti meccanici del sistema, o le connessioni con l’ambiente esterno
+
+\item {} 
+\sphinxAtStartPar
+le azioni che operano sul sistema, dovute alle interazioni del sistema con l’esterno o scambiate tra componenti del sistema
+
+\end{itemize}
+
+\sphinxAtStartPar
+A seconda del livello di dettaglio richiesto, si possono definire diversi modelli di componenti meccanici in base a:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+dimensioni:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+sistemi puntiformi, di dimensioni trascurabili per il problema di interesse
+
+\item {} 
+\sphinxAtStartPar
+sistemi estesi, di dimensioni non trascurabili per il problema di interesse; a seconda della loro deformabilità e/o del livello di dettaglio dell’analisi:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+rigidi
+
+\item {} 
+\sphinxAtStartPar
+deformabili
+
+\end{itemize}
+
+\end{itemize}
+
+\item {} 
+\sphinxAtStartPar
+inertia:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+massa non trascurabile
+
+\item {} 
+\sphinxAtStartPar
+massa trascurabile
+
+\end{itemize}
+
+\end{itemize}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Esempio.} Analisi di un aereo:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+per lo studio di traiettorie e prestazioni, può essere considerato come un sistema puntiforme
+
+\item {} 
+\sphinxAtStartPar
+per uno studio preliminare di equilibrio e dinamica del velivolo, può essere usato un modello esteso rigido
+
+\item {} 
+\sphinxAtStartPar
+per lo studio accurato dell’equilibrio, della dinamica del volo e del progetto aero\sphinxhyphen{}servo\sphinxhyphen{}elastico l’aereo viene modellato come un insieme di elementi: viene usato un modello esteso deformabile dotato di massa per molti elementi strutturali, connessi tramite vincoli
+
+\end{itemize}
+
+
+\bigskip\hrule\bigskip
+
 
 \sphinxstepscope
 
@@ -1072,119 +1287,6 @@ legge di gravitazione universale: l’origine del moto dei gravi è la stessa de
 \sphinxstepscope
 
 
-\section{Concetti in meccanica classica}
-\label{\detokenize{ch/mechanics/intro-vocabulary:concetti-in-meccanica-classica}}\label{\detokenize{ch/mechanics/intro-vocabulary:physics-hs-mechanics-intro-vocabulary}}\label{\detokenize{ch/mechanics/intro-vocabulary::doc}}
-
-\subsection{Grandezze fisiche}
-\label{\detokenize{ch/mechanics/intro-vocabulary:grandezze-fisiche}}
-\sphinxAtStartPar
-…
-
-
-\subsection{Modelli}
-\label{\detokenize{ch/mechanics/intro-vocabulary:modelli}}
-\sphinxAtStartPar
-…
-
-\sphinxAtStartPar
-Muovere in una sezione «Introduzione alla meccanica», per rendere lo schema uniforme con Termodinamica ed Elettromagnetismo: prime esperienze; approccio di Newton (grandezze fisiche e concetti); modelli
-
-\sphinxAtStartPar
-Quando si costruisce una teoria scientifica, è spesso necessario compiere uno sforzo di astrazione (\sphinxstylestrong{todo} \sphinxstyleemphasis{come conosciamo? Discorso filosofico…}), di modellazione dei fenomeni di interesse. Un buon modello è in grado di rappresentare con la precisione (\sphinxstylestrong{todo} \sphinxstyleemphasis{o accuratezza?}) richiesta il fenomeno studiato, essere in accordo con attività sperimentali e garantire capacità di previsione che coinvolgono tali fenomeni.
-
-\sphinxAtStartPar
-Nello studio della meccanica e della fisica in generale, si è soliti distinguere gli elementi oggetti di studio da tutti gli altri elementi:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\sphinxstylestrong{sistema}, unione degli elementi oggetti di studio
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstylestrong{ambiente esterno}, tutto quello che non fa parte del sistema
-
-\end{itemize}
-
-\sphinxAtStartPar
-In meccanica, è necessario uno sforzo di modellazione per costruire un modello matematico che rappresenti:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-i componenti meccanici, che costituiscono il sistema
-
-\item {} 
-\sphinxAtStartPar
-le connessioni tra componenti meccanici del sistema, o le connessioni con l’ambiente esterno
-
-\item {} 
-\sphinxAtStartPar
-le azioni che operano sul sistema, dovute alle interazioni del sistema con l’esterno o scambiate tra componenti del sistema
-
-\end{itemize}
-
-\sphinxAtStartPar
-A seconda del livello di dettaglio richiesto, si possono definire diversi modelli di componenti meccanici in base a:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-dimensioni:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-sistemi puntiformi, di dimensioni trascurabili per il problema di interesse
-
-\item {} 
-\sphinxAtStartPar
-sistemi estesi, di dimensioni non trascurabili per il problema di interesse; a seconda della loro deformabilità e/o del livello di dettaglio dell’analisi:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-rigidi
-
-\item {} 
-\sphinxAtStartPar
-deformabili
-
-\end{itemize}
-
-\end{itemize}
-
-\item {} 
-\sphinxAtStartPar
-inertia:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-massa non trascurabile
-
-\item {} 
-\sphinxAtStartPar
-massa trascurabile
-
-\end{itemize}
-
-\end{itemize}
-
-\sphinxAtStartPar
-\sphinxstylestrong{Esempio.} Analisi di un aereo:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-per lo studio di traiettorie e prestazioni, può essere considerato come un sistema puntiforme
-
-\item {} 
-\sphinxAtStartPar
-per uno studio preliminare di equilibrio e dinamica del velivolo, può essere usato un modello esteso rigido
-
-\item {} 
-\sphinxAtStartPar
-per lo studio accurato dell’equilibrio, della dinamica del volo e del progetto aero\sphinxhyphen{}servo\sphinxhyphen{}elastico l’aereo viene modellato come un insieme di elementi: viene usato un modello esteso deformabile dotato di massa per molti elementi strutturali, connessi tramite vincoli
-
-\end{itemize}
-
-\sphinxstepscope
-
-
 
 
 \chapter{Cinematica}
@@ -1192,7 +1294,7 @@ per lo studio accurato dell’equilibrio, della dinamica del volo e del progetto
 \sphinxAtStartPar
 La cinematica si occupa della descrizione del moto dei sistemi, senza indagarne le cause. La cinematica si occupa della descrizione dello stato di un sistema, e della sua variazione, nello spazio.
 \label{ch/mechanics/kinematics:system-configuration}
-\begin{sphinxadmonition}{note}{Definition 7.1 (Configurazione di un sistema)}
+\begin{sphinxadmonition}{note}{Definition 8.1 (Configurazione di un sistema)}
 
 
 
@@ -1200,7 +1302,7 @@ La cinematica si occupa della descrizione del moto dei sistemi, senza indagarne 
 La \sphinxstylestrong{configurazione di un sistema} è definita da un insieme di variabili indipendenti, o coordinate, dette \sphinxstylestrong{gradi di libertà}.  Il numero di gradi di libertà di un sistema dipende dalla dimensione dello spazio nel quale avviene il moto, dal numero e dal tipo degli elementi che lo compongono e dai vincoli che connettono gli elementi del sistema tra di loro o con l’ambiente esterno.
 \end{sphinxadmonition}
 \label{ch/mechanics/kinematics:system-state}
-\begin{sphinxadmonition}{note}{Definition 7.2 (Stato di un sistema)}
+\begin{sphinxadmonition}{note}{Definition 8.2 (Stato di un sistema)}
 
 
 
@@ -1645,7 +1747,7 @@ Questa pagina contiene esercizi di cinematica per punti materiali, corpi rigidi 
 \subsection{Cinematica dei Punti Materiali}
 \label{\detokenize{ch/mechanics/kinematics-problems:cinematica-dei-punti-materiali}}\phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.1 (Velocità media)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.1 (Velocità media)}
 
 
 
@@ -1654,7 +1756,7 @@ Questa pagina contiene esercizi di cinematica per punti materiali, corpi rigidi 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.2 (Velocità media vettore (su percorso chiuso))}
+\begin{sphinxadmonition}{note}{Exercise 8.5.2 (Velocità media vettore (su percorso chiuso))}
 
 
 
@@ -1663,7 +1765,7 @@ Questa pagina contiene esercizi di cinematica per punti materiali, corpi rigidi 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.3}
+\begin{sphinxadmonition}{note}{Exercise 8.5.3}
 
 
 
@@ -1672,7 +1774,7 @@ Due auto stanno viaggiando lungo un’autostrada con una distanza iniziale di \(
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.4}
+\begin{sphinxadmonition}{note}{Exercise 8.5.4}
 
 
 
@@ -1692,7 +1794,7 @@ si assume che l’imprevisto sia fermo sulla carreggiata davanti all’auto cons
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.5}
+\begin{sphinxadmonition}{note}{Exercise 8.5.5}
 
 
 
@@ -1701,7 +1803,7 @@ Si ripeta l’esercizio considerando una distribuzione normale del tempo di reaz
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.6}
+\begin{sphinxadmonition}{note}{Exercise 8.5.6}
 
 
 
@@ -1721,7 +1823,7 @@ la velocità quando il corpo tocca terra, e il tempo in cui questo punto viene r
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.7}
+\begin{sphinxadmonition}{note}{Exercise 8.5.7}
 
 
 
@@ -1741,7 +1843,7 @@ il tempo di volo
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.8}
+\begin{sphinxadmonition}{note}{Exercise 8.5.8}
 
 
 
@@ -1769,31 +1871,31 @@ dato il valore assoluto \(|\vec{v}_0|\) e lasciando libero l’angolo \(\theta\)
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.9 (Moto circolare 1.)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.9 (Moto circolare 1.)}
 
 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.10 (Moto circolare 2.)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.10 (Moto circolare 2.)}
 
 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.11 (Moto circolare 3.)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.11 (Moto circolare 3.)}
 
 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.12 (Forze centrali e coniche)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.12 (Forze centrali e coniche)}
 
 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.13 (Velocità di un Punto in Movimento Rettilineo Uniforme)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.13 (Velocità di un Punto in Movimento Rettilineo Uniforme)}
 
 
 
@@ -1802,7 +1904,7 @@ Un punto materiale si muove lungo una retta con velocità costante di \(v = 10 \
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.14 (Accelerazione di un Punto in Movimento Uniformemente Accelerato)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.14 (Accelerazione di un Punto in Movimento Uniformemente Accelerato)}
 
 
 
@@ -1811,7 +1913,7 @@ Un punto materiale parte da fermo e accelera uniformemente con accelerazione \(a
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.15 (Traiettoria di un Punto in Movimento Parabolico)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.15 (Traiettoria di un Punto in Movimento Parabolico)}
 
 
 
@@ -1820,7 +1922,7 @@ Un punto materiale è lanciato con velocità iniziale \(v_0 = 10 \, \text{m/s}\)
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-15}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.16 (Traiettoria di un Punto in Movimento Circolare Uniforme)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.16 (Traiettoria di un Punto in Movimento Circolare Uniforme)}
 
 
 
@@ -1829,7 +1931,7 @@ Un punto materiale si muove lungo una traiettoria circolare con raggio \(r = 5 \
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-16}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.17 (Accelerazione di un Punto in Movimento Circolare Non Uniforme)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.17 (Accelerazione di un Punto in Movimento Circolare Non Uniforme)}
 
 
 
@@ -1841,7 +1943,7 @@ Un punto materiale si muove lungo una traiettoria circolare con raggio \(r = 4 \
 \subsection{Cinematica dei Corpi Rigidi}
 \label{\detokenize{ch/mechanics/kinematics-problems:cinematica-dei-corpi-rigidi}}\phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-17}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.18 (Velocità di un Punto su un Corpo Rigido in Rotazione)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.18 (Velocità di un Punto su un Corpo Rigido in Rotazione)}
 
 
 
@@ -1850,7 +1952,7 @@ Un corpo rigido ruota con velocità angolare costante \(\omega = 5 \, \text{rad/
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-18}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.19 (Accelerazione di un Punto su un Corpo Rigido in Rotazione)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.19 (Accelerazione di un Punto su un Corpo Rigido in Rotazione)}
 
 
 
@@ -1859,7 +1961,7 @@ Un corpo rigido ruota con velocità angolare variabile \(\omega(t) = 3t \, \text
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-19}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.20 (Traiettoria di un Punto su un Corpo Rigido in Traslazione e Rotazione)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.20 (Traiettoria di un Punto su un Corpo Rigido in Traslazione e Rotazione)}
 
 
 
@@ -1868,7 +1970,7 @@ Un corpo rigido si muove in traslazione con velocità costante \(v = 6 \, \text{
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-20}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.21 (Traiettoria di un Punto su un Disco in Rotolamento)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.21 (Traiettoria di un Punto su un Disco in Rotolamento)}
 
 
 
@@ -1877,7 +1979,7 @@ Un disco di raggio \(R = 4 \, \text{m}\) e massa \(m = 6 \, \text{kg}\) rotola s
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-21}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.22 (Traiettoria di un Punto su un Disco in Rotolamento Completo)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.22 (Traiettoria di un Punto su un Disco in Rotolamento Completo)}
 
 
 
@@ -1886,7 +1988,7 @@ Un disco di raggio \(R = 3 \, \text{m}\) rotola senza slittamento su una superfi
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-22}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.23 (Velocità di un Punto su un Disco che Rotola)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.23 (Velocità di un Punto su un Disco che Rotola)}
 
 
 
@@ -1895,7 +1997,7 @@ Un disco di raggio \(R = 5 \, \text{m}\) e velocità di traslazione \(v = 4 \, \
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-23}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.24 (Accelerazione di un Punto su un Disco in Rotolamento)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.24 (Accelerazione di un Punto su un Disco in Rotolamento)}
 
 
 
@@ -1907,7 +2009,7 @@ Un disco di raggio \(R = 3 \, \text{m}\) ruota senza slittamento con velocità a
 \subsection{Cinematica Relativa}
 \label{\detokenize{ch/mechanics/kinematics-problems:cinematica-relativa}}\phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-24}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.25 (Velocità Relativa di Due Punti su un Corpo Rigido)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.25 (Velocità Relativa di Due Punti su un Corpo Rigido)}
 
 
 
@@ -1916,7 +2018,7 @@ Due punti \(P_1\) e \(P_2\) sono situati su un corpo rigido che ruota attorno a 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-25}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.26 (Velocità Relativa di Due Punti in Movimento Circolare)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.26 (Velocità Relativa di Due Punti in Movimento Circolare)}
 
 
 
@@ -1925,7 +2027,7 @@ Due punti, \(P_1\) e \(P_2\), si muovono lungo traiettorie circolari concentrich
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-26}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.27 (Accelerazione Relativa di Due Punti su un Corpo Rigido)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.27 (Accelerazione Relativa di Due Punti su un Corpo Rigido)}
 
 
 
@@ -1934,7 +2036,7 @@ Due punti su un corpo rigido in rotazione hanno velocità angolari \(\omega_1 = 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-27}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.28 (Traiettoria Relativa di Due Punti su un Corpo Rigido)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.28 (Traiettoria Relativa di Due Punti su un Corpo Rigido)}
 
 
 
@@ -1943,7 +2045,7 @@ Due punti \(P_1\) e \(P_2\) si muovono lungo un corpo rigido che ruota con veloc
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/kinematics-problems-exercise-28}
 
-\begin{sphinxadmonition}{note}{Exercise 7.5.29 (Accelerazione Relativa)}
+\begin{sphinxadmonition}{note}{Exercise 8.5.29 (Accelerazione Relativa)}
 
 
 
@@ -2577,7 +2679,7 @@ avendo definito \(\vec{F}_{12}\) come la forza agente sul corpo \(1\) a causa de
 Questa pagina contiene una serie di esercizi di fisica classica sulle azioni come forze, momenti, lavoro e potenza. Gli esercizi sono progettati per studenti di liceo con una buona comprensione della meccanica. Prova a risolvere gli esercizi senza guardare le soluzioni e verifica la tua comprensione!
 \phantomsection \label{exercise:ch/mechanics/actions-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 8.5.1 (Forza risultante)}
+\begin{sphinxadmonition}{note}{Exercise 9.5.1 (Forza risultante)}
 
 
 
@@ -2589,7 +2691,7 @@ Un corpo di massa \(5 \, \text{kg}\) è soggetto a due forze: \(F_1 = 10 \, \tex
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/actions-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 8.5.2 (Momento di una forza)}
+\begin{sphinxadmonition}{note}{Exercise 9.5.2 (Momento di una forza)}
 
 
 
@@ -2601,7 +2703,7 @@ Un’asta di \(2 \, \text{m}\) ruota attorno a un asse perpendicolare al suo cen
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/actions-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 8.5.3 (Lavoro di una forza)}
+\begin{sphinxadmonition}{note}{Exercise 9.5.3 (Lavoro di una forza)}
 
 
 
@@ -2613,7 +2715,7 @@ Un blocco di \(10 \, \text{kg}\) viene spinto lungo una superficie piana con una
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/actions-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 8.5.4 (Energia potenziale gravitazionale)}
+\begin{sphinxadmonition}{note}{Exercise 9.5.4 (Energia potenziale gravitazionale)}
 
 
 
@@ -2625,7 +2727,7 @@ Un corpo di massa \(3 \, \text{kg}\) viene sollevato verticalmente di \(2 \, \te
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/actions-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 8.5.5 (Potenza meccanica)}
+\begin{sphinxadmonition}{note}{Exercise 9.5.5 (Potenza meccanica)}
 
 
 
@@ -2637,7 +2739,7 @@ Una macchina solleva un peso di \(200 \, \text{kg}\) ad un’altezza di \(5 \, \
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/actions-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 8.5.6 (Attrito dinamico)}
+\begin{sphinxadmonition}{note}{Exercise 9.5.6 (Attrito dinamico)}
 
 
 
@@ -2649,7 +2751,7 @@ Un blocco di massa \(15 \, \text{kg}\) scivola su una superficie con coefficient
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/actions-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 8.5.7 (Equilibrio di un’asta)}
+\begin{sphinxadmonition}{note}{Exercise 9.5.7 (Equilibrio di un’asta)}
 
 
 
@@ -2661,7 +2763,7 @@ Un’asta uniforme di lunghezza \(4 \, \text{m}\) e peso \(50 \, \text{N}\) è s
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/actions-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 8.5.8 (Velocità angolare e momento torcente)}
+\begin{sphinxadmonition}{note}{Exercise 9.5.8 (Velocità angolare e momento torcente)}
 
 
 
@@ -2673,7 +2775,7 @@ Una ruota ha un momento d’inerzia di \(2 \, \text{kg·m}^2\) e inizia a ruotar
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/actions-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 8.5.9 (Lavoro in un piano inclinato)}
+\begin{sphinxadmonition}{note}{Exercise 9.5.9 (Lavoro in un piano inclinato)}
 
 
 
@@ -2685,7 +2787,7 @@ Un corpo di massa \(20 \, \text{kg}\) viene spinto lungo un piano inclinato di \
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/actions-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 8.5.10 (Conservazione dell’energia)}
+\begin{sphinxadmonition}{note}{Exercise 9.5.10 (Conservazione dell’energia)}
 
 
 
@@ -2829,7 +2931,7 @@ Questa pagina contiene esercizi di statica suddivisi in quattro categorie: \sphi
 \subsection{Statica del punto materiale}
 \label{\detokenize{ch/mechanics/statics-problems:statica-del-punto-materiale}}\phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 9.4.1 (Equilibrio di un punto materiale)}
+\begin{sphinxadmonition}{note}{Exercise 10.4.1 (Equilibrio di un punto materiale)}
 
 
 
@@ -2838,7 +2940,7 @@ Un punto materiale è soggetto a due forze: \(F_1 = 20 \, \text{N}\) inclinata d
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 9.4.2 (Forza normale e attrito)}
+\begin{sphinxadmonition}{note}{Exercise 10.4.2 (Forza normale e attrito)}
 
 
 
@@ -2847,7 +2949,7 @@ Un blocco di \(10 \, \text{kg}\) è fermo su un piano inclinato di \(20^\circ\).
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 9.4.3 (Corde in equilibrio)}
+\begin{sphinxadmonition}{note}{Exercise 10.4.3 (Corde in equilibrio)}
 
 
 
@@ -2856,7 +2958,7 @@ Un punto materiale è sospeso mediante due corde: la prima forma un angolo di \(
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 9.4.4 (Equilibrio su un piano inclinato)}
+\begin{sphinxadmonition}{note}{Exercise 10.4.4 (Equilibrio su un piano inclinato)}
 
 
 
@@ -2865,7 +2967,7 @@ Un blocco di massa \(5 \, \text{kg}\) è posizionato su un piano inclinato lisci
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 9.4.5 (Forze in una rete di cavi)}
+\begin{sphinxadmonition}{note}{Exercise 10.4.5 (Forze in una rete di cavi)}
 
 
 
@@ -2877,7 +2979,7 @@ Un palo verticale è tenuto in posizione da due cavi inclinati. Il primo cavo fo
 \subsection{Sistemi di punti materiali}
 \label{\detokenize{ch/mechanics/statics-problems:sistemi-di-punti-materiali}}\phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 9.4.6 (Centro di massa di due punti)}
+\begin{sphinxadmonition}{note}{Exercise 10.4.6 (Centro di massa di due punti)}
 
 
 
@@ -2886,7 +2988,7 @@ Due masse, \(m_1 = 3 \, \text{kg}\) e \(m_2 = 7 \, \text{kg}\), sono posizionate
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 9.4.7 (Equilibrio di un sistema di tre punti)}
+\begin{sphinxadmonition}{note}{Exercise 10.4.7 (Equilibrio di un sistema di tre punti)}
 
 
 
@@ -2895,7 +2997,7 @@ Tre masse, \(m_1 = 2 \, \text{kg}\), \(m_2 = 3 \, \text{kg}\), e \(m_3 = 5 \, \t
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 9.4.8 (Forza risultante su un sistema)}
+\begin{sphinxadmonition}{note}{Exercise 10.4.8 (Forza risultante su un sistema)}
 
 
 
@@ -2904,7 +3006,7 @@ Un sistema è composto da due blocchi, \(m_1 = 10 \, \text{kg}\) e \(m_2 = 15 \,
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 9.4.9 (Forze interne e centro di massa)}
+\begin{sphinxadmonition}{note}{Exercise 10.4.9 (Forze interne e centro di massa)}
 
 
 
@@ -2913,7 +3015,7 @@ Un sistema di tre masse uguali \(m = 2 \, \text{kg}\) si trova nei punti \(A(1, 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 9.4.10 (Centro di massa su un piano inclinato)}
+\begin{sphinxadmonition}{note}{Exercise 10.4.10 (Centro di massa su un piano inclinato)}
 
 
 
@@ -2925,7 +3027,7 @@ Due blocchi di massa \(m_1 = 3 \, \text{kg}\) e \(m_2 = 7 \, \text{kg}\) sono co
 \subsection{Statica del corpo rigido}
 \label{\detokenize{ch/mechanics/statics-problems:statica-del-corpo-rigido}}\phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 9.4.11 (Bilancia a due bracci)}
+\begin{sphinxadmonition}{note}{Exercise 10.4.11 (Bilancia a due bracci)}
 
 
 
@@ -2934,7 +3036,7 @@ Una bilancia a due bracci ha lunghezza totale \(1,2 \, \text{m}\) e il fulcro è
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 9.4.12 (Porta incernierata)}
+\begin{sphinxadmonition}{note}{Exercise 10.4.12 (Porta incernierata)}
 
 
 
@@ -2943,7 +3045,7 @@ Una porta rettangolare larga \(1,0 \, \text{m}\) e alta \(2,0 \, \text{m}\) ha u
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 9.4.13 (Traversa uniformemente caricata)}
+\begin{sphinxadmonition}{note}{Exercise 10.4.13 (Traversa uniformemente caricata)}
 
 
 
@@ -2952,7 +3054,7 @@ Una trave orizzontale lunga \(6,0 \, \text{m}\) e del peso di \(200 \, \text{N}\
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 9.4.14 (Scale in equilibrio)}
+\begin{sphinxadmonition}{note}{Exercise 10.4.14 (Scale in equilibrio)}
 
 
 
@@ -2961,7 +3063,7 @@ Una scala lunga \(5,0 \, \text{m}\) e del peso di \(50 \, \text{N}\) è appoggia
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 9.4.15 (Braccio di leva con peso)}
+\begin{sphinxadmonition}{note}{Exercise 10.4.15 (Braccio di leva con peso)}
 
 
 
@@ -2973,7 +3075,7 @@ Un’asta di \(4,0 \, \text{m}\) è sospesa orizzontalmente su un perno a \(1,0 
 \subsection{Miscellanea}
 \label{\detokenize{ch/mechanics/statics-problems:miscellanea}}\phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-15}
 
-\begin{sphinxadmonition}{note}{Exercise 9.4.16 (Trave con cavo)}
+\begin{sphinxadmonition}{note}{Exercise 10.4.16 (Trave con cavo)}
 
 
 
@@ -2982,7 +3084,7 @@ Una trave lunga \(6,0 \, \text{m}\) e del peso di \(300 \, \text{N}\) è fissata
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-16}
 
-\begin{sphinxadmonition}{note}{Exercise 9.4.17 (Sistema articolato)}
+\begin{sphinxadmonition}{note}{Exercise 10.4.17 (Sistema articolato)}
 
 
 
@@ -2991,7 +3093,7 @@ Una struttura triangolare è composta da tre aste rigide uguali di lunghezza \(2
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-17}
 
-\begin{sphinxadmonition}{note}{Exercise 9.4.18 (Fune con tensione)}
+\begin{sphinxadmonition}{note}{Exercise 10.4.18 (Fune con tensione)}
 
 
 
@@ -3000,7 +3102,7 @@ Una fune orizzontale lunga \(3,0 \, \text{m}\) sostiene un peso di \(50 \, \text
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-18}
 
-\begin{sphinxadmonition}{note}{Exercise 9.4.19 (Struttura con due travi)}
+\begin{sphinxadmonition}{note}{Exercise 10.4.19 (Struttura con due travi)}
 
 
 
@@ -3009,7 +3111,7 @@ Due travi di uguale lunghezza \(L = 4,0 \, \text{m}\) sono connesse ad angolo re
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-19}
 
-\begin{sphinxadmonition}{note}{Exercise 9.4.20 (Equilibrio di un ponte)}
+\begin{sphinxadmonition}{note}{Exercise 10.4.20 (Equilibrio di un ponte)}
 
 
 
@@ -3497,7 +3599,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-10 feb 2025
+14 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3630,7 +3732,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-10 feb 2025
+14 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3718,7 +3820,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-10 feb 2025
+14 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3874,7 +3976,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-10 feb 2025
+14 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -3935,7 +4037,7 @@ Questa pagina contiene esercizi sull’inerzia dei sistemi meccanici, con valuta
 \subsection{Punti Materiali}
 \label{\detokenize{ch/mechanics/inertia-problems:punti-materiali}}\phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 10.6.1 (Momento di Inerzia di un Punto)}
+\begin{sphinxadmonition}{note}{Exercise 11.6.1 (Momento di Inerzia di un Punto)}
 
 
 
@@ -3944,7 +4046,7 @@ Un punto materiale di massa \(m = 5 \, \text{kg}\) si trova a una distanza \(r =
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 10.6.2 (Energia Cinetica di un Punto in Rotazione)}
+\begin{sphinxadmonition}{note}{Exercise 11.6.2 (Energia Cinetica di un Punto in Rotazione)}
 
 
 
@@ -3953,7 +4055,7 @@ Un punto materiale di massa \(m = 5 \, \text{kg}\) è in rotazione attorno a un 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 10.6.3 (Impulso e Momento Angolare di un Punto)}
+\begin{sphinxadmonition}{note}{Exercise 11.6.3 (Impulso e Momento Angolare di un Punto)}
 
 
 
@@ -3962,7 +4064,7 @@ Un punto materiale di massa \(m = 3 \, \text{kg}\) si muove lungo una traiettori
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 10.6.4 (Legge di Conservazione del Momento Angolare)}
+\begin{sphinxadmonition}{note}{Exercise 11.6.4 (Legge di Conservazione del Momento Angolare)}
 
 
 
@@ -3971,7 +4073,7 @@ Un corpo di massa \(m = 2 \, \text{kg}\) ruota con velocità angolare \(\omega_1
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 10.6.5 (Energia Cinetica e Momento Angolare)}
+\begin{sphinxadmonition}{note}{Exercise 11.6.5 (Energia Cinetica e Momento Angolare)}
 
 
 
@@ -3987,7 +4089,7 @@ Un punto materiale di massa \(m = 2 \, \text{kg}\) ruota attorno a un asse con v
 \subsection{Sistemi di Punti Materiali}
 \label{\detokenize{ch/mechanics/inertia-problems:sistemi-di-punti-materiali}}\phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 10.6.6 (Momento di Inerzia di un Sistema di Punti)}
+\begin{sphinxadmonition}{note}{Exercise 11.6.6 (Momento di Inerzia di un Sistema di Punti)}
 
 
 
@@ -3996,7 +4098,7 @@ Tre masse, \(m_1 = 2 \, \text{kg}\), \(m_2 = 3 \, \text{kg}\), e \(m_3 = 4 \, \t
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 10.6.7 (Momento Angolare di un Sistema di Punti)}
+\begin{sphinxadmonition}{note}{Exercise 11.6.7 (Momento Angolare di un Sistema di Punti)}
 
 
 
@@ -4005,7 +4107,7 @@ Un sistema di tre masse, \(m_1 = 1 \, \text{kg}\), \(m_2 = 2 \, \text{kg}\), e \
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 10.6.8 (Energia Cinetica di un Sistema di Punti)}
+\begin{sphinxadmonition}{note}{Exercise 11.6.8 (Energia Cinetica di un Sistema di Punti)}
 
 
 
@@ -4014,7 +4116,7 @@ Un sistema di 4 masse, disposte lungo un’asse \(x\), ha masse \(m_1 = 2 \, \te
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 10.6.9 (Momento di Inerzia di un Sistema di Punti in Movimento)}
+\begin{sphinxadmonition}{note}{Exercise 11.6.9 (Momento di Inerzia di un Sistema di Punti in Movimento)}
 
 
 
@@ -4023,7 +4125,7 @@ Un sistema di masse \(m_1 = 3 \, \text{kg}\) e \(m_2 = 4 \, \text{kg}\) si muovo
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 10.6.10 (Teorema del Trasporto di Huygens)}
+\begin{sphinxadmonition}{note}{Exercise 11.6.10 (Teorema del Trasporto di Huygens)}
 
 
 
@@ -4039,7 +4141,7 @@ Un sistema di punti materiali con masse \(m_1 = 2 \, \text{kg}\), \(m_2 = 3 \, \
 \subsection{Sistemi con Distribuzione Continua di Massa}
 \label{\detokenize{ch/mechanics/inertia-problems:sistemi-con-distribuzione-continua-di-massa}}\phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 10.6.11 (Momento di Inerzia di un Disco)}
+\begin{sphinxadmonition}{note}{Exercise 11.6.11 (Momento di Inerzia di un Disco)}
 
 
 
@@ -4048,7 +4150,7 @@ Calcola il momento di inerzia di un disco di massa \(m = 10 \, \text{kg}\) e rag
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 10.6.12 (Energia Cinetica di un Disco in Rotazione)}
+\begin{sphinxadmonition}{note}{Exercise 11.6.12 (Energia Cinetica di un Disco in Rotazione)}
 
 
 
@@ -4057,7 +4159,7 @@ Un disco di massa \(m = 8 \, \text{kg}\) e raggio \(R = 4 \, \text{m}\) ruota co
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 10.6.13 (Momento Angolare di un Corpo Rigido)}
+\begin{sphinxadmonition}{note}{Exercise 11.6.13 (Momento Angolare di un Corpo Rigido)}
 
 
 
@@ -4066,7 +4168,7 @@ Un corpo rigido ruota attorno a un asse con velocità angolare \(\omega = 4 \, \
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 10.6.14 (Energia Cinetica di un Corpo Rigido in Rotazione e Traslazione)}
+\begin{sphinxadmonition}{note}{Exercise 11.6.14 (Energia Cinetica di un Corpo Rigido in Rotazione e Traslazione)}
 
 
 
@@ -4075,7 +4177,7 @@ Un corpo rigido di massa \(m = 5 \, \text{kg}\) e raggio \(r = 3 \, \text{m}\) s
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 10.6.15 (Momento di Inerzia di una Barra)}
+\begin{sphinxadmonition}{note}{Exercise 11.6.15 (Momento di Inerzia di una Barra)}
 
 
 
@@ -4084,7 +4186,7 @@ Calcola il momento di inerzia di una barra di lunghezza \(L = 2 \, \text{m}\) e 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-15}
 
-\begin{sphinxadmonition}{note}{Exercise 10.6.16 (Energia Cinetica di una Barra in Rotazione)}
+\begin{sphinxadmonition}{note}{Exercise 11.6.16 (Energia Cinetica di una Barra in Rotazione)}
 
 
 
@@ -4093,7 +4195,7 @@ Una barra di massa \(m = 3 \, \text{kg}\) e lunghezza \(L = 2 \, \text{m}\) ruot
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-16}
 
-\begin{sphinxadmonition}{note}{Exercise 10.6.17 (Momento di Inerzia di un Solido)}
+\begin{sphinxadmonition}{note}{Exercise 11.6.17 (Momento di Inerzia di un Solido)}
 
 
 
@@ -4102,7 +4204,7 @@ Calcola il momento di inerzia di un cilindro solido di massa \(m = 12 \, \text{k
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-17}
 
-\begin{sphinxadmonition}{note}{Exercise 10.6.18 (Teorema del Trasporto di Huygens Applicato a un Solido)}
+\begin{sphinxadmonition}{note}{Exercise 11.6.18 (Teorema del Trasporto di Huygens Applicato a un Solido)}
 
 
 
@@ -4111,7 +4213,7 @@ Un cilindro solido ruota con velocità angolare \(\omega = 4 \, \text{rad/s}\) a
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-18}
 
-\begin{sphinxadmonition}{note}{Exercise 10.6.19 (Momento di Inerzia di un Solido Sottile)}
+\begin{sphinxadmonition}{note}{Exercise 11.6.19 (Momento di Inerzia di un Solido Sottile)}
 
 
 
@@ -4120,7 +4222,7 @@ Un oggetto sottile e rigido di massa \(m = 6 \, \text{kg}\) e lunghezza \(L = 3 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-19}
 
-\begin{sphinxadmonition}{note}{Exercise 10.6.20 (Energia Cinetica di un Corpo Rotante)}
+\begin{sphinxadmonition}{note}{Exercise 11.6.20 (Energia Cinetica di un Corpo Rotante)}
 
 
 
@@ -4168,7 +4270,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-11 feb 2025
+14 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -4467,7 +4569,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-10 feb 2025
+14 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -4537,7 +4639,7 @@ L’equazione di bilancio del momento della quantità di moto di un sistema chiu
   \vec{M}_H^{ext} = \vec{0} \ , \quad \dot{\vec{x}}_H \times \vec{Q} = \vec{0} \qquad  \rightarrow \qquad \vec{L}_H = \text{const.}
 \end{split}
 \end{equation*}\label{ch/mechanics/dynamics-conservation:mechanics:dynamics:dancer}
-\begin{sphinxadmonition}{note}{Example 11.3.1 (Rotazione di una ballerina)}
+\begin{sphinxadmonition}{note}{Example 12.3.1 (Rotazione di una ballerina)}
 
 
 \end{sphinxadmonition}
@@ -4569,7 +4671,7 @@ In questa sezione si presentano i bilanci di massa, quantità di moto e energia 
 
 \subsection{Esempi}
 \label{\detokenize{ch/mechanics/dynamics-eom-open:esempi}}\label{ch/mechanics/dynamics-eom-open:mechanics:dynamics:open:ex:boat}
-\begin{sphinxadmonition}{note}{Example 11.4.1 (Sistemi discreti \sphinxhyphen{} Moto di una barca per reazione)}
+\begin{sphinxadmonition}{note}{Example 12.4.1 (Sistemi discreti \sphinxhyphen{} Moto di una barca per reazione)}
 
 
 
@@ -4628,7 +4730,7 @@ La velocità \(v_{n+1}\) può quindi essere riportata alla velocità \(v_0\) som
 \begin{split}\vec{v}_{n+1} - \vec{v}_n = \frac{m}{M_{n+1}} \vec{v}_p^{rel} \ .\end{split}
 \end{equation*}\end{sphinxadmonition}
 \label{ch/mechanics/dynamics-eom-open:mechanics:dynamics:open:ex:carousel}
-\begin{sphinxadmonition}{note}{Example 11.4.2 (Sistemi discreti \sphinxhyphen{} Moto di una giostra per reazione)}
+\begin{sphinxadmonition}{note}{Example 12.4.2 (Sistemi discreti \sphinxhyphen{} Moto di una giostra per reazione)}
 
 
 
@@ -4672,7 +4774,7 @@ per ricavare una relazione che lega la variazione di velocità angolare alla var
 essendo \(I = I_0 + N m R^2\) l’inerzia iniziale dell’intero sistema.
 \end{sphinxadmonition}
 \label{ch/mechanics/dynamics-eom-open:mechanics:dynamics:open:ex:rockets}
-\begin{sphinxadmonition}{note}{Example 11.4.3 (Sistemi continui \sphinxhyphen{} Equazione della spinta per i razzi \sphinxhyphen{} Tsiolkovski)}
+\begin{sphinxadmonition}{note}{Example 12.4.3 (Sistemi continui \sphinxhyphen{} Equazione della spinta per i razzi \sphinxhyphen{} Tsiolkovski)}
 
 
 
@@ -5740,7 +5842,7 @@ che prende il nome di \sphinxstylestrong{costante di gravitazione universale}.
 \sphinxAtStartPar
 Le equazioni della dinamica e la legge di gravitazione universale da lui formulate, permise a Newton di dimostrare le \sphinxstylestrong{tre leggi di Keplero} che descrivono il moto \sphinxstyleemphasis{limitato} (\sphinxstylestrong{todo} \sphinxstyleemphasis{trovare sinonimo}) di due corpi celesti, come ad esempio il moto di un pianeta rispetto al Sole, o il moto di un satellite rispetto al pianeta di riferimento.
 \label{ch/mechanics/dynamics-motion-gravitation:definition-0}
-\begin{sphinxadmonition}{note}{Definition 11.6.1 (Prima legge di Keplero)}
+\begin{sphinxadmonition}{note}{Definition 12.6.1 (Prima legge di Keplero)}
 
 
 
@@ -5748,7 +5850,7 @@ Le equazioni della dinamica e la legge di gravitazione universale da lui formula
 Il moto di un pianeta rispetto al Sole descrive una traiettoria ellittica, e il Sole si trova in uno dei suoi fuochi.
 \end{sphinxadmonition}
 \label{ch/mechanics/dynamics-motion-gravitation:definition-1}
-\begin{sphinxadmonition}{note}{Definition 11.6.2 (Seconda legge di Keplero)}
+\begin{sphinxadmonition}{note}{Definition 12.6.2 (Seconda legge di Keplero)}
 
 
 
@@ -5756,7 +5858,7 @@ Il moto di un pianeta rispetto al Sole descrive una traiettoria ellittica, e il 
 Il moto di un pianeta rispetto al Sole ha una velocità areolare costante.
 \end{sphinxadmonition}
 \label{ch/mechanics/dynamics-motion-gravitation:definition-2}
-\begin{sphinxadmonition}{note}{Definition 11.6.3 (Prima legge di Keplero)}
+\begin{sphinxadmonition}{note}{Definition 12.6.3 (Prima legge di Keplero)}
 
 
 
@@ -6238,7 +6340,7 @@ Questa pagina contiene esercizi di dinamica relativi a diversi argomenti: \sphin
 \subsection{Moto di un punto materiale}
 \label{\detokenize{ch/mechanics/dynamics-problems:moto-di-un-punto-materiale}}\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.1 (Accelerazione costante)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.1 (Accelerazione costante)}
 
 
 
@@ -6247,7 +6349,7 @@ Un punto materiale parte da fermo e si muove con un’accelerazione costante di 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.2 (Moto uniformemente accelerato)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.2 (Moto uniformemente accelerato)}
 
 
 
@@ -6256,7 +6358,7 @@ Un’auto si muove inizialmente a \(20 \, \text{m/s}\). Dopo \(5 \, \text{s}\), 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.3 (Caduta libera)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.3 (Caduta libera)}
 
 
 
@@ -6265,7 +6367,7 @@ Un oggetto viene lasciato cadere da un’altezza di \(80 \, \text{m}\). Calcola 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.4 (Velocità angolare)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.4 (Velocità angolare)}
 
 
 
@@ -6274,7 +6376,7 @@ Un punto materiale si muove lungo una circonferenza di raggio \(2 \, \text{m}\) 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.5 (Moto su piano inclinato)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.5 (Moto su piano inclinato)}
 
 
 
@@ -6290,7 +6392,7 @@ Un blocco di \(5 \, \text{kg}\) scivola senza attrito lungo un piano inclinato d
 \subsection{Moto di sistemi di punti materiali}
 \label{\detokenize{ch/mechanics/dynamics-problems:moto-di-sistemi-di-punti-materiali}}\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.6 (Centro di massa in movimento)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.6 (Centro di massa in movimento)}
 
 
 
@@ -6299,7 +6401,7 @@ Due masse, \(m_1 = 2 \, \text{kg}\) e \(m_2 = 6 \, \text{kg}\), si muovono lungo
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.7 (Trazione su una fune)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.7 (Trazione su una fune)}
 
 
 
@@ -6308,7 +6410,7 @@ Due blocchi, \(m_1 = 10 \, \text{kg}\) e \(m_2 = 5 \, \text{kg}\), sono collegat
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.8 (Impulso e quantità di moto)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.8 (Impulso e quantità di moto)}
 
 
 
@@ -6317,7 +6419,7 @@ Un corpo di massa \(3 \, \text{kg}\) si muove con velocità \(4 \, \text{m/s}\).
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.9 (Centro di massa e forze)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.9 (Centro di massa e forze)}
 
 
 
@@ -6326,7 +6428,7 @@ Un sistema è composto da due blocchi di masse \(m_1 = 5 \, \text{kg}\) e \(m_2 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.10 (Sistema in caduta)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.10 (Sistema in caduta)}
 
 
 
@@ -6342,7 +6444,7 @@ Due blocchi di masse \(m_1 = 8 \, \text{kg}\) e \(m_2 = 12 \, \text{kg}\) sono c
 \subsection{Moto di corpi rigidi in 2D}
 \label{\detokenize{ch/mechanics/dynamics-problems:moto-di-corpi-rigidi-in-2d}}\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.11 (Disco in rotazione)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.11 (Disco in rotazione)}
 
 
 
@@ -6351,7 +6453,7 @@ Un disco di raggio \(0,5 \, \text{m}\) e momento d’inerzia \(I = 0,2 \, \text{
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.12 (Asta rotante)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.12 (Asta rotante)}
 
 
 
@@ -6360,7 +6462,7 @@ Un’asta uniforme di lunghezza \(2,0 \, \text{m}\) e massa \(10 \, \text{kg}\) 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.13 (Rotolamento di una sfera)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.13 (Rotolamento di una sfera)}
 
 
 
@@ -6369,7 +6471,7 @@ Una sfera di raggio \(0,2 \, \text{m}\) e massa \(5 \, \text{kg}\) rotola senza 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.14 (Bilanciamento di un’asta)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.14 (Bilanciamento di un’asta)}
 
 
 
@@ -6378,7 +6480,7 @@ Un’asta di lunghezza \(3,0 \, \text{m}\) e massa \(6 \, \text{kg}\) è appoggi
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.15 (Energia cinetica rotazionale)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.15 (Energia cinetica rotazionale)}
 
 
 
@@ -6394,7 +6496,7 @@ Un disco di massa \(4,0 \, \text{kg}\) e raggio \(0,3 \, \text{m}\) ruota con ve
 \subsection{Collisioni}
 \label{\detokenize{ch/mechanics/dynamics-problems:collisioni}}\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-15}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.16 (Urto elastico)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.16 (Urto elastico)}
 
 
 
@@ -6403,7 +6505,7 @@ Una massa \(m_1 = 2,0 \, \text{kg}\), inizialmente ferma, viene urtata da una ma
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-16}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.17 (Urto completamente anelastico)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.17 (Urto completamente anelastico)}
 
 
 
@@ -6412,7 +6514,7 @@ Due blocchi di masse \(3,0 \, \text{kg}\) e \(2,0 \, \text{kg}\) si muovono risp
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-17}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.18 (Energia persa nell’urto)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.18 (Energia persa nell’urto)}
 
 
 
@@ -6421,7 +6523,7 @@ Due sfere di massa uguale \(m = 1,0 \, \text{kg}\) si scontrano frontalmente con
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-18}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.19 (Urto su un piano inclinato)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.19 (Urto su un piano inclinato)}
 
 
 
@@ -6430,7 +6532,7 @@ Una pallina di massa \(0,5 \, \text{kg}\) rotola lungo un piano inclinato e colp
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-19}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.20 (Velocità del centro di massa dopo un urto)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.20 (Velocità del centro di massa dopo un urto)}
 
 
 
@@ -6446,7 +6548,7 @@ Due oggetti, \(m_1 = 4,0 \, \text{kg}\) e \(m_2 = 2,0 \, \text{kg}\), si muovono
 \subsection{Gravitazione}
 \label{\detokenize{ch/mechanics/dynamics-problems:gravitazione}}\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-20}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.21 (Legge di gravitazione)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.21 (Legge di gravitazione)}
 
 
 
@@ -6455,7 +6557,7 @@ Due masse \(m_1 = 5,0 \, \text{kg}\) e \(m_2 = 10,0 \, \text{kg}\) si trovano a 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-21}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.22 (Orbita di un satellite)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.22 (Orbita di un satellite)}
 
 
 
@@ -6464,7 +6566,7 @@ Un satellite di massa \(1.000 \, \text{kg}\) si trova in un’orbita circolare a
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-22}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.23 (Terza legge di Kepler)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.23 (Terza legge di Kepler)}
 
 
 
@@ -6473,7 +6575,7 @@ Un pianeta ha un’orbita ellittica con un periodo di \(365 \, \text{giorni}\). 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-23}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.24 (Forza centripeta in orbita)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.24 (Forza centripeta in orbita)}
 
 
 
@@ -6482,7 +6584,7 @@ Una navetta spaziale di massa \(500 \, \text{kg}\) è in orbita circolare attorn
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-24}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.25 (Satelliti in orbita geostazionaria)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.25 (Satelliti in orbita geostazionaria)}
 
 
 
@@ -6491,7 +6593,7 @@ Calcola l’altitudine di un satellite che segue un’orbita geostazionaria, cio
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-25}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.26 (Energia potenziale gravitazionale)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.26 (Energia potenziale gravitazionale)}
 
 
 
@@ -6500,7 +6602,7 @@ Calcola l’energia potenziale gravitazionale di un oggetto di \(2,0 \, \text{kg
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-26}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.27 (Energia cinetica di un satellite)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.27 (Energia cinetica di un satellite)}
 
 
 
@@ -6509,7 +6611,7 @@ Un satellite di massa \(3,0 \, \text{kg}\) si muove in orbita circolare con ragg
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-27}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.28 (Periodo di un satellite)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.28 (Periodo di un satellite)}
 
 
 
@@ -6525,7 +6627,7 @@ Un satellite è in orbita circolare a \(200 \, \text{km}\) sopra la superficie t
 \subsection{Equilibrio e Stabilità}
 \label{\detokenize{ch/mechanics/dynamics-problems:equilibrio-e-stabilita}}\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-28}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.29 (Stabilità di un oggetto)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.29 (Stabilità di un oggetto)}
 
 
 
@@ -6534,7 +6636,7 @@ Un cubo uniforme di massa \(10 \, \text{kg}\) e lato \(0,5 \, \text{m}\) è appo
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-29}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.30 (Momento torcenti in equilibrio)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.30 (Momento torcenti in equilibrio)}
 
 
 
@@ -6543,7 +6645,7 @@ Un’asta di massa \(5 \, \text{kg}\) e lunghezza \(2 \, \text{m}\) è sospesa a
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-30}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.31 (Centro di massa e stabilità)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.31 (Centro di massa e stabilità)}
 
 
 
@@ -6552,7 +6654,7 @@ Un oggetto composto da due blocchi di massa \(2 \, \text{kg}\) e \(5 \, \text{kg
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-31}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.32 (Equilibrio di un corpo galleggiante)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.32 (Equilibrio di un corpo galleggiante)}
 
 
 
@@ -6561,7 +6663,7 @@ Un oggetto con densità \(800 \, \text{kg/m}^3\) galleggia in un fluido di densi
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-32}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.33 (Equilibrio di una leva)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.33 (Equilibrio di una leva)}
 
 
 
@@ -6570,7 +6672,7 @@ Una leva lunga \(3 \, \text{m}\) ha un punto di supporto al centro. A sinistra d
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-33}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.34 (Stabilità di una torre)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.34 (Stabilità di una torre)}
 
 
 
@@ -6579,7 +6681,7 @@ Una torre alta \(100 \, \text{m}\) ha una base quadrata di \(10 \, \text{m}\) pe
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-34}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.35 (Equilibrio di una trave)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.35 (Equilibrio di una trave)}
 
 
 
@@ -6588,7 +6690,7 @@ Una trave di \(10 \, \text{m}\) di lunghezza e massa \(20 \, \text{kg}\) è appo
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-35}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.36 (Momenti di forze in equilibrio)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.36 (Momenti di forze in equilibrio)}
 
 
 
@@ -6597,7 +6699,7 @@ Un’asta di \(2 \, \text{m}\) è sospesa a un’estremità. Un peso di \(40 \, 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-36}
 
-\begin{sphinxadmonition}{note}{Exercise 11.8.37 (Instabilità di un corpo)}
+\begin{sphinxadmonition}{note}{Exercise 12.8.37 (Instabilità di un corpo)}
 
 
 
@@ -7297,7 +7399,7 @@ La misura del volume \(V_{gas}\) occupato dal gas è immediata. Lo svolgimento d
 Usando il mercurio come liquido, \(\text{Hg}\), e partendo da una condizione di riferimento a pressione ambiente in cui il volume occupato dal gas è \(V_0\), si osserva che a una differenza della quota delle colonnine \(\Delta h = n \cdot 760 \, \text{mm}\) corrisponde un volume \(\frac{V}{1+n}\).
 \phantomsection \label{exercise:ch/thermodynamics/foundation-experiments-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 13.2.1}
+\begin{sphinxadmonition}{note}{Exercise 14.2.1}
 
 
 \end{sphinxadmonition}
@@ -7446,7 +7548,7 @@ Evaporazione ed ebollizione dell’acqua in funzione della pressione. Quanto cam
 
 
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:th-expansion:gravesande}
-\begin{sphinxadmonition}{note}{Example 13.2.1 (Anello di Gravesande)}
+\begin{sphinxadmonition}{note}{Example 14.2.1 (Anello di Gravesande)}
 
 
 
@@ -7457,17 +7559,17 @@ L’anello di Gravesande è un esperimento di fisica ideato dal fisico olandese 
 La {\hyperref[\detokenize{ch/thermodynamics/elastic-solid-1d:physics-hs-thermodynamics-matter-elastic-1d-dilation}]{\sphinxcrossref{\DUrole{std,std-ref}{dilatazione termica di un solido}}}} può essere descritta con i coefficienti di dilatazione.
 \end{sphinxadmonition}
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:th-expansion:junctions}
-\begin{sphinxadmonition}{note}{Example 13.2.2 (Giunzione binari e ponti)}
+\begin{sphinxadmonition}{note}{Example 14.2.2 (Giunzione binari e ponti)}
 
 
 \end{sphinxadmonition}
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:th-expansion:pendulum}
-\begin{sphinxadmonition}{note}{Example 13.2.3 (Pendolo)}
+\begin{sphinxadmonition}{note}{Example 14.2.3 (Pendolo)}
 
 
 \end{sphinxadmonition}
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:th-exapnsion:interference}
-\begin{sphinxadmonition}{note}{Example 13.2.4 (Calettamento)}
+\begin{sphinxadmonition}{note}{Example 14.2.4 (Calettamento)}
 
 
 \end{sphinxadmonition}
@@ -7577,7 +7679,7 @@ Viene definito \sphinxstylestrong{calore latente di fusione} il coefficiente \(L
 
 \end{itemize}
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:heat-capacity:1}
-\begin{sphinxadmonition}{note}{Example 13.2.5}
+\begin{sphinxadmonition}{note}{Example 14.2.5}
 
 
 
@@ -7588,7 +7690,7 @@ Si mescolano due masse uguali di acqua inizialmente a temperatura \(T_1 = 20 \te
 Successivamente si ripete l’esperimento, mescolando una massa di acqua a temperatura \(T_1\) doppia rispetto alla massa di acqua a \(T_2\).
 \end{sphinxadmonition}
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:heat-capacity:2}
-\begin{sphinxadmonition}{note}{Example 13.2.6}
+\begin{sphinxadmonition}{note}{Example 14.2.6}
 
 
 
@@ -7596,7 +7698,7 @@ Successivamente si ripete l’esperimento, mescolando una massa di acqua a tempe
 Mescolando una massa uguale di due sostanze inizialmente a temperatura \(T_1\)  e \(T_2\), dopo aver misurato la temperatura di equilibrio \(T_e\), si chiede di determinare il rapporto tra i loro calori specifici nelle condizioni di prova.
 \end{sphinxadmonition}
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:heat-capacity:3}
-\begin{sphinxadmonition}{note}{Example 13.2.7}
+\begin{sphinxadmonition}{note}{Example 14.2.7}
 
 
 
@@ -7604,7 +7706,7 @@ Mescolando una massa uguale di due sostanze inizialmente a temperatura \(T_1\)  
 Mescolando una massa uguale di due sostanze inizialmente a temperatura \(T_1\)  e \(T_2\), dopo aver misurato la temperatura di equilibrio \(T_e\), si chiede di determinare il rapporto tra i loro calori specifici nelle condizioni di prova.
 \end{sphinxadmonition}
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:heat-capacity:4}
-\begin{sphinxadmonition}{note}{Example 13.2.8}
+\begin{sphinxadmonition}{note}{Example 14.2.8}
 
 
 
@@ -7612,7 +7714,7 @@ Mescolando una massa uguale di due sostanze inizialmente a temperatura \(T_1\)  
 Un sistema contente una massa \(m_1\) di acqua inizialmente a \(T_1\) gradi viene messo a contatto con un sistema contentente una massa \(m_2\) di ghiaccio a \(T_2 = \text{°C}\) a pressione ambiente. La condizione iniziale del sistema 1 non è sufficiente a far sciogliere l’intera massa di ghiaccio ma solo \(m_{2,l} < m_2\). L’equilibrio tra i due sistemi viene quidi raggiunto a temperatura \(T=0 \text{°C}\). Si chiede di determinare il rapporto tra il calore latente di fusione e il calore specifico dell’acqua.
 \end{sphinxadmonition}
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:heat-capacity:unit}
-\begin{sphinxadmonition}{note}{Example 13.2.9 (Caloria come unità di misura del calore \sphinxhyphen{} N.Clément)}
+\begin{sphinxadmonition}{note}{Example 14.2.9 (Caloria come unità di misura del calore \sphinxhyphen{} N.Clément)}
 
 
 
@@ -7696,7 +7798,7 @@ i lavori sull’equivalenza tra calore e lavoro conducono alla formulazione del 
 
 \end{itemize}
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:heat-work:joule}
-\begin{sphinxadmonition}{note}{Example 13.2.10 (Equivalenza calore\sphinxhyphen{}lavoro \sphinxhyphen{} Esperienza di Joule)}
+\begin{sphinxadmonition}{note}{Example 14.2.10 (Equivalenza calore\sphinxhyphen{}lavoro \sphinxhyphen{} Esperienza di Joule)}
 
 
 
@@ -7718,7 +7820,7 @@ Questa osservazione, opportunamente verificata tramite il metodo scientifico, pe
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:heat-work:second}
-\begin{sphinxadmonition}{note}{Example 13.2.11 (Non\sphinxhyphen{}equivalenza calore\sphinxhyphen{}lavoro \sphinxhyphen{} verso il secondo principio della termodinamica)}
+\begin{sphinxadmonition}{note}{Example 14.2.11 (Non\sphinxhyphen{}equivalenza calore\sphinxhyphen{}lavoro \sphinxhyphen{} verso il secondo principio della termodinamica)}
 
 
 
@@ -8328,7 +8430,7 @@ Refrigerazione evaporativa tramite evaporazione del sudore sulla pelle
 \subsubsection{Manometro di Torricelli e Leggi dei Gas}
 \label{\detokenize{ch/thermodynamics/foundation-problems:manometro-di-torricelli-e-leggi-dei-gas}}\phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.1 (Manometro di Torricelli)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.1 (Manometro di Torricelli)}
 
 
 
@@ -8337,7 +8439,7 @@ Un manometro di Torricelli è utilizzato per misurare la pressione di un gas in 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.2 (Legge di Boyle)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.2 (Legge di Boyle)}
 
 
 
@@ -8346,7 +8448,7 @@ Un gas ideale occupa un volume di \(V_1 = 10 \, \text{L}\) a una pressione di \(
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.3 (Legge di Boyle in Una Sfera)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.3 (Legge di Boyle in Una Sfera)}
 
 
 
@@ -8358,7 +8460,7 @@ Un gas è contenuto in un recipiente a forma di sfera con raggio \(r = 0.1 \, \t
 \subsection{Dilatazione Termica}
 \label{\detokenize{ch/thermodynamics/foundation-problems:dilatazione-termica}}\phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.4 (Dilatazione Lineare)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.4 (Dilatazione Lineare)}
 
 
 
@@ -8367,7 +8469,7 @@ Un filo di metallo ha una lunghezza iniziale di \(L_0 = 2 \, \text{m}\) a una te
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.5 (Dilatazione Volumetrica)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.5 (Dilatazione Volumetrica)}
 
 
 
@@ -8376,7 +8478,7 @@ Un cubo di metallo ha un volume iniziale di \(V_0 = 1 \, \text{m}^3\) a una temp
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.6 (Dilatazione Termica di un Corpo Sferico)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.6 (Dilatazione Termica di un Corpo Sferico)}
 
 
 
@@ -8388,7 +8490,7 @@ Una sfera di alluminio ha un raggio iniziale di \(r_0 = 5 \, \text{cm}\) a tempe
 \subsection{Scale di Temperatura}
 \label{\detokenize{ch/thermodynamics/foundation-problems:scale-di-temperatura}}\phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.7 (Convergenza delle Scale di Temperatura)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.7 (Convergenza delle Scale di Temperatura)}
 
 
 
@@ -8397,7 +8499,7 @@ Una temperatura di \(25^\circ \text{C}\) è riportata in due scale diverse: quel
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.8 (Conversione tra Scale di Temperatura)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.8 (Conversione tra Scale di Temperatura)}
 
 
 
@@ -8406,7 +8508,7 @@ Una temperatura di \(300 \, \text{K}\) è espressa in Kelvin. Converti questa te
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.9 (Temperatura Assoluta)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.9 (Temperatura Assoluta)}
 
 
 
@@ -8418,7 +8520,7 @@ La temperatura di un corpo è di \(T = 50^\circ \text{C}\). Calcola la temperatu
 \subsection{Calorimetria}
 \label{\detokenize{ch/thermodynamics/foundation-problems:id1}}\phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.10 (Calore Assorbito da un Corpo Solido)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.10 (Calore Assorbito da un Corpo Solido)}
 
 
 
@@ -8427,7 +8529,7 @@ Un blocco di rame di massa \(m = 2 \, \text{kg}\) viene riscaldato da \(T_1 = 20
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.11 (Calorimetria per un Corpo di Ferro)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.11 (Calorimetria per un Corpo di Ferro)}
 
 
 
@@ -8436,7 +8538,7 @@ Un corpo di ferro di massa \(m = 5 \, \text{kg}\) viene riscaldato da \(T_1 = 25
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.12 (Calore Assorbito da un Corpo di Acqua)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.12 (Calore Assorbito da un Corpo di Acqua)}
 
 
 
@@ -8445,7 +8547,7 @@ Un recipiente contiene \(1 \, \text{kg}\) di acqua inizialmente a \(T_1 = 15^\ci
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.13 (Fusione di un Corpo Solido)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.13 (Fusione di un Corpo Solido)}
 
 
 
@@ -8454,7 +8556,7 @@ Un corpo solido di ghiaccio di massa \(m = 500 \, \text{g}\) a temperatura \(T =
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.14 (Vaporizzazione dell’Acqua)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.14 (Vaporizzazione dell’Acqua)}
 
 
 
@@ -8463,7 +8565,7 @@ Una quantità di acqua liquida di massa \(m = 1 \, \text{kg}\) è riscaldata da 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.15 (Riscaldamento e Vaporizzazione di Ghiaccio)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.15 (Riscaldamento e Vaporizzazione di Ghiaccio)}
 
 
 
@@ -8475,7 +8577,7 @@ Un blocco di ghiaccio di massa \(m = 200 \, \text{g}\) è riscaldato fino a \(10
 \subsection{Equivalenza Calore\sphinxhyphen{}Lavoro (Joule)}
 \label{\detokenize{ch/thermodynamics/foundation-problems:equivalenza-calore-lavoro-joule}}\phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-15}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.16 (Equivalenza Calore\sphinxhyphen{}Lavoro)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.16 (Equivalenza Calore\sphinxhyphen{}Lavoro)}
 
 
 
@@ -8484,7 +8586,7 @@ Un dispositivo elettrico riscalda un filo conduttore, generando un aumento di te
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-16}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.17 (Energia Interna e Lavoro)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.17 (Energia Interna e Lavoro)}
 
 
 
@@ -8493,7 +8595,7 @@ Un gas ideale compie una trasformazione isobara. Se il volume del gas aumenta da
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-17}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.18 (Efficienza di una Macchina Termica)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.18 (Efficienza di una Macchina Termica)}
 
 
 
@@ -8502,7 +8604,7 @@ Una macchina termica compie un ciclo Carnot tra due serbatoi di calore, uno a \(
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-18}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.19 (Riscaldamento di un Gas Ideale)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.19 (Riscaldamento di un Gas Ideale)}
 
 
 
@@ -8511,7 +8613,7 @@ Un gas ideale subisce una trasformazione adiabatica. Se il volume iniziale è \(
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-19}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.20 (Calore Specifico di un Gas Ideale)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.20 (Calore Specifico di un Gas Ideale)}
 
 
 
@@ -8520,7 +8622,7 @@ Un gas ideale monoatomico viene riscaldato da \(T_1 = 20^\circ \text{C}\) a \(T_
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-20}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.21 (Lavoro in un Ciclo di Carnot)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.21 (Lavoro in un Ciclo di Carnot)}
 
 
 
@@ -8529,7 +8631,7 @@ In un ciclo di Carnot, una macchina termica prende calore da una sorgente a \(T_
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/foundation-problems-exercise-21}
 
-\begin{sphinxadmonition}{note}{Exercise 13.5.22 (Conversione di Energia Elettrica in Calore)}
+\begin{sphinxadmonition}{note}{Exercise 14.5.22 (Conversione di Energia Elettrica in Calore)}
 
 
 
@@ -8631,7 +8733,7 @@ Seguendo il lavoro di Gibbs, in questa sezione vengono introdotti alcuni concett
 
 \subsection{Variabili di stato}
 \label{\detokenize{ch/thermodynamics/principles-gibbs-phase-rule:variabili-di-stato}}\label{\detokenize{ch/thermodynamics/principles-gibbs-phase-rule:physics-hs-thermodynamics-foundation-principles-gibbs-phase-rule-state-vars}}\label{ch/thermodynamics/principles-gibbs-phase-rule:definition-0}
-\begin{sphinxadmonition}{note}{Definition 14.3.1 (Variabile di stato)}
+\begin{sphinxadmonition}{note}{Definition 15.3.1 (Variabile di stato)}
 
 
 
@@ -8639,7 +8741,7 @@ Seguendo il lavoro di Gibbs, in questa sezione vengono introdotti alcuni concett
 Una variabile di stato di un sistema è una proprietà fisica del sistema che dipende esclusivamente dallo stato corrente del sistema.
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-1}
-\begin{sphinxadmonition}{note}{Example 14.3.1 (Variabili di stato e non)}
+\begin{sphinxadmonition}{note}{Example 15.3.1 (Variabili di stato e non)}
 
 
 
@@ -8651,7 +8753,7 @@ Non sono variabili di stato il lavoro o il calore scambiato dal sistema. \sphinx
 
 \subsection{Energia interna}
 \label{\detokenize{ch/thermodynamics/principles-gibbs-phase-rule:energia-interna}}\label{\detokenize{ch/thermodynamics/principles-gibbs-phase-rule:physics-hs-thermodynamics-foundation-principles-gibbs-phase-rule-internal-energy}}\label{ch/thermodynamics/principles-gibbs-phase-rule:definition-2}
-\begin{sphinxadmonition}{note}{Definition 14.3.2 (Energia interna)}
+\begin{sphinxadmonition}{note}{Definition 15.3.2 (Energia interna)}
 
 
 
@@ -8677,7 +8779,7 @@ Il bilancio dell’energia interna per un sistema chiuso diventa quindi
 
 \subsection{Regola delle fasi di Gibbs}
 \label{\detokenize{ch/thermodynamics/principles-gibbs-phase-rule:regola-delle-fasi-di-gibbs}}\label{\detokenize{ch/thermodynamics/principles-gibbs-phase-rule:physics-hs-thermodynamics-foundation-principles-gibbs-phase-rule-gibbs-phase-rule}}\label{ch/thermodynamics/principles-gibbs-phase-rule:definition-3}
-\begin{sphinxadmonition}{note}{Definition 14.3.3 (Fase)}
+\begin{sphinxadmonition}{note}{Definition 15.3.3 (Fase)}
 
 
 
@@ -8698,7 +8800,7 @@ esempi: miscela di gas miscibili costituisce una fase sola, nella quale non è p
 
 \end{itemize}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:proposition-4}
-\begin{sphinxadmonition}{note}{Proposition 14.3.1 (Regola delle fasi di Gibbs)}
+\begin{sphinxadmonition}{note}{Proposition 15.3.1 (Regola delle fasi di Gibbs)}
 
 
 
@@ -8772,7 +8874,7 @@ discutere il ruolo delle frazioni di fase di un singolo componente e il fatto ch
 
 \end{itemize}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-5}
-\begin{sphinxadmonition}{note}{Example 14.3.2 (Sistema chiuso contentente un monocomponente (o non\sphinxhyphen{}reagente), monofase, elettricamente neutro (o non\sphinxhyphen{}soggetto a campo elettromagnetico))}
+\begin{sphinxadmonition}{note}{Example 15.3.2 (Sistema chiuso contentente un monocomponente (o non\sphinxhyphen{}reagente), monofase, elettricamente neutro (o non\sphinxhyphen{}soggetto a campo elettromagnetico))}
 
 
 
@@ -8785,7 +8887,7 @@ In un sistema composto da un gas comprimibile, monocomponente e monofase (gassos
 variabili di stato per definire lo stato del sistema.
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-6}
-\begin{sphinxadmonition}{note}{Example 14.3.3 (Sistema aperto contentente un monocomponente (o non\sphinxhyphen{}reagente), monofase, elettricamente neutro (o non\sphinxhyphen{}soggetto a campo elettromagnetico))}
+\begin{sphinxadmonition}{note}{Example 15.3.3 (Sistema aperto contentente un monocomponente (o non\sphinxhyphen{}reagente), monofase, elettricamente neutro (o non\sphinxhyphen{}soggetto a campo elettromagnetico))}
 
 
 
@@ -8793,7 +8895,7 @@ variabili di stato per definire lo stato del sistema.
 In un sistema aperto, la variazione di energia del sistema dipende anche dalla variazione della quantità di gas contenuto in esso. Quindi, in generale esistono \(W = 2\) modi per far variare l’eneergia del sistema: tramite il lavoro di compressione, o tramite un flusso di materia all’interno del sistema. Servono quindi \(F=3\) variabili di stato per definire lo stato del sistema.
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-7}
-\begin{sphinxadmonition}{note}{Example 14.3.4 (Miscela reattiva di gas in un sistema chiuso)}
+\begin{sphinxadmonition}{note}{Example 15.3.4 (Miscela reattiva di gas in un sistema chiuso)}
 
 
 
@@ -8814,7 +8916,7 @@ l’energia del sistema dipende dal lavoro meccanico di compressione della misce
 La reazione è quindi determinata da 1 solo parametro. La variazione di energia del sistema è quindi determinata da \(W=2\) processi: dal lavoro di compressione fatto sul sistema, e dallo stato della reazione. Per determinare lo stato del sistema servono quindi \(F=3\) variabili di stato indipendenti, come ad esempio \sphinxstylestrong{todo} \(T\), \(P\), \(n_A\)? Non servono i potenziali chimici \(\mu_A\), \(\mu_B\), \(\mu_{A_a B_b}\)? Sono unicamente determinati?
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-8}
-\begin{sphinxadmonition}{note}{Example 14.3.5 (Sistema monocomponente durante una transizione di fase)}
+\begin{sphinxadmonition}{note}{Example 15.3.5 (Sistema monocomponente durante una transizione di fase)}
 
 
 
@@ -8830,7 +8932,7 @@ variabile di stato.
 \sphinxstylestrong{Punto critico.} Il punto critico nel piano delle fasi di un sistema mono\sphinxhyphen{}componente definisce la condizione in cui sono simultaneamente presenti nel sistema \(P = 3\) fasi. Secondo la regola delle fasi di Gibbs, lo stato del sistema è determinato da \(F = 0\) variabili di stato: lo stato del sistema nel punto critico è univocamente definito, senza alcun grado di libertà.
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-9}
-\begin{sphinxadmonition}{note}{Example 14.3.6 (Solido)}
+\begin{sphinxadmonition}{note}{Example 15.3.6 (Solido)}
 
 
 
@@ -8838,7 +8940,7 @@ variabile di stato.
 In assenza di altri fenomeni fisici, l’unica forma di lavoro in un solido è quella legata al lavoro di deformazione, \(\delta L^{int,rev} = \sigma_{ij} \, d \varepsilon_{ij} dV\). Il tensore di deformazione è del secondo ordine e simmetrico, e ha quindi 6 componenti indipendenti nello spazio 3\sphinxhyphen{}dimensionale, e quindi \(W=6\)
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-10}
-\begin{sphinxadmonition}{note}{Example 14.3.7 (Miscele solide)}
+\begin{sphinxadmonition}{note}{Example 15.3.7 (Miscele solide)}
 
 
 \begin{itemize}
@@ -8849,7 +8951,7 @@ Fasi nelle miscele solide \sphinxstylestrong{todo}
 \end{itemize}
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-11}
-\begin{sphinxadmonition}{note}{Example 14.3.8 (Influenza del campo elettromagnetico)}
+\begin{sphinxadmonition}{note}{Example 15.3.8 (Influenza del campo elettromagnetico)}
 
 
 \begin{itemize}
@@ -8981,7 +9083,7 @@ con \(\vec{e}\), \(\vec{h}\) campi elettrico e magnetico, \(\vec{p}\), \(\vec{m}
 
 \end{itemize}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-12}
-\begin{sphinxadmonition}{note}{Example 14.3.9 (Sistema gassoso chiuso monocomponente)}
+\begin{sphinxadmonition}{note}{Example 15.3.9 (Sistema gassoso chiuso monocomponente)}
 
 
 
@@ -8991,7 +9093,7 @@ L’energia del sistema, \(E(S,V)\)
 \begin{split}dE = T \, dS - P \, dV\end{split}
 \end{equation*}\end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-13}
-\begin{sphinxadmonition}{note}{Example 14.3.10 (Sistema gassoso aperto monocomponente)}
+\begin{sphinxadmonition}{note}{Example 15.3.10 (Sistema gassoso aperto monocomponente)}
 
 
 
@@ -9001,7 +9103,7 @@ L’energia del sistema, \(E(S,V,N)\)
 \begin{split}dE = T \, dS - P \, dV + \mu \, dN\end{split}
 \end{equation*}\end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-14}
-\begin{sphinxadmonition}{note}{Example 14.3.11 (Miscela reattiva di gas in un sistema chiuso)}
+\begin{sphinxadmonition}{note}{Example 15.3.11 (Miscela reattiva di gas in un sistema chiuso)}
 
 
 
@@ -9017,7 +9119,7 @@ L’energia del sistema
 avendo indicato con \(n_k\) i coefficienti stechiomentrici (con segno) della reazione, e con \(N\) una quantità che identifica l’equilibrio della reazione, in maniera tale da poter scrivere la variazione di ogni componente come \(d N_k = n_k \, d N\).
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-15}
-\begin{sphinxadmonition}{note}{Example 14.3.12 (Miscela monocomponente durante una transizione di fase)}
+\begin{sphinxadmonition}{note}{Example 15.3.12 (Miscela monocomponente durante una transizione di fase)}
 
 
 
@@ -9025,7 +9127,7 @@ avendo indicato con \(n_k\) i coefficienti stechiomentrici (con segno) della rea
 \sphinxstylestrong{todo} come trattare la frazione delle fasi?
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-16}
-\begin{sphinxadmonition}{note}{Example 14.3.13 (Solido)}
+\begin{sphinxadmonition}{note}{Example 15.3.13 (Solido)}
 
 
 
@@ -9035,7 +9137,7 @@ Sistema solido di volume iniziale \(V\) con stato di sforzo e deformazione unifo
 \begin{split}dE = T \, dS - V \, \sigma_{ij} \, d \varepsilon_{ij} \end{split}
 \end{equation*}\end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-17}
-\begin{sphinxadmonition}{note}{Example 14.3.14 (Miscele solide)}
+\begin{sphinxadmonition}{note}{Example 15.3.14 (Miscele solide)}
 
 
 
@@ -9043,7 +9145,7 @@ Sistema solido di volume iniziale \(V\) con stato di sforzo e deformazione unifo
 \sphinxstylestrong{todo}
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-18}
-\begin{sphinxadmonition}{note}{Example 14.3.15 (Influenza del campo magnetico)}
+\begin{sphinxadmonition}{note}{Example 15.3.15 (Influenza del campo magnetico)}
 
 
 \begin{equation*}
@@ -9307,17 +9409,17 @@ e il bilancio di energia totale del sistema diventa
 \sphinxAtStartPar
 avendo introdotto la definizione di entalpia totale specifica, \(h^{tot} = e^{tot} + \frac{P}{\rho} = e + \frac{P}{\rho} + \frac{|\vec{v}|^2}{2}\).
 \label{ch/thermodynamics/principles-open:thermodynamics:principles:open:ex:turbine}
-\begin{sphinxadmonition}{note}{Example 14.6.1 (Turbina)}
+\begin{sphinxadmonition}{note}{Example 15.6.1 (Turbina)}
 
 
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-open:thermodynamics:principles:open:ex:compressor}
-\begin{sphinxadmonition}{note}{Example 14.6.2 (Compressore)}
+\begin{sphinxadmonition}{note}{Example 15.6.2 (Compressore)}
 
 
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-open:thermodynamics:principles:open:ex:comb-chamber}
-\begin{sphinxadmonition}{note}{Example 14.6.3 (Camera di combustione)}
+\begin{sphinxadmonition}{note}{Example 15.6.3 (Camera di combustione)}
 
 
 \end{sphinxadmonition}
@@ -9331,7 +9433,7 @@ avendo introdotto la definizione di entalpia totale specifica, \(h^{tot} = e^{to
 \subsection{Principio di Lavoisier (Conservazione della Massa)}
 \label{\detokenize{ch/thermodynamics/principles-problems:principio-di-lavoisier-conservazione-della-massa}}\phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.1 (Conservazione della Massa in un Sistema Chiuso)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.1 (Conservazione della Massa in un Sistema Chiuso)}
 
 
 
@@ -9340,7 +9442,7 @@ Un sistema chiuso contiene due sostanze A e B che reagiscono per formare una sos
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.2 (Reazione Chimica e Conservazione della Massa)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.2 (Reazione Chimica e Conservazione della Massa)}
 
 
 
@@ -9349,7 +9451,7 @@ In una reazione chimica, la sostanza A si trasforma in B con una variazione di m
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.3 (Massa di Gas in una Reazione)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.3 (Massa di Gas in una Reazione)}
 
 
 
@@ -9358,7 +9460,7 @@ Durante una reazione tra due gas in un sistema chiuso, i gas A e B si combinano 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.4 (Conservazione della Massa in una Reazione di Sintesi)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.4 (Conservazione della Massa in una Reazione di Sintesi)}
 
 
 
@@ -9367,7 +9469,7 @@ Durante una reazione chimica, \(10 \, \text{g}\) di idrogeno e \(80 \, \text{g}\
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.5 (Verifica della Conservazione della Massa in un Processo di Combinazione)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.5 (Verifica della Conservazione della Massa in un Processo di Combinazione)}
 
 
 
@@ -9383,7 +9485,7 @@ In un processo di combinazione chimica, \(30 \, \text{g}\) di due sostanze A e B
 \subsection{Prima Legge della Termodinamica (Conservazione dell’Energia)}
 \label{\detokenize{ch/thermodynamics/principles-problems:prima-legge-della-termodinamica-conservazione-dell-energia}}\phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.6 (Lavoro Compiuto in un Ciclo Isobaro)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.6 (Lavoro Compiuto in un Ciclo Isobaro)}
 
 
 
@@ -9392,7 +9494,7 @@ Un gas ideale subisce una trasformazione isobara. Se il volume del gas aumenta d
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.7 (Energia Interna in una Trasformazione Isoentropica)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.7 (Energia Interna in una Trasformazione Isoentropica)}
 
 
 
@@ -9401,7 +9503,7 @@ Un gas ideale subisce una trasformazione isoentropica in cui il volume cambia da
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.8 (Calore Assorbito in una Trasformazione Adiabatica)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.8 (Calore Assorbito in una Trasformazione Adiabatica)}
 
 
 
@@ -9410,7 +9512,7 @@ Un gas ideale compie una trasformazione adiabatica. Se il volume del gas cambia 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.9 (Energia Interna in un Ciclo Isocoro)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.9 (Energia Interna in un Ciclo Isocoro)}
 
 
 
@@ -9419,7 +9521,7 @@ Un gas ideale subisce una trasformazione isocora in cui la temperatura cambia da
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.10 (Lavoro di Espansione Isotermica)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.10 (Lavoro di Espansione Isotermica)}
 
 
 
@@ -9428,7 +9530,7 @@ Un gas ideale subisce una trasformazione isotermica a \(T = 273 \, \text{K}\) in
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.11 (Energia Termica in una Trasformazione Isocora)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.11 (Energia Termica in una Trasformazione Isocora)}
 
 
 
@@ -9444,7 +9546,7 @@ Un gas ideale è riscaldato in un recipiente rigido da \(T_1 = 250 \, \text{K}\)
 \subsection{Seconda Legge della Termodinamica (Entropia)}
 \label{\detokenize{ch/thermodynamics/principles-problems:seconda-legge-della-termodinamica-entropia}}\phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.12 (Entropia in una Trasformazione Isotermica)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.12 (Entropia in una Trasformazione Isotermica)}
 
 
 
@@ -9453,7 +9555,7 @@ Un gas ideale subisce una trasformazione isotermica da \(V_1 = 1 \, \text{m}^3\)
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.13 (Entropia e Trasformazione Irreversibile)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.13 (Entropia e Trasformazione Irreversibile)}
 
 
 
@@ -9462,7 +9564,7 @@ Durante una trasformazione irreversibile di un gas, la variazione di entropia è
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.14 (Ciclo Carnot e Seconda Legge)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.14 (Ciclo Carnot e Seconda Legge)}
 
 
 
@@ -9471,7 +9573,7 @@ Un motore termico opera secondo il ciclo Carnot tra due sorgenti termiche a \(T_
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.15 (Espansione Irreversibile e Entropia)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.15 (Espansione Irreversibile e Entropia)}
 
 
 
@@ -9480,7 +9582,7 @@ Un gas ideale subisce un’espansione irreversibile in cui il volume aumenta da 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-15}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.16 (Entropia in un Ciclo di Carnot)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.16 (Entropia in un Ciclo di Carnot)}
 
 
 
@@ -9489,7 +9591,7 @@ Un motore termico opera secondo un ciclo Carnot, con la temperatura del serbatoi
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-16}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.17 (Generazione di Entropia in una Espansione)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.17 (Generazione di Entropia in una Espansione)}
 
 
 
@@ -9505,7 +9607,7 @@ Un gas ideale subisce una trasformazione adiabatica in cui il volume aumenta da 
 \subsection{Regola delle Fasi di Gibbs}
 \label{\detokenize{ch/thermodynamics/principles-problems:regola-delle-fasi-di-gibbs}}\phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-17}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.18 (Fasi di un Sistema in Equilibrio)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.18 (Fasi di un Sistema in Equilibrio)}
 
 
 
@@ -9514,7 +9616,7 @@ Un sistema in equilibrio è costituito da due fasi (liquido e vapore). Se il sis
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-18}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.19 (Numero di Fasi in un Sistema)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.19 (Numero di Fasi in un Sistema)}
 
 
 
@@ -9523,7 +9625,7 @@ Considera un sistema costituito da una miscela di due solidi e un liquido. Deter
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-19}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.20 (Equilibrio di Fasi e Soluzione di Gibbs)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.20 (Equilibrio di Fasi e Soluzione di Gibbs)}
 
 
 
@@ -9532,7 +9634,7 @@ Un sistema contiene una sostanza pura in equilibrio tra le fasi solida e liquida
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-20}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.21 (Fasi di un Sistema Multicomponente)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.21 (Fasi di un Sistema Multicomponente)}
 
 
 
@@ -9541,7 +9643,7 @@ In un sistema composto da tre fasi, solido, liquido e vapore, il numero di gradi
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-21}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.22 (Equilibrio di Fase in un Sistema Binario)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.22 (Equilibrio di Fase in un Sistema Binario)}
 
 
 
@@ -9550,7 +9652,7 @@ Un sistema binario è costituito da due sostanze, A e B, e in un certo punto del
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-22}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.23 (Numero di Fasi in una Miscela di Sostanze)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.23 (Numero di Fasi in una Miscela di Sostanze)}
 
 
 
@@ -9566,7 +9668,7 @@ In un sistema ternario composto da tre sostanze, che si trovano in tre fasi (sol
 \subsection{Diagrammi di Fase e Trasformazioni Termodinamiche}
 \label{\detokenize{ch/thermodynamics/principles-problems:diagrammi-di-fase-e-trasformazioni-termodinamiche}}\phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-23}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.24 (Diagramma di Fase del Acqua)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.24 (Diagramma di Fase del Acqua)}
 
 
 
@@ -9575,7 +9677,7 @@ Schematicamente, disegna il diagramma di fase dell’acqua, indicando le linee d
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-24}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.25 (Curva di Saturazione in un Diagramma di Fase)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.25 (Curva di Saturazione in un Diagramma di Fase)}
 
 
 
@@ -9584,7 +9686,7 @@ In un diagramma di fase, la curva di saturazione di una sostanza descrive la rel
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-25}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.26 (Trasformazioni in un Diagramma di Fase)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.26 (Trasformazioni in un Diagramma di Fase)}
 
 
 
@@ -9593,7 +9695,7 @@ Un gas viene compresso a temperatura costante da un volume \(V_1 = 1 \, \text{m}
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-26}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.27 (Cambiamento di Stato e Diagramma di Fase)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.27 (Cambiamento di Stato e Diagramma di Fase)}
 
 
 
@@ -9602,7 +9704,7 @@ Un liquido subisce un cambiamento di fase da liquido a vapore. Se il processo av
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-27}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.28 (Diagramma di Fase per il Carbonio)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.28 (Diagramma di Fase per il Carbonio)}
 
 
 
@@ -9611,7 +9713,7 @@ Considera il diagramma di fase del carbonio, che include le fasi solida, liquida
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-28}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.29 (Diagramma di Fase per una Sostanza Pura)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.29 (Diagramma di Fase per una Sostanza Pura)}
 
 
 
@@ -9620,7 +9722,7 @@ Un gas puro subisce una trasformazione a temperatura costante, e il diagramma di
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-29}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.30 (Trasformazioni di Fase di un Liquido)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.30 (Trasformazioni di Fase di un Liquido)}
 
 
 
@@ -9636,7 +9738,7 @@ Un liquido subisce una vaporizzazione isoterma a \(T = 373 \, \text{K}\) e una p
 \subsection{Sistemi Aperti (Turbine, Compressori, Camere di Combustione, Scambiatori di Calore)}
 \label{\detokenize{ch/thermodynamics/principles-problems:sistemi-aperti-turbine-compressori-camere-di-combustione-scambiatori-di-calore}}\phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-30}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.31 (Lavoro di una Turbina)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.31 (Lavoro di una Turbina)}
 
 
 
@@ -9645,7 +9747,7 @@ In una turbina, il fluido entra con una velocità di \(v_1 = 10 \, \text{m/s}\) 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-31}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.32 (Calore e Lavoro in un Compressore)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.32 (Calore e Lavoro in un Compressore)}
 
 
 
@@ -9654,7 +9756,7 @@ In un compressore, un gas entra a una temperatura di \(T_1 = 300 \, \text{K}\) e
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-32}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.33 (Camere di Combustione e Lavoro)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.33 (Camere di Combustione e Lavoro)}
 
 
 
@@ -9663,7 +9765,7 @@ Una camera di combustione in un motore a combustione interna riceve una miscela 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-33}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.34 (Efficienza di uno Scambiatore di Calore)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.34 (Efficienza di uno Scambiatore di Calore)}
 
 
 
@@ -9672,7 +9774,7 @@ In uno scambiatore di calore, un fluido entra a \(T_1 = 350 \, \text{K}\) e lasc
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-34}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.35 (Energia Scambiata in un Sistema Aperto)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.35 (Energia Scambiata in un Sistema Aperto)}
 
 
 
@@ -9681,7 +9783,7 @@ Un fluido entra in un sistema aperto con una velocità di \(v_1 = 5 \, \text{m/s
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-35}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.36 (Espansione in una Turbina)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.36 (Espansione in una Turbina)}
 
 
 
@@ -9690,7 +9792,7 @@ Un fluido entra in una turbina con una velocità di \(v_1 = 15 \, \text{m/s}\) e
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-36}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.37 (Compressore Adiabatico)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.37 (Compressore Adiabatico)}
 
 
 
@@ -9699,7 +9801,7 @@ In un compressore adiabatico, il gas entra con una temperatura di \(T_1 = 300 \,
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-37}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.38 (Lavoro in una Camera di Combustione)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.38 (Lavoro in una Camera di Combustione)}
 
 
 
@@ -9708,7 +9810,7 @@ In una camera di combustione, il gas di alimentazione ha una temperatura di \(T_
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-38}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.39 (Efficienza di uno Scambiatore di Calore)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.39 (Efficienza di uno Scambiatore di Calore)}
 
 
 
@@ -9717,7 +9819,7 @@ Un fluido entra in uno scambiatore di calore con una temperatura di \(T_1 = 300 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-39}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.40 (Energia Recuperata da un Compressore)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.40 (Energia Recuperata da un Compressore)}
 
 
 
@@ -9729,7 +9831,7 @@ Un compressore riceve gas a una pressione di \(P_1 = 2 \, \text{atm}\) e tempera
 \subsection{Calorimetria}
 \label{\detokenize{ch/thermodynamics/principles-problems:calorimetria}}\phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-40}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.41}
+\begin{sphinxadmonition}{note}{Exercise 15.7.41}
 
 
 
@@ -9738,7 +9840,7 @@ Vengono mescolati \(m_{\text{H}_2\text{O}}\) di acqua inizialmente a temperatura
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-41}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.42}
+\begin{sphinxadmonition}{note}{Exercise 15.7.42}
 
 
 
@@ -9747,7 +9849,7 @@ Vengono versati \(150 \, \text{ml}\) di caffé a temperatura \(T_{coffee,0} = 80
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-42}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.43}
+\begin{sphinxadmonition}{note}{Exercise 15.7.43}
 
 
 
@@ -9759,7 +9861,7 @@ Si usa questo metodo per raffreddare \(m_{coffee} = 150 \, \text{g}\) di caffé.
 \subsection{Primo principio}
 \label{\detokenize{ch/thermodynamics/principles-problems:primo-principio}}\phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-43}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.44 (Pollo scaldato a pugni)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.44 (Pollo scaldato a pugni)}
 
 
 
@@ -9779,31 +9881,31 @@ il numero di pugni necessari per scaldare il pollo fino a \(T_{fin} = 80 \text{�
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-44}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.45 (Mulinello)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.45 (Mulinello)}
 
 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-45}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.46 (Attrito)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.46 (Attrito)}
 
 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-46}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.47 (Biologia)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.47 (Biologia)}
 
 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-47}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.48 (…)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.48 (…)}
 
 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-48}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.49 (…)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.49 (…)}
 
 
 \end{sphinxadmonition}
@@ -9812,13 +9914,13 @@ il numero di pugni necessari per scaldare il pollo fino a \(T_{fin} = 80 \text{�
 \subsection{Secondo principio}
 \label{\detokenize{ch/thermodynamics/principles-problems:secondo-principio}}\phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-49}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.50}
+\begin{sphinxadmonition}{note}{Exercise 15.7.50}
 
 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-50}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.51}
+\begin{sphinxadmonition}{note}{Exercise 15.7.51}
 
 
 \end{sphinxadmonition}
@@ -9827,25 +9929,25 @@ il numero di pugni necessari per scaldare il pollo fino a \(T_{fin} = 80 \text{�
 \subsection{Sistemi aperti}
 \label{\detokenize{ch/thermodynamics/principles-problems:sistemi-aperti}}\phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-51}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.52 (Turbina)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.52 (Turbina)}
 
 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-52}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.53 (Compressore)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.53 (Compressore)}
 
 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-53}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.54 (Camera di combustione)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.54 (Camera di combustione)}
 
 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-54}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.55 (Scambiatore di calore)}
+\begin{sphinxadmonition}{note}{Exercise 15.7.55 (Scambiatore di calore)}
 
 
 \end{sphinxadmonition}
@@ -9854,19 +9956,19 @@ il numero di pugni necessari per scaldare il pollo fino a \(T_{fin} = 80 \text{�
 \subsection{Problemi generali}
 \label{\detokenize{ch/thermodynamics/principles-problems:problemi-generali}}\phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-55}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.56}
+\begin{sphinxadmonition}{note}{Exercise 15.7.56}
 
 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-56}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.57}
+\begin{sphinxadmonition}{note}{Exercise 15.7.57}
 
 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/principles-problems-exercise-57}
 
-\begin{sphinxadmonition}{note}{Exercise 14.7.58}
+\begin{sphinxadmonition}{note}{Exercise 15.7.58}
 
 
 \end{sphinxadmonition}
@@ -10818,20 +10920,20 @@ si ricava nell’approssimazione lineare il coefficiente di dilatazione di super
 \begin{equation*}
 \begin{split} \dfrac{1}{V_0}\left(\dfrac{\partial V}{\partial T}\right)_x = \alpha_v \sim 3 \alpha \ .\end{split}
 \end{equation*}\label{ch/thermodynamics/elastic-solid-1d:thermodynamics:elastic-solid:gravesande}
-\begin{sphinxadmonition}{note}{Example 15.3.1 (Anello di Gravesande)}
+\begin{sphinxadmonition}{note}{Example 16.3.1 (Anello di Gravesande)}
 
 
 
 \sphinxAtStartPar
-{\hyperref[\detokenize{ch/thermodynamics/foundation-experiments:thermodynamics:history:th-expansion:gravesande}]{\sphinxcrossref{Example 13.2.1}}}
+{\hyperref[\detokenize{ch/thermodynamics/foundation-experiments:thermodynamics:history:th-expansion:gravesande}]{\sphinxcrossref{Example 14.2.1}}}
 \end{sphinxadmonition}
 \label{ch/thermodynamics/elastic-solid-1d:thermodynamics:elastic-solid:pendulum}
-\begin{sphinxadmonition}{note}{Example 15.3.2 (Pendolo)}
+\begin{sphinxadmonition}{note}{Example 16.3.2 (Pendolo)}
 
 
 \end{sphinxadmonition}
 \label{ch/thermodynamics/elastic-solid-1d:thermodynamics:elastic-solid:interference}
-\begin{sphinxadmonition}{note}{Example 15.3.3 (Calettamento)}
+\begin{sphinxadmonition}{note}{Example 16.3.3 (Calettamento)}
 
 
 
@@ -10869,7 +10971,7 @@ Il calettamento a caldo o a freddo è un’operazione di unione di due component
 \subsection{Gas ideali}
 \label{\detokenize{ch/thermodynamics/matter-problems:id1}}\phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.1 (Proprietà di un Gas Ideale)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.1 (Proprietà di un Gas Ideale)}
 
 
 
@@ -10878,7 +10980,7 @@ Un gas ideale viene contenuto in un recipiente rigido con volume \(V = 10 \, \te
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.2 (Lavoro di Espansione Isobara)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.2 (Lavoro di Espansione Isobara)}
 
 
 
@@ -10887,7 +10989,7 @@ Un gas ideale subisce un’espansione isobara da \(V_1 = 2 \, \text{L}\) a \(V_2
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.3 (Lavoro in una Trasformazione Isotermica)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.3 (Lavoro in una Trasformazione Isotermica)}
 
 
 
@@ -10896,7 +10998,7 @@ Un gas ideale subisce una trasformazione isotermica a \(T = 273 \, \text{K}\). S
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.4 (Calore in una Trasformazione Isocora)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.4 (Calore in una Trasformazione Isocora)}
 
 
 
@@ -10905,7 +11007,7 @@ Un gas ideale subisce una trasformazione isocora da \(T_1 = 300 \, \text{K}\) a 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.5 (Trasformazione Adiabatica)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.5 (Trasformazione Adiabatica)}
 
 
 
@@ -10914,7 +11016,7 @@ Un gas ideale subisce una trasformazione adiabatica, in cui il volume passa da \
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.6 (Energia Interna in una Trasformazione Isocora)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.6 (Energia Interna in una Trasformazione Isocora)}
 
 
 
@@ -10923,7 +11025,7 @@ Un gas ideale subisce una trasformazione isocora da \(T_1 = 300 \, \text{K}\) a 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.7 (Energia di un Gas Ideale)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.7 (Energia di un Gas Ideale)}
 
 
 
@@ -10932,7 +11034,7 @@ Un gas ideale ha una temperatura di \(T = 250 \, \text{K}\) e un volume di \(V =
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.8 (Entropia in una Trasformazione Isotermica)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.8 (Entropia in una Trasformazione Isotermica)}
 
 
 
@@ -10941,7 +11043,7 @@ Un gas ideale subisce una trasformazione isotermica da \(V_1 = 5 \, \text{L}\) a
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.9 (Legge dei Gasi Ideali in un Ciclo)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.9 (Legge dei Gasi Ideali in un Ciclo)}
 
 
 
@@ -10950,7 +11052,7 @@ Un gas ideale subisce una trasformazione ciclica che include una fase isotermica
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.10 (Calore in una Trasformazione Isobara)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.10 (Calore in una Trasformazione Isobara)}
 
 
 
@@ -10959,7 +11061,7 @@ Un gas ideale subisce una trasformazione isobara in cui la temperatura cambia da
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.11 (Comportamento di un Gas Ideale in un Serbatoio)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.11 (Comportamento di un Gas Ideale in un Serbatoio)}
 
 
 
@@ -10968,7 +11070,7 @@ Un gas ideale viene contenuto in un recipiente rigido a \(T = 300 \, \text{K}\) 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.12 (Lavoro in una Espansione Isocora)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.12 (Lavoro in una Espansione Isocora)}
 
 
 
@@ -10977,7 +11079,7 @@ Un gas ideale subisce una trasformazione isocora. Se il gas è riscaldato da \(T
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.13 (Entalpia in un Ciclo)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.13 (Entalpia in un Ciclo)}
 
 
 
@@ -10993,7 +11095,7 @@ Un gas ideale subisce una trasformazione ciclica che comprende una fase isobara 
 \subsection{Miscele di gas e aria umida}
 \label{\detokenize{ch/thermodynamics/matter-problems:miscele-di-gas-e-aria-umida}}\phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.14 (Miscele di Gas Ideali)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.14 (Miscele di Gas Ideali)}
 
 
 
@@ -11002,7 +11104,7 @@ Due gas ideali, A e B, sono mescolati in un contenitore con un volume di \(V = 1
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.15 (Aria Umida – Umidità Relativa)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.15 (Aria Umida – Umidità Relativa)}
 
 
 
@@ -11011,7 +11113,7 @@ In un sistema di aria umida, la temperatura dell’aria è \(T = 20 \, \text{°C
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-15}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.16 (Miscele di Gas Ideali con Temperatura Variabile)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.16 (Miscele di Gas Ideali con Temperatura Variabile)}
 
 
 
@@ -11020,7 +11122,7 @@ Una miscela di gas ideali subisce una trasformazione a volume costante. Se la te
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-16}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.17 (Equilibrio dell’Aria Umida)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.17 (Equilibrio dell’Aria Umida)}
 
 
 
@@ -11029,7 +11131,7 @@ In un sistema di aria umida, la temperatura e l’umidità relativa cambiano da 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-17}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.18 (Calcolo dell’Umidità Assoluta)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.18 (Calcolo dell’Umidità Assoluta)}
 
 
 
@@ -11038,7 +11140,7 @@ In un sistema di aria umida a \(T = 300 \, \text{K}\) e con umidità relativa de
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-18}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.19 (Miscele di Gas Ideali – Energia Interna)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.19 (Miscele di Gas Ideali – Energia Interna)}
 
 
 
@@ -11047,7 +11149,7 @@ Una miscela di gas ideali A e B è contenuta in un recipiente di volume \(V = 5 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-19}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.20 (Equilibrio dell’Aria Umida – Energia)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.20 (Equilibrio dell’Aria Umida – Energia)}
 
 
 
@@ -11063,7 +11165,7 @@ In un sistema di aria umida con temperatura \(T = 300 \, \text{K}\) e umidità r
 \subsection{Termodinamica di solidi elastici}
 \label{\detokenize{ch/thermodynamics/matter-problems:termodinamica-di-solidi-elastici}}\phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-20}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.21 (Deformazione di una Barra Elastico\sphinxhyphen{}Linieare)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.21 (Deformazione di una Barra Elastico\sphinxhyphen{}Linieare)}
 
 
 
@@ -11072,7 +11174,7 @@ Una barra elastica di acciaio ha una lunghezza di \(L = 2 \, \text{m}\) e un mod
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-21}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.22 (Riscaldamento di una Barra Elastico\sphinxhyphen{}Linieare)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.22 (Riscaldamento di una Barra Elastico\sphinxhyphen{}Linieare)}
 
 
 
@@ -11081,7 +11183,7 @@ Una barra elastica di lunghezza \(L = 1 \, \text{m}\) è riscaldata da una tempe
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-22}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.23 (Comportamento Meccanico di una Barra Elastico\sphinxhyphen{}Linieare)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.23 (Comportamento Meccanico di una Barra Elastico\sphinxhyphen{}Linieare)}
 
 
 
@@ -11097,7 +11199,7 @@ Una barra elastica di acciaio di lunghezza \(L = 1 \, \text{m}\) è sottoposta a
 \subsection{Problemi vari}
 \label{\detokenize{ch/thermodynamics/matter-problems:problemi-vari}}\phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-23}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.24 (Energia Termica di un Sistema di Gas Ideali)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.24 (Energia Termica di un Sistema di Gas Ideali)}
 
 
 
@@ -11106,7 +11208,7 @@ Un gas ideale subisce un’espansione isotermica, ma con un cambio nella composi
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-24}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.25 (Energia in un Ciclo di Carnot)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.25 (Energia in un Ciclo di Carnot)}
 
 
 
@@ -11115,7 +11217,7 @@ Un motore di Carnot opera tra una temperatura alta di \(T_1 = 600 \, \text{K}\) 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-25}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.26 (Calore Latente in una Fase Solida\sphinxhyphen{}Liquida)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.26 (Calore Latente in una Fase Solida\sphinxhyphen{}Liquida)}
 
 
 
@@ -11124,7 +11226,7 @@ Un campione di una sostanza solida si fonde a \(T_m = 350 \, \text{K}\). Se la m
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-26}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.27 (Equilibrio Termico in un Sistema di Due Corpi)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.27 (Equilibrio Termico in un Sistema di Due Corpi)}
 
 
 
@@ -11133,7 +11235,7 @@ Un corpo caldo di temperatura \(T_1 = 400 \, \text{K}\) e un corpo freddo di tem
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-27}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.28 (Dilatazione Termica di una Piastra)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.28 (Dilatazione Termica di una Piastra)}
 
 
 
@@ -11142,7 +11244,7 @@ Una piastra di metallo di superficie \(A = 2 \, \text{m}^2\) e lunghezza \(L = 1
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-28}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.29 (Trasformazione Isoentropica)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.29 (Trasformazione Isoentropica)}
 
 
 
@@ -11151,7 +11253,7 @@ Un gas ideale subisce una trasformazione isoentropica. Se la temperatura inizial
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-29}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.30 (Lavoro in una Trasformazione Adiabática)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.30 (Lavoro in una Trasformazione Adiabática)}
 
 
 
@@ -11160,7 +11262,7 @@ Un gas ideale subisce una trasformazione adiabatica. Se la temperatura iniziale 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-30}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.31 (Equilibrio Termico in un Sistema)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.31 (Equilibrio Termico in un Sistema)}
 
 
 
@@ -11169,7 +11271,7 @@ Due oggetti con temperature iniziali di \(T_1 = 350 \, \text{K}\) e \(T_2 = 200 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/matter-problems-exercise-31}
 
-\begin{sphinxadmonition}{note}{Exercise 15.4.32 (Lavoro di Compressore)}
+\begin{sphinxadmonition}{note}{Exercise 16.4.32 (Lavoro di Compressore)}
 
 
 
@@ -11506,7 +11608,7 @@ Come sarà chiaro più tardi con l”{\hyperref[\detokenize{ch/thermodynamics/he
 \sphinxAtStartPar
 Ricordando l’osservazione fatta nell’introduzione riguardo le macchine in funzionamento periodico o in ciclo continuo, si definisce qui il rendimento delle macchine termiche in funzionamento periodico in termini di lavoro e calore per ogni ciclo; dovrebbe essere immediata l’estensione di questa definizione al caso di macchine termiche in funzionamento continuo in termini di potenza meccanica e flusso di calore per unità di tempo.
 \label{ch/thermodynamics/heat-engine-td-cycles:definition-0}
-\begin{sphinxadmonition}{note}{Definition 16.2.1 (Rendimento termodinamico)}
+\begin{sphinxadmonition}{note}{Definition 17.2.1 (Rendimento termodinamico)}
 
 
 
@@ -11517,7 +11619,7 @@ Il rendimento termodinamico di una macchina termica è definita come il rapporto
 \sphinxAtStartPar
 La definizione di rendimento termodinamico dipende quindi dallo scopo e dal funzionamento della macchina termica.
 \label{ch/thermodynamics/heat-engine-td-cycles:definition-1}
-\begin{sphinxadmonition}{note}{Definition 16.2.2 (Rendimento termodinamico \sphinxhyphen{} macchina termica diretta)}
+\begin{sphinxadmonition}{note}{Definition 17.2.2 (Rendimento termodinamico \sphinxhyphen{} macchina termica diretta)}
 
 
 
@@ -11631,7 +11733,7 @@ Esistono due enunciati equivalenti del secondo principio della termodinamica per
 
 \subsection{Enunciato di Kelvin}
 \label{\detokenize{ch/thermodynamics/heat-engine-second-principle:enunciato-di-kelvin}}\label{\detokenize{ch/thermodynamics/heat-engine-second-principle:physics-hs-thermodynamics-heat-engine-second-principle-kelvin}}\label{ch/thermodynamics/heat-engine-second-principle:proposition-0}
-\begin{sphinxadmonition}{note}{Proposition 16.4.1 (Enunciato di Kelvin)}
+\begin{sphinxadmonition}{note}{Proposition 17.4.1 (Enunciato di Kelvin)}
 
 
 
@@ -11669,7 +11771,7 @@ In altri termini, una macchina termica che scambia calore unicamente con una sor
 
 \subsection{Enunciato di Planck}
 \label{\detokenize{ch/thermodynamics/heat-engine-second-principle:enunciato-di-planck}}\label{\detokenize{ch/thermodynamics/heat-engine-second-principle:physics-hs-thermodynamics-heat-engine-second-principle-planck}}\label{ch/thermodynamics/heat-engine-second-principle:proposition-1}
-\begin{sphinxadmonition}{note}{Proposition 16.4.2 (Enunciato di Planck)}
+\begin{sphinxadmonition}{note}{Proposition 17.4.2 (Enunciato di Planck)}
 
 
 
@@ -11957,7 +12059,7 @@ cicli combinati
 \section{Problemi}
 \label{\detokenize{ch/thermodynamics/heat-transmission-problems:problemi}}\label{\detokenize{ch/thermodynamics/heat-transmission-problems:physics-hs-thermodynamics-heat-transmission-problems}}\label{\detokenize{ch/thermodynamics/heat-transmission-problems::doc}}\phantomsection \label{exercise:ch/thermodynamics/heat-transmission-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 17.1.1 (Conduzione termica in una barra)}
+\begin{sphinxadmonition}{note}{Exercise 18.1.1 (Conduzione termica in una barra)}
 
 
 
@@ -11966,7 +12068,7 @@ Una barra di materiale conduttore ha lunghezza \(L = 1 \, \text{m}\), area della
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/heat-transmission-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 17.1.2 (Conduzione nel tempo)}
+\begin{sphinxadmonition}{note}{Exercise 18.1.2 (Conduzione nel tempo)}
 
 
 
@@ -11975,7 +12077,7 @@ Una lastra di materiale conduttore ha spessore \(d = 0.02 \, \text{m}\) e condut
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/heat-transmission-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 17.1.3 (Convezione naturale)}
+\begin{sphinxadmonition}{note}{Exercise 18.1.3 (Convezione naturale)}
 
 
 
@@ -11984,7 +12086,7 @@ Un tubo verticale è immerso in un fluido con una temperatura ambiente di \(T_\i
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/heat-transmission-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 17.1.4 (Convezione forzata)}
+\begin{sphinxadmonition}{note}{Exercise 18.1.4 (Convezione forzata)}
 
 
 
@@ -11993,7 +12095,7 @@ Un fluido a \(T_\infty = 30 \, \text{°C}\) scorre attraverso un tubo con un’a
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/heat-transmission-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 17.1.5 (Convezione in un conduttore)}
+\begin{sphinxadmonition}{note}{Exercise 18.1.5 (Convezione in un conduttore)}
 
 
 
@@ -12002,7 +12104,7 @@ Un conduttore elettrico ha un raggio di \(r = 2 \, \text{mm}\) e trasmette calor
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/heat-transmission-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 17.1.6 (Irraggiamento in una superficie)}
+\begin{sphinxadmonition}{note}{Exercise 18.1.6 (Irraggiamento in una superficie)}
 
 
 
@@ -12011,7 +12113,7 @@ Una superficie nera emette radiazione termica con una temperatura di \(T_s = 500
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/heat-transmission-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 17.1.7 (Conduzione in un condotto)}
+\begin{sphinxadmonition}{note}{Exercise 18.1.7 (Conduzione in un condotto)}
 
 
 
@@ -12020,7 +12122,7 @@ In un condotto cilindrico con raggio \(r = 0.1 \, \text{m}\) e lunghezza \(L = 1
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/heat-transmission-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 17.1.8 (Raffreddamento di un corpo sferico)}
+\begin{sphinxadmonition}{note}{Exercise 18.1.8 (Raffreddamento di un corpo sferico)}
 
 
 
@@ -12029,7 +12131,7 @@ Un corpo sferico con raggio \(r = 0.5 \, \text{m}\) ha una temperatura iniziale 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/heat-transmission-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 17.1.9 (Convezione e irraggiamento in un processo di raffreddamento)}
+\begin{sphinxadmonition}{note}{Exercise 18.1.9 (Convezione e irraggiamento in un processo di raffreddamento)}
 
 
 
@@ -12038,7 +12140,7 @@ Un oggetto di materiale ad alta conduttività termica ha una superficie sferica 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/heat-transmission-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 17.1.10 (Conduzione in un solido sferico)}
+\begin{sphinxadmonition}{note}{Exercise 18.1.10 (Conduzione in un solido sferico)}
 
 
 
@@ -12047,7 +12149,7 @@ Un corpo sferico ha un raggio di \(r = 0.15 \, \text{m}\) e la sua temperatura i
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/heat-transmission-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 17.1.11 (Convezione e radiatori)}
+\begin{sphinxadmonition}{note}{Exercise 18.1.11 (Convezione e radiatori)}
 
 
 
@@ -12056,7 +12158,7 @@ Un radiatore è riscaldato fino a \(T_s = 70 \, \text{°C}\) e scambia calore pe
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/heat-transmission-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 17.1.12 (Irraggiamento di un corpo con alta emissività)}
+\begin{sphinxadmonition}{note}{Exercise 18.1.12 (Irraggiamento di un corpo con alta emissività)}
 
 
 
@@ -12065,7 +12167,7 @@ Un corpo con una superficie di \(A = 1 \, \text{m}^2\) emette radiazione con una
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/heat-transmission-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 17.1.13 (Conduzione nel tempo con materiali a variabile conduttività)}
+\begin{sphinxadmonition}{note}{Exercise 18.1.13 (Conduzione nel tempo con materiali a variabile conduttività)}
 
 
 
@@ -12074,7 +12176,7 @@ Una lastra di materiale ha spessore \(d = 0.01 \, \text{m}\) e conduttività ter
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/heat-transmission-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 17.1.14 (Raffreddamento di un oggetto con flusso di calore convezione\sphinxhyphen{}radiazione)}
+\begin{sphinxadmonition}{note}{Exercise 18.1.14 (Raffreddamento di un oggetto con flusso di calore convezione\sphinxhyphen{}radiazione)}
 
 
 
@@ -12083,7 +12185,7 @@ Un oggetto ha una superficie di \(A = 0.1 \, \text{m}^2\) e una temperatura di \
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/thermodynamics/heat-transmission-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 17.1.15 (Calore in un tubo con convezione forzata)}
+\begin{sphinxadmonition}{note}{Exercise 18.1.15 (Calore in un tubo con convezione forzata)}
 
 
 
@@ -12294,17 +12396,17 @@ Onde viaggianti
 
 \subsection{Frequenza, lunghezza d’onda e relazione con velocità di propagazione della perturbazione}
 \label{\detokenize{ch/waves/intro:frequenza-lunghezza-d-onda-e-relazione-con-velocita-di-propagazione-della-perturbazione}}\label{ch/waves/intro:wave-length}
-\begin{sphinxadmonition}{note}{Definition 18.2.2 (Frequenza)}
+\begin{sphinxadmonition}{note}{Definition 19.2.2 (Frequenza)}
 
 
 \end{sphinxadmonition}
 \label{ch/waves/intro:wave-length}
-\begin{sphinxadmonition}{note}{Definition 18.2.2 (Lunghezza d’onda)}
+\begin{sphinxadmonition}{note}{Definition 19.2.2 (Lunghezza d’onda)}
 
 
 \end{sphinxadmonition}
 \label{ch/waves/intro:wave-speed}
-\begin{sphinxadmonition}{note}{Definition 18.2.3 (Velocità della perturbazione)}
+\begin{sphinxadmonition}{note}{Definition 19.2.3 (Velocità della perturbazione)}
 
 
 \end{sphinxadmonition}
@@ -12352,12 +12454,12 @@ Soluzione generale 3\sphinxhyphen{}dimensionale
 \subsection{Diffrazione}
 \label{\detokenize{ch/waves/intro:diffrazione}}\label{\detokenize{ch/waves/intro:physics-hs-waves-effects-diffraction}}
 \sphinxAtStartPar
-La diffrazione è una conseguenza dell’incontro di un’onda con un ostacolo o un’apertura di dimensione parabonabile alla lunghezza d’onda ({\hyperref[\detokenize{ch/waves/intro:wave-length}]{\sphinxcrossref{Definition 18.2.2}}}) della perturbazione.
+La diffrazione è una conseguenza dell’incontro di un’onda con un ostacolo o un’apertura di dimensione parabonabile alla lunghezza d’onda ({\hyperref[\detokenize{ch/waves/intro:wave-length}]{\sphinxcrossref{Definition 19.2.2}}}) della perturbazione.
 
 \sphinxAtStartPar
 \sphinxstylestrong{Applicazioni ed esempi.} Spettroscopia
 \label{ch/waves/intro:example-3}
-\begin{sphinxadmonition}{note}{Example 18.3.1 (Doppia fenditura)}
+\begin{sphinxadmonition}{note}{Example 19.3.1 (Doppia fenditura)}
 
 
 
@@ -12365,7 +12467,7 @@ La diffrazione è una conseguenza dell’incontro di un’onda con un ostacolo o
 Modello: diffrazione dovuta a due fessure sufficientmente ridotte da poter essere considerate sorgenti puntiformi (in fase, o no? discutere)
 \end{sphinxadmonition}
 \label{ch/waves/intro:example-4}
-\begin{sphinxadmonition}{note}{Example 18.3.2 (Singola fenditura)}
+\begin{sphinxadmonition}{note}{Example 19.3.2 (Singola fenditura)}
 
 
 
@@ -12373,7 +12475,7 @@ Modello: diffrazione dovuta a due fessure sufficientmente ridotte da poter esser
 Modello: diffrazione dovuta alla sovrapposizione degli effetti di una distribuzione di sorgenti punti.
 \end{sphinxadmonition}
 \label{ch/waves/intro:example-5}
-\begin{sphinxadmonition}{note}{Example 18.3.3 (Reticolo di diffrazione)}
+\begin{sphinxadmonition}{note}{Example 19.3.3 (Reticolo di diffrazione)}
 
 
 \end{sphinxadmonition}
@@ -12435,7 +12537,7 @@ Equazione delle onde per il campo EM
 
 \end{itemize}
 \label{ch/waves/intro:refraction-index}
-\begin{sphinxadmonition}{note}{Definition 18.4.1 (Indice di rifrazione)}
+\begin{sphinxadmonition}{note}{Definition 19.4.1 (Indice di rifrazione)}
 
 
 
@@ -12468,7 +12570,7 @@ L’indice di rifrazione \(n_i\) di un materiale omogeneo è una proprietà del 
 \subsubsection{Princìpi dell’ottica geometrica}
 \label{\detokenize{ch/waves/intro:principi-dell-ottica-geometrica}}\label{\detokenize{ch/waves/intro:physics-hs-waves-optics-geometric-principles}}
 \sphinxAtStartPar
-\sphinxstylestrong{Propagazione rettilinea in un mezzo omogeneo.} In un mezzo omogeneo, con indice di rifrazione \(n\) ({\hyperref[\detokenize{ch/waves/intro:refraction-index}]{\sphinxcrossref{Definition 18.4.1}}}) uniforme, i raggi luminosi si propagano su traiettorie rettilinee.
+\sphinxstylestrong{Propagazione rettilinea in un mezzo omogeneo.} In un mezzo omogeneo, con indice di rifrazione \(n\) ({\hyperref[\detokenize{ch/waves/intro:refraction-index}]{\sphinxcrossref{Definition 19.4.1}}}) uniforme, i raggi luminosi si propagano su traiettorie rettilinee.
 
 \sphinxAtStartPar
 \sphinxstylestrong{Legge di Snell \sphinxhyphen{} riflessione e rifrazione tra mezzi discontinui.} Per soddisfare le condizioni di continuità del campo elettromagnetico in corrispondenza di una discontinuità di proprietà fisiche, un raggio che si propaga nel mezzo 1 e incidente su una discontinuità con il mezzo 2 con un angolo \(\theta{1,i}\) con la direzione normale, in generale:
@@ -13342,7 +13444,7 @@ e il lavoro diventa
  L = \int_{\alpha = 0}^{1} dL (\alpha) =  - \int_{\alpha=0}^{1} \sum_{\{i,j\}, i \ne j} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{1}{r_{ij}}  \, d \alpha = - \sum_{\{i,j\}, i \ne j} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{1}{r_{ij}} \ .
 \end{split}
 \end{equation*}\label{ch/electromagnetism/electrostatics:electric-dipole}
-\begin{sphinxadmonition}{note}{Example 20.1.1 (Il dipolo elettrico)}
+\begin{sphinxadmonition}{note}{Example 21.1.1 (Il dipolo elettrico)}
 
 
 
@@ -13383,7 +13485,7 @@ Il modello di dipolo elettrico può essere utilizzato per rappresentare la \sphi
 \sphinxattableend\end{savenotes}
 \end{sphinxadmonition}
 \label{ch/electromagnetism/electrostatics:electric-dipole-ext-e-field}
-\begin{sphinxadmonition}{note}{Example 20.1.2 (Il dipolo elettrico in un campo elettrico esterno uniforme)}
+\begin{sphinxadmonition}{note}{Example 21.1.2 (Il dipolo elettrico in un campo elettrico esterno uniforme)}
 
 
 
@@ -13515,7 +13617,7 @@ esempio 2\sphinxhyphen{}dimensionale, con script
 \end{itemize}
 \end{sphinxadmonition}
 \label{ch/electromagnetism/electrostatics:example-2}
-\begin{sphinxadmonition}{note}{Example 20.1.3 (Distribuzione di carica in un guscio sferico conduttore \sphinxhyphen{} simmetria sferica)}
+\begin{sphinxadmonition}{note}{Example 21.1.3 (Distribuzione di carica in un guscio sferico conduttore \sphinxhyphen{} simmetria sferica)}
 
 
 
@@ -13561,7 +13663,7 @@ per \(r > R_2\):
 \sphinxstylestrong{todo} aggiungere esempio numerico?
 \end{sphinxadmonition}
 \label{ch/electromagnetism/electrostatics:example-3}
-\begin{sphinxadmonition}{note}{Example 20.1.4 (Gabbia di Faraday)}
+\begin{sphinxadmonition}{note}{Example 21.1.4 (Gabbia di Faraday)}
 
 
 \end{sphinxadmonition}
@@ -13575,7 +13677,7 @@ polarizzazione: descrizione
 
 \item {} 
 \sphinxAtStartPar
-polarizzazione equivalente a una distribuzione di volume di \DUrole{xref,myst}{dipoli elettrici}, vedi {\hyperref[\detokenize{ch/electromagnetism/electrostatics:electric-dipole}]{\sphinxcrossref{Example 20.1.1}}}, equivalente a una distribuzione di carica superficiale e una distribuzione di carica di volume solo se polarizzazione non uniforme
+polarizzazione equivalente a una distribuzione di volume di \DUrole{xref,myst}{dipoli elettrici}, vedi {\hyperref[\detokenize{ch/electromagnetism/electrostatics:electric-dipole}]{\sphinxcrossref{Example 21.1.1}}}, equivalente a una distribuzione di carica superficiale e una distribuzione di carica di volume solo se polarizzazione non uniforme
 
 \end{itemize}
 
@@ -13622,7 +13724,7 @@ da cui
 \par
 \sphinxattableend\end{savenotes}
 \label{ch/electromagnetism/electrostatics:example-4}
-\begin{sphinxadmonition}{note}{Example 20.1.5 (Distribuzione di carica in un guscio sferico dielettrico senza carica netta \sphinxhyphen{} simmetria sferica)}
+\begin{sphinxadmonition}{note}{Example 21.1.5 (Distribuzione di carica in un guscio sferico dielettrico senza carica netta \sphinxhyphen{} simmetria sferica)}
 
 
 
@@ -13812,11 +13914,11 @@ Sfruttando la simmetria del problema \sphinxhyphen{} omogeneo nelle direzioni pa
 \begin{split} Q = \sigma \, A = \varepsilon \, e \, A = \frac{\varepsilon \, \ell}{A} \, v = C \, v \ ,\end{split}
 \end{equation*}
 \sphinxAtStartPar
-definendo la capacità \(C\) (vedi {\hyperref[\detokenize{ch/electromagnetism/electrostatics:capacitor-capacity}]{\sphinxcrossref{Definition 20.1.1}}}) come costante di proporzionalità tra la carica elettrica immagazzinata nelle armature del condensatore e la differenza di potenziale ai capi del condensatore stesso, e avendo trovato l’espressione della capacità di un condensatore piano,
+definendo la capacità \(C\) (vedi {\hyperref[\detokenize{ch/electromagnetism/electrostatics:capacitor-capacity}]{\sphinxcrossref{Definition 21.1.1}}}) come costante di proporzionalità tra la carica elettrica immagazzinata nelle armature del condensatore e la differenza di potenziale ai capi del condensatore stesso, e avendo trovato l’espressione della capacità di un condensatore piano,
 \begin{equation*}
 \begin{split}C = \frac{\varepsilon \, A}{\ell} \ .\end{split}
 \end{equation*}\label{ch/electromagnetism/electrostatics:capacitor-capacity}
-\begin{sphinxadmonition}{note}{Definition 20.1.1 (Capacità di un condensatore)}
+\begin{sphinxadmonition}{note}{Definition 21.1.1 (Capacità di un condensatore)}
 
 
 
@@ -13939,7 +14041,7 @@ Distribuzioni di cariche
 \end{itemize}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.1 (Cariche puntiformi)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.1 (Cariche puntiformi)}
 
 
 
@@ -13981,7 +14083,7 @@ determinare l’entità della carica \(q_3\) affinché il sistema di cariche \(q
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.2 (Cariche puntiformi nel piano)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.2 (Cariche puntiformi nel piano)}
 
 
 
@@ -14009,7 +14111,7 @@ il lavoro necessario per portare una quinta carica \(q_5\) dall’infinito al ce
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.3}
+\begin{sphinxadmonition}{note}{Exercise 21.1.3}
 
 
 
@@ -14033,7 +14135,7 @@ calcolare il lavoro compiuto per portare una carica \(q_A\) dal punto \(A_1\) al
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.4}
+\begin{sphinxadmonition}{note}{Exercise 21.1.4}
 
 
 
@@ -14071,13 +14173,13 @@ Moto di cariche tra pareti di condensatore
 \end{itemize}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.5 (Lavoro meccanico su condensatore modificandone la geometria)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.5 (Lavoro meccanico su condensatore modificandone la geometria)}
 
 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.6 (Lavoro necessario a inserire o rimuovere un dielettrico)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.6 (Lavoro necessario a inserire o rimuovere un dielettrico)}
 
 
 \end{sphinxadmonition}
@@ -14089,7 +14191,7 @@ vecchi esercizi
 \end{itemize}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.7 (Legge di Coulomb)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.7 (Legge di Coulomb)}
 
 
 
@@ -14098,7 +14200,7 @@ Due cariche di \(q_1 = 3 \, \mu C\) e \(q_2 = -2 \, \mu C\) sono separate da una
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.8 (Forza Elettrica e Direzione)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.8 (Forza Elettrica e Direzione)}
 
 
 
@@ -14107,7 +14209,7 @@ Due cariche puntiformi di carica \(q_1 = 4 \, \mu C\) e \(q_2 = -3 \, \mu C\) so
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.9 (Campo Elettrico da una Carica Puntiforme)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.9 (Campo Elettrico da una Carica Puntiforme)}
 
 
 
@@ -14116,7 +14218,7 @@ Calcola il campo elettrico a una distanza \(r = 2 \, \text{m}\) da una carica di
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.10 (Potenziale Elettrico di una Carica Puntiforme)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.10 (Potenziale Elettrico di una Carica Puntiforme)}
 
 
 
@@ -14125,7 +14227,7 @@ Calcola il potenziale elettrico creato da una carica di \(q = 3 \, \mu C\) a una
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.11 (Legge di Gauss)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.11 (Legge di Gauss)}
 
 
 
@@ -14134,7 +14236,7 @@ Calcola il flusso del campo elettrico attraverso una superficie sferica di raggi
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.12 (Superficie Gaussiana con Distribuzione Sferica)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.12 (Superficie Gaussiana con Distribuzione Sferica)}
 
 
 
@@ -14143,7 +14245,7 @@ Una carica distribuita uniformemente su una superficie sferica di raggio \(R = 0
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.13 (Campo Elettrico da una Distribuzione Continua di Carica)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.13 (Campo Elettrico da una Distribuzione Continua di Carica)}
 
 
 
@@ -14152,7 +14254,7 @@ Calcola il campo elettrico prodotto da una distribuzione continua di carica su u
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.14 (Energia Potenziale Elettrica tra Due Cariche)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.14 (Energia Potenziale Elettrica tra Due Cariche)}
 
 
 
@@ -14161,7 +14263,7 @@ Calcola l’energia potenziale elettrica tra due cariche di \(q_1 = 1 \, \mu C\)
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.15 (Legge di Faraday Stazionaria)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.15 (Legge di Faraday Stazionaria)}
 
 
 
@@ -14170,7 +14272,7 @@ Calcola il campo elettrico indotto da un campo magnetico stazionario di intensit
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-15}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.16 (Moto di una Carica in un Campo Elettrico)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.16 (Moto di una Carica in un Campo Elettrico)}
 
 
 
@@ -14179,7 +14281,7 @@ Una particella di carica \(q = 5 \, \mu C\) si muove con velocità \(v = 3 \, \t
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-16}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.17 (Capacitore Piatto)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.17 (Capacitore Piatto)}
 
 
 
@@ -14188,7 +14290,7 @@ Calcola la capacità di un condensatore a piatti paralleli con superficie dei pi
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-17}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.18 (Energia di un Condensatore)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.18 (Energia di un Condensatore)}
 
 
 
@@ -14197,7 +14299,7 @@ Calcola l’energia immagazzinata in un condensatore con capacità \(C = 2 \, \m
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-18}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.19 (Energia Potenziale di un Condensatore)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.19 (Energia Potenziale di un Condensatore)}
 
 
 
@@ -14206,7 +14308,7 @@ Un condensatore a piatti paralleli ha una capacità di \(C = 3 \, \mu F\) e vien
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-19}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.20 (Potenziale di un Condensatore)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.20 (Potenziale di un Condensatore)}
 
 
 
@@ -14215,7 +14317,7 @@ Calcola il potenziale elettrico tra due piatti di un condensatore a piatti paral
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-20}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.21 (Capacità di un Condensatore con Dielettrico)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.21 (Capacità di un Condensatore con Dielettrico)}
 
 
 
@@ -14224,7 +14326,7 @@ Un condensatore a piatti paralleli ha una capacità di \(C = 5 \, \mu F\) con ar
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-21}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.22 (Densità di Energia in un Campo Elettrico)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.22 (Densità di Energia in un Campo Elettrico)}
 
 
 
@@ -14233,7 +14335,7 @@ Calcola la densità di energia in un campo elettrico con intensità \(E = 100 \,
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-22}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.23 (Energia Potenziale di una Carica in un Condensatore)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.23 (Energia Potenziale di una Carica in un Condensatore)}
 
 
 
@@ -14242,7 +14344,7 @@ Calcola l’energia potenziale di una carica di \(q = 2 \, \mu C\) in un condens
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-23}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.24 (Capacità di un Condensatore Sferico)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.24 (Capacità di un Condensatore Sferico)}
 
 
 
@@ -14251,7 +14353,7 @@ Calcola la capacità di un condensatore sferico con raggio interno \(r_1 = 0.1 \
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-24}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.25 (Carica di un Condensatore)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.25 (Carica di un Condensatore)}
 
 
 
@@ -14260,7 +14362,7 @@ Un condensatore con capacità \(C = 10 \, \mu F\) è collegato a una batteria ch
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-25}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.26 (Potenziale di una Carica in un Campo Elettrico Uniforme)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.26 (Potenziale di una Carica in un Campo Elettrico Uniforme)}
 
 
 
@@ -14269,7 +14371,7 @@ Una carica di \(q = 2 \, \mu C\) è posta a una distanza di \(r = 0.5 \, \text{m
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-26}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.27 (Legge di Coulomb in un Dielettrico)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.27 (Legge di Coulomb in un Dielettrico)}
 
 
 
@@ -14278,7 +14380,7 @@ Due cariche di \(q_1 = 4 \, \mu C\) e \(q_2 = -6 \, \mu C\) sono separate da una
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-27}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.28 (Potenziale Elettrico di un Dipolo)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.28 (Potenziale Elettrico di un Dipolo)}
 
 
 
@@ -14287,7 +14389,7 @@ Calcola il potenziale elettrico creato da un dipolo con momento dipolare \(p = 5
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-28}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.29 (Condensatore con Dielettrico Non Lineare)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.29 (Condensatore con Dielettrico Non Lineare)}
 
 
 
@@ -14296,7 +14398,7 @@ Calcola la capacità di un condensatore a piatti paralleli con costante dielettr
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-29}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.30 (Forza su una Carica in un Campo Elettrico Non Uniforme)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.30 (Forza su una Carica in un Campo Elettrico Non Uniforme)}
 
 
 
@@ -14305,7 +14407,7 @@ Una particella di carica \(q = 1 \, \mu C\) è posta in un campo elettrico che v
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-30}
 
-\begin{sphinxadmonition}{note}{Exercise 20.1.31 (Campo Elettrico all’Interno di una Sfera Carica)}
+\begin{sphinxadmonition}{note}{Exercise 21.1.31 (Campo Elettrico all’Interno di una Sfera Carica)}
 
 
 
@@ -14341,7 +14443,7 @@ Calcola il campo elettrico all’interno di una sfera carica con densità di car
 
 \subsection{Definizioni}
 \label{\detokenize{ch/electromagnetism/electric-current:definizioni}}\label{ch/electromagnetism/electric-current:electric-current}
-\begin{sphinxadmonition}{note}{Definition 20.2.1 (Corrente elettrica)}
+\begin{sphinxadmonition}{note}{Definition 21.2.1 (Corrente elettrica)}
 
 
 
@@ -14367,7 +14469,7 @@ La \sphinxstylestrong{corrente elettrica} attraverso una superficie \(S\) viene 
 
 \subsubsection{Densità di corrente elettrica}
 \label{\detokenize{ch/electromagnetism/electric-current:densita-di-corrente-elettrica}}\label{\detokenize{ch/electromagnetism/electric-current:electric-current-density-def}}\label{ch/electromagnetism/electric-current:electric-current-density}
-\begin{sphinxadmonition}{note}{Definition 20.2.2 (Densità di corrente elettrica)}
+\begin{sphinxadmonition}{note}{Definition 21.2.2 (Densità di corrente elettrica)}
 
 
 \begin{equation*}
@@ -14451,7 +14553,7 @@ Senza «forzanti esterne», come ad esempio campi elettrici, il moto degli elett
 
 \paragraph{Conduttori di Ohm}
 \label{\detokenize{ch/electromagnetism/electric-current:conduttori-di-ohm}}\label{\detokenize{ch/electromagnetism/electric-current:physics-hs-electromagnetism-electric-current-solids-conductor-ohm}}\label{ch/electromagnetism/electric-current:definition-2}
-\begin{sphinxadmonition}{note}{Definition 20.2.3 (Conduttore di Ohm \sphinxhyphen{} legge di Ohm in forma locale)}
+\begin{sphinxadmonition}{note}{Definition 21.2.3 (Conduttore di Ohm \sphinxhyphen{} legge di Ohm in forma locale)}
 
 
 
@@ -14482,7 +14584,7 @@ avendo introdotto la differenza di potenziale elementare \(d v\) tra gli estremi
 \sphinxAtStartPar
 Queste relazioni che ben descrivono il comportamento di cavi elettrici conduttori in un ampio regime di funzionamento, sono le leggi Ohm.
 \label{ch/electromagnetism/electric-current:definition-3}
-\begin{sphinxadmonition}{note}{Definition 20.2.4 (Leggi di Ohm per cavi elettrici)}
+\begin{sphinxadmonition}{note}{Definition 21.2.4 (Leggi di Ohm per cavi elettrici)}
 
 
 
@@ -14507,7 +14609,7 @@ Nel caso di proprietà omogenee in un resistore di lunghezza \(\ell\), la sua re
 \begin{split}R = \int d R = \int_{\ell} \frac{\rho_R}{A} d \ell = \dfrac{\rho_R \ell}{A} \ .\end{split}
 \end{equation*}\end{sphinxadmonition}
 \label{ch/electromagnetism/electric-current:example-4}
-\begin{sphinxadmonition}{note}{Example 20.2.1 (Effetto della temperatura sulla resistenza)}
+\begin{sphinxadmonition}{note}{Example 21.2.1 (Effetto della temperatura sulla resistenza)}
 
 
 
@@ -14652,7 +14754,7 @@ vecchi problemi
 \end{itemize}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.1 (Conservazione della Carica)}
+\begin{sphinxadmonition}{note}{Exercise 21.2.1 (Conservazione della Carica)}
 
 
 
@@ -14661,7 +14763,7 @@ In un conduttore, la carica totale rimane invariata quando una corrente elettric
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.2 (Legge di Ohm)}
+\begin{sphinxadmonition}{note}{Exercise 21.2.2 (Legge di Ohm)}
 
 
 
@@ -14670,7 +14772,7 @@ Calcola la corrente che attraversa un resistore con resistenza \(R = 10 \, \Omeg
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.3 (Legge di Ohm in un Circuito)}
+\begin{sphinxadmonition}{note}{Exercise 21.2.3 (Legge di Ohm in un Circuito)}
 
 
 
@@ -14679,7 +14781,7 @@ In un circuito serie con tre resistenze \(R_1 = 5 \, \Omega\), \(R_2 = 10 \, \Om
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.4 (Resistenza di un Conduttore)}
+\begin{sphinxadmonition}{note}{Exercise 21.2.4 (Resistenza di un Conduttore)}
 
 
 
@@ -14688,7 +14790,7 @@ Un conduttore ha una lunghezza di \(L = 2 \, \text{m}\), una sezione trasversale
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.5 (Conduzione nei Gas)}
+\begin{sphinxadmonition}{note}{Exercise 21.2.5 (Conduzione nei Gas)}
 
 
 
@@ -14697,7 +14799,7 @@ Considera un gas conduttore a temperatura \(T = 300 \, \text{K}\) e pressione \(
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.6 (Corrente nei Semiconduttori)}
+\begin{sphinxadmonition}{note}{Exercise 21.2.6 (Corrente nei Semiconduttori)}
 
 
 
@@ -14706,7 +14808,7 @@ In un semiconduttore di silicio, la mobilità degli elettroni è di \(1500 \, \t
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.7 (Corrente Elettrica in un Conduttore)}
+\begin{sphinxadmonition}{note}{Exercise 21.2.7 (Corrente Elettrica in un Conduttore)}
 
 
 
@@ -14715,7 +14817,7 @@ Un conduttore ha una resistenza di \(R = 5 \, \Omega\). Se una corrente di \(I =
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.8 (Conduttività di un Materiale)}
+\begin{sphinxadmonition}{note}{Exercise 21.2.8 (Conduttività di un Materiale)}
 
 
 
@@ -14724,7 +14826,7 @@ Un materiale ha una conduttività \(\sigma = 1.5 \times 10^6 \, \text{S/m}\) e u
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.9 (La Corrente in un Conduttore)}
+\begin{sphinxadmonition}{note}{Exercise 21.2.9 (La Corrente in un Conduttore)}
 
 
 
@@ -14733,7 +14835,7 @@ Se un conduttore ha una resistenza di \(R = 10 \, \Omega\) e una tensione di \(V
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.10 (Effetto Joule)}
+\begin{sphinxadmonition}{note}{Exercise 21.2.10 (Effetto Joule)}
 
 
 
@@ -14742,7 +14844,7 @@ Un filo di resistenza \(R = 0.5 \, \Omega\) trasporta una corrente di \(I = 2 \,
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.11 (Legge di Ohm per un Semiconduttore)}
+\begin{sphinxadmonition}{note}{Exercise 21.2.11 (Legge di Ohm per un Semiconduttore)}
 
 
 
@@ -14751,7 +14853,7 @@ In un semiconduttore con una resistività di \(\rho = 3 \times 10^{-4} \, \Omega
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.12 (Effetto della Temperatura sulla Resistenza)}
+\begin{sphinxadmonition}{note}{Exercise 21.2.12 (Effetto della Temperatura sulla Resistenza)}
 
 
 
@@ -14760,7 +14862,7 @@ La resistenza di un filo metallico è di \(R = 10 \, \Omega\) a \(T_0 = 20 \, \t
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.13 (Energia Spesa in un Conduttore)}
+\begin{sphinxadmonition}{note}{Exercise 21.2.13 (Energia Spesa in un Conduttore)}
 
 
 
@@ -14769,7 +14871,7 @@ Calcola l’energia spesa in un conduttore con resistenza \(R = 1 \, \Omega\) in
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.14 (Conduzione nei Semiconduttori)}
+\begin{sphinxadmonition}{note}{Exercise 21.2.14 (Conduzione nei Semiconduttori)}
 
 
 
@@ -14778,7 +14880,7 @@ Considera un semiconduttore di germanio con resistività \(\rho = 0.5 \, \Omega 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.15 (Corrente in un Circuito Serie)}
+\begin{sphinxadmonition}{note}{Exercise 21.2.15 (Corrente in un Circuito Serie)}
 
 
 
@@ -14787,7 +14889,7 @@ In un circuito serie con tre resistenze \(R_1 = 2 \, \Omega\), \(R_2 = 3 \, \Ome
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-15}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.16 (Densità di Corrente in un Conduttore)}
+\begin{sphinxadmonition}{note}{Exercise 21.2.16 (Densità di Corrente in un Conduttore)}
 
 
 
@@ -14796,7 +14898,7 @@ Un conduttore di lunghezza \(L = 2 \, \text{m}\) e sezione trasversale \(A = 0.5
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-16}
 
-\begin{sphinxadmonition}{note}{Exercise 20.2.17 (Legge di Ohm per un Gas)}
+\begin{sphinxadmonition}{note}{Exercise 21.2.17 (Legge di Ohm per un Gas)}
 
 
 
@@ -15185,7 +15287,7 @@ moto di cariche all’interno di campo elettromagnetico
 \end{itemize}
 \phantomsection \label{exercise:ch/electromagnetism/electromagnetism-steady-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 20.3.5 (Amperometro \sphinxhyphen{} Azioni agenti sulla bobina)}
+\begin{sphinxadmonition}{note}{Exercise 21.3.5 (Amperometro \sphinxhyphen{} Azioni agenti sulla bobina)}
 
 
 
@@ -15209,19 +15311,19 @@ determinare la condizione di equilibrio alla rotazione che determina la misura d
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electromagnetism-steady-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 20.3.6 (Amperometro \sphinxhyphen{} Intrusività)}
+\begin{sphinxadmonition}{note}{Exercise 21.3.6 (Amperometro \sphinxhyphen{} Intrusività)}
 
 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electromagnetism-steady-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 20.3.7 (Amperometro \sphinxhyphen{} Sensibilità)}
+\begin{sphinxadmonition}{note}{Exercise 21.3.7 (Amperometro \sphinxhyphen{} Sensibilità)}
 
 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electromagnetism-steady-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 20.3.8 (Voltmetro \sphinxhyphen{} Intrusività)}
+\begin{sphinxadmonition}{note}{Exercise 21.3.8 (Voltmetro \sphinxhyphen{} Intrusività)}
 
 
 \end{sphinxadmonition}
@@ -15954,17 +16056,17 @@ I sistemi elettromeccanici permettono di convertire energia elettromagnetica in 
 
 \subsubsection{Esempi elementari}
 \label{\detokenize{ch/electromagnetism/electric-machines:esempi-elementari}}\label{ch/electromagnetism/electric-machines:example-0}
-\begin{sphinxadmonition}{note}{Example 21.3.1 (Variazione di area di una spira)}
+\begin{sphinxadmonition}{note}{Example 22.3.1 (Variazione di area di una spira)}
 
 
 \end{sphinxadmonition}
 \label{ch/electromagnetism/electric-machines:example-1}
-\begin{sphinxadmonition}{note}{Example 21.3.2 (Variazione di orientazione di una spira)}
+\begin{sphinxadmonition}{note}{Example 22.3.2 (Variazione di orientazione di una spira)}
 
 
 \end{sphinxadmonition}
 \label{ch/electromagnetism/electric-machines:example-2}
-\begin{sphinxadmonition}{note}{Example 21.3.3 (Variazione del campo magnetico)}
+\begin{sphinxadmonition}{note}{Example 22.3.3 (Variazione del campo magnetico)}
 
 
 \end{sphinxadmonition}
@@ -16141,7 +16243,7 @@ cercare pubblicazioni di Hertz
 \section{Problemi}
 \label{\detokenize{ch/electromagnetism/em-waves-problems:problemi}}\label{\detokenize{ch/electromagnetism/em-waves-problems:physics-hs-electromagnetism-em-waves-problems}}\label{\detokenize{ch/electromagnetism/em-waves-problems::doc}}\phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 22.3.1 (Velocità della Luce)}
+\begin{sphinxadmonition}{note}{Exercise 23.3.1 (Velocità della Luce)}
 
 
 
@@ -16150,7 +16252,7 @@ Calcola la velocità della luce in un vuoto utilizzando la costante dielettrica 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 22.3.2 (Frequenza e Lunghezza d’Onda)}
+\begin{sphinxadmonition}{note}{Exercise 23.3.2 (Frequenza e Lunghezza d’Onda)}
 
 
 
@@ -16159,7 +16261,7 @@ Un’onda elettromagnetica ha una frequenza di \(f = 60 \, \text{MHz}\). Calcola
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 22.3.3 (Energia di un Foton)}
+\begin{sphinxadmonition}{note}{Exercise 23.3.3 (Energia di un Foton)}
 
 
 
@@ -16168,7 +16270,7 @@ Calcola l’energia di un fotone di luce con una lunghezza d’onda di \(500 \, 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 22.3.4 (Legge di Snell per Onde Elettromagnetiche)}
+\begin{sphinxadmonition}{note}{Exercise 23.3.4 (Legge di Snell per Onde Elettromagnetiche)}
 
 
 
@@ -16177,7 +16279,7 @@ Un’onda elettromagnetica passa dall’aria (indice di rifrazione \(n_1 = 1\)) 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 22.3.5 (Direzione del Campo Elettrico in un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 23.3.5 (Direzione del Campo Elettrico in un’onda Elettromagnetica)}
 
 
 
@@ -16186,7 +16288,7 @@ In un’onda elettromagnetica che si propaga lungo l’asse \(z\), con il campo 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 22.3.6 (Intensità di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 23.3.6 (Intensità di un’onda Elettromagnetica)}
 
 
 
@@ -16195,7 +16297,7 @@ Se l’intensità di un’onda elettromagnetica è \(I = 8 \, \text{W/m}^2\) e l
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 22.3.7 (Energia Mediata da un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 23.3.7 (Energia Mediata da un’onda Elettromagnetica)}
 
 
 
@@ -16204,7 +16306,7 @@ Un’onda elettromagnetica ha una frequenza di \(f = 100 \, \text{MHz}\). Se l�
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 22.3.8 (Propagazione in un Medio Dielettrico)}
+\begin{sphinxadmonition}{note}{Exercise 23.3.8 (Propagazione in un Medio Dielettrico)}
 
 
 
@@ -16213,7 +16315,7 @@ Un’onda elettromagnetica si propaga in un materiale con costante dielettrica \
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 22.3.9 (Polarizzazione di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 23.3.9 (Polarizzazione di un’onda Elettromagnetica)}
 
 
 
@@ -16222,7 +16324,7 @@ Un’onda elettromagnetica viene polarizzata attraverso un filtro lineare. Se la
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 22.3.10 (Effetto Doppler per Onde Elettromagnetiche)}
+\begin{sphinxadmonition}{note}{Exercise 23.3.10 (Effetto Doppler per Onde Elettromagnetiche)}
 
 
 
@@ -16231,7 +16333,7 @@ Un’onda elettromagnetica ha una frequenza \(f = 5 \, \text{GHz}\) e viene osse
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 22.3.11 (Energia per Unità di Volume di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 23.3.11 (Energia per Unità di Volume di un’onda Elettromagnetica)}
 
 
 
@@ -16240,7 +16342,7 @@ Calcola l’energia per unità di volume in un’onda elettromagnetica che ha un
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 22.3.12 (Onda Elettromagnetica nel Vuoto)}
+\begin{sphinxadmonition}{note}{Exercise 23.3.12 (Onda Elettromagnetica nel Vuoto)}
 
 
 
@@ -16249,7 +16351,7 @@ Una radiazione elettromagnetica ha una frequenza di \(f = 2 \, \text{GHz}\). Cal
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 22.3.13 (Impedenza di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 23.3.13 (Impedenza di un’onda Elettromagnetica)}
 
 
 
@@ -16258,7 +16360,7 @@ In un’onda elettromagnetica nel vuoto, calcola l’impedenza, sapendo che la p
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 22.3.14 (Spettro Elettromagnetico)}
+\begin{sphinxadmonition}{note}{Exercise 23.3.14 (Spettro Elettromagnetico)}
 
 
 
@@ -16267,7 +16369,7 @@ Un’onda elettromagnetica appartiene alla banda delle microonde con una frequen
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 22.3.15 (Legge di Ampère\sphinxhyphen{}Maxwell)}
+\begin{sphinxadmonition}{note}{Exercise 23.3.15 (Legge di Ampère\sphinxhyphen{}Maxwell)}
 
 
 
@@ -16276,7 +16378,7 @@ Utilizzando la legge di Ampère\sphinxhyphen{}Maxwell, calcola la corrente indot
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-15}
 
-\begin{sphinxadmonition}{note}{Exercise 22.3.16 (Direzione di Propagazione di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 23.3.16 (Direzione di Propagazione di un’onda Elettromagnetica)}
 
 
 
@@ -16285,7 +16387,7 @@ In un’onda elettromagnetica che si propaga lungo l’asse \(z\) con il campo e
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-16}
 
-\begin{sphinxadmonition}{note}{Exercise 22.3.17 (Potenza Trasportata da un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 23.3.17 (Potenza Trasportata da un’onda Elettromagnetica)}
 
 
 
@@ -16294,7 +16396,7 @@ Calcola la potenza trasportata da un’onda elettromagnetica con una intensità 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-17}
 
-\begin{sphinxadmonition}{note}{Exercise 22.3.18 (Riflessione e Rifrazione di Onde Elettromagnetiche)}
+\begin{sphinxadmonition}{note}{Exercise 23.3.18 (Riflessione e Rifrazione di Onde Elettromagnetiche)}
 
 
 
