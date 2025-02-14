@@ -71,7 +71,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon-sugar.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="2.2. Spazio" href="physical_quantities-space.html" />
+    <link rel="next" title="2.1. Spazio" href="physical_quantities-space.html" />
     <link rel="prev" title="1. Introduzione alla fisica" href="../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -174,17 +174,17 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../intro.html">1. Introduzione alla fisica</a></li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">2. Grandezze fisiche</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-space.html">2.2. Spazio</a></li>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-mass.html">2.3. Quantità di materia</a></li>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-time.html">2.4. Tempo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-temperature.html">2.5. Temperatura</a></li>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-charge.html">2.6. Carica e corrente elettrica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-mole.html">2.7. Quantità di sostanza, la mole</a></li>
-<li class="toctree-l2"><a class="reference internal" href="physical_quantities-luminosity.html">2.8. Intensità luminosa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-space.html">2.1. Spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-mass.html">2.2. Quantità di materia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-time.html">2.3. Tempo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-temperature.html">2.4. Temperatura</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-charge.html">2.5. Carica e corrente elettrica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-mole.html">2.6. Quantità di sostanza, la mole</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_quantities-luminosity.html">2.7. Intensità luminosa</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="scientific-method.html">3. Il metodo scientifico</a></li>
-<li class="toctree-l1"><a class="reference internal" href="measurements.html">4. Misura</a></li>
+<li class="toctree-l1"><a class="reference internal" href="measurements.html">3. Misura</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scientific-method.html">4. Il metodo scientifico</a></li>
 <li class="toctree-l1"><a class="reference internal" href="current-status.html">5. Stato corrente</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sensing.html">6. Sensi</a></li>
 </ul>
@@ -547,9 +547,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -565,17 +563,6 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contenuti </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-di-misura">2.1. Sistema di misura</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-di-misura-internazionale">2.1.1. Sistema di misura internazionale</a></li>
-</ul>
-</li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -587,26 +574,186 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="grandezze-fisiche">
 <span id="physics-hs-intro-physical-quantities"></span><h1><span class="section-number">2. </span>Grandezze fisiche<a class="headerlink" href="#grandezze-fisiche" title="Permalink to this heading">#</a></h1>
-<p>Una grandezza fisica è una proprietà di un sistema o di un fenomeno fisico che può essere <a class="reference internal" href="measurements.html#physics-hs-intro-measurements"><span class="std std-ref">misurata</span></a> e il cui valore può essere espresso in relazione a un’unità di misura.</p>
-<div class="section" id="sistema-di-misura">
-<span id="physics-hs-intro-physical-quantities-system"></span><h2><span class="section-number">2.1. </span>Sistema di misura<a class="headerlink" href="#sistema-di-misura" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>grandezze fondamentali e derivate</p></li>
-<li><p>unità di misura</p></li>
+<p>Una grandezza fisica è una proprietà di un sistema o di un fenomeno fisico che può essere <a class="reference internal" href="measurements.html#physics-hs-intro-measurements"><span class="std std-ref">misurata</span></a> e il cui valore può essere espresso in relazione a un’unità di misura omogenea.</p>
+<p>Un <strong>sistema di misura</strong> è formato da un insieme di unità di misura <em>fondamentali</em> associate a grandezze fisiche, dalle quali è possibile ricavare le unità di misura <em>derivate</em> per tutte le altre grandezze fisiche.</p>
+<p>Il <strong>sistema internazionale</strong> di unità di misura (SI) usa sette <strong>grandezze fisiche fondamentali</strong>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p>Grandezza fisica</p></th>
+<th class="text-center head"><p>Simbolo dimensionale</p></th>
+<th class="text-left head"><p>Unità di misura</p></th>
+<th class="text-center head"><p>Simbolo</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>lunghezza</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\([L]\)</span></p></td>
+<td class="text-left"><p>metro</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(m\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>intervallo di tempo</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\([T]\)</span></p></td>
+<td class="text-left"><p>secondo</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(s\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>massa</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\([M]\)</span></p></td>
+<td class="text-left"><p>chilogrammo</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(kg\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>temperatura</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\([\Theta]\)</span></p></td>
+<td class="text-left"><p>Kelvin</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(K\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>intensità di corrente</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\([I]\)</span></p></td>
+<td class="text-left"><p>Ampére</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(A\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>quantità di sostanza</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\([N]\)</span></p></td>
+<td class="text-left"><p>mole</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(mol\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>intensità luminosa</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\([J]\)</span></p></td>
+<td class="text-left"><p>candela</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(cd\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Multipli e sottomultipli.</strong> A parte rare eccezioni<a class="footnote-reference brackets" href="#multiples-exceptions" id="id1">1</a>, è comune usare multipli e sottomultipli delle unità di misura che siano potenze intere con base <span class="math notranslate nohighlight">\(10\)</span>. A parte il «residuo storico» del «chilo» nell’unità di misura della massa (il sistema CGS usava il grammo come unità di misura), non compaiono prefissi nelle unità di misura. I prefissi associati ai multipli e sottomultipli di una grandezza sono</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p>Prefisso</p></th>
+<th class="text-center head"><p>Simbolo</p></th>
+<th class="text-left head"><p>Multiplo</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Peta</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(P\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(10^{15} \)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Tera</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(T\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(10^{12} \)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Giga</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(G\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(10^{9}  \)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Mega</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(M\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(10^{6}  \)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Chilo</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(k\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(10^{3}  \)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Etto</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(h\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(10^{2}  \)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Deca</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(da\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(10^{1}  \)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>-</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(10^{0}  \)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Deci</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(d\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(10^{-1} \)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Centi</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(c\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(10^{-2} \)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Milli</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(m\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(10^{-3} \)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Micro</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\mu\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(10^{-6} \)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Nano</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(n\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(10^{-9} \)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Pico</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(p\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(10^{-12}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Femto</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(f\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(10^{-15}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Altri sistemi di misura.</strong></p>
+<ul>
+<li><p>Sistema <strong>CGS</strong> (centimetro-grammo-secondo): proposto da Gauss nel 1832 (<strong>todo</strong> <em>ref</em>), con tre unità di misura fondamentali per lunghezza, tempo e massa.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p>Grandezza fisica</p></th>
+<th class="text-left head"><p>Unità di misura</p></th>
+<th class="text-center head"><p>Simbolo</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>lunghezza</p></td>
+<td class="text-left"><p>centimetro</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(cm\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>intervallo di tempo</p></td>
+<td class="text-left"><p>secondo</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(s\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>massa</p></td>
+<td class="text-left"><p>grammo</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(g\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>All’epoca della proposta, esistevano diverse <a class="reference internal" href="../thermodynamics/foundation-experiments.html#physics-hs-thermodynamics-foundation-experiments-t-scales"><span class="std std-ref">scale di temperatura</span></a> empiriche, non esisteva ancora una mcomprensione matura della termodinamica, si intuiva la natura atomica della materia ma esistevano ancora modelli consistenti (confusione tra i chimici dopo gli studi di Dalton che venne risolta con Avogadro e Canizzaro vero il 1860), e gli studi sull’elettromagnetismo non avevano ancora prodotto il modello consistente rappresentato dalle equazioni di Maxwell.</p>
+<p>Nel 1874, al sistema CGS originario furono aggiunte le unità di misura della temperatura e delle grandezze elettromagnetiche da parte di Kelvin e Maxwell, dopo la proposta da parte di Kelvin di una scala termodinamica di temperatura<a class="footnote-reference brackets" href="#kelvin-1848" id="id2">2</a> e la formulazione di un modello completo dell’elettromagnetismo classico da parte di Maxwell<a class="footnote-reference brackets" href="#maxwell-1865" id="id3">3</a>.</p>
+</li>
 </ul>
-<div class="section" id="sistema-di-misura-internazionale">
-<span id="physics-hs-intro-physical-quantities-system-is"></span><h3><span class="section-number">2.1.1. </span>Sistema di misura internazionale<a class="headerlink" href="#sistema-di-misura-internazionale" title="Permalink to this heading">#</a></h3>
-<p><strong>Brevissima storia.</strong></p>
 <ul class="simple">
-<li><p>Inizialmente unità di misura convenzionali, facilmente riconducibili all’esperienza quotidiana degli esseri umani ai tempi in cui le unità vengono definite.</p></li>
-<li><p>Successivamente<a class="footnote-reference brackets" href="#si-history" id="id1">1</a> unità di misura riconducibili a grandezze fisiche facilmente replicabili in maniera stabile in laboratorio.</p></li>
-<li><p>Recentemente, dopo la scoperta di alcune grandezze costanti in natura, le unità di misura «classiche» sono state ri-definite in termini di queste costanti della natura mantenendo il loro valore originale.<a class="footnote-reference brackets" href="#new-def-si" id="id2">2</a></p></li>
+<li><p>Sistema <strong>MKS</strong> (metro-chilogrammo-secondo):</p></li>
+<li><p>Sistema <strong>imperiale</strong> sistema adottato nell’impero britannico a partire dal 1824 per legge, e rimasto in uso per legge fino al 1965. Una volta capita la logica lineare alla base della costruzione del SI di misura, questo sistema di misura sembra figlio di un demonio particolarmente ingegnoso, da concepire una scala di multipli e sottomultipli irregolare. Alcuni suoi residui rimangono di uso comune nel mondo anglosassone, e in alcuni settori. Tra gli stati nazionali si distinguono gli Stati Uniti e la Liberia, da loro creata, per la resistenza nell’uso della scala Fahrenheit di temperatura, scala arbitraria di temperatura con origine e ampiezza del grado differente dalla scala termodinamica Kelvin o dalla scala Celsius in uso in tutto il resto del mondo; tra i settori industriali, rimangono tracce o più che tracce nell’ambito dei trasporti e nel settore aeronautico: in questo ambito particolare, la costruzione delle grandezze derivate partorisce unità di misura che possono essere solo figlie del demonio originario che ha partorito questo sistema. Senza dilungarci oltre: in questo materiale non si farà mai uso del sistema imperiale; qui ci siamo fatti due risate, utili a ricordarci la semplicità del SI e di non usare mai il sistema imperiale se non costretti. Per chi volesse approfondire, può partire dal <a class="reference external" href="https://it.wikipedia.org/wiki/Sistema_imperiale_britannico">collegamento alla pagina di Wikipedia in italiano</a>.</p></li>
 </ul>
-<p><strong>Massa, lunghezza e tempo.</strong></p>
-<p><strong>Temperatura.</strong></p>
-<p><strong>Quantità di sostanza.</strong></p>
-<p><strong>Carica elettrica.</strong></p>
-<p><strong>Intensità luminosa.</strong></p>
+<!--
+(physics-hs:intro:physical-quantities:system)=
+## Sistema di misura
+
+- grandezze fondamentali e derivate
+- unità di misura
+
+(physics-hs:intro:physical-quantities:system:is)=
+### Sistema di misura internazionale
+-->
+<p><strong>Brevissima storia.</strong> Della costruzione del moderno sistema di misura.</p>
+<ul class="simple">
+<li><p>Inizialmente unità di misura convenzionali, facilmente riconducibili all’esperienza quotidiana degli esseri umani ai tempi in cui le unità vengono definite. Nuove unità di misura fondamentali vengono introdotte quando quelle già definite non sono sufficienti a rappresentare nuove grandezze fisiche.</p></li>
+<li><p>Successivamente<a class="footnote-reference brackets" href="#si-history" id="id4">4</a> unità di misura riconducibili a grandezze fisiche facilmente replicabili in maniera stabile in laboratorio.</p></li>
+<li><p>Recentemente, dopo la scoperta di alcune grandezze costanti in natura, le unità di misura «classiche» sono state ri-definite in termini di queste costanti della natura mantenendo il loro valore originale.<a class="footnote-reference brackets" href="#new-def-si" id="id5">5</a></p></li>
+</ul>
+<!--
+**Massa, lunghezza e tempo.**
+
+**Temperatura.**
+
+**Quantità di sostanza.**
+
+**Carica elettrica.**
+
+**Intensità luminosa.**
+-->
 <!--
 - Come conosciamo il mondo? Come misuriamo il mondo?
 - Necessità di avere delle grandezze di riferimento stabili o facilmente riproducibili in maniera precisa, da usare come unità di misura delle grandezze fisiche.
@@ -635,15 +782,22 @@ document.write(`
 -->
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
-<dt class="label" id="si-history"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dt class="label" id="multiples-exceptions"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Come esempio, è comune usare sottomultipli in base <span class="math notranslate nohighlight">\(10\)</span> del secondo (nelle gare sportive è comune misurare i tempi fino al centesimo o al millesimo di secondo; per la misura di impulsi molto brevi si usano i micro <span class="math notranslate nohighlight">\(10^{-6}\)</span>, i nano <span class="math notranslate nohighlight">\(10^{-9}\)</span>, i pico <span class="math notranslate nohighlight">\(10^{-12}\)</span>, i femto <span class="math notranslate nohighlight">\(10^{-15}\)</span> -secondi), per i multipli nella vita quotidiana si è soliti le potenze in base <span class="math notranslate nohighlight">\(60\)</span> - o dei residui di sistemi con base <span class="math notranslate nohighlight">\(12\)</span> - del secondo (minuto <span class="math notranslate nohighlight">\(60 \, s\)</span>, ora <span class="math notranslate nohighlight">\(60 \, min = 60^2 \, s\)</span>, giorno <span class="math notranslate nohighlight">\(24 \, h = 24 \cdot 60 \cdot 60 \, s\)</span>)</p>
+</dd>
+<dt class="label" id="kelvin-1848"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>W.Thomson (1848), <em>«On an Absolute Thermometric Scale»</em></p>
+</dd>
+<dt class="label" id="maxwell-1865"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
+<dd><p>J.C.Maxwell (1865), <em>«A dynamical theory of  the electromagnetic field»</em></p>
+</dd>
+<dt class="label" id="si-history"><span class="brackets"><a class="fn-backref" href="#id4">4</a></span></dt>
 <dd><p>Storia della creazione dei principali sistemi di misura <strong>todo</strong> <em>link? Scrivere due parole?</em></p>
 </dd>
-<dt class="label" id="new-def-si"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dt class="label" id="new-def-si"><span class="brackets"><a class="fn-backref" href="#id5">5</a></span></dt>
 <dd><p>Il valore delle unità di misura classiche è stato mantenuto seguendo un criterio di <strong>comodità</strong>: la comodità di 1) non ridefinire tutto con una serie di conversioni e la comodità di 2) evitare l’utilizzo di unità di misura di dimesioni molto diverse rispetto alle grandezze che caratterizzano l’esperienza quotidiana, e quindi l’uso di valori numerici caratterizzati da potenze enormi o molto piccole. Ad esempio, una volta notato che la velocità della luce sembra essere una costante della natura, potrebbe sembrare naturale scegliere la velocità della luce o qualche suo sottomultiplo. Usando le unità di misura del sistema fondamentale, la velocità della luce è di circa <span class="math notranslate nohighlight">\(c = 299792458 \, m/s \approx 3 \cdot 10^{8} \, m/s\)</span>. Definendo <span class="math notranslate nohighlight">\(c\)</span> come nuovaunità di misura della velocità, dovremmo esprimere un limite di velocità di <span class="math notranslate nohighlight">\(v = 100 \, km/h = 27.28 \, m/s = 9.27 \cdot 10^{-8} \, c\)</span>: non proprio il massimo, se non ci si fa prima l’abitudine - e probaiblmente nemmeno dopo! Potremmo definire l’unità di misura per la velocità come <span class="math notranslate nohighlight">\(10^{-8} \, c\)</span> per non dover trattare la potenza nel valore numerico delle velocità di tutti i giorni. Oppure potremmo continuare a fare quello che facciamo: abbiamo ben presente quanto sono un metro o un chilometro, e quanto sono un secondo o un’ora, e possiamo continuare a usare i <span class="math notranslate nohighlight">\(m/s\)</span> o <span class="math notranslate nohighlight">\(km/h\)</span> come unità di misura derivate dal rapporto di una misura di lunghezza e una di tempo, immaginandoci la velocità come distanza percorsa in un intervallo di tempo (quantificate in unità di misura intelligibili per l’esperienza nella nostra vita quotidiana).</p>
 </dd>
 </dl>
-</div>
-</div>
 <div class="toctree-wrapper compound">
 </div>
 </div>
@@ -692,7 +846,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">2.2. </span>Spazio</p>
+        <p class="prev-next-title"><span class="section-number">2.1. </span>Spazio</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -702,23 +856,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contenuti
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-di-misura">2.1. Sistema di misura</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistema-di-misura-internazionale">2.1.1. Sistema di misura internazionale</a></li>
-</ul>
-</li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

@@ -346,35 +346,401 @@ Sapere attuale
 \chapter{Grandezze fisiche}
 \label{\detokenize{ch/intro/physical_quantities:grandezze-fisiche}}\label{\detokenize{ch/intro/physical_quantities:physics-hs-intro-physical-quantities}}\label{\detokenize{ch/intro/physical_quantities::doc}}
 \sphinxAtStartPar
-Una grandezza fisica è una proprietà di un sistema o di un fenomeno fisico che può essere {\hyperref[\detokenize{ch/intro/measurements:physics-hs-intro-measurements}]{\sphinxcrossref{\DUrole{std,std-ref}{misurata}}}} e il cui valore può essere espresso in relazione a un’unità di misura.
+Una grandezza fisica è una proprietà di un sistema o di un fenomeno fisico che può essere {\hyperref[\detokenize{ch/intro/measurements:physics-hs-intro-measurements}]{\sphinxcrossref{\DUrole{std,std-ref}{misurata}}}} e il cui valore può essere espresso in relazione a un’unità di misura omogenea.
+
+\sphinxAtStartPar
+Un \sphinxstylestrong{sistema di misura} è formato da un insieme di unità di misura \sphinxstyleemphasis{fondamentali} associate a grandezze fisiche, dalle quali è possibile ricavare le unità di misura \sphinxstyleemphasis{derivate} per tutte le altre grandezze fisiche.
+
+\sphinxAtStartPar
+Il \sphinxstylestrong{sistema internazionale} di unità di misura (SI) usa sette \sphinxstylestrong{grandezze fisiche fondamentali}.
 
 
-\section{Sistema di misura}
-\label{\detokenize{ch/intro/physical_quantities:sistema-di-misura}}\label{\detokenize{ch/intro/physical_quantities:physics-hs-intro-physical-quantities-system}}\begin{itemize}
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|T|T|}
+\hline
+\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Grandezza fisica
+&\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Simbolo dimensionale
+&\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Unità di misura
+&\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Simbolo
+\\
+\hline
+\sphinxAtStartPar
+lunghezza
+&
+\sphinxAtStartPar
+\([L]\)
+&
+\sphinxAtStartPar
+metro
+&
+\sphinxAtStartPar
+\(m\)
+\\
+\hline
+\sphinxAtStartPar
+intervallo di tempo
+&
+\sphinxAtStartPar
+\([T]\)
+&
+\sphinxAtStartPar
+secondo
+&
+\sphinxAtStartPar
+\(s\)
+\\
+\hline
+\sphinxAtStartPar
+massa
+&
+\sphinxAtStartPar
+\([M]\)
+&
+\sphinxAtStartPar
+chilogrammo
+&
+\sphinxAtStartPar
+\(kg\)
+\\
+\hline
+\sphinxAtStartPar
+temperatura
+&
+\sphinxAtStartPar
+\([\Theta]\)
+&
+\sphinxAtStartPar
+Kelvin
+&
+\sphinxAtStartPar
+\(K\)
+\\
+\hline
+\sphinxAtStartPar
+intensità di corrente
+&
+\sphinxAtStartPar
+\([I]\)
+&
+\sphinxAtStartPar
+Ampére
+&
+\sphinxAtStartPar
+\(A\)
+\\
+\hline
+\sphinxAtStartPar
+quantità di sostanza
+&
+\sphinxAtStartPar
+\([N]\)
+&
+\sphinxAtStartPar
+mole
+&
+\sphinxAtStartPar
+\(mol\)
+\\
+\hline
+\sphinxAtStartPar
+intensità luminosa
+&
+\sphinxAtStartPar
+\([J]\)
+&
+\sphinxAtStartPar
+candela
+&
+\sphinxAtStartPar
+\(cd\)
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Multipli e sottomultipli.} A parte rare eccezioni%
+\begin{footnote}[1]\sphinxAtStartFootnote
+Come esempio, è comune usare sottomultipli in base \(10\) del secondo (nelle gare sportive è comune misurare i tempi fino al centesimo o al millesimo di secondo; per la misura di impulsi molto brevi si usano i micro \(10^{-6}\), i nano \(10^{-9}\), i pico \(10^{-12}\), i femto \(10^{-15}\) \sphinxhyphen{}secondi), per i multipli nella vita quotidiana si è soliti le potenze in base \(60\) \sphinxhyphen{} o dei residui di sistemi con base \(12\) \sphinxhyphen{} del secondo (minuto \(60 \, s\), ora \(60 \, min = 60^2 \, s\), giorno \(24 \, h = 24 \cdot 60 \cdot 60 \, s\))
+%
+\end{footnote}, è comune usare multipli e sottomultipli delle unità di misura che siano potenze intere con base \(10\). A parte il «residuo storico» del «chilo» nell’unità di misura della massa (il sistema CGS usava il grammo come unità di misura), non compaiono prefissi nelle unità di misura. I prefissi associati ai multipli e sottomultipli di una grandezza sono
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|T|}
+\hline
+\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Prefisso
+&\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Simbolo
+&\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Multiplo
+\\
+\hline
+\sphinxAtStartPar
+Peta
+&
+\sphinxAtStartPar
+\(P\)
+&
+\sphinxAtStartPar
+\(10^{15} \)
+\\
+\hline
+\sphinxAtStartPar
+Tera
+&
+\sphinxAtStartPar
+\(T\)
+&
+\sphinxAtStartPar
+\(10^{12} \)
+\\
+\hline
+\sphinxAtStartPar
+Giga
+&
+\sphinxAtStartPar
+\(G\)
+&
+\sphinxAtStartPar
+\(10^{9}  \)
+\\
+\hline
+\sphinxAtStartPar
+Mega
+&
+\sphinxAtStartPar
+\(M\)
+&
+\sphinxAtStartPar
+\(10^{6}  \)
+\\
+\hline
+\sphinxAtStartPar
+Chilo
+&
+\sphinxAtStartPar
+\(k\)
+&
+\sphinxAtStartPar
+\(10^{3}  \)
+\\
+\hline
+\sphinxAtStartPar
+Etto
+&
+\sphinxAtStartPar
+\(h\)
+&
+\sphinxAtStartPar
+\(10^{2}  \)
+\\
+\hline
+\sphinxAtStartPar
+Deca
+&
+\sphinxAtStartPar
+\(da\)
+&
+\sphinxAtStartPar
+\(10^{1}  \)
+\\
+\hline
+\sphinxAtStartPar
+\sphinxhyphen{}
+&
+\sphinxAtStartPar
+
+&
+\sphinxAtStartPar
+\(10^{0}  \)
+\\
+\hline
+\sphinxAtStartPar
+Deci
+&
+\sphinxAtStartPar
+\(d\)
+&
+\sphinxAtStartPar
+\(10^{-1} \)
+\\
+\hline
+\sphinxAtStartPar
+Centi
+&
+\sphinxAtStartPar
+\(c\)
+&
+\sphinxAtStartPar
+\(10^{-2} \)
+\\
+\hline
+\sphinxAtStartPar
+Milli
+&
+\sphinxAtStartPar
+\(m\)
+&
+\sphinxAtStartPar
+\(10^{-3} \)
+\\
+\hline
+\sphinxAtStartPar
+Micro
+&
+\sphinxAtStartPar
+\(\mu\)
+&
+\sphinxAtStartPar
+\(10^{-6} \)
+\\
+\hline
+\sphinxAtStartPar
+Nano
+&
+\sphinxAtStartPar
+\(n\)
+&
+\sphinxAtStartPar
+\(10^{-9} \)
+\\
+\hline
+\sphinxAtStartPar
+Pico
+&
+\sphinxAtStartPar
+\(p\)
+&
+\sphinxAtStartPar
+\(10^{-12}\)
+\\
+\hline
+\sphinxAtStartPar
+Femto
+&
+\sphinxAtStartPar
+\(f\)
+&
+\sphinxAtStartPar
+\(10^{-15}\)
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Altri sistemi di misura.}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-grandezze fondamentali e derivate
+Sistema \sphinxstylestrong{CGS} (centimetro\sphinxhyphen{}grammo\sphinxhyphen{}secondo): proposto da Gauss nel 1832 (\sphinxstylestrong{todo} \sphinxstyleemphasis{ref}), con tre unità di misura fondamentali per lunghezza, tempo e massa.
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|T|}
+\hline
+\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Grandezza fisica
+&\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Unità di misura
+&\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Simbolo
+\\
+\hline
+\sphinxAtStartPar
+lunghezza
+&
+\sphinxAtStartPar
+centimetro
+&
+\sphinxAtStartPar
+\(cm\)
+\\
+\hline
+\sphinxAtStartPar
+intervallo di tempo
+&
+\sphinxAtStartPar
+secondo
+&
+\sphinxAtStartPar
+\(s\)
+\\
+\hline
+\sphinxAtStartPar
+massa
+&
+\sphinxAtStartPar
+grammo
+&
+\sphinxAtStartPar
+\(g\)
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+\sphinxAtStartPar
+All’epoca della proposta, esistevano diverse {\hyperref[\detokenize{ch/thermodynamics/foundation-experiments:physics-hs-thermodynamics-foundation-experiments-t-scales}]{\sphinxcrossref{\DUrole{std,std-ref}{scale di temperatura}}}} empiriche, non esisteva ancora una mcomprensione matura della termodinamica, si intuiva la natura atomica della materia ma esistevano ancora modelli consistenti (confusione tra i chimici dopo gli studi di Dalton che venne risolta con Avogadro e Canizzaro vero il 1860), e gli studi sull’elettromagnetismo non avevano ancora prodotto il modello consistente rappresentato dalle equazioni di Maxwell.
+
+\sphinxAtStartPar
+Nel 1874, al sistema CGS originario furono aggiunte le unità di misura della temperatura e delle grandezze elettromagnetiche da parte di Kelvin e Maxwell, dopo la proposta da parte di Kelvin di una scala termodinamica di temperatura%
+\begin{footnote}[2]\sphinxAtStartFootnote
+W.Thomson (1848), \sphinxstyleemphasis{«On an Absolute Thermometric Scale»}
+%
+\end{footnote} e la formulazione di un modello completo dell’elettromagnetismo classico da parte di Maxwell%
+\begin{footnote}[3]\sphinxAtStartFootnote
+J.C.Maxwell (1865), \sphinxstyleemphasis{«A dynamical theory of  the electromagnetic field»}
+%
+\end{footnote}.
+
+\end{itemize}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Sistema \sphinxstylestrong{MKS} (metro\sphinxhyphen{}chilogrammo\sphinxhyphen{}secondo):
 
 \item {} 
 \sphinxAtStartPar
-unità di misura
+Sistema \sphinxstylestrong{imperiale} sistema adottato nell’impero britannico a partire dal 1824 per legge, e rimasto in uso per legge fino al 1965. Una volta capita la logica lineare alla base della costruzione del SI di misura, questo sistema di misura sembra figlio di un demonio particolarmente ingegnoso, da concepire una scala di multipli e sottomultipli irregolare. Alcuni suoi residui rimangono di uso comune nel mondo anglosassone, e in alcuni settori. Tra gli stati nazionali si distinguono gli Stati Uniti e la Liberia, da loro creata, per la resistenza nell’uso della scala Fahrenheit di temperatura, scala arbitraria di temperatura con origine e ampiezza del grado differente dalla scala termodinamica Kelvin o dalla scala Celsius in uso in tutto il resto del mondo; tra i settori industriali, rimangono tracce o più che tracce nell’ambito dei trasporti e nel settore aeronautico: in questo ambito particolare, la costruzione delle grandezze derivate partorisce unità di misura che possono essere solo figlie del demonio originario che ha partorito questo sistema. Senza dilungarci oltre: in questo materiale non si farà mai uso del sistema imperiale; qui ci siamo fatti due risate, utili a ricordarci la semplicità del SI e di non usare mai il sistema imperiale se non costretti. Per chi volesse approfondire, può partire dal \sphinxhref{https://it.wikipedia.org/wiki/Sistema\_imperiale\_britannico}{collegamento alla pagina di Wikipedia in italiano}.
 
 \end{itemize}
 
 
-\subsection{Sistema di misura internazionale}
-\label{\detokenize{ch/intro/physical_quantities:sistema-di-misura-internazionale}}\label{\detokenize{ch/intro/physical_quantities:physics-hs-intro-physical-quantities-system-is}}
+
 \sphinxAtStartPar
-\sphinxstylestrong{Brevissima storia.}
+\sphinxstylestrong{Brevissima storia.} Della costruzione del moderno sistema di misura.
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-Inizialmente unità di misura convenzionali, facilmente riconducibili all’esperienza quotidiana degli esseri umani ai tempi in cui le unità vengono definite.
+Inizialmente unità di misura convenzionali, facilmente riconducibili all’esperienza quotidiana degli esseri umani ai tempi in cui le unità vengono definite. Nuove unità di misura fondamentali vengono introdotte quando quelle già definite non sono sufficienti a rappresentare nuove grandezze fisiche.
 
 \item {} 
 \sphinxAtStartPar
 Successivamente%
-\begin{footnote}[1]\sphinxAtStartFootnote
+\begin{footnote}[4]\sphinxAtStartFootnote
 Storia della creazione dei principali sistemi di misura \sphinxstylestrong{todo} \sphinxstyleemphasis{link? Scrivere due parole?}
 %
 \end{footnote} unità di misura riconducibili a grandezze fisiche facilmente replicabili in maniera stabile in laboratorio.
@@ -382,27 +748,14 @@ Storia della creazione dei principali sistemi di misura \sphinxstylestrong{todo}
 \item {} 
 \sphinxAtStartPar
 Recentemente, dopo la scoperta di alcune grandezze costanti in natura, le unità di misura «classiche» sono state ri\sphinxhyphen{}definite in termini di queste costanti della natura mantenendo il loro valore originale.%
-\begin{footnote}[2]\sphinxAtStartFootnote
+\begin{footnote}[5]\sphinxAtStartFootnote
 Il valore delle unità di misura classiche è stato mantenuto seguendo un criterio di \sphinxstylestrong{comodità}: la comodità di 1) non ridefinire tutto con una serie di conversioni e la comodità di 2) evitare l’utilizzo di unità di misura di dimesioni molto diverse rispetto alle grandezze che caratterizzano l’esperienza quotidiana, e quindi l’uso di valori numerici caratterizzati da potenze enormi o molto piccole. Ad esempio, una volta notato che la velocità della luce sembra essere una costante della natura, potrebbe sembrare naturale scegliere la velocità della luce o qualche suo sottomultiplo. Usando le unità di misura del sistema fondamentale, la velocità della luce è di circa \(c = 299792458 \, m/s \approx 3 \cdot 10^{8} \, m/s\). Definendo \(c\) come nuovaunità di misura della velocità, dovremmo esprimere un limite di velocità di \(v = 100 \, km/h = 27.28 \, m/s = 9.27 \cdot 10^{-8} \, c\): non proprio il massimo, se non ci si fa prima l’abitudine \sphinxhyphen{} e probaiblmente nemmeno dopo! Potremmo definire l’unità di misura per la velocità come \(10^{-8} \, c\) per non dover trattare la potenza nel valore numerico delle velocità di tutti i giorni. Oppure potremmo continuare a fare quello che facciamo: abbiamo ben presente quanto sono un metro o un chilometro, e quanto sono un secondo o un’ora, e possiamo continuare a usare i \(m/s\) o \(km/h\) come unità di misura derivate dal rapporto di una misura di lunghezza e una di tempo, immaginandoci la velocità come distanza percorsa in un intervallo di tempo (quantificate in unità di misura intelligibili per l’esperienza nella nostra vita quotidiana).
 %
 \end{footnote}
 
 \end{itemize}
 
-\sphinxAtStartPar
-\sphinxstylestrong{Massa, lunghezza e tempo.}
 
-\sphinxAtStartPar
-\sphinxstylestrong{Temperatura.}
-
-\sphinxAtStartPar
-\sphinxstylestrong{Quantità di sostanza.}
-
-\sphinxAtStartPar
-\sphinxstylestrong{Carica elettrica.}
-
-\sphinxAtStartPar
-\sphinxstylestrong{Intensità luminosa.}
 
 
 
@@ -584,6 +937,169 @@ L’intensità luminosa è una grandezza fisica associabile ai concetti di «chi
 \sphinxstepscope
 
 
+\chapter{Misura}
+\label{\detokenize{ch/intro/measurements:misura}}\label{\detokenize{ch/intro/measurements:physics-hs-intro-measurements}}\label{\detokenize{ch/intro/measurements::doc}}
+\sphinxAtStartPar
+L’attività di misurazione consiste nell’assegnazione di un valore \sphinxhyphen{} o meglio di un intervallo di valori che tenga conto dell” \sphinxhyphen{} alla grandezza fisica oggetto dell’operazione, confrontata con una {\hyperref[\detokenize{ch/intro/measurements:physics-hs-intro-measurements-homogeneous}]{\sphinxcrossref{\DUrole{std,std-ref}{grandezza fisica omogenea}}}} di riferimento, chiamata unità di misura.
+
+\sphinxAtStartPar
+Una grandezza fisica può quindi essere espressa come il prodotto di un valore numerico \(\{ M \}\) e un’unità di misura \([M]\),
+\begin{equation*}
+\begin{split}M = \{ M \} [ M ] \ .\end{split}
+\end{equation*}\label{ch/intro/measurements:definition-0}
+\begin{sphinxadmonition}{note}{Definition 3.1 (Grandezze fisiche omogenee)}
+
+
+
+\sphinxAtStartPar
+Due \sphinxstylestrong{grandezze fisiche omogenee} sono grandezze fisiche della stessa natura, che \sphinxhyphen{} in maniera equivalente:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+possono essere riferite alla stessa unità di misura
+
+\item {} 
+\sphinxAtStartPar
+possono essere confrontate con un rapporto che restituisce un valore numerico \sphinxhyphen{} privo di dimensioni fisiche
+
+\item {} 
+\sphinxAtStartPar
+hanno le stesse dimensioni fisiche.
+
+\end{itemize}
+\end{sphinxadmonition}
+
+
+\section{Sistema di misura}
+\label{\detokenize{ch/intro/measurements:sistema-di-misura}}\label{\detokenize{ch/intro/measurements:physics-hs-intro-measurements-unit-system}}
+\sphinxAtStartPar
+…
+
+
+\subsection{Sistema internazionale di misura}
+\label{\detokenize{ch/intro/measurements:sistema-internazionale-di-misura}}
+\sphinxAtStartPar
+… qui o nella sezione sulle {\hyperref[\detokenize{ch/intro/physical_quantities:physics-hs-intro-physical-quantities}]{\sphinxcrossref{\DUrole{std,std-ref}{grandezze fisiche}}}}?
+
+
+\section{Strumenti di misura}
+\label{\detokenize{ch/intro/measurements:strumenti-di-misura}}\label{\detokenize{ch/intro/measurements:physics-hs-intro-measurements-instruments}}
+
+\subsection{Caratteristiche della misura}
+\label{\detokenize{ch/intro/measurements:caratteristiche-della-misura}}\label{\detokenize{ch/intro/measurements:physics-hs-intro-measurements-instruments-characteristics}}
+\sphinxAtStartPar
+\sphinxstylestrong{Accuratezza.} E” una misura della differenza tra il valoremedio di una serie di misure e il \sphinxstyleemphasis{valore vero} della grandezza misurata.
+
+\begin{sphinxadmonition}{note}{Valore vero}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Precisione.} Dispersione delle misure, indipendentemente dall’accuratezza della misura, quantificabile con la varianza, la deviazione standard o altri indicatori di dispersione delle misure.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Ripetibilità e riproducibilità.} I concetti di ripetibilità e riproducibilità sono indicatori di \sphinxstyleemphasis{precisione} che quantificano l’accordo tra una serie di misure della stessa grandezze fisica.
+
+\sphinxAtStartPar
+Il termine ripetibilità si riferisce a misurazioni svolte nelle stesse condizioni (metodo, operatore, strumento di misura, luogo dell’esperimento), il concetto di riproducibilità si riferisce a misurazioni in cui viene modificata almeno una delle condizioni.
+
+\sphinxAtStartPar
+Esempi di errori di repricabilità sono: variazioni proprie della grandezza misurata, errori di lettura, disturbi sui sistemi di misura (interferenza elettromagnetica, vibrazioni, variazioni nelle condizioni ambientali,…).
+
+\sphinxAtStartPar
+Errori di riproducibilità possono evidenziare errori sistematici nel processo di misura, come ad esempio: errore nell’impostazione, posizione e/o orientamento, alimentazione dello strumento, oltre a metodologie inadeguate o comportamenti fraudolenti da parte degli autori dell’attività.
+
+\begin{sphinxadmonition}{note}{Crisi di riproducibilità}
+
+
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Fondo scala.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Risoluzione.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Linearità.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Sensibilità.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Risposta degli strumenti.} (strumenti di ordine \(0\), \(1\), \(2\))
+
+\sphinxAtStartPar
+Rimandare qui dal capitolo sulle \sphinxhref{https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/ode.html}{equazioni ordinarie differenziali (ODE)} del materiale di \sphinxhref{https://basics2022.github.io/bbooks-math-miscellanea-hs/intro.html}{matematica}.
+\phantomsection \label{exercise:instrument-order-zero-exercise}
+
+\begin{sphinxadmonition}{note}{Exercise 3.2.1 (Strumento di ordine zero)}
+
+
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:instrument-order-one-exercise}
+
+\begin{sphinxadmonition}{note}{Exercise 3.2.2 (Strumento del primo ordine)}
+
+
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+\end{sphinxadmonition}
+\phantomsection \label{exercise:instrument-order-two-exercise}
+
+\begin{sphinxadmonition}{note}{Exercise 3.2.3 (Strumento del secondo ordine)}
+
+
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+\end{sphinxadmonition}
+
+
+\subsection{Intrusività}
+\label{\detokenize{ch/intro/measurements:intrusivita}}\label{\detokenize{ch/intro/measurements:physics-hs-intro-measurements-instruments-intrusivity}}
+\sphinxAtStartPar
+L’intrusività di una misura può essere definita come la modifica del processo sotto indagine a causa della strumentazione necessaria alla misura delle grandezze di interesse.
+
+\sphinxAtStartPar
+L’intrusività di alcuni strumenti verrà indagata durante il corso. Viene fatto qui un elenco degli strumenti di cui verrà discussa l’intrusività nel sistema:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+meccanica:
+
+\item {} 
+\sphinxAtStartPar
+termodinamica:
+
+\item {} 
+\sphinxAtStartPar
+elettromagnetismo:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-experience-faraday-amperometer}]{\sphinxcrossref{\DUrole{std,std-ref}{amperometro}}}}
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-experience-faraday-voltmeter}]{\sphinxcrossref{\DUrole{std,std-ref}{voltmetro}}}}
+
+\end{itemize}
+
+\end{itemize}
+
+\sphinxstepscope
+
+
 \chapter{Il metodo scientifico}
 \label{\detokenize{ch/intro/scientific-method:il-metodo-scientifico}}\label{\detokenize{ch/intro/scientific-method:physics-hs-intro-scientific-method}}\label{\detokenize{ch/intro/scientific-method::doc}}\begin{itemize}
 \item {} 
@@ -643,157 +1159,6 @@ Statistica e \sphinxhref{https://basics2022.github.io/bbooks-programming-hs/ch/s
 \item {} 
 \sphinxAtStartPar
 \sphinxstyleemphasis{aggiungere una breve sezione, o fare riferimento alle sezioni di statistica in matematica o introduzione alla programmazione}
-
-\end{itemize}
-
-\sphinxstepscope
-
-
-\chapter{Misura}
-\label{\detokenize{ch/intro/measurements:misura}}\label{\detokenize{ch/intro/measurements:physics-hs-intro-measurements}}\label{\detokenize{ch/intro/measurements::doc}}
-\sphinxAtStartPar
-L’attività di misurazione consiste nell’assegnazione di un valore \sphinxhyphen{} o meglio di un intervallo di valori che tenga conto dell” \sphinxhyphen{} alla grandezza fisica oggetto dell’operazione, confrontata con una {\hyperref[\detokenize{ch/intro/measurements:physics-hs-intro-measurements-homogeneous}]{\sphinxcrossref{\DUrole{std,std-ref}{grandezza fisica omogenea}}}} di riferimento, chiamata unità di misura.
-
-\sphinxAtStartPar
-Una grandezza fisica può quindi essere espressa come il prodotto di un valore numerico \(\{ M \}\) e un’unità di misura \([M]\),
-\begin{equation*}
-\begin{split}M = \{ M \} [ M ] \ .\end{split}
-\end{equation*}\label{ch/intro/measurements:definition-0}
-\begin{sphinxadmonition}{note}{Definition 4.1 (Grandezze fisiche omogenee)}
-
-
-
-\sphinxAtStartPar
-Due \sphinxstylestrong{grandezze fisiche omogenee} sono grandezze fisiche della stessa natura, che \sphinxhyphen{} in maniera equivalente:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-possono essere riferite alla stessa unità di misura
-
-\item {} 
-\sphinxAtStartPar
-possono essere confrontate con un rapporto che restituisce un valore numerico \sphinxhyphen{} privo di dimensioni fisiche
-
-\item {} 
-\sphinxAtStartPar
-hanno le stesse dimensioni fisiche.
-
-\end{itemize}
-\end{sphinxadmonition}
-
-
-\section{Strumenti di misura}
-\label{\detokenize{ch/intro/measurements:strumenti-di-misura}}\label{\detokenize{ch/intro/measurements:physics-hs-intro-measurements-instruments}}
-
-\subsection{Caratteristiche della misura}
-\label{\detokenize{ch/intro/measurements:caratteristiche-della-misura}}\label{\detokenize{ch/intro/measurements:physics-hs-intro-measurements-instruments-characteristics}}
-\sphinxAtStartPar
-\sphinxstylestrong{Accuratezza.} E” una misura della differenza tra il valoremedio di una serie di misure e il \sphinxstyleemphasis{valore vero} della grandezza misurata.
-
-\begin{sphinxadmonition}{note}{Valore vero}
-
-\sphinxAtStartPar
-\sphinxstylestrong{todo}
-\end{sphinxadmonition}
-
-\sphinxAtStartPar
-\sphinxstylestrong{Precisione.} Dispersione delle misure, indipendentemente dall’accuratezza della misura, quantificabile con la varianza, la deviazione standard o altri indicatori di dispersione delle misure.
-
-\sphinxAtStartPar
-\sphinxstylestrong{Ripetibilità e riproducibilità.} I concetti di ripetibilità e riproducibilità sono indicatori di \sphinxstyleemphasis{precisione} che quantificano l’accordo tra una serie di misure della stessa grandezze fisica.
-
-\sphinxAtStartPar
-Il termine ripetibilità si riferisce a misurazioni svolte nelle stesse condizioni (metodo, operatore, strumento di misura, luogo dell’esperimento), il concetto di riproducibilità si riferisce a misurazioni in cui viene modificata almeno una delle condizioni.
-
-\sphinxAtStartPar
-Esempi di errori di repricabilità sono: variazioni proprie della grandezza misurata, errori di lettura, disturbi sui sistemi di misura (interferenza elettromagnetica, vibrazioni, variazioni nelle condizioni ambientali,…).
-
-\sphinxAtStartPar
-Errori di riproducibilità possono evidenziare errori sistematici nel processo di misura, come ad esempio: errore nell’impostazione, posizione e/o orientamento, alimentazione dello strumento, oltre a metodologie inadeguate o comportamenti fraudolenti da parte degli autori dell’attività.
-
-\begin{sphinxadmonition}{note}{Crisi di riproducibilità}
-
-
-
-\sphinxAtStartPar
-\sphinxstylestrong{todo}
-\end{sphinxadmonition}
-
-\sphinxAtStartPar
-\sphinxstylestrong{Fondo scala.}
-
-\sphinxAtStartPar
-\sphinxstylestrong{Risoluzione.}
-
-\sphinxAtStartPar
-\sphinxstylestrong{Linearità.}
-
-\sphinxAtStartPar
-\sphinxstylestrong{Sensibilità.}
-
-\sphinxAtStartPar
-\sphinxstylestrong{Risposta degli strumenti.} (strumenti di ordine \(0\), \(1\), \(2\))
-
-\sphinxAtStartPar
-Rimandare qui dal capitolo sulle \sphinxhref{https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/ode.html}{equazioni ordinarie differenziali (ODE)} del materiale di \sphinxhref{https://basics2022.github.io/bbooks-math-miscellanea-hs/intro.html}{matematica}.
-\phantomsection \label{exercise:instrument-order-zero-exercise}
-
-\begin{sphinxadmonition}{note}{Exercise 4.1.1 (Strumento di ordine zero)}
-
-
-
-\sphinxAtStartPar
-\sphinxstylestrong{todo}
-\end{sphinxadmonition}
-\phantomsection \label{exercise:instrument-order-one-exercise}
-
-\begin{sphinxadmonition}{note}{Exercise 4.1.2 (Strumento del primo ordine)}
-
-
-
-\sphinxAtStartPar
-\sphinxstylestrong{todo}
-\end{sphinxadmonition}
-\phantomsection \label{exercise:instrument-order-two-exercise}
-
-\begin{sphinxadmonition}{note}{Exercise 4.1.3 (Strumento del secondo ordine)}
-
-
-
-\sphinxAtStartPar
-\sphinxstylestrong{todo}
-\end{sphinxadmonition}
-
-
-\subsection{Intrusività}
-\label{\detokenize{ch/intro/measurements:intrusivita}}\label{\detokenize{ch/intro/measurements:physics-hs-intro-measurements-instruments-intrusivity}}
-\sphinxAtStartPar
-L’intrusività di una misura può essere definita come la modifica del processo sotto indagine a causa della strumentazione necessaria alla misura delle grandezze di interesse.
-
-\sphinxAtStartPar
-L’intrusività di alcuni strumenti verrà indagata durante il corso. Viene fatto qui un elenco degli strumenti di cui verrà discussa l’intrusività nel sistema:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-meccanica:
-
-\item {} 
-\sphinxAtStartPar
-termodinamica:
-
-\item {} 
-\sphinxAtStartPar
-elettromagnetismo:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-{\hyperref[\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-experience-faraday-amperometer}]{\sphinxcrossref{\DUrole{std,std-ref}{amperometro}}}}
-
-\item {} 
-\sphinxAtStartPar
-{\hyperref[\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-experience-faraday-voltmeter}]{\sphinxcrossref{\DUrole{std,std-ref}{voltmetro}}}}
-
-\end{itemize}
 
 \end{itemize}
 
@@ -1010,7 +1375,7 @@ Determinismo e meccanicismo
 \subsubsection{Grandezze fisiche fondentali}
 \label{\detokenize{ch/mechanics/intro-vocabulary:grandezze-fisiche-fondentali}}\label{\detokenize{ch/mechanics/intro-vocabulary:physics-hs-mechanics-intro-vocabulary-physical-dimensions-fundamental}}
 \sphinxAtStartPar
-Le grandezze fisiche fondamentali del {\hyperref[\detokenize{ch/intro/physical_quantities:physics-hs-intro-physical-quantities-system-is}]{\sphinxcrossref{\DUrole{std,std-ref}{sistema internazionale di misura}}}} coinvolte nello studio della meccanica classica sono: \sphinxstylestrong{spazio} \([L]\), \sphinxstylestrong{tempo} \([t]\) e \sphinxstylestrong{massa} \([m]\).
+Le grandezze fisiche fondamentali del \DUrole{xref,myst}{sistema internazionale di misura} coinvolte nello studio della meccanica classica sono: \sphinxstylestrong{spazio} \([L]\), \sphinxstylestrong{tempo} \([t]\) e \sphinxstylestrong{massa} \([m]\).
 
 
 \subsubsection{Grandezze fisiche derivate}
