@@ -1,8 +1,27 @@
 (physics-hs:mechanics:intro:vocabulary)=
 # Concetti in meccanica classica
 
+(physics-hs:mechanics:intro:vocabulary:physical-dimensions)=
 ## Grandezze fisiche
-...
+
+(physics-hs:mechanics:intro:vocabulary:physical-dimensions:fundamental)=
+### Grandezze fisiche fondentali
+Le grandezze fisiche fondamentali del [sistema internazionale di misura](physics-hs:intro:physical-quantities:system:is) coinvolte nello studio della meccanica classica sono: **spazio** $[L]$, **tempo** $[t]$ e **massa** $[m]$.
+
+(physics-hs:mechanics:intro:vocabulary:physical-dimensions:derived)=
+### Grandezze fisiche derivate
+Nello sviluppo della teoria matematica della meccanica classica risulta conveniente definire delle quantità fisiche, con le loro dimensioni fisiche derivate.
+
+La **cinematica** si occupa di descrivere la posizione dei corpi nello spazio (pensato come euclideo) in funzione del tempo, indipendentemente dalle sue cause. La variazione della **posizione** $[L]$ di un punto nello spazio in funzione del tempo definisce la sua **velocità** $[L][t]^{-1}$, e la variazione della velocità nel tempo definisce l'**accelerazione** $[L][t]^{-2}$;[^rotations]
+
+[^rotations]: In maniera analoga ma diversa, l'orientazione di un corpo (rigido) nello spazio può essere definito tramite **angoli** $[1]$ o parametri riportabili ad essi; la variazione dell'orientazione del corpo in funzione del tempo viene rappresentata dalla sua **velocità angolare** $[t]^{-1}$; la variazione della velocità angolare nel tempo viene rappresentata dalla sua **accelerazione angolare** $[t]^{-2}$. Una trattazione completa delle rotazione e della dinamica dei corpi rigidi nello spazio 3-dimensionale è al di fuori degli obiettivi di un'introduzione alla meccanica classica, poiché - per non fare porcherie, almeno - richiederebbe una certa dimestichezza con strumenti matematici con i quali difficilmente si ha dimestichezza - o forse nemmeno li si è mai visti. In ogni modo, è disponibile il materiale pensato per l'università per una trattazione completa di rotazioni e [meccanica classica](https://basics2022.github.io/bbooks-physics-mechanics/intro.html).
+
+L'**inerzia** di un sistema rappresenta la sua resistenza al cambiamento del suo stato di moto, quando soggetto ad azioni e dipende dalla sua **massa** $[m]$ e dalla sua distribuzione nel sistema: per sistemi continui di dimensione finita è quindi importante consocerne la **densità** $[m][L]^{-n}$ per poterne stimare le proprietà di inerzia riassumibili nel momento statico $[m][L]$ e **momento di inerzia** $[m][L]^2$. La massa - e la sua distribuzione - e le quantità introdotte in cinematica possono essere combinate in *quantità dinamiche* che compaiono in dinamica nelle equazioni che governano il moto dei sistemi: in particolare vengono definiti i concetti di **quantità di moto** (massa per velocità) $[m][L][t]^{-1}$ e **momento della quantità di moto** (o **momento angolare**) $[m][L]^2[t]^{-1}$.
+
+Le **azioni** sono quelle interazioni che possono agire su un sistema modificandone il moto, se questa modifica è consentita dai vincoli del sistema stesso. Vengono introdotte le **forze** $[m][L][t]^{-2}$ e i **momenti** $[m][L]^2[t]^{-2}$. Legati ai concetti di azioni, possono essere introdotti i concetti di **lavoro** ("forza per spostamento) $[m][L]^2[t]^{-2}$ e di **potenza** (lavoro per unità di tempo) $[m][L]^2[t]^{-3}$; in alcuni casi, il lavoro fatto da azioni su un sistema contribuisce all'aumento di una quantità 
+
+La **dinamica** si occupa di descrivere il moto dei sistemi, cause incluse. Le equazioni della dinamica legano la variazione delle quantità dinamiche alle azioni agenti sul sistema.
+
 
 ## Modelli
 ...
