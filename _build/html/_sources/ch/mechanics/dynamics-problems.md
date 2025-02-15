@@ -5,6 +5,13 @@ Questa pagina contiene esercizi di dinamica relativi a diversi argomenti: **moto
 
 ---
 
+```{exercise} Pendolo - Equazioni dinamiche
+:label: pendulum-eom
+
+```
+
+---
+
 ## Moto di un punto materiale
 
 ```{exercise} Accelerazione costante

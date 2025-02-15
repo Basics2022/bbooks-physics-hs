@@ -79,7 +79,7 @@ $$ (eq:transformer:ideal:v-ratio)
 
 La relazione tra le correnti agli avvolgimenti è (**todo** *Quale equazione utilizzare per ricavare il rapporto dell'intensità di corrente?*)
 
-$$\dfrac{i_2}{i_1} = \dfrac{N_1}{N_2}$$ (eq:transformer:ideal:v-ratio)
+$$\dfrac{i_2}{i_1} = \dfrac{N_1}{N_2}$$ (eq:transformer:ideal:i-ratio)
 
 Usando le due relazioni tra le tensioni e le correnti alle due porte elettriche, è facile osservare che il modello di trasformatore ideale non dissipa potenza, essendo la potenza uscente dall'avvolgimento secondario uguale alla potenza entrante nel sistema tramite l'avvolgimento primario,
 

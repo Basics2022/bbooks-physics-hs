@@ -229,12 +229,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-principles.html">12.1. Princìpi della dinamica di Newton</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-eom.html">12.2. Equazioni cardinali della dinamica per sistemi chiusi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-conservation.html">12.3. Leggi di conservazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-eom-open.html">12.4. Equazioni cardinali della dinamica per sistemi aperti</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-collisions.html">12.5. Collisioni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-motion-gravitation.html">12.6. Gravitazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-central.html">12.7. Moti centrali</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-problems.html">12.8. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-notes.html">12.9. Note e dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-examples.html">12.4. Esempi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-eom-open.html">12.5. Equazioni cardinali della dinamica per sistemi aperti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-collisions.html">12.6. Collisioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-motion-gravitation.html">12.7. Gravitazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-central.html">12.8. Moti centrali</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-problems.html">12.9. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-notes.html">12.10. Note e dimostrazioni</a></li>
 
 </ul>
 </li>
@@ -545,7 +546,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -561,6 +564,17 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strumenti">2.3.1. Strumenti</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#orologi-meccanici">2.3.1.1. Orologi meccanici</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -573,8 +587,17 @@ document.write(`
   <div class="tex2jax_ignore mathjax_ignore section" id="tempo">
 <span id="physics-hs-intro-physical-quantities-time"></span><h1><span class="section-number">2.3. </span>Tempo<a class="headerlink" href="#tempo" title="Permalink to this heading">#</a></h1>
 <p>Il tempo è una grandezza fisica associata all’esperienza quotidiana del susseguirsi di eventi.</p>
-<p>Tuttavia, l’esperienza può essere ingannevole (Kairos e Chronos)</p>
-<p><strong>Strumenti e scale di temperatura.</strong></p>
+<p>Tuttavia, l’esperienza può essere ingannevole:</p>
+<ul class="simple">
+<li><p>Kairos e Chronos, come percezione personale e percezione assoluta</p></li>
+<li><p>Newton e Einstein: la meccanica di Newton, valida nei limiti dell’esperienza quotidiana dell’uomo moderno, considera indipedentemente spazio e tempo come entità assolute, e le misure di lunghezze, angoli e tempo sono indipendenti dall’osservatore; Einstein riconosce che le misure di spazio e tempo non sono assolute, indipendenti dall’osservatore, ma sono delle componenti di un ente assoluto chiamato spazio-tempo.</p></li>
+</ul>
+<p><strong>todo</strong> <em>link a relatività speciale</em></p>
+<p>All’ordine di eventi possono essere riportati anche:</p>
+<ul class="simple">
+<li><p><strong>il principio di causalità</strong>, per il quale gli effetti (le conseguenze) seguono le loro cause</p></li>
+<li><p><strong>il secondo principio della termodinamica</strong>, che può essere interpretato come una condizione che indica il verso «naturale» nell’evoluzione dei sistemi</p></li>
+</ul>
 <p><strong>Prime esperienze e strumenti.</strong></p>
 <ul class="simple">
 <li><p>tempo scandito dall’astronomia:</p>
@@ -602,13 +625,36 @@ document.write(`
 <li><p>al quarzo, digitali,…</p></li>
 </ul>
 </li>
+<li><p>atomici</p></li>
 </ul>
-<p><strong>Ma cos’è il tempo?</strong></p>
+<div class="section" id="strumenti">
+<h2><span class="section-number">2.3.1. </span>Strumenti<a class="headerlink" href="#strumenti" title="Permalink to this heading">#</a></h2>
+<div class="section" id="orologi-meccanici">
+<h3><span class="section-number">2.3.1.1. </span>Orologi meccanici<a class="headerlink" href="#orologi-meccanici" title="Permalink to this heading">#</a></h3>
+<p>Gli orologi meccanici sviluppati in epoca moderna utilizzano meccanismi basati sull’evoluzione periodica di alcuni sistemi meccanici, come un pendolo o un sistema massa-molla. Mentre nel caso ideale, l’evoluzione di questi due tipi di sistemi è caratterizzata da oscillazioni armoniche di periodo costante, la realizzazione pratica di un orologio meccanico deve però risolvere un problema: la dissipazione dell’energia meccanica di sistemi macroscopici è una tendenza naturale del mondo in cui viviamo; un sistema libero di oscillare tende a fermarsi a causa degli attriti, della resistenza aerodinamica e altre forme di dissipazione dell’energia meccanica. In un orologio serve quindi una fonte di energia che mantenga il sistema in moto, senza perdere la caratteristica di avere oscillazioni regolari.</p>
+<p><strong>Orologio a pendolo.</strong> Un orologio a pendolo sfrutta la gravità come fonte di energia dell’orologio. Questo tipo di orologi aveva però due difetti:</p>
 <ul class="simple">
-<li><p>Kairos e Chronos, come percezione personale e percezione assoluta</p></li>
-<li><p>Newton e la formulazione della meccanica con spazio e tempo assoluti, il tempo come misurato dall’orologio meccanico allora disponibile</p></li>
-<li><p>Relatività di Einstein: la misura del tempo dipende dall’osservatore; spazio e tempo non sono più assoluti; assoluta - indipendente dall’osservatore - è la misura della velocità della luce per ogni osservatore</p></li>
+<li><p>le dimensioni</p></li>
+<li><p>la sensibilità all’accelerazione alla quale è sottoposto l’orologio, che può modificarne il periodo, e quindi rendere la misura del tempo inaffidabile.
+Questi limiti e difetti rendono questo tipo di orologio non adatto alla realizzazione di orologio di dimensioni ridotte, e orologi utilizzabili in ambienti sottoposti ad accelerazione (pensando agli anni in cui venivano utilizzati questi tipi di orologi, un esempio è la navigazione: le variazioni di moto della nave erano causa di cattive misure del tempo da parte di questi orologi.</p></li>
 </ul>
+<p><strong>Orologio a molla.</strong> Il meccanismo a molla permise la realizzazione di orologi poco sensibili all’accelerazione alla quale sono sottoposti e di dimensioni limitate, tali da poter realizzare orologi da tasca o da polso. Questa tecnologia rimase la tecnologia principale fino all’introduzione degli orologi a batteria nella seconda metà del XIX secolo.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Ma come si definisce l’isocronismo?</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Cos’è l’energia? Riferimento a capitolo di meccanica…</p>
+</div>
+<!--
+**Ma cos'è il tempo?**
+- Kairos e Chronos, come percezione personale e percezione assoluta
+- Newton e la formulazione della meccanica con spazio e tempo assoluti, il tempo come misurato dall'orologio meccanico allora disponibile
+- Relatività di Einstein: la misura del tempo dipende dall'osservatore; spazio e tempo non sono più assoluti; assoluta - indipendente dall'osservatore - è la misura della velocità della luce per ogni osservatore
+-->
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -665,6 +711,23 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strumenti">2.3.1. Strumenti</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#orologi-meccanici">2.3.1.1. Orologi meccanici</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

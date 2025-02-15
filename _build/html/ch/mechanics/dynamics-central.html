@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>12.7. Moti centrali &#8212; Fisica per le superiori</title>
+    <title>12.8. Moti centrali &#8212; Fisica per le superiori</title>
   
   
   
@@ -71,8 +71,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon-sugar.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="12.8. Problemi" href="dynamics-problems.html" />
-    <link rel="prev" title="12.6. Gravitazione" href="dynamics-motion-gravitation.html" />
+    <link rel="next" title="12.9. Problemi" href="dynamics-problems.html" />
+    <link rel="prev" title="12.7. Gravitazione" href="dynamics-motion-gravitation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -231,12 +231,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="dynamics-principles.html">12.1. Princìpi della dinamica di Newton</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-eom.html">12.2. Equazioni cardinali della dinamica per sistemi chiusi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-conservation.html">12.3. Leggi di conservazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-eom-open.html">12.4. Equazioni cardinali della dinamica per sistemi aperti</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-collisions.html">12.5. Collisioni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-motion-gravitation.html">12.6. Gravitazione</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">12.7. Moti centrali</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-problems.html">12.8. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-notes.html">12.9. Note e dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-examples.html">12.4. Esempi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-eom-open.html">12.5. Equazioni cardinali della dinamica per sistemi aperti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-collisions.html">12.6. Collisioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-motion-gravitation.html">12.7. Gravitazione</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">12.8. Moti centrali</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-problems.html">12.9. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-notes.html">12.10. Note e dimostrazioni</a></li>
 
 </ul>
 </li>
@@ -570,8 +571,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forza-proporzionale-alla-distanza">12.7.1. Forza proporzionale alla distanza</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forza-inversamente-proporzionale-al-quadrato-della-distanza">12.7.2. Forza inversamente proporzionale al quadrato della distanza</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forza-proporzionale-alla-distanza">12.8.1. Forza proporzionale alla distanza</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forza-inversamente-proporzionale-al-quadrato-della-distanza">12.8.2. Forza inversamente proporzionale al quadrato della distanza</a></li>
 </ul>
             </nav>
         </div>
@@ -584,7 +585,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="moti-centrali">
-<span id="physics-hs-mechanics-dynamics-motion-central"></span><h1><span class="section-number">12.7. </span>Moti centrali<a class="headerlink" href="#moti-centrali" title="Permalink to this heading">#</a></h1>
+<span id="physics-hs-mechanics-dynamics-motion-central"></span><h1><span class="section-number">12.8. </span>Moti centrali<a class="headerlink" href="#moti-centrali" title="Permalink to this heading">#</a></h1>
 <p>In meccanica, un moto centrale è definito come il moto di un corpo soggetto a un campo di forze con simmetria sferica rispetto a un punto <span class="math notranslate nohighlight">\(C\)</span>. Scegliendo questo punto come oridine di un sistema di riferimento, ogni punto dello spazio risulta determinato dal raggio vettore <span class="math notranslate nohighlight">\(\vec{r}\)</span> tra il centro e il punto. Un campo di forze centrale può essere scritto come</p>
 <div class="math notranslate nohighlight">
 \[\vec{F}(\vec{r}) = F_r(|\vec{r}|) \hat{r} \ ,\]</div>
@@ -598,14 +599,14 @@ document.write(`
 <p>Nel primo caso, l’intensità della forza ha una dipendenza lineare con la distanza dal centro; negli altri due casi, l’intensità della forza è inversamente proporzionale al quadrato della distanza dal centro. Si noti la (quasi) uguaglianza formale tra l’interazione gravitazionale soggetta alla legge di gravitazione universale di Newton e l’interazione elettrica soggetta alla forza di Coulomb. I due casi hanno però una differenza fondamentale: nel caso di interazione gravitazionale due corpi si attraggono sempre, nel caso di interazione elettrica, due corpi con carica di segno opposto si attraggono mentre due corpi con carica di segno uguale si respingono.</p>
 <p>Nelle sezioni successive vengono discussi i casi di <a class="reference internal" href="#physics-hs-mechanics-dynamics-motion-central-r"><span class="std std-ref">forza proporzionale alla distanza</span></a> e <a class="reference internal" href="#physics-hs-mechanics-dynamics-motion-central-r-2"><span class="std std-ref">forza proporzionale al quadrato della distanza</span></a>.</p>
 <div class="section" id="forza-proporzionale-alla-distanza">
-<span id="physics-hs-mechanics-dynamics-motion-central-r"></span><h2><span class="section-number">12.7.1. </span>Forza proporzionale alla distanza<a class="headerlink" href="#forza-proporzionale-alla-distanza" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-mechanics-dynamics-motion-central-r"></span><h2><span class="section-number">12.8.1. </span>Forza proporzionale alla distanza<a class="headerlink" href="#forza-proporzionale-alla-distanza" title="Permalink to this heading">#</a></h2>
 <p>L’equazione del moto di un corpo soggetto a un campo di forze centrali con intensità proporzionale alla distanza dal centro è</p>
 <div class="math notranslate nohighlight">
 \[m \ddot{\vec{r}} = -k \vec{r}\]</div>
 <p><strong>todo</strong></p>
 </div>
 <div class="section" id="forza-inversamente-proporzionale-al-quadrato-della-distanza">
-<span id="physics-hs-mechanics-dynamics-motion-central-r-2"></span><h2><span class="section-number">12.7.2. </span>Forza inversamente proporzionale al quadrato della distanza<a class="headerlink" href="#forza-inversamente-proporzionale-al-quadrato-della-distanza" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-mechanics-dynamics-motion-central-r-2"></span><h2><span class="section-number">12.8.2. </span>Forza inversamente proporzionale al quadrato della distanza<a class="headerlink" href="#forza-inversamente-proporzionale-al-quadrato-della-distanza" title="Permalink to this heading">#</a></h2>
 <p>L’equazione del moto di un corpo soggetto a un campo di forze centrali con intensità inversamente proporzionale al quadrato della distanza dal centro è</p>
 <div class="math notranslate nohighlight" id="equation-eq-central-r-2-eom">
 <span class="eqno">(12.1)<a class="headerlink" href="#equation-eq-central-r-2-eom" title="Permalink a questa equazione">#</a></span>\[m \ddot{\vec{r}} = c \frac{\vec{r}}{\vec{|\vec{r}|^3}} \ ,\]</div>
@@ -811,7 +812,7 @@ Equazione della traiettoria in funzione dell’energia e del momento angolare<di
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">12.6. </span>Gravitazione</p>
+        <p class="prev-next-title"><span class="section-number">12.7. </span>Gravitazione</p>
       </div>
     </a>
     <a class="right-next"
@@ -819,7 +820,7 @@ Equazione della traiettoria in funzione dell’energia e del momento angolare<di
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">12.8. </span>Problemi</p>
+        <p class="prev-next-title"><span class="section-number">12.9. </span>Problemi</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -838,8 +839,8 @@ Equazione della traiettoria in funzione dell’energia e del momento angolare<di
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forza-proporzionale-alla-distanza">12.7.1. Forza proporzionale alla distanza</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forza-inversamente-proporzionale-al-quadrato-della-distanza">12.7.2. Forza inversamente proporzionale al quadrato della distanza</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forza-proporzionale-alla-distanza">12.8.1. Forza proporzionale alla distanza</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forza-inversamente-proporzionale-al-quadrato-della-distanza">12.8.2. Forza inversamente proporzionale al quadrato della distanza</a></li>
 </ul>
   </nav></div>
 

@@ -38,6 +38,7 @@ $$\begin{aligned}
 Ricordando l'osservazione fatta nell'introduzione riguardo le macchine in funzionamento periodico o in ciclo continuo, si definisce qui il rendimento delle macchine termiche in funzionamento periodico in termini di lavoro e calore per ogni ciclo; dovrebbe essere immediata l'estensione di questa definizione al caso di macchine termiche in funzionamento continuo in termini di potenza meccanica e flusso di calore per unità di tempo.
 
 ```{prf:definition} Rendimento termodinamico
+:label: td-efficiency
 Il rendimento termodinamico di una macchina termica è definita come il rapporto tra l'effetto utile della macchina e l'apporto esterno.
 ```
 
@@ -45,6 +46,7 @@ La definizione di rendimento termodinamico dipende quindi dallo scopo e dal funz
 
 
 ```{prf:definition} Rendimento termodinamico - macchina termica diretta
+:label: td-efficiency-direct
 Una macchina termica in funzionamento diretto ha come obiettivo quello di convertire un apporto di calore $Q^{e}_{in} > 0$ in lavoro meccanico utile $L = -L^e > 0$. Il rendimento di una macchina termica in funzionamento diretto è quindi
 
 $$\eta = \frac{L}{Q^{e}_{in}} \ .$$
