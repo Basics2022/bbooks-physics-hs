@@ -55,7 +55,9 @@ Nel caso in cui il materiale sia neutro, la densità di carica elettrica è null
 ```
 
 (electric-current:cable)=
-```{example} Corrente in un cavo elettrico di piccola sezione
+```{prf:example} Corrente in un cavo elettrico di piccola sezione
+:label: electric-current-wire
+
 Modello di cavo elettrico usato nell'[approssimazione circuitale](physics-hs:electromagnetism:circuits-electric)...
 
 ```
@@ -108,6 +110,8 @@ Senza "forzanti esterne", come ad esempio campi elettrici, il moto degli elettro
 (physics-hs:electromagnetism:electric-current:solids:conductor:ohm)=
 #### Conduttori di Ohm
 ```{prf:definition} Conduttore di Ohm - legge di Ohm in forma locale
+:label: ohm-local
+
 In un conduttore di Ohm, il campo elettrico $\vec{e}(\vec{r},t)$ è proporzionale alla densità di corrente elettrica $\vec{j}(\vec{r},t)$. Per un solido isotropo, senza direzioni preferenziali, la **forma locale - differenziale - della legge di Ohm**: 
 
 $$
@@ -131,6 +135,7 @@ avendo introdotto la differenza di potenziale elementare $d v$ tra gli estremi d
 Queste relazioni che ben descrivono il comportamento di cavi elettrici conduttori in un ampio regime di funzionamento, sono le leggi Ohm.
 
 ```{prf:definition} Leggi di Ohm per cavi elettrici
+:label: ohm-wire
 
 **Prima legge di Ohm.** La differenza di potenziale $dv$ agli estremi di un cavo di lunghezza elementare $d \ell$ è proporzionale alla corrente $i$che passa nel conduttore, tramite la resistenza elettrica elementare, $d R$,
 
@@ -151,6 +156,7 @@ $$R = \int d R = \int_{\ell} \frac{\rho_R}{A} d \ell = \dfrac{\rho_R \ell}{A} \ 
 ```
 
 ```{prf:example} Effetto della temperatura sulla resistenza
+:label: resistance-temperature
 
 Assumendo una relazione lineare tra la resistività di un materiale e la sua temperatura,
 

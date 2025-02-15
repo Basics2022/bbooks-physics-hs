@@ -231,12 +231,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-principles.html">12.1. Princìpi della dinamica di Newton</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-eom.html">12.2. Equazioni cardinali della dinamica per sistemi chiusi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-conservation.html">12.3. Leggi di conservazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-eom-open.html">12.4. Equazioni cardinali della dinamica per sistemi aperti</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-collisions.html">12.5. Collisioni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-motion-gravitation.html">12.6. Gravitazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-central.html">12.7. Moti centrali</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-problems.html">12.8. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-notes.html">12.9. Note e dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-examples.html">12.4. Esempi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-eom-open.html">12.5. Equazioni cardinali della dinamica per sistemi aperti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-collisions.html">12.6. Collisioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-motion-gravitation.html">12.7. Gravitazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-central.html">12.8. Moti centrali</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-problems.html">12.9. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-notes.html">12.10. Note e dimostrazioni</a></li>
 
 </ul>
 </li>
@@ -644,7 +645,7 @@ document.write(`
 \[\phi_1 = \phi_2 \ .\]</div>
 <p>Usando la relazione <a class="reference internal" href="#equation-eq-v-phi">(22.5)</a> tra tensione ai capi degli induttori e la derivata dei flussi concatenati si ricava la relazione tra il numero di avvolgimenti e le differenze di tensione ai capi degli induttori</p>
 <div class="math notranslate nohighlight" id="equation-eq-transformer-ideal-v-ratio">
-<span class="eqno">(22.7)<a class="headerlink" href="#equation-eq-transformer-ideal-v-ratio" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{cases}
+<span class="eqno">(22.6)<a class="headerlink" href="#equation-eq-transformer-ideal-v-ratio" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{cases}
   v_1 = N_1 \dot{\phi}_1 \\
   v_2 = N_2 \dot{\phi}_2 \\
 \end{cases}
@@ -652,8 +653,8 @@ document.write(`
 \dfrac{v_2}{v_1} = \dfrac{N_2}{N_1} \ .
 \end{split}\]</div>
 <p>La relazione tra le correnti agli avvolgimenti è (<strong>todo</strong> <em>Quale equazione utilizzare per ricavare il rapporto dell’intensità di corrente?</em>)</p>
-<div class="math notranslate nohighlight" id="equation-eq-transformer-ideal-v-ratio">
-<span class="eqno">(22.7)<a class="headerlink" href="#equation-eq-transformer-ideal-v-ratio" title="Permalink a questa equazione">#</a></span>\[\dfrac{i_2}{i_1} = \dfrac{N_1}{N_2}\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-transformer-ideal-i-ratio">
+<span class="eqno">(22.7)<a class="headerlink" href="#equation-eq-transformer-ideal-i-ratio" title="Permalink a questa equazione">#</a></span>\[\dfrac{i_2}{i_1} = \dfrac{N_1}{N_2}\]</div>
 <p>Usando le due relazioni tra le tensioni e le correnti alle due porte elettriche, è facile osservare che il modello di trasformatore ideale non dissipa potenza, essendo la potenza uscente dall’avvolgimento secondario uguale alla potenza entrante nel sistema tramite l’avvolgimento primario,</p>
 <div class="math notranslate nohighlight">
 \[P_2 = i_2 v_2 = i_1 \dfrac{N_1}{N_2} v_1 \dfrac{N_2}{N_1} = i_1 v_1 = P_1 \ .\]</div>

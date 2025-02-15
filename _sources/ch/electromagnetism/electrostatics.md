@@ -263,6 +263,7 @@ Per materiali [conduttori di Ohm](physics-hs:electromagnetism:electric-current:s
 ```
 
 ```{prf:example} Distribuzione di carica in un guscio sferico conduttore - simmetria sferica
+:label: charge-sphere:conductor
 :class: dropdown
 
 **todo** Risolvere usando il [teorema di Gauss](physics-hs:electromagnetism:electrostatics:maxwell:gauss) e quindi spostare dopo il capitolo sulle [equazioni di Maxwell in elettrostatica](physics-hs:electromagnetism:electrostatics:maxwell)?
@@ -291,6 +292,7 @@ Quindi:
 ```
 
 ```{prf:example} Gabbia di Faraday
+:label: faraday-cage
 ```
 
 (physics-hs:electromagnetism:electrostatics:e-field:media:dielectrics)=
@@ -328,6 +330,7 @@ $$\vec{p} = \sigma_p \hat{x} = \frac{\varepsilon_r - 1}{\varepsilon_r} \vec{d} =
 ```
 
 ```{prf:example} Distribuzione di carica in un guscio sferico dielettrico senza carica netta - simmetria sferica
+:label: charge-sphere:dielectric
 :class: dropdown
 
 **todo** aggiungere la possibilità di cariche libere. E' necessario fare ipotesi sulla distribuzione delle cariche libere? O qualche principio fisico fornisce la loro distribuzione? $\nabla \cdot \vec{d} = \rho_f$

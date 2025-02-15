@@ -54,14 +54,20 @@ che prende il nome di **costante di gravitazione universale**.
 Le equazioni della dinamica e la legge di gravitazione universale da lui formulate, permise a Newton di dimostrare le **tre leggi di Keplero** che descrivono il moto *limitato* (**todo** *trovare sinonimo*) di due corpi celesti, come ad esempio il moto di un pianeta rispetto al Sole, o il moto di un satellite rispetto al pianeta di riferimento.
 
 ```{prf:definition} Prima legge di Keplero
+:label: kepler-law-1
+
 Il moto di un pianeta rispetto al Sole descrive una traiettoria ellittica, e il Sole si trova in uno dei suoi fuochi.
 
 ```
 ```{prf:definition} Seconda legge di Keplero
+:label: kepler-law-2
+
 Il moto di un pianeta rispetto al Sole ha una velocità areolare costante.
 
 ```
-```{prf:definition} Prima legge di Keplero
+```{prf:definition} Terza legge di Keplero
+:label: kepler-law-3
+
 Il periodo $T$ dell'orbita è in relazione al semiasse maggiore $a$
 
 $$T = \pi \dfrac{a^{\frac{3}{2}}}{\sqrt{GM}} \ \quad , \quad T^2 \sim a^3$$

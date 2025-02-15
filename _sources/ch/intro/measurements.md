@@ -9,6 +9,8 @@ $$M = \{ M \} [ M ] \ .$$
 
 (physics-hs:intro:measurements:homogeneous)=
 ```{prf:definition} Grandezze fisiche omogenee
+:label: def-dimensions-homonegneous
+
 Due **grandezze fisiche omogenee** sono grandezze fisiche della stessa natura, che - in maniera equivalente:
 - possono essere riferite alla stessa unità di misura
 - possono essere confrontate con un rapporto che restituisce un valore numerico - privo di dimensioni fisiche
