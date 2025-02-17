@@ -24,6 +24,7 @@ La posizione di un punto nello spazio euclideo è rappresentabile con un vettore
 
 ```{prf:example} Invarianza di spazio e tempo.
 :label: invariance-space-and-time
+:class: dropdown
 
 Dati i punti nel piano, $A$, $B$, $C$, ... e due osservatori... 
  
@@ -54,11 +55,11 @@ La scelta dell'insieme dei gradi di libertà usati per descrivere la configurazi
 In generale, in meccanica classica lo **stato di un sistema** è definito dalla sua configurazione e dalla derivata prima nel tempo delle variabili che definiscono i gradi di libertà: questo è sensato per sistemi meccanici la cui dinamica è governata da *equazioni differenziali ordinarie del secondo ordine*.
 ```
 
-La configurazione di un **punto** libero nello [spazio euclideo $E^n$](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic_geometry/euclidean_space.html) ($n=2$ piano, $n=3$ spazio) è definita dalla sua posizione nello spazio, tramite un insieme di $n$ coordinate:
+La configurazione di un **punto libero** nello [spazio euclideo $E^n$](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic_geometry/euclidean_space.html) ($n=2$ piano, $n=3$ spazio) è definita dalla sua posizione nello spazio, tramite un insieme di $n$ coordinate:
 - un punto libero nel piano ha 2 gradi di libertà (traslazione);
 - un punto libero nello spazio ha 3 gradi di libertà (traslazione). 
 
-La configurazione di un **corpo rigido** è definita dalla posizione di un suo punto nello spazio e dalla sua orientazione: 
+La configurazione di un **corpo rigido libero** è definita dalla posizione di un suo punto nello spazio e dalla sua orientazione: 
 - un corpo rigido nel piano ha 3 gradi di libertà, 2 per definire la posizione di un suo punto nello spazio (traslazione) e 1 per definire la sua orientazione (rotazione) rispetto a un asse ortogonale al piano; 
 - un corpo rigido nello spazio ha 6 gradi di libertà, 3 per definire la posizione di un suo punto nello spazio (traslazione) e 3 per definire la sua orientazione (rotazione)
 
