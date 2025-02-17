@@ -31,11 +31,14 @@ $$\vec{F}_{ij} = - \vec{F}_{ji} \ .$$
 ## Sistemi di riferimento inerziali e invarianza galileiana.
 La formulazione dei princìpi della dinamica si basa sul concetto di sistema di riferimento inerziale, di cui non è stato ancora detto nulla.
 E' possibile dare una definizione operativa di osservatore inerziale (o sistema di riferimento inerziale? **todo**), supponendo che:
-- l'osservatore sia dotato di uno strumento in grado di misurare le forze e i momenti ai quali è soggetto (**todo** ad esempio una bilancia o una combinazione di dinamometri)
-- sia possibile conoscere le azioni "vere" (**todo** fare riferimento alle forze "vere" note: gravitazione - che in meccanica classica è una forza -, elettromagnetica, nucleare forte e debole; o le loro manifestazioni macroscopiche come ad esempio forze di contatto) agenti sul sistema.
+- l'osservatore sia dotato di uno strumento in grado di misurare le forze e i momenti ai quali è soggetto (sensore a 6-assi, per misurare forze e momenti); in maniera equivalente, l'osservatore può disporre di più sensori di forza a 3 assi disposti in diversi punti dello spazio;
+- sia possibile conoscere le azioni "vere" agenti sul sistema, di natura gravitazionale o elettromagnetica sottoforma di azioni di contatto, come presentato nell'introduzione alle [azioni in meccanica classica](physics-hs:mechanics:actions)
 
-**Definizione.**
+```{prf:definition} Osservatore inerziale
+:label: inertial-observer
+
 Un osservatore è inerziale se la lettura degli strumenti di misura in suo possesso corrisponde alle azioni "vere" agenti sul sistema. In particolare, in assenza di azioni nette gli strumenti restituiscono una misura nulla.
+```
 
 ```{prf:example} Sistemi inerziali, azioni vere e relatività generale
 

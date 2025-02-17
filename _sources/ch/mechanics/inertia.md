@@ -29,6 +29,9 @@ Dal punto di vista operativo, la massa di un sistema - quando possibile dal punt
 (physics-hs:mechanics:inertia:mass-density)=
 ## Massa e distribuzione di massa
 
+**todo** Densità
+
+
 
 (physics-hs:mechanics:inertia:dynamical-quantities)=
 ## Quantità dinamiche
@@ -40,7 +43,6 @@ Queste grandezze dinamiche combinano la massa e la sua distribuzione con le gran
 - energia cinetica
 
 Le [equazioni del moto](physics-hs:mechanics:dynamics:eom) dei sistemi rappresentano delle equazioni differenziali che mettono in relazione la variazione di queste quantità dinamiche con la causa di queste variazioni, in generale riconducibile ad [azioni](physics-hs:mechanics:actions) agenti sul sistema.
-
 Sotto opportune ipotesi, queste grandezze dinamiche sono costanti del moto, come descritto dalle [leggi di conservazione](physics-hs:mechanics:dynamics:conservation).
 
 Le 3 grandezze dinamiche possono avere espressioni diverse, a seconda del sistema di interesse. Nel caso di corpi rigidi, queste possono essere espresse in termini di velocità di un punto materiale e della velocità angolare del corpo.

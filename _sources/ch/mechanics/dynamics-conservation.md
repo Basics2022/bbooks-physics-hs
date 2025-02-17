@@ -1,8 +1,10 @@
+<!--
 ```{article-info}
 :author: basics
 :date: "{sub-ref}`today`"
 :read-time: "{sub-ref}`wordcount-minutes` min read"
 ```
+-->
 
 (physics-hs:mechanics:dynamics:conservation)=
 # Leggi di conservazione
@@ -43,7 +45,13 @@ $$
   P^{tot} = \vec{0} \qquad  \rightarrow \qquad \ \  K = \text{const.}
 $$
 
-**Conservazione del momento dell'energia meccanica.** Se le azioni agenti su un sistema sono conservative, la loro potenza può essere scritta come derivata nel tempo di un'energia potenziale, $P^{tot} = - \dot{V}$. Se si definisce **energia meccanica** la somma dell'energia cinetica del sistema e dell'energia potenziale delle azioni agenti sul sistema, $E^{mec} := K + V$, segue immediatamente che, in assenza di azioni non-conservative l'energia meccanica di un sistema è costante,
+**Conservazione dell'energia meccanica.** Se in un sistema agiscono solo [azioni conservative](physics-hs:mechanics:actions:conservative) - sia azioni interne sia azioni esterne -, è valida la conservazione dell'energia meccanica.
+La potenza delle azioni conservative può essere scritta come derivata nel tempo di una funnzione energia potenziale, $P^{tot} = - \dot{V}$. 
+Definendo l'**energia meccanica** come la somma dell'energia cinetica del sistema e dell'energia potenziale, 
 
-$$P^{tot} = - \dot{V} \qquad \rightarrow \qquad E^{mec} = \text{const.}$$
+$$E^{mec} := K + V \ ,$$
+
+ segue immediatamente che, in assenza di azioni non-conservative l'energia meccanica di un sistema è costante,
+
+$$\dot{K} = P^{tot} = - \dot{V} \quad \rightarrow \quad \dfrac{d}{dt} \left( K + V \right) = 0 \quad \rightarrow \quad E^{mec} = \text{const.}$$
 
