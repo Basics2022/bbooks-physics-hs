@@ -72,7 +72,7 @@ $$\begin{aligned}
 
 ```
 
-(physics-hs:mechanics:actions:gravitation:spring)=
+(physics-hs:mechanics:actions:spring)=
 ## Azioni elastiche: molle lineari
 
 Secondo la legge di Hooke, il comportamento di una molla elastica lineare ideale è descritto dall'equazione costitutiva
@@ -124,8 +124,10 @@ $$L = \int_{\ell_1}^{\ell_2} = \left[ \frac{1}{2} k \ell^2 - k \ell_0 \, \ell \r
 
 $$V = \frac{1}{2} k (\ell - \ell_0)^2$$
 
+(physics-hs:mechanics:actions:contact)=
 ## Azioni di contatto
 
+(physics-hs:mechanics:actions:contact:ideal-constraints)=
 ### Reazioni vincolari di vincoli ideali
 I vincoli ideali sono modelli di vincolo che **non compiono lavoro netto**, e per questo sono **elementi conservativi**. Come dovrebbe risultare evidente nei paragrafi successivi dalle espressioni delle velocità relative e dalle azioni scambiate, 
 
@@ -140,6 +142,7 @@ P & = \vec{v}_1     \cdot \vec{F}_{21} + \vec{v}_2     \cdot \vec{F}_{12}
 
 entrambi i termini sono nulli, o perché il moto relativo è nullo, o le azioni agiscono in direzione ortogonale ai moti relativi.
 
+(physics-hs:mechanics:actions:contact:ideal-constraints:fix)=
 #### Incastro
 Il vincolo di incastro impedisce sia il moto sia la rotazione relativa,
 
@@ -155,6 +158,7 @@ $$
 \end{cases}
 $$
 
+(physics-hs:mechanics:actions:contact:ideal-constraints:skate)=
 #### Pattino
 Il vincolo di pattino impedisce il moto relativo in una direzione e la rotazione relativa.
 
@@ -172,6 +176,7 @@ $$
 \end{cases}
 $$
 
+(physics-hs:mechanics:actions:contact:ideal-constraints:hinge-cylindrical)=
 #### Cerniera (cilindrica)
 Il vincolo di pattino impedisce il moto relativo e consente solo la rotazione attorno a un asse.
 
@@ -189,6 +194,7 @@ $$
 \end{cases}
 $$
 
+(physics-hs:mechanics:actions:contact:ideal-constraints:hinge-spherical)=
 #### Cerniera (sferica)
 Il vincolo di pattino impedisce il moto relativo, consentendo una rotazione generica.
 
@@ -204,6 +210,7 @@ $$
 \end{cases}
 $$
 
+(physics-hs:mechanics:actions:contact:ideal-constraints:cart)=
 #### Carrello
 Il vincolo di carello può essere pensato come la combinazione di un pattino e di una cerniera
 
@@ -223,10 +230,13 @@ $$
 \end{cases}
 $$
 
+(physics-hs:mechanics:actions:contact:ideal-constraints:monolateral)=
 #### Appoggio
 Il vincolo di appoggio è un vincolo monolatero **todo** *aggiungere descrizione*
 
+(physics-hs:mechanics:actions:contact:friction)=
 ### Attrito
+(physics-hs:mechanics:actions:contact:friction:static)=
 #### Attrito statico
 
 L'attrito statico è la forma di attrito che si manifesta tra due corpi quando non c'è moto relativo tra di essi, come una forza tangenziale alla superficie di contatto. Il più semplice modello di attrito statico prevede che il modulo massimo della forza di attrito $F^s_{max}$ che si può esercitare tra due corpi è proporzionale alla reazione normale tra di essi, $N$,
@@ -238,6 +248,7 @@ Il coefficiente di proporzionalità $\mu^s$ viene definito **coefficiente di att
 $$|F^s| \ge F^s_{max} \ .$$
 
 
+(physics-hs:mechanics:actions:contact:friction:dynamic)=
 #### Attrito dinamico
 
 L'attrito dinamico è la forma di attrito che si manifesta tra due corpi a contatto e in moto relativo, come una forza tangenziale alla superficie di contatto. Il più semplice modello di attrito statico prevede che la forza di attrito dinamico sia proporzionale alla reazione normale tra i due corpi e diretta in verso opposto alla velocità relativa,

@@ -644,7 +644,12 @@ document.write(`
 \[\vec{j} = \rho \vec{v} = \rho^+ \vec{v}^+ + \rho^- \vec{v}^- \ . \]</div>
 <p>Nel caso in cui il materiale sia neutro, la densità di carica elettrica è nulla, <span class="math notranslate nohighlight">\(0 = \rho = \rho^+ + \rho^- =\)</span> e quindi <span class="math notranslate nohighlight">\(\rho^+ = - \rho^-\)</span> e la densità di corrente elettrica può essere scritta come <span class="math notranslate nohighlight">\(\vec{j} = \rho^- (\vec{v}^- - \vec{v}^+)\)</span>.</p>
 </div>
-<!--
+<div class="proof example admonition" id="electric-current-wire">
+<span id="electric-current-cable"></span><p class="admonition-title"><span class="caption-number">Example 21.6 </span> (Corrente in un cavo elettrico di piccola sezione)</p>
+<div class="example-content section" id="proof-content">
+<p>Modello di cavo elettrico usato nell”<a class="reference internal" href="circuits-electric.html#physics-hs-electromagnetism-circuits-electric"><span class="std std-ref">approssimazione circuitale</span></a>…</p>
+</div>
+</div><!--
 ```{figure} ../../media/electric-current-solids.png
 ---
 width: 30%
@@ -688,7 +693,7 @@ $$\Delta i = \Phi_{\Delta S}(\vec{j}) = \vec{j} \cdot \hat{n} \Delta S = \frac{\
 -->
 <div class="section" id="conduttori-di-ohm">
 <span id="physics-hs-electromagnetism-electric-current-solids-conductor-ohm"></span><h4><span class="section-number">21.2.3.1.1. </span>Conduttori di Ohm<a class="headerlink" href="#conduttori-di-ohm" title="Permalink to this heading">#</a></h4>
-<div class="proof definition admonition" id="definition-2">
+<div class="proof definition admonition" id="ohm-local">
 <p class="admonition-title"><span class="caption-number">Definition 21.4 </span> (Conduttore di Ohm - legge di Ohm in forma locale)</p>
 <div class="definition-content section" id="proof-content">
 <p>In un conduttore di Ohm, il campo elettrico <span class="math notranslate nohighlight">\(\vec{e}(\vec{r},t)\)</span> è proporzionale alla densità di corrente elettrica <span class="math notranslate nohighlight">\(\vec{j}(\vec{r},t)\)</span>. Per un solido isotropo, senza direzioni preferenziali, la <strong>forma locale - differenziale - della legge di Ohm</strong>:</p>
@@ -708,7 +713,7 @@ $$\Delta i = \Phi_{\Delta S}(\vec{j}) = \vec{j} \cdot \hat{n} \Delta S = \frac{\
 \end{aligned}\end{split}\]</div>
 <p>avendo introdotto la differenza di potenziale elementare <span class="math notranslate nohighlight">\(d v\)</span> tra gli estremi del tratto di cavo elementare, proporzionale alla corrente che transita nel cavo tramite la <strong>resistenza elettrica</strong> elementare <span class="math notranslate nohighlight">\(dR\)</span>.</p>
 <p>Queste relazioni che ben descrivono il comportamento di cavi elettrici conduttori in un ampio regime di funzionamento, sono le leggi Ohm.</p>
-<div class="proof definition admonition" id="definition-3">
+<div class="proof definition admonition" id="ohm-wire">
 <p class="admonition-title"><span class="caption-number">Definition 21.5 </span> (Leggi di Ohm per cavi elettrici)</p>
 <div class="definition-content section" id="proof-content">
 <p><strong>Prima legge di Ohm.</strong> La differenza di potenziale <span class="math notranslate nohighlight">\(dv\)</span> agli estremi di un cavo di lunghezza elementare <span class="math notranslate nohighlight">\(d \ell\)</span> è proporzionale alla corrente <span class="math notranslate nohighlight">\(i\)</span>che passa nel conduttore, tramite la resistenza elettrica elementare, <span class="math notranslate nohighlight">\(d R\)</span>,</p>
@@ -724,8 +729,8 @@ $$\Delta i = \Phi_{\Delta S}(\vec{j}) = \vec{j} \cdot \hat{n} \Delta S = \frac{\
 <div class="math notranslate nohighlight">
 \[R = \int d R = \int_{\ell} \frac{\rho_R}{A} d \ell = \dfrac{\rho_R \ell}{A} \ .\]</div>
 </div>
-</div><div class="proof example admonition" id="example-4">
-<p class="admonition-title"><span class="caption-number">Example 21.6 </span> (Effetto della temperatura sulla resistenza)</p>
+</div><div class="proof example admonition" id="resistance-temperature">
+<p class="admonition-title"><span class="caption-number">Example 21.7 </span> (Effetto della temperatura sulla resistenza)</p>
 <div class="example-content section" id="proof-content">
 <p>Assumendo una relazione lineare tra la resistività di un materiale e la sua temperatura,</p>
 <div class="math notranslate nohighlight">

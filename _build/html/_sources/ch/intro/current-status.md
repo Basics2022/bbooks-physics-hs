@@ -39,3 +39,12 @@ A seconda del livello di dettaglio e dell'ambito di interesse, è necessario uti
     - pressione e sforzo sono grandezze sono grandezze fisiche, evidenze macroscopiche delle interazioni (legami e "urti") tra i componenti elementari a livello microscopico
     - densità di corrente è una grandezza fisica, evidenza macroscopica del numero di componenti elementari dotati di carica in un determinato volume
     - [corrente elettrica](physics-hs:electromagnetism:electric-current) è una grandezza fisica, evidenza macroscopica del numero di cariche elementari che attraversano una superficie in un intervallo di tempo elementare
+
+(physics-hs:intro:current-status:fundamental-interactions)=
+## Interazioni fondamentali
+Allo stato attuale, sono riconosciuti 4 tipi di interazioni fondamentali:
+1. interazione gravitazionale
+2. interazione elettromagnetica
+3. interazione nucleare debole
+3. interazione nucleare forte
+

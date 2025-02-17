@@ -5,7 +5,7 @@ La meccanica classica di Newton viene costruita assumendo valido il **principio 
 
 **Principio di conservazione della massa.** In meccanica classica, il principio di Lavoisier di conservazione della massa può essere riassunto con la formula "niente si crea, niente si distrugge". Per essere più precisi, il principio di conservazione della massa postula che la massa di un sistema chiuso è costante.
 
-**Primo principio - principio di inerzia.** Un sistema (o meglio, il baricentro di un sistema) sul quale agisce una forza esterna netta nulla, persevera nel suo stato di quiete o di moto rettilineo uniforme rispetto a un sistema di riferimento inerziale.
+**Primo principio - principio di inerzia.** Un sistema (o meglio, il baricentro di un sistema) sul quale agisce una forza esterna netta nulla, persevera nel suo stato di quiete o di moto rettilineo uniforme rispetto a un [sistema di riferimento inerziale](physics-hs:mechanics:dynamics:principles:inertial-ref-frame).
 
 **Secondo principio - bilancio della quantità di moto per sistemi chiusi.** Rispetto a un sistema di riferimento inerziale, la variazione della quantità di moto $\vec{Q}$ di un sistema chiuso è uguale all'impulso delle forze esterne $\vec{I}^{ext}$ agenti su di esso,
 
@@ -27,6 +27,7 @@ $$\vec{F}_{ij} = - \vec{F}_{ji} \ .$$
 - sistemi aperti e sistemi chiusi: sottolineare la validità di $\Delta \vec{Q} = \vec{I}^{ext}$ solo per sistemi chiusi, mentre per sistemi aperti è necessario un termine di flusso della quantità meccanica. Riferimento alla meccanica dei fluidi
 
 
+(physics-hs:mechanics:dynamics:principles:inertial-ref-frame)=
 ## Sistemi di riferimento inerziali e invarianza galileiana.
 La formulazione dei princìpi della dinamica si basa sul concetto di sistema di riferimento inerziale, di cui non è stato ancora detto nulla.
 E' possibile dare una definizione operativa di osservatore inerziale (o sistema di riferimento inerziale? **todo**), supponendo che:
@@ -35,6 +36,12 @@ E' possibile dare una definizione operativa di osservatore inerziale (o sistema 
 
 **Definizione.**
 Un osservatore è inerziale se la lettura degli strumenti di misura in suo possesso corrisponde alle azioni "vere" agenti sul sistema. In particolare, in assenza di azioni nette gli strumenti restituiscono una misura nulla.
+
+```{prf:example} Sistemi inerziali, azioni vere e relatività generale
+
+Esperimento mentale di A.Einstein dell'ascensore senza finestre come esperimento mentale introduttivo alla [relatività generale](physics-hs:modern:einstein:general).
+
+```
 
 **Definizione quantità cinematiche.**
 Sia $O$ l'origine di un sistema di riferimento coincidente con un'osservatore inerziale, la velocità di un punto $P$ rispetto a $O$ è a derivata del vettore posizione $P - O$ rispetto al tempo (assoluto in meccanica classica di Newton)

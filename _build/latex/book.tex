@@ -87,7 +87,7 @@
         
 
 \title{Fisica per le superiori}
-\date{15 feb 2025}
+\date{17 feb 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -1379,6 +1379,31 @@ densità di corrente è una grandezza fisica, evidenza macroscopica del numero d
 
 \end{itemize}
 
+
+\section{Interazioni fondamentali}
+\label{\detokenize{ch/intro/current-status:interazioni-fondamentali}}\label{\detokenize{ch/intro/current-status:physics-hs-intro-current-status-fundamental-interactions}}
+\sphinxAtStartPar
+Allo stato attuale, sono riconosciuti 4 tipi di interazioni fondamentali:
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+interazione gravitazionale
+
+\item {} 
+\sphinxAtStartPar
+interazione elettromagnetica
+
+\item {} 
+\sphinxAtStartPar
+interazione nucleare debole
+
+\item {} 
+\sphinxAtStartPar
+interazione nucleare forte
+
+\end{enumerate}
+
 \sphinxstepscope
 
 
@@ -1725,22 +1750,58 @@ legge di gravitazione universale: l’origine del moto dei gravi è la stessa de
 \chapter{Cinematica}
 \label{\detokenize{ch/mechanics/kinematics:cinematica}}\label{\detokenize{ch/mechanics/kinematics:physics-hs-mechanics-kinematics}}\label{\detokenize{ch/mechanics/kinematics::doc}}
 \sphinxAtStartPar
-La cinematica si occupa della descrizione del moto dei sistemi, senza indagarne le cause. La cinematica si occupa della descrizione dello stato di un sistema, e della sua variazione, nello spazio.
+La cinematica si occupa della descrizione del moto dei sistemi, senza indagarne le cause. La cinematica si occupa della descrizione dello stato di un sistema, e della sua variazione, nello \sphinxstylestrong{spazio} in funzione del \sphinxstylestrong{tempo}.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Cosa si intende per spazio e per tempo in meccanica classica?} Il modello di spazio che aveva in mente Newton \sphinxhyphen{} e che può essere ritenuto un ottimo modello di spazio in molte circostanze anche oggi \sphinxhyphen{} è lo \sphinxstylestrong{spazio Euclideo}, nel quale non ci sono direzioni o posizioni «speciali» (isotropo e uniforme), e nel quale valgono i postulati e i risultati della geometria euclidea. Questo modello di spazio 3\sphinxhyphen{}dimensionale può essere descrito dalle coordinate cartesiane, e la distanza tra due punti può essere calcolata con il teorema di Pitagora applicato alle differenze di coordinate. Dal punto di vista operativo, lo spazio è quell’entità fisica nella quale si possono misurare distanze e angoli con \sphinxstylestrong{righello} e \sphinxstylestrong{gonomiometro} (o altri strumenti meno rudimentali). Una volta scelto un punto dello spazio come origine, i punti dello spazio possono essere rappresentati come vettori di uno spazio euclideo.
+Il \sphinxstylestrong{tempo} invece può essere definito come la grandezza fisica associabile al susseguirsi degli eventi e che può essere misurata con un \sphinxstylestrong{orologio}.
+
+\sphinxAtStartPar
+In meccanica classica, spazio e tempo sono considerati \sphinxstylestrong{indipendentemente entità assolute}%
+\begin{footnote}[1]\sphinxAtStartFootnote
+Questo non è più vero nella \DUrole{xref,myst}{meccanica di Einstein}, teoria compatibile con i fenomeni elettromagnetici e l’evidenza sperimentale che la velocità della luce è finita. Nell’ambito della teoria della relatività di Einstein, spazio e tempo non sono più due entità assolute: due osservatori in moto relativo non concordano sulle misure di lunghezze, di angoli e di intervalli di tempo. Spazio e tempo sono due componenti di un’entità assoluta 4\sphinxhyphen{}dimensionale, lo spazio\sphinxhyphen{}tempo. Potrà sembrare strano, ma così è: è sempre bene ricordarsi che la nostra esperienza quotidiana è abbastanza limitata e di come i nostri sensi possono ingannarci.
+%
+\end{footnote}, cioè indipendenti dall’osservatore: due osservatori diversi dotati di strumenti per la misura di distanze, angoli e tempo (accurati e tarati), concordano sulla misura della distanza tra qualsiasi coppia di punti dello spazio, dell’angolo tra qualsiasi coppia di direzioni e di qualsiasi intervallo di tempo. Come discusso nell’esempio {\hyperref[\detokenize{ch/mechanics/kinematics:invariance-space-and-time}]{\sphinxcrossref{Example 8.1}}}, due osservatori che usano sistemi di coordinate diversi possono non concordare sulle coordinate dei punti ma concordano sulle distanze e sugli angoli.
+
+\sphinxAtStartPar
+La posizione di un punto nello spazio euclideo è rappresentabile con un vettore (una volta scelto un punto come origine nello spazio); un istante di tempo è rappresentabile con un numero scalare. La descrizione generale di una rotazione nello spazio 3\sphinxhyphen{}dimensionale richiede strumenti al di fuori dello scopo di questo materiale, i tensori; limitandoci qui al moto piano di sistemi estesi, la rotazione in un moto piano può essere rappresentata con l’angolo di rotazione rispetto a una direzione di riferimento (e quindi una quantità scalare) o con un vettore ortogonale al piano del moto di valore modulo uguale all’angolo di rotazione. La discussione generale della cinematica dei corpi rigidi nello spazio 3\sphinxhyphen{}dimensionale viene affrontata nel materiale di \sphinxhref{https://basics2022.github.io/bbooks-physics-mechanics/ch/kinematics.html}{meccanica per gli studenti universitari}.
+\label{ch/mechanics/kinematics:invariance-space-and-time}
+\begin{sphinxadmonition}{note}{Example 8.1 (Invarianza di spazio e tempo.)}
+
+
+
+\sphinxAtStartPar
+Dati i punti nel piano, \(A\), \(B\), \(C\), … e due osservatori…
+\begin{equation*}
+\begin{split}\begin{cases}
+x_2 = \dots \\
+y_2 = \dots \\
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+essi non concordano sulle coordinate e l’istante dei tre eventi,
+
+\sphinxAtStartPar
+ma concordano sulle distanze, sugli angoli (e sull’area, come concorderebbero sul volume di solidi), e sull’intervallo temporale tra i tre eventi,
+\end{sphinxadmonition}
 \label{ch/mechanics/kinematics:system-configuration}
 \begin{sphinxadmonition}{note}{Definition 8.1 (Configurazione di un sistema)}
 
 
 
 \sphinxAtStartPar
-La \sphinxstylestrong{configurazione di un sistema} è definita da un insieme di variabili indipendenti, o coordinate, dette \sphinxstylestrong{gradi di libertà}.  Il numero di gradi di libertà di un sistema dipende dalla dimensione dello spazio nel quale avviene il moto, dal numero e dal tipo degli elementi che lo compongono e dai vincoli che connettono gli elementi del sistema tra di loro o con l’ambiente esterno.
+La \sphinxstylestrong{configurazione di un sistema} viene definita da un insieme minimo (non ridondante) di variabili indipendenti, o coordinate, dette \sphinxstylestrong{gradi di libertà}.  Il numero di gradi di libertà di un sistema dipende dalla dimensione dello spazio nel quale avviene il moto, dal numero e dal tipo degli elementi che lo compongono e dai vincoli che connettono gli elementi del sistema tra di loro o con l’ambiente esterno.
 \end{sphinxadmonition}
+
+\sphinxAtStartPar
+La scelta dell’insieme dei gradi di libertà usati per descrivere la configurazione di un sistema non è univoca, e di solito viene guidata da un criterio di «comodità» e di «semplicità» del problema da risolvere. La scelta dei gradi di libertà non influenza la configurazione del sistema, che è quindi \sphinxstyleemphasis{invariante} alla scelta dei gradi di libertà.
 \label{ch/mechanics/kinematics:system-state}
 \begin{sphinxadmonition}{note}{Definition 8.2 (Stato di un sistema)}
 
 
 
 \sphinxAtStartPar
-In generale, in meccanica classica lo \sphinxstylestrong{stato di un sistema} è definito dalla sua configurazione e dalla derivata prima nel tempo delle variabili che definiscono i gradi di libertà: questo è sensato per sistemi meccanici la cui dinamica è governata da equazioni differenziali ordinarie del secondo ordine.
+In generale, in meccanica classica lo \sphinxstylestrong{stato di un sistema} è definito dalla sua configurazione e dalla derivata prima nel tempo delle variabili che definiscono i gradi di libertà: questo è sensato per sistemi meccanici la cui dinamica è governata da \sphinxstyleemphasis{equazioni differenziali ordinarie del secondo ordine}.
 \end{sphinxadmonition}
 
 \sphinxAtStartPar
@@ -1769,6 +1830,10 @@ un corpo rigido nello spazio ha 6 gradi di libertà, 3 per definire la posizione
 
 \end{itemize}
 
+
+\bigskip\hrule\bigskip
+
+
 \sphinxstepscope
 
 
@@ -1777,24 +1842,6 @@ un corpo rigido nello spazio ha 6 gradi di libertà, 3 per definire la posizione
 \section{Cinematica del punto}
 \label{\detokenize{ch/mechanics/kinematics-point:cinematica-del-punto}}\label{\detokenize{ch/mechanics/kinematics-point:physics-hs-mechanics-kinematics-point}}\label{\detokenize{ch/mechanics/kinematics-point::doc}}
 
-\subsection{Prime definizioni}
-\label{\detokenize{ch/mechanics/kinematics-point:prime-definizioni}}
-\sphinxAtStartPar
-Quantità vettoriali…
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-spostamento, composizione spostamenti
-
-\item {} 
-\sphinxAtStartPar
-velocità media, velocità puntuale
-
-\item {} 
-\sphinxAtStartPar
-accelerazione media, accelerazione puntuale
-
-\end{itemize}
 
 
 \subsection{Configurazione e stato in un moto regolare (differenziabile)}
@@ -2522,55 +2569,48 @@ Se i vettori velocità e accelerazione sono allineati (con direzione concorde o 
 
 
 \chapter{Azioni}
-\label{\detokenize{ch/mechanics/actions:azioni}}\label{\detokenize{ch/mechanics/actions:physics-hs-mechanics-actions}}\label{\detokenize{ch/mechanics/actions::doc}}\begin{itemize}
-\item {} 
+\label{\detokenize{ch/mechanics/actions:azioni}}\label{\detokenize{ch/mechanics/actions:physics-hs-mechanics-actions}}\label{\detokenize{ch/mechanics/actions::doc}}
 \sphinxAtStartPar
-Tipi di azione:
+\sphinxstylestrong{Cos’è un’azione?}%
+\begin{footnote}[1]\sphinxAtStartFootnote
+La risposta alla domanda «cos’è un’azione?» potrebbe implicare una conoscenza «vera» \sphinxhyphen{} qualsiasi cosa significhi \sphinxhyphen{} dell’oggetto\sphinxhyphen{}concetto «azione». Anche qui, come già in altre parti, la domanda «cos’è…?» può essere sostituita con «cosa intendiamo per…?», e una «risposta operativa» può essere ritenuta soddisfacente, poiché rispecchia la modalità di conoscenza e formazione del sapere in ambito scientifico: senza entrare in ambiti filosofici più astratti, in fisica siamo contenti di definire qualcosa tramite le sue interazioni ed effetti su altri sistemi, le sue proprietà, e un processo affidabile per la sua misura.
+%
+\end{footnote} Seguendo l’introduzione dei concetti fondamentali della meccanica nei suoi \sphinxstyleemphasis{Principia Naturalis}, Newton concepisce il concetto di azione \sphinxhyphen{} includendo sia \sphinxstylestrong{forze} sia \sphinxstylestrong{momenti} \sphinxhyphen{} come le possibili \sphinxstylestrong{cause di variazione del «moto vero»} di un sistema meccanico o, come definizione equivalente, le cause della \sphinxstylestrong{differenza del moto vero rispetto a un moto relativo generico}.
+
+\sphinxAtStartPar
+Una forza è una grandezza fisica vettoriale che dal punto di vista operativo può essere misurata con un \sphinxstylestrong{sensore di forza a 3\sphinxhyphen{}assi} (che ne misura le 3 componenti in uno spazio 3\sphinxhyphen{}dimensionale) o con un \sphinxstylestrong{dinamometro} (che ne misura l’intensità), se questo è libero di orientarsi lungo la direzione della forza o se questa è nota e lo strumento allineato ad essa.
+
+
+
+\sphinxAtStartPar
+\sphinxstylestrong{Interazioni in meccanica classica.} Facendo riferimento alle {\hyperref[\detokenize{ch/intro/current-status:physics-hs-intro-current-status-fundamental-interactions}]{\sphinxcrossref{\DUrole{std,std-ref}{quattro interazioni fondamentali}}}}, le interazioni significative nell’ambito della meccanica classica sono solo quelle di natura {\hyperref[\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-gravitation}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{gravitazionale}}}}} e quelle di natura \sphinxstylestrong{elettromagnetica}. Le interazioni di natura elettromagnetica possono manifestarsi con corpi con carica netta o, più frequentemente in meccanica classica, tra corpi con carica netta nulla. Tra questi ultimi casi, in meccanica classica è comune la manifestazione a livello macroscopico dell’interazione elettromagnetica a livello microscopico tra i componenti elementari della materia, sotto forma di:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-forza concentrata, momento di una forza, coppia di forze; carichi equivalenti
-
-\item {} 
-\sphinxAtStartPar
-azioni distribuite: azioni di volume, e di superficie (sforzo e pressione)
-
-\end{itemize}
-
-\item {} 
-\sphinxAtStartPar
-Lavoro e potenza; azioni conservative
-
-\item {} 
-\sphinxAtStartPar
-Esempi:
+interazioni di {\hyperref[\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-contact}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{contatto}}}}} nelle quali è possibile distinguere:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-gravitazione: gravitazione universale, nei pressi della superficie terrestre; cenni a interazione a distanza
+una componente \sphinxstylestrong{normale} alle superfici di contatto responsabile dell’impenetrabilità dei corpi,
 
 \item {} 
 \sphinxAtStartPar
-elasticità
-
-\item {} 
-\sphinxAtStartPar
-reazioni vincolari
-
-\item {} 
-\sphinxAtStartPar
-contatto: reazione normale e attrito
-
-\item {} 
-\sphinxAtStartPar
-cenni ad altre azioni (tra cariche elettriche, cariche in campi EM,…; esempi: levmag,…)
+e una componente tangenziale alle superfici che si manifesta come {\hyperref[\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-contact-friction-dynamic}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{attrito}}}}}
 
 \end{itemize}
+
+\item {} 
+\sphinxAtStartPar
+riposta dei materiali alle sollecitazioni, come ad esempio nella legge costitutiva elastica per le {\hyperref[\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-spring}]{\sphinxcrossref{\DUrole{std,std-ref}{molle}}}}
 
 \end{itemize}
 
 
 
+
+
+
+\bigskip\hrule\bigskip
 
 
 \sphinxstepscope
@@ -2589,9 +2629,7 @@ Una forza (concentrata) è una quantità \sphinxstylestrong{vettoriale} di dimen
 \begin{split}[\text{forza}] = \frac{\text{[massa]}\text{[lunghezza]}}{\text{[tempo]}^2}\end{split}
 \end{equation*}
 \sphinxAtStartPar
-che può essere misurata tramite un dinamometro, e il cui effetto può alterare le condizioni di equilibrio o di moto di un sistema fisico.
-
-\sphinxAtStartPar
+che può essere misurata con un sensore di forza a 3 assi (o un dinamometro).
 Oltre alle informazioni tipiche di una quantità vettoriale \sphinxhyphen{} intensità, direzione e verso \sphinxhyphen{} contenute nel vettore forza \(\vec{F}\), è spesso necessario conoscere il \sphinxstylestrong{punto} \sphinxhyphen{} o meglio la \sphinxstylestrong{retta di applicazione} \sphinxhyphen{}  della forza.
 
 
@@ -2637,8 +2675,7 @@ un \sphinxstylestrong{carico equivalente}: un sistema di forze che ha la stessa 
 \sphinxAtStartPar
 Una coppia di forze è un carico equivalente a due forze di uguale intensità e verso opposto, \(\vec{F}_2 = - \vec{F}_1\), applicate in due punti \(P_1\), \(P_2\) non allineati lungo la retta di applicazione delle forze per avere effetti non nulli.
 
-\sphinxAtStartPar
-\sphinxstylestrong{todo} \sphinxstyleemphasis{immagine}
+
 
 \sphinxAtStartPar
 La risultante delle forze è nulla,
@@ -2680,7 +2717,7 @@ campo di {\hyperref[\detokenize{ch/electromagnetism/electrostatics:physics-hs-el
 \end{itemize}
 
 \sphinxAtStartPar
-Altre volte il campo di forze può rappresentare l’effetto di un elemento meccanico su altri sistemi ai quali è connesso. Ad esempio, gli effetti di una {\hyperref[\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-gravitation-spring}]{\sphinxcrossref{\DUrole{std,std-ref}{molla elastica di massa trascurabile}}}} con un’estremità connessa a terra in \(P_0\) su un corpo posto in \(P\) possono essere rappresentati da un campo di forze elastico
+Altre volte il campo di forze può rappresentare l’effetto di un elemento meccanico su altri sistemi ai quali è connesso. Ad esempio, gli effetti di una \DUrole{xref,myst}{molla elastica di massa trascurabile} con un’estremità connessa a terra in \(P_0\) su un corpo posto in \(P\) possono essere rappresentati da un campo di forze elastico
 
 
 \subsection{Azioni distribuite}
@@ -2894,7 +2931,7 @@ Con l’espansione in serie, con \(P - P_E = R_E \hat{r} + \vec{d}\), e \(|\vec{
 \end{equation*}
 
 \subsection{Azioni elastiche: molle lineari}
-\label{\detokenize{ch/mechanics/actions-examples:azioni-elastiche-molle-lineari}}\label{\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-gravitation-spring}}
+\label{\detokenize{ch/mechanics/actions-examples:azioni-elastiche-molle-lineari}}\label{\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-spring}}
 \sphinxAtStartPar
 Secondo la legge di Hooke, il comportamento di una molla elastica lineare ideale è descritto dall’equazione costitutiva
 \begin{equation}\label{equation:ch/mechanics/actions-examples:eq:spring}
@@ -2950,10 +2987,10 @@ poiché la forza all’estremità \(1\) è uguale e contraria alla forza all’e
 \end{equation*}
 
 \subsection{Azioni di contatto}
-\label{\detokenize{ch/mechanics/actions-examples:azioni-di-contatto}}
+\label{\detokenize{ch/mechanics/actions-examples:azioni-di-contatto}}\label{\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-contact}}
 
 \subsubsection{Reazioni vincolari di vincoli ideali}
-\label{\detokenize{ch/mechanics/actions-examples:reazioni-vincolari-di-vincoli-ideali}}
+\label{\detokenize{ch/mechanics/actions-examples:reazioni-vincolari-di-vincoli-ideali}}\label{\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-contact-ideal-constraints}}
 \sphinxAtStartPar
 I vincoli ideali sono modelli di vincolo che \sphinxstylestrong{non compiono lavoro netto}, e per questo sono \sphinxstylestrong{elementi conservativi}. Come dovrebbe risultare evidente nei paragrafi successivi dalle espressioni delle velocità relative e dalle azioni scambiate,
 \begin{equation*}
@@ -2971,7 +3008,7 @@ entrambi i termini sono nulli, o perché il moto relativo è nullo, o le azioni 
 
 
 \paragraph{Incastro}
-\label{\detokenize{ch/mechanics/actions-examples:incastro}}
+\label{\detokenize{ch/mechanics/actions-examples:incastro}}\label{\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-contact-ideal-constraints-fix}}
 \sphinxAtStartPar
 Il vincolo di incastro impedisce sia il moto sia la rotazione relativa,
 \begin{equation*}
@@ -2989,7 +3026,7 @@ Il vincolo di incastro impedisce sia il moto sia la rotazione relativa,
 \end{equation*}
 
 \paragraph{Pattino}
-\label{\detokenize{ch/mechanics/actions-examples:pattino}}
+\label{\detokenize{ch/mechanics/actions-examples:pattino}}\label{\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-contact-ideal-constraints-skate}}
 \sphinxAtStartPar
 Il vincolo di pattino impedisce il moto relativo in una direzione e la rotazione relativa.
 \begin{equation*}
@@ -3009,7 +3046,7 @@ Il vincolo di pattino impedisce il moto relativo in una direzione e la rotazione
 \end{equation*}
 
 \paragraph{Cerniera (cilindrica)}
-\label{\detokenize{ch/mechanics/actions-examples:cerniera-cilindrica}}
+\label{\detokenize{ch/mechanics/actions-examples:cerniera-cilindrica}}\label{\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-contact-ideal-constraints-hinge-cylindrical}}
 \sphinxAtStartPar
 Il vincolo di pattino impedisce il moto relativo e consente solo la rotazione attorno a un asse.
 \begin{equation*}
@@ -3029,7 +3066,7 @@ Il vincolo di pattino impedisce il moto relativo e consente solo la rotazione at
 \end{equation*}
 
 \paragraph{Cerniera (sferica)}
-\label{\detokenize{ch/mechanics/actions-examples:cerniera-sferica}}
+\label{\detokenize{ch/mechanics/actions-examples:cerniera-sferica}}\label{\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-contact-ideal-constraints-hinge-spherical}}
 \sphinxAtStartPar
 Il vincolo di pattino impedisce il moto relativo, consentendo una rotazione generica.
 \begin{equation*}
@@ -3047,7 +3084,7 @@ Il vincolo di pattino impedisce il moto relativo, consentendo una rotazione gene
 \end{equation*}
 
 \paragraph{Carrello}
-\label{\detokenize{ch/mechanics/actions-examples:carrello}}
+\label{\detokenize{ch/mechanics/actions-examples:carrello}}\label{\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-contact-ideal-constraints-cart}}
 \sphinxAtStartPar
 Il vincolo di carello può essere pensato come la combinazione di un pattino e di una cerniera
 \begin{equation*}
@@ -3069,16 +3106,16 @@ Il vincolo di carello può essere pensato come la combinazione di un pattino e d
 \end{equation*}
 
 \paragraph{Appoggio}
-\label{\detokenize{ch/mechanics/actions-examples:appoggio}}
+\label{\detokenize{ch/mechanics/actions-examples:appoggio}}\label{\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-contact-ideal-constraints-monolateral}}
 \sphinxAtStartPar
 Il vincolo di appoggio è un vincolo monolatero \sphinxstylestrong{todo} \sphinxstyleemphasis{aggiungere descrizione}
 
 
 \subsubsection{Attrito}
-\label{\detokenize{ch/mechanics/actions-examples:attrito}}
+\label{\detokenize{ch/mechanics/actions-examples:attrito}}\label{\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-contact-friction}}
 
 \paragraph{Attrito statico}
-\label{\detokenize{ch/mechanics/actions-examples:attrito-statico}}
+\label{\detokenize{ch/mechanics/actions-examples:attrito-statico}}\label{\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-contact-friction-static}}
 \sphinxAtStartPar
 L’attrito statico è la forma di attrito che si manifesta tra due corpi quando non c’è moto relativo tra di essi, come una forza tangenziale alla superficie di contatto. Il più semplice modello di attrito statico prevede che il modulo massimo della forza di attrito \(F^s_{max}\) che si può esercitare tra due corpi è proporzionale alla reazione normale tra di essi, \(N\),
 \begin{equation*}
@@ -3091,7 +3128,7 @@ Il coefficiente di proporzionalità \(\mu^s\) viene definito \sphinxstylestrong{
 \end{equation*}
 
 \paragraph{Attrito dinamico}
-\label{\detokenize{ch/mechanics/actions-examples:attrito-dinamico}}
+\label{\detokenize{ch/mechanics/actions-examples:attrito-dinamico}}\label{\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-contact-friction-dynamic}}
 \sphinxAtStartPar
 L’attrito dinamico è la forma di attrito che si manifesta tra due corpi a contatto e in moto relativo, come una forza tangenziale alla superficie di contatto. Il più semplice modello di attrito statico prevede che la forza di attrito dinamico sia proporzionale alla reazione normale tra i due corpi e diretta in verso opposto alla velocità relativa,
 \begin{equation*}
@@ -3994,108 +4031,49 @@ Se non c’è contatto, \(N_1 = 0\); se c’è contatto, in generale \(N_1 > 0\)
 
 \sphinxstepscope
 
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-p-0}
-\begin{sphinxuseclass}{sd-mt-2}
-\begin{sphinxuseclass}{sd-mb-4}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-gx-2}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-row-cols-xs-2}
-\begin{sphinxuseclass}{sd-row-cols-sm-3}
-\begin{sphinxuseclass}{sd-row-cols-md-3}
-\begin{sphinxuseclass}{sd-row-cols-lg-3}
-\begin{sphinxuseclass}{sd-gx-3}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-basics
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-15 feb 2025
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-1 min read
-
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
 
 \chapter{Inerzia}
 \label{\detokenize{ch/mechanics/inertia:inerzia}}\label{\detokenize{ch/mechanics/inertia:physics-hs-mechanics-inertia}}\label{\detokenize{ch/mechanics/inertia::doc}}
-
-\section{Massa e distribuzione di massa}
-\label{\detokenize{ch/mechanics/inertia:massa-e-distribuzione-di-massa}}
 \sphinxAtStartPar
-La massa è la grandezza fisica che rappresenta la quantità di materia (\sphinxstylestrong{todo} \sphinxstyleemphasis{Non confonderla con la mole, definita come quantità di sostanza, una volta affermatasi la teoria atomica})
+L’inerzia di un sistema meccanico rappresenta una misura della sua resistenza al cambiamento dello stato di moto, in seguito all’applicazione di forze esterne sul sistema: la combinazione delle proprietà inerziali di un sistema con le grandezze cinematiche che ne caratterizzano il moto produce infatti le \DUrole{xref,myst}{quantità dinamiche}, la cui variazione nel tempo è legata all’azione delle azioni esterne sul sistema dai principi della dinamica e dalle equazioni di moto che governano la dinamica dei sistemi.
+Le proprietà inerziali di un corpo dipendono dalla sua massa e dalla distribuzione nello spazio della sua massa.
 
 \sphinxAtStartPar
-In meccanica classica, la può essere definita in maniera operativa:
+\sphinxstylestrong{Ma cos’è la massa?}%
+\begin{footnote}[1]\sphinxAtStartFootnote
+La risposta alla domanda «cos’è la massa?» potrebbe implicare una conoscenza «vera» \sphinxhyphen{} qualsiasi cosa significhi \sphinxhyphen{} del concetto di «massa». Anche qui, come già in altre parti, la domanda «cos’è…?» può essere sostituita con «cosa intendiamo per…?», e una «risposta operativa» può essere ritenuta soddisfacente, poiché rispecchia la modalità di conoscenza e formazione del sapere in ambito scientifico: senza entrare in ambiti filosofici più astratti, in fisica siamo contenti di definire qualcosa tramite le sue interazioni ed effetti su altri sistemi, le sue proprietà, e un processo affidabile per la sua misura.
+%
+\end{footnote} la massa è una grandezza fisica che rappresenta la quantità di materia e si manifesta:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-tramite la sua {\hyperref[\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-gravitation}]{\sphinxcrossref{\DUrole{std,std-ref}{interazione gravitazionale}}}} con altri corpi dotati di massa
+tramite la sua {\hyperref[\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-gravitation}]{\sphinxcrossref{\DUrole{std,std-ref}{interazione gravitazionale}}}} con altri corpi dotati di massa;
 
 \item {} 
 \sphinxAtStartPar
 come una misura della resistenza di un sistema ai cambiamenti del suo stato di moto in risposta a una forza applicata, come sarà chiaro dalle equazioni della {\hyperref[\detokenize{ch/mechanics/dynamics:physics-hs-mechanics-dynamics}]{\sphinxcrossref{\DUrole{std,std-ref}{dinamica}}}}
 
 \end{itemize}
+\label{ch/mechanics/inertia:example-0}
+\begin{sphinxadmonition}{note}{Example 11.1 (Massa gravitazionale e massa inerziale)}
 
+
+
+\sphinxAtStartPar
+Le due manifestazioni diverse della massa possono essere usate come definizione di due grandezze diverse: l’interazione gravitazionale di un sistema con altri corpi dotati di massa può essere usata per definire la \sphinxstylestrong{massa gravitazionale} del sistema; il cambio di moto dello stesso sistema quando soggetto ad azioni esterne può essere usato per definirne la \sphinxstylestrong{massa inerziale}. L’evidenza sperimentale dimostra che le due grandezze fisiche così definite sono omogenee e producono lo stessa misura: si può pensare ai due procedimenti come due metodi di misura differenti della stessa grandezza fisica, che usano due interazioni differenti della massa con altri oggetti fisici.
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+Dal punto di vista operativo, la massa di un sistema \sphinxhyphen{} quando possibile dal punto di vista pratico \sphinxhyphen{} può essere misurata tramite la sua interazione con un campo di gravitazione noto, tramite una \sphinxstylestrong{bilancia}
+
+
+\section{Massa e distribuzione di massa}
+\label{\detokenize{ch/mechanics/inertia:massa-e-distribuzione-di-massa}}\label{\detokenize{ch/mechanics/inertia:physics-hs-mechanics-inertia-mass-density}}
 
 \section{Quantità dinamiche}
-\label{\detokenize{ch/mechanics/inertia:quantita-dinamiche}}
+\label{\detokenize{ch/mechanics/inertia:quantita-dinamiche}}\label{\detokenize{ch/mechanics/inertia:physics-hs-mechanics-inertia-dynamical-quantities}}
 \sphinxAtStartPar
 Come sarà chiaro nello sviluppo delle {\hyperref[\detokenize{ch/mechanics/dynamics-notes:physics-hs-mechanics-dynamics-eom-points}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni di moto di un sistema}}}}, la definizione di alcune grandezze dinamiche additive risulta naturale, fornendo dei concetti utili e sintetici per la costruzione di un modello e l’interpretazione dei fenomeni fisici.
 
@@ -4124,6 +4102,10 @@ Sotto opportune ipotesi, queste grandezze dinamiche sono costanti del moto, come
 
 \sphinxAtStartPar
 Le 3 grandezze dinamiche possono avere espressioni diverse, a seconda del sistema di interesse. Nel caso di corpi rigidi, queste possono essere espresse in termini di velocità di un punto materiale e della velocità angolare del corpo.
+
+
+\bigskip\hrule\bigskip
+
 
 \sphinxstepscope
 
@@ -4165,7 +4147,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-15 feb 2025
+17 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -4253,7 +4235,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-15 feb 2025
+17 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -4409,7 +4391,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-15 feb 2025
+17 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -4723,7 +4705,7 @@ La meccanica classica di Newton viene costruita assumendo valido il \sphinxstyle
 \sphinxstylestrong{Principio di conservazione della massa.} In meccanica classica, il principio di Lavoisier di conservazione della massa può essere riassunto con la formula «niente si crea, niente si distrugge». Per essere più precisi, il principio di conservazione della massa postula che la massa di un sistema chiuso è costante.
 
 \sphinxAtStartPar
-\sphinxstylestrong{Primo principio \sphinxhyphen{} principio di inerzia.} Un sistema (o meglio, il baricentro di un sistema) sul quale agisce una forza esterna netta nulla, persevera nel suo stato di quiete o di moto rettilineo uniforme rispetto a un sistema di riferimento inerziale.
+\sphinxstylestrong{Primo principio \sphinxhyphen{} principio di inerzia.} Un sistema (o meglio, il baricentro di un sistema) sul quale agisce una forza esterna netta nulla, persevera nel suo stato di quiete o di moto rettilineo uniforme rispetto a un {\hyperref[\detokenize{ch/mechanics/dynamics-principles:physics-hs-mechanics-dynamics-principles-inertial-ref-frame}]{\sphinxcrossref{\DUrole{std,std-ref}{sistema di riferimento inerziale}}}}.
 
 \sphinxAtStartPar
 \sphinxstylestrong{Secondo principio \sphinxhyphen{} bilancio della quantità di moto per sistemi chiusi.} Rispetto a un sistema di riferimento inerziale, la variazione della quantità di moto \(\vec{Q}\) di un sistema chiuso è uguale all’impulso delle forze esterne \(\vec{I}^{ext}\) agenti su di esso,
@@ -4758,7 +4740,7 @@ sistemi aperti e sistemi chiusi: sottolineare la validità di \(\Delta \vec{Q} =
 
 
 \subsection{Sistemi di riferimento inerziali e invarianza galileiana.}
-\label{\detokenize{ch/mechanics/dynamics-principles:sistemi-di-riferimento-inerziali-e-invarianza-galileiana}}
+\label{\detokenize{ch/mechanics/dynamics-principles:sistemi-di-riferimento-inerziali-e-invarianza-galileiana}}\label{\detokenize{ch/mechanics/dynamics-principles:physics-hs-mechanics-dynamics-principles-inertial-ref-frame}}
 \sphinxAtStartPar
 La formulazione dei princìpi della dinamica si basa sul concetto di sistema di riferimento inerziale, di cui non è stato ancora detto nulla.
 E” possibile dare una definizione operativa di osservatore inerziale (o sistema di riferimento inerziale? \sphinxstylestrong{todo}), supponendo che:
@@ -4776,6 +4758,14 @@ sia possibile conoscere le azioni «vere» (\sphinxstylestrong{todo} fare riferi
 \sphinxAtStartPar
 \sphinxstylestrong{Definizione.}
 Un osservatore è inerziale se la lettura degli strumenti di misura in suo possesso corrisponde alle azioni «vere» agenti sul sistema. In particolare, in assenza di azioni nette gli strumenti restituiscono una misura nulla.
+\label{ch/mechanics/dynamics-principles:example-0}
+\begin{sphinxadmonition}{note}{Example 12.1.1 (Sistemi inerziali, azioni vere e relatività generale)}
+
+
+
+\sphinxAtStartPar
+Esperimento mentale di A.Einstein dell’ascensore senza finestre come esperimento mentale introduttivo alla \DUrole{xref,myst}{relatività generale}.
+\end{sphinxadmonition}
 
 \sphinxAtStartPar
 \sphinxstylestrong{Definizione quantità cinematiche.}
@@ -4927,7 +4917,7 @@ basics
 \begin{sphinxuseclass}{sd-d-flex-row}
 \begin{sphinxuseclass}{sd-align-minor-center}
 \sphinxAtStartPar
-15 feb 2025
+17 feb 2025
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -12030,7 +12020,7 @@ Come sarà chiaro più tardi con l”{\hyperref[\detokenize{ch/thermodynamics/he
 \label{\detokenize{ch/thermodynamics/heat-engine-td-cycles:rendimento-termico}}\label{\detokenize{ch/thermodynamics/heat-engine-td-cycles:physics-hs-thermodynamics-heat-engine-td-cycles-efficiency}}
 \sphinxAtStartPar
 Ricordando l’osservazione fatta nell’introduzione riguardo le macchine in funzionamento periodico o in ciclo continuo, si definisce qui il rendimento delle macchine termiche in funzionamento periodico in termini di lavoro e calore per ogni ciclo; dovrebbe essere immediata l’estensione di questa definizione al caso di macchine termiche in funzionamento continuo in termini di potenza meccanica e flusso di calore per unità di tempo.
-\label{ch/thermodynamics/heat-engine-td-cycles:definition-0}
+\label{ch/thermodynamics/heat-engine-td-cycles:td-efficiency}
 \begin{sphinxadmonition}{note}{Definition 17.2.1 (Rendimento termodinamico)}
 
 
@@ -12041,7 +12031,7 @@ Il rendimento termodinamico di una macchina termica è definita come il rapporto
 
 \sphinxAtStartPar
 La definizione di rendimento termodinamico dipende quindi dallo scopo e dal funzionamento della macchina termica.
-\label{ch/thermodynamics/heat-engine-td-cycles:definition-1}
+\label{ch/thermodynamics/heat-engine-td-cycles:td-efficiency-direct}
 \begin{sphinxadmonition}{note}{Definition 17.2.2 (Rendimento termodinamico \sphinxhyphen{} macchina termica diretta)}
 
 
@@ -18243,9 +18233,6 @@ forte
 \bigletter{definition\sphinxhyphen{}0}
 \item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}0}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{definition-0}}
 \indexspace
-\bigletter{definition\sphinxhyphen{}1}
-\item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}1}\sphinxstyleindexextra{ch/thermodynamics/heat\sphinxhyphen{}engine\sphinxhyphen{}td\sphinxhyphen{}cycles}\sphinxstyleindexpageref{ch/thermodynamics/heat-engine-td-cycles:\detokenize{definition-1}}
-\indexspace
 \bigletter{definition\sphinxhyphen{}2}
 \item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}2}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{definition-2}}
 \indexspace
@@ -18266,6 +18253,9 @@ forte
 \indexspace
 \bigletter{electric\sphinxhyphen{}dipole\sphinxhyphen{}ext\sphinxhyphen{}e\sphinxhyphen{}field}
 \item\relax\sphinxstyleindexentry{electric\sphinxhyphen{}dipole\sphinxhyphen{}ext\sphinxhyphen{}e\sphinxhyphen{}field}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{electric-dipole-ext-e-field}}
+\indexspace
+\bigletter{example\sphinxhyphen{}0}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/mechanics/inertia}\sphinxstyleindexpageref{ch/mechanics/inertia:\detokenize{example-0}}
 \indexspace
 \bigletter{example\sphinxhyphen{}1}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-1}}
@@ -18320,6 +18310,9 @@ forte
 \indexspace
 \bigletter{faraday\sphinxhyphen{}cage}
 \item\relax\sphinxstyleindexentry{faraday\sphinxhyphen{}cage}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{faraday-cage}}
+\indexspace
+\bigletter{invariance\sphinxhyphen{}space\sphinxhyphen{}and\sphinxhyphen{}time}
+\item\relax\sphinxstyleindexentry{invariance\sphinxhyphen{}space\sphinxhyphen{}and\sphinxhyphen{}time}\sphinxstyleindexextra{ch/mechanics/kinematics}\sphinxstyleindexpageref{ch/mechanics/kinematics:\detokenize{invariance-space-and-time}}
 \indexspace
 \bigletter{kepler\sphinxhyphen{}law\sphinxhyphen{}1}
 \item\relax\sphinxstyleindexentry{kepler\sphinxhyphen{}law\sphinxhyphen{}1}\sphinxstyleindexextra{ch/mechanics/dynamics\sphinxhyphen{}motion\sphinxhyphen{}gravitation}\sphinxstyleindexpageref{ch/mechanics/dynamics-motion-gravitation:\detokenize{kepler-law-1}}
@@ -18392,6 +18385,12 @@ forte
 \indexspace
 \bigletter{system\sphinxhyphen{}state}
 \item\relax\sphinxstyleindexentry{system\sphinxhyphen{}state}\sphinxstyleindexextra{ch/mechanics/kinematics}\sphinxstyleindexpageref{ch/mechanics/kinematics:\detokenize{system-state}}
+\indexspace
+\bigletter{td\sphinxhyphen{}efficiency}
+\item\relax\sphinxstyleindexentry{td\sphinxhyphen{}efficiency}\sphinxstyleindexextra{ch/thermodynamics/heat\sphinxhyphen{}engine\sphinxhyphen{}td\sphinxhyphen{}cycles}\sphinxstyleindexpageref{ch/thermodynamics/heat-engine-td-cycles:\detokenize{td-efficiency}}
+\indexspace
+\bigletter{td\sphinxhyphen{}efficiency\sphinxhyphen{}direct}
+\item\relax\sphinxstyleindexentry{td\sphinxhyphen{}efficiency\sphinxhyphen{}direct}\sphinxstyleindexextra{ch/thermodynamics/heat\sphinxhyphen{}engine\sphinxhyphen{}td\sphinxhyphen{}cycles}\sphinxstyleindexpageref{ch/thermodynamics/heat-engine-td-cycles:\detokenize{td-efficiency-direct}}
 \indexspace
 \bigletter{thermodynamics:elastic\sphinxhyphen{}solid:gravesande}
 \item\relax\sphinxstyleindexentry{thermodynamics:elastic\sphinxhyphen{}solid:gravesande}\sphinxstyleindexextra{ch/thermodynamics/elastic\sphinxhyphen{}solid\sphinxhyphen{}1d}\sphinxstyleindexpageref{ch/thermodynamics/elastic-solid-1d:\detokenize{thermodynamics:elastic-solid:gravesande}}

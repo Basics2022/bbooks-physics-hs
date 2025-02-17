@@ -6,6 +6,7 @@
 ## Pendolo
 
 ```{prf:example} Oscillazioni libere - Isocronismo delle piccole oscillazioni
+:label: pendulum-free
 :class: dropdown
 
 L'equazione dinamica che governa l'oscillazione libera di un pendolo sul quale non agiscono azioni dissipative
@@ -28,13 +29,18 @@ E' immediato notare l'**isocronismo del pendolo** nel regime di **piccole oscill
 ```
 
 ```{prf:example} Oscillazioni con dissipazione
+:label: pendulum-free-damped
 ```
 
 ```{prf:example} Oscillazioni con dissipazione e forzante
+:label: pendulum-free-damped-forced
 ```
 
 ```{prf:example} Pendolo in sistemi non inerziali - Accelerazione
+:label: pendulum-noninertial-acceleration
 ```
 
 ```{prf:example} Pendolo in sistemi non inerziali - Rotazione della Terra
+:label: pendulum-noninertial-earth-rotation
+
 ```

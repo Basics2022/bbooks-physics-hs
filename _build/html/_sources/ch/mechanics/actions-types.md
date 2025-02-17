@@ -16,8 +16,7 @@ Una forza (concentrata) è una quantità **vettoriale** di dimensioni fisiche,
 
 $$[\text{forza}] = \frac{\text{[massa]}\text{[lunghezza]}}{\text{[tempo]}^2}$$
 
-che può essere misurata tramite un dinamometro, e il cui effetto può alterare le condizioni di equilibrio o di moto di un sistema fisico.
-
+che può essere misurata con un sensore di forza a 3 assi (o un dinamometro).
 Oltre alle informazioni tipiche di una quantità vettoriale - intensità, direzione e verso - contenute nel vettore forza $\vec{F}$, è spesso necessario conoscere il **punto** - o meglio la **retta di applicazione** -  della forza.
 
 (physics-hs:mechanics:actions:def:moment)=
@@ -48,7 +47,9 @@ Dato un sistema di $N$ forze $\left\{ \vec{F}_n \right\}_{n=1:N}$, applicate nei
 ## Coppia di forze
 Una coppia di forze è un carico equivalente a due forze di uguale intensità e verso opposto, $\vec{F}_2 = - \vec{F}_1$, applicate in due punti $P_1$, $P_2$ non allineati lungo la retta di applicazione delle forze per avere effetti non nulli.
 
+<!--
 **todo** *immagine*
+-->
 
 La risultante delle forze è nulla,
 

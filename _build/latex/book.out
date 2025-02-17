@@ -26,28 +26,28 @@
 \BOOKMARK [0][-]{chapter.7}{Stato\040corrente}{part.2}% 26
 \BOOKMARK [1][-]{section.7.1}{Regimi\040e\040teorie}{chapter.7}% 27
 \BOOKMARK [1][-]{section.7.2}{Teoria\040atomistica}{chapter.7}% 28
-\BOOKMARK [-1][-]{part.3}{III\040Meccanica\040classica}{}% 29
-\BOOKMARK [0][-]{chapter.8}{Introduzione\040alla\040meccanica\040classica}{part.3}% 30
-\BOOKMARK [1][-]{section.8.1}{Concetti\040in\040meccanica\040classica}{chapter.8}% 31
-\BOOKMARK [2][-]{subsection.8.1.1}{Grandezze\040fisiche}{section.8.1}% 32
-\BOOKMARK [3][-]{subsubsection*.13}{Grandezze\040fisiche\040fondentali}{subsection.8.1.1}% 33
-\BOOKMARK [3][-]{subsubsection*.14}{Grandezze\040fisiche\040derivate}{subsection.8.1.1}% 34
-\BOOKMARK [2][-]{subsection.8.1.2}{Modelli}{section.8.1}% 35
-\BOOKMARK [1][-]{section.8.2}{Esperienze\040e\040breve\040storia\040delle\040origini\040della\040meccanica\040classica}{chapter.8}% 36
-\BOOKMARK [2][-]{subsection.8.2.1}{Breve\040storia}{section.8.2}% 37
-\BOOKMARK [3][-]{subsubsection*.16}{Osservazioni\040astronomiche}{subsection.8.2.1}% 38
-\BOOKMARK [3][-]{subsubsection*.17}{Galileo}{subsection.8.2.1}% 39
-\BOOKMARK [3][-]{subsubsection*.18}{Newton}{subsection.8.2.1}% 40
-\BOOKMARK [0][-]{chapter.9}{Cinematica}{part.3}% 41
-\BOOKMARK [1][-]{section.9.1}{Cinematica\040del\040punto}{chapter.9}% 42
-\BOOKMARK [2][-]{subsection.9.1.1}{Prime\040definizioni}{section.9.1}% 43
-\BOOKMARK [2][-]{subsection.9.1.2}{Configurazione\040e\040stato\040in\040un\040moto\040regolare\040\(differenziabile\)}{section.9.1}% 44
-\BOOKMARK [2][-]{subsection.9.1.3}{Moti\040particolari}{section.9.1}% 45
-\BOOKMARK [3][-]{subsubsection*.19}{Moto\040non\040accelerato}{subsection.9.1.3}% 46
-\BOOKMARK [3][-]{subsubsection*.20}{Moto\040uniformemente\040accelerato}{subsection.9.1.3}% 47
-\BOOKMARK [3][-]{subsubsection*.21}{Moto\040circolare}{subsection.9.1.3}% 48
-\BOOKMARK [4][-]{paragraph*.22}{Moto\040circolare\040uniforme}{subsubsection*.21}% 49
-\BOOKMARK [3][-]{subsubsection*.23}{Moto\040armonico\040lungo\040un\040segmento}{subsection.9.1.3}% 50
+\BOOKMARK [1][-]{section.7.3}{Interazioni\040fondamentali}{chapter.7}% 29
+\BOOKMARK [-1][-]{part.3}{III\040Meccanica\040classica}{}% 30
+\BOOKMARK [0][-]{chapter.8}{Introduzione\040alla\040meccanica\040classica}{part.3}% 31
+\BOOKMARK [1][-]{section.8.1}{Concetti\040in\040meccanica\040classica}{chapter.8}% 32
+\BOOKMARK [2][-]{subsection.8.1.1}{Grandezze\040fisiche}{section.8.1}% 33
+\BOOKMARK [3][-]{subsubsection*.13}{Grandezze\040fisiche\040fondentali}{subsection.8.1.1}% 34
+\BOOKMARK [3][-]{subsubsection*.14}{Grandezze\040fisiche\040derivate}{subsection.8.1.1}% 35
+\BOOKMARK [2][-]{subsection.8.1.2}{Modelli}{section.8.1}% 36
+\BOOKMARK [1][-]{section.8.2}{Esperienze\040e\040breve\040storia\040delle\040origini\040della\040meccanica\040classica}{chapter.8}% 37
+\BOOKMARK [2][-]{subsection.8.2.1}{Breve\040storia}{section.8.2}% 38
+\BOOKMARK [3][-]{subsubsection*.16}{Osservazioni\040astronomiche}{subsection.8.2.1}% 39
+\BOOKMARK [3][-]{subsubsection*.17}{Galileo}{subsection.8.2.1}% 40
+\BOOKMARK [3][-]{subsubsection*.18}{Newton}{subsection.8.2.1}% 41
+\BOOKMARK [0][-]{chapter.9}{Cinematica}{part.3}% 42
+\BOOKMARK [1][-]{section.9.1}{Cinematica\040del\040punto}{chapter.9}% 43
+\BOOKMARK [2][-]{subsection.9.1.1}{Configurazione\040e\040stato\040in\040un\040moto\040regolare\040\(differenziabile\)}{section.9.1}% 44
+\BOOKMARK [2][-]{subsection.9.1.2}{Moti\040particolari}{section.9.1}% 45
+\BOOKMARK [3][-]{subsubsection*.20}{Moto\040non\040accelerato}{subsection.9.1.2}% 46
+\BOOKMARK [3][-]{subsubsection*.21}{Moto\040uniformemente\040accelerato}{subsection.9.1.2}% 47
+\BOOKMARK [3][-]{subsubsection*.22}{Moto\040circolare}{subsection.9.1.2}% 48
+\BOOKMARK [4][-]{paragraph*.23}{Moto\040circolare\040uniforme}{subsubsection*.22}% 49
+\BOOKMARK [3][-]{subsubsection*.24}{Moto\040armonico\040lungo\040un\040segmento}{subsection.9.1.2}% 50
 \BOOKMARK [1][-]{section.9.2}{Cinematica\040di\040un\040corpo\040rigido}{chapter.9}% 51
 \BOOKMARK [2][-]{subsection.9.2.1}{Posizione\040dei\040punti\040di\040un\040corpo\040rigido}{section.9.2}% 52
 \BOOKMARK [2][-]{subsection.9.2.2}{Velocità dei punti di un corpo rigido}{section.9.2}% 53
@@ -61,8 +61,8 @@
 \BOOKMARK [1][-]{section.9.6}{Soluzioni}{chapter.9}% 61
 \BOOKMARK [1][-]{section.9.7}{Note\040e\040dimostrazioni}{chapter.9}% 62
 \BOOKMARK [2][-]{subsection.9.7.1}{Cinematica\040del\040punto}{section.9.7}% 63
-\BOOKMARK [3][-]{subsubsection*.53}{Moto\040uniforme,\040\040rP\(t\)\040=\0400}{subsection.9.7.1}% 64
-\BOOKMARK [3][-]{subsubsection*.54}{Moto\040uniformemente\040accelerato,\040\040rP\(t\)\040=\040a}{subsection.9.7.1}% 65
+\BOOKMARK [3][-]{subsubsection*.54}{Moto\040uniforme,\040\040rP\(t\)\040=\0400}{subsection.9.7.1}% 64
+\BOOKMARK [3][-]{subsubsection*.55}{Moto\040uniformemente\040accelerato,\040\040rP\(t\)\040=\040a}{subsection.9.7.1}% 65
 \BOOKMARK [0][-]{chapter.10}{Azioni}{part.3}% 66
 \BOOKMARK [1][-]{section.10.1}{Forza,\040momento\040di\040una\040forza,\040azioni\040distribuite}{chapter.10}% 67
 \BOOKMARK [2][-]{subsection.10.1.1}{Forza\040concentrata}{section.10.1}% 68
@@ -78,33 +78,33 @@
 \BOOKMARK [1][-]{section.10.3}{Azioni\040conservative}{chapter.10}% 78
 \BOOKMARK [1][-]{section.10.4}{Esempi\040di\040forze}{chapter.10}% 79
 \BOOKMARK [2][-]{subsection.10.4.1}{Gravità}{section.10.4}% 80
-\BOOKMARK [3][-]{subsubsection*.55}{Legge\040di\040gravitazione\040universale}{subsection.10.4.1}% 81
-\BOOKMARK [3][-]{subsubsection*.56}{Campo di gravità}{subsection.10.4.1}% 82
-\BOOKMARK [3][-]{subsubsection*.57}{Campo di gravità nei pressi della superficie terrestre}{subsection.10.4.1}% 83
+\BOOKMARK [3][-]{subsubsection*.57}{Legge\040di\040gravitazione\040universale}{subsection.10.4.1}% 81
+\BOOKMARK [3][-]{subsubsection*.58}{Campo di gravità}{subsection.10.4.1}% 82
+\BOOKMARK [3][-]{subsubsection*.59}{Campo di gravità nei pressi della superficie terrestre}{subsection.10.4.1}% 83
 \BOOKMARK [2][-]{subsection.10.4.2}{Azioni\040elastiche:\040molle\040lineari}{section.10.4}% 84
 \BOOKMARK [2][-]{subsection.10.4.3}{Azioni\040di\040contatto}{section.10.4}% 85
-\BOOKMARK [3][-]{subsubsection*.58}{Reazioni\040vincolari\040di\040vincoli\040ideali}{subsection.10.4.3}% 86
-\BOOKMARK [4][-]{paragraph*.59}{Incastro}{subsubsection*.58}% 87
-\BOOKMARK [4][-]{paragraph*.60}{Pattino}{subsubsection*.58}% 88
-\BOOKMARK [4][-]{paragraph*.61}{Cerniera\040\(cilindrica\)}{subsubsection*.58}% 89
-\BOOKMARK [4][-]{paragraph*.62}{Cerniera\040\(sferica\)}{subsubsection*.58}% 90
-\BOOKMARK [4][-]{paragraph*.63}{Carrello}{subsubsection*.58}% 91
-\BOOKMARK [4][-]{paragraph*.64}{Appoggio}{subsubsection*.58}% 92
-\BOOKMARK [3][-]{subsubsection*.65}{Attrito}{subsection.10.4.3}% 93
-\BOOKMARK [4][-]{paragraph*.66}{Attrito\040statico}{subsubsection*.65}% 94
-\BOOKMARK [4][-]{paragraph*.67}{Attrito\040dinamico}{subsubsection*.65}% 95
-\BOOKMARK [4][-]{paragraph*.68}{Puro\040rotolamento}{subsubsection*.65}% 96
+\BOOKMARK [3][-]{subsubsection*.60}{Reazioni\040vincolari\040di\040vincoli\040ideali}{subsection.10.4.3}% 86
+\BOOKMARK [4][-]{paragraph*.61}{Incastro}{subsubsection*.60}% 87
+\BOOKMARK [4][-]{paragraph*.62}{Pattino}{subsubsection*.60}% 88
+\BOOKMARK [4][-]{paragraph*.63}{Cerniera\040\(cilindrica\)}{subsubsection*.60}% 89
+\BOOKMARK [4][-]{paragraph*.64}{Cerniera\040\(sferica\)}{subsubsection*.60}% 90
+\BOOKMARK [4][-]{paragraph*.65}{Carrello}{subsubsection*.60}% 91
+\BOOKMARK [4][-]{paragraph*.66}{Appoggio}{subsubsection*.60}% 92
+\BOOKMARK [3][-]{subsubsection*.67}{Attrito}{subsection.10.4.3}% 93
+\BOOKMARK [4][-]{paragraph*.68}{Attrito\040statico}{subsubsection*.67}% 94
+\BOOKMARK [4][-]{paragraph*.69}{Attrito\040dinamico}{subsubsection*.67}% 95
+\BOOKMARK [4][-]{paragraph*.70}{Puro\040rotolamento}{subsubsection*.67}% 96
 \BOOKMARK [1][-]{section.10.5}{Problemi}{chapter.10}% 97
 \BOOKMARK [0][-]{chapter.11}{Statica}{part.3}% 98
 \BOOKMARK [1][-]{section.11.1}{Statica\040del\040punto}{chapter.11}% 99
 \BOOKMARK [1][-]{section.11.2}{Statica\040di\040un\040corpo\040rigido}{chapter.11}% 100
 \BOOKMARK [2][-]{subsection.11.2.1}{Problemi\040nel\040piano}{section.11.2}% 101
-\BOOKMARK [3][-]{subsubsection*.79}{Esempi\040ed\040esercizi}{subsection.11.2.1}% 102
+\BOOKMARK [3][-]{subsubsection*.81}{Esempi\040ed\040esercizi}{subsection.11.2.1}% 102
 \BOOKMARK [1][-]{section.11.3}{Statica\040dei\040mezzi\040deformabili}{chapter.11}% 103
 \BOOKMARK [2][-]{subsection.11.3.1}{Strutture}{section.11.3}% 104
 \BOOKMARK [2][-]{subsection.11.3.2}{Fluidi}{section.11.3}% 105
-\BOOKMARK [3][-]{subsubsection*.80}{Legge\040di\040Stevino}{subsection.11.3.2}% 106
-\BOOKMARK [3][-]{subsubsection*.81}{Legge\040di\040Archimede}{subsection.11.3.2}% 107
+\BOOKMARK [3][-]{subsubsection*.82}{Legge\040di\040Stevino}{subsection.11.3.2}% 106
+\BOOKMARK [3][-]{subsubsection*.83}{Legge\040di\040Archimede}{subsection.11.3.2}% 107
 \BOOKMARK [1][-]{section.11.4}{Problemi}{chapter.11}% 108
 \BOOKMARK [2][-]{subsection.11.4.1}{Statica\040del\040punto\040materiale}{section.11.4}% 109
 \BOOKMARK [2][-]{subsection.11.4.2}{Sistemi\040di\040punti\040materiali}{section.11.4}% 110
@@ -137,8 +137,8 @@
 \BOOKMARK [2][-]{subsection.13.7.1}{Legge\040di\040gravitazione\040universale}{section.13.7}% 137
 \BOOKMARK [2][-]{subsection.13.7.2}{Leggi\040di\040Keplero}{section.13.7}% 138
 \BOOKMARK [2][-]{subsection.13.7.3}{Problema\040dei\040due\040corpi}{section.13.7}% 139
-\BOOKMARK [3][-]{subsubsection*.122}{Traiettorie,\040coniche,\040ed\040energia}{subsection.13.7.3}% 140
-\BOOKMARK [3][-]{subsubsection*.123}{Traiettorie\040chiuse\040e\040leggi\040di\040Keplero}{subsection.13.7.3}% 141
+\BOOKMARK [3][-]{subsubsection*.125}{Traiettorie,\040coniche,\040ed\040energia}{subsection.13.7.3}% 140
+\BOOKMARK [3][-]{subsubsection*.126}{Traiettorie\040chiuse\040e\040leggi\040di\040Keplero}{subsection.13.7.3}% 141
 \BOOKMARK [1][-]{section.13.8}{Moti\040centrali}{chapter.13}% 142
 \BOOKMARK [2][-]{subsection.13.8.1}{Forza\040proporzionale\040alla\040distanza}{section.13.8}% 143
 \BOOKMARK [2][-]{subsection.13.8.2}{Forza\040inversamente\040proporzionale\040al\040quadrato\040della\040distanza}{section.13.8}% 144
@@ -170,8 +170,8 @@
 \BOOKMARK [2][-]{subsection.15.2.2}{Prime\040esperienze\040sui\040gas\040-\040esperimento\040di\040Boyle}{section.15.2}% 170
 \BOOKMARK [2][-]{subsection.15.2.3}{Dilatazione\040sostanze}{section.15.2}% 171
 \BOOKMARK [2][-]{subsection.15.2.4}{Scale\040di\040temperatura}{section.15.2}% 172
-\BOOKMARK [3][-]{subsubsection*.172}{Scale\040empiriche}{subsection.15.2.4}% 173
-\BOOKMARK [3][-]{subsubsection*.173}{Scala\040termodinamica}{subsection.15.2.4}% 174
+\BOOKMARK [3][-]{subsubsection*.175}{Scale\040empiriche}{subsection.15.2.4}% 173
+\BOOKMARK [3][-]{subsubsection*.176}{Scala\040termodinamica}{subsection.15.2.4}% 174
 \BOOKMARK [2][-]{subsection.15.2.5}{Equilibrio\040termico}{section.15.2}% 175
 \BOOKMARK [2][-]{subsection.15.2.6}{Teoria\040cinetica\040dei\040gas}{section.15.2}% 176
 \BOOKMARK [2][-]{subsection.15.2.7}{Calorimetria:\040calore\040latente\040e\040calore\040specifico}{section.15.2}% 177
@@ -193,7 +193,7 @@
 \BOOKMARK [1][-]{section.15.5}{Problemi}{chapter.15}% 193
 \BOOKMARK [2][-]{subsection.15.5.1}{todo …}{section.15.5}% 194
 \BOOKMARK [2][-]{subsection.15.5.2}{Calorimetria}{section.15.5}% 195
-\BOOKMARK [3][-]{subsubsection*.176}{Manometro\040di\040Torricelli\040e\040Leggi\040dei\040Gas}{subsection.15.5.2}% 196
+\BOOKMARK [3][-]{subsubsection*.179}{Manometro\040di\040Torricelli\040e\040Leggi\040dei\040Gas}{subsection.15.5.2}% 196
 \BOOKMARK [2][-]{subsection.15.5.3}{Dilatazione\040Termica}{section.15.5}% 197
 \BOOKMARK [2][-]{subsection.15.5.4}{Scale\040di\040Temperatura}{section.15.5}% 198
 \BOOKMARK [2][-]{subsection.15.5.5}{Calorimetria}{section.15.5}% 199
@@ -208,8 +208,8 @@
 \BOOKMARK [2][-]{subsection.16.3.4}{Primo\040principio\040in\040termini\040delle\040variabili\040di\040stato}{section.16.3}% 208
 \BOOKMARK [1][-]{section.16.4}{Diagrammi\040termodinamici}{chapter.16}% 209
 \BOOKMARK [2][-]{subsection.16.4.1}{Diagramma\040di\040stato\040di\040un\040sistema\040mono-componente\040gassoso}{section.16.4}% 210
-\BOOKMARK [3][-]{subsubsection*.199}{Piano\040di\040Clapeyron,\040P-V}{subsection.16.4.1}% 211
-\BOOKMARK [3][-]{subsubsection*.200}{Piano\040entropico,\040T-S}{subsection.16.4.1}% 212
+\BOOKMARK [3][-]{subsubsection*.202}{Piano\040di\040Clapeyron,\040P-V}{subsection.16.4.1}% 211
+\BOOKMARK [3][-]{subsubsection*.203}{Piano\040entropico,\040T-S}{subsection.16.4.1}% 212
 \BOOKMARK [1][-]{section.16.5}{Secondo\040principio\040della\040termodinamica\040-\040enunciato\040di\040Clausius}{chapter.16}% 213
 \BOOKMARK [2][-]{subsection.16.5.1}{Sistemi\040semplici}{section.16.5}% 214
 \BOOKMARK [2][-]{subsection.16.5.2}{Sistemi\040composti}{section.16.5}% 215
@@ -234,39 +234,39 @@
 \BOOKMARK [0][-]{chapter.17}{Stati\040della\040materia}{part.5}% 234
 \BOOKMARK [1][-]{section.17.1}{Gas\040ideali}{chapter.17}% 235
 \BOOKMARK [2][-]{subsection.17.1.1}{Esperimenti}{section.17.1}% 236
-\BOOKMARK [3][-]{subsubsection*.259}{Esperimenti\040e\040leggi}{subsection.17.1.1}% 237
-\BOOKMARK [4][-]{paragraph*.260}{Legge\040di\040Boyle}{subsubsection*.259}% 238
-\BOOKMARK [4][-]{paragraph*.261}{Legge\040di\040Charles}{subsubsection*.259}% 239
-\BOOKMARK [4][-]{paragraph*.262}{Legge\040di\040Gay-Lussac}{subsubsection*.259}% 240
-\BOOKMARK [5][-]{subparagraph*.263}{Scala\040di\040temperatura\040assoluta}{paragraph*.262}% 241
-\BOOKMARK [4][-]{paragraph*.264}{Legge\040di\040Avogadro}{subsubsection*.259}% 242
-\BOOKMARK [3][-]{subsubsection*.265}{Legge\040dei\040gas\040ideali}{subsection.17.1.1}% 243
+\BOOKMARK [3][-]{subsubsection*.262}{Esperimenti\040e\040leggi}{subsection.17.1.1}% 237
+\BOOKMARK [4][-]{paragraph*.263}{Legge\040di\040Boyle}{subsubsection*.262}% 238
+\BOOKMARK [4][-]{paragraph*.264}{Legge\040di\040Charles}{subsubsection*.262}% 239
+\BOOKMARK [4][-]{paragraph*.265}{Legge\040di\040Gay-Lussac}{subsubsection*.262}% 240
+\BOOKMARK [5][-]{subparagraph*.266}{Scala\040di\040temperatura\040assoluta}{paragraph*.265}% 241
+\BOOKMARK [4][-]{paragraph*.267}{Legge\040di\040Avogadro}{subsubsection*.262}% 242
+\BOOKMARK [3][-]{subsubsection*.268}{Legge\040dei\040gas\040ideali}{subsection.17.1.1}% 243
 \BOOKMARK [2][-]{subsection.17.1.2}{Espressioni diverse dell’equazione di stato dei gas perfetti}{section.17.1}% 244
 \BOOKMARK [2][-]{subsection.17.1.3}{Teoria\040cinetica\040dei\040gas}{section.17.1}% 245
 \BOOKMARK [2][-]{subsection.17.1.4}{Caratteristiche\040dei\040gas\040perfetti}{section.17.1}% 246
-\BOOKMARK [3][-]{subsubsection*.266}{Legge\040di\040stato}{subsection.17.1.4}% 247
-\BOOKMARK [3][-]{subsubsection*.267}{Primo\040principio\040della\040termodinamica}{subsection.17.1.4}% 248
-\BOOKMARK [3][-]{subsubsection*.268}{Energia\040interna,\040entalpia\040e\040calori\040specifici}{subsection.17.1.4}% 249
-\BOOKMARK [3][-]{subsubsection*.269}{Variazioni\040di\040entropia}{subsection.17.1.4}% 250
+\BOOKMARK [3][-]{subsubsection*.269}{Legge\040di\040stato}{subsection.17.1.4}% 247
+\BOOKMARK [3][-]{subsubsection*.270}{Primo\040principio\040della\040termodinamica}{subsection.17.1.4}% 248
+\BOOKMARK [3][-]{subsubsection*.271}{Energia\040interna,\040entalpia\040e\040calori\040specifici}{subsection.17.1.4}% 249
+\BOOKMARK [3][-]{subsubsection*.272}{Variazioni\040di\040entropia}{subsection.17.1.4}% 250
 \BOOKMARK [1][-]{section.17.2}{Miscele\040di\040gas}{chapter.17}% 251
 \BOOKMARK [2][-]{subsection.17.2.1}{Aria\040umida}{section.17.2}% 252
-\BOOKMARK [3][-]{subsubsection*.270}{Definizioni}{subsection.17.2.1}% 253
-\BOOKMARK [3][-]{subsubsection*.271}{Aria\040secca\040e\040vapore\040acqueo}{subsection.17.2.1}% 254
-\BOOKMARK [3][-]{subsubsection*.272}{Regola\040delle\040fasi\040di\040Gibbs}{subsection.17.2.1}% 255
-\BOOKMARK [3][-]{subsubsection*.273}{Misure di umidità}{subsection.17.2.1}% 256
-\BOOKMARK [4][-]{paragraph*.274}{Umidità specifica o titolo, x}{subsubsection*.273}% 257
-\BOOKMARK [4][-]{paragraph*.275}{Umidità relativa}{subsubsection*.273}% 258
-\BOOKMARK [3][-]{subsubsection*.276}{Entalpia dell’aria umida}{subsection.17.2.1}% 259
-\BOOKMARK [3][-]{subsubsection*.277}{Tabelle}{subsection.17.2.1}% 260
-\BOOKMARK [3][-]{subsubsection*.278}{Diagrammi}{subsection.17.2.1}% 261
-\BOOKMARK [3][-]{subsubsection*.279}{Temperature e misure di umidità}{subsection.17.2.1}% 262
-\BOOKMARK [3][-]{subsubsection*.280}{Trasformazioni dell’aria umida}{subsection.17.2.1}% 263
-\BOOKMARK [3][-]{subsubsection*.281}{Esercizi}{subsection.17.2.1}% 264
+\BOOKMARK [3][-]{subsubsection*.273}{Definizioni}{subsection.17.2.1}% 253
+\BOOKMARK [3][-]{subsubsection*.274}{Aria\040secca\040e\040vapore\040acqueo}{subsection.17.2.1}% 254
+\BOOKMARK [3][-]{subsubsection*.275}{Regola\040delle\040fasi\040di\040Gibbs}{subsection.17.2.1}% 255
+\BOOKMARK [3][-]{subsubsection*.276}{Misure di umidità}{subsection.17.2.1}% 256
+\BOOKMARK [4][-]{paragraph*.277}{Umidità specifica o titolo, x}{subsubsection*.276}% 257
+\BOOKMARK [4][-]{paragraph*.278}{Umidità relativa}{subsubsection*.276}% 258
+\BOOKMARK [3][-]{subsubsection*.279}{Entalpia dell’aria umida}{subsection.17.2.1}% 259
+\BOOKMARK [3][-]{subsubsection*.280}{Tabelle}{subsection.17.2.1}% 260
+\BOOKMARK [3][-]{subsubsection*.281}{Diagrammi}{subsection.17.2.1}% 261
+\BOOKMARK [3][-]{subsubsection*.282}{Temperature e misure di umidità}{subsection.17.2.1}% 262
+\BOOKMARK [3][-]{subsubsection*.283}{Trasformazioni dell’aria umida}{subsection.17.2.1}% 263
+\BOOKMARK [3][-]{subsubsection*.284}{Esercizi}{subsection.17.2.1}% 264
 \BOOKMARK [1][-]{section.17.3}{Solidi\040elastici}{chapter.17}% 265
 \BOOKMARK [2][-]{subsection.17.3.1}{Solido\040elastico\040lineare\0401-dimensionale}{section.17.3}% 266
 \BOOKMARK [2][-]{subsection.17.3.2}{Coefficienti\040di\040dilatazione}{section.17.3}% 267
-\BOOKMARK [3][-]{subsubsection*.282}{Coefficiente\040di\040dilatazione\040di\040superficie}{subsection.17.3.2}% 268
-\BOOKMARK [3][-]{subsubsection*.283}{Coefficiente\040di\040dilatazione\040di\040volume}{subsection.17.3.2}% 269
+\BOOKMARK [3][-]{subsubsection*.285}{Coefficiente\040di\040dilatazione\040di\040superficie}{subsection.17.3.2}% 268
+\BOOKMARK [3][-]{subsubsection*.286}{Coefficiente\040di\040dilatazione\040di\040volume}{subsection.17.3.2}% 269
 \BOOKMARK [1][-]{section.17.4}{Problemi}{chapter.17}% 270
 \BOOKMARK [2][-]{subsection.17.4.1}{Gas\040ideali}{section.17.4}% 271
 \BOOKMARK [2][-]{subsection.17.4.2}{Teorica\040cinetica\040dei\040gas}{section.17.4}% 272
@@ -280,7 +280,7 @@
 \BOOKMARK [0][-]{chapter.18}{Fondamenti\040di\040fisica\040tecnica}{part.5}% 280
 \BOOKMARK [1][-]{section.18.1}{Trasformazioni\040termodinamiche}{chapter.18}% 281
 \BOOKMARK [2][-]{subsection.18.1.1}{Fluidi}{section.18.1}% 282
-\BOOKMARK [3][-]{subsubsection*.316}{Gas\040ideali}{subsection.18.1.1}% 283
+\BOOKMARK [3][-]{subsubsection*.319}{Gas\040ideali}{subsection.18.1.1}% 283
 \BOOKMARK [1][-]{section.18.2}{Cicli\040termodinamici}{chapter.18}% 284
 \BOOKMARK [2][-]{subsection.18.2.1}{Rendimento\040termico}{section.18.2}% 285
 \BOOKMARK [1][-]{section.18.3}{Carnot e le «Riflessioni sulla forza motrice del fuoco»}{chapter.18}% 286
@@ -291,18 +291,18 @@
 \BOOKMARK [2][-]{subsection.18.4.2}{Enunciato\040di\040Planck}{section.18.4}% 291
 \BOOKMARK [1][-]{section.18.5}{Macchine\040termiche\040e\040cicli\040termodinamici}{chapter.18}% 292
 \BOOKMARK [2][-]{subsection.18.5.1}{Ciclo\040Otto}{section.18.5}% 293
-\BOOKMARK [3][-]{subsubsection*.317}{Ciclo\040Otto\040reale}{subsection.18.5.1}% 294
-\BOOKMARK [3][-]{subsubsection*.318}{Ciclo\040Otto\040ideale}{subsection.18.5.1}% 295
-\BOOKMARK [3][-]{subsubsection*.319}{Rendimento\040del\040ciclo\040Otto}{subsection.18.5.1}% 296
-\BOOKMARK [3][-]{subsubsection*.320}{Funzionamento\040di\040un\040motore\040a\040combustione\040interna}{subsection.18.5.1}% 297
-\BOOKMARK [3][-]{subsubsection*.321}{Esempio}{subsection.18.5.1}% 298
+\BOOKMARK [3][-]{subsubsection*.320}{Ciclo\040Otto\040reale}{subsection.18.5.1}% 294
+\BOOKMARK [3][-]{subsubsection*.321}{Ciclo\040Otto\040ideale}{subsection.18.5.1}% 295
+\BOOKMARK [3][-]{subsubsection*.322}{Rendimento\040del\040ciclo\040Otto}{subsection.18.5.1}% 296
+\BOOKMARK [3][-]{subsubsection*.323}{Funzionamento\040di\040un\040motore\040a\040combustione\040interna}{subsection.18.5.1}% 297
+\BOOKMARK [3][-]{subsubsection*.324}{Esempio}{subsection.18.5.1}% 298
 \BOOKMARK [2][-]{subsection.18.5.2}{Ciclo\040Diesel}{section.18.5}% 299
-\BOOKMARK [3][-]{subsubsection*.322}{Ciclo\040Diesel\040reale}{subsection.18.5.2}% 300
+\BOOKMARK [3][-]{subsubsection*.325}{Ciclo\040Diesel\040reale}{subsection.18.5.2}% 300
 \BOOKMARK [2][-]{subsection.18.5.3}{Ciclo\040Joule-Brayton}{section.18.5}% 301
-\BOOKMARK [3][-]{subsubsection*.323}{Ciclo\040Joule-Brayton\040aperto}{subsection.18.5.3}% 302
-\BOOKMARK [3][-]{subsubsection*.324}{Ciclo\040Joule-Brayton\040chiuso}{subsection.18.5.3}% 303
-\BOOKMARK [3][-]{subsubsection*.325}{Rendimento\040del\040ciclo\040Joule-Brayton}{subsection.18.5.3}% 304
-\BOOKMARK [3][-]{subsubsection*.326}{Esempio}{subsection.18.5.3}% 305
+\BOOKMARK [3][-]{subsubsection*.326}{Ciclo\040Joule-Brayton\040aperto}{subsection.18.5.3}% 302
+\BOOKMARK [3][-]{subsubsection*.327}{Ciclo\040Joule-Brayton\040chiuso}{subsection.18.5.3}% 303
+\BOOKMARK [3][-]{subsubsection*.328}{Rendimento\040del\040ciclo\040Joule-Brayton}{subsection.18.5.3}% 304
+\BOOKMARK [3][-]{subsubsection*.329}{Esempio}{subsection.18.5.3}% 305
 \BOOKMARK [2][-]{subsection.18.5.4}{Ciclo\040Rankine}{section.18.5}% 306
 \BOOKMARK [0][-]{chapter.19}{Meccanismi\040di\040trasmissione\040del\040calore}{part.5}% 307
 \BOOKMARK [1][-]{section.19.1}{Problemi}{chapter.19}% 308
@@ -310,12 +310,12 @@
 \BOOKMARK [0][-]{chapter.20}{Introduzione\040ai\040fenomeni\040ondulatori}{part.6}% 310
 \BOOKMARK [1][-]{section.20.1}{Equazione\040delle\040onde\040in\040diversi\040sistemi}{chapter.20}% 311
 \BOOKMARK [2][-]{subsection.20.1.1}{Sistemi\040meccanici}{section.20.1}% 312
-\BOOKMARK [3][-]{subsubsection*.342}{Azione\040assiale\040-\040catena\040di\040molle\040lineari}{subsection.20.1.1}% 313
-\BOOKMARK [3][-]{subsubsection*.343}{Torsione\040-\040catena\040di\040molle\040rotazionali}{subsection.20.1.1}% 314
-\BOOKMARK [3][-]{subsubsection*.344}{Filo\040teso}{subsection.20.1.1}% 315
+\BOOKMARK [3][-]{subsubsection*.345}{Azione\040assiale\040-\040catena\040di\040molle\040lineari}{subsection.20.1.1}% 313
+\BOOKMARK [3][-]{subsubsection*.346}{Torsione\040-\040catena\040di\040molle\040rotazionali}{subsection.20.1.1}% 314
+\BOOKMARK [3][-]{subsubsection*.347}{Filo\040teso}{subsection.20.1.1}% 315
 \BOOKMARK [2][-]{subsection.20.1.2}{Fluidi}{section.20.1}% 316
-\BOOKMARK [3][-]{subsubsection*.345}{Suono}{subsection.20.1.2}% 317
-\BOOKMARK [3][-]{subsubsection*.346}{Onde\040su\040superficie\040libera}{subsection.20.1.2}% 318
+\BOOKMARK [3][-]{subsubsection*.348}{Suono}{subsection.20.1.2}% 317
+\BOOKMARK [3][-]{subsubsection*.349}{Onde\040su\040superficie\040libera}{subsection.20.1.2}% 318
 \BOOKMARK [2][-]{subsection.20.1.3}{Campo\040elettromagnetico}{section.20.1}% 319
 \BOOKMARK [1][-]{section.20.2}{Soluzioni\040particolari}{chapter.20}% 320
 \BOOKMARK [2][-]{subsection.20.2.1}{Frequenza, lunghezza d’onda e relazione con velocità di propagazione della perturbazione}{section.20.2}% 321
@@ -328,8 +328,8 @@
 \BOOKMARK [2][-]{subsection.20.3.6}{Effetto\040Doppler}{section.20.3}% 328
 \BOOKMARK [1][-]{section.20.4}{Ottica}{chapter.20}% 329
 \BOOKMARK [2][-]{subsection.20.4.1}{Ottica\040geometrica}{section.20.4}% 330
-\BOOKMARK [3][-]{subsubsection*.347}{Princìpi dell’ottica geometrica}{subsection.20.4.1}% 331
-\BOOKMARK [3][-]{subsubsection*.348}{Lenti}{subsection.20.4.1}% 332
+\BOOKMARK [3][-]{subsubsection*.350}{Princìpi dell’ottica geometrica}{subsection.20.4.1}% 331
+\BOOKMARK [3][-]{subsubsection*.351}{Lenti}{subsection.20.4.1}% 332
 \BOOKMARK [-1][-]{part.7}{VII\040Elettromagnetismo}{}% 333
 \BOOKMARK [0][-]{chapter.21}{Introduzione all’elettromagnetismo}{part.7}% 334
 \BOOKMARK [1][-]{section.21.1}{Breve storia dell’elettromagnetismo}{chapter.21}% 335
@@ -344,55 +344,55 @@
 \BOOKMARK [0][-]{chapter.22}{Fondamenti\040di\040elettromagnetismo}{part.7}% 344
 \BOOKMARK [1][-]{section.22.1}{Elettrostatica}{chapter.22}% 345
 \BOOKMARK [2][-]{subsection.22.1.1}{Legge\040di\040Coulomb}{section.22.1}% 346
-\BOOKMARK [3][-]{subsubsection*.349}{Misura\040della\040carica\040elettrica}{subsection.22.1.1}% 347
+\BOOKMARK [3][-]{subsubsection*.352}{Misura\040della\040carica\040elettrica}{subsection.22.1.1}% 347
 \BOOKMARK [2][-]{subsection.22.1.2}{Il\040campo\040elettrico}{section.22.1}% 348
-\BOOKMARK [3][-]{subsubsection*.350}{Campo\040conservativo}{subsection.22.1.2}% 349
-\BOOKMARK [3][-]{subsubsection*.351}{Energia\040potenziale\040di\040una\040distribuzione\040di\040cariche}{subsection.22.1.2}% 350
+\BOOKMARK [3][-]{subsubsection*.353}{Campo\040conservativo}{subsection.22.1.2}% 349
+\BOOKMARK [3][-]{subsubsection*.354}{Energia\040potenziale\040di\040una\040distribuzione\040di\040cariche}{subsection.22.1.2}% 350
 \BOOKMARK [2][-]{subsection.22.1.3}{Campo\040elettrico\040nei\040materiali}{section.22.1}% 351
-\BOOKMARK [3][-]{subsubsection*.352}{Campo\040elettrostatico\040nei\040conduttori}{subsection.22.1.3}% 352
-\BOOKMARK [3][-]{subsubsection*.353}{Campo\040elettrostatico\040nei\040dielettrici}{subsection.22.1.3}% 353
+\BOOKMARK [3][-]{subsubsection*.355}{Campo\040elettrostatico\040nei\040conduttori}{subsection.22.1.3}% 352
+\BOOKMARK [3][-]{subsubsection*.356}{Campo\040elettrostatico\040nei\040dielettrici}{subsection.22.1.3}% 353
 \BOOKMARK [2][-]{subsection.22.1.4}{Verso\040le\040equazioni\040di\040Maxwell}{section.22.1}% 354
-\BOOKMARK [3][-]{subsubsection*.355}{Legge\040di\040Gauss\040per\040il\040flusso\040del\040campo\040elettrico}{subsection.22.1.4}% 355
-\BOOKMARK [3][-]{subsubsection*.356}{Legge\040di\040Faraday,\040in\040elettrostatica}{subsection.22.1.4}% 356
+\BOOKMARK [3][-]{subsubsection*.358}{Legge\040di\040Gauss\040per\040il\040flusso\040del\040campo\040elettrico}{subsection.22.1.4}% 355
+\BOOKMARK [3][-]{subsubsection*.359}{Legge\040di\040Faraday,\040in\040elettrostatica}{subsection.22.1.4}% 356
 \BOOKMARK [2][-]{subsection.22.1.5}{Condensatore}{section.22.1}% 357
-\BOOKMARK [3][-]{subsubsection*.357}{Condensatore\040piano}{subsection.22.1.5}% 358
-\BOOKMARK [3][-]{subsubsection*.358}{Bilancio\040di\040energia\040in\040un\040condensatore}{subsection.22.1.5}% 359
-\BOOKMARK [3][-]{subsubsection*.359}{Configurazioni\040di\040condensatori}{subsection.22.1.5}% 360
+\BOOKMARK [3][-]{subsubsection*.360}{Condensatore\040piano}{subsection.22.1.5}% 358
+\BOOKMARK [3][-]{subsubsection*.361}{Bilancio\040di\040energia\040in\040un\040condensatore}{subsection.22.1.5}% 359
+\BOOKMARK [3][-]{subsubsection*.362}{Configurazioni\040di\040condensatori}{subsection.22.1.5}% 360
 \BOOKMARK [2][-]{subsection.22.1.6}{Moto\040di\040una\040carica\040in\040un\040campo\040elettrico}{section.22.1}% 361
 \BOOKMARK [2][-]{subsection.22.1.7}{Problemi}{section.22.1}% 362
 \BOOKMARK [2][-]{subsection.22.1.8}{Soluzioni}{section.22.1}% 363
 \BOOKMARK [2][-]{subsection.22.1.9}{Note\040e\040dimostrazioni}{section.22.1}% 364
 \BOOKMARK [1][-]{section.22.2}{Corrente\040elettrica}{chapter.22}% 365
 \BOOKMARK [2][-]{subsection.22.2.1}{Definizioni}{section.22.2}% 366
-\BOOKMARK [3][-]{subsubsection*.392}{Densità di corrente elettrica}{subsection.22.2.1}% 367
+\BOOKMARK [3][-]{subsubsection*.395}{Densità di corrente elettrica}{subsection.22.2.1}% 367
 \BOOKMARK [2][-]{subsection.22.2.2}{Principio\040di\040conservazione\040della\040carica\040elettrica}{section.22.2}% 368
 \BOOKMARK [2][-]{subsection.22.2.3}{Corrente\040elettrica\040nella\040materia}{section.22.2}% 369
-\BOOKMARK [3][-]{subsubsection*.393}{Solidi\040conduttori}{subsection.22.2.3}% 370
-\BOOKMARK [4][-]{paragraph*.394}{Conduttori\040di\040Ohm}{subsubsection*.393}% 371
-\BOOKMARK [3][-]{subsubsection*.395}{Solidi\040dielettrici}{subsection.22.2.3}% 372
-\BOOKMARK [3][-]{subsubsection*.396}{Conduzione\040nei\040gas}{subsection.22.2.3}% 373
-\BOOKMARK [3][-]{subsubsection*.397}{Conduzione\040nei\040semiconduttori}{subsection.22.2.3}% 374
+\BOOKMARK [3][-]{subsubsection*.396}{Solidi\040conduttori}{subsection.22.2.3}% 370
+\BOOKMARK [4][-]{paragraph*.397}{Conduttori\040di\040Ohm}{subsubsection*.396}% 371
+\BOOKMARK [3][-]{subsubsection*.398}{Solidi\040dielettrici}{subsection.22.2.3}% 372
+\BOOKMARK [3][-]{subsubsection*.399}{Conduzione\040nei\040gas}{subsection.22.2.3}% 373
+\BOOKMARK [3][-]{subsubsection*.400}{Conduzione\040nei\040semiconduttori}{subsection.22.2.3}% 374
 \BOOKMARK [2][-]{subsection.22.2.4}{Strumenti:\040misura\040e\040generazione}{section.22.2}% 375
 \BOOKMARK [2][-]{subsection.22.2.5}{Problemi}{section.22.2}% 376
 \BOOKMARK [1][-]{section.22.3}{Magnetismo\040ed\040elettromagnetismo\040in\040regime\040stazionario}{chapter.22}% 377
 \BOOKMARK [2][-]{subsection.22.3.1}{Esperienze\040elementari\040su\040campo\040magnetico}{section.22.3}% 378
 \BOOKMARK [2][-]{subsection.22.3.2}{Esperienza\040di\040Faraday}{section.22.3}% 379
-\BOOKMARK [3][-]{subsubsection*.415}{L’amperometro}{subsection.22.3.2}% 380
-\BOOKMARK [3][-]{subsubsection*.416}{Il\040voltmetro}{subsection.22.3.2}% 381
+\BOOKMARK [3][-]{subsubsection*.418}{L’amperometro}{subsection.22.3.2}% 380
+\BOOKMARK [3][-]{subsubsection*.419}{Il\040voltmetro}{subsection.22.3.2}% 381
 \BOOKMARK [2][-]{subsection.22.3.3}{Esperienze\040di\040Oersted\040e\040Ampere}{section.22.3}% 382
-\BOOKMARK [3][-]{subsubsection*.417}{Esperienza\040di\040Oersted}{subsection.22.3.3}% 383
-\BOOKMARK [3][-]{subsubsection*.418}{Esperienza di Ampére}{subsection.22.3.3}% 384
+\BOOKMARK [3][-]{subsubsection*.420}{Esperienza\040di\040Oersted}{subsection.22.3.3}% 383
+\BOOKMARK [3][-]{subsubsection*.421}{Esperienza di Ampére}{subsection.22.3.3}% 384
 \BOOKMARK [2][-]{subsection.22.3.4}{Legge\040di\040Biot-Savart}{section.22.3}% 385
-\BOOKMARK [3][-]{subsubsection*.420}{Esempi\040di\040campi\040magnetici\040generati\040da\040corrente\040in\040cavi\040elettrici}{subsection.22.3.4}% 386
+\BOOKMARK [3][-]{subsubsection*.423}{Esempi\040di\040campi\040magnetici\040generati\040da\040corrente\040in\040cavi\040elettrici}{subsection.22.3.4}% 386
 \BOOKMARK [2][-]{subsection.22.3.5}{Modelli\040microscopici\040del\040magnetismo}{section.22.3}% 387
 \BOOKMARK [2][-]{subsection.22.3.6}{Moto\040di\040una\040carica\040elettrica\040in\040un\040campo\040elettromagnetico}{section.22.3}% 388
 \BOOKMARK [2][-]{subsection.22.3.7}{Verso\040le\040equazioni\040di\040Maxwell}{section.22.3}% 389
-\BOOKMARK [3][-]{subsubsection*.422}{Legge\040di\040Gauss\040per\040il\040flusso\040del\040campo\040magnetico}{subsection.22.3.7}% 390
-\BOOKMARK [3][-]{subsubsection*.423}{Legge di Ampére in regime stazionario}{subsection.22.3.7}% 391
+\BOOKMARK [3][-]{subsubsection*.425}{Legge\040di\040Gauss\040per\040il\040flusso\040del\040campo\040magnetico}{subsection.22.3.7}% 390
+\BOOKMARK [3][-]{subsubsection*.426}{Legge di Ampére in regime stazionario}{subsection.22.3.7}% 391
 \BOOKMARK [2][-]{subsection.22.3.8}{Problemi}{section.22.3}% 392
 \BOOKMARK [2][-]{subsection.22.3.9}{Soluzioni}{section.22.3}% 393
 \BOOKMARK [2][-]{subsection.22.3.10}{Note\040e\040dimostrazioni}{section.22.3}% 394
-\BOOKMARK [3][-]{subsubsection*.428}{Legge\040di\040Biot-Savart}{subsection.22.3.10}% 395
+\BOOKMARK [3][-]{subsubsection*.431}{Legge\040di\040Biot-Savart}{subsection.22.3.10}% 395
 \BOOKMARK [1][-]{section.22.4}{Induzione\040ed\040elettromagnetismo}{chapter.22}% 396
 \BOOKMARK [2][-]{subsection.22.4.1}{Legge di Faraday per l’induzione elettromagnetica}{section.22.4}% 397
 \BOOKMARK [2][-]{subsection.22.4.2}{Correzione di Maxwell dell’equazione di Ampére}{section.22.4}% 398
@@ -403,31 +403,31 @@
 \BOOKMARK [2][-]{subsection.23.1.2}{Cavi\040elettrici}{section.23.1}% 403
 \BOOKMARK [2][-]{subsection.23.1.3}{Leggi\040di\040Kirchhoff}{section.23.1}% 404
 \BOOKMARK [2][-]{subsection.23.1.4}{Componenti}{section.23.1}% 405
-\BOOKMARK [3][-]{subsubsection*.430}{Resistenza\040elettrica}{subsection.23.1.4}% 406
-\BOOKMARK [3][-]{subsubsection*.431}{Condensatore}{subsection.23.1.4}% 407
-\BOOKMARK [3][-]{subsubsection*.432}{Induttore}{subsection.23.1.4}% 408
-\BOOKMARK [3][-]{subsubsection*.433}{Generatore\040di\040tensione}{subsection.23.1.4}% 409
-\BOOKMARK [3][-]{subsubsection*.434}{Generatore\040di\040corrente}{subsection.23.1.4}% 410
-\BOOKMARK [3][-]{subsubsection*.435}{Diodo}{subsection.23.1.4}% 411
+\BOOKMARK [3][-]{subsubsection*.433}{Resistenza\040elettrica}{subsection.23.1.4}% 406
+\BOOKMARK [3][-]{subsubsection*.434}{Condensatore}{subsection.23.1.4}% 407
+\BOOKMARK [3][-]{subsubsection*.435}{Induttore}{subsection.23.1.4}% 408
+\BOOKMARK [3][-]{subsubsection*.436}{Generatore\040di\040tensione}{subsection.23.1.4}% 409
+\BOOKMARK [3][-]{subsubsection*.437}{Generatore\040di\040corrente}{subsection.23.1.4}% 410
+\BOOKMARK [3][-]{subsubsection*.438}{Diodo}{subsection.23.1.4}% 411
 \BOOKMARK [2][-]{subsection.23.1.5}{Collegamenti\040in\040serie\040e\040in\040parallelo}{section.23.1}% 412
 \BOOKMARK [2][-]{subsection.23.1.6}{Casi\040particolari}{section.23.1}% 413
-\BOOKMARK [3][-]{subsubsection*.436}{Circuito\040aperto}{subsection.23.1.6}% 414
-\BOOKMARK [3][-]{subsubsection*.437}{Cortocircuito}{subsection.23.1.6}% 415
+\BOOKMARK [3][-]{subsubsection*.439}{Circuito\040aperto}{subsection.23.1.6}% 414
+\BOOKMARK [3][-]{subsubsection*.440}{Cortocircuito}{subsection.23.1.6}% 415
 \BOOKMARK [2][-]{subsection.23.1.7}{Regimi\040di\040funzionamento}{section.23.1}% 416
-\BOOKMARK [3][-]{subsubsection*.438}{Regime\040stazionario\040-\040la\040corrente\040continua}{subsection.23.1.7}% 417
-\BOOKMARK [3][-]{subsubsection*.439}{Transitorio}{subsection.23.1.7}% 418
-\BOOKMARK [3][-]{subsubsection*.440}{Regime\040periodico\040-\040la\040corrente\040alternata}{subsection.23.1.7}% 419
-\BOOKMARK [4][-]{paragraph*.441}{Sistemi\040trifase}{subsubsection*.440}% 420
+\BOOKMARK [3][-]{subsubsection*.441}{Regime\040stazionario\040-\040la\040corrente\040continua}{subsection.23.1.7}% 417
+\BOOKMARK [3][-]{subsubsection*.442}{Transitorio}{subsection.23.1.7}% 418
+\BOOKMARK [3][-]{subsubsection*.443}{Regime\040periodico\040-\040la\040corrente\040alternata}{subsection.23.1.7}% 419
+\BOOKMARK [4][-]{paragraph*.444}{Sistemi\040trifase}{subsubsection*.443}% 420
 \BOOKMARK [1][-]{section.23.2}{Circuiti\040magnetici}{chapter.23}% 421
 \BOOKMARK [2][-]{subsection.23.2.1}{Approssimazione\040circuitale}{section.23.2}% 422
 \BOOKMARK [2][-]{subsection.23.2.2}{Leggi\040di\040Kirchhoff\040per\040i\040circuiti\040magnetici}{section.23.2}% 423
 \BOOKMARK [2][-]{subsection.23.2.3}{Trasformatore}{section.23.2}% 424
-\BOOKMARK [3][-]{subsubsection*.443}{Trasformatore\040ideale}{subsection.23.2.3}% 425
+\BOOKMARK [3][-]{subsubsection*.446}{Trasformatore\040ideale}{subsection.23.2.3}% 425
 \BOOKMARK [1][-]{section.23.3}{Sistemi\040elettromeccanici\040e\040macchine\040elettriche}{chapter.23}% 426
 \BOOKMARK [2][-]{subsection.23.3.1}{Motori\040e\040generatori\040elettrici}{section.23.3}% 427
-\BOOKMARK [3][-]{subsubsection*.444}{Esempi\040elementari}{subsection.23.3.1}% 428
-\BOOKMARK [3][-]{subsubsection*.445}{Motori\040elettrici\040in\040DC}{subsection.23.3.1}% 429
-\BOOKMARK [3][-]{subsubsection*.446}{Motori\040elettrici\040in\040AC}{subsection.23.3.1}% 430
+\BOOKMARK [3][-]{subsubsection*.447}{Esempi\040elementari}{subsection.23.3.1}% 428
+\BOOKMARK [3][-]{subsubsection*.448}{Motori\040elettrici\040in\040DC}{subsection.23.3.1}% 429
+\BOOKMARK [3][-]{subsubsection*.449}{Motori\040elettrici\040in\040AC}{subsection.23.3.1}% 430
 \BOOKMARK [2][-]{subsection.23.3.2}{Serratura\040magnetica}{section.23.3}% 431
 \BOOKMARK [0][-]{chapter.24}{Onde\040elettromagnetiche}{part.7}% 432
 \BOOKMARK [1][-]{section.24.1}{Esperimenti\040di\040Hertz}{chapter.24}% 433
@@ -485,4 +485,4 @@
 \BOOKMARK [1][-]{section.33.4}{Dizionario}{chapter.33}% 485
 \BOOKMARK [-1][-]{part.9}{IX\040Indice}{}% 486
 \BOOKMARK [0][-]{chapter.34}{Indice}{part.9}% 487
-\BOOKMARK [0][-]{section*.469}{Proof\040Index}{part.9}% 488
+\BOOKMARK [0][-]{section*.472}{Proof\040Index}{part.9}% 488

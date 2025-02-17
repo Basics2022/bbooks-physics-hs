@@ -582,38 +582,33 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="sd-container-fluid sd-sphinx-override sd-p-0 sd-mt-2 sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-2 sd-gx-2 sd-gy-1 docutils">
-<div class="sd-col sd-d-flex-row sd-align-minor-center docutils">
-<div class="sd-container-fluid sd-sphinx-override docutils">
-<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-gx-3 sd-gy-1 docutils">
-<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0">basics</p>
-</div>
-<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-calendar" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg></span>15 feb 2025</p>
-</div>
-<div class="sd-col sd-col-auto sd-d-flex-row sd-align-minor-center docutils">
-<p class="sd-p-0 sd-m-0"><span class="sd-pr-2"><svg version="1.1" width="16.0px" height="16.0px" class="sd-octicon sd-octicon-clock" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"></path></svg></span>1 min read</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <!--
+```{article-info}
+:author: basics
+:date: "{sub-ref}`today`"
+:read-time: "{sub-ref}`wordcount-minutes` min read"
+```
+-->
 <div class="tex2jax_ignore mathjax_ignore section" id="inerzia">
 <span id="physics-hs-mechanics-inertia"></span><h1><span class="section-number">11. </span>Inerzia<a class="headerlink" href="#inerzia" title="Permalink to this heading">#</a></h1>
-<div class="section" id="massa-e-distribuzione-di-massa">
-<h2><span class="section-number">11.1. </span>Massa e distribuzione di massa<a class="headerlink" href="#massa-e-distribuzione-di-massa" title="Permalink to this heading">#</a></h2>
-<p>La massa è la grandezza fisica che rappresenta la quantità di materia (<strong>todo</strong> <em>Non confonderla con la mole, definita come quantità di sostanza, una volta affermatasi la teoria atomica</em>)</p>
-<p>In meccanica classica, la può essere definita in maniera operativa:</p>
+<p>L’inerzia di un sistema meccanico rappresenta una misura della sua resistenza al cambiamento dello stato di moto, in seguito all’applicazione di forze esterne sul sistema: la combinazione delle proprietà inerziali di un sistema con le grandezze cinematiche che ne caratterizzano il moto produce infatti le <span class="xref myst">quantità dinamiche</span>, la cui variazione nel tempo è legata all’azione delle azioni esterne sul sistema dai principi della dinamica e dalle equazioni di moto che governano la dinamica dei sistemi.
+Le proprietà inerziali di un corpo dipendono dalla sua massa e dalla distribuzione nello spazio della sua massa.</p>
+<p><strong>Ma cos’è la massa?</strong><a class="footnote-reference brackets" href="#mass-def" id="id1">1</a> la massa è una grandezza fisica che rappresenta la quantità di materia e si manifesta:</p>
 <ul class="simple">
-<li><p>tramite la sua <a class="reference internal" href="actions-examples.html#physics-hs-mechanics-actions-gravitation"><span class="std std-ref">interazione gravitazionale</span></a> con altri corpi dotati di massa</p></li>
+<li><p>tramite la sua <a class="reference internal" href="actions-examples.html#physics-hs-mechanics-actions-gravitation"><span class="std std-ref">interazione gravitazionale</span></a> con altri corpi dotati di massa;</p></li>
 <li><p>come una misura della resistenza di un sistema ai cambiamenti del suo stato di moto in risposta a una forza applicata, come sarà chiaro dalle equazioni della <a class="reference internal" href="dynamics.html#physics-hs-mechanics-dynamics"><span class="std std-ref">dinamica</span></a></p></li>
 </ul>
+<div class="proof example admonition" id="example-0">
+<p class="admonition-title"><span class="caption-number">Example 11.1 </span> (Massa gravitazionale e massa inerziale)</p>
+<div class="example-content section" id="proof-content">
+<p>Le due manifestazioni diverse della massa possono essere usate come definizione di due grandezze diverse: l’interazione gravitazionale di un sistema con altri corpi dotati di massa può essere usata per definire la <strong>massa gravitazionale</strong> del sistema; il cambio di moto dello stesso sistema quando soggetto ad azioni esterne può essere usato per definirne la <strong>massa inerziale</strong>. L’evidenza sperimentale dimostra che le due grandezze fisiche così definite sono omogenee e producono lo stessa misura: si può pensare ai due procedimenti come due metodi di misura differenti della stessa grandezza fisica, che usano due interazioni differenti della massa con altri oggetti fisici.</p>
+</div>
+</div><p>Dal punto di vista operativo, la massa di un sistema - quando possibile dal punto di vista pratico - può essere misurata tramite la sua interazione con un campo di gravitazione noto, tramite una <strong>bilancia</strong></p>
+<div class="section" id="massa-e-distribuzione-di-massa">
+<span id="physics-hs-mechanics-inertia-mass-density"></span><h2><span class="section-number">11.1. </span>Massa e distribuzione di massa<a class="headerlink" href="#massa-e-distribuzione-di-massa" title="Permalink to this heading">#</a></h2>
 </div>
 <div class="section" id="quantita-dinamiche">
-<h2><span class="section-number">11.2. </span>Quantità dinamiche<a class="headerlink" href="#quantita-dinamiche" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-mechanics-inertia-dynamical-quantities"></span><h2><span class="section-number">11.2. </span>Quantità dinamiche<a class="headerlink" href="#quantita-dinamiche" title="Permalink to this heading">#</a></h2>
 <p>Come sarà chiaro nello sviluppo delle <a class="reference internal" href="dynamics-notes.html#physics-hs-mechanics-dynamics-eom-points"><span class="std std-ref">equazioni di moto di un sistema</span></a>, la definizione di alcune grandezze dinamiche additive risulta naturale, fornendo dei concetti utili e sintetici per la costruzione di un modello e l’interpretazione dei fenomeni fisici.</p>
 <p>Queste grandezze dinamiche combinano la massa e la sua distribuzione con le grandezze cinematiche del sistema. In particolare, risulta utile definire tre grandezze:</p>
 <ul class="simple">
@@ -624,6 +619,12 @@ document.write(`
 <p>Le <a class="reference internal" href="dynamics-eom.html#physics-hs-mechanics-dynamics-eom"><span class="std std-ref">equazioni del moto</span></a> dei sistemi rappresentano delle equazioni differenziali che mettono in relazione la variazione di queste quantità dinamiche con la causa di queste variazioni, in generale riconducibile ad <a class="reference internal" href="actions.html#physics-hs-mechanics-actions"><span class="std std-ref">azioni</span></a> agenti sul sistema.</p>
 <p>Sotto opportune ipotesi, queste grandezze dinamiche sono costanti del moto, come descritto dalle <a class="reference internal" href="dynamics-conservation.html#physics-hs-mechanics-dynamics-conservation"><span class="std std-ref">leggi di conservazione</span></a>.</p>
 <p>Le 3 grandezze dinamiche possono avere espressioni diverse, a seconda del sistema di interesse. Nel caso di corpi rigidi, queste possono essere espresse in termini di velocità di un punto materiale e della velocità angolare del corpo.</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="mass-def"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>La risposta alla domanda «cos’è la massa?» potrebbe implicare una conoscenza «vera» - qualsiasi cosa significhi - del concetto di «massa». Anche qui, come già in altre parti, la domanda «cos’è…?» può essere sostituita con «cosa intendiamo per…?», e una «risposta operativa» può essere ritenuta soddisfacente, poiché rispecchia la modalità di conoscenza e formazione del sapere in ambito scientifico: senza entrare in ambiti filosofici più astratti, in fisica siamo contenti di definire qualcosa tramite le sue interazioni ed effetti su altri sistemi, le sue proprietà, e un processo affidabile per la sua misura.</p>
+</dd>
+</dl>
 </div>
 <div class="toctree-wrapper compound">
 </div>
