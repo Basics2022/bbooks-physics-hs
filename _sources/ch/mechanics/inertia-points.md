@@ -1,11 +1,22 @@
+<!--
 ```{article-info}
 :author: basics
 :date: "{sub-ref}`today`"
 :read-time: "{sub-ref}`wordcount-minutes` min read"
 ```
+-->
 
+(physics-hs:mechanics:inertia:points)=
 # Inerzia e grandezze dinamiche di un sistema esteso con distribuzione discreta di massa
 
+(physics-hs:mechanics:inertia:points:inertia)=
+## Inerzia
+
+
+
+
+(physics-hs:mechanics:inertia:points:dynamical-quantities)=
+## Grandezze dinamiche
 
 $$\begin{aligned}
   \vec{Q}       = \sum_i \vec{Q}_i     & = \sum_i  m_i \, \vec{v}_i \\

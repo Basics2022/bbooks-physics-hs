@@ -219,15 +219,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 has-children"><a class="reference internal" href="ch/mechanics/statics.html">10. Statica</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="ch/mechanics/statics-point.html">10.1. Statica del punto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch/mechanics/statics-rigid.html">10.2. Statica di un corpo rigido</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/statics-fluid.html">10.3. Statica dei mezzi deformabili</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/statics-problems.html">10.4. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/statics-composite.html">10.3. Statica di sistemi composti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/statics-fluid.html">10.4. Statica dei mezzi deformabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/statics-problems.html">10.5. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="ch/mechanics/inertia.html">11. Inerzia</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/inertia-point.html">11.3. Inerzia e grandezze dinamiche di un punto</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/inertia-points.html">11.4. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione discreta di massa</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/inertia-continuum.html">11.5. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/inertia-problems.html">11.6. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/inertia-point.html">11.1. Inerzia e grandezze dinamiche di un punto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/inertia-points.html">11.2. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione discreta di massa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/inertia-continuum.html">11.3. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/inertia-problems.html">11.4. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="ch/mechanics/dynamics.html">12. Dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -354,10 +355,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="ch/modern/intro-experiments.html">26. Esperienze ed esperimenti</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ch/modern/experiments.html">27. Esperimenti</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ch/modern/intro-radioactivity.html">28. Radioattività</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ch/modern/intro-coupling.html">29. Fenomeni termo-elettrici nella materia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ch/modern/intro-photography.html">30. Fotografia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch/modern/einstein.html">29. Teoria di Einstein</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch/modern/quantum.html">30. Meccanica quantistica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ch/modern/astronomy.html">31. Sviluppi dell’astronomia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ch/modern/standard.html">32. Introduzione al modello standard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch/modern/intro-coupling.html">33. Fenomeni termo-elettrici nella materia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch/modern/intro-photography.html">34. Fotografia</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
 <ul class="nav bd-sidenav">
@@ -538,6 +541,7 @@ document.write(`
    <a href="#cap-example-16"><strong>example-16</strong></a> | 
    <a href="#cap-example-17"><strong>example-17</strong></a> | 
    <a href="#cap-example-18"><strong>example-18</strong></a> | 
+   <a href="#cap-example-2"><strong>example-2</strong></a> | 
    <a href="#cap-example-3"><strong>example-3</strong></a> | 
    <a href="#cap-example-4"><strong>example-4</strong></a> | 
    <a href="#cap-example-5"><strong>example-5</strong></a> | 
@@ -547,7 +551,10 @@ document.write(`
    <a href="#cap-example-9"><strong>example-9</strong></a> | 
    <a href="#cap-faraday-cage"><strong>faraday-cage</strong></a> | 
    <a href="#cap-inertia-disk"><strong>inertia-disk</strong></a> | 
+   <a href="#cap-inertia-disk-non-uniform-non-symmetric"><strong>inertia-disk-non-uniform-non-symmetric</strong></a> | 
    <a href="#cap-inertia-ring"><strong>inertia-ring</strong></a> | 
+   <a href="#cap-inertia-sphere"><strong>inertia-sphere</strong></a> | 
+   <a href="#cap-inertia-sphere-non-uniform"><strong>inertia-sphere-non-uniform</strong></a> | 
    <a href="#cap-inertial-observer"><strong>inertial-observer</strong></a> | 
    <a href="#cap-invariance-space-and-time"><strong>invariance-space-and-time</strong></a> | 
    <a href="#cap-kepler-law-1"><strong>kepler-law-1</strong></a> | 
@@ -700,7 +707,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/mechanics/inertia.html#example-0"><code class="xref">example-0</code></a> <em>(ch/mechanics/inertia)</em></td><td>
+       <a href="ch/modern/einstein.html#example-0"><code class="xref">example-0</code></a> <em>(ch/modern/einstein)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-example-1"><td></td><td>
@@ -708,7 +715,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/mechanics/dynamics-principles.html#example-1"><code class="xref">example-1</code></a> <em>(ch/mechanics/dynamics-principles)</em></td><td>
+       <a href="ch/thermodynamics/principles-gibbs-phase-rule.html#example-1"><code class="xref">example-1</code></a> <em>(ch/thermodynamics/principles-gibbs-phase-rule)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-example-10"><td></td><td>
@@ -783,6 +790,14 @@ document.write(`
        <a href="ch/thermodynamics/principles-gibbs-phase-rule.html#example-18"><code class="xref">example-18</code></a> <em>(ch/thermodynamics/principles-gibbs-phase-rule)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-2"><td></td><td>
+       <strong>example-2</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/modern/einstein.html#example-2"><code class="xref">example-2</code></a> <em>(ch/modern/einstein)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-example-3"><td></td><td>
        <strong>example-3</strong></td><td></td></tr>
      <tr>
@@ -855,12 +870,36 @@ document.write(`
        <a href="ch/mechanics/inertia-continuum.html#inertia-disk"><code class="xref">inertia-disk</code></a> <em>(ch/mechanics/inertia-continuum)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-inertia-disk-non-uniform-non-symmetric"><td></td><td>
+       <strong>inertia-disk-non-uniform-non-symmetric</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/mechanics/inertia-continuum.html#inertia-disk-non-uniform-non-symmetric"><code class="xref">inertia-disk-non-uniform-non-symmetric</code></a> <em>(ch/mechanics/inertia-continuum)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-inertia-ring"><td></td><td>
        <strong>inertia-ring</strong></td><td></td></tr>
      <tr>
        <td></td>
        <td>
        <a href="ch/mechanics/inertia-continuum.html#inertia-ring"><code class="xref">inertia-ring</code></a> <em>(ch/mechanics/inertia-continuum)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-inertia-sphere"><td></td><td>
+       <strong>inertia-sphere</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/mechanics/inertia-continuum.html#inertia-sphere"><code class="xref">inertia-sphere</code></a> <em>(ch/mechanics/inertia-continuum)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-inertia-sphere-non-uniform"><td></td><td>
+       <strong>inertia-sphere-non-uniform</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/mechanics/inertia-continuum.html#inertia-sphere-non-uniform"><code class="xref">inertia-sphere-non-uniform</code></a> <em>(ch/mechanics/inertia-continuum)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-inertial-observer"><td></td><td>

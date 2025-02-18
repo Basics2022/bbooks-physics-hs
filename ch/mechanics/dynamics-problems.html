@@ -216,15 +216,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 has-children"><a class="reference internal" href="statics.html">10. Statica</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="statics-point.html">10.1. Statica del punto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="statics-rigid.html">10.2. Statica di un corpo rigido</a></li>
-<li class="toctree-l2"><a class="reference internal" href="statics-fluid.html">10.3. Statica dei mezzi deformabili</a></li>
-<li class="toctree-l2"><a class="reference internal" href="statics-problems.html">10.4. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="statics-composite.html">10.3. Statica di sistemi composti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="statics-fluid.html">10.4. Statica dei mezzi deformabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="statics-problems.html">10.5. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="inertia.html">11. Inerzia</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="inertia-point.html">11.3. Inerzia e grandezze dinamiche di un punto</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inertia-points.html">11.4. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione discreta di massa</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inertia-continuum.html">11.5. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inertia-problems.html">11.6. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inertia-point.html">11.1. Inerzia e grandezze dinamiche di un punto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inertia-points.html">11.2. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione discreta di massa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inertia-continuum.html">11.3. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inertia-problems.html">11.4. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="dynamics.html">12. Dinamica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
@@ -351,10 +352,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../modern/intro-experiments.html">26. Esperienze ed esperimenti</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/experiments.html">27. Esperimenti</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/intro-radioactivity.html">28. Radioattività</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modern/intro-coupling.html">29. Fenomeni termo-elettrici nella materia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modern/intro-photography.html">30. Fotografia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/einstein.html">29. Teoria di Einstein</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/quantum.html">30. Meccanica quantistica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/astronomy.html">31. Sviluppi dell’astronomia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/standard.html">32. Introduzione al modello standard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/intro-coupling.html">33. Fenomeni termo-elettrici nella materia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/intro-photography.html">34. Fotografia</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
 <ul class="nav bd-sidenav">
@@ -598,40 +601,63 @@ document.write(`
 <div class="section" id="exercise-content">
 </div>
 </div>
-<hr class="docutils" />
+<div class="exercise admonition" id="point-vs-rigid">
+
+<p class="admonition-title"><span class="caption-number">Exercise 12.2 </span> (Sistema che scivola su piano inclinato)</p>
+<div class="section" id="exercise-content">
+<p>Una biglia di massa <span class="math notranslate nohighlight">\(m\)</span> e raggio <span class="math notranslate nohighlight">\(R\)</span> scivola su un piano inclinato di un angolo <span class="math notranslate nohighlight">\(\alpha\)</span> rispetto al piano orizzontale. L’attrito tra il piano e la biglia è approssimabile come nullo, così che la biglia può scivolare sulla superficie del piano.</p>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><hr class="docutils" />
 <div class="section" id="moto-di-un-punto-materiale">
 <h2><span class="section-number">12.9.1. </span>Moto di un punto materiale<a class="headerlink" href="#moto-di-un-punto-materiale" title="Permalink to this heading">#</a></h2>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-1">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-3">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.2 </span> (Accelerazione costante)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.3 </span> (Accelerazione costante)</p>
 <div class="section" id="exercise-content">
 <p>Un punto materiale parte da fermo e si muove con un’accelerazione costante di <span class="math notranslate nohighlight">\(2 \, \text{m/s}^2\)</span>. Calcola lo spazio percorso dopo <span class="math notranslate nohighlight">\(10 \, \text{s}\)</span> e la velocità finale.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-2">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-4">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.3 </span> (Moto uniformemente accelerato)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.4 </span> (Moto uniformemente accelerato)</p>
 <div class="section" id="exercise-content">
 <p>Un’auto si muove inizialmente a <span class="math notranslate nohighlight">\(20 \, \text{m/s}\)</span>. Dopo <span class="math notranslate nohighlight">\(5 \, \text{s}\)</span>, la velocità è aumentata a <span class="math notranslate nohighlight">\(40 \, \text{m/s}\)</span>. Calcola l’accelerazione e lo spazio percorso in questo intervallo.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-3">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-5">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.4 </span> (Caduta libera)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.5 </span> (Caduta libera)</p>
 <div class="section" id="exercise-content">
 <p>Un oggetto viene lasciato cadere da un’altezza di <span class="math notranslate nohighlight">\(80 \, \text{m}\)</span>. Calcola il tempo impiegato per raggiungere il suolo e la velocità al momento dell’impatto (<span class="math notranslate nohighlight">\(g = 9,81 \, \text{m/s}^2\)</span>).</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-4">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-6">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.5 </span> (Velocità angolare)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.6 </span> (Velocità angolare)</p>
 <div class="section" id="exercise-content">
 <p>Un punto materiale si muove lungo una circonferenza di raggio <span class="math notranslate nohighlight">\(2 \, \text{m}\)</span> con velocità costante <span class="math notranslate nohighlight">\(10 \, \text{m/s}\)</span>. Calcola la sua velocità angolare e l’accelerazione centripeta.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-5">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-7">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.6 </span> (Moto su piano inclinato)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.7 </span> (Moto su piano inclinato)</p>
 <div class="section" id="exercise-content">
 <p>Un blocco di <span class="math notranslate nohighlight">\(5 \, \text{kg}\)</span> scivola senza attrito lungo un piano inclinato di <span class="math notranslate nohighlight">\(30^\circ\)</span>. Calcola l’accelerazione del blocco e la velocità dopo <span class="math notranslate nohighlight">\(4 \, \text{s}\)</span>.</p>
 </div>
@@ -640,37 +666,37 @@ document.write(`
 <hr class="docutils" />
 <div class="section" id="moto-di-sistemi-di-punti-materiali">
 <h2><span class="section-number">12.9.2. </span>Moto di sistemi di punti materiali<a class="headerlink" href="#moto-di-sistemi-di-punti-materiali" title="Permalink to this heading">#</a></h2>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-6">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-8">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.7 </span> (Centro di massa in movimento)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.8 </span> (Centro di massa in movimento)</p>
 <div class="section" id="exercise-content">
 <p>Due masse, <span class="math notranslate nohighlight">\(m_1 = 2 \, \text{kg}\)</span> e <span class="math notranslate nohighlight">\(m_2 = 6 \, \text{kg}\)</span>, si muovono lungo l’asse <span class="math notranslate nohighlight">\(x\)</span> rispettivamente con velocità <span class="math notranslate nohighlight">\(v_1 = 3 \, \text{m/s}\)</span> e <span class="math notranslate nohighlight">\(v_2 = 1 \, \text{m/s}\)</span>. Determina la velocità del centro di massa.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-7">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-9">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.8 </span> (Trazione su una fune)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.9 </span> (Trazione su una fune)</p>
 <div class="section" id="exercise-content">
 <p>Due blocchi, <span class="math notranslate nohighlight">\(m_1 = 10 \, \text{kg}\)</span> e <span class="math notranslate nohighlight">\(m_2 = 5 \, \text{kg}\)</span>, sono collegati da una fune e tirati con una forza di <span class="math notranslate nohighlight">\(60 \, \text{N}\)</span> su una superficie orizzontale priva di attrito. Calcola l’accelerazione del sistema e la tensione nella fune.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-8">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-10">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.9 </span> (Impulso e quantità di moto)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.10 </span> (Impulso e quantità di moto)</p>
 <div class="section" id="exercise-content">
 <p>Un corpo di massa <span class="math notranslate nohighlight">\(3 \, \text{kg}\)</span> si muove con velocità <span class="math notranslate nohighlight">\(4 \, \text{m/s}\)</span>. Una forza costante di <span class="math notranslate nohighlight">\(6 \, \text{N}\)</span> viene applicata per <span class="math notranslate nohighlight">\(5 \, \text{s}\)</span>. Calcola l’impulso ricevuto e la nuova velocità del corpo.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-9">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-11">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.10 </span> (Centro di massa e forze)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.11 </span> (Centro di massa e forze)</p>
 <div class="section" id="exercise-content">
 <p>Un sistema è composto da due blocchi di masse <span class="math notranslate nohighlight">\(m_1 = 5 \, \text{kg}\)</span> e <span class="math notranslate nohighlight">\(m_2 = 10 \, \text{kg}\)</span>. Se al primo blocco è applicata una forza di <span class="math notranslate nohighlight">\(20 \, \text{N}\)</span> verso destra, calcola l’accelerazione del centro di massa.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-10">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-12">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.11 </span> (Sistema in caduta)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.12 </span> (Sistema in caduta)</p>
 <div class="section" id="exercise-content">
 <p>Due blocchi di masse <span class="math notranslate nohighlight">\(m_1 = 8 \, \text{kg}\)</span> e <span class="math notranslate nohighlight">\(m_2 = 12 \, \text{kg}\)</span> sono collegati da una fune che passa su una carrucola. Calcola l’accelerazione del sistema e la tensione nella fune (<span class="math notranslate nohighlight">\(g = 9,81 \, \text{m/s}^2\)</span>).</p>
 </div>
@@ -679,37 +705,37 @@ document.write(`
 <hr class="docutils" />
 <div class="section" id="moto-di-corpi-rigidi-in-2d">
 <h2><span class="section-number">12.9.3. </span>Moto di corpi rigidi in 2D<a class="headerlink" href="#moto-di-corpi-rigidi-in-2d" title="Permalink to this heading">#</a></h2>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-11">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-13">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.12 </span> (Disco in rotazione)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.13 </span> (Disco in rotazione)</p>
 <div class="section" id="exercise-content">
 <p>Un disco di raggio <span class="math notranslate nohighlight">\(0,5 \, \text{m}\)</span> e momento d’inerzia <span class="math notranslate nohighlight">\(I = 0,2 \, \text{kg·m}^2\)</span> è soggetto a un momento torcente costante di <span class="math notranslate nohighlight">\(5 \, \text{N·m}\)</span>. Calcola l’accelerazione angolare e la velocità angolare dopo <span class="math notranslate nohighlight">\(4 \, \text{s}\)</span>.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-12">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-14">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.13 </span> (Asta rotante)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.14 </span> (Asta rotante)</p>
 <div class="section" id="exercise-content">
 <p>Un’asta uniforme di lunghezza <span class="math notranslate nohighlight">\(2,0 \, \text{m}\)</span> e massa <span class="math notranslate nohighlight">\(10 \, \text{kg}\)</span> ruota attorno a un’estremità. Calcola il momento d’inerzia e il momento torcente necessario per darle un’accelerazione angolare di <span class="math notranslate nohighlight">\(3 \, \text{rad/s}^2\)</span>.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-13">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-15">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.14 </span> (Rotolamento di una sfera)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.15 </span> (Rotolamento di una sfera)</p>
 <div class="section" id="exercise-content">
 <p>Una sfera di raggio <span class="math notranslate nohighlight">\(0,2 \, \text{m}\)</span> e massa <span class="math notranslate nohighlight">\(5 \, \text{kg}\)</span> rotola senza scivolare su un piano inclinato. Calcola l’accelerazione della sfera e la forza di attrito necessaria.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-14">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-16">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.15 </span> (Bilanciamento di un’asta)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.16 </span> (Bilanciamento di un’asta)</p>
 <div class="section" id="exercise-content">
 <p>Un’asta di lunghezza <span class="math notranslate nohighlight">\(3,0 \, \text{m}\)</span> e massa <span class="math notranslate nohighlight">\(6 \, \text{kg}\)</span> è appoggiata su due supporti agli estremi. Un peso di <span class="math notranslate nohighlight">\(20 \, \text{N}\)</span> è sospeso a <span class="math notranslate nohighlight">\(1,0 \, \text{m}\)</span> da un’estremità. Calcola le reazioni vincolari.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-15">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-17">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.16 </span> (Energia cinetica rotazionale)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.17 </span> (Energia cinetica rotazionale)</p>
 <div class="section" id="exercise-content">
 <p>Un disco di massa <span class="math notranslate nohighlight">\(4,0 \, \text{kg}\)</span> e raggio <span class="math notranslate nohighlight">\(0,3 \, \text{m}\)</span> ruota con velocità angolare <span class="math notranslate nohighlight">\(10 \, \text{rad/s}\)</span>. Calcola l’energia cinetica totale (traslazionale + rotazionale).</p>
 </div>
@@ -718,37 +744,37 @@ document.write(`
 <hr class="docutils" />
 <div class="section" id="collisioni">
 <h2><span class="section-number">12.9.4. </span>Collisioni<a class="headerlink" href="#collisioni" title="Permalink to this heading">#</a></h2>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-16">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-18">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.17 </span> (Urto elastico)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.18 </span> (Urto elastico)</p>
 <div class="section" id="exercise-content">
 <p>Una massa <span class="math notranslate nohighlight">\(m_1 = 2,0 \, \text{kg}\)</span>, inizialmente ferma, viene urtata da una massa <span class="math notranslate nohighlight">\(m_2 = 1,0 \, \text{kg}\)</span> in moto con velocità <span class="math notranslate nohighlight">\(v_2 = 4,0 \, \text{m/s}\)</span>. Calcola le velocità finali dopo un urto elastico.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-17">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-19">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.18 </span> (Urto completamente anelastico)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.19 </span> (Urto completamente anelastico)</p>
 <div class="section" id="exercise-content">
 <p>Due blocchi di masse <span class="math notranslate nohighlight">\(3,0 \, \text{kg}\)</span> e <span class="math notranslate nohighlight">\(2,0 \, \text{kg}\)</span> si muovono rispettivamente a <span class="math notranslate nohighlight">\(5,0 \, \text{m/s}\)</span> e <span class="math notranslate nohighlight">\(-3,0 \, \text{m/s}\)</span>. Calcola la velocità finale se i due blocchi si uniscono dopo l’urto.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-18">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-20">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.19 </span> (Energia persa nell’urto)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.20 </span> (Energia persa nell’urto)</p>
 <div class="section" id="exercise-content">
 <p>Due sfere di massa uguale <span class="math notranslate nohighlight">\(m = 1,0 \, \text{kg}\)</span> si scontrano frontalmente con velocità iniziali <span class="math notranslate nohighlight">\(2,0 \, \text{m/s}\)</span> e <span class="math notranslate nohighlight">\(-1,0 \, \text{m/s}\)</span>. Determina l’energia cinetica persa nell’urto anelastico.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-19">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-21">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.20 </span> (Urto su un piano inclinato)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.21 </span> (Urto su un piano inclinato)</p>
 <div class="section" id="exercise-content">
 <p>Una pallina di massa <span class="math notranslate nohighlight">\(0,5 \, \text{kg}\)</span> rotola lungo un piano inclinato e colpisce una parete con velocità <span class="math notranslate nohighlight">\(3,0 \, \text{m/s}\)</span>. Se l’urto è elastico, calcola la velocità della pallina dopo l’urto.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-20">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-22">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.21 </span> (Velocità del centro di massa dopo un urto)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.22 </span> (Velocità del centro di massa dopo un urto)</p>
 <div class="section" id="exercise-content">
 <p>Due oggetti, <span class="math notranslate nohighlight">\(m_1 = 4,0 \, \text{kg}\)</span> e <span class="math notranslate nohighlight">\(m_2 = 2,0 \, \text{kg}\)</span>, si muovono verso il centro di massa con velocità opposte. Dopo un urto completamente anelastico, calcola la velocità del sistema.</p>
 </div>
@@ -757,58 +783,58 @@ document.write(`
 <hr class="docutils" />
 <div class="section" id="gravitazione">
 <h2><span class="section-number">12.9.5. </span>Gravitazione<a class="headerlink" href="#gravitazione" title="Permalink to this heading">#</a></h2>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-21">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-23">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.22 </span> (Legge di gravitazione)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.23 </span> (Legge di gravitazione)</p>
 <div class="section" id="exercise-content">
 <p>Due masse <span class="math notranslate nohighlight">\(m_1 = 5,0 \, \text{kg}\)</span> e <span class="math notranslate nohighlight">\(m_2 = 10,0 \, \text{kg}\)</span> si trovano a una distanza di <span class="math notranslate nohighlight">\(2,0 \, \text{m}\)</span>. Calcola la forza gravitazionale che agisce tra di loro (<span class="math notranslate nohighlight">\(G = 6,67 \cdot 10^{-11} \, \text{N·m}^2/\text{kg}^2\)</span>).</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-22">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-24">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.23 </span> (Orbita di un satellite)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.24 </span> (Orbita di un satellite)</p>
 <div class="section" id="exercise-content">
 <p>Un satellite di massa <span class="math notranslate nohighlight">\(1.000 \, \text{kg}\)</span> si trova in un’orbita circolare a <span class="math notranslate nohighlight">\(300 \, \text{km}\)</span> sopra la superficie terrestre. Calcola la velocità orbitale (<span class="math notranslate nohighlight">\(R_T = 6.371 \, \text{km}\)</span>, <span class="math notranslate nohighlight">\(g = 9,81 \, \text{m/s}^2\)</span>).</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-23">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-25">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.24 </span> (Terza legge di Kepler)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.25 </span> (Terza legge di Kepler)</p>
 <div class="section" id="exercise-content">
 <p>Un pianeta ha un’orbita ellittica con un periodo di <span class="math notranslate nohighlight">\(365 \, \text{giorni}\)</span>. Calcola la lunghezza del semi-asse maggiore della sua orbita, se la sua distanza dal Sole è di <span class="math notranslate nohighlight">\(1 \, \text{AU}\)</span> (unità astronomica).</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-24">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-26">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.25 </span> (Forza centripeta in orbita)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.26 </span> (Forza centripeta in orbita)</p>
 <div class="section" id="exercise-content">
 <p>Una navetta spaziale di massa <span class="math notranslate nohighlight">\(500 \, \text{kg}\)</span> è in orbita circolare attorno alla Terra con un raggio di <span class="math notranslate nohighlight">\(500 \, \text{km}\)</span>. Calcola la forza centripeta necessaria per mantenere la navetta in orbita.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-25">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-27">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.26 </span> (Satelliti in orbita geostazionaria)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.27 </span> (Satelliti in orbita geostazionaria)</p>
 <div class="section" id="exercise-content">
 <p>Calcola l’altitudine di un satellite che segue un’orbita geostazionaria, cioè che ha lo stesso periodo della rotazione terrestre (<span class="math notranslate nohighlight">\(T = 24 \, \text{h}\)</span>). Usa <span class="math notranslate nohighlight">\(R_T = 6.371 \, \text{km}\)</span> e <span class="math notranslate nohighlight">\(g = 9,81 \, \text{m/s}^2\)</span>.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-26">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-28">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.27 </span> (Energia potenziale gravitazionale)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.28 </span> (Energia potenziale gravitazionale)</p>
 <div class="section" id="exercise-content">
 <p>Calcola l’energia potenziale gravitazionale di un oggetto di <span class="math notranslate nohighlight">\(2,0 \, \text{kg}\)</span> posto a una distanza di <span class="math notranslate nohighlight">\(10 \, \text{m}\)</span> da un altro oggetto di massa <span class="math notranslate nohighlight">\(5,0 \, \text{kg}\)</span>.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-27">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-29">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.28 </span> (Energia cinetica di un satellite)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.29 </span> (Energia cinetica di un satellite)</p>
 <div class="section" id="exercise-content">
 <p>Un satellite di massa <span class="math notranslate nohighlight">\(3,0 \, \text{kg}\)</span> si muove in orbita circolare con raggio <span class="math notranslate nohighlight">\(1000 \, \text{km}\)</span> e velocità di <span class="math notranslate nohighlight">\(7,5 \, \text{km/s}\)</span>. Calcola la sua energia cinetica.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-28">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-30">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.29 </span> (Periodo di un satellite)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.30 </span> (Periodo di un satellite)</p>
 <div class="section" id="exercise-content">
 <p>Un satellite è in orbita circolare a <span class="math notranslate nohighlight">\(200 \, \text{km}\)</span> sopra la superficie terrestre. Calcola il suo periodo orbitale (<span class="math notranslate nohighlight">\(R_T = 6.371 \, \text{km}\)</span>, <span class="math notranslate nohighlight">\(g = 9,81 \, \text{m/s}^2\)</span>).</p>
 </div>
@@ -817,65 +843,65 @@ document.write(`
 <hr class="docutils" />
 <div class="section" id="equilibrio-e-stabilita">
 <h2><span class="section-number">12.9.6. </span>Equilibrio e Stabilità<a class="headerlink" href="#equilibrio-e-stabilita" title="Permalink to this heading">#</a></h2>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-29">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-31">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.30 </span> (Stabilità di un oggetto)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.31 </span> (Stabilità di un oggetto)</p>
 <div class="section" id="exercise-content">
 <p>Un cubo uniforme di massa <span class="math notranslate nohighlight">\(10 \, \text{kg}\)</span> e lato <span class="math notranslate nohighlight">\(0,5 \, \text{m}\)</span> è appoggiato su un piano inclinato di <span class="math notranslate nohighlight">\(20^\circ\)</span>. Verifica se il cubo rimane stabile o si ribalta.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-30">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-32">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.31 </span> (Momento torcenti in equilibrio)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.32 </span> (Momento torcenti in equilibrio)</p>
 <div class="section" id="exercise-content">
 <p>Un’asta di massa <span class="math notranslate nohighlight">\(5 \, \text{kg}\)</span> e lunghezza <span class="math notranslate nohighlight">\(2 \, \text{m}\)</span> è sospesa a un’estremità. Se un peso di <span class="math notranslate nohighlight">\(30 \, \text{N}\)</span> viene appeso a <span class="math notranslate nohighlight">\(1 \, \text{m}\)</span> dalla base, calcola il momento torcenti necessario per mantenere l’asta in equilibrio.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-31">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-33">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.32 </span> (Centro di massa e stabilità)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.33 </span> (Centro di massa e stabilità)</p>
 <div class="section" id="exercise-content">
 <p>Un oggetto composto da due blocchi di massa <span class="math notranslate nohighlight">\(2 \, \text{kg}\)</span> e <span class="math notranslate nohighlight">\(5 \, \text{kg}\)</span> è posto su un piano inclinato. Determina la posizione del centro di massa e verifica la sua stabilità.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-32">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-34">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.33 </span> (Equilibrio di un corpo galleggiante)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.34 </span> (Equilibrio di un corpo galleggiante)</p>
 <div class="section" id="exercise-content">
 <p>Un oggetto con densità <span class="math notranslate nohighlight">\(800 \, \text{kg/m}^3\)</span> galleggia in un fluido di densità <span class="math notranslate nohighlight">\(1.000 \, \text{kg/m}^3\)</span>. Determina la frazione sommersa dell’oggetto.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-33">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-35">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.34 </span> (Equilibrio di una leva)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.35 </span> (Equilibrio di una leva)</p>
 <div class="section" id="exercise-content">
 <p>Una leva lunga <span class="math notranslate nohighlight">\(3 \, \text{m}\)</span> ha un punto di supporto al centro. A sinistra del supporto, viene applicata una forza di <span class="math notranslate nohighlight">\(100 \, \text{N}\)</span> a <span class="math notranslate nohighlight">\(0,5 \, \text{m}\)</span> dal supporto. Qual è la forza necessaria per mantenere la leva in equilibrio a <span class="math notranslate nohighlight">\(2 \, \text{m}\)</span> dal supporto?</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-34">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-36">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.35 </span> (Stabilità di una torre)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.36 </span> (Stabilità di una torre)</p>
 <div class="section" id="exercise-content">
 <p>Una torre alta <span class="math notranslate nohighlight">\(100 \, \text{m}\)</span> ha una base quadrata di <span class="math notranslate nohighlight">\(10 \, \text{m}\)</span> per lato. Calcola il rapporto tra la base e l’altezza, e discuti la stabilità della torre.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-35">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-37">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.36 </span> (Equilibrio di una trave)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.37 </span> (Equilibrio di una trave)</p>
 <div class="section" id="exercise-content">
 <p>Una trave di <span class="math notranslate nohighlight">\(10 \, \text{m}\)</span> di lunghezza e massa <span class="math notranslate nohighlight">\(20 \, \text{kg}\)</span> è appoggiata su due supporti. Un carico di <span class="math notranslate nohighlight">\(50 \, \text{N}\)</span> è sospeso al centro della trave. Calcola le reazioni ai supporti per mantenere l’equilibrio.</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-36">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-38">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.37 </span> (Momenti di forze in equilibrio)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.38 </span> (Momenti di forze in equilibrio)</p>
 <div class="section" id="exercise-content">
 <p>Un’asta di <span class="math notranslate nohighlight">\(2 \, \text{m}\)</span> è sospesa a un’estremità. Un peso di <span class="math notranslate nohighlight">\(40 \, \text{N}\)</span> è appeso a <span class="math notranslate nohighlight">\(1 \, \text{m}\)</span> dal punto di sospensione. Quale forza orizzontale deve essere applicata all’altro estremo per mantenere l’asta in equilibrio?</p>
 </div>
 </div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-37">
+<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-39">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.38 </span> (Instabilità di un corpo)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 12.39 </span> (Instabilità di un corpo)</p>
 <div class="section" id="exercise-content">
 <p>Un oggetto ha un centro di massa molto alto rispetto alla sua base. Quali sono le condizioni per cui l’oggetto risulta instabile? Discuti in relazione all’altezza e alla posizione del centro di massa.</p>
 </div>

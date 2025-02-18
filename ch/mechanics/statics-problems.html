@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>10.4. Problemi &#8212; Fisica per le superiori</title>
+    <title>10.5. Problemi &#8212; Fisica per le superiori</title>
   
   
   
@@ -72,7 +72,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
     <link rel="next" title="11. Inerzia" href="inertia.html" />
-    <link rel="prev" title="10.3. Statica dei mezzi deformabili" href="statics-fluid.html" />
+    <link rel="prev" title="10.4. Statica dei mezzi deformabili" href="statics-fluid.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -216,15 +216,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="statics.html">10. Statica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="statics-point.html">10.1. Statica del punto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="statics-rigid.html">10.2. Statica di un corpo rigido</a></li>
-<li class="toctree-l2"><a class="reference internal" href="statics-fluid.html">10.3. Statica dei mezzi deformabili</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">10.4. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="statics-composite.html">10.3. Statica di sistemi composti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="statics-fluid.html">10.4. Statica dei mezzi deformabili</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">10.5. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="inertia.html">11. Inerzia</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="inertia-point.html">11.3. Inerzia e grandezze dinamiche di un punto</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inertia-points.html">11.4. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione discreta di massa</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inertia-continuum.html">11.5. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inertia-problems.html">11.6. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inertia-point.html">11.1. Inerzia e grandezze dinamiche di un punto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inertia-points.html">11.2. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione discreta di massa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inertia-continuum.html">11.3. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inertia-problems.html">11.4. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="dynamics.html">12. Dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -351,10 +352,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../modern/intro-experiments.html">26. Esperienze ed esperimenti</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/experiments.html">27. Esperimenti</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/intro-radioactivity.html">28. Radioattività</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modern/intro-coupling.html">29. Fenomeni termo-elettrici nella materia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modern/intro-photography.html">30. Fotografia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/einstein.html">29. Teoria di Einstein</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/quantum.html">30. Meccanica quantistica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/astronomy.html">31. Sviluppi dell’astronomia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/standard.html">32. Introduzione al modello standard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/intro-coupling.html">33. Fenomeni termo-elettrici nella materia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/intro-photography.html">34. Fotografia</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
 <ul class="nav bd-sidenav">
@@ -571,10 +574,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-del-punto-materiale">10.4.1. Statica del punto materiale</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-punti-materiali">10.4.2. Sistemi di punti materiali</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-del-corpo-rigido">10.4.3. Statica del corpo rigido</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miscellanea">10.4.4. Miscellanea</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-del-punto-materiale">10.5.1. Statica del punto materiale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-punti-materiali">10.5.2. Sistemi di punti materiali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-del-corpo-rigido">10.5.3. Statica del corpo rigido</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miscellanea">10.5.4. Miscellanea</a></li>
 </ul>
             </nav>
         </div>
@@ -587,10 +590,10 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="problemi">
-<span id="physics-hs-mechanics-statics-problems"></span><h1><span class="section-number">10.4. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h1>
+<span id="physics-hs-mechanics-statics-problems"></span><h1><span class="section-number">10.5. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h1>
 <p>Questa pagina contiene esercizi di statica suddivisi in quattro categorie: <strong>statica del punto materiale</strong>, <strong>sistemi di punti materiali</strong>, <strong>corpi rigidi</strong>, e una sezione <strong>varia</strong>. Gli esercizi sono progettati per studenti con una buona conoscenza della statica e delle sue applicazioni.</p>
 <div class="section" id="statica-del-punto-materiale">
-<h2><span class="section-number">10.4.1. </span>Statica del punto materiale<a class="headerlink" href="#statica-del-punto-materiale" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">10.5.1. </span>Statica del punto materiale<a class="headerlink" href="#statica-del-punto-materiale" title="Permalink to this heading">#</a></h2>
 <div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-0">
 
 <p class="admonition-title"><span class="caption-number">Exercise 10.1 </span> (Equilibrio di un punto materiale)</p>
@@ -628,7 +631,7 @@ document.write(`
 </div>
 </div>
 <div class="section" id="sistemi-di-punti-materiali">
-<h2><span class="section-number">10.4.2. </span>Sistemi di punti materiali<a class="headerlink" href="#sistemi-di-punti-materiali" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">10.5.2. </span>Sistemi di punti materiali<a class="headerlink" href="#sistemi-di-punti-materiali" title="Permalink to this heading">#</a></h2>
 <div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-5">
 
 <p class="admonition-title"><span class="caption-number">Exercise 10.6 </span> (Centro di massa di due punti)</p>
@@ -666,7 +669,7 @@ document.write(`
 </div>
 </div>
 <div class="section" id="statica-del-corpo-rigido">
-<h2><span class="section-number">10.4.3. </span>Statica del corpo rigido<a class="headerlink" href="#statica-del-corpo-rigido" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">10.5.3. </span>Statica del corpo rigido<a class="headerlink" href="#statica-del-corpo-rigido" title="Permalink to this heading">#</a></h2>
 <div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-10">
 
 <p class="admonition-title"><span class="caption-number">Exercise 10.11 </span> (Bilancia a due bracci)</p>
@@ -704,7 +707,7 @@ document.write(`
 </div>
 </div>
 <div class="section" id="miscellanea">
-<h2><span class="section-number">10.4.4. </span>Miscellanea<a class="headerlink" href="#miscellanea" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">10.5.4. </span>Miscellanea<a class="headerlink" href="#miscellanea" title="Permalink to this heading">#</a></h2>
 <div class="exercise admonition" id="ch/mechanics/statics-problems-exercise-15">
 
 <p class="admonition-title"><span class="caption-number">Exercise 10.16 </span> (Trave con cavo)</p>
@@ -1276,7 +1279,7 @@ Soluzione.<div class="sd-summary-down docutils">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">10.3. </span>Statica dei mezzi deformabili</p>
+        <p class="prev-next-title"><span class="section-number">10.4. </span>Statica dei mezzi deformabili</p>
       </div>
     </a>
     <a class="right-next"
@@ -1303,10 +1306,10 @@ Soluzione.<div class="sd-summary-down docutils">
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-del-punto-materiale">10.4.1. Statica del punto materiale</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-punti-materiali">10.4.2. Sistemi di punti materiali</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-del-corpo-rigido">10.4.3. Statica del corpo rigido</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miscellanea">10.4.4. Miscellanea</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-del-punto-materiale">10.5.1. Statica del punto materiale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-punti-materiali">10.5.2. Sistemi di punti materiali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-del-corpo-rigido">10.5.3. Statica del corpo rigido</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miscellanea">10.5.4. Miscellanea</a></li>
 </ul>
   </nav></div>
 
