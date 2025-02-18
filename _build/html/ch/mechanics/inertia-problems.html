@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>11.6. Problemi &#8212; Fisica per le superiori</title>
+    <title>11.4. Problemi &#8212; Fisica per le superiori</title>
   
   
   
@@ -72,7 +72,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
     <link rel="next" title="12. Dinamica" href="dynamics.html" />
-    <link rel="prev" title="11.5. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa" href="inertia-continuum.html" />
+    <link rel="prev" title="11.3. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa" href="inertia-continuum.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -216,15 +216,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 has-children"><a class="reference internal" href="statics.html">10. Statica</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="statics-point.html">10.1. Statica del punto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="statics-rigid.html">10.2. Statica di un corpo rigido</a></li>
-<li class="toctree-l2"><a class="reference internal" href="statics-fluid.html">10.3. Statica dei mezzi deformabili</a></li>
-<li class="toctree-l2"><a class="reference internal" href="statics-problems.html">10.4. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="statics-composite.html">10.3. Statica di sistemi composti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="statics-fluid.html">10.4. Statica dei mezzi deformabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="statics-problems.html">10.5. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="inertia.html">11. Inerzia</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="inertia-point.html">11.3. Inerzia e grandezze dinamiche di un punto</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inertia-points.html">11.4. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione discreta di massa</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inertia-continuum.html">11.5. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">11.6. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inertia-point.html">11.1. Inerzia e grandezze dinamiche di un punto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inertia-points.html">11.2. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione discreta di massa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inertia-continuum.html">11.3. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">11.4. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="dynamics.html">12. Dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -351,10 +352,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../modern/intro-experiments.html">26. Esperienze ed esperimenti</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/experiments.html">27. Esperimenti</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/intro-radioactivity.html">28. Radioattività</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modern/intro-coupling.html">29. Fenomeni termo-elettrici nella materia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modern/intro-photography.html">30. Fotografia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/einstein.html">29. Teoria di Einstein</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/quantum.html">30. Meccanica quantistica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/astronomy.html">31. Sviluppi dell’astronomia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/standard.html">32. Introduzione al modello standard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/intro-coupling.html">33. Fenomeni termo-elettrici nella materia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modern/intro-photography.html">34. Fotografia</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
 <ul class="nav bd-sidenav">
@@ -571,9 +574,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#punti-materiali">11.6.1. Punti Materiali</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-punti-materiali">11.6.2. Sistemi di Punti Materiali</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-con-distribuzione-continua-di-massa">11.6.3. Sistemi con Distribuzione Continua di Massa</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#punti-materiali">11.4.1. Punti Materiali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-punti-materiali">11.4.2. Sistemi di Punti Materiali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-con-distribuzione-continua-di-massa">11.4.3. Sistemi con Distribuzione Continua di Massa</a></li>
 </ul>
             </nav>
         </div>
@@ -586,11 +589,11 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="problemi">
-<h1><span class="section-number">11.6. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">11.4. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h1>
 <p>Questa pagina contiene esercizi sull’inerzia dei sistemi meccanici, con valutazione dell’impulso, del momento angolare, dell’energia cinetica, e del tensore di inerzia. Gli esercizi riguardano punti materiali, sistemi di punti materiali e distribuzioni di massa continua, con applicazioni del teorema del trasporto di Huygens in alcuni casi.</p>
 <hr class="docutils" />
 <div class="section" id="punti-materiali">
-<h2><span class="section-number">11.6.1. </span>Punti Materiali<a class="headerlink" href="#punti-materiali" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">11.4.1. </span>Punti Materiali<a class="headerlink" href="#punti-materiali" title="Permalink to this heading">#</a></h2>
 <div class="exercise admonition" id="ch/mechanics/inertia-problems-exercise-0">
 
 <p class="admonition-title"><span class="caption-number">Exercise 11.1 </span> (Momento di Inerzia di un Punto)</p>
@@ -629,7 +632,7 @@ document.write(`
 </div>
 <hr class="docutils" />
 <div class="section" id="sistemi-di-punti-materiali">
-<h2><span class="section-number">11.6.2. </span>Sistemi di Punti Materiali<a class="headerlink" href="#sistemi-di-punti-materiali" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">11.4.2. </span>Sistemi di Punti Materiali<a class="headerlink" href="#sistemi-di-punti-materiali" title="Permalink to this heading">#</a></h2>
 <div class="exercise admonition" id="ch/mechanics/inertia-problems-exercise-5">
 
 <p class="admonition-title"><span class="caption-number">Exercise 11.6 </span> (Momento di Inerzia di un Sistema di Punti)</p>
@@ -668,7 +671,7 @@ document.write(`
 </div>
 <hr class="docutils" />
 <div class="section" id="sistemi-con-distribuzione-continua-di-massa">
-<h2><span class="section-number">11.6.3. </span>Sistemi con Distribuzione Continua di Massa<a class="headerlink" href="#sistemi-con-distribuzione-continua-di-massa" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">11.4.3. </span>Sistemi con Distribuzione Continua di Massa<a class="headerlink" href="#sistemi-con-distribuzione-continua-di-massa" title="Permalink to this heading">#</a></h2>
 <div class="exercise admonition" id="ch/mechanics/inertia-problems-exercise-10">
 
 <p class="admonition-title"><span class="caption-number">Exercise 11.11 </span> (Momento di Inerzia di un Disco)</p>
@@ -778,7 +781,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">11.5. </span>Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa</p>
+        <p class="prev-next-title"><span class="section-number">11.3. </span>Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa</p>
       </div>
     </a>
     <a class="right-next"
@@ -805,9 +808,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#punti-materiali">11.6.1. Punti Materiali</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-punti-materiali">11.6.2. Sistemi di Punti Materiali</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-con-distribuzione-continua-di-massa">11.6.3. Sistemi con Distribuzione Continua di Massa</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#punti-materiali">11.4.1. Punti Materiali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-punti-materiali">11.4.2. Sistemi di Punti Materiali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-con-distribuzione-continua-di-massa">11.4.3. Sistemi con Distribuzione Continua di Massa</a></li>
 </ul>
   </nav></div>
 

@@ -10,6 +10,26 @@ Questa pagina contiene esercizi di dinamica relativi a diversi argomenti: **moto
 
 ```
 
+```{exercise} Sistema che scivola su piano inclinato
+:label: point-vs-rigid
+
+Una biglia di massa $m$ e raggio $R$ scivola su un piano inclinato di un angolo $\alpha$ rispetto al piano orizzontale. L'attrito tra il piano e la biglia è approssimabile come nullo, così che la biglia può scivolare sulla superficie del piano.
+
+```
+```{dropdown} Soluzione.
+
+```
+
+```{exercise} Sfera che rotola su piano inclinato
+:label: point-vs-rigid
+
+Una biglia di massa $m$ e raggio $R$ rotola su un piano inclinato di un angolo $\alpha$ rispetto al piano orizzontale. L'attrito statico tra il piano e la biglia è sufficiente da garantire la condizione di puro rotolamento della biglia sul piano, senza scivolamento.
+
+```
+```{dropdown} Soluzione.
+
+```
+
 ---
 
 ## Moto di un punto materiale

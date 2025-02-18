@@ -87,7 +87,7 @@
         
 
 \title{Fisica per le superiori}
-\date{17 feb 2025}
+\date{18 feb 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -1759,7 +1759,7 @@ Il \sphinxstylestrong{tempo} invece può essere definito come la grandezza fisic
 \sphinxAtStartPar
 In meccanica classica, spazio e tempo sono considerati \sphinxstylestrong{indipendentemente entità assolute}%
 \begin{footnote}[1]\sphinxAtStartFootnote
-Questo non è più vero nella \DUrole{xref,myst}{meccanica di Einstein}, teoria compatibile con i fenomeni elettromagnetici e l’evidenza sperimentale che la velocità della luce è finita. Nell’ambito della teoria della relatività di Einstein, spazio e tempo non sono più due entità assolute: due osservatori in moto relativo non concordano sulle misure di lunghezze, di angoli e di intervalli di tempo. Spazio e tempo sono due componenti di un’entità assoluta 4\sphinxhyphen{}dimensionale, lo spazio\sphinxhyphen{}tempo. Potrà sembrare strano, ma così è: è sempre bene ricordarsi che la nostra esperienza quotidiana è abbastanza limitata e di come i nostri sensi possono ingannarci.
+Questo non è più vero nella {\hyperref[\detokenize{ch/modern/einstein:physics-hs-modern-einstein-special}]{\sphinxcrossref{\DUrole{std,std-ref}{meccanica di Einstein}}}}, teoria compatibile con i fenomeni elettromagnetici e l’evidenza sperimentale che la velocità della luce è finita. Nell’ambito della teoria della relatività di Einstein, spazio e tempo non sono più due entità assolute: due osservatori in moto relativo non concordano sulle misure di lunghezze, di angoli e di intervalli di tempo. Spazio e tempo sono due componenti di un’entità assoluta 4\sphinxhyphen{}dimensionale, lo spazio\sphinxhyphen{}tempo. Potrà sembrare strano, ma così è: è sempre bene ricordarsi che la nostra esperienza quotidiana è abbastanza limitata e di come i nostri sensi possono ingannarci.
 %
 \end{footnote}, cioè indipendenti dall’osservatore: due osservatori diversi dotati di strumenti per la misura di distanze, angoli e tempo (accurati e tarati), concordano sulla misura della distanza tra qualsiasi coppia di punti dello spazio, dell’angolo tra qualsiasi coppia di direzioni e di qualsiasi intervallo di tempo. Come discusso nell’esempio {\hyperref[\detokenize{ch/mechanics/kinematics:invariance-space-and-time}]{\sphinxcrossref{Example 8.1}}}, due osservatori che usano sistemi di coordinate diversi possono non concordare sulle coordinate dei punti ma concordano sulle distanze e sugli angoli.
 
@@ -1805,7 +1805,7 @@ In generale, in meccanica classica lo \sphinxstylestrong{stato di un sistema} è
 \end{sphinxadmonition}
 
 \sphinxAtStartPar
-La configurazione di un \sphinxstylestrong{punto} libero nello \sphinxhref{https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic\_geometry/euclidean\_space.html}{spazio euclideo \(E^n\)} (\(n=2\) piano, \(n=3\) spazio) è definita dalla sua posizione nello spazio, tramite un insieme di \(n\) coordinate:
+La configurazione di un \sphinxstylestrong{punto libero} nello \sphinxhref{https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic\_geometry/euclidean\_space.html}{spazio euclideo \(E^n\)} (\(n=2\) piano, \(n=3\) spazio) è definita dalla sua posizione nello spazio, tramite un insieme di \(n\) coordinate:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -1818,7 +1818,7 @@ un punto libero nello spazio ha 3 gradi di libertà (traslazione).
 \end{itemize}
 
 \sphinxAtStartPar
-La configurazione di un \sphinxstylestrong{corpo rigido} è definita dalla posizione di un suo punto nello spazio e dalla sua orientazione:
+La configurazione di un \sphinxstylestrong{corpo rigido libero} è definita dalla posizione di un suo punto nello spazio e dalla sua orientazione:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -3274,10 +3274,10 @@ Un corpo di massa \(2 \, \text{kg}\) scivola senza attrito da un’altezza di \(
 \chapter{Statica}
 \label{\detokenize{ch/mechanics/statics:statica}}\label{\detokenize{ch/mechanics/statics:physics-hs-mechanics-statics}}\label{\detokenize{ch/mechanics/statics::doc}}
 \sphinxAtStartPar
-La statica si occupa dello studio delle condizioni di equilibrio di un sistema, cioè le condizioni in cui un sistema rimane in quiete anche quando soggetto ad {\hyperref[\detokenize{ch/mechanics/actions:physics-hs-mechanics-actions}]{\sphinxcrossref{\DUrole{std,std-ref}{azioni}}}} esterne. Le condizioni di equilibrio dei sistemi sono un caso particolare delle {\hyperref[\detokenize{ch/mechanics/dynamics:physics-hs-mechanics-dynamics}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni della dinamica}}}}, nel caso in cui il sistema sia in quiete e le derivate delle quantità dinamiche nulle.
+La statica si occupa dello studio delle condizioni di equilibrio di un sistema, cioè le condizioni in cui un sistema rimane in quiete anche quando soggetto ad {\hyperref[\detokenize{ch/mechanics/actions:physics-hs-mechanics-actions}]{\sphinxcrossref{\DUrole{std,std-ref}{azioni}}}} esterne. La condizione di equilibrio di un sistema meccanico corrisponde a configurazioni particolari costanti nel tempo. Nelle condizioni di equilibrio quindi le {\hyperref[\detokenize{ch/mechanics/dynamics:physics-hs-mechanics-dynamics}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni della dinamica}}}} si riducono a equazioni algebriche vettoriali che rappresentano \sphinxstylestrong{equilibrio di forze} e \sphinxstylestrong{equilibrio dei momenti} (nel caso di sistemi estesi) esterni agenti su un sistema.
 
 \sphinxAtStartPar
-In generale le condizioni di equilibrio dipendono dalla natural del sistema. Come si vedrà meglio nelle sezioni di questo capitolo,
+In generale le condizioni di equilibrio dipendono dalla natura del sistema. Come si vedrà meglio nelle sezioni di questo capitolo,
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -3359,6 +3359,11 @@ ingranaggi e trasmissioni
 \sphinxstepscope
 
 
+\section{Statica di sistemi composti}
+\label{\detokenize{ch/mechanics/statics-composite:statica-di-sistemi-composti}}\label{\detokenize{ch/mechanics/statics-composite:physics-hs-statics-composite}}\label{\detokenize{ch/mechanics/statics-composite::doc}}
+\sphinxstepscope
+
+
 \section{Statica dei mezzi deformabili}
 \label{\detokenize{ch/mechanics/statics-fluid:statica-dei-mezzi-deformabili}}\label{\detokenize{ch/mechanics/statics-fluid:physics-hs-mechanics-statics-fluid}}\label{\detokenize{ch/mechanics/statics-fluid::doc}}
 \sphinxAtStartPar
@@ -3401,7 +3406,7 @@ Questa pagina contiene esercizi di statica suddivisi in quattro categorie: \sphi
 \subsection{Statica del punto materiale}
 \label{\detokenize{ch/mechanics/statics-problems:statica-del-punto-materiale}}\phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 10.4.1 (Equilibrio di un punto materiale)}
+\begin{sphinxadmonition}{note}{Exercise 10.5.1 (Equilibrio di un punto materiale)}
 
 
 
@@ -3410,7 +3415,7 @@ Un punto materiale è soggetto a due forze: \(F_1 = 20 \, \text{N}\) inclinata d
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 10.4.2 (Forza normale e attrito)}
+\begin{sphinxadmonition}{note}{Exercise 10.5.2 (Forza normale e attrito)}
 
 
 
@@ -3419,7 +3424,7 @@ Un blocco di \(10 \, \text{kg}\) è fermo su un piano inclinato di \(20^\circ\).
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 10.4.3 (Corde in equilibrio)}
+\begin{sphinxadmonition}{note}{Exercise 10.5.3 (Corde in equilibrio)}
 
 
 
@@ -3428,7 +3433,7 @@ Un punto materiale è sospeso mediante due corde: la prima forma un angolo di \(
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 10.4.4 (Equilibrio su un piano inclinato)}
+\begin{sphinxadmonition}{note}{Exercise 10.5.4 (Equilibrio su un piano inclinato)}
 
 
 
@@ -3437,7 +3442,7 @@ Un blocco di massa \(5 \, \text{kg}\) è posizionato su un piano inclinato lisci
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 10.4.5 (Forze in una rete di cavi)}
+\begin{sphinxadmonition}{note}{Exercise 10.5.5 (Forze in una rete di cavi)}
 
 
 
@@ -3449,7 +3454,7 @@ Un palo verticale è tenuto in posizione da due cavi inclinati. Il primo cavo fo
 \subsection{Sistemi di punti materiali}
 \label{\detokenize{ch/mechanics/statics-problems:sistemi-di-punti-materiali}}\phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 10.4.6 (Centro di massa di due punti)}
+\begin{sphinxadmonition}{note}{Exercise 10.5.6 (Centro di massa di due punti)}
 
 
 
@@ -3458,7 +3463,7 @@ Due masse, \(m_1 = 3 \, \text{kg}\) e \(m_2 = 7 \, \text{kg}\), sono posizionate
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 10.4.7 (Equilibrio di un sistema di tre punti)}
+\begin{sphinxadmonition}{note}{Exercise 10.5.7 (Equilibrio di un sistema di tre punti)}
 
 
 
@@ -3467,7 +3472,7 @@ Tre masse, \(m_1 = 2 \, \text{kg}\), \(m_2 = 3 \, \text{kg}\), e \(m_3 = 5 \, \t
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 10.4.8 (Forza risultante su un sistema)}
+\begin{sphinxadmonition}{note}{Exercise 10.5.8 (Forza risultante su un sistema)}
 
 
 
@@ -3476,7 +3481,7 @@ Un sistema è composto da due blocchi, \(m_1 = 10 \, \text{kg}\) e \(m_2 = 15 \,
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 10.4.9 (Forze interne e centro di massa)}
+\begin{sphinxadmonition}{note}{Exercise 10.5.9 (Forze interne e centro di massa)}
 
 
 
@@ -3485,7 +3490,7 @@ Un sistema di tre masse uguali \(m = 2 \, \text{kg}\) si trova nei punti \(A(1, 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 10.4.10 (Centro di massa su un piano inclinato)}
+\begin{sphinxadmonition}{note}{Exercise 10.5.10 (Centro di massa su un piano inclinato)}
 
 
 
@@ -3497,7 +3502,7 @@ Due blocchi di massa \(m_1 = 3 \, \text{kg}\) e \(m_2 = 7 \, \text{kg}\) sono co
 \subsection{Statica del corpo rigido}
 \label{\detokenize{ch/mechanics/statics-problems:statica-del-corpo-rigido}}\phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 10.4.11 (Bilancia a due bracci)}
+\begin{sphinxadmonition}{note}{Exercise 10.5.11 (Bilancia a due bracci)}
 
 
 
@@ -3506,7 +3511,7 @@ Una bilancia a due bracci ha lunghezza totale \(1,2 \, \text{m}\) e il fulcro è
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 10.4.12 (Porta incernierata)}
+\begin{sphinxadmonition}{note}{Exercise 10.5.12 (Porta incernierata)}
 
 
 
@@ -3515,7 +3520,7 @@ Una porta rettangolare larga \(1,0 \, \text{m}\) e alta \(2,0 \, \text{m}\) ha u
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 10.4.13 (Traversa uniformemente caricata)}
+\begin{sphinxadmonition}{note}{Exercise 10.5.13 (Traversa uniformemente caricata)}
 
 
 
@@ -3524,7 +3529,7 @@ Una trave orizzontale lunga \(6,0 \, \text{m}\) e del peso di \(200 \, \text{N}\
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 10.4.14 (Scale in equilibrio)}
+\begin{sphinxadmonition}{note}{Exercise 10.5.14 (Scale in equilibrio)}
 
 
 
@@ -3533,7 +3538,7 @@ Una scala lunga \(5,0 \, \text{m}\) e del peso di \(50 \, \text{N}\) è appoggia
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 10.4.15 (Braccio di leva con peso)}
+\begin{sphinxadmonition}{note}{Exercise 10.5.15 (Braccio di leva con peso)}
 
 
 
@@ -3545,7 +3550,7 @@ Un’asta di \(4,0 \, \text{m}\) è sospesa orizzontalmente su un perno a \(1,0 
 \subsection{Miscellanea}
 \label{\detokenize{ch/mechanics/statics-problems:miscellanea}}\phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-15}
 
-\begin{sphinxadmonition}{note}{Exercise 10.4.16 (Trave con cavo)}
+\begin{sphinxadmonition}{note}{Exercise 10.5.16 (Trave con cavo)}
 
 
 
@@ -3554,7 +3559,7 @@ Una trave lunga \(6,0 \, \text{m}\) e del peso di \(300 \, \text{N}\) è fissata
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-16}
 
-\begin{sphinxadmonition}{note}{Exercise 10.4.17 (Sistema articolato)}
+\begin{sphinxadmonition}{note}{Exercise 10.5.17 (Sistema articolato)}
 
 
 
@@ -3563,7 +3568,7 @@ Una struttura triangolare è composta da tre aste rigide uguali di lunghezza \(2
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-17}
 
-\begin{sphinxadmonition}{note}{Exercise 10.4.18 (Fune con tensione)}
+\begin{sphinxadmonition}{note}{Exercise 10.5.18 (Fune con tensione)}
 
 
 
@@ -3572,7 +3577,7 @@ Una fune orizzontale lunga \(3,0 \, \text{m}\) sostiene un peso di \(50 \, \text
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-18}
 
-\begin{sphinxadmonition}{note}{Exercise 10.4.19 (Struttura con due travi)}
+\begin{sphinxadmonition}{note}{Exercise 10.5.19 (Struttura con due travi)}
 
 
 
@@ -3581,7 +3586,7 @@ Due travi di uguale lunghezza \(L = 4,0 \, \text{m}\) sono connesse ad angolo re
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/statics-problems-exercise-19}
 
-\begin{sphinxadmonition}{note}{Exercise 10.4.20 (Equilibrio di un ponte)}
+\begin{sphinxadmonition}{note}{Exercise 10.5.20 (Equilibrio di un ponte)}
 
 
 
@@ -4069,12 +4074,14 @@ Le due manifestazioni diverse della massa possono essere usate come definizione 
 Dal punto di vista operativo, la massa di un sistema \sphinxhyphen{} quando possibile dal punto di vista pratico \sphinxhyphen{} può essere misurata tramite la sua interazione con un campo di gravitazione noto, tramite una \sphinxstylestrong{bilancia}
 
 
-\section{Massa e distribuzione di massa}
-\label{\detokenize{ch/mechanics/inertia:massa-e-distribuzione-di-massa}}\label{\detokenize{ch/mechanics/inertia:physics-hs-mechanics-inertia-mass-density}}
 
-\section{Quantità dinamiche}
-\label{\detokenize{ch/mechanics/inertia:quantita-dinamiche}}\label{\detokenize{ch/mechanics/inertia:physics-hs-mechanics-inertia-dynamical-quantities}}
 \sphinxAtStartPar
+\sphinxstylestrong{Distribuzione di massa.}
+
+
+
+\sphinxAtStartPar
+\sphinxstylestrong{Quantità dinamiche.}
 Come sarà chiaro nello sviluppo delle {\hyperref[\detokenize{ch/mechanics/dynamics-notes:physics-hs-mechanics-dynamics-eom-points}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni di moto di un sistema}}}}, la definizione di alcune grandezze dinamiche additive risulta naturale, fornendo dei concetti utili e sintetici per la costruzione di un modello e l’interpretazione dei fenomeni fisici.
 
 \sphinxAtStartPar
@@ -4096,8 +4103,6 @@ energia cinetica
 
 \sphinxAtStartPar
 Le {\hyperref[\detokenize{ch/mechanics/dynamics-eom:physics-hs-mechanics-dynamics-eom}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni del moto}}}} dei sistemi rappresentano delle equazioni differenziali che mettono in relazione la variazione di queste quantità dinamiche con la causa di queste variazioni, in generale riconducibile ad {\hyperref[\detokenize{ch/mechanics/actions:physics-hs-mechanics-actions}]{\sphinxcrossref{\DUrole{std,std-ref}{azioni}}}} agenti sul sistema.
-
-\sphinxAtStartPar
 Sotto opportune ipotesi, queste grandezze dinamiche sono costanti del moto, come descritto dalle {\hyperref[\detokenize{ch/mechanics/dynamics-conservation:physics-hs-mechanics-dynamics-conservation}]{\sphinxcrossref{\DUrole{std,std-ref}{leggi di conservazione}}}}.
 
 \sphinxAtStartPar
@@ -4109,86 +4114,20 @@ Le 3 grandezze dinamiche possono avere espressioni diverse, a seconda del sistem
 
 \sphinxstepscope
 
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-p-0}
-\begin{sphinxuseclass}{sd-mt-2}
-\begin{sphinxuseclass}{sd-mb-4}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-gx-2}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-row-cols-xs-2}
-\begin{sphinxuseclass}{sd-row-cols-sm-3}
-\begin{sphinxuseclass}{sd-row-cols-md-3}
-\begin{sphinxuseclass}{sd-row-cols-lg-3}
-\begin{sphinxuseclass}{sd-gx-3}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-basics
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-17 feb 2025
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-0 min read
-
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
 
 \section{Inerzia e grandezze dinamiche di un punto}
-\label{\detokenize{ch/mechanics/inertia-point:inerzia-e-grandezze-dinamiche-di-un-punto}}\label{\detokenize{ch/mechanics/inertia-point::doc}}\begin{equation*}
+\label{\detokenize{ch/mechanics/inertia-point:inerzia-e-grandezze-dinamiche-di-un-punto}}\label{\detokenize{ch/mechanics/inertia-point:physics-hs-mechanics-inertia-point}}\label{\detokenize{ch/mechanics/inertia-point::doc}}
+
+\subsection{Inerzia}
+\label{\detokenize{ch/mechanics/inertia-point:inerzia}}\label{\detokenize{ch/mechanics/inertia-point:physics-hs-mechanics-inertia-point-inertia}}
+\sphinxAtStartPar
+Il modello di corpo puntiforme risulta un buon modello per corpi di estensione ridotta, per i quali le rotazioni sono nulle o il cui effetto è trascurabile rispetto alla traslazione (vedi esempio \hyperref[\detokenize{ch/mechanics/dynamics-problems:point-vs-rigid}]{Exercise \ref{\detokenize{ch/mechanics/dynamics-problems:point-vs-rigid}}}) e per i quali si può quindi trascurare il dettaglio della distribuzione di massa.
+
+
+\subsection{Grandezze dinamiche}
+\label{\detokenize{ch/mechanics/inertia-point:grandezze-dinamiche}}\label{\detokenize{ch/mechanics/inertia-point:physics-hs-mechanics-inertia-point-dynamical-quantities}}\begin{equation*}
 \begin{split}\begin{aligned}
   \vec{Q}_P     & = m_P \, \vec{v}_P \\
   \vec{L}_{P,H} & = m_P \, (P - H) \times \vec{v}_P \\
@@ -4197,86 +4136,17 @@ basics
 \end{equation*}
 \sphinxstepscope
 
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-p-0}
-\begin{sphinxuseclass}{sd-mt-2}
-\begin{sphinxuseclass}{sd-mb-4}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-gx-2}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-row-cols-xs-2}
-\begin{sphinxuseclass}{sd-row-cols-sm-3}
-\begin{sphinxuseclass}{sd-row-cols-md-3}
-\begin{sphinxuseclass}{sd-row-cols-lg-3}
-\begin{sphinxuseclass}{sd-gx-3}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-basics
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-17 feb 2025
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-0 min read
-
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
 
 \section{Inerzia e grandezze dinamiche di un sistema esteso con distribuzione discreta di massa}
-\label{\detokenize{ch/mechanics/inertia-points:inerzia-e-grandezze-dinamiche-di-un-sistema-esteso-con-distribuzione-discreta-di-massa}}\label{\detokenize{ch/mechanics/inertia-points::doc}}\begin{equation*}
+\label{\detokenize{ch/mechanics/inertia-points:inerzia-e-grandezze-dinamiche-di-un-sistema-esteso-con-distribuzione-discreta-di-massa}}\label{\detokenize{ch/mechanics/inertia-points:physics-hs-mechanics-inertia-points}}\label{\detokenize{ch/mechanics/inertia-points::doc}}
+
+\subsection{Inerzia}
+\label{\detokenize{ch/mechanics/inertia-points:inerzia}}\label{\detokenize{ch/mechanics/inertia-points:physics-hs-mechanics-inertia-points-inertia}}
+
+\subsection{Grandezze dinamiche}
+\label{\detokenize{ch/mechanics/inertia-points:grandezze-dinamiche}}\label{\detokenize{ch/mechanics/inertia-points:physics-hs-mechanics-inertia-points-dynamical-quantities}}\begin{equation*}
 \begin{split}\begin{aligned}
   \vec{Q}       = \sum_i \vec{Q}_i     & = \sum_i  m_i \, \vec{v}_i \\
   \vec{L}_{H}   = \sum_i \vec{L}_{i,H} & = \sum_i  m_i \, (P_i - H) \times \vec{v}_i \\
@@ -4353,89 +4223,42 @@ con
 \end{equation*}
 \sphinxstepscope
 
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-p-0}
-\begin{sphinxuseclass}{sd-mt-2}
-\begin{sphinxuseclass}{sd-mb-4}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-gx-2}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-row-cols-xs-2}
-\begin{sphinxuseclass}{sd-row-cols-sm-3}
-\begin{sphinxuseclass}{sd-row-cols-md-3}
-\begin{sphinxuseclass}{sd-row-cols-lg-3}
-\begin{sphinxuseclass}{sd-gx-3}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-basics
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-17 feb 2025
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-0 min read
-
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
 
 \section{Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa}
-\label{\detokenize{ch/mechanics/inertia-continuum:inerzia-e-grandezze-dinamiche-di-un-sistema-esteso-con-distribuzione-continua-di-massa}}\label{\detokenize{ch/mechanics/inertia-continuum::doc}}
+\label{\detokenize{ch/mechanics/inertia-continuum:inerzia-e-grandezze-dinamiche-di-un-sistema-esteso-con-distribuzione-continua-di-massa}}\label{\detokenize{ch/mechanics/inertia-continuum:physics-hs-mechanics-inertia-continuum}}\label{\detokenize{ch/mechanics/inertia-continuum::doc}}
 
 \subsection{Sistemi rigidi}
-\label{\detokenize{ch/mechanics/inertia-continuum:sistemi-rigidi}}
+\label{\detokenize{ch/mechanics/inertia-continuum:sistemi-rigidi}}\label{\detokenize{ch/mechanics/inertia-continuum:physics-hs-mechanics-inertia-continuum-rigid}}\label{ch/mechanics/inertia-continuum:inertia-disk}
+\begin{sphinxadmonition}{note}{Example 11.3.1 (Inerzia di un disco uniforme)}
+
+
+
+\sphinxAtStartPar
+Un disco di massa \(m\) ha inerzia alla rotazione
+\begin{equation*}
+\begin{split}I = \int_S \sigma \left( x^2 + y^2 \right) = \int_{\theta=0}^{2\pi} \int_{r=0}^{R} \sigma r^2 \, r \, dr \, d\theta = 2 \pi \sigma \frac{R^4}{4} = \frac{1}{2} \pi \sigma R^4 = \frac{1}{2} m R^2 \ . \end{split}
+\end{equation*}\begin{equation*}
+\begin{split}m = \int_S \sigma = \int_{\theta = 0}^{2 \pi} \int_{r=0}^{R} \sigma \, r \, dr \, d\theta = 2 \pi \sigma \frac{R^2}{2} = \pi \sigma R^2 \ ,\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\sigma = \frac{m}{\pi R^2} \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/mechanics/inertia-continuum:inertia-ring}
+\begin{sphinxadmonition}{note}{Example 11.3.2 (Inerzia di un anello uniforme)}
+
+
+
+\sphinxAtStartPar
+Un anello di massa \(m\) ha inerzia alla rotazione
+\begin{equation*}
+\begin{split}I = \oint_C \mu \left( x^2 + y^2 \right) = \int_{\theta=0}^{2\pi}  \mu R^2 \, R \, d\theta = 2 \pi \mu R^3 = m R^2 \ . \end{split}
+\end{equation*}\begin{equation*}
+\begin{split}m = \oint_C \mu = \int_{\theta = 0}^{2 \pi} \mu \, R \, d\theta = 2 \pi \mu R \end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\mu = \frac{m}{2 \pi R} \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+
 \sphinxstepscope
 
 
@@ -4452,7 +4275,7 @@ Questa pagina contiene esercizi sull’inerzia dei sistemi meccanici, con valuta
 \subsection{Punti Materiali}
 \label{\detokenize{ch/mechanics/inertia-problems:punti-materiali}}\phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 11.6.1 (Momento di Inerzia di un Punto)}
+\begin{sphinxadmonition}{note}{Exercise 11.4.1 (Momento di Inerzia di un Punto)}
 
 
 
@@ -4461,7 +4284,7 @@ Un punto materiale di massa \(m = 5 \, \text{kg}\) si trova a una distanza \(r =
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 11.6.2 (Energia Cinetica di un Punto in Rotazione)}
+\begin{sphinxadmonition}{note}{Exercise 11.4.2 (Energia Cinetica di un Punto in Rotazione)}
 
 
 
@@ -4470,7 +4293,7 @@ Un punto materiale di massa \(m = 5 \, \text{kg}\) è in rotazione attorno a un 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 11.6.3 (Impulso e Momento Angolare di un Punto)}
+\begin{sphinxadmonition}{note}{Exercise 11.4.3 (Impulso e Momento Angolare di un Punto)}
 
 
 
@@ -4479,7 +4302,7 @@ Un punto materiale di massa \(m = 3 \, \text{kg}\) si muove lungo una traiettori
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 11.6.4 (Legge di Conservazione del Momento Angolare)}
+\begin{sphinxadmonition}{note}{Exercise 11.4.4 (Legge di Conservazione del Momento Angolare)}
 
 
 
@@ -4488,7 +4311,7 @@ Un corpo di massa \(m = 2 \, \text{kg}\) ruota con velocità angolare \(\omega_1
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 11.6.5 (Energia Cinetica e Momento Angolare)}
+\begin{sphinxadmonition}{note}{Exercise 11.4.5 (Energia Cinetica e Momento Angolare)}
 
 
 
@@ -4504,7 +4327,7 @@ Un punto materiale di massa \(m = 2 \, \text{kg}\) ruota attorno a un asse con v
 \subsection{Sistemi di Punti Materiali}
 \label{\detokenize{ch/mechanics/inertia-problems:sistemi-di-punti-materiali}}\phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 11.6.6 (Momento di Inerzia di un Sistema di Punti)}
+\begin{sphinxadmonition}{note}{Exercise 11.4.6 (Momento di Inerzia di un Sistema di Punti)}
 
 
 
@@ -4513,7 +4336,7 @@ Tre masse, \(m_1 = 2 \, \text{kg}\), \(m_2 = 3 \, \text{kg}\), e \(m_3 = 4 \, \t
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 11.6.7 (Momento Angolare di un Sistema di Punti)}
+\begin{sphinxadmonition}{note}{Exercise 11.4.7 (Momento Angolare di un Sistema di Punti)}
 
 
 
@@ -4522,7 +4345,7 @@ Un sistema di tre masse, \(m_1 = 1 \, \text{kg}\), \(m_2 = 2 \, \text{kg}\), e \
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 11.6.8 (Energia Cinetica di un Sistema di Punti)}
+\begin{sphinxadmonition}{note}{Exercise 11.4.8 (Energia Cinetica di un Sistema di Punti)}
 
 
 
@@ -4531,7 +4354,7 @@ Un sistema di 4 masse, disposte lungo un’asse \(x\), ha masse \(m_1 = 2 \, \te
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 11.6.9 (Momento di Inerzia di un Sistema di Punti in Movimento)}
+\begin{sphinxadmonition}{note}{Exercise 11.4.9 (Momento di Inerzia di un Sistema di Punti in Movimento)}
 
 
 
@@ -4540,7 +4363,7 @@ Un sistema di masse \(m_1 = 3 \, \text{kg}\) e \(m_2 = 4 \, \text{kg}\) si muovo
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 11.6.10 (Teorema del Trasporto di Huygens)}
+\begin{sphinxadmonition}{note}{Exercise 11.4.10 (Teorema del Trasporto di Huygens)}
 
 
 
@@ -4556,7 +4379,7 @@ Un sistema di punti materiali con masse \(m_1 = 2 \, \text{kg}\), \(m_2 = 3 \, \
 \subsection{Sistemi con Distribuzione Continua di Massa}
 \label{\detokenize{ch/mechanics/inertia-problems:sistemi-con-distribuzione-continua-di-massa}}\phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 11.6.11 (Momento di Inerzia di un Disco)}
+\begin{sphinxadmonition}{note}{Exercise 11.4.11 (Momento di Inerzia di un Disco)}
 
 
 
@@ -4565,7 +4388,7 @@ Calcola il momento di inerzia di un disco di massa \(m = 10 \, \text{kg}\) e rag
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 11.6.12 (Energia Cinetica di un Disco in Rotazione)}
+\begin{sphinxadmonition}{note}{Exercise 11.4.12 (Energia Cinetica di un Disco in Rotazione)}
 
 
 
@@ -4574,7 +4397,7 @@ Un disco di massa \(m = 8 \, \text{kg}\) e raggio \(R = 4 \, \text{m}\) ruota co
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 11.6.13 (Momento Angolare di un Corpo Rigido)}
+\begin{sphinxadmonition}{note}{Exercise 11.4.13 (Momento Angolare di un Corpo Rigido)}
 
 
 
@@ -4583,7 +4406,7 @@ Un corpo rigido ruota attorno a un asse con velocità angolare \(\omega = 4 \, \
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 11.6.14 (Energia Cinetica di un Corpo Rigido in Rotazione e Traslazione)}
+\begin{sphinxadmonition}{note}{Exercise 11.4.14 (Energia Cinetica di un Corpo Rigido in Rotazione e Traslazione)}
 
 
 
@@ -4592,7 +4415,7 @@ Un corpo rigido di massa \(m = 5 \, \text{kg}\) e raggio \(r = 3 \, \text{m}\) s
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 11.6.15 (Momento di Inerzia di una Barra)}
+\begin{sphinxadmonition}{note}{Exercise 11.4.15 (Momento di Inerzia di una Barra)}
 
 
 
@@ -4601,7 +4424,7 @@ Calcola il momento di inerzia di una barra di lunghezza \(L = 2 \, \text{m}\) e 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-15}
 
-\begin{sphinxadmonition}{note}{Exercise 11.6.16 (Energia Cinetica di una Barra in Rotazione)}
+\begin{sphinxadmonition}{note}{Exercise 11.4.16 (Energia Cinetica di una Barra in Rotazione)}
 
 
 
@@ -4610,7 +4433,7 @@ Una barra di massa \(m = 3 \, \text{kg}\) e lunghezza \(L = 2 \, \text{m}\) ruot
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-16}
 
-\begin{sphinxadmonition}{note}{Exercise 11.6.17 (Momento di Inerzia di un Solido)}
+\begin{sphinxadmonition}{note}{Exercise 11.4.17 (Momento di Inerzia di un Solido)}
 
 
 
@@ -4619,7 +4442,7 @@ Calcola il momento di inerzia di un cilindro solido di massa \(m = 12 \, \text{k
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-17}
 
-\begin{sphinxadmonition}{note}{Exercise 11.6.18 (Teorema del Trasporto di Huygens Applicato a un Solido)}
+\begin{sphinxadmonition}{note}{Exercise 11.4.18 (Teorema del Trasporto di Huygens Applicato a un Solido)}
 
 
 
@@ -4628,7 +4451,7 @@ Un cilindro solido ruota con velocità angolare \(\omega = 4 \, \text{rad/s}\) a
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-18}
 
-\begin{sphinxadmonition}{note}{Exercise 11.6.19 (Momento di Inerzia di un Solido Sottile)}
+\begin{sphinxadmonition}{note}{Exercise 11.4.19 (Momento di Inerzia di un Solido Sottile)}
 
 
 
@@ -4637,7 +4460,7 @@ Un oggetto sottile e rigido di massa \(m = 6 \, \text{kg}\) e lunghezza \(L = 3 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/mechanics/inertia-problems-exercise-19}
 
-\begin{sphinxadmonition}{note}{Exercise 11.6.20 (Energia Cinetica di un Corpo Rotante)}
+\begin{sphinxadmonition}{note}{Exercise 11.4.20 (Energia Cinetica di un Corpo Rotante)}
 
 
 
@@ -4747,24 +4570,28 @@ E” possibile dare una definizione operativa di osservatore inerziale (o sistem
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-l’osservatore sia dotato di uno strumento in grado di misurare le forze e i momenti ai quali è soggetto (\sphinxstylestrong{todo} ad esempio una bilancia o una combinazione di dinamometri)
+l’osservatore sia dotato di uno strumento in grado di misurare le forze e i momenti ai quali è soggetto (sensore a 6\sphinxhyphen{}assi, per misurare forze e momenti); in maniera equivalente, l’osservatore può disporre di più sensori di forza a 3 assi disposti in diversi punti dello spazio;
 
 \item {} 
 \sphinxAtStartPar
-sia possibile conoscere le azioni «vere» (\sphinxstylestrong{todo} fare riferimento alle forze «vere» note: gravitazione \sphinxhyphen{} che in meccanica classica è una forza \sphinxhyphen{}, elettromagnetica, nucleare forte e debole; o le loro manifestazioni macroscopiche come ad esempio forze di contatto) agenti sul sistema.
+sia possibile conoscere le azioni «vere» agenti sul sistema, di natura gravitazionale o elettromagnetica sottoforma di azioni di contatto, come presentato nell’introduzione alle {\hyperref[\detokenize{ch/mechanics/actions:physics-hs-mechanics-actions}]{\sphinxcrossref{\DUrole{std,std-ref}{azioni in meccanica classica}}}}
 
 \end{itemize}
+\label{ch/mechanics/dynamics-principles:inertial-observer}
+\begin{sphinxadmonition}{note}{Definition 12.1.1 (Osservatore inerziale)}
+
+
 
 \sphinxAtStartPar
-\sphinxstylestrong{Definizione.}
 Un osservatore è inerziale se la lettura degli strumenti di misura in suo possesso corrisponde alle azioni «vere» agenti sul sistema. In particolare, in assenza di azioni nette gli strumenti restituiscono una misura nulla.
-\label{ch/mechanics/dynamics-principles:example-0}
+\end{sphinxadmonition}
+\label{ch/mechanics/dynamics-principles:example-1}
 \begin{sphinxadmonition}{note}{Example 12.1.1 (Sistemi inerziali, azioni vere e relatività generale)}
 
 
 
 \sphinxAtStartPar
-Esperimento mentale di A.Einstein dell’ascensore senza finestre come esperimento mentale introduttivo alla \DUrole{xref,myst}{relatività generale}.
+Esperimento mentale di A.Einstein dell’ascensore senza finestre come esperimento mentale introduttivo alla {\hyperref[\detokenize{ch/modern/einstein:physics-hs-modern-einstein-general}]{\sphinxcrossref{\DUrole{std,std-ref}{relatività generale}}}}.
 \end{sphinxadmonition}
 
 \sphinxAtStartPar
@@ -4879,83 +4706,8 @@ In particolare, per moti regolari e derivabili (e quindi senza urti impulsivi) l
 
 \sphinxstepscope
 
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-p-0}
-\begin{sphinxuseclass}{sd-mt-2}
-\begin{sphinxuseclass}{sd-mb-4}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-gx-2}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-row-cols-2}
-\begin{sphinxuseclass}{sd-row-cols-xs-2}
-\begin{sphinxuseclass}{sd-row-cols-sm-3}
-\begin{sphinxuseclass}{sd-row-cols-md-3}
-\begin{sphinxuseclass}{sd-row-cols-lg-3}
-\begin{sphinxuseclass}{sd-gx-3}
-\begin{sphinxuseclass}{sd-gy-1}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-basics
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-17 feb 2025
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-col-auto}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-align-minor-center}
-\sphinxAtStartPar
-1 min read
-
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
 
 \section{Leggi di conservazione}
 \label{\detokenize{ch/mechanics/dynamics-conservation:leggi-di-conservazione}}\label{\detokenize{ch/mechanics/dynamics-conservation:physics-hs-mechanics-dynamics-conservation}}\label{\detokenize{ch/mechanics/dynamics-conservation::doc}}
@@ -5001,9 +4753,16 @@ L’equazione di bilancio dell’energia cinetica di un sistema chiuso garantisc
 \end{split}
 \end{equation*}
 \sphinxAtStartPar
-\sphinxstylestrong{Conservazione del momento dell’energia meccanica.} Se le azioni agenti su un sistema sono conservative, la loro potenza può essere scritta come derivata nel tempo di un’energia potenziale, \(P^{tot} = - \dot{V}\). Se si definisce \sphinxstylestrong{energia meccanica} la somma dell’energia cinetica del sistema e dell’energia potenziale delle azioni agenti sul sistema, \(E^{mec} := K + V\), segue immediatamente che, in assenza di azioni non\sphinxhyphen{}conservative l’energia meccanica di un sistema è costante,
+\sphinxstylestrong{Conservazione dell’energia meccanica.} Se in un sistema agiscono solo {\hyperref[\detokenize{ch/mechanics/actions-conservative:physics-hs-mechanics-actions-conservative}]{\sphinxcrossref{\DUrole{std,std-ref}{azioni conservative}}}} \sphinxhyphen{} sia azioni interne sia azioni esterne \sphinxhyphen{}, è valida la conservazione dell’energia meccanica.
+La potenza delle azioni conservative può essere scritta come derivata nel tempo di una funnzione energia potenziale, \(P^{tot} = - \dot{V}\).
+Definendo l”\sphinxstylestrong{energia meccanica} come la somma dell’energia cinetica del sistema e dell’energia potenziale,
 \begin{equation*}
-\begin{split}P^{tot} = - \dot{V} \qquad \rightarrow \qquad E^{mec} = \text{const.}\end{split}
+\begin{split}E^{mec} := K + V \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+segue immediatamente che, in assenza di azioni non\sphinxhyphen{}conservative l’energia meccanica di un sistema è costante,
+\begin{equation*}
+\begin{split}\dot{K} = P^{tot} = - \dot{V} \quad \rightarrow \quad \dfrac{d}{dt} \left( K + V \right) = 0 \quad \rightarrow \quad E^{mec} = \text{const.}\end{split}
 \end{equation*}
 \sphinxstepscope
 
@@ -6744,6 +6503,16 @@ Questa pagina contiene esercizi di dinamica relativi a diversi argomenti: \sphin
 
 
 \end{sphinxadmonition}
+\phantomsection \label{exercise:point-vs-rigid}
+
+\begin{sphinxadmonition}{note}{Exercise 12.9.2}
+
+
+
+\sphinxAtStartPar
+Una biglia di massa \(m\) e raggio \(R\) rotola su un piano inclinato
+\end{sphinxadmonition}
+\subsubsection*{Soluzione.}
 
 
 \bigskip\hrule\bigskip
@@ -6751,45 +6520,45 @@ Questa pagina contiene esercizi di dinamica relativi a diversi argomenti: \sphin
 
 
 \subsection{Moto di un punto materiale}
-\label{\detokenize{ch/mechanics/dynamics-problems:moto-di-un-punto-materiale}}\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-1}
+\label{\detokenize{ch/mechanics/dynamics-problems:moto-di-un-punto-materiale}}\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.2 (Accelerazione costante)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.3 (Accelerazione costante)}
 
 
 
 \sphinxAtStartPar
 Un punto materiale parte da fermo e si muove con un’accelerazione costante di \(2 \, \text{m/s}^2\). Calcola lo spazio percorso dopo \(10 \, \text{s}\) e la velocità finale.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-2}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.3 (Moto uniformemente accelerato)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.4 (Moto uniformemente accelerato)}
 
 
 
 \sphinxAtStartPar
 Un’auto si muove inizialmente a \(20 \, \text{m/s}\). Dopo \(5 \, \text{s}\), la velocità è aumentata a \(40 \, \text{m/s}\). Calcola l’accelerazione e lo spazio percorso in questo intervallo.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-3}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.4 (Caduta libera)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.5 (Caduta libera)}
 
 
 
 \sphinxAtStartPar
 Un oggetto viene lasciato cadere da un’altezza di \(80 \, \text{m}\). Calcola il tempo impiegato per raggiungere il suolo e la velocità al momento dell’impatto (\(g = 9,81 \, \text{m/s}^2\)).
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-4}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.5 (Velocità angolare)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.6 (Velocità angolare)}
 
 
 
 \sphinxAtStartPar
 Un punto materiale si muove lungo una circonferenza di raggio \(2 \, \text{m}\) con velocità costante \(10 \, \text{m/s}\). Calcola la sua velocità angolare e l’accelerazione centripeta.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-5}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.6 (Moto su piano inclinato)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.7 (Moto su piano inclinato)}
 
 
 
@@ -6803,45 +6572,45 @@ Un blocco di \(5 \, \text{kg}\) scivola senza attrito lungo un piano inclinato d
 
 
 \subsection{Moto di sistemi di punti materiali}
-\label{\detokenize{ch/mechanics/dynamics-problems:moto-di-sistemi-di-punti-materiali}}\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-6}
+\label{\detokenize{ch/mechanics/dynamics-problems:moto-di-sistemi-di-punti-materiali}}\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.7 (Centro di massa in movimento)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.8 (Centro di massa in movimento)}
 
 
 
 \sphinxAtStartPar
 Due masse, \(m_1 = 2 \, \text{kg}\) e \(m_2 = 6 \, \text{kg}\), si muovono lungo l’asse \(x\) rispettivamente con velocità \(v_1 = 3 \, \text{m/s}\) e \(v_2 = 1 \, \text{m/s}\). Determina la velocità del centro di massa.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-7}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.8 (Trazione su una fune)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.9 (Trazione su una fune)}
 
 
 
 \sphinxAtStartPar
 Due blocchi, \(m_1 = 10 \, \text{kg}\) e \(m_2 = 5 \, \text{kg}\), sono collegati da una fune e tirati con una forza di \(60 \, \text{N}\) su una superficie orizzontale priva di attrito. Calcola l’accelerazione del sistema e la tensione nella fune.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-8}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.9 (Impulso e quantità di moto)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.10 (Impulso e quantità di moto)}
 
 
 
 \sphinxAtStartPar
 Un corpo di massa \(3 \, \text{kg}\) si muove con velocità \(4 \, \text{m/s}\). Una forza costante di \(6 \, \text{N}\) viene applicata per \(5 \, \text{s}\). Calcola l’impulso ricevuto e la nuova velocità del corpo.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-9}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.10 (Centro di massa e forze)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.11 (Centro di massa e forze)}
 
 
 
 \sphinxAtStartPar
 Un sistema è composto da due blocchi di masse \(m_1 = 5 \, \text{kg}\) e \(m_2 = 10 \, \text{kg}\). Se al primo blocco è applicata una forza di \(20 \, \text{N}\) verso destra, calcola l’accelerazione del centro di massa.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-10}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.11 (Sistema in caduta)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.12 (Sistema in caduta)}
 
 
 
@@ -6855,45 +6624,45 @@ Due blocchi di masse \(m_1 = 8 \, \text{kg}\) e \(m_2 = 12 \, \text{kg}\) sono c
 
 
 \subsection{Moto di corpi rigidi in 2D}
-\label{\detokenize{ch/mechanics/dynamics-problems:moto-di-corpi-rigidi-in-2d}}\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-11}
+\label{\detokenize{ch/mechanics/dynamics-problems:moto-di-corpi-rigidi-in-2d}}\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.12 (Disco in rotazione)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.13 (Disco in rotazione)}
 
 
 
 \sphinxAtStartPar
 Un disco di raggio \(0,5 \, \text{m}\) e momento d’inerzia \(I = 0,2 \, \text{kg·m}^2\) è soggetto a un momento torcente costante di \(5 \, \text{N·m}\). Calcola l’accelerazione angolare e la velocità angolare dopo \(4 \, \text{s}\).
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-12}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.13 (Asta rotante)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.14 (Asta rotante)}
 
 
 
 \sphinxAtStartPar
 Un’asta uniforme di lunghezza \(2,0 \, \text{m}\) e massa \(10 \, \text{kg}\) ruota attorno a un’estremità. Calcola il momento d’inerzia e il momento torcente necessario per darle un’accelerazione angolare di \(3 \, \text{rad/s}^2\).
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-13}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.14 (Rotolamento di una sfera)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.15 (Rotolamento di una sfera)}
 
 
 
 \sphinxAtStartPar
 Una sfera di raggio \(0,2 \, \text{m}\) e massa \(5 \, \text{kg}\) rotola senza scivolare su un piano inclinato. Calcola l’accelerazione della sfera e la forza di attrito necessaria.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-14}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-15}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.15 (Bilanciamento di un’asta)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.16 (Bilanciamento di un’asta)}
 
 
 
 \sphinxAtStartPar
 Un’asta di lunghezza \(3,0 \, \text{m}\) e massa \(6 \, \text{kg}\) è appoggiata su due supporti agli estremi. Un peso di \(20 \, \text{N}\) è sospeso a \(1,0 \, \text{m}\) da un’estremità. Calcola le reazioni vincolari.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-15}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-16}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.16 (Energia cinetica rotazionale)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.17 (Energia cinetica rotazionale)}
 
 
 
@@ -6907,45 +6676,45 @@ Un disco di massa \(4,0 \, \text{kg}\) e raggio \(0,3 \, \text{m}\) ruota con ve
 
 
 \subsection{Collisioni}
-\label{\detokenize{ch/mechanics/dynamics-problems:collisioni}}\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-16}
+\label{\detokenize{ch/mechanics/dynamics-problems:collisioni}}\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-17}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.17 (Urto elastico)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.18 (Urto elastico)}
 
 
 
 \sphinxAtStartPar
 Una massa \(m_1 = 2,0 \, \text{kg}\), inizialmente ferma, viene urtata da una massa \(m_2 = 1,0 \, \text{kg}\) in moto con velocità \(v_2 = 4,0 \, \text{m/s}\). Calcola le velocità finali dopo un urto elastico.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-17}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-18}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.18 (Urto completamente anelastico)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.19 (Urto completamente anelastico)}
 
 
 
 \sphinxAtStartPar
 Due blocchi di masse \(3,0 \, \text{kg}\) e \(2,0 \, \text{kg}\) si muovono rispettivamente a \(5,0 \, \text{m/s}\) e \(-3,0 \, \text{m/s}\). Calcola la velocità finale se i due blocchi si uniscono dopo l’urto.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-18}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-19}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.19 (Energia persa nell’urto)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.20 (Energia persa nell’urto)}
 
 
 
 \sphinxAtStartPar
 Due sfere di massa uguale \(m = 1,0 \, \text{kg}\) si scontrano frontalmente con velocità iniziali \(2,0 \, \text{m/s}\) e \(-1,0 \, \text{m/s}\). Determina l’energia cinetica persa nell’urto anelastico.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-19}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-20}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.20 (Urto su un piano inclinato)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.21 (Urto su un piano inclinato)}
 
 
 
 \sphinxAtStartPar
 Una pallina di massa \(0,5 \, \text{kg}\) rotola lungo un piano inclinato e colpisce una parete con velocità \(3,0 \, \text{m/s}\). Se l’urto è elastico, calcola la velocità della pallina dopo l’urto.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-20}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-21}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.21 (Velocità del centro di massa dopo un urto)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.22 (Velocità del centro di massa dopo un urto)}
 
 
 
@@ -6959,72 +6728,72 @@ Due oggetti, \(m_1 = 4,0 \, \text{kg}\) e \(m_2 = 2,0 \, \text{kg}\), si muovono
 
 
 \subsection{Gravitazione}
-\label{\detokenize{ch/mechanics/dynamics-problems:gravitazione}}\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-21}
+\label{\detokenize{ch/mechanics/dynamics-problems:gravitazione}}\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-22}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.22 (Legge di gravitazione)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.23 (Legge di gravitazione)}
 
 
 
 \sphinxAtStartPar
 Due masse \(m_1 = 5,0 \, \text{kg}\) e \(m_2 = 10,0 \, \text{kg}\) si trovano a una distanza di \(2,0 \, \text{m}\). Calcola la forza gravitazionale che agisce tra di loro (\(G = 6,67 \cdot 10^{-11} \, \text{N·m}^2/\text{kg}^2\)).
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-22}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-23}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.23 (Orbita di un satellite)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.24 (Orbita di un satellite)}
 
 
 
 \sphinxAtStartPar
 Un satellite di massa \(1.000 \, \text{kg}\) si trova in un’orbita circolare a \(300 \, \text{km}\) sopra la superficie terrestre. Calcola la velocità orbitale (\(R_T = 6.371 \, \text{km}\), \(g = 9,81 \, \text{m/s}^2\)).
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-23}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-24}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.24 (Terza legge di Kepler)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.25 (Terza legge di Kepler)}
 
 
 
 \sphinxAtStartPar
 Un pianeta ha un’orbita ellittica con un periodo di \(365 \, \text{giorni}\). Calcola la lunghezza del semi\sphinxhyphen{}asse maggiore della sua orbita, se la sua distanza dal Sole è di \(1 \, \text{AU}\) (unità astronomica).
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-24}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-25}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.25 (Forza centripeta in orbita)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.26 (Forza centripeta in orbita)}
 
 
 
 \sphinxAtStartPar
 Una navetta spaziale di massa \(500 \, \text{kg}\) è in orbita circolare attorno alla Terra con un raggio di \(500 \, \text{km}\). Calcola la forza centripeta necessaria per mantenere la navetta in orbita.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-25}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-26}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.26 (Satelliti in orbita geostazionaria)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.27 (Satelliti in orbita geostazionaria)}
 
 
 
 \sphinxAtStartPar
 Calcola l’altitudine di un satellite che segue un’orbita geostazionaria, cioè che ha lo stesso periodo della rotazione terrestre (\(T = 24 \, \text{h}\)). Usa \(R_T = 6.371 \, \text{km}\) e \(g = 9,81 \, \text{m/s}^2\).
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-26}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-27}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.27 (Energia potenziale gravitazionale)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.28 (Energia potenziale gravitazionale)}
 
 
 
 \sphinxAtStartPar
 Calcola l’energia potenziale gravitazionale di un oggetto di \(2,0 \, \text{kg}\) posto a una distanza di \(10 \, \text{m}\) da un altro oggetto di massa \(5,0 \, \text{kg}\).
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-27}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-28}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.28 (Energia cinetica di un satellite)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.29 (Energia cinetica di un satellite)}
 
 
 
 \sphinxAtStartPar
 Un satellite di massa \(3,0 \, \text{kg}\) si muove in orbita circolare con raggio \(1000 \, \text{km}\) e velocità di \(7,5 \, \text{km/s}\). Calcola la sua energia cinetica.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-28}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-29}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.29 (Periodo di un satellite)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.30 (Periodo di un satellite)}
 
 
 
@@ -7038,81 +6807,81 @@ Un satellite è in orbita circolare a \(200 \, \text{km}\) sopra la superficie t
 
 
 \subsection{Equilibrio e Stabilità}
-\label{\detokenize{ch/mechanics/dynamics-problems:equilibrio-e-stabilita}}\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-29}
+\label{\detokenize{ch/mechanics/dynamics-problems:equilibrio-e-stabilita}}\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-30}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.30 (Stabilità di un oggetto)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.31 (Stabilità di un oggetto)}
 
 
 
 \sphinxAtStartPar
 Un cubo uniforme di massa \(10 \, \text{kg}\) e lato \(0,5 \, \text{m}\) è appoggiato su un piano inclinato di \(20^\circ\). Verifica se il cubo rimane stabile o si ribalta.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-30}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-31}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.31 (Momento torcenti in equilibrio)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.32 (Momento torcenti in equilibrio)}
 
 
 
 \sphinxAtStartPar
 Un’asta di massa \(5 \, \text{kg}\) e lunghezza \(2 \, \text{m}\) è sospesa a un’estremità. Se un peso di \(30 \, \text{N}\) viene appeso a \(1 \, \text{m}\) dalla base, calcola il momento torcenti necessario per mantenere l’asta in equilibrio.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-31}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-32}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.32 (Centro di massa e stabilità)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.33 (Centro di massa e stabilità)}
 
 
 
 \sphinxAtStartPar
 Un oggetto composto da due blocchi di massa \(2 \, \text{kg}\) e \(5 \, \text{kg}\) è posto su un piano inclinato. Determina la posizione del centro di massa e verifica la sua stabilità.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-32}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-33}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.33 (Equilibrio di un corpo galleggiante)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.34 (Equilibrio di un corpo galleggiante)}
 
 
 
 \sphinxAtStartPar
 Un oggetto con densità \(800 \, \text{kg/m}^3\) galleggia in un fluido di densità \(1.000 \, \text{kg/m}^3\). Determina la frazione sommersa dell’oggetto.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-33}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-34}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.34 (Equilibrio di una leva)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.35 (Equilibrio di una leva)}
 
 
 
 \sphinxAtStartPar
 Una leva lunga \(3 \, \text{m}\) ha un punto di supporto al centro. A sinistra del supporto, viene applicata una forza di \(100 \, \text{N}\) a \(0,5 \, \text{m}\) dal supporto. Qual è la forza necessaria per mantenere la leva in equilibrio a \(2 \, \text{m}\) dal supporto?
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-34}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-35}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.35 (Stabilità di una torre)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.36 (Stabilità di una torre)}
 
 
 
 \sphinxAtStartPar
 Una torre alta \(100 \, \text{m}\) ha una base quadrata di \(10 \, \text{m}\) per lato. Calcola il rapporto tra la base e l’altezza, e discuti la stabilità della torre.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-35}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-36}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.36 (Equilibrio di una trave)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.37 (Equilibrio di una trave)}
 
 
 
 \sphinxAtStartPar
 Una trave di \(10 \, \text{m}\) di lunghezza e massa \(20 \, \text{kg}\) è appoggiata su due supporti. Un carico di \(50 \, \text{N}\) è sospeso al centro della trave. Calcola le reazioni ai supporti per mantenere l’equilibrio.
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-36}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-37}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.37 (Momenti di forze in equilibrio)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.38 (Momenti di forze in equilibrio)}
 
 
 
 \sphinxAtStartPar
 Un’asta di \(2 \, \text{m}\) è sospesa a un’estremità. Un peso di \(40 \, \text{N}\) è appeso a \(1 \, \text{m}\) dal punto di sospensione. Quale forza orizzontale deve essere applicata all’altro estremo per mantenere l’asta in equilibrio?
 \end{sphinxadmonition}
-\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-37}
+\phantomsection \label{exercise:ch/mechanics/dynamics-problems-exercise-38}
 
-\begin{sphinxadmonition}{note}{Exercise 12.9.38 (Instabilità di un corpo)}
+\begin{sphinxadmonition}{note}{Exercise 12.9.39 (Instabilità di un corpo)}
 
 
 
@@ -17769,78 +17538,97 @@ Esperimento di Geiger\sphinxhyphen{}Mardsen (Rutherford)
 \sphinxstepscope
 
 
-\chapter{Fenomeni termo\sphinxhyphen{}elettrici nella materia}
-\label{\detokenize{ch/modern/intro-coupling:fenomeni-termo-elettrici-nella-materia}}\label{\detokenize{ch/modern/intro-coupling:physics-hs-modern-coupling}}\label{\detokenize{ch/modern/intro-coupling::doc}}
+\chapter{Teoria di Einstein}
+\label{\detokenize{ch/modern/einstein:teoria-di-einstein}}\label{\detokenize{ch/modern/einstein:physics-hs-modern-einstein}}\label{\detokenize{ch/modern/einstein::doc}}
 \sphinxAtStartPar
-Fenomeni fisici:
+Nell’arco di circa 15 anni, ad A.Einstein si deve la rivoluzione della meccanica con la formulazione di due teorie:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-Effetto piezoelettrico
+la teoria della relatività ristretta, come formulazione di una \sphinxstylestrong{meccanica compatibile con l’elettromagnetismo} e l’evidenza sperimentale che la la velocità della luce nel vuoto è finita;
 
 \item {} 
 \sphinxAtStartPar
-Effetto Peltier
-
-\item {} 
-\sphinxAtStartPar
-Effetto Seeback
-
-\item {} 
-\sphinxAtStartPar
-Piroelettricità
-
-\item {} 
-\sphinxAtStartPar
-…
-
-\item {} 
-\sphinxAtStartPar
-Effetto fotoelettrico
-
-\item {} 
-\sphinxAtStartPar
-…
-
-\item {} 
-\sphinxAtStartPar
-Fluorescenza
-
-\item {} 
-\sphinxAtStartPar
-Fosforescenza
-
-\item {} 
-\sphinxAtStartPar
-…
+la teoria della relatività generale, come nuova \sphinxstylestrong{teoria della gravitazione}
 
 \end{itemize}
 
-\sphinxAtStartPar
-Applicazioni:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-…
 
-\end{itemize}
+\section{Relatività ristretta}
+\label{\detokenize{ch/modern/einstein:relativita-ristretta}}\label{\detokenize{ch/modern/einstein:physics-hs-modern-einstein-special}}
+
+\section{Relatività generale}
+\label{\detokenize{ch/modern/einstein:relativita-generale}}\label{\detokenize{ch/modern/einstein:physics-hs-modern-einstein-general}}\label{ch/modern/einstein:example-0}
+\begin{sphinxadmonition}{note}{Example 29.2.1 (Esperimento dell’ascensore)}
+
+
+\end{sphinxadmonition}
+\label{ch/modern/einstein:example-1}
+\begin{sphinxadmonition}{note}{Example 29.2.2 (Equivalenza tra assenza di gravità e caduta libera in un campo gravitazionale)}
+
+
+\end{sphinxadmonition}
+\label{ch/modern/einstein:example-2}
+\begin{sphinxadmonition}{note}{Example 29.2.3 (Inconsistenza della legge di gravitazione di Newton e delle azioni a distanza con la velocità finita delle informazioni)}
+
+
+\end{sphinxadmonition}
 
 \sphinxstepscope
 
 
-\chapter{Fotografia}
-\label{\detokenize{ch/modern/intro-photography:fotografia}}\label{\detokenize{ch/modern/intro-photography:physics-hs-modern-photography}}\label{\detokenize{ch/modern/intro-photography::doc}}\begin{itemize}
+\chapter{Meccanica quantistica}
+\label{\detokenize{ch/modern/quantum:meccanica-quantistica}}\label{\detokenize{ch/modern/quantum:physics-hs-modern-quantum}}\label{\detokenize{ch/modern/quantum::doc}}
+
+\section{Esperienze all’origine della meccanica quantistica}
+\label{\detokenize{ch/modern/quantum:esperienze-all-origine-della-meccanica-quantistica}}\label{\detokenize{ch/modern/quantum:physics-hs-modern-quantum-experience}}
+
+\subsection{Radiazione di corpo nero \sphinxhyphen{} Planck}
+\label{\detokenize{ch/modern/quantum:radiazione-di-corpo-nero-planck}}\label{\detokenize{ch/modern/quantum:physics-hs-modern-quantum-experience-black-body}}
+
+\subsection{Effetto fotoelettrico \sphinxhyphen{} Einstein}
+\label{\detokenize{ch/modern/quantum:effetto-fotoelettrico-einstein}}\label{\detokenize{ch/modern/quantum:physics-hs-modern-quantum-experience-pe-effect}}
+
+\subsection{Modelli atomici}
+\label{\detokenize{ch/modern/quantum:modelli-atomici}}\label{\detokenize{ch/modern/quantum:physics-hs-modern-quantum-experience-atoms}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-Daguerre
+Thomson
 
 \item {} 
 \sphinxAtStartPar
-Lippmann
+Rutherford
 
 \item {} 
 \sphinxAtStartPar
-Lumière
+Bohr e Bohr\sphinxhyphen{}Sommerfeld
+
+\end{itemize}
+
+
+\section{Origine della meccanica quantistica}
+\label{\detokenize{ch/modern/quantum:origine-della-meccanica-quantistica}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+de Broglie, 1924
+
+\item {} 
+\sphinxAtStartPar
+Heisenberg, Born, Jordan, 1925\sphinxhyphen{}26: meccanica matriciale
+
+\item {} 
+\sphinxAtStartPar
+Schrodinger, 1926: meccanica ondulatoria
+
+\item {} 
+\sphinxAtStartPar
+Dirac e meccanica quantistica relativistica:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+…
+
+\end{itemize}
 
 \end{itemize}
 
@@ -18203,6 +17991,84 @@ forte
 \sphinxstepscope
 
 
+\chapter{Fenomeni termo\sphinxhyphen{}elettrici nella materia}
+\label{\detokenize{ch/modern/intro-coupling:fenomeni-termo-elettrici-nella-materia}}\label{\detokenize{ch/modern/intro-coupling:physics-hs-modern-coupling}}\label{\detokenize{ch/modern/intro-coupling::doc}}
+\sphinxAtStartPar
+Fenomeni fisici:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Effetto piezoelettrico
+
+\item {} 
+\sphinxAtStartPar
+Effetto Peltier
+
+\item {} 
+\sphinxAtStartPar
+Effetto Seeback
+
+\item {} 
+\sphinxAtStartPar
+Piroelettricità
+
+\item {} 
+\sphinxAtStartPar
+…
+
+\item {} 
+\sphinxAtStartPar
+Effetto fotoelettrico
+
+\item {} 
+\sphinxAtStartPar
+…
+
+\item {} 
+\sphinxAtStartPar
+Fluorescenza
+
+\item {} 
+\sphinxAtStartPar
+Fosforescenza
+
+\item {} 
+\sphinxAtStartPar
+…
+
+\end{itemize}
+
+\sphinxAtStartPar
+Applicazioni:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+…
+
+\end{itemize}
+
+\sphinxstepscope
+
+
+\chapter{Fotografia}
+\label{\detokenize{ch/modern/intro-photography:fotografia}}\label{\detokenize{ch/modern/intro-photography:physics-hs-modern-photography}}\label{\detokenize{ch/modern/intro-photography::doc}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Daguerre
+
+\item {} 
+\sphinxAtStartPar
+Lippmann
+
+\item {} 
+\sphinxAtStartPar
+Lumière
+
+\end{itemize}
+
+\sphinxstepscope
+
+
 \part{Indice}
 
 \sphinxstepscope
@@ -18255,7 +18121,7 @@ forte
 \item\relax\sphinxstyleindexentry{electric\sphinxhyphen{}dipole\sphinxhyphen{}ext\sphinxhyphen{}e\sphinxhyphen{}field}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{electric-dipole-ext-e-field}}
 \indexspace
 \bigletter{example\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/mechanics/inertia}\sphinxstyleindexpageref{ch/mechanics/inertia:\detokenize{example-0}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/modern/einstein}\sphinxstyleindexpageref{ch/modern/einstein:\detokenize{example-0}}
 \indexspace
 \bigletter{example\sphinxhyphen{}1}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-1}}
@@ -18287,6 +18153,9 @@ forte
 \bigletter{example\sphinxhyphen{}18}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}18}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-18}}
 \indexspace
+\bigletter{example\sphinxhyphen{}2}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/modern/einstein}\sphinxstyleindexpageref{ch/modern/einstein:\detokenize{example-2}}
+\indexspace
 \bigletter{example\sphinxhyphen{}3}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/waves/intro}\sphinxstyleindexpageref{ch/waves/intro:\detokenize{example-3}}
 \indexspace
@@ -18310,6 +18179,15 @@ forte
 \indexspace
 \bigletter{faraday\sphinxhyphen{}cage}
 \item\relax\sphinxstyleindexentry{faraday\sphinxhyphen{}cage}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{faraday-cage}}
+\indexspace
+\bigletter{inertia\sphinxhyphen{}disk}
+\item\relax\sphinxstyleindexentry{inertia\sphinxhyphen{}disk}\sphinxstyleindexextra{ch/mechanics/inertia\sphinxhyphen{}continuum}\sphinxstyleindexpageref{ch/mechanics/inertia-continuum:\detokenize{inertia-disk}}
+\indexspace
+\bigletter{inertia\sphinxhyphen{}ring}
+\item\relax\sphinxstyleindexentry{inertia\sphinxhyphen{}ring}\sphinxstyleindexextra{ch/mechanics/inertia\sphinxhyphen{}continuum}\sphinxstyleindexpageref{ch/mechanics/inertia-continuum:\detokenize{inertia-ring}}
+\indexspace
+\bigletter{inertial\sphinxhyphen{}observer}
+\item\relax\sphinxstyleindexentry{inertial\sphinxhyphen{}observer}\sphinxstyleindexextra{ch/mechanics/dynamics\sphinxhyphen{}principles}\sphinxstyleindexpageref{ch/mechanics/dynamics-principles:\detokenize{inertial-observer}}
 \indexspace
 \bigletter{invariance\sphinxhyphen{}space\sphinxhyphen{}and\sphinxhyphen{}time}
 \item\relax\sphinxstyleindexentry{invariance\sphinxhyphen{}space\sphinxhyphen{}and\sphinxhyphen{}time}\sphinxstyleindexextra{ch/mechanics/kinematics}\sphinxstyleindexpageref{ch/mechanics/kinematics:\detokenize{invariance-space-and-time}}

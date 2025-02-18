@@ -26,15 +26,18 @@ Dal punto di vista operativo, la massa di un sistema - quando possibile dal punt
 
 [^mass-def]: La risposta alla domanda "cos'è la massa?" potrebbe implicare una conoscenza "vera" - qualsiasi cosa significhi - del concetto di "massa". Anche qui, come già in altre parti, la domanda "cos'è...?" può essere sostituita con "cosa intendiamo per...?", e una "risposta operativa" può essere ritenuta soddisfacente, poiché rispecchia la modalità di conoscenza e formazione del sapere in ambito scientifico: senza entrare in ambiti filosofici più astratti, in fisica siamo contenti di definire qualcosa tramite le sue interazioni ed effetti su altri sistemi, le sue proprietà, e un processo affidabile per la sua misura.
 
+<!--
 (physics-hs:mechanics:inertia:mass-density)=
 ## Massa e distribuzione di massa
-
 **todo** Densità
+-->
+**Distribuzione di massa.**
 
-
-
+<!--
 (physics-hs:mechanics:inertia:dynamical-quantities)=
 ## Quantità dinamiche
+-->
+**Quantità dinamiche.**
 Come sarà chiaro nello sviluppo delle [equazioni di moto di un sistema](physics-hs:mechanics:dynamics:eom:points), la definizione di alcune grandezze dinamiche additive risulta naturale, fornendo dei concetti utili e sintetici per la costruzione di un modello e l'interpretazione dei fenomeni fisici.
 
 Queste grandezze dinamiche combinano la massa e la sua distribuzione con le grandezze cinematiche del sistema. In particolare, risulta utile definire tre grandezze:

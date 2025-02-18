@@ -56,6 +56,7 @@ parts:
     sections:
     - file: ch/mechanics/statics-point
     - file: ch/mechanics/statics-rigid
+    - file: ch/mechanics/statics-composite
     - file: ch/mechanics/statics-fluid
     - file: ch/mechanics/statics-problems
   - file: ch/mechanics/inertia
@@ -197,10 +198,12 @@ parts:
   - file: ch/modern/intro-experiments.md
   - file: ch/modern/experiments.md
   - file: ch/modern/intro-radioactivity.md
-  - file: ch/modern/intro-coupling.md
-  - file: ch/modern/intro-photography.md
+  - file: ch/modern/einstein.md
+  - file: ch/modern/quantum.md
   - file: ch/modern/astronomy.md
   - file: ch/modern/standard.md
+  - file: ch/modern/intro-coupling.md
+  - file: ch/modern/intro-photography.md
 - caption: Indice
   chapters:
   - file: genindex.md
