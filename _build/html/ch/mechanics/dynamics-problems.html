@@ -551,9 +551,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -569,19 +567,6 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contenuti </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-di-un-punto-materiale">12.9.1. Moto di un punto materiale</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-di-sistemi-di-punti-materiali">12.9.2. Moto di sistemi di punti materiali</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-di-corpi-rigidi-in-2d">12.9.3. Moto di corpi rigidi in 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collisioni">12.9.4. Collisioni</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitazione">12.9.5. Gravitazione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equilibrio-e-stabilita">12.9.6. Equilibrio e Stabilità</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -595,17 +580,45 @@ document.write(`
 <span id="physics-hs-mechanics-dynamics-problems"></span><h1><span class="section-number">12.9. </span>Problemi<a class="headerlink" href="#problemi" title="Permalink to this heading">#</a></h1>
 <p>Questa pagina contiene esercizi di dinamica relativi a diversi argomenti: <strong>moto di un punto materiale</strong>, <strong>moto di sistemi di punti materiali</strong>, <strong>moto di corpi rigidi in due dimensioni</strong>, <strong>urti e collisioni</strong>, <strong>gravitazione</strong>, <strong>equilibrio</strong> e <strong>stabilità</strong>. Alcuni esercizi richiedono l’uso di principi di conservazione.</p>
 <hr class="docutils" />
-<div class="exercise admonition" id="pendulum-eom">
-
-<p class="admonition-title"><span class="caption-number">Exercise 12.1 </span> (Pendolo - Equazioni dinamiche)</p>
-<div class="section" id="exercise-content">
+<p>Argomenti: vedi alla fine file. Uncomment</p>
+<ul class="simple">
+<li><p>moto di sistemi di punti</p></li>
+<li><p>sistemi estesi con corpi rigidi in 2d</p></li>
+<li><p>collisioni</p></li>
+<li><p>gravitazione</p></li>
+<li><p>equilibrio e stabilità</p></li>
+</ul>
+<hr class="docutils" />
+<!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1. Caduta libera</div>
+<p class="sd-card-text">Una palla di massa <span class="math notranslate nohighlight">\(m\)</span> si trova inizialmente in quiete rispetto a un’osservatore inerziale, a una quota <span class="math notranslate nohighlight">\(h\)</span> sopra la superficie terrestre.
+La palla viene lasciata cadere dalla condizione di quiete. Viene chiesto di determinare:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">la velocità di impatto con il terreno</p></li>
+<li><p class="sd-card-text">il tempo impiegato per raggiungere il terreno.</p></li>
+</ol>
+<p class="sd-card-text">Viene chiesto di svolgere i conti trascurando la resistenza dell’aria. Si chiede poi di:
+3. confrontare i risultati ottenuti con i risultati per un corpo di massa <span class="math notranslate nohighlight">\(M &gt; m\)</span>
+4. confrontare i risultati ottenuti con i risultati che si otterrebbero nei pressi della superficie lunare.</p>
+<p class="sd-card-text">Raggio Terra: <span class="math notranslate nohighlight">\(R_E = 6380 \, km\)</span> ; massa Terra: <span class="math notranslate nohighlight">\(M_E = 5.98 \cdot 10^{24} \, kg\)</span>;
+Raggio Luna:  <span class="math notranslate nohighlight">\(R_M = 1740 \, km\)</span> ; massa Luna:  <span class="math notranslate nohighlight">\(M_M = 7.34 \cdot 10^{22} \, kg\)</span>;</p>
 </div>
 </div>
-<div class="exercise admonition" id="point-vs-rigid">
-
-<p class="admonition-title"><span class="caption-number">Exercise 12.2 </span> (Sistema che scivola su piano inclinato)</p>
-<div class="section" id="exercise-content">
-<p>Una biglia di massa <span class="math notranslate nohighlight">\(m\)</span> e raggio <span class="math notranslate nohighlight">\(R\)</span> scivola su un piano inclinato di un angolo <span class="math notranslate nohighlight">\(\alpha\)</span> rispetto al piano orizzontale. L’attrito tra il piano e la biglia è approssimabile come nullo, così che la biglia può scivolare sulla superficie del piano.</p>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/free-fall.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
 </div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -616,7 +629,27 @@ Soluzione.<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</details><div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 2. Caduta libera con resistenza aerodinamica</div>
+<p class="sd-card-text">Viene chiesto di svolgere l’esercizio precedente, in un ambiente in cui non sia più trascurabile la resistenza aerodinamica del sistema.
+In particolare viene chiesto di risolvere il problema nel caso in cui la resistenza aerodinamica sia:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">proporzionale alla velocità relativa del corpo rispetto al fluido, di intensità <span class="math notranslate nohighlight">\(F = c v\)</span>, con <span class="math notranslate nohighlight">\(c = \dots\)</span></p></li>
+<li><p class="sd-card-text">proporzionale al quadrato della velocità relativa del corpo rispetto al fluido, di intensità <span class="math notranslate nohighlight">\(F = \frac{1}{2} \rho S c_F v^2\)</span>, con…</p></li>
+</ol>
+<p class="sd-card-text">Qui si considera il fluido in quiete rispetto all’ambiente: la velocità del corpo relativa al fluido è quindi uguale alla velocità rispetto all’ambiente.</p>
+<p class="sd-card-text">Viene chiesto poi di determinare la <strong>velocità limite</strong> raggiungibile da un corpo in caduta libera, potendo considerare l’accelerazione di gravità e la densità dell’aria costanti lungo la caduta.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Soluzione.<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -624,289 +657,1128 @@ Soluzione.<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 </div>
-</details><hr class="docutils" />
-<div class="section" id="moto-di-un-punto-materiale">
-<h2><span class="section-number">12.9.1. </span>Moto di un punto materiale<a class="headerlink" href="#moto-di-un-punto-materiale" title="Permalink to this heading">#</a></h2>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-3">
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 3.</div>
+<p class="sd-card-text">Un corpo di massa <span class="math notranslate nohighlight">\(m\)</span> viene lanciato con velocità iniziale orizzontale con valore assoluto <span class="math notranslate nohighlight">\(|\vec{v}_0|\)</span>, da una quota <span class="math notranslate nohighlight">\(h\)</span> sopra la superficie terrestre. Trascurando la resistenza aerodinamica, viene chiesto di determinare:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">gittata</p></li>
+<li><p class="sd-card-text">tempo di volo</p></li>
+<li><p class="sd-card-text">velocità del corpo all’impatto con il suolo</p></li>
+<li><p class="sd-card-text">impulso e forza media quando il corpo raggiunge terra, sapendo che il corpo si arresta in un tempo <span class="math notranslate nohighlight">\(\Delta t\)</span> lungo una traiettoria rettilinea.</p></li>
+</ol>
+<p class="sd-card-text">Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aerodinamica.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/parabolic-2.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 4.</div>
+<p class="sd-card-text">Viene chiesto di determinare:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">la gittata massima di un corpo di massa <span class="math notranslate nohighlight">\(m\)</span> e velocità iniziale con valore assoluto <span class="math notranslate nohighlight">\(|\vec{v}_0|\)</span>, trascurando la resistenza aerodianmica. Per questa condizione viene chiesto di determinare angolo iniziale rispetto all’orizzontale, tempo di volo e altezza massima raggiunta.</p></li>
+</ol>
+<p class="sd-card-text">Viene poi chiesto di ripetere lo stesso esercizio:
+2. non conoscendo la velocità iniziale, ma che il corpo viene inizialmente lanciato da un meccanismo in grado di applicare un impulso <span class="math notranslate nohighlight">\(I\)</span> noto ai corpi.
+3. senza trascurare la resistenza aerodinamica</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/parabolic-1.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 5.</div>
+<p class="sd-card-text">Conoscendo la posizione del punto di lancio <span class="math notranslate nohighlight">\(A\)</span>, e la posizione del bersaglio <span class="math notranslate nohighlight">\(B\)</span> viene chiesto di determinare:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">le condizioni sulla velocità di lancio per colpire il bersaglio. Una volta determinate, viene chiesto di determinare anche il tempo di volo.</p></li>
+<li><p class="sd-card-text">tra tutte le velocità ammissibili per colpire il bersaglio, viene chiesto di determinare quella con valore assoluto minimo, sotto al quale non è possibile raggiungere l’obiettivo.</p></li>
+</ol>
+<p class="sd-card-text">Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aerodinamica.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/parabolic-3.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 6.</div>
+<p class="sd-card-text">Conoscendo la posizione del punto di lancio <span class="math notranslate nohighlight">\(A\)</span>, e la posizione del bersaglio mobile <span class="math notranslate nohighlight">\(B: \vec{r}_B(t) = x_B \hat{x} + (y_{B,0} + v_{y,B} t) \hat{y}\)</span> viene chiesto di determinare:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">le condizioni sulla velocità di lancio per colpire il bersaglio. Una volta determinate, viene chiesto di determinare anche il tempo di volo.</p></li>
+<li><p class="sd-card-text">tra tutte le velocità ammissibili per colpire il bersaglio, viene chiesto di determinare quella con valore assoluto minimo, sotto al quale non è possibile raggiungere l’obiettivo.</p></li>
+</ol>
+<p class="sd-card-text">Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aerodinamica.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/parabolic-3.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 7.</div>
+<p class="sd-card-text">Un calciatore deve tirare una punizione in porta da una distanza <span class="math notranslate nohighlight">\(b\)</span>. La barriera viene posta a una distanza <span class="math notranslate nohighlight">\(a\)</span> dal punto di tiro e i giocatori in barriera possono coprire fino a una quota <span class="math notranslate nohighlight">\(h\)</span> saltando. Volendo centrare la porta a una quota <span class="math notranslate nohighlight">\(d\)</span> (compresa tra <span class="math notranslate nohighlight">\(0\)</span>: la palla tocca terra sulla linea di porta senza rimbalzare prima; e <span class="math notranslate nohighlight">\(d_{max}\)</span> la palla finisce all’incrocio), si chiede di determinare:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">velocità iniziale imposta al pallone dal calcio</p></li>
+<li><p class="sd-card-text">tempo di volo del pallone tra il calcio e la porta</p></li>
+</ol>
+<p class="sd-card-text">in tutte le condizioni che permettono di prendere la porta senza colpire la barriera, e senza far rimbalzare il pallone prima della linea della porta. Per ogni valore <span class="math notranslate nohighlight">\(d\)</span>, si calcoli poi la condizione che corrisponde al tempo minore.</p>
+<p class="sd-card-text">Si trascuri ogni effetto, dovuto alla rotazione del pallone.</p>
+<p class="sd-card-text">Si svolga l’esercizio prima trascurando e poi considerando la resistenza aerodinamica.</p>
+<p class="sd-card-text"><strong>todo</strong> Si può ampliare un po” l’esercizio considerando i tempi di reazione del portiere e la velocità nel comprire le distanze? O formulare qualche metodo per stimare la probabilità di realizzazione di calci di punizione…</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/parabolic-4.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 8.</div>
+<p class="sd-card-text">Un corpo puntiforme di massa <span class="math notranslate nohighlight">\(m\)</span> è vincolato a una guida semi-circolare con un vincolo bilatero ideale (no attrito, solo reazione normale). Il corpo parte in condizioni di quiete da una posizione identificata da un raggio che forma un angolo <span class="math notranslate nohighlight">\(\theta_0\)</span> con la verticale. Viene chiesto di:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">rappresentare il diagramma delle forze agenti sul corpo;</p></li>
+<li><p class="sd-card-text">scrivere l’espressione dell’energia meccanica del sistema, considerando il centro della semicriconferenza con punto di riferimento per definire l’energia potenziale gravitazionale nulla;</p></li>
+<li><p class="sd-card-text">determinare la velocità massima del corpo nel suo moto</p></li>
+<li><p class="sd-card-text">scrivere le equazioni del moto del sistema, usando <strong>se possibile</strong>: a) le equazioni cardinali della dinamica; b) la legge di conservazione dell’energia meccanica, c) altre leggi di conservazioni di quantità meccaniche costanti nella dinamica del sistema</p></li>
+<li><p class="sd-card-text">determinare le reazioni vincolari della guida sul corpo puntiforme in funzione dell’angolo <span class="math notranslate nohighlight">\(\theta\)</span> e daella sua derivata <span class="math notranslate nohighlight">\(\dot{\theta}\)</span></p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/arc-1.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 9.</div>
+<p class="sd-card-text">Un corpo puntiforme di massa <span class="math notranslate nohighlight">\(m\)</span> è vincolato a una guida ad arco di cerchio con un vincolo bilatero ideale. Viene lasciato cadere da un angolo <span class="math notranslate nohighlight">\(\theta_0\)</span> in condizioni di quiete. L’angolo «di uscita» della guida è <span class="math notranslate nohighlight">\(\theta_1\)</span>. Se ragginge l’angolo di uscita, il corpo è libero di compiere la traiettoria caratteristica del moto libero nella prossimità della superficie terrestre. Viene chiesto di determinare:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">la velocità massima del corpo lungo la guida,</p></li>
+<li><p class="sd-card-text">le condizioni per venire lanciato fuori dalla guida</p></li>
+<li><p class="sd-card-text">la traiettoria del moto libero, determinando in particolare la gittata, il tempo di volo e la velocità di impatto.</p></li>
+<li><p class="sd-card-text">sapendo che all’impatto il corpo viene rallentato dal terreno lungo una traiettoria rettilinea con una decelerazione costante <span class="math notranslate nohighlight">\(a\)</span>, si chiede di tereminare il tempo necessario all’arresto (a partire dall’impatto), l’impulso e la forza media.</p></li>
+</ol>
+<p class="sd-card-text">Viene chiesto di discutere il problema considerando un attrito dinamico con coefficiente di attrito <span class="math notranslate nohighlight">\(\mu_d\)</span> tra la guida e il corpo, rappresentando il diagramma delle forze agenti sul corpo e determinando le equazioni del moto lungo la guida.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/arc-2.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 10.</div>
+<p class="sd-card-text">Una guida è formata da un primo tratto di raggio <span class="math notranslate nohighlight">\(R_1\)</span>, un secondo tratto di una circonferenza completa di raggio <span class="math notranslate nohighlight">\(R_2 &lt; R_1\)</span> e un terzo tratto rettilineo orizzontale. Trascurando l’attrito nei primi due tratti, viene chiesto di determinare:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">le condizioni necessarie per poter compiere il loop del secondo tratto, nel caso di vincolo bilatero</p></li>
+<li><p class="sd-card-text">le condizioni necessarie per poter compiere il loop del secondo tratto, nel caso di vincolo monolatero</p></li>
+<li><p class="sd-card-text">la distanza percorsa sul terzo tratto orizzontale, sul quale non è possibile trascurare l’attrito con la guida, rappresentabile con la formula dell’attrito dinamico con coefficiente <span class="math notranslate nohighlight">\(\mu_d\)</span>.</p></li>
+</ol>
+<p class="sd-card-text">Come esercizio aggiuntivo, viene chiesto di discutere il problema del moto del corpo con vincolo monolatero, nel caso in cui non sia in grado di compiere il loop.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/arc-3.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Conoscendo la configurazione iniziale della massa <span class="math notranslate nohighlight">\(m\)</span>, viene chiesto di descrivere la dinamica del sistema nel caso di attrito nullo e nel caso di attrito non trascurabile. Viene chiesto di:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">determinare le equazioni del moto</p></li>
+<li><p class="sd-card-text">risolvere le equazioni del moto</p></li>
+<li><p class="sd-card-text">determinare le reazioni vincolari scambiate tra massa e parete obliqua</p></li>
+<li><p class="sd-card-text">determinare la forza scambiata tra molla e parete, in funzione del tempo</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/oscillator-1.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Testo</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/oscillator-2-hinge.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Testo</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/oscillator-2-cart.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Testo</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/oscillator-3-hinge.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Testo</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/oscillator-3-cart.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Testo</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/oscillator-3-cart-hinge-rod.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Testo</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/oscillator-4-spring-hinge.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Testo</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/oscillator-4-spring-cart.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Testo</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/oscillator-5-oscillator-point.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Testo</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/oscillator-5-oscillator-disk.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Testo</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/oscillator-5-oscillator-prism-point.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Testo</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/oscillator-5-oscillator-prism-disk.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Testo</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/ramp-6.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Testo</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/ramp-6-moving.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Testo</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/eccentric-6-0.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Testo</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/eccentric-6-1.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Testo</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/eccentric-6-2.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Testo</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/detach-7-point.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Testo</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/detach-7-disk.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Testo</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/oscillator-8-ring-disk.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 1.</div>
+<p class="sd-card-text">Testo</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/oscillator-8-ring-half-disk.png" /></p>
+<!-- *Didascalia, se necessaria* -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details><!--
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.3 </span> (Accelerazione costante)</p>
-<div class="section" id="exercise-content">
-<p>Un punto materiale parte da fermo e si muove con un’accelerazione costante di <span class="math notranslate nohighlight">\(2 \, \text{m/s}^2\)</span>. Calcola lo spazio percorso dopo <span class="math notranslate nohighlight">\(10 \, \text{s}\)</span> e la velocità finale.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-4">
+```{exercise} Pendolo - Equazioni dinamiche
+:label: pendulum-eom
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.4 </span> (Moto uniformemente accelerato)</p>
-<div class="section" id="exercise-content">
-<p>Un’auto si muove inizialmente a <span class="math notranslate nohighlight">\(20 \, \text{m/s}\)</span>. Dopo <span class="math notranslate nohighlight">\(5 \, \text{s}\)</span>, la velocità è aumentata a <span class="math notranslate nohighlight">\(40 \, \text{m/s}\)</span>. Calcola l’accelerazione e lo spazio percorso in questo intervallo.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-5">
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.5 </span> (Caduta libera)</p>
-<div class="section" id="exercise-content">
-<p>Un oggetto viene lasciato cadere da un’altezza di <span class="math notranslate nohighlight">\(80 \, \text{m}\)</span>. Calcola il tempo impiegato per raggiungere il suolo e la velocità al momento dell’impatto (<span class="math notranslate nohighlight">\(g = 9,81 \, \text{m/s}^2\)</span>).</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-6">
+```{exercise} Sistema che scivola su piano inclinato
+:label: point-vs-rigid
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.6 </span> (Velocità angolare)</p>
-<div class="section" id="exercise-content">
-<p>Un punto materiale si muove lungo una circonferenza di raggio <span class="math notranslate nohighlight">\(2 \, \text{m}\)</span> con velocità costante <span class="math notranslate nohighlight">\(10 \, \text{m/s}\)</span>. Calcola la sua velocità angolare e l’accelerazione centripeta.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-7">
+Una biglia di massa $m$ e raggio $R$ scivola su un piano inclinato di un angolo $\alpha$ rispetto al piano orizzontale. L'attrito tra il piano e la biglia è approssimabile come nullo, così che la biglia può scivolare sulla superficie del piano.
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.7 </span> (Moto su piano inclinato)</p>
-<div class="section" id="exercise-content">
-<p>Un blocco di <span class="math notranslate nohighlight">\(5 \, \text{kg}\)</span> scivola senza attrito lungo un piano inclinato di <span class="math notranslate nohighlight">\(30^\circ\)</span>. Calcola l’accelerazione del blocco e la velocità dopo <span class="math notranslate nohighlight">\(4 \, \text{s}\)</span>.</p>
-</div>
-</div>
-</div>
-<hr class="docutils" />
-<div class="section" id="moto-di-sistemi-di-punti-materiali">
-<h2><span class="section-number">12.9.2. </span>Moto di sistemi di punti materiali<a class="headerlink" href="#moto-di-sistemi-di-punti-materiali" title="Permalink to this heading">#</a></h2>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-8">
+```
+```{dropdown} Soluzione.
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.8 </span> (Centro di massa in movimento)</p>
-<div class="section" id="exercise-content">
-<p>Due masse, <span class="math notranslate nohighlight">\(m_1 = 2 \, \text{kg}\)</span> e <span class="math notranslate nohighlight">\(m_2 = 6 \, \text{kg}\)</span>, si muovono lungo l’asse <span class="math notranslate nohighlight">\(x\)</span> rispettivamente con velocità <span class="math notranslate nohighlight">\(v_1 = 3 \, \text{m/s}\)</span> e <span class="math notranslate nohighlight">\(v_2 = 1 \, \text{m/s}\)</span>. Determina la velocità del centro di massa.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-9">
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.9 </span> (Trazione su una fune)</p>
-<div class="section" id="exercise-content">
-<p>Due blocchi, <span class="math notranslate nohighlight">\(m_1 = 10 \, \text{kg}\)</span> e <span class="math notranslate nohighlight">\(m_2 = 5 \, \text{kg}\)</span>, sono collegati da una fune e tirati con una forza di <span class="math notranslate nohighlight">\(60 \, \text{N}\)</span> su una superficie orizzontale priva di attrito. Calcola l’accelerazione del sistema e la tensione nella fune.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-10">
+```{exercise} Sfera che rotola su piano inclinato
+:label: point-vs-rigid
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.10 </span> (Impulso e quantità di moto)</p>
-<div class="section" id="exercise-content">
-<p>Un corpo di massa <span class="math notranslate nohighlight">\(3 \, \text{kg}\)</span> si muove con velocità <span class="math notranslate nohighlight">\(4 \, \text{m/s}\)</span>. Una forza costante di <span class="math notranslate nohighlight">\(6 \, \text{N}\)</span> viene applicata per <span class="math notranslate nohighlight">\(5 \, \text{s}\)</span>. Calcola l’impulso ricevuto e la nuova velocità del corpo.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-11">
+Una biglia di massa $m$ e raggio $R$ rotola su un piano inclinato di un angolo $\alpha$ rispetto al piano orizzontale. L'attrito statico tra il piano e la biglia è sufficiente da garantire la condizione di puro rotolamento della biglia sul piano, senza scivolamento.
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.11 </span> (Centro di massa e forze)</p>
-<div class="section" id="exercise-content">
-<p>Un sistema è composto da due blocchi di masse <span class="math notranslate nohighlight">\(m_1 = 5 \, \text{kg}\)</span> e <span class="math notranslate nohighlight">\(m_2 = 10 \, \text{kg}\)</span>. Se al primo blocco è applicata una forza di <span class="math notranslate nohighlight">\(20 \, \text{N}\)</span> verso destra, calcola l’accelerazione del centro di massa.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-12">
+```
+```{dropdown} Soluzione.
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.12 </span> (Sistema in caduta)</p>
-<div class="section" id="exercise-content">
-<p>Due blocchi di masse <span class="math notranslate nohighlight">\(m_1 = 8 \, \text{kg}\)</span> e <span class="math notranslate nohighlight">\(m_2 = 12 \, \text{kg}\)</span> sono collegati da una fune che passa su una carrucola. Calcola l’accelerazione del sistema e la tensione nella fune (<span class="math notranslate nohighlight">\(g = 9,81 \, \text{m/s}^2\)</span>).</p>
-</div>
-</div>
-</div>
-<hr class="docutils" />
-<div class="section" id="moto-di-corpi-rigidi-in-2d">
-<h2><span class="section-number">12.9.3. </span>Moto di corpi rigidi in 2D<a class="headerlink" href="#moto-di-corpi-rigidi-in-2d" title="Permalink to this heading">#</a></h2>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-13">
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.13 </span> (Disco in rotazione)</p>
-<div class="section" id="exercise-content">
-<p>Un disco di raggio <span class="math notranslate nohighlight">\(0,5 \, \text{m}\)</span> e momento d’inerzia <span class="math notranslate nohighlight">\(I = 0,2 \, \text{kg·m}^2\)</span> è soggetto a un momento torcente costante di <span class="math notranslate nohighlight">\(5 \, \text{N·m}\)</span>. Calcola l’accelerazione angolare e la velocità angolare dopo <span class="math notranslate nohighlight">\(4 \, \text{s}\)</span>.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-14">
+-->
+<!--
+## Moto di un punto materiale
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.14 </span> (Asta rotante)</p>
-<div class="section" id="exercise-content">
-<p>Un’asta uniforme di lunghezza <span class="math notranslate nohighlight">\(2,0 \, \text{m}\)</span> e massa <span class="math notranslate nohighlight">\(10 \, \text{kg}\)</span> ruota attorno a un’estremità. Calcola il momento d’inerzia e il momento torcente necessario per darle un’accelerazione angolare di <span class="math notranslate nohighlight">\(3 \, \text{rad/s}^2\)</span>.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-15">
+```{exercise} Accelerazione costante
+Un punto materiale parte da fermo e si muove con un’accelerazione costante di $2 \, \text{m/s}^2$. Calcola lo spazio percorso dopo $10 \, \text{s}$ e la velocità finale.
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.15 </span> (Rotolamento di una sfera)</p>
-<div class="section" id="exercise-content">
-<p>Una sfera di raggio <span class="math notranslate nohighlight">\(0,2 \, \text{m}\)</span> e massa <span class="math notranslate nohighlight">\(5 \, \text{kg}\)</span> rotola senza scivolare su un piano inclinato. Calcola l’accelerazione della sfera e la forza di attrito necessaria.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-16">
+```{exercise} Moto uniformemente accelerato
+Un'auto si muove inizialmente a $20 \, \text{m/s}$. Dopo $5 \, \text{s}$, la velocità è aumentata a $40 \, \text{m/s}$. Calcola l'accelerazione e lo spazio percorso in questo intervallo.
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.16 </span> (Bilanciamento di un’asta)</p>
-<div class="section" id="exercise-content">
-<p>Un’asta di lunghezza <span class="math notranslate nohighlight">\(3,0 \, \text{m}\)</span> e massa <span class="math notranslate nohighlight">\(6 \, \text{kg}\)</span> è appoggiata su due supporti agli estremi. Un peso di <span class="math notranslate nohighlight">\(20 \, \text{N}\)</span> è sospeso a <span class="math notranslate nohighlight">\(1,0 \, \text{m}\)</span> da un’estremità. Calcola le reazioni vincolari.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-17">
+```{exercise} Caduta libera
+Un oggetto viene lasciato cadere da un'altezza di $80 \, \text{m}$. Calcola il tempo impiegato per raggiungere il suolo e la velocità al momento dell'impatto ($g = 9,81 \, \text{m/s}^2$).
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.17 </span> (Energia cinetica rotazionale)</p>
-<div class="section" id="exercise-content">
-<p>Un disco di massa <span class="math notranslate nohighlight">\(4,0 \, \text{kg}\)</span> e raggio <span class="math notranslate nohighlight">\(0,3 \, \text{m}\)</span> ruota con velocità angolare <span class="math notranslate nohighlight">\(10 \, \text{rad/s}\)</span>. Calcola l’energia cinetica totale (traslazionale + rotazionale).</p>
-</div>
-</div>
-</div>
-<hr class="docutils" />
-<div class="section" id="collisioni">
-<h2><span class="section-number">12.9.4. </span>Collisioni<a class="headerlink" href="#collisioni" title="Permalink to this heading">#</a></h2>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-18">
+```{exercise} Velocità angolare
+Un punto materiale si muove lungo una circonferenza di raggio $2 \, \text{m}$ con velocità costante $10 \, \text{m/s}$. Calcola la sua velocità angolare e l'accelerazione centripeta.
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.18 </span> (Urto elastico)</p>
-<div class="section" id="exercise-content">
-<p>Una massa <span class="math notranslate nohighlight">\(m_1 = 2,0 \, \text{kg}\)</span>, inizialmente ferma, viene urtata da una massa <span class="math notranslate nohighlight">\(m_2 = 1,0 \, \text{kg}\)</span> in moto con velocità <span class="math notranslate nohighlight">\(v_2 = 4,0 \, \text{m/s}\)</span>. Calcola le velocità finali dopo un urto elastico.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-19">
+```{exercise} Moto su piano inclinato
+Un blocco di $5 \, \text{kg}$ scivola senza attrito lungo un piano inclinato di $30^\circ$. Calcola l'accelerazione del blocco e la velocità dopo $4 \, \text{s}$.
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.19 </span> (Urto completamente anelastico)</p>
-<div class="section" id="exercise-content">
-<p>Due blocchi di masse <span class="math notranslate nohighlight">\(3,0 \, \text{kg}\)</span> e <span class="math notranslate nohighlight">\(2,0 \, \text{kg}\)</span> si muovono rispettivamente a <span class="math notranslate nohighlight">\(5,0 \, \text{m/s}\)</span> e <span class="math notranslate nohighlight">\(-3,0 \, \text{m/s}\)</span>. Calcola la velocità finale se i due blocchi si uniscono dopo l’urto.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-20">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.20 </span> (Energia persa nell’urto)</p>
-<div class="section" id="exercise-content">
-<p>Due sfere di massa uguale <span class="math notranslate nohighlight">\(m = 1,0 \, \text{kg}\)</span> si scontrano frontalmente con velocità iniziali <span class="math notranslate nohighlight">\(2,0 \, \text{m/s}\)</span> e <span class="math notranslate nohighlight">\(-1,0 \, \text{m/s}\)</span>. Determina l’energia cinetica persa nell’urto anelastico.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-21">
+## Moto di sistemi di punti materiali
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.21 </span> (Urto su un piano inclinato)</p>
-<div class="section" id="exercise-content">
-<p>Una pallina di massa <span class="math notranslate nohighlight">\(0,5 \, \text{kg}\)</span> rotola lungo un piano inclinato e colpisce una parete con velocità <span class="math notranslate nohighlight">\(3,0 \, \text{m/s}\)</span>. Se l’urto è elastico, calcola la velocità della pallina dopo l’urto.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-22">
+```{exercise} Centro di massa in movimento
+Due masse, $m_1 = 2 \, \text{kg}$ e $m_2 = 6 \, \text{kg}$, si muovono lungo l'asse $x$ rispettivamente con velocità $v_1 = 3 \, \text{m/s}$ e $v_2 = 1 \, \text{m/s}$. Determina la velocità del centro di massa.
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.22 </span> (Velocità del centro di massa dopo un urto)</p>
-<div class="section" id="exercise-content">
-<p>Due oggetti, <span class="math notranslate nohighlight">\(m_1 = 4,0 \, \text{kg}\)</span> e <span class="math notranslate nohighlight">\(m_2 = 2,0 \, \text{kg}\)</span>, si muovono verso il centro di massa con velocità opposte. Dopo un urto completamente anelastico, calcola la velocità del sistema.</p>
-</div>
-</div>
-</div>
-<hr class="docutils" />
-<div class="section" id="gravitazione">
-<h2><span class="section-number">12.9.5. </span>Gravitazione<a class="headerlink" href="#gravitazione" title="Permalink to this heading">#</a></h2>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-23">
+```{exercise} Trazione su una fune
+Due blocchi, $m_1 = 10 \, \text{kg}$ e $m_2 = 5 \, \text{kg}$, sono collegati da una fune e tirati con una forza di $60 \, \text{N}$ su una superficie orizzontale priva di attrito. Calcola l'accelerazione del sistema e la tensione nella fune.
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.23 </span> (Legge di gravitazione)</p>
-<div class="section" id="exercise-content">
-<p>Due masse <span class="math notranslate nohighlight">\(m_1 = 5,0 \, \text{kg}\)</span> e <span class="math notranslate nohighlight">\(m_2 = 10,0 \, \text{kg}\)</span> si trovano a una distanza di <span class="math notranslate nohighlight">\(2,0 \, \text{m}\)</span>. Calcola la forza gravitazionale che agisce tra di loro (<span class="math notranslate nohighlight">\(G = 6,67 \cdot 10^{-11} \, \text{N·m}^2/\text{kg}^2\)</span>).</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-24">
+```{exercise} Impulso e quantità di moto
+Un corpo di massa $3 \, \text{kg}$ si muove con velocità $4 \, \text{m/s}$. Una forza costante di $6 \, \text{N}$ viene applicata per $5 \, \text{s}$. Calcola l'impulso ricevuto e la nuova velocità del corpo.
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.24 </span> (Orbita di un satellite)</p>
-<div class="section" id="exercise-content">
-<p>Un satellite di massa <span class="math notranslate nohighlight">\(1.000 \, \text{kg}\)</span> si trova in un’orbita circolare a <span class="math notranslate nohighlight">\(300 \, \text{km}\)</span> sopra la superficie terrestre. Calcola la velocità orbitale (<span class="math notranslate nohighlight">\(R_T = 6.371 \, \text{km}\)</span>, <span class="math notranslate nohighlight">\(g = 9,81 \, \text{m/s}^2\)</span>).</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-25">
+```{exercise} Centro di massa e forze
+Un sistema è composto da due blocchi di masse $m_1 = 5 \, \text{kg}$ e $m_2 = 10 \, \text{kg}$. Se al primo blocco è applicata una forza di $20 \, \text{N}$ verso destra, calcola l'accelerazione del centro di massa.
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.25 </span> (Terza legge di Kepler)</p>
-<div class="section" id="exercise-content">
-<p>Un pianeta ha un’orbita ellittica con un periodo di <span class="math notranslate nohighlight">\(365 \, \text{giorni}\)</span>. Calcola la lunghezza del semi-asse maggiore della sua orbita, se la sua distanza dal Sole è di <span class="math notranslate nohighlight">\(1 \, \text{AU}\)</span> (unità astronomica).</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-26">
+```{exercise} Sistema in caduta
+Due blocchi di masse $m_1 = 8 \, \text{kg}$ e $m_2 = 12 \, \text{kg}$ sono collegati da una fune che passa su una carrucola. Calcola l'accelerazione del sistema e la tensione nella fune ($g = 9,81 \, \text{m/s}^2$).
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.26 </span> (Forza centripeta in orbita)</p>
-<div class="section" id="exercise-content">
-<p>Una navetta spaziale di massa <span class="math notranslate nohighlight">\(500 \, \text{kg}\)</span> è in orbita circolare attorno alla Terra con un raggio di <span class="math notranslate nohighlight">\(500 \, \text{km}\)</span>. Calcola la forza centripeta necessaria per mantenere la navetta in orbita.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-27">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.27 </span> (Satelliti in orbita geostazionaria)</p>
-<div class="section" id="exercise-content">
-<p>Calcola l’altitudine di un satellite che segue un’orbita geostazionaria, cioè che ha lo stesso periodo della rotazione terrestre (<span class="math notranslate nohighlight">\(T = 24 \, \text{h}\)</span>). Usa <span class="math notranslate nohighlight">\(R_T = 6.371 \, \text{km}\)</span> e <span class="math notranslate nohighlight">\(g = 9,81 \, \text{m/s}^2\)</span>.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-28">
+## Moto di corpi rigidi in 2D
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.28 </span> (Energia potenziale gravitazionale)</p>
-<div class="section" id="exercise-content">
-<p>Calcola l’energia potenziale gravitazionale di un oggetto di <span class="math notranslate nohighlight">\(2,0 \, \text{kg}\)</span> posto a una distanza di <span class="math notranslate nohighlight">\(10 \, \text{m}\)</span> da un altro oggetto di massa <span class="math notranslate nohighlight">\(5,0 \, \text{kg}\)</span>.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-29">
+```{exercise} Disco in rotazione
+Un disco di raggio $0,5 \, \text{m}$ e momento d'inerzia $I = 0,2 \, \text{kg·m}^2$ è soggetto a un momento torcente costante di $5 \, \text{N·m}$. Calcola l'accelerazione angolare e la velocità angolare dopo $4 \, \text{s}$.
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.29 </span> (Energia cinetica di un satellite)</p>
-<div class="section" id="exercise-content">
-<p>Un satellite di massa <span class="math notranslate nohighlight">\(3,0 \, \text{kg}\)</span> si muove in orbita circolare con raggio <span class="math notranslate nohighlight">\(1000 \, \text{km}\)</span> e velocità di <span class="math notranslate nohighlight">\(7,5 \, \text{km/s}\)</span>. Calcola la sua energia cinetica.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-30">
+```{exercise} Asta rotante
+Un'asta uniforme di lunghezza $2,0 \, \text{m}$ e massa $10 \, \text{kg}$ ruota attorno a un’estremità. Calcola il momento d’inerzia e il momento torcente necessario per darle un'accelerazione angolare di $3 \, \text{rad/s}^2$.
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.30 </span> (Periodo di un satellite)</p>
-<div class="section" id="exercise-content">
-<p>Un satellite è in orbita circolare a <span class="math notranslate nohighlight">\(200 \, \text{km}\)</span> sopra la superficie terrestre. Calcola il suo periodo orbitale (<span class="math notranslate nohighlight">\(R_T = 6.371 \, \text{km}\)</span>, <span class="math notranslate nohighlight">\(g = 9,81 \, \text{m/s}^2\)</span>).</p>
-</div>
-</div>
-</div>
-<hr class="docutils" />
-<div class="section" id="equilibrio-e-stabilita">
-<h2><span class="section-number">12.9.6. </span>Equilibrio e Stabilità<a class="headerlink" href="#equilibrio-e-stabilita" title="Permalink to this heading">#</a></h2>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-31">
+```{exercise} Rotolamento di una sfera
+Una sfera di raggio $0,2 \, \text{m}$ e massa $5 \, \text{kg}$ rotola senza scivolare su un piano inclinato. Calcola l'accelerazione della sfera e la forza di attrito necessaria.
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.31 </span> (Stabilità di un oggetto)</p>
-<div class="section" id="exercise-content">
-<p>Un cubo uniforme di massa <span class="math notranslate nohighlight">\(10 \, \text{kg}\)</span> e lato <span class="math notranslate nohighlight">\(0,5 \, \text{m}\)</span> è appoggiato su un piano inclinato di <span class="math notranslate nohighlight">\(20^\circ\)</span>. Verifica se il cubo rimane stabile o si ribalta.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-32">
+```{exercise} Bilanciamento di un’asta
+Un’asta di lunghezza $3,0 \, \text{m}$ e massa $6 \, \text{kg}$ è appoggiata su due supporti agli estremi. Un peso di $20 \, \text{N}$ è sospeso a $1,0 \, \text{m}$ da un'estremità. Calcola le reazioni vincolari.
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.32 </span> (Momento torcenti in equilibrio)</p>
-<div class="section" id="exercise-content">
-<p>Un’asta di massa <span class="math notranslate nohighlight">\(5 \, \text{kg}\)</span> e lunghezza <span class="math notranslate nohighlight">\(2 \, \text{m}\)</span> è sospesa a un’estremità. Se un peso di <span class="math notranslate nohighlight">\(30 \, \text{N}\)</span> viene appeso a <span class="math notranslate nohighlight">\(1 \, \text{m}\)</span> dalla base, calcola il momento torcenti necessario per mantenere l’asta in equilibrio.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-33">
+```{exercise} Energia cinetica rotazionale
+Un disco di massa $4,0 \, \text{kg}$ e raggio $0,3 \, \text{m}$ ruota con velocità angolare $10 \, \text{rad/s}$. Calcola l'energia cinetica totale (traslazionale + rotazionale).
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.33 </span> (Centro di massa e stabilità)</p>
-<div class="section" id="exercise-content">
-<p>Un oggetto composto da due blocchi di massa <span class="math notranslate nohighlight">\(2 \, \text{kg}\)</span> e <span class="math notranslate nohighlight">\(5 \, \text{kg}\)</span> è posto su un piano inclinato. Determina la posizione del centro di massa e verifica la sua stabilità.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-34">
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.34 </span> (Equilibrio di un corpo galleggiante)</p>
-<div class="section" id="exercise-content">
-<p>Un oggetto con densità <span class="math notranslate nohighlight">\(800 \, \text{kg/m}^3\)</span> galleggia in un fluido di densità <span class="math notranslate nohighlight">\(1.000 \, \text{kg/m}^3\)</span>. Determina la frazione sommersa dell’oggetto.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-35">
+## Collisioni
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.35 </span> (Equilibrio di una leva)</p>
-<div class="section" id="exercise-content">
-<p>Una leva lunga <span class="math notranslate nohighlight">\(3 \, \text{m}\)</span> ha un punto di supporto al centro. A sinistra del supporto, viene applicata una forza di <span class="math notranslate nohighlight">\(100 \, \text{N}\)</span> a <span class="math notranslate nohighlight">\(0,5 \, \text{m}\)</span> dal supporto. Qual è la forza necessaria per mantenere la leva in equilibrio a <span class="math notranslate nohighlight">\(2 \, \text{m}\)</span> dal supporto?</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-36">
+```{exercise} Urto elastico
+Una massa $m_1 = 2,0 \, \text{kg}$, inizialmente ferma, viene urtata da una massa $m_2 = 1,0 \, \text{kg}$ in moto con velocità $v_2 = 4,0 \, \text{m/s}$. Calcola le velocità finali dopo un urto elastico.
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.36 </span> (Stabilità di una torre)</p>
-<div class="section" id="exercise-content">
-<p>Una torre alta <span class="math notranslate nohighlight">\(100 \, \text{m}\)</span> ha una base quadrata di <span class="math notranslate nohighlight">\(10 \, \text{m}\)</span> per lato. Calcola il rapporto tra la base e l’altezza, e discuti la stabilità della torre.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-37">
+```{exercise} Urto completamente anelastico
+Due blocchi di masse $3,0 \, \text{kg}$ e $2,0 \, \text{kg}$ si muovono rispettivamente a $5,0 \, \text{m/s}$ e $-3,0 \, \text{m/s}$. Calcola la velocità finale se i due blocchi si uniscono dopo l'urto.
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.37 </span> (Equilibrio di una trave)</p>
-<div class="section" id="exercise-content">
-<p>Una trave di <span class="math notranslate nohighlight">\(10 \, \text{m}\)</span> di lunghezza e massa <span class="math notranslate nohighlight">\(20 \, \text{kg}\)</span> è appoggiata su due supporti. Un carico di <span class="math notranslate nohighlight">\(50 \, \text{N}\)</span> è sospeso al centro della trave. Calcola le reazioni ai supporti per mantenere l’equilibrio.</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-38">
+```{exercise} Energia persa nell'urto
+Due sfere di massa uguale $m = 1,0 \, \text{kg}$ si scontrano frontalmente con velocità iniziali $2,0 \, \text{m/s}$ e $-1,0 \, \text{m/s}$. Determina l'energia cinetica persa nell'urto anelastico.
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.38 </span> (Momenti di forze in equilibrio)</p>
-<div class="section" id="exercise-content">
-<p>Un’asta di <span class="math notranslate nohighlight">\(2 \, \text{m}\)</span> è sospesa a un’estremità. Un peso di <span class="math notranslate nohighlight">\(40 \, \text{N}\)</span> è appeso a <span class="math notranslate nohighlight">\(1 \, \text{m}\)</span> dal punto di sospensione. Quale forza orizzontale deve essere applicata all’altro estremo per mantenere l’asta in equilibrio?</p>
-</div>
-</div>
-<div class="exercise admonition" id="ch/mechanics/dynamics-problems-exercise-39">
+```{exercise} Urto su un piano inclinato
+Una pallina di massa $0,5 \, \text{kg}$ rotola lungo un piano inclinato e colpisce una parete con velocità $3,0 \, \text{m/s}$. Se l'urto è elastico, calcola la velocità della pallina dopo l'urto.
+```
 
-<p class="admonition-title"><span class="caption-number">Exercise 12.39 </span> (Instabilità di un corpo)</p>
-<div class="section" id="exercise-content">
-<p>Un oggetto ha un centro di massa molto alto rispetto alla sua base. Quali sono le condizioni per cui l’oggetto risulta instabile? Discuti in relazione all’altezza e alla posizione del centro di massa.</p>
-</div>
-</div>
-</div>
+```{exercise} Velocità del centro di massa dopo un urto
+Due oggetti, $m_1 = 4,0 \, \text{kg}$ e $m_2 = 2,0 \, \text{kg}$, si muovono verso il centro di massa con velocità opposte. Dopo un urto completamente anelastico, calcola la velocità del sistema.
+```
+
+
+## Gravitazione
+
+```{exercise} Legge di gravitazione
+Due masse $m_1 = 5,0 \, \text{kg}$ e $m_2 = 10,0 \, \text{kg}$ si trovano a una distanza di $2,0 \, \text{m}$. Calcola la forza gravitazionale che agisce tra di loro ($G = 6,67 \cdot 10^{-11} \, \text{N·m}^2/\text{kg}^2$).
+```
+
+```{exercise} Orbita di un satellite
+Un satellite di massa $1.000 \, \text{kg}$ si trova in un'orbita circolare a $300 \, \text{km}$ sopra la superficie terrestre. Calcola la velocità orbitale ($R_T = 6.371 \, \text{km}$, $g = 9,81 \, \text{m/s}^2$).
+```
+
+```{exercise} Terza legge di Kepler
+Un pianeta ha un'orbita ellittica con un periodo di $365 \, \text{giorni}$. Calcola la lunghezza del semi-asse maggiore della sua orbita, se la sua distanza dal Sole è di $1 \, \text{AU}$ (unità astronomica).
+```
+
+```{exercise} Forza centripeta in orbita
+Una navetta spaziale di massa $500 \, \text{kg}$ è in orbita circolare attorno alla Terra con un raggio di $500 \, \text{km}$. Calcola la forza centripeta necessaria per mantenere la navetta in orbita.
+```
+
+```{exercise} Satelliti in orbita geostazionaria
+Calcola l’altitudine di un satellite che segue un'orbita geostazionaria, cioè che ha lo stesso periodo della rotazione terrestre ($T = 24 \, \text{h}$). Usa $R_T = 6.371 \, \text{km}$ e $g = 9,81 \, \text{m/s}^2$.
+```
+
+```{exercise} Energia potenziale gravitazionale
+Calcola l’energia potenziale gravitazionale di un oggetto di $2,0 \, \text{kg}$ posto a una distanza di $10 \, \text{m}$ da un altro oggetto di massa $5,0 \, \text{kg}$.
+```
+
+```{exercise} Energia cinetica di un satellite
+Un satellite di massa $3,0 \, \text{kg}$ si muove in orbita circolare con raggio $1000 \, \text{km}$ e velocità di $7,5 \, \text{km/s}$. Calcola la sua energia cinetica.
+```
+
+```{exercise} Periodo di un satellite
+Un satellite è in orbita circolare a $200 \, \text{km}$ sopra la superficie terrestre. Calcola il suo periodo orbitale ($R_T = 6.371 \, \text{km}$, $g = 9,81 \, \text{m/s}^2$).
+```
+
+
+## Equilibrio e Stabilità
+
+```{exercise} Stabilità di un oggetto
+Un cubo uniforme di massa $10 \, \text{kg}$ e lato $0,5 \, \text{m}$ è appoggiato su un piano inclinato di $20^\circ$. Verifica se il cubo rimane stabile o si ribalta.
+```
+
+```{exercise} Momento torcenti in equilibrio
+Un’asta di massa $5 \, \text{kg}$ e lunghezza $2 \, \text{m}$ è sospesa a un’estremità. Se un peso di $30 \, \text{N}$ viene appeso a $1 \, \text{m}$ dalla base, calcola il momento torcenti necessario per mantenere l’asta in equilibrio.
+```
+
+```{exercise} Centro di massa e stabilità
+Un oggetto composto da due blocchi di massa $2 \, \text{kg}$ e $5 \, \text{kg}$ è posto su un piano inclinato. Determina la posizione del centro di massa e verifica la sua stabilità.
+```
+
+```{exercise} Equilibrio di un corpo galleggiante
+Un oggetto con densità $800 \, \text{kg/m}^3$ galleggia in un fluido di densità $1.000 \, \text{kg/m}^3$. Determina la frazione sommersa dell'oggetto.
+```
+
+```{exercise} Equilibrio di una leva
+Una leva lunga $3 \, \text{m}$ ha un punto di supporto al centro. A sinistra del supporto, viene applicata una forza di $100 \, \text{N}$ a $0,5 \, \text{m}$ dal supporto. Qual è la forza necessaria per mantenere la leva in equilibrio a $2 \, \text{m}$ dal supporto?
+```
+
+```{exercise} Stabilità di una torre
+Una torre alta $100 \, \text{m}$ ha una base quadrata di $10 \, \text{m}$ per lato. Calcola il rapporto tra la base e l’altezza, e discuti la stabilità della torre.
+```
+
+```{exercise} Equilibrio di una trave
+Una trave di $10 \, \text{m}$ di lunghezza e massa $20 \, \text{kg}$ è appoggiata su due supporti. Un carico di $50 \, \text{N}$ è sospeso al centro della trave. Calcola le reazioni ai supporti per mantenere l’equilibrio.
+```
+
+```{exercise} Momenti di forze in equilibrio
+Un’asta di $2 \, \text{m}$ è sospesa a un’estremità. Un peso di $40 \, \text{N}$ è appeso a $1 \, \text{m}$ dal punto di sospensione. Quale forza orizzontale deve essere applicata all’altro estremo per mantenere l’asta in equilibrio?
+```
+
+```{exercise} Instabilità di un corpo
+Un oggetto ha un centro di massa molto alto rispetto alla sua base. Quali sono le condizioni per cui l’oggetto risulta instabile? Discuti in relazione all'altezza e alla posizione del centro di massa.
+```
+
+-->
 </div>
 
     <script type="text/x-thebe-config">
@@ -963,25 +1835,6 @@ Soluzione.<div class="sd-summary-down docutils">
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contenuti
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-di-un-punto-materiale">12.9.1. Moto di un punto materiale</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-di-sistemi-di-punti-materiali">12.9.2. Moto di sistemi di punti materiali</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-di-corpi-rigidi-in-2d">12.9.3. Moto di corpi rigidi in 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collisioni">12.9.4. Collisioni</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gravitazione">12.9.5. Gravitazione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equilibrio-e-stabilita">12.9.6. Equilibrio e Stabilità</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
