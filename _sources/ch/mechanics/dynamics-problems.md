@@ -5,6 +5,1364 @@ Questa pagina contiene esercizi di dinamica relativi a diversi argomenti: **moto
 
 ---
 
+Argomenti: vedi alla fine file. Uncomment
+- moto di sistemi di punti
+- sistemi estesi con corpi rigidi in 2d
+- collisioni
+- gravitazione
+- equilibrio e stabilità
+
+---
+
+````{only} latex
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+Una palla di massa $m$ si trova inizialmente in quiete rispetto a un'osservatore inerziale, a una quota $h$ sopra la superficie terrestre.
+La palla viene lasciata cadere dalla condizione di quiete. Viene chiesto di determinare:
+1. la velocità di impatto con il terreno
+2. il tempo impiegato per raggiungere il terreno.
+
+Viene chiesto di svolgere i conti trascurando la resistenza dell'aria. Si chiede poi di:
+3. confrontare i risultati ottenuti con i risultati per un corpo di massa $M > m$ 
+4. confrontare i risultati ottenuti con i risultati che si otterrebbero nei pressi della superficie lunare.
+
+Raggio Terra: $R_E = 6380 \, km$ ; massa Terra: $M_E = 5.98 \cdot 10^{24} \, kg$;
+Raggio Luna:  $R_M = 1740 \, km$ ; massa Luna:  $M_M = 7.34 \cdot 10^{22} \, kg$;
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/free-fall.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{1.\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 2.}
+Viene chiesto di svolgere l'esercizio precedente, in un ambiente in cui non sia più trascurabile la resistenza aerodinamica del sistema.
+In particolare viene chiesto di risolvere il problema nel caso in cui la resistenza aerodinamica sia:
+1. proporzionale alla velocità relativa del corpo rispetto al fluido, di intensità $F = c v$, con $c = \dots$
+2. proporzionale al quadrato della velocità relativa del corpo rispetto al fluido, di intensità $F = \frac{1}{2} \rho S c_F v^2$, con...
+
+Qui si considera il fluido in quiete rispetto all'ambiente: la velocità del corpo relativa al fluido è quindi uguale alla velocità rispetto all'ambiente.
+
+Viene chiesto poi di determinare la **velocità limite** raggiungibile da un corpo in caduta libera, potendo considerare l'accelerazione di gravità e la densità dell'aria costanti lungo la caduta. 
+
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 3.}
+Un corpo di massa $m$ viene lanciato con velocità iniziale orizzontale con valore assoluto $|\vec{v}_0|$, da una quota $h$ sopra la superficie terrestre. Trascurando la resistenza aerodinamica, viene chiesto di determinare:
+1. gittata
+2. tempo di volo
+3. velocità del corpo all'impatto con il suolo
+4. impulso e forza media quando il corpo raggiunge terra, sapendo che il corpo si arresta in un tempo $\Delta t$ lungo una traiettoria rettilinea.
+
+Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aerodinamica.
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/parabolic-2.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 4.}
+Viene chiesto di svolgere l'esercizio precedente, in un ambiente in cui non sia più trascurabile la resistenza aerodinamica del sistema.
+In particolare viene chiesto di risolvere il problema nel caso in cui la resistenza aerodinamica sia:
+1. proporzionale alla velocità relativa del corpo rispetto al fluido, di intensità $F = c v$, con $c = \dots$
+2. proporzionale al quadrato della velocità relativa del corpo rispetto al fluido, di intensità $F = \frac{1}{2} \rho S c_F v^2$, con...
+
+Qui si considera il fluido in quiete rispetto all'ambiente: la velocità del corpo relativa al fluido è quindi uguale alla velocità rispetto all'ambiente.
+
+Viene chiesto poi di determinare la **velocità limite** raggiungibile da un corpo in caduta libera, potendo considerare l'accelerazione di gravità e la densità dell'aria costanti lungo la caduta. 
+
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/parabolic-1.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 5.}
+Conoscendo la posizione del punto di lancio $A$, e la posizione del bersaglio $B$ viene chiesto di determinare:
+1. le condizioni sulla velocità di lancio per colpire il bersaglio. Una volta determinate, viene chiesto di determinare anche il tempo di volo.
+2. tra tutte le velocità ammissibili per colpire il bersaglio, viene chiesto di determinare quella con valore assoluto minimo, sotto al quale non è possibile raggiungere l'obiettivo.
+
+Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aerodinamica.
+
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/parabolic-3.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 6.}
+Conoscendo la posizione del punto di lancio $A$, e la posizione del bersaglio mobile $B: \vec{r}_B(t) = x_B \hat{x} + (y_{B,0} + v_{y,B} t) \hat{y}$ viene chiesto di determinare:
+1. le condizioni sulla velocità di lancio per colpire il bersaglio. Una volta determinate, viene chiesto di determinare anche il tempo di volo.
+2. tra tutte le velocità ammissibili per colpire il bersaglio, viene chiesto di determinare quella con valore assoluto minimo, sotto al quale non è possibile raggiungere l'obiettivo.
+
+Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aerodinamica.
+
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/parabolic-3.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 7.}
+Un calciatore deve tirare una punizione in porta da una distanza $b$. La barriera viene posta a una distanza $a$ dal punto di tiro e i giocatori in barriera possono coprire fino a una quota $h$ saltando. Volendo centrare la porta a una quota $d$ (compresa tra $0$: la palla tocca terra sulla linea di porta senza rimbalzare prima; e $d_{max}$ la palla finisce all'incrocio), si chiede di determinare:
+1. velocità iniziale imposta al pallone dal calcio
+2. tempo di volo del pallone tra il calcio e la porta
+
+in tutte le condizioni che permettono di prendere la porta senza colpire la barriera, e senza far rimbalzare il pallone prima della linea della porta. Per ogni valore $d$, si calcoli poi la condizione che corrisponde al tempo minore.
+
+Si trascuri ogni effetto, dovuto alla rotazione del pallone.
+
+Si svolga l'esercizio prima trascurando e poi considerando la resistenza aerodinamica.
+
+**todo** Si può ampliare un po' l'esercizio considerando i tempi di reazione del portiere e la velocità nel comprire le distanze? O formulare qualche metodo per stimare la probabilità di realizzazione di calci di punizione...
+
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/parabolic-4.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 8.}
+Un corpo puntiforme di massa $m$ è vincolato a una guida semi-circolare con un vincolo bilatero ideale (no attrito, solo reazione normale). Il corpo parte in condizioni di quiete da una posizione identificata da un raggio che forma un angolo $\theta_0$ con la verticale. Viene chiesto di:
+1. rappresentare il diagramma delle forze agenti sul corpo;
+2. scrivere l'espressione dell'energia meccanica del sistema, considerando il centro della semicriconferenza con punto di riferimento per definire l'energia potenziale gravitazionale nulla;
+3. determinare la velocità massima del corpo nel suo moto
+4. scrivere le equazioni del moto del sistema, usando **se possibile**: a) le equazioni cardinali della dinamica; b) la legge di conservazione dell'energia meccanica, c) altre leggi di conservazioni di quantità meccaniche costanti nella dinamica del sistema
+5. determinare le reazioni vincolari della guida sul corpo puntiforme in funzione dell'angolo $\theta$ e daella sua derivata $\dot{\theta}$
+
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/arc-1.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 9.}
+Un corpo puntiforme di massa $m$ è vincolato a una guida ad arco di cerchio con un vincolo bilatero ideale. Viene lasciato cadere da un angolo $\theta_0$ in condizioni di quiete. L'angolo "di uscita" della guida è $\theta_1$. Se ragginge l'angolo di uscita, il corpo è libero di compiere la traiettoria caratteristica del moto libero nella prossimità della superficie terrestre. Viene chiesto di determinare:
+1. la velocità massima del corpo lungo la guida,
+2. le condizioni per venire lanciato fuori dalla guida
+3. la traiettoria del moto libero, determinando in particolare la gittata, il tempo di volo e la velocità di impatto.
+4. sapendo che all'impatto il corpo viene rallentato dal terreno lungo una traiettoria rettilinea con una decelerazione costante $a$, si chiede di tereminare il tempo necessario all'arresto (a partire dall'impatto), l'impulso e la forza media.
+
+Viene chiesto di discutere il problema considerando un attrito dinamico con coefficiente di attrito $\mu_d$ tra la guida e il corpo, rappresentando il diagramma delle forze agenti sul corpo e determinando le equazioni del moto lungo la guida. 
+
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/arc-2.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 10.}
+Una guida è formata da un primo tratto di raggio $R_1$, un secondo tratto di una circonferenza completa di raggio $R_2 < R_1$ e un terzo tratto rettilineo orizzontale. Trascurando l'attrito nei primi due tratti, viene chiesto di determinare:
+1. le condizioni necessarie per poter compiere il loop del secondo tratto, nel caso di vincolo bilatero
+2. le condizioni necessarie per poter compiere il loop del secondo tratto, nel caso di vincolo monolatero
+3. la distanza percorsa sul terzo tratto orizzontale, sul quale non è possibile trascurare l'attrito con la guida, rappresentabile con la formula dell'attrito dinamico con coefficiente $\mu_d$.
+
+Come esercizio aggiuntivo, viene chiesto di discutere il problema del moto del corpo con vincolo monolatero, nel caso in cui non sia in grado di compiere il loop.
+
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/arc-3.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 11.}
+Conoscendo la configurazione iniziale della massa $m$, viene chiesto di descrivere la dinamica del sistema nel caso di attrito nullo e nel caso di attrito non trascurabile. Viene chiesto di:
+1. determinare le equazioni del moto
+2. risolvere le equazioni del moto
+3. determinare le reazioni vincolari scambiate tra massa e parete obliqua
+4. determinare la forza scambiata tra molla e parete, in funzione del tempo
+
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/oscillator-1.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+  Testo
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/oscillator-2-hinge.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+  Testo
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/oscillator-2-cart.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+  Testo
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/oscillator-3-hinge.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+  Testo
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/oscillator-3-cart.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+  Testo
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/oscillator-3-cart-hinge-rod.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+  Testo
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/oscillator-4-spring-hinge.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+  Testo
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/oscillator-4-spring-cart.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+  Testo
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/oscillator-5-oscillator-point.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+  Testo
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/oscillator-5-oscillator-disk.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+  Testo
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/oscillator-5-oscillator-prism-point.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+  Testo
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/oscillator-5-oscillator-prism-disk.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+  Testo
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/ramp-6.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+  Testo
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/ramp-6-moving.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+  Testo
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/eccentric-6-0.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+  Testo
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/eccentric-6-1.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+  Testo
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/eccentric-6-2.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+  Testo
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/detach-7-point.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+  Testo
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/detach-7-disk.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+  Testo
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/oscillator-8-ring-disk.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+  Testo
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/oscillator-8-ring-half-disk.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+````
+
+````{only} html
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1. Caduta libera
+:columns: 8
+
+Una palla di massa $m$ si trova inizialmente in quiete rispetto a un'osservatore inerziale, a una quota $h$ sopra la superficie terrestre.
+La palla viene lasciata cadere dalla condizione di quiete. Viene chiesto di determinare:
+1. la velocità di impatto con il terreno
+2. il tempo impiegato per raggiungere il terreno.
+
+Viene chiesto di svolgere i conti trascurando la resistenza dell'aria. Si chiede poi di:
+3. confrontare i risultati ottenuti con i risultati per un corpo di massa $M > m$ 
+4. confrontare i risultati ottenuti con i risultati che si otterrebbero nei pressi della superficie lunare.
+
+Raggio Terra: $R_E = 6380 \, km$ ; massa Terra: $M_E = 5.98 \cdot 10^{24} \, kg$;
+Raggio Luna:  $R_M = 1740 \, km$ ; massa Luna:  $M_M = 7.34 \cdot 10^{22} \, kg$;
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/free-fall.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 2. Caduta libera con resistenza aerodinamica
+:columns: 12
+
+Viene chiesto di svolgere l'esercizio precedente, in un ambiente in cui non sia più trascurabile la resistenza aerodinamica del sistema.
+In particolare viene chiesto di risolvere il problema nel caso in cui la resistenza aerodinamica sia:
+1. proporzionale alla velocità relativa del corpo rispetto al fluido, di intensità $F = c v$, con $c = \dots$
+2. proporzionale al quadrato della velocità relativa del corpo rispetto al fluido, di intensità $F = \frac{1}{2} \rho S c_F v^2$, con...
+
+Qui si considera il fluido in quiete rispetto all'ambiente: la velocità del corpo relativa al fluido è quindi uguale alla velocità rispetto all'ambiente.
+
+Viene chiesto poi di determinare la **velocità limite** raggiungibile da un corpo in caduta libera, potendo considerare l'accelerazione di gravità e la densità dell'aria costanti lungo la caduta. 
+
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 3.
+:columns: 8
+
+Un corpo di massa $m$ viene lanciato con velocità iniziale orizzontale con valore assoluto $|\vec{v}_0|$, da una quota $h$ sopra la superficie terrestre. Trascurando la resistenza aerodinamica, viene chiesto di determinare:
+1. gittata
+2. tempo di volo
+3. velocità del corpo all'impatto con il suolo
+4. impulso e forza media quando il corpo raggiunge terra, sapendo che il corpo si arresta in un tempo $\Delta t$ lungo una traiettoria rettilinea.
+
+Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aerodinamica.
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/parabolic-2.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 4.
+:columns: 8
+
+Viene chiesto di determinare:
+1. la gittata massima di un corpo di massa $m$ e velocità iniziale con valore assoluto $|\vec{v}_0|$, trascurando la resistenza aerodianmica. Per questa condizione viene chiesto di determinare angolo iniziale rispetto all'orizzontale, tempo di volo e altezza massima raggiunta.
+
+Viene poi chiesto di ripetere lo stesso esercizio:
+2. non conoscendo la velocità iniziale, ma che il corpo viene inizialmente lanciato da un meccanismo in grado di applicare un impulso $I$ noto ai corpi.
+3. senza trascurare la resistenza aerodinamica
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/parabolic-1.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 5.
+:columns: 8
+
+Conoscendo la posizione del punto di lancio $A$, e la posizione del bersaglio $B$ viene chiesto di determinare:
+1. le condizioni sulla velocità di lancio per colpire il bersaglio. Una volta determinate, viene chiesto di determinare anche il tempo di volo.
+2. tra tutte le velocità ammissibili per colpire il bersaglio, viene chiesto di determinare quella con valore assoluto minimo, sotto al quale non è possibile raggiungere l'obiettivo.
+
+Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aerodinamica.
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/parabolic-3.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 6.
+:columns: 8
+
+Conoscendo la posizione del punto di lancio $A$, e la posizione del bersaglio mobile $B: \vec{r}_B(t) = x_B \hat{x} + (y_{B,0} + v_{y,B} t) \hat{y}$ viene chiesto di determinare:
+1. le condizioni sulla velocità di lancio per colpire il bersaglio. Una volta determinate, viene chiesto di determinare anche il tempo di volo.
+2. tra tutte le velocità ammissibili per colpire il bersaglio, viene chiesto di determinare quella con valore assoluto minimo, sotto al quale non è possibile raggiungere l'obiettivo.
+
+Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aerodinamica.
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/parabolic-3.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 7.
+:columns: 8
+
+Un calciatore deve tirare una punizione in porta da una distanza $b$. La barriera viene posta a una distanza $a$ dal punto di tiro e i giocatori in barriera possono coprire fino a una quota $h$ saltando. Volendo centrare la porta a una quota $d$ (compresa tra $0$: la palla tocca terra sulla linea di porta senza rimbalzare prima; e $d_{max}$ la palla finisce all'incrocio), si chiede di determinare:
+1. velocità iniziale imposta al pallone dal calcio
+2. tempo di volo del pallone tra il calcio e la porta
+
+in tutte le condizioni che permettono di prendere la porta senza colpire la barriera, e senza far rimbalzare il pallone prima della linea della porta. Per ogni valore $d$, si calcoli poi la condizione che corrisponde al tempo minore.
+
+Si trascuri ogni effetto, dovuto alla rotazione del pallone.
+
+Si svolga l'esercizio prima trascurando e poi considerando la resistenza aerodinamica.
+
+**todo** Si può ampliare un po' l'esercizio considerando i tempi di reazione del portiere e la velocità nel comprire le distanze? O formulare qualche metodo per stimare la probabilità di realizzazione di calci di punizione...
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/parabolic-4.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 8.
+:columns: 8
+
+Un corpo puntiforme di massa $m$ è vincolato a una guida semi-circolare con un vincolo bilatero ideale (no attrito, solo reazione normale). Il corpo parte in condizioni di quiete da una posizione identificata da un raggio che forma un angolo $\theta_0$ con la verticale. Viene chiesto di:
+1. rappresentare il diagramma delle forze agenti sul corpo;
+2. scrivere l'espressione dell'energia meccanica del sistema, considerando il centro della semicriconferenza con punto di riferimento per definire l'energia potenziale gravitazionale nulla;
+3. determinare la velocità massima del corpo nel suo moto
+4. scrivere le equazioni del moto del sistema, usando **se possibile**: a) le equazioni cardinali della dinamica; b) la legge di conservazione dell'energia meccanica, c) altre leggi di conservazioni di quantità meccaniche costanti nella dinamica del sistema
+5. determinare le reazioni vincolari della guida sul corpo puntiforme in funzione dell'angolo $\theta$ e daella sua derivata $\dot{\theta}$
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/arc-1.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 9.
+:columns: 8
+
+Un corpo puntiforme di massa $m$ è vincolato a una guida ad arco di cerchio con un vincolo bilatero ideale. Viene lasciato cadere da un angolo $\theta_0$ in condizioni di quiete. L'angolo "di uscita" della guida è $\theta_1$. Se ragginge l'angolo di uscita, il corpo è libero di compiere la traiettoria caratteristica del moto libero nella prossimità della superficie terrestre. Viene chiesto di determinare:
+1. la velocità massima del corpo lungo la guida,
+2. le condizioni per venire lanciato fuori dalla guida
+3. la traiettoria del moto libero, determinando in particolare la gittata, il tempo di volo e la velocità di impatto.
+4. sapendo che all'impatto il corpo viene rallentato dal terreno lungo una traiettoria rettilinea con una decelerazione costante $a$, si chiede di tereminare il tempo necessario all'arresto (a partire dall'impatto), l'impulso e la forza media.
+
+Viene chiesto di discutere il problema considerando un attrito dinamico con coefficiente di attrito $\mu_d$ tra la guida e il corpo, rappresentando il diagramma delle forze agenti sul corpo e determinando le equazioni del moto lungo la guida. 
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/arc-2.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 10.
+:columns: 8
+
+Una guida è formata da un primo tratto di raggio $R_1$, un secondo tratto di una circonferenza completa di raggio $R_2 < R_1$ e un terzo tratto rettilineo orizzontale. Trascurando l'attrito nei primi due tratti, viene chiesto di determinare:
+1. le condizioni necessarie per poter compiere il loop del secondo tratto, nel caso di vincolo bilatero
+2. le condizioni necessarie per poter compiere il loop del secondo tratto, nel caso di vincolo monolatero
+3. la distanza percorsa sul terzo tratto orizzontale, sul quale non è possibile trascurare l'attrito con la guida, rappresentabile con la formula dell'attrito dinamico con coefficiente $\mu_d$.
+
+Come esercizio aggiuntivo, viene chiesto di discutere il problema del moto del corpo con vincolo monolatero, nel caso in cui non sia in grado di compiere il loop.
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/arc-3.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 11.
+:columns: 8
+
+Conoscendo la configurazione iniziale della massa $m$, viene chiesto di descrivere la dinamica del sistema nel caso di attrito nullo e nel caso di attrito non trascurabile. Viene chiesto di:
+1. determinare le equazioni del moto
+2. risolvere le equazioni del moto
+3. determinare le reazioni vincolari scambiate tra massa e parete obliqua
+4. determinare la forza scambiata tra molla e parete, in funzione del tempo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/oscillator-1.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1.
+:columns: 8
+
+Testo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/oscillator-2-hinge.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1.
+:columns: 8
+
+Testo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/oscillator-2-cart.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1.
+:columns: 8
+
+Testo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/oscillator-3-hinge.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1.
+:columns: 8
+
+Testo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/oscillator-3-cart.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1.
+:columns: 8
+
+Testo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/oscillator-3-cart-hinge-rod.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1.
+:columns: 8
+
+Testo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/oscillator-4-spring-hinge.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1.
+:columns: 8
+
+Testo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/oscillator-4-spring-cart.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1.
+:columns: 8
+
+Testo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/oscillator-5-oscillator-point.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1.
+:columns: 8
+
+Testo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/oscillator-5-oscillator-disk.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1.
+:columns: 8
+
+Testo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/oscillator-5-oscillator-prism-point.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1.
+:columns: 8
+
+Testo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/oscillator-5-oscillator-prism-disk.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1.
+:columns: 8
+
+Testo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/ramp-6.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1.
+:columns: 8
+
+Testo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/ramp-6-moving.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1.
+:columns: 8
+
+Testo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/eccentric-6-0.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1.
+:columns: 8
+
+Testo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/eccentric-6-1.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1.
+:columns: 8
+
+Testo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/eccentric-6-2.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1.
+:columns: 8
+
+Testo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/detach-7-point.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1.
+:columns: 8
+
+Testo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/detach-7-disk.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1.
+:columns: 8
+
+Testo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/oscillator-8-ring-disk.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 1.
+:columns: 8
+
+Testo
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/oscillator-8-ring-half-disk.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione.
+```
+
+
+````
+<!--
+
 ```{exercise} Pendolo - Equazioni dinamiche
 :label: pendulum-eom
 
@@ -30,8 +1388,9 @@ Una biglia di massa $m$ e raggio $R$ rotola su un piano inclinato di un angolo $
 
 ```
 
----
+-->
 
+<!--
 ## Moto di un punto materiale
 
 ```{exercise} Accelerazione costante
@@ -54,7 +1413,6 @@ Un punto materiale si muove lungo una circonferenza di raggio $2 \, \text{m}$ co
 Un blocco di $5 \, \text{kg}$ scivola senza attrito lungo un piano inclinato di $30^\circ$. Calcola l'accelerazione del blocco e la velocità dopo $4 \, \text{s}$.
 ```
 
----
 
 ## Moto di sistemi di punti materiali
 
@@ -78,7 +1436,6 @@ Un sistema è composto da due blocchi di masse $m_1 = 5 \, \text{kg}$ e $m_2 = 1
 Due blocchi di masse $m_1 = 8 \, \text{kg}$ e $m_2 = 12 \, \text{kg}$ sono collegati da una fune che passa su una carrucola. Calcola l'accelerazione del sistema e la tensione nella fune ($g = 9,81 \, \text{m/s}^2$).
 ```
 
----
 
 ## Moto di corpi rigidi in 2D
 
@@ -102,7 +1459,6 @@ Un’asta di lunghezza $3,0 \, \text{m}$ e massa $6 \, \text{kg}$ è appoggiata 
 Un disco di massa $4,0 \, \text{kg}$ e raggio $0,3 \, \text{m}$ ruota con velocità angolare $10 \, \text{rad/s}$. Calcola l'energia cinetica totale (traslazionale + rotazionale).
 ```
 
----
 
 ## Collisioni
 
@@ -126,7 +1482,6 @@ Una pallina di massa $0,5 \, \text{kg}$ rotola lungo un piano inclinato e colpis
 Due oggetti, $m_1 = 4,0 \, \text{kg}$ e $m_2 = 2,0 \, \text{kg}$, si muovono verso il centro di massa con velocità opposte. Dopo un urto completamente anelastico, calcola la velocità del sistema.
 ```
 
----
 
 ## Gravitazione
 
@@ -162,7 +1517,6 @@ Un satellite di massa $3,0 \, \text{kg}$ si muove in orbita circolare con raggio
 Un satellite è in orbita circolare a $200 \, \text{km}$ sopra la superficie terrestre. Calcola il suo periodo orbitale ($R_T = 6.371 \, \text{km}$, $g = 9,81 \, \text{m/s}^2$).
 ```
 
----
 
 ## Equilibrio e Stabilità
 
@@ -202,6 +1556,6 @@ Un’asta di $2 \, \text{m}$ è sospesa a un’estremità. Un peso di $40 \, \te
 Un oggetto ha un centro di massa molto alto rispetto alla sua base. Quali sono le condizioni per cui l’oggetto risulta instabile? Discuti in relazione all'altezza e alla posizione del centro di massa.
 ```
 
-
+-->
 
 
