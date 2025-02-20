@@ -91,6 +91,7 @@ Ad esempio, a $T = 0°C$, il calore latente di fusione e il calore specifico a p
 
 **todo** *controllare! Errore? Esistono tabelle con valori tabulati che descrivono il comportamento non-ideale?* Nel caso il vapore d'acqua si comportasse come un gas ideale con una molecola tri-atomica con atomi non allineati, con $f = 6$ gradi di libertà rigidi che contribuiscono all'energia interna, si avrebbe $c_{v,v} = 3 R^{v}$, $c_{p,v} = 4 R^{v} = 4 \cdot 461.9 \frac{J}{kg \, K} = 1847.6 \frac{J}{kg \, K}$.
 
+
 ## Tabelle 
 - delle condizioni di saturazione, T, p, $\rho$, h, s, in condizioni di liquido o vapore saturo
 - del vapore surriscaldato
@@ -127,6 +128,12 @@ Ad esempio, a $T = 0°C$, il calore latente di fusione e il calore specifico a p
     - massa volume: $\dot{m}_{v,1} + \dot{m}_v = \dot{m}_{v,2}$
     - massa aria: $\dot{m}_{a,1} = \dot{m}_{a,2}$
     - bilancio di energia: $\dot{m}_{1} h_1 + \dot{m}_v h_v = \dot{m}_2 h_2$
+
+(physics-hs:thermodynamics:matter:humid-air:vapor-pressure)=
+## Tensione di vapore
+Esempi:
+- cuocere la pasta in montagna: pressione minore, temperatura di ebollizione minore
+- evaporazione di una pozzanghera: l'acqua della pozzanghera evapora anche se la temperatura dell'ambiente è inferiore alla temperatura di ebollizione dell'acqua
 
 ## Esercizi
 - Evaporazione di una pozzanghera; evapo-traspirazione: metodi di Penman-Monteith,...

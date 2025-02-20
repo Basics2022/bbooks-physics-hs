@@ -21,7 +21,17 @@ $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
   \textbf{Problema 1.}
-  Testo
+Una palla di massa $m$ si trova inizialmente in quiete rispetto a un'osservatore inerziale, a una quota $h$ sopra la superficie terrestre.
+La palla viene lasciata cadere dalla condizione di quiete. Viene chiesto di determinare:
+1. la velocità di impatto con il terreno
+2. il tempo impiegato per raggiungere il terreno.
+
+Viene chiesto di svolgere i conti trascurando la resistenza dell'aria. Si chiede poi di:
+3. confrontare i risultati ottenuti con i risultati per un corpo di massa $M > m$ 
+4. confrontare i risultati ottenuti con i risultati che si otterrebbero nei pressi della superficie lunare.
+
+Raggio Terra: $R_E = 6380 \, km$ ; massa Terra: $M_E = 5.98 \cdot 10^{24} \, kg$;
+Raggio Luna:  $R_M = 1740 \, km$ ; massa Luna:  $M_M = 7.34 \cdot 10^{22} \, kg$;
 \end{minipage}
 \hspace{.05\textwidth}
 \begin{minipage}[t]{.40\textwidth}
@@ -34,15 +44,18 @@ $$
 
 % Esercizio *****************************************************************
 $$
-\begin{minipage}[t]{.55\textwidth}
+\begin{minipage}[t]{1.\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
-  Testo
-\end{minipage}
-\hspace{.05\textwidth}
-\begin{minipage}[t]{.40\textwidth}
-  \vspace{0pt}
-  \includegraphics[width=.95\textwidth]{../../media/dynamics/parabolic-1.png}
+  \textbf{Problema 2.}
+Viene chiesto di svolgere l'esercizio precedente, in un ambiente in cui non sia più trascurabile la resistenza aerodinamica del sistema.
+In particolare viene chiesto di risolvere il problema nel caso in cui la resistenza aerodinamica sia:
+1. proporzionale alla velocità relativa del corpo rispetto al fluido, di intensità $F = c v$, con $c = \dots$
+2. proporzionale al quadrato della velocità relativa del corpo rispetto al fluido, di intensità $F = \frac{1}{2} \rho S c_F v^2$, con...
+
+Qui si considera il fluido in quiete rispetto all'ambiente: la velocità del corpo relativa al fluido è quindi uguale alla velocità rispetto all'ambiente.
+
+Viene chiesto poi di determinare la **velocità limite** raggiungibile da un corpo in caduta libera, potendo considerare l'accelerazione di gravità e la densità dell'aria costanti lungo la caduta. 
+
 \end{minipage}
 $$
 
@@ -52,8 +65,14 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
-  Testo
+  \textbf{Problema 3.}
+Un corpo di massa $m$ viene lanciato con velocità iniziale orizzontale con valore assoluto $|\vec{v}_0|$, da una quota $h$ sopra la superficie terrestre. Trascurando la resistenza aerodinamica, viene chiesto di determinare:
+1. gittata
+2. tempo di volo
+3. velocità del corpo all'impatto con il suolo
+4. impulso e forza media quando il corpo raggiunge terra, sapendo che il corpo si arresta in un tempo $\Delta t$ lungo una traiettoria rettilinea.
+
+Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aerodinamica.
 \end{minipage}
 \hspace{.05\textwidth}
 \begin{minipage}[t]{.40\textwidth}
@@ -68,8 +87,37 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
-  Testo
+  \textbf{Problema 4.}
+Viene chiesto di svolgere l'esercizio precedente, in un ambiente in cui non sia più trascurabile la resistenza aerodinamica del sistema.
+In particolare viene chiesto di risolvere il problema nel caso in cui la resistenza aerodinamica sia:
+1. proporzionale alla velocità relativa del corpo rispetto al fluido, di intensità $F = c v$, con $c = \dots$
+2. proporzionale al quadrato della velocità relativa del corpo rispetto al fluido, di intensità $F = \frac{1}{2} \rho S c_F v^2$, con...
+
+Qui si considera il fluido in quiete rispetto all'ambiente: la velocità del corpo relativa al fluido è quindi uguale alla velocità rispetto all'ambiente.
+
+Viene chiesto poi di determinare la **velocità limite** raggiungibile da un corpo in caduta libera, potendo considerare l'accelerazione di gravità e la densità dell'aria costanti lungo la caduta. 
+
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/parabolic-1.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 5.}
+Conoscendo la posizione del punto di lancio $A$, e la posizione del bersaglio $B$ viene chiesto di determinare:
+1. le condizioni sulla velocità di lancio per colpire il bersaglio. Una volta determinate, viene chiesto di determinare anche il tempo di volo.
+2. tra tutte le velocità ammissibili per colpire il bersaglio, viene chiesto di determinare quella con valore assoluto minimo, sotto al quale non è possibile raggiungere l'obiettivo.
+
+Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aerodinamica.
+
 \end{minipage}
 \hspace{.05\textwidth}
 \begin{minipage}[t]{.40\textwidth}
@@ -84,8 +132,40 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
-  Testo
+  \textbf{Problema 6.}
+Conoscendo la posizione del punto di lancio $A$, e la posizione del bersaglio mobile $B: \vec{r}_B(t) = x_B \hat{x} + (y_{B,0} + v_{y,B} t) \hat{y}$ viene chiesto di determinare:
+1. le condizioni sulla velocità di lancio per colpire il bersaglio. Una volta determinate, viene chiesto di determinare anche il tempo di volo.
+2. tra tutte le velocità ammissibili per colpire il bersaglio, viene chiesto di determinare quella con valore assoluto minimo, sotto al quale non è possibile raggiungere l'obiettivo.
+
+Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aerodinamica.
+
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/parabolic-3.png}
+\end{minipage}
+$$
+
+**Soluzione.**
+
+% Esercizio *****************************************************************
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 7.}
+Un calciatore deve tirare una punizione in porta da una distanza $b$. La barriera viene posta a una distanza $a$ dal punto di tiro e i giocatori in barriera possono coprire fino a una quota $h$ saltando. Volendo centrare la porta a una quota $d$ (compresa tra $0$: la palla tocca terra sulla linea di porta senza rimbalzare prima; e $d_{max}$ la palla finisce all'incrocio), si chiede di determinare:
+1. velocità iniziale imposta al pallone dal calcio
+2. tempo di volo del pallone tra il calcio e la porta
+
+in tutte le condizioni che permettono di prendere la porta senza colpire la barriera, e senza far rimbalzare il pallone prima della linea della porta. Per ogni valore $d$, si calcoli poi la condizione che corrisponde al tempo minore.
+
+Si trascuri ogni effetto, dovuto alla rotazione del pallone.
+
+Si svolga l'esercizio prima trascurando e poi considerando la resistenza aerodinamica.
+
+**todo** Si può ampliare un po' l'esercizio considerando i tempi di reazione del portiere e la velocità nel comprire le distanze? O formulare qualche metodo per stimare la probabilità di realizzazione di calci di punizione...
+
 \end{minipage}
 \hspace{.05\textwidth}
 \begin{minipage}[t]{.40\textwidth}
@@ -100,8 +180,14 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
-  Testo
+  \textbf{Problema 8.}
+Un corpo puntiforme di massa $m$ è vincolato a una guida semi-circolare con un vincolo bilatero ideale (no attrito, solo reazione normale). Il corpo parte in condizioni di quiete da una posizione identificata da un raggio che forma un angolo $\theta_0$ con la verticale. Viene chiesto di:
+1. rappresentare il diagramma delle forze agenti sul corpo;
+2. scrivere l'espressione dell'energia meccanica del sistema, considerando il centro della semicriconferenza con punto di riferimento per definire l'energia potenziale gravitazionale nulla;
+3. determinare la velocità massima del corpo nel suo moto
+4. scrivere le equazioni del moto del sistema, usando **se possibile**: a) le equazioni cardinali della dinamica; b) la legge di conservazione dell'energia meccanica, c) altre leggi di conservazioni di quantità meccaniche costanti nella dinamica del sistema
+5. determinare le reazioni vincolari della guida sul corpo puntiforme in funzione dell'angolo $\theta$ e daella sua derivata $\dot{\theta}$
+
 \end{minipage}
 \hspace{.05\textwidth}
 \begin{minipage}[t]{.40\textwidth}
@@ -116,8 +202,15 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
-  Testo
+  \textbf{Problema 9.}
+Un corpo puntiforme di massa $m$ è vincolato a una guida ad arco di cerchio con un vincolo bilatero ideale. Viene lasciato cadere da un angolo $\theta_0$ in condizioni di quiete. L'angolo "di uscita" della guida è $\theta_1$. Se ragginge l'angolo di uscita, il corpo è libero di compiere la traiettoria caratteristica del moto libero nella prossimità della superficie terrestre. Viene chiesto di determinare:
+1. la velocità massima del corpo lungo la guida,
+2. le condizioni per venire lanciato fuori dalla guida
+3. la traiettoria del moto libero, determinando in particolare la gittata, il tempo di volo e la velocità di impatto.
+4. sapendo che all'impatto il corpo viene rallentato dal terreno lungo una traiettoria rettilinea con una decelerazione costante $a$, si chiede di tereminare il tempo necessario all'arresto (a partire dall'impatto), l'impulso e la forza media.
+
+Viene chiesto di discutere il problema considerando un attrito dinamico con coefficiente di attrito $\mu_d$ tra la guida e il corpo, rappresentando il diagramma delle forze agenti sul corpo e determinando le equazioni del moto lungo la guida. 
+
 \end{minipage}
 \hspace{.05\textwidth}
 \begin{minipage}[t]{.40\textwidth}
@@ -132,8 +225,14 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
-  Testo
+  \textbf{Problema 10.}
+Una guida è formata da un primo tratto di raggio $R_1$, un secondo tratto di una circonferenza completa di raggio $R_2 < R_1$ e un terzo tratto rettilineo orizzontale. Trascurando l'attrito nei primi due tratti, viene chiesto di determinare:
+1. le condizioni necessarie per poter compiere il loop del secondo tratto, nel caso di vincolo bilatero
+2. le condizioni necessarie per poter compiere il loop del secondo tratto, nel caso di vincolo monolatero
+3. la distanza percorsa sul terzo tratto orizzontale, sul quale non è possibile trascurare l'attrito con la guida, rappresentabile con la formula dell'attrito dinamico con coefficiente $\mu_d$.
+
+Come esercizio aggiuntivo, viene chiesto di discutere il problema del moto del corpo con vincolo monolatero, nel caso in cui non sia in grado di compiere il loop.
+
 \end{minipage}
 \hspace{.05\textwidth}
 \begin{minipage}[t]{.40\textwidth}
@@ -148,8 +247,13 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
-  Testo
+  \textbf{Problema 11.}
+Conoscendo la configurazione iniziale della massa $m$, viene chiesto di descrivere la dinamica del sistema nel caso di attrito nullo e nel caso di attrito non trascurabile. Viene chiesto di:
+1. determinare le equazioni del moto
+2. risolvere le equazioni del moto
+3. determinare le reazioni vincolari scambiate tra massa e parete obliqua
+4. determinare la forza scambiata tra molla e parete, in funzione del tempo
+
 \end{minipage}
 \hspace{.05\textwidth}
 \begin{minipage}[t]{.40\textwidth}
@@ -772,7 +876,7 @@ Come esercizio aggiuntivo, viene chiesto di discutere il problema del moto del c
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 11.
 :columns: 8
 
 Conoscendo la configurazione iniziale della massa $m$, viene chiesto di descrivere la dinamica del sistema nel caso di attrito nullo e nel caso di attrito non trascurabile. Viene chiesto di:
@@ -799,7 +903,7 @@ Conoscendo la configurazione iniziale della massa $m$, viene chiesto di descrive
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 12.
 :columns: 8
 
 Testo
@@ -822,7 +926,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 13.
 :columns: 8
 
 Testo
@@ -845,7 +949,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 14.
 :columns: 8
 
 Testo
@@ -868,7 +972,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 15.
 :columns: 8
 
 Testo
@@ -891,7 +995,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 16.
 :columns: 8
 
 Testo
@@ -914,7 +1018,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 17.
 :columns: 8
 
 Testo
@@ -937,7 +1041,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 18.
 :columns: 8
 
 Testo
@@ -960,10 +1064,13 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 19.
 :columns: 8
 
-Testo
+I due solidi mostrati in figura sono collegati da una molla ideale lineare di costante elastica $k$. Il sistema è inizialmente tenuto in quiete, con allungamento della molla $x_0$. Nell'ipotesi sia possibile trascurare l'attrito tra i corpi, viene chiesto di determinare:
+1. le espressioni dell'energia meccanica e della quantità di moto del sistema, e i loro valori
+2. il modulo della velocità massima dei due corpi rispetto a un osservatore inerziale
+3. le equazioni dinamiche del moto, e se possibile risolverle
 
 :::
 
@@ -977,13 +1084,83 @@ Testo
 ::::
 
 ```{dropdown} Soluzione.
+
+**Leggi di conservazione.** In assenza di attrito tra il solido inferiore e la parete orizzontale, sul sistema formato dai due solidi collegati dalla molla non agiscono forze esterne in direzione orizzontale: è conservata quindi la **componente orizzontale della quantità di moto del sistema**.
+In assenza di attrito, sul sistema non agiscono azioni non conservative (gravità è conservativa, molla ideale è conservativa, e la reazione del vincolo non compie lavoro in assenza di attrito): è conservata quindi l'**energia meccanica del sistema**. 
+
+**Scelta dei gradi di libertà.** Sia $x$ la posizione relativa della solido 2 rispetto al solido 1, coincidente con l'allungamento della molla; sia $y$ la posizione del solido 1 rispetto all'osservatore inerziale.
+
+1. L'energia meccanica del sistema è data dalla somma della sua energia cinetica e dalla sua energia potenziale, qui dovuta solo alla molla (i baricentri dei corpi non cambiano quota, quindi l'azione gravitazionale non compie lavoro). In un momento generico, quindi
+
+   $$E = K + V = \frac{1}{2} m_1 \dot{y}^2 + \frac{1}{2} m_2 \left( \dot{x} + \dot{y} \right)^2 + \frac{1}{2} k x^2 \ .$$
+
+   e poiché il sistema è inizialmente in uno stato di quiete, l'energia meccanica vale $E = E_{0} = \frac{1}{2} k x_0^2$.
+
+   La quantità di moto del sistema è data dalla somma delle quantità di moto delle sue parti. La componente orizzontale è quindi
+
+   $$Q_x = m_1 \dot{y} + m_2 \left( \dot{x} + \dot{y} \right) \ ,$$
+
+   e poiché il sistema è inizialmente in uno stato di quiete, la componente orizzontale della quantità di moto vale $Q_x = 0$. Da questa relazione si può quindi ricavare una relazione tra le derivate dei due gradi di libertà,
+
+   $$\dot{x} = - \frac{m_1 + m_2}{m_2} \dot{y}$$ (mechanics:ex19:kinematics)
+
+2. Usando la relazione {eq}`mechanics:ex19:kinematics`, è possibile riscrivere l'espressione dell'energia meccanica del sistema in funzione solo di $x$ e $\dot{y}$
+
+    $$E_0 = m_1 \dot{y}^2 + \frac{1}{2} k x^2 \ .$$
+
+    Quindi la velocità massima dei due corpi si verifica quando l'allungamento della molla è nullo, $x = 0$,
+
+    $$\begin{aligned}
+       |v_{1,max}| & = |\dot{y}|_{max}         && = \sqrt{\frac{E_0}{m_1}} \\
+       |v_{2,max}| & = |\dot{x}+\dot{y}|_{max} && = \frac{m_1}{m_2}\sqrt{\frac{E_0}{m_1}} \\
+    \end{aligned}$$
+
+3. Le equazioni dinamiche del moto possono essere ottenute ad esempio:
+   - dalle equazioni del moto, come il bilancio della quantità di moto della massa 2, e il bilancio della quantità di moto del sistema composto dalle due masse
+
+      $$\begin{cases}
+         m_2 (\ddot{x} + \ddot{y}) + k x = 0 \\
+         m_1 \ddot{y} + m_2 (\ddot{x} + \ddot{y}) = 0
+      \end{cases}$$
+
+   - oppure, derivando le espressioni dell'energia meccanica e della componente orizzontale della quantità di moto (integrali del moto)
+
+   Ad esempio, calcolando le derivate degli integrali del moto,
+
+   $$\begin{cases}
+     0 = \dot{y} m_1 \ddot{y} + m_2 (\dot{x} + \dot{y}) (\ddot{x} + \ddot{y}) + k x \dot{x} \\
+     0 = m_1 \ddot{y} + m_2 ( \ddot{x} + \ddot{y} ) = 0
+    \end{cases}$$
+
+    e usando la relazione {eq}`mechanics:ex19:kinematics` per esprimere $\dot{x}$ in funzione di $\dot{y}$ e semplificare questo ultimo termine nella prima delle due equazioni,
+
+    $$\begin{aligned}
+      0 & = \dot{y} \left[ m_1 \ddot{y} + m_2 \left( - \frac{m_1+m_2}{m_2} + 1\right) \left( \ddot{x} + \ddot{y} \right) - \frac{m_1 + m_2}{m_2} k x \right] = \\
+        & = \dot{y} \left[ m_1 \ddot{y} - m_1 (\ddot{x} + \ddot{y}) - \frac{m_1 + m_2}{m_2} k x \right]
+    \end{aligned}$$
+
+    e quindi
+
+    $$\begin{cases}
+      0 = m_1 \ddot{x} + \frac{m_1 + m_2}{m_2} k x \\
+      0 = m_1 \ddot{y} + m_2 ( \ddot{x} + \ddot{y} ) = 0
+    \end{cases}$$
+
+    **Osservazione.** Queste equazioni sono equivalenti a quelle trovate in precedenza con le equazioni del moto, poiché 
+
+    $$m_2 (\ddot{x} + \ddot{y}) = m_2 \ddot{x} \left( 1 - \frac{m_2}{m_1 + m_2} \right) = m_2 \frac{m_1}{m_1 + m_2} \ddot{x} \ .$$
+
+
+
+
+
 ```
 
 <!-- Esercizio ************************************************************* -->
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 20.
 :columns: 8
 
 Testo
@@ -1006,7 +1183,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 21.
 :columns: 8
 
 Testo
@@ -1029,7 +1206,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 22.
 :columns: 8
 
 Testo
@@ -1052,7 +1229,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 23.
 :columns: 8
 
 Testo
@@ -1075,7 +1252,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 24.
 :columns: 8
 
 Testo
@@ -1098,7 +1275,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 25.
 :columns: 8
 
 Testo
@@ -1121,7 +1298,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 26.
 :columns: 8
 
 Testo
@@ -1144,7 +1321,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 27.
 :columns: 8
 
 Testo
@@ -1167,7 +1344,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 28.
 :columns: 8
 
 Testo
@@ -1190,7 +1367,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 29.
 :columns: 8
 
 Testo
@@ -1213,7 +1390,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 30.
 :columns: 8
 
 Testo
@@ -1236,7 +1413,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 31.
 :columns: 8
 
 Testo

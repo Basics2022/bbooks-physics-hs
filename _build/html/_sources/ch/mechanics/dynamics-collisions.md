@@ -50,6 +50,8 @@ $$\begin{aligned}
 
 ## Problemi
 
+**todo** Aggiungere pendolo di Newton
+
 <!-- Esercizio ************************************************************* -->
 ::::{grid}
 :gutter: 2

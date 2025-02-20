@@ -903,7 +903,7 @@ Conoscendo la configurazione iniziale della massa $m$, viene chiesto di descrive
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 12.
 :columns: 8
 
 Testo
@@ -926,7 +926,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 13.
 :columns: 8
 
 Testo
@@ -949,7 +949,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 14.
 :columns: 8
 
 Testo
@@ -972,7 +972,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 15.
 :columns: 8
 
 Testo
@@ -995,7 +995,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 16.
 :columns: 8
 
 Testo
@@ -1018,7 +1018,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 17.
 :columns: 8
 
 Testo
@@ -1041,7 +1041,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 18.
 :columns: 8
 
 Testo
@@ -1064,10 +1064,13 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 19.
 :columns: 8
 
-Testo
+I due solidi mostrati in figura sono collegati da una molla ideale lineare di costante elastica $k$. Il sistema è inizialmente tenuto in quiete, con allungamento della molla $x_0$. Nell'ipotesi sia possibile trascurare l'attrito tra i corpi, viene chiesto di determinare:
+1. le espressioni dell'energia meccanica e della quantità di moto del sistema, e i loro valori
+2. il modulo della velocità massima dei due corpi rispetto a un osservatore inerziale
+3. le equazioni dinamiche del moto, e se possibile risolverle
 
 :::
 
@@ -1081,13 +1084,83 @@ Testo
 ::::
 
 ```{dropdown} Soluzione.
+
+**Leggi di conservazione.** In assenza di attrito tra il solido inferiore e la parete orizzontale, sul sistema formato dai due solidi collegati dalla molla non agiscono forze esterne in direzione orizzontale: è conservata quindi la **componente orizzontale della quantità di moto del sistema**.
+In assenza di attrito, sul sistema non agiscono azioni non conservative (gravità è conservativa, molla ideale è conservativa, e la reazione del vincolo non compie lavoro in assenza di attrito): è conservata quindi l'**energia meccanica del sistema**. 
+
+**Scelta dei gradi di libertà.** Sia $x$ la posizione relativa della solido 2 rispetto al solido 1, coincidente con l'allungamento della molla; sia $y$ la posizione del solido 1 rispetto all'osservatore inerziale.
+
+1. L'energia meccanica del sistema è data dalla somma della sua energia cinetica e dalla sua energia potenziale, qui dovuta solo alla molla (i baricentri dei corpi non cambiano quota, quindi l'azione gravitazionale non compie lavoro). In un momento generico, quindi
+
+   $$E = K + V = \frac{1}{2} m_1 \dot{y}^2 + \frac{1}{2} m_2 \left( \dot{x} + \dot{y} \right)^2 + \frac{1}{2} k x^2 \ .$$
+
+   e poiché il sistema è inizialmente in uno stato di quiete, l'energia meccanica vale $E = E_{0} = \frac{1}{2} k x_0^2$.
+
+   La quantità di moto del sistema è data dalla somma delle quantità di moto delle sue parti. La componente orizzontale è quindi
+
+   $$Q_x = m_1 \dot{y} + m_2 \left( \dot{x} + \dot{y} \right) \ ,$$
+
+   e poiché il sistema è inizialmente in uno stato di quiete, la componente orizzontale della quantità di moto vale $Q_x = 0$. Da questa relazione si può quindi ricavare una relazione tra le derivate dei due gradi di libertà,
+
+   $$\dot{x} = - \frac{m_1 + m_2}{m_2} \dot{y}$$ (mechanics:ex19:kinematics)
+
+2. Usando la relazione {eq}`mechanics:ex19:kinematics`, è possibile riscrivere l'espressione dell'energia meccanica del sistema in funzione solo di $x$ e $\dot{y}$
+
+    $$E_0 = m_1 \dot{y}^2 + \frac{1}{2} k x^2 \ .$$
+
+    Quindi la velocità massima dei due corpi si verifica quando l'allungamento della molla è nullo, $x = 0$,
+
+    $$\begin{aligned}
+       |v_{1,max}| & = |\dot{y}|_{max}         && = \sqrt{\frac{E_0}{m_1}} \\
+       |v_{2,max}| & = |\dot{x}+\dot{y}|_{max} && = \frac{m_1}{m_2}\sqrt{\frac{E_0}{m_1}} \\
+    \end{aligned}$$
+
+3. Le equazioni dinamiche del moto possono essere ottenute ad esempio:
+   - dalle equazioni del moto, come il bilancio della quantità di moto della massa 2, e il bilancio della quantità di moto del sistema composto dalle due masse
+
+      $$\begin{cases}
+         m_2 (\ddot{x} + \ddot{y}) + k x = 0 \\
+         m_1 \ddot{y} + m_2 (\ddot{x} + \ddot{y}) = 0
+      \end{cases}$$
+
+   - oppure, derivando le espressioni dell'energia meccanica e della componente orizzontale della quantità di moto (integrali del moto)
+
+   Ad esempio, calcolando le derivate degli integrali del moto,
+
+   $$\begin{cases}
+     0 = \dot{y} m_1 \ddot{y} + m_2 (\dot{x} + \dot{y}) (\ddot{x} + \ddot{y}) + k x \dot{x} \\
+     0 = m_1 \ddot{y} + m_2 ( \ddot{x} + \ddot{y} ) = 0
+    \end{cases}$$
+
+    e usando la relazione {eq}`mechanics:ex19:kinematics` per esprimere $\dot{x}$ in funzione di $\dot{y}$ e semplificare questo ultimo termine nella prima delle due equazioni,
+
+    $$\begin{aligned}
+      0 & = \dot{y} \left[ m_1 \ddot{y} + m_2 \left( - \frac{m_1+m_2}{m_2} + 1\right) \left( \ddot{x} + \ddot{y} \right) - \frac{m_1 + m_2}{m_2} k x \right] = \\
+        & = \dot{y} \left[ m_1 \ddot{y} - m_1 (\ddot{x} + \ddot{y}) - \frac{m_1 + m_2}{m_2} k x \right]
+    \end{aligned}$$
+
+    e quindi
+
+    $$\begin{cases}
+      0 = m_1 \ddot{x} + \frac{m_1 + m_2}{m_2} k x \\
+      0 = m_1 \ddot{y} + m_2 ( \ddot{x} + \ddot{y} ) = 0
+    \end{cases}$$
+
+    **Osservazione.** Queste equazioni sono equivalenti a quelle trovate in precedenza con le equazioni del moto, poiché 
+
+    $$m_2 (\ddot{x} + \ddot{y}) = m_2 \ddot{x} \left( 1 - \frac{m_2}{m_1 + m_2} \right) = m_2 \frac{m_1}{m_1 + m_2} \ddot{x} \ .$$
+
+
+
+
+
 ```
 
 <!-- Esercizio ************************************************************* -->
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 20.
 :columns: 8
 
 Testo
@@ -1110,7 +1183,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 21.
 :columns: 8
 
 Testo
@@ -1133,7 +1206,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 22.
 :columns: 8
 
 Testo
@@ -1156,7 +1229,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 23.
 :columns: 8
 
 Testo
@@ -1179,7 +1252,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 24.
 :columns: 8
 
 Testo
@@ -1202,7 +1275,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 25.
 :columns: 8
 
 Testo
@@ -1225,7 +1298,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 26.
 :columns: 8
 
 Testo
@@ -1248,7 +1321,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 27.
 :columns: 8
 
 Testo
@@ -1271,7 +1344,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 28.
 :columns: 8
 
 Testo
@@ -1294,7 +1367,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 29.
 :columns: 8
 
 Testo
@@ -1317,7 +1390,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 30.
 :columns: 8
 
 Testo
@@ -1340,7 +1413,7 @@ Testo
 ::::{grid}
 :gutter: 2
 
-:::{grid-item-card} Problema 1.
+:::{grid-item-card} Problema 31.
 :columns: 8
 
 Testo
