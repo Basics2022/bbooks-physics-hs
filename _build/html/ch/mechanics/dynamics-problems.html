@@ -1235,9 +1235,9 @@ In assenza di attrito, sul sistema non agiscono azioni non conservative (gravit�
 \[Q_x = m_1 \dot{y} + m_2 \left( \dot{x} + \dot{y} \right) \ ,\]</div>
 <p class="sd-card-text">e poiché il sistema è inizialmente in uno stato di quiete, la componente orizzontale della quantità di moto vale <span class="math notranslate nohighlight">\(Q_x = 0\)</span>. Da questa relazione si può quindi ricavare una relazione tra le derivate dei due gradi di libertà,</p>
 <div class="math notranslate nohighlight" id="equation-mechanics-ex19-kinematics">
-<span class="eqno">(12.7)<a class="headerlink" href="#equation-mechanics-ex19-kinematics" title="Permalink a questa equazione">#</a></span>\[\dot{x} = - \frac{m_1 + m_2}{m_2} \dot{y}\]</div>
+<span class="eqno">(12.9)<a class="headerlink" href="#equation-mechanics-ex19-kinematics" title="Permalink a questa equazione">#</a></span>\[\dot{x} = - \frac{m_1 + m_2}{m_2} \dot{y}\]</div>
 </li>
-<li><p class="sd-card-text">Usando la relazione <a class="reference internal" href="#equation-mechanics-ex19-kinematics">(12.7)</a>, è possibile riscrivere l’espressione dell’energia meccanica del sistema in funzione solo di <span class="math notranslate nohighlight">\(x\)</span> e <span class="math notranslate nohighlight">\(\dot{y}\)</span></p>
+<li><p class="sd-card-text">Usando la relazione <a class="reference internal" href="#equation-mechanics-ex19-kinematics">(12.9)</a>, è possibile riscrivere l’espressione dell’energia meccanica del sistema in funzione solo di <span class="math notranslate nohighlight">\(x\)</span> e <span class="math notranslate nohighlight">\(\dot{y}\)</span></p>
 <div class="math notranslate nohighlight">
 \[E_0 = m_1 \dot{y}^2 + \frac{1}{2} k x^2 \ .\]</div>
 <p class="sd-card-text">Quindi la velocità massima dei due corpi si verifica quando l’allungamento della molla è nullo, <span class="math notranslate nohighlight">\(x = 0\)</span>,</p>
@@ -1264,7 +1264,7 @@ In assenza di attrito, sul sistema non agiscono azioni non conservative (gravit�
      0 = \dot{y} m_1 \ddot{y} + m_2 (\dot{x} + \dot{y}) (\ddot{x} + \ddot{y}) + k x \dot{x} \\
      0 = m_1 \ddot{y} + m_2 ( \ddot{x} + \ddot{y} ) = 0
     \end{cases}\end{split}\]</div>
-<p class="sd-card-text">e usando la relazione <a class="reference internal" href="#equation-mechanics-ex19-kinematics">(12.7)</a> per esprimere <span class="math notranslate nohighlight">\(\dot{x}\)</span> in funzione di <span class="math notranslate nohighlight">\(\dot{y}\)</span> e semplificare questo ultimo termine nella prima delle due equazioni,</p>
+<p class="sd-card-text">e usando la relazione <a class="reference internal" href="#equation-mechanics-ex19-kinematics">(12.9)</a> per esprimere <span class="math notranslate nohighlight">\(\dot{x}\)</span> in funzione di <span class="math notranslate nohighlight">\(\dot{y}\)</span> e semplificare questo ultimo termine nella prima delle due equazioni,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
       0 &amp; = \dot{y} \left[ m_1 \ddot{y} + m_2 \left( - \frac{m_1+m_2}{m_2} + 1\right) \left( \ddot{x} + \ddot{y} \right) - \frac{m_1 + m_2}{m_2} k x \right] = \\
@@ -1440,7 +1440,13 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Problema 25.</div>
-<p class="sd-card-text">Testo</p>
+<p class="sd-card-text">A un disco di massa <span class="math notranslate nohighlight">\(M\)</span> e raggio <span class="math notranslate nohighlight">\(R\)</span> e distribuzione di massa uniforme è connessa una massa concentrata <span class="math notranslate nohighlight">\(m\)</span> che può essere rappresentata da una massa puntiforme, posizionata a distanza <span class="math notranslate nohighlight">\(R\)</span> dal centro del disco. Il sistema inizialmente in quiete viene messo in moto da una coppia costante <span class="math notranslate nohighlight">\(C\)</span> fino a raggiungere la velocità angolare di regime <span class="math notranslate nohighlight">\(\Omega\)</span>. Viene chiesto di determinare:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">il momento di inerzia del sistema rispetto al centro di rotazione</p></li>
+<li><p class="sd-card-text">il tempo necessario per raggiungere la velocità angolare <span class="math notranslate nohighlight">\(\Omega\)</span></p></li>
+<li><p class="sd-card-text">le reazioni vincolari in corrispondenza della cerniera</p></li>
+</ol>
+<p class="sd-card-text"><strong>todo</strong> Commentare i risultati di questo esercizio con la <a class="reference internal" href="../continuum/intro.html#continuum-solids-fatigue"><span class="std std-ref">resistenza a fatica dei materiali</span></a></p>
 </div>
 </div>
 </div>
@@ -1461,6 +1467,45 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<ol class="arabic">
+<li><p class="sd-card-text">Il momento di inerzia del sistema rispetto al centro di rotazione è uguale alla somma dei momenti di inerzia del disco e della massa concentrata, <strong>todo</strong> <em>perché? Il momento angolare è una quantità additiva, ma il momento di inerzia?</em> <strong>todo</strong> <em>fare riferimento ai valori dei momenti di inerzia di disco e massa</em></p>
+<div class="math notranslate nohighlight">
+\[I = I^{disk} + I^{mass} = \frac{1}{2} M R^2 + m R^2 \ .\]</div>
+</li>
+<li><p class="sd-card-text">L’equazione di moto che governa la dinamica dell’angolo di rotazione del sistema <span class="math notranslate nohighlight">\(\theta(t)\)</span> può essere ricavata dall’equazione di bilancio del momento della quantità di moto, usando come polo <span class="math notranslate nohighlight">\(A\)</span> il centro del cerchio (polo fisso, <span class="math notranslate nohighlight">\(\dot{\vec{x}}_A = \vec{0}\)</span>)</p>
+<div class="math notranslate nohighlight">
+\[\frac{d L_A}{d t} = M^{ext}_A \ .\]</div>
+<p class="sd-card-text">Il momento della quantità di moto è la somma dei momenti della quantità di moto dei due sistemi. La sua componente perpendicolare al piano di rotazione vale</p>
+<div class="math notranslate nohighlight">
+\[L_{A,z} = L_{A,z}^{disk} + L_{A,z}^{mass} = I^{disk} \dot{\theta} + m R^2 \dot{\theta} = I \dot{\theta} \ .\]</div>
+<p class="sd-card-text">L’equazione del moto quindi diventa</p>
+<div class="math notranslate nohighlight">
+\[I \ddot{\theta} = C \ ,\]</div>
+<p class="sd-card-text">dove la derivata del momento angolare uguaglia la coppia esterna agente sul sistema. Se il sistema parte da una condizione di quiete e la coppia applicata è costante, è possibile integrare l’equazione del moto e trovare</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+     \dot{\theta}(t) &amp; = \frac{C}{I} \, t \\
+          \theta (t) &amp; = \frac{1}{2} \frac{C}{I} \, t^2 \\
+   \end{aligned}\end{split}\]</div>
+<p class="sd-card-text">fino al raggiungimento della velocità di regime <span class="math notranslate nohighlight">\(\Omega = \dot{\theta}(t^*) = \dfrac{C t^*}{I}\)</span>, nell’intervallo di tempo</p>
+<div class="math notranslate nohighlight">
+\[t^* = \frac{I \Omega}{C} \ .\]</div>
+</li>
+<li><p class="sd-card-text">Una cerniera cilindrica permette la rotazione del corpo attorno al proprio asse, mentre vincola completamente la traslazione del punto in cui viene connessa, con una forza come reazione vincolare. In un moto piano, la cerniera impedisce la traslazione in due direzioni e la reazione vincolare è una forza che viene determinata dalle sue due componenti nel piano.</p>
+<p class="sd-card-text">Una volta noto il moto del sistema, <span class="math notranslate nohighlight">\(\theta(t)\)</span>, le reazioni vincolari possono essere determinate ad esempio dall’equazione di bilancio della quantità di moto del sistema,</p>
+<div class="math notranslate nohighlight">
+\[\dot{\vec{Q}} = \vec{R} \ .\]</div>
+<p class="sd-card-text">La quantità di moto del sistema è uguale alla somma delle quantità di moto delle sue parti. Il centro di massa del disco non trasla, e quindi la quantità di moto del disco è nulla. Usando un sistema di coordinate polari, si può scrivere la quantità di moto del sistema come</p>
+<div class="math notranslate nohighlight">
+\[\vec{Q} = m \vec{v}_B = m R \dot{\theta} \hat{\theta} \ ,\]</div>
+<p class="sd-card-text">e la sua derivata,</p>
+<div class="math notranslate nohighlight">
+\[\dot{\vec{Q}} = m R \ddot{\theta} \hat{\theta} - m R \dot{\theta}^2 \hat{r} \ .\]</div>
+<p class="sd-card-text">Dal bilancio della quantità di moto del sistema, si ottengono le azioni imposte dal vincolo sul sistema (quelle che agiscono sul vincolo sono uguali e contrarie, per il principio di azione/reazione),</p>
+<div class="math notranslate nohighlight">
+\[\vec{R} = R_r \hat{r} + R_{\theta} \hat{\theta} = \dot{\vec{Q}} = m R \ddot{\theta} \, \hat{\theta} - m R \dot{\theta}^2 \, \hat{r} \ .\]</div>
+</li>
+</ol>
 </div>
 </details><!-- Esercizio ************************************************************* -->
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
@@ -1530,7 +1575,11 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Problema 28.</div>
-<p class="sd-card-text">Testo</p>
+<p class="sd-card-text">Un sistema puntiforme è libero di scivolare su una superficie semi-circolare con attrito trascurabile. Conoscendo la condizione iniziale, <span class="math notranslate nohighlight">\(\theta(0) = \theta_0\)</span>, <span class="math notranslate nohighlight">\(\dot{\theta}(0) = \Omega\)</span>, viene chiesto di determinare:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">la condizione di distacco dalla superficie</p></li>
+<li><p class="sd-card-text">la distanza di orizzontale del punto di atterraggio del corpo dopo il volo libero, rispetto alla superficie semicircolare.</p></li>
+</ol>
 </div>
 </div>
 </div>
@@ -1551,6 +1600,74 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Il vincolo con la superficie è un vincolo ideale monolatero, che agisce solo fino a quando la componente radiale della reazione vincolare è positiva. Fino a quando il vincolo ideale monolatero è attivo - cioè fino a quando la massa scivola sulla superficie - il sistema ha un grado di libertà, qui scelto come l’angolo <span class="math notranslate nohighlight">\(\theta\)</span>. Il distacco del corpo dalla superficie vine determinata dalla condizione <span class="math notranslate nohighlight">\(R_r(\theta^*) = 0\)</span>. Successivamente al distacco, il sistema ha due gradi di libertà mentre compie un moto libero in un campo gravitazionale.</p>
+<ol class="arabic">
+<li><p class="sd-card-text">L’equazione di bilancio del momento della quantità di moto rispetto al centro della circonferenza permette di determinare un’equazione pura del moto del sistema</p>
+<div class="math notranslate nohighlight">
+\[\frac{d L_{A,z}}{d t} = M_{A,z}^{ext} \ ,\]</div>
+<p class="sd-card-text">e quindi</p>
+<div class="math notranslate nohighlight">
+\[m R^2 \ddot{\theta} = m g R \sin \theta\]</div>
+<p class="sd-card-text">con le condizioni iniziali definite dal problema. Oppure, la conservazione dell’energia meccanica</p>
+<div class="math notranslate nohighlight" id="equation-mechanics-ex28-energy">
+<span class="eqno">(12.10)<a class="headerlink" href="#equation-mechanics-ex28-energy" title="Permalink a questa equazione">#</a></span>\[E = m g R \cos \theta + \frac{1}{2} m R^2 \dot{\theta}^2\]</div>
+<p class="sd-card-text">in assenza di azioni non conservative, permette di ricavare immediatamente una relazione tra <span class="math notranslate nohighlight">\(\theta\)</span> e <span class="math notranslate nohighlight">\(\dot{\theta}\)</span>.
+L’equazione di bilancio della quantità di moto permette invece di determinare le reazioni vincolari,</p>
+<div class="math notranslate nohighlight">
+\[\dot{\vec{Q}} = \vec{R}^e \ ,\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+      R_r \hat{r} + \underbrace{R_{\theta}}_{= 0 \text{ no friction}} \hat{\theta} + m \vec{g} 
+      &amp; = \dfrac{d}{dt} \left( m R \dot{\theta} \hat{\theta} \right) = \\
+      &amp; = m R \left( \ddot{\theta} \hat{\theta} - \dot{\theta}^2 \hat{r} \right)
+    \end{aligned}\end{split}\]</div>
+<p class="sd-card-text">e quindi le due componenti radiale e tangenziale diventano</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+       r:      \ R_r = m g \cos \theta - m R \dot{\theta}^2 \\
+       \theta: \ m g \sin \theta = m R \ddot{\theta}^2 \\
+    \end{cases}\end{split}\]</div>
+<p class="sd-card-text">La componente tangenziale è equivalente all’equazione pura del moto; la componente radiale fornisce l’espressione della reazione vincolare in funzione di <span class="math notranslate nohighlight">\(\theta\)</span> e <span class="math notranslate nohighlight">\(\dot{\theta}\)</span>. Usando la relazione <a class="reference internal" href="#equation-mechanics-ex28-energy">(12.10)</a> per esprimere <span class="math notranslate nohighlight">\(\dot{\theta}\)</span> in funzione di <span class="math notranslate nohighlight">\(\theta\)</span>, si può scrivere la reazione normale in funzione del solo <span class="math notranslate nohighlight">\(\theta\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+      R_r
+      &amp; = m g \cos \theta - m R \dot{\theta}^2 = \\
+      &amp; = m g \cos \theta - \frac{2}{R} \left( E - m g R \cos \theta \right) = \\
+      &amp; = 3 m g \cos \theta - \frac{2 E}{R} \ . 
+    \end{aligned}\end{split}\]</div>
+<p class="sd-card-text">La condizione <span class="math notranslate nohighlight">\(R_r \ge 0\)</span> equivale quindi alla condizione</p>
+<div class="math notranslate nohighlight">
+\[\cos \theta \ge \frac{2}{3} \frac{E}{m g R}\]</div>
+</li>
+<li><p class="sd-card-text">Nel caso in cui il sistema è inizialmente in corrispondenza del punto più alto della superficie e in quiete (o quel minimo di velocità per allontanarsi dalla posizione di equilibrio instabile), l’energia meccanica del sistema è <span class="math notranslate nohighlight">\(E = m g R\)</span> e l’angolo limite <span class="math notranslate nohighlight">\(\theta^*\)</span> ha coseno e seno</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+      \cos \theta^* &amp; = \frac{2}{3} \frac{E}{mgR} = \frac{2}{3} \\
+      \sin \theta^* &amp; = \sqrt{1 - \cos^2 \theta^* } = \frac{\sqrt{5}}{3} \\
+    \end{aligned}\end{split}\]</div>
+<p class="sd-card-text">e la sua derivata vale</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+      \dot{\theta}^*
+      &amp; = \sqrt{ \frac{2}{m R^2} \left( E - m g R \cos \theta^* \right) } = \\
+      &amp; = \sqrt{ \frac{2}{m R^2} \left( m g R - m g R \frac{2}{3} \right) } 
+        = \sqrt{ \frac{2}{3} \frac{g}{R} } \ .
+    \end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Il moto libero è determinato dalle equazioni del moto</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+      m \ddot{x} = 0 \\
+      m \ddot{y} = -m g \\
+    \end{cases}\end{split}\]</div>
+<p class="sd-card-text">con le condizioni iniziali</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases} x(t_0) = R \sin \theta^* \\ y(t_0) = R \cos \theta^* \end{cases} 
+    \quad , \quad 
+    \begin{cases} v_x(t_0) = R \dot{\theta}^* \sin \theta^* \\ v_y(t_0) = - R \dot{\theta}^* \cos \theta^* \end{cases}
+    \end{split}\]</div>
+</li>
+</ol>
 </div>
 </details><!-- Esercizio ************************************************************* -->
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
