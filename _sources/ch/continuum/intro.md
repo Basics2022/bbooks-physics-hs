@@ -50,3 +50,13 @@ La formula di Stokes fornisce un'espressione della resistenza aerodinamcia linea
     - esempi di propagazione in mezzi (più o meno) continui
     - onde sismiche
 
+(continuum:solids:fatigue)=
+### Fatica nei solidi
+
+
+
+
+
+
+
+

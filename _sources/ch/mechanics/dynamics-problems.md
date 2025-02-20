@@ -268,7 +268,7 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
+  \textbf{Problema 12.}
   Testo
 \end{minipage}
 \hspace{.05\textwidth}
@@ -284,7 +284,7 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
+  \textbf{Problema 13.}
   Testo
 \end{minipage}
 \hspace{.05\textwidth}
@@ -300,7 +300,7 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
+  \textbf{Problema 14.}
   Testo
 \end{minipage}
 \hspace{.05\textwidth}
@@ -316,7 +316,7 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
+  \textbf{Problema 15.}
   Testo
 \end{minipage}
 \hspace{.05\textwidth}
@@ -332,7 +332,7 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
+  \textbf{Problema 16.}
   Testo
 \end{minipage}
 \hspace{.05\textwidth}
@@ -348,7 +348,7 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
+  \textbf{Problema 17.}
   Testo
 \end{minipage}
 \hspace{.05\textwidth}
@@ -364,7 +364,7 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
+  \textbf{Problema 18.}
   Testo
 \end{minipage}
 \hspace{.05\textwidth}
@@ -380,7 +380,7 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
+  \textbf{Problema 19.}
   Testo
 \end{minipage}
 \hspace{.05\textwidth}
@@ -392,11 +392,78 @@ $$
 
 **Soluzione.**
 
+**Leggi di conservazione.** In assenza di attrito tra il solido inferiore e la parete orizzontale, sul sistema formato dai due solidi collegati dalla molla non agiscono forze esterne in direzione orizzontale: è conservata quindi la **componente orizzontale della quantità di moto del sistema**.
+In assenza di attrito, sul sistema non agiscono azioni non conservative (gravità è conservativa, molla ideale è conservativa, e la reazione del vincolo non compie lavoro in assenza di attrito): è conservata quindi l'**energia meccanica del sistema**. 
+
+**Scelta dei gradi di libertà.** Sia $x$ la posizione relativa della solido 2 rispetto al solido 1, coincidente con l'allungamento della molla; sia $y$ la posizione del solido 1 rispetto all'osservatore inerziale.
+
+1. L'energia meccanica del sistema è data dalla somma della sua energia cinetica e dalla sua energia potenziale, qui dovuta solo alla molla (i baricentri dei corpi non cambiano quota, quindi l'azione gravitazionale non compie lavoro). In un momento generico, quindi
+
+   $$E = K + V = \frac{1}{2} m_1 \dot{y}^2 + \frac{1}{2} m_2 \left( \dot{x} + \dot{y} \right)^2 + \frac{1}{2} k x^2 \ .$$
+
+   e poiché il sistema è inizialmente in uno stato di quiete, l'energia meccanica vale $E = E_{0} = \frac{1}{2} k x_0^2$.
+
+   La quantità di moto del sistema è data dalla somma delle quantità di moto delle sue parti. La componente orizzontale è quindi
+
+   $$Q_x = m_1 \dot{y} + m_2 \left( \dot{x} + \dot{y} \right) \ ,$$
+
+   e poiché il sistema è inizialmente in uno stato di quiete, la componente orizzontale della quantità di moto vale $Q_x = 0$. Da questa relazione si può quindi ricavare una relazione tra le derivate dei due gradi di libertà,
+
+   $$\dot{x} = - \frac{m_1 + m_2}{m_2} \dot{y}$$ (mechanics:ex19:kinematics)
+
+2. Usando la relazione {eq}`mechanics:ex19:kinematics`, è possibile riscrivere l'espressione dell'energia meccanica del sistema in funzione solo di $x$ e $\dot{y}$
+
+    $$E_0 = m_1 \dot{y}^2 + \frac{1}{2} k x^2 \ .$$
+
+    Quindi la velocità massima dei due corpi si verifica quando l'allungamento della molla è nullo, $x = 0$,
+
+    $$\begin{aligned}
+       |v_{1,max}| & = |\dot{y}|_{max}         && = \sqrt{\frac{E_0}{m_1}} \\
+       |v_{2,max}| & = |\dot{x}+\dot{y}|_{max} && = \frac{m_1}{m_2}\sqrt{\frac{E_0}{m_1}} \\
+    \end{aligned}$$
+
+3. Le equazioni dinamiche del moto possono essere ottenute ad esempio:
+   - dalle equazioni del moto, come il bilancio della quantità di moto della massa 2, e il bilancio della quantità di moto del sistema composto dalle due masse
+
+      $$\begin{cases}
+         m_2 (\ddot{x} + \ddot{y}) + k x = 0 \\
+         m_1 \ddot{y} + m_2 (\ddot{x} + \ddot{y}) = 0
+      \end{cases}$$
+
+   - oppure, derivando le espressioni dell'energia meccanica e della componente orizzontale della quantità di moto (integrali del moto)
+
+   Ad esempio, calcolando le derivate degli integrali del moto,
+
+   $$\begin{cases}
+     0 = \dot{y} m_1 \ddot{y} + m_2 (\dot{x} + \dot{y}) (\ddot{x} + \ddot{y}) + k x \dot{x} \\
+     0 = m_1 \ddot{y} + m_2 ( \ddot{x} + \ddot{y} ) = 0
+    \end{cases}$$
+
+    e usando la relazione {eq}`mechanics:ex19:kinematics` per esprimere $\dot{x}$ in funzione di $\dot{y}$ e semplificare questo ultimo termine nella prima delle due equazioni,
+
+    $$\begin{aligned}
+      0 & = \dot{y} \left[ m_1 \ddot{y} + m_2 \left( - \frac{m_1+m_2}{m_2} + 1\right) \left( \ddot{x} + \ddot{y} \right) - \frac{m_1 + m_2}{m_2} k x \right] = \\
+        & = \dot{y} \left[ m_1 \ddot{y} - m_1 (\ddot{x} + \ddot{y}) - \frac{m_1 + m_2}{m_2} k x \right]
+    \end{aligned}$$
+
+    e quindi
+
+    $$\begin{cases}
+      0 = m_1 \ddot{x} + \frac{m_1 + m_2}{m_2} k x \\
+      0 = m_1 \ddot{y} + m_2 ( \ddot{x} + \ddot{y} ) = 0
+    \end{cases}$$
+
+    **Osservazione.** Queste equazioni sono equivalenti a quelle trovate in precedenza con le equazioni del moto, poiché 
+
+    $$m_2 (\ddot{x} + \ddot{y}) = m_2 \ddot{x} \left( 1 - \frac{m_2}{m_1 + m_2} \right) = m_2 \frac{m_1}{m_1 + m_2} \ddot{x} \ .$$
+
+
+
 % Esercizio *****************************************************************
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
+  \textbf{Problema 20.}
   Testo
 \end{minipage}
 \hspace{.05\textwidth}
@@ -412,7 +479,7 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
+  \textbf{Problema 21.}
   Testo
 \end{minipage}
 \hspace{.05\textwidth}
@@ -428,7 +495,7 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
+  \textbf{Problema 22.}
   Testo
 \end{minipage}
 \hspace{.05\textwidth}
@@ -444,7 +511,7 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
+  \textbf{Problema 23.}
   Testo
 \end{minipage}
 \hspace{.05\textwidth}
@@ -460,7 +527,7 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
+  \textbf{Problema 24.}
   Testo
 \end{minipage}
 \hspace{.05\textwidth}
@@ -476,8 +543,14 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
-  Testo
+  \textbf{Problema 25.}
+A un disco di massa $M$ e raggio $R$ e distribuzione di massa uniforme è connessa una massa concentrata $m$ che può essere rappresentata da una massa puntiforme, posizionata a distanza $R$ dal centro del disco. Il sistema inizialmente in quiete viene messo in moto da una coppia costante $C$ fino a raggiungere la velocità angolare di regime $\Omega$. Viene chiesto di determinare:
+1. il momento di inerzia del sistema rispetto al centro di rotazione
+2. il tempo necessario per raggiungere la velocità angolare $\Omega$
+3. le reazioni vincolari in corrispondenza della cerniera
+
+**todo** Commentare i risultati di questo esercizio con la [resistenza a fatica dei materiali](continuum:solids:fatigue)
+
 \end{minipage}
 \hspace{.05\textwidth}
 \begin{minipage}[t]{.40\textwidth}
@@ -487,12 +560,56 @@ $$
 $$
 
 **Soluzione.**
+1. Il momento di inerzia del sistema rispetto al centro di rotazione è uguale alla somma dei momenti di inerzia del disco e della massa concentrata, **todo** *perché? Il momento angolare è una quantità additiva, ma il momento di inerzia?* **todo** *fare riferimento ai valori dei momenti di inerzia di disco e massa*
+
+   $$I = I^{disk} + I^{mass} = \frac{1}{2} M R^2 + m R^2 \ .$$
+
+2. L'equazione di moto che governa la dinamica dell'angolo di rotazione del sistema $\theta(t)$ può essere ricavata dall'equazione di bilancio del momento della quantità di moto, usando come polo $A$ il centro del cerchio (polo fisso, $\dot{\vec{x}}_A = \vec{0}$)
+
+   $$\frac{d L_A}{d t} = M^{ext}_A \ .$$
+
+   Il momento della quantità di moto è la somma dei momenti della quantità di moto dei due sistemi. La sua componente perpendicolare al piano di rotazione vale
+
+   $$L_{A,z} = L_{A,z}^{disk} + L_{A,z}^{mass} = I^{disk} \dot{\theta} + m R^2 \dot{\theta} = I \dot{\theta} \ .$$
+   
+   L'equazione del moto quindi diventa
+
+   $$I \ddot{\theta} = C \ ,$$
+
+   dove la derivata del momento angolare uguaglia la coppia esterna agente sul sistema. Se il sistema parte da una condizione di quiete e la coppia applicata è costante, è possibile integrare l'equazione del moto e trovare
+
+   $$\begin{aligned}
+     \dot{\theta}(t) & = \frac{C}{I} \, t \\
+          \theta (t) & = \frac{1}{2} \frac{C}{I} \, t^2 \\
+   \end{aligned}$$
+
+   fino al raggiungimento della velocità di regime $\Omega = \dot{\theta}(t^*) = \dfrac{C t^*}{I}$, nell'intervallo di tempo
+
+   $$t^* = \frac{I \Omega}{C} \ .$$
+
+3. Una cerniera cilindrica permette la rotazione del corpo attorno al proprio asse, mentre vincola completamente la traslazione del punto in cui viene connessa, con una forza come reazione vincolare. In un moto piano, la cerniera impedisce la traslazione in due direzioni e la reazione vincolare è una forza che viene determinata dalle sue due componenti nel piano.
+
+    Una volta noto il moto del sistema, $\theta(t)$, le reazioni vincolari possono essere determinate ad esempio dall'equazione di bilancio della quantità di moto del sistema,
+
+    $$\dot{\vec{Q}} = \vec{R} \ .$$
+
+    La quantità di moto del sistema è uguale alla somma delle quantità di moto delle sue parti. Il centro di massa del disco non trasla, e quindi la quantità di moto del disco è nulla. Usando un sistema di coordinate polari, si può scrivere la quantità di moto del sistema come
+
+    $$\vec{Q} = m \vec{v}_B = m R \dot{\theta} \hat{\theta} \ ,$$
+
+    e la sua derivata,
+
+    $$\dot{\vec{Q}} = m R \ddot{\theta} \hat{\theta} - m R \dot{\theta}^2 \hat{r} \ .$$
+
+    Dal bilancio della quantità di moto del sistema, si ottengono le azioni imposte dal vincolo sul sistema (quelle che agiscono sul vincolo sono uguali e contrarie, per il principio di azione/reazione),
+
+    $$\vec{R} = R_r \hat{r} + R_{\theta} \hat{\theta} = \dot{\vec{Q}} = m R \ddot{\theta} \, \hat{\theta} - m R \dot{\theta}^2 \, \hat{r} \ .$$
 
 % Esercizio *****************************************************************
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
+  \textbf{Problema 26.}
   Testo
 \end{minipage}
 \hspace{.05\textwidth}
@@ -508,7 +625,7 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
+  \textbf{Problema 27.}
   Testo
 \end{minipage}
 \hspace{.05\textwidth}
@@ -524,8 +641,11 @@ $$
 $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
-  Testo
+  \textbf{Problema 28.}
+Un sistema puntiforme è libero di scivolare su una superficie semi-circolare con attrito trascurabile. Conoscendo la condizione iniziale, $\theta(0) = \theta_0$, $\dot{\theta}(0) = \Omega$, viene chiesto di determinare:
+1. la condizione di distacco dalla superficie
+2. la distanza di orizzontale del punto di atterraggio del corpo dopo il volo libero, rispetto alla superficie semicircolare.
+
 \end{minipage}
 \hspace{.05\textwidth}
 \begin{minipage}[t]{.40\textwidth}
@@ -535,6 +655,83 @@ $$
 $$
 
 **Soluzione.**
+
+Il vincolo con la superficie è un vincolo ideale monolatero, che agisce solo fino a quando la componente radiale della reazione vincolare è positiva. Fino a quando il vincolo ideale monolatero è attivo - cioè fino a quando la massa scivola sulla superficie - il sistema ha un grado di libertà, qui scelto come l'angolo $\theta$. Il distacco del corpo dalla superficie vine determinata dalla condizione $R_r(\theta^*) = 0$. Successivamente al distacco, il sistema ha due gradi di libertà mentre compie un moto libero in un campo gravitazionale.
+
+1. L'equazione di bilancio del momento della quantità di moto rispetto al centro della circonferenza permette di determinare un'equazione pura del moto del sistema
+
+    $$\frac{d L_{A,z}}{d t} = M_{A,z}^{ext} \ ,$$
+
+    e quindi
+
+    $$m R^2 \ddot{\theta} = m g R \sin \theta$$
+
+    con le condizioni iniziali definite dal problema. Oppure, la conservazione dell'energia meccanica
+
+    $$E = m g R \cos \theta + \frac{1}{2} m R^2 \dot{\theta}^2$$ (mechanics:ex28:energy)
+
+    in assenza di azioni non conservative, permette di ricavare immediatamente una relazione tra $\theta$ e $\dot{\theta}$.
+    L'equazione di bilancio della quantità di moto permette invece di determinare le reazioni vincolari,
+
+    $$\dot{\vec{Q}} = \vec{R}^e \ ,$$
+
+    $$\begin{aligned}
+      R_r \hat{r} + \underbrace{R_{\theta}}_{= 0 \text{ no friction}} \hat{\theta} + m \vec{g} 
+      & = \dfrac{d}{dt} \left( m R \dot{\theta} \hat{\theta} \right) = \\
+      & = m R \left( \ddot{\theta} \hat{\theta} - \dot{\theta}^2 \hat{r} \right)
+    \end{aligned}$$
+
+    e quindi le due componenti radiale e tangenziale diventano
+
+    $$\begin{cases}
+       r:      \ R_r = m g \cos \theta - m R \dot{\theta}^2 \\
+       \theta: \ m g \sin \theta = m R \ddot{\theta}^2 \\
+    \end{cases}$$
+
+    La componente tangenziale è equivalente all'equazione pura del moto; la componente radiale fornisce l'espressione della reazione vincolare in funzione di $\theta$ e $\dot{\theta}$. Usando la relazione {eq}`mechanics:ex28:energy` per esprimere $\dot{\theta}$ in funzione di $\theta$, si può scrivere la reazione normale in funzione del solo $\theta$
+
+    $$\begin{aligned}
+      R_r
+      & = m g \cos \theta - m R \dot{\theta}^2 = \\
+      & = m g \cos \theta - \frac{2}{R} \left( E - m g R \cos \theta \right) = \\
+      & = 3 m g \cos \theta - \frac{2 E}{R} \ . 
+    \end{aligned}$$
+
+    La condizione $R_r \ge 0$ equivale quindi alla condizione
+
+    $$\cos \theta \ge \frac{2}{3} \frac{E}{m g R}$$
+
+2. Nel caso in cui il sistema è inizialmente in corrispondenza del punto più alto della superficie e in quiete (o quel minimo di velocità per allontanarsi dalla posizione di equilibrio instabile), l'energia meccanica del sistema è $E = m g R$ e l'angolo limite $\theta^*$ ha coseno e seno
+
+    $$\begin{aligned}
+      \cos \theta^* & = \frac{2}{3} \frac{E}{mgR} = \frac{2}{3} \\
+      \sin \theta^* & = \sqrt{1 - \cos^2 \theta^* } = \frac{\sqrt{5}}{3} \\
+    \end{aligned}$$
+
+    e la sua derivata vale
+
+    $$\begin{aligned}
+      \dot{\theta}^*
+      & = \sqrt{ \frac{2}{m R^2} \left( E - m g R \cos \theta^* \right) } = \\
+      & = \sqrt{ \frac{2}{m R^2} \left( m g R - m g R \frac{2}{3} \right) } 
+        = \sqrt{ \frac{2}{3} \frac{g}{R} } \ .
+    \end{aligned}$$
+ 
+    Il moto libero è determinato dalle equazioni del moto
+
+    $$\begin{cases}
+      m \ddot{x} = 0 \\
+      m \ddot{y} = -m g \\
+    \end{cases}$$
+
+    con le condizioni iniziali
+
+    $$
+    \begin{cases} x(t_0) = R \sin \theta^* \\ y(t_0) = R \cos \theta^* \end{cases} 
+    \quad , \quad 
+    \begin{cases} v_x(t_0) = R \dot{\theta}^* \sin \theta^* \\ v_y(t_0) = - R \dot{\theta}^* \cos \theta^* \end{cases}
+    $$
+
 
 % Esercizio *****************************************************************
 $$
@@ -1278,7 +1475,12 @@ Testo
 :::{grid-item-card} Problema 25.
 :columns: 8
 
-Testo
+A un disco di massa $M$ e raggio $R$ e distribuzione di massa uniforme è connessa una massa concentrata $m$ che può essere rappresentata da una massa puntiforme, posizionata a distanza $R$ dal centro del disco. Il sistema inizialmente in quiete viene messo in moto da una coppia costante $C$ fino a raggiungere la velocità angolare di regime $\Omega$. Viene chiesto di determinare:
+1. il momento di inerzia del sistema rispetto al centro di rotazione
+2. il tempo necessario per raggiungere la velocità angolare $\Omega$
+3. le reazioni vincolari in corrispondenza della cerniera
+
+**todo** Commentare i risultati di questo esercizio con la [resistenza a fatica dei materiali](continuum:solids:fatigue)
 
 :::
 
@@ -1292,6 +1494,52 @@ Testo
 ::::
 
 ```{dropdown} Soluzione.
+1. Il momento di inerzia del sistema rispetto al centro di rotazione è uguale alla somma dei momenti di inerzia del disco e della massa concentrata, **todo** *perché? Il momento angolare è una quantità additiva, ma il momento di inerzia?* **todo** *fare riferimento ai valori dei momenti di inerzia di disco e massa*
+
+   $$I = I^{disk} + I^{mass} = \frac{1}{2} M R^2 + m R^2 \ .$$
+
+2. L'equazione di moto che governa la dinamica dell'angolo di rotazione del sistema $\theta(t)$ può essere ricavata dall'equazione di bilancio del momento della quantità di moto, usando come polo $A$ il centro del cerchio (polo fisso, $\dot{\vec{x}}_A = \vec{0}$)
+
+   $$\frac{d L_A}{d t} = M^{ext}_A \ .$$
+
+   Il momento della quantità di moto è la somma dei momenti della quantità di moto dei due sistemi. La sua componente perpendicolare al piano di rotazione vale
+
+   $$L_{A,z} = L_{A,z}^{disk} + L_{A,z}^{mass} = I^{disk} \dot{\theta} + m R^2 \dot{\theta} = I \dot{\theta} \ .$$
+   
+   L'equazione del moto quindi diventa
+
+   $$I \ddot{\theta} = C \ ,$$
+
+   dove la derivata del momento angolare uguaglia la coppia esterna agente sul sistema. Se il sistema parte da una condizione di quiete e la coppia applicata è costante, è possibile integrare l'equazione del moto e trovare
+
+   $$\begin{aligned}
+     \dot{\theta}(t) & = \frac{C}{I} \, t \\
+          \theta (t) & = \frac{1}{2} \frac{C}{I} \, t^2 \\
+   \end{aligned}$$
+
+   fino al raggiungimento della velocità di regime $\Omega = \dot{\theta}(t^*) = \dfrac{C t^*}{I}$, nell'intervallo di tempo
+
+   $$t^* = \frac{I \Omega}{C} \ .$$
+
+3. Una cerniera cilindrica permette la rotazione del corpo attorno al proprio asse, mentre vincola completamente la traslazione del punto in cui viene connessa, con una forza come reazione vincolare. In un moto piano, la cerniera impedisce la traslazione in due direzioni e la reazione vincolare è una forza che viene determinata dalle sue due componenti nel piano.
+
+    Una volta noto il moto del sistema, $\theta(t)$, le reazioni vincolari possono essere determinate ad esempio dall'equazione di bilancio della quantità di moto del sistema,
+
+    $$\dot{\vec{Q}} = \vec{R} \ .$$
+
+    La quantità di moto del sistema è uguale alla somma delle quantità di moto delle sue parti. Il centro di massa del disco non trasla, e quindi la quantità di moto del disco è nulla. Usando un sistema di coordinate polari, si può scrivere la quantità di moto del sistema come
+
+    $$\vec{Q} = m \vec{v}_B = m R \dot{\theta} \hat{\theta} \ ,$$
+
+    e la sua derivata,
+
+    $$\dot{\vec{Q}} = m R \ddot{\theta} \hat{\theta} - m R \dot{\theta}^2 \hat{r} \ .$$
+
+    Dal bilancio della quantità di moto del sistema, si ottengono le azioni imposte dal vincolo sul sistema (quelle che agiscono sul vincolo sono uguali e contrarie, per il principio di azione/reazione),
+
+    $$\vec{R} = R_r \hat{r} + R_{\theta} \hat{\theta} = \dot{\vec{Q}} = m R \ddot{\theta} \, \hat{\theta} - m R \dot{\theta}^2 \, \hat{r} \ .$$
+
+
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -1347,7 +1595,9 @@ Testo
 :::{grid-item-card} Problema 28.
 :columns: 8
 
-Testo
+Un sistema puntiforme è libero di scivolare su una superficie semi-circolare con attrito trascurabile. Conoscendo la condizione iniziale, $\theta(0) = \theta_0$, $\dot{\theta}(0) = \Omega$, viene chiesto di determinare:
+1. la condizione di distacco dalla superficie
+2. la distanza di orizzontale del punto di atterraggio del corpo dopo il volo libero, rispetto alla superficie semicircolare.
 
 :::
 
@@ -1361,6 +1611,83 @@ Testo
 ::::
 
 ```{dropdown} Soluzione.
+
+Il vincolo con la superficie è un vincolo ideale monolatero, che agisce solo fino a quando la componente radiale della reazione vincolare è positiva. Fino a quando il vincolo ideale monolatero è attivo - cioè fino a quando la massa scivola sulla superficie - il sistema ha un grado di libertà, qui scelto come l'angolo $\theta$. Il distacco del corpo dalla superficie vine determinata dalla condizione $R_r(\theta^*) = 0$. Successivamente al distacco, il sistema ha due gradi di libertà mentre compie un moto libero in un campo gravitazionale.
+
+1. L'equazione di bilancio del momento della quantità di moto rispetto al centro della circonferenza permette di determinare un'equazione pura del moto del sistema
+
+    $$\frac{d L_{A,z}}{d t} = M_{A,z}^{ext} \ ,$$
+
+    e quindi
+
+    $$m R^2 \ddot{\theta} = m g R \sin \theta$$
+
+    con le condizioni iniziali definite dal problema. Oppure, la conservazione dell'energia meccanica
+
+    $$E = m g R \cos \theta + \frac{1}{2} m R^2 \dot{\theta}^2$$ (mechanics:ex28:energy)
+
+    in assenza di azioni non conservative, permette di ricavare immediatamente una relazione tra $\theta$ e $\dot{\theta}$.
+    L'equazione di bilancio della quantità di moto permette invece di determinare le reazioni vincolari,
+
+    $$\dot{\vec{Q}} = \vec{R}^e \ ,$$
+
+    $$\begin{aligned}
+      R_r \hat{r} + \underbrace{R_{\theta}}_{= 0 \text{ no friction}} \hat{\theta} + m \vec{g} 
+      & = \dfrac{d}{dt} \left( m R \dot{\theta} \hat{\theta} \right) = \\
+      & = m R \left( \ddot{\theta} \hat{\theta} - \dot{\theta}^2 \hat{r} \right)
+    \end{aligned}$$
+
+    e quindi le due componenti radiale e tangenziale diventano
+
+    $$\begin{cases}
+       r:      \ R_r = m g \cos \theta - m R \dot{\theta}^2 \\
+       \theta: \ m g \sin \theta = m R \ddot{\theta}^2 \\
+    \end{cases}$$
+
+    La componente tangenziale è equivalente all'equazione pura del moto; la componente radiale fornisce l'espressione della reazione vincolare in funzione di $\theta$ e $\dot{\theta}$. Usando la relazione {eq}`mechanics:ex28:energy` per esprimere $\dot{\theta}$ in funzione di $\theta$, si può scrivere la reazione normale in funzione del solo $\theta$
+
+    $$\begin{aligned}
+      R_r
+      & = m g \cos \theta - m R \dot{\theta}^2 = \\
+      & = m g \cos \theta - \frac{2}{R} \left( E - m g R \cos \theta \right) = \\
+      & = 3 m g \cos \theta - \frac{2 E}{R} \ . 
+    \end{aligned}$$
+
+    La condizione $R_r \ge 0$ equivale quindi alla condizione
+
+    $$\cos \theta \ge \frac{2}{3} \frac{E}{m g R}$$
+
+2. Nel caso in cui il sistema è inizialmente in corrispondenza del punto più alto della superficie e in quiete (o quel minimo di velocità per allontanarsi dalla posizione di equilibrio instabile), l'energia meccanica del sistema è $E = m g R$ e l'angolo limite $\theta^*$ ha coseno e seno
+
+    $$\begin{aligned}
+      \cos \theta^* & = \frac{2}{3} \frac{E}{mgR} = \frac{2}{3} \\
+      \sin \theta^* & = \sqrt{1 - \cos^2 \theta^* } = \frac{\sqrt{5}}{3} \\
+    \end{aligned}$$
+
+    e la sua derivata vale
+
+    $$\begin{aligned}
+      \dot{\theta}^*
+      & = \sqrt{ \frac{2}{m R^2} \left( E - m g R \cos \theta^* \right) } = \\
+      & = \sqrt{ \frac{2}{m R^2} \left( m g R - m g R \frac{2}{3} \right) } 
+        = \sqrt{ \frac{2}{3} \frac{g}{R} } \ .
+    \end{aligned}$$
+ 
+    Il moto libero è determinato dalle equazioni del moto
+
+    $$\begin{cases}
+      m \ddot{x} = 0 \\
+      m \ddot{y} = -m g \\
+    \end{cases}$$
+
+    con le condizioni iniziali
+
+    $$
+    \begin{cases} x(t_0) = R \sin \theta^* \\ y(t_0) = R \cos \theta^* \end{cases} 
+    \quad , \quad 
+    \begin{cases} v_x(t_0) = R \dot{\theta}^* \sin \theta^* \\ v_y(t_0) = - R \dot{\theta}^* \cos \theta^* \end{cases}
+    $$
+
 ```
 
 <!-- Esercizio ************************************************************* -->
