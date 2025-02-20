@@ -25,19 +25,34 @@ Un'equazione di bilancio di una grandezza fisica per un sistema aperto include a
 
 Si considerano qui i bilanci (integrali, globali di un sistema) di alcune grandezze fisiche fondamentali in meccanica classica: massa, quantità di moto, momento della quantità di moto, energia totale.
 
+(physics-hs:thermodynamics:foundation:principles:open:mass)=
 ## Bilancio di massa
 Il bilancio di massa, $F = M$, $f = 1$, per un sistema aperto è
 
 $$\frac{d}{dt} M_{v_t} = - \sum_k \dot{m}_k$$
 
+(physics-hs:thermodynamics:foundation:principles:open:momentum)=
 ## Bilancio della quantità di moto
 
-<span style="color:red"> **todo** *riferimento da o a meccanica classica*</span>
+Il [bilancio della quantità di moto](physics-hs:mechanics:dynamics:eom:open:momentum) si riduce all'equazione,
 
+$$\text{todo}$$
+
+come già discusso nella parte di meccanica.
+
+<!-- <span style="color:red"> **todo** *riferimento da o a meccanica classica*</span> -->
+
+(physics-hs:thermodynamics:foundation:principles:open:angular-momentum)=
 ## Bilancio del momento della quantità di moto
 
-<span style="color:red"> **todo** *riferimento da o a meccanica classica*</span>
+Il [bilancio del momento della quantità di moto](physics-hs:mechanics:dynamics:eom:open:angular-momentum) si riduce all'equazione
 
+$$\text{todo}$$
+
+come già discusso nella parte di meccanica.
+<!-- <span style="color:red"> **todo** *riferimento da o a meccanica classica*</span> -->
+
+(physics-hs:thermodynamics:foundation:principles:open:total-energy)=
 ## Bilancio dell'energia totale
 Il bilancio di energia totale $F = E^{tot} = E + K$, $f = e^{tot} = e + \frac{|\vec{v}|^2}{2}$,
 
