@@ -650,7 +650,50 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>todo</strong></p>
+<p class="sd-card-text">La posizione e la velocità del centro di massa del sistema sono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  x_C &amp; = \frac{x_1 m_1 + x_2 m_2}{m_1 + m_2} \\
+  v_C &amp; = \frac{m_1}{m_1+m_2} \dot{x}_1 + \frac{m_2}{m_1+m_2} \dot{x}_2  \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">In assenza di forze esterne parallele alla parete, la velocità del centro di massa del sistema è costante.
+L’energia cinetica nel sistema di riferimento del centro di massa prima e dopo l’urto vale</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  K_- 
+  &amp; = \frac{1}{2} m_1 (\dot{x}_1 - v_C)^2 + \frac{1}{2} m_2 (\dot{x}_2 - v_C)^2 = \\
+  &amp; = \frac{1}{2} m_1 \left( \frac{m_2}{m_1+m_2} (\dot{x}_1 - \dot{x}_2) \right)^2 + \frac{1}{2} m_2 \left( \frac{m_1}{m_1+m_2} (\dot{x}_2 - \dot{x}_1) \right)^2 = \\
+  &amp; = \frac{1}{2} m_1 m_2 \frac{m_1 + m_2}{(m_1 + m_2)^2} (\dot{x}_1 - \dot{x}_2)^2 = \\
+  &amp; = \frac{1}{2} \frac{ m_1 m_2}{m_1 + m_2} (\dot{x}_1 - \dot{x}_2)^2 \ .
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">…</p>
+<p class="sd-card-text">In termini di velocità relative</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  0 = \mu_1 \dot{x}'_{1,-} + \mu_2 \dot{x}'_{2,-} = \mu_1 \dot{x}'_{1,+} + \mu_2 \dot{x}'_{2,+} \\
+  \varepsilon^2 \left( \frac{1}{2} \mu_1 \dot{x}^{'2}_{1,-} + \frac{1}{2} \mu_2 \dot{x}^{'2}_{2,-} \right) = \frac{1}{2} \mu_1 \dot{x}^{'2}_{1,+} + \frac{1}{2} \mu_2 \dot{x}^{'2}_{2,+}
+\end{cases}\end{split}\]</div>
+<p class="sd-card-text">Dalla prima equazione</p>
+<div class="math notranslate nohighlight">
+\[\dot{x}'_{2,+} = - \frac{\mu_1}{\mu_2} \dot{x}'_{1,+} \]</div>
+<p class="sd-card-text">inserita nella seconda</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{2} \left( \mu_1 + \mu_2 \left( \frac{\mu_1}{\mu_2} \right)^2 \right) \dot{x}^{'2}_{1,+} = \varepsilon^2 K'_-\]</div>
+<p class="sd-card-text">si possono ricavare le velocità relative dopo l’urto,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \dot{x}'_{1,+} &amp; = \mp \sqrt{ \frac{2 \varepsilon^2 K'_-}{ \mu_1 \left( 1 + \frac{\mu_1}{\mu_2} \right)} } \\
+  \dot{x}'_{2,+} &amp; = \pm \sqrt{ \frac{2 \varepsilon^2 K'_-}{ \mu_2 \left( 1 + \frac{\mu_2}{\mu_1} \right)} } \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Infatti</p>
+<div class="math notranslate nohighlight">
+\[
+  \dot{x}_{2,+}
+    = - \frac{\mu_1}{\mu_2} \dot{x}_{1,+} 
+    = \pm \frac{\mu_1}{\mu_2} \sqrt{ \frac{2 \varepsilon^2 K'_-}{ \mu_1 \left( 1 + \frac{\mu_1}{\mu_2} \right)} }
+    = \pm \sqrt{ \frac{2 \varepsilon^2 K'_-}{ \frac{\mu_2^2}{\mu_1} \left( 1 + \frac{\mu_1}{\mu_2} \right)} } 
+    = \pm \sqrt{ \frac{2 \varepsilon^2 K'_-}{ \mu_2 \left( 1 + \frac{\mu_2}{\mu_1} \right)} } 
+\]</div>
 </div>
 </details><!-- Esercizio ************************************************************* -->
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
@@ -700,7 +743,7 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Rimbalzo di una palla</div>
-<p class="sd-card-text">Dato il coefficiente di restituzione degli urti tra la palla di massa <span class="math notranslate nohighlight">\(m_1\)</span> nota e ilpiano orizzontale, viene chiesto di determinare la distanza verticale percorsa dalla palla durante i rimbalzi.</p>
+<p class="sd-card-text">Dato il coefficiente di restituzione degli urti tra la palla di massa <span class="math notranslate nohighlight">\(m_1\)</span> nota e il piano orizzontale, viene chiesto di determinare la distanza verticale percorsa dalla palla durante i rimbalzi.</p>
 <p class="sd-card-text"><strong>Oss.</strong> Il numero di rimbalzi è infinito, ma il risultato si ottiene da una serie infinita convergente.</p>
 </div>
 </div>
@@ -722,7 +765,29 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>todo</strong></p>
+<p class="sd-card-text">Il caso di urto contro una parete rigida fissa può essere rappresentato considerando il centro di massa dei corpi in urto coincidente con la parete fissa (come se calcolassimo l’urto tra palla e pianeta Terra. Non dovrebbe essere difficile immaginare - e calcolare - che l’urto di una palla di massa dell’ordine del chilogrammo non influenzi in maniera significativa lo stato della Terra).</p>
+<p class="sd-card-text">Il moto è «conservativo a tratti» tra due urti consecutivi. Per ogni urto, vale la relazione</p>
+<div class="math notranslate nohighlight">
+\[K_+ = \varepsilon^2 K_- \ ,\]</div>
+<p class="sd-card-text">per l’energia cinetica prima e dopo ogni urto, <span class="math notranslate nohighlight">\(K_-\)</span> e <span class="math notranslate nohighlight">\(K_+\)</span> rispettivamente.</p>
+<p class="sd-card-text">Partendo in quiete da una quota <span class="math notranslate nohighlight">\(h\)</span>, l’energia meccanica del sistema prima del primo urto vale</p>
+<div class="math notranslate nohighlight">
+\[E_0 = m g h_0 \ .\]</div>
+<p class="sd-card-text">L’energia meccanica dopo l”<span class="math notranslate nohighlight">\(n\)</span>-esimo urto vale</p>
+<div class="math notranslate nohighlight">
+\[E_n = E_0 \varepsilon^{2n} \ .\]</div>
+<p class="sd-card-text">La quota massima raggiunta dopo l”<span class="math notranslate nohighlight">\(n\)</span>-esimo urto vale</p>
+<div class="math notranslate nohighlight">
+\[h_n = \frac{E_n}{mg} = \frac{E_0}{mg} \varepsilon^{2n} = h_0 \varepsilon^{2n} \ .\]</div>
+<p class="sd-card-text">La distanza verticale coperta dalla palla fino all”<span class="math notranslate nohighlight">\(N\)</span>-esimo urto è</p>
+<div class="math notranslate nohighlight">
+\[S_N = h_0 + \sum_{n=1}^{N} 2 \, h_n = h_0 \left( 1 + \sum_{n=1}^N \varepsilon^{2n} \right) \ .\]</div>
+<p class="sd-card-text">La somma vale</p>
+<div class="math notranslate nohighlight">
+\[S_N = h_0 \left( 1 + 2 \, \frac{1 - \varepsilon^{2(N+1)}}{1-\varepsilon^{2}} \right) \ .\]</div>
+<p class="sd-card-text">Per il numero di rimbalzi che tende all’infinito, se <span class="math notranslate nohighlight">\(\varepsilon &lt; 1\)</span> la serie è una <strong>serie geometrica convergente</strong> e la palla compie la distanza finita</p>
+<div class="math notranslate nohighlight">
+\[S = h_0 \left( 1 + \frac{2}{1-\varepsilon^{2}} \right) \ .\]</div>
 </div>
 </details><!-- Esercizio ************************************************************* -->
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
@@ -933,6 +998,7 @@ Proiettile su bersaglio di poligono di tiro</div>
 <li><p class="sd-card-text">la velocità minima del proiettile prima dell’urto che garantisce di abbattere il bersaglio.</p></li>
 </ul>
 <p class="sd-card-text">Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l’urto.</p>
+<p class="sd-card-text">Si analizzi inizialmente il caso di urto anelastico.</p>
 </div>
 </div>
 </div>
@@ -953,6 +1019,12 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Urto anelastico.</strong> Usando il bilancio della quantità di moto in direzione orizzontale e il bilancio del momento della quantità di moto rispetto alla cerniera,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  - m v_-   + ( M + m ) L   \dot{\theta}_+ = I_{A,x} + I_{B,x} \\
+  - m L v_- + ( M + m ) L^2 \dot{\theta}_+ = I_{B,x} \ell \qquad \text{if $I_{B,x} &gt; 0$, else $I_{B,x} = 0$}  \\
+\end{cases}\end{split}\]</div>
 <p class="sd-card-text"><strong>todo</strong></p>
 </div>
 </details><!-- Esercizio ************************************************************* -->
@@ -964,6 +1036,7 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Collisione su sistema libero rigido di masse concentrate</div>
 <p class="sd-card-text">Un proiettile colpisce un sistema rigido di due masse concentrate, libero e inizialmente in quiete. Si chiede di determinare il moto dei sistemi dopo l’urto, in funzione del coefficiente di restituzione.</p>
+<p class="sd-card-text">Si analizzi inizialmente il caso di urto anelastico.</p>
 </div>
 </div>
 </div>

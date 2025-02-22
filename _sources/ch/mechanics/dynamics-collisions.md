@@ -73,7 +73,59 @@ Date le masse di due blocchi che scivolano su un piano orizzontale liscio, e le 
 ::::
 
 ```{dropdown} Soluzione.
-**todo**
+
+La posizione e la velocità del centro di massa del sistema sono
+
+$$\begin{aligned}
+  x_C & = \frac{x_1 m_1 + x_2 m_2}{m_1 + m_2} \\
+  v_C & = \frac{m_1}{m_1+m_2} \dot{x}_1 + \frac{m_2}{m_1+m_2} \dot{x}_2  \\
+\end{aligned}$$
+
+In assenza di forze esterne parallele alla parete, la velocità del centro di massa del sistema è costante.
+L'energia cinetica nel sistema di riferimento del centro di massa prima e dopo l'urto vale
+
+$$\begin{aligned}
+  K_- 
+  & = \frac{1}{2} m_1 (\dot{x}_1 - v_C)^2 + \frac{1}{2} m_2 (\dot{x}_2 - v_C)^2 = \\
+  & = \frac{1}{2} m_1 \left( \frac{m_2}{m_1+m_2} (\dot{x}_1 - \dot{x}_2) \right)^2 + \frac{1}{2} m_2 \left( \frac{m_1}{m_1+m_2} (\dot{x}_2 - \dot{x}_1) \right)^2 = \\
+  & = \frac{1}{2} m_1 m_2 \frac{m_1 + m_2}{(m_1 + m_2)^2} (\dot{x}_1 - \dot{x}_2)^2 = \\
+  & = \frac{1}{2} \frac{ m_1 m_2}{m_1 + m_2} (\dot{x}_1 - \dot{x}_2)^2 \ .
+\end{aligned}$$
+
+...
+
+In termini di velocità relative
+
+$$\begin{cases}
+  0 = \mu_1 \dot{x}'_{1,-} + \mu_2 \dot{x}'_{2,-} = \mu_1 \dot{x}'_{1,+} + \mu_2 \dot{x}'_{2,+} \\
+  \varepsilon^2 \left( \frac{1}{2} \mu_1 \dot{x}^{'2}_{1,-} + \frac{1}{2} \mu_2 \dot{x}^{'2}_{2,-} \right) = \frac{1}{2} \mu_1 \dot{x}^{'2}_{1,+} + \frac{1}{2} \mu_2 \dot{x}^{'2}_{2,+}
+\end{cases}$$
+
+Dalla prima equazione
+
+$$\dot{x}'_{2,+} = - \frac{\mu_1}{\mu_2} \dot{x}'_{1,+} $$
+
+inserita nella seconda
+
+$$\frac{1}{2} \left( \mu_1 + \mu_2 \left( \frac{\mu_1}{\mu_2} \right)^2 \right) \dot{x}^{'2}_{1,+} = \varepsilon^2 K'_-$$
+
+si possono ricavare le velocità relative dopo l'urto,
+
+$$\begin{aligned}
+  \dot{x}'_{1,+} & = \mp \sqrt{ \frac{2 \varepsilon^2 K'_-}{ \mu_1 \left( 1 + \frac{\mu_1}{\mu_2} \right)} } \\
+  \dot{x}'_{2,+} & = \pm \sqrt{ \frac{2 \varepsilon^2 K'_-}{ \mu_2 \left( 1 + \frac{\mu_2}{\mu_1} \right)} } \\
+\end{aligned}$$
+
+Infatti
+
+$$
+  \dot{x}_{2,+}
+    = - \frac{\mu_1}{\mu_2} \dot{x}_{1,+} 
+    = \pm \frac{\mu_1}{\mu_2} \sqrt{ \frac{2 \varepsilon^2 K'_-}{ \mu_1 \left( 1 + \frac{\mu_1}{\mu_2} \right)} }
+    = \pm \sqrt{ \frac{2 \varepsilon^2 K'_-}{ \frac{\mu_2^2}{\mu_1} \left( 1 + \frac{\mu_1}{\mu_2} \right)} } 
+    = \pm \sqrt{ \frac{2 \varepsilon^2 K'_-}{ \mu_2 \left( 1 + \frac{\mu_2}{\mu_1} \right)} } 
+$$
+
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -111,7 +163,7 @@ Date le masse di due blocchi che scivolano su un piano orizzontale scabro, le ve
 :::{grid-item-card} Rimbalzo di una palla
 :columns: 8
 
-Dato il coefficiente di restituzione degli urti tra la palla di massa $m_1$ nota e ilpiano orizzontale, viene chiesto di determinare la distanza verticale percorsa dalla palla durante i rimbalzi.
+Dato il coefficiente di restituzione degli urti tra la palla di massa $m_1$ nota e il piano orizzontale, viene chiesto di determinare la distanza verticale percorsa dalla palla durante i rimbalzi.
 
 **Oss.** Il numero di rimbalzi è infinito, ma il risultato si ottiene da una serie infinita convergente.
 
@@ -127,7 +179,40 @@ Dato il coefficiente di restituzione degli urti tra la palla di massa $m_1$ nota
 ::::
 
 ```{dropdown} Soluzione.
-**todo**
+
+Il caso di urto contro una parete rigida fissa può essere rappresentato considerando il centro di massa dei corpi in urto coincidente con la parete fissa (come se calcolassimo l'urto tra palla e pianeta Terra. Non dovrebbe essere difficile immaginare - e calcolare - che l'urto di una palla di massa dell'ordine del chilogrammo non influenzi in maniera significativa lo stato della Terra).
+
+Il moto è "conservativo a tratti" tra due urti consecutivi. Per ogni urto, vale la relazione
+
+$$K_+ = \varepsilon^2 K_- \ ,$$
+
+per l'energia cinetica prima e dopo ogni urto, $K_-$ e $K_+$ rispettivamente.
+
+Partendo in quiete da una quota $h$, l'energia meccanica del sistema prima del primo urto vale
+
+$$E_0 = m g h_0 \ .$$
+
+L'energia meccanica dopo l'$n$-esimo urto vale
+
+$$E_n = E_0 \varepsilon^{2n} \ .$$
+
+La quota massima raggiunta dopo l'$n$-esimo urto vale
+
+$$h_n = \frac{E_n}{mg} = \frac{E_0}{mg} \varepsilon^{2n} = h_0 \varepsilon^{2n} \ .$$
+
+La distanza verticale coperta dalla palla fino all'$N$-esimo urto è
+
+$$S_N = h_0 + \sum_{n=1}^{N} 2 \, h_n = h_0 \left( 1 + \sum_{n=1}^N \varepsilon^{2n} \right) \ .$$
+
+La somma vale
+
+$$S_N = h_0 \left( 1 + 2 \, \frac{1 - \varepsilon^{2(N+1)}}{1-\varepsilon^{2}} \right) \ .$$
+
+Per il numero di rimbalzi che tende all'infinito, se $\varepsilon < 1$ la serie è una **serie geometrica convergente** e la palla compie la distanza finita
+
+$$S = h_0 \left( 1 + \frac{2}{1-\varepsilon^{2}} \right) \ .$$
+
+
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -329,6 +414,8 @@ Un proiettile colpisce il bersaglio di un poligono, inizialmente appoggiato alla
 
 Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l'urto.
 
+Si analizzi inizialmente il caso di urto anelastico.
+
 :::
 
 :::{grid-item-card} 
@@ -341,7 +428,16 @@ Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l'urto.
 ::::
 
 ```{dropdown} Soluzione.
+
+**Urto anelastico.** Usando il bilancio della quantità di moto in direzione orizzontale e il bilancio del momento della quantità di moto rispetto alla cerniera,
+
+$$\begin{cases}
+  - m v_-   + ( M + m ) L   \dot{\theta}_+ = I_{A,x} + I_{B,x} \\
+  - m L v_- + ( M + m ) L^2 \dot{\theta}_+ = I_{B,x} \ell \qquad \text{if $I_{B,x} > 0$, else $I_{B,x} = 0$}  \\
+\end{cases}$$
+
 **todo**
+
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -352,6 +448,8 @@ Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l'urto.
 :columns: 8
 
 Un proiettile colpisce un sistema rigido di due masse concentrate, libero e inizialmente in quiete. Si chiede di determinare il moto dei sistemi dopo l'urto, in funzione del coefficiente di restituzione.
+
+Si analizzi inizialmente il caso di urto anelastico.
 
 :::
 
