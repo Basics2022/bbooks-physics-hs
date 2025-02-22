@@ -187,9 +187,12 @@ Nel caso di urti perfettamente elastici tra i due blocchi e con la parete, viene
 
 Un proiettile colpisce un pendolo. In funzione del coefficiente di restituzione $\varepsilon$, viene chiesto di determinare:
 - le condizioni immediatamente successive all'urto
+- l'energia meccanica dissipata nell'urto
 - l'angolo massimo raggiunto dal pendolo
 
 Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l'urto.
+
+Si analizzi inizialmente il caso di urto anelastico.
 
 :::
 
@@ -203,7 +206,44 @@ Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l'urto.
 ::::
 
 ```{dropdown} Soluzione.
-**todo**
+
+**Urto anelastico.** Nel caso di urto anelastico, il proiettile di massa $m$ rimane incastrato nella massa $M$. Usando il bilancio del momento della quantità di moto rispetto alla cerniera per confrontare le due condizioni prima e dopo l'urto, in assenza di reazioni impulsive che hanno momento non nullo rispetto alla rotazione attorno alla cerniera, si ha:
+
+$$\Delta L_H = 0 \quad \rightarrow \quad m v^- L = (m+M) v^+ L \ ,$$
+
+e quindi 
+
+$$\begin{aligned}
+   v^+            & = \frac{1}{1+ \frac{M}{m}} v^-  \\
+   \dot{\theta}^+ & = \frac{1}{1+ \frac{M}{m}} \frac{v^-}{L}  
+\end{aligned}$$
+
+L'energia meccanica dissipata nell'urto è uguale alla differenza di energia cinetica, poiché non ci sono variazioni finite impulsive di energia potenziale,
+
+$$\begin{aligned}
+  \Delta E = \Delta K 
+  & = \frac{1}{2} m v_-^2 - \frac{1}{2} (m + M) v_+^2 = \\
+  & = \frac{1}{2} m v_-^2 - \frac{1}{2} (m + M) \frac{m^2}{(m+M)^2} v_-^2 = \\
+  & = \frac{1}{2} m v_-^2 \left[ 1 - \frac{m}{m+M} \right] = \\
+  & = \frac{1}{2} m v_-^2 \frac{1}{1+\frac{m}{M}} \ .
+\end{aligned}$$
+
+Dall'istante successivo all'urto, il sistema è conservativo. E' possibile quindi calcolare la quota massima raggiunta dal pendolo dalla conservazione dell'energia meccanica,
+
+$$E = \frac{1}{2} (m+M) |\vec{v}|^2 + (m+M) g h \ .$$
+
+Scegliendo la quota di riferimento per l'energia potenziale nel punto più basso della traiettoria, e riconoscendo che nel punto più alto la velocità del sistema è nulla, si possono confrontare le due condizioni 1) subito dopo l'urto e 2) nel punto di altezza massima
+
+$$\frac{1}{2} (m+M) L^2 \dot{\theta}_1^2 = (m + M) g h_2 \ ,$$
+
+per trovare
+
+$$h_2 = \frac{1}{2} \frac{L^2 \dot{\theta}_1^2}{g} \ .$$
+
+
+
+
+
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -219,6 +259,8 @@ Un proiettile colpisce un pendolo. In funzione del coefficiente di restituzione 
 
 Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l'urto.
 
+Si analizzi inizialmente il caso di urto anelastico.
+
 :::
 
 :::{grid-item-card} 
@@ -231,7 +273,47 @@ Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l'urto.
 ::::
 
 ```{dropdown} Soluzione.
-**todo**
+
+**Urto anelastico.** Nel caso di urto anelastico, il proiettile di massa $m$ rimane incastrato nella massa $M$. Usando il bilancio del momento della quantità di moto rispetto alla cerniera per confrontare le due condizioni prima e dopo l'urto, in assenza di reazioni impulsive che hanno momento non nullo rispetto alla rotazione attorno alla cerniera, si ha:
+
+$$\Delta L_H = 0 \quad \rightarrow \quad m v^- L = m v^+ L + \frac{1}{3} M L^2 \dot{\theta} = \left( m + \frac{1}{3} M \right) L v_+ \ ,$$
+
+e quindi 
+
+$$\begin{aligned}
+   v^+            & = \frac{1}{1+ \frac{1}{3} \frac{M}{m}} v^-  \\
+   \dot{\theta}^+ & = \frac{1}{1+ \frac{1}{3} \frac{M}{m}} \frac{v^-}{L}  
+\end{aligned}$$
+
+L'energia meccanica dissipata nell'urto è uguale alla differenza di energia cinetica, poiché non ci sono variazioni finite impulsive di energia potenziale,
+
+$$\begin{aligned}
+  \Delta E = \Delta K 
+  & = \frac{1}{2} m v_-^2 - \left[ \frac{1}{2} m v_+^2 + \frac{1}{2} \frac{1}{3} M L^2 \dot{\theta}_+^2 \right]= \\
+  & = \frac{1}{2} m v_-^2 - \frac{1}{2} \left( m + \frac{1}{3}M \right) \frac{1}{\left( 1 + \frac{1}{3}\frac{M}{m} \right)^2} v_-^2 = \\
+  & = \frac{1}{2} m v_-^2 \left[ 1 - \frac{m}{m+ \frac{1}{3} M} \right] = \\
+  & = \frac{1}{2} m v_-^2 \frac{1}{1 + 3\frac{m}{M}} \ .
+\end{aligned}$$
+
+Dall'istante successivo all'urto, il sistema è conservativo. E' possibile quindi calcolare la quota massima raggiunta dal pendolo dalla conservazione dell'energia meccanica,
+
+$$\begin{aligned}
+  E & = \frac{1}{2} m |\vec{v}|^2 + \frac{1}{2} \frac{1}{3} M L^2 \dot{\theta}^2 + \left(m + \frac{M}{2} \right) g h \\
+    & = \left( \frac{1}{2} m + \frac{1}{6} M \right) L^2 \dot{\theta}^2 + \left( m + \frac{M}{2} \right) g h \\
+\end{aligned}.$$
+
+**todo** Aggiungere qualche parola sull'espressione dell'energia potenziale, che potrebbe essere scritta come 
+
+$$m g h + M g \left(-\frac{R}{2} + \frac{h}{2} \right)$$
+
+Scegliendo la quota di riferimento per l'energia potenziale nel punto più basso della traiettoria, e riconoscendo che nel punto più alto la velocità del sistema è nulla, si possono confrontare le due condizioni 1) subito dopo l'urto e 2) nel punto di altezza massima
+
+$$\left( m + \frac{M}{2} \right) g h_2 = \left( \frac{1}{2} m + \frac{1}{6} M \right) L^2 \dot{\theta}_1^2 \ ,$$
+
+per trovare
+
+$$h_2 = \frac{\left(\frac{1}{2} m + \frac{1}{6} M \right) L^2 \dot{\theta}_1^2 }{\left( m + \frac{M}{2} \right) g} \ .$$
+
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -283,7 +365,27 @@ Un proiettile colpisce un sistema rigido di due masse concentrate, libero e iniz
 ::::
 
 ```{dropdown} Soluzione.
-**todo**
+**Urto anelastico.** Usando il bilancio della quantità di moto in direzione orizzontale e il bilancio del momento della quantità di moto, con il vincolo cinematico imposto dalla condizione di urto anelastico, si ricavano le condizioni
+
+$$\begin{cases}
+ m v_- = M ( \dot{x} + \frac{L}{2} \dot{\theta}) + M ( \dot{x} - \frac{L}{2} \dot{\theta}) +  m ( \dot{x} + \frac{L}{2} \dot{\theta}) \\
+   0   = M L ( \dot{x} - \frac{L}{2} \dot{\theta}) \ .
+\end{cases}$$
+
+e quindi
+
+$$\dot{x} = \frac{1}{2} L \dot{\theta}$$
+$$m v_- = (M + m)  L \dot{\theta}$$
+
+e **se** $m \ne 0$,
+
+$$\begin{cases}
+  \dot{\theta} = \frac{1}{1 + \frac{M}{m}} \frac{v_-}{L} \\
+  \dot{x}      = \frac{1}{2} \frac{1}{1 + \frac{M}{m}} v_-
+\end{cases}$$
+
+
+
 ```
 
 <!-- Esercizio ************************************************************* -->

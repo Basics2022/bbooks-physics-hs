@@ -797,9 +797,11 @@ Proiettile su pendolo con massa concentrata</div>
 <p class="sd-card-text">Un proiettile colpisce un pendolo. In funzione del coefficiente di restituzione <span class="math notranslate nohighlight">\(\varepsilon\)</span>, viene chiesto di determinare:</p>
 <ul class="simple">
 <li><p class="sd-card-text">le condizioni immediatamente successive all’urto</p></li>
+<li><p class="sd-card-text">l’energia meccanica dissipata nell’urto</p></li>
 <li><p class="sd-card-text">l’angolo massimo raggiunto dal pendolo</p></li>
 </ul>
 <p class="sd-card-text">Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l’urto.</p>
+<p class="sd-card-text">Si analizzi inizialmente il caso di urto anelastico.</p>
 </div>
 </div>
 </div>
@@ -820,7 +822,33 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>todo</strong></p>
+<p class="sd-card-text"><strong>Urto anelastico.</strong> Nel caso di urto anelastico, il proiettile di massa <span class="math notranslate nohighlight">\(m\)</span> rimane incastrato nella massa <span class="math notranslate nohighlight">\(M\)</span>. Usando il bilancio del momento della quantità di moto rispetto alla cerniera per confrontare le due condizioni prima e dopo l’urto, in assenza di reazioni impulsive che hanno momento non nullo rispetto alla rotazione attorno alla cerniera, si ha:</p>
+<div class="math notranslate nohighlight">
+\[\Delta L_H = 0 \quad \rightarrow \quad m v^- L = (m+M) v^+ L \ ,\]</div>
+<p class="sd-card-text">e quindi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+   v^+            &amp; = \frac{1}{1+ \frac{M}{m}} v^-  \\
+   \dot{\theta}^+ &amp; = \frac{1}{1+ \frac{M}{m}} \frac{v^-}{L}  
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">L’energia meccanica dissipata nell’urto è uguale alla differenza di energia cinetica, poiché non ci sono variazioni finite impulsive di energia potenziale,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \Delta E = \Delta K 
+  &amp; = \frac{1}{2} m v_-^2 - \frac{1}{2} (m + M) v_+^2 = \\
+  &amp; = \frac{1}{2} m v_-^2 - \frac{1}{2} (m + M) \frac{m^2}{(m+M)^2} v_-^2 = \\
+  &amp; = \frac{1}{2} m v_-^2 \left[ 1 - \frac{m}{m+M} \right] = \\
+  &amp; = \frac{1}{2} m v_-^2 \frac{1}{1+\frac{m}{M}} \ .
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Dall’istante successivo all’urto, il sistema è conservativo. E” possibile quindi calcolare la quota massima raggiunta dal pendolo dalla conservazione dell’energia meccanica,</p>
+<div class="math notranslate nohighlight">
+\[E = \frac{1}{2} (m+M) |\vec{v}|^2 + (m+M) g h \ .\]</div>
+<p class="sd-card-text">Scegliendo la quota di riferimento per l’energia potenziale nel punto più basso della traiettoria, e riconoscendo che nel punto più alto la velocità del sistema è nulla, si possono confrontare le due condizioni 1) subito dopo l’urto e 2) nel punto di altezza massima</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{2} (m+M) L^2 \dot{\theta}_1^2 = (m + M) g h_2 \ ,\]</div>
+<p class="sd-card-text">per trovare</p>
+<div class="math notranslate nohighlight">
+\[h_2 = \frac{1}{2} \frac{L^2 \dot{\theta}_1^2}{g} \ .\]</div>
 </div>
 </details><!-- Esercizio ************************************************************* -->
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
@@ -836,6 +864,7 @@ Proiettile su pendolo con massa distribuita</div>
 <li><p class="sd-card-text">l’angolo massimo raggiunto dal pendolo.</p></li>
 </ul>
 <p class="sd-card-text">Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l’urto.</p>
+<p class="sd-card-text">Si analizzi inizialmente il caso di urto anelastico.</p>
 </div>
 </div>
 </div>
@@ -856,7 +885,39 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>todo</strong></p>
+<p class="sd-card-text"><strong>Urto anelastico.</strong> Nel caso di urto anelastico, il proiettile di massa <span class="math notranslate nohighlight">\(m\)</span> rimane incastrato nella massa <span class="math notranslate nohighlight">\(M\)</span>. Usando il bilancio del momento della quantità di moto rispetto alla cerniera per confrontare le due condizioni prima e dopo l’urto, in assenza di reazioni impulsive che hanno momento non nullo rispetto alla rotazione attorno alla cerniera, si ha:</p>
+<div class="math notranslate nohighlight">
+\[\Delta L_H = 0 \quad \rightarrow \quad m v^- L = m v^+ L + \frac{1}{3} M L^2 \dot{\theta} = \left( m + \frac{1}{3} M \right) L v_+ \ ,\]</div>
+<p class="sd-card-text">e quindi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+   v^+            &amp; = \frac{1}{1+ \frac{1}{3} \frac{M}{m}} v^-  \\
+   \dot{\theta}^+ &amp; = \frac{1}{1+ \frac{1}{3} \frac{M}{m}} \frac{v^-}{L}  
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">L’energia meccanica dissipata nell’urto è uguale alla differenza di energia cinetica, poiché non ci sono variazioni finite impulsive di energia potenziale,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \Delta E = \Delta K 
+  &amp; = \frac{1}{2} m v_-^2 - \left[ \frac{1}{2} m v_+^2 + \frac{1}{2} \frac{1}{3} M L^2 \dot{\theta}_+^2 \right]= \\
+  &amp; = \frac{1}{2} m v_-^2 - \frac{1}{2} \left( m + \frac{1}{3}M \right) \frac{1}{\left( 1 + \frac{1}{3}\frac{M}{m} \right)^2} v_-^2 = \\
+  &amp; = \frac{1}{2} m v_-^2 \left[ 1 - \frac{m}{m+ \frac{1}{3} M} \right] = \\
+  &amp; = \frac{1}{2} m v_-^2 \frac{1}{1 + 3\frac{m}{M}} \ .
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Dall’istante successivo all’urto, il sistema è conservativo. E” possibile quindi calcolare la quota massima raggiunta dal pendolo dalla conservazione dell’energia meccanica,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  E &amp; = \frac{1}{2} m |\vec{v}|^2 + \frac{1}{2} \frac{1}{3} M L^2 \dot{\theta}^2 + \left(m + \frac{M}{2} \right) g h \\
+    &amp; = \left( \frac{1}{2} m + \frac{1}{6} M \right) L^2 \dot{\theta}^2 + \left( m + \frac{M}{2} \right) g h \\
+\end{aligned}.\end{split}\]</div>
+<p class="sd-card-text"><strong>todo</strong> Aggiungere qualche parola sull’espressione dell’energia potenziale, che potrebbe essere scritta come</p>
+<div class="math notranslate nohighlight">
+\[m g h + M g \left(-\frac{R}{2} + \frac{h}{2} \right)\]</div>
+<p class="sd-card-text">Scegliendo la quota di riferimento per l’energia potenziale nel punto più basso della traiettoria, e riconoscendo che nel punto più alto la velocità del sistema è nulla, si possono confrontare le due condizioni 1) subito dopo l’urto e 2) nel punto di altezza massima</p>
+<div class="math notranslate nohighlight">
+\[\left( m + \frac{M}{2} \right) g h_2 = \left( \frac{1}{2} m + \frac{1}{6} M \right) L^2 \dot{\theta}_1^2 \ ,\]</div>
+<p class="sd-card-text">per trovare</p>
+<div class="math notranslate nohighlight">
+\[h_2 = \frac{\left(\frac{1}{2} m + \frac{1}{6} M \right) L^2 \dot{\theta}_1^2 }{\left( m + \frac{M}{2} \right) g} \ .\]</div>
 </div>
 </details><!-- Esercizio ************************************************************* -->
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
@@ -923,7 +984,23 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><strong>todo</strong></p>
+<p class="sd-card-text"><strong>Urto anelastico.</strong> Usando il bilancio della quantità di moto in direzione orizzontale e il bilancio del momento della quantità di moto, con il vincolo cinematico imposto dalla condizione di urto anelastico, si ricavano le condizioni</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+ m v_- = M ( \dot{x} + \frac{L}{2} \dot{\theta}) + M ( \dot{x} - \frac{L}{2} \dot{\theta}) +  m ( \dot{x} + \frac{L}{2} \dot{\theta}) \\
+   0   = M L ( \dot{x} - \frac{L}{2} \dot{\theta}) \ .
+\end{cases}\end{split}\]</div>
+<p class="sd-card-text">e quindi</p>
+<div class="math notranslate nohighlight">
+\[\dot{x} = \frac{1}{2} L \dot{\theta}\]</div>
+<div class="math notranslate nohighlight">
+\[m v_- = (M + m)  L \dot{\theta}\]</div>
+<p class="sd-card-text">e <strong>se</strong> <span class="math notranslate nohighlight">\(m \ne 0\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  \dot{\theta} = \frac{1}{1 + \frac{M}{m}} \frac{v_-}{L} \\
+  \dot{x}      = \frac{1}{2} \frac{1}{1 + \frac{M}{m}} v_-
+\end{cases}\end{split}\]</div>
 </div>
 </details><!-- Esercizio ************************************************************* -->
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
