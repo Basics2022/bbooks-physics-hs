@@ -1117,7 +1117,6 @@ Viene chiesto poi di determinare la **velocità limite** raggiungibile da un cor
 ::::
 
 ```{dropdown} Soluzione.
-:open:
 
 **1. Resistenza aerodinamica $\propto v$.** L'equazione del moto, con condioni iniziali $y(0) = h$, $\dot{y}(0) = 0$, è
 
@@ -1258,7 +1257,7 @@ Un corpo di massa $m$ viene lanciato con velocità iniziale orizzontale con valo
 1. gittata
 2. tempo di volo
 3. velocità del corpo all'impatto con il suolo
-4. impulso e forza media quando il corpo raggiunge terra, sapendo che il corpo si arresta in un tempo $\Delta t$ lungo una traiettoria rettilinea.
+4. impulso e forza media quando il corpo raggiunge terra, sapendo che il corpo si arresta in un tempo $\Delta t$ *lungo una traiettoria rettilinea (l'ipotesi sulla traiettoria non è necessaria, come sarà chiaro nella soluzione dell'esercizio)*.
 
 Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aerodinamica.
 
@@ -1274,6 +1273,87 @@ Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aer
 ::::
 
 ```{dropdown} Soluzione.
+
+Gittata e tempo di volo possono essere ricavati dalla soluzione delle equazioni del moto con le opportune condizioni iniziali. Si sceglie di usare un sistema di coordinate cartesiane $x$, $y$ con origine nel punto iniziale, con l'asse $x$ positivo verso destra e l'asse $y$ positivo verso il basso. Usando questo sistema di coordinate, il vettore posizione del punto può essere scritto come
+
+$$\vec{r}_P(t) = x_P(t) \hat{x} + y_P(t) \hat{y} \ .$$
+
+Il bilancio della quantitò di moto del sistema
+
+$$m \ddot{\vec{r}}_P = m \vec{g}$$
+
+con le condizioni iniziali $\vec{r}_P(0) = \vec{0}$, $\dot{\vec{r}}_P(0) = \vec{v}_0 = v_0 \hat{x}$ può essere scritto nelle sue coordinate cartesiane come
+
+$$\begin{cases}
+ x: \quad m \ddot{x}_P = 0 \\
+ y: \quad m \ddot{y}_P = m g \\
+\end{cases}$$
+
+La posizione del corpo può quindi essere espressa in funzione del tempo,
+
+$$\begin{cases}
+  x_P(t) = v_{P,x0} t + x_0 \\
+  y_P(t) = \frac{1}{2} g t^2 + v_{P,y0} t + y_0 \\
+\end{cases}$$
+
+e, con le condizioni iniziali del problema, posizione e velocità (derivata della posizione) del corpo in funzione del tempo $t$ sono
+
+$$
+\begin{cases}
+  x_P(t) & = v_0 t  \\
+  y_P(t) & = \frac{1}{2} g t^2 \\
+\end{cases}
+\quad , \quad
+\begin{cases}
+  v_{P,x}(t) & = v_0 \\
+  v_{P,y}(t) & = g t \\
+\end{cases}
+$$
+
+
+**1. - 2. Gittata e tempo di volo.** La condizione di impatto prevede che il corpo percorra una distanza $h$ in direzione $y$ per raggiungere la superficie orizzonatale, e quindi può essere scritta come
+
+$$y(t_1) = 0 \ .$$
+
+Dalle due componenti cartesiane della posizione segue quindi
+
+$$\begin{cases}
+  d = x_{P,1} = v_0 t_1  \\
+  h = y_{P,1} = \frac{1}{2} g t_1^2 \ ,
+\end{cases}$$
+
+e quindi il tempo di volo $t_1$ e la gittata $d$ sono rispettivamente
+
+$$\begin{aligned}
+  t_1 & = \sqrt{\frac{2 h}{g}} \\
+  d   & = v_0 \sqrt{\frac{2 h}{g}} \\
+\end{aligned}$$
+
+**3. Velocità del corpo all'impatto.** Può essere calcolata usando le equazioni del moto già ricavate, o la conservazione dell'energia meccanica - in assenza di resistenza aerodinamica - come fattto in altri esercizi. Usando le equazioni già ricavate,
+
+$$\vec{v}_1 = \vec{v}(t_1) = v_0 \hat{x} + \sqrt{2 g h } \, \hat{y} \ .$$
+
+**4. Impluso e forza media nell'impatto.** L'impulso delle forze esterne agenti su un corpo equivale alla differenza del momento della quantità di moto **todo** *aggiungere riferimento*
+
+$$\Delta \vec{Q} = \vec{I}^e \ ,$$
+
+e quindi
+
+$$\vec{I}^e = \Delta \vec{Q} = \underbrace{\vec{Q}_2}_{= \vec{0}} - \vec{Q}_1 = - m \vec{v}_1 \ ,$$
+
+poiché la quantità di moto del corpo dopo essersi fermato è nulla, $\vec{Q}_2 = \vec{0}$. L'impulso di una forza è il suo integrale nel tempo,
+
+$$\vec{I} = \int_{t_1}^{t_2} \vec{F}(\tau) \, d \tau \ .$$
+
+Gli istanti di tempo sono separati da $\Delta t$, $t_2 = t_1 + \Delta t$. La definizione di valore medio di una quantità in un intervallo permette di scrivere l'integrale come prodotto dell'intervallo e del valore medio, e quindi
+
+$$\vec{I} = \int_{t_1}^{t_2} \vec{F}(\tau) \, d \tau = \Delta t \, \overline{\vec{F}} \ ,$$
+
+e quindi
+
+$$\vec{F} = \frac{\vec{I}}{\Delta t} = - \frac{m \vec{v}_1}{\Delta t} \ .$$
+
+
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -1284,9 +1364,10 @@ Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aer
 :columns: 8
 
 Viene chiesto di determinare:
-1. la gittata massima di un corpo di massa $m$ e velocità iniziale con valore assoluto $|\vec{v}_0|$, trascurando la resistenza aerodianmica. Per questa condizione viene chiesto di determinare angolo iniziale rispetto all'orizzontale, tempo di volo e altezza massima raggiunta.
+1. la gittata massima di un corpo di massa $m$ e velocità iniziale con valore assoluto $|\vec{v}_0|$, trascurando la resistenza aerodinamica. Per questa condizione viene chiesto di determinare angolo iniziale rispetto all'orizzontale, tempo di volo e altezza massima raggiunta.
 
 Viene poi chiesto di ripetere lo stesso esercizio:
+
 2. non conoscendo la velocità iniziale, ma che il corpo viene inizialmente lanciato da un meccanismo in grado di applicare un impulso $I$ noto ai corpi.
 3. senza trascurare la resistenza aerodinamica
 
@@ -1302,6 +1383,51 @@ Viene poi chiesto di ripetere lo stesso esercizio:
 ::::
 
 ```{dropdown} Soluzione.
+
+**1. Gittata massima.** Usando un sistema di coordinate cartesiane (origine, assi,...)
+
+$$\begin{cases}
+ m \ddot{x} = 0 \\
+ m \ddot{y} = m g \\
+\end{cases}$$
+
+con le condizioni iniziali $x(0) = 0$, $y(0) = 0$, $v_x(0) = v_0 \cos \theta$, $v_y(0) = v_0 \sin \theta$
+
+$$\begin{cases}
+ x(t; \theta) = v_0 \cos \theta \, t \\
+ y(t; \theta) = - \frac{1}{2} g t^2 + v_0 \sin \theta \, t \\
+\end{cases}$$
+
+La condizione di impatto (insieme alla condizione di lancio) è $y(t^*) = 0$,
+
+$$0 = -\frac{1}{2} g t^{* 2} + v_0 \sin \theta \, t^* = t^* \left( -\frac{1}{2} g t^* + v_0 \sin \theta \right)$$
+
+ed è soddisfatta agli istanti di tempo $t_0 = 0$ (lancio) e
+
+$$t_1(\theta) = \frac{2 v_0 \sin \theta}{g} \ .$$
+
+Riconoscendo il seno di $2 \theta$, $\sin 2 \theta = 2 \sin \theta \cos \theta $ (**todo** *link alle proprietà delle funzioni trigonometriche*), la gittata diventa
+
+$$d(\theta) = x(t_1;\theta) = v_0 \cos \theta \, t_1(\theta) = 2 \frac{v_0^2}{g} \sin \theta \cos \theta = \frac{v^2_0}{g} \sin 2 \theta \ .$$
+
+Il massimo della gittata si trova per $\sin 2 \theta^* = 1$, e quindi per $\theta^* = \frac{\pi}{4} = 45^\circ$. Il tempo di volo è quindi 
+
+$$t_1^* = \frac{2 v_0 \sin \theta^*}{g} = \sqrt{2} \frac{v_0}{g} \ ,$$
+
+e la quota massima raggiunta (raggiunta per $v_y(t_2) = y'(t_2) = 0$, $t_2 = \frac{v_0}{g} \sin \theta^*$) è
+
+$$y_{max}^* = y\left(t=t_2(\theta^*); \theta^* \right) = -\frac{1}{2} g \frac{v_0^2}{g^2} \sin^2 \theta^* + \frac{v_0^2}{g} \sin^2 \theta^* = 
+\frac{1}{2} \frac{v_0^2}{g} \sin^2 \theta^* = \frac{1}{4} \frac{v_0^2}{g} \ .$$
+
+
+**2. Noto l'impulso.** La relazione tra l'impulso e la differenza di quantità di moto (tra la condizione di quiete, $\vec{v}_{rest} = \vec{0}$ e il moemnto immediatamente successivo al lancio) è
+
+$$\vec{I} = \Delta \vec{Q} = m \vec{v}_0 - m \underbrace{\vec{v}_{rest}}_{= \vec{0}} \ .$$
+
+Noto il legame tra $\vec{I}$ e $\vec{v}_0$, si possono usare i risultati del punto 1. dell'esercizio. Si osservi che dato l'impulso, la velocità $\vec{v}_0$ è inversamente proporzionale alla massa $m$ del sistema che viene accelerato: è infatti più difficile accelerare un corpo pesante rispetto a uno più leggero.
+
+**3. Considerando la resistenza aerodinamica.**
+
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -1329,6 +1455,22 @@ Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aer
 ::::
 
 ```{dropdown} Soluzione.
+
+$$\begin{cases}
+  x(t) = v_{x0} t \\
+  y(t) = - \frac{g t^2}{2} + v_{y0} t \\
+\end{cases}$$
+
+Il bersaglio in $\vec{r}_1 = x_1 \, \hat{x}_1 +  y_1 \, \hat{y}_1$ viene colpito se la traiettoria passa per quel punto,
+
+$$t^* = \frac{x_1}{v_{x0}}$$
+$$y_1 = - \frac{1}{2} g t^{* 2} + v_{y0} t^* = -\frac{1}{2} \frac{g x_1^2}{v^2_{x0}} + v_{y0} \frac{x_1}{v_{x0}}$$
+
+e quindi - moltiplicando per $v_{x0}^2$ - si trova la relazione tra le coordinate della velocità
+
+...**todo**... verificare se si può ottenere l'equazione di una conica...
+
+
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -1389,6 +1531,65 @@ Si svolga l'esercizio prima trascurando e poi considerando la resistenza aerodin
 ::::
 
 ```{dropdown} Soluzione.
+:open:
+
+$$\begin{cases}
+  x(t) = v_{x0} t \\
+  y(t) = -\frac{1}{2} g t^2 + v_{y0} t
+\end{cases}$$
+
+La traiettoria è
+
+$$y(x) = - \frac{g}{2 v^2_{x0}} x^2 + \frac{v_{y0}}{v_{x0}} x $$
+
+Chiamando le coordinate $x_1 = b$, $y_1 = d$, il passaggio per il punto si ottiene dalla condizione
+
+$$y_1 = - \frac{g}{2 v^2_{x0}} x_1^2 + \frac{v_{y0}}{v_{x0}} x_1 \ ,$$
+
+con la quale è possibile esprimere la componente $v_{y0}$ in funzione della componente $v_{x0}$ (che rimane così l'unico parametro libero del sistema) e degli altri parametri del sistema
+
+$$v_{y0}(v_{x0}; x_1, y_1) = \frac{y_1}{x_1} \, v_{x0} + \frac{g}{2 v_{x0}} x_1 \ .$$
+
+La condizione che la palla superi la barriera ($x_2 = a$, $y_2 = c$) può essere riscritta come
+
+$$\begin{aligned}
+  y_2 < y(x_2)
+  & = - \frac{g}{2 v^2_{x0}} x_2^2 + \frac{v_{y0}}{v_{x0}} x_2 = \\
+  & = - \frac{g}{2 v^2_{x0}} x_2^2 + x_2  \left[ \frac{y_1}{x_1} + \frac{g}{2 v_{x0}^2} x_1 \right] 
+\end{aligned}$$
+
+e quindi
+
+$$\frac{g}{2 v^2_{x0}} x_2 (x_1 - x_2) \ge y_2 - \frac{x_2}{x_1} y_1 \ .$$
+
+In questa disequazione, il termine $x_1 - x_2$ è positivo; il termine $y_2 - \frac{x_2}{x_1} y_1$ può essere positivo o negativo: se negativo, la disequazione è sempre soddisfatta (è negativo nel caso in cui la traiettoria ottenibile con una velocità infinita, al limite, è possibile, cioè quando $\frac{y_2}{x_2} < \frac{y_1}{x_1}$), se positivo, si può scrivere
+
+$$\frac{g}{2}  \frac{x_2(x_1 - x_2)}{y_2 - \frac{x_2}{x_1} y_1} \ge v^2_{x0} \ ,$$
+
+che implica che esiste un valore massimo per $v_{x0}$, che quindi soddisfare la condizione
+
+$$v_{x0} \le \overline{v}_{x0} = \sqrt{\frac{g}{2} \frac{x_1 - x_2}{ \frac{y_2}{x_2} - \frac{y_1}{x_1}}} \ .$$
+
+Il tempo di volo è 
+
+$$t_1 = \frac{x_1}{v_{x0}} \ ,$$
+
+ed è quindi minimo quando $v_{x0}$ è massimo, e quindi quando $v_{x0} = \overline{v}_{x0}$. In questo caso, il rapporto tra la componente verticale e orizzontale della velocità iniziale è
+
+$$\begin{aligned}
+  \frac{v_{y0}(\overline{v}_{x0})}{\overline{v}_{x0}}
+  & = \frac{y_1}{x_1} + \frac{g x_1}{2 \overline{v}^2_{x0}} = \\
+  & = \frac{y_1}{x_1} +  x_1 \frac{g}{2} \frac{2}{g} \frac{\frac{y_2}{x_2} - \frac{y_1}{x_1}}{x_1 - x_2} = \\
+  & = \frac{y_1}{x_1} +  x_1 \frac{\frac{y_2}{x_2} - \frac{y_1}{x_1}}{x_1 - x_2} = \\
+  & = -\frac{x_2}{x_1 - x_2} \frac{y_1}{x_1} +  \frac{x_1}{x_1-x_2} \frac{y_2}{x_2}  \ .
+\end{aligned}$$
+
+**Esempio numerico.** Valutiamo due scelte di tiro per una punizione calciata dai $x_1 = 20 \, m$ con barriera distante $x_2 = 9.15 \, m$ che salta fino a $y_2 = 2.5 \, m$. Si vuole valutare le scelte: A) tiro all'incrocio $y_{1,A} = 2.2 \, m$; B) tiro che si abbassa dopo la barriera fino a $y_{1,B} = 0.2 \, m$.
+
+A. $\overline{v}_{x0} = 18.05 \, m/s $, $\overline{v}_{y0}/\overline{v}_{x0} = 0.411$, $v_{y0} = 7.42 \, m/s $, $|\vec{v}_{0}| = 19.51 \, m/s = 70.2 \, km/h$, $\theta = 22.3^\circ$
+
+B. $\overline{v}_{x0} = 14.21 \, m/s $, $\overline{v}_{y0}/\overline{v}_{x0} = 0.495$, $v_{y0} = 7.04 \, m/s $, $|\vec{v}_{0}| = 15.86 \, m/s = 57.1 \, km/h$, $\theta = 26.3^\circ$
+
 ```
 
 <!-- Esercizio ************************************************************* -->

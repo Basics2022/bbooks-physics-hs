@@ -42,6 +42,82 @@ $$
 
 **Soluzione.**
 
+**Accelerazione nei pressi della superficie di un pianeta.** L'accelerazione di gravità nei pressi della superficie di un pianeta è data dalla formula **todo** *ref*
+
+$$g = \frac{GM}{R^2} \ .$$
+
+Ricordando il valore della costante di gravitazione universale, $G = 6.67 \cdot 10^{-11} \ \frac{N m^2}{kg^2}$, il campo di accelerazione di gravità nei pressi della superficie di Terra e Luna vale rispettivamente
+
+$$\begin{aligned} 
+  g_E & = \frac{G M_E}{R_E^2} = 9.8 \, \frac{m}{s^2} \\
+  g_M & = \frac{G M_M}{R_M^2} = 1.6 \, \frac{m}{s^2} \\
+\end{aligned}$$
+
+Il rapporto tra le accelerazioni di gravità è $\frac{g_E}{g_M} \sim 6.125$, mentre la radice di questo rapporto - che compare nell'ultimo punto di questo esercizio - è $\sqrt{\frac{g_E}{g_M}} \sim 2.5$.
+
+**1. Velocità di impatto con il terreno.** La velocità di impatto con il terreno può essere ricavata o dalla soluzione delle equazioni del moto, o dalla legge di conservazione dell'energia meccanica per sistemi conservativi: si considera qui il sistema "palla", sul quale agisce la forza di gravità - come manifestazione del campo di gravità del pianeta sui corpi con massa; se:
+ - si trascura la resistenza dell'aria - azione non-conservativa, che verrà considerata nel problema successivo -
+ - si considera il moto libero, prima dell'impatto a suolo - in generale le collisioni sono non-conservative, ad eccezione dell'unico caso particolare delle collisioni perfettamente elastiche
+
+ sul sistema non agiscono forze non-conservative; in assenza di azioni non-conservative, l'energia meccanica del sistema si conserva.
+
+L'energia meccanica del sistema è la somma dell'energia cinetica e di quella potenziale: poiché solo la gravità agisce sul sistema, nell'energia potenziale compare solo il contributo gravitazionale - nella forma approssimata in prossimità della superficie di un pianeta,
+
+$$E = K + V \ .$$
+
+Se il corpo è in caduta libera senza velocità orizzontale, il moto si svolge lungo la verticale. Il moto può quindi essere descritto con una coordinata sola: qui si sceglie un sistema di coordinate $y$ con origine in corrispondenza del terreno e direzione positiva verso l'alto. L'energia meccanica del sistema può quindi essere scritta come
+
+$$E = \frac{1}{2} m v_y^2 + m g y = \frac{1}{2} m \dot{y}^2 + m g y \ .$$
+
+Nella condizione iniziale "0", il corpo è in quiete quindi la velocità è nulla. Nella condizione "1" poco prima dell'impatto, la quota è nulla rispetto al riferimento. Dall'uguaglianza $E_0 = E_1$ segue
+
+$$\frac{1}{2} m \underbrace{v_y^2}_{=0} + m g h_0 = \frac{1}{2} m v_{y,1}^2 + m g \underbrace{h_1}_{=0} \ ,$$
+
+e quindi 
+
+$$v_{y,1} = \sqrt{2 g h} \ .$$
+
+**2. Caloclo del tempo di volo.** Per il calcolo del tempo di volo è necessario risolvere le equazioni del moto. Il bilancio della quantità di moto lungo $y$,
+
+$$\dot{Q}_y = R^e_y \ ,$$
+
+diventa
+
+$$m \ddot{y} = - m g \ , $$
+
+con le condizioni iniziali $y(0) = h$, $\dot{y}(0) = 0$. Si semplifica la massa del sistema nell'equazione (per $m \ne 0$), e si integra due volte in tempo per risolvere l'equazione differenziale
+
+$$\begin{aligned}
+  \dot{y}(t) & = - g t + v_0 \\
+       y (t) & = - \frac{1}{2} g t^2 + v_0 t + y_0 \\
+\end{aligned}$$
+
+Usando le condizioni iniziali, si trovano i valori delle costanti di integrazione $v_0 = 0$, $y_0 = h$. La legge del moto diventa quindi
+
+$$\begin{aligned}
+  \dot{y}(t) & = - g t  \\
+       y (t) & = - \frac{1}{2} g t^2 + h \\
+\end{aligned}$$
+
+Lo stato del sistema poco prima dell'urto si ottiene imponendo la condizione $y(t_1) = 0$ e quindi si ottiene il tempo di volo (e si ri-ottiene il risultato della velocità di impatto già ottenuto con la conservazione dell'energia, con il segno negativo a indicare la direzione della velocità opposta al verso positivo dell'asse $y$ utilizzato)
+
+$$\begin{aligned}
+  t_1 & = \sqrt{\frac{2 h}{g}} \\
+  v_1 & = v(t_1) = - g \sqrt{\frac{2 h}{g}} = - \sqrt{2 g h}
+\end{aligned}$$
+
+**3. Risultati per un corpo di massa $M > m$.** Nelle ipotesi del problema di trascurare la resistenza aerodinamica del corpo, i risultati ottenuti non contengono la massa $m$ del sistema, e quindi non dipendono da essa.
+
+**4. Risultati nei pressi della superficie lunare.** I risultati nei pressi della superficie lunare si ottengono usando l'accelerazione $g_M$ nelle formule.
+Confrontando i tempi e le velocità e usando i valori calcolati a inizio esercizio, si ottiene
+
+$$\begin{aligned}
+  \frac{t_{1,M}}{t_{1,E}} & = \sqrt{\frac{g_E}{g_M}} \sim 2.5 \\
+  \frac{v_{1,M}}{v_{1,E}} & = \sqrt{\frac{g_M}{g_E}} \sim \frac{1}{2.5} \\
+\end{aligned}$$
+
+un tempo di volo sulla Luna che è circa $2.5$ volte quello sulla Terra, e una velocità di impatto circa $\frac{1}{2.5}$ quella sulla Terra. 
+
 % Esercizio *****************************************************************
 $$
 \begin{minipage}[t]{1.\textwidth}
@@ -60,6 +136,131 @@ Viene chiesto poi di determinare la **velocità limite** raggiungibile da un cor
 $$
 
 **Soluzione.**
+
+**1. Resistenza aerodinamica $\propto v$.** L'equazione del moto, con condioni iniziali $y(0) = h$, $\dot{y}(0) = 0$, è
+
+$$m \ddot{y} = - c \dot{y} - m g$$
+
+o in termini di velocità
+
+$$m \dot{v} = - c v - m g \ ,$$
+
+che può essere riscritta separando la forzante e mettendo in evidenza l'espressione classica delle equazioni differenziali ordinarie lineari a coefficienti costanti
+
+$$m \dot{v} + c v = - m g \ .$$
+
+La soluzione dell'equazione per la veloctià è la somma della soluzione generale dell'equazione omogenea e di una soluzione particolare,
+
+$$v(t) = A e^{-\frac{c}{m}t} - \frac{mg}{c} \ ,$$
+
+e l'espressione della posizione si ottiene da una seconda integrazione
+
+$$y(t) = - \frac{A m }{c} e^{-\frac{c}{m}t} - \frac{mg}{c}t + B \ .$$
+
+Le condizioni iniziali permettono di ricavare il valore delle costanti di integrazione $A, B$
+
+$$\begin{cases}
+  0 & = v(0) = A - \frac{mg}{c} \\
+  h & = y(0) = -\frac{Am}{c} + B \\
+\end{cases}
+\qquad \rightarrow \qquad
+\begin{cases}
+  A & = \frac{mg}{c} \\
+  B & = h + \frac{m^2 g}{c^2} \\
+\end{cases}
+$$
+
+$$\begin{aligned}
+  v_y(t) & = \frac{mg}{c} \left[ e^{-\frac{c}{m}t} - 1 \right] \\
+    y(t) & = \frac{m^2 g}{c^2} \left[ 1 - e^{-\frac{c}{m}t} \right] + h - \frac{mg}{c} t
+\end{aligned}$$
+
+- La velocità di impatto con il terreno e il tempo di volo si ottengono dalla condizione $y(t_1) = 0$ **todo**
+- La velocità limite è la velocità massima (in modulo) che  viene raggiunta per $t \rightarrow +\infty$, e quindi 
+
+   $$v_{y,+\infty} = - \frac{m g}{c} \ .$$
+
+   Si osservi come la velocità limite dipende dalla massa del corpo, e a parità di gravità e resistenza aerodinamica del corpo, un corpo con massa maggiore raggiunge una velocità limite maggiore (in modulo).
+...
+
+**Osservazione.** Nel limite di resistenza aerodinamica che tende a zero, e per intervalli di tempo sufficientemente ridotti da avere $\frac{ct}{m}$ "piccolo" (a sufficienza da rendere accettabile questa approssimazione) il termine $e^{-\frac{ct}{m}}$ può essere approssimato come
+
+$$e^{-\frac{ct}{m}} \sim 1 - \frac{ct}{m} + \frac{1}{2} \frac{c^2 t^2}{m^2} \ ,$$
+
+e quindi
+
+$$\begin{aligned}
+  v_y(t) & \sim \frac{m g}{c} \left[ -\frac{c}{m} t + \frac{c^2}{2 m^2} t^2 \right] && = - g t + \frac{cg}{2m} t^2 \\
+    y(t) & \sim \frac{m^2 g}{c^2} \left[ \frac{c}{m} t - \frac{c^2}{2 m^2} t^2 \right] + h - \frac{mg}{c}t && = - \frac{1}{2} g t^2 + h \\
+\end{aligned}$$
+
+
+**2. Resistenza aerodinamica $\propto v^2$.** 
+Per studiare il moto del sistema con resistenza aerodinamica proprozionale al quadrato della velocità conviene usare un sistema di riferimento con origine nella posizione iniziale del sistema e una coordinata con il verso positivo verso il basso. Se inizialmente il corpo è in quiete o ha una velocità verso il basso, il moto non si inverte mai (e la velocità ha sempre lo stesso segno). L'equazione del moto,
+
+$$m \ddot{x} = m g - k |\dot{x}| \dot{x} \ ,$$
+
+con $\dot{x} > 0$ può quindi essere riscritta rimuovendo il valore assoluto. Come fatto in precedenza, prima si scrive l'equazione in funzione della velocità, la si risolve, e successivamente si integra la velocità per trovare lo spazio. Usando la velocità $\dot{x} = v$ come funzione dipendente, l'equazione del moto diventa
+
+$$m \dot{v} = m g - k v^2 \ .$$
+
+La **velocità limite** corrisponde alla condizione in cui la velocità non varia, e quindi la sua derivata è nulla $\overline{v} = \sqrt{\frac{mg}{k}}$. Questa velocità può essere raggiunta da velocità inferiori ad essa (come ad esempio da un corpo che parte da fermo, accelerato dalla gravità), o da velocità superiori ad essa (come ad esempio un proiettile sparato a velocità superiori ad essa, rallentato dalla resistenza aerodinamica). Si può dimostrare **todo** che questa condizione di equilibrio è una condizione stabile: una volta nella condizione limite, un rallentamento del sistema comporterebbe una riduzione (in valore assoluto) della resistenza aerodinamica, e quindi una nuova accelerazione che comprterebbe un aumento della velocità del sistema (in assenza di variazioni di altre condizioni).
+
+Questa equazione differenziale può essere risolta con il metodo di separazione delle variabili, riscrivendola nella forma
+
+$$\frac{d v}{1 - \frac{k}{m g} v^2} = g \, dt \ .$$
+
+Scrivendo la frazione come somma di frazioni,
+
+$$ \frac{1}{2}\left[ \frac{1}{1 - \sqrt{\frac{k}{m g}} v} + \frac{1}{1 + \sqrt{\frac{k}{m g}} v} \right] dv = g \, dt $$
+
+e riconoscendo l'itegrale del logaritmo (ed eliminando il modulo, considerando una velocità iniziale minore della velocità limite $\sqrt{\frac{mg}{k}}$, e quindi sempre minore di essa), dall'integrazione si ricava
+
+$$\frac{1}{2} \sqrt{\frac{mg}{k}} \ln \frac{1 + \sqrt{\frac{k}{mg}} v}{1 - \sqrt{\frac{k}{mg}} v} = g t + C \ ,$$
+
+con la costante di integrazione nulla per la condizione iniziale $v(0) = 0$.
+
+$$\frac{1 + \sqrt{\frac{k}{mg}} v(t)}{1 - \sqrt{\frac{k}{mg}} v(t)} = e^{2 \sqrt{\frac{gk}{m}} t} \ ,$$
+
+e quindi
+
+$$v(t) = \sqrt{\frac{mg}{k}} \frac{1 - e^{-2 \sqrt{\frac{gk}{m}} t}}{1 + e^{-2 \sqrt{\frac{gk}{m}} t}}$$
+
+L'integrazione con le condizioni iniziali del problema fornisce la posizione in funzione del tempo
+
+$$\begin{aligned}
+  x(t) - x(0) 
+  & = \int_{\tau=0}^t v(\tau) d \tau = \\
+  & = \sqrt{\frac{mg}{k}} \int_{\tau=0}^t \frac{1 - e^{-2 \sqrt{\frac{gk}{m}} \tau}}{1 + e^{-2 \sqrt{\frac{gk}{m}} \tau}} \, d \tau = \\
+  & = \sqrt{\frac{mg}{k}} \int_{\tau=0}^t \left[ 1 - 2 \frac{e^{-2 \sqrt{\frac{gk}{m}} \tau}}{1 + e^{-2 \sqrt{\frac{gk}{m}} \tau}} \right] d \tau = \\
+\end{aligned}$$
+
+Riconoscendo la forma del differenziale di una funzione $e^{-a t}$, $d\left( e^{-a t} \right) = - a e^{-a t} dt$, e quindi di una funzione $c + e^{-at}$ con $c$ costante, $d \left( c + e^{-at} \right) = - a e^{-a t} dt$, gli integrali della forma del secondo possono essere risolti come
+
+$$- \int_{\tau=0}^{t} \frac{e^{-a\tau}}{1+e^{-a\tau}} d\tau = \frac{1}{a} \int_{\tau=0}^{t} \frac{d \left( 1 + e^{-a \tau} \right)}{1+e^{-a \tau}} = \frac{1}{a} \left.\ln \left| 1 + e^{-a \tau} \right| \right|_{0}^{t} = \frac{1}{a} \ln \frac{1 + e^{-a t}}{2} \ .$$
+
+Ricordando la condizione iniziale $x(0) = 0$ quindi la posizione del sistema in funzone del tempo ha l'espressione
+
+$$x(t) = \sqrt{\frac{mg}{k}} \left[ t  + \sqrt{\frac{m}{gk}} \ln \frac{1 + e^{- 2 \sqrt{\frac{gk}{m}} t}}{2}  \right]$$
+
+**Osservazione.** Per piccoli valori della resistenza aerodinamica e intervalli di tempo limitati, si ritrova la soluzione che trascura la resistenza aerodinamica. Infatti
+
+$$f(t) = \ln \left( 1 + e^{-at} \right) = \ln \frac{1 + e^{-2\sqrt{\frac{gk}{m}}t}}{2} = \ln \left( 1 + \frac{e^{-2\sqrt{\frac{gk}{m}}t}-1}{2} \right)$$
+
+può essere scritto nella form $\ln (1+x)$ per "piccoli" $x$ e approssimato con la sua serie di Taylor.
+
+$$\begin{aligned}
+         &                                                           && f  (0) = 0             \\
+  f' (t) & = \frac{-a e^{-at}}{1 + e^{-at}} = -\frac{a}{1 + e^{at}}  && f' (0) = -\frac{a}{2}  \\
+  f''(t) & = \frac{a^2}{\left( 1 + e^{at} \right)^2}                 && f''(0) = \frac{a^2}{4} \\
+\end{aligned}$$
+
+$$\begin{aligned}
+  x(t) 
+  & \sim x(0) + \dot{x}(0) \, t + \frac{\ddot{x}(0}{2} \, t^2  = \\
+  & = \sqrt{\frac{mg}{k}} t + \frac{m}{k} \left[ 0 - \sqrt{\frac{gk}{m}} t + \frac{g k}{m} \frac{t^2}{2} \right]
+    = \frac{ g \, t^2}{2} \ .
+\end{aligned}$$
 
 % Esercizio *****************************************************************
 $$
@@ -916,7 +1117,6 @@ Viene chiesto poi di determinare la **velocità limite** raggiungibile da un cor
 ::::
 
 ```{dropdown} Soluzione.
-:open:
 
 **1. Resistenza aerodinamica $\propto v$.** L'equazione del moto, con condioni iniziali $y(0) = h$, $\dot{y}(0) = 0$, è
 
@@ -1057,7 +1257,7 @@ Un corpo di massa $m$ viene lanciato con velocità iniziale orizzontale con valo
 1. gittata
 2. tempo di volo
 3. velocità del corpo all'impatto con il suolo
-4. impulso e forza media quando il corpo raggiunge terra, sapendo che il corpo si arresta in un tempo $\Delta t$ lungo una traiettoria rettilinea.
+4. impulso e forza media quando il corpo raggiunge terra, sapendo che il corpo si arresta in un tempo $\Delta t$ *lungo una traiettoria rettilinea (l'ipotesi sulla traiettoria non è necessaria, come sarà chiaro nella soluzione dell'esercizio)*.
 
 Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aerodinamica.
 
@@ -1073,6 +1273,87 @@ Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aer
 ::::
 
 ```{dropdown} Soluzione.
+
+Gittata e tempo di volo possono essere ricavati dalla soluzione delle equazioni del moto con le opportune condizioni iniziali. Si sceglie di usare un sistema di coordinate cartesiane $x$, $y$ con origine nel punto iniziale, con l'asse $x$ positivo verso destra e l'asse $y$ positivo verso il basso. Usando questo sistema di coordinate, il vettore posizione del punto può essere scritto come
+
+$$\vec{r}_P(t) = x_P(t) \hat{x} + y_P(t) \hat{y} \ .$$
+
+Il bilancio della quantitò di moto del sistema
+
+$$m \ddot{\vec{r}}_P = m \vec{g}$$
+
+con le condizioni iniziali $\vec{r}_P(0) = \vec{0}$, $\dot{\vec{r}}_P(0) = \vec{v}_0 = v_0 \hat{x}$ può essere scritto nelle sue coordinate cartesiane come
+
+$$\begin{cases}
+ x: \quad m \ddot{x}_P = 0 \\
+ y: \quad m \ddot{y}_P = m g \\
+\end{cases}$$
+
+La posizione del corpo può quindi essere espressa in funzione del tempo,
+
+$$\begin{cases}
+  x_P(t) = v_{P,x0} t + x_0 \\
+  y_P(t) = \frac{1}{2} g t^2 + v_{P,y0} t + y_0 \\
+\end{cases}$$
+
+e, con le condizioni iniziali del problema, posizione e velocità (derivata della posizione) del corpo in funzione del tempo $t$ sono
+
+$$
+\begin{cases}
+  x_P(t) & = v_0 t  \\
+  y_P(t) & = \frac{1}{2} g t^2 \\
+\end{cases}
+\quad , \quad
+\begin{cases}
+  v_{P,x}(t) & = v_0 \\
+  v_{P,y}(t) & = g t \\
+\end{cases}
+$$
+
+
+**1. - 2. Gittata e tempo di volo.** La condizione di impatto prevede che il corpo percorra una distanza $h$ in direzione $y$ per raggiungere la superficie orizzonatale, e quindi può essere scritta come
+
+$$y(t_1) = 0 \ .$$
+
+Dalle due componenti cartesiane della posizione segue quindi
+
+$$\begin{cases}
+  d = x_{P,1} = v_0 t_1  \\
+  h = y_{P,1} = \frac{1}{2} g t_1^2 \ ,
+\end{cases}$$
+
+e quindi il tempo di volo $t_1$ e la gittata $d$ sono rispettivamente
+
+$$\begin{aligned}
+  t_1 & = \sqrt{\frac{2 h}{g}} \\
+  d   & = v_0 \sqrt{\frac{2 h}{g}} \\
+\end{aligned}$$
+
+**3. Velocità del corpo all'impatto.** Può essere calcolata usando le equazioni del moto già ricavate, o la conservazione dell'energia meccanica - in assenza di resistenza aerodinamica - come fattto in altri esercizi. Usando le equazioni già ricavate,
+
+$$\vec{v}_1 = \vec{v}(t_1) = v_0 \hat{x} + \sqrt{2 g h } \, \hat{y} \ .$$
+
+**4. Impluso e forza media nell'impatto.** L'impulso delle forze esterne agenti su un corpo equivale alla differenza del momento della quantità di moto **todo** *aggiungere riferimento*
+
+$$\Delta \vec{Q} = \vec{I}^e \ ,$$
+
+e quindi
+
+$$\vec{I}^e = \Delta \vec{Q} = \underbrace{\vec{Q}_2}_{= \vec{0}} - \vec{Q}_1 = - m \vec{v}_1 \ ,$$
+
+poiché la quantità di moto del corpo dopo essersi fermato è nulla, $\vec{Q}_2 = \vec{0}$. L'impulso di una forza è il suo integrale nel tempo,
+
+$$\vec{I} = \int_{t_1}^{t_2} \vec{F}(\tau) \, d \tau \ .$$
+
+Gli istanti di tempo sono separati da $\Delta t$, $t_2 = t_1 + \Delta t$. La definizione di valore medio di una quantità in un intervallo permette di scrivere l'integrale come prodotto dell'intervallo e del valore medio, e quindi
+
+$$\vec{I} = \int_{t_1}^{t_2} \vec{F}(\tau) \, d \tau = \Delta t \, \overline{\vec{F}} \ ,$$
+
+e quindi
+
+$$\vec{F} = \frac{\vec{I}}{\Delta t} = - \frac{m \vec{v}_1}{\Delta t} \ .$$
+
+
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -1083,9 +1364,10 @@ Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aer
 :columns: 8
 
 Viene chiesto di determinare:
-1. la gittata massima di un corpo di massa $m$ e velocità iniziale con valore assoluto $|\vec{v}_0|$, trascurando la resistenza aerodianmica. Per questa condizione viene chiesto di determinare angolo iniziale rispetto all'orizzontale, tempo di volo e altezza massima raggiunta.
+1. la gittata massima di un corpo di massa $m$ e velocità iniziale con valore assoluto $|\vec{v}_0|$, trascurando la resistenza aerodinamica. Per questa condizione viene chiesto di determinare angolo iniziale rispetto all'orizzontale, tempo di volo e altezza massima raggiunta.
 
 Viene poi chiesto di ripetere lo stesso esercizio:
+
 2. non conoscendo la velocità iniziale, ma che il corpo viene inizialmente lanciato da un meccanismo in grado di applicare un impulso $I$ noto ai corpi.
 3. senza trascurare la resistenza aerodinamica
 
@@ -1101,6 +1383,51 @@ Viene poi chiesto di ripetere lo stesso esercizio:
 ::::
 
 ```{dropdown} Soluzione.
+
+**1. Gittata massima.** Usando un sistema di coordinate cartesiane (origine, assi,...)
+
+$$\begin{cases}
+ m \ddot{x} = 0 \\
+ m \ddot{y} = m g \\
+\end{cases}$$
+
+con le condizioni iniziali $x(0) = 0$, $y(0) = 0$, $v_x(0) = v_0 \cos \theta$, $v_y(0) = v_0 \sin \theta$
+
+$$\begin{cases}
+ x(t; \theta) = v_0 \cos \theta \, t \\
+ y(t; \theta) = - \frac{1}{2} g t^2 + v_0 \sin \theta \, t \\
+\end{cases}$$
+
+La condizione di impatto (insieme alla condizione di lancio) è $y(t^*) = 0$,
+
+$$0 = -\frac{1}{2} g t^{* 2} + v_0 \sin \theta \, t^* = t^* \left( -\frac{1}{2} g t^* + v_0 \sin \theta \right)$$
+
+ed è soddisfatta agli istanti di tempo $t_0 = 0$ (lancio) e
+
+$$t_1(\theta) = \frac{2 v_0 \sin \theta}{g} \ .$$
+
+Riconoscendo il seno di $2 \theta$, $\sin 2 \theta = 2 \sin \theta \cos \theta $ (**todo** *link alle proprietà delle funzioni trigonometriche*), la gittata diventa
+
+$$d(\theta) = x(t_1;\theta) = v_0 \cos \theta \, t_1(\theta) = 2 \frac{v_0^2}{g} \sin \theta \cos \theta = \frac{v^2_0}{g} \sin 2 \theta \ .$$
+
+Il massimo della gittata si trova per $\sin 2 \theta^* = 1$, e quindi per $\theta^* = \frac{\pi}{4} = 45^\circ$. Il tempo di volo è quindi 
+
+$$t_1^* = \frac{2 v_0 \sin \theta^*}{g} = \sqrt{2} \frac{v_0}{g} \ ,$$
+
+e la quota massima raggiunta (raggiunta per $v_y(t_2) = y'(t_2) = 0$, $t_2 = \frac{v_0}{g} \sin \theta^*$) è
+
+$$y_{max}^* = y\left(t=t_2(\theta^*); \theta^* \right) = -\frac{1}{2} g \frac{v_0^2}{g^2} \sin^2 \theta^* + \frac{v_0^2}{g} \sin^2 \theta^* = 
+\frac{1}{2} \frac{v_0^2}{g} \sin^2 \theta^* = \frac{1}{4} \frac{v_0^2}{g} \ .$$
+
+
+**2. Noto l'impulso.** La relazione tra l'impulso e la differenza di quantità di moto (tra la condizione di quiete, $\vec{v}_{rest} = \vec{0}$ e il moemnto immediatamente successivo al lancio) è
+
+$$\vec{I} = \Delta \vec{Q} = m \vec{v}_0 - m \underbrace{\vec{v}_{rest}}_{= \vec{0}} \ .$$
+
+Noto il legame tra $\vec{I}$ e $\vec{v}_0$, si possono usare i risultati del punto 1. dell'esercizio. Si osservi che dato l'impulso, la velocità $\vec{v}_0$ è inversamente proporzionale alla massa $m$ del sistema che viene accelerato: è infatti più difficile accelerare un corpo pesante rispetto a uno più leggero.
+
+**3. Considerando la resistenza aerodinamica.**
+
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -1128,6 +1455,22 @@ Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aer
 ::::
 
 ```{dropdown} Soluzione.
+
+$$\begin{cases}
+  x(t) = v_{x0} t \\
+  y(t) = - \frac{g t^2}{2} + v_{y0} t \\
+\end{cases}$$
+
+Il bersaglio in $\vec{r}_1 = x_1 \, \hat{x}_1 +  y_1 \, \hat{y}_1$ viene colpito se la traiettoria passa per quel punto,
+
+$$t^* = \frac{x_1}{v_{x0}}$$
+$$y_1 = - \frac{1}{2} g t^{* 2} + v_{y0} t^* = -\frac{1}{2} \frac{g x_1^2}{v^2_{x0}} + v_{y0} \frac{x_1}{v_{x0}}$$
+
+e quindi - moltiplicando per $v_{x0}^2$ - si trova la relazione tra le coordinate della velocità
+
+...**todo**... verificare se si può ottenere l'equazione di una conica...
+
+
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -1188,6 +1531,65 @@ Si svolga l'esercizio prima trascurando e poi considerando la resistenza aerodin
 ::::
 
 ```{dropdown} Soluzione.
+:open:
+
+$$\begin{cases}
+  x(t) = v_{x0} t \\
+  y(t) = -\frac{1}{2} g t^2 + v_{y0} t
+\end{cases}$$
+
+La traiettoria è
+
+$$y(x) = - \frac{g}{2 v^2_{x0}} x^2 + \frac{v_{y0}}{v_{x0}} x $$
+
+Chiamando le coordinate $x_1 = b$, $y_1 = d$, il passaggio per il punto si ottiene dalla condizione
+
+$$y_1 = - \frac{g}{2 v^2_{x0}} x_1^2 + \frac{v_{y0}}{v_{x0}} x_1 \ ,$$
+
+con la quale è possibile esprimere la componente $v_{y0}$ in funzione della componente $v_{x0}$ (che rimane così l'unico parametro libero del sistema) e degli altri parametri del sistema
+
+$$v_{y0}(v_{x0}; x_1, y_1) = \frac{y_1}{x_1} \, v_{x0} + \frac{g}{2 v_{x0}} x_1 \ .$$
+
+La condizione che la palla superi la barriera ($x_2 = a$, $y_2 = c$) può essere riscritta come
+
+$$\begin{aligned}
+  y_2 < y(x_2)
+  & = - \frac{g}{2 v^2_{x0}} x_2^2 + \frac{v_{y0}}{v_{x0}} x_2 = \\
+  & = - \frac{g}{2 v^2_{x0}} x_2^2 + x_2  \left[ \frac{y_1}{x_1} + \frac{g}{2 v_{x0}^2} x_1 \right] 
+\end{aligned}$$
+
+e quindi
+
+$$\frac{g}{2 v^2_{x0}} x_2 (x_1 - x_2) \ge y_2 - \frac{x_2}{x_1} y_1 \ .$$
+
+In questa disequazione, il termine $x_1 - x_2$ è positivo; il termine $y_2 - \frac{x_2}{x_1} y_1$ può essere positivo o negativo: se negativo, la disequazione è sempre soddisfatta (è negativo nel caso in cui la traiettoria ottenibile con una velocità infinita, al limite, è possibile, cioè quando $\frac{y_2}{x_2} < \frac{y_1}{x_1}$), se positivo, si può scrivere
+
+$$\frac{g}{2}  \frac{x_2(x_1 - x_2)}{y_2 - \frac{x_2}{x_1} y_1} \ge v^2_{x0} \ ,$$
+
+che implica che esiste un valore massimo per $v_{x0}$, che quindi soddisfare la condizione
+
+$$v_{x0} \le \overline{v}_{x0} = \sqrt{\frac{g}{2} \frac{x_1 - x_2}{ \frac{y_2}{x_2} - \frac{y_1}{x_1}}} \ .$$
+
+Il tempo di volo è 
+
+$$t_1 = \frac{x_1}{v_{x0}} \ ,$$
+
+ed è quindi minimo quando $v_{x0}$ è massimo, e quindi quando $v_{x0} = \overline{v}_{x0}$. In questo caso, il rapporto tra la componente verticale e orizzontale della velocità iniziale è
+
+$$\begin{aligned}
+  \frac{v_{y0}(\overline{v}_{x0})}{\overline{v}_{x0}}
+  & = \frac{y_1}{x_1} + \frac{g x_1}{2 \overline{v}^2_{x0}} = \\
+  & = \frac{y_1}{x_1} +  x_1 \frac{g}{2} \frac{2}{g} \frac{\frac{y_2}{x_2} - \frac{y_1}{x_1}}{x_1 - x_2} = \\
+  & = \frac{y_1}{x_1} +  x_1 \frac{\frac{y_2}{x_2} - \frac{y_1}{x_1}}{x_1 - x_2} = \\
+  & = -\frac{x_2}{x_1 - x_2} \frac{y_1}{x_1} +  \frac{x_1}{x_1-x_2} \frac{y_2}{x_2}  \ .
+\end{aligned}$$
+
+**Esempio numerico.** Valutiamo due scelte di tiro per una punizione calciata dai $x_1 = 20 \, m$ con barriera distante $x_2 = 9.15 \, m$ che salta fino a $y_2 = 2.5 \, m$. Si vuole valutare le scelte: A) tiro all'incrocio $y_{1,A} = 2.2 \, m$; B) tiro che si abbassa dopo la barriera fino a $y_{1,B} = 0.2 \, m$.
+
+A. $\overline{v}_{x0} = 18.05 \, m/s $, $\overline{v}_{y0}/\overline{v}_{x0} = 0.411$, $v_{y0} = 7.42 \, m/s $, $|\vec{v}_{0}| = 19.51 \, m/s = 70.2 \, km/h$, $\theta = 22.3^\circ$
+
+B. $\overline{v}_{x0} = 14.21 \, m/s $, $\overline{v}_{y0}/\overline{v}_{x0} = 0.495$, $v_{y0} = 7.04 \, m/s $, $|\vec{v}_{0}| = 15.86 \, m/s = 57.1 \, km/h$, $\theta = 26.3^\circ$
+
 ```
 
 <!-- Esercizio ************************************************************* -->
