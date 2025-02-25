@@ -1586,9 +1586,9 @@ $$\begin{aligned}
 
 **Esempio numerico.** Valutiamo due scelte di tiro per una punizione calciata dai $x_1 = 20 \, m$ con barriera distante $x_2 = 9.15 \, m$ che salta fino a $y_2 = 2.5 \, m$. Si vuole valutare le scelte: A) tiro all'incrocio $y_{1,A} = 2.2 \, m$; B) tiro che si abbassa dopo la barriera fino a $y_{1,B} = 0.2 \, m$.
 
-A. $\overline{v}_{x0} = 18.05 \, m/s $, $\overline{v}_{y0}/\overline{v}_{x0} = 0.411$, $v_{y0} = 7.42 \, m/s $, $|\vec{v}_{0}| = 19.51 \, m/s = 70.2 \, km/h$, $\theta = 22.3^\circ$
+A. $\overline{v}_{x0} = 18.05 \, m/s $, $\overline{v}_{y0}/\overline{v}_{x0} = 0.411$, $v_{y0} = 7.42 \, m/s $, $|\vec{v}_{0}| = 19.51 \, m/s = 70.2 \, km/h$, $\theta = 22.3^\circ$. $t = 1.11 \, s$
 
-B. $\overline{v}_{x0} = 14.21 \, m/s $, $\overline{v}_{y0}/\overline{v}_{x0} = 0.495$, $v_{y0} = 7.04 \, m/s $, $|\vec{v}_{0}| = 15.86 \, m/s = 57.1 \, km/h$, $\theta = 26.3^\circ$
+B. $\overline{v}_{x0} = 14.21 \, m/s $, $\overline{v}_{y0}/\overline{v}_{x0} = 0.495$, $v_{y0} = 7.04 \, m/s $, $|\vec{v}_{0}| = 15.86 \, m/s = 57.1 \, km/h$, $\theta = 26.3^\circ$, $t = 1.41 \, s$
 
 ```
 
