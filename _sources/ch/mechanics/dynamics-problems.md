@@ -1531,7 +1531,6 @@ Si svolga l'esercizio prima trascurando e poi considerando la resistenza aerodin
 ::::
 
 ```{dropdown} Soluzione.
-:open:
 
 $$\begin{cases}
   x(t) = v_{x0} t \\
