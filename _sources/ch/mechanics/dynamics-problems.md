@@ -1117,7 +1117,6 @@ Viene chiesto poi di determinare la **velocità limite** raggiungibile da un cor
 ::::
 
 ```{dropdown} Soluzione.
-:open:
 
 **1. Resistenza aerodinamica $\propto v$.** L'equazione del moto, con condioni iniziali $y(0) = h$, $\dot{y}(0) = 0$, è
 
@@ -1274,6 +1273,23 @@ Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aer
 ::::
 
 ```{dropdown} Soluzione.
+
+Gittata e tempo di volo possono essere ricavati dalla soluzione delle equazioni del moto con le opportune condizioni iniziali. Si sceglie di usare un sistema di coordinate cartesiane $x$, $y$ con origine nel punto iniziale, con l'asse $x$ positivo verso destra e l'asse $y$ positivo verso il basso. Usando questo sistema di coordinate, il vettore posizione del punto può essere scritto come
+
+$$\vec{r}_P(t) = x(t) \hat{x} + y(t) \hat{y} \ .$$
+
+Il bilancio della quantitò di moto del sistema
+
+$$m \ddot{\vec{r}} = m \vec{g}$$
+
+con le condizioni iniziali $\vec{r}_P(0) = \vec{0}$, $\dot{vec{r}}_P(0) = \vec{0}$ può essere scritto nelle sue coordinate cartesiane come
+
+$$\begin{aligned}
+ x: & m \ddot{x} = 0 \\
+ y: & m \ddot{y} = m g \\
+\end{aligned}$$
+
+
 ```
 
 <!-- Esercizio ************************************************************* -->
