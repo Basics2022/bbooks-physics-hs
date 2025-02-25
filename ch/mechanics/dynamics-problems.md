@@ -1705,7 +1705,7 @@ Si svolga l'esercizio prima trascurando e poi considerando la resistenza aerodin
 :::{grid-item-card} 
 :columns: 4
 
-![](../../media/dynamics/parabolic-4.png)
+[![](../../media/dynamics/parabolic-4.png)](../../media/dynamics/parabolic-4.png)
 <!-- *Didascalia, se necessaria* -->
 :::
 

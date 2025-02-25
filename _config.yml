@@ -87,6 +87,7 @@ html:
   use_issues_button: true
   use_repository_button: true
   extra_navbar: ""
+  google_analytics_id: G-R3GS2LVD8M
 
 # sphinx extensions
 sphinx:
