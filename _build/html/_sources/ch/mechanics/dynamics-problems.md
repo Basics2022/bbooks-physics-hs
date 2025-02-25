@@ -1039,8 +1039,8 @@ $$\begin{aligned}
 $$\begin{aligned}
   x(t) 
   & \sim x(0) + \dot{x}(0) \, t + \frac{\ddot{x}(0}{2} \, t^2  = \\
-  & = \sqrt{\frac{mg}{k}} t + \frac{m}{k} \left[ 0 - \sqrt{\frac{gk}{m}} t + \frac{g k}{m} \frac{t^2}{2} \right] = \\
-  & = \frac{ g \, t^2}{2} \ .
+  & = \sqrt{\frac{mg}{k}} t + \frac{m}{k} \left[ 0 - \sqrt{\frac{gk}{m}} t + \frac{g k}{m} \frac{t^2}{2} \right]
+    = \frac{ g \, t^2}{2} \ .
 \end{aligned}$$
 
 

@@ -87,7 +87,7 @@
         
 
 \title{Fisica per le superiori}
-\date{20 feb 2025}
+\date{25 feb 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -5030,8 +5030,65 @@ Date le masse di due blocchi che scivolano su un piano orizzontale liscio, e le 
 \end{sphinxuseclass}\subsubsection*{Soluzione.}
 
 \sphinxAtStartPar
-\sphinxstylestrong{todo}
+La posizione e la velocità del centro di massa del sistema sono
+\begin{equation*}
+\begin{split}\begin{aligned}
+  x_C & = \frac{x_1 m_1 + x_2 m_2}{m_1 + m_2} \\
+  v_C & = \frac{m_1}{m_1+m_2} \dot{x}_1 + \frac{m_2}{m_1+m_2} \dot{x}_2  \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+In assenza di forze esterne parallele alla parete, la velocità del centro di massa del sistema è costante.
+L’energia cinetica nel sistema di riferimento del centro di massa prima e dopo l’urto vale
+\begin{equation*}
+\begin{split}\begin{aligned}
+  K_- 
+  & = \frac{1}{2} m_1 (\dot{x}_1 - v_C)^2 + \frac{1}{2} m_2 (\dot{x}_2 - v_C)^2 = \\
+  & = \frac{1}{2} m_1 \left( \frac{m_2}{m_1+m_2} (\dot{x}_1 - \dot{x}_2) \right)^2 + \frac{1}{2} m_2 \left( \frac{m_1}{m_1+m_2} (\dot{x}_2 - \dot{x}_1) \right)^2 = \\
+  & = \frac{1}{2} m_1 m_2 \frac{m_1 + m_2}{(m_1 + m_2)^2} (\dot{x}_1 - \dot{x}_2)^2 = \\
+  & = \frac{1}{2} \frac{ m_1 m_2}{m_1 + m_2} (\dot{x}_1 - \dot{x}_2)^2 \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+…
 
+\sphinxAtStartPar
+In termini di velocità relative
+\begin{equation*}
+\begin{split}\begin{cases}
+  0 = \mu_1 \dot{x}'_{1,-} + \mu_2 \dot{x}'_{2,-} = \mu_1 \dot{x}'_{1,+} + \mu_2 \dot{x}'_{2,+} \\
+  \varepsilon^2 \left( \frac{1}{2} \mu_1 \dot{x}^{'2}_{1,-} + \frac{1}{2} \mu_2 \dot{x}^{'2}_{2,-} \right) = \frac{1}{2} \mu_1 \dot{x}^{'2}_{1,+} + \frac{1}{2} \mu_2 \dot{x}^{'2}_{2,+}
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Dalla prima equazione
+\begin{equation*}
+\begin{split}\dot{x}'_{2,+} = - \frac{\mu_1}{\mu_2} \dot{x}'_{1,+} \end{split}
+\end{equation*}
+\sphinxAtStartPar
+inserita nella seconda
+\begin{equation*}
+\begin{split}\frac{1}{2} \left( \mu_1 + \mu_2 \left( \frac{\mu_1}{\mu_2} \right)^2 \right) \dot{x}^{'2}_{1,+} = \varepsilon^2 K'_-\end{split}
+\end{equation*}
+\sphinxAtStartPar
+si possono ricavare le velocità relative dopo l’urto,
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \dot{x}'_{1,+} & = \mp \sqrt{ \frac{2 \varepsilon^2 K'_-}{ \mu_1 \left( 1 + \frac{\mu_1}{\mu_2} \right)} } \\
+  \dot{x}'_{2,+} & = \pm \sqrt{ \frac{2 \varepsilon^2 K'_-}{ \mu_2 \left( 1 + \frac{\mu_2}{\mu_1} \right)} } \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Infatti
+\begin{equation*}
+\begin{split}
+  \dot{x}_{2,+}
+    = - \frac{\mu_1}{\mu_2} \dot{x}_{1,+} 
+    = \pm \frac{\mu_1}{\mu_2} \sqrt{ \frac{2 \varepsilon^2 K'_-}{ \mu_1 \left( 1 + \frac{\mu_1}{\mu_2} \right)} }
+    = \pm \sqrt{ \frac{2 \varepsilon^2 K'_-}{ \frac{\mu_2^2}{\mu_1} \left( 1 + \frac{\mu_1}{\mu_2} \right)} } 
+    = \pm \sqrt{ \frac{2 \varepsilon^2 K'_-}{ \mu_2 \left( 1 + \frac{\mu_2}{\mu_1} \right)} } 
+\end{split}
+\end{equation*}
 
 
 \begin{sphinxuseclass}{sd-container-fluid}
@@ -5164,7 +5221,7 @@ la posizione finale delle due masse
 \end{sphinxuseclass}
 \end{sphinxuseclass}
 \sphinxAtStartPar
-Dato il coefficiente di restituzione degli urti tra la palla di massa \(m_1\) nota e ilpiano orizzontale, viene chiesto di determinare la distanza verticale percorsa dalla palla durante i rimbalzi.
+Dato il coefficiente di restituzione degli urti tra la palla di massa \(m_1\) nota e il piano orizzontale, viene chiesto di determinare la distanza verticale percorsa dalla palla durante i rimbalzi.
 
 \sphinxAtStartPar
 \sphinxstylestrong{Oss.} Il numero di rimbalzi è infinito, ma il risultato si ottiene da una serie infinita convergente.
@@ -5221,8 +5278,46 @@ Dato il coefficiente di restituzione degli urti tra la palla di massa \(m_1\) no
 \end{sphinxuseclass}\subsubsection*{Soluzione.}
 
 \sphinxAtStartPar
-\sphinxstylestrong{todo}
+Il caso di urto contro una parete rigida fissa può essere rappresentato considerando il centro di massa dei corpi in urto coincidente con la parete fissa (come se calcolassimo l’urto tra palla e pianeta Terra. Non dovrebbe essere difficile immaginare \sphinxhyphen{} e calcolare \sphinxhyphen{} che l’urto di una palla di massa dell’ordine del chilogrammo non influenzi in maniera significativa lo stato della Terra).
 
+\sphinxAtStartPar
+Il moto è «conservativo a tratti» tra due urti consecutivi. Per ogni urto, vale la relazione
+\begin{equation*}
+\begin{split}K_+ = \varepsilon^2 K_- \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+per l’energia cinetica prima e dopo ogni urto, \(K_-\) e \(K_+\) rispettivamente.
+
+\sphinxAtStartPar
+Partendo in quiete da una quota \(h\), l’energia meccanica del sistema prima del primo urto vale
+\begin{equation*}
+\begin{split}E_0 = m g h_0 \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+L’energia meccanica dopo l”\(n\)\sphinxhyphen{}esimo urto vale
+\begin{equation*}
+\begin{split}E_n = E_0 \varepsilon^{2n} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La quota massima raggiunta dopo l”\(n\)\sphinxhyphen{}esimo urto vale
+\begin{equation*}
+\begin{split}h_n = \frac{E_n}{mg} = \frac{E_0}{mg} \varepsilon^{2n} = h_0 \varepsilon^{2n} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La distanza verticale coperta dalla palla fino all”\(N\)\sphinxhyphen{}esimo urto è
+\begin{equation*}
+\begin{split}S_N = h_0 + \sum_{n=1}^{N} 2 \, h_n = h_0 \left( 1 + \sum_{n=1}^N \varepsilon^{2n} \right) \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La somma vale
+\begin{equation*}
+\begin{split}S_N = h_0 \left( 1 + 2 \, \frac{1 - \varepsilon^{2(N+1)}}{1-\varepsilon^{2}} \right) \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Per il numero di rimbalzi che tende all’infinito, se \(\varepsilon < 1\) la serie è una \sphinxstylestrong{serie geometrica convergente} e la palla compie la distanza finita
+\begin{equation*}
+\begin{split}S = h_0 \left( 1 + \frac{2}{1-\varepsilon^{2}} \right) \ .\end{split}
+\end{equation*}
 
 
 \begin{sphinxuseclass}{sd-container-fluid}
@@ -5427,12 +5522,19 @@ le condizioni immediatamente successive all’urto
 
 \item {} 
 \sphinxAtStartPar
+l’energia meccanica dissipata nell’urto
+
+\item {} 
+\sphinxAtStartPar
 l’angolo massimo raggiunto dal pendolo
 
 \end{itemize}
 
 \sphinxAtStartPar
 Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l’urto.
+
+\sphinxAtStartPar
+Si analizzi inizialmente il caso di urto anelastico.
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5486,8 +5588,44 @@ Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l’urto.
 \end{sphinxuseclass}\subsubsection*{Soluzione.}
 
 \sphinxAtStartPar
-\sphinxstylestrong{todo}
-
+\sphinxstylestrong{Urto anelastico.} Nel caso di urto anelastico, il proiettile di massa \(m\) rimane incastrato nella massa \(M\). Usando il bilancio del momento della quantità di moto rispetto alla cerniera per confrontare le due condizioni prima e dopo l’urto, in assenza di reazioni impulsive che hanno momento non nullo rispetto alla rotazione attorno alla cerniera, si ha:
+\begin{equation*}
+\begin{split}\Delta L_H = 0 \quad \rightarrow \quad m v^- L = (m+M) v^+ L \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi
+\begin{equation*}
+\begin{split}\begin{aligned}
+   v^+            & = \frac{1}{1+ \frac{M}{m}} v^-  \\
+   \dot{\theta}^+ & = \frac{1}{1+ \frac{M}{m}} \frac{v^-}{L}  
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+L’energia meccanica dissipata nell’urto è uguale alla differenza di energia cinetica, poiché non ci sono variazioni finite impulsive di energia potenziale,
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \Delta E = \Delta K 
+  & = \frac{1}{2} m v_-^2 - \frac{1}{2} (m + M) v_+^2 = \\
+  & = \frac{1}{2} m v_-^2 - \frac{1}{2} (m + M) \frac{m^2}{(m+M)^2} v_-^2 = \\
+  & = \frac{1}{2} m v_-^2 \left[ 1 - \frac{m}{m+M} \right] = \\
+  & = \frac{1}{2} m v_-^2 \frac{1}{1+\frac{m}{M}} \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Dall’istante successivo all’urto, il sistema è conservativo. E” possibile quindi calcolare la quota massima raggiunta dal pendolo dalla conservazione dell’energia meccanica,
+\begin{equation*}
+\begin{split}E = \frac{1}{2} (m+M) |\vec{v}|^2 + (m+M) g h \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Scegliendo la quota di riferimento per l’energia potenziale nel punto più basso della traiettoria, e riconoscendo che nel punto più alto la velocità del sistema è nulla, si possono confrontare le due condizioni 1) subito dopo l’urto e 2) nel punto di altezza massima
+\begin{equation*}
+\begin{split}\frac{1}{2} (m+M) L^2 \dot{\theta}_1^2 = (m + M) g h_2 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+per trovare
+\begin{equation*}
+\begin{split}h_2 = \frac{1}{2} \frac{L^2 \dot{\theta}_1^2}{g} \ .\end{split}
+\end{equation*}
 
 
 \begin{sphinxuseclass}{sd-container-fluid}
@@ -5530,6 +5668,9 @@ l’angolo massimo raggiunto dal pendolo.
 
 \sphinxAtStartPar
 Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l’urto.
+
+\sphinxAtStartPar
+Si analizzi inizialmente il caso di urto anelastico.
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5583,8 +5724,52 @@ Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l’urto.
 \end{sphinxuseclass}\subsubsection*{Soluzione.}
 
 \sphinxAtStartPar
-\sphinxstylestrong{todo}
-
+\sphinxstylestrong{Urto anelastico.} Nel caso di urto anelastico, il proiettile di massa \(m\) rimane incastrato nella massa \(M\). Usando il bilancio del momento della quantità di moto rispetto alla cerniera per confrontare le due condizioni prima e dopo l’urto, in assenza di reazioni impulsive che hanno momento non nullo rispetto alla rotazione attorno alla cerniera, si ha:
+\begin{equation*}
+\begin{split}\Delta L_H = 0 \quad \rightarrow \quad m v^- L = m v^+ L + \frac{1}{3} M L^2 \dot{\theta} = \left( m + \frac{1}{3} M \right) L v_+ \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi
+\begin{equation*}
+\begin{split}\begin{aligned}
+   v^+            & = \frac{1}{1+ \frac{1}{3} \frac{M}{m}} v^-  \\
+   \dot{\theta}^+ & = \frac{1}{1+ \frac{1}{3} \frac{M}{m}} \frac{v^-}{L}  
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+L’energia meccanica dissipata nell’urto è uguale alla differenza di energia cinetica, poiché non ci sono variazioni finite impulsive di energia potenziale,
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \Delta E = \Delta K 
+  & = \frac{1}{2} m v_-^2 - \left[ \frac{1}{2} m v_+^2 + \frac{1}{2} \frac{1}{3} M L^2 \dot{\theta}_+^2 \right]= \\
+  & = \frac{1}{2} m v_-^2 - \frac{1}{2} \left( m + \frac{1}{3}M \right) \frac{1}{\left( 1 + \frac{1}{3}\frac{M}{m} \right)^2} v_-^2 = \\
+  & = \frac{1}{2} m v_-^2 \left[ 1 - \frac{m}{m+ \frac{1}{3} M} \right] = \\
+  & = \frac{1}{2} m v_-^2 \frac{1}{1 + 3\frac{m}{M}} \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Dall’istante successivo all’urto, il sistema è conservativo. E” possibile quindi calcolare la quota massima raggiunta dal pendolo dalla conservazione dell’energia meccanica,
+\begin{equation*}
+\begin{split}\begin{aligned}
+  E & = \frac{1}{2} m |\vec{v}|^2 + \frac{1}{2} \frac{1}{3} M L^2 \dot{\theta}^2 + \left(m + \frac{M}{2} \right) g h \\
+    & = \left( \frac{1}{2} m + \frac{1}{6} M \right) L^2 \dot{\theta}^2 + \left( m + \frac{M}{2} \right) g h \\
+\end{aligned}.\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{todo} Aggiungere qualche parola sull’espressione dell’energia potenziale, che potrebbe essere scritta come
+\begin{equation*}
+\begin{split}m g h + M g \left(-\frac{R}{2} + \frac{h}{2} \right)\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Scegliendo la quota di riferimento per l’energia potenziale nel punto più basso della traiettoria, e riconoscendo che nel punto più alto la velocità del sistema è nulla, si possono confrontare le due condizioni 1) subito dopo l’urto e 2) nel punto di altezza massima
+\begin{equation*}
+\begin{split}\left( m + \frac{M}{2} \right) g h_2 = \left( \frac{1}{2} m + \frac{1}{6} M \right) L^2 \dot{\theta}_1^2 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+per trovare
+\begin{equation*}
+\begin{split}h_2 = \frac{\left(\frac{1}{2} m + \frac{1}{6} M \right) L^2 \dot{\theta}_1^2 }{\left( m + \frac{M}{2} \right) g} \ .\end{split}
+\end{equation*}
 
 
 \begin{sphinxuseclass}{sd-container-fluid}
@@ -5627,6 +5812,9 @@ la velocità minima del proiettile prima dell’urto che garantisce di abbattere
 
 \sphinxAtStartPar
 Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l’urto.
+
+\sphinxAtStartPar
+Si analizzi inizialmente il caso di urto anelastico.
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5680,6 +5868,14 @@ Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l’urto.
 \end{sphinxuseclass}\subsubsection*{Soluzione.}
 
 \sphinxAtStartPar
+\sphinxstylestrong{Urto anelastico.} Usando il bilancio della quantità di moto in direzione orizzontale e il bilancio del momento della quantità di moto rispetto alla cerniera,
+\begin{equation*}
+\begin{split}\begin{cases}
+  - m v_-   + ( M + m ) L   \dot{\theta}_+ = I_{A,x} + I_{B,x} \\
+  - m L v_- + ( M + m ) L^2 \dot{\theta}_+ = I_{B,x} \ell \qquad \text{if $I_{B,x} > 0$, else $I_{B,x} = 0$}  \\
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
 \sphinxstylestrong{todo}
 
 
@@ -5711,6 +5907,9 @@ Si calcolino poi le reazioni vincolari a terra, prima, durante e dopo l’urto.
 \end{sphinxuseclass}
 \sphinxAtStartPar
 Un proiettile colpisce un sistema rigido di due masse concentrate, libero e inizialmente in quiete. Si chiede di determinare il moto dei sistemi dopo l’urto, in funzione del coefficiente di restituzione.
+
+\sphinxAtStartPar
+Si analizzi inizialmente il caso di urto anelastico.
 
 \end{sphinxuseclass}
 \end{sphinxuseclass}
@@ -5764,8 +5963,28 @@ Un proiettile colpisce un sistema rigido di due masse concentrate, libero e iniz
 \end{sphinxuseclass}\subsubsection*{Soluzione.}
 
 \sphinxAtStartPar
-\sphinxstylestrong{todo}
-
+\sphinxstylestrong{Urto anelastico.} Usando il bilancio della quantità di moto in direzione orizzontale e il bilancio del momento della quantità di moto, con il vincolo cinematico imposto dalla condizione di urto anelastico, si ricavano le condizioni
+\begin{equation*}
+\begin{split}\begin{cases}
+ m v_- = M ( \dot{x} + \frac{L}{2} \dot{\theta}) + M ( \dot{x} - \frac{L}{2} \dot{\theta}) +  m ( \dot{x} + \frac{L}{2} \dot{\theta}) \\
+   0   = M L ( \dot{x} - \frac{L}{2} \dot{\theta}) \ .
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi
+\begin{equation*}
+\begin{split}\dot{x} = \frac{1}{2} L \dot{\theta}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}m v_- = (M + m)  L \dot{\theta}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e \sphinxstylestrong{se} \(m \ne 0\),
+\begin{equation*}
+\begin{split}\begin{cases}
+  \dot{\theta} = \frac{1}{1 + \frac{M}{m}} \frac{v_-}{L} \\
+  \dot{x}      = \frac{1}{2} \frac{1}{1 + \frac{M}{m}} v_-
+\end{cases}\end{split}
+\end{equation*}
 
 
 \begin{sphinxuseclass}{sd-container-fluid}
@@ -6430,6 +6649,107 @@ Raggio Luna:  $R_M = 1740 \, km$ ; massa Luna:  $M_M = 7.34 \cdot 10^{22} \, kg$
 \end{aligned}\end{align*}
 \sphinxAtStartPar
 \sphinxstylestrong{Soluzione.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Accelerazione nei pressi della superficie di un pianeta.} L’accelerazione di gravità nei pressi della superficie di un pianeta è data dalla formula \sphinxstylestrong{todo} \sphinxstyleemphasis{ref}
+\begin{equation*}
+\begin{split}g = \frac{GM}{R^2} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Ricordando il valore della costante di gravitazione universale, \(G = 6.67 \cdot 10^{-11} \ \frac{N m^2}{kg^2}\), il campo di accelerazione di gravità nei pressi della superficie di Terra e Luna vale rispettivamente
+\begin{equation*}
+\begin{split}\begin{aligned} 
+  g_E & = \frac{G M_E}{R_E^2} = 9.8 \, \frac{m}{s^2} \\
+  g_M & = \frac{G M_M}{R_M^2} = 1.6 \, \frac{m}{s^2} \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il rapporto tra le accelerazioni di gravità è \(\frac{g_E}{g_M} \sim 6.125\), mentre la radice di questo rapporto \sphinxhyphen{} che compare nell’ultimo punto di questo esercizio \sphinxhyphen{} è \(\sqrt{\frac{g_E}{g_M}} \sim 2.5\).
+
+\sphinxAtStartPar
+\sphinxstylestrong{1. Velocità di impatto con il terreno.} La velocità di impatto con il terreno può essere ricavata o dalla soluzione delle equazioni del moto, o dalla legge di conservazione dell’energia meccanica per sistemi conservativi: si considera qui il sistema «palla», sul quale agisce la forza di gravità \sphinxhyphen{} come manifestazione del campo di gravità del pianeta sui corpi con massa; se:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+si trascura la resistenza dell’aria \sphinxhyphen{} azione non\sphinxhyphen{}conservativa, che verrà considerata nel problema successivo \sphinxhyphen{}
+
+\item {} 
+\sphinxAtStartPar
+si considera il moto libero, prima dell’impatto a suolo \sphinxhyphen{} in generale le collisioni sono non\sphinxhyphen{}conservative, ad eccezione dell’unico caso particolare delle collisioni perfettamente elastiche
+
+\end{itemize}
+
+\sphinxAtStartPar
+sul sistema non agiscono forze non\sphinxhyphen{}conservative; in assenza di azioni non\sphinxhyphen{}conservative, l’energia meccanica del sistema si conserva.
+
+\sphinxAtStartPar
+L’energia meccanica del sistema è la somma dell’energia cinetica e di quella potenziale: poiché solo la gravità agisce sul sistema, nell’energia potenziale compare solo il contributo gravitazionale \sphinxhyphen{} nella forma approssimata in prossimità della superficie di un pianeta,
+\begin{equation*}
+\begin{split}E = K + V \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Se il corpo è in caduta libera senza velocità orizzontale, il moto si svolge lungo la verticale. Il moto può quindi essere descritto con una coordinata sola: qui si sceglie un sistema di coordinate \(y\) con origine in corrispondenza del terreno e direzione positiva verso l’alto. L’energia meccanica del sistema può quindi essere scritta come
+\begin{equation*}
+\begin{split}E = \frac{1}{2} m v_y^2 + m g y = \frac{1}{2} m \dot{y}^2 + m g y \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Nella condizione iniziale «0», il corpo è in quiete quindi la velocità è nulla. Nella condizione «1» poco prima dell’impatto, la quota è nulla rispetto al riferimento. Dall’uguaglianza \(E_0 = E_1\) segue
+\begin{equation*}
+\begin{split}\frac{1}{2} m \underbrace{v_y^2}_{=0} + m g h_0 = \frac{1}{2} m v_{y,1}^2 + m g \underbrace{h_1}_{=0} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi
+\begin{equation*}
+\begin{split}v_{y,1} = \sqrt{2 g h} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{2. Caloclo del tempo di volo.} Per il calcolo del tempo di volo è necessario risolvere le equazioni del moto. Il bilancio della quantità di moto lungo \(y\),
+\begin{equation*}
+\begin{split}\dot{Q}_y = R^e_y \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+diventa
+\begin{equation*}
+\begin{split}m \ddot{y} = - m g \ , \end{split}
+\end{equation*}
+\sphinxAtStartPar
+con le condizioni iniziali \(y(0) = h\), \(\dot{y}(0) = 0\). Si semplifica la massa del sistema nell’equazione (per \(m \ne 0\)), e si integra due volte in tempo per risolvere l’equazione differenziale
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \dot{y}(t) & = - g t + v_0 \\
+       y (t) & = - \frac{1}{2} g t^2 + v_0 t + y_0 \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Usando le condizioni iniziali, si trovano i valori delle costanti di integrazione \(v_0 = 0\), \(y_0 = h\). La legge del moto diventa quindi
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \dot{y}(t) & = - g t  \\
+       y (t) & = - \frac{1}{2} g t^2 + h \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Lo stato del sistema poco prima dell’urto si ottiene imponendo la condizione \(y(t_1) = 0\) e quindi si ottiene il tempo di volo (e si ri\sphinxhyphen{}ottiene il risultato della velocità di impatto già ottenuto con la conservazione dell’energia, con il segno negativo a indicare la direzione della velocità opposta al verso positivo dell’asse \(y\) utilizzato)
+\begin{equation*}
+\begin{split}\begin{aligned}
+  t_1 & = \sqrt{\frac{2 h}{g}} \\
+  v_1 & = v(t_1) = - g \sqrt{\frac{2 h}{g}} = - \sqrt{2 g h}
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{3. Risultati per un corpo di massa \(M > m\).} Nelle ipotesi del problema di trascurare la resistenza aerodinamica del corpo, i risultati ottenuti non contengono la massa \(m\) del sistema, e quindi non dipendono da essa.
+
+\sphinxAtStartPar
+\sphinxstylestrong{4. Risultati nei pressi della superficie lunare.} I risultati nei pressi della superficie lunare si ottengono usando l’accelerazione \(g_M\) nelle formule.
+Confrontando i tempi e le velocità e usando i valori calcolati a inizio esercizio, si ottiene
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \frac{t_{1,M}}{t_{1,E}} & = \sqrt{\frac{g_E}{g_M}} \sim 2.5 \\
+  \frac{v_{1,M}}{v_{1,E}} & = \sqrt{\frac{g_M}{g_E}} \sim \frac{1}{2.5} \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+un tempo di volo sulla Luna che è circa \(2.5\) volte quello sulla Terra, e una velocità di impatto circa \(\frac{1}{2.5}\) quella sulla Terra.
 \begin{align*}\!\begin{aligned}
 \begin{minipage}[t]{1.\textwidth}
   \vspace{0pt}
@@ -6444,7 +6764,160 @@ Viene chiesto poi di determinare la **velocità limite** raggiungibile da un cor
 \end{aligned}\end{align*}
 \sphinxAtStartPar
 \sphinxstylestrong{Soluzione.}
-\begin{align*}\!\begin{aligned}
+
+\sphinxAtStartPar
+\sphinxstylestrong{1. Resistenza aerodinamica \(\propto v\).} L’equazione del moto, con condioni iniziali \(y(0) = h\), \(\dot{y}(0) = 0\), è
+\begin{equation*}
+\begin{split}m \ddot{y} = - c \dot{y} - m g\end{split}
+\end{equation*}
+\sphinxAtStartPar
+o in termini di velocità
+\begin{equation*}
+\begin{split}m \dot{v} = - c v - m g \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+che può essere riscritta separando la forzante e mettendo in evidenza l’espressione classica delle equazioni differenziali ordinarie lineari a coefficienti costanti
+\begin{equation*}
+\begin{split}m \dot{v} + c v = - m g \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La soluzione dell’equazione per la veloctià è la somma della soluzione generale dell’equazione omogenea e di una soluzione particolare,
+\begin{equation*}
+\begin{split}v(t) = A e^{-\frac{c}{m}t} - \frac{mg}{c} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e l’espressione della posizione si ottiene da una seconda integrazione
+\begin{equation*}
+\begin{split}y(t) = - \frac{A m }{c} e^{-\frac{c}{m}t} - \frac{mg}{c}t + B \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Le condizioni iniziali permettono di ricavare il valore delle costanti di integrazione \(A, B\)
+\begin{equation*}
+\begin{split}\begin{cases}
+  0 & = v(0) = A - \frac{mg}{c} \\
+  h & = y(0) = -\frac{Am}{c} + B \\
+\end{cases}
+\qquad \rightarrow \qquad
+\begin{cases}
+  A & = \frac{mg}{c} \\
+  B & = h + \frac{m^2 g}{c^2} \\
+\end{cases}
+\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+  v_y(t) & = \frac{mg}{c} \left[ e^{-\frac{c}{m}t} - 1 \right] \\
+    y(t) & = \frac{m^2 g}{c^2} \left[ 1 - e^{-\frac{c}{m}t} \right] + h - \frac{mg}{c} t
+\end{aligned}\end{split}
+\end{equation*}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+La velocità di impatto con il terreno e il tempo di volo si ottengono dalla condizione \(y(t_1) = 0\) \sphinxstylestrong{todo}
+
+\item {} 
+\sphinxAtStartPar
+La velocità limite è la velocità massima (in modulo) che  viene raggiunta per \(t \rightarrow +\infty\), e quindi
+\begin{equation*}
+\begin{split}v_{y,+\infty} = - \frac{m g}{c} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Si osservi come la velocità limite dipende dalla massa del corpo, e a parità di gravità e resistenza aerodinamica del corpo, un corpo con massa maggiore raggiunge una velocità limite maggiore (in modulo).
+…
+
+\end{itemize}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Osservazione.} Nel limite di resistenza aerodinamica che tende a zero, e per intervalli di tempo sufficientemente ridotti da avere \(\frac{ct}{m}\) «piccolo» (a sufficienza da rendere accettabile questa approssimazione) il termine \(e^{-\frac{ct}{m}}\) può essere approssimato come
+\begin{equation*}
+\begin{split}e^{-\frac{ct}{m}} \sim 1 - \frac{ct}{m} + \frac{1}{2} \frac{c^2 t^2}{m^2} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi
+\begin{equation*}
+\begin{split}\begin{aligned}
+  v_y(t) & \sim \frac{m g}{c} \left[ -\frac{c}{m} t + \frac{c^2}{2 m^2} t^2 \right] && = - g t + \frac{cg}{2m} t^2 \\
+    y(t) & \sim \frac{m^2 g}{c^2} \left[ \frac{c}{m} t - \frac{c^2}{2 m^2} t^2 \right] + h - \frac{mg}{c}t && = - \frac{1}{2} g t^2 + h \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{2. Resistenza aerodinamica \(\propto v^2\).}
+Per studiare il moto del sistema con resistenza aerodinamica proprozionale al quadrato della velocità conviene usare un sistema di riferimento con origine nella posizione iniziale del sistema e una coordinata con il verso positivo verso il basso. Se inizialmente il corpo è in quiete o ha una velocità verso il basso, il moto non si inverte mai (e la velocità ha sempre lo stesso segno). L’equazione del moto,
+\begin{equation*}
+\begin{split}m \ddot{x} = m g - k |\dot{x}| \dot{x} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con \(\dot{x} > 0\) può quindi essere riscritta rimuovendo il valore assoluto. Come fatto in precedenza, prima si scrive l’equazione in funzione della velocità, la si risolve, e successivamente si integra la velocità per trovare lo spazio. Usando la velocità \(\dot{x} = v\) come funzione dipendente, l’equazione del moto diventa
+\begin{equation*}
+\begin{split}m \dot{v} = m g - k v^2 \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La \sphinxstylestrong{velocità limite} corrisponde alla condizione in cui la velocità non varia, e quindi la sua derivata è nulla \(\overline{v} = \sqrt{\frac{mg}{k}}\). Questa velocità può essere raggiunta da velocità inferiori ad essa (come ad esempio da un corpo che parte da fermo, accelerato dalla gravità), o da velocità superiori ad essa (come ad esempio un proiettile sparato a velocità superiori ad essa, rallentato dalla resistenza aerodinamica). Si può dimostrare \sphinxstylestrong{todo} che questa condizione di equilibrio è una condizione stabile: una volta nella condizione limite, un rallentamento del sistema comporterebbe una riduzione (in valore assoluto) della resistenza aerodinamica, e quindi una nuova accelerazione che comprterebbe un aumento della velocità del sistema (in assenza di variazioni di altre condizioni).
+
+\sphinxAtStartPar
+Questa equazione differenziale può essere risolta con il metodo di separazione delle variabili, riscrivendola nella forma
+\begin{equation*}
+\begin{split}\frac{d v}{1 - \frac{k}{m g} v^2} = g \, dt \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Scrivendo la frazione come somma di frazioni,
+\begin{equation*}
+\begin{split} \frac{1}{2}\left[ \frac{1}{1 - \sqrt{\frac{k}{m g}} v} + \frac{1}{1 + \sqrt{\frac{k}{m g}} v} \right] dv = g \, dt \end{split}
+\end{equation*}
+\sphinxAtStartPar
+e riconoscendo l’itegrale del logaritmo (ed eliminando il modulo, considerando una velocità iniziale minore della velocità limite \(\sqrt{\frac{mg}{k}}\), e quindi sempre minore di essa), dall’integrazione si ricava
+\begin{equation*}
+\begin{split}\frac{1}{2} \sqrt{\frac{mg}{k}} \ln \frac{1 + \sqrt{\frac{k}{mg}} v}{1 - \sqrt{\frac{k}{mg}} v} = g t + C \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con la costante di integrazione nulla per la condizione iniziale \(v(0) = 0\).
+\begin{equation*}
+\begin{split}\frac{1 + \sqrt{\frac{k}{mg}} v(t)}{1 - \sqrt{\frac{k}{mg}} v(t)} = e^{2 \sqrt{\frac{gk}{m}} t} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi
+\begin{equation*}
+\begin{split}v(t) = \sqrt{\frac{mg}{k}} \frac{1 - e^{-2 \sqrt{\frac{gk}{m}} t}}{1 + e^{-2 \sqrt{\frac{gk}{m}} t}}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+L’integrazione con le condizioni iniziali del problema fornisce la posizione in funzione del tempo
+\begin{equation*}
+\begin{split}\begin{aligned}
+  x(t) - x(0) 
+  & = \int_{\tau=0}^t v(\tau) d \tau = \\
+  & = \sqrt{\frac{mg}{k}} \int_{\tau=0}^t \frac{1 - e^{-2 \sqrt{\frac{gk}{m}} \tau}}{1 + e^{-2 \sqrt{\frac{gk}{m}} \tau}} \, d \tau = \\
+  & = \sqrt{\frac{mg}{k}} \int_{\tau=0}^t \left[ 1 - 2 \frac{e^{-2 \sqrt{\frac{gk}{m}} \tau}}{1 + e^{-2 \sqrt{\frac{gk}{m}} \tau}} \right] d \tau = \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Riconoscendo la forma del differenziale di una funzione \(e^{-a t}\), \(d\left( e^{-a t} \right) = - a e^{-a t} dt\), e quindi di una funzione \(c + e^{-at}\) con \(c\) costante, \(d \left( c + e^{-at} \right) = - a e^{-a t} dt\), gli integrali della forma del secondo possono essere risolti come
+\begin{equation*}
+\begin{split}- \int_{\tau=0}^{t} \frac{e^{-a\tau}}{1+e^{-a\tau}} d\tau = \frac{1}{a} \int_{\tau=0}^{t} \frac{d \left( 1 + e^{-a \tau} \right)}{1+e^{-a \tau}} = \frac{1}{a} \left.\ln \left| 1 + e^{-a \tau} \right| \right|_{0}^{t} = \frac{1}{a} \ln \frac{1 + e^{-a t}}{2} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Ricordando la condizione iniziale \(x(0) = 0\) quindi la posizione del sistema in funzone del tempo ha l’espressione
+\begin{equation*}
+\begin{split}x(t) = \sqrt{\frac{mg}{k}} \left[ t  + \sqrt{\frac{m}{gk}} \ln \frac{1 + e^{- 2 \sqrt{\frac{gk}{m}} t}}{2}  \right]\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Osservazione.} Per piccoli valori della resistenza aerodinamica e intervalli di tempo limitati, si ritrova la soluzione che trascura la resistenza aerodinamica. Infatti
+\begin{equation*}
+\begin{split}f(t) = \ln \left( 1 + e^{-at} \right) = \ln \frac{1 + e^{-2\sqrt{\frac{gk}{m}}t}}{2} = \ln \left( 1 + \frac{e^{-2\sqrt{\frac{gk}{m}}t}-1}{2} \right)\end{split}
+\end{equation*}
+\sphinxAtStartPar
+può essere scritto nella form \(\ln (1+x)\) per «piccoli» \(x\) e approssimato con la sua serie di Taylor.
+\begin{equation*}
+\begin{split}\begin{aligned}
+         &                                                           && f  (0) = 0             \\
+  f' (t) & = \frac{-a e^{-at}}{1 + e^{-at}} = -\frac{a}{1 + e^{at}}  && f' (0) = -\frac{a}{2}  \\
+  f''(t) & = \frac{a^2}{\left( 1 + e^{at} \right)^2}                 && f''(0) = \frac{a^2}{4} \\
+\end{aligned}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+  x(t) 
+  & \sim x(0) + \dot{x}(0) \, t + \frac{\ddot{x}(0}{2} \, t^2  = \\
+  & = \sqrt{\frac{mg}{k}} t + \frac{m}{k} \left[ 0 - \sqrt{\frac{gk}{m}} t + \frac{g k}{m} \frac{t^2}{2} \right]
+    = \frac{ g \, t^2}{2} \ .
+\end{aligned}\end{split}
+\end{equation*}\begin{align*}\!\begin{aligned}
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
   \textbf{Problema 3.}
@@ -7134,7 +7607,7 @@ con le condizioni iniziali
 \begin{split}
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
+  \textbf{Problema 29.}
   Testo
 \end{minipage}
 \hspace{.05\textwidth}
@@ -7150,7 +7623,7 @@ con le condizioni iniziali
 \begin{split}
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
+  \textbf{Problema 30.}
   Testo
 \end{minipage}
 \hspace{.05\textwidth}
@@ -7166,7 +7639,7 @@ con le condizioni iniziali
 \begin{split}
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
-  \textbf{Problema 1.}
+  \textbf{Problema 31.}
   Testo
 \end{minipage}
 \hspace{.05\textwidth}
