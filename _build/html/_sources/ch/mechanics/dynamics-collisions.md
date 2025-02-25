@@ -101,20 +101,22 @@ $$\begin{cases}
   \varepsilon^2 \left( \frac{1}{2} \mu_1 \dot{x}^{'2}_{1,-} + \frac{1}{2} \mu_2 \dot{x}^{'2}_{2,-} \right) = \frac{1}{2} \mu_1 \dot{x}^{'2}_{1,+} + \frac{1}{2} \mu_2 \dot{x}^{'2}_{2,+}
 \end{cases}$$
 
-Dalla prima
+Dalla prima equazione
 
 $$\dot{x}'_{2,+} = - \frac{\mu_1}{\mu_2} \dot{x}'_{1,+} $$
 
-e quindi 
+inserita nella seconda
 
 $$\frac{1}{2} \left( \mu_1 + \mu_2 \left( \frac{\mu_1}{\mu_2} \right)^2 \right) \dot{x}^{'2}_{1,+} = \varepsilon^2 K'_-$$
 
+si possono ricavare le velocità relative dopo l'urto,
+
 $$\begin{aligned}
-  \dot{x}_{1,+} & = \mp \sqrt{ \frac{2 \varepsilon^2 K'_-}{ \mu_1 \left( 1 + \frac{\mu_1}{\mu_2} \right)} } \\
-  \dot{x}_{2,+} & = \pm \sqrt{ \frac{2 \varepsilon^2 K'_-}{ \mu_2 \left( 1 + \frac{\mu_2}{\mu_1} \right)} } \\
+  \dot{x}'_{1,+} & = \mp \sqrt{ \frac{2 \varepsilon^2 K'_-}{ \mu_1 \left( 1 + \frac{\mu_1}{\mu_2} \right)} } \\
+  \dot{x}'_{2,+} & = \pm \sqrt{ \frac{2 \varepsilon^2 K'_-}{ \mu_2 \left( 1 + \frac{\mu_2}{\mu_1} \right)} } \\
 \end{aligned}$$
 
-poiché
+Infatti
 
 $$
   \dot{x}_{2,+}
