@@ -597,9 +597,11 @@ La palla viene lasciata cadere dalla condizione di quiete. Viene chiesto di dete
 <li><p class="sd-card-text">la velocità di impatto con il terreno</p></li>
 <li><p class="sd-card-text">il tempo impiegato per raggiungere il terreno.</p></li>
 </ol>
-<p class="sd-card-text">Viene chiesto di svolgere i conti trascurando la resistenza dell’aria. Si chiede poi di:
-3. confrontare i risultati ottenuti con i risultati per un corpo di massa <span class="math notranslate nohighlight">\(M &gt; m\)</span>
-4. confrontare i risultati ottenuti con i risultati che si otterrebbero nei pressi della superficie lunare.</p>
+<p class="sd-card-text">Viene chiesto di svolgere i conti trascurando la resistenza dell’aria. Si chiede poi di:</p>
+<ol class="arabic simple" start="3">
+<li><p class="sd-card-text">confrontare i risultati ottenuti con i risultati per un corpo di massa <span class="math notranslate nohighlight">\(M &gt; m\)</span></p></li>
+<li><p class="sd-card-text">confrontare i risultati ottenuti con i risultati che si otterrebbero nei pressi della superficie lunare.</p></li>
+</ol>
 <p class="sd-card-text">Raggio Terra: <span class="math notranslate nohighlight">\(R_E = 6380 \, km\)</span> ; massa Terra: <span class="math notranslate nohighlight">\(M_E = 5.98 \cdot 10^{24} \, kg\)</span>;
 Raggio Luna:  <span class="math notranslate nohighlight">\(R_M = 1740 \, km\)</span> ; massa Luna:  <span class="math notranslate nohighlight">\(M_M = 7.34 \cdot 10^{22} \, kg\)</span>;</p>
 </div>
@@ -622,6 +624,67 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Accelerazione nei pressi della superficie di un pianeta.</strong> L’accelerazione di gravità nei pressi della superficie di un pianeta è data dalla formula <strong>todo</strong> <em>ref</em></p>
+<div class="math notranslate nohighlight">
+\[g = \frac{GM}{R^2} \ .\]</div>
+<p class="sd-card-text">Ricordando il valore della costante di gravitazione universale, <span class="math notranslate nohighlight">\(G = 6.67 \cdot 10^{-11} \ \frac{N m^2}{kg^2}\)</span>, il campo di accelerazione di gravità nei pressi della superficie di Terra e Luna vale rispettivamente</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned} 
+  g_E &amp; = \frac{G M_E}{R_E^2} = 9.8 \, \frac{m}{s^2} \\
+  g_M &amp; = \frac{G M_M}{R_M^2} = 1.6 \, \frac{m}{s^2} \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Il rapporto tra le accelerazioni di gravità è <span class="math notranslate nohighlight">\(\frac{g_E}{g_M} \sim 6.125\)</span>, mentre la radice di questo rapporto - che compare nell’ultimo punto di questo esercizio - è <span class="math notranslate nohighlight">\(\sqrt{\frac{g_E}{g_M}} \sim 2.5\)</span>.</p>
+<p class="sd-card-text"><strong>1. Velocità di impatto con il terreno.</strong> La velocità di impatto con il terreno può essere ricavata o dalla soluzione delle equazioni del moto, o dalla legge di conservazione dell’energia meccanica per sistemi conservativi: si considera qui il sistema «palla», sul quale agisce la forza di gravità - come manifestazione del campo di gravità del pianeta sui corpi con massa; se:</p>
+<ul class="simple">
+<li><p class="sd-card-text">si trascura la resistenza dell’aria - azione non-conservativa, che verrà considerata nel problema successivo -</p></li>
+<li><p class="sd-card-text">si considera il moto libero, prima dell’impatto a suolo - in generale le collisioni sono non-conservative, ad eccezione dell’unico caso particolare delle collisioni perfettamente elastiche</p></li>
+</ul>
+<p class="sd-card-text">sul sistema non agiscono forze non-conservative; in assenza di azioni non-conservative, l’energia meccanica del sistema si conserva.</p>
+<p class="sd-card-text">L’energia meccanica del sistema è la somma dell’energia cinetica e di quella potenziale: poiché solo la gravità agisce sul sistema, nell’energia potenziale compare solo il contributo gravitazionale - nella forma approssimata in prossimità della superficie di un pianeta,</p>
+<div class="math notranslate nohighlight">
+\[E = K + V \ .\]</div>
+<p class="sd-card-text">Se il corpo è in caduta libera senza velocità orizzontale, il moto si svolge lungo la verticale. Il moto può quindi essere descritto con una coordinata sola: qui si sceglie un sistema di coordinate <span class="math notranslate nohighlight">\(y\)</span> con origine in corrispondenza del terreno e direzione positiva verso l’alto. L’energia meccanica del sistema può quindi essere scritta come</p>
+<div class="math notranslate nohighlight">
+\[E = \frac{1}{2} m v_y^2 + m g y = \frac{1}{2} m \dot{y}^2 + m g y \ .\]</div>
+<p class="sd-card-text">Nella condizione iniziale «0», il corpo è in quiete quindi la velocità è nulla. Nella condizione «1» poco prima dell’impatto, la quota è nulla rispetto al riferimento. Dall’uguaglianza <span class="math notranslate nohighlight">\(E_0 = E_1\)</span> segue</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{2} m \underbrace{v_y^2}_{=0} + m g h_0 = \frac{1}{2} m v_{y,1}^2 + m g \underbrace{h_1}_{=0} \ ,\]</div>
+<p class="sd-card-text">e quindi</p>
+<div class="math notranslate nohighlight">
+\[v_{y,1} = \sqrt{2 g h} \ .\]</div>
+<p class="sd-card-text"><strong>2. Caloclo del tempo di volo.</strong> Per il calcolo del tempo di volo è necessario risolvere le equazioni del moto. Il bilancio della quantità di moto lungo <span class="math notranslate nohighlight">\(y\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\dot{Q}_y = R^e_y \ ,\]</div>
+<p class="sd-card-text">diventa</p>
+<div class="math notranslate nohighlight">
+\[m \ddot{y} = - m g \ , \]</div>
+<p class="sd-card-text">con le condizioni iniziali <span class="math notranslate nohighlight">\(y(0) = h\)</span>, <span class="math notranslate nohighlight">\(\dot{y}(0) = 0\)</span>. Si semplifica la massa del sistema nell’equazione (per <span class="math notranslate nohighlight">\(m \ne 0\)</span>), e si integra due volte in tempo per risolvere l’equazione differenziale</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \dot{y}(t) &amp; = - g t + v_0 \\
+       y (t) &amp; = - \frac{1}{2} g t^2 + v_0 t + y_0 \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Usando le condizioni iniziali, si trovano i valori delle costanti di integrazione <span class="math notranslate nohighlight">\(v_0 = 0\)</span>, <span class="math notranslate nohighlight">\(y_0 = h\)</span>. La legge del moto diventa quindi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \dot{y}(t) &amp; = - g t  \\
+       y (t) &amp; = - \frac{1}{2} g t^2 + h \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Lo stato del sistema poco prima dell’urto si ottiene imponendo la condizione <span class="math notranslate nohighlight">\(y(t_1) = 0\)</span> e quindi si ottiene il tempo di volo (e si ri-ottiene il risultato della velocità di impatto già ottenuto con la conservazione dell’energia, con il segno negativo a indicare la direzione della velocità opposta al verso positivo dell’asse <span class="math notranslate nohighlight">\(y\)</span> utilizzato)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  t_1 &amp; = \sqrt{\frac{2 h}{g}} \\
+  v_1 &amp; = v(t_1) = - g \sqrt{\frac{2 h}{g}} = - \sqrt{2 g h}
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text"><strong>3. Risultati per un corpo di massa <span class="math notranslate nohighlight">\(M &gt; m\)</span>.</strong> Nelle ipotesi del problema di trascurare la resistenza aerodinamica del corpo, i risultati ottenuti non contengono la massa <span class="math notranslate nohighlight">\(m\)</span> del sistema, e quindi non dipendono da essa.</p>
+<p class="sd-card-text"><strong>4. Risultati nei pressi della superficie lunare.</strong> I risultati nei pressi della superficie lunare si ottengono usando l’accelerazione <span class="math notranslate nohighlight">\(g_M\)</span> nelle formule.
+Confrontando i tempi e le velocità e usando i valori calcolati a inizio esercizio, si ottiene</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \frac{t_{1,M}}{t_{1,E}} &amp; = \sqrt{\frac{g_E}{g_M}} \sim 2.5 \\
+  \frac{v_{1,M}}{v_{1,E}} &amp; = \sqrt{\frac{g_M}{g_E}} \sim \frac{1}{2.5} \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">un tempo di volo sulla Luna che è circa <span class="math notranslate nohighlight">\(2.5\)</span> volte quello sulla Terra, e una velocità di impatto circa <span class="math notranslate nohighlight">\(\frac{1}{2.5}\)</span> quella sulla Terra.</p>
 </div>
 </details><div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
@@ -643,13 +706,117 @@ In particolare viene chiesto di risolvere il problema nel caso in cui la resiste
 </div>
 </div>
 </div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
 Soluzione.<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>1. Resistenza aerodinamica <span class="math notranslate nohighlight">\(\propto v\)</span>.</strong> L’equazione del moto, con condioni iniziali <span class="math notranslate nohighlight">\(y(0) = h\)</span>, <span class="math notranslate nohighlight">\(\dot{y}(0) = 0\)</span>, è</p>
+<div class="math notranslate nohighlight">
+\[m \ddot{y} = - c \dot{y} - m g\]</div>
+<p class="sd-card-text">o in termini di velocità</p>
+<div class="math notranslate nohighlight">
+\[m \dot{v} = - c v - m g \ ,\]</div>
+<p class="sd-card-text">che può essere riscritta separando la forzante e mettendo in evidenza l’espressione classica delle equazioni differenziali ordinarie lineari a coefficienti costanti</p>
+<div class="math notranslate nohighlight">
+\[m \dot{v} + c v = - m g \ .\]</div>
+<p class="sd-card-text">La soluzione dell’equazione per la veloctià è la somma della soluzione generale dell’equazione omogenea e di una soluzione particolare,</p>
+<div class="math notranslate nohighlight">
+\[v(t) = A e^{-\frac{c}{m}t} - \frac{mg}{c} \ ,\]</div>
+<p class="sd-card-text">e l’espressione della posizione si ottiene da una seconda integrazione</p>
+<div class="math notranslate nohighlight">
+\[y(t) = - \frac{A m }{c} e^{-\frac{c}{m}t} - \frac{mg}{c}t + B \ .\]</div>
+<p class="sd-card-text">Le condizioni iniziali permettono di ricavare il valore delle costanti di integrazione <span class="math notranslate nohighlight">\(A, B\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  0 &amp; = v(0) = A - \frac{mg}{c} \\
+  h &amp; = y(0) = -\frac{Am}{c} + B \\
+\end{cases}
+\qquad \rightarrow \qquad
+\begin{cases}
+  A &amp; = \frac{mg}{c} \\
+  B &amp; = h + \frac{m^2 g}{c^2} \\
+\end{cases}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  v_y(t) &amp; = \frac{mg}{c} \left[ e^{-\frac{c}{m}t} - 1 \right] \\
+    y(t) &amp; = \frac{m^2 g}{c^2} \left[ 1 - e^{-\frac{c}{m}t} \right] + h - \frac{mg}{c} t
+\end{aligned}\end{split}\]</div>
+<ul>
+<li><p class="sd-card-text">La velocità di impatto con il terreno e il tempo di volo si ottengono dalla condizione <span class="math notranslate nohighlight">\(y(t_1) = 0\)</span> <strong>todo</strong></p></li>
+<li><p class="sd-card-text">La velocità limite è la velocità massima (in modulo) che  viene raggiunta per <span class="math notranslate nohighlight">\(t \rightarrow +\infty\)</span>, e quindi</p>
+<div class="math notranslate nohighlight">
+\[v_{y,+\infty} = - \frac{m g}{c} \ .\]</div>
+<p class="sd-card-text">Si osservi come la velocità limite dipende dalla massa del corpo, e a parità di gravità e resistenza aerodinamica del corpo, un corpo con massa maggiore raggiunge una velocità limite maggiore (in modulo).
+…</p>
+</li>
+</ul>
+<p class="sd-card-text"><strong>Osservazione.</strong> Nel limite di resistenza aerodinamica che tende a zero, e per intervalli di tempo sufficientemente ridotti da avere <span class="math notranslate nohighlight">\(\frac{ct}{m}\)</span> «piccolo» (a sufficienza da rendere accettabile questa approssimazione) il termine <span class="math notranslate nohighlight">\(e^{-\frac{ct}{m}}\)</span> può essere approssimato come</p>
+<div class="math notranslate nohighlight">
+\[e^{-\frac{ct}{m}} \sim 1 - \frac{ct}{m} + \frac{1}{2} \frac{c^2 t^2}{m^2} \ ,\]</div>
+<p class="sd-card-text">e quindi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  v_y(t) &amp; \sim \frac{m g}{c} \left[ -\frac{c}{m} t + \frac{c^2}{2 m^2} t^2 \right] &amp;&amp; = - g t + \frac{cg}{2m} t^2 \\
+    y(t) &amp; \sim \frac{m^2 g}{c^2} \left[ \frac{c}{m} t - \frac{c^2}{2 m^2} t^2 \right] + h - \frac{mg}{c}t &amp;&amp; = - \frac{1}{2} g t^2 + h \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text"><strong>2. Resistenza aerodinamica <span class="math notranslate nohighlight">\(\propto v^2\)</span>.</strong>
+Per studiare il moto del sistema con resistenza aerodinamica proprozionale al quadrato della velocità conviene usare un sistema di riferimento con origine nella posizione iniziale del sistema e una coordinata con il verso positivo verso il basso. Se inizialmente il corpo è in quiete o ha una velocità verso il basso, il moto non si inverte mai (e la velocità ha sempre lo stesso segno). L’equazione del moto,</p>
+<div class="math notranslate nohighlight">
+\[m \ddot{x} = m g - k |\dot{x}| \dot{x} \ ,\]</div>
+<p class="sd-card-text">con <span class="math notranslate nohighlight">\(\dot{x} &gt; 0\)</span> può quindi essere riscritta rimuovendo il valore assoluto. Come fatto in precedenza, prima si scrive l’equazione in funzione della velocità, la si risolve, e successivamente si integra la velocità per trovare lo spazio. Usando la velocità <span class="math notranslate nohighlight">\(\dot{x} = v\)</span> come funzione dipendente, l’equazione del moto diventa</p>
+<div class="math notranslate nohighlight">
+\[m \dot{v} = m g - k v^2 \ .\]</div>
+<p class="sd-card-text">La <strong>velocità limite</strong> corrisponde alla condizione in cui la velocità non varia, e quindi la sua derivata è nulla <span class="math notranslate nohighlight">\(\overline{v} = \sqrt{\frac{mg}{k}}\)</span>. Questa velocità può essere raggiunta da velocità inferiori ad essa (come ad esempio da un corpo che parte da fermo, accelerato dalla gravità), o da velocità superiori ad essa (come ad esempio un proiettile sparato a velocità superiori ad essa, rallentato dalla resistenza aerodinamica). Si può dimostrare <strong>todo</strong> che questa condizione di equilibrio è una condizione stabile: una volta nella condizione limite, un rallentamento del sistema comporterebbe una riduzione (in valore assoluto) della resistenza aerodinamica, e quindi una nuova accelerazione che comprterebbe un aumento della velocità del sistema (in assenza di variazioni di altre condizioni).</p>
+<p class="sd-card-text">Questa equazione differenziale può essere risolta con il metodo di separazione delle variabili, riscrivendola nella forma</p>
+<div class="math notranslate nohighlight">
+\[\frac{d v}{1 - \frac{k}{m g} v^2} = g \, dt \ .\]</div>
+<p class="sd-card-text">Scrivendo la frazione come somma di frazioni,</p>
+<div class="math notranslate nohighlight">
+\[ \frac{1}{2}\left[ \frac{1}{1 - \sqrt{\frac{k}{m g}} v} + \frac{1}{1 + \sqrt{\frac{k}{m g}} v} \right] dv = g \, dt \]</div>
+<p class="sd-card-text">e riconoscendo l’itegrale del logaritmo (ed eliminando il modulo, considerando una velocità iniziale minore della velocità limite <span class="math notranslate nohighlight">\(\sqrt{\frac{mg}{k}}\)</span>, e quindi sempre minore di essa), dall’integrazione si ricava</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{2} \sqrt{\frac{mg}{k}} \ln \frac{1 + \sqrt{\frac{k}{mg}} v}{1 - \sqrt{\frac{k}{mg}} v} = g t + C \ ,\]</div>
+<p class="sd-card-text">con la costante di integrazione nulla per la condizione iniziale <span class="math notranslate nohighlight">\(v(0) = 0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\frac{1 + \sqrt{\frac{k}{mg}} v(t)}{1 - \sqrt{\frac{k}{mg}} v(t)} = e^{2 \sqrt{\frac{gk}{m}} t} \ ,\]</div>
+<p class="sd-card-text">e quindi</p>
+<div class="math notranslate nohighlight">
+\[v(t) = \sqrt{\frac{mg}{k}} \frac{1 - e^{-2 \sqrt{\frac{gk}{m}} t}}{1 + e^{-2 \sqrt{\frac{gk}{m}} t}}\]</div>
+<p class="sd-card-text">L’integrazione con le condizioni iniziali del problema fornisce la posizione in funzione del tempo</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  x(t) - x(0) 
+  &amp; = \int_{\tau=0}^t v(\tau) d \tau = \\
+  &amp; = \sqrt{\frac{mg}{k}} \int_{\tau=0}^t \frac{1 - e^{-2 \sqrt{\frac{gk}{m}} \tau}}{1 + e^{-2 \sqrt{\frac{gk}{m}} \tau}} \, d \tau = \\
+  &amp; = \sqrt{\frac{mg}{k}} \int_{\tau=0}^t \left[ 1 - 2 \frac{e^{-2 \sqrt{\frac{gk}{m}} \tau}}{1 + e^{-2 \sqrt{\frac{gk}{m}} \tau}} \right] d \tau = \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Riconoscendo la forma del differenziale di una funzione <span class="math notranslate nohighlight">\(e^{-a t}\)</span>, <span class="math notranslate nohighlight">\(d\left( e^{-a t} \right) = - a e^{-a t} dt\)</span>, e quindi di una funzione <span class="math notranslate nohighlight">\(c + e^{-at}\)</span> con <span class="math notranslate nohighlight">\(c\)</span> costante, <span class="math notranslate nohighlight">\(d \left( c + e^{-at} \right) = - a e^{-a t} dt\)</span>, gli integrali della forma del secondo possono essere risolti come</p>
+<div class="math notranslate nohighlight">
+\[- \int_{\tau=0}^{t} \frac{e^{-a\tau}}{1+e^{-a\tau}} d\tau = \frac{1}{a} \int_{\tau=0}^{t} \frac{d \left( 1 + e^{-a \tau} \right)}{1+e^{-a \tau}} = \frac{1}{a} \left.\ln \left| 1 + e^{-a \tau} \right| \right|_{0}^{t} = \frac{1}{a} \ln \frac{1 + e^{-a t}}{2} \ .\]</div>
+<p class="sd-card-text">Ricordando la condizione iniziale <span class="math notranslate nohighlight">\(x(0) = 0\)</span> quindi la posizione del sistema in funzone del tempo ha l’espressione</p>
+<div class="math notranslate nohighlight">
+\[x(t) = \sqrt{\frac{mg}{k}} \left[ t  + \sqrt{\frac{m}{gk}} \ln \frac{1 + e^{- 2 \sqrt{\frac{gk}{m}} t}}{2}  \right]\]</div>
+<p class="sd-card-text"><strong>Osservazione.</strong> Per piccoli valori della resistenza aerodinamica e intervalli di tempo limitati, si ritrova la soluzione che trascura la resistenza aerodinamica. Infatti</p>
+<div class="math notranslate nohighlight">
+\[f(t) = \ln \left( 1 + e^{-at} \right) = \ln \frac{1 + e^{-2\sqrt{\frac{gk}{m}}t}}{2} = \ln \left( 1 + \frac{e^{-2\sqrt{\frac{gk}{m}}t}-1}{2} \right)\]</div>
+<p class="sd-card-text">può essere scritto nella form <span class="math notranslate nohighlight">\(\ln (1+x)\)</span> per «piccoli» <span class="math notranslate nohighlight">\(x\)</span> e approssimato con la sua serie di Taylor.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+         &amp;                                                           &amp;&amp; f  (0) = 0             \\
+  f' (t) &amp; = \frac{-a e^{-at}}{1 + e^{-at}} = -\frac{a}{1 + e^{at}}  &amp;&amp; f' (0) = -\frac{a}{2}  \\
+  f''(t) &amp; = \frac{a^2}{\left( 1 + e^{at} \right)^2}                 &amp;&amp; f''(0) = \frac{a^2}{4} \\
+\end{aligned}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  x(t) 
+  &amp; \sim x(0) + \dot{x}(0) \, t + \frac{\ddot{x}(0}{2} \, t^2  = \\
+  &amp; = \sqrt{\frac{mg}{k}} t + \frac{m}{k} \left[ 0 - \sqrt{\frac{gk}{m}} t + \frac{g k}{m} \frac{t^2}{2} \right]
+    = \frac{ g \, t^2}{2} \ .
+\end{aligned}\end{split}\]</div>
 </div>
 </details><!-- Esercizio ************************************************************* -->
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
