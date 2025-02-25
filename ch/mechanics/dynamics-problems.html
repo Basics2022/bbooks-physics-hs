@@ -831,7 +831,7 @@ Problema 3.</div>
 <li><p class="sd-card-text">gittata</p></li>
 <li><p class="sd-card-text">tempo di volo</p></li>
 <li><p class="sd-card-text">velocità del corpo all’impatto con il suolo</p></li>
-<li><p class="sd-card-text">impulso e forza media quando il corpo raggiunge terra, sapendo che il corpo si arresta in un tempo <span class="math notranslate nohighlight">\(\Delta t\)</span> lungo una traiettoria rettilinea.</p></li>
+<li><p class="sd-card-text">impulso e forza media quando il corpo raggiunge terra, sapendo che il corpo si arresta in un tempo <span class="math notranslate nohighlight">\(\Delta t\)</span> <em>lungo una traiettoria rettilinea (l’ipotesi sulla traiettoria non è necessaria, come sarà chiaro nella soluzione dell’esercizio)</em>.</p></li>
 </ol>
 <p class="sd-card-text">Come ulteriore esercizio, si ripetano i conti senza trascurare la resistenza aerodinamica.</p>
 </div>
@@ -856,16 +856,68 @@ Soluzione.<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Gittata e tempo di volo possono essere ricavati dalla soluzione delle equazioni del moto con le opportune condizioni iniziali. Si sceglie di usare un sistema di coordinate cartesiane <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> con origine nel punto iniziale, con l’asse <span class="math notranslate nohighlight">\(x\)</span> positivo verso destra e l’asse <span class="math notranslate nohighlight">\(y\)</span> positivo verso il basso. Usando questo sistema di coordinate, il vettore posizione del punto può essere scritto come</p>
 <div class="math notranslate nohighlight">
-\[\vec{r}_P(t) = x(t) \hat{x} + y(t) \hat{y} \ .\]</div>
+\[\vec{r}_P(t) = x_P(t) \hat{x} + y_P(t) \hat{y} \ .\]</div>
 <p class="sd-card-text">Il bilancio della quantitò di moto del sistema</p>
 <div class="math notranslate nohighlight">
-\[m \ddot{\vec{r}} = m \vec{g}\]</div>
-<p class="sd-card-text">con le condizioni iniziali <span class="math notranslate nohighlight">\(\vec{r}_P(0) = \vec{0}\)</span>, <span class="math notranslate nohighlight">\(\dot{vec{r}}_P(0) = \vec{0}\)</span> può essere scritto nelle sue coordinate cartesiane come</p>
+\[m \ddot{\vec{r}}_P = m \vec{g}\]</div>
+<p class="sd-card-text">con le condizioni iniziali <span class="math notranslate nohighlight">\(\vec{r}_P(0) = \vec{0}\)</span>, <span class="math notranslate nohighlight">\(\dot{\vec{r}}_P(0) = \vec{v}_0 = v_0 \hat{x}\)</span> può essere scritto nelle sue coordinate cartesiane come</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+ x: \quad m \ddot{x}_P = 0 \\
+ y: \quad m \ddot{y}_P = m g \\
+\end{cases}\end{split}\]</div>
+<p class="sd-card-text">La posizione del corpo può quindi essere espressa in funzione del tempo,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  x_P(t) = v_{P,x0} t + x_0 \\
+  y_P(t) = \frac{1}{2} g t^2 + v_{P,y0} t + y_0 \\
+\end{cases}\end{split}\]</div>
+<p class="sd-card-text">e, con le condizioni iniziali del problema, posizione e velocità (derivata della posizione) del corpo in funzione del tempo <span class="math notranslate nohighlight">\(t\)</span> sono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+  x_P(t) &amp; = v_0 t  \\
+  y_P(t) &amp; = \frac{1}{2} g t^2 \\
+\end{cases}
+\quad , \quad
+\begin{cases}
+  v_{P,x}(t) &amp; = v_0 \\
+  v_{P,y}(t) &amp; = g t \\
+\end{cases}
+\end{split}\]</div>
+<p class="sd-card-text"><strong>1. - 2. Gittata e tempo di volo.</strong> La condizione di impatto prevede che il corpo percorra una distanza <span class="math notranslate nohighlight">\(h\)</span> in direzione <span class="math notranslate nohighlight">\(y\)</span> per raggiungere la superficie orizzonatale, e quindi può essere scritta come</p>
+<div class="math notranslate nohighlight">
+\[y(t_1) = 0 \ .\]</div>
+<p class="sd-card-text">Dalle due componenti cartesiane della posizione segue quindi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  d = x_{P,1} = v_0 t_1  \\
+  h = y_{P,1} = \frac{1}{2} g t_1^2 \ ,
+\end{cases}\end{split}\]</div>
+<p class="sd-card-text">e quindi il tempo di volo <span class="math notranslate nohighlight">\(t_1\)</span> e la gittata <span class="math notranslate nohighlight">\(d\)</span> sono rispettivamente</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
- x: &amp; m \ddot{x} = 0 \\
- y: &amp; m \ddot{y} = m g \\
+  t_1 &amp; = \sqrt{\frac{2 h}{g}} \\
+  d   &amp; = v_0 \sqrt{\frac{2 h}{g}} \\
 \end{aligned}\end{split}\]</div>
+<p class="sd-card-text"><strong>3. Velocità del corpo all’impatto.</strong> Può essere calcolata usando le equazioni del moto già ricavate, o la conservazione dell’energia meccanica - in assenza di resistenza aerodinamica - come fattto in altri esercizi. Usando le equazioni già ricavate,</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}_1 = \vec{v}(t_1) = v_0 \hat{x} + \sqrt{2 g h } \, \hat{y} \ .\]</div>
+<p class="sd-card-text"><strong>4. Impluso e forza media nell’impatto.</strong> L’impulso delle forze esterne agenti su un corpo equivale alla differenza del momento della quantità di moto <strong>todo</strong> <em>aggiungere riferimento</em></p>
+<div class="math notranslate nohighlight">
+\[\Delta \vec{Q} = \vec{I}^e \ ,\]</div>
+<p class="sd-card-text">e quindi</p>
+<div class="math notranslate nohighlight">
+\[\vec{I}^e = \Delta \vec{Q} = \underbrace{\vec{Q}_2}_{= \vec{0}} - \vec{Q}_1 = - m \vec{v}_1 \ ,\]</div>
+<p class="sd-card-text">poiché la quantità di moto del corpo dopo essersi fermato è nulla, <span class="math notranslate nohighlight">\(\vec{Q}_2 = \vec{0}\)</span>. L’impulso di una forza è il suo integrale nel tempo,</p>
+<div class="math notranslate nohighlight">
+\[\vec{I} = \int_{t_1}^{t_2} \vec{F}(\tau) \, d \tau \ .\]</div>
+<p class="sd-card-text">Gli istanti di tempo sono separati da <span class="math notranslate nohighlight">\(\Delta t\)</span>, <span class="math notranslate nohighlight">\(t_2 = t_1 + \Delta t\)</span>. La definizione di valore medio di una quantità in un intervallo permette di scrivere l’integrale come prodotto dell’intervallo e del valore medio, e quindi</p>
+<div class="math notranslate nohighlight">
+\[\vec{I} = \int_{t_1}^{t_2} \vec{F}(\tau) \, d \tau = \Delta t \, \overline{\vec{F}} \ ,\]</div>
+<p class="sd-card-text">e quindi</p>
+<div class="math notranslate nohighlight">
+\[\vec{F} = \frac{\vec{I}}{\Delta t} = - \frac{m \vec{v}_1}{\Delta t} \ .\]</div>
 </div>
 </details><!-- Esercizio ************************************************************* -->
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
@@ -877,11 +929,13 @@ Soluzione.<div class="sd-summary-down docutils">
 Problema 4.</div>
 <p class="sd-card-text">Viene chiesto di determinare:</p>
 <ol class="arabic simple">
-<li><p class="sd-card-text">la gittata massima di un corpo di massa <span class="math notranslate nohighlight">\(m\)</span> e velocità iniziale con valore assoluto <span class="math notranslate nohighlight">\(|\vec{v}_0|\)</span>, trascurando la resistenza aerodianmica. Per questa condizione viene chiesto di determinare angolo iniziale rispetto all’orizzontale, tempo di volo e altezza massima raggiunta.</p></li>
+<li><p class="sd-card-text">la gittata massima di un corpo di massa <span class="math notranslate nohighlight">\(m\)</span> e velocità iniziale con valore assoluto <span class="math notranslate nohighlight">\(|\vec{v}_0|\)</span>, trascurando la resistenza aerodinamica. Per questa condizione viene chiesto di determinare angolo iniziale rispetto all’orizzontale, tempo di volo e altezza massima raggiunta.</p></li>
 </ol>
-<p class="sd-card-text">Viene poi chiesto di ripetere lo stesso esercizio:
-2. non conoscendo la velocità iniziale, ma che il corpo viene inizialmente lanciato da un meccanismo in grado di applicare un impulso <span class="math notranslate nohighlight">\(I\)</span> noto ai corpi.
-3. senza trascurare la resistenza aerodinamica</p>
+<p class="sd-card-text">Viene poi chiesto di ripetere lo stesso esercizio:</p>
+<ol class="arabic simple" start="2">
+<li><p class="sd-card-text">non conoscendo la velocità iniziale, ma che il corpo viene inizialmente lanciato da un meccanismo in grado di applicare un impulso <span class="math notranslate nohighlight">\(I\)</span> noto ai corpi.</p></li>
+<li><p class="sd-card-text">senza trascurare la resistenza aerodinamica</p></li>
+</ol>
 </div>
 </div>
 </div>
@@ -902,6 +956,39 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>1. Gittata massima.</strong> Usando un sistema di coordinate cartesiane (origine, assi,…)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+ m \ddot{x} = 0 \\
+ m \ddot{y} = m g \\
+\end{cases}\end{split}\]</div>
+<p class="sd-card-text">con le condizioni iniziali <span class="math notranslate nohighlight">\(x(0) = 0\)</span>, <span class="math notranslate nohighlight">\(y(0) = 0\)</span>, <span class="math notranslate nohighlight">\(v_x(0) = v_0 \cos \theta\)</span>, <span class="math notranslate nohighlight">\(v_y(0) = v_0 \sin \theta\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+ x(t; \theta) = v_0 \cos \theta \, t \\
+ y(t; \theta) = - \frac{1}{2} g t^2 + v_0 \sin \theta \, t \\
+\end{cases}\end{split}\]</div>
+<p class="sd-card-text">La condizione di impatto (insieme alla condizione di lancio) è <span class="math notranslate nohighlight">\(y(t^*) = 0\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[0 = -\frac{1}{2} g t^{* 2} + v_0 \sin \theta \, t^* = t^* \left( -\frac{1}{2} g t^* + v_0 \sin \theta \right)\]</div>
+<p class="sd-card-text">ed è soddisfatta agli istanti di tempo <span class="math notranslate nohighlight">\(t_0 = 0\)</span> (lancio) e</p>
+<div class="math notranslate nohighlight">
+\[t_1(\theta) = \frac{2 v_0 \sin \theta}{g} \ .\]</div>
+<p class="sd-card-text">Riconoscendo il seno di <span class="math notranslate nohighlight">\(2 \theta\)</span>, <span class="math notranslate nohighlight">\(\sin 2 \theta = 2 \sin \theta \cos \theta \)</span> (<strong>todo</strong> <em>link alle proprietà delle funzioni trigonometriche</em>), la gittata diventa</p>
+<div class="math notranslate nohighlight">
+\[d(\theta) = x(t_1;\theta) = v_0 \cos \theta \, t_1(\theta) = 2 \frac{v_0^2}{g} \sin \theta \cos \theta = \frac{v^2_0}{g} \sin 2 \theta \ .\]</div>
+<p class="sd-card-text">Il massimo della gittata si trova per <span class="math notranslate nohighlight">\(\sin 2 \theta^* = 1\)</span>, e quindi per <span class="math notranslate nohighlight">\(\theta^* = \frac{\pi}{4} = 45^\circ\)</span>. Il tempo di volo è quindi</p>
+<div class="math notranslate nohighlight">
+\[t_1^* = \frac{2 v_0 \sin \theta^*}{g} = \sqrt{2} \frac{v_0}{g} \ ,\]</div>
+<p class="sd-card-text">e la quota massima raggiunta (raggiunta per <span class="math notranslate nohighlight">\(v_y(t_2) = y'(t_2) = 0\)</span>, <span class="math notranslate nohighlight">\(t_2 = \frac{v_0}{g} \sin \theta^*\)</span>) è</p>
+<div class="math notranslate nohighlight">
+\[y_{max}^* = y\left(t=t_2(\theta^*); \theta^* \right) = -\frac{1}{2} g \frac{v_0^2}{g^2} \sin^2 \theta^* + \frac{v_0^2}{g} \sin^2 \theta^* = 
+\frac{1}{2} \frac{v_0^2}{g} \sin^2 \theta^* = \frac{1}{4} \frac{v_0^2}{g} \ .\]</div>
+<p class="sd-card-text"><strong>2. Noto l’impulso.</strong> La relazione tra l’impulso e la differenza di quantità di moto (tra la condizione di quiete, <span class="math notranslate nohighlight">\(\vec{v}_{rest} = \vec{0}\)</span> e il moemnto immediatamente successivo al lancio) è</p>
+<div class="math notranslate nohighlight">
+\[\vec{I} = \Delta \vec{Q} = m \vec{v}_0 - m \underbrace{\vec{v}_{rest}}_{= \vec{0}} \ .\]</div>
+<p class="sd-card-text">Noto il legame tra <span class="math notranslate nohighlight">\(\vec{I}\)</span> e <span class="math notranslate nohighlight">\(\vec{v}_0\)</span>, si possono usare i risultati del punto 1. dell’esercizio. Si osservi che dato l’impulso, la velocità <span class="math notranslate nohighlight">\(\vec{v}_0\)</span> è inversamente proporzionale alla massa <span class="math notranslate nohighlight">\(m\)</span> del sistema che viene accelerato: è infatti più difficile accelerare un corpo pesante rispetto a uno più leggero.</p>
+<p class="sd-card-text"><strong>3. Considerando la resistenza aerodinamica.</strong></p>
 </div>
 </details><!-- Esercizio ************************************************************* -->
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
@@ -937,6 +1024,18 @@ Soluzione.<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  x(t) = v_{x0} t \\
+  y(t) = - \frac{g t^2}{2} + v_{y0} t \\
+\end{cases}\end{split}\]</div>
+<p class="sd-card-text">Il bersaglio in <span class="math notranslate nohighlight">\(\vec{r}_1 = x_1 \, \hat{x}_1 +  y_1 \, \hat{y}_1\)</span> viene colpito se la traiettoria passa per quel punto,</p>
+<div class="math notranslate nohighlight">
+\[t^* = \frac{x_1}{v_{x0}}\]</div>
+<div class="math notranslate nohighlight">
+\[y_1 = - \frac{1}{2} g t^{* 2} + v_{y0} t^* = -\frac{1}{2} \frac{g x_1^2}{v^2_{x0}} + v_{y0} \frac{x_1}{v_{x0}}\]</div>
+<p class="sd-card-text">e quindi - moltiplicando per <span class="math notranslate nohighlight">\(v_{x0}^2\)</span> - si trova la relazione tra le coordinate della velocità</p>
+<p class="sd-card-text">…<strong>todo</strong>… verificare se si può ottenere l’equazione di una conica…</p>
 </div>
 </details><!-- Esercizio ************************************************************* -->
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
@@ -1003,13 +1102,58 @@ Problema 7.</div>
 </div>
 </div>
 </div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
 Soluzione.<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  x(t) = v_{x0} t \\
+  y(t) = -\frac{1}{2} g t^2 + v_{y0} t
+\end{cases}\end{split}\]</div>
+<p class="sd-card-text">La traiettoria è</p>
+<div class="math notranslate nohighlight">
+\[y(x) = - \frac{g}{2 v^2_{x0}} x^2 + \frac{v_{y0}}{v_{x0}} x \]</div>
+<p class="sd-card-text">Chiamando le coordinate <span class="math notranslate nohighlight">\(x_1 = b\)</span>, <span class="math notranslate nohighlight">\(y_1 = d\)</span>, il passaggio per il punto si ottiene dalla condizione</p>
+<div class="math notranslate nohighlight">
+\[y_1 = - \frac{g}{2 v^2_{x0}} x_1^2 + \frac{v_{y0}}{v_{x0}} x_1 \ ,\]</div>
+<p class="sd-card-text">con la quale è possibile esprimere la componente <span class="math notranslate nohighlight">\(v_{y0}\)</span> in funzione della componente <span class="math notranslate nohighlight">\(v_{x0}\)</span> (che rimane così l’unico parametro libero del sistema) e degli altri parametri del sistema</p>
+<div class="math notranslate nohighlight">
+\[v_{y0}(v_{x0}; x_1, y_1) = \frac{y_1}{x_1} \, v_{x0} + \frac{g}{2 v_{x0}} x_1 \ .\]</div>
+<p class="sd-card-text">La condizione che la palla superi la barriera (<span class="math notranslate nohighlight">\(x_2 = a\)</span>, <span class="math notranslate nohighlight">\(y_2 = c\)</span>) può essere riscritta come</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  y_2 &lt; y(x_2)
+  &amp; = - \frac{g}{2 v^2_{x0}} x_2^2 + \frac{v_{y0}}{v_{x0}} x_2 = \\
+  &amp; = - \frac{g}{2 v^2_{x0}} x_2^2 + x_2  \left[ \frac{y_1}{x_1} + \frac{g}{2 v_{x0}^2} x_1 \right] 
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">e quindi</p>
+<div class="math notranslate nohighlight">
+\[\frac{g}{2 v^2_{x0}} x_2 (x_1 - x_2) \ge y_2 - \frac{x_2}{x_1} y_1 \ .\]</div>
+<p class="sd-card-text">In questa disequazione, il termine <span class="math notranslate nohighlight">\(x_1 - x_2\)</span> è positivo; il termine <span class="math notranslate nohighlight">\(y_2 - \frac{x_2}{x_1} y_1\)</span> può essere positivo o negativo: se negativo, la disequazione è sempre soddisfatta (è negativo nel caso in cui la traiettoria ottenibile con una velocità infinita, al limite, è possibile, cioè quando <span class="math notranslate nohighlight">\(\frac{y_2}{x_2} &lt; \frac{y_1}{x_1}\)</span>), se positivo, si può scrivere</p>
+<div class="math notranslate nohighlight">
+\[\frac{g}{2}  \frac{x_2(x_1 - x_2)}{y_2 - \frac{x_2}{x_1} y_1} \ge v^2_{x0} \ ,\]</div>
+<p class="sd-card-text">che implica che esiste un valore massimo per <span class="math notranslate nohighlight">\(v_{x0}\)</span>, che quindi soddisfare la condizione</p>
+<div class="math notranslate nohighlight">
+\[v_{x0} \le \overline{v}_{x0} = \sqrt{\frac{g}{2} \frac{x_1 - x_2}{ \frac{y_2}{x_2} - \frac{y_1}{x_1}}} \ .\]</div>
+<p class="sd-card-text">Il tempo di volo è</p>
+<div class="math notranslate nohighlight">
+\[t_1 = \frac{x_1}{v_{x0}} \ ,\]</div>
+<p class="sd-card-text">ed è quindi minimo quando <span class="math notranslate nohighlight">\(v_{x0}\)</span> è massimo, e quindi quando <span class="math notranslate nohighlight">\(v_{x0} = \overline{v}_{x0}\)</span>. In questo caso, il rapporto tra la componente verticale e orizzontale della velocità iniziale è</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \frac{v_{y0}(\overline{v}_{x0})}{\overline{v}_{x0}}
+  &amp; = \frac{y_1}{x_1} + \frac{g x_1}{2 \overline{v}^2_{x0}} = \\
+  &amp; = \frac{y_1}{x_1} +  x_1 \frac{g}{2} \frac{2}{g} \frac{\frac{y_2}{x_2} - \frac{y_1}{x_1}}{x_1 - x_2} = \\
+  &amp; = \frac{y_1}{x_1} +  x_1 \frac{\frac{y_2}{x_2} - \frac{y_1}{x_1}}{x_1 - x_2} = \\
+  &amp; = -\frac{x_2}{x_1 - x_2} \frac{y_1}{x_1} +  \frac{x_1}{x_1-x_2} \frac{y_2}{x_2}  \ .
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text"><strong>Esempio numerico.</strong> Valutiamo due scelte di tiro per una punizione calciata dai <span class="math notranslate nohighlight">\(x_1 = 20 \, m\)</span> con barriera distante <span class="math notranslate nohighlight">\(x_2 = 9.15 \, m\)</span> che salta fino a <span class="math notranslate nohighlight">\(y_2 = 2.5 \, m\)</span>. Si vuole valutare le scelte: A) tiro all’incrocio <span class="math notranslate nohighlight">\(y_{1,A} = 2.2 \, m\)</span>; B) tiro che si abbassa dopo la barriera fino a <span class="math notranslate nohighlight">\(y_{1,B} = 0.2 \, m\)</span>.</p>
+<p class="sd-card-text">A. <span class="math notranslate nohighlight">\(\overline{v}_{x0} = 18.05 \, m/s \)</span>, <span class="math notranslate nohighlight">\(\overline{v}_{y0}/\overline{v}_{x0} = 0.411\)</span>, <span class="math notranslate nohighlight">\(v_{y0} = 7.42 \, m/s \)</span>, <span class="math notranslate nohighlight">\(|\vec{v}_{0}| = 19.51 \, m/s = 70.2 \, km/h\)</span>, <span class="math notranslate nohighlight">\(\theta = 22.3^\circ\)</span></p>
+<p class="sd-card-text">B. <span class="math notranslate nohighlight">\(\overline{v}_{x0} = 14.21 \, m/s \)</span>, <span class="math notranslate nohighlight">\(\overline{v}_{y0}/\overline{v}_{x0} = 0.495\)</span>, <span class="math notranslate nohighlight">\(v_{y0} = 7.04 \, m/s \)</span>, <span class="math notranslate nohighlight">\(|\vec{v}_{0}| = 15.86 \, m/s = 57.1 \, km/h\)</span>, <span class="math notranslate nohighlight">\(\theta = 26.3^\circ\)</span></p>
 </div>
 </details><!-- Esercizio ************************************************************* -->
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
