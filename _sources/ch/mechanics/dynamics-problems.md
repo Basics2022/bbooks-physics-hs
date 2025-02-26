@@ -75,7 +75,7 @@ $$\frac{1}{2} m \underbrace{v_y^2}_{=0} + m g h_0 = \frac{1}{2} m v_{y,1}^2 + m 
 
 e quindi 
 
-$$v_{y,1} = \sqrt{2 g h} \ .$$
+$$|v_{y,1}| = \sqrt{2 g h} \ .$$
 
 **2. Caloclo del tempo di volo.** Per il calcolo del tempo di volo è necessario risolvere le equazioni del moto. Il bilancio della quantità di moto lungo $y$,
 
@@ -1232,7 +1232,7 @@ $$\frac{1}{2} m \underbrace{v_y^2}_{=0} + m g h_0 = \frac{1}{2} m v_{y,1}^2 + m 
 
 e quindi 
 
-$$v_{y,1} = \sqrt{2 g h} \ .$$
+$$|v_{y,1}| = \sqrt{2 g h} \ .$$
 
 **2. Caloclo del tempo di volo.** Per il calcolo del tempo di volo è necessario risolvere le equazioni del moto. Il bilancio della quantità di moto lungo $y$,
 
