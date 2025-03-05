@@ -12406,7 +12406,7 @@ In molti casi, i fenomeni ondulatori sono meccanismi di trasmissione di un’inf
 \subsection{Effetto Doppler}
 \label{\detokenize{ch/waves/optics-phenomena:effetto-doppler}}
 \sphinxAtStartPar
-Effetto dovuto al moto relativo tra sorgente e ricevente.
+L’effetto Doppler è un effetto dovuto al moto relativo tra sorgente e ricevente, che è origine della differenza tra la frequenza del segnale emesso dalla sorgente del segnale e la frequenza del segnale misurato dal ricevente.
 \label{ch/waves/optics-phenomena:example-0}
 \begin{sphinxadmonition}{note}{Example 22.2.1 (Red\sphinxhyphen{}shift)}
 
@@ -12420,29 +12420,73 @@ Effetto dovuto al moto relativo tra sorgente e ricevente.
 \subsection{Rifrazione}
 \label{\detokenize{ch/waves/optics-phenomena:rifrazione}}
 
-\subsubsection{Rifrazione discreta \sphinxhyphen{} Legge di Snell}
-\label{\detokenize{ch/waves/optics-phenomena:rifrazione-discreta-legge-di-snell}}\label{ch/waves/optics-phenomena:example-1}
+\subsubsection{Rifrazione discreta \sphinxhyphen{} Legge di Snell e coefficienti di Fresnel}
+\label{\detokenize{ch/waves/optics-phenomena:rifrazione-discreta-legge-di-snell-e-coefficienti-di-fresnel}}\label{\detokenize{ch/waves/optics-phenomena:physics-hs-waves-optics-geometric-phenomena-snell}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Legge di Snell per la direzione di trasmissione
+\begin{equation*}
+\begin{split} \dfrac{\sin \theta_2}{\sin \theta_1} = \dfrac{n_2}{n_1}\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+Coefficienti di Fresnel per la polarizzazione della luce riflessa e trasmessa
+
+\end{itemize}
+\label{ch/waves/optics-phenomena:example-1}
 \begin{sphinxadmonition}{note}{Example 22.2.2 (Arcobaleno)}
+
+
+\end{sphinxadmonition}
+\label{ch/waves/optics-phenomena:example-2}
+\begin{sphinxadmonition}{note}{Example 22.2.3 (Riflessione totale)}
+
+
+\end{sphinxadmonition}
+\label{ch/waves/optics-phenomena:example-3}
+\begin{sphinxadmonition}{note}{Example 22.2.4 (Polarizzazione della luce riflessa)}
 
 
 \end{sphinxadmonition}
 
 
 \subsubsection{Rifrazione continua \sphinxhyphen{} Principio di Fermat}
-\label{\detokenize{ch/waves/optics-phenomena:rifrazione-continua-principio-di-fermat}}\label{ch/waves/optics-phenomena:example-2}
-\begin{sphinxadmonition}{note}{Example 22.2.3 (Miraggi)}
+\label{\detokenize{ch/waves/optics-phenomena:rifrazione-continua-principio-di-fermat}}\label{ch/waves/optics-phenomena:example-4}
+\begin{sphinxadmonition}{note}{Example 22.2.5 (Miraggi)}
 
 
 \end{sphinxadmonition}
-\label{ch/waves/optics-phenomena:example-3}
-\begin{sphinxadmonition}{note}{Example 22.2.4 (Schileren)}
+\label{ch/waves/optics-phenomena:example-5}
+\begin{sphinxadmonition}{note}{Example 22.2.6 (Schlieren)}
 
 
 \end{sphinxadmonition}
-\label{ch/waves/optics-phenomena:example-4}
-\begin{sphinxadmonition}{note}{Example 22.2.5 (Osservazioni astronomiche attraverso l’atmosfera)}
+\label{ch/waves/optics-phenomena:example-6}
+\begin{sphinxadmonition}{note}{Example 22.2.7 (Osservazioni astronomiche attraverso l’atmosfera)}
 
 
+\end{sphinxadmonition}
+
+
+\subsection{Dispersione}
+\label{\detokenize{ch/waves/optics-phenomena:dispersione}}
+\sphinxAtStartPar
+Alcuni materiali sono dispersivi, cioè la velocità di propagazione nel materiale di una perturbazione dipende dalla sua frequenza.
+\label{ch/waves/optics-phenomena:example-7}
+\begin{sphinxadmonition}{note}{Example 22.2.8 (Prismi, tra Newton e Pink Floyd)}
+
+
+\end{sphinxadmonition}
+\label{ch/waves/optics-phenomena:example-8}
+\begin{sphinxadmonition}{note}{Example 22.2.9 (Arcobaleno)}
+
+
+
+\sphinxAtStartPar
+\sphinxstylestrong{Arcobaleno principale.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Arcobaleno secondario.}
 \end{sphinxadmonition}
 
 
@@ -12536,6 +12580,57 @@ Definizione della \sphinxstylestrong{distanza focale}
 
 \end{itemize}
 
+\sphinxAtStartPar
+Raggi paralleli incidenti su una lente sferica covessa sottile convergono in un unico punto, chiamato \sphinxstylestrong{fuoco della lente}. L’angolo
+\begin{equation*}
+\begin{split}\phi_1 = \frac{h}{R_1} \qquad , \qquad \phi_2i = \frac{h}{R_2} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Nel limite di piccoli angoli, gli angoli formati dai raggi luminosi con l’asse della lente sono
+\begin{equation*}
+\begin{split}\xi_1 = \frac{h_o - h}{d_0} \qquad , \qquad \xi_2 = \frac{h_i + h}{d_i} \ . \end{split}
+\end{equation*}
+\sphinxAtStartPar
+Siano \(\theta_1\), \(\theta_{L1}\) gli angoli rispetto alla normale della superficie del raggio incidente entrante nella lente e trasmesso nella lente, \(\theta_{L2}\), \(\theta_2\) gli angoli rispetto alla normale locale rel raggio uscente dalla lente.
+
+\sphinxAtStartPar
+L’applicazione della {\hyperref[\detokenize{ch/waves/optics-phenomena:physics-hs-waves-optics-geometric-phenomena-snell}]{\sphinxcrossref{\DUrole{std,std-ref}{legge di Snell}}}} fornisce le relazioni
+\begin{equation*}
+\begin{split}\begin{aligned}
+    \frac{n_L}{n_1} & = \frac{\sin \theta_1}{\sin \theta_{L1}} \qquad , \qquad
+    \frac{n_L}{n_1} & = \frac{\sin \theta_2}{\sin \theta_{L2}} 
+  \end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+mentre la geometria del problema
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \theta_1    & = \phi_1 - \xi_1 \\
+  \xi_2       & = \theta_2 - \phi_2 \\
+  \theta_{2L} & = \phi_2 + \xi_{1L} = \phi_2 + \phi_1 - \theta_{1L} 
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Quindi
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \xi_2
+  & = \theta_2 - \phi_2 = \frac{n_L}{n_1} \theta_{L2} - \phi_2 = \\
+  & = \frac{n_L}{n_1} \left( \phi_2 + \phi_1 - \frac{n_1}{n_L} \theta_1 \right) - \phi_2 = \\
+  & = \frac{n_L}{n_1} \left( \phi_2 + \phi_1 - \frac{n_1}{n_L} \left( \phi_1 - \xi_1 \right) \right) - \phi_2 = \\
+  & = \left( \frac{n_L}{n_1} - 1 \right) \left( \phi_2 + \phi_1 \right) + \xi_1 \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La lunghezza focale si ottiene per raggi incidenti paralleli \(\xi_1 = 0\), \(h_0 = h\). Il fuoco della lente si trova sull’asse, e quindi \(h^*_i = 0\). La distanza del fuoco dalla lente è definita \sphinxstylestrong{lunghezza focale}, \(d^*_i = f\). Utilizzando l’approssimazione per piccoli angoli, \(\xi_2 = \frac{h}{f}\), e quindi
+\begin{equation*}
+\begin{split}\frac{h}{f} = \left( \frac{n_L}{n_1} - 1 \right) \left( \frac{h}{R_2} + \frac{h}{R_1} \right) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+ed è quindi valida per ogni valore di \(h\) e quindi per ogni raggio parallelo l’equazione delle lenti sottili
+\begin{equation*}
+\begin{split}\frac{1}{f} = \left( \frac{n_L}{n_1} - 1 \right) \left( \frac{1}{R_1} + \frac{1}{R_1} \right) \ .\end{split}
+\end{equation*}
 
 \subsubsection{Formazione dell’immagine}
 \label{\detokenize{ch/waves/optics-lens:formazione-dell-immagine}}\begin{itemize}
@@ -12554,7 +12649,38 @@ Mancata messa a fuoco
 \end{itemize}
 
 \end{itemize}
-\label{ch/waves/optics-lens:example-0}
+
+\sphinxAtStartPar
+Esiste un piano, il piano di formazione dell’immagine, dove tutti i raggi provenienti da ogni punto di un piano, il piano dell’oggetto, convergono a un punto. In questo piano, l’immagine è a fuoco.
+\begin{equation*}
+\begin{split}\frac{h_i + h}{d_i} = \left(\frac{n_L}{n_1} - 1 \right)\left(\frac{h}{R_1}+\frac{h}{R_2}\right) + \frac{h_o - h}{d_o} \ ,\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\frac{h_i}{d_i} = \frac{h}{f} + \frac{h_o}{d_o} - h \left( \frac{1}{d_o} + \frac{1}{d_i} \right) = \frac{h_o}{d_o} + h \left( \frac{1}{f} - \frac{1}{d_o} - \frac{1}{d_i} \right)\ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e scrivendo \(h = h_o - d_o \, \xi_1\),
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \frac{h_i}{d_i}
+  & = h_o \left( \frac{1}{d_o} + \frac{1}{f} - \frac{1}{d_o} - \frac{1}{d_i} \right) - \xi_1 d_o \left( \frac{1}{f} - \frac{1}{d_o} - \frac{1}{d_i} \right) \\
+  & = h_o \left( \frac{1}{f} - \frac{1}{d_i} \right) - \xi_1 d_o \left( \frac{1}{f} - \frac{1}{d_o} - \frac{1}{d_i} \right) \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Le coordinate delle immagini del punto non dipende dall’angolo \(\xi_1\) e quindi dal raggio luminoso che origina dallo stesso punto e passa per la lente se la seconda parentesi è nulla. Questo definisce la relazione tra la lunghezza focale, la distanza dall’oggetto e la distanza del piano di formazione dell’immagine dalla lente per avere la \sphinxstylestrong{messa a fuoco}
+\begin{equation*}
+\begin{split}\frac{1}{f} = \frac{1}{d_o} + \frac{1}{d_i} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Nelle condizioni di messa a fuoco, si può quindi scrivere
+\begin{equation*}
+\begin{split}h_i = h_o \left( \frac{d_i}{f} - 1 \right) = d_i \frac{h_o}{d_o} \ ,R\end{split}
+\end{equation*}
+\sphinxAtStartPar
+o in termini della magnificazione
+\begin{equation*}
+\begin{split}\frac{h_i}{h_o} = \frac{d_i}{d_o} \ .\end{split}
+\end{equation*}\label{ch/waves/optics-lens:example-0}
 \begin{sphinxadmonition}{note}{Example 22.3.1 (Lente di ingrandimento)}
 
 
@@ -12576,8 +12702,8 @@ Per contrasto
 \end{sphinxadmonition}
 
 
-\subsection{Tipi di lente semplice}
-\label{\detokenize{ch/waves/optics-lens:tipi-di-lente-semplice}}
+\subsection{Lenti sempici}
+\label{\detokenize{ch/waves/optics-lens:lenti-sempici}}
 
 \subsection{Lenti}
 \label{\detokenize{ch/waves/optics-lens:lenti}}\begin{itemize}
@@ -17932,10 +18058,10 @@ Lumière
 \item\relax\sphinxstyleindexentry{electric\sphinxhyphen{}dipole\sphinxhyphen{}ext\sphinxhyphen{}e\sphinxhyphen{}field}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{electric-dipole-ext-e-field}}
 \indexspace
 \bigletter{example\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-0}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}lens}\sphinxstyleindexpageref{ch/waves/optics-lens:\detokenize{example-0}}
 \indexspace
 \bigletter{example\sphinxhyphen{}1}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-1}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}lens}\sphinxstyleindexpageref{ch/waves/optics-lens:\detokenize{example-1}}
 \indexspace
 \bigletter{example\sphinxhyphen{}10}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}10}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-10}}
@@ -17968,22 +18094,22 @@ Lumière
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-2}}
 \indexspace
 \bigletter{example\sphinxhyphen{}3}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/waves/phenomena}\sphinxstyleindexpageref{ch/waves/phenomena:\detokenize{example-3}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-3}}
 \indexspace
 \bigletter{example\sphinxhyphen{}4}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}4}\sphinxstyleindexextra{ch/waves/phenomena}\sphinxstyleindexpageref{ch/waves/phenomena:\detokenize{example-4}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}4}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-4}}
 \indexspace
 \bigletter{example\sphinxhyphen{}5}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/waves/phenomena}\sphinxstyleindexpageref{ch/waves/phenomena:\detokenize{example-5}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-5}}
 \indexspace
 \bigletter{example\sphinxhyphen{}6}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}6}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-6}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}6}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-6}}
 \indexspace
 \bigletter{example\sphinxhyphen{}7}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}7}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-7}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}7}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-7}}
 \indexspace
 \bigletter{example\sphinxhyphen{}8}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}8}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-8}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}8}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-8}}
 \indexspace
 \bigletter{example\sphinxhyphen{}9}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}9}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-9}}
