@@ -17,9 +17,13 @@ L'effetto Doppler è un effetto dovuto al moto relativo tra sorgente e ricevente
 
 ## Rifrazione
 
+(physics-hs:waves:optics:geometric:phenomena:snell)=
 ### Rifrazione discreta - Legge di Snell e coefficienti di Fresnel
 
 - Legge di Snell per la direzione di trasmissione
+
+   $$ \dfrac{\sin \theta_2}{\sin \theta_1} = \dfrac{n_2}{n_1}$$
+
 - Coefficienti di Fresnel per la polarizzazione della luce riflessa e trasmessa
 
 ```{prf:example} Arcobaleno

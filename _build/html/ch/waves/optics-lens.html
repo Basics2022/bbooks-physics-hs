@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/waves/optics-lens';</script>
     <link rel="shortcut icon" href="../../_static/favicon-sugar.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
@@ -582,7 +584,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formazione-dell-immagine">22.3.1.2. Formazione dell’immagine</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipi-di-lente-semplice">22.3.2. Tipi di lente semplice</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lenti-sempici">22.3.2. Lenti sempici</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lenti">22.3.3. Lenti</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lenti-spesse">22.3.4. Lenti spesse</a></li>
 </ul>
@@ -631,6 +633,41 @@ document.write(`
 <li><p>Equazione delle lenti</p></li>
 <li><p>Definizione della <strong>distanza focale</strong></p></li>
 </ul>
+<p>Raggi paralleli incidenti su una lente sferica covessa sottile convergono in un unico punto, chiamato <strong>fuoco della lente</strong>. L’angolo</p>
+<div class="math notranslate nohighlight">
+\[\phi_1 = \frac{h}{R_1} \qquad , \qquad \phi_2i = \frac{h}{R_2} \ .\]</div>
+<p>Nel limite di piccoli angoli, gli angoli formati dai raggi luminosi con l’asse della lente sono</p>
+<div class="math notranslate nohighlight">
+\[\xi_1 = \frac{h_o - h}{d_0} \qquad , \qquad \xi_2 = \frac{h_i + h}{d_i} \ . \]</div>
+<p>Siano <span class="math notranslate nohighlight">\(\theta_1\)</span>, <span class="math notranslate nohighlight">\(\theta_{L1}\)</span> gli angoli rispetto alla normale della superficie del raggio incidente entrante nella lente e trasmesso nella lente, <span class="math notranslate nohighlight">\(\theta_{L2}\)</span>, <span class="math notranslate nohighlight">\(\theta_2\)</span> gli angoli rispetto alla normale locale rel raggio uscente dalla lente.</p>
+<p>L’applicazione della <a class="reference internal" href="optics-phenomena.html#physics-hs-waves-optics-geometric-phenomena-snell"><span class="std std-ref">legge di Snell</span></a> fornisce le relazioni</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+    \frac{n_L}{n_1} &amp; = \frac{\sin \theta_1}{\sin \theta_{L1}} \qquad , \qquad
+    \frac{n_L}{n_1} &amp; = \frac{\sin \theta_2}{\sin \theta_{L2}} 
+  \end{aligned}\]</div>
+<p>mentre la geometria del problema</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \theta_1    &amp; = \phi_1 - \xi_1 \\
+  \xi_2       &amp; = \theta_2 - \phi_2 \\
+  \theta_{2L} &amp; = \phi_2 + \xi_{1L} = \phi_2 + \phi_1 - \theta_{1L} 
+\end{aligned}\end{split}\]</div>
+<p>Quindi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \xi_2
+  &amp; = \theta_2 - \phi_2 = \frac{n_L}{n_1} \theta_{L2} - \phi_2 = \\
+  &amp; = \frac{n_L}{n_1} \left( \phi_2 + \phi_1 - \frac{n_1}{n_L} \theta_1 \right) - \phi_2 = \\
+  &amp; = \frac{n_L}{n_1} \left( \phi_2 + \phi_1 - \frac{n_1}{n_L} \left( \phi_1 - \xi_1 \right) \right) - \phi_2 = \\
+  &amp; = \left( \frac{n_L}{n_1} - 1 \right) \left( \phi_2 + \phi_1 \right) + \xi_1 \\
+\end{aligned}\end{split}\]</div>
+<p>La lunghezza focale si ottiene per raggi incidenti paralleli <span class="math notranslate nohighlight">\(\xi_1 = 0\)</span>, <span class="math notranslate nohighlight">\(h_0 = h\)</span>. Il fuoco della lente si trova sull’asse, e quindi <span class="math notranslate nohighlight">\(h^*_i = 0\)</span>. La distanza del fuoco dalla lente è definita <strong>lunghezza focale</strong>, <span class="math notranslate nohighlight">\(d^*_i = f\)</span>. Utilizzando l’approssimazione per piccoli angoli, <span class="math notranslate nohighlight">\(\xi_2 = \frac{h}{f}\)</span>, e quindi</p>
+<div class="math notranslate nohighlight">
+\[\frac{h}{f} = \left( \frac{n_L}{n_1} - 1 \right) \left( \frac{h}{R_2} + \frac{h}{R_1} \right) \ ,\]</div>
+<p>ed è quindi valida per ogni valore di <span class="math notranslate nohighlight">\(h\)</span> e quindi per ogni raggio parallelo l’equazione delle lenti sottili</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{f} = \left( \frac{n_L}{n_1} - 1 \right) \left( \frac{1}{R_1} + \frac{1}{R_1} \right) \ .\]</div>
 </div>
 <div class="section" id="formazione-dell-immagine">
 <h3><span class="section-number">22.3.1.2. </span>Formazione dell’immagine<a class="headerlink" href="#formazione-dell-immagine" title="Permalink to this heading">#</a></h3>
@@ -642,6 +679,27 @@ document.write(`
 </ul>
 </li>
 </ul>
+<p>Esiste un piano, il piano di formazione dell’immagine, dove tutti i raggi provenienti da ogni punto di un piano, il piano dell’oggetto, convergono a un punto. In questo piano, l’immagine è a fuoco.</p>
+<div class="math notranslate nohighlight">
+\[\frac{h_i + h}{d_i} = \left(\frac{n_L}{n_1} - 1 \right)\left(\frac{h}{R_1}+\frac{h}{R_2}\right) + \frac{h_o - h}{d_o} \ ,\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{h_i}{d_i} = \frac{h}{f} + \frac{h_o}{d_o} - h \left( \frac{1}{d_o} + \frac{1}{d_i} \right) = \frac{h_o}{d_o} + h \left( \frac{1}{f} - \frac{1}{d_o} - \frac{1}{d_i} \right)\ .\]</div>
+<p>e scrivendo <span class="math notranslate nohighlight">\(h = h_o - d_o \, \xi_1\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \frac{h_i}{d_i}
+  &amp; = h_o \left( \frac{1}{d_o} + \frac{1}{f} - \frac{1}{d_o} - \frac{1}{d_i} \right) - \xi_1 d_o \left( \frac{1}{f} - \frac{1}{d_o} - \frac{1}{d_i} \right) \\
+  &amp; = h_o \left( \frac{1}{f} - \frac{1}{d_i} \right) - \xi_1 d_o \left( \frac{1}{f} - \frac{1}{d_o} - \frac{1}{d_i} \right) \\
+\end{aligned}\end{split}\]</div>
+<p>Le coordinate delle immagini del punto non dipende dall’angolo <span class="math notranslate nohighlight">\(\xi_1\)</span> e quindi dal raggio luminoso che origina dallo stesso punto e passa per la lente se la seconda parentesi è nulla. Questo definisce la relazione tra la lunghezza focale, la distanza dall’oggetto e la distanza del piano di formazione dell’immagine dalla lente per avere la <strong>messa a fuoco</strong></p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{f} = \frac{1}{d_o} + \frac{1}{d_i} \ .\]</div>
+<p>Nelle condizioni di messa a fuoco, si può quindi scrivere</p>
+<div class="math notranslate nohighlight">
+\[h_i = h_o \left( \frac{d_i}{f} - 1 \right) = d_i \frac{h_o}{d_o} \ ,R\]</div>
+<p>o in termini della magnificazione</p>
+<div class="math notranslate nohighlight">
+\[\frac{h_i}{h_o} = \frac{d_i}{d_o} \ .\]</div>
 <div class="proof example admonition" id="example-0">
 <p class="admonition-title"><span class="caption-number">Example 22.10 </span> (Lente di ingrandimento)</p>
 <div class="example-content section" id="proof-content">
@@ -656,8 +714,8 @@ document.write(`
 </div>
 </div></div>
 </div>
-<div class="section" id="tipi-di-lente-semplice">
-<h2><span class="section-number">22.3.2. </span>Tipi di lente semplice<a class="headerlink" href="#tipi-di-lente-semplice" title="Permalink to this heading">#</a></h2>
+<div class="section" id="lenti-sempici">
+<h2><span class="section-number">22.3.2. </span>Lenti sempici<a class="headerlink" href="#lenti-sempici" title="Permalink to this heading">#</a></h2>
 </div>
 <div class="section" id="lenti">
 <h2><span class="section-number">22.3.3. </span>Lenti<a class="headerlink" href="#lenti" title="Permalink to this heading">#</a></h2>
@@ -739,7 +797,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formazione-dell-immagine">22.3.1.2. Formazione dell’immagine</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipi-di-lente-semplice">22.3.2. Tipi di lente semplice</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lenti-sempici">22.3.2. Lenti sempici</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lenti">22.3.3. Lenti</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lenti-spesse">22.3.4. Lenti spesse</a></li>
 </ul>
