@@ -1,14 +1,14 @@
 (physics-hs:continuum)=
 # Cenni di meccanica del continuo
 
-
+In questa sezione vengono presentati alcuni risultati sui solidi e i fluidi modellati come mezzi continui...
 
 ````{only} html
 **Contenuti.**
 
-```{dropdown} Solidi
+```{dropdown} [Solidi](continuum:solids)
 ```
-```{dropdown} Fluidi
+```{dropdown} [Fluidi](continuum:fluids)
 ```
 
 ````
