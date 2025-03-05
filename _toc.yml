@@ -144,10 +144,17 @@ parts:
   - file: ch/thermodynamics/heat-transmission
 #   sections:
 #   - file: ch/thermodynamics/heat-transmission-problems
-- caption: Fenomeni ondulatori
+- caption: Fenomeni ondulatori e ottica
   numbered: True
   chapters:
   - file: ch/waves/intro
+    sections:
+    - file: ch/waves/waves-in-physics
+    - file: ch/waves/phenomena
+  - file: ch/waves/optics
+    sections:
+    - file: ch/waves/optics-phenomena.md
+    - file: ch/waves/optics-lens.md
 - caption: Elettromagnetismo
   numbered: True
   chapters:
