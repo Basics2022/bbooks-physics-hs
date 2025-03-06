@@ -22,10 +22,8 @@
 (physics-hs:waves:optics:geometric:lenses)=
 ## Lenti sottili
 
+(physics-hs:waves:optics:geometric:lenses:equation)=
 ### Equazione delle lenti sottili sferiche
-
-- Equazione delle lenti
-- Definizione della **distanza focale**
 
 Raggi paralleli incidenti su una lente sferica covessa sottile convergono in un unico punto, chiamato **fuoco della lente**. L'angolo
 
@@ -68,15 +66,30 @@ $$\frac{h}{f} = \left( \frac{n_L}{n_1} - 1 \right) \left( \frac{h}{R_2} + \frac{
 
 ed è quindi valida per ogni valore di $h$ e quindi per ogni raggio parallelo l'equazione delle lenti sottili
 
-$$\frac{1}{f} = \left( \frac{n_L}{n_1} - 1 \right) \left( \frac{1}{R_1} + \frac{1}{R_1} \right) \ .$$
+$$\frac{1}{f} = \left( \frac{n_L}{n_1} - 1 \right) \left( \frac{1}{R_1} + \frac{1}{R_2} \right) \ .$$
 
 
-
+(physics-hs:waves:optics:geometric:lenses:image-focus)=
 ### Formazione dell'immagine
 
+Dato un **piano dell'oggetto** $\pi_o$ a distanza $d_o$ dalla lente, i raggi luminosi provenienti da ogni punto $P_o$ del piano $\pi_o$ passanti per la lente sottile convergono in un unico punto $P_i$ di un piano $\pi_i$, detto **piano dell'immagine**, a distanza $d_i$ dalla lente con
+
+$$\frac{1}{f} = \frac{1}{d_o} + \frac{1}{d_i} \ .$$
+
+Questa condizione è la condizione di **messa a fuoco**, e comporta un rapporto di magnificazione dell'immagine
+
+$$-\frac{h_i}{h_o} = \frac{d_i}{d_o} \ ,$$
+
+dove $h_o$, $h_i$ sono le distanze dall'asse della lente nel piano dell'oggetto e dell'immagine.
+
+
+
+
+<!--
 - Piano dell'immagine e **messa a fuoco**.
   - Dimostrazione che tutti i raggi luminosi provenienti da un punto convergono in un unico punto nel piano di formazione dell'immagine - messa a fuoco.
   - Mancata messa a fuoco
+-->
 
 Esiste un piano, il piano di formazione dell'immagine, dove tutti i raggi provenienti da ogni punto di un piano, il piano dell'oggetto, convergono a un punto. In questo piano, l'immagine è a fuoco.
 
