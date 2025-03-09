@@ -7,6 +7,19 @@
 (physics-hs:modern:quantum:experience:black-body)=
 ### Radiazione di corpo nero - Planck
 
+(physics-hs:modern:quantum:experience:black-body:planck)=
+#### Legge di Planck
+
+
+
+
+(physics-hs:modern:quantum:experience:black-body:wien)=
+#### Legge di Wien
+
+(physics-hs:modern:quantum:experience:black-body:stefan-boltzmann)=
+#### Legge di Stefan-Boltzmann
+
+
 (physics-hs:modern:quantum:experience:pe-effect)=
 ### Effetto fotoelettrico - Einstein
 

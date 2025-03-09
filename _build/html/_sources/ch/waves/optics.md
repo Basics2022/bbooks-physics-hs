@@ -1,8 +1,29 @@
 (physics-hs:waves:optics)=
 # Ottica
 
-**todo**
-- Equazione delle onde per il campo EM
+L'ottica si occupa di descrivere il comportamento della luce e le sue interazioni con la materia.
+
+- Il dibattito sulla natura della luce è stato discusso per secoli: onda o particella?
+- A fine XIX secolo, la formulazione delle equazioni di Maxwell e gli esperimenti di Hertz sembravano dare la risposta definitiva al problema: la luce è un fenomeno elettromagnetico che si propaga come un'onda elettromagnetica:
+- Le esperienze sulla radiazione di corpo nero e sull'effetto otoelettrico - prima ancora che esistesse la meccanica quantistica - mostravano il carattere discreto della luce.
+
+Si possono distinguere tre approcci/regimi dell'ottica:
+- ottica geometrica, **todo** **link** *qui* 
+- ottica ondulatoria, che studia la propagazione dei fenomeni elettromagnetici come onde governate dalle equazioni di Maxwell dell'elettromagnetismo classico. Comportamento tipico dei fenomeni ondulatori: interferenza,..., diffrazione,... **todo** **link** *capitolo su elettromagnetismo*
+- ottica quantistica, riconosce la natura discreta della radiazione elettromagnetica - i fotoni - e studia i fenomeni elettromagnetici usando gli strumenti della meccanica quantistica, in seguito alla quantizzazione del campo elettromagnetico **todo** **link** *fisica moderna*
+
+```{dropdown} Luce
+Storia su dualismo onda-particella. Esperienze fondamentali...: Newton-Huygens, Taylor, Fresnel, Fraunhofer e i reticoli di diffrazione,...
+
+```
+
+```{dropdown} Velocità della luce
+Storia delle misure della velocità della luce: 
+- attività sperimentali: Romer (1676), Fizeau (1848), Michelson (1877; 1887 Michelson-Morley: nessuna evidenza dell'*etere luminifero*)
+- modelli: equazioni di Maxwell (1873)
+
+Storia della misura della luce[^c-meas-history]
+```
 
 ```{prf:definition} Indice di rifrazione
 :label: refraction-index
@@ -13,33 +34,8 @@ $$n_i = \frac{c_0}{c_i} \ .$$
 
 ```
 
-(physics-hs:waves:optics:geometric)=
-## Ottica geometrica
+---
 
-**Approssimazione con raggi di luce.** I raggi luminosi sono qualitativamente delle linee geometriche che indicano la propagazione della luce. Essi possono essere definiti come delle curve perpendicolari in ogni punto ai fronti d'onda del campo elettromagnetico.
-
-**todo** 
-- *discutere approssimazione geometrica, con raggi luminosi; quando vale?*
-- *aggiungere immagini per questa approssimazione: bridging EM field and geometrical optics, some examples: free space homogeneous medium; discontinuous medium; continuously varying in-homogeneous medium: miraggio e fata morgana*
-
-(physics-hs:waves:optics:geometric:principles)=
-### Princìpi dell'ottica geometrica
-**Propagazione rettilinea in un mezzo omogeneo.** In un mezzo omogeneo, con indice di rifrazione $n$ ({prf:ref}`refraction-index`) uniforme, i raggi luminosi si propagano su traiettorie rettilinee.
-
-**Legge di Snell - riflessione e rifrazione tra mezzi discontinui.** Per soddisfare le condizioni di continuità del campo elettromagnetico in corrispondenza di una discontinuità di proprietà fisiche, un raggio che si propaga nel mezzo 1 e incidente su una discontinuità con il mezzo 2 con un angolo $\theta{1,i}$ con la direzione normale, in generale:
-- viene riflesso con lo stesso angolo 
-
-   $$\theta_{1,r} = \theta_{1,i}$$
-
-- viene trasmesso con angolo $\theta_{2,t}$, tale che
-
-   $$\frac{\sin \theta_{2,t}}{\sin \theta_{1,i}} = \dfrac{n_1}{n_2} = \dfrac{c_2}{c_1} \ .$$
-
-**todo** *Stabilire i coefficienti di riflessione e trasmissione. Scrivere sezione in physics-electromagnetism*
-
-**Riflessione totale.** Quando $\frac{c_2}{c_1} > 1$ esiste un angolo di incidenza limite oltre al quale non avviene trasmissione nel secondo mezzo. Il valore massimo della funzione $\sin$ è 1; la condizione limite, di riflessione totale si ottiene quando 
-
-$$1 = \sin \theta_{2,t} = \frac{c_2}{c_1} \sin \theta_{1,i} \qquad \rightarrow \qquad $$
-
-
+**Riferimenti.**
+[^c-meas-history]: [University of California, Riverside - FAQ - How is the speed of light measured?](https://math.ucr.edu/home/baez/physics/Relativity/SpeedOfLight/measure_c.html) 
 

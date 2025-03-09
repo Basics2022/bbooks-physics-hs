@@ -105,9 +105,11 @@ sphinx:
       launch_buttons:
         colab_url: "https://colab.research.google.com"    # colab
     html_favicon: favicon-sugar.svg
+    bibtex_bibfiles: [ "bibliography.bib" ]
   extra_extensions:
     - sphinx_proof
     - sphinx_exercise
+    - sphinxcontrib.bibtex
     # - sphinx_togglebutton   # to be installed
 
 

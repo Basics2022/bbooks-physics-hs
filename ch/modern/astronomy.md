@@ -1,7 +1,8 @@
 (physics-hs:modern:astronomy)=
 # Sviluppi dell'astronomia
 
-## Breve storia
+**Breve storia**
+
 **Storia antica**
 - ...
 

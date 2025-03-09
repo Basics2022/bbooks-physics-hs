@@ -71,7 +71,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon-sugar.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="22.2. Fenomeni ondulatori in ottica" href="optics-phenomena.html" />
+    <link rel="next" title="22.1. Ottica geometrica" href="optics-geometric.html" />
     <link rel="prev" title="21.2. Caratteristiche dei fenomeni ondulatori" href="phenomena.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -306,6 +306,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">22. Ottica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="optics-geometric.html">22.1. Ottica geometrica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="optics-phenomena.html">22.2. Fenomeni ondulatori in ottica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="optics-lens.html">22.3. Lenti e strumenti ottici</a></li>
 </ul>
@@ -359,7 +360,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../modern/intro-radioactivity.html">31. Radioattività</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/einstein.html">32. Teoria di Einstein</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/quantum.html">33. Meccanica quantistica</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modern/astronomy.html">34. Sviluppi dell’astronomia</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../modern/astronomy.html">34. Sviluppi dell’astronomia</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../modern/astronomy-star-classification.html">34.1. Classificazione stellare</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modern/astronomy-distance-ladder.html">34.2. Scala delle distanze cosmiche</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/standard.html">35. Introduzione al modello standard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/intro-coupling.html">36. Fenomeni termo-elettrici nella materia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/intro-photography.html">37. Fotografia</a></li>
@@ -556,9 +561,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -574,17 +577,6 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contenuti </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ottica-geometrica">22.1. Ottica geometrica</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principi-dell-ottica-geometrica">22.1.1. Princìpi dell’ottica geometrica</a></li>
-</ul>
-</li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -596,45 +588,56 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="ottica">
 <span id="physics-hs-waves-optics"></span><h1><span class="section-number">22. </span>Ottica<a class="headerlink" href="#ottica" title="Permalink to this heading">#</a></h1>
-<p><strong>todo</strong></p>
+<p>L’ottica si occupa di descrivere il comportamento della luce e le sue interazioni con la materia.</p>
 <ul class="simple">
-<li><p>Equazione delle onde per il campo EM</p></li>
+<li><p>Il dibattito sulla natura della luce è stato discusso per secoli: onda o particella?</p></li>
+<li><p>A fine XIX secolo, la formulazione delle equazioni di Maxwell e gli esperimenti di Hertz sembravano dare la risposta definitiva al problema: la luce è un fenomeno elettromagnetico che si propaga come un’onda elettromagnetica:</p></li>
+<li><p>Le esperienze sulla radiazione di corpo nero e sull’effetto otoelettrico - prima ancora che esistesse la meccanica quantistica - mostravano il carattere discreto della luce.</p></li>
 </ul>
-<div class="proof definition admonition" id="refraction-index">
+<p>Si possono distinguere tre approcci/regimi dell’ottica:</p>
+<ul class="simple">
+<li><p>ottica geometrica, <strong>todo</strong> <strong>link</strong> <em>qui</em></p></li>
+<li><p>ottica ondulatoria, che studia la propagazione dei fenomeni elettromagnetici come onde governate dalle equazioni di Maxwell dell’elettromagnetismo classico. Comportamento tipico dei fenomeni ondulatori: interferenza,…, diffrazione,… <strong>todo</strong> <strong>link</strong> <em>capitolo su elettromagnetismo</em></p></li>
+<li><p>ottica quantistica, riconosce la natura discreta della radiazione elettromagnetica - i fotoni - e studia i fenomeni elettromagnetici usando gli strumenti della meccanica quantistica, in seguito alla quantizzazione del campo elettromagnetico <strong>todo</strong> <strong>link</strong> <em>fisica moderna</em></p></li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Luce<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Storia su dualismo onda-particella. Esperienze fondamentali…: Newton-Huygens, Taylor, Fresnel, Fraunhofer e i reticoli di diffrazione,…</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Velocità della luce<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Storia delle misure della velocità della luce:</p>
+<ul class="simple">
+<li><p class="sd-card-text">attività sperimentali: Romer (1676), Fizeau (1848), Michelson (1877; 1887 Michelson-Morley: nessuna evidenza dell”<em>etere luminifero</em>)</p></li>
+<li><p class="sd-card-text">modelli: equazioni di Maxwell (1873)</p></li>
+</ul>
+<p class="sd-card-text">Storia della misura della luce<a class="footnote-reference brackets" href="#c-meas-history" id="id1">1</a></p>
+</div>
+</details><div class="proof definition admonition" id="refraction-index">
 <p class="admonition-title"><span class="caption-number">Definition 22.1 </span> (Indice di rifrazione)</p>
 <div class="definition-content section" id="proof-content">
 <p>L’indice di rifrazione <span class="math notranslate nohighlight">\(n_i\)</span> di un materiale omogeneo è una proprietà del materiale che può essere definita come rapporto della velocità di propagazione della luce nel vuoto <span class="math notranslate nohighlight">\(c\)</span> e nel materiale <span class="math notranslate nohighlight">\(c_i\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[n_i = \frac{c_0}{c_i} \ .\]</div>
 </div>
-</div><div class="section" id="ottica-geometrica">
-<span id="physics-hs-waves-optics-geometric"></span><h2><span class="section-number">22.1. </span>Ottica geometrica<a class="headerlink" href="#ottica-geometrica" title="Permalink to this heading">#</a></h2>
-<p><strong>Approssimazione con raggi di luce.</strong> I raggi luminosi sono qualitativamente delle linee geometriche che indicano la propagazione della luce. Essi possono essere definiti come delle curve perpendicolari in ogni punto ai fronti d’onda del campo elettromagnetico.</p>
-<p><strong>todo</strong></p>
-<ul class="simple">
-<li><p><em>discutere approssimazione geometrica, con raggi luminosi; quando vale?</em></p></li>
-<li><p><em>aggiungere immagini per questa approssimazione: bridging EM field and geometrical optics, some examples: free space homogeneous medium; discontinuous medium; continuously varying in-homogeneous medium: miraggio e fata morgana</em></p></li>
-</ul>
-<div class="section" id="principi-dell-ottica-geometrica">
-<span id="physics-hs-waves-optics-geometric-principles"></span><h3><span class="section-number">22.1.1. </span>Princìpi dell’ottica geometrica<a class="headerlink" href="#principi-dell-ottica-geometrica" title="Permalink to this heading">#</a></h3>
-<p><strong>Propagazione rettilinea in un mezzo omogeneo.</strong> In un mezzo omogeneo, con indice di rifrazione <span class="math notranslate nohighlight">\(n\)</span> (<a class="reference internal" href="#refraction-index">Definition 22.1</a>) uniforme, i raggi luminosi si propagano su traiettorie rettilinee.</p>
-<p><strong>Legge di Snell - riflessione e rifrazione tra mezzi discontinui.</strong> Per soddisfare le condizioni di continuità del campo elettromagnetico in corrispondenza di una discontinuità di proprietà fisiche, un raggio che si propaga nel mezzo 1 e incidente su una discontinuità con il mezzo 2 con un angolo <span class="math notranslate nohighlight">\(\theta{1,i}\)</span> con la direzione normale, in generale:</p>
-<ul>
-<li><p>viene riflesso con lo stesso angolo</p>
-<div class="math notranslate nohighlight">
-\[\theta_{1,r} = \theta_{1,i}\]</div>
-</li>
-<li><p>viene trasmesso con angolo <span class="math notranslate nohighlight">\(\theta_{2,t}\)</span>, tale che</p>
-<div class="math notranslate nohighlight">
-\[\frac{\sin \theta_{2,t}}{\sin \theta_{1,i}} = \dfrac{n_1}{n_2} = \dfrac{c_2}{c_1} \ .\]</div>
-</li>
-</ul>
-<p><strong>todo</strong> <em>Stabilire i coefficienti di riflessione e trasmissione. Scrivere sezione in physics-electromagnetism</em></p>
-<p><strong>Riflessione totale.</strong> Quando <span class="math notranslate nohighlight">\(\frac{c_2}{c_1} &gt; 1\)</span> esiste un angolo di incidenza limite oltre al quale non avviene trasmissione nel secondo mezzo. Il valore massimo della funzione <span class="math notranslate nohighlight">\(\sin\)</span> è 1; la condizione limite, di riflessione totale si ottiene quando</p>
-<div class="math notranslate nohighlight">
-\[1 = \sin \theta_{2,t} = \frac{c_2}{c_1} \sin \theta_{1,i} \qquad \rightarrow \qquad \]</div>
-</div>
-</div>
+</div><hr class="docutils" />
+<p><strong>Riferimenti.</strong></p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="c-meas-history"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p><a class="reference external" href="https://math.ucr.edu/home/baez/physics/Relativity/SpeedOfLight/measure_c.html">University of California, Riverside - FAQ - How is the speed of light measured?</a></p>
+</dd>
+</dl>
 <div class="toctree-wrapper compound">
 </div>
 </div>
@@ -679,11 +682,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="optics-phenomena.html"
+       href="optics-geometric.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">22.2. </span>Fenomeni ondulatori in ottica</p>
+        <p class="prev-next-title"><span class="section-number">22.1. </span>Ottica geometrica</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -693,23 +696,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contenuti
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ottica-geometrica">22.1. Ottica geometrica</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principi-dell-ottica-geometrica">22.1.1. Princìpi dell’ottica geometrica</a></li>
-</ul>
-</li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

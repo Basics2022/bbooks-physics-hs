@@ -153,6 +153,7 @@ parts:
     - file: ch/waves/phenomena
   - file: ch/waves/optics
     sections:
+    - file: ch/waves/optics-geometric.md
     - file: ch/waves/optics-phenomena.md
     - file: ch/waves/optics-lens.md
 - caption: Elettromagnetismo
@@ -210,6 +211,9 @@ parts:
   - file: ch/modern/einstein.md
   - file: ch/modern/quantum.md
   - file: ch/modern/astronomy.md
+    sections:
+    - file: ch/modern/astronomy-star-classification.md
+    - file: ch/modern/astronomy-distance-ladder.md
   - file: ch/modern/standard.md
   - file: ch/modern/intro-coupling.md
   - file: ch/modern/intro-photography.md
