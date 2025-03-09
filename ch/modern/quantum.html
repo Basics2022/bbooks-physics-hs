@@ -304,6 +304,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../waves/optics.html">22. Ottica</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../waves/optics-geometric.html">22.1. Ottica geometrica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../waves/optics-phenomena.html">22.2. Fenomeni ondulatori in ottica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../waves/optics-lens.html">22.3. Lenti e strumenti ottici</a></li>
 </ul>
@@ -357,7 +358,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="intro-radioactivity.html">31. Radioattività</a></li>
 <li class="toctree-l1"><a class="reference internal" href="einstein.html">32. Teoria di Einstein</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">33. Meccanica quantistica</a></li>
-<li class="toctree-l1"><a class="reference internal" href="astronomy.html">34. Sviluppi dell’astronomia</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="astronomy.html">34. Sviluppi dell’astronomia</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="astronomy-star-classification.html">34.1. Classificazione stellare</a></li>
+<li class="toctree-l2"><a class="reference internal" href="astronomy-distance-ladder.html">34.2. Scala delle distanze cosmiche</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="standard.html">35. Introduzione al modello standard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="intro-coupling.html">36. Fenomeni termo-elettrici nella materia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="intro-photography.html">37. Fotografia</a></li>
@@ -578,7 +583,12 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienze-all-origine-della-meccanica-quantistica">33.1. Esperienze all’origine della meccanica quantistica</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#radiazione-di-corpo-nero-planck">33.1.1. Radiazione di corpo nero - Planck</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#radiazione-di-corpo-nero-planck">33.1.1. Radiazione di corpo nero - Planck</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-planck">33.1.1.1. Legge di Planck</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-wien">33.1.1.2. Legge di Wien</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-stefan-boltzmann">33.1.1.3. Legge di Stefan-Boltzmann</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effetto-fotoelettrico-einstein">33.1.2. Effetto fotoelettrico - Einstein</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelli-atomici">33.1.3. Modelli atomici</a></li>
 </ul>
@@ -601,6 +611,15 @@ document.write(`
 <span id="physics-hs-modern-quantum-experience"></span><h2><span class="section-number">33.1. </span>Esperienze all’origine della meccanica quantistica<a class="headerlink" href="#esperienze-all-origine-della-meccanica-quantistica" title="Permalink to this heading">#</a></h2>
 <div class="section" id="radiazione-di-corpo-nero-planck">
 <span id="physics-hs-modern-quantum-experience-black-body"></span><h3><span class="section-number">33.1.1. </span>Radiazione di corpo nero - Planck<a class="headerlink" href="#radiazione-di-corpo-nero-planck" title="Permalink to this heading">#</a></h3>
+<div class="section" id="legge-di-planck">
+<span id="physics-hs-modern-quantum-experience-black-body-planck"></span><h4><span class="section-number">33.1.1.1. </span>Legge di Planck<a class="headerlink" href="#legge-di-planck" title="Permalink to this heading">#</a></h4>
+</div>
+<div class="section" id="legge-di-wien">
+<span id="physics-hs-modern-quantum-experience-black-body-wien"></span><h4><span class="section-number">33.1.1.2. </span>Legge di Wien<a class="headerlink" href="#legge-di-wien" title="Permalink to this heading">#</a></h4>
+</div>
+<div class="section" id="legge-di-stefan-boltzmann">
+<span id="physics-hs-modern-quantum-experience-black-body-stefan-boltzmann"></span><h4><span class="section-number">33.1.1.3. </span>Legge di Stefan-Boltzmann<a class="headerlink" href="#legge-di-stefan-boltzmann" title="Permalink to this heading">#</a></h4>
+</div>
 </div>
 <div class="section" id="effetto-fotoelettrico-einstein">
 <span id="physics-hs-modern-quantum-experience-pe-effect"></span><h3><span class="section-number">33.1.2. </span>Effetto fotoelettrico - Einstein<a class="headerlink" href="#effetto-fotoelettrico-einstein" title="Permalink to this heading">#</a></h3>
@@ -693,7 +712,12 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienze-all-origine-della-meccanica-quantistica">33.1. Esperienze all’origine della meccanica quantistica</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#radiazione-di-corpo-nero-planck">33.1.1. Radiazione di corpo nero - Planck</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#radiazione-di-corpo-nero-planck">33.1.1. Radiazione di corpo nero - Planck</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-planck">33.1.1.1. Legge di Planck</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-wien">33.1.1.2. Legge di Wien</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-stefan-boltzmann">33.1.1.3. Legge di Stefan-Boltzmann</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effetto-fotoelettrico-einstein">33.1.2. Effetto fotoelettrico - Einstein</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelli-atomici">33.1.3. Modelli atomici</a></li>
 </ul>

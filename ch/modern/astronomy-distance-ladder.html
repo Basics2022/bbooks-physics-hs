@@ -1,0 +1,878 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="it" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>34.2. Scala delle distanze cosmiche &#8212; Fisica per le superiori</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/modern/astronomy-distance-ladder';</script>
+    <link rel="shortcut icon" href="../../_static/favicon-sugar.svg"/>
+    <link rel="index" title="Indice" href="../../genindex.html" />
+    <link rel="search" title="Cerca" href="../../search.html" />
+    <link rel="next" title="35. Introduzione al modello standard" href="standard.html" />
+    <link rel="prev" title="34.1. Classificazione stellare" href="astronomy-star-classification.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="it"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.svg" class="logo__image only-light" alt="Fisica per le superiori - Home"/>
+    <script>document.write(`<img src="../../_static/logo-dark.svg" class="logo__image only-dark" alt="Fisica per le superiori - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../program.html">Programma</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione alla fisica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">1. Introduzione alla fisica</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../intro/physical_quantities.html">2. Grandezze fisiche</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../intro/physical_quantities-space.html">2.1. Spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../intro/physical_quantities-mass.html">2.2. Quantità di materia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../intro/physical_quantities-time.html">2.3. Tempo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../intro/physical_quantities-temperature.html">2.4. Temperatura</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../intro/physical_quantities-charge.html">2.5. Carica e corrente elettrica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../intro/physical_quantities-mole.html">2.6. Quantità di sostanza, la mole</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../intro/physical_quantities-luminosity.html">2.7. Intensità luminosa</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/measurements.html">3. Misura</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/scientific-method.html">4. Il metodo scientifico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/sensing.html">5. Sensi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/current-status.html">6. Stato corrente</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Meccanica classica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/intro.html">7. Introduzione alla meccanica classica</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/intro-vocabulary.html">7.1. Concetti in meccanica classica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/intro-history.html">7.2. Esperienze e breve storia delle origini della meccanica classica</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/kinematics.html">8. Cinematica</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-point.html">8.1. Cinematica del punto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-rigid.html">8.2. Cinematica di un corpo rigido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-deformable.html">8.3. Cinematica dei sistemi deformabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-relative.html">8.4. Cinematica relativa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-problems.html">8.5. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-sol.html">8.6. Soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-notes.html">8.7. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/actions.html">9. Azioni</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/actions-types.html">9.1. Forza, momento di una forza, azioni distribuite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/actions-work.html">9.2. Lavoro e potenza</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/actions-conservative.html">9.3. Azioni conservative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/actions-examples.html">9.4. Esempi di forze</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/actions-problems.html">9.5. Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/statics.html">10. Statica</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/statics-point.html">10.1. Statica del punto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/statics-rigid.html">10.2. Statica di un corpo rigido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/statics-composite.html">10.3. Statica di sistemi composti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/statics-fluid.html">10.4. Statica dei mezzi deformabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/statics-problems.html">10.5. Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/inertia.html">11. Inerzia</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/inertia-point.html">11.1. Inerzia e grandezze dinamiche di un punto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/inertia-points.html">11.2. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione discreta di massa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/inertia-continuum.html">11.3. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/inertia-problems.html">11.4. Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/dynamics.html">12. Dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-principles.html">12.1. Princìpi della dinamica di Newton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-eom.html">12.2. Equazioni cardinali della dinamica per sistemi chiusi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-conservation.html">12.3. Leggi di conservazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-examples.html">12.4. Esempi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-eom-open.html">12.5. Equazioni cardinali della dinamica per sistemi aperti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-collisions.html">12.6. Collisioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-motion-gravitation.html">12.7. Gravitazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-central.html">12.8. Moti centrali</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-problems.html">12.9. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-notes.html">12.10. Note e dimostrazioni</a></li>
+
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Cenni di meccanica del continuo</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../continuum/intro.html">13. Cenni di meccanica del continuo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../continuum/solids.html">14. Solidi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../continuum/fluids.html">15. Fluidi</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Termodinamica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../thermodynamics/foundation.html">16. Introduzione alla termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/foundation-history.html">16.1. Breve storia della termodinamica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/foundation-experiments.html">16.2. Esperienze ed esperimenti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/foundation-atomic-theory.html">16.3. Termodinamica e teoria atomica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/foundation-vocabulary.html">16.4. Concetti in termodinamica</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../thermodynamics/principles.html">17. Princìpi della termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-lavoisier.html">17.1. Principio di Lavoisier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-first.html">17.2. Primo principio della termodinamica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-gibbs-phase-rule.html">17.3. Gibbs: energia interna, regola delle fasi e funzioni multi-variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-phase-diagrams.html">17.4. Diagrammi termodinamici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-second.html">17.5. Secondo principio della termodinamica - enunciato di Clausius</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-open.html">17.6. Sistemi aperti</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../thermodynamics/matter.html">18. Stati della materia</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../thermodynamics/ideal-gas.html">18.1. Gas ideali</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../thermodynamics/ideal-gas-experiments.html">18.1.1. Esperimenti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../thermodynamics/ideal-gas-expressions.html">18.1.2. Espressioni diverse dell’equazione di stato dei gas perfetti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../thermodynamics/ideal-gas-kinetic-theory.html">18.1.3. Teoria cinetica dei gas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../thermodynamics/ideal-gas-formulas.html">18.1.4. Caratteristiche dei gas perfetti</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../thermodynamics/gas-mixture.html">18.2. Miscele di gas</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../thermodynamics/humid-air.html">18.2.1. Aria umida</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/elastic-solid-1d.html">18.3. Solidi elastici</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../thermodynamics/heat-engine.html">19. Fondamenti di fisica tecnica</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/heat-engine-td-transformations.html">19.1. Trasformazioni termodinamiche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/heat-engine-td-cycles.html">19.2. Cicli termodinamici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/heat-engine-carnot.html">19.3. Carnot e le «Riflessioni sulla forza motrice del fuoco»</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../thermodynamics/heat-engine-second-principle.html">19.4. Secondo principio della termodinamica per cicli termodinamici</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../thermodynamics/heat-engine-industrial.html">19.5. Macchine termiche e cicli termodinamici</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../thermodynamics/heat-engine-otto.html">19.5.1. Ciclo Otto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../thermodynamics/heat-engine-diesel.html">19.5.2. Ciclo Diesel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../thermodynamics/heat-engine-joule-brayton.html">19.5.3. Ciclo Joule-Brayton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../thermodynamics/heat-engine-rankine.html">19.5.4. Ciclo Rankine</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../thermodynamics/heat-transmission.html">20. Meccanismi di trasmissione del calore</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Fenomeni ondulatori e ottica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../waves/intro.html">21. Introduzione ai fenomeni ondulatori</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../waves/waves-in-physics.html">21.1. Equazione delle onde in diversi sistemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../waves/phenomena.html">21.2. Caratteristiche dei fenomeni ondulatori</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../waves/optics.html">22. Ottica</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../waves/optics-geometric.html">22.1. Ottica geometrica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../waves/optics-phenomena.html">22.2. Fenomeni ondulatori in ottica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../waves/optics-lens.html">22.3. Lenti e strumenti ottici</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Elettromagnetismo</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../electromagnetism/intro.html">23. Introduzione all’elettromagnetismo</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../electromagnetism/intro-history.html">23.1. Breve storia dell’elettromagnetismo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../electromagnetism/intro-experiments.html">23.2. Esperienze ed esperimenti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../electromagnetism/intro-problems.html">23.3. Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../electromagnetism/em.html">24. Fondamenti di elettromagnetismo</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../electromagnetism/electrostatics.html">24.1. Elettrostatica</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electrostatics-problems.html">24.1.7. Problemi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electrostatics-sol.html">24.1.8. Soluzioni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electrostatics-notes.html">24.1.9. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../electromagnetism/electric-current.html">24.2. Corrente elettrica</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electric-current-problems.html">24.2.5. Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../electromagnetism/electromagnetism-steady.html">24.3. Magnetismo ed elettromagnetismo in regime stazionario</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electromagnetism-steady-problems.html">24.3.8. Problemi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electromagnetism-steady-sol.html">24.3.9. Soluzioni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electromagnetism-steady-notes.html">24.3.10. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../electromagnetism/electromagnetism-general.html">24.4. Induzione ed elettromagnetismo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../electromagnetism/electrical-engineering.html">25. Fondamenti di elettrotecnica</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../electromagnetism/circuits-electric.html">25.1. Circuiti elettrici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../electromagnetism/circuits-magnetic.html">25.2. Circuiti magnetici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../electromagnetism/electric-machines.html">25.3. Sistemi elettromeccanici e macchine elettriche</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../electromagnetism/em-waves.html">26. Onde elettromagnetiche</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../electromagnetism/em-waves-problems.html">26.3. Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../electromagnetism/thermoelectric-effects.html">27. Effetti foto-termo-elettro-meccanici</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Fisica moderna</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">28. Introduzione alla fisica del XX secolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro-experiments.html">29. Esperienze ed esperimenti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="experiments.html">30. Esperimenti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro-radioactivity.html">31. Radioattività</a></li>
+<li class="toctree-l1"><a class="reference internal" href="einstein.html">32. Teoria di Einstein</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum.html">33. Meccanica quantistica</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="astronomy.html">34. Sviluppi dell’astronomia</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="astronomy-star-classification.html">34.1. Classificazione stellare</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">34.2. Scala delle distanze cosmiche</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="standard.html">35. Introduzione al modello standard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro-coupling.html">36. Fenomeni termo-elettrici nella materia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro-photography.html">37. Fotografia</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Indice</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repository di origine"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/edit/master/ch/modern/astronomy-distance-ladder.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/modern/astronomy-distance-ladder.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Apri un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Scarica questa pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/ch/modern/astronomy-distance-ladder.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Scarica il file sorgente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Stampa in PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modalità schermo intero"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Cerca" aria-label="Cerca" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Scala delle distanze cosmiche</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensioni-terra">34.2.1. Dimensioni Terra</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza-terra-luna-e-dimensioni-luna">34.2.2. Distanza Terra-Luna e dimensioni Luna</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensioni-sole-e-distanza-sole-luna">34.2.3. Dimensioni Sole e Distanza Sole-Luna</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#orbite-pianeti">34.2.4. Orbite pianeti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stelle-vicine">34.2.5. Stelle vicine</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stelle-lontane">34.2.6. Stelle lontane</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-via-lattea">34.2.7. La Via Lattea</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stelle-remote-e-altre-galassie">34.2.8. Stelle remote e altre galassie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riferimenti">34.2.9. Riferimenti</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="scala-delle-distanze-cosmiche">
+<span id="physics-hs-modern-astronomy-distance-ladder"></span><h1><span class="section-number">34.2. </span>Scala delle distanze cosmiche<a class="headerlink" href="#scala-delle-distanze-cosmiche" title="Permalink to this heading">#</a></h1>
+<p>In questa pagina viene ripercorso il calcolo delle distanze cosmiche, secondo quella che viene definita la <strong>scala delle distanze cosmiche</strong>: partendo dalle dimensioni e dalle distanze, di Terra, Luna e Sole, passando per le dimensioni e la forma delle orbite dei pianeti, continuando con la distanza delle stelle vicine e le dimensioni della nostra galassia, la Via Lattea, e finendo con la distanza della stelle remote e delle altre galassie.</p>
+<p>L’aumento delle distanze misurate procede in un ordine cronologico, grazie alla costruzione di nuove conoscenze delle conoscenze pregresse, al progresso tecnologico che fornisce strumenti più precisi e alla scoperta e alla comprensione di nuovi fenomeni fisici utili nella misura di oggetti così remoti. Il racconto viene costruito seguendo l’ordine presentato nei consigliatissimi video di 3Blue1Brown con Terence Tao<a class="footnote-reference brackets" href="#b1b-tao-1" id="id1">1</a><a class="footnote-reference brackets" href="#b1b-tao-2" id="id2">2</a>, con l’aggiunta di dettagli degli ancora più consigliatissimi video di Alan Zamboni, aka CURIUSS, su Henrietta Swan Leavitt<a class="footnote-reference brackets" href="#curiuss-leavitt" id="id3">3</a> e Cecilia Payne-Gaposchkin<a class="footnote-reference brackets" href="#curiuss-payne" id="id4">4</a>, gli osservatori e le donne di Harvard, Schwarzshild, e i due studiosi Hertzsprung-Russell del diagramma, e il materiale fornito dall’Università del Nebraska<a class="footnote-reference brackets" href="#nebraska-spectroscpic-parallax" id="id5">5</a>.</p>
+<p>Qualitativamente possono essere riconosciute diverse fasi:</p>
+<ul class="simple">
+<li><p>antichità: Terra, Luna, Sole</p></li>
+<li><p>età moderna: Copernico e Keplero: orbite dei pianeti;…</p></li>
+<li><p>età contemporanea: Donne calcolatrici di Harvard;…; Hubble e red-shift (dimensioni ed espansione dell’universo)</p></li>
+</ul>
+<div class="section" id="dimensioni-terra">
+<h2><span class="section-number">34.2.1. </span>Dimensioni Terra<a class="headerlink" href="#dimensioni-terra" title="Permalink to this heading">#</a></h2>
+<p>Metodo: ombra di un bastone normale</p>
+</div>
+<div class="section" id="distanza-terra-luna-e-dimensioni-luna">
+<h2><span class="section-number">34.2.2. </span>Distanza Terra-Luna e dimensioni Luna<a class="headerlink" href="#distanza-terra-luna-e-dimensioni-luna" title="Permalink to this heading">#</a></h2>
+<p>Metodo: eclisse lunare per la distanza; sorgere della Luna per le dimensioni</p>
+</div>
+<div class="section" id="dimensioni-sole-e-distanza-sole-luna">
+<h2><span class="section-number">34.2.3. </span>Dimensioni Sole e Distanza Sole-Luna<a class="headerlink" href="#dimensioni-sole-e-distanza-sole-luna" title="Permalink to this heading">#</a></h2>
+<p>Metodo:</p>
+<ul class="simple">
+<li><p>eclisse solare per il rapporto dimenisoni-distanza <span class="math notranslate nohighlight">\(\frac{R_S}{R_M} = \frac{D_{ES}}{D_{EM}}\)</span>;</p></li>
+<li><p>fasi lunari per la distanza Terra-Sole. Il metodo utilizzato dagli antichi ha però una sensibilità della misura alla variabile misurata enorme, e la tecnologia allora disponibile non consentiva misure precise della variabile misurata;…</p></li>
+</ul>
+</div>
+<div class="section" id="orbite-pianeti">
+<h2><span class="section-number">34.2.4. </span>Orbite pianeti<a class="headerlink" href="#orbite-pianeti" title="Permalink to this heading">#</a></h2>
+<p>Keplero: …</p>
+</div>
+<div class="section" id="stelle-vicine">
+<h2><span class="section-number">34.2.5. </span>Stelle vicine<a class="headerlink" href="#stelle-vicine" title="Permalink to this heading">#</a></h2>
+<p>Metodo: parallasse usando l“«orbita della Terra attorno al Sole»</p>
+</div>
+<div class="section" id="stelle-lontane">
+<h2><span class="section-number">34.2.6. </span>Stelle lontane<a class="headerlink" href="#stelle-lontane" title="Permalink to this heading">#</a></h2>
+<p>Per le stelle lontane, il metodo di parallasse con il moto di rivoluzione della Terra non è sufficiente a fornire una misura (o come nel caso degli antichi della misura della distanza Terra-Sole, la misura è paragonabile all’errore di misura). La parallasse stellare consente di misurare circa il centesimo di arcsec, <span class="math notranslate nohighlight">\(\dots \, \text{arcsec}\)</span> o <span class="math notranslate nohighlight">\(\frac{1}{\dots} \, \text{parsec}\)</span><a class="footnote-reference brackets" href="#britannica-parallax" id="id6">6</a><a class="footnote-reference brackets" href="#se-parallax" id="id7">7</a><a class="footnote-reference brackets" href="#esa-parallax" id="id8">8</a>, con la conversione tra parsec e anno luce <span class="math notranslate nohighlight">\(1 \, \text{parsec} = 3.26 \text{a.l.}\)</span></p>
+<p>Oggi sappaimo che la Grande Nube di Magellano è di circa <span class="math notranslate nohighlight">\(48 \, \text{kpc}\)</span> o <span class="math notranslate nohighlight">\(160.000 \, \text{al}\)</span>,  <strong>todo</strong> <em>Ma quali erano i limiti tecnologici nel 1912, all’epoca degli studi di H. Swan Leavitt?</em></p>
+<p>H.Swan Leavitt: «C’è una notevole correlazione tra la luminosità apparente e il periodo di oscillazione delle stelle variabili». Le variabili più luminose sono quelle con il periodo più lungo. Si assume che le stelle appartenenti alla nube di Magellano siano alla stessa di distanza, e quindi la loro luminosità apparente sia legata alla loro luminosità assoluta dalla stessa costante geometrica.</p>
+<ul class="simple">
+<li><p>H.Hertzsprung (1913) parallasse con il moto del Sole nella Galassia?</p></li>
+<li><p>H.Shapley (1918) confronto con stelle cefeide con distanza nota per parallasse?</p></li>
+</ul>
+<div class="proof example dropdown admonition" id="example-0">
+<p class="admonition-title"><span class="caption-number">Example 34.1 </span> (Parallasse)</p>
+<div class="example-content section" id="proof-content">
+<ul class="simple">
+<li><p>Rivoluzione della Terra attorno al Sole</p></li>
+<li><p>Moto del Sole: parallasse statistica di Hertzsprung, e calibrazione del diagramma di H-R</p>
+<ul>
+<li><p>Moto proprio delle stelle vicine:</p>
+<ul>
+<li><p>gli astronomi avevano notato piccoli spostamenti della posizione delle stelle nel tempo; il moto non era casuale, ma si poteva riscontrare unmoto ordinato, riconducibile al moto relativo del Sole rispetto alle altre stelle</p></li>
+<li><p>Herschel (1783) determina la direzione di moto del Sole, detto <strong>apice solare</strong>, di circa <span class="math notranslate nohighlight">\(250 \text{km/s}\)</span> rispetto al centro della Galassia (e di circa <span class="math notranslate nohighlight">\(20 \, text{km/s}\)</span> rispetto alle stelle vicine. <strong>todo</strong> <em>controllare</em>)</p></li>
+<li><p>dal moto di gruppi di stelle, H stima la distanza media; confronta il moto proprio e la velocità radiale misurata con effetto Doppler; stima della distanza e calibrazione del diagramma H-R</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Missioni spaziali. Esempio: Hubble (1990), Hipparcos (1989-1993), GAIA (2013-…) dell’European Space Agency (ESA).</p></li>
+</ul>
+</div>
+</div><div class="proof example dropdown admonition" id="example-1">
+<p class="admonition-title"><span class="caption-number">Example 34.2 </span> (Conversioni)</p>
+<div class="example-content section" id="proof-content">
+<ul class="simple">
+<li><p>Parsec: distanza alla quale il raggio dell’orbita terrestre sottende un angolo di un secondo di arco</p></li>
+<li><p>anno luce: distanza percorsa dalla luce nel vuoto in un anno</p></li>
+<li><p>unità astronomica: distanza Terra-Sole</p></li>
+</ul>
+</div>
+</div><p>Le misure sulla superficie terrestre dell’intensità della radiazione proveniente dalle stelle consente solo di misurarne la <strong>luminosità apparente</strong>, o il flusso, senza poter determinare indipendentemente la luminosità assoluta - o reale -  e la distanza della sorgente luminosa dall’apparato di misura - la distanza della stella dalla Terra.</p>
+<p>Solo l’osservazione delle stelle variabili nella nube di Magellano, a una distanza di circa $$ permise di determinare un’informazione aggiuntiva per misurare indipendentemente luminosità assoluta e distanza. La nube di Magellano è ricca di <strong>stelle variabili</strong>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Luminosità apparente<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">L’intensità della luce emessa registrato da un osservatore a distanza <span class="math notranslate nohighlight">\(r\)</span> dal corpo varia in maniera inversamente proporzionale al quadrato della distanza</p>
+<div class="math notranslate nohighlight">
+\[I \propto \frac{1}{r^2} \ ,\]</div>
+<p class="sd-card-text">poiché il flusso attraverso diverse superfici è costante, e la superficie delle superfici varia con il quadrato della distanza,</p>
+<div class="math notranslate nohighlight">
+\[\overline{\Phi} = I(r) S(r) \propto I(r) r^2 \ .\]</div>
+<p class="sd-card-text">Sulla Terra è possibile misurare direttamente solo l’intensità della radiazione ricevuta, senza poter conoscere indipendentemente luminosità assoluta (intensità emessa) e distanza. Senza altre informazioni misura di un flusso <span class="math notranslate nohighlight">\(\overline{\Phi}\)</span> potrebbe venire dalle due stelle seguenti</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  &amp; \Phi_0, \, r_0 &amp;&amp; \\
+  &amp; \Phi_1 = 4 \Phi_0 , \, r_1 = 2 r_0 &amp;&amp; I_1 \propto \frac{\Phi_1}{r_1^2} = \frac{4 \Phi_0}{(2 r_0)^2} = \frac{\Phi_0}{r_0^2} \propto I_0
+\end{aligned}\end{split}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Cefeidi e stelle variabili<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+</div>
+</details></div>
+<div class="section" id="la-via-lattea">
+<h2><span class="section-number">34.2.7. </span>La Via Lattea<a class="headerlink" href="#la-via-lattea" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="stelle-remote-e-altre-galassie">
+<h2><span class="section-number">34.2.8. </span>Stelle remote e altre galassie<a class="headerlink" href="#stelle-remote-e-altre-galassie" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="riferimenti">
+<h2><span class="section-number">34.2.9. </span>Riferimenti<a class="headerlink" href="#riferimenti" title="Permalink to this heading">#</a></h2>
+<!--
+{cite:p}`FonteToffolRicci2018`
+```{bibliography} bibliography.bib
+```
+-->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="b1b-tao-1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p><a class="reference external" href="https://www.youtube.com/watch?v=YdOXS_9_P4U&amp;t=51s">Terence Tao on how we measure the cosmos | The Distance Ladder Part 1</a></p>
+</dd>
+<dt class="label" id="b1b-tao-2"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p><a class="reference external" href="https://www.youtube.com/watch?v=hFMaT9oRbs4">How to measure the universe | The Cosmic Distance Ladder Part 2</a></p>
+</dd>
+<dt class="label" id="curiuss-leavitt"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
+<dd><p><a class="reference external" href="https://www.youtube.com/watch?v=OlBVFvuDLVs&amp;t=72s">La Donna che misurò l’Universo - Geni Impolverati#03 - CURIUSS</a></p>
+</dd>
+<dt class="label" id="curiuss-payne"><span class="brackets"><a class="fn-backref" href="#id4">4</a></span></dt>
+<dd><p><a class="reference external" href="https://www.youtube.com/watch?v=q1ZnrXz3NSw&amp;t=538s">La Donna che sussurrava alle stelle - Geni Impolverati#04 - CURIUSS</a></p>
+</dd>
+<dt class="label" id="nebraska-spectroscpic-parallax"><span class="brackets"><a class="fn-backref" href="#id5">5</a></span></dt>
+<dd><p><a class="reference external" href="https://astro.unl.edu/naap/distance/distance.html">Astronomy Education at the University of Nebraska-Lincoln - Cosmic Distance Ladder Lab</a></p>
+</dd>
+<dt class="label" id="britannica-parallax"><span class="brackets"><a class="fn-backref" href="#id6">6</a></span></dt>
+<dd><p><a class="reference external" href="https://www.britannica.com/science/parallax/Solar-parallax">Enciclopedia Britannica - Parallasse solare</a></p>
+</dd>
+<dt class="label" id="se-parallax"><span class="brackets"><a class="fn-backref" href="#id7">7</a></span></dt>
+<dd><p><a class="reference external" href="https://astronomy.stackexchange.com/questions/19666/whats-the-farthest-object-as-determined-only-by-parallax">SE: What’s the farthest object as determined only by parallax?</a>; <a class="reference external" href="https://astronomy.stackexchange.com/questions/31711/what-is-the-maximum-distance-measurable-with-parallax">SE: Limit of stellar parallax</a> e ulteriori collegamenti.</p>
+</dd>
+<dt class="label" id="esa-parallax"><span class="brackets"><a class="fn-backref" href="#id8">8</a></span></dt>
+<dd><p><a class="reference external" href="https://sci.esa.int/web/education/-/35616-stellar-distances?fbodylongid=1661">ESA - Educational support: stellar distances</a> <em>tenendo conto dell’avviso: Currently, sci.esa.int is under review and not being updated. For the latest information and news from ESA science missions and scientific results, please visit esa.int. For in-depth technical information aimed at ESA’s scientific communities, you may also wish to consult cosmos.esa.int.</em></p>
+</dd>
+</dl>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ch/modern"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="astronomy-star-classification.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">precedente</p>
+        <p class="prev-next-title"><span class="section-number">34.1. </span>Classificazione stellare</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="standard.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">successivo</p>
+        <p class="prev-next-title"><span class="section-number">35. </span>Introduzione al modello standard</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensioni-terra">34.2.1. Dimensioni Terra</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanza-terra-luna-e-dimensioni-luna">34.2.2. Distanza Terra-Luna e dimensioni Luna</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dimensioni-sole-e-distanza-sole-luna">34.2.3. Dimensioni Sole e Distanza Sole-Luna</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#orbite-pianeti">34.2.4. Orbite pianeti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stelle-vicine">34.2.5. Stelle vicine</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stelle-lontane">34.2.6. Stelle lontane</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-via-lattea">34.2.7. La Via Lattea</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stelle-remote-e-altre-galassie">34.2.8. Stelle remote e altre galassie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riferimenti">34.2.9. Riferimenti</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Di basics
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
