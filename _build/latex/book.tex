@@ -87,7 +87,7 @@
         
 
 \title{Fisica per le superiori}
-\date{09 mar 2025}
+\date{11 mar 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -104,7 +104,7 @@
 
 
 \sphinxAtStartPar
-Questo libro fa parte del materiale pensato per \sphinxhref{https://basics2022.github.io/bbooks-hs}{le scuole superiori}, nell’ambito del progetto \sphinxhref{https://basics2022.github.io/bbooks}{\sphinxstylestrong{basics\sphinxhyphen{}books}}. E” disponibile in \DUrole{xref,myst}{versione in .pdf}.
+Questo libro fa parte del materiale pensato per \sphinxhref{https://basics2022.github.io/bbooks-hs}{le scuole superiori}, nell’ambito del progetto \sphinxhref{https://basics2022.github.io/bbooks}{\sphinxstylestrong{basics\sphinxhyphen{}books}}. E” disponibile in \DUrole{xref,download,myst}{versione in .pdf}.
 
 
 
@@ -12451,6 +12451,39 @@ viene trasmesso con angolo \(\theta_{2,t}\), tale che
 \begin{equation*}
 \begin{split}1 = \sin \theta_{2,t} = \frac{c_2}{c_1} \sin \theta_{1,i} \qquad \rightarrow \qquad \end{split}
 \end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Principio di Fermat.} La propagazione di un raggio luminoso può essere riformulata con il principio di Fermat: un raggio luminoso da una sorgente a un osservatore percorre la traiettoria con tempo di percorrenza minimo.
+\label{ch/waves/optics-geometric:example-0}
+\begin{sphinxadmonition}{note}{Example 22.1.1 (Principio di Fermat e legge di Snell)}
+
+
+
+\sphinxAtStartPar
+Data un’interfaccia piana, \(y=0\), tra due mezzi con indice di rifrazione \(n_1\), \(n_2\), una sorgente luminosa con coordinate cartesiane \((x_s, y_s)\), \(y_s > 0\), e un osservatore con coordinate \((x_o, y_o)\), \(y_o < 0\), viene chiesto di determinare il percorso del raggio luminoso usando il principio di Fermat e verificare che il risultato è in accordo con la legge di Snell.
+
+\sphinxAtStartPar
+Si scrive il tempo di percorrenza \(\Delta t\) in funzione della coordinata \(x\) del punto dell’interfaccia per il quale passa il raggio luminoso desiderato.
+\begin{equation*}
+\begin{split}\begin{aligned}
+\Delta t(x) 
+  & = \Delta t_1(x) + \Delta t_2(x) = \\
+  & = \frac{\Delta \ell_1(x)}{c_1} + \frac{\Delta \ell_2(x)}{c_2} = \\
+  & = n_1 \frac{\sqrt{(x-x_s)^2 + y_s^2}}{c_0} + n_2 \frac{\sqrt{(x-x_o)^2 + y_o^2}}{c_0} = \\
+\end{aligned}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}
+c_0 \dfrac{d \Delta t}{dx}(x) 
+= \frac{n_1}{c_0} \frac{1}{2} \left( (x-x_s)^2 + y_s^2 \right)^{-\frac{1}{2}} 2 (x-x_s)
++ \frac{n_2}{c_0} \frac{1}{2} \left( (x-x_o)^2 + y_o^2 \right)^{-\frac{1}{2}} 2 (x-x_o)
+\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+  & 0 = c_0 \dfrac{d \Delta t}{dx}(x^*) \\
+  & \rightarrow \quad n_1 \frac{x^* - x_s}{\sqrt{(x^*-x_s)^2 + y_s^2}} = n_2 \frac{x_o - x^*}{\sqrt{(x^*-x_o)^2 + y_o^2}} \\ 
+  & \rightarrow \quad n_1 \sin \theta_1 = n_2 \sin \theta_2 \ .
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
+
 \sphinxstepscope
 
 
@@ -12471,7 +12504,7 @@ In molti casi, i fenomeni ondulatori sono meccanismi di trasmissione di un’inf
 \sphinxAtStartPar
 L’effetto Doppler%
 \begin{footnote}[1]\sphinxAtStartFootnote
-C.A.Doppler, 1842 \sphinxstyleemphasis{On the coloured light of the binary stars and some other stars of the heavens}. L’effetto Doppler viene proposto per la prima volta nel 1842, nell’ambito delle osservazioni astronomiche. …la pubblicazione avviene prima della formulazione completa delle equazioni di Maxwell e quindi dell’esistenza di un primo modello matematico che riconoscesse la luce come fenomeno elettromagnetico. Nonostante questo, Doppler, seguendo i risultati di T.Young{\color{red}\bfseries{}{[}\textasciicircum{}young\sphinxhyphen{}1802{]}}, è convinto che la luce sia un fenomeno ondulatorio. Oltre alla discussione dell’effetto Doppler, la pubblicazione conteine altre affermazioni/convinzioni di Doppler sulla natura della luce, non supportate da prove o evidenze, che si riveleranno sbagliate (es. luce come onda longitudinale)
+C.A.Doppler, 1842 \sphinxstyleemphasis{On the coloured light of the binary stars and some other stars of the heavens}. L’effetto Doppler viene proposto per la prima volta nel 1842, nell’ambito delle osservazioni astronomiche. …la pubblicazione avviene prima della formulazione completa delle equazioni di Maxwell e quindi dell’esistenza di un primo modello matematico che riconoscesse la luce come fenomeno elettromagnetico. Nonostante questo, seguendo i risultati di T.Young, Doppler è convinto che la luce sia un fenomeno ondulatorio. Oltre alla discussione dell’effetto Doppler, la pubblicazione conteine altre affermazioni/convinzioni di Doppler sulla natura della luce, non supportate da prove o evidenze, che si riveleranno sbagliate (es. luce come onda longitudinale)
 %
 \end{footnote} è un effetto dovuto al moto relativo tra sorgente e ricevente, che è origine della differenza tra la frequenza del segnale emesso dalla sorgente del segnale e la frequenza del segnale misurato dal ricevente.
 \label{ch/waves/optics-phenomena:example-0}
@@ -18452,7 +18485,7 @@ Lumière
 \item\relax\sphinxstyleindexentry{electric\sphinxhyphen{}dipole\sphinxhyphen{}ext\sphinxhyphen{}e\sphinxhyphen{}field}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{electric-dipole-ext-e-field}}
 \indexspace
 \bigletter{example\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-0}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}geometric}\sphinxstyleindexpageref{ch/waves/optics-geometric:\detokenize{example-0}}
 \indexspace
 \bigletter{example\sphinxhyphen{}1}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-1}}
