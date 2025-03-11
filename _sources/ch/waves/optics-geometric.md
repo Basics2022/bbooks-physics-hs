@@ -30,6 +30,8 @@ $$1 = \sin \theta_{2,t} = \frac{c_2}{c_1} \sin \theta_{1,i} \qquad \rightarrow \
 **Principio di Fermat.** La propagazione di un raggio luminoso può essere riformulata con il principio di Fermat: un raggio luminoso da una sorgente a un osservatore percorre la traiettoria con tempo di percorrenza minimo.
 
 ```{prf:example} Principio di Fermat e legge di Snell
+:class: dropdown
+
 Data un'interfaccia piana, $y=0$, tra due mezzi con indice di rifrazione $n_1$, $n_2$, una sorgente luminosa con coordinate cartesiane $(x_s, y_s)$, $y_s > 0$, e un osservatore con coordinate $(x_o, y_o)$, $y_o < 0$, viene chiesto di determinare il percorso del raggio luminoso usando il principio di Fermat e verificare che il risultato è in accordo con la legge di Snell.
 
 Si scrive il tempo di percorrenza $\Delta t$ in funzione della coordinata $x$ del punto dell'interfaccia per il quale passa il raggio luminoso desiderato.
