@@ -88,6 +88,14 @@ html:
   use_repository_button: true
   extra_navbar: ""
   google_analytics_id: G-R3GS2LVD8M
+  extra_footer: |
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-R3GS2LVD8M');
+    </script>
 
 # sphinx extensions
 sphinx:

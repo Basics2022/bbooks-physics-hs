@@ -309,6 +309,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="optics-geometric.html">22.1. Ottica geometrica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="optics-phenomena.html">22.2. Fenomeni ondulatori in ottica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="optics-lens.html">22.3. Lenti e strumenti ottici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optics-eye.html">22.4. Occhio e vista</a></li>
 </ul>
 </li>
 </ul>
@@ -588,49 +589,67 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="ottica">
 <span id="physics-hs-waves-optics"></span><h1><span class="section-number">22. </span>Ottica<a class="headerlink" href="#ottica" title="Permalink to this heading">#</a></h1>
-<p>L’ottica si occupa di descrivere il comportamento della luce e le sue interazioni con la materia.</p>
-<ul class="simple">
-<li><p>Il dibattito sulla natura della luce è stato discusso per secoli: onda o particella?</p></li>
-<li><p>A fine XIX secolo, la formulazione delle equazioni di Maxwell e gli esperimenti di Hertz sembravano dare la risposta definitiva al problema: la luce è un fenomeno elettromagnetico che si propaga come un’onda elettromagnetica:</p></li>
-<li><p>Le esperienze sulla radiazione di corpo nero e sull’effetto otoelettrico - prima ancora che esistesse la meccanica quantistica - mostravano il carattere discreto della luce.</p></li>
-</ul>
-<p>Si possono distinguere tre approcci/regimi dell’ottica:</p>
-<ul class="simple">
-<li><p>ottica geometrica, <strong>todo</strong> <strong>link</strong> <em>qui</em></p></li>
-<li><p>ottica ondulatoria, che studia la propagazione dei fenomeni elettromagnetici come onde governate dalle equazioni di Maxwell dell’elettromagnetismo classico. Comportamento tipico dei fenomeni ondulatori: interferenza,…, diffrazione,… <strong>todo</strong> <strong>link</strong> <em>capitolo su elettromagnetismo</em></p></li>
-<li><p>ottica quantistica, riconosce la natura discreta della radiazione elettromagnetica - i fotoni - e studia i fenomeni elettromagnetici usando gli strumenti della meccanica quantistica, in seguito alla quantizzazione del campo elettromagnetico <strong>todo</strong> <strong>link</strong> <em>fisica moderna</em></p></li>
-</ul>
+<p>L’ottica si occupa di descrivere il comportamento della <strong>luce</strong> e le sue interazioni con la materia.</p>
+<p><strong>Cosa intendiamo per luce?</strong> Con il termine «luce» si intende la <a class="reference internal" href="../electromagnetism/em-waves.html#physics-hs-electromagnetism-em-waves"><span class="std std-ref">radiazione elettromagnetica</span></a> che può essere percepita dall”<a class="reference internal" href="optics-eye.html#physics-hs-waves-optics-eye"><span class="std std-ref">occhio umano</span></a>.</p>
+<p><strong>Generazione della luce.</strong> Emissione di radiazione elettromagnetica: continua, per agitazione termica; discreta dovuta a eccitazione di atomi.</p>
+<p><strong>Caratteristiche della radiazione.</strong> Spettro in frequenza, polarizzazione, intensità.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Luce<div class="sd-summary-down docutils">
+Breve storia dell’indagine sulla natura della luce<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Storia su dualismo onda-particella. Esperienze fondamentali…: Newton-Huygens, Taylor, Fresnel, Fraunhofer e i reticoli di diffrazione,…</p>
+<p class="sd-card-text"><strong>Breve storia dell’indagine sulla natura della luce.</strong> Storia su dualismo onda-particella. Esperienze fondamentali…: Newton-Huygens, Taylor, Fresnel, Fraunhofer e i reticoli di diffrazione,…</p>
+<ul class="simple">
+<li><p class="sd-card-text">Il dibattito sulla natura della luce è stato discusso per secoli: onda o particella?</p></li>
+<li><p class="sd-card-text">A fine XIX secolo, la formulazione delle equazioni di Maxwell e gli esperimenti di Hertz sembravano dare la risposta definitiva al problema: la luce è un fenomeno elettromagnetico che si propaga come un’onda elettromagnetica:</p></li>
+<li><p class="sd-card-text">Le esperienze sulla radiazione di corpo nero e sull’effetto otoelettrico - prima ancora che esistesse la meccanica quantistica - mostravano il carattere discreto della luce.</p></li>
+</ul>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Velocità della luce<div class="sd-summary-down docutils">
+Tre regimi e tre approcci<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Storia delle misure della velocità della luce:</p>
+<p class="sd-card-text">Si possono distinguere tre approcci/regimi dell’ottica:</p>
+<ul class="simple">
+<li><p class="sd-card-text">ottica geometrica, <strong>todo</strong> <strong>link</strong> <em>qui</em></p></li>
+<li><p class="sd-card-text">ottica ondulatoria, che studia la propagazione dei fenomeni elettromagnetici come onde governate dalle equazioni di Maxwell dell’elettromagnetismo classico. Comportamento tipico dei fenomeni ondulatori: interferenza,…, diffrazione,… <strong>todo</strong> <strong>link</strong> <em>capitolo su elettromagnetismo</em></p></li>
+<li><p class="sd-card-text">ottica quantistica, riconosce la natura discreta della radiazione elettromagnetica - i fotoni - e studia i fenomeni elettromagnetici usando gli strumenti della meccanica quantistica, in seguito alla quantizzazione del campo elettromagnetico <strong>todo</strong> <strong>link</strong> <em>fisica moderna</em></p></li>
+</ul>
+</div>
+</details><p><strong>Velocità della luce nel vuoto.</strong> La velocità della luce nel vuoto è una costante della natura. Viene qui indicata con <span class="math notranslate nohighlight">\(c_0\)</span>, o a volte con <span class="math notranslate nohighlight">\(c\)</span> per brevità o pigrizia.</p>
+<p><strong>Velocità della luce nei materiali.</strong> In molti materiali, la velocità della luce nel materiale <span class="math notranslate nohighlight">\(c_i\)</span> può essere descritta come frazione della velocità della luce nel vuoto, <span class="math notranslate nohighlight">\(c_0\)</span>, tramite l’indice di rifrazione <span class="math notranslate nohighlight">\(n_i\)</span> del materiale,</p>
+<div class="math notranslate nohighlight">
+\[c_i = \frac{c_0}{n_i} \ .\]</div>
+<p>In generale, la velocità di propagazione può dipendere dalla frequenza della propagazione stessa. In questo caso, il mezzo viene definito dispersivo. <strong>todo</strong> <em>mostrare esempi: rifrazione in prismi e arcobaleno; simulazione della propagazione di segnali in mezzi dispersivi</em></p>
+<!--
+```{prf:definition} Indice di rifrazione
+:label: refraction-index
+
+L'indice di rifrazione $n_i$ di un materiale omogeneo è una proprietà del materiale che può essere definita come rapporto della velocità di propagazione della luce nel vuoto $c$ e nel materiale $c_i$,
+
+$$n_i = \frac{c_0}{c_i} \ .$$
+
+```
+-->
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Storia delle misure della velocità della luce<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <ul class="simple">
 <li><p class="sd-card-text">attività sperimentali: Romer (1676), Fizeau (1848), Michelson (1877; 1887 Michelson-Morley: nessuna evidenza dell”<em>etere luminifero</em>)</p></li>
 <li><p class="sd-card-text">modelli: equazioni di Maxwell (1873)</p></li>
 </ul>
 <p class="sd-card-text">Storia della misura della luce<a class="footnote-reference brackets" href="#c-meas-history" id="id1">1</a></p>
 </div>
-</details><div class="proof definition admonition" id="refraction-index">
-<p class="admonition-title"><span class="caption-number">Definition 22.1 </span> (Indice di rifrazione)</p>
-<div class="definition-content section" id="proof-content">
-<p>L’indice di rifrazione <span class="math notranslate nohighlight">\(n_i\)</span> di un materiale omogeneo è una proprietà del materiale che può essere definita come rapporto della velocità di propagazione della luce nel vuoto <span class="math notranslate nohighlight">\(c\)</span> e nel materiale <span class="math notranslate nohighlight">\(c_i\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[n_i = \frac{c_0}{c_i} \ .\]</div>
-</div>
-</div><hr class="docutils" />
+</details><hr class="docutils" />
 <p><strong>Riferimenti.</strong></p>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">

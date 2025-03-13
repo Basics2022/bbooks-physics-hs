@@ -156,6 +156,7 @@ parts:
     - file: ch/waves/optics-geometric.md
     - file: ch/waves/optics-phenomena.md
     - file: ch/waves/optics-lens.md
+    - file: ch/waves/optics-eye.md
 - caption: Elettromagnetismo
   numbered: True
   chapters:
