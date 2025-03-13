@@ -309,6 +309,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="optics-geometric.html">22.1. Ottica geometrica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="optics-phenomena.html">22.2. Fenomeni ondulatori in ottica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="optics-lens.html">22.3. Lenti e strumenti ottici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optics-eye.html">22.4. Occhio e vista</a></li>
 </ul>
 </li>
 </ul>
@@ -588,35 +589,35 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="introduzione-ai-fenomeni-ondulatori">
 <span id="physics-hs-waves-intro"></span><h1><span class="section-number">21. </span>Introduzione ai fenomeni ondulatori<a class="headerlink" href="#introduzione-ai-fenomeni-ondulatori" title="Permalink to this heading">#</a></h1>
-<p><strong>Esempi.</strong></p>
-<ul class="simple">
-<li><p>Onde meccaniche nei mezzi continui:</p>
-<ul>
-<li><p>nei solidi</p>
-<ul>
-<li><p>elastici</p></li>
-<li><p>onde sismiche</p></li>
-</ul>
-</li>
-<li><p>nei fluidi</p>
-<ul>
-<li><p>onde di pressione (densità e altre proprietà meccaniche) e suono</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>Onde EM; lo spettro EM comprende</p>
-<ul>
-<li><p>onde radio, micro, IR, luce visibile, UV, <span class="math notranslate nohighlight">\(\gamma\)</span>, <span class="math notranslate nohighlight">\(X\)</span></p></li>
-</ul>
-</li>
-</ul>
-<p><strong>Soluzioni particolari.</strong></p>
-<ul class="simple">
-<li><p>Onde piane stazionarie e viaggianti</p></li>
-<li><p>Onde sferiche nello spazio 3-dimensionale</p></li>
-</ul>
-<p><strong>Caratteristiche dei fenomeni ondulatori.</strong></p>
+<p><strong>Cosa intendiamo per onda?</strong> Il termine onda è comunemente associato alla propagazione di una perturbazione - rispetto a una condizione di equilibrio - di una quantità fisica nello spazio e nel tempo, in grado di trasportare energia e in molti casi con una velocità di propagazione ben definita<a class="footnote-reference brackets" href="#wave-speed" id="id1">1</a>. La propagazione di un’onda è tipicamente descritta dall’equazione delle onde dal punto di vista matematico, e può mostrare <strong>fenomeni caratteristici</strong> come interferenza, effetto Doppler, e - in presenza di ostacoli - riflessione, rifrazione, diffrazione.</p>
+<p>La perturbazione di diverse quantità fisiche in vari ambiti delle scienze è governata dallo <strong>stesso modello matematico</strong>, e quindi mostrano formalmente le stesse caratteristiche: così si osservano onde meccaniche nei mezzi continui (solidi: onde nei solidi elastici, onde sismiche; fluidi: onde di pressione in acustica, onde in un liquido - come le onde del mare) o le onde elettromagnetiche nello spazio<a class="footnote-reference brackets" href="#space-physical-properties" id="id2">2</a>.</p>
+<p>La linearità di un problema permette di sovrapporre cause ed effetti.</p>
+<!--
+**Esempi.**
+- Onde meccaniche nei mezzi continui:
+  - nei solidi
+    - elastici
+    - onde sismiche
+  - nei fluidi
+    - onde di pressione (densità e altre proprietà meccaniche) e suono
+- Onde EM; lo spettro EM comprende
+  - onde radio, micro, IR, luce visibile, UV, $\gamma$, $X$
+
+**Soluzioni particolari.**
+- Onde piane stazionarie e viaggianti
+- Onde sferiche nello spazio 3-dimensionale
+
+**Caratteristiche dei fenomeni ondulatori.**
+-->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="wave-speed"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>In molti problemi, la propagazione di perturbazioni di ampiezza limitata è governata da un problema lineare. Quando è valido un modello lineare, la velocità di propagazione dell’onda dipende dalle caratteristiche del mezzo e del suo stato di equilibrio, e non dall’ampiezza delle perturbazioni: ad esempio, le onde acustiche in un gas si propagano con una velocità che dipende tipicamente dalla natura del gas e dalla sua temperatura, per un gas ideale perfetto <span class="math notranslate nohighlight">\(c = \sqrt{\gamma R T}\)</span>; la luce si propaga nel vuoto con una velocità che dipende solo da costanti della natura, <span class="math notranslate nohighlight">\(c_0 := \frac{1}{\sqrt{\varepsilon_0 \mu_0}}\)</span>. In alcuni contesti, la propagazione di perturbazioni di ampiezza «sufficientemente grande» sono descritte da un problema non-lineare, e lì la storia si complica…<strong>todo</strong> <em>esempi: equazione delle acque basse, equazione dei gas comprimibili. Questi casi apparentemente differenti, sono descritti da equazioni simili; in entrambi i casi la dinamica delle perturbazioni non è banale e può dare origine a</em> <strong>urti</strong>, <em>nel primo caso chiamati salti idraulici, nel secondo caso onde d’urto</em></p>
+</dd>
+<dt class="label" id="space-physical-properties"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>Spazio magari «vuoto di materia» ma non di proprietà fisiche, come dimostrato dalla propagazione delle onde EM, e l’assenza di un mezzo - l”<em>etere luminifero</em> - per spiegarne la propagazione. Vedi esperimento di Michelson-Morley.</p>
+</dd>
+</dl>
 <div class="toctree-wrapper compound">
 </div>
 </div>

@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/thermodynamics/heat-transmission';</script>
     <link rel="shortcut icon" href="../../_static/favicon-sugar.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
@@ -307,6 +309,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../waves/optics-geometric.html">22.1. Ottica geometrica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../waves/optics-phenomena.html">22.2. Fenomeni ondulatori in ottica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../waves/optics-lens.html">22.3. Lenti e strumenti ottici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../waves/optics-eye.html">22.4. Occhio e vista</a></li>
 </ul>
 </li>
 </ul>
@@ -559,7 +562,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -575,6 +580,16 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione">20.1. Conduzione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#convezione">20.2. Convezione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#irraggiamento">20.3. Irraggiamento</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -586,6 +601,26 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="meccanismi-di-trasmissione-del-calore">
 <span id="physics-hs-thermodynamics-heat-transmission"></span><h1><span class="section-number">20. </span>Meccanismi di trasmissione del calore<a class="headerlink" href="#meccanismi-di-trasmissione-del-calore" title="Permalink to this heading">#</a></h1>
+<div class="section" id="conduzione">
+<span id="physics-hs-thermodynamics-heat-transmission-conduction"></span><h2><span class="section-number">20.1. </span>Conduzione<a class="headerlink" href="#conduzione" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="convezione">
+<span id="physics-hs-thermodynamics-heat-transmission-convection"></span><h2><span class="section-number">20.2. </span>Convezione<a class="headerlink" href="#convezione" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="irraggiamento">
+<span id="physics-hs-thermodynamics-heat-transmission-radiation"></span><h2><span class="section-number">20.3. </span>Irraggiamento<a class="headerlink" href="#irraggiamento" title="Permalink to this heading">#</a></h2>
+<p>Trasferimento di energia tra sistemi o parti di un sistema per mezzo di onde elettromagnetiche.</p>
+<p><strong>Generazione di radiazione elettromagnetica.</strong></p>
+<ul class="simple">
+<li><p>Spettri discreti</p></li>
+<li><p>Spettri continui: legge di Planck per la densità di energia e la radiazione di un corpo nero; legge di Wien: frequenza con la massima intesità; legge di Stefan-Boltzmann: intensità della radiazione.</p></li>
+</ul>
+<p><strong>Trasmissione di radiazione elettromagnetica.</strong>
+Propagazione nei mezzi, oggetto di studio dell”<span class="xref myst">ottica</span>.</p>
+<p>Per la propagazione nel vuoto, o in mezzi che non assorbono radiazione, la legge di Stefan-Boltzmann fornisce una formula per il flusso di potenza per unità di superficie emessa dal corpo</p>
+<div class="math notranslate nohighlight">
+\[M_i = \sigma T_i^4 \ ,\]</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -642,6 +677,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conduzione">20.1. Conduzione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#convezione">20.2. Convezione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#irraggiamento">20.3. Irraggiamento</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
