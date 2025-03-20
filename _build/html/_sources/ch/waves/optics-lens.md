@@ -19,7 +19,7 @@
   
 - L'occhio umano
 
-(physics-hs:waves:optics:geometric:lenses)=
+(physics-hs:waves:optics:geometric:lenses:thin)=
 ## Lenti sottili
 
 (physics-hs:waves:optics:geometric:lenses:equation)=

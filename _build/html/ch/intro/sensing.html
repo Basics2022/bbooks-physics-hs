@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/intro/sensing';</script>
     <link rel="shortcut icon" href="../../_static/favicon-sugar.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
@@ -346,7 +348,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../electromagnetism/em-waves.html">26. Onde elettromagnetiche</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../electromagnetism/em-waves-problems.html">26.3. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../electromagnetism/em-waves-problems.html">26.4. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../electromagnetism/thermoelectric-effects.html">27. Effetti foto-termo-elettro-meccanici</a></li>
@@ -560,7 +562,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -576,6 +580,18 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenuti </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vista">5.1. Vista</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#udito">5.2. Udito</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tatto">5.3. Tatto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#olfatto">5.4. Olfatto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gusto">5.5. Gusto</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -587,13 +603,65 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="sensi">
 <span id="physics-hs-intro-sensing"></span><h1><span class="section-number">5. </span>Sensi<a class="headerlink" href="#sensi" title="Permalink to this heading">#</a></h1>
-<p>I nostri sensi ci ingannano o possono ingannarci. La percezione sensoriale avviene tramite una catena di misura che parte dai recettori e arriva alla rappresentazione che il nsotro cervello costruisce del fenomeno, tramite conversione dello stimolo in segnali di natura meccanica o elettro-chimica.</p>
+<p>I nostri sensi ci ingannano o possono ingannarci. In breve, la percezione sensoriale avviene tramite una <strong>catena di misura</strong> che parte dai recettori e arriva alla rappresentazione che il nostro cervello costruisce del fenomeno, tramite conversione dello stimolo in segnali di natura meccanica o elettro-chimica.</p>
+<p>Una prima classificazione dei recettori può essere fatta in base alla natura fisica dello stimolo ai quali sono sensibili. Ad esempio,</p>
+<ul class="simple">
+<li><p>meccanocettori</p>
+<ul>
+<li><p>nel <em>tatto</em></p></li>
+<li><p>nell”<em>udito</em>: lo stimolo esterno sono onde meccaniche di pressione, che vengono trasferite con una catena di organi meccanici e poi convertite in segnali nervosi</p></li>
+</ul>
+</li>
+<li><p>termorecettori:</p></li>
+<li><p>fotorecettori: coni e bastoncelli nella zona centrale della retina, specializzati nella visione di colori e nella visione distinta (movimento e contorni</p></li>
+<li><p>chemiorecettori: tipici del senso del <em>gusto</em> e dell”<em>olfatto</em></p></li>
+</ul>
+<p>I sensori umani hanno alcune caratteristiche tipiche degli strumenti:</p>
+<ul class="simple">
+<li><p>sensibilità</p></li>
+<li><p>banda passante</p></li>
+<li><p>…</p></li>
+</ul>
 <p>Esempi:</p>
 <ul class="simple">
 <li><p>temperatura e calore? (Termodinamica)</p></li>
 <li><p>spazio, tempo o spazio-tempo? (Relatività di Einstein)</p></li>
 </ul>
+<div class="section" id="vista">
+<span id="physics-hs-intro-sensing-sight"></span><h2><span class="section-number">5.1. </span>Vista<a class="headerlink" href="#vista" title="Permalink to this heading">#</a></h2>
+<p>La vista è il senso che permette di recepire stimoli luminosi attraverso i nostri occhi. Lo stimolo luminoso è uno stimolo elettromagnetico che può essere percepito dall’occhio umano. Una perturbazione elettromagnetica può essere caratterizzata da intensità e frequenza - o analogamente, lunghezza d’onda: l’occhio umano è in grado di recepire segnali elettromagnetici con lunghezza d’onda tra circa i <span class="math notranslate nohighlight">\(400 \, \text{nm}\)</span> e i <span class="math notranslate nohighlight">\(700 \, \text{nm}\)</span>.</p>
+<p>Seguendo il percorso lungo la catena di misura dello stimolo esterno, la radiazione elettromagnetica, che arriva all’occhio:</p>
+<ul class="simple">
+<li><p>viene raccolta dalla parte anteriore dell’occhio e indirizzata verso la zona della retina dove sono presenti i fotorecettori, addetti a convertire il segnale elettromagnetico in stimolo nervoso. L’azione di pupilla e cristallino operano come l’apertura e la messa a fuoco di una <a class="reference internal" href="../waves/optics-lens.html#physics-hs-waves-optics-geometric-lenses"><span class="std std-ref">lente</span></a>:</p>
+<ul>
+<li><p>l”<strong>apertura</strong> della <strong>pupilla</strong> permette di regolare la potenza del segnale da inviare ai fotorecettori: in condizione di luce intensa, la pupilla mantiene limitata la potenza del segnale riducendo il suo diametro, e quindi la superficie attraverso quale passa la perturbazione luminosa; in condizioni di luce poco intensa la pupilla si dilata per permettere il passaggio di una quantità maggiore di luce poco intensa;</p></li>
+<li><p>il <strong>cristallino</strong> - in combinazione con le altre regioni dell’occhio - permette la <strong>messa a fuoco</strong> del segnale sulla retina, dove sono presenti i fotorecettori che devono convertire il segnale in stimoli nervosi</p></li>
+</ul>
+</li>
+<li><p>nella zona centrale della retina, i fotorecettori convertono i segnali elettromagnetici in segnali nervosi; questi vengono trasdotti dal nervo ottico al cervello, dove avviene l’elaborazione del segnale.</p></li>
+</ul>
+<p><strong>Riferimenti e sezioni future:</strong> <a class="reference internal" href="../waves/optics-lens.html#physics-hs-waves-optics-geometric-lenses"><span class="std std-ref">Lenti</span></a>; <a class="reference internal" href="../waves/optics-eye.html#physics-hs-waves-optics-eye"><span class="std std-ref">Ottica e occhio</span></a>; <a class="reference internal" href="../electromagnetism/em-waves.html#physics-hs-electromagnetism-em-waves"><span class="std std-ref">Onde elettromagnetiche</span></a>.</p>
+</div>
+<div class="section" id="udito">
+<span id="physics-hs-intro-sensing-hearing"></span><h2><span class="section-number">5.2. </span>Udito<a class="headerlink" href="#udito" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="tatto">
+<span id="physics-hs-intro-sensing-tactile"></span><h2><span class="section-number">5.3. </span>Tatto<a class="headerlink" href="#tatto" title="Permalink to this heading">#</a></h2>
+<p>Il senso del tatto è il senso che permette di recepire stimoli attraverso la superficie cutanea di oggetti o stimoli esterni<a class="footnote-reference brackets" href="#tactile-heat" id="id1">1</a>. Nella nostra pelle sono presenti circa 130 recettori tattili per <span class="math notranslate nohighlight">\(\text{cm}^2\)</span>, <strong>specializzati</strong> nelle sensazioni di pressione, di finitura superficiale (rugosità), di caldo e freddo, e di dolore.</p>
+</div>
+<div class="section" id="olfatto">
+<span id="physics-hs-intro-sensing-smell"></span><h2><span class="section-number">5.4. </span>Olfatto<a class="headerlink" href="#olfatto" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="gusto">
+<span id="physics-hs-intro-sensing-taste"></span><h2><span class="section-number">5.5. </span>Gusto<a class="headerlink" href="#gusto" title="Permalink to this heading">#</a></h2>
 <p><strong>todo</strong> <em>Fare riferimenti ai capitoli…</em></p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="tactile-heat"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Lo stimolo può avvenire per contatto con altri oggetti o in assenza di contatto: ad esempio, davanti a un focolare percepiamo una sensazione di caldo, e lo percepiremmo anche nello spazio «vuoto di materia». Questo avviene poiché alcuni recettori della pelle sono in grado di percepire la sensazione di caldo dovuta alla radiazione elettromagnetica.</p>
+</dd>
+</dl>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -650,6 +718,24 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenuti
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vista">5.1. Vista</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#udito">5.2. Udito</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tatto">5.3. Tatto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#olfatto">5.4. Olfatto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gusto">5.5. Gusto</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

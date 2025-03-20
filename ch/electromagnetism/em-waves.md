@@ -39,10 +39,13 @@ Hertz fece altre esperienze significative:
 ## Esperimenti di Hertz
 
 (physics-hs:electromagnetism:em-waves:light)=
-## Luce
+## Luce e spettro elettromagnetico
+
+Spettro elettromagnetico...
+
 
 (physics-hs:electromagnetism:em-waves:spectrography)=
-### Spettrografia
+## Spettrografia
 Diffrazione per scomporre la luce in uno spettro:
 - prisma
 - seguendo la *teoria ondulatoria della luce* di Young, Arago e Fresnel, **Fraunhofer** (1815) sviluppa i **reticoli di** [**diffrazione**](physics-hs:waves:effects:diffraction) per sfruttarne l'interferenza, effetto tipico dei fenomeni che hanno *comportamento ondulatorio*; questo progresso tecnologico consente un miglioramento della risoluzione spettrale e la costruzione di strumenti universali affidabili per la spettroscopia
