@@ -44,7 +44,7 @@ for root, _, files in os.walk(BUILD_DIR):
                 continue
 
             # Insert script immediately after <head>
-            new_content = content.replace("<head>", f"<head>{GA_SCRIPT}", 1)
+            new_content = content.replace("</head>", f"</head>{GA_SCRIPT}", 1)
 
             # Write the modified content back to the file
             with open(filepath, "w", encoding="utf-8") as file:
