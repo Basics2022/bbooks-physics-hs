@@ -800,7 +800,7 @@ Magnificazione<div class="sd-summary-down docutils">
 </ul>
 <p>Il prodotto di intensità luminosa e tempo di esposizione viene definita <strong>esposizione</strong>,</p>
 <div class="math notranslate nohighlight">
-\[ \text{esposizione} = \text{apertura} \times \text{\tempi} \ .\]</div>
+\[ \text{esposizione} = \text{apertura} \times \text{tempi} \ .\]</div>
 <p>Così ad esempio:</p>
 <ul class="simple">
 <li><p>un’esposizione troppo bassa non sarà in grado di impressionare «a sufficienza» il sensore e la foto risulterà quindi buia</p></li>
@@ -824,9 +824,24 @@ Magnificazione<div class="sd-summary-down docutils">
 </ul>
 <p><strong>Lunghezza focale e angolo di campo.</strong> All’aumentare della lunghezza focale si riduce l’angolo di campo.</p>
 <p><strong>Effetto sulle proporzioni di oggetti a distanza diversa: angolo di campo, dimensioni relative e prospettiva.</strong> Lunghezze focali piccole rendono oggetti a distanza diversa di dimensione molto diversa (dovuto ad angolo di campo maggiore, e distanze minori dal soggetto principale)</p>
-<div class="proof example admonition" id="example-0">
+<div class="proof example admonition" id="magnifying-lens">
 <p class="admonition-title"><span class="caption-number">Example 22.11 </span> (Lente di ingrandimento)</p>
 <div class="example-content section" id="proof-content">
+<p>Esprimiamo le distanze <span class="math notranslate nohighlight">\(d_o\)</span> e <span class="math notranslate nohighlight">\(d_i\)</span> come multipli della lunghezza focale della lente, <span class="math notranslate nohighlight">\(d_o = f D_o\)</span>, <span class="math notranslate nohighlight">\(d_i = f D_i\)</span>  per ottenere così un”<span class="xref myst">adimensionalizzazione</span> dell’equazione del paino dell’immagine</p>
+<div class="math notranslate nohighlight">
+\[1 = \frac{1}{D_o} + \frac{1}{D_i} \ .\]</div>
+<p>Data la distanza dell’oggetto <span class="math notranslate nohighlight">\(D_o\)</span>, il piano dell’immagine si trova quindi a</p>
+<div class="math notranslate nohighlight">
+\[D_i = \left( 1 - \frac{1}{D_o} \right)^{-1} \ ,\]</div>
+<p>e il coefficiente di magnificazione</p>
+<div class="math notranslate nohighlight">
+\[m = -\frac{D_i}{D_o} = \frac{1}{ 1 - D_o } \ .\]</div>
+<p><strong>Commento della formula.</strong> Si analizza ora l’andamento del coefficiente di magnificazione dell’immagine sul piano di formazione dell’immagine, in funzione della distanza della lente di ingrandimento dall’oggetto desiderato.</p>
+<ul class="simple">
+<li><p>per distanza che tende a zero, <span class="math notranslate nohighlight">\(D_o \rightarrow 0\)</span>, la magnificazione tende a zero, <span class="math notranslate nohighlight">\(m \rightarrow 0\)</span>.</p></li>
+<li><p>all’aumentare della distanza <span class="math notranslate nohighlight">\(D_o\)</span> la magnificazione aumenta fino a <span class="math notranslate nohighlight">\(d_o = f\)</span> dove il coefficiente tende a <span class="math notranslate nohighlight">\(+\infty\)</span>. In questo di distanza, avvicinando o allontanando la lente si ottiene un ingrandimento minore o maggiore</p></li>
+<li><p>oltre la singolarità, il coefficiente «riparte da <span class="math notranslate nohighlight">\(-\infty\)</span>», è negativo e aumenta fino a tendere a <span class="math notranslate nohighlight">\(0^-\)</span> per <span class="math notranslate nohighlight">\(D_0 \rightarrow + \infty\)</span>; in questo intervallo di distanza, l”<strong>immagine risulta invertita</strong></p></li>
+</ul>
 </div>
 </div><div class="proof example dropdown admonition" id="lenses-simple">
 <p class="admonition-title"><span class="caption-number">Example 22.12 </span> (Confronto tra obiettivi (di lenti semplici))</p>
