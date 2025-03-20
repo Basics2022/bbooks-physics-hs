@@ -168,12 +168,15 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../program.html">Programma</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../program.html">Programma</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../todo.html">todo</a></li>
+</ul>
+</li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione alla fisica</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../intro.html">1. Introduzione alla fisica</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../intro/physical_quantities.html">2. Grandezze fisiche</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../intro/physical_quantities.html">2. Grandezze fisiche</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../intro/physical_quantities-space.html">2.1. Spazio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../intro/physical_quantities-mass.html">2.2. Quantità di materia</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../intro/physical_quantities-time.html">2.3. Tempo</a></li>
@@ -185,17 +188,24 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../intro/measurements.html">3. Misura</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../intro/scientific-method.html">4. Il metodo scientifico</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro/sensing.html">5. Sensi</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../intro/sensing.html">5. Sensi</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../intro/sensing-sight.html">5.1. Vista</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../intro/sensing-hearing.html">5.2. Udito</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../intro/sensing-tactile.html">5.3. Tatto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../intro/sensing-taste.html">5.4. Gusto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../intro/sensing-smell.html">5.5. Olfatto</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../intro/current-status.html">6. Stato corrente</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Meccanica classica</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/intro.html">7. Introduzione alla meccanica classica</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/intro.html">7. Introduzione alla meccanica classica</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/intro-vocabulary.html">7.1. Concetti in meccanica classica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/intro-history.html">7.2. Esperienze e breve storia delle origini della meccanica classica</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/kinematics.html">8. Cinematica</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/kinematics.html">8. Cinematica</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-point.html">8.1. Cinematica del punto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-rigid.html">8.2. Cinematica di un corpo rigido</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-deformable.html">8.3. Cinematica dei sistemi deformabili</a></li>
@@ -205,7 +215,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/kinematics-notes.html">8.7. Note e dimostrazioni</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/actions.html">9. Azioni</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/actions.html">9. Azioni</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/actions-types.html">9.1. Forza, momento di una forza, azioni distribuite</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/actions-work.html">9.2. Lavoro e potenza</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/actions-conservative.html">9.3. Azioni conservative</a></li>
@@ -213,7 +223,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/actions-problems.html">9.5. Problemi</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/statics.html">10. Statica</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/statics.html">10. Statica</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/statics-point.html">10.1. Statica del punto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/statics-rigid.html">10.2. Statica di un corpo rigido</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/statics-composite.html">10.3. Statica di sistemi composti</a></li>
@@ -221,14 +231,14 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/statics-problems.html">10.5. Problemi</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/inertia.html">11. Inerzia</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/inertia.html">11. Inerzia</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/inertia-point.html">11.1. Inerzia e grandezze dinamiche di un punto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/inertia-points.html">11.2. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione discreta di massa</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/inertia-continuum.html">11.3. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/inertia-problems.html">11.4. Problemi</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/dynamics.html">12. Dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mechanics/dynamics.html">12. Dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-principles.html">12.1. Princìpi della dinamica di Newton</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-eom.html">12.2. Equazioni cardinali della dinamica per sistemi chiusi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mechanics/dynamics-conservation.html">12.3. Leggi di conservazione</a></li>
@@ -251,14 +261,14 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Termodinamica</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../thermodynamics/foundation.html">16. Introduzione alla termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../thermodynamics/foundation.html">16. Introduzione alla termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/foundation-history.html">16.1. Breve storia della termodinamica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/foundation-experiments.html">16.2. Esperienze ed esperimenti</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/foundation-atomic-theory.html">16.3. Termodinamica e teoria atomica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/foundation-vocabulary.html">16.4. Concetti in termodinamica</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../thermodynamics/principles.html">17. Princìpi della termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../thermodynamics/principles.html">17. Princìpi della termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-lavoisier.html">17.1. Principio di Lavoisier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-first.html">17.2. Primo principio della termodinamica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-gibbs-phase-rule.html">17.3. Gibbs: energia interna, regola delle fasi e funzioni multi-variabili</a></li>
@@ -267,27 +277,27 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/principles-open.html">17.6. Sistemi aperti</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../thermodynamics/matter.html">18. Stati della materia</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../thermodynamics/ideal-gas.html">18.1. Gas ideali</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../thermodynamics/matter.html">18. Stati della materia</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../thermodynamics/ideal-gas.html">18.1. Gas ideali</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../thermodynamics/ideal-gas-experiments.html">18.1.1. Esperimenti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../thermodynamics/ideal-gas-expressions.html">18.1.2. Espressioni diverse dell’equazione di stato dei gas perfetti</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../thermodynamics/ideal-gas-kinetic-theory.html">18.1.3. Teoria cinetica dei gas</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../thermodynamics/ideal-gas-formulas.html">18.1.4. Caratteristiche dei gas perfetti</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../thermodynamics/gas-mixture.html">18.2. Miscele di gas</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../thermodynamics/gas-mixture.html">18.2. Miscele di gas</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../thermodynamics/humid-air.html">18.2.1. Aria umida</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/elastic-solid-1d.html">18.3. Solidi elastici</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../thermodynamics/heat-engine.html">19. Fondamenti di fisica tecnica</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../thermodynamics/heat-engine.html">19. Fondamenti di fisica tecnica</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/heat-engine-td-transformations.html">19.1. Trasformazioni termodinamiche</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/heat-engine-td-cycles.html">19.2. Cicli termodinamici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/heat-engine-carnot.html">19.3. Carnot e le «Riflessioni sulla forza motrice del fuoco»</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../thermodynamics/heat-engine-second-principle.html">19.4. Secondo principio della termodinamica per cicli termodinamici</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../thermodynamics/heat-engine-industrial.html">19.5. Macchine termiche e cicli termodinamici</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../thermodynamics/heat-engine-industrial.html">19.5. Macchine termiche e cicli termodinamici</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../thermodynamics/heat-engine-otto.html">19.5.1. Ciclo Otto</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../thermodynamics/heat-engine-diesel.html">19.5.2. Ciclo Diesel</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../thermodynamics/heat-engine-joule-brayton.html">19.5.3. Ciclo Joule-Brayton</a></li>
@@ -300,12 +310,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Fenomeni ondulatori e ottica</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="intro.html">21. Introduzione ai fenomeni ondulatori</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="intro.html">21. Introduzione ai fenomeni ondulatori</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="waves-in-physics.html">21.1. Equazione delle onde in diversi sistemi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="phenomena.html">21.2. Caratteristiche dei fenomeni ondulatori</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="optics.html">22. Ottica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="optics.html">22. Ottica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="optics-geometric.html">22.1. Ottica geometrica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="optics-phenomena.html">22.2. Fenomeni ondulatori in ottica</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">22.3. Lenti e strumenti ottici</a></li>
@@ -315,24 +325,24 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Elettromagnetismo</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../electromagnetism/intro.html">23. Introduzione all’elettromagnetismo</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../electromagnetism/intro.html">23. Introduzione all’elettromagnetismo</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../electromagnetism/intro-history.html">23.1. Breve storia dell’elettromagnetismo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../electromagnetism/intro-experiments.html">23.2. Esperienze ed esperimenti</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../electromagnetism/intro-problems.html">23.3. Problemi</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../electromagnetism/em.html">24. Fondamenti di elettromagnetismo</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../electromagnetism/electrostatics.html">24.1. Elettrostatica</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../electromagnetism/em.html">24. Fondamenti di elettromagnetismo</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../electromagnetism/electrostatics.html">24.1. Elettrostatica</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electrostatics-problems.html">24.1.7. Problemi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electrostatics-sol.html">24.1.8. Soluzioni</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electrostatics-notes.html">24.1.9. Note e dimostrazioni</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../electromagnetism/electric-current.html">24.2. Corrente elettrica</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../electromagnetism/electric-current.html">24.2. Corrente elettrica</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electric-current-problems.html">24.2.5. Problemi</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../electromagnetism/electromagnetism-steady.html">24.3. Magnetismo ed elettromagnetismo in regime stazionario</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../electromagnetism/electromagnetism-steady.html">24.3. Magnetismo ed elettromagnetismo in regime stazionario</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electromagnetism-steady-problems.html">24.3.8. Problemi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electromagnetism-steady-sol.html">24.3.9. Soluzioni</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electromagnetism-steady-notes.html">24.3.10. Note e dimostrazioni</a></li>
@@ -341,14 +351,14 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../electromagnetism/electromagnetism-general.html">24.4. Induzione ed elettromagnetismo</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../electromagnetism/electrical-engineering.html">25. Fondamenti di elettrotecnica</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../electromagnetism/electrical-engineering.html">25. Fondamenti di elettrotecnica</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../electromagnetism/circuits-electric.html">25.1. Circuiti elettrici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../electromagnetism/circuits-magnetic.html">25.2. Circuiti magnetici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../electromagnetism/electric-machines.html">25.3. Sistemi elettromeccanici e macchine elettriche</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../electromagnetism/em-waves.html">26. Onde elettromagnetiche</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../electromagnetism/em-waves-problems.html">26.3. Problemi</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../electromagnetism/em-waves.html">26. Onde elettromagnetiche</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-25"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../electromagnetism/em-waves-problems.html">26.4. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../electromagnetism/thermoelectric-effects.html">27. Effetti foto-termo-elettro-meccanici</a></li>
@@ -361,7 +371,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../modern/intro-radioactivity.html">31. Radioattività</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/einstein.html">32. Teoria di Einstein</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/quantum.html">33. Meccanica quantistica</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../modern/astronomy.html">34. Sviluppi dell’astronomia</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../modern/astronomy.html">34. Sviluppi dell’astronomia</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../modern/astronomy-star-classification.html">34.1. Classificazione stellare</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../modern/astronomy-distance-ladder.html">34.2. Scala delle distanze cosmiche</a></li>
 </ul>
@@ -632,12 +642,21 @@ document.write(`
 <li><p>L’occhio umano</p></li>
 </ul>
 <div class="section" id="lenti-sottili">
-<span id="id1"></span><h2><span class="section-number">22.3.1. </span>Lenti sottili<a class="headerlink" href="#lenti-sottili" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-waves-optics-geometric-lenses-thin"></span><h2><span class="section-number">22.3.1. </span>Lenti sottili<a class="headerlink" href="#lenti-sottili" title="Permalink to this heading">#</a></h2>
 <div class="section" id="equazione-delle-lenti-sottili-sferiche">
 <span id="physics-hs-waves-optics-geometric-lenses-equation"></span><h3><span class="section-number">22.3.1.1. </span>Equazione delle lenti sottili sferiche<a class="headerlink" href="#equazione-delle-lenti-sottili-sferiche" title="Permalink to this heading">#</a></h3>
 <p>Raggi paralleli incidenti su una lente sferica covessa sottile convergono in un unico punto sull’asse della lente, chiamato <strong>fuoco della lente</strong>, a una distanza <span class="math notranslate nohighlight">\(f\)</span> dalla lente, chiamata <strong>lunghezza focale</strong>. Per una lente sottile esiste una relazione tra i raggi di curvatura <span class="math notranslate nohighlight">\(R_1\)</span>, <span class="math notranslate nohighlight">\(R_2\)</span> delle superficie della lente, gli indifici di rifrazione del mezzo <span class="math notranslate nohighlight">\(n_1\)</span> e della lente <span class="math notranslate nohighlight">\(n_L\)</span> e la lunghezza focale <span class="math notranslate nohighlight">\(f\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\frac{1}{f} = \left( \frac{n_L}{n_1} - 1 \right) \left( \frac{1}{R_1} + \frac{1}{R_2} \right) \ .\]</div>
+<table class="table">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../_images/lenses-geometry-small.png" /></p></td>
+</tr>
+</tbody>
+</table>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Dimostrazione<div class="sd-summary-down docutils">
@@ -699,6 +718,17 @@ Dimostrazione<div class="sd-summary-down docutils">
   - Dimostrazione che tutti i raggi luminosi provenienti da un punto convergono in un unico punto nel piano di formazione dell'immagine - messa a fuoco.
   - Mancata messa a fuoco
 -->
+<table class="table">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../_images/lenses-image-1ray.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="" src="../../_images/lenses-image-3rays.png" /></p></td>
+</tr>
+</tbody>
+</table>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Piano dell’immagine<div class="sd-summary-down docutils">
@@ -743,38 +773,185 @@ Magnificazione<div class="sd-summary-down docutils">
 <div class="math notranslate nohighlight">
 \[\frac{h_i}{h_o} = \frac{d_i}{d_o} \ .\]</div>
 </div>
-</details></div>
+</details><table class="table">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../_images/lenses-image-focus.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="" src="../../_images/lenses-image-focus-out-1.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="" src="../../_images/lenses-image-focus-out-2.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 <div class="section" id="lenti-sempici">
 <h2><span class="section-number">22.3.2. </span>Lenti sempici<a class="headerlink" href="#lenti-sempici" title="Permalink to this heading">#</a></h2>
-</div>
-<div class="section" id="lenti">
-<h2><span class="section-number">22.3.3. </span>Lenti<a class="headerlink" href="#lenti" title="Permalink to this heading">#</a></h2>
-<div class="proof example admonition" id="example-0">
+<p>Per lenti sottili semplici a geometria costante, e quindi lunghezza focale costante <span class="math notranslate nohighlight">\(f\)</span>, la distanza <span class="math notranslate nohighlight">\(d_i\)</span> del piano dell’immagine dalla lente è determinata una volta nota la distanza dell’oggetto <span class="math notranslate nohighlight">\(d_o\)</span> che si vuole mettere a fuoco. Risulta quindi determinato anche il coefficiente di magnificazione dell’immagine.</p>
+<p><span style="color:red"><strong>todo</strong> Riogranizzare le sezioni</span></p>
+<p><strong>Caratteristiche obiettivi.</strong> La <em>lunghezza focale</em> di un obiettivo rappresenta la <em>distanza focale</em> più corta che si più ottenere con l’obiettivo mantenendo l’immagine a fuoco, o con la messa a fuoco all’infinito. Equiparando l’obiettivo a una lente sottile <strong>todo</strong></p>
+<p><strong>Diaframma e otturatore.</strong> Nelle macchine fotografiche:</p>
+<ul class="simple">
+<li><p>il diagramma regola l”<strong>apertura</strong> e di conseguenza l”<strong>intensità luminosa</strong> («la quantità di luce» per unità di tempo) che entra nell’obiettivo e va a formare l’immagine</p></li>
+<li><p>l’otturatore regola il <strong>tempo di esposizione</strong> del sensore alla luce. Solo durante questo intervallo di tempo il sensore riceve la luce esterna, che oggi va a caricare elettricamente la matrice del sensore digitale, e una volta andava a impressionare la pellicola</p></li>
+</ul>
+<p>Il prodotto di intensità luminosa e tempo di esposizione viene definita <strong>esposizione</strong>,</p>
+<div class="math notranslate nohighlight">
+\[ \text{esposizione} = \text{apertura} \times \text{tempi} \ .\]</div>
+<p>Così ad esempio:</p>
+<ul class="simple">
+<li><p>un’esposizione troppo bassa non sarà in grado di impressionare «a sufficienza» il sensore e la foto risulterà quindi buia</p></li>
+<li><p>un’esposizione troppo alta impressionerà il sensore più del dovuto, e la foto risulterà quindi artificialmente troppo luminosa. Al limite, un’esposizione eccessiva porta alla saturazione del sensore, che produrrà quindi una foto completamente bianca, o «bruciata».</p></li>
+</ul>
+<p><span style="color:red"><strong>todo</strong> Aggiungere immagine diaframma</span></p>
+<p><strong>Profondità di campo.</strong> La profondità di campo può essere definito come l’intervallo di distanza tra una distanza minima e la distanza massima nei quali gli oggetti risultano a fuoco. La profondità di campo dipende principalmente da 3 fattori:</p>
+<ol class="arabic simple">
+<li><p>l’apertura</p></li>
+<li><p>la distanza dal soggetto</p></li>
+<li><p>la distanza focale della lente</p></li>
+</ol>
+<p>All’aumentare dell’apertura, al diminuire della distanza dal soggetto, e all’aumentare della distanza focale diminuisce la profondità di campo.</p>
+<p><span style="color:red"><strong>todo</strong> Aggiungere immagini</span></p>
+<p><strong>Tipi di obiettivo.</strong></p>
+<ul class="simple">
+<li><p>fisheye: <span class="math notranslate nohighlight">\(7-16 \, mm\)</span></p></li>
+<li><p>grandangolare: <span class="math notranslate nohighlight">\(10-42 \, mm\)</span></p></li>
+<li><p>standard: <span class="math notranslate nohighlight">\(50-85-100 \, mm\)</span></p></li>
+<li><p>teleobiettivo: <span class="math notranslate nohighlight">\(100-800 \, mm\)</span></p></li>
+</ul>
+<p><strong>Lunghezza focale e angolo di campo.</strong> All’aumentare della lunghezza focale si riduce l’angolo di campo.</p>
+<p><strong>Effetto sulle proporzioni di oggetti a distanza diversa: angolo di campo, dimensioni relative e prospettiva.</strong> Lunghezze focali piccole rendono oggetti a distanza diversa di dimensione molto diversa (dovuto ad angolo di campo maggiore, e distanze minori dal soggetto principale)</p>
+<div class="proof example dropdown admonition" id="magnifying-lens">
 <p class="admonition-title"><span class="caption-number">Example 22.11 </span> (Lente di ingrandimento)</p>
 <div class="example-content section" id="proof-content">
+<p>Esprimiamo le distanze <span class="math notranslate nohighlight">\(d_o\)</span> e <span class="math notranslate nohighlight">\(d_i\)</span> come multipli della lunghezza focale della lente, <span class="math notranslate nohighlight">\(d_o = f D_o\)</span>, <span class="math notranslate nohighlight">\(d_i = f D_i\)</span>  per ottenere così un”<span class="xref myst">adimensionalizzazione</span> dell’equazione del paino dell’immagine</p>
+<div class="math notranslate nohighlight">
+\[1 = \frac{1}{D_o} + \frac{1}{D_i} \ .\]</div>
+<p>Data la distanza dell’oggetto, il piano dell’immagine si trova quindi a</p>
 </div>
-</div><div class="proof example admonition" id="example-1">
-<p class="admonition-title"><span class="caption-number">Example 22.12 </span> (Messa a fuoco)</p>
+</div><div class="proof example dropdown admonition" id="lenses-simple">
+<p class="admonition-title"><span class="caption-number">Example 22.12 </span> (Confronto tra obiettivi (di lenti semplici))</p>
+<div class="example-content section" id="proof-content">
+<p>Vengono usati due obiettivi formati da una lente semplice sottile<a class="footnote-reference brackets" href="#real-lenses" id="id1">1</a> con lunghezza focale <span class="math notranslate nohighlight">\(f_1 = 50 \, mm\)</span> e <span class="math notranslate nohighlight">\(f_2 = 200 \, mm\)</span> per fare 4 foto mettendo a fuoco a distanza <span class="math notranslate nohighlight">\(d_o\)</span></p>
+<div class="math notranslate nohighlight">
+\[d_o \in \left\{ 10 \, cm, \, 30 \, cm, \, 1 \, m, 3 \, m, \, 5 \, m, \, 10 \, m \right\}.\]</div>
+<p>Si determinano le distanze del piano dell’immagine per ottenere una messa a fuoco e il coefficiente di magnificazione. Per l’obiettivo con lunghezza focale <span class="math notranslate nohighlight">\(f_1 = 50 \, mm\)</span></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-center head"><p><span class="math notranslate nohighlight">\(d_o\)</span></p></th>
+<th class="text-center head"><p><span class="math notranslate nohighlight">\(d_i\)</span></p></th>
+<th class="text-center head"><p><span class="math notranslate nohighlight">\(m = d_i/d_o\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(10 \, cm\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.1000 \, m\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1.0000\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(30 \, cm\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.0600 \, m\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.2000\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(1 \, m\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.0526 \, m\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.0580\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(3 \, m\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.0508 \, m\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.0169\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(5 \, m\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.0505 \, m\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.0101\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(10\, m\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.0503 \, m\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.0050\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>mentre per il teleobiettivo con lunghezza focale <span class="math notranslate nohighlight">\(f_2 = 200 \, mm\)</span></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-center head"><p><span class="math notranslate nohighlight">\(d_o\)</span></p></th>
+<th class="text-center head"><p><span class="math notranslate nohighlight">\(d_i\)</span></p></th>
+<th class="text-center head"><p><span class="math notranslate nohighlight">\(m = d_i/d_o\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(10 \, cm\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-0.2000 \, m\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-2.000\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(30 \, cm\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.6000 \, m\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(2.0000\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(1 \, m\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.2500 \, m\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.2500\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(3 \, m\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.2143 \, m\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.0714\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(5 \, m\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.2083 \, m\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.0417\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(10\, m\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.2041 \, m\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0.0204\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>Alcune osservazioni:</p>
+<ul class="simple">
+<li><p>la distanza <span class="math notranslate nohighlight">\(d_i\)</span> negativa per lente con lunthezza focale <span class="math notranslate nohighlight">\(f_2 = 200 \, mm\)</span> e oggetto distante <span class="math notranslate nohighlight">\(d_o = 10 \, cm\)</span> dovrebbe far pensare che non sono rispettati i limiti del modello, o che si incontrano limiti tecnologici nella realizzazione della messa a fuoco di un oggetto troppo vicino per un teleobiettivo. La distanza minima di messa a fuoco di teleobiettivi - come di altri obiettivi - nelle applicazioni pratiche viene fornita sulle schede tecniche dell’obiettivo; anche la distanza dipende dal particolare obiettivo, si può pensare una distanza minima di messa a fuoco dell’ordine di <span class="math notranslate nohighlight">\(1.5 - 2 \, m\)</span> per i <span class="math notranslate nohighlight">\(200 \, mm\)</span>, come reperibile per un obiettivo Canon<a class="footnote-reference brackets" href="#canon-200mm" id="id2">2</a>;</p></li>
+<li><p>altri limiti tecnici per strumenti con una lente semplice derivano dalla distanza <span class="math notranslate nohighlight">\(d_i\)</span> necessaria alla messa a fuoco; gli obiettivi reali hanno più lenti per trattatare alcuni problemi che si avrebbero con una lente singola (aberrazione cromatica), e possono essere progettati per rendere l’obiettivo più compatto rispetto a quanto sarebbe richiesto dalla distanza <span class="math notranslate nohighlight">\(d_i\)</span> di una lente singola. Così, ad esempio un obiettivo Nikon con lunghezza focale <span class="math notranslate nohighlight">\(800 \, mm\)</span> ha una lunghezza di circa <span class="math notranslate nohighlight">\(385\, mm\)</span><a class="footnote-reference brackets" href="#nikon-800mm" id="id3">3</a>; i teleobiettivi rimangono comunque degli strumenti ingombranti (<span class="math notranslate nohighlight">\(140 \, mm\)</span> di diametro), pesanti (<span class="math notranslate nohighlight">\(2.4 \, kg\)</span>), costosi <span class="math notranslate nohighlight">\(2000\)</span>€ (2025), e quindi principalmente riservati a professionisti.</p></li>
+<li><p>il fattore di magnificazione è determinato dalla distanza dell’oggetto <span class="math notranslate nohighlight">\(d_o\)</span>, non è possibile compiere un ingrandimento. In seguito, nell’esempio <a class="reference internal" href="#zoom">Example 22.15</a> viene discusso un semplice meccanismo che permette l’ingrandimento dell’immagine (e quindi la riduzione dell’angolo di campo).</p></li>
+</ul>
+</div>
+</div></div>
+<div class="section" id="lenti">
+<h2><span class="section-number">22.3.3. </span>Lenti<a class="headerlink" href="#lenti" title="Permalink to this heading">#</a></h2>
+<div class="proof example admonition" id="example-2">
+<p class="admonition-title"><span class="caption-number">Example 22.13 </span> (Messa a fuoco)</p>
 <div class="example-content section" id="proof-content">
 </div>
-</div><div class="proof example admonition" id="example-2">
-<p class="admonition-title"><span class="caption-number">Example 22.13 </span> (Auto-focus)</p>
+</div><div class="proof example admonition" id="example-3">
+<p class="admonition-title"><span class="caption-number">Example 22.14 </span> (Auto-focus)</p>
 <div class="example-content section" id="proof-content">
 <ul class="simple">
 <li><p>Per convoluzione</p></li>
 <li><p>Per contrasto</p></li>
 </ul>
 </div>
-</div><div class="proof example admonition" id="example-3">
-<p class="admonition-title"><span class="caption-number">Example 22.14 </span> (Zoom)</p>
+</div><div class="proof example dropdown admonition" id="zoom">
+<p class="admonition-title"><span class="caption-number">Example 22.15 </span> (Zoom)</p>
 <div class="example-content section" id="proof-content">
+<p>L’esempio <a class="reference internal" href="#lenses-simple">Example 22.12</a> sulle lenti semplici ha mostrato come il rapporto di magnificazione, e quindi l’ingrandimento, in quei sistemi sia determinato dalla distanza dell’oggetto.</p>
 <p>Zoom: sistema afocale (modifica l’ingrandimento angolare) + lente focale (si occupa della generazione dell’immagine)</p>
 </div>
 </div></div>
 <div class="section" id="lenti-spesse">
 <h2><span class="section-number">22.3.4. </span>Lenti spesse<a class="headerlink" href="#lenti-spesse" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="https://it.wikipedia.org/wiki/Lente_spessa">Lenti spesse, wikipedia</a></p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="real-lenses"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Gli obiettivi usati nelle applicazioni reali sono formati da un gran numero di lenti, tutt’altro che sottili, ma qui possiamo provare a fare qualche esercizio. Dai risultati dell’esercizio, anche se ottenuti con l’approssimazione di lenti sottili, dovrebbero essere chiari alcuni limiti pratici nella realizzazione di obiettivi con lenti semplici:</p>
+</dd>
+<dt class="label" id="canon-200mm"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p><a class="reference external" href="https://www.canon.it/lenses/ef-200mm-f-2-8l-ii-usm-lens/specification.html">Scheda tecnica di un obiettivo Canon <span class="math notranslate nohighlight">\(200 \, mm\)</span></a>.</p>
+</dd>
+<dt class="label" id="nikon-800mm"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
+<dd><p>{scheda tecnica di un obiettivo Nikon <span class="math notranslate nohighlight">\(800 \, mm\)</span>](<a class="reference external" href="https://www.nikon.it/it_IT/product/lenses/mirrorless/nikkor-z-800mm-f62.3-vr-s">https://www.nikon.it/it_IT/product/lenses/mirrorless/nikkor-z-800mm-f62.3-vr-s</a>)</p>
+</dd>
+</dl>
 </div>
 </div>
 
