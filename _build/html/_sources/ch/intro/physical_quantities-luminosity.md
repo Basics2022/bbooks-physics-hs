@@ -3,6 +3,6 @@
 
 L'intensità luminosa è una grandezza fisica associabile ai concetti di "chiaro" e "scuro", come percepiti dall'occhio umano.
 
-**Unità di misura.** A differenza delle altre grandezze fisiche, l'unità di misura dell'intensità luminosa viene definita considerando la percezione dell'occhio umano alla luce.
+**Unità di misura.** L'intensità luminosa è un'unità di misura "particolare": a differenza delle altre grandezze fisiche, l'unità di misura dell'intensità luminosa viene definita considerando la sensibilità alla luce dell'[occhio umano](physics-hs:intro:sensing:sight).
 
 ...

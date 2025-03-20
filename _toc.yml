@@ -10,6 +10,8 @@ parts:
   numbered: false
   chapters:
   - file: ch/program
+    sections:
+    - file: ch/todo
 - caption: Introduzione alla fisica
   numbered: True
   chapters:
@@ -26,6 +28,12 @@ parts:
   - file: ch/intro/measurements
   - file: ch/intro/scientific-method
   - file: ch/intro/sensing
+    sections:
+    - file: ch/intro/sensing-sight
+    - file: ch/intro/sensing-hearing
+    - file: ch/intro/sensing-tactile
+    - file: ch/intro/sensing-taste
+    - file: ch/intro/sensing-smell
   - file: ch/intro/current-status
 - caption: Meccanica classica
   numbered: True

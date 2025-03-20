@@ -28,6 +28,9 @@ Due **grandezze fisiche omogenee** sono grandezze fisiche della stessa natura, c
 
 (physics-hs:intro:measurements:instruments:characteristics)=
 ### Caratteristiche della misura
+
+(physics-hs:intro:measurements:instruments:characteristics:accuracy)=
+#### Accuratezza e precisione
 **Accuratezza.** E' una misura della differenza tra il valoremedio di una serie di misure e il *valore vero* della grandezza misurata.
 
 :::{admonition} Valore vero
@@ -52,17 +55,23 @@ Errori di riproducibilità possono evidenziare errori sistematici nel processo d
 
 :::
 
+#### Fondo scala, risoluzione, linearità, sensibilità, rumore
 **Fondo scala.**
 
 **Risoluzione.**
 
 **Linearità.**
 
-**Sensibilità.**
+**Sensibilità.** 
 
-**Risposta degli strumenti.** (strumenti di ordine $0$, $1$, $2$)
+(physics-hs:intro:measurements:order)=
+#### Risposta degli strumenti - ordine 0, 1, 2,$\dots$
+Un trasduttore è uno strumento che legge una grandezza in ingresso $u$ e ne produce un'altra in uscita, $y$.
 
-Rimandare qui dal capitolo sulle [equazioni ordinarie differenziali (ODE)](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/ode.html) del materiale di [matematica](https://basics2022.github.io/bbooks-math-miscellanea-hs/intro.html).
+**Risposta degli strumenti.** (strumenti di ordine $0$, $1$, $2$) Gli strumenti di ordine 0 forniscono una relazione algebrica tra la grandezza in ingresso e la grandezza in uscita, $y(t) = c \, u(t)$. Altri strumenti hanno una dinamica interna, e la relazione tra la grandezza in uscita e la grandezza in ingresso non è algebrico, ma dinamico. In generale, questi strumenti sono caratterizzati da una funzione di trasferimento, cioè di un legame tra ingresso e uscita che è funzione della frequenza dell'ingresso.
+
+- **todo-list** [**Fourier**](physics-hs:todo:fourier)
+- Rimandare qui dal capitolo sulle [equazioni ordinarie differenziali (ODE)](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/ode.html) del materiale di [matematica](https://basics2022.github.io/bbooks-math-miscellanea-hs/intro.html).
 
 ```{exercise} Strumento di ordine zero
 :label: instrument-order-zero-exercise
