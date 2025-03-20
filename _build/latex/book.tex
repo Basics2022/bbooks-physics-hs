@@ -182,6 +182,31 @@ La descrizione generale di questi sistemi verrà resa quantitativa quando e quan
 \sphinxstepscope
 
 
+\section{todo}
+\label{\detokenize{ch/todo:todo}}\label{\detokenize{ch/todo:physics-hs-todo}}\label{\detokenize{ch/todo::doc}}
+
+\subsection{Trasformate di Fourier}
+\label{\detokenize{ch/todo:trasformate-di-fourier}}\label{\detokenize{ch/todo:physics-hs-todo-fourier}}
+\sphinxAtStartPar
+Scomposizione segnali come somma di armoniche
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+soluzioni elementari di {\hyperref[\detokenize{ch/waves/intro:physics-hs-waves-intro}]{\sphinxcrossref{\DUrole{std,std-ref}{fenomeni ondulatori}}}}
+
+\item {} 
+\sphinxAtStartPar
+legame con \sphinxhref{https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/ode.html}{ODE e risposta forzata a forzanti armoniche}
+
+\item {} 
+\sphinxAtStartPar
+risposta in frequenza di {\hyperref[\detokenize{ch/intro/measurements:physics-hs-intro-measurements-order}]{\sphinxcrossref{\DUrole{std,std-ref}{strumenti di ordine 1, 2}}}}
+
+\end{itemize}
+
+\sphinxstepscope
+
+
 \part{Introduzione alla fisica}
 
 \sphinxstepscope
@@ -997,7 +1022,7 @@ La quantità di sostanza è una grandezza fisica \sphinxstylestrong{adimensional
 L’intensità luminosa è una grandezza fisica associabile ai concetti di «chiaro» e «scuro», come percepiti dall’occhio umano.
 
 \sphinxAtStartPar
-\sphinxstylestrong{Unità di misura.} A differenza delle altre grandezze fisiche, l’unità di misura dell’intensità luminosa viene definita considerando la percezione dell’occhio umano alla luce.
+\sphinxstylestrong{Unità di misura.} L’intensità luminosa è un’unità di misura «particolare»: a differenza delle altre grandezze fisiche, l’unità di misura dell’intensità luminosa viene definita considerando la sensibilità alla luce dell”{\hyperref[\detokenize{ch/intro/sensing-sight:physics-hs-intro-sensing-sight}]{\sphinxcrossref{\DUrole{std,std-ref}{occhio umano}}}}.
 
 \sphinxAtStartPar
 …
@@ -1055,6 +1080,9 @@ hanno le stesse dimensioni fisiche.
 
 \subsection{Caratteristiche della misura}
 \label{\detokenize{ch/intro/measurements:caratteristiche-della-misura}}\label{\detokenize{ch/intro/measurements:physics-hs-intro-measurements-instruments-characteristics}}
+
+\subsubsection{Accuratezza e precisione}
+\label{\detokenize{ch/intro/measurements:accuratezza-e-precisione}}\label{\detokenize{ch/intro/measurements:physics-hs-intro-measurements-instruments-characteristics-accuracy}}
 \sphinxAtStartPar
 \sphinxstylestrong{Accuratezza.} E” una misura della differenza tra il valoremedio di una serie di misure e il \sphinxstyleemphasis{valore vero} della grandezza misurata.
 
@@ -1087,6 +1115,9 @@ Errori di riproducibilità possono evidenziare errori sistematici nel processo d
 \sphinxstylestrong{todo}
 \end{sphinxadmonition}
 
+
+\subsubsection{Fondo scala, risoluzione, linearità, sensibilità, rumore}
+\label{\detokenize{ch/intro/measurements:fondo-scala-risoluzione-linearita-sensibilita-rumore}}
 \sphinxAtStartPar
 \sphinxstylestrong{Fondo scala.}
 
@@ -1103,10 +1134,20 @@ Errori di riproducibilità possono evidenziare errori sistematici nel processo d
 \subsubsection{Risposta degli strumenti \sphinxhyphen{} ordine 0, 1, 2,\protect\(\dots\protect\)}
 \label{\detokenize{ch/intro/measurements:risposta-degli-strumenti-ordine-0-1-2-dots}}\label{\detokenize{ch/intro/measurements:physics-hs-intro-measurements-order}}
 \sphinxAtStartPar
-\sphinxstylestrong{Risposta degli strumenti.} (strumenti di ordine \(0\), \(1\), \(2\))
+Un trasduttore è uno strumento che legge una grandezza in ingresso \(u\) e ne produce un’altra in uscita, \(y\).
 
 \sphinxAtStartPar
+\sphinxstylestrong{Risposta degli strumenti.} (strumenti di ordine \(0\), \(1\), \(2\)) Gli strumenti di ordine 0 forniscono una relazione algebrica tra la grandezza in ingresso e la grandezza in uscita, \(y(t) = c \, u(t)\). Altri strumenti hanno una dinamica interna, e la relazione tra la grandezza in uscita e la grandezza in ingresso non è algebrico, ma dinamico. In generale, questi strumenti sono caratterizzati da una funzione di trasferimento, cioè di un legame tra ingresso e uscita che è funzione della frequenza dell’ingresso.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{todo\sphinxhyphen{}list} {\hyperref[\detokenize{ch/todo:physics-hs-todo-fourier}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Fourier}}}}}
+
+\item {} 
+\sphinxAtStartPar
 Rimandare qui dal capitolo sulle \sphinxhref{https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/ode.html}{equazioni ordinarie differenziali (ODE)} del materiale di \sphinxhref{https://basics2022.github.io/bbooks-math-miscellanea-hs/intro.html}{matematica}.
+
+\end{itemize}
 \phantomsection \label{exercise:instrument-order-zero-exercise}
 
 \begin{sphinxadmonition}{note}{Exercise 3.2.1 (Strumento di ordine zero)}
@@ -12876,7 +12917,21 @@ L’occhio umano
 Raggi paralleli incidenti su una lente sferica covessa sottile convergono in un unico punto sull’asse della lente, chiamato \sphinxstylestrong{fuoco della lente}, a una distanza \(f\) dalla lente, chiamata \sphinxstylestrong{lunghezza focale}. Per una lente sottile esiste una relazione tra i raggi di curvatura \(R_1\), \(R_2\) delle superficie della lente, gli indifici di rifrazione del mezzo \(n_1\) e della lente \(n_L\) e la lunghezza focale \(f\),
 \begin{equation*}
 \begin{split}\frac{1}{f} = \left( \frac{n_L}{n_1} - 1 \right) \left( \frac{1}{R_1} + \frac{1}{R_2} \right) \ .\end{split}
-\end{equation*}\subsubsection*{Dimostrazione}
+\end{equation*}
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|}
+\hline
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{lenses-geometry-small}.png}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+\subsubsection*{Dimostrazione}
 
 \sphinxAtStartPar
 Nel limite degli angoli piccoli da poter ritenedere buona l’approssimazione \(\theta \sim \sin \theta \sim \tan \theta\), gli angoli dei versori normali alle lenti nei punti per i quali passa il raggio luminoso, a distanza \(h\) dall’asse della lente sono
@@ -12949,6 +13004,24 @@ Questa condizione è la condizione di \sphinxstylestrong{messa a fuoco}, e compo
 dove \(h_o\), \(h_i\) sono le distanze dall’asse della lente nel piano dell’oggetto e dell’immagine.
 
 
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|}
+\hline
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{lenses-image-1ray}.png}
+\\
+\hline
+\sphinxAtStartPar
+\sphinxincludegraphics{{lenses-image-3rays}.png}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
 \subsubsection*{Piano dell’immagine}
 
 \sphinxAtStartPar
@@ -12997,22 +13070,275 @@ o in termini della magnificazione
 \begin{split}\frac{h_i}{h_o} = \frac{d_i}{d_o} \ .\end{split}
 \end{equation*}
 
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|}
+\hline
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{lenses-image-focus}.png}
+\\
+\hline
+\sphinxAtStartPar
+\sphinxincludegraphics{{lenses-image-focus-out-1}.png}
+\\
+\hline
+\sphinxAtStartPar
+\sphinxincludegraphics{{lenses-image-focus-out-2}.png}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+
 \subsection{Lenti sempici}
 \label{\detokenize{ch/waves/optics-lens:lenti-sempici}}
+\sphinxAtStartPar
+Per lenti sottili semplici a geometria costante, e quindi lunghezza focale costante \(f\), la distanza \(d_i\) del piano dell’immagine dalla lente è determinata una volta nota la distanza dell’oggetto \(d_o\) che si vuole mettere a fuoco. Risulta quindi determinato anche il coefficiente di magnificazione dell’immagine.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Caratteristiche obiettivi.} La \sphinxstyleemphasis{lunghezza focale} di un obiettivo rappresenta la \sphinxstyleemphasis{distanza focale} più corta che si più ottenere con l’obiettivo mantenendo l’immagine a fuoco, o con la messa a fuoco all’infinito. Equiparando l’obiettivo a una lente sottile \sphinxstylestrong{todo}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Tipi di obiettivo.}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+fisheye: \(7-16 \, mm\)
+
+\item {} 
+\sphinxAtStartPar
+grandangolare: \(10-42 \, mm\)
+
+\item {} 
+\sphinxAtStartPar
+standard: \(50-85-100 \, mm\)
+
+\item {} 
+\sphinxAtStartPar
+teleobiettivo: \(100-800 \, mm\)
+
+\end{itemize}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Lunghezza focale e angolo di campo.} All’aumentare della lunghezza focale si riduce l’angolo di campo.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Effetto sulle proporzioni di oggetti a distanza diversa: angolo di campo, dimensioni relative e prospettiva.} Lunghezze focali piccole rendono oggetti a distanza diversa di dimensione molto diversa (dovuto ad angolo di campo maggiore, e distanze minori dal soggetto principale)
+\label{ch/waves/optics-lens:lenses-simple}
+\begin{sphinxadmonition}{note}{Example 22.3.1 (Confronto tra obiettivi (di lenti semplici))}
+
+
+
+\sphinxAtStartPar
+Vengono usati due obiettivi formati da una lente semplice sottile%
+\begin{footnote}[1]\sphinxAtStartFootnote
+Gli obiettivi usati nelle applicazioni reali sono formati da un gran numero di lenti, tutt’altro che sottili, ma qui possiamo provare a fare qualche esercizio. Dai risultati dell’esercizio, anche se ottenuti con l’approssimazione di lenti sottili, dovrebbero essere chiari alcuni limiti pratici nella realizzazione di obiettivi con lenti semplici:
+%
+\end{footnote} con lunghezza focale \(f_1 = 50 \, mm\) e \(f_2 = 200 \, mm\) per fare 4 foto mettendo a fuoco a distanza \(d_o\)
+\begin{equation*}
+\begin{split}d_o \in \left\{ 10 \, cm, \, 30 \, cm, \, 1 \, m, 3 \, m, \, 5 \, m, \, 10 \, m \right\}.\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Si determinano le distanze del piano dell’immagine per ottenere una messa a fuoco e il coefficiente di magnificazione.
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|T|}
+\hline
+\sphinxstyletheadfamily 
+\sphinxAtStartPar
+\(d_o\)
+&\sphinxstyletheadfamily 
+\sphinxAtStartPar
+\(d_i\)
+&\sphinxstyletheadfamily 
+\sphinxAtStartPar
+\(m = d_i/d_o\)
+\\
+\hline
+\sphinxAtStartPar
+\(10 \, cm\)
+&
+\sphinxAtStartPar
+\(0.1000 \, m\)
+&
+\sphinxAtStartPar
+\(1.0000\)
+\\
+\hline
+\sphinxAtStartPar
+\(30 \, cm\)
+&
+\sphinxAtStartPar
+\(0.0600 \, m\)
+&
+\sphinxAtStartPar
+\(0.2000\)
+\\
+\hline
+\sphinxAtStartPar
+\(1 \, m\)
+&
+\sphinxAtStartPar
+\(0.0526 \, m\)
+&
+\sphinxAtStartPar
+\(0.0580\)
+\\
+\hline
+\sphinxAtStartPar
+\(3 \, m\)
+&
+\sphinxAtStartPar
+\(0.0508 \, m\)
+&
+\sphinxAtStartPar
+\(0.0169\)
+\\
+\hline
+\sphinxAtStartPar
+\(5 \, m\)
+&
+\sphinxAtStartPar
+\(0.0505 \, m\)
+&
+\sphinxAtStartPar
+\(0.0101\)
+\\
+\hline
+\sphinxAtStartPar
+\(10\, m\)
+&
+\sphinxAtStartPar
+\(0.0503 \, m\)
+&
+\sphinxAtStartPar
+\(0.0050\)
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|T|}
+\hline
+\sphinxstyletheadfamily 
+\sphinxAtStartPar
+\(d_o\)
+&\sphinxstyletheadfamily 
+\sphinxAtStartPar
+\(d_i\)
+&\sphinxstyletheadfamily 
+\sphinxAtStartPar
+\(m = d_i/d_o\)
+\\
+\hline
+\sphinxAtStartPar
+\(10 \, cm\)
+&
+\sphinxAtStartPar
+\(-0.2000 \, m\)
+&
+\sphinxAtStartPar
+\(-2.000\)
+\\
+\hline
+\sphinxAtStartPar
+\(30 \, cm\)
+&
+\sphinxAtStartPar
+\(0.6000 \, m\)
+&
+\sphinxAtStartPar
+\(2.0000\)
+\\
+\hline
+\sphinxAtStartPar
+\(1 \, m\)
+&
+\sphinxAtStartPar
+\(0.2500 \, m\)
+&
+\sphinxAtStartPar
+\(0.2500\)
+\\
+\hline
+\sphinxAtStartPar
+\(3 \, m\)
+&
+\sphinxAtStartPar
+\(0.2143 \, m\)
+&
+\sphinxAtStartPar
+\(0.0714\)
+\\
+\hline
+\sphinxAtStartPar
+\(5 \, m\)
+&
+\sphinxAtStartPar
+\(0.2083 \, m\)
+&
+\sphinxAtStartPar
+\(0.0417\)
+\\
+\hline
+\sphinxAtStartPar
+\(10\, m\)
+&
+\sphinxAtStartPar
+\(0.2041 \, m\)
+&
+\sphinxAtStartPar
+\(0.0204\)
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+\sphinxAtStartPar
+Alcune osservazioni:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+la distanza \(d_i\) negativa per lente con lunthezza focale \(f_2 = 200 \, mm\) e oggetto distante \(d_o = 10 \, cm\) dovrebbe far pensare che non sono rispettati i limiti del modello, o che si incontrano limiti tecnologici nella realizzazione della messa a fuoco di un oggetto troppo vicino per un teleobiettivo. La distanza minima di messa a fuoco di teleobiettivi \sphinxhyphen{} come di altri obiettivi \sphinxhyphen{} nelle applicazioni pratiche viene fornita sulle schede tecniche dell’obiettivo; anche la distanza dipende dal particolare obiettivo, si può pensare una distanza minima di messa a fuoco dell’ordine di \(1.5 - 2 \, m\) per i \(200 \, mm\), come reperibile per un obiettivo Canon%
+\begin{footnote}[2]\sphinxAtStartFootnote
+\sphinxhref{https://www.canon.it/lenses/ef-200mm-f-2-8l-ii-usm-lens/specification.html}{Scheda tecnica di un obiettivo Canon \(200 \, mm\)}.
+%
+\end{footnote};
+
+\item {} 
+\sphinxAtStartPar
+altri limiti tecnici per strumenti con una lente semplice derivano dalla distanza \(d_i\) necessaria alla messa a fuoco; gli obiettivi reali hanno più lenti per trattatare alcuni problemi che si avrebbero con una lente singola (aberrazione cromatica), e possono essere progettati per rendere l’obiettivo più compatto rispetto a quanto sarebbe richiesto dalla distanza \(d_i\) di una lente singola. Così, ad esempio un obiettivo Nikon con lunghezza focale \(800 \, mm\) ha una lunghezza di circa \(385\, mm\); i teleobiettivi rimangono comunque degli strumenti ingombranti (\(140 \, mm\) di diametro), pesanti (\(2.4 \, kg\)), costosi \(2000\)€ (2025), e quindi principalmente riservati a professionisti.
+
+\item {} 
+\sphinxAtStartPar
+il fattore di magnificazione è determinato dalla distanza dell’oggetto \(d_o\), non è possibile compiere un ingrandimento. In seguito, nell’esempio {\hyperref[\detokenize{ch/waves/optics-lens:zoom}]{\sphinxcrossref{Example 22.3.5}}} viene discusso un semplice meccanismo che permette l’ingrandimento dell’immagine (e quindi la riduzione dell’angolo di campo).
+
+\end{itemize}
+\end{sphinxadmonition}
+
 
 \subsection{Lenti}
-\label{\detokenize{ch/waves/optics-lens:lenti}}\label{ch/waves/optics-lens:example-0}
-\begin{sphinxadmonition}{note}{Example 22.3.1 (Lente di ingrandimento)}
-
-
-\end{sphinxadmonition}
-\label{ch/waves/optics-lens:example-1}
-\begin{sphinxadmonition}{note}{Example 22.3.2 (Messa a fuoco)}
+\label{\detokenize{ch/waves/optics-lens:lenti}}\label{ch/waves/optics-lens:example-1}
+\begin{sphinxadmonition}{note}{Example 22.3.2 (Lente di ingrandimento)}
 
 
 \end{sphinxadmonition}
 \label{ch/waves/optics-lens:example-2}
-\begin{sphinxadmonition}{note}{Example 22.3.3 (Auto\sphinxhyphen{}focus)}
+\begin{sphinxadmonition}{note}{Example 22.3.3 (Messa a fuoco)}
+
+
+\end{sphinxadmonition}
+\label{ch/waves/optics-lens:example-3}
+\begin{sphinxadmonition}{note}{Example 22.3.4 (Auto\sphinxhyphen{}focus)}
 
 
 \begin{itemize}
@@ -13026,10 +13352,13 @@ Per contrasto
 
 \end{itemize}
 \end{sphinxadmonition}
-\label{ch/waves/optics-lens:example-3}
-\begin{sphinxadmonition}{note}{Example 22.3.4 (Zoom)}
+\label{ch/waves/optics-lens:zoom}
+\begin{sphinxadmonition}{note}{Example 22.3.5 (Zoom)}
 
 
+
+\sphinxAtStartPar
+L’esempio {\hyperref[\detokenize{ch/waves/optics-lens:lenses-simple}]{\sphinxcrossref{Example 22.3.1}}} sulle lenti semplici ha mostrato come il rapporto di magnificazione, e quindi l’ingrandimento, in quei sistemi sia determinato dalla distanza dell’oggetto.
 
 \sphinxAtStartPar
 Zoom: sistema afocale (modifica l’ingrandimento angolare) + lente focale (si occupa della generazione dell’immagine)
@@ -13040,6 +13369,10 @@ Zoom: sistema afocale (modifica l’ingrandimento angolare) + lente focale (si o
 \label{\detokenize{ch/waves/optics-lens:lenti-spesse}}
 \sphinxAtStartPar
 \sphinxhref{https://it.wikipedia.org/wiki/Lente\_spessa}{Lenti spesse, wikipedia}
+
+
+\bigskip\hrule\bigskip
+
 
 \sphinxstepscope
 
@@ -18705,11 +19038,8 @@ Lumière
 \bigletter{electric\sphinxhyphen{}dipole\sphinxhyphen{}ext\sphinxhyphen{}e\sphinxhyphen{}field}
 \item\relax\sphinxstyleindexentry{electric\sphinxhyphen{}dipole\sphinxhyphen{}ext\sphinxhyphen{}e\sphinxhyphen{}field}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{electric-dipole-ext-e-field}}
 \indexspace
-\bigletter{example\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-0}}
-\indexspace
 \bigletter{example\sphinxhyphen{}1}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-1}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}lens}\sphinxstyleindexpageref{ch/waves/optics-lens:\detokenize{example-1}}
 \indexspace
 \bigletter{example\sphinxhyphen{}10}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}10}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-10}}
@@ -18739,13 +19069,10 @@ Lumière
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}18}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-18}}
 \indexspace
 \bigletter{example\sphinxhyphen{}2}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-2}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}lens}\sphinxstyleindexpageref{ch/waves/optics-lens:\detokenize{example-2}}
 \indexspace
 \bigletter{example\sphinxhyphen{}3}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/waves/phenomena}\sphinxstyleindexpageref{ch/waves/phenomena:\detokenize{example-3}}
-\indexspace
-\bigletter{example\sphinxhyphen{}4}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}4}\sphinxstyleindexextra{ch/waves/phenomena}\sphinxstyleindexpageref{ch/waves/phenomena:\detokenize{example-4}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}lens}\sphinxstyleindexpageref{ch/waves/optics-lens:\detokenize{example-3}}
 \indexspace
 \bigletter{example\sphinxhyphen{}5}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/waves/phenomena}\sphinxstyleindexpageref{ch/waves/phenomena:\detokenize{example-5}}
@@ -18794,6 +19121,9 @@ Lumière
 \indexspace
 \bigletter{kepler\sphinxhyphen{}law\sphinxhyphen{}3}
 \item\relax\sphinxstyleindexentry{kepler\sphinxhyphen{}law\sphinxhyphen{}3}\sphinxstyleindexextra{ch/mechanics/dynamics\sphinxhyphen{}motion\sphinxhyphen{}gravitation}\sphinxstyleindexpageref{ch/mechanics/dynamics-motion-gravitation:\detokenize{kepler-law-3}}
+\indexspace
+\bigletter{lenses\sphinxhyphen{}simple}
+\item\relax\sphinxstyleindexentry{lenses\sphinxhyphen{}simple}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}lens}\sphinxstyleindexpageref{ch/waves/optics-lens:\detokenize{lenses-simple}}
 \indexspace
 \bigletter{mechanics:dynamics:dancer}
 \item\relax\sphinxstyleindexentry{mechanics:dynamics:dancer}\sphinxstyleindexextra{ch/mechanics/dynamics\sphinxhyphen{}conservation}\sphinxstyleindexpageref{ch/mechanics/dynamics-conservation:\detokenize{mechanics:dynamics:dancer}}
@@ -18923,6 +19253,9 @@ Lumière
 \indexspace
 \bigletter{wave\sphinxhyphen{}speed}
 \item\relax\sphinxstyleindexentry{wave\sphinxhyphen{}speed}\sphinxstyleindexextra{ch/waves/phenomena}\sphinxstyleindexpageref{ch/waves/phenomena:\detokenize{wave-speed}}
+\indexspace
+\bigletter{zoom}
+\item\relax\sphinxstyleindexentry{zoom}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}lens}\sphinxstyleindexpageref{ch/waves/optics-lens:\detokenize{zoom}}
 \end{sphinxtheindex}
 
 \renewcommand{\indexname}{Indice}
