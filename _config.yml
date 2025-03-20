@@ -83,11 +83,13 @@ repository:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
+  analytics:
+    google_analytics_id: G-R3GS2LVD8M
   home_page_in_navbar: True
   use_issues_button: true
   use_repository_button: true
   extra_navbar: ""
-  google_analytics_id: G-R3GS2LVD8M
+# extra_templates_path: ["_templates"]
 # extra_footer: |
 #   <script async src="https://www.googletagmanager.com/gtag/js?id=G-R3GS2LVD8M"></script>
 #   <script>
@@ -118,7 +120,10 @@ sphinx:
     - sphinx_proof
     - sphinx_exercise
     - sphinxcontrib.bibtex
-  footer_include: "_templates/footer.html"
+    - sphinx.ext.autodoc  # keep existing extensions
+    #  footer_include: "_templates/footer.html"
+# extra_templates_path:
+#   - _templates
     # - sphinx_togglebutton   # to be installed
 
 
