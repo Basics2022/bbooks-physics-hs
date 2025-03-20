@@ -104,7 +104,7 @@
 
 
 \sphinxAtStartPar
-Questo libro fa parte del materiale pensato per \sphinxhref{https://basics2022.github.io/bbooks-hs}{le scuole superiori}, nell’ambito del progetto \sphinxhref{https://basics2022.github.io/bbooks}{\sphinxstylestrong{basics\sphinxhyphen{}books}}. E” disponibile in \DUrole{xref,download,myst}{versione in .pdf}.
+Questo libro fa parte del materiale pensato per \sphinxhref{https://basics2022.github.io/bbooks-hs}{le scuole superiori}, nell’ambito del progetto \sphinxhref{https://basics2022.github.io/bbooks}{\sphinxstylestrong{basics\sphinxhyphen{}books}}. E” disponibile in \DUrole{xref,myst}{versione in .pdf}.
 
 
 
@@ -184,6 +184,21 @@ La descrizione generale di questi sistemi verrà resa quantitativa quando e quan
 
 \section{todo}
 \label{\detokenize{ch/todo:todo}}\label{\detokenize{ch/todo:physics-hs-todo}}\label{\detokenize{ch/todo::doc}}
+\sphinxAtStartPar
+Questa pagina può diventare una pagina di collegamenti da alcuni metodi generali ad alcune applicazioni in questo materiale.
+
+\sphinxAtStartPar
+(physics\sphinxhyphen{}hs:todo:non\sphinxhyphen{}dimensional):
+
+
+\subsection{Adimensionalizzazione e analisi dimensionale}
+\label{\detokenize{ch/todo:adimensionalizzazione-e-analisi-dimensionale}}
+\sphinxAtStartPar
+L’adimensionalizzazione delle equazioni di un modello è fondamentale per riconoscere il numero di parametri indipendenti del problema. Dopo aver ottenuto le equazioni adimensionali, i parametri indipendenti sono esprimibili come numeri puri adimensionali costruiti con le grandezze sighificative del problema. Il valore di tali numeri adimensionali può portare a semplificazioni del modello, dopo l’esclusione di termini irrilevanti.
+
+\sphinxAtStartPar
+L’analisi dimensionale può essere anche utilizzata per stimare la dipendenza di una grandezza fisica da altre grandezze fisiche indipendenti del problema.
+
 
 \subsection{Trasformate di Fourier}
 \label{\detokenize{ch/todo:trasformate-di-fourier}}\label{\detokenize{ch/todo:physics-hs-todo-fourier}}
@@ -13098,7 +13113,68 @@ o in termini della magnificazione
 Per lenti sottili semplici a geometria costante, e quindi lunghezza focale costante \(f\), la distanza \(d_i\) del piano dell’immagine dalla lente è determinata una volta nota la distanza dell’oggetto \(d_o\) che si vuole mettere a fuoco. Risulta quindi determinato anche il coefficiente di magnificazione dell’immagine.
 
 \sphinxAtStartPar
+\sphinxstylestrong{todo} Riogranizzare le sezioni
+
+\sphinxAtStartPar
 \sphinxstylestrong{Caratteristiche obiettivi.} La \sphinxstyleemphasis{lunghezza focale} di un obiettivo rappresenta la \sphinxstyleemphasis{distanza focale} più corta che si più ottenere con l’obiettivo mantenendo l’immagine a fuoco, o con la messa a fuoco all’infinito. Equiparando l’obiettivo a una lente sottile \sphinxstylestrong{todo}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Diaframma e otturatore.} Nelle macchine fotografiche:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+il diagramma regola l”\sphinxstylestrong{apertura} e di conseguenza l”\sphinxstylestrong{intensità luminosa} («la quantità di luce» per unità di tempo) che entra nell’obiettivo e va a formare l’immagine
+
+\item {} 
+\sphinxAtStartPar
+l’otturatore regola il \sphinxstylestrong{tempo di esposizione} del sensore alla luce. Solo durante questo intervallo di tempo il sensore riceve la luce esterna, che oggi va a caricare elettricamente la matrice del sensore digitale, e una volta andava a impressionare la pellicola
+
+\end{itemize}
+
+\sphinxAtStartPar
+Il prodotto di intensità luminosa e tempo di esposizione viene definita \sphinxstylestrong{esposizione},
+\begin{equation*}
+\begin{split} \text{esposizione} = \text{apertura} \times \text{tempi} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Così ad esempio:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+un’esposizione troppo bassa non sarà in grado di impressionare «a sufficienza» il sensore e la foto risulterà quindi buia
+
+\item {} 
+\sphinxAtStartPar
+un’esposizione troppo alta impressionerà il sensore più del dovuto, e la foto risulterà quindi artificialmente troppo luminosa. Al limite, un’esposizione eccessiva porta alla saturazione del sensore, che produrrà quindi una foto completamente bianca, o «bruciata».
+
+\end{itemize}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} Aggiungere immagine diaframma
+
+\sphinxAtStartPar
+\sphinxstylestrong{Profondità di campo.} La profondità di campo può essere definito come l’intervallo di distanza tra una distanza minima e la distanza massima nei quali gli oggetti risultano a fuoco. La profondità di campo dipende principalmente da 3 fattori:
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+l’apertura
+
+\item {} 
+\sphinxAtStartPar
+la distanza dal soggetto
+
+\item {} 
+\sphinxAtStartPar
+la distanza focale della lente
+
+\end{enumerate}
+
+\sphinxAtStartPar
+All’aumentare dell’apertura, al diminuire della distanza dal soggetto, e all’aumentare della distanza focale diminuisce la profondità di campo.
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} Aggiungere immagini
 
 \sphinxAtStartPar
 \sphinxstylestrong{Tipi di obiettivo.}
@@ -13126,8 +13202,76 @@ teleobiettivo: \(100-800 \, mm\)
 
 \sphinxAtStartPar
 \sphinxstylestrong{Effetto sulle proporzioni di oggetti a distanza diversa: angolo di campo, dimensioni relative e prospettiva.} Lunghezze focali piccole rendono oggetti a distanza diversa di dimensione molto diversa (dovuto ad angolo di campo maggiore, e distanze minori dal soggetto principale)
+\label{ch/waves/optics-lens:magnifying-lens}
+\begin{sphinxadmonition}{note}{Example 22.3.1 (Lente di ingrandimento)}
+
+
+
+\sphinxAtStartPar
+Esprimiamo le distanze \(d_o\) e \(d_i\) come multipli della lunghezza focale della lente, \(d_o = f D_o\), \(d_i = f D_i\)  per ottenere così un”\DUrole{xref,myst}{adimensionalizzazione} dell’equazione del paino dell’immagine
+\begin{equation*}
+\begin{split}1 = \frac{1}{D_o} + \frac{1}{D_i} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Data la distanza dell’oggetto \(D_o\), il piano dell’immagine si trova quindi a
+\begin{equation*}
+\begin{split}D_i = \left( 1 - \frac{1}{D_o} \right)^{-1} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e il coefficiente di magnificazione
+\begin{equation*}
+\begin{split}m = -\frac{D_i}{D_o} = \frac{1}{ 1 - D_o } \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Commento della formula.} Si analizza ora l’andamento del coefficiente di magnificazione dell’immagine sul piano di formazione dell’immagine, in funzione della distanza della lente di ingrandimento dall’oggetto desiderato.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+per distanza che tende a zero, \(D_o \rightarrow 0\), la magnificazione tende a zero, \(m \rightarrow 0\).
+
+\item {} 
+\sphinxAtStartPar
+all’aumentare della distanza \(D_o\) la magnificazione aumenta fino a \(d_o = f\) dove il coefficiente tende a \(+\infty\). In questo di distanza, avvicinando o allontanando la lente si ottiene un ingrandimento minore o maggiore
+
+\item {} 
+\sphinxAtStartPar
+oltre la singolarità, il coefficiente «riparte da \(-\infty\)», è negativo e aumenta fino a tendere a \(0^-\) per \(D_0 \rightarrow + \infty\); in questo intervallo di distanza, l”\sphinxstylestrong{immagine risulta invertita}
+
+\end{itemize}
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|}
+\hline
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{magnifying-lense-image}.png}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} Analisi casi limite (oggetto o osservatore nei fuochi?):
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+lente molto vicina all’oggetto
+
+\item {} 
+\sphinxAtStartPar
+Sherlock Holmes, occhio molto vicino alla lente
+
+\item {} 
+\sphinxAtStartPar
+…
+
+\end{itemize}
+\end{sphinxadmonition}
 \label{ch/waves/optics-lens:lenses-simple}
-\begin{sphinxadmonition}{note}{Example 22.3.1 (Confronto tra obiettivi (di lenti semplici))}
+\begin{sphinxadmonition}{note}{Example 22.3.2 (Confronto tra obiettivi (di lenti semplici))}
 
 
 
@@ -13141,7 +13285,7 @@ Gli obiettivi usati nelle applicazioni reali sono formati da un gran numero di l
 \begin{split}d_o \in \left\{ 10 \, cm, \, 30 \, cm, \, 1 \, m, 3 \, m, \, 5 \, m, \, 10 \, m \right\}.\end{split}
 \end{equation*}
 \sphinxAtStartPar
-Si determinano le distanze del piano dell’immagine per ottenere una messa a fuoco e il coefficiente di magnificazione.
+Si determinano le distanze del piano dell’immagine per ottenere una messa a fuoco e il coefficiente di magnificazione. Per l’obiettivo con lunghezza focale \(f_1 = 50 \, mm\)
 
 
 \begin{savenotes}\sphinxattablestart
@@ -13222,6 +13366,9 @@ Si determinano le distanze del piano dell’immagine per ottenere una messa a fu
 \end{tabulary}
 \par
 \sphinxattableend\end{savenotes}
+
+\sphinxAtStartPar
+mentre per il teleobiettivo con lunghezza focale \(f_2 = 200 \, mm\)
 
 
 \begin{savenotes}\sphinxattablestart
@@ -13316,7 +13463,11 @@ la distanza \(d_i\) negativa per lente con lunthezza focale \(f_2 = 200 \, mm\) 
 
 \item {} 
 \sphinxAtStartPar
-altri limiti tecnici per strumenti con una lente semplice derivano dalla distanza \(d_i\) necessaria alla messa a fuoco; gli obiettivi reali hanno più lenti per trattatare alcuni problemi che si avrebbero con una lente singola (aberrazione cromatica), e possono essere progettati per rendere l’obiettivo più compatto rispetto a quanto sarebbe richiesto dalla distanza \(d_i\) di una lente singola. Così, ad esempio un obiettivo Nikon con lunghezza focale \(800 \, mm\) ha una lunghezza di circa \(385\, mm\); i teleobiettivi rimangono comunque degli strumenti ingombranti (\(140 \, mm\) di diametro), pesanti (\(2.4 \, kg\)), costosi \(2000\)€ (2025), e quindi principalmente riservati a professionisti.
+altri limiti tecnici per strumenti con una lente semplice derivano dalla distanza \(d_i\) necessaria alla messa a fuoco; gli obiettivi reali hanno più lenti per trattatare alcuni problemi che si avrebbero con una lente singola (aberrazione cromatica), e possono essere progettati per rendere l’obiettivo più compatto rispetto a quanto sarebbe richiesto dalla distanza \(d_i\) di una lente singola. Così, ad esempio un obiettivo Nikon con lunghezza focale \(800 \, mm\) ha una lunghezza di circa \(385\, mm\)%
+\begin{footnote}[3]\sphinxAtStartFootnote
+\sphinxhref{https://www.nikon.it/it\_IT/product/lenses/mirrorless/nikkor-z-800mm-f62.3-vr-s}{Scheda tecnica di un obiettivo Nikon \(800 \, mm\)}
+%
+\end{footnote}; i teleobiettivi rimangono comunque degli strumenti ingombranti (\(140 \, mm\) di diametro), pesanti (\(2.4 \, kg\)), costosi \(2000\)€ (2025), e quindi principalmente riservati a professionisti.
 
 \item {} 
 \sphinxAtStartPar
@@ -13327,12 +13478,7 @@ il fattore di magnificazione è determinato dalla distanza dell’oggetto \(d_o\
 
 
 \subsection{Lenti}
-\label{\detokenize{ch/waves/optics-lens:lenti}}\label{ch/waves/optics-lens:example-1}
-\begin{sphinxadmonition}{note}{Example 22.3.2 (Lente di ingrandimento)}
-
-
-\end{sphinxadmonition}
-\label{ch/waves/optics-lens:example-2}
+\label{\detokenize{ch/waves/optics-lens:lenti}}\label{ch/waves/optics-lens:example-2}
 \begin{sphinxadmonition}{note}{Example 22.3.3 (Messa a fuoco)}
 
 
@@ -13358,7 +13504,7 @@ Per contrasto
 
 
 \sphinxAtStartPar
-L’esempio {\hyperref[\detokenize{ch/waves/optics-lens:lenses-simple}]{\sphinxcrossref{Example 22.3.1}}} sulle lenti semplici ha mostrato come il rapporto di magnificazione, e quindi l’ingrandimento, in quei sistemi sia determinato dalla distanza dell’oggetto.
+L’esempio {\hyperref[\detokenize{ch/waves/optics-lens:lenses-simple}]{\sphinxcrossref{Example 22.3.2}}} sulle lenti semplici ha mostrato come il rapporto di magnificazione, e quindi l’ingrandimento, in quei sistemi sia determinato dalla distanza dell’oggetto.
 
 \sphinxAtStartPar
 Zoom: sistema afocale (modifica l’ingrandimento angolare) + lente focale (si occupa della generazione dell’immagine)
@@ -19038,8 +19184,11 @@ Lumière
 \bigletter{electric\sphinxhyphen{}dipole\sphinxhyphen{}ext\sphinxhyphen{}e\sphinxhyphen{}field}
 \item\relax\sphinxstyleindexentry{electric\sphinxhyphen{}dipole\sphinxhyphen{}ext\sphinxhyphen{}e\sphinxhyphen{}field}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{electric-dipole-ext-e-field}}
 \indexspace
+\bigletter{example\sphinxhyphen{}0}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-0}}
+\indexspace
 \bigletter{example\sphinxhyphen{}1}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}lens}\sphinxstyleindexpageref{ch/waves/optics-lens:\detokenize{example-1}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-1}}
 \indexspace
 \bigletter{example\sphinxhyphen{}10}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}10}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-10}}
@@ -19069,10 +19218,13 @@ Lumière
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}18}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-18}}
 \indexspace
 \bigletter{example\sphinxhyphen{}2}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}lens}\sphinxstyleindexpageref{ch/waves/optics-lens:\detokenize{example-2}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-2}}
 \indexspace
 \bigletter{example\sphinxhyphen{}3}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}lens}\sphinxstyleindexpageref{ch/waves/optics-lens:\detokenize{example-3}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/waves/phenomena}\sphinxstyleindexpageref{ch/waves/phenomena:\detokenize{example-3}}
+\indexspace
+\bigletter{example\sphinxhyphen{}4}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}4}\sphinxstyleindexextra{ch/waves/phenomena}\sphinxstyleindexpageref{ch/waves/phenomena:\detokenize{example-4}}
 \indexspace
 \bigletter{example\sphinxhyphen{}5}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/waves/phenomena}\sphinxstyleindexpageref{ch/waves/phenomena:\detokenize{example-5}}
@@ -19124,6 +19276,9 @@ Lumière
 \indexspace
 \bigletter{lenses\sphinxhyphen{}simple}
 \item\relax\sphinxstyleindexentry{lenses\sphinxhyphen{}simple}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}lens}\sphinxstyleindexpageref{ch/waves/optics-lens:\detokenize{lenses-simple}}
+\indexspace
+\bigletter{magnifying\sphinxhyphen{}lens}
+\item\relax\sphinxstyleindexentry{magnifying\sphinxhyphen{}lens}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}lens}\sphinxstyleindexpageref{ch/waves/optics-lens:\detokenize{magnifying-lens}}
 \indexspace
 \bigletter{mechanics:dynamics:dancer}
 \item\relax\sphinxstyleindexentry{mechanics:dynamics:dancer}\sphinxstyleindexextra{ch/mechanics/dynamics\sphinxhyphen{}conservation}\sphinxstyleindexpageref{ch/mechanics/dynamics-conservation:\detokenize{mechanics:dynamics:dancer}}

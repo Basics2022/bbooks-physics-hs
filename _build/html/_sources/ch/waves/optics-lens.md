@@ -202,7 +202,8 @@ All'aumentare dell'apertura, al diminuire della distanza dal soggetto, e all'aum
 
 **Effetto sulle proporzioni di oggetti a distanza diversa: angolo di campo, dimensioni relative e prospettiva.** Lunghezze focali piccole rendono oggetti a distanza diversa di dimensione molto diversa (dovuto ad angolo di campo maggiore, e distanze minori dal soggetto principale)
 
-```{prf:example} Lente di ingrandimento
+````{prf:example} Lente di ingrandimento
+:class: dropdown
 :label: magnifying-lens
 
 Esprimiamo le distanze $d_o$ e $d_i$ come multipli della lunghezza focale della lente, $d_o = f D_o$, $d_i = f D_i$  per ottenere così un'[adimensionalizzazione](physics-hs:todo:non-dimensional) dell'equazione del paino dell'immagine
@@ -222,8 +223,17 @@ $$m = -\frac{D_i}{D_o} = \frac{1}{ 1 - D_o } \ .$$
 - all'aumentare della distanza $D_o$ la magnificazione aumenta fino a $d_o = f$ dove il coefficiente tende a $+\infty$. In questo di distanza, avvicinando o allontanando la lente si ottiene un ingrandimento minore o maggiore
 - oltre la singolarità, il coefficiente "riparte da $-\infty$", è negativo e aumenta fino a tendere a $0^-$ per $D_0 \rightarrow + \infty$; in questo intervallo di distanza, l'**immagine risulta invertita**
 
-
+```{list-table}
+:header-rows: 0
+* - ![](../../media/magnifying-lense-image.png)
 ```
+
+**todo** Analisi casi limite (oggetto o osservatore nei fuochi?):
+- lente molto vicina all'oggetto
+- Sherlock Holmes, occhio molto vicino alla lente
+- ...
+
+````
 
 ```{prf:example} Confronto tra obiettivi (di lenti semplici)
 :class: dropdown
@@ -267,7 +277,7 @@ Alcune osservazioni:
 
 [^canon-200mm]: [Scheda tecnica di un obiettivo Canon $200 \, mm$](https://www.canon.it/lenses/ef-200mm-f-2-8l-ii-usm-lens/specification.html).
 
-[^nikon-800mm]: {scheda tecnica di un obiettivo Nikon $800 \, mm$](https://www.nikon.it/it_IT/product/lenses/mirrorless/nikkor-z-800mm-f62.3-vr-s)
+[^nikon-800mm]: [Scheda tecnica di un obiettivo Nikon $800 \, mm$](https://www.nikon.it/it_IT/product/lenses/mirrorless/nikkor-z-800mm-f62.3-vr-s)
 
 ```
 
