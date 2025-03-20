@@ -12,6 +12,7 @@ BUILD_DIR = "_build/html"
 
 # Google Analytics script to be inserted
 GA_SCRIPT = f"""
+<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
