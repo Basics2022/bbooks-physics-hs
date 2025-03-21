@@ -1,7 +1,14 @@
 (physics-hs:intro)=
 # Introduzione alla fisica
 
-La fisica si occupa dello studio della natura, usando 
+La fisica si occupa dello studio della natura, di tutti i fenomeni naturali che possono essere descritti tramite un processo di **misura** di **grandezze fisiche**; l'indagine si basa sul **metodo scientifico** con lo scopo di formulare alcuni princìpi sui quali costruire un modello o una teoria fisica, tramite un processo deduttivo che fa uso degli strumenti della logica e della matematica.
+
+- metodo scientifico: 
+  - metodo induttivo/metodo deduttivo, o due fasi di un processo?
+  - una nuova teoria scientifica deve essere in grado di fornire previsioni che i modelli già presenti non sono in grado di dare
+  - **principio di falsificabilità di Popper** - o **possibilità di confutazione**: la conoscenza è un processo in continua evoluzione; una teoria scientifica è tale solo se si espone alla possibilità di essere falsificata; una teoria scientifica; una teoria scientifica viene considerata valida (almeno entro alcuni limiti dei fenomeni studiati) fino a quando non viene dimostrata erronea: "non basta un numero elevato di esperimenti per dimostrare la validità di un modello, ma è sufficiente un solo esperimento per dimostrare che quel modello è sbagliato". La scienza non può essere verificata, ma al contrario può essere falsificata.
+  - Questo procedimento viene riassunto nel [test di verifica delle ipotesi di Fisher](https://basics2022.github.io/bbooks-programming-hs/ch/statistics/hp-test.html#test-di-verifica-delle-ipotesi)
+
 
 **Metrologia e misura.**
 - Grandezza fisica
