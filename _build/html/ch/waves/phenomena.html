@@ -611,9 +611,9 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effetti-associati">21.2.2. Effetti associati</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#riflessione">21.2.2.1. Riflessione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rifrazione">21.2.2.2. Rifrazione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interferenza">21.2.2.3. Interferenza</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interferenza">21.2.2.1. Interferenza</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#riflessione">21.2.2.2. Riflessione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rifrazione">21.2.2.3. Rifrazione</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diffrazione">21.2.2.4. Diffrazione</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#polarizzazione">21.2.2.5. Polarizzazione</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effetto-doppler">21.2.2.6. Effetto Doppler</a></li>
@@ -639,64 +639,96 @@ document.write(`
 <p>Per ognuna di queste perturbazioni elementari<a class="footnote-reference brackets" href="#eikonal-approx" id="id1">1</a> prese singolarmente è possibile definire una lunghezza d’onda (o in 3d un vettore d’onda locale che indica la direzione della propagazione), una frequenza e la velocità della perturbazione.</p>
 <div class="section" id="dominio-1-dimensionale">
 <h3><span class="section-number">21.2.1.1. </span>Dominio 1-dimensionale<a class="headerlink" href="#dominio-1-dimensionale" title="Permalink to this heading">#</a></h3>
-</div>
-<div class="section" id="dominio-3-dimensionale">
-<h3><span class="section-number">21.2.1.2. </span>Dominio 3-dimensionale<a class="headerlink" href="#dominio-3-dimensionale" title="Permalink to this heading">#</a></h3>
-<!--
-### Frequenza, lunghezza d'onda e relazione con velocità di propagazione della perturbazione
--->
-<div class="proof definition admonition" id="wave-frequency">
-<p class="admonition-title"><span class="caption-number">Definition 21.1 </span> (Frequenza)</p>
-<div class="definition-content section" id="proof-content">
-</div>
-</div><div class="proof definition admonition" id="wave-length">
-<p class="admonition-title"><span class="caption-number">Definition 21.2 </span> (Lunghezza d’onda)</p>
-<div class="definition-content section" id="proof-content">
-</div>
-</div><div class="proof definition admonition" id="wave-speed">
-<p class="admonition-title"><span class="caption-number">Definition 21.3 </span> (Velocità della perturbazione)</p>
-<div class="definition-content section" id="proof-content">
-</div>
-</div><p>Per i fenomeni fisici governati da problemi lineari, vale il <strong>principio di sovrapposizione delle cause e degli effetti</strong>. …</p>
-<ul>
-<li><p>Soluzione generale 1-dimensionale</p>
+<p><strong>Onde stazionarie.</strong> Una soluzione generica dell’equazione delle onde può essere scritta come somma di onde stazionarie nella forma</p>
 <div class="math notranslate nohighlight">
-\[f(x,t) = A_{+}(x - c t) + A_{-}(x + ct)\]</div>
-</li>
-</ul>
+\[f_n(x) = \cos(k_n x + \phi_n) \ ,\]</div>
+<p>modulate da un’ampiezza</p>
+<div class="math notranslate nohighlight">
+\[g_n(t) = \cos(\omega_n t + \gamma_n) \ ,\]</div>
+<p>con <span class="math notranslate nohighlight">\(\omega_n = c k_n\)</span>. Una funzione <span class="math notranslate nohighlight">\(u_n(x,t) = f_n(x) g_n(t)\)</span> è soluzione dell’equazione delle onde.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Verifica della soluzione<div class="sd-summary-down docutils">
+Dimostrazione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Per dimostrare che la funzione <span class="math notranslate nohighlight">\(f_n(x) g_n(t)\)</span> è una soluzione dell’equazione delle onde, è sufficiente valutarne le derivate seconde rispetto al tempo e allo spazio, e sostituirne le espressioni nell’equazione delle onde per ottenere un’identità,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \partial_{tt} u &amp; = \partial_{tt} \left( f_n(x) g_n(t) \right) = f_n(x) \ddot{g}_n(t) = - \omega_n^2 u \\
+  \partial_{xx} u &amp; = \partial_{xx} \left( f_n(x) g_n(t) \right) = f''_n(x) g_n(t) = - k_n^2 u \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">così che <span class="math notranslate nohighlight">\(\partial_{tt} u - c^2 \partial_{tt} u = \left( -\omega_n^2 + c^2 k_n^2 \right) u = 0\)</span> se è soddisfatta la relazione tra la pulsazione <span class="math notranslate nohighlight">\(\omega_n\)</span> e il vettore d’onda <span class="math notranslate nohighlight">\(k_n\)</span>, <span class="math notranslate nohighlight">\(\omega_n = c k_n\)</span>.</p>
+</div>
+</details><p><strong>Onde viaggianti.</strong> Utilizzando le proprietà delle funzioni trigonometriche, la funzione <span class="math notranslate nohighlight">\(u_n(x,t) = f_{n}(x) g_n(t)\)</span> può essere scritta come somma di due onde viaggianti con velocità <span class="math notranslate nohighlight">\(c\)</span>,</p>
+<div class="math notranslate nohighlight" id="equation-travelling-waves">
+<span class="eqno">(21.3)<a class="headerlink" href="#equation-travelling-waves" title="Permalink a questa equazione">#</a></span>\[u_n(x,t) = f_n(x) g_n(t) = A_n^{-}(x+ct) + A_n^{+}(x-ct) \ .\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dimostrazione<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-\partial_x    f &amp; = A'_+(x-ct) + A'_-(x+ct) \\
-\partial_{xx} f &amp; = A''_+(x-ct) + A''_-(x+ct) \\
-\partial_t    f &amp; = - c \, A'_+(x-ct) + c \, A'_-(x+ct) \\
-\partial_{tt} f &amp; = c^2 \, A''_+(x-ct) + c^2 \,  A''_-(x+ct) \\
+u_n(x,t) 
+  &amp; = f_n(x) g_n(t) = \\
+  &amp; = \cos(k_n x + \phi_n) \cos (\omega_n t + \gamma_n) = \\
+  &amp; = \frac{1}{2} \cos(k_n x + \omega_n t + \phi_n + \gamma_n) + \frac{1}{2} \cos(k_n x - \omega_n t + \phi_n - \gamma_n) = \\
+  &amp; = \frac{1}{2} \cos(k_n( x + c t) + \theta^-_n) + \frac{1}{2} \cos(k_n( x - c t) + \theta^+_n) = \\
+  &amp; = A_n^-(x+ct) + A_n^{+}(x+ct)
 \end{aligned}\end{split}\]</div>
 </div>
-</details><ul>
-<li><p>Soluzione generale 3-dimensionale</p>
+</details><div class="proof definition admonition" id="wave-frequency">
+<p class="admonition-title"><span class="caption-number">Definition 21.1 </span> (Pulsazione <span class="math notranslate nohighlight">\(\omega_n\)</span> e frequenza <span class="math notranslate nohighlight">\(f_n\)</span>)</p>
+<div class="definition-content section" id="proof-content">
+<p>Il parametro <span class="math notranslate nohighlight">\(\omega_n\)</span> di una soluzione elementare viene definita <strong>pulsazione</strong>. La <strong>frequenza</strong> della soluzione elementare è definita come l’inverso del periodo della soluzione elementare <span class="math notranslate nohighlight">\(f_n = \frac{1}{T_n}\)</span>, e può essere espresso in funzione della pulsazione come <span class="math notranslate nohighlight">\(f_n = \frac{\omega_n}{2\pi}\)</span>.</p>
+</div>
+</div><div class="proof definition admonition" id="wave-length">
+<p class="admonition-title"><span class="caption-number">Definition 21.2 </span> (Vettore d’onda <span class="math notranslate nohighlight">\(k_n\)</span> e lunghezza d’onda <span class="math notranslate nohighlight">\(\lambda_n\)</span>)</p>
+<div class="definition-content section" id="proof-content">
+<p>Il parametro <span class="math notranslate nohighlight">\(k_n\)</span> di una soluzione elementare viene definita <strong>vettore d’onda</strong>. La <strong>lunghezza d’onda</strong> rappresenta la distanza tra due massimi consecutivi di soluzione elementare e la sua relazione con il vettore d’onda è <span class="math notranslate nohighlight">\(\lambda_n = \frac{2 \pi }{k_n}\)</span>.</p>
+<p>Il carattere vettoriale del vettore d’onda appare evidente nei domini multi-dimenisonali, nei quali le soluzioni elentari possono essere espresse come funzione dell’argomento <span class="math notranslate nohighlight">\(\vec{k} \cdot \vec{r} - \omega t\)</span>. Il vettore d’onda <span class="math notranslate nohighlight">\(\vec{k}\)</span> è un’indicazione della direzione locale di propagazione della perturbazione elementare.</p>
+</div>
+</div><div class="proof definition admonition" id="wave-speed">
+<p class="admonition-title"><span class="caption-number">Definition 21.3 </span> (Velocità di propagazione delle perturbazioni)</p>
+<div class="definition-content section" id="proof-content">
+<p>La velocità di propagazione delle perturbazioni governate dall’equazione delle onde <a class="reference internal" href="waves-in-physics.html#equation-eq-wave-eqn-1d">(21.1)</a> è <span class="math notranslate nohighlight">\(c\)</span>. Il suo significato è evidente nell’espressione <a class="reference internal" href="#equation-travelling-waves">(21.3)</a> delle onde viaggianti, ed è uguale al rapporto tra la lunghezza d’onda e la frequenza di una soluzione elementare <span class="math notranslate nohighlight">\(c = \frac{\omega_n}{k_n}\)</span>.</p>
+</div>
+</div><p>La frequenza di una perturbazione in un problema lineare è tipicamente determinata dalla frequenza della sorgente della perturbazione (<strong>todo-list:</strong><a class="reference internal" href="../todo.html#physics-hs-todo-fourier"><span class="std std-ref"><strong>analisi di Fourier</strong></span></a>), poiché i sistemi lineari rispondono con la stessa frequenza della forzante. La velocità delle perturbazioni è una caratteristica del mezzo. La lunghezza d’onda del sistema è quindi lo spazio percorso da una perturbazione, in un periodo della forzante <span class="math notranslate nohighlight">\(T\)</span> (intervallo di tempo che separa due massimi del disturbo esterno, e quindi della perturbazione),</p>
+<div class="math notranslate nohighlight">
+\[\lambda = c T \ .\]</div>
+<p>Usando le relazioni tra lunghezza d’onda e vettore d’onda <span class="math notranslate nohighlight">\(\lambda = \frac{2 \pi}{k_n}\)</span>, e tra periodo e puslazione <span class="math notranslate nohighlight">\(T_n = \frac{2 \pi}{\omega_n}\)</span>, si ottiene di nuovo</p>
+<div class="math notranslate nohighlight">
+\[\omega_n = c k_n \ .\]</div>
+</div>
+<div class="section" id="dominio-3-dimensionale">
+<h3><span class="section-number">21.2.1.2. </span>Dominio 3-dimensionale<a class="headerlink" href="#dominio-3-dimensionale" title="Permalink to this heading">#</a></h3>
+<!--
+### Frequenza, lunghezza d'onda e relazione con velocità di propagazione della perturbazione
+-->
+<p><strong>Onde sferiche.</strong> Un’onda sferica prodotta da una sorgente puntiforme in un dominio 3-dimensionale può essere rappresentata usando un sistema di coordinate sferiche come</p>
 <div class="math notranslate nohighlight">
 \[f(r,t) = \dfrac{A(r-ct)}{r}\]</div>
-</li>
-</ul>
+<p>avendo scelto l’origine del sistema di coordinate, <span class="math notranslate nohighlight">\(r=0\)</span>, in corrispondenza della sorgente puntiforme.</p>
+<div class="admonition-causalita-e-direzione-di-propagazione-delle-perturbazioni admonition">
+<p class="admonition-title">Causalità e direzione di propagazione delle perturbazioni</p>
+<p>A differenza dell’espressione delle onde viaggianti nel caso 1-dimesnionale, nell’espressione delle onde sferiche prodotte da una sorgente puntiforme è presente solo un tipo di onda</p>
+</div>
 </div>
 </div>
 <div class="section" id="effetti-associati">
 <span id="physics-hs-waves-effects"></span><h2><span class="section-number">21.2.2. </span>Effetti associati<a class="headerlink" href="#effetti-associati" title="Permalink to this heading">#</a></h2>
+<div class="section" id="interferenza">
+<span id="physics-hs-waves-effects-interference"></span><h3><span class="section-number">21.2.2.1. </span>Interferenza<a class="headerlink" href="#interferenza" title="Permalink to this heading">#</a></h3>
+</div>
 <div class="section" id="riflessione">
-<span id="physics-hs-waves-effects-reflection"></span><h3><span class="section-number">21.2.2.1. </span>Riflessione<a class="headerlink" href="#riflessione" title="Permalink to this heading">#</a></h3>
+<span id="physics-hs-waves-effects-reflection"></span><h3><span class="section-number">21.2.2.2. </span>Riflessione<a class="headerlink" href="#riflessione" title="Permalink to this heading">#</a></h3>
 </div>
 <div class="section" id="rifrazione">
-<span id="physics-hs-waves-effects-refraction"></span><h3><span class="section-number">21.2.2.2. </span>Rifrazione<a class="headerlink" href="#rifrazione" title="Permalink to this heading">#</a></h3>
-</div>
-<div class="section" id="interferenza">
-<span id="physics-hs-waves-effects-interference"></span><h3><span class="section-number">21.2.2.3. </span>Interferenza<a class="headerlink" href="#interferenza" title="Permalink to this heading">#</a></h3>
+<span id="physics-hs-waves-effects-refraction"></span><h3><span class="section-number">21.2.2.3. </span>Rifrazione<a class="headerlink" href="#rifrazione" title="Permalink to this heading">#</a></h3>
 </div>
 <div class="section" id="diffrazione">
 <span id="physics-hs-waves-effects-diffraction"></span><h3><span class="section-number">21.2.2.4. </span>Diffrazione<a class="headerlink" href="#diffrazione" title="Permalink to this heading">#</a></h3>
@@ -832,9 +864,9 @@ $$t_{ret} = \dfrac{c}{c - v_s} t - \dfrac{x - x_{s,0}}{c}$$
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effetti-associati">21.2.2. Effetti associati</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#riflessione">21.2.2.1. Riflessione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rifrazione">21.2.2.2. Rifrazione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interferenza">21.2.2.3. Interferenza</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interferenza">21.2.2.1. Interferenza</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#riflessione">21.2.2.2. Riflessione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rifrazione">21.2.2.3. Rifrazione</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diffrazione">21.2.2.4. Diffrazione</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#polarizzazione">21.2.2.5. Polarizzazione</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effetto-doppler">21.2.2.6. Effetto Doppler</a></li>
