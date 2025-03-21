@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/waves/waves-notes';</script>
     <link rel="shortcut icon" href="../../_static/favicon-sugar.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
@@ -603,7 +605,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzioni-particolari">21.3.1. Soluzioni particolari</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzioni-particolari">21.3.1. Soluzioni particolari</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vibrazione-di-una-corda-con-estremi-vincolati">21.3.1.1. Vibrazione di una corda con estremi vincolati</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#torsione-di-una-trave-con-un-estremo-vincolato-e-un-estremo-libero">21.3.1.2. Torsione di una trave con un estremo vincolato e un estremo libero</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">21.3.2. </a></li>
 </ul>
             </nav>
         </div>
@@ -619,6 +626,110 @@ document.write(`
 <span id="physics-hs-waves-notes"></span><h1><span class="section-number">21.3. </span>Note<a class="headerlink" href="#note" title="Permalink to this heading">#</a></h1>
 <div class="section" id="soluzioni-particolari">
 <h2><span class="section-number">21.3.1. </span>Soluzioni particolari<a class="headerlink" href="#soluzioni-particolari" title="Permalink to this heading">#</a></h2>
+<div class="section" id="vibrazione-di-una-corda-con-estremi-vincolati">
+<h3><span class="section-number">21.3.1.1. </span>Vibrazione di una corda con estremi vincolati<a class="headerlink" href="#vibrazione-di-una-corda-con-estremi-vincolati" title="Permalink to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  m \ddot{u} - \sigma_0 u'' = 0 &amp;&amp; x \in [0,L] \\
+  u(0,t) = 0 \\
+  u(L,t) = 0 \\
+\end{cases}\end{split}\]</div>
+<p>La velocità di propagazione delle perturbazioni è <span class="math notranslate nohighlight">\(c = \sqrt{\frac{\sigma_0}{m}}\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Onde stazionarie - modi propri di vibrare<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Si applica il metodo di separazione delle variabili <span class="math notranslate nohighlight">\(u(x,t) = f(x) g(t)\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[m f \ddot{g} - \sigma_0 f'' g = 0 \ ,\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{m}{\sigma_0}\frac{\ddot{g}}{g} = \frac{f''}{f} = C\]</div>
+<p class="sd-card-text">e scegliendo solo i valori di <span class="math notranslate nohighlight">\(c\)</span> che forniscono soluzioni non triviali compatibili con i vincoli, <span class="math notranslate nohighlight">\(C = - k^2\)</span>. L’equazione per la parte spaziale della soluzione diventa quindi</p>
+<div class="math notranslate nohighlight">
+\[f''(x) + k^2 f(x) = 0 \ .\]</div>
+<p class="sd-card-text">La soluzione generale di questa equazione è</p>
+<div class="math notranslate nohighlight">
+\[f(x) = A \cos (kx) + B \sin (kx) \ ,\]</div>
+<p class="sd-card-text">e l’imposizione delle condizioni al contorno consentono di trovare i valori ammissibili di <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span> e una condizione su <span class="math notranslate nohighlight">\(k\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+  0 = f(0) = A \\
+  0 = f(L) = k B \sin (kL) \\
+\end{cases}\end{split}\]</div>
+<p class="sd-card-text">e quindi per avere soluzioni non banali, deve essere soddisfatta la condizione</p>
+<div class="math notranslate nohighlight">
+\[\sin(kL) = 0 \ .\]</div>
+<p class="sd-card-text">I valori della costante <span class="math notranslate nohighlight">\(k\)</span> ammissibili per ottenere soluzioni non banali sono quindi</p>
+<div class="math notranslate nohighlight">
+\[k_n = n \frac{2 \pi}{L} \ , \qquad n \in \mathbb{N} \ .\]</div>
+<p class="sd-card-text">Quindi esiste una forma spaziale <span class="math notranslate nohighlight">\(f_n(x) = A_n \sin \left( k_n x \right)\)</span> per ogni valore di <span class="math notranslate nohighlight">\(n \in \mathbb{N}\)</span>. Ad ogni forma <span class="math notranslate nohighlight">\(f_n(x)\)</span> è associata una parte temporale <span class="math notranslate nohighlight">\(g_n(t)\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[g_n(t) = a_n \cos\left( \omega_n t \right) + b_n \sin\left( \omega_n t \right) \ ,\]</div>
+<p class="sd-card-text">con <span class="math notranslate nohighlight">\(\omega_n = c \, k_n\)</span>.</p>
+<p class="sd-card-text">La forma generale della soluzione del problema può quindi essere scritta come combinazione di onde stazionarie,</p>
+<div class="math notranslate nohighlight">
+\[u(x,t) = \sum_{n} \left[ \alpha_n \cos\left( \omega_n t \right) + \beta_n \sin\left(\omega_n t\right) \right] \sin\left( k_n x \right) \ .\]</div>
+<p class="sd-card-text">con <span class="math notranslate nohighlight">\(k_n = n\frac{2\pi}{L}\)</span> e <span class="math notranslate nohighlight">\(\omega_n = c k_n = n c \frac{2\pi}{L}\)</span>.</p>
+<p class="sd-card-text">I coefficienti <span class="math notranslate nohighlight">\(\alpha_n\)</span>, <span class="math notranslate nohighlight">\(\beta_n\)</span> vengono calcolati applicando le condizioni iniziali del problema</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  u_0(x) = u(x,0)       &amp; = \sum_{n} \alpha_n  \sin\left( k_n x \right) \\
+  v_0(x) = \dot{u}(x,0) &amp; = \sum_{n} \omega_n \beta_n  \sin\left( k_n x \right) \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">e quindi risultano essere i coefficienti delle <strong>serie di Fourier</strong> della posizione e della velocità iniziale. Nel caso di configurazione iniziale in quiete, <span class="math notranslate nohighlight">\(\dot{u}(x,0) = 0\)</span>, i coefficienti <span class="math notranslate nohighlight">\(\beta_n\)</span> sono nulli, <span class="math notranslate nohighlight">\(\beta_n = 0\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Onde viaggianti<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Si usano le proprietà delle funzoni trigonometriche,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ \cos(\alpha \mp \beta) &amp; = \cos \alpha \cos \beta \pm \sin \alpha \sin \beta \\
+ \sin(\alpha \mp \beta) &amp; = \sin \alpha \cos \beta \mp \cos \alpha \sin \beta \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">e</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ \cos \alpha \sin \beta &amp; = \frac{1}{2} \left( \sin(\alpha+\beta) - \cos(\alpha-\beta) \right) \\
+ \sin \alpha \sin \beta &amp; = \frac{1}{2} \left( \cos(\alpha-\beta) - \cos(\alpha+\beta) \right) \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">La soluzione dell’equazione può quindi essere riscritta come</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ u(x,t)
+ &amp; = \sum_n \left[\frac{\alpha_n}{2}\left( \sin(\omega_n t + k_n x) - \sin(\omega_n t - k_n x)  \right) \right. + \\
+ &amp; \qquad + \left.\frac{\beta_n }{2}\left( \cos(\omega_n t - k_n x) - \cos(\omega_n t + k_n x)  \right) \right] = \\ 
+ &amp; = \sum_n \left[\frac{\alpha_n}{2}\left( \sin(k_n (c t + x)) - \sin(k_n(c t - x))  \right) \right. + \\
+ &amp; \qquad + \left.\frac{\beta_n }{2}\left( \cos(k_n (c t - x)) - \cos(k_n(c t + x))  \right) \right] \ .
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Nel caso di condizione iniziale in quiete, tutti i coefficieti <span class="math notranslate nohighlight">\(\beta_n\)</span> sono nulli. La soluzione è uguale a due contributi uguali - e uguali a metà della condizione iniziale - che si muovono in direzione opposta a velocità <span class="math notranslate nohighlight">\(\mp c\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  u(x,t) 
+  &amp; = \sum_n \frac{\alpha_n}{2} \sin(k_n(x+ct)) + \sum_n \frac{\alpha_n}{2} \sin(k_n(x-ct)) = \\
+  &amp; = \frac{1}{2} u_0(x+ct) + \frac{1}{2} u_0(x-ct) \ ,
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">avendo riconosciuto il contributo delle due onde viaggianti</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \frac{1}{2} u_0(x+ct) &amp; = \sum_n \frac{\alpha_n}{2} \sin(k_n(x+ct)) &amp;&amp; \text{(onda viaggiante verso sinistra)} \\
+  \frac{1}{2} u_0(x-ct) &amp; = \sum_n \frac{\alpha_n}{2} \sin(k_n(x-ct)) &amp;&amp; \text{(onda viaggiante verso destra)}
+\end{aligned}\end{split}\]</div>
+</div>
+</details></div>
+<div class="section" id="torsione-di-una-trave-con-un-estremo-vincolato-e-un-estremo-libero">
+<h3><span class="section-number">21.3.1.2. </span>Torsione di una trave con un estremo vincolato e un estremo libero<a class="headerlink" href="#torsione-di-una-trave-con-un-estremo-vincolato-e-un-estremo-libero" title="Permalink to this heading">#</a></h3>
+</div>
+</div>
+<div class="section" id="id1">
+<h2><span class="section-number">21.3.2. </span><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 </div>
 </div>
 
@@ -685,7 +796,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzioni-particolari">21.3.1. Soluzioni particolari</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzioni-particolari">21.3.1. Soluzioni particolari</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vibrazione-di-una-corda-con-estremi-vincolati">21.3.1.1. Vibrazione di una corda con estremi vincolati</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#torsione-di-una-trave-con-un-estremo-vincolato-e-un-estremo-libero">21.3.1.2. Torsione di una trave con un estremo vincolato e un estremo libero</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">21.3.2. </a></li>
 </ul>
   </nav></div>
 
