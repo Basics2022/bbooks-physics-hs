@@ -68,19 +68,19 @@ permette di riconoscere l'approssimazione centrata della derivata seconda $\part
 $$\partial_{xx} u(x_i,t) = \dfrac{u(x_i-\Delta x,t) - 2 u(x_i,t) + u(x_i+\Delta x,t)}{\Delta x^2}$$
 
 
-$$M_j \partial_{tt} u(x_j,t) - \Delta x^2 K \partial_{xx} u(x_j,t) = F_j(t) $$
+$$M_j \partial_{tt} u(x_j,t) - K \partial_{xx} u(x_j,t) = F_j(t) $$
 
 
 (physics-hs:waves:equation:examples:mechanics:torsion)=
 ### Torsione - catena di molle rotazionali
 
-$$I \partial_{tt} \theta(x_j,t) - \Delta x^2 K_t \partial_{xx} \theta(x_j,t) = M_j(t)$$
+$$I \partial_{tt} \theta(x_j,t) - K_t \partial_{xx} \theta(x_j,t) = M_j(t)$$
 
 
 (physics-hs:waves:equation:examples:mechanics:string)=
 ### Filo teso
 
-$$M_j \partial_{tt} u(x_j,t) - \Delta x^2 N_0 \partial_{xx} u(x_j,t) = F_j(t)$$
+$$M_j \partial_{tt} u(x_j,t) - N_0 \partial_{xx} u(x_j,t) = F_j(t)$$
 
 Esempio: corde di strumenti musicali.
 
@@ -92,6 +92,60 @@ Esempio: corde di strumenti musicali.
 
 La percezione umana dell'udito è legata alla trasduzione di perturbazioni di pressione di ampiezza limitata da parte del nostro sistema di misura che va dall'orecchio al nostro cervello, capace di percepire perturbazioni di frequenza compresa qualitativamente tra $20 \, \text{Hz}$ e $20.000 \, \text{Hz}$.
 
+E' possibile ricavare l'equazione delle onde per il campo di pressione usando le equazioni di [bilancio per sistemi aperti](physics-hs:mechanics:dynamics:eom:open) di massa e di quantità di moto, applicati a dei volumi elementari del dominio di interesse.
+
+Si assume qui che il fluido nel quale si propaga la perturbazione acustica sia in quiete. Il calcolo viene inizialmente svolto in un ambito di spazio e variaili discrete, e solo alla fine vengono riconosciute le espressioni approssimate alle differenze delle derivate per tornare a un modello continuo. Si assume una dimensione uniforme dei domini elementari.
+
+(physics-hs:waves:equation:examples:fluids:sound:1d)=
+#### Dominio 1-dimensionale
+
+Si considerano serie di elementi...e si scrive il bilancio di massa per gli elementi con indice intero, e il bilancio di quantità di moto per i volumi di indice frazionario "adiacenti"
+
+$$\begin{aligned}
+  \Delta x \, \dot{\rho}_i & = \overline{\rho} u_{i-\frac{1}{2}} - \overline{\rho} u_{i+\frac{1}{2}} \\
+  \Delta x \, \overline{\rho} \dot{u}_{i-\frac{1}{2}} & = P_{i-1} - P_{i} \\
+  \Delta x \, \overline{\rho} \dot{u}_{i+\frac{1}{2}} & = P_{i  } - P_{i+1}  
+\end{aligned}$$
+
+Derivando in tempo il bilancio della massa dell'elemento $i$ e sostituendo in esso le due espressioni del bilancio della quantità di moto degli elementi $i-\frac{1}{2}$ e $i+\frac{1}{2}$ si ottiene
+
+$$\Delta x \ddot{\rho}_i = \frac{1}{\Delta x} \left[ P_{i-1} - 2 P_i + P_{i+1} \right] \ ,$$
+
+e ricordando la definizione di velocità del suono $a$ **todo** (data dove? Forse è proprio questo il posto dove darla, assumendo una relazione lineare - tanto tutto o quasi è lineare nel piccolo - tra la perturbazione di pressione e la pertubazione di densità $P_i = a^2 \rho_i$), si può scrivere
+
+$$\frac{1}{a^2} \ddot{P}_i - \dfrac{P_{i-1} - 2 P_i + P_{i+1}}{\Delta x^2} = 0 \ .$$
+
+Avendo indicato il valore della pressione in $x_k$ come $P_k = P(x_k)$, si può riconoscere l'approssimazione della derivata seconda della pressione, e tornando al continuo e ricordando il significato di derivata parziale, ricavare l'equazione delle onde per la perturbazione di pressione in un mezzo in quiete[^medium-at-res]
+
+$$\frac{1}{a^2} \partial_{tt} P - \partial_{xx} P = 0 \ .$$
+
+[^medium-at-rest]: Il concetto di quiete è sempre riferito a un osservatore.
+
+**Osservazione.** Il metodo descritto qui rappresenta un'applicazione elementare del metodo dei volumi finiti, metodo utilizzato per la soluzione numerica di equazioni differentiali.
+
+(physics-hs:waves:equation:examples:fluids:sound:nd)=
+#### Dominio n-dimensionale
+
+Si può ripetere il procedimento per un [dominio 1-dimensionale](physics-hs:waves:equation:examples:fluids:sound:1d) in un dominio $n$-dimensionale, usando due suddivisioni "sfalsate" del dominio, una per calcolare il bilancio di massa, l'altra per calcolare il bilancio di quantità di moto. Ripendo il procedimento, si arriva a un'equazione che contiene l'approssimazione dell'operatore laplaciano della pressione,
+
+$$\begin{aligned}
+ \text{2-d:} & \quad \dfrac{P_{i-1,j-1}+P_{i-1,j+1}+P_{i+1,j+1}+P_{i+1,j-1}-4 P_{i,j}}{\Delta x^2} \sim \partial_{xx} P_i + \partial_{yy} P_i \\
+ \text{3-d:} & \quad \dfrac{P_{i-1,j-1,k-1}+\dots + P_{i+1,j+1,k+1}-8 P_{ijk}}{\Delta x^2} \sim \partial_{xx} P_i + \partial_{yy} P_i + \partial_{zz} P_i \\
+\end{aligned}$$
+
+Per motivi di sintesi e per motivi di comprensione, l'approssimazione del laplaciano della pressione può essere scritta come sommatoria delle differenze della pressione nei domini $\mathbf{j}$ vicini al dominio $\mathbf{i}$, cioè appartenenti a quella che viene definita bolla di $\mathbf{i}$, $\mathbf{j} \in B(\mathbf{i})$,
+
+$$\nabla^2 P_i \sim \dfrac{\sum_{\mathbf{j} \in B(\mathbf{i})}\left( P_{\mathbf{j}} - P_{\mathbf{i}} \right)}{\Delta x^2} \ .$$
+
+```{prf:example} Dominio $2$-dimensionale
+
+```
+
+```{prf:example} Dominio $3$-dimensionale
+
+```
+
+<!--
 **Suono in un tubo.** 
 
 Poi da cancellare o riscrivere meglio per il livello
@@ -112,6 +166,7 @@ $$\dfrac{1}{c^2} \partial_{tt} P - \partial_{xx} P = 0$$
 **Suono nello spazio.**
 
 $$\dfrac{1}{c^2} \partial_{tt} P - \nabla^2 P = 0$$
+-->
 
 (physics-hs:waves:equation:examples:fluids:surface)=
 ### Onde su superficie libera

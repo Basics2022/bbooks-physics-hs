@@ -5,6 +5,11 @@ Nelle sezioni precedenti, i [principi della dinamica](physics-hs:mechanics:dynam
 
 In questa sezione si presentano i bilanci di massa, quantità di moto e energia cinetica per sistemi aperti; pur non potendo dare una dimostrazione rigorosa, si mostra il procedimento generale per ricavare un bilancio per un sistema aperto dal corrisponte bilancio per un sistema chiuso.
 
+Questi risultati verranno applicati successivamente per:
+- il calcolo reazioni in sistemi termo-meccanici
+- la derivazione dell'[equazione delle onde per l'acustica](physics-hs:waves:equation:examples:fluids:sound)
+- ...
+
 (physics-hs:mechanics:dynamics:eom:open:mass)=
 ## Bilancio della massa
 
@@ -13,6 +18,7 @@ In questa sezione si presentano i bilanci di massa, quantità di moto e energia 
 
 (physics-hs:mechanics:dynamics:eom:open:angular-momentum)=
 ## Bilancio del momento della quantità di moto
+
 
 ## Esempi
 ````{prf:example} Sistemi discreti - Moto di una barca per reazione
