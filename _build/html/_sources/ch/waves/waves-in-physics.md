@@ -1,16 +1,65 @@
 (physics-hs:waves:equation:examples)=
 # Equazione delle onde in diversi sistemi
-In questa sezione viene discusso il ruolo dell'equazione delle onde in diversi ambiti della fisica. La dinamica di perturbazioni di ampiezza "sufficientemente piccola" è descritta da un problema lineare, governato dall'equazione delle onde...**todo**
+In questa sezione viene discusso il ruolo dell'**equazione delle onde** in diversi ambiti della fisica. La dinamica di perturbazioni di ampiezza "sufficientemente piccola" è descritta da un problema lineare, governato dall'equazione delle onde con le oppportune condizioni iniziali e al contorno. Per problemi in domini $D$ spaziali $1$-dimensionali, l'espressione dell'equazione (lineare) delle onde in un mezzo omogeneo è
+
+$$\frac{1}{c^2} \partial_{tt} u - \partial_{xx} u = f(x, t) \ , \qquad x \in D \ ,$$ (eq:wave-eqn:1d)
+
+dove $c$ è la **velocità di propagazione delle perturbazioni**. Questa velocità è una costante del problema in mezzi omogenei. Il significato della costante $c$ come velocità di propagazione delle perturbazioni risulta chiaro nell'espressione delle onde viaggianti come [soluzioni elementari dell'equazione delle onde](physics-hs:waves:equation:solutions).
+
+Per domini $n$-dimensionali, l'espressione dell'equazione delle onde in un mezzo omogeneo è
+
+$$\frac{1}{c^2} \partial_{tt} u - \nabla^2 u = f(\vec{r}, t) \ , \qquad \vec{r} \in D \ .$$
+
+Nelle sezioni successive viene mostrato come l'equazione delle onde compare in diversi ambiti della fisica, da sistemi meccanici elastici, alle onde di pressione per l'acustica, alle onde elettromagnetiche.
 
 (physics-hs:waves:equation:examples:mechanics)=
-## Sistemi meccanici
+## Problemi strutturali
 
 (physics-hs:waves:equation:examples:mechanics:axial)=
 ### Azione assiale - catena di molle lineari
 
-$$M_j \ddot{U}_j(t) = F_{j,j-1} + F_{j,j+1} + F_j^{ext}(t) = K_{j,j-1} \left( U_{j-1}(t) - U_j(t) \right) + K_{j,j+1} \left( U_{j+1}(t) - U_{j}(t) \right) + f_j^{ext}$$
+L'azione assiale nelle travi elastiche può essere rappresentata con un sistema discret(izzat)o di masse e molle lineari. La trave viene discretizzata con $N+1$ masse concentrate, connesse da $N$ molle. La posizione di una massa è
 
-...
+$$X_i(t) = X_{0,i} + U_i(t) \ ,$$
+
+cioè la somma della posizione di riferimento e lo spostamento $U_i$. Nella configurazione di riferimento la struttura non è soggetta a sforzi, e le molle hanno allungamento nullo. Segue che l'allungamento della molla tra la massa $i$ e $j$ è
+
+$$\Delta \ell_{i,i+1} = \ell_{i,i+1} - \ell_{i,i+1}^0 = X_{i+1} - X_{i} - X_{i+1}^0 + X_{i}^0 = U_{i+1} - U_{i} \ .$$
+
+<span style="color:red">**todo.** Discussione sui valori delle masse concentrate e della rigidezza delle molle. Questo è determinato dall'approssimazione utilizzata. Una buona approssimazione discreta deve convergere alla soluzione del problema continuo, all'aumentare del numero di gradi di libertà del modello.</span>
+
+La $i$-esima massa è soggetta alle forze elastiche dovute alla connessione con le masse adiacenti e alla forzante esterna. Il bilancio della quantità di moto per la $i$-esima massa è quindi
+
+$$\begin{aligned}
+  M_i \ddot{U}_i 
+  & = F_{i,i-1} + F_{i,i+1} + F^e_i = \\
+  & = K_{i,i-1} \left( - U_i + U_{i-1} \right) + K_{i,i+1} \left( - U_i + U_{i+1} \right) + F^e_i \ .
+\end{aligned}$$
+
+Questa equazione è valida per ogni massa (ad eccezione delle masse agli estremi della trave, ma lì entrano in azione le condizioni al contorno). Assumendo che la distribuzione di massa e la rigidezza della trave sia uniforme,
+
+$$M_i = m \, \Delta x \quad , \quad K = {EA}{\Delta x} \ ,$$
+
+l'equazione per la $i$-esima massa diventa
+
+$$\Delta x m \ddot{U}_i - \frac{EA}{\Delta x} \left( U_{i-1} - 2 U_i + U_{i+1} \right) = \Delta x f_i \ ,$$
+
+e dividendo per $\Delta x$ 
+
+$$m \ddot{U}_i - EA \frac{U_{i-1}- 2 U_i + U_{i+1}}{\Delta x^2} = f_i \ .$$
+
+Si riconosce infine l'approssimazione del secondo ordine della derivata seconda della funzione $u(x,t)$ valutata in $X_i$. La si sostituisce con essa e si introduce la notazione di derivate parziali (per funzioni che dipendono da più variabili indipendenti, qui spazio $x$ e tempo $t$) per trovare l'equazione delle onde
+
+$$m \partial_{tt} u - EA \partial_{xx} u = f \ .$$
+
+Confrontando questa espressione con l'espressione {eq}`eq:wave-eqn:1d` dell'equazione delle onde, si può ricavare che la velocità di propagazione delle onde assiali è
+
+$$c_{u} = \sqrt{\frac{EA}{m}} \ .$$
+
+```{prf:example} Modello discreto
+:class: dropdown
+
+$$M_j \ddot{U}_j(t) = F_{j,j-1} + F_{j,j+1} + F_j^{ext}(t) = K_{j,j-1} \left( U_{j-1}(t) - U_j(t) \right) + K_{j,j+1} \left( U_{j+1}(t) - U_{j}(t) \right) + f_j^{ext}$$
 
 Se le molle hanno tutte la stessa rigidezza, $K$,
 
@@ -70,17 +119,29 @@ $$\partial_{xx} u(x_i,t) = \dfrac{u(x_i-\Delta x,t) - 2 u(x_i,t) + u(x_i+\Delta 
 
 $$M_j \partial_{tt} u(x_j,t) - K \partial_{xx} u(x_j,t) = F_j(t) $$
 
+```
 
 (physics-hs:waves:equation:examples:mechanics:torsion)=
 ### Torsione - catena di molle rotazionali
 
-$$I \partial_{tt} \theta(x_j,t) - K_t \partial_{xx} \theta(x_j,t) = M_j(t)$$
+Seguendo quanto fatto per l'azione assiale, si può ricavare l'equazione delle onde per la torsione di una trave,
 
+$$I \partial_{tt} \theta(x,t) - GJ_t \partial_{xx} \theta(x,t) = m(x,t) \ .$$
+
+Confrontando questa espressione con l'espressione {eq}`eq:wave-eqn:1d` dell'equazione delle onde, si può ricavare che la velocità di propagazione delle onde assiali è
+
+$$c_{t} = \sqrt{\frac{GJ_t}{I}} \ .$$
 
 (physics-hs:waves:equation:examples:mechanics:string)=
 ### Filo teso
 
-$$M_j \partial_{tt} u(x_j,t) - N_0 \partial_{xx} u(x_j,t) = F_j(t)$$
+La dinamica trasversale di un filo teso con pre-sforzo assiale $N_0 = A \sigma_0$ è
+
+$$m \partial_{tt} v(x,t) - N_0 \partial_{xx} v(x,t) = f(t)$$
+
+Confrontando questa espressione con l'espressione {eq}`eq:wave-eqn:1d` dell'equazione delle onde, si può ricavare che la velocità di propagazione delle onde assiali è
+
+$$c_{v} = \sqrt{\frac{N_0}{m}} \ .$$
 
 Esempio: corde di strumenti musicali.
 
