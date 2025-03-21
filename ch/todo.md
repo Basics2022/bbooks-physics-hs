@@ -9,8 +9,12 @@ L'adimensionalizzazione delle equazioni di un modello è fondamentale per ricono
 
 L'analisi dimensionale può essere anche utilizzata per stimare la dipendenza di una grandezza fisica da altre grandezze fisiche indipendenti del problema.
 
+(physics-hs:todo:psce)=
+## Principio di sovrapposizione delle cause e degli effetti
+In problemi lineari, si può sfruttare il principio di sovrapposizione delle cause e degli effetti.
+
 (physics-hs:todo:fourier)=
-## Trasformate di Fourier
+## Analisi di Fourier
 Scomposizione segnali come somma di armoniche
 
 - soluzioni elementari di [fenomeni ondulatori](physics-hs:waves:intro)

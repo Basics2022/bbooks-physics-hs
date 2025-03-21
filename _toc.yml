@@ -159,6 +159,7 @@ parts:
     sections:
     - file: ch/waves/waves-in-physics
     - file: ch/waves/phenomena
+    - file: ch/waves/waves-notes
   - file: ch/waves/optics
     sections:
     - file: ch/waves/optics-geometric.md

@@ -1,6 +1,6 @@
 (physics-hs:waves:equation:examples)=
 # Equazione delle onde in diversi sistemi
-In questa sezione viene discussa la comparsa dell'equazione delle onde in diversi ambiti della fisica.
+In questa sezione viene discusso il ruolo dell'equazione delle onde in diversi ambiti della fisica. La dinamica di perturbazioni di ampiezza "sufficientemente piccola" è descritta da un problema lineare, governato dall'equazione delle onde...**todo**
 
 (physics-hs:waves:equation:examples:mechanics)=
 ## Sistemi meccanici

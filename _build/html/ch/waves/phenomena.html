@@ -71,20 +71,11 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon-sugar.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="22. Ottica" href="optics.html" />
+    <link rel="next" title="21.3. Note" href="waves-notes.html" />
     <link rel="prev" title="21.1. Equazione delle onde in diversi sistemi" href="waves-in-physics.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R3GS2LVD8M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-R3GS2LVD8M');
-</script>
-
   
   
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
@@ -322,6 +313,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="intro.html">21. Introduzione ai fenomeni ondulatori</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="waves-in-physics.html">21.1. Equazione delle onde in diversi sistemi</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">21.2. Caratteristiche dei fenomeni ondulatori</a></li>
+<li class="toctree-l2"><a class="reference internal" href="waves-notes.html">21.3. Note</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="optics.html">22. Ottica</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -604,8 +596,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzioni-particolari">21.2.1. Soluzioni particolari</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frequenza-lunghezza-d-onda-e-relazione-con-velocita-di-propagazione-della-perturbazione">21.2.1.1. Frequenza, lunghezza d’onda e relazione con velocità di propagazione della perturbazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzioni-elementari">21.2.1. Soluzioni elementari</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dominio-1-dimensionale">21.2.1.1. Dominio 1-dimensionale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dominio-3-dimensionale">21.2.1.2. Dominio 3-dimensionale</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effetti-associati">21.2.2. Effetti associati</a><ul class="nav section-nav flex-column">
@@ -630,16 +623,21 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="caratteristiche-dei-fenomeni-ondulatori">
 <span id="physics-hs-waves-phenomena"></span><h1><span class="section-number">21.2. </span>Caratteristiche dei fenomeni ondulatori<a class="headerlink" href="#caratteristiche-dei-fenomeni-ondulatori" title="Permalink to this heading">#</a></h1>
-<div class="section" id="soluzioni-particolari">
-<span id="physics-hs-waves-equation-solutions"></span><h2><span class="section-number">21.2.1. </span>Soluzioni particolari<a class="headerlink" href="#soluzioni-particolari" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Onde stazionarie</p></li>
-<li><p>Onde viaggianti</p></li>
-</ul>
-<div class="section" id="frequenza-lunghezza-d-onda-e-relazione-con-velocita-di-propagazione-della-perturbazione">
-<h3><span class="section-number">21.2.1.1. </span>Frequenza, lunghezza d’onda e relazione con velocità di propagazione della perturbazione<a class="headerlink" href="#frequenza-lunghezza-d-onda-e-relazione-con-velocita-di-propagazione-della-perturbazione" title="Permalink to this heading">#</a></h3>
-<div class="proof definition admonition" id="wave-length">
-<p class="admonition-title"><span class="caption-number">Definition 21.2 </span> (Frequenza)</p>
+<div class="section" id="soluzioni-elementari">
+<span id="physics-hs-waves-equation-solutions"></span><h2><span class="section-number">21.2.1. </span>Soluzioni elementari<a class="headerlink" href="#soluzioni-elementari" title="Permalink to this heading">#</a></h2>
+<p>Vengono qui discusse alcune soluzioni elementari dell”<span class="xref myst">equazione lineare delle onde</span>. In un problema lineare, una soluzione qualsiasi può essere ottenuta come somma di soluzioni elementari, sfruttando il principio di sovrapposizione delle cause e degli effetti (<strong>todo-list:</strong><a class="reference internal" href="../todo.html#physics-hs-todo-psce"><span class="std std-ref"><strong>PSCE</strong></span></a>): un segnale generico e la sua evoluzione può quindi essere studiato come somma di segnali semplici che evolvono in maniera indipendente l’uno dall’altro (<strong>todo-list:</strong><a class="reference internal" href="../todo.html#physics-hs-todo-fourier"><span class="std std-ref"><strong>analisi di Fourier</strong></span></a>)</p>
+<p>In particolare, vengono alcune soluzioni elementari in domini 1-dimensionali, nella forma di onde stazionarie o onde viaggianti, e in domini 3-dimensionali, nella forma di onde piane e onde sferiche.</p>
+<p>Per ognuna di queste perturbazioni elementari<a class="footnote-reference brackets" href="#eikonal-approx" id="id1">1</a> prese singolarmente è possibile definire una lunghezza d’onda (o in 3d un vettore d’onda locale che indica la direzione della propagazione), una frequenza e la velocità della perturbazione.</p>
+<div class="section" id="dominio-1-dimensionale">
+<h3><span class="section-number">21.2.1.1. </span>Dominio 1-dimensionale<a class="headerlink" href="#dominio-1-dimensionale" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="dominio-3-dimensionale">
+<h3><span class="section-number">21.2.1.2. </span>Dominio 3-dimensionale<a class="headerlink" href="#dominio-3-dimensionale" title="Permalink to this heading">#</a></h3>
+<!--
+### Frequenza, lunghezza d'onda e relazione con velocità di propagazione della perturbazione
+-->
+<div class="proof definition admonition" id="wave-frequency">
+<p class="admonition-title"><span class="caption-number">Definition 21.1 </span> (Frequenza)</p>
 <div class="definition-content section" id="proof-content">
 </div>
 </div><div class="proof definition admonition" id="wave-length">
@@ -746,6 +744,12 @@ $$x - x_{s,0} - v_s t_{ret} = c \left( t - t_{ret} \right)$$
 
 $$t_{ret} = \dfrac{c}{c - v_s} t - \dfrac{x - x_{s,0}}{c}$$
 -->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="eikonal-approx"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>In generale, questa operazione può essere svolta localmente per una soluzione qualisasi delle onde, nel limite di lunghezza d’onda molto minore delle dimensioni caratteristiche del problema. Questa approssimazione viene definita <em>approssimazione eikonale</em> ed è all’origine dell’approccio geometrico ai fenomeni ondulatori, come l’acustica geometrica o l”<a class="reference internal" href="optics-geometric.html#physics-hs-waves-optics-geometric"><span class="std std-ref">ottica geometrica</span></a>.</p>
+</dd>
+</dl>
 </div>
 </div>
 </div>
@@ -790,11 +794,11 @@ $$t_{ret} = \dfrac{c}{c - v_s} t - \dfrac{x - x_{s,0}}{c}$$
       </div>
     </a>
     <a class="right-next"
-       href="optics.html"
+       href="waves-notes.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">22. </span>Ottica</p>
+        <p class="prev-next-title"><span class="section-number">21.3. </span>Note</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -813,8 +817,9 @@ $$t_{ret} = \dfrac{c}{c - v_s} t - \dfrac{x - x_{s,0}}{c}$$
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzioni-particolari">21.2.1. Soluzioni particolari</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frequenza-lunghezza-d-onda-e-relazione-con-velocita-di-propagazione-della-perturbazione">21.2.1.1. Frequenza, lunghezza d’onda e relazione con velocità di propagazione della perturbazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzioni-elementari">21.2.1. Soluzioni elementari</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dominio-1-dimensionale">21.2.1.1. Dominio 1-dimensionale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dominio-3-dimensionale">21.2.1.2. Dominio 3-dimensionale</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effetti-associati">21.2.2. Effetti associati</a><ul class="nav section-nav flex-column">
