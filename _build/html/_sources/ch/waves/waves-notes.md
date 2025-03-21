@@ -6,11 +6,13 @@
 ### Moti liberi
 #### Vibrazione di una corda con estremi vincolati 
 
-$$\begin{cases}
-  m \ddot{u} - \sigma_0 u'' = 0 && x \in [0,L] \\
+$$
+\begin{cases}
+  m \ddot{u} - \sigma_0 u'' = 0 \quad x \in [0,L] \\
   u(0,t) = 0 \\
   u(L,t) = 0 \\
-\end{cases}$$
+\end{cases}
+$$
 
 La velocità di propagazione delle perturbazioni è $c = \sqrt{\frac{\sigma_0}{m}}$.
 
@@ -110,11 +112,11 @@ $$\begin{aligned}
 
 #### Torsione di una trave con un estremo vincolato e un estremo libero
 
-$$\begin{cases}
-  I \ddot{u} - GJ u'' = 0 && x \in [0,L] \\
-  u(0,t) = 0 \\
-  GJu'(L,t) = 0 \\
-\end{cases}$$
+$$\begin{aligned}
+  && I \ddot{u} - GJ u'' = 0 && x \in [0,L] \\
+  && u(0,t) = 0 \\
+  && GJu'(L,t) = 0 \\
+\end{aligned}$$
 
 La velocità di propagazione delle perturbazioni è $c = \sqrt{\frac{GJ}{I}}$.
 

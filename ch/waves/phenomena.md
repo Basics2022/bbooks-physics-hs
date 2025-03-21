@@ -95,7 +95,7 @@ $$\omega_n = c k_n \ .$$
 avendo scelto l'origine del sistema di coordinate, $r=0$, in corrispondenza della sorgente puntiforme.
 
 ```{admonition} Causalità e direzione di propagazione delle perturbazioni
-A differenza dell'espressione delle onde viaggianti nel caso 1-dimesnionale, nell'espressione delle onde sferiche prodotte da una sorgente puntiforme è presente solo un tipo di onda
+A differenza dell'espressione delle onde viaggianti nel caso 1-dimensionale, nell'espressione delle onde sferiche prodotte da una sorgente puntiforme è presente solo un tipo di onda
 ```
 
 (physics-hs:waves:effects)=

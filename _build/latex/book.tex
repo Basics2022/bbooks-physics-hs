@@ -87,7 +87,7 @@
         
 
 \title{Fisica per le superiori}
-\date{20 mar 2025}
+\date{21 mar 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -104,7 +104,7 @@
 
 
 \sphinxAtStartPar
-Questo libro fa parte del materiale pensato per \sphinxhref{https://basics2022.github.io/bbooks-hs}{le scuole superiori}, nell’ambito del progetto \sphinxhref{https://basics2022.github.io/bbooks}{\sphinxstylestrong{basics\sphinxhyphen{}books}}. E” disponibile in \DUrole{xref,myst}{versione in .pdf}.
+Questo libro fa parte del materiale pensato per \sphinxhref{https://basics2022.github.io/bbooks-hs}{le scuole superiori}, nell’ambito del progetto \sphinxhref{https://basics2022.github.io/bbooks}{\sphinxstylestrong{basics\sphinxhyphen{}books}}. E” disponibile in \DUrole{xref,download,myst}{versione in .pdf}.
 
 
 
@@ -200,8 +200,14 @@ L’adimensionalizzazione delle equazioni di un modello è fondamentale per rico
 L’analisi dimensionale può essere anche utilizzata per stimare la dipendenza di una grandezza fisica da altre grandezze fisiche indipendenti del problema.
 
 
-\subsection{Trasformate di Fourier}
-\label{\detokenize{ch/todo:trasformate-di-fourier}}\label{\detokenize{ch/todo:physics-hs-todo-fourier}}
+\subsection{Principio di sovrapposizione delle cause e degli effetti}
+\label{\detokenize{ch/todo:principio-di-sovrapposizione-delle-cause-e-degli-effetti}}\label{\detokenize{ch/todo:physics-hs-todo-psce}}
+\sphinxAtStartPar
+In problemi lineari, si può sfruttare il principio di sovrapposizione delle cause e degli effetti.
+
+
+\subsection{Analisi di Fourier}
+\label{\detokenize{ch/todo:analisi-di-fourier}}\label{\detokenize{ch/todo:physics-hs-todo-fourier}}
 \sphinxAtStartPar
 Scomposizione segnali come somma di armoniche
 \begin{itemize}
@@ -1469,6 +1475,9 @@ Esempio di \sphinxhref{https://www.youtube.com/watch?v=XAPTrzODofw}{flicker phot
 
 \section{Udito}
 \label{\detokenize{ch/intro/sensing-hearing:udito}}\label{\detokenize{ch/intro/sensing-hearing:physics-hs-intro-sensing-hearing}}\label{\detokenize{ch/intro/sensing-hearing::doc}}
+\sphinxAtStartPar
+L’orecchio umano è in grado di percepire {\hyperref[\detokenize{ch/waves/intro:physics-hs-waves-intro}]{\sphinxcrossref{\DUrole{std,std-ref}{onde}}}} di pressione con frequenza compresa tra i \(20 \, \text{Hz}\) e i \(20 \, \text{kHz}\)
+
 \sphinxstepscope
 
 
@@ -4940,6 +4949,23 @@ Nelle sezioni precedenti, i {\hyperref[\detokenize{ch/mechanics/dynamics-eom:phy
 
 \sphinxAtStartPar
 In questa sezione si presentano i bilanci di massa, quantità di moto e energia cinetica per sistemi aperti; pur non potendo dare una dimostrazione rigorosa, si mostra il procedimento generale per ricavare un bilancio per un sistema aperto dal corrisponte bilancio per un sistema chiuso.
+
+\sphinxAtStartPar
+Questi risultati verranno applicati successivamente per:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+il calcolo reazioni in sistemi termo\sphinxhyphen{}meccanici
+
+\item {} 
+\sphinxAtStartPar
+la derivazione dell”{\hyperref[\detokenize{ch/waves/waves-in-physics:physics-hs-waves-equation-examples-fluids-sound}]{\sphinxcrossref{\DUrole{std,std-ref}{equazione delle onde per l’acustica}}}}
+
+\item {} 
+\sphinxAtStartPar
+…
+
+\end{itemize}
 
 
 \subsection{Bilancio della massa}
@@ -12242,21 +12268,57 @@ Per la propagazione nel vuoto, o in mezzi che non assorbono radiazione, la legge
 \chapter{Introduzione ai fenomeni ondulatori}
 \label{\detokenize{ch/waves/intro:introduzione-ai-fenomeni-ondulatori}}\label{\detokenize{ch/waves/intro:physics-hs-waves-intro}}\label{\detokenize{ch/waves/intro::doc}}
 \sphinxAtStartPar
-\sphinxstylestrong{Cosa intendiamo per onda?} Il termine onda è comunemente associato alla propagazione di una perturbazione \sphinxhyphen{} rispetto a una condizione di equilibrio \sphinxhyphen{} di una quantità fisica nello spazio e nel tempo, in grado di trasportare energia e in molti casi con una velocità di propagazione ben definita%
+\sphinxstylestrong{Cosa intendiamo per onda?} Il termine onda è comunemente associato alla propagazione di una perturbazione \sphinxhyphen{} rispetto a una condizione di equilibrio \sphinxhyphen{} di una quantità fisica nello spazio e nel tempo, in grado di trasportare energia e in molti casi con una \sphinxstylestrong{velocità di propagazione} ben definita%
 \begin{footnote}[1]\sphinxAtStartFootnote
 In molti problemi, la propagazione di perturbazioni di ampiezza limitata è governata da un problema lineare. Quando è valido un modello lineare, la velocità di propagazione dell’onda dipende dalle caratteristiche del mezzo e del suo stato di equilibrio, e non dall’ampiezza delle perturbazioni: ad esempio, le onde acustiche in un gas si propagano con una velocità che dipende tipicamente dalla natura del gas e dalla sua temperatura, per un gas ideale perfetto \(c = \sqrt{\gamma R T}\); la luce si propaga nel vuoto con una velocità che dipende solo da costanti della natura, \(c_0 := \frac{1}{\sqrt{\varepsilon_0 \mu_0}}\). In alcuni contesti, la propagazione di perturbazioni di ampiezza «sufficientemente grande» sono descritte da un problema non\sphinxhyphen{}lineare, e lì la storia si complica…\sphinxstylestrong{todo} \sphinxstyleemphasis{esempi: equazione delle acque basse, equazione dei gas comprimibili. Questi casi apparentemente differenti, sono descritti da equazioni simili; in entrambi i casi la dinamica delle perturbazioni non è banale e può dare origine a} \sphinxstylestrong{urti}, \sphinxstyleemphasis{nel primo caso chiamati salti idraulici, nel secondo caso onde d’urto}
-%
-\end{footnote}. La propagazione di un’onda è tipicamente descritta dall’equazione delle onde dal punto di vista matematico, e può mostrare \sphinxstylestrong{fenomeni caratteristici} come interferenza, effetto Doppler, e \sphinxhyphen{} in presenza di ostacoli \sphinxhyphen{} riflessione, rifrazione, diffrazione.
-
-\sphinxAtStartPar
-La perturbazione di diverse quantità fisiche in vari ambiti delle scienze è governata dallo \sphinxstylestrong{stesso modello matematico}, e quindi mostrano formalmente le stesse caratteristiche: così si osservano onde meccaniche nei mezzi continui (solidi: onde nei solidi elastici, onde sismiche; fluidi: onde di pressione in acustica, onde in un liquido \sphinxhyphen{} come le onde del mare) o le onde elettromagnetiche nello spazio%
-\begin{footnote}[2]\sphinxAtStartFootnote
-Spazio magari «vuoto di materia» ma non di proprietà fisiche, come dimostrato dalla propagazione delle onde EM, e l’assenza di un mezzo \sphinxhyphen{} l”\sphinxstyleemphasis{etere luminifero} \sphinxhyphen{} per spiegarne la propagazione. Vedi esperimento di Michelson\sphinxhyphen{}Morley.
 %
 \end{footnote}.
 
 \sphinxAtStartPar
-La linearità di un problema permette di sovrapporre cause ed effetti.
+Da un punto di vista matematico, la propagazione di perturbazioni di diverse quantità fisiche è governata dallo \sphinxstylestrong{stesso modello matematico}, e può mostrare \sphinxstylestrong{fenomeni caratteristici} come interferenza, effetto Doppler, e \sphinxhyphen{} in presenza di ostacoli \sphinxhyphen{} riflessione, rifrazione, diffrazione, scattering da particelle o superfici irregolari.
+
+\sphinxAtStartPar
+La manifestazione dei fenomeni di interazione con ostacoli può dipendere dalle dimensioni relative dell’ostacolo e della \sphinxstyleemphasis{lunghezza d’onda} della perturbazione.
+
+\sphinxAtStartPar
+La propagazione di disturbi di intensità «sufficientemente piccola» può essere descritta con un modello lineare, l”\sphinxstyleemphasis{equazione delle onde}. La linearità di un problema consente di utilizzare il \sphinxstylestrong{principio di sovrapposizione delle cause e degli effetti}, e scomporre perturbazioni con «forma complessa» come somma di perturbazioni più semplici.
+
+\sphinxAtStartPar
+La perturbazione di diverse quantità fisiche in vari ambiti delle scienze è governata dallo \sphinxstylestrong{stesso modello matematico}, e quindi diversi fenomeni fisici mostrano formalmente le stesse caratteristiche. Così, lo stesso modello matematico governa la trasmissione delle onde meccaniche nella materia e delle onde elettromagnetiche nella materia o nel «vuoto» \sphinxhyphen{} di materia%
+\begin{footnote}[2]\sphinxAtStartFootnote
+Spazio magari «vuoto di materia» ma non di proprietà fisiche, come dimostrato dalla propagazione delle onde EM, e l’assenza di un mezzo \sphinxhyphen{} l”\sphinxstyleemphasis{etere luminifero} \sphinxhyphen{} per spiegarne la propagazione. Vedi esperimento di Michelson\sphinxhyphen{}Morley.
+%
+\end{footnote}.
+\subsubsection*{Alcuni esempi}
+
+\sphinxAtStartPar
+Alcuni fenomeni fisici governati dall’equazione delle onde sono:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+le onde meccaniche nella amteria che si manifestano sotto forma di vibrazione. Alcuni esempi sono:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+la vibrazione delle corde tese di strumenti a corda. Lo stato a riposo della corda viene perturbato da un’azione esterna (lo sfregamento di un arco per le viole, il pizzicamento per la chitarra, la percussione per pianoforte). La perturbazione introdotta si trasmette poi lungo la corda tesa con una dinamica descritta dall’equazione delle onde, ed è visibile come perturbazione della posizione della corda
+
+\item {} 
+\sphinxAtStartPar
+i terremoti. Lo stato a riposo delle rocce nel sottosuolo viene alterato dal cedimento improvviso di una condizione di equilibrio, a causa del raggiungimento del carico di rottura. Questo movimento improvviso, quasi impulsivo, introduce una perturbazione della posizione delle che si trasmette \sphinxstyleemphasis{attraverso i diversi strati} della Terra sotto forma di onde sismiche, che vengono percepite come terremoti quando arrivano sulla superficie terrestre. Il punto in cui si verifica il cedimento è l”\sphinxstyleemphasis{ipocentro}, mentre la sua proiezione sulla superficie terrestre è l’epicentro*; in media, l’intensità della perturbazione diminuisce con la distanza dall’ipocentro
+
+\item {} 
+\sphinxAtStartPar
+il suono. Lo stato di quiete dell’aria o di un altro fluido viene perturbato da un’azione esterna, che introduce una perturbazione di pressione \sphinxhyphen{} tipicamente il movimento di una superficie solida come può essere la vibrazione degli strumenti a corda discussi sopra, ma non solo: \sphinxstylestrong{todo} getti e spettro in fluidi, fuoco,…. Questa perturbazione si trasmette all’interno del fluido come onda di pressione. Quando una perturbazione con contenuti sensibili in frequenza tra i \(20 \, \text{Hz}\) e i \(20 \, \text{kHz}\) raggiunge l”{\hyperref[\detokenize{ch/intro/sensing-hearing:physics-hs-intro-sensing-hearing}]{\sphinxcrossref{\DUrole{std,std-ref}{orecchio umano}}}}, questo è in grado di convertire il segnale di pressione in segnale nervoso che il nostro cervello elabora come suono
+
+\end{itemize}
+
+\item {} 
+\sphinxAtStartPar
+le {\hyperref[\detokenize{ch/electromagnetism/em-waves:physics-hs-electromagnetism-em-waves}]{\sphinxcrossref{\DUrole{std,std-ref}{onde elettromagnetiche}}}}: il movimento di cariche elettriche produce perturbazioni nel campo elettromagnetico presente in una regione dello spazio; queste perturbazioni del campo elettromagnetico si trasmettono sotto forma di onde. Secondo il modello atomico, la materia è composta da componenti elementari in cui la carica elettrica è divisa tra una carica netta positiva nel nucleo e carica netta negativa degli elettroni. La vibrazione termica degli atomi produce il moto microscopico di cariche elettriche. Questo moviemnto di cariche produce emissione di radiazione elettromagnetica da parte di ogni corpo, come descritto dalle leggi dell’irraggiamento. A seconda della frequenza della radiazione, questa può essere percepita dai sensi umani sotto forma di luce o calore, può essere percepita dall’effetto dell’abbronzatura, o può essere utilizzata per le comunicazioni, o per applicazioni scientifiche o mediche.
+
+\end{itemize}
+
+
 
 
 
@@ -12270,19 +12332,80 @@ La linearità di un problema permette di sovrapporre cause ed effetti.
 \section{Equazione delle onde in diversi sistemi}
 \label{\detokenize{ch/waves/waves-in-physics:equazione-delle-onde-in-diversi-sistemi}}\label{\detokenize{ch/waves/waves-in-physics:physics-hs-waves-equation-examples}}\label{\detokenize{ch/waves/waves-in-physics::doc}}
 \sphinxAtStartPar
-In questa sezione viene discussa la comparsa dell’equazione delle onde in diversi ambiti della fisica.
+In questa sezione viene discusso il ruolo dell”\sphinxstylestrong{equazione delle onde} in diversi ambiti della fisica. La dinamica di perturbazioni di ampiezza «sufficientemente piccola» è descritta da un problema lineare, governato dall’equazione delle onde con le oppportune condizioni iniziali e al contorno. Per problemi in domini \(D\) spaziali \(1\)\sphinxhyphen{}dimensionali, l’espressione dell’equazione (lineare) delle onde in un mezzo omogeneo è
+\begin{equation}\label{equation:ch/waves/waves-in-physics:eq:wave-eqn:1d}
+\begin{split}\frac{1}{c^2} \partial_{tt} u - \partial_{xx} u = f(x, t) \ , \qquad x \in D \ ,\end{split}
+\end{equation}
+\sphinxAtStartPar
+dove \(c\) è la \sphinxstylestrong{velocità di propagazione delle perturbazioni}. Questa velocità è una costante del problema in mezzi omogenei. Il significato della costante \(c\) come velocità di propagazione delle perturbazioni risulta chiaro nell’espressione delle onde viaggianti come {\hyperref[\detokenize{ch/waves/phenomena:physics-hs-waves-equation-solutions}]{\sphinxcrossref{\DUrole{std,std-ref}{soluzioni elementari dell’equazione delle onde}}}}.
 
-
-\subsection{Sistemi meccanici}
-\label{\detokenize{ch/waves/waves-in-physics:sistemi-meccanici}}\label{\detokenize{ch/waves/waves-in-physics:physics-hs-waves-equation-examples-mechanics}}
-
-\subsubsection{Azione assiale \sphinxhyphen{} catena di molle lineari}
-\label{\detokenize{ch/waves/waves-in-physics:azione-assiale-catena-di-molle-lineari}}\label{\detokenize{ch/waves/waves-in-physics:physics-hs-waves-equation-examples-mechanics-axial}}\begin{equation*}
-\begin{split}M_j \ddot{U}_j(t) = F_{j,j-1} + F_{j,j+1} + F_j^{ext}(t) = K_{j,j-1} \left( U_{j-1}(t) - U_j(t) \right) + K_{j,j+1} \left( U_{j+1}(t) - U_{j}(t) \right) + f_j^{ext}\end{split}
+\sphinxAtStartPar
+Per domini \(n\)\sphinxhyphen{}dimensionali, l’espressione dell’equazione delle onde in un mezzo omogeneo è
+\begin{equation*}
+\begin{split}\frac{1}{c^2} \partial_{tt} u - \nabla^2 u = f(\vec{r}, t) \ , \qquad \vec{r} \in D \ .\end{split}
 \end{equation*}
 \sphinxAtStartPar
-…
+Nelle sezioni successive viene mostrato come l’equazione delle onde compare in diversi ambiti della fisica, da sistemi meccanici elastici, alle onde di pressione per l’acustica, alle onde elettromagnetiche.
 
+
+\subsection{Problemi strutturali}
+\label{\detokenize{ch/waves/waves-in-physics:problemi-strutturali}}\label{\detokenize{ch/waves/waves-in-physics:physics-hs-waves-equation-examples-mechanics}}
+
+\subsubsection{Azione assiale \sphinxhyphen{} catena di molle lineari}
+\label{\detokenize{ch/waves/waves-in-physics:azione-assiale-catena-di-molle-lineari}}\label{\detokenize{ch/waves/waves-in-physics:physics-hs-waves-equation-examples-mechanics-axial}}
+\sphinxAtStartPar
+L’azione assiale nelle travi elastiche può essere rappresentata con un sistema discret(izzat)o di masse e molle lineari. La trave viene discretizzata con \(N+1\) masse concentrate, connesse da \(N\) molle. La posizione di una massa è
+\begin{equation*}
+\begin{split}X_i(t) = X_{0,i} + U_i(t) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+cioè la somma della posizione di riferimento e lo spostamento \(U_i\). Nella configurazione di riferimento la struttura non è soggetta a sforzi, e le molle hanno allungamento nullo. Segue che l’allungamento della molla tra la massa \(i\) e \(j\) è
+\begin{equation*}
+\begin{split}\Delta \ell_{i,i+1} = \ell_{i,i+1} - \ell_{i,i+1}^0 = X_{i+1} - X_{i} - X_{i+1}^0 + X_{i}^0 = U_{i+1} - U_{i} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{todo.} Discussione sui valori delle masse concentrate e della rigidezza delle molle. Questo è determinato dall’approssimazione utilizzata. Una buona approssimazione discreta deve convergere alla soluzione del problema continuo, all’aumentare del numero di gradi di libertà del modello.
+
+\sphinxAtStartPar
+La \(i\)\sphinxhyphen{}esima massa è soggetta alle forze elastiche dovute alla connessione con le masse adiacenti e alla forzante esterna. Il bilancio della quantità di moto per la \(i\)\sphinxhyphen{}esima massa è quindi
+\begin{equation*}
+\begin{split}\begin{aligned}
+  M_i \ddot{U}_i 
+  & = F_{i,i-1} + F_{i,i+1} + F^e_i = \\
+  & = K_{i,i-1} \left( - U_i + U_{i-1} \right) + K_{i,i+1} \left( - U_i + U_{i+1} \right) + F^e_i \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Questa equazione è valida per ogni massa (ad eccezione delle masse agli estremi della trave, ma lì entrano in azione le condizioni al contorno). Assumendo che la distribuzione di massa e la rigidezza della trave sia uniforme,
+\begin{equation*}
+\begin{split}M_i = m \, \Delta x \quad , \quad K = {EA}{\Delta x} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+l’equazione per la \(i\)\sphinxhyphen{}esima massa diventa
+\begin{equation*}
+\begin{split}\Delta x m \ddot{U}_i - \frac{EA}{\Delta x} \left( U_{i-1} - 2 U_i + U_{i+1} \right) = \Delta x f_i \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e dividendo per \(\Delta x\)
+\begin{equation*}
+\begin{split}m \ddot{U}_i - EA \frac{U_{i-1}- 2 U_i + U_{i+1}}{\Delta x^2} = f_i \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Si riconosce infine l’approssimazione del secondo ordine della derivata seconda della funzione \(u(x,t)\) valutata in \(X_i\). La si sostituisce con essa e si introduce la notazione di derivate parziali (per funzioni che dipendono da più variabili indipendenti, qui spazio \(x\) e tempo \(t\)) per trovare l’equazione delle onde
+\begin{equation*}
+\begin{split}m \partial_{tt} u - EA \partial_{xx} u = f \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Confrontando questa espressione con l’espressione \eqref{equation:ch/waves/waves-in-physics:eq:wave-eqn:1d} dell’equazione delle onde, si può ricavare che la velocità di propagazione delle onde assiali è
+\begin{equation*}
+\begin{split}c_{u} = \sqrt{\frac{EA}{m}} \ .\end{split}
+\end{equation*}\label{ch/waves/waves-in-physics:example-0}
+\begin{sphinxadmonition}{note}{Example 21.1.1 (Modello discreto)}
+
+
+\begin{equation*}
+\begin{split}M_j \ddot{U}_j(t) = F_{j,j-1} + F_{j,j+1} + F_j^{ext}(t) = K_{j,j-1} \left( U_{j-1}(t) - U_j(t) \right) + K_{j,j+1} \left( U_{j+1}(t) - U_{j}(t) \right) + f_j^{ext}\end{split}
+\end{equation*}
 \sphinxAtStartPar
 Se le molle hanno tutte la stessa rigidezza, \(K\),
 \begin{equation}\label{equation:ch/waves/waves-in-physics:eq:axial:discrete:index}
@@ -12347,17 +12470,34 @@ permette di riconoscere l’approssimazione centrata della derivata seconda \(\p
 \begin{equation*}
 \begin{split}\partial_{xx} u(x_i,t) = \dfrac{u(x_i-\Delta x,t) - 2 u(x_i,t) + u(x_i+\Delta x,t)}{\Delta x^2}\end{split}
 \end{equation*}\begin{equation*}
-\begin{split}M_j \partial_{tt} u(x_j,t) - \Delta x^2 K \partial_{xx} u(x_j,t) = F_j(t) \end{split}
-\end{equation*}
+\begin{split}M_j \partial_{tt} u(x_j,t) - K \partial_{xx} u(x_j,t) = F_j(t) \end{split}
+\end{equation*}\end{sphinxadmonition}
+
 
 \subsubsection{Torsione \sphinxhyphen{} catena di molle rotazionali}
-\label{\detokenize{ch/waves/waves-in-physics:torsione-catena-di-molle-rotazionali}}\label{\detokenize{ch/waves/waves-in-physics:physics-hs-waves-equation-examples-mechanics-torsion}}\begin{equation*}
-\begin{split}I \partial_{tt} \theta(x_j,t) - \Delta x^2 K_t \partial_{xx} \theta(x_j,t) = M_j(t)\end{split}
+\label{\detokenize{ch/waves/waves-in-physics:torsione-catena-di-molle-rotazionali}}\label{\detokenize{ch/waves/waves-in-physics:physics-hs-waves-equation-examples-mechanics-torsion}}
+\sphinxAtStartPar
+Seguendo quanto fatto per l’azione assiale, si può ricavare l’equazione delle onde per la torsione di una trave,
+\begin{equation*}
+\begin{split}I \partial_{tt} \theta(x,t) - GJ_t \partial_{xx} \theta(x,t) = m(x,t) \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Confrontando questa espressione con l’espressione \eqref{equation:ch/waves/waves-in-physics:eq:wave-eqn:1d} dell’equazione delle onde, si può ricavare che la velocità di propagazione delle onde assiali è
+\begin{equation*}
+\begin{split}c_{t} = \sqrt{\frac{GJ_t}{I}} \ .\end{split}
 \end{equation*}
 
 \subsubsection{Filo teso}
-\label{\detokenize{ch/waves/waves-in-physics:filo-teso}}\label{\detokenize{ch/waves/waves-in-physics:physics-hs-waves-equation-examples-mechanics-string}}\begin{equation*}
-\begin{split}M_j \partial_{tt} u(x_j,t) - \Delta x^2 N_0 \partial_{xx} u(x_j,t) = F_j(t)\end{split}
+\label{\detokenize{ch/waves/waves-in-physics:filo-teso}}\label{\detokenize{ch/waves/waves-in-physics:physics-hs-waves-equation-examples-mechanics-string}}
+\sphinxAtStartPar
+La dinamica trasversale di un filo teso con pre\sphinxhyphen{}sforzo assiale \(N_0 = A \sigma_0\) è
+\begin{equation*}
+\begin{split}m \partial_{tt} v(x,t) - N_0 \partial_{xx} v(x,t) = f(t)\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Confrontando questa espressione con l’espressione \eqref{equation:ch/waves/waves-in-physics:eq:wave-eqn:1d} dell’equazione delle onde, si può ricavare che la velocità di propagazione delle onde assiali è
+\begin{equation*}
+\begin{split}c_{v} = \sqrt{\frac{N_0}{m}} \ .\end{split}
 \end{equation*}
 \sphinxAtStartPar
 Esempio: corde di strumenti musicali.
@@ -12372,29 +12512,69 @@ Esempio: corde di strumenti musicali.
 La percezione umana dell’udito è legata alla trasduzione di perturbazioni di pressione di ampiezza limitata da parte del nostro sistema di misura che va dall’orecchio al nostro cervello, capace di percepire perturbazioni di frequenza compresa qualitativamente tra \(20 \, \text{Hz}\) e \(20.000 \, \text{Hz}\).
 
 \sphinxAtStartPar
-\sphinxstylestrong{Suono in un tubo.}
+E” possibile ricavare l’equazione delle onde per il campo di pressione usando le equazioni di {\hyperref[\detokenize{ch/mechanics/dynamics-eom-open:physics-hs-mechanics-dynamics-eom-open}]{\sphinxcrossref{\DUrole{std,std-ref}{bilancio per sistemi aperti}}}} di massa e di quantità di moto, applicati a dei volumi elementari del dominio di interesse.
 
 \sphinxAtStartPar
-Poi da cancellare o riscrivere meglio per il livello
+Si assume qui che il fluido nel quale si propaga la perturbazione acustica sia in quiete. Il calcolo viene inizialmente svolto in un ambito di spazio e variaili discrete, e solo alla fine vengono riconosciute le espressioni approssimate alle differenze delle derivate per tornare a un modello continuo. Si assume una dimensione uniforme dei domini elementari.
+
+
+\paragraph{Dominio 1\sphinxhyphen{}dimensionale}
+\label{\detokenize{ch/waves/waves-in-physics:dominio-1-dimensionale}}\label{\detokenize{ch/waves/waves-in-physics:physics-hs-waves-equation-examples-fluids-sound-1d}}
+\sphinxAtStartPar
+Si considerano serie di elementi…e si scrive il bilancio di massa per gli elementi con indice intero, e il bilancio di quantità di moto per i volumi di indice frazionario «adiacenti»
 \begin{equation*}
-\begin{split}P(\rho,s)\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}d P = \left( \dfrac{\partial P}{\partial \rho} \right)_s \, d \rho + \left( \dfrac{\partial P}{\partial s} \right)_{\rho} \, ds \end{split}
-\end{equation*}\begin{equation*}
-\begin{split}
-\begin{cases}
-  \dfrac{1}{c^2} \partial_t P + \rho_0 \partial_x u = 0 \\
-  \rho_0 \partial_t u + \partial_x P = 0 \\
-\end{cases}
-\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}\dfrac{1}{c^2} \partial_{tt} P - \partial_{xx} P = 0\end{split}
+\begin{split}\begin{aligned}
+  \Delta x \, \dot{\rho}_i & = \overline{\rho} u_{i-\frac{1}{2}} - \overline{\rho} u_{i+\frac{1}{2}} \\
+  \Delta x \, \overline{\rho} \dot{u}_{i-\frac{1}{2}} & = P_{i-1} - P_{i} \\
+  \Delta x \, \overline{\rho} \dot{u}_{i+\frac{1}{2}} & = P_{i  } - P_{i+1}  
+\end{aligned}\end{split}
 \end{equation*}
 \sphinxAtStartPar
-\sphinxstylestrong{Suono nello spazio.}
+Derivando in tempo il bilancio della massa dell’elemento \(i\) e sostituendo in esso le due espressioni del bilancio della quantità di moto degli elementi \(i-\frac{1}{2}\) e \(i+\frac{1}{2}\) si ottiene
 \begin{equation*}
-\begin{split}\dfrac{1}{c^2} \partial_{tt} P - \nabla^2 P = 0\end{split}
+\begin{split}\Delta x \ddot{\rho}_i = \frac{1}{\Delta x} \left[ P_{i-1} - 2 P_i + P_{i+1} \right] \ ,\end{split}
 \end{equation*}
+\sphinxAtStartPar
+e ricordando la definizione di velocità del suono \(a\) \sphinxstylestrong{todo} (data dove? Forse è proprio questo il posto dove darla, assumendo una relazione lineare \sphinxhyphen{} tanto tutto o quasi è lineare nel piccolo \sphinxhyphen{} tra la perturbazione di pressione e la pertubazione di densità \(P_i = a^2 \rho_i\)), si può scrivere
+\begin{equation*}
+\begin{split}\frac{1}{a^2} \ddot{P}_i - \dfrac{P_{i-1} - 2 P_i + P_{i+1}}{\Delta x^2} = 0 \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Avendo indicato il valore della pressione in \(x_k\) come \(P_k = P(x_k)\), si può riconoscere l’approssimazione della derivata seconda della pressione, e tornando al continuo e ricordando il significato di derivata parziale, ricavare l’equazione delle onde per la perturbazione di pressione in un mezzo in quiete{[}\textasciicircum{}medium\sphinxhyphen{}at\sphinxhyphen{}res{]}
+\begin{equation*}
+\begin{split}\frac{1}{a^2} \partial_{tt} P - \partial_{xx} P = 0 \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Osservazione.} Il metodo descritto qui rappresenta un’applicazione elementare del metodo dei volumi finiti, metodo utilizzato per la soluzione numerica di equazioni differentiali.
+
+
+\paragraph{Dominio n\sphinxhyphen{}dimensionale}
+\label{\detokenize{ch/waves/waves-in-physics:dominio-n-dimensionale}}\label{\detokenize{ch/waves/waves-in-physics:physics-hs-waves-equation-examples-fluids-sound-nd}}
+\sphinxAtStartPar
+Si può ripetere il procedimento per un {\hyperref[\detokenize{ch/waves/waves-in-physics:physics-hs-waves-equation-examples-fluids-sound-1d}]{\sphinxcrossref{\DUrole{std,std-ref}{dominio 1\sphinxhyphen{}dimensionale}}}} in un dominio \(n\)\sphinxhyphen{}dimensionale, usando due suddivisioni «sfalsate» del dominio, una per calcolare il bilancio di massa, l’altra per calcolare il bilancio di quantità di moto. Ripendo il procedimento, si arriva a un’equazione che contiene l’approssimazione dell’operatore laplaciano della pressione,
+\begin{equation*}
+\begin{split}\begin{aligned}
+ \text{2-d:} & \quad \dfrac{P_{i-1,j-1}+P_{i-1,j+1}+P_{i+1,j+1}+P_{i+1,j-1}-4 P_{i,j}}{\Delta x^2} \sim \partial_{xx} P_i + \partial_{yy} P_i \\
+ \text{3-d:} & \quad \dfrac{P_{i-1,j-1,k-1}+\dots + P_{i+1,j+1,k+1}-8 P_{ijk}}{\Delta x^2} \sim \partial_{xx} P_i + \partial_{yy} P_i + \partial_{zz} P_i \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Per motivi di sintesi e per motivi di comprensione, l’approssimazione del laplaciano della pressione può essere scritta come sommatoria delle differenze della pressione nei domini \(\mathbf{j}\) vicini al dominio \(\mathbf{i}\), cioè appartenenti a quella che viene definita bolla di \(\mathbf{i}\), \(\mathbf{j} \in B(\mathbf{i})\),
+\begin{equation*}
+\begin{split}\nabla^2 P_i \sim \dfrac{\sum_{\mathbf{j} \in B(\mathbf{i})}\left( P_{\mathbf{j}} - P_{\mathbf{i}} \right)}{\Delta x^2} \ .\end{split}
+\end{equation*}\label{ch/waves/waves-in-physics:example-1}
+\begin{sphinxadmonition}{note}{Example 21.1.2 (Dominio \protect\(2\protect\)\sphinxhyphen{}dimensionale)}
+
+
+\end{sphinxadmonition}
+\label{ch/waves/waves-in-physics:example-2}
+\begin{sphinxadmonition}{note}{Example 21.1.3 (Dominio \protect\(3\protect\)\sphinxhyphen{}dimensionale)}
+
+
+\end{sphinxadmonition}
+
+
+
 
 \subsubsection{Onde su superficie libera}
 \label{\detokenize{ch/waves/waves-in-physics:onde-su-superficie-libera}}\label{\detokenize{ch/waves/waves-in-physics:physics-hs-waves-equation-examples-fluids-surface}}
@@ -12406,76 +12586,136 @@ Poi da cancellare o riscrivere meglio per il livello
 
 \section{Caratteristiche dei fenomeni ondulatori}
 \label{\detokenize{ch/waves/phenomena:caratteristiche-dei-fenomeni-ondulatori}}\label{\detokenize{ch/waves/phenomena:physics-hs-waves-phenomena}}\label{\detokenize{ch/waves/phenomena::doc}}
-
-\subsection{Soluzioni particolari}
-\label{\detokenize{ch/waves/phenomena:soluzioni-particolari}}\label{\detokenize{ch/waves/phenomena:physics-hs-waves-equation-solutions}}\begin{itemize}
-\item {} 
 \sphinxAtStartPar
-Onde stazionarie
+Distinguere soluzioni dell’equazione omogenea e dell’equazione forzata
 
-\item {} 
+
+\subsection{Soluzioni elementari}
+\label{\detokenize{ch/waves/phenomena:soluzioni-elementari}}\label{\detokenize{ch/waves/phenomena:physics-hs-waves-equation-solutions}}
 \sphinxAtStartPar
-Onde viaggianti
-
-\end{itemize}
-
-
-\subsubsection{Frequenza, lunghezza d’onda e relazione con velocità di propagazione della perturbazione}
-\label{\detokenize{ch/waves/phenomena:frequenza-lunghezza-d-onda-e-relazione-con-velocita-di-propagazione-della-perturbazione}}\label{ch/waves/phenomena:wave-length}
-\begin{sphinxadmonition}{note}{Definition 21.2.2 (Frequenza)}
-
-
-\end{sphinxadmonition}
-\label{ch/waves/phenomena:wave-length}
-\begin{sphinxadmonition}{note}{Definition 21.2.2 (Lunghezza d’onda)}
-
-
-\end{sphinxadmonition}
-\label{ch/waves/phenomena:wave-speed}
-\begin{sphinxadmonition}{note}{Definition 21.2.3 (Velocità della perturbazione)}
-
-
-\end{sphinxadmonition}
+Vengono qui discusse alcune soluzioni elementari dell”\DUrole{xref,myst}{equazione lineare delle onde}. In un problema lineare, una soluzione qualsiasi può essere ottenuta come somma di soluzioni elementari, sfruttando il principio di sovrapposizione delle cause e degli effetti (\sphinxstylestrong{todo\sphinxhyphen{}list:}{\hyperref[\detokenize{ch/todo:physics-hs-todo-psce}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{PSCE}}}}}): un segnale generico e la sua evoluzione può quindi essere studiato come somma di segnali semplici che evolvono in maniera indipendente l’uno dall’altro (\sphinxstylestrong{todo\sphinxhyphen{}list:}{\hyperref[\detokenize{ch/todo:physics-hs-todo-fourier}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{analisi di Fourier}}}}})
 
 \sphinxAtStartPar
-Per i fenomeni fisici governati da problemi lineari, vale il \sphinxstylestrong{principio di sovrapposizione delle cause e degli effetti}. …
-\begin{itemize}
-\item {} 
+In particolare, vengono alcune soluzioni elementari in domini 1\sphinxhyphen{}dimensionali, nella forma di onde stazionarie o onde viaggianti, e in domini 3\sphinxhyphen{}dimensionali, nella forma di onde piane e onde sferiche.
+
 \sphinxAtStartPar
-Soluzione generale 1\sphinxhyphen{}dimensionale
+Per ognuna di queste perturbazioni elementari%
+\begin{footnote}[1]\sphinxAtStartFootnote
+In generale, questa operazione può essere svolta localmente per una soluzione qualisasi delle onde, nel limite di lunghezza d’onda molto minore delle dimensioni caratteristiche del problema. Questa approssimazione viene definita \sphinxstyleemphasis{approssimazione eikonale} ed è all’origine dell’approccio geometrico ai fenomeni ondulatori, come l’acustica geometrica o l”{\hyperref[\detokenize{ch/waves/optics-geometric:physics-hs-waves-optics-geometric}]{\sphinxcrossref{\DUrole{std,std-ref}{ottica geometrica}}}}.
+%
+\end{footnote} prese singolarmente è possibile definire una lunghezza d’onda (o in 3d un vettore d’onda locale che indica la direzione della propagazione), una frequenza e la velocità della perturbazione.
+
+
+\subsubsection{Dominio 1\sphinxhyphen{}dimensionale}
+\label{\detokenize{ch/waves/phenomena:dominio-1-dimensionale}}
+\sphinxAtStartPar
+\sphinxstylestrong{Onde stazionarie.} Una soluzione generica dell’equazione delle onde può essere scritta come somma di onde stazionarie nella forma
 \begin{equation*}
-\begin{split}f(x,t) = A_{+}(x - c t) + A_{-}(x + ct)\end{split}
+\begin{split}f_n(x) = \cos(k_n x + \phi_n) \ ,\end{split}
 \end{equation*}
-\end{itemize}
-\subsubsection*{Verifica della soluzione}
+\sphinxAtStartPar
+modulate da un’ampiezza
+\begin{equation*}
+\begin{split}g_n(t) = \cos(\omega_n t + \gamma_n) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con \(\omega_n = c k_n\). Una funzione \(u_n(x,t) = f_n(x) g_n(t)\) è soluzione dell’equazione delle onde.
+\subsubsection*{Dimostrazione}
+
+\sphinxAtStartPar
+Per dimostrare che la funzione \(f_n(x) g_n(t)\) è una soluzione dell’equazione delle onde, è sufficiente valutarne le derivate seconde rispetto al tempo e allo spazio, e sostituirne le espressioni nell’equazione delle onde per ottenere un’identità,
 \begin{equation*}
 \begin{split}\begin{aligned}
-\partial_x    f & = A'_+(x-ct) + A'_-(x+ct) \\
-\partial_{xx} f & = A''_+(x-ct) + A''_-(x+ct) \\
-\partial_t    f & = - c \, A'_+(x-ct) + c \, A'_-(x+ct) \\
-\partial_{tt} f & = c^2 \, A''_+(x-ct) + c^2 \,  A''_-(x+ct) \\
+  \partial_{tt} u & = \partial_{tt} \left( f_n(x) g_n(t) \right) = f_n(x) \ddot{g}_n(t) = - \omega_n^2 u \\
+  \partial_{xx} u & = \partial_{xx} \left( f_n(x) g_n(t) \right) = f''_n(x) g_n(t) = - k_n^2 u \\
 \end{aligned}\end{split}
-\end{equation*}\begin{itemize}
-\item {} 
+\end{equation*}
 \sphinxAtStartPar
-Soluzione generale 3\sphinxhyphen{}dimensionale
+così che \(\partial_{tt} u - c^2 \partial_{tt} u = \left( -\omega_n^2 + c^2 k_n^2 \right) u = 0\) se è soddisfatta la relazione tra la pulsazione \(\omega_n\) e il vettore d’onda \(k_n\), \(\omega_n = c k_n\).
+
+\sphinxAtStartPar
+\sphinxstylestrong{Onde viaggianti.} Utilizzando le proprietà delle funzioni trigonometriche, la funzione \(u_n(x,t) = f_{n}(x) g_n(t)\) può essere scritta come somma di due onde viaggianti con velocità \(c\),
+\begin{equation}\label{equation:ch/waves/phenomena:travelling-waves}
+\begin{split}u_n(x,t) = f_n(x) g_n(t) = A_n^{-}(x+ct) + A_n^{+}(x-ct) \ .\end{split}
+\end{equation}\subsubsection*{Dimostrazione}
+\begin{equation*}
+\begin{split}\begin{aligned}
+u_n(x,t) 
+  & = f_n(x) g_n(t) = \\
+  & = \cos(k_n x + \phi_n) \cos (\omega_n t + \gamma_n) = \\
+  & = \frac{1}{2} \cos(k_n x + \omega_n t + \phi_n + \gamma_n) + \frac{1}{2} \cos(k_n x - \omega_n t + \phi_n - \gamma_n) = \\
+  & = \frac{1}{2} \cos(k_n( x + c t) + \theta^-_n) + \frac{1}{2} \cos(k_n( x - c t) + \theta^+_n) = \\
+  & = A_n^-(x+ct) + A_n^{+}(x+ct)
+\end{aligned}\end{split}
+\end{equation*}\label{ch/waves/phenomena:wave-frequency}
+\begin{sphinxadmonition}{note}{Definition 21.2.1 (Pulsazione \protect\(\omega_n\protect\) e frequenza \protect\(f_n\protect\))}
+
+
+
+\sphinxAtStartPar
+Il parametro \(\omega_n\) di una soluzione elementare viene definita \sphinxstylestrong{pulsazione}. La \sphinxstylestrong{frequenza} della soluzione elementare è definita come l’inverso del periodo della soluzione elementare \(f_n = \frac{1}{T_n}\), e può essere espresso in funzione della pulsazione come \(f_n = \frac{\omega_n}{2\pi}\).
+\end{sphinxadmonition}
+\label{ch/waves/phenomena:wave-length}
+\begin{sphinxadmonition}{note}{Definition 21.2.2 (Vettore d’onda \protect\(k_n\protect\) e lunghezza d’onda \protect\(\lambda_n\protect\))}
+
+
+
+\sphinxAtStartPar
+Il parametro \(k_n\) di una soluzione elementare viene definita \sphinxstylestrong{vettore d’onda}. La \sphinxstylestrong{lunghezza d’onda} rappresenta la distanza tra due massimi consecutivi di soluzione elementare e la sua relazione con il vettore d’onda è \(\lambda_n = \frac{2 \pi }{k_n}\).
+
+\sphinxAtStartPar
+Il carattere vettoriale del vettore d’onda appare evidente nei domini multi\sphinxhyphen{}dimenisonali, nei quali le soluzioni elentari possono essere espresse come funzione dell’argomento \(\vec{k} \cdot \vec{r} - \omega t\). Il vettore d’onda \(\vec{k}\) è un’indicazione della direzione locale di propagazione della perturbazione elementare.
+\end{sphinxadmonition}
+\label{ch/waves/phenomena:wave-speed}
+\begin{sphinxadmonition}{note}{Definition 21.2.3 (Velocità di propagazione delle perturbazioni)}
+
+
+
+\sphinxAtStartPar
+La velocità di propagazione delle perturbazioni governate dall’equazione delle onde \eqref{equation:ch/waves/waves-in-physics:eq:wave-eqn:1d} è \(c\). Il suo significato è evidente nell’espressione \eqref{equation:ch/waves/phenomena:travelling-waves} delle onde viaggianti, ed è uguale al rapporto tra la lunghezza d’onda e la frequenza di una soluzione elementare \(c = \frac{\omega_n}{k_n}\).
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+La frequenza di una perturbazione in un problema lineare è tipicamente determinata dalla frequenza della sorgente della perturbazione (\sphinxstylestrong{todo\sphinxhyphen{}list:}{\hyperref[\detokenize{ch/todo:physics-hs-todo-fourier}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{analisi di Fourier}}}}}), poiché i sistemi lineari rispondono con la stessa frequenza della forzante. La velocità delle perturbazioni è una caratteristica del mezzo. La lunghezza d’onda del sistema è quindi lo spazio percorso da una perturbazione, in un periodo della forzante \(T\) (intervallo di tempo che separa due massimi del disturbo esterno, e quindi della perturbazione),
+\begin{equation*}
+\begin{split}\lambda = c T \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Usando le relazioni tra lunghezza d’onda e vettore d’onda \(\lambda = \frac{2 \pi}{k_n}\), e tra periodo e puslazione \(T_n = \frac{2 \pi}{\omega_n}\), si ottiene di nuovo
+\begin{equation*}
+\begin{split}\omega_n = c k_n \ .\end{split}
+\end{equation*}
+
+\subsubsection{Dominio 3\sphinxhyphen{}dimensionale}
+\label{\detokenize{ch/waves/phenomena:dominio-3-dimensionale}}
+
+
+\sphinxAtStartPar
+\sphinxstylestrong{Onde sferiche.} Un’onda sferica prodotta da una sorgente puntiforme in un dominio 3\sphinxhyphen{}dimensionale può essere rappresentata usando un sistema di coordinate sferiche come
 \begin{equation*}
 \begin{split}f(r,t) = \dfrac{A(r-ct)}{r}\end{split}
 \end{equation*}
-\end{itemize}
+\sphinxAtStartPar
+avendo scelto l’origine del sistema di coordinate, \(r=0\), in corrispondenza della sorgente puntiforme.
+
+\begin{sphinxadmonition}{note}{Causalità e direzione di propagazione delle perturbazioni}
+
+\sphinxAtStartPar
+A differenza dell’espressione delle onde viaggianti nel caso 1\sphinxhyphen{}dimesnionale, nell’espressione delle onde sferiche prodotte da una sorgente puntiforme è presente solo un tipo di onda
+\end{sphinxadmonition}
 
 
 \subsection{Effetti associati}
 \label{\detokenize{ch/waves/phenomena:effetti-associati}}\label{\detokenize{ch/waves/phenomena:physics-hs-waves-effects}}
+
+\subsubsection{Interferenza}
+\label{\detokenize{ch/waves/phenomena:interferenza}}\label{\detokenize{ch/waves/phenomena:physics-hs-waves-effects-interference}}
 
 \subsubsection{Riflessione}
 \label{\detokenize{ch/waves/phenomena:riflessione}}\label{\detokenize{ch/waves/phenomena:physics-hs-waves-effects-reflection}}
 
 \subsubsection{Rifrazione}
 \label{\detokenize{ch/waves/phenomena:rifrazione}}\label{\detokenize{ch/waves/phenomena:physics-hs-waves-effects-refraction}}
-
-\subsubsection{Interferenza}
-\label{\detokenize{ch/waves/phenomena:interferenza}}\label{\detokenize{ch/waves/phenomena:physics-hs-waves-effects-interference}}
 
 \subsubsection{Diffrazione}
 \label{\detokenize{ch/waves/phenomena:diffrazione}}\label{\detokenize{ch/waves/phenomena:physics-hs-waves-effects-diffraction}}
@@ -12551,6 +12791,221 @@ Nel caso di sorgente a velocità costante, \(x_s(t) = x_{s,0} + v_s t\), e ricet
 \end{equation*}
 
 
+
+\bigskip\hrule\bigskip
+
+
+\sphinxstepscope
+
+
+\section{Note}
+\label{\detokenize{ch/waves/waves-notes:note}}\label{\detokenize{ch/waves/waves-notes:physics-hs-waves-notes}}\label{\detokenize{ch/waves/waves-notes::doc}}
+
+\subsection{Soluzioni particolari}
+\label{\detokenize{ch/waves/waves-notes:soluzioni-particolari}}
+
+\subsubsection{Moti liberi}
+\label{\detokenize{ch/waves/waves-notes:moti-liberi}}
+
+\paragraph{Vibrazione di una corda con estremi vincolati}
+\label{\detokenize{ch/waves/waves-notes:vibrazione-di-una-corda-con-estremi-vincolati}}\begin{equation*}
+\begin{split}
+\begin{cases}
+  m \ddot{u} - \sigma_0 u'' = 0 \quad x \in [0,L] \\
+  u(0,t) = 0 \\
+  u(L,t) = 0 \\
+\end{cases}
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La velocità di propagazione delle perturbazioni è \(c = \sqrt{\frac{\sigma_0}{m}}\).
+\subsubsection*{Onde stazionarie \sphinxhyphen{} modi propri di vibrare}
+
+\sphinxAtStartPar
+Si applica il metodo di separazione delle variabili \(u(x,t) = f(x) g(t)\),
+\begin{equation*}
+\begin{split}m f \ddot{g} - \sigma_0 f'' g = 0 \ ,\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\frac{m}{\sigma_0}\frac{\ddot{g}}{g} = \frac{f''}{f} = C\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e scegliendo solo i valori di \(c\) che forniscono soluzioni non triviali compatibili con i vincoli, \(C = - k^2\). L’equazione per la parte spaziale della soluzione diventa quindi
+\begin{equation*}
+\begin{split}f''(x) + k^2 f(x) = 0 \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La soluzione generale di questa equazione è
+\begin{equation*}
+\begin{split}f(x) = A \cos (kx) + B \sin (kx) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e l’imposizione delle condizioni al contorno consentono di trovare i valori ammissibili di \(A\), \(B\) e una condizione su \(k\),
+\begin{equation*}
+\begin{split}\begin{cases}
+  0 = f(0) = A \\
+  0 = f(L) = k B \sin (kL) \\
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi per avere soluzioni non banali, deve essere soddisfatta la condizione
+\begin{equation*}
+\begin{split}\sin(kL) = 0 \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+I valori della costante \(k\) ammissibili per ottenere soluzioni non banali sono quindi
+\begin{equation*}
+\begin{split}k_n = n \frac{\pi}{L} \ , \qquad n \in \mathbb{N} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Quindi esiste una forma spaziale \(f_n(x) = A_n \sin \left( k_n x \right)\) per ogni valore di \(n \in \mathbb{N}\). Ad ogni forma \(f_n(x)\) è associata una parte temporale \(g_n(t)\),
+\begin{equation*}
+\begin{split}g_n(t) = a_n \cos\left( \omega_n t \right) + b_n \sin\left( \omega_n t \right) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con \(\omega_n = c \, k_n\).
+
+\sphinxAtStartPar
+La forma generale della soluzione del problema può quindi essere scritta come combinazione di onde stazionarie,
+\begin{equation*}
+\begin{split}u(x,t) = \sum_{n} \left[ \alpha_n \cos\left( \omega_n t \right) + \beta_n \sin\left(\omega_n t\right) \right] \sin\left( k_n x \right) \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con \(k_n = n\frac{\pi}{L}\) e \(\omega_n = c k_n = n c \frac{\pi}{L}\).
+
+\sphinxAtStartPar
+I coefficienti \(\alpha_n\), \(\beta_n\) vengono calcolati applicando le condizioni iniziali del problema
+\begin{equation*}
+\begin{split}\begin{aligned}
+  u_0(x) = u(x,0)       & = \sum_{n} \alpha_n  \sin\left( k_n x \right) \\
+  v_0(x) = \dot{u}(x,0) & = \sum_{n} \omega_n \beta_n  \sin\left( k_n x \right) \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi risultano essere i coefficienti delle \sphinxstylestrong{serie di Fourier} della posizione e della velocità iniziale. Nel caso di configurazione iniziale in quiete, \(\dot{u}(x,0) = 0\), i coefficienti \(\beta_n\) sono nulli, \(\beta_n = 0\).
+\subsubsection*{Onde viaggianti}
+
+\sphinxAtStartPar
+Si usano le proprietà delle funzoni trigonometriche,
+\begin{equation*}
+\begin{split}\begin{aligned}
+ \cos(\alpha \mp \beta) & = \cos \alpha \cos \beta \pm \sin \alpha \sin \beta \\
+ \sin(\alpha \mp \beta) & = \sin \alpha \cos \beta \mp \cos \alpha \sin \beta \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e
+\begin{equation*}
+\begin{split}\begin{aligned}
+ \cos \alpha \sin \beta & = \frac{1}{2} \left( \sin(\alpha+\beta) - \cos(\alpha-\beta) \right) \\
+ \sin \alpha \sin \beta & = \frac{1}{2} \left( \cos(\alpha-\beta) - \cos(\alpha+\beta) \right) \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La soluzione dell’equazione può quindi essere riscritta come
+\begin{equation*}
+\begin{split}\begin{aligned}
+ u(x,t)
+ & = \sum_n \left[\frac{\alpha_n}{2}\left( \sin(\omega_n t + k_n x) - \sin(\omega_n t - k_n x)  \right) \right. + \\
+ & \qquad + \left.\frac{\beta_n }{2}\left( \cos(\omega_n t - k_n x) - \cos(\omega_n t + k_n x)  \right) \right] = \\ 
+ & = \sum_n \left[\frac{\alpha_n}{2}\left( \sin(k_n (c t + x)) - \sin(k_n(c t - x))  \right) \right. + \\
+ & \qquad + \left.\frac{\beta_n }{2}\left( \cos(k_n (c t - x)) - \cos(k_n(c t + x))  \right) \right] \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Nel caso di condizione iniziale in quiete, tutti i coefficieti \(\beta_n\) sono nulli. La soluzione è uguale a due contributi uguali \sphinxhyphen{} e uguali a metà della condizione iniziale \sphinxhyphen{} che si muovono in direzione opposta a velocità \(\mp c\),
+\begin{equation*}
+\begin{split}\begin{aligned}
+  u(x,t) 
+  & = \sum_n \frac{\alpha_n}{2} \sin(k_n(x+ct)) + \sum_n \frac{\alpha_n}{2} \sin(k_n(x-ct)) = \\
+  & = \frac{1}{2} u_0(x+ct) + \frac{1}{2} u_0(x-ct) \ ,
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo riconosciuto il contributo delle due onde viaggianti
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \frac{1}{2} u_0(x+ct) & = \sum_n \frac{\alpha_n}{2} \sin(k_n(x+ct)) && \text{(onda viaggiante verso sinistra)} \\
+  \frac{1}{2} u_0(x-ct) & = \sum_n \frac{\alpha_n}{2} \sin(k_n(x-ct)) && \text{(onda viaggiante verso destra)}
+\end{aligned}\end{split}
+\end{equation*}
+
+\paragraph{Torsione di una trave con un estremo vincolato e un estremo libero}
+\label{\detokenize{ch/waves/waves-notes:torsione-di-una-trave-con-un-estremo-vincolato-e-un-estremo-libero}}\begin{equation*}
+\begin{split}\begin{aligned}
+  && I \ddot{u} - GJ u'' = 0 && x \in [0,L] \\
+  && u(0,t) = 0 \\
+  && GJu'(L,t) = 0 \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La velocità di propagazione delle perturbazioni è \(c = \sqrt{\frac{GJ}{I}}\).
+\subsubsection*{Onde stazionarie \sphinxhyphen{} modi propri di vibrare}
+
+\sphinxAtStartPar
+Si applica il metodo di separazione delle variabili \(u(x,t) = f(x) g(t)\),
+\begin{equation*}
+\begin{split}m f \ddot{g} - \sigma_0 f'' g = 0 \ ,\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\frac{m}{\sigma_0}\frac{\ddot{g}}{g} = \frac{f''}{f} = C\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e scegliendo solo i valori di \(c\) che forniscono soluzioni non triviali compatibili con i vincoli, \(C = - k^2\). L’equazione per la parte spaziale della soluzione diventa quindi
+\begin{equation*}
+\begin{split}f''(x) + k^2 f(x) = 0 \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La soluzione generale di questa equazione è
+\begin{equation*}
+\begin{split}f(x) = A \cos (kx) + B \sin (kx) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e l’imposizione delle condizioni al contorno consentono di trovare i valori ammissibili di \(A\), \(B\) e una condizione su \(k\),
+\begin{equation*}
+\begin{split}\begin{cases}
+  0 = f(0) = A \\
+  0 = GJf'(L) = GJ k B \cos (kL) \\
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi per avere soluzioni non banali, deve essere soddisfatta la condizione
+\begin{equation*}
+\begin{split}\cos(kL) = 0 \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+I valori della costante \(k\) ammissibili per ottenere soluzioni non banali sono quindi
+\begin{equation*}
+\begin{split}k_n = \frac{\pi}{2L} + n \frac{\pi}{L} = \left(\frac{1}{2} + n\right) \frac{\pi}{L} \ , \qquad n \in \mathbb{N} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Quindi esiste una forma spaziale \(f_n(x) = A_n \sin \left( k_n x \right)\) per ogni valore di \(n \in \mathbb{N}\). Ad ogni forma \(f_n(x)\) è associata una parte temporale \(g_n(t)\),
+\begin{equation*}
+\begin{split}g_n(t) = a_n \cos\left( \omega_n t \right) + b_n \sin\left( \omega_n t \right) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con \(\omega_n = c \, k_n\).
+
+\sphinxAtStartPar
+La forma generale della soluzione del problema può quindi essere scritta come combinazione di onde stazionarie,
+\begin{equation*}
+\begin{split}u(x,t) = \sum_{n} \left[ \alpha_n \cos\left( \omega_n t \right) + \beta_n \sin\left(\omega_n t\right) \right] \sin\left( k_n x \right) \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con \(k_n = \left(\frac{1}{2}+n\right)\frac{\pi}{L}\) e \(\omega_n = c k_n = \left( \frac{1}{2} + n \right) c \frac{\pi}{L}\).
+
+\sphinxAtStartPar
+I coefficienti \(\alpha_n\), \(\beta_n\) vengono calcolati applicando le condizioni iniziali del problema
+\begin{equation*}
+\begin{split}\begin{aligned}
+  u_0(x) = u(x,0)       & = \sum_{n} \alpha_n  \sin\left( k_n x \right) \\
+  v_0(x) = \dot{u}(x,0) & = \sum_{n} \omega_n \beta_n  \sin\left( k_n x \right) \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi risultano essere i coefficienti delle \sphinxstylestrong{serie di Fourier} della posizione e della velocità iniziale. Nel caso di configurazione iniziale in quiete, \(\dot{u}(x,0) = 0\), i coefficienti \(\beta_n\) sono nulli, \(\beta_n = 0\).
+
+
+\subsection{}
+\label{\detokenize{ch/waves/waves-notes:id1}}
 \sphinxstepscope
 
 
@@ -12650,7 +13105,7 @@ Storia della misura della luce%
 
 
 \section{Ottica geometrica}
-\label{\detokenize{ch/waves/optics-geometric:ottica-geometrica}}\label{\detokenize{ch/waves/optics-geometric::doc}}
+\label{\detokenize{ch/waves/optics-geometric:ottica-geometrica}}\label{\detokenize{ch/waves/optics-geometric:physics-hs-waves-optics-geometric}}\label{\detokenize{ch/waves/optics-geometric::doc}}
 \sphinxAtStartPar
 \sphinxstylestrong{Approssimazione con raggi di luce.} I raggi luminosi sono qualitativamente delle linee geometriche che indicano la propagazione della luce. Essi possono essere definiti come delle curve perpendicolari in ogni punto ai fronti d’onda del campo elettromagnetico.
 
@@ -19185,10 +19640,10 @@ Lumière
 \item\relax\sphinxstyleindexentry{electric\sphinxhyphen{}dipole\sphinxhyphen{}ext\sphinxhyphen{}e\sphinxhyphen{}field}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{electric-dipole-ext-e-field}}
 \indexspace
 \bigletter{example\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-0}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}in\sphinxhyphen{}physics}\sphinxstyleindexpageref{ch/waves/waves-in-physics:\detokenize{example-0}}
 \indexspace
 \bigletter{example\sphinxhyphen{}1}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-1}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}in\sphinxhyphen{}physics}\sphinxstyleindexpageref{ch/waves/waves-in-physics:\detokenize{example-1}}
 \indexspace
 \bigletter{example\sphinxhyphen{}10}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}10}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-10}}
@@ -19218,7 +19673,7 @@ Lumière
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}18}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-18}}
 \indexspace
 \bigletter{example\sphinxhyphen{}2}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-2}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}in\sphinxhyphen{}physics}\sphinxstyleindexpageref{ch/waves/waves-in-physics:\detokenize{example-2}}
 \indexspace
 \bigletter{example\sphinxhyphen{}3}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/waves/phenomena}\sphinxstyleindexpageref{ch/waves/phenomena:\detokenize{example-3}}
@@ -19402,6 +19857,9 @@ Lumière
 \indexspace
 \bigletter{thermodynamics:principles:open:ex:turbine}
 \item\relax\sphinxstyleindexentry{thermodynamics:principles:open:ex:turbine}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}open}\sphinxstyleindexpageref{ch/thermodynamics/principles-open:\detokenize{thermodynamics:principles:open:ex:turbine}}
+\indexspace
+\bigletter{wave\sphinxhyphen{}frequency}
+\item\relax\sphinxstyleindexentry{wave\sphinxhyphen{}frequency}\sphinxstyleindexextra{ch/waves/phenomena}\sphinxstyleindexpageref{ch/waves/phenomena:\detokenize{wave-frequency}}
 \indexspace
 \bigletter{wave\sphinxhyphen{}length}
 \item\relax\sphinxstyleindexentry{wave\sphinxhyphen{}length}\sphinxstyleindexextra{ch/waves/phenomena}\sphinxstyleindexpageref{ch/waves/phenomena:\detokenize{wave-length}}
