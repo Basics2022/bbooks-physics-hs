@@ -16,6 +16,8 @@ Vengono presentati i fenomeni di interesse della fisica. Vengono introdotti i co
 ```
 ```{dropdown} [Termodinamica](physics-hs:thermodynamics:intro)
 ```
+```{dropdown} [Fenomeni ondulatori](physics-hs:waves:intro)
+```
 ```{dropdown} [Elettromagnetismo](physics-hs:electromagnetism:intro)
 ```
 ```{dropdown} [Fisica moderna](physics-hs:modern:intro)
