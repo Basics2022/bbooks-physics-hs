@@ -1,5 +1,5 @@
 (physics-hs:waves:optics:geometric)=
-## Ottica geometrica
+# Ottica geometrica
 
 **Approssimazione con raggi di luce.** I raggi luminosi sono qualitativamente delle linee geometriche che indicano la propagazione della luce. Essi possono essere definiti come delle curve perpendicolari in ogni punto ai fronti d'onda del campo elettromagnetico.
 
@@ -8,7 +8,7 @@
 - *aggiungere immagini per questa approssimazione: bridging EM field and geometrical optics, some examples: free space homogeneous medium; discontinuous medium; continuously varying in-homogeneous medium: miraggio e fata morgana*
 
 (physics-hs:waves:optics:geometric:principles)=
-### Princìpi dell'ottica geometrica
+## Princìpi dell'ottica geometrica
 **Propagazione rettilinea in un mezzo omogeneo.** In un mezzo omogeneo, con indice di rifrazione $n$ ({prf:ref}`refraction-index`) uniforme, i raggi luminosi si propagano su traiettorie rettilinee.
 
 
