@@ -1,6 +1,8 @@
 (physics-hs:waves:phenomena)=
 # Caratteristiche dei fenomeni ondulatori
 
+<span style="color:red">Distinguere soluzioni dell'equazione omogenea e dell'equazione forzata</span>
+
 (physics-hs:waves:equation:solutions)=
 ## Soluzioni elementari
 Vengono qui discusse alcune soluzioni elementari dell'[equazione lineare delle onde](physics-hs:waves:equation:example). In un problema lineare, una soluzione qualsiasi può essere ottenuta come somma di soluzioni elementari, sfruttando il principio di sovrapposizione delle cause e degli effetti (**todo-list:**[**PSCE**](physics-hs:todo:psce)): un segnale generico e la sua evoluzione può quindi essere studiato come somma di segnali semplici che evolvono in maniera indipendente l'uno dall'altro (**todo-list:**[**analisi di Fourier**](physics-hs:todo:fourier))
