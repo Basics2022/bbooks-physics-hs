@@ -14,7 +14,6 @@ $$\begin{cases}
 La velocità di propagazione delle perturbazioni è $c = \sqrt{\frac{\sigma_0}{m}}$.
 
 ````{dropdown} Onde stazionarie - modi propri di vibrare
-:open:
 Si applica il metodo di separazione delle variabili $u(x,t) = f(x) g(t)$,
 
 $$m f \ddot{g} - \sigma_0 f'' g = 0 \ ,$$
@@ -41,7 +40,7 @@ $$\sin(kL) = 0 \ .$$
 
 I valori della costante $k$ ammissibili per ottenere soluzioni non banali sono quindi
 
-$$k_n = n \frac{2 \pi}{L} \ , \qquad n \in \mathbb{N} \ .$$
+$$k_n = n \frac{\pi}{L} \ , \qquad n \in \mathbb{N} \ .$$
 
 Quindi esiste una forma spaziale $f_n(x) = A_n \sin \left( k_n x \right)$ per ogni valore di $n \in \mathbb{N}$. Ad ogni forma $f_n(x)$ è associata una parte temporale $g_n(t)$,
 
@@ -53,7 +52,7 @@ La forma generale della soluzione del problema può quindi essere scritta come c
 
 $$u(x,t) = \sum_{n} \left[ \alpha_n \cos\left( \omega_n t \right) + \beta_n \sin\left(\omega_n t\right) \right] \sin\left( k_n x \right) \ .$$
 
-con $k_n = n\frac{2\pi}{L}$ e $\omega_n = c k_n = n c \frac{2\pi}{L}$.
+con $k_n = n\frac{\pi}{L}$ e $\omega_n = c k_n = n c \frac{\pi}{L}$.
 
 I coefficienti $\alpha_n$, $\beta_n$ vengono calcolati applicando le condizioni iniziali del problema
 
@@ -66,7 +65,6 @@ e quindi risultano essere i coefficienti delle **serie di Fourier** della posizi
 
 ````
 ````{dropdown} Onde viaggianti
-:open:
 
 Si usano le proprietà delle funzoni trigonometriche,
 
@@ -110,5 +108,65 @@ $$\begin{aligned}
 ````
 
 ### Torsione di una trave con un estremo vincolato e un estremo libero
+
+$$\begin{cases}
+  I \ddot{u} - GJ u'' = 0 && x \in [0,L] \\
+  u(0,t) = 0 \\
+  GJu'(L,t) = 0 \\
+\end{cases}$$
+
+La velocità di propagazione delle perturbazioni è $c = \sqrt{\frac{GJ}{I}}$.
+
+````{dropdown} Onde stazionarie - modi propri di vibrare
+Si applica il metodo di separazione delle variabili $u(x,t) = f(x) g(t)$,
+
+$$m f \ddot{g} - \sigma_0 f'' g = 0 \ ,$$
+$$\frac{m}{\sigma_0}\frac{\ddot{g}}{g} = \frac{f''}{f} = C$$
+
+e scegliendo solo i valori di $c$ che forniscono soluzioni non triviali compatibili con i vincoli, $C = - k^2$. L'equazione per la parte spaziale della soluzione diventa quindi
+
+$$f''(x) + k^2 f(x) = 0 \ .$$
+
+La soluzione generale di questa equazione è
+
+$$f(x) = A \cos (kx) + B \sin (kx) \ ,$$
+
+e l'imposizione delle condizioni al contorno consentono di trovare i valori ammissibili di $A$, $B$ e una condizione su $k$,
+
+$$\begin{cases}
+  0 = f(0) = A \\
+  0 = GJf'(L) = GJ k B \cos (kL) \\
+\end{cases}$$
+
+e quindi per avere soluzioni non banali, deve essere soddisfatta la condizione 
+
+$$\cos(kL) = 0 \ .$$
+
+I valori della costante $k$ ammissibili per ottenere soluzioni non banali sono quindi
+
+$$k_n = \frac{\pi}{2L} + n \frac{\pi}{L} = \left(\frac{1}{2} + n\right) \frac{\pi}{L} \ , \qquad n \in \mathbb{N} \ .$$
+
+Quindi esiste una forma spaziale $f_n(x) = A_n \sin \left( k_n x \right)$ per ogni valore di $n \in \mathbb{N}$. Ad ogni forma $f_n(x)$ è associata una parte temporale $g_n(t)$,
+
+$$g_n(t) = a_n \cos\left( \omega_n t \right) + b_n \sin\left( \omega_n t \right) \ ,$$
+
+con $\omega_n = c \, k_n$.
+
+La forma generale della soluzione del problema può quindi essere scritta come combinazione di onde stazionarie,
+
+$$u(x,t) = \sum_{n} \left[ \alpha_n \cos\left( \omega_n t \right) + \beta_n \sin\left(\omega_n t\right) \right] \sin\left( k_n x \right) \ .$$
+
+con $k_n = \left(\frac{1}{2}+n\right)\frac{\pi}{L}$ e $\omega_n = c k_n = \left( \frac{1}{2} + n \right) c \frac{\pi}{L}$.
+
+I coefficienti $\alpha_n$, $\beta_n$ vengono calcolati applicando le condizioni iniziali del problema
+
+$$\begin{aligned}
+  u_0(x) = u(x,0)       & = \sum_{n} \alpha_n  \sin\left( k_n x \right) \\
+  v_0(x) = \dot{u}(x,0) & = \sum_{n} \omega_n \beta_n  \sin\left( k_n x \right) \\
+\end{aligned}$$
+
+e quindi risultano essere i coefficienti delle **serie di Fourier** della posizione e della velocità iniziale. Nel caso di configurazione iniziale in quiete, $\dot{u}(x,0) = 0$, i coefficienti $\beta_n$ sono nulli, $\beta_n = 0$.
+
+````
 
 ##
