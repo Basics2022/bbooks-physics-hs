@@ -2,15 +2,25 @@
 # Caratteristiche dei fenomeni ondulatori
 
 (physics-hs:waves:equation:solutions)=
-## Soluzioni particolari
+## Soluzioni elementari
+Vengono qui discusse alcune soluzioni elementari dell'[equazione lineare delle onde](physics-hs:waves:equation:example). In un problema lineare, una soluzione qualsiasi può essere ottenuta come somma di soluzioni elementari, sfruttando il principio di sovrapposizione delle cause e degli effetti (**todo-list:**[**PSCE**](physics-hs:todo:psce)): un segnale generico e la sua evoluzione può quindi essere studiato come somma di segnali semplici che evolvono in maniera indipendente l'uno dall'altro (**todo-list:**[**analisi di Fourier**](physics-hs:todo:fourier))
 
-- Onde stazionarie
-- Onde viaggianti
+In particolare, vengono alcune soluzioni elementari in domini 1-dimensionali, nella forma di onde stazionarie o onde viaggianti, e in domini 3-dimensionali, nella forma di onde piane e onde sferiche.
 
+Per ognuna di queste perturbazioni elementari[^eikonal-approx] prese singolarmente è possibile definire una lunghezza d'onda (o in 3d un vettore d'onda locale che indica la direzione della propagazione), una frequenza e la velocità della perturbazione.
+
+### Dominio 1-dimensionale
+
+### Dominio 3-dimensionale
+
+[^eikonal-approx]: In generale, questa operazione può essere svolta localmente per una soluzione qualisasi delle onde, nel limite di lunghezza d'onda molto minore delle dimensioni caratteristiche del problema. Questa approssimazione viene definita *approssimazione eikonale* ed è all'origine dell'approccio geometrico ai fenomeni ondulatori, come l'acustica geometrica o l'[ottica geometrica](physics-hs:waves:optics:geometric).
+
+<!--
 ### Frequenza, lunghezza d'onda e relazione con velocità di propagazione della perturbazione
+-->
 
 ```{prf:definition} Frequenza
-:label: wave-length
+:label: wave-frequency
 
 ```
 ```{prf:definition} Lunghezza d'onda
