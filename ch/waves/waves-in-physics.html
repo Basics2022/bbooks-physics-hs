@@ -605,7 +605,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-meccanici">21.1.1. Sistemi meccanici</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-strutturali">21.1.1. Problemi strutturali</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#azione-assiale-catena-di-molle-lineari">21.1.1.1. Azione assiale - catena di molle lineari</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#torsione-catena-di-molle-rotazionali">21.1.1.2. Torsione - catena di molle rotazionali</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#filo-teso">21.1.1.3. Filo teso</a></li>
@@ -634,17 +634,55 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="equazione-delle-onde-in-diversi-sistemi">
 <span id="physics-hs-waves-equation-examples"></span><h1><span class="section-number">21.1. </span>Equazione delle onde in diversi sistemi<a class="headerlink" href="#equazione-delle-onde-in-diversi-sistemi" title="Permalink to this heading">#</a></h1>
-<p>In questa sezione viene discusso il ruolo dell’equazione delle onde in diversi ambiti della fisica. La dinamica di perturbazioni di ampiezza «sufficientemente piccola» è descritta da un problema lineare, governato dall’equazione delle onde…<strong>todo</strong></p>
-<div class="section" id="sistemi-meccanici">
-<span id="physics-hs-waves-equation-examples-mechanics"></span><h2><span class="section-number">21.1.1. </span>Sistemi meccanici<a class="headerlink" href="#sistemi-meccanici" title="Permalink to this heading">#</a></h2>
+<p>In questa sezione viene discusso il ruolo dell”<strong>equazione delle onde</strong> in diversi ambiti della fisica. La dinamica di perturbazioni di ampiezza «sufficientemente piccola» è descritta da un problema lineare, governato dall’equazione delle onde con le oppportune condizioni iniziali e al contorno. Per problemi in domini <span class="math notranslate nohighlight">\(D\)</span> spaziali <span class="math notranslate nohighlight">\(1\)</span>-dimensionali, l’espressione dell’equazione (lineare) delle onde in un mezzo omogeneo è</p>
+<div class="math notranslate nohighlight" id="equation-eq-wave-eqn-1d">
+<span class="eqno">(21.1)<a class="headerlink" href="#equation-eq-wave-eqn-1d" title="Permalink a questa equazione">#</a></span>\[\frac{1}{c^2} \partial_{tt} u - \partial_{xx} u = f(x, t) \ , \qquad x \in D \ ,\]</div>
+<p>dove <span class="math notranslate nohighlight">\(c\)</span> è la <strong>velocità di propagazione delle perturbazioni</strong>. Questa velocità è una costante del problema in mezzi omogenei. Il significato della costante <span class="math notranslate nohighlight">\(c\)</span> come velocità di propagazione delle perturbazioni risulta chiaro nell’espressione delle onde viaggianti come <a class="reference internal" href="phenomena.html#physics-hs-waves-equation-solutions"><span class="std std-ref">soluzioni elementari dell’equazione delle onde</span></a>.</p>
+<p>Per domini <span class="math notranslate nohighlight">\(n\)</span>-dimensionali, l’espressione dell’equazione delle onde in un mezzo omogeneo è</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{c^2} \partial_{tt} u - \nabla^2 u = f(\vec{r}, t) \ , \qquad \vec{r} \in D \ .\]</div>
+<p>Nelle sezioni successive viene mostrato come l’equazione delle onde compare in diversi ambiti della fisica, da sistemi meccanici elastici, alle onde di pressione per l’acustica, alle onde elettromagnetiche.</p>
+<div class="section" id="problemi-strutturali">
+<span id="physics-hs-waves-equation-examples-mechanics"></span><h2><span class="section-number">21.1.1. </span>Problemi strutturali<a class="headerlink" href="#problemi-strutturali" title="Permalink to this heading">#</a></h2>
 <div class="section" id="azione-assiale-catena-di-molle-lineari">
 <span id="physics-hs-waves-equation-examples-mechanics-axial"></span><h3><span class="section-number">21.1.1.1. </span>Azione assiale - catena di molle lineari<a class="headerlink" href="#azione-assiale-catena-di-molle-lineari" title="Permalink to this heading">#</a></h3>
+<p>L’azione assiale nelle travi elastiche può essere rappresentata con un sistema discret(izzat)o di masse e molle lineari. La trave viene discretizzata con <span class="math notranslate nohighlight">\(N+1\)</span> masse concentrate, connesse da <span class="math notranslate nohighlight">\(N\)</span> molle. La posizione di una massa è</p>
+<div class="math notranslate nohighlight">
+\[X_i(t) = X_{0,i} + U_i(t) \ ,\]</div>
+<p>cioè la somma della posizione di riferimento e lo spostamento <span class="math notranslate nohighlight">\(U_i\)</span>. Nella configurazione di riferimento la struttura non è soggetta a sforzi, e le molle hanno allungamento nullo. Segue che l’allungamento della molla tra la massa <span class="math notranslate nohighlight">\(i\)</span> e <span class="math notranslate nohighlight">\(j\)</span> è</p>
+<div class="math notranslate nohighlight">
+\[\Delta \ell_{i,i+1} = \ell_{i,i+1} - \ell_{i,i+1}^0 = X_{i+1} - X_{i} - X_{i+1}^0 + X_{i}^0 = U_{i+1} - U_{i} \ .\]</div>
+<p><span style="color:red"><strong>todo.</strong> Discussione sui valori delle masse concentrate e della rigidezza delle molle. Questo è determinato dall’approssimazione utilizzata. Una buona approssimazione discreta deve convergere alla soluzione del problema continuo, all’aumentare del numero di gradi di libertà del modello.</span></p>
+<p>La <span class="math notranslate nohighlight">\(i\)</span>-esima massa è soggetta alle forze elastiche dovute alla connessione con le masse adiacenti e alla forzante esterna. Il bilancio della quantità di moto per la <span class="math notranslate nohighlight">\(i\)</span>-esima massa è quindi</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  M_i \ddot{U}_i 
+  &amp; = F_{i,i-1} + F_{i,i+1} + F^e_i = \\
+  &amp; = K_{i,i-1} \left( - U_i + U_{i-1} \right) + K_{i,i+1} \left( - U_i + U_{i+1} \right) + F^e_i \ .
+\end{aligned}\end{split}\]</div>
+<p>Questa equazione è valida per ogni massa (ad eccezione delle masse agli estremi della trave, ma lì entrano in azione le condizioni al contorno). Assumendo che la distribuzione di massa e la rigidezza della trave sia uniforme,</p>
+<div class="math notranslate nohighlight">
+\[M_i = m \, \Delta x \quad , \quad K = {EA}{\Delta x} \ ,\]</div>
+<p>l’equazione per la <span class="math notranslate nohighlight">\(i\)</span>-esima massa diventa</p>
+<div class="math notranslate nohighlight">
+\[\Delta x m \ddot{U}_i - \frac{EA}{\Delta x} \left( U_{i-1} - 2 U_i + U_{i+1} \right) = \Delta x f_i \ ,\]</div>
+<p>e dividendo per <span class="math notranslate nohighlight">\(\Delta x\)</span></p>
+<div class="math notranslate nohighlight">
+\[m \ddot{U}_i - EA \frac{U_{i-1}- 2 U_i + U_{i+1}}{\Delta x^2} = f_i \ .\]</div>
+<p>Si riconosce infine l’approssimazione del secondo ordine della derivata seconda della funzione <span class="math notranslate nohighlight">\(u(x,t)\)</span> valutata in <span class="math notranslate nohighlight">\(X_i\)</span>. La si sostituisce con essa e si introduce la notazione di derivate parziali (per funzioni che dipendono da più variabili indipendenti, qui spazio <span class="math notranslate nohighlight">\(x\)</span> e tempo <span class="math notranslate nohighlight">\(t\)</span>) per trovare l’equazione delle onde</p>
+<div class="math notranslate nohighlight">
+\[m \partial_{tt} u - EA \partial_{xx} u = f \ .\]</div>
+<p>Confrontando questa espressione con l’espressione <a class="reference internal" href="#equation-eq-wave-eqn-1d">(21.1)</a> dell’equazione delle onde, si può ricavare che la velocità di propagazione delle onde assiali è</p>
+<div class="math notranslate nohighlight">
+\[c_{u} = \sqrt{\frac{EA}{m}} \ .\]</div>
+<div class="proof example dropdown admonition" id="example-0">
+<p class="admonition-title"><span class="caption-number">Example 21.1 </span> (Modello discreto)</p>
+<div class="example-content section" id="proof-content">
 <div class="math notranslate nohighlight">
 \[M_j \ddot{U}_j(t) = F_{j,j-1} + F_{j,j+1} + F_j^{ext}(t) = K_{j,j-1} \left( U_{j-1}(t) - U_j(t) \right) + K_{j,j+1} \left( U_{j+1}(t) - U_{j}(t) \right) + f_j^{ext}\]</div>
-<p>…</p>
 <p>Se le molle hanno tutte la stessa rigidezza, <span class="math notranslate nohighlight">\(K\)</span>,</p>
 <div class="math notranslate nohighlight" id="equation-eq-axial-discrete-index">
-<span class="eqno">(21.1)<a class="headerlink" href="#equation-eq-axial-discrete-index" title="Permalink a questa equazione">#</a></span>\[M_j \ddot{U}_j(t) - K \left( U_{j-1}(t) - 2 U_j(t) + U_{j+1}(t) \right) =  F^e_j(t) \ .\]</div>
+<span class="eqno">(21.2)<a class="headerlink" href="#equation-eq-axial-discrete-index" title="Permalink a questa equazione">#</a></span>\[M_j \ddot{U}_j(t) - K \left( U_{j-1}(t) - 2 U_j(t) + U_{j+1}(t) \right) =  F^e_j(t) \ .\]</div>
 <p><strong>Condizioni iniziali e condizioni al contorno.</strong></p>
 <p><strong>Forma matriciale.</strong> Il problema può essere riscritto usando il formalismo matriciale come</p>
 <div class="math notranslate nohighlight">
@@ -693,15 +731,24 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[M_j \partial_{tt} u(x_j,t) - K \partial_{xx} u(x_j,t) = F_j(t) \]</div>
 </div>
+</div></div>
 <div class="section" id="torsione-catena-di-molle-rotazionali">
 <span id="physics-hs-waves-equation-examples-mechanics-torsion"></span><h3><span class="section-number">21.1.1.2. </span>Torsione - catena di molle rotazionali<a class="headerlink" href="#torsione-catena-di-molle-rotazionali" title="Permalink to this heading">#</a></h3>
+<p>Seguendo quanto fatto per l’azione assiale, si può ricavare l’equazione delle onde per la torsione di una trave,</p>
 <div class="math notranslate nohighlight">
-\[I \partial_{tt} \theta(x_j,t) - K_t \partial_{xx} \theta(x_j,t) = M_j(t)\]</div>
+\[I \partial_{tt} \theta(x,t) - GJ_t \partial_{xx} \theta(x,t) = m(x,t) \ .\]</div>
+<p>Confrontando questa espressione con l’espressione <a class="reference internal" href="#equation-eq-wave-eqn-1d">(21.1)</a> dell’equazione delle onde, si può ricavare che la velocità di propagazione delle onde assiali è</p>
+<div class="math notranslate nohighlight">
+\[c_{t} = \sqrt{\frac{GJ_t}{I}} \ .\]</div>
 </div>
 <div class="section" id="filo-teso">
 <span id="physics-hs-waves-equation-examples-mechanics-string"></span><h3><span class="section-number">21.1.1.3. </span>Filo teso<a class="headerlink" href="#filo-teso" title="Permalink to this heading">#</a></h3>
+<p>La dinamica trasversale di un filo teso con pre-sforzo assiale <span class="math notranslate nohighlight">\(N_0 = A \sigma_0\)</span> è</p>
 <div class="math notranslate nohighlight">
-\[M_j \partial_{tt} u(x_j,t) - N_0 \partial_{xx} u(x_j,t) = F_j(t)\]</div>
+\[m \partial_{tt} v(x,t) - N_0 \partial_{xx} v(x,t) = f(t)\]</div>
+<p>Confrontando questa espressione con l’espressione <a class="reference internal" href="#equation-eq-wave-eqn-1d">(21.1)</a> dell’equazione delle onde, si può ricavare che la velocità di propagazione delle onde assiali è</p>
+<div class="math notranslate nohighlight">
+\[c_{v} = \sqrt{\frac{N_0}{m}} \ .\]</div>
 <p>Esempio: corde di strumenti musicali.</p>
 </div>
 </div>
@@ -743,12 +790,12 @@ document.write(`
 <p>Per motivi di sintesi e per motivi di comprensione, l’approssimazione del laplaciano della pressione può essere scritta come sommatoria delle differenze della pressione nei domini <span class="math notranslate nohighlight">\(\mathbf{j}\)</span> vicini al dominio <span class="math notranslate nohighlight">\(\mathbf{i}\)</span>, cioè appartenenti a quella che viene definita bolla di <span class="math notranslate nohighlight">\(\mathbf{i}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{j} \in B(\mathbf{i})\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\nabla^2 P_i \sim \dfrac{\sum_{\mathbf{j} \in B(\mathbf{i})}\left( P_{\mathbf{j}} - P_{\mathbf{i}} \right)}{\Delta x^2} \ .\]</div>
-<div class="proof example admonition" id="example-0">
-<p class="admonition-title"><span class="caption-number">Example 21.1 </span> (Dominio <span class="math notranslate nohighlight">\(2\)</span>-dimensionale)</p>
+<div class="proof example admonition" id="example-1">
+<p class="admonition-title"><span class="caption-number">Example 21.2 </span> (Dominio <span class="math notranslate nohighlight">\(2\)</span>-dimensionale)</p>
 <div class="example-content section" id="proof-content">
 </div>
-</div><div class="proof example admonition" id="example-1">
-<p class="admonition-title"><span class="caption-number">Example 21.2 </span> (Dominio <span class="math notranslate nohighlight">\(3\)</span>-dimensionale)</p>
+</div><div class="proof example admonition" id="example-2">
+<p class="admonition-title"><span class="caption-number">Example 21.3 </span> (Dominio <span class="math notranslate nohighlight">\(3\)</span>-dimensionale)</p>
 <div class="example-content section" id="proof-content">
 </div>
 </div><!--
@@ -847,7 +894,7 @@ $$\dfrac{1}{c^2} \partial_{tt} P - \nabla^2 P = 0$$
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-meccanici">21.1.1. Sistemi meccanici</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-strutturali">21.1.1. Problemi strutturali</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#azione-assiale-catena-di-molle-lineari">21.1.1.1. Azione assiale - catena di molle lineari</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#torsione-catena-di-molle-rotazionali">21.1.1.2. Torsione - catena di molle rotazionali</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#filo-teso">21.1.1.3. Filo teso</a></li>
