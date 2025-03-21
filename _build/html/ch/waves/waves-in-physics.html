@@ -76,15 +76,6 @@ const thebe_selector_output = ".output, .cell_output"
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R3GS2LVD8M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-R3GS2LVD8M');
-</script>
-
   
   
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
@@ -322,6 +313,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="intro.html">21. Introduzione ai fenomeni ondulatori</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">21.1. Equazione delle onde in diversi sistemi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="phenomena.html">21.2. Caratteristiche dei fenomeni ondulatori</a></li>
+<li class="toctree-l2"><a class="reference internal" href="waves-notes.html">21.3. Note</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="optics.html">22. Ottica</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -611,7 +603,11 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fluidi">21.1.2. Fluidi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#suono">21.1.2.1. Suono</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#suono">21.1.2.1. Suono</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dominio-1-dimensionale">21.1.2.1.1. Dominio 1-dimensionale</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dominio-n-dimensionale">21.1.2.1.2. Dominio n-dimensionale</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#onde-su-superficie-libera">21.1.2.2. Onde su superficie libera</a></li>
 </ul>
 </li>
@@ -686,17 +682,17 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\partial_{xx} u(x_i,t) = \dfrac{u(x_i-\Delta x,t) - 2 u(x_i,t) + u(x_i+\Delta x,t)}{\Delta x^2}\]</div>
 <div class="math notranslate nohighlight">
-\[M_j \partial_{tt} u(x_j,t) - \Delta x^2 K \partial_{xx} u(x_j,t) = F_j(t) \]</div>
+\[M_j \partial_{tt} u(x_j,t) - K \partial_{xx} u(x_j,t) = F_j(t) \]</div>
 </div>
 <div class="section" id="torsione-catena-di-molle-rotazionali">
 <span id="physics-hs-waves-equation-examples-mechanics-torsion"></span><h3><span class="section-number">21.1.1.2. </span>Torsione - catena di molle rotazionali<a class="headerlink" href="#torsione-catena-di-molle-rotazionali" title="Permalink to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
-\[I \partial_{tt} \theta(x_j,t) - \Delta x^2 K_t \partial_{xx} \theta(x_j,t) = M_j(t)\]</div>
+\[I \partial_{tt} \theta(x_j,t) - K_t \partial_{xx} \theta(x_j,t) = M_j(t)\]</div>
 </div>
 <div class="section" id="filo-teso">
 <span id="physics-hs-waves-equation-examples-mechanics-string"></span><h3><span class="section-number">21.1.1.3. </span>Filo teso<a class="headerlink" href="#filo-teso" title="Permalink to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
-\[M_j \partial_{tt} u(x_j,t) - \Delta x^2 N_0 \partial_{xx} u(x_j,t) = F_j(t)\]</div>
+\[M_j \partial_{tt} u(x_j,t) - N_0 \partial_{xx} u(x_j,t) = F_j(t)\]</div>
 <p>Esempio: corde di strumenti musicali.</p>
 </div>
 </div>
@@ -705,24 +701,70 @@ document.write(`
 <div class="section" id="suono">
 <span id="physics-hs-waves-equation-examples-fluids-sound"></span><h3><span class="section-number">21.1.2.1. </span>Suono<a class="headerlink" href="#suono" title="Permalink to this heading">#</a></h3>
 <p>La percezione umana dell’udito è legata alla trasduzione di perturbazioni di pressione di ampiezza limitata da parte del nostro sistema di misura che va dall’orecchio al nostro cervello, capace di percepire perturbazioni di frequenza compresa qualitativamente tra <span class="math notranslate nohighlight">\(20 \, \text{Hz}\)</span> e <span class="math notranslate nohighlight">\(20.000 \, \text{Hz}\)</span>.</p>
-<p><strong>Suono in un tubo.</strong></p>
-<p>Poi da cancellare o riscrivere meglio per il livello</p>
+<p>E” possibile ricavare l’equazione delle onde per il campo di pressione usando le equazioni di <a class="reference internal" href="../mechanics/dynamics-eom-open.html#physics-hs-mechanics-dynamics-eom-open"><span class="std std-ref">bilancio per sistemi aperti</span></a> di massa e di quantità di moto, applicati a dei volumi elementari del dominio di interesse.</p>
+<p>Si assume qui che il fluido nel quale si propaga la perturbazione acustica sia in quiete. Il calcolo viene inizialmente svolto in un ambito di spazio e variaili discrete, e solo alla fine vengono riconosciute le espressioni approssimate alle differenze delle derivate per tornare a un modello continuo. Si assume una dimensione uniforme dei domini elementari.</p>
+<div class="section" id="dominio-1-dimensionale">
+<span id="physics-hs-waves-equation-examples-fluids-sound-1d"></span><h4><span class="section-number">21.1.2.1.1. </span>Dominio 1-dimensionale<a class="headerlink" href="#dominio-1-dimensionale" title="Permalink to this heading">#</a></h4>
+<p>Si considerano serie di elementi…e si scrive il bilancio di massa per gli elementi con indice intero, e il bilancio di quantità di moto per i volumi di indice frazionario «adiacenti»</p>
 <div class="math notranslate nohighlight">
-\[P(\rho,s)\]</div>
+\[\begin{split}\begin{aligned}
+  \Delta x \, \dot{\rho}_i &amp; = \overline{\rho} u_{i-\frac{1}{2}} - \overline{\rho} u_{i+\frac{1}{2}} \\
+  \Delta x \, \overline{\rho} \dot{u}_{i-\frac{1}{2}} &amp; = P_{i-1} - P_{i} \\
+  \Delta x \, \overline{\rho} \dot{u}_{i+\frac{1}{2}} &amp; = P_{i  } - P_{i+1}  
+\end{aligned}\end{split}\]</div>
+<p>Derivando in tempo il bilancio della massa dell’elemento <span class="math notranslate nohighlight">\(i\)</span> e sostituendo in esso le due espressioni del bilancio della quantità di moto degli elementi <span class="math notranslate nohighlight">\(i-\frac{1}{2}\)</span> e <span class="math notranslate nohighlight">\(i+\frac{1}{2}\)</span> si ottiene</p>
 <div class="math notranslate nohighlight">
-\[d P = \left( \dfrac{\partial P}{\partial \rho} \right)_s \, d \rho + \left( \dfrac{\partial P}{\partial s} \right)_{\rho} \, ds \]</div>
+\[\Delta x \ddot{\rho}_i = \frac{1}{\Delta x} \left[ P_{i-1} - 2 P_i + P_{i+1} \right] \ ,\]</div>
+<p>e ricordando la definizione di velocità del suono <span class="math notranslate nohighlight">\(a\)</span> <strong>todo</strong> (data dove? Forse è proprio questo il posto dove darla, assumendo una relazione lineare - tanto tutto o quasi è lineare nel piccolo - tra la perturbazione di pressione e la pertubazione di densità <span class="math notranslate nohighlight">\(P_i = a^2 \rho_i\)</span>), si può scrivere</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
+\[\frac{1}{a^2} \ddot{P}_i - \dfrac{P_{i-1} - 2 P_i + P_{i+1}}{\Delta x^2} = 0 \ .\]</div>
+<p>Avendo indicato il valore della pressione in <span class="math notranslate nohighlight">\(x_k\)</span> come <span class="math notranslate nohighlight">\(P_k = P(x_k)\)</span>, si può riconoscere l’approssimazione della derivata seconda della pressione, e tornando al continuo e ricordando il significato di derivata parziale, ricavare l’equazione delle onde per la perturbazione di pressione in un mezzo in quiete[^medium-at-res]</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{a^2} \partial_{tt} P - \partial_{xx} P = 0 \ .\]</div>
+<p><strong>Osservazione.</strong> Il metodo descritto qui rappresenta un’applicazione elementare del metodo dei volumi finiti, metodo utilizzato per la soluzione numerica di equazioni differentiali.</p>
+</div>
+<div class="section" id="dominio-n-dimensionale">
+<span id="physics-hs-waves-equation-examples-fluids-sound-nd"></span><h4><span class="section-number">21.1.2.1.2. </span>Dominio n-dimensionale<a class="headerlink" href="#dominio-n-dimensionale" title="Permalink to this heading">#</a></h4>
+<p>Si può ripetere il procedimento per un <a class="reference internal" href="#physics-hs-waves-equation-examples-fluids-sound-1d"><span class="std std-ref">dominio 1-dimensionale</span></a> in un dominio <span class="math notranslate nohighlight">\(n\)</span>-dimensionale, usando due suddivisioni «sfalsate» del dominio, una per calcolare il bilancio di massa, l’altra per calcolare il bilancio di quantità di moto. Ripendo il procedimento, si arriva a un’equazione che contiene l’approssimazione dell’operatore laplaciano della pressione,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ \text{2-d:} &amp; \quad \dfrac{P_{i-1,j-1}+P_{i-1,j+1}+P_{i+1,j+1}+P_{i+1,j-1}-4 P_{i,j}}{\Delta x^2} \sim \partial_{xx} P_i + \partial_{yy} P_i \\
+ \text{3-d:} &amp; \quad \dfrac{P_{i-1,j-1,k-1}+\dots + P_{i+1,j+1,k+1}-8 P_{ijk}}{\Delta x^2} \sim \partial_{xx} P_i + \partial_{yy} P_i + \partial_{zz} P_i \\
+\end{aligned}\end{split}\]</div>
+<p>Per motivi di sintesi e per motivi di comprensione, l’approssimazione del laplaciano della pressione può essere scritta come sommatoria delle differenze della pressione nei domini <span class="math notranslate nohighlight">\(\mathbf{j}\)</span> vicini al dominio <span class="math notranslate nohighlight">\(\mathbf{i}\)</span>, cioè appartenenti a quella che viene definita bolla di <span class="math notranslate nohighlight">\(\mathbf{i}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{j} \in B(\mathbf{i})\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\nabla^2 P_i \sim \dfrac{\sum_{\mathbf{j} \in B(\mathbf{i})}\left( P_{\mathbf{j}} - P_{\mathbf{i}} \right)}{\Delta x^2} \ .\]</div>
+<div class="proof example admonition" id="example-0">
+<p class="admonition-title"><span class="caption-number">Example 21.1 </span> (Dominio <span class="math notranslate nohighlight">\(2\)</span>-dimensionale)</p>
+<div class="example-content section" id="proof-content">
+</div>
+</div><div class="proof example admonition" id="example-1">
+<p class="admonition-title"><span class="caption-number">Example 21.2 </span> (Dominio <span class="math notranslate nohighlight">\(3\)</span>-dimensionale)</p>
+<div class="example-content section" id="proof-content">
+</div>
+</div><!--
+**Suono in un tubo.** 
+
+Poi da cancellare o riscrivere meglio per il livello
+
+$$P(\rho,s)$$ 
+
+$$d P = \left( \dfrac{\partial P}{\partial \rho} \right)_s \, d \rho + \left( \dfrac{\partial P}{\partial s} \right)_{\rho} \, ds $$
+
+$$
 \begin{cases}
   \dfrac{1}{c^2} \partial_t P + \rho_0 \partial_x u = 0 \\
   \rho_0 \partial_t u + \partial_x P = 0 \\
 \end{cases}
-\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\dfrac{1}{c^2} \partial_{tt} P - \partial_{xx} P = 0\]</div>
-<p><strong>Suono nello spazio.</strong></p>
-<div class="math notranslate nohighlight">
-\[\dfrac{1}{c^2} \partial_{tt} P - \nabla^2 P = 0\]</div>
+$$
+
+$$\dfrac{1}{c^2} \partial_{tt} P - \partial_{xx} P = 0$$
+
+**Suono nello spazio.**
+
+$$\dfrac{1}{c^2} \partial_{tt} P - \nabla^2 P = 0$$
+-->
+</div>
 </div>
 <div class="section" id="onde-su-superficie-libera">
 <span id="physics-hs-waves-equation-examples-fluids-surface"></span><h3><span class="section-number">21.1.2.2. </span>Onde su superficie libera<a class="headerlink" href="#onde-su-superficie-libera" title="Permalink to this heading">#</a></h3>
@@ -803,7 +845,11 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fluidi">21.1.2. Fluidi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#suono">21.1.2.1. Suono</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#suono">21.1.2.1. Suono</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dominio-1-dimensionale">21.1.2.1.1. Dominio 1-dimensionale</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dominio-n-dimensionale">21.1.2.1.2. Dominio n-dimensionale</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#onde-su-superficie-libera">21.1.2.2. Onde su superficie libera</a></li>
 </ul>
 </li>

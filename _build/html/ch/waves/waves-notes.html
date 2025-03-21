@@ -76,15 +76,6 @@ const thebe_selector_output = ".output, .cell_output"
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R3GS2LVD8M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-R3GS2LVD8M');
-</script>
-
   
   
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
@@ -606,8 +597,11 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzioni-particolari">21.3.1. Soluzioni particolari</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vibrazione-di-una-corda-con-estremi-vincolati">21.3.1.1. Vibrazione di una corda con estremi vincolati</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#torsione-di-una-trave-con-un-estremo-vincolato-e-un-estremo-libero">21.3.1.2. Torsione di una trave con un estremo vincolato e un estremo libero</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moti-liberi">21.3.1.1. Moti liberi</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#vibrazione-di-una-corda-con-estremi-vincolati">21.3.1.1.1. Vibrazione di una corda con estremi vincolati</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#torsione-di-una-trave-con-un-estremo-vincolato-e-un-estremo-libero">21.3.1.1.2. Torsione di una trave con un estremo vincolato e un estremo libero</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">21.3.2. </a></li>
@@ -626,8 +620,10 @@ document.write(`
 <span id="physics-hs-waves-notes"></span><h1><span class="section-number">21.3. </span>Note<a class="headerlink" href="#note" title="Permalink to this heading">#</a></h1>
 <div class="section" id="soluzioni-particolari">
 <h2><span class="section-number">21.3.1. </span>Soluzioni particolari<a class="headerlink" href="#soluzioni-particolari" title="Permalink to this heading">#</a></h2>
+<div class="section" id="moti-liberi">
+<h3><span class="section-number">21.3.1.1. </span>Moti liberi<a class="headerlink" href="#moti-liberi" title="Permalink to this heading">#</a></h3>
 <div class="section" id="vibrazione-di-una-corda-con-estremi-vincolati">
-<h3><span class="section-number">21.3.1.1. </span>Vibrazione di una corda con estremi vincolati<a class="headerlink" href="#vibrazione-di-una-corda-con-estremi-vincolati" title="Permalink to this heading">#</a></h3>
+<h4><span class="section-number">21.3.1.1.1. </span>Vibrazione di una corda con estremi vincolati<a class="headerlink" href="#vibrazione-di-una-corda-con-estremi-vincolati" title="Permalink to this heading">#</a></h4>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{cases}
   m \ddot{u} - \sigma_0 u'' = 0 &amp;&amp; x \in [0,L] \\
@@ -725,7 +721,7 @@ Onde viaggianti<div class="sd-summary-down docutils">
 </div>
 </details></div>
 <div class="section" id="torsione-di-una-trave-con-un-estremo-vincolato-e-un-estremo-libero">
-<h3><span class="section-number">21.3.1.2. </span>Torsione di una trave con un estremo vincolato e un estremo libero<a class="headerlink" href="#torsione-di-una-trave-con-un-estremo-vincolato-e-un-estremo-libero" title="Permalink to this heading">#</a></h3>
+<h4><span class="section-number">21.3.1.1.2. </span>Torsione di una trave con un estremo vincolato e un estremo libero<a class="headerlink" href="#torsione-di-una-trave-con-un-estremo-vincolato-e-un-estremo-libero" title="Permalink to this heading">#</a></h4>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{cases}
   I \ddot{u} - GJ u'' = 0 &amp;&amp; x \in [0,L] \\
@@ -780,6 +776,7 @@ Onde stazionarie - modi propri di vibrare<div class="sd-summary-down docutils">
 <p class="sd-card-text">e quindi risultano essere i coefficienti delle <strong>serie di Fourier</strong> della posizione e della velocità iniziale. Nel caso di configurazione iniziale in quiete, <span class="math notranslate nohighlight">\(\dot{u}(x,0) = 0\)</span>, i coefficienti <span class="math notranslate nohighlight">\(\beta_n\)</span> sono nulli, <span class="math notranslate nohighlight">\(\beta_n = 0\)</span>.</p>
 </div>
 </details></div>
+</div>
 </div>
 <div class="section" id="id1">
 <h2><span class="section-number">21.3.2. </span><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
@@ -850,8 +847,11 @@ Onde stazionarie - modi propri di vibrare<div class="sd-summary-down docutils">
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzioni-particolari">21.3.1. Soluzioni particolari</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vibrazione-di-una-corda-con-estremi-vincolati">21.3.1.1. Vibrazione di una corda con estremi vincolati</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#torsione-di-una-trave-con-un-estremo-vincolato-e-un-estremo-libero">21.3.1.2. Torsione di una trave con un estremo vincolato e un estremo libero</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moti-liberi">21.3.1.1. Moti liberi</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#vibrazione-di-una-corda-con-estremi-vincolati">21.3.1.1.1. Vibrazione di una corda con estremi vincolati</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#torsione-di-una-trave-con-un-estremo-vincolato-e-un-estremo-libero">21.3.1.1.2. Torsione di una trave con un estremo vincolato e un estremo libero</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">21.3.2. </a></li>

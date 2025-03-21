@@ -3,7 +3,8 @@
 
 ## Soluzioni particolari
 
-### Vibrazione di una corda con estremi vincolati 
+### Moti liberi
+#### Vibrazione di una corda con estremi vincolati 
 
 $$\begin{cases}
   m \ddot{u} - \sigma_0 u'' = 0 && x \in [0,L] \\
@@ -107,7 +108,7 @@ $$\begin{aligned}
 
 ````
 
-### Torsione di una trave con un estremo vincolato e un estremo libero
+#### Torsione di una trave con un estremo vincolato e un estremo libero
 
 $$\begin{cases}
   I \ddot{u} - GJ u'' = 0 && x \in [0,L] \\
