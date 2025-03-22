@@ -204,6 +204,7 @@ parts:
     - file: ch/electromagnetism/electric-machines
 #     sections:
 #     - file: ch/electromagnetism/electric-machines-problems
+  - file: ch/electromagnetism/electrical-engineering-instruments
   - file: ch/electromagnetism/em-waves
     sections:
     - file: ch/electromagnetism/em-waves-problems

@@ -66,24 +66,30 @@ Errori di riproducibilità possono evidenziare errori sistematici nel processo d
 
 (physics-hs:intro:measurements:order)=
 #### Risposta degli strumenti - ordine 0, 1, 2,$\dots$
-Un trasduttore è uno strumento che legge una grandezza in ingresso $u$ e ne produce un'altra in uscita, $y$.
+Un trasduttore è uno strumento che legge una grandezza in ingresso $u(t)$ e ne produce un'altra in uscita, $y(t)$. La grandezza in uscita, tipicamente una grandezza elettrica per molti strumenti, è quella che viene effettivamente letta. La procedura di **taratura** di uno strumento permette di associare alla lettura della grandezza letta in uscita $y(t)$ il valore della variabile che si desidera misurare $u(t)$.
 
-**Risposta degli strumenti.** (strumenti di ordine $0$, $1$, $2$) Gli strumenti di ordine 0 forniscono una relazione algebrica tra la grandezza in ingresso e la grandezza in uscita, $y(t) = c \, u(t)$. Altri strumenti hanno una dinamica interna, e la relazione tra la grandezza in uscita e la grandezza in ingresso non è algebrico, ma dinamico. In generale, questi strumenti sono caratterizzati da una funzione di trasferimento, cioè di un legame tra ingresso e uscita che è funzione della frequenza dell'ingresso.
+**Risposta degli strumenti.** (strumenti di ordine $0$, $1$, $2$) Gli strumenti di ordine 0 forniscono una relazione algebrica tra la grandezza in ingresso e la grandezza in uscita, $y(t) = c \, u(t)$. Altri strumenti hanno una dinamica interna, e la relazione tra la grandezza in uscita e la grandezza in ingresso non è algebrico, ma dinamico. In generale, questi strumenti sono caratterizzati da una funzione di trasferimento, cioè di un legame tra ingresso e uscita che è funzione della frequenza del segnale in ingresso: la frequenza massima - o l'intervallo di frequenze - del segnale che uno strumento è in grado di misurare accuratamente è una caratteristica dello strumento. Questa caratteristica è chiamata **banda passante**.
+
+Il termine passante è riferito al fatto che un sistema dinamico definisce una relazione tra il segnale in ingresso e in uscita, e questo legame dipende di solito dalla frequenza del segnale in ingresso. 
 
 - **todo-list** [**Fourier**](physics-hs:todo:fourier)
-- Rimandare qui dal capitolo sulle [equazioni ordinarie differenziali (ODE)](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/ode.html) del materiale di [matematica](https://basics2022.github.io/bbooks-math-miscellanea-hs/intro.html).
+- [Materiale di matematica per le scuole superiori](https://basics2022.github.io/bbooks-math-miscellanea-hs/intro.html):
+  - capitolo sulle [equazioni ordinarie differenziali (ODE)](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/ode.html)
+    - sezione sulle ODE lineari e sulla [risposta in frequenza](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/ode-lti.html#risposta-in-frequenza-di-sistemi-del-primo-e-del-secondo-ordine) a forzanti armoniche e ad altre forzanti caratteristiche
 
 ```{exercise} Strumento di ordine zero
 :label: instrument-order-zero-exercise
 **todo**
 ```
-```{exercise} Strumento del primo ordine
+```{exercise} Strumento del primo ordine - esempio termometro
 :label: instrument-order-one-exercise
 **todo**
 ```
-```{exercise} Strumento del secondo ordine
+```{exercise} Strumento del secondo ordine - esempio accelerometro
 :label: instrument-order-two-exercise
 **todo**
+
+Per un esempio più dettagliato, quando si avranno le competenze sufficienti, si rimanda alla sezione sull'[accelerometro capacitivo MEMS](physics-hs:electromagnetism:instruments:accelerometer:mems)
 ```
 
 (physics-hs:intro:measurements:instruments:intrusivity)=

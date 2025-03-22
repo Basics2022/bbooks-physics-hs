@@ -1,6 +1,7 @@
 (physics-hs:electromagnetism:electric-engineering)=
 # Fondamenti di elettrotecnica
 
+
 L'applicazione dei fenomeni elettromagnetici può essere distinta qualitativamente in due grandi discipline:
 
 ```{dropdown} **Elettrotecnica**
@@ -16,10 +17,11 @@ L'applicazione dei fenomeni elettromagnetici può essere distinta qualitativamen
 ```{dropdown} **Elettronica**
 **Regimi di applicazione:** correnti deboli, alta frequenza
 
-**Applicazioni:** trasmissine dei segnali elettrici
+**Applicazioni:** trasmissione dei segnali elettrici
 - trasmissione onde EM
 - elettronica di consumo: smartphone, computer, navigatori, radio, TV, Wi-Fi,...
 - schede di controllo di elettrodomestici...
+
 ```
 
 A queste discipline, si aggiunge l'**ottica** **todo**...<span style="color:red">non sempre è possibile fare una distinzione netta tra le discipline...alimentazione e potenza, controllo,...</span>
