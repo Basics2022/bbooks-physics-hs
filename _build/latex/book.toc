@@ -5,10 +5,11 @@
 \contentsline {section}{\numberline {1.2}\(\texttt {todo}\) list}{5}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Programma attuale}{6}{section.1.3}%
 \contentsline {section}{\numberline {1.4}todo}{6}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Adimensionalizzazione e analisi dimensionale}{6}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Principio di causalità}{6}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Principio di sovrapposizione delle cause e degli effetti}{6}{subsection.1.4.3}%
-\contentsline {subsection}{\numberline {1.4.4}Analisi di Fourier}{6}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.1}Invarianza}{6}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Adimensionalizzazione e analisi dimensionale}{6}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Principio di causalità}{6}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Principio di sovrapposizione delle cause e degli effetti}{6}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}Analisi di Fourier}{6}{subsection.1.4.5}%
 \contentsline {part}{II\hspace {1em}Introduzione alla fisica}{7}{part.2}%
 \contentsline {chapter}{\numberline {2}Introduzione alla fisica}{9}{chapter.2}%
 \contentsline {chapter}{\numberline {3}Grandezze fisiche}{11}{chapter.3}%
@@ -368,8 +369,8 @@
 \contentsline {part}{VII\hspace {1em}Elettromagnetismo}{235}{part.7}%
 \contentsline {chapter}{\numberline {24}Introduzione all’elettromagnetismo}{237}{chapter.24}%
 \contentsline {section}{\numberline {24.1}Breve storia dell’elettromagnetismo}{237}{section.24.1}%
-\contentsline {section}{\numberline {24.2}Esperienze ed esperimenti}{238}{section.24.2}%
-\contentsline {subsection}{\numberline {24.2.1}Elettrizzazione}{238}{subsection.24.2.1}%
+\contentsline {section}{\numberline {24.2}Esperienze ed esperimenti}{239}{section.24.2}%
+\contentsline {subsection}{\numberline {24.2.1}Elettrizzazione}{239}{subsection.24.2.1}%
 \contentsline {subsection}{\numberline {24.2.2}Conservazione della carica}{239}{subsection.24.2.2}%
 \contentsline {subsection}{\numberline {24.2.3}Coulomb}{239}{subsection.24.2.3}%
 \contentsline {subsection}{\numberline {24.2.4}Campo elettrico ed energia del campo elettrico}{239}{subsection.24.2.4}%
@@ -379,55 +380,55 @@
 \contentsline {chapter}{\numberline {25}Fondamenti di elettromagnetismo}{243}{chapter.25}%
 \contentsline {section}{\numberline {25.1}Elettrostatica}{244}{section.25.1}%
 \contentsline {subsection}{\numberline {25.1.1}Legge di Coulomb}{244}{subsection.25.1.1}%
-\contentsline {subsubsection}{Misura della carica elettrica}{245}{subsubsection*.200}%
+\contentsline {subsubsection}{Misura della carica elettrica}{245}{subsubsection*.201}%
 \contentsline {subsection}{\numberline {25.1.2}Il campo elettrico}{245}{subsection.25.1.2}%
-\contentsline {subsubsection}{Campo conservativo}{246}{subsubsection*.201}%
-\contentsline {subsubsection}{Energia potenziale di una distribuzione di cariche}{247}{subsubsection*.202}%
+\contentsline {subsubsection}{Campo conservativo}{246}{subsubsection*.202}%
+\contentsline {subsubsection}{Energia potenziale di una distribuzione di cariche}{247}{subsubsection*.203}%
 \contentsline {subsection}{\numberline {25.1.3}Campo elettrico nei materiali}{249}{subsection.25.1.3}%
-\contentsline {subsubsection}{Campo elettrostatico nei conduttori}{250}{subsubsection*.203}%
-\contentsline {subsubsection}{Campo elettrostatico nei dielettrici}{251}{subsubsection*.204}%
+\contentsline {subsubsection}{Campo elettrostatico nei conduttori}{250}{subsubsection*.204}%
+\contentsline {subsubsection}{Campo elettrostatico nei dielettrici}{251}{subsubsection*.205}%
 \contentsline {subsection}{\numberline {25.1.4}Verso le equazioni di Maxwell}{253}{subsection.25.1.4}%
-\contentsline {subsubsection}{Legge di Gauss per il flusso del campo elettrico}{253}{subsubsection*.206}%
-\contentsline {subsubsection}{Legge di Faraday, in elettrostatica}{254}{subsubsection*.207}%
+\contentsline {subsubsection}{Legge di Gauss per il flusso del campo elettrico}{253}{subsubsection*.207}%
+\contentsline {subsubsection}{Legge di Faraday, in elettrostatica}{254}{subsubsection*.208}%
 \contentsline {subsection}{\numberline {25.1.5}Condensatore}{254}{subsection.25.1.5}%
-\contentsline {subsubsection}{Condensatore piano}{254}{subsubsection*.208}%
-\contentsline {subsubsection}{Bilancio di energia in un condensatore}{256}{subsubsection*.209}%
-\contentsline {subsubsection}{Configurazioni di condensatori}{257}{subsubsection*.210}%
+\contentsline {subsubsection}{Condensatore piano}{254}{subsubsection*.209}%
+\contentsline {subsubsection}{Bilancio di energia in un condensatore}{256}{subsubsection*.210}%
+\contentsline {subsubsection}{Configurazioni di condensatori}{257}{subsubsection*.211}%
 \contentsline {subsection}{\numberline {25.1.6}Moto di una carica in un campo elettrico}{257}{subsection.25.1.6}%
 \contentsline {subsection}{\numberline {25.1.7}Problemi}{257}{subsection.25.1.7}%
 \contentsline {subsection}{\numberline {25.1.8}Soluzioni}{261}{subsection.25.1.8}%
 \contentsline {subsection}{\numberline {25.1.9}Note e dimostrazioni}{261}{subsection.25.1.9}%
 \contentsline {section}{\numberline {25.2}Corrente elettrica}{261}{section.25.2}%
 \contentsline {subsection}{\numberline {25.2.1}Definizioni}{261}{subsection.25.2.1}%
-\contentsline {subsubsection}{Densità di corrente elettrica}{262}{subsubsection*.243}%
+\contentsline {subsubsection}{Densità di corrente elettrica}{262}{subsubsection*.244}%
 \contentsline {subsection}{\numberline {25.2.2}Principio di conservazione della carica elettrica}{262}{subsection.25.2.2}%
 \contentsline {subsection}{\numberline {25.2.3}Corrente elettrica nella materia}{263}{subsection.25.2.3}%
-\contentsline {subsubsection}{Solidi conduttori}{263}{subsubsection*.244}%
-\contentsline {paragraph}{Conduttori di Ohm}{263}{paragraph*.245}%
-\contentsline {subsubsection}{Solidi dielettrici}{265}{subsubsection*.246}%
-\contentsline {subsubsection}{Conduzione nei gas}{265}{subsubsection*.247}%
-\contentsline {subsubsection}{Conduzione nei semiconduttori}{265}{subsubsection*.248}%
+\contentsline {subsubsection}{Solidi conduttori}{263}{subsubsection*.245}%
+\contentsline {paragraph}{Conduttori di Ohm}{263}{paragraph*.246}%
+\contentsline {subsubsection}{Solidi dielettrici}{265}{subsubsection*.247}%
+\contentsline {subsubsection}{Conduzione nei gas}{265}{subsubsection*.248}%
+\contentsline {subsubsection}{Conduzione nei semiconduttori}{265}{subsubsection*.249}%
 \contentsline {subsection}{\numberline {25.2.4}Strumenti: misura e generazione}{265}{subsection.25.2.4}%
 \contentsline {subsection}{\numberline {25.2.5}Problemi}{266}{subsection.25.2.5}%
 \contentsline {section}{\numberline {25.3}Magnetismo ed elettromagnetismo in regime stazionario}{268}{section.25.3}%
 \contentsline {subsection}{\numberline {25.3.1}Esperienze elementari su campo magnetico}{268}{subsection.25.3.1}%
 \contentsline {subsection}{\numberline {25.3.2}Esperienza di Faraday}{268}{subsection.25.3.2}%
-\contentsline {subsubsection}{L’amperometro}{269}{subsubsection*.266}%
-\contentsline {subsubsection}{Il voltmetro}{269}{subsubsection*.267}%
+\contentsline {subsubsection}{L’amperometro}{269}{subsubsection*.267}%
+\contentsline {subsubsection}{Il voltmetro}{269}{subsubsection*.268}%
 \contentsline {subsection}{\numberline {25.3.3}Esperienze di Oersted e Ampere}{270}{subsection.25.3.3}%
-\contentsline {subsubsection}{Esperienza di Oersted}{270}{subsubsection*.268}%
-\contentsline {subsubsection}{Esperienza di Ampére}{270}{subsubsection*.269}%
+\contentsline {subsubsection}{Esperienza di Oersted}{270}{subsubsection*.269}%
+\contentsline {subsubsection}{Esperienza di Ampére}{270}{subsubsection*.270}%
 \contentsline {subsection}{\numberline {25.3.4}Legge di Biot\sphinxhyphen {}Savart}{270}{subsection.25.3.4}%
-\contentsline {subsubsection}{Esempi di campi magnetici generati da corrente in cavi elettrici}{271}{subsubsection*.271}%
+\contentsline {subsubsection}{Esempi di campi magnetici generati da corrente in cavi elettrici}{271}{subsubsection*.272}%
 \contentsline {subsection}{\numberline {25.3.5}Modelli microscopici del magnetismo}{271}{subsection.25.3.5}%
 \contentsline {subsection}{\numberline {25.3.6}Moto di una carica elettrica in un campo elettromagnetico}{272}{subsection.25.3.6}%
 \contentsline {subsection}{\numberline {25.3.7}Verso le equazioni di Maxwell}{272}{subsection.25.3.7}%
-\contentsline {subsubsection}{Legge di Gauss per il flusso del campo magnetico}{272}{subsubsection*.273}%
-\contentsline {subsubsection}{Legge di Ampére in regime stazionario}{272}{subsubsection*.274}%
+\contentsline {subsubsection}{Legge di Gauss per il flusso del campo magnetico}{272}{subsubsection*.274}%
+\contentsline {subsubsection}{Legge di Ampére in regime stazionario}{272}{subsubsection*.275}%
 \contentsline {subsection}{\numberline {25.3.8}Problemi}{273}{subsection.25.3.8}%
 \contentsline {subsection}{\numberline {25.3.9}Soluzioni}{274}{subsection.25.3.9}%
 \contentsline {subsection}{\numberline {25.3.10}Note e dimostrazioni}{274}{subsection.25.3.10}%
-\contentsline {subsubsection}{Legge di Biot\sphinxhyphen {}Savart}{274}{subsubsection*.279}%
+\contentsline {subsubsection}{Legge di Biot\sphinxhyphen {}Savart}{274}{subsubsection*.280}%
 \contentsline {section}{\numberline {25.4}Induzione ed elettromagnetismo}{275}{section.25.4}%
 \contentsline {subsection}{\numberline {25.4.1}Legge di Faraday per l’induzione elettromagnetica}{276}{subsection.25.4.1}%
 \contentsline {subsection}{\numberline {25.4.2}Correzione di Maxwell dell’equazione di Ampére}{276}{subsection.25.4.2}%
@@ -438,110 +439,113 @@
 \contentsline {subsection}{\numberline {26.1.2}Cavi elettrici}{280}{subsection.26.1.2}%
 \contentsline {subsection}{\numberline {26.1.3}Leggi di Kirchhoff}{281}{subsection.26.1.3}%
 \contentsline {subsection}{\numberline {26.1.4}Componenti}{281}{subsection.26.1.4}%
-\contentsline {subsubsection}{Resistenza elettrica}{281}{subsubsection*.281}%
-\contentsline {subsubsection}{Condensatore}{282}{subsubsection*.282}%
-\contentsline {subsubsection}{Induttore}{282}{subsubsection*.283}%
-\contentsline {subsubsection}{Generatore di tensione}{282}{subsubsection*.284}%
-\contentsline {subsubsection}{Generatore di corrente}{282}{subsubsection*.285}%
-\contentsline {subsubsection}{Diodo}{282}{subsubsection*.286}%
+\contentsline {subsubsection}{Resistenza elettrica}{281}{subsubsection*.282}%
+\contentsline {subsubsection}{Condensatore}{282}{subsubsection*.283}%
+\contentsline {subsubsection}{Induttore}{282}{subsubsection*.284}%
+\contentsline {subsubsection}{Generatore di tensione}{282}{subsubsection*.285}%
+\contentsline {subsubsection}{Generatore di corrente}{282}{subsubsection*.286}%
+\contentsline {subsubsection}{Diodo}{282}{subsubsection*.287}%
 \contentsline {subsection}{\numberline {26.1.5}Collegamenti in serie e in parallelo}{282}{subsection.26.1.5}%
 \contentsline {subsection}{\numberline {26.1.6}Casi particolari}{283}{subsection.26.1.6}%
-\contentsline {subsubsection}{Circuito aperto}{283}{subsubsection*.287}%
-\contentsline {subsubsection}{Cortocircuito}{283}{subsubsection*.288}%
+\contentsline {subsubsection}{Circuito aperto}{283}{subsubsection*.288}%
+\contentsline {subsubsection}{Cortocircuito}{283}{subsubsection*.289}%
 \contentsline {subsection}{\numberline {26.1.7}Regimi di funzionamento}{284}{subsection.26.1.7}%
-\contentsline {subsubsection}{Regime stazionario \sphinxhyphen {} la corrente continua}{284}{subsubsection*.289}%
-\contentsline {subsubsection}{Transitorio}{284}{subsubsection*.290}%
-\contentsline {subsubsection}{Regime periodico \sphinxhyphen {} la corrente alternata}{284}{subsubsection*.291}%
-\contentsline {paragraph}{Sistemi trifase}{284}{paragraph*.292}%
+\contentsline {subsubsection}{Regime stazionario \sphinxhyphen {} la corrente continua}{284}{subsubsection*.290}%
+\contentsline {subsubsection}{Transitorio}{284}{subsubsection*.291}%
+\contentsline {subsubsection}{Regime periodico \sphinxhyphen {} la corrente alternata}{284}{subsubsection*.292}%
+\contentsline {paragraph}{Sistemi trifase}{284}{paragraph*.293}%
 \contentsline {section}{\numberline {26.2}Circuiti magnetici}{285}{section.26.2}%
 \contentsline {subsection}{\numberline {26.2.1}Approssimazione circuitale}{285}{subsection.26.2.1}%
 \contentsline {subsection}{\numberline {26.2.2}Leggi di Kirchhoff per i circuiti magnetici}{285}{subsection.26.2.2}%
 \contentsline {subsection}{\numberline {26.2.3}Trasformatore}{286}{subsection.26.2.3}%
-\contentsline {subsubsection}{Trasformatore ideale}{286}{subsubsection*.294}%
+\contentsline {subsubsection}{Trasformatore ideale}{286}{subsubsection*.295}%
 \contentsline {section}{\numberline {26.3}Sistemi elettromeccanici e macchine elettriche}{286}{section.26.3}%
 \contentsline {subsection}{\numberline {26.3.1}Motori e generatori elettrici}{286}{subsection.26.3.1}%
-\contentsline {subsubsection}{Esempi elementari}{286}{subsubsection*.295}%
-\contentsline {subsubsection}{Motori elettrici in DC}{287}{subsubsection*.296}%
-\contentsline {subsubsection}{Motori elettrici in AC}{287}{subsubsection*.297}%
+\contentsline {subsubsection}{Esempi elementari}{286}{subsubsection*.296}%
+\contentsline {subsubsection}{Motori elettrici in DC}{287}{subsubsection*.297}%
+\contentsline {subsubsection}{Motori elettrici in AC}{287}{subsubsection*.298}%
 \contentsline {subsection}{\numberline {26.3.2}Serratura magnetica}{287}{subsection.26.3.2}%
-\contentsline {chapter}{\numberline {27}Onde elettromagnetiche}{289}{chapter.27}%
-\contentsline {section}{\numberline {27.1}Esperimenti di Hertz}{290}{section.27.1}%
-\contentsline {section}{\numberline {27.2}Luce e spettro elettromagnetico}{290}{section.27.2}%
-\contentsline {section}{\numberline {27.3}Spettrografia}{290}{section.27.3}%
-\contentsline {section}{\numberline {27.4}Problemi}{291}{section.27.4}%
-\contentsline {chapter}{\numberline {28}Effetti foto\sphinxhyphen {}termo\sphinxhyphen {}elettro\sphinxhyphen {}meccanici}{295}{chapter.28}%
-\contentsline {section}{\numberline {28.1}Effetti termoelettrici: Seebeck, Peltier, Thomson}{295}{section.28.1}%
-\contentsline {section}{\numberline {28.2}Piroelettricità}{295}{section.28.2}%
-\contentsline {section}{\numberline {28.3}Piezoelettricità}{296}{section.28.3}%
-\contentsline {section}{\numberline {28.4}Effetto fotoelettrico}{296}{section.28.4}%
-\contentsline {part}{VIII\hspace {1em}Fisica moderna}{297}{part.8}%
-\contentsline {chapter}{\numberline {29}Introduzione alla fisica del XX secolo}{299}{chapter.29}%
-\contentsline {chapter}{\numberline {30}Esperienze ed esperimenti}{301}{chapter.30}%
-\contentsline {section}{\numberline {30.1}Materia}{301}{section.30.1}%
-\contentsline {section}{\numberline {30.2}Interazione luce\sphinxhyphen {}materia}{302}{section.30.2}%
-\contentsline {subsection}{\numberline {30.2.1}Effetto fotoelettrico}{302}{subsection.30.2.1}%
-\contentsline {subsection}{\numberline {30.2.2}Radiazione di corpo nero}{302}{subsection.30.2.2}%
-\contentsline {subsection}{\numberline {30.2.3}Calore specifico dei solidi}{302}{subsection.30.2.3}%
-\contentsline {section}{\numberline {30.3}Relatività}{302}{section.30.3}%
-\contentsline {subsection}{\numberline {30.3.1}Relatività speciale}{302}{subsection.30.3.1}%
-\contentsline {subsection}{\numberline {30.3.2}Relatività generale}{302}{subsection.30.3.2}%
-\contentsline {chapter}{\numberline {31}Esperimenti}{303}{chapter.31}%
-\contentsline {section}{\numberline {31.1}Scoperta dell’elettrone \sphinxhyphen {} J.J.Thomson}{303}{section.31.1}%
-\contentsline {section}{\numberline {31.2}La radioattività \sphinxhyphen {} Esperimento dei coniugi Curie}{306}{section.31.2}%
-\contentsline {section}{\numberline {31.3}Misura della carica dell’elettrone \sphinxhyphen {} Millikan}{306}{section.31.3}%
-\contentsline {section}{\numberline {31.4}Modello atomico di Rutherford \sphinxhyphen {} Geiger\sphinxhyphen {}Mardsen}{307}{section.31.4}%
-\contentsline {section}{\numberline {31.5}Lo spin \sphinxhyphen {} Stern\sphinxhyphen {}Gerlach}{309}{section.31.5}%
-\contentsline {chapter}{\numberline {32}Radioattività}{311}{chapter.32}%
-\contentsline {section}{\numberline {32.1}Storia}{311}{section.32.1}%
-\contentsline {subsection}{\numberline {32.1.1}Raggi X}{311}{subsection.32.1.1}%
-\contentsline {subsection}{\numberline {32.1.2}Radioattività}{312}{subsection.32.1.2}%
-\contentsline {subsection}{\numberline {32.1.3}J.J.Thomson}{312}{subsection.32.1.3}%
-\contentsline {subsection}{\numberline {32.1.4}E.Rutherford}{312}{subsection.32.1.4}%
-\contentsline {subsection}{\numberline {32.1.5}N.Bohr}{313}{subsection.32.1.5}%
-\contentsline {section}{\numberline {32.2}Applicazioni}{313}{section.32.2}%
-\contentsline {section}{\numberline {32.3}Riferimenti}{313}{section.32.3}%
-\contentsline {section}{\numberline {32.4}Esercizi}{314}{section.32.4}%
-\contentsline {chapter}{\numberline {33}Teoria di Einstein}{315}{chapter.33}%
-\contentsline {section}{\numberline {33.1}Relatività ristretta}{315}{section.33.1}%
-\contentsline {section}{\numberline {33.2}Relatività generale}{315}{section.33.2}%
-\contentsline {chapter}{\numberline {34}Meccanica quantistica}{317}{chapter.34}%
-\contentsline {section}{\numberline {34.1}Esperienze all’origine della meccanica quantistica}{317}{section.34.1}%
-\contentsline {subsection}{\numberline {34.1.1}Radiazione di corpo nero \sphinxhyphen {} Planck}{317}{subsection.34.1.1}%
-\contentsline {subsubsection}{Legge di Planck}{317}{subsubsection*.320}%
-\contentsline {subsubsection}{Legge di Wien}{317}{subsubsection*.321}%
-\contentsline {subsubsection}{Legge di Stefan\sphinxhyphen {}Boltzmann}{317}{subsubsection*.322}%
-\contentsline {subsection}{\numberline {34.1.2}Effetto fotoelettrico \sphinxhyphen {} Einstein}{317}{subsection.34.1.2}%
-\contentsline {subsection}{\numberline {34.1.3}Modelli atomici}{317}{subsection.34.1.3}%
-\contentsline {section}{\numberline {34.2}Origine della meccanica quantistica}{317}{section.34.2}%
-\contentsline {chapter}{\numberline {35}Sviluppi dell’astronomia}{319}{chapter.35}%
-\contentsline {section}{\numberline {35.1}Classificazione stellare}{320}{section.35.1}%
-\contentsline {subsection}{\numberline {35.1.1}Caratteristiche di una stella}{320}{subsection.35.1.1}%
-\contentsline {subsection}{\numberline {35.1.2}Diagramma di Hertzsprung\sphinxhyphen {}Russell}{321}{subsection.35.1.2}%
-\contentsline {section}{\numberline {35.2}Scala delle distanze cosmiche}{321}{section.35.2}%
-\contentsline {subsection}{\numberline {35.2.1}Dimensioni Terra}{321}{subsection.35.2.1}%
-\contentsline {subsection}{\numberline {35.2.2}Distanza Terra\sphinxhyphen {}Luna e dimensioni Luna}{322}{subsection.35.2.2}%
-\contentsline {subsection}{\numberline {35.2.3}Dimensioni Sole e Distanza Sole\sphinxhyphen {}Luna}{322}{subsection.35.2.3}%
-\contentsline {subsection}{\numberline {35.2.4}Orbite pianeti}{322}{subsection.35.2.4}%
-\contentsline {subsection}{\numberline {35.2.5}Stelle vicine}{322}{subsection.35.2.5}%
-\contentsline {subsection}{\numberline {35.2.6}Stelle lontane}{322}{subsection.35.2.6}%
-\contentsline {subsection}{\numberline {35.2.7}La Via Lattea}{324}{subsection.35.2.7}%
-\contentsline {subsection}{\numberline {35.2.8}Stelle remote e altre galassie}{324}{subsection.35.2.8}%
-\contentsline {subsection}{\numberline {35.2.9}Riferimenti}{324}{subsection.35.2.9}%
-\contentsline {chapter}{\numberline {36}Introduzione al modello standard}{325}{chapter.36}%
-\contentsline {section}{\numberline {36.1}Breve cronologia}{325}{section.36.1}%
-\contentsline {section}{\numberline {36.2}Raggi cosmici}{326}{section.36.2}%
-\contentsline {section}{\numberline {36.3}Il modello standard}{327}{section.36.3}%
-\contentsline {subsection}{\numberline {36.3.1}Introduzione}{327}{subsection.36.3.1}%
-\contentsline {subsection}{\numberline {36.3.2}Lagrangiana}{327}{subsection.36.3.2}%
-\contentsline {subsection}{\numberline {36.3.3}Forze e interazione fondamentali}{327}{subsection.36.3.3}%
-\contentsline {subsection}{\numberline {36.3.4}I leptoni}{327}{subsection.36.3.4}%
-\contentsline {subsection}{\numberline {36.3.5}L’antimateria}{327}{subsection.36.3.5}%
-\contentsline {subsection}{\numberline {36.3.6}I quark}{327}{subsection.36.3.6}%
-\contentsline {subsection}{\numberline {36.3.7}Il bosone di Higgs}{327}{subsection.36.3.7}%
-\contentsline {subsection}{\numberline {36.3.8}Supersimmetria}{327}{subsection.36.3.8}%
-\contentsline {section}{\numberline {36.4}Dizionario}{327}{section.36.4}%
-\contentsline {chapter}{\numberline {37}Fenomeni termo\sphinxhyphen {}elettrici nella materia}{329}{chapter.37}%
-\contentsline {chapter}{\numberline {38}Fotografia}{331}{chapter.38}%
-\contentsline {part}{IX\hspace {1em}Indice}{333}{part.9}%
-\contentsline {chapter}{\numberline {39}Indice}{335}{chapter.39}%
-\contentsline {chapter}{Proof Index}{337}{section*.331}%
+\contentsline {chapter}{\numberline {27}Strumenti di misura}{289}{chapter.27}%
+\contentsline {section}{\numberline {27.1}Accelerometri}{289}{section.27.1}%
+\contentsline {subsection}{\numberline {27.1.1}Accelerometro capacitivo, MEMS}{289}{subsection.27.1.1}%
+\contentsline {chapter}{\numberline {28}Onde elettromagnetiche}{291}{chapter.28}%
+\contentsline {section}{\numberline {28.1}Esperimenti di Hertz}{292}{section.28.1}%
+\contentsline {section}{\numberline {28.2}Luce e spettro elettromagnetico}{292}{section.28.2}%
+\contentsline {section}{\numberline {28.3}Spettrografia}{292}{section.28.3}%
+\contentsline {section}{\numberline {28.4}Problemi}{293}{section.28.4}%
+\contentsline {chapter}{\numberline {29}Effetti foto\sphinxhyphen {}termo\sphinxhyphen {}elettro\sphinxhyphen {}meccanici}{297}{chapter.29}%
+\contentsline {section}{\numberline {29.1}Effetti termoelettrici: Seebeck, Peltier, Thomson}{297}{section.29.1}%
+\contentsline {section}{\numberline {29.2}Piroelettricità}{297}{section.29.2}%
+\contentsline {section}{\numberline {29.3}Piezoelettricità}{298}{section.29.3}%
+\contentsline {section}{\numberline {29.4}Effetto fotoelettrico}{298}{section.29.4}%
+\contentsline {part}{VIII\hspace {1em}Fisica moderna}{299}{part.8}%
+\contentsline {chapter}{\numberline {30}Introduzione alla fisica del XX secolo}{301}{chapter.30}%
+\contentsline {chapter}{\numberline {31}Esperienze ed esperimenti}{303}{chapter.31}%
+\contentsline {section}{\numberline {31.1}Materia}{303}{section.31.1}%
+\contentsline {section}{\numberline {31.2}Interazione luce\sphinxhyphen {}materia}{304}{section.31.2}%
+\contentsline {subsection}{\numberline {31.2.1}Effetto fotoelettrico}{304}{subsection.31.2.1}%
+\contentsline {subsection}{\numberline {31.2.2}Radiazione di corpo nero}{304}{subsection.31.2.2}%
+\contentsline {subsection}{\numberline {31.2.3}Calore specifico dei solidi}{304}{subsection.31.2.3}%
+\contentsline {section}{\numberline {31.3}Relatività}{304}{section.31.3}%
+\contentsline {subsection}{\numberline {31.3.1}Relatività speciale}{304}{subsection.31.3.1}%
+\contentsline {subsection}{\numberline {31.3.2}Relatività generale}{304}{subsection.31.3.2}%
+\contentsline {chapter}{\numberline {32}Esperimenti}{305}{chapter.32}%
+\contentsline {section}{\numberline {32.1}Scoperta dell’elettrone \sphinxhyphen {} J.J.Thomson}{305}{section.32.1}%
+\contentsline {section}{\numberline {32.2}La radioattività \sphinxhyphen {} Esperimento dei coniugi Curie}{308}{section.32.2}%
+\contentsline {section}{\numberline {32.3}Misura della carica dell’elettrone \sphinxhyphen {} Millikan}{308}{section.32.3}%
+\contentsline {section}{\numberline {32.4}Modello atomico di Rutherford \sphinxhyphen {} Geiger\sphinxhyphen {}Mardsen}{309}{section.32.4}%
+\contentsline {section}{\numberline {32.5}Lo spin \sphinxhyphen {} Stern\sphinxhyphen {}Gerlach}{311}{section.32.5}%
+\contentsline {chapter}{\numberline {33}Radioattività}{313}{chapter.33}%
+\contentsline {section}{\numberline {33.1}Storia}{313}{section.33.1}%
+\contentsline {subsection}{\numberline {33.1.1}Raggi X}{313}{subsection.33.1.1}%
+\contentsline {subsection}{\numberline {33.1.2}Radioattività}{314}{subsection.33.1.2}%
+\contentsline {subsection}{\numberline {33.1.3}J.J.Thomson}{314}{subsection.33.1.3}%
+\contentsline {subsection}{\numberline {33.1.4}E.Rutherford}{314}{subsection.33.1.4}%
+\contentsline {subsection}{\numberline {33.1.5}N.Bohr}{315}{subsection.33.1.5}%
+\contentsline {section}{\numberline {33.2}Applicazioni}{315}{section.33.2}%
+\contentsline {section}{\numberline {33.3}Riferimenti}{315}{section.33.3}%
+\contentsline {section}{\numberline {33.4}Esercizi}{316}{section.33.4}%
+\contentsline {chapter}{\numberline {34}Teoria di Einstein}{317}{chapter.34}%
+\contentsline {section}{\numberline {34.1}Relatività ristretta}{317}{section.34.1}%
+\contentsline {section}{\numberline {34.2}Relatività generale}{317}{section.34.2}%
+\contentsline {chapter}{\numberline {35}Meccanica quantistica}{319}{chapter.35}%
+\contentsline {section}{\numberline {35.1}Esperienze all’origine della meccanica quantistica}{319}{section.35.1}%
+\contentsline {subsection}{\numberline {35.1.1}Radiazione di corpo nero \sphinxhyphen {} Planck}{319}{subsection.35.1.1}%
+\contentsline {subsubsection}{Legge di Planck}{319}{subsubsection*.321}%
+\contentsline {subsubsection}{Legge di Wien}{319}{subsubsection*.322}%
+\contentsline {subsubsection}{Legge di Stefan\sphinxhyphen {}Boltzmann}{319}{subsubsection*.323}%
+\contentsline {subsection}{\numberline {35.1.2}Effetto fotoelettrico \sphinxhyphen {} Einstein}{319}{subsection.35.1.2}%
+\contentsline {subsection}{\numberline {35.1.3}Modelli atomici}{319}{subsection.35.1.3}%
+\contentsline {section}{\numberline {35.2}Origine della meccanica quantistica}{319}{section.35.2}%
+\contentsline {chapter}{\numberline {36}Sviluppi dell’astronomia}{321}{chapter.36}%
+\contentsline {section}{\numberline {36.1}Classificazione stellare}{322}{section.36.1}%
+\contentsline {subsection}{\numberline {36.1.1}Caratteristiche di una stella}{322}{subsection.36.1.1}%
+\contentsline {subsection}{\numberline {36.1.2}Diagramma di Hertzsprung\sphinxhyphen {}Russell}{323}{subsection.36.1.2}%
+\contentsline {section}{\numberline {36.2}Scala delle distanze cosmiche}{323}{section.36.2}%
+\contentsline {subsection}{\numberline {36.2.1}Dimensioni Terra}{323}{subsection.36.2.1}%
+\contentsline {subsection}{\numberline {36.2.2}Distanza Terra\sphinxhyphen {}Luna e dimensioni Luna}{324}{subsection.36.2.2}%
+\contentsline {subsection}{\numberline {36.2.3}Dimensioni Sole e Distanza Sole\sphinxhyphen {}Luna}{324}{subsection.36.2.3}%
+\contentsline {subsection}{\numberline {36.2.4}Orbite pianeti}{324}{subsection.36.2.4}%
+\contentsline {subsection}{\numberline {36.2.5}Stelle vicine}{324}{subsection.36.2.5}%
+\contentsline {subsection}{\numberline {36.2.6}Stelle lontane}{324}{subsection.36.2.6}%
+\contentsline {subsection}{\numberline {36.2.7}La Via Lattea}{326}{subsection.36.2.7}%
+\contentsline {subsection}{\numberline {36.2.8}Stelle remote e altre galassie}{326}{subsection.36.2.8}%
+\contentsline {subsection}{\numberline {36.2.9}Riferimenti}{326}{subsection.36.2.9}%
+\contentsline {chapter}{\numberline {37}Introduzione al modello standard}{327}{chapter.37}%
+\contentsline {section}{\numberline {37.1}Breve cronologia}{327}{section.37.1}%
+\contentsline {section}{\numberline {37.2}Raggi cosmici}{328}{section.37.2}%
+\contentsline {section}{\numberline {37.3}Il modello standard}{329}{section.37.3}%
+\contentsline {subsection}{\numberline {37.3.1}Introduzione}{329}{subsection.37.3.1}%
+\contentsline {subsection}{\numberline {37.3.2}Lagrangiana}{329}{subsection.37.3.2}%
+\contentsline {subsection}{\numberline {37.3.3}Forze e interazione fondamentali}{329}{subsection.37.3.3}%
+\contentsline {subsection}{\numberline {37.3.4}I leptoni}{329}{subsection.37.3.4}%
+\contentsline {subsection}{\numberline {37.3.5}L’antimateria}{329}{subsection.37.3.5}%
+\contentsline {subsection}{\numberline {37.3.6}I quark}{329}{subsection.37.3.6}%
+\contentsline {subsection}{\numberline {37.3.7}Il bosone di Higgs}{329}{subsection.37.3.7}%
+\contentsline {subsection}{\numberline {37.3.8}Supersimmetria}{329}{subsection.37.3.8}%
+\contentsline {section}{\numberline {37.4}Dizionario}{329}{section.37.4}%
+\contentsline {chapter}{\numberline {38}Fenomeni termo\sphinxhyphen {}elettrici nella materia}{331}{chapter.38}%
+\contentsline {chapter}{\numberline {39}Fotografia}{333}{chapter.39}%
+\contentsline {part}{IX\hspace {1em}Indice}{335}{part.9}%
+\contentsline {chapter}{\numberline {40}Indice}{337}{chapter.40}%
+\contentsline {chapter}{Proof Index}{339}{section*.332}%
