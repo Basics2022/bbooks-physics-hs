@@ -88,7 +88,7 @@ Un trasduttore è uno strumento che legge una grandezza in ingresso $u$ e ne pro
 
 (physics-hs:intro:measurements:instruments:intrusivity)=
 ### Intrusività
-L'intrusività di una misura può essere definita come la modifica del processo sotto indagine a causa della strumentazione necessaria alla misura delle grandezze di interesse.
+L'intrusività di una misura può essere definita come l'entità della modifica del processo sotto indagine introdotta dalla strumentazione necessaria alla misura delle grandezze di interesse.
 
 L'intrusività di alcuni strumenti verrà indagata durante il corso. Viene fatto qui un elenco degli strumenti di cui verrà discussa l'intrusività nel sistema:
 - meccanica:
