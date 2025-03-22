@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>12.7. Gravitazione &#8212; Fisica per le superiori</title>
+    <title>12.8. Gravitazione &#8212; Fisica per le superiori</title>
   
   
   
@@ -71,8 +71,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon-sugar.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="12.8. Moti centrali" href="dynamics-central.html" />
-    <link rel="prev" title="12.6. Collisioni" href="dynamics-collisions.html" />
+    <link rel="next" title="12.9. Moti centrali" href="dynamics-central.html" />
+    <link rel="prev" title="12.7. Collisioni" href="dynamics-collisions.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -251,13 +251,14 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="dynamics-principles.html">12.1. Princìpi della dinamica di Newton</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-eom.html">12.2. Equazioni cardinali della dinamica per sistemi chiusi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-conservation.html">12.3. Leggi di conservazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-examples.html">12.4. Esempi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-eom-open.html">12.5. Equazioni cardinali della dinamica per sistemi aperti</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-collisions.html">12.6. Collisioni</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">12.7. Gravitazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-central.html">12.8. Moti centrali</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-problems.html">12.9. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-notes.html">12.10. Note e dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-equilibrium-stability.html">12.4. Equilibrio e stabilità</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-examples.html">12.5. Esempi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-eom-open.html">12.6. Equazioni cardinali della dinamica per sistemi aperti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-collisions.html">12.7. Collisioni</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">12.8. Gravitazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-central.html">12.9. Moti centrali</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-problems.html">12.10. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-notes.html">12.11. Note e dimostrazioni</a></li>
 
 </ul>
 </li>
@@ -606,11 +607,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gravitazione-universale">12.7.1. Legge di gravitazione universale</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leggi-di-keplero">12.7.2. Leggi di Keplero</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-dei-due-corpi">12.7.3. Problema dei due corpi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-coniche-ed-energia">12.7.3.1. Traiettorie, coniche, ed energia</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-chiuse-e-leggi-di-keplero">12.7.3.2. Traiettorie chiuse e leggi di Keplero</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gravitazione-universale">12.8.1. Legge di gravitazione universale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leggi-di-keplero">12.8.2. Leggi di Keplero</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-dei-due-corpi">12.8.3. Problema dei due corpi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-coniche-ed-energia">12.8.3.1. Traiettorie, coniche, ed energia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-chiuse-e-leggi-di-keplero">12.8.3.2. Traiettorie chiuse e leggi di Keplero</a></li>
 </ul>
 </li>
 </ul>
@@ -645,7 +646,7 @@ kernelspec:
 ```
 -->
 <div class="tex2jax_ignore mathjax_ignore section" id="gravitazione">
-<span id="physics-hs-mechanics-dynamics-motion-gravitation"></span><h1><span class="section-number">12.7. </span>Gravitazione<a class="headerlink" href="#gravitazione" title="Permalink to this heading">#</a></h1>
+<span id="physics-hs-mechanics-dynamics-motion-gravitation"></span><h1><span class="section-number">12.8. </span>Gravitazione<a class="headerlink" href="#gravitazione" title="Permalink to this heading">#</a></h1>
 <!--
 - legge di gravitazione universale
 - problema dei due corpi
@@ -661,7 +662,7 @@ kernelspec:
 -->
 <p>Newton formula anche la prima teoria della gravitazione, riconoscendola come causa unica del moto dei corpi celesti e della caduta dei corpi nei pressi della superficie terrestre.</p>
 <div class="section" id="legge-di-gravitazione-universale">
-<span id="physics-hs-mechanics-dynamics-motion-gravitation-newton"></span><h2><span class="section-number">12.7.1. </span>Legge di gravitazione universale<a class="headerlink" href="#legge-di-gravitazione-universale" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-mechanics-dynamics-motion-gravitation-newton"></span><h2><span class="section-number">12.8.1. </span>Legge di gravitazione universale<a class="headerlink" href="#legge-di-gravitazione-universale" title="Permalink to this heading">#</a></h2>
 <p>La <strong>legge di gravitazione universale</strong> formulata da Newton prevede che un corpo di massa <span class="math notranslate nohighlight">\(m_1\)</span> che si trova nel punto <span class="math notranslate nohighlight">\(P_1\)</span> è soggetto alla forza di attrazione</p>
 <div class="math notranslate nohighlight">
 \[\vec{F}_{10} = G \, m_0 \, m_1 \frac{P_0 - P_1}{\ \left| P_0 - P_1 \right|^3} \ ,\]</div>
@@ -671,7 +672,7 @@ kernelspec:
 <p>che prende il nome di <strong>costante di gravitazione universale</strong>.</p>
 </div>
 <div class="section" id="leggi-di-keplero">
-<h2><span class="section-number">12.7.2. </span>Leggi di Keplero<a class="headerlink" href="#leggi-di-keplero" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">12.8.2. </span>Leggi di Keplero<a class="headerlink" href="#leggi-di-keplero" title="Permalink to this heading">#</a></h2>
 <p>Le equazioni della dinamica e la legge di gravitazione universale da lui formulate, permise a Newton di dimostrare le <strong>tre leggi di Keplero</strong> che descrivono il moto <em>limitato</em> (<strong>todo</strong> <em>trovare sinonimo</em>) di due corpi celesti, come ad esempio il moto di un pianeta rispetto al Sole, o il moto di un satellite rispetto al pianeta di riferimento.</p>
 <div class="proof definition admonition" id="kepler-law-1">
 <p class="admonition-title"><span class="caption-number">Definition 12.2 </span> (Prima legge di Keplero)</p>
@@ -692,7 +693,7 @@ kernelspec:
 </div>
 </div></div>
 <div class="section" id="problema-dei-due-corpi">
-<span id="physics-hs-mechanics-dynamics-motion-gravitation-two-bodies"></span><h2><span class="section-number">12.7.3. </span>Problema dei due corpi<a class="headerlink" href="#problema-dei-due-corpi" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-mechanics-dynamics-motion-gravitation-two-bodies"></span><h2><span class="section-number">12.8.3. </span>Problema dei due corpi<a class="headerlink" href="#problema-dei-due-corpi" title="Permalink to this heading">#</a></h2>
 <p>In meccanica classica, il problema dei due corpi si riferisce alla dinamica di un sistema formato da due corpi puntiformi soggetti unicamente alla mutua interazione gravitazionale, descritta dalla legge di gravitazione universale di Newton.</p>
 <p>Il sistema formato dai due punti è un sistema chiuso e isolato, sul quale non agiscono azioni esterne. La quantità di moto rispetto a un sistema di riferimento inerziale rimane quindi costante. Rimane quindi costante la velocità del centro di massa <span class="math notranslate nohighlight">\(G\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -719,7 +720,7 @@ kernelspec:
 <div class="math notranslate nohighlight">
 \[m_1 \, \ddot{\vec{r}} = - G M m_1 \frac{\vec{r}}{r^3} \ .\]</div>
 <div class="section" id="traiettorie-coniche-ed-energia">
-<span id="physics-hs-mechanics-dynamics-motion-gravitation-two-bodies-energy-and-conics"></span><h3><span class="section-number">12.7.3.1. </span>Traiettorie, coniche, ed energia<a class="headerlink" href="#traiettorie-coniche-ed-energia" title="Permalink to this heading">#</a></h3>
+<span id="physics-hs-mechanics-dynamics-motion-gravitation-two-bodies-energy-and-conics"></span><h3><span class="section-number">12.8.3.1. </span>Traiettorie, coniche, ed energia<a class="headerlink" href="#traiettorie-coniche-ed-energia" title="Permalink to this heading">#</a></h3>
 <p>E” possibile dimostrare che il moto di ognuno dei due corpi è un moto piano, e che la traiettoria avviene descrive una conica.</p>
 <ul class="simple">
 <li><p><strong>todo</strong> Dimostrare che il moto è piano</p></li>
@@ -747,7 +748,7 @@ kernelspec:
 </ul>
 </div>
 <div class="section" id="traiettorie-chiuse-e-leggi-di-keplero">
-<span id="physics-hs-mechanics-dynamics-motion-gravitation-two-bodies-kepler"></span><h3><span class="section-number">12.7.3.2. </span>Traiettorie chiuse e leggi di Keplero<a class="headerlink" href="#traiettorie-chiuse-e-leggi-di-keplero" title="Permalink to this heading">#</a></h3>
+<span id="physics-hs-mechanics-dynamics-motion-gravitation-two-bodies-kepler"></span><h3><span class="section-number">12.8.3.2. </span>Traiettorie chiuse e leggi di Keplero<a class="headerlink" href="#traiettorie-chiuse-e-leggi-di-keplero" title="Permalink to this heading">#</a></h3>
 <p><strong>Prima legge.</strong> Un pianeta descrive un’orbita ellittica attorno al Sole, che si trova in uno dei due fuochi.</p>
 <p><strong>Seconda legge legge.</strong> Considerando l’area descritta dal moto del pianeta attorno al Sole, la velocità angolare è costante lungo la traiettoria.</p>
 <p><strong>Terza legge.</strong> In un sistema di pianeti, il quadrato del periodo delle orbite descritte dai pianeti è proporzionale al cubo del semiasse maggiore della traiettoria, <span class="math notranslate nohighlight">\(T^2 \propto a^3\)</span>.</p>
@@ -897,7 +898,7 @@ a & = \frac{1}{2} \left( r(0)+r(\pi) \right) = \\
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">12.6. </span>Collisioni</p>
+        <p class="prev-next-title"><span class="section-number">12.7. </span>Collisioni</p>
       </div>
     </a>
     <a class="right-next"
@@ -905,7 +906,7 @@ a & = \frac{1}{2} \left( r(0)+r(\pi) \right) = \\
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">12.8. </span>Moti centrali</p>
+        <p class="prev-next-title"><span class="section-number">12.9. </span>Moti centrali</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -924,11 +925,11 @@ a & = \frac{1}{2} \left( r(0)+r(\pi) \right) = \\
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gravitazione-universale">12.7.1. Legge di gravitazione universale</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leggi-di-keplero">12.7.2. Leggi di Keplero</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-dei-due-corpi">12.7.3. Problema dei due corpi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-coniche-ed-energia">12.7.3.1. Traiettorie, coniche, ed energia</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-chiuse-e-leggi-di-keplero">12.7.3.2. Traiettorie chiuse e leggi di Keplero</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gravitazione-universale">12.8.1. Legge di gravitazione universale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leggi-di-keplero">12.8.2. Leggi di Keplero</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-dei-due-corpi">12.8.3. Problema dei due corpi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-coniche-ed-energia">12.8.3.1. Traiettorie, coniche, ed energia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traiettorie-chiuse-e-leggi-di-keplero">12.8.3.2. Traiettorie chiuse e leggi di Keplero</a></li>
 </ul>
 </li>
 </ul>

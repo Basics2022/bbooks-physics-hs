@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>12.5. Equazioni cardinali della dinamica per sistemi aperti &#8212; Fisica per le superiori</title>
+    <title>12.6. Equazioni cardinali della dinamica per sistemi aperti &#8212; Fisica per le superiori</title>
   
   
   
@@ -71,8 +71,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon-sugar.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="12.6. Collisioni" href="dynamics-collisions.html" />
-    <link rel="prev" title="12.4. Esempi" href="dynamics-examples.html" />
+    <link rel="next" title="12.7. Collisioni" href="dynamics-collisions.html" />
+    <link rel="prev" title="12.5. Esempi" href="dynamics-examples.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -251,13 +251,14 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="dynamics-principles.html">12.1. Princìpi della dinamica di Newton</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-eom.html">12.2. Equazioni cardinali della dinamica per sistemi chiusi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dynamics-conservation.html">12.3. Leggi di conservazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-examples.html">12.4. Esempi</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">12.5. Equazioni cardinali della dinamica per sistemi aperti</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-collisions.html">12.6. Collisioni</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-motion-gravitation.html">12.7. Gravitazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-central.html">12.8. Moti centrali</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-problems.html">12.9. Problemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dynamics-notes.html">12.10. Note e dimostrazioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-equilibrium-stability.html">12.4. Equilibrio e stabilità</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-examples.html">12.5. Esempi</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">12.6. Equazioni cardinali della dinamica per sistemi aperti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-collisions.html">12.7. Collisioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-motion-gravitation.html">12.8. Gravitazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-central.html">12.9. Moti centrali</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-problems.html">12.10. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamics-notes.html">12.11. Note e dimostrazioni</a></li>
 
 </ul>
 </li>
@@ -606,10 +607,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-della-massa">12.5.1. Bilancio della massa</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-della-quantita-di-moto">12.5.2. Bilancio della quantità di moto</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-del-momento-della-quantita-di-moto">12.5.3. Bilancio del momento della quantità di moto</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">12.5.4. Esempi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-della-massa">12.6.1. Bilancio della massa</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-della-quantita-di-moto">12.6.2. Bilancio della quantità di moto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-del-momento-della-quantita-di-moto">12.6.3. Bilancio del momento della quantità di moto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">12.6.4. Esempi</a></li>
 </ul>
             </nav>
         </div>
@@ -622,7 +623,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="equazioni-cardinali-della-dinamica-per-sistemi-aperti">
-<span id="physics-hs-mechanics-dynamics-eom-open"></span><h1><span class="section-number">12.5. </span>Equazioni cardinali della dinamica per sistemi aperti<a class="headerlink" href="#equazioni-cardinali-della-dinamica-per-sistemi-aperti" title="Permalink to this heading">#</a></h1>
+<span id="physics-hs-mechanics-dynamics-eom-open"></span><h1><span class="section-number">12.6. </span>Equazioni cardinali della dinamica per sistemi aperti<a class="headerlink" href="#equazioni-cardinali-della-dinamica-per-sistemi-aperti" title="Permalink to this heading">#</a></h1>
 <p>Nelle sezioni precedenti, i <a class="reference internal" href="dynamics-eom.html#physics-hs-mechanics-dynamics-eom"><span class="std std-ref">principi della dinamica</span></a>, le <a class="reference internal" href="dynamics-eom.html#physics-hs-mechanics-dynamics-eom"><span class="std std-ref">equazioni cardinali</span></a> e le <a class="reference internal" href="dynamics-conservation.html#physics-hs-mechanics-dynamics-conservation"><span class="std std-ref">leggi di conservazione</span></a> sono state presentate per i <strong>sistemi chiusi</strong>, che non scambiano massa con l’ambiente esterno.</p>
 <p>In questa sezione si presentano i bilanci di massa, quantità di moto e energia cinetica per sistemi aperti; pur non potendo dare una dimostrazione rigorosa, si mostra il procedimento generale per ricavare un bilancio per un sistema aperto dal corrisponte bilancio per un sistema chiuso.</p>
 <p>Questi risultati verranno applicati successivamente per:</p>
@@ -632,18 +633,18 @@ document.write(`
 <li><p>…</p></li>
 </ul>
 <div class="section" id="bilancio-della-massa">
-<span id="physics-hs-mechanics-dynamics-eom-open-mass"></span><h2><span class="section-number">12.5.1. </span>Bilancio della massa<a class="headerlink" href="#bilancio-della-massa" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-mechanics-dynamics-eom-open-mass"></span><h2><span class="section-number">12.6.1. </span>Bilancio della massa<a class="headerlink" href="#bilancio-della-massa" title="Permalink to this heading">#</a></h2>
 </div>
 <div class="section" id="bilancio-della-quantita-di-moto">
-<span id="physics-hs-mechanics-dynamics-eom-open-momentum"></span><h2><span class="section-number">12.5.2. </span>Bilancio della quantità di moto<a class="headerlink" href="#bilancio-della-quantita-di-moto" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-mechanics-dynamics-eom-open-momentum"></span><h2><span class="section-number">12.6.2. </span>Bilancio della quantità di moto<a class="headerlink" href="#bilancio-della-quantita-di-moto" title="Permalink to this heading">#</a></h2>
 </div>
 <div class="section" id="bilancio-del-momento-della-quantita-di-moto">
-<span id="physics-hs-mechanics-dynamics-eom-open-angular-momentum"></span><h2><span class="section-number">12.5.3. </span>Bilancio del momento della quantità di moto<a class="headerlink" href="#bilancio-del-momento-della-quantita-di-moto" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-mechanics-dynamics-eom-open-angular-momentum"></span><h2><span class="section-number">12.6.3. </span>Bilancio del momento della quantità di moto<a class="headerlink" href="#bilancio-del-momento-della-quantita-di-moto" title="Permalink to this heading">#</a></h2>
 </div>
 <div class="section" id="esempi">
-<h2><span class="section-number">12.5.4. </span>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">12.6.4. </span>Esempi<a class="headerlink" href="#esempi" title="Permalink to this heading">#</a></h2>
 <div class="proof example dropdown admonition" id="mechanics:dynamics:open:ex:boat">
-<p class="admonition-title"><span class="caption-number">Example 12.8 </span> (Sistemi discreti - Moto di una barca per reazione)</p>
+<p class="admonition-title"><span class="caption-number">Example 12.9 </span> (Sistemi discreti - Moto di una barca per reazione)</p>
 <div class="example-content section" id="proof-content">
 <p>Una barca di massa <span class="math notranslate nohighlight">\(M\)</span> è stata caricata con <span class="math notranslate nohighlight">\(N\)</span> palle di cannone, ciascuna di massa <span class="math notranslate nohighlight">\(m\)</span>, così che la massa totale è <span class="math notranslate nohighlight">\(M = M_0 + N m\)</span>. La barca si muove lungo una traiettoria rettilinea, inizialmente con velocità <span class="math notranslate nohighlight">\(\vec{v}_0 = v_0 \hat{x}\)</span>. Sulla barca è presente un cannone in grado di sparare i proiettili esattamente nella stessa direzione della traiettoria, con un a velocità relativa di <span class="math notranslate nohighlight">\(\vec{v}_p - \vec{v}^- = \vec{v}_p^{rel,-} = - v^{rel} \hat{x}\)</span>, con <span class="math notranslate nohighlight">\(v^{rel} &gt; 0\)</span>, rispetto alla velocità della barca <strong>prima dello sparo</strong>, <span class="math notranslate nohighlight">\(\vec{v}^-\)</span>.</p>
 <p>Viene chiesto di determinare la velocità della barca dopo <span class="math notranslate nohighlight">\(n \le N\)</span> spari. <strong>todo</strong> <em>e di determinare dopo quanti spari, i proiettili vengono sparati nella stessa direzione «assoluta» in cui si muove la barca</em></p>
@@ -700,7 +701,7 @@ Approccio 2. Conservazione della quantità di moto di un sistema aperto costitui
 </div>
 </details></div>
 </div><div class="proof example dropdown admonition" id="mechanics:dynamics:open:ex:carousel">
-<p class="admonition-title"><span class="caption-number">Example 12.9 </span> (Sistemi discreti - Moto di una giostra per reazione)</p>
+<p class="admonition-title"><span class="caption-number">Example 12.10 </span> (Sistemi discreti - Moto di una giostra per reazione)</p>
 <div class="example-content section" id="proof-content">
 <p>Una giostra è libera di ruotare attorno al suo centro, grazie a una cerniera cilindrica. Sulla giostra, sono state caricate delle palline di massa <span class="math notranslate nohighlight">\(m\)</span>, posizionate al bordo della giostra, che vengono lanciate in direzione tangenziale alla giostra da un marchingegno che riesce a fornire alle palline una velocità relativa rispetto alla velocità prima del lancio uguale a <span class="math notranslate nohighlight">\(v_p^{rel}\)</span>. La giostra ha raggio <span class="math notranslate nohighlight">\(R\)</span> e massa <span class="math notranslate nohighlight">\(M\)</span>.</p>
 <!--
@@ -744,7 +745,7 @@ Approccio 2. Conservazione della quantità di moto di un sistema aperto costitui
 </div>
 </details></div>
 </div><div class="proof example dropdown admonition" id="mechanics:dynamics:open:ex:rockets">
-<p class="admonition-title"><span class="caption-number">Example 12.10 </span> (Sistemi continui - Equazione della spinta per i razzi - Tsiolkovski)</p>
+<p class="admonition-title"><span class="caption-number">Example 12.11 </span> (Sistemi continui - Equazione della spinta per i razzi - Tsiolkovski)</p>
 <div class="example-content section" id="proof-content">
 <p>L’equazione della spinta per i razzi - di Tsiolkovski <strong>todo</strong> <em>un po” di storia? riferimento all’astronomia? riferimenti alla dinamica gravitazionale?</em> - è una prima approssimazione del moto di un razzo a reazione, cioè che usa lo scarico di gas ad alta velocità come mezzo di spinta. Il sistema formato dalla struttura del razzo e il contenuto di combustibile e gas all’interno della struttura del razzo è un sistema aperto, che può scambiare materia attraverso la sezione dell’ugello. L’equazione permette di ricavare la velocità del razzo in funzione dell’espulsione della massa e della velocità effettiva, relativa, di espulsione dei gas dal razzo. L’equazione può essere ricavata usando i bilanci di massa e di quantità di moto per sistemi aperti,</p>
 <div class="math notranslate nohighlight">
@@ -819,7 +820,7 @@ La quantità di moto del sistema al tempo <span class="math notranslate nohighli
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">12.4. </span>Esempi</p>
+        <p class="prev-next-title"><span class="section-number">12.5. </span>Esempi</p>
       </div>
     </a>
     <a class="right-next"
@@ -827,7 +828,7 @@ La quantità di moto del sistema al tempo <span class="math notranslate nohighli
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">12.6. </span>Collisioni</p>
+        <p class="prev-next-title"><span class="section-number">12.7. </span>Collisioni</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -846,10 +847,10 @@ La quantità di moto del sistema al tempo <span class="math notranslate nohighli
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-della-massa">12.5.1. Bilancio della massa</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-della-quantita-di-moto">12.5.2. Bilancio della quantità di moto</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-del-momento-della-quantita-di-moto">12.5.3. Bilancio del momento della quantità di moto</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">12.5.4. Esempi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-della-massa">12.6.1. Bilancio della massa</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-della-quantita-di-moto">12.6.2. Bilancio della quantità di moto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-del-momento-della-quantita-di-moto">12.6.3. Bilancio del momento della quantità di moto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi">12.6.4. Esempi</a></li>
 </ul>
   </nav></div>
 
