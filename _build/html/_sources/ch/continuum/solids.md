@@ -130,8 +130,10 @@ $$J_y = \int_A x^2 \, dA = \int_{x=-\frac{a}{2}}^{\frac{a}{2}} \int_{y=-\frac{b}
 
 (continuum:solids:instability)=
 ### Instabilità
-- Esempi di instabilità di punta: spaghetto
+- Esempi di instabilità di punta (esempio di [instabilità parametrica](physics-hs:mechanics:equilibrium-stability:parametric-instability)): spaghetto, trave, pannelli in aeronautica (ma specializzazione dei componenti strutturali, niente paura!)
 - Modello strutturale discreto
+
+
 
 (continuum:solids:fatigue)=
 ### Fatica nei solidi

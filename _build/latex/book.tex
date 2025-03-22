@@ -87,7 +87,7 @@
         
 
 \title{Fisica per le superiori}
-\date{22 mar 2025}
+\date{23 mar 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -3419,7 +3419,7 @@ Un corpo di massa \(2 \, \text{kg}\) scivola senza attrito da un’altezza di \(
 \chapter{Statica}
 \label{\detokenize{ch/mechanics/statics:statica}}\label{\detokenize{ch/mechanics/statics:physics-hs-mechanics-statics}}\label{\detokenize{ch/mechanics/statics::doc}}
 \sphinxAtStartPar
-La statica si occupa dello studio delle condizioni di equilibrio di un sistema, cioè le condizioni in cui un sistema rimane in quiete anche quando soggetto ad {\hyperref[\detokenize{ch/mechanics/actions:physics-hs-mechanics-actions}]{\sphinxcrossref{\DUrole{std,std-ref}{azioni}}}} esterne. La condizione di equilibrio di un sistema meccanico corrisponde a configurazioni particolari costanti nel tempo. Nelle condizioni di equilibrio quindi le {\hyperref[\detokenize{ch/mechanics/dynamics:physics-hs-mechanics-dynamics}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni della dinamica}}}} si riducono a equazioni algebriche vettoriali che rappresentano \sphinxstylestrong{equilibrio di forze} e \sphinxstylestrong{equilibrio dei momenti} (nel caso di sistemi estesi) esterni agenti su un sistema.
+La statica si occupa dello studio delle condizioni di \sphinxstylestrong{equilibrio} di un sistema, cioè le condizioni in cui un sistema rimane in quiete anche quando soggetto ad {\hyperref[\detokenize{ch/mechanics/actions:physics-hs-mechanics-actions}]{\sphinxcrossref{\DUrole{std,std-ref}{azioni}}}} esterne. La condizione di equilibrio di un sistema meccanico corrisponde a configurazioni particolari costanti nel tempo. Nelle condizioni di equilibrio quindi le {\hyperref[\detokenize{ch/mechanics/dynamics:physics-hs-mechanics-dynamics}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni della dinamica}}}} si riducono a equazioni algebriche vettoriali che rappresentano \sphinxstylestrong{equilibrio di forze} e \sphinxstylestrong{equilibrio dei momenti} (nel caso di sistemi estesi) esterni agenti su un sistema.
 
 \sphinxAtStartPar
 In generale le condizioni di equilibrio dipendono dalla natura del sistema. Come si vedrà meglio nelle sezioni di questo capitolo,
@@ -4491,6 +4491,24 @@ Un corpo rigido di massa \(m = 15 \, \text{kg}\) e momento di inerzia \$I =
 \chapter{Dinamica}
 \label{\detokenize{ch/mechanics/dynamics:dinamica}}\label{\detokenize{ch/mechanics/dynamics:physics-hs-mechanics-dynamics}}\label{\detokenize{ch/mechanics/dynamics::doc}}
 \sphinxAtStartPar
+\sphinxstylestrong{todo}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Sistemare l’introuzione e il capitolo
+
+\item {} 
+\sphinxAtStartPar
+Aggiungere i concetti di \sphinxstylestrong{equilibrio} e \sphinxstylestrong{stabilità}. Fare riferimento alla capitolo sulla {\hyperref[\detokenize{ch/mechanics/statics:physics-hs-mechanics-statics}]{\sphinxcrossref{\DUrole{std,std-ref}{statica}}}}, se necessario
+
+\item {} 
+\sphinxAtStartPar
+…
+
+
+\end{itemize}
+
+\sphinxAtStartPar
 La dinamica si occupa del moto dei sistemi e delle cause del moto, mettendo insieme la descrizione cinematica, l’inerzia dei sistemi a perseverare nel moto, e le cause di una variazione del moto.
 
 \sphinxAtStartPar
@@ -4782,12 +4800,54 @@ segue immediatamente che, in assenza di azioni non\sphinxhyphen{}conservative l�
 \sphinxstepscope
 
 
+\section{Equilibrio e stabilità}
+\label{\detokenize{ch/mechanics/dynamics-equilibrium-stability:equilibrio-e-stabilita}}\label{\detokenize{ch/mechanics/dynamics-equilibrium-stability:physics-hs-mechanics-equilibrium-stability}}\label{\detokenize{ch/mechanics/dynamics-equilibrium-stability::doc}}
+\sphinxAtStartPar
+Fare riferimento al capitolo sulla {\hyperref[\detokenize{ch/mechanics/statics:physics-hs-mechanics-statics}]{\sphinxcrossref{\DUrole{std,std-ref}{statica}}}}, branca della fisica che si occupa dello studio dei sistemi in equilibrio.
+
+\sphinxAtStartPar
+…
+
+
+\subsection{Rappresentazione della dinamica nel piano delle fasi}
+\label{\detokenize{ch/mechanics/dynamics-equilibrium-stability:rappresentazione-della-dinamica-nel-piano-delle-fasi}}
+
+\subsection{Instabilità parametrica}
+\label{\detokenize{ch/mechanics/dynamics-equilibrium-stability:instabilita-parametrica}}\label{\detokenize{ch/mechanics/dynamics-equilibrium-stability:physics-hs-mechanics-equilibrium-stability-parametric-instability}}
+\sphinxAtStartPar
+L’instabilità parametrica è un fenomeno legato alle biforcazioni e alla teoria del caos.
+\label{ch/mechanics/dynamics-equilibrium-stability:parametric-instability-buclking}
+\begin{sphinxadmonition}{note}{Example 12.4.1 (Instabilità di punta)}
+
+
+
+\sphinxAtStartPar
+Questo esempio può essere interpretato come un modello discreto elementare del problema dell”\sphinxstylestrong{instabilità al carico di punta}, discusso nella sezione sui {\hyperref[\detokenize{ch/continuum/solids:continuum-solids-instability}]{\sphinxcrossref{\DUrole{std,std-ref}{solidi, in meccanica del continuo}}}}
+\begin{equation*}
+\begin{split}m L^2 \ddot{\theta} + k \theta = F L \sin \theta \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il numero e la stabilità delle configurazioni di equilibrio dipende dal rapporto \(f = \frac{F}{kL}\).
+
+\sphinxAtStartPar
+\sphinxstylestrong{Configurazioni di equilibrio.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Stabilità dell’equilibrio.}
+
+\sphinxAtStartPar
+ \sphinxstylestrong{todo} grafico soluzioni e stabilità in funzione del parametro \(f\) 
+\end{sphinxadmonition}
+
+\sphinxstepscope
+
+
 \section{Esempi}
 \label{\detokenize{ch/mechanics/dynamics-examples:esempi}}\label{\detokenize{ch/mechanics/dynamics-examples:physics-hs-mechanics-dynamics-examples}}\label{\detokenize{ch/mechanics/dynamics-examples::doc}}
 
 \subsection{Pendolo}
 \label{\detokenize{ch/mechanics/dynamics-examples:pendolo}}\label{\detokenize{ch/mechanics/dynamics-examples:physics-hs-mechanics-dynamics-examples-pendulum}}\label{ch/mechanics/dynamics-examples:pendulum-free}
-\begin{sphinxadmonition}{note}{Example 12.4.1 (Oscillazioni libere \sphinxhyphen{} Isocronismo delle piccole oscillazioni)}
+\begin{sphinxadmonition}{note}{Example 12.5.1 (Oscillazioni libere \sphinxhyphen{} Isocronismo delle piccole oscillazioni)}
 
 
 
@@ -4814,22 +4874,22 @@ equazione tipica di un sistema massa\sphinxhyphen{}molla, il cui stato ha un and
 E” immediato notare l”\sphinxstylestrong{isocronismo del pendolo} nel regime di \sphinxstylestrong{piccole oscillazioni}: la pulsazione e quindi il periodo dell’oscillazione non dipendono dall’ampiezza \(\theta_0\) dell’oscillazione.
 \end{sphinxadmonition}
 \label{ch/mechanics/dynamics-examples:pendulum-free-damped}
-\begin{sphinxadmonition}{note}{Example 12.4.2 (Oscillazioni con dissipazione)}
+\begin{sphinxadmonition}{note}{Example 12.5.2 (Oscillazioni con dissipazione)}
 
 
 \end{sphinxadmonition}
 \label{ch/mechanics/dynamics-examples:pendulum-free-damped-forced}
-\begin{sphinxadmonition}{note}{Example 12.4.3 (Oscillazioni con dissipazione e forzante)}
+\begin{sphinxadmonition}{note}{Example 12.5.3 (Oscillazioni con dissipazione e forzante)}
 
 
 \end{sphinxadmonition}
 \label{ch/mechanics/dynamics-examples:pendulum-noninertial-acceleration}
-\begin{sphinxadmonition}{note}{Example 12.4.4 (Pendolo in sistemi non inerziali \sphinxhyphen{} Accelerazione)}
+\begin{sphinxadmonition}{note}{Example 12.5.4 (Pendolo in sistemi non inerziali \sphinxhyphen{} Accelerazione)}
 
 
 \end{sphinxadmonition}
 \label{ch/mechanics/dynamics-examples:pendulum-noninertial-earth-rotation}
-\begin{sphinxadmonition}{note}{Example 12.4.5 (Pendolo in sistemi non inerziali \sphinxhyphen{} Rotazione della Terra)}
+\begin{sphinxadmonition}{note}{Example 12.5.5 (Pendolo in sistemi non inerziali \sphinxhyphen{} Rotazione della Terra)}
 
 
 \end{sphinxadmonition}
@@ -4874,7 +4934,7 @@ la derivazione dell”{\hyperref[\detokenize{ch/waves/waves-in-physics:physics-h
 
 \subsection{Esempi}
 \label{\detokenize{ch/mechanics/dynamics-eom-open:esempi}}\label{ch/mechanics/dynamics-eom-open:mechanics:dynamics:open:ex:boat}
-\begin{sphinxadmonition}{note}{Example 12.5.1 (Sistemi discreti \sphinxhyphen{} Moto di una barca per reazione)}
+\begin{sphinxadmonition}{note}{Example 12.6.1 (Sistemi discreti \sphinxhyphen{} Moto di una barca per reazione)}
 
 
 
@@ -4933,7 +4993,7 @@ La velocità \(v_{n+1}\) può quindi essere riportata alla velocità \(v_0\) som
 \begin{split}\vec{v}_{n+1} - \vec{v}_n = \frac{m}{M_{n+1}} \vec{v}_p^{rel} \ .\end{split}
 \end{equation*}\end{sphinxadmonition}
 \label{ch/mechanics/dynamics-eom-open:mechanics:dynamics:open:ex:carousel}
-\begin{sphinxadmonition}{note}{Example 12.5.2 (Sistemi discreti \sphinxhyphen{} Moto di una giostra per reazione)}
+\begin{sphinxadmonition}{note}{Example 12.6.2 (Sistemi discreti \sphinxhyphen{} Moto di una giostra per reazione)}
 
 
 
@@ -4977,7 +5037,7 @@ per ricavare una relazione che lega la variazione di velocità angolare alla var
 essendo \(I = I_0 + N m R^2\) l’inerzia iniziale dell’intero sistema.
 \end{sphinxadmonition}
 \label{ch/mechanics/dynamics-eom-open:mechanics:dynamics:open:ex:rockets}
-\begin{sphinxadmonition}{note}{Example 12.5.3 (Sistemi continui \sphinxhyphen{} Equazione della spinta per i razzi \sphinxhyphen{} Tsiolkovski)}
+\begin{sphinxadmonition}{note}{Example 12.6.3 (Sistemi continui \sphinxhyphen{} Equazione della spinta per i razzi \sphinxhyphen{} Tsiolkovski)}
 
 
 
@@ -6267,7 +6327,7 @@ che prende il nome di \sphinxstylestrong{costante di gravitazione universale}.
 \sphinxAtStartPar
 Le equazioni della dinamica e la legge di gravitazione universale da lui formulate, permise a Newton di dimostrare le \sphinxstylestrong{tre leggi di Keplero} che descrivono il moto \sphinxstyleemphasis{limitato} (\sphinxstylestrong{todo} \sphinxstyleemphasis{trovare sinonimo}) di due corpi celesti, come ad esempio il moto di un pianeta rispetto al Sole, o il moto di un satellite rispetto al pianeta di riferimento.
 \label{ch/mechanics/dynamics-motion-gravitation:kepler-law-1}
-\begin{sphinxadmonition}{note}{Definition 12.7.1 (Prima legge di Keplero)}
+\begin{sphinxadmonition}{note}{Definition 12.8.1 (Prima legge di Keplero)}
 
 
 
@@ -6275,7 +6335,7 @@ Le equazioni della dinamica e la legge di gravitazione universale da lui formula
 Il moto di un pianeta rispetto al Sole descrive una traiettoria ellittica, e il Sole si trova in uno dei suoi fuochi.
 \end{sphinxadmonition}
 \label{ch/mechanics/dynamics-motion-gravitation:kepler-law-2}
-\begin{sphinxadmonition}{note}{Definition 12.7.2 (Seconda legge di Keplero)}
+\begin{sphinxadmonition}{note}{Definition 12.8.2 (Seconda legge di Keplero)}
 
 
 
@@ -6283,7 +6343,7 @@ Il moto di un pianeta rispetto al Sole descrive una traiettoria ellittica, e il 
 Il moto di un pianeta rispetto al Sole ha una velocità areolare costante.
 \end{sphinxadmonition}
 \label{ch/mechanics/dynamics-motion-gravitation:kepler-law-3}
-\begin{sphinxadmonition}{note}{Definition 12.7.3 (Terza legge di Keplero)}
+\begin{sphinxadmonition}{note}{Definition 12.8.3 (Terza legge di Keplero)}
 
 
 
@@ -8405,7 +8465,7 @@ Per una sezione rettangolare di base \(a\) e di altezza \(b\),
 \label{\detokenize{ch/continuum/solids:instabilita}}\label{\detokenize{ch/continuum/solids:continuum-solids-instability}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-Esempi di instabilità di punta: spaghetto
+Esempi di instabilità di punta (esempio di {\hyperref[\detokenize{ch/mechanics/dynamics-equilibrium-stability:physics-hs-mechanics-equilibrium-stability-parametric-instability}]{\sphinxcrossref{\DUrole{std,std-ref}{instabilità parametrica}}}}): spaghetto, trave, pannelli in aeronautica (ma specializzazione dei componenti strutturali, niente paura!)
 
 \item {} 
 \sphinxAtStartPar
@@ -13918,7 +13978,7 @@ Poiché la materia è costituita da componenti elementari \sphinxhyphen{} non co
 Le applicazioni che sfruttano i fenomeni elettromagnetici sono diffuse in ogni ambito della vita contemporanea…
 
 \sphinxAtStartPar
-Per il ruolo centrale che svolte l”{\hyperref[\detokenize{ch/intro/measurements:physics-hs-intro-measurements}]{\sphinxcrossref{\DUrole{std,std-ref}{attività di misurazione}}}} in fisica e in ambito scientifico, i fenomeni elettromagnetici risultano ancora più importanti in ambito scientifico, poiché sono i princìpi che permettono la realizzazione di strumenti di misura di qualità. Princìpi di elettromagnetismo, elettrotecnica ed elettronica sono fondamentali per la comprensione del funzionamento di molti strumenti di misura. Alcuni esempi verranno discussi in una {\hyperref[\detokenize{ch/electromagnetism/electrical-engineering-instruments:physics-hs-electromagnetism-instruments}]{\sphinxcrossref{\DUrole{std,std-ref}{apposita sezione}}}}.
+Per il ruolo centrale che svolge l”{\hyperref[\detokenize{ch/intro/measurements:physics-hs-intro-measurements}]{\sphinxcrossref{\DUrole{std,std-ref}{attività di misurazione}}}} in fisica e in ambito scientifico, i fenomeni elettromagnetici risultano ancora più importanti in ambito scientifico, poiché sono i princìpi che permettono la realizzazione di strumenti di misura di qualità. Princìpi di elettromagnetismo, elettrotecnica ed elettronica sono quindi fondamentali per la comprensione del funzionamento di molti strumenti di misura. Alcuni esempi verranno discussi in una {\hyperref[\detokenize{ch/electromagnetism/electrical-engineering-instruments:physics-hs-electromagnetism-instruments}]{\sphinxcrossref{\DUrole{std,std-ref}{apposita sezione}}}}.
 
 
 \bigskip\hrule\bigskip
@@ -19734,6 +19794,9 @@ Lumière
 \indexspace
 \bigletter{ohm\sphinxhyphen{}wire}
 \item\relax\sphinxstyleindexentry{ohm\sphinxhyphen{}wire}\sphinxstyleindexextra{ch/electromagnetism/electric\sphinxhyphen{}current}\sphinxstyleindexpageref{ch/electromagnetism/electric-current:\detokenize{ohm-wire}}
+\indexspace
+\bigletter{parametric\sphinxhyphen{}instability\sphinxhyphen{}buclking}
+\item\relax\sphinxstyleindexentry{parametric\sphinxhyphen{}instability\sphinxhyphen{}buclking}\sphinxstyleindexextra{ch/mechanics/dynamics\sphinxhyphen{}equilibrium\sphinxhyphen{}stability}\sphinxstyleindexpageref{ch/mechanics/dynamics-equilibrium-stability:\detokenize{parametric-instability-buclking}}
 \indexspace
 \bigletter{pendulum\sphinxhyphen{}free}
 \item\relax\sphinxstyleindexentry{pendulum\sphinxhyphen{}free}\sphinxstyleindexextra{ch/mechanics/dynamics\sphinxhyphen{}examples}\sphinxstyleindexpageref{ch/mechanics/dynamics-examples:\detokenize{pendulum-free}}

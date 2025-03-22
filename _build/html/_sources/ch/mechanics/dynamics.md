@@ -9,6 +9,12 @@
 (physics-hs:mechanics:dynamics)=
 # Dinamica
 
+<span style="color:red">**todo** 
+- Sistemare l'introuzione e il capitolo
+- Aggiungere i concetti di **equilibrio** e **stabilità**. Fare riferimento alla capitolo sulla [statica](physics-hs:mechanics:statics), se necessario
+- ...
+</span>
+
 La dinamica si occupa del moto dei sistemi e delle cause del moto, mettendo insieme la descrizione cinematica, l'inerzia dei sistemi a perseverare nel moto, e le cause di una variazione del moto.
 
 **Princìpi della dinamica.** Vengono discussi i tre principi della dinamica di Newton e il significato della relatività galileiana.
