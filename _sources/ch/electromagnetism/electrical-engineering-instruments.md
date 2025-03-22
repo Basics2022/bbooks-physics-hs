@@ -14,7 +14,9 @@
 
   o separando lo stato $x$ dello strumento, dall'ingresso $a_{out} := \ddot{x}_{out}$,
 
-  $$m \ddot{x} + c \dot{x} + k x = a_{out} \ ,$$
+  $$m \ddot{x} + c \dot{x} + k x = - a_{out} \ ,$$
+
+**todo** *Per convenienza, se quel segno meno disturba, si può definire lo spostamento relativo in direzione opposta a quella usata per definire lo spostamento assoluto e ottenere quindi $m \ddot{x} + c \dot{x} + k x = a_{out}$. Riferimento all'[invarianza](physics-hs:todo:invariance)*
 
 - parte elettrica. Lettura della variabile in uscita funzione dello spostamento relativo della massa sospesa rispetto al telaio dello strumento, $y(x)$. Questo legame viene ricavato dall'analisi del circuito elettrico dello strumento {prf:ref}`mems-accelerometer-circuit`
 
