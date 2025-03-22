@@ -16,7 +16,7 @@
 
   $$m \ddot{x} + c \dot{x} + k x = a_{out} \ ,$$
 
-- parte elettrica. Lettura della variabile in uscita funzione dello spostamento relativo della massa sospesa rispetto al telaio dello strumento, $y(x)$. Questo legame viene ricavato dall'analisi del circuito elettrico dello strumento {eq}`mems-accelerometer-circuit`
+- parte elettrica. Lettura della variabile in uscita funzione dello spostamento relativo della massa sospesa rispetto al telaio dello strumento, $y(x)$. Questo legame viene ricavato dall'analisi del circuito elettrico dello strumento {prf:ref}`mems-accelerometer-circuit`
 
 
 ```{prf:example} Circuito elettrico dello strumento
