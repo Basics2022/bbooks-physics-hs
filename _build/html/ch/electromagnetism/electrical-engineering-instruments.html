@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/electromagnetism/electrical-engineering-instruments';</script>
     <link rel="shortcut icon" href="../../_static/favicon-sugar.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
@@ -625,6 +627,28 @@ document.write(`
 <span id="physics-hs-electromagnetism-instruments-accelerometer"></span><h2><span class="section-number">26.1. </span>Accelerometri<a class="headerlink" href="#accelerometri" title="Permalink to this heading">#</a></h2>
 <div class="section" id="accelerometro-capacitivo-mems">
 <span id="physics-hs-electromagnetism-instruments-accelerometer-mems"></span><h3><span class="section-number">26.1.1. </span>Accelerometro capacitivo, MEMS<a class="headerlink" href="#accelerometro-capacitivo-mems" title="Permalink to this heading">#</a></h3>
+<ul>
+<li><p>parte meccanica MMS. Equazioni in un sistema di riferimento non inerziale, <span class="math notranslate nohighlight">\(\tilde{x} = x + x_{out}\)</span>, con <span class="math notranslate nohighlight">\(\tilde{x}\)</span> lo spostamento rispetto a un sistema inerziale, <span class="math notranslate nohighlight">\(x_{out}\)</span> lo spostamento del telaio dello strumento, preso come sistema non inerziale del quale vogliamo misurare l’accelerazione, e <span class="math notranslate nohighlight">\(x\)</span> lo spostamento relativo rispetto al telaio di una massa sospesa</p>
+<div class="math notranslate nohighlight">
+\[m \dfrac{d^2}{dt^2}(x + x_{out}) + c \dfrac{d x}{dt} + k x = 0 \, \]</div>
+<p>o separando lo stato <span class="math notranslate nohighlight">\(x\)</span> dello strumento, dall’ingresso <span class="math notranslate nohighlight">\(a_{out} := \ddot{x}_{out}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[m \ddot{x} + c \dot{x} + k x = a_{out} \ ,\]</div>
+</li>
+<li><p>parte elettrica. Lettura della variabile in uscita funzione dello spostamento relativo della massa sospesa rispetto al telaio dello strumento, <span class="math notranslate nohighlight">\(y(x)\)</span>. Questo legame viene ricavato dall’analisi del circuito elettrico dello strumento <code class="xref eq docutils literal notranslate"><span class="pre">mems-accelerometer-circuit</span></code></p></li>
+</ul>
+<div class="proof example admonition" id="mems-accelerometer-circuit">
+<p class="admonition-title"><span class="caption-number">Example 26.1 </span> (Circuito elettrico dello strumento)</p>
+<div class="example-content section" id="proof-content">
+<p><strong>todo</strong> A partire da un modello semplice, a modelli più complessi (con più condensatori, per aumentarne la sensitività), per poi ricondursi a problemi semplici agli effetti esterni grazie alla capacità equivalente del circuito</p>
+<ul class="simple">
+<li><p>discutere legame ingresso-uscita: non-lineare! (ma facilmente correggibile!!!); sensibilità</p></li>
+<li><p>discutere i modi per aumentare la sensibilità dello strumento</p></li>
+<li><p>calcolo della capacità equivalente di circuiti con più condensatori (magari con uno script…)</p></li>
+</ul>
+</div>
+</div><p><span style="color:red">Add a sketch or a picture of a real-world MEMS accelerometer, and provide a model</span></p>
+<p><strong>Cross-referencing.</strong> Questo strumento è stato discusso nell’introduzione agli <a class="reference internal" href="../intro/measurements.html#physics-hs-intro-measurements-order"><span class="std std-ref">strumenti di misura</span></a>, e presentato come esempio di strumento del secondo ordine.</p>
 </div>
 </div>
 </div>
