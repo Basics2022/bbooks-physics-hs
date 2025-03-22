@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/intro';</script>
     <link rel="shortcut icon" href="../_static/favicon-sugar.svg"/>
     <link rel="index" title="Indice" href="../genindex.html" />
@@ -608,80 +610,106 @@ document.write(`
   <div class="tex2jax_ignore mathjax_ignore section" id="introduzione-alla-fisica">
 <span id="physics-hs-intro"></span><h1><span class="section-number">1. </span>Introduzione alla fisica<a class="headerlink" href="#introduzione-alla-fisica" title="Permalink to this heading">#</a></h1>
 <p>La fisica si occupa dello studio della natura, di tutti i fenomeni naturali che possono essere descritti tramite un processo di <strong>misura</strong> di <strong>grandezze fisiche</strong>; l’indagine si basa sul <strong>metodo scientifico</strong> con lo scopo di formulare alcuni princìpi sui quali costruire un modello o una teoria fisica, tramite un processo deduttivo che fa uso degli strumenti della logica e della matematica.</p>
-<ul class="simple">
-<li><p>metodo scientifico:</p>
-<ul>
-<li><p>metodo induttivo/metodo deduttivo, o due fasi di un processo?</p></li>
-<li><p>una nuova teoria scientifica deve essere in grado di fornire previsioni che i modelli già presenti non sono in grado di dare</p></li>
-<li><p><strong>principio di falsificabilità di Popper</strong> - o <strong>possibilità di confutazione</strong>: la conoscenza è un processo in continua evoluzione; una teoria scientifica è tale solo se si espone alla possibilità di essere falsificata; una teoria scientifica; una teoria scientifica viene considerata valida (almeno entro alcuni limiti dei fenomeni studiati) fino a quando non viene dimostrata erronea: «non basta un numero elevato di esperimenti per dimostrare la validità di un modello, ma è sufficiente un solo esperimento per dimostrare che quel modello è sbagliato». La scienza non può essere verificata, ma al contrario può essere falsificata.</p></li>
-<li><p>Questo procedimento viene riassunto nel <a class="reference external" href="https://basics2022.github.io/bbooks-programming-hs/ch/statistics/hp-test.html#test-di-verifica-delle-ipotesi">test di verifica delle ipotesi di Fisher</a></p></li>
-</ul>
-</li>
-</ul>
-<p><strong>Metrologia e misura.</strong></p>
-<ul class="simple">
-<li><p>Grandezza fisica</p></li>
-<li><p>…</p></li>
-</ul>
-<p><strong>Metodo scientifico.</strong></p>
-<ul class="simple">
-<li><p>Inferenza</p></li>
-<li><p>Falsificabilità</p></li>
-</ul>
-<p><strong>Costruzione modelli e teorie fisiche.</strong> Grazie al metodo scientifico è possibile riconoscere le leggi fisiche. Un modello fisico è il risultato di un processo di astrazione e rappresentazione di fenomeno fisico osservato, utilizzando il linguaggio della matematica. Una teoria fisica viene costruita:</p>
-<ul class="simple">
-<li><p>a partire da un numero limitato di leggi fisiche indipendenti tra di loro - cioè sono un numero minimo di informazioni, necessarie per costruire una teoria - in accordo con le attività sperimentali, usati come <strong>princìpi della teoria</strong>; in generale, questi princìpi:</p>
-<ul>
-<li><p>possono mostrare limiti di validità, definiti anche dall’accuratezza richiesta al modello;</p></li>
-<li><p>non sono dimostrabili all’interno della teoria stessa: essi sono il punto di partenza della teoria stessa, e se fossero dimostrabili, non sarebbero affermazioni indipendenti - e quindi si potrebbe ridurre l’insieme dei princìpi della teoria;</p></li>
-<li><p>devono essere in accordo con i risultati di teorie fisiche più dettagliate, quando disponibili.</p></li>
-</ul>
-</li>
-<li><p>usando gli strumenti della <strong>logica</strong> e della <strong>matematica</strong> per:</p>
-<ul>
-<li><p>costruire modelli dei fenomeni fisici</p></li>
-<li><p>derivando risultati e conseguenze dei princìpi; secondo il metodo scientifico, nella fase di sviluppo di una nuova teoria o di un modello, queste conseguenze devono essere sottoposte alla verifica sperimentale:</p>
-<ul>
-<li><p>una teoria scientifica è sempre soggetta a falsificabilità</p></li>
-<li><p>i modelli costruiti possono essere affetti da incertezza, o inaccuratezza per la mancata rappresentazione di tutti i fenomeni coinvolti. In ambito ingegneristico, la verifica tra modello matematico e fisico è spesso un’attività fondamentale e avviene tramite la taratura di alcuni parametri del modello.</p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
 <p><strong>Contenuti.</strong></p>
-<ul class="simple">
-<li><p>Metodo scientifico:</p>
-<ul>
-<li><p>ricerca di princìpi fisici in accordo con le attività sperimentali</p></li>
-<li><p>deduzione di una teoria, a partire dai princìpi</p></li>
-</ul>
-</li>
-<li><p>Grandezze fisiche:</p>
-<ul>
-<li><p>fondamentali e derivate</p>
-<ul>
-<li><p>lunghezza, aree e volumi</p></li>
-<li><p>massa e densità</p></li>
-<li><p>tempo</p></li>
-</ul>
-</li>
-<li><p>processo e strumenti di misura:</p>
-<ul>
-<li><p>logica <strong>todo</strong> <em>?</em></p></li>
-<li><p>analisi dati, errori</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>Astrazione</strong> e costruzione di <strong>modelli</strong>, con il linguaggio matematico</p></li>
-<li><p>Rappresentazione dei dati</p>
-<ul>
-<li><p>…</p></li>
-</ul>
-</li>
-<li><p>Sapere attuale</p></li>
-</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference internal" href="intro/physical_quantities.html#physics-hs-intro-physical-quantities"><span class="std std-ref">Grandezze fisiche</span></a><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Dopo aver dato la definizione di una grandezza fisica, viene presentato il sistema internazionale di unità di misura (SI) attualmente in uso, distinguendo tra le unità di misura fondamentali e quelle derivate. Nelle sezioni successive viene fatta una prima discussione discorsiva di alcune grandezze fisiche.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference internal" href="intro/measurements.html#physics-hs-intro-measurements"><span class="std std-ref">Processo di misura</span></a><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Viene definita l’attività di misurazione di una grandezza fisica. Viene fornito un modello generale di uno strumento di misura, e vengono definite <strong>accuratezza</strong> e <strong>precisione</strong> in termini di valore medio e deviazione standard di una serie di misurazioni. Vengono poi presentate alcune caratteristiche degli strumenti di misura (fondo scala, risoluzione, linearità, sensibilità; ordine dello strumento: funzione di trasferimento, banda passante, guadagno,…); infine viene discussa l’intrusività dello strumento di misura nel sistema.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference internal" href="intro/scientific-method.html#physics-hs-intro-scientific-method"><span class="std std-ref">Metodo scientifico</span></a><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Viene discusso il metodo scientifico. Viene introdotto il principio di falsificabilità di Popper, e viene illustrato il metodo di Fisher per il test di validità delle ipotesi.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference internal" href="intro/sensing.html#physics-hs-intro-sensing"><span class="std std-ref">Sensi</span></a><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Dopo aver introdotto le grandezze fisiche, gli strumenti di misura, e la necessità del metodo scientifico per la costruzione della conoscenza su esperienze e misure riproducibili, vengono discussi alcuni sensi dell’essere umano, trattando i nostri recettori e i nostri organi che portano all’elaborazione dell’informazione da parte del cervello come un sistema di misura. Con questa discussione dovrebbe risultare chiaro come mai «i nostri sensi ci possono ingannare», o meglio perché i nostri sensi sono strumenti di misura limitati.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference internal" href="intro/current-status.html#physics-hs-intro-current-status"><span class="std std-ref">Stato corrente</span></a><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Infine viene discusso lo stato corrente del sapere, almeno la parte ben consolidata e che ha già avuto applicazioni diffuse, che risulterà molto utile per affrontare e comprendere la costruzione di alcune teorie e modelli, prima di affrontarli nella loro parte più quantitativa/matematica.
+Vengono poi discussi i limiti di applicazione di alcune teorie fisiche: in alcuni casi i limiti sono dovuti alla caduta della validità del modello con previsioni sbagliate, in altri casi opposti si manifestano limiti pratici di modelli dettagliati che forniscono le stesse previsioni di modelli più semplici a un costo <span class="math notranslate nohighlight">\(O((10^{23})^n)\)</span> volte superiore.</p>
+<p class="sd-card-text"><span style="color:red">Uncomment! And fill the secion</span></p>
+<!--
+ In particolare
+- la **teoria atomica della materia** affermatasi nel XIX secolo, riconosce che la materia è composta da componenti elementari, gli atomi
+- i primordiali **modelli atomici** sviluppati a inizio XX secolo (Rutherford) riconoscono che gli atomi non sono così elementari come si pensava, ma che sono dei sistemi elettricamente neutri, con un nucleo positivo e degli elettroni negativi,
+Queste due teorie forniscono alcuni modelli microscopici per spiegare il comportamento macroscopico dei sistemi trattati nei capitoli sulla termodinamica e sull'elettromagnetismo.
+-->
+</div>
+</details><p><span style="color:red">Uncomment</span></p>
+<!--
+- metodo scientifico: 
+  - metodo induttivo/metodo deduttivo, o due fasi di un processo?
+  - una nuova teoria scientifica deve essere in grado di fornire previsioni che i modelli già presenti non sono in grado di dare
+  - **principio di falsificabilità di Popper** - o **possibilità di confutazione**: la conoscenza è un processo in continua evoluzione; una teoria scientifica è tale solo se si espone alla possibilità di essere falsificata; una teoria scientifica; una teoria scientifica viene considerata valida (almeno entro alcuni limiti dei fenomeni studiati) fino a quando non viene dimostrata erronea: "non basta un numero elevato di esperimenti per dimostrare la validità di un modello, ma è sufficiente un solo esperimento per dimostrare che quel modello è sbagliato". La scienza non può essere verificata, ma al contrario può essere falsificata.
+  - Questo procedimento viene riassunto nel [test di verifica delle ipotesi di Fisher](https://basics2022.github.io/bbooks-programming-hs/ch/statistics/hp-test.html#test-di-verifica-delle-ipotesi)
+
+
+**Metrologia e misura.**
+- Grandezza fisica
+- ...
+
+**Metodo scientifico.**
+- Inferenza
+- Falsificabilità
+
+**Costruzione modelli e teorie fisiche.** Grazie al metodo scientifico è possibile riconoscere le leggi fisiche. Un modello fisico è il risultato di un processo di astrazione e rappresentazione di fenomeno fisico osservato, utilizzando il linguaggio della matematica. Una teoria fisica viene costruita:
+- a partire da un numero limitato di leggi fisiche indipendenti tra di loro - cioè sono un numero minimo di informazioni, necessarie per costruire una teoria - in accordo con le attività sperimentali, usati come **princìpi della teoria**; in generale, questi princìpi:
+  - possono mostrare limiti di validità, definiti anche dall'accuratezza richiesta al modello;
+  - non sono dimostrabili all'interno della teoria stessa: essi sono il punto di partenza della teoria stessa, e se fossero dimostrabili, non sarebbero affermazioni indipendenti - e quindi si potrebbe ridurre l'insieme dei princìpi della teoria;
+  - devono essere in accordo con i risultati di teorie fisiche più dettagliate, quando disponibili.
+- usando gli strumenti della **logica** e della **matematica** per:
+  - costruire modelli dei fenomeni fisici
+  - derivando risultati e conseguenze dei princìpi; secondo il metodo scientifico, nella fase di sviluppo di una nuova teoria o di un modello, queste conseguenze devono essere sottoposte alla verifica sperimentale:
+    - una teoria scientifica è sempre soggetta a falsificabilità
+    - i modelli costruiti possono essere affetti da incertezza, o inaccuratezza per la mancata rappresentazione di tutti i fenomeni coinvolti. In ambito ingegneristico, la verifica tra modello matematico e fisico è spesso un'attività fondamentale e avviene tramite la taratura di alcuni parametri del modello.
+
+**Contenuti.**
+- Metodo scientifico:
+  - ricerca di princìpi fisici in accordo con le attività sperimentali
+  - deduzione di una teoria, a partire dai princìpi
+- Grandezze fisiche:
+  - fondamentali e derivate
+    - lunghezza, aree e volumi
+    - massa e densità
+    - tempo
+  - processo e strumenti di misura:
+    - logica **todo** *?*
+    - analisi dati, errori
+- **Astrazione** e costruzione di **modelli**, con il linguaggio matematico
+- Rappresentazione dei dati
+  - ...
+- Sapere attuale
+
+-->
 </div>
 
     <script type="text/x-thebe-config">
