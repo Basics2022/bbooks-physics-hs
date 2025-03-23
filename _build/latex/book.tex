@@ -248,6 +248,27 @@ risposta in frequenza di {\hyperref[\detokenize{ch/intro/measurements:physics-hs
 \sphinxstepscope
 
 
+\section{Approccio}
+\label{\detokenize{ch/approach:approccio}}\label{\detokenize{ch/approach:physics-hs-approach}}\label{\detokenize{ch/approach::doc}}
+
+\section{Competenze trasversali}
+\label{\detokenize{ch/approach:competenze-trasversali}}\label{\detokenize{ch/approach:physics-hs-approach-transversal}}
+\sphinxAtStartPar
+Ah, le competenze trasversali! Un obiettivo di questo lavoro è quello di provare a fornire alcune competenze trasversali a molti ambiti scientifici come:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+la statistica, l’analisi dati, e il rapporto con l’incertezza della vita reale
+
+\item {} 
+\sphinxAtStartPar
+il processo di misura, come ad esempio fatto nel capitolo sugli {\hyperref[\detokenize{ch/instrumentation/intro:instrumentation-intro}]{\sphinxcrossref{\DUrole{std,std-ref}{strumenti di misura}}}}
+
+\end{itemize}
+
+\sphinxstepscope
+
+
 \part{Introduzione alla fisica}
 
 \sphinxstepscope
@@ -1089,7 +1110,7 @@ sezione sulle ODE lineari e sulla \sphinxhref{https://basics2022.github.io/bbook
 \sphinxstylestrong{todo}
 
 \sphinxAtStartPar
-Per un esempio più dettagliato, quando si avranno le competenze sufficienti, si rimanda alla sezione sull”{\hyperref[\detokenize{ch/electromagnetism/electrical-engineering-instruments:physics-hs-electromagnetism-instruments-accelerometer-mems}]{\sphinxcrossref{\DUrole{std,std-ref}{accelerometro capacitivo MEMS}}}}
+Per un esempio più dettagliato, quando si avranno le competenze sufficienti, si rimanda alla sezione sull”{\hyperref[\detokenize{ch/instrumentation/misc:instrumentation-list-accelerometer-mems}]{\sphinxcrossref{\DUrole{std,std-ref}{accelerometro capacitivo MEMS}}}}
 \end{sphinxadmonition}
 
 
@@ -13978,7 +13999,7 @@ Poiché la materia è costituita da componenti elementari \sphinxhyphen{} non co
 Le applicazioni che sfruttano i fenomeni elettromagnetici sono diffuse in ogni ambito della vita contemporanea…
 
 \sphinxAtStartPar
-Per il ruolo centrale che svolge l”{\hyperref[\detokenize{ch/intro/measurements:physics-hs-intro-measurements}]{\sphinxcrossref{\DUrole{std,std-ref}{attività di misurazione}}}} in fisica e in ambito scientifico, i fenomeni elettromagnetici risultano ancora più importanti in ambito scientifico, poiché sono i princìpi che permettono la realizzazione di strumenti di misura di qualità. Princìpi di elettromagnetismo, elettrotecnica ed elettronica sono quindi fondamentali per la comprensione del funzionamento di molti strumenti di misura. Alcuni esempi verranno discussi in una {\hyperref[\detokenize{ch/electromagnetism/electrical-engineering-instruments:physics-hs-electromagnetism-instruments}]{\sphinxcrossref{\DUrole{std,std-ref}{apposita sezione}}}}.
+Per il ruolo centrale che svolge l”{\hyperref[\detokenize{ch/intro/measurements:physics-hs-intro-measurements}]{\sphinxcrossref{\DUrole{std,std-ref}{attività di misurazione}}}} in fisica e in ambito scientifico, i fenomeni elettromagnetici risultano ancora più importanti in ambito scientifico, poiché sono i princìpi che permettono la realizzazione di strumenti di misura di qualità. Princìpi di elettromagnetismo, elettrotecnica ed elettronica sono quindi fondamentali per la comprensione del funzionamento di molti strumenti di misura. Alcuni esempi verranno discussi in una apposita {\hyperref[\detokenize{ch/instrumentation/intro:instrumentation-intro}]{\sphinxcrossref{\DUrole{std,std-ref}{sezione dedicata agli strumenti di misura}}}}.
 
 
 \bigskip\hrule\bigskip
@@ -17472,67 +17493,6 @@ asincrono
 \sphinxstepscope
 
 
-\chapter{Strumenti di misura}
-\label{\detokenize{ch/electromagnetism/electrical-engineering-instruments:strumenti-di-misura}}\label{\detokenize{ch/electromagnetism/electrical-engineering-instruments:physics-hs-electromagnetism-instruments}}\label{\detokenize{ch/electromagnetism/electrical-engineering-instruments::doc}}
-
-\section{Accelerometri}
-\label{\detokenize{ch/electromagnetism/electrical-engineering-instruments:accelerometri}}\label{\detokenize{ch/electromagnetism/electrical-engineering-instruments:physics-hs-electromagnetism-instruments-accelerometer}}
-
-\subsection{Accelerometro capacitivo, MEMS}
-\label{\detokenize{ch/electromagnetism/electrical-engineering-instruments:accelerometro-capacitivo-mems}}\label{\detokenize{ch/electromagnetism/electrical-engineering-instruments:physics-hs-electromagnetism-instruments-accelerometer-mems}}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-parte meccanica MMS. Equazioni in un sistema di riferimento non inerziale, \(\tilde{x} = x + x_{out}\), con \(\tilde{x}\) lo spostamento rispetto a un sistema inerziale, \(x_{out}\) lo spostamento del telaio dello strumento, preso come sistema non inerziale del quale vogliamo misurare l’accelerazione, e \(x\) lo spostamento relativo rispetto al telaio di una massa sospesa
-\begin{equation*}
-\begin{split}m \dfrac{d^2}{dt^2}(x + x_{out}) + c \dfrac{d x}{dt} + k x = 0 \, \end{split}
-\end{equation*}
-\sphinxAtStartPar
-o separando lo stato \(x\) dello strumento, dall’ingresso \(a_{out} := \ddot{x}_{out}\),
-\begin{equation*}
-\begin{split}m \ddot{x} + c \dot{x} + k x = - a_{out} \ ,\end{split}
-\end{equation*}
-\end{itemize}
-
-\sphinxAtStartPar
-\sphinxstylestrong{todo} \sphinxstyleemphasis{Per convenienza, se quel segno meno disturba, si può definire lo spostamento relativo in direzione opposta a quella usata per definire lo spostamento assoluto e ottenere quindi \(m \ddot{x} + c \dot{x} + k x = a_{out}\). Riferimento all”{\hyperref[\detokenize{ch/todo:physics-hs-todo-invariance}]{\sphinxcrossref{\DUrole{std,std-ref}{invarianza}}}}}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-parte elettrica. Lettura della variabile in uscita funzione dello spostamento relativo della massa sospesa rispetto al telaio dello strumento, \(y(x)\). Questo legame viene ricavato dall’analisi del circuito elettrico dello strumento {\hyperref[\detokenize{ch/electromagnetism/electrical-engineering-instruments:mems-accelerometer-circuit}]{\sphinxcrossref{Example 26.1.1}}}
-
-\end{itemize}
-\label{ch/electromagnetism/electrical-engineering-instruments:mems-accelerometer-circuit}
-\begin{sphinxadmonition}{note}{Example 26.1.1 (Circuito elettrico dello strumento)}
-
-
-
-\sphinxAtStartPar
-\sphinxstylestrong{todo} A partire da un modello semplice, a modelli più complessi (con più condensatori, per aumentarne la sensitività), per poi ricondursi a problemi semplici agli effetti esterni grazie alla capacità equivalente del circuito
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-discutere legame ingresso\sphinxhyphen{}uscita: non\sphinxhyphen{}lineare! (ma facilmente correggibile!!!); sensibilità
-
-\item {} 
-\sphinxAtStartPar
-discutere i modi per aumentare la sensibilità dello strumento
-
-\item {} 
-\sphinxAtStartPar
-calcolo della capacità equivalente di circuiti con più condensatori (magari con uno script…)
-
-\end{itemize}
-\end{sphinxadmonition}
-
-\sphinxAtStartPar
-Add a sketch or a picture of a real\sphinxhyphen{}world MEMS accelerometer, and provide a model
-
-\sphinxAtStartPar
-\sphinxstylestrong{Cross\sphinxhyphen{}referencing.} Questo strumento è stato discusso nell’introduzione agli {\hyperref[\detokenize{ch/intro/measurements:physics-hs-intro-measurements-order}]{\sphinxcrossref{\DUrole{std,std-ref}{strumenti di misura}}}}, e presentato come esempio di strumento del secondo ordine.
-
-\sphinxstepscope
-
-
 \chapter{Onde elettromagnetiche}
 \label{\detokenize{ch/electromagnetism/em-waves:onde-elettromagnetiche}}\label{\detokenize{ch/electromagnetism/em-waves:physics-hs-electromagnetism-em-waves}}\label{\detokenize{ch/electromagnetism/em-waves::doc}}\begin{itemize}
 \item {} 
@@ -17686,7 +17646,7 @@ cercare pubblicazioni di Hertz
 \section{Problemi}
 \label{\detokenize{ch/electromagnetism/em-waves-problems:problemi}}\label{\detokenize{ch/electromagnetism/em-waves-problems:physics-hs-electromagnetism-em-waves-problems}}\label{\detokenize{ch/electromagnetism/em-waves-problems::doc}}\phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 27.4.1 (Velocità della Luce)}
+\begin{sphinxadmonition}{note}{Exercise 26.4.1 (Velocità della Luce)}
 
 
 
@@ -17695,7 +17655,7 @@ Calcola la velocità della luce in un vuoto utilizzando la costante dielettrica 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 27.4.2 (Frequenza e Lunghezza d’Onda)}
+\begin{sphinxadmonition}{note}{Exercise 26.4.2 (Frequenza e Lunghezza d’Onda)}
 
 
 
@@ -17704,7 +17664,7 @@ Un’onda elettromagnetica ha una frequenza di \(f = 60 \, \text{MHz}\). Calcola
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 27.4.3 (Energia di un Foton)}
+\begin{sphinxadmonition}{note}{Exercise 26.4.3 (Energia di un Foton)}
 
 
 
@@ -17713,7 +17673,7 @@ Calcola l’energia di un fotone di luce con una lunghezza d’onda di \(500 \, 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 27.4.4 (Legge di Snell per Onde Elettromagnetiche)}
+\begin{sphinxadmonition}{note}{Exercise 26.4.4 (Legge di Snell per Onde Elettromagnetiche)}
 
 
 
@@ -17722,7 +17682,7 @@ Un’onda elettromagnetica passa dall’aria (indice di rifrazione \(n_1 = 1\)) 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 27.4.5 (Direzione del Campo Elettrico in un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 26.4.5 (Direzione del Campo Elettrico in un’onda Elettromagnetica)}
 
 
 
@@ -17731,7 +17691,7 @@ In un’onda elettromagnetica che si propaga lungo l’asse \(z\), con il campo 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 27.4.6 (Intensità di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 26.4.6 (Intensità di un’onda Elettromagnetica)}
 
 
 
@@ -17740,7 +17700,7 @@ Se l’intensità di un’onda elettromagnetica è \(I = 8 \, \text{W/m}^2\) e l
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 27.4.7 (Energia Mediata da un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 26.4.7 (Energia Mediata da un’onda Elettromagnetica)}
 
 
 
@@ -17749,7 +17709,7 @@ Un’onda elettromagnetica ha una frequenza di \(f = 100 \, \text{MHz}\). Se l�
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 27.4.8 (Propagazione in un Medio Dielettrico)}
+\begin{sphinxadmonition}{note}{Exercise 26.4.8 (Propagazione in un Medio Dielettrico)}
 
 
 
@@ -17758,7 +17718,7 @@ Un’onda elettromagnetica si propaga in un materiale con costante dielettrica \
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 27.4.9 (Polarizzazione di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 26.4.9 (Polarizzazione di un’onda Elettromagnetica)}
 
 
 
@@ -17767,7 +17727,7 @@ Un’onda elettromagnetica viene polarizzata attraverso un filtro lineare. Se la
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 27.4.10 (Effetto Doppler per Onde Elettromagnetiche)}
+\begin{sphinxadmonition}{note}{Exercise 26.4.10 (Effetto Doppler per Onde Elettromagnetiche)}
 
 
 
@@ -17776,7 +17736,7 @@ Un’onda elettromagnetica ha una frequenza \(f = 5 \, \text{GHz}\) e viene osse
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 27.4.11 (Energia per Unità di Volume di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 26.4.11 (Energia per Unità di Volume di un’onda Elettromagnetica)}
 
 
 
@@ -17785,7 +17745,7 @@ Calcola l’energia per unità di volume in un’onda elettromagnetica che ha un
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 27.4.12 (Onda Elettromagnetica nel Vuoto)}
+\begin{sphinxadmonition}{note}{Exercise 26.4.12 (Onda Elettromagnetica nel Vuoto)}
 
 
 
@@ -17794,7 +17754,7 @@ Una radiazione elettromagnetica ha una frequenza di \(f = 2 \, \text{GHz}\). Cal
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 27.4.13 (Impedenza di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 26.4.13 (Impedenza di un’onda Elettromagnetica)}
 
 
 
@@ -17803,7 +17763,7 @@ In un’onda elettromagnetica nel vuoto, calcola l’impedenza, sapendo che la p
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 27.4.14 (Spettro Elettromagnetico)}
+\begin{sphinxadmonition}{note}{Exercise 26.4.14 (Spettro Elettromagnetico)}
 
 
 
@@ -17812,7 +17772,7 @@ Un’onda elettromagnetica appartiene alla banda delle microonde con una frequen
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 27.4.15 (Legge di Ampère\sphinxhyphen{}Maxwell)}
+\begin{sphinxadmonition}{note}{Exercise 26.4.15 (Legge di Ampère\sphinxhyphen{}Maxwell)}
 
 
 
@@ -17821,7 +17781,7 @@ Utilizzando la legge di Ampère\sphinxhyphen{}Maxwell, calcola la corrente indot
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-15}
 
-\begin{sphinxadmonition}{note}{Exercise 27.4.16 (Direzione di Propagazione di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 26.4.16 (Direzione di Propagazione di un’onda Elettromagnetica)}
 
 
 
@@ -17830,7 +17790,7 @@ In un’onda elettromagnetica che si propaga lungo l’asse \(z\) con il campo e
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-16}
 
-\begin{sphinxadmonition}{note}{Exercise 27.4.17 (Potenza Trasportata da un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 26.4.17 (Potenza Trasportata da un’onda Elettromagnetica)}
 
 
 
@@ -17839,7 +17799,7 @@ Calcola la potenza trasportata da un’onda elettromagnetica con una intensità 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-17}
 
-\begin{sphinxadmonition}{note}{Exercise 27.4.18 (Riflessione e Rifrazione di Onde Elettromagnetiche)}
+\begin{sphinxadmonition}{note}{Exercise 26.4.18 (Riflessione e Rifrazione di Onde Elettromagnetiche)}
 
 
 
@@ -18812,17 +18772,17 @@ la teoria della relatività generale, come nuova \sphinxstylestrong{teoria della
 
 \section{Relatività generale}
 \label{\detokenize{ch/modern/einstein:relativita-generale}}\label{\detokenize{ch/modern/einstein:physics-hs-modern-einstein-general}}\label{ch/modern/einstein:example-0}
-\begin{sphinxadmonition}{note}{Example 33.2.1 (Esperimento dell’ascensore)}
+\begin{sphinxadmonition}{note}{Example 32.2.1 (Esperimento dell’ascensore)}
 
 
 \end{sphinxadmonition}
 \label{ch/modern/einstein:example-1}
-\begin{sphinxadmonition}{note}{Example 33.2.2 (Equivalenza tra assenza di gravità e caduta libera in un campo gravitazionale)}
+\begin{sphinxadmonition}{note}{Example 32.2.2 (Equivalenza tra assenza di gravità e caduta libera in un campo gravitazionale)}
 
 
 \end{sphinxadmonition}
 \label{ch/modern/einstein:example-2}
-\begin{sphinxadmonition}{note}{Example 33.2.3 (Inconsistenza della legge di gravitazione di Newton e delle azioni a distanza con la velocità finita delle informazioni)}
+\begin{sphinxadmonition}{note}{Example 32.2.3 (Inconsistenza della legge di gravitazione di Newton e delle azioni a distanza con la velocità finita delle informazioni)}
 
 
 \end{sphinxadmonition}
@@ -19232,7 +19192,7 @@ H.Shapley (1918) confronto con stelle cefeide con distanza nota per parallasse?
 
 \end{itemize}
 \label{ch/modern/astronomy-distance-ladder:example-0}
-\begin{sphinxadmonition}{note}{Example 35.2.1 (Parallasse)}
+\begin{sphinxadmonition}{note}{Example 34.2.1 (Parallasse)}
 
 
 \begin{itemize}
@@ -19271,7 +19231,7 @@ Missioni spaziali. Esempio: Hubble (1990), Hipparcos (1989\sphinxhyphen{}1993), 
 \end{itemize}
 \end{sphinxadmonition}
 \label{ch/modern/astronomy-distance-ladder:example-1}
-\begin{sphinxadmonition}{note}{Example 35.2.2 (Conversioni)}
+\begin{sphinxadmonition}{note}{Example 34.2.2 (Conversioni)}
 
 
 \begin{itemize}
@@ -19618,6 +19578,97 @@ Lumière
 \sphinxstepscope
 
 
+\part{Strumenti di misura}
+
+\sphinxstepscope
+
+
+\chapter{Strumenti di misura}
+\label{\detokenize{ch/instrumentation/intro:strumenti-di-misura}}\label{\detokenize{ch/instrumentation/intro:instrumentation-intro}}\label{\detokenize{ch/instrumentation/intro::doc}}
+\sphinxAtStartPar
+In questa sezione vengono discussi alcuni strumenti di misura. E” stato scelto di riservare una sezione del materiale agli strumenti di misura
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{misura attività fondamentale nelle scienze.} poiché la misurazione è un’attività fondmaentale nel metodo scientifico
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{approccio sistematico a {\hyperref[\detokenize{ch/approach:physics-hs-approach-transversal}]{\sphinxcrossref{\DUrole{std,std-ref}{argomento trasversale}}}}.} per realizzare una sezione in cui viene fornito un approccio sistematico a un’attività trasversale a tutti gli ambiti della scienza, senza dover spezzettare la trattazione in pillole disperse nei vari capitoli
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{cross\sphinxhyphen{}referencing} Da questa sezione verrà fatto riferimento ai capitoli sulle teorie fisiche: in quei capitoli vengono presentati i \sphinxstylestrong{princìpi fisici} sui quali si basano gli strumenti, e vengono ricavati come \sphinxstylestrong{esercizio} alcuni risultati «parziali» utili per la costruzione di modelli di strumenti. Da quei capitoli, e soprattutto da quegli esercizi, verrà fatto riferimento agli strumenti per fornire un’applicazione dei risultati di tali esercizi, come una motivazione (in più) della loro presenza nel materiale.
+
+\end{itemize}
+
+\sphinxstepscope
+
+
+\section{Esempi}
+\label{\detokenize{ch/instrumentation/misc:esempi}}\label{\detokenize{ch/instrumentation/misc:instrumentation-list}}\label{\detokenize{ch/instrumentation/misc::doc}}
+
+\subsection{Misura posizione, velocità, accelerazione}
+\label{\detokenize{ch/instrumentation/misc:misura-posizione-velocita-accelerazione}}
+
+\subsubsection{Accelerometri}
+\label{\detokenize{ch/instrumentation/misc:accelerometri}}\label{\detokenize{ch/instrumentation/misc:instrumentation-list-accelerometer}}
+
+\paragraph{Accelerometro capacitivo, MEMS}
+\label{\detokenize{ch/instrumentation/misc:accelerometro-capacitivo-mems}}\label{\detokenize{ch/instrumentation/misc:instrumentation-list-accelerometer-mems}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+parte meccanica MMS. Equazioni in un sistema di riferimento non inerziale, \(\tilde{x} = x + x_{out}\), con \(\tilde{x}\) lo spostamento rispetto a un sistema inerziale, \(x_{out}\) lo spostamento del telaio dello strumento, preso come sistema non inerziale del quale vogliamo misurare l’accelerazione, e \(x\) lo spostamento relativo rispetto al telaio di una massa sospesa
+\begin{equation*}
+\begin{split}m \dfrac{d^2}{dt^2}(x + x_{out}) + c \dfrac{d x}{dt} + k x = 0 \, \end{split}
+\end{equation*}
+\sphinxAtStartPar
+o separando lo stato \(x\) dello strumento, dall’ingresso \(a_{out} := \ddot{x}_{out}\),
+\begin{equation*}
+\begin{split}m \ddot{x} + c \dot{x} + k x = - a_{out} \ ,\end{split}
+\end{equation*}
+\end{itemize}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{Per convenienza, se quel segno meno disturba, si può definire lo spostamento relativo in direzione opposta a quella usata per definire lo spostamento assoluto e ottenere quindi \(m \ddot{x} + c \dot{x} + k x = a_{out}\). Riferimento all”{\hyperref[\detokenize{ch/todo:physics-hs-todo-invariance}]{\sphinxcrossref{\DUrole{std,std-ref}{invarianza}}}}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+parte elettrica. Lettura della variabile in uscita funzione dello spostamento relativo della massa sospesa rispetto al telaio dello strumento, \(y(x)\). Questo legame viene ricavato dall’analisi del circuito elettrico dello strumento {\hyperref[\detokenize{ch/instrumentation/misc:mems-accelerometer-circuit}]{\sphinxcrossref{Example 38.1.1}}}
+
+\end{itemize}
+\label{ch/instrumentation/misc:mems-accelerometer-circuit}
+\begin{sphinxadmonition}{note}{Example 38.1.1 (Circuito elettrico dello strumento)}
+
+
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} A partire da un modello semplice, a modelli più complessi (con più condensatori, per aumentarne la sensitività), per poi ricondursi a problemi semplici agli effetti esterni grazie alla capacità equivalente del circuito
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+discutere legame ingresso\sphinxhyphen{}uscita: non\sphinxhyphen{}lineare! (ma facilmente correggibile!!!); sensibilità
+
+\item {} 
+\sphinxAtStartPar
+discutere i modi per aumentare la sensibilità dello strumento
+
+\item {} 
+\sphinxAtStartPar
+calcolo della capacità equivalente di circuiti con più condensatori (magari con uno script…)
+
+\end{itemize}
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+Add a sketch or a picture of a real\sphinxhyphen{}world MEMS accelerometer, and provide a model
+
+\sphinxAtStartPar
+\sphinxstylestrong{Cross\sphinxhyphen{}referencing.} Questo strumento è stato discusso nell’introduzione agli {\hyperref[\detokenize{ch/intro/measurements:physics-hs-intro-measurements-order}]{\sphinxcrossref{\DUrole{std,std-ref}{strumenti di misura}}}}, e presentato come esempio di strumento del secondo ordine.
+
+\sphinxstepscope
+
+
 \part{Indice}
 
 \sphinxstepscope
@@ -19778,7 +19829,7 @@ Lumière
 \item\relax\sphinxstyleindexentry{mechanics:dynamics:open:ex:rockets}\sphinxstyleindexextra{ch/mechanics/dynamics\sphinxhyphen{}eom\sphinxhyphen{}open}\sphinxstyleindexpageref{ch/mechanics/dynamics-eom-open:\detokenize{mechanics:dynamics:open:ex:rockets}}
 \indexspace
 \bigletter{mems\sphinxhyphen{}accelerometer\sphinxhyphen{}circuit}
-\item\relax\sphinxstyleindexentry{mems\sphinxhyphen{}accelerometer\sphinxhyphen{}circuit}\sphinxstyleindexextra{ch/electromagnetism/electrical\sphinxhyphen{}engineering\sphinxhyphen{}instruments}\sphinxstyleindexpageref{ch/electromagnetism/electrical-engineering-instruments:\detokenize{mems-accelerometer-circuit}}
+\item\relax\sphinxstyleindexentry{mems\sphinxhyphen{}accelerometer\sphinxhyphen{}circuit}\sphinxstyleindexextra{ch/instrumentation/misc}\sphinxstyleindexpageref{ch/instrumentation/misc:\detokenize{mems-accelerometer-circuit}}
 \indexspace
 \bigletter{motor:simple:dangle}
 \item\relax\sphinxstyleindexentry{motor:simple:dangle}\sphinxstyleindexextra{ch/electromagnetism/electric\sphinxhyphen{}machines}\sphinxstyleindexpageref{ch/electromagnetism/electric-machines:\detokenize{motor:simple:dangle}}

@@ -5,7 +5,7 @@ L'elettromagnetismo classico si occupa dello studio dei fenomeni elettromagnetic
 
 Le applicazioni che sfruttano i fenomeni elettromagnetici sono diffuse in ogni ambito della vita contemporanea...
 
-Per il ruolo centrale che svolge l'[attività di misurazione](physics-hs:intro:measurements) in fisica e in ambito scientifico, i fenomeni elettromagnetici risultano ancora più importanti in ambito scientifico, poiché sono i princìpi che permettono la realizzazione di strumenti di misura di qualità. Princìpi di elettromagnetismo, elettrotecnica ed elettronica sono quindi fondamentali per la comprensione del funzionamento di molti strumenti di misura. Alcuni esempi verranno discussi in una [apposita sezione](physics-hs:electromagnetism:instruments).
+Per il ruolo centrale che svolge l'[attività di misurazione](physics-hs:intro:measurements) in fisica e in ambito scientifico, i fenomeni elettromagnetici risultano ancora più importanti in ambito scientifico, poiché sono i princìpi che permettono la realizzazione di strumenti di misura di qualità. Princìpi di elettromagnetismo, elettrotecnica ed elettronica sono quindi fondamentali per la comprensione del funzionamento di molti strumenti di misura. Alcuni esempi verranno discussi in una apposita [sezione dedicata agli strumenti di misura](instrumentation:intro).
 
 [^atomic-theory]: Poiché la materia è costituita da componenti elementari - non così elemntari - con carica elettrica netta nulla, ma composti da componenti di carica netta positiva e negativa separati, si può intuire l'origine elettromagnetica di molte proprietà della materia o fenomeni macroscopici apparentemente non riconducibili ad essa, come l'[irraggiamento](physics-hs:thermodynamics:heat-transmission:radiation), ....
 

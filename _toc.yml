@@ -12,6 +12,7 @@ parts:
   - file: ch/program
     sections:
     - file: ch/todo
+    - file: ch/approach
 - caption: Introduzione alla fisica
   numbered: True
   chapters:
@@ -205,7 +206,7 @@ parts:
     - file: ch/electromagnetism/electric-machines
 #     sections:
 #     - file: ch/electromagnetism/electric-machines-problems
-  - file: ch/electromagnetism/electrical-engineering-instruments
+# - file: ch/electromagnetism/electrical-engineering-instruments
   - file: ch/electromagnetism/em-waves
     sections:
     - file: ch/electromagnetism/em-waves-problems
@@ -229,6 +230,12 @@ parts:
   - file: ch/modern/standard.md
   - file: ch/modern/intro-coupling.md
   - file: ch/modern/intro-photography.md
+- caption: Strumenti di misura
+  numbered: True
+  chapters:
+  - file: ch/instrumentation/intro.md
+    sections:
+    - file: ch/instrumentation/misc.md
 - caption: Indice
   chapters:
   - file: genindex.md
