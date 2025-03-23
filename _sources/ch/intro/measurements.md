@@ -89,7 +89,7 @@ Il termine passante è riferito al fatto che un sistema dinamico definisce una r
 :label: instrument-order-two-exercise
 **todo**
 
-Per un esempio più dettagliato, quando si avranno le competenze sufficienti, si rimanda alla sezione sull'[accelerometro capacitivo MEMS](physics-hs:electromagnetism:instruments:accelerometer:mems)
+Per un esempio più dettagliato, quando si avranno le competenze sufficienti, si rimanda alla sezione sull'[accelerometro capacitivo MEMS](instrumentation:kinematics:accelerometer:mems)
 ```
 
 (physics-hs:intro:measurements:instruments:intrusivity)=
