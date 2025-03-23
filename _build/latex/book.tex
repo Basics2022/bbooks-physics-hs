@@ -1110,7 +1110,7 @@ sezione sulle ODE lineari e sulla \sphinxhref{https://basics2022.github.io/bbook
 \sphinxstylestrong{todo}
 
 \sphinxAtStartPar
-Per un esempio più dettagliato, quando si avranno le competenze sufficienti, si rimanda alla sezione sull”{\hyperref[\detokenize{ch/instrumentation/misc:instrumentation-list-accelerometer-mems}]{\sphinxcrossref{\DUrole{std,std-ref}{accelerometro capacitivo MEMS}}}}
+Per un esempio più dettagliato, quando si avranno le competenze sufficienti, si rimanda alla sezione sull”{\hyperref[\detokenize{ch/instrumentation/kinematics:instrumentation-kinematics-accelerometer-mems}]{\sphinxcrossref{\DUrole{std,std-ref}{accelerometro capacitivo MEMS}}}}
 \end{sphinxadmonition}
 
 
@@ -12313,7 +12313,7 @@ In questa sezione viene discusso il ruolo dell”\sphinxstylestrong{equazione de
 \begin{split}\frac{1}{c^2} \partial_{tt} u - \partial_{xx} u = f(x, t) \ , \qquad x \in D \ ,\end{split}
 \end{equation}
 \sphinxAtStartPar
-dove \(c\) è la \sphinxstylestrong{velocità di propagazione delle perturbazioni}. Questa velocità è una costante del problema in mezzi omogenei. Il significato della costante \(c\) come velocità di propagazione delle perturbazioni risulta chiaro nell’espressione delle onde viaggianti come {\hyperref[\detokenize{ch/waves/phenomena:physics-hs-waves-equation-solutions}]{\sphinxcrossref{\DUrole{std,std-ref}{soluzioni elementari dell’equazione delle onde}}}}.
+dove \(c\) è la \sphinxstylestrong{velocità di propagazione delle perturbazioni}. Questa velocità è una costante del problema in mezzi omogenei. Il significato della costante \(c\) come velocità di propagazione delle perturbazioni risulta chiaro nell’espressione delle onde viaggianti come {\hyperref[\detokenize{ch/waves/waves-elementary-solutions:physics-hs-waves-equation-solutions}]{\sphinxcrossref{\DUrole{std,std-ref}{soluzioni elementari dell’equazione delle onde}}}}.
 
 \sphinxAtStartPar
 Per domini \(n\)\sphinxhyphen{}dimensionali, l’espressione dell’equazione delle onde in un mezzo omogeneo è
@@ -12560,14 +12560,11 @@ Per motivi di sintesi e per motivi di comprensione, l’approssimazione del lapl
 \sphinxstepscope
 
 
-\section{Caratteristiche dei fenomeni ondulatori}
-\label{\detokenize{ch/waves/phenomena:caratteristiche-dei-fenomeni-ondulatori}}\label{\detokenize{ch/waves/phenomena:physics-hs-waves-phenomena}}\label{\detokenize{ch/waves/phenomena::doc}}
+\section{Soluzioni elementari dell’equazione delle onde}
+\label{\detokenize{ch/waves/waves-elementary-solutions:soluzioni-elementari-dell-equazione-delle-onde}}\label{\detokenize{ch/waves/waves-elementary-solutions:physics-hs-waves-equation-solutions}}\label{\detokenize{ch/waves/waves-elementary-solutions::doc}}
 \sphinxAtStartPar
 Distinguere soluzioni dell’equazione omogenea e dell’equazione forzata
 
-
-\subsection{Soluzioni elementari}
-\label{\detokenize{ch/waves/phenomena:soluzioni-elementari}}\label{\detokenize{ch/waves/phenomena:physics-hs-waves-equation-solutions}}
 \sphinxAtStartPar
 Vengono qui discusse alcune soluzioni elementari dell”\DUrole{xref,myst}{equazione lineare delle onde}. In un problema lineare, una soluzione qualsiasi può essere ottenuta come somma di soluzioni elementari, sfruttando il principio di sovrapposizione delle cause e degli effetti (\sphinxstylestrong{todo\sphinxhyphen{}list:}{\hyperref[\detokenize{ch/todo:physics-hs-todo-psce}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{PSCE}}}}}): un segnale generico e la sua evoluzione può quindi essere studiato come somma di segnali semplici che evolvono in maniera indipendente l’uno dall’altro (\sphinxstylestrong{todo\sphinxhyphen{}list:}{\hyperref[\detokenize{ch/todo:physics-hs-todo-fourier}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{analisi di Fourier}}}}})
 
@@ -12582,8 +12579,8 @@ In generale, questa operazione può essere svolta localmente per una soluzione q
 \end{footnote} prese singolarmente è possibile definire una lunghezza d’onda (o in 3d un vettore d’onda locale che indica la direzione della propagazione), una frequenza e la velocità della perturbazione.
 
 
-\subsubsection{Dominio 1\sphinxhyphen{}dimensionale}
-\label{\detokenize{ch/waves/phenomena:dominio-1-dimensionale}}
+\subsection{Dominio 1\sphinxhyphen{}dimensionale}
+\label{\detokenize{ch/waves/waves-elementary-solutions:dominio-1-dimensionale}}
 \sphinxAtStartPar
 \sphinxstylestrong{Onde stazionarie.} Una soluzione generica dell’equazione delle onde può essere scritta come somma di onde stazionarie nella forma
 \begin{equation*}
@@ -12611,7 +12608,7 @@ così che \(\partial_{tt} u - c^2 \partial_{tt} u = \left( -\omega_n^2 + c^2 k_n
 
 \sphinxAtStartPar
 \sphinxstylestrong{Onde viaggianti.} Utilizzando le proprietà delle funzioni trigonometriche, la funzione \(u_n(x,t) = f_{n}(x) g_n(t)\) può essere scritta come somma di due onde viaggianti con velocità \(c\),
-\begin{equation}\label{equation:ch/waves/phenomena:travelling-waves}
+\begin{equation}\label{equation:ch/waves/waves-elementary-solutions:travelling-waves}
 \begin{split}u_n(x,t) = f_n(x) g_n(t) = A_n^{-}(x+ct) + A_n^{+}(x-ct) \ .\end{split}
 \end{equation}\subsubsection*{Dimostrazione}
 \begin{equation*}
@@ -12623,16 +12620,16 @@ u_n(x,t)
   & = \frac{1}{2} \cos(k_n( x + c t) + \theta^-_n) + \frac{1}{2} \cos(k_n( x - c t) + \theta^+_n) = \\
   & = A_n^-(x+ct) + A_n^{+}(x+ct)
 \end{aligned}\end{split}
-\end{equation*}\label{ch/waves/phenomena:wave-frequency}
-\begin{sphinxadmonition}{note}{Definition 21.2.1 (Pulsazione \protect\(\omega_n\protect\) e frequenza \protect\(f_n\protect\))}
+\end{equation*}\label{None:wave-frequency}
+\begin{sphinxadmonition}{note}{Definition  (Pulsazione \protect\(\omega_n\protect\) e frequenza \protect\(f_n\protect\))}
 
 
 
 \sphinxAtStartPar
 Il parametro \(\omega_n\) di una soluzione elementare viene definita \sphinxstylestrong{pulsazione}. La \sphinxstylestrong{frequenza} della soluzione elementare è definita come l’inverso del periodo della soluzione elementare \(f_n = \frac{1}{T_n}\), e può essere espresso in funzione della pulsazione come \(f_n = \frac{\omega_n}{2\pi}\).
 \end{sphinxadmonition}
-\label{ch/waves/phenomena:wave-length}
-\begin{sphinxadmonition}{note}{Definition 21.2.2 (Vettore d’onda \protect\(k_n\protect\) e lunghezza d’onda \protect\(\lambda_n\protect\))}
+\label{None:wave-length}
+\begin{sphinxadmonition}{note}{Definition  (Vettore d’onda \protect\(k_n\protect\) e lunghezza d’onda \protect\(\lambda_n\protect\))}
 
 
 
@@ -12642,13 +12639,13 @@ Il parametro \(k_n\) di una soluzione elementare viene definita \sphinxstylestro
 \sphinxAtStartPar
 Il carattere vettoriale del vettore d’onda appare evidente nei domini multi\sphinxhyphen{}dimenisonali, nei quali le soluzioni elentari possono essere espresse come funzione dell’argomento \(\vec{k} \cdot \vec{r} - \omega t\). Il vettore d’onda \(\vec{k}\) è un’indicazione della direzione locale di propagazione della perturbazione elementare.
 \end{sphinxadmonition}
-\label{ch/waves/phenomena:wave-speed}
-\begin{sphinxadmonition}{note}{Definition 21.2.3 (Velocità di propagazione delle perturbazioni)}
+\label{None:wave-speed}
+\begin{sphinxadmonition}{note}{Definition  (Velocità di propagazione delle perturbazioni)}
 
 
 
 \sphinxAtStartPar
-La velocità di propagazione delle perturbazioni governate dall’equazione delle onde \eqref{equation:ch/waves/waves-in-physics:eq:wave-eqn:1d} è \(c\). Il suo significato è evidente nell’espressione \eqref{equation:ch/waves/phenomena:travelling-waves} delle onde viaggianti, ed è uguale al rapporto tra la lunghezza d’onda e la frequenza di una soluzione elementare \(c = \frac{\omega_n}{k_n}\).
+La velocità di propagazione delle perturbazioni governate dall’equazione delle onde \eqref{equation:ch/waves/waves-in-physics:eq:wave-eqn:1d} è \(c\). Il suo significato è evidente nell’espressione \eqref{equation:ch/waves/waves-elementary-solutions:travelling-waves} delle onde viaggianti, ed è uguale al rapporto tra la lunghezza d’onda e la frequenza di una soluzione elementare \(c = \frac{\omega_n}{k_n}\).
 \end{sphinxadmonition}
 
 \sphinxAtStartPar
@@ -12662,8 +12659,8 @@ Usando le relazioni tra lunghezza d’onda e vettore d’onda \(\lambda = \frac{
 \begin{split}\omega_n = c k_n \ .\end{split}
 \end{equation*}
 
-\subsubsection{Dominio 3\sphinxhyphen{}dimensionale}
-\label{\detokenize{ch/waves/phenomena:dominio-3-dimensionale}}
+\subsection{Dominio 3\sphinxhyphen{}dimensionale}
+\label{\detokenize{ch/waves/waves-elementary-solutions:dominio-3-dimensionale}}
 
 
 \sphinxAtStartPar
@@ -12681,50 +12678,56 @@ A differenza dell’espressione delle onde viaggianti nel caso 1\sphinxhyphen{}d
 \end{sphinxadmonition}
 
 
-\subsection{Effetti associati}
-\label{\detokenize{ch/waves/phenomena:effetti-associati}}\label{\detokenize{ch/waves/phenomena:physics-hs-waves-effects}}
+\bigskip\hrule\bigskip
 
-\subsubsection{Interferenza}
-\label{\detokenize{ch/waves/phenomena:interferenza}}\label{\detokenize{ch/waves/phenomena:physics-hs-waves-effects-interference}}
 
-\subsubsection{Riflessione}
-\label{\detokenize{ch/waves/phenomena:riflessione}}\label{\detokenize{ch/waves/phenomena:physics-hs-waves-effects-reflection}}
+\sphinxstepscope
 
-\subsubsection{Rifrazione}
-\label{\detokenize{ch/waves/phenomena:rifrazione}}\label{\detokenize{ch/waves/phenomena:physics-hs-waves-effects-refraction}}
 
-\subsubsection{Diffrazione}
-\label{\detokenize{ch/waves/phenomena:diffrazione}}\label{\detokenize{ch/waves/phenomena:physics-hs-waves-effects-diffraction}}
+\section{Caratteristiche dei fenomeni ondulatori}
+\label{\detokenize{ch/waves/waves-phenomena:caratteristiche-dei-fenomeni-ondulatori}}\label{\detokenize{ch/waves/waves-phenomena:physics-hs-waves-phenomena}}\label{\detokenize{ch/waves/waves-phenomena::doc}}
+
+\subsection{Interferenza}
+\label{\detokenize{ch/waves/waves-phenomena:interferenza}}\label{\detokenize{ch/waves/waves-phenomena:physics-hs-waves-effects-interference}}
+
+\subsection{Riflessione}
+\label{\detokenize{ch/waves/waves-phenomena:riflessione}}\label{\detokenize{ch/waves/waves-phenomena:physics-hs-waves-effects-reflection}}
+
+\subsection{Rifrazione}
+\label{\detokenize{ch/waves/waves-phenomena:rifrazione}}\label{\detokenize{ch/waves/waves-phenomena:physics-hs-waves-effects-refraction}}
+
+\subsection{Diffrazione}
+\label{\detokenize{ch/waves/waves-phenomena:diffrazione}}\label{\detokenize{ch/waves/waves-phenomena:physics-hs-waves-effects-diffraction}}
 \sphinxAtStartPar
-La diffrazione è una conseguenza dell’incontro di un’onda con un ostacolo o un’apertura di dimensione parabonabile alla lunghezza d’onda ({\hyperref[\detokenize{ch/waves/phenomena:wave-length}]{\sphinxcrossref{Definition 21.2.2}}}) della perturbazione.
+La diffrazione è una conseguenza dell’incontro di un’onda con un ostacolo o un’apertura di dimensione parabonabile alla lunghezza d’onda ({\hyperref[\detokenize{ch/waves/waves-elementary-solutions:wave-length}]{\sphinxcrossref{Definition 21.2.2}}}) della perturbazione.
 
 \sphinxAtStartPar
 \sphinxstylestrong{Applicazioni ed esempi.} Spettroscopia
-\label{ch/waves/phenomena:example-3}
-\begin{sphinxadmonition}{note}{Example 21.2.1 (Doppia fenditura)}
+\label{ch/waves/waves-phenomena:example-0}
+\begin{sphinxadmonition}{note}{Example 21.3.1 (Doppia fenditura)}
 
 
 
 \sphinxAtStartPar
 Modello: diffrazione dovuta a due fessure sufficientmente ridotte da poter essere considerate sorgenti puntiformi (in fase, o no? discutere)
 \end{sphinxadmonition}
-\label{ch/waves/phenomena:example-4}
-\begin{sphinxadmonition}{note}{Example 21.2.2 (Singola fenditura)}
+\label{ch/waves/waves-phenomena:example-1}
+\begin{sphinxadmonition}{note}{Example 21.3.2 (Singola fenditura)}
 
 
 
 \sphinxAtStartPar
 Modello: diffrazione dovuta alla sovrapposizione degli effetti di una distribuzione di sorgenti punti.
 \end{sphinxadmonition}
-\label{ch/waves/phenomena:example-5}
-\begin{sphinxadmonition}{note}{Example 21.2.3 (Reticolo di diffrazione)}
+\label{ch/waves/waves-phenomena:example-2}
+\begin{sphinxadmonition}{note}{Example 21.3.3 (Reticolo di diffrazione)}
 
 
 \end{sphinxadmonition}
 
 
-\subsubsection{Polarizzazione}
-\label{\detokenize{ch/waves/phenomena:polarizzazione}}\label{\detokenize{ch/waves/phenomena:physics-hs-waves-effects-polarization}}\begin{itemize}
+\subsection{Polarizzazione}
+\label{\detokenize{ch/waves/waves-phenomena:polarizzazione}}\label{\detokenize{ch/waves/waves-phenomena:physics-hs-waves-effects-polarization}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Onde sismiche S, shear, di taglio
@@ -12736,8 +12739,8 @@ Onde EM
 \end{itemize}
 
 
-\subsubsection{Effetto Doppler}
-\label{\detokenize{ch/waves/phenomena:effetto-doppler}}\label{\detokenize{ch/waves/phenomena:physics-hs-waves-effects-doppler}}
+\subsection{Effetto Doppler}
+\label{\detokenize{ch/waves/waves-phenomena:effetto-doppler}}\label{\detokenize{ch/waves/waves-phenomena:physics-hs-waves-effects-doppler}}
 \sphinxAtStartPar
 Quando la sorgente e l’osservatore sono in moto relativo, la frequenza percepita dall’osservatore è diversa dalla frequenza emessa dalla sorgente.
 \begin{equation*}
@@ -12765,10 +12768,6 @@ Nel caso di sorgente a velocità costante, \(x_s(t) = x_{s,0} + v_s t\), e ricet
 \end{equation*}\begin{equation*}
 \begin{split}t_{ret} = \dfrac{v_r \mp c}{v_s \mp c} t + \dfrac{x_{r,0} - x_{s,0}}{v_s \mp c}\end{split}
 \end{equation*}
-
-
-
-\bigskip\hrule\bigskip
 
 
 \sphinxstepscope
@@ -17600,7 +17599,7 @@ prisma
 
 \item {} 
 \sphinxAtStartPar
-seguendo la \sphinxstyleemphasis{teoria ondulatoria della luce} di Young, Arago e Fresnel, \sphinxstylestrong{Fraunhofer} (1815) sviluppa i \sphinxstylestrong{reticoli di} {\hyperref[\detokenize{ch/waves/phenomena:physics-hs-waves-effects-diffraction}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{diffrazione}}}}} per sfruttarne l’interferenza, effetto tipico dei fenomeni che hanno \sphinxstyleemphasis{comportamento ondulatorio}; questo progresso tecnologico consente un miglioramento della risoluzione spettrale e la costruzione di strumenti universali affidabili per la spettroscopia
+seguendo la \sphinxstyleemphasis{teoria ondulatoria della luce} di Young, Arago e Fresnel, \sphinxstylestrong{Fraunhofer} (1815) sviluppa i \sphinxstylestrong{reticoli di} {\hyperref[\detokenize{ch/waves/waves-phenomena:physics-hs-waves-effects-diffraction}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{diffrazione}}}}} per sfruttarne l’interferenza, effetto tipico dei fenomeni che hanno \sphinxstyleemphasis{comportamento ondulatorio}; questo progresso tecnologico consente un miglioramento della risoluzione spettrale e la costruzione di strumenti universali affidabili per la spettroscopia
 
 \item {} 
 \sphinxAtStartPar
@@ -18009,7 +18008,7 @@ Metodi:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-cristallografia…Già a metà del XIX secolo. Trattare qui o in {\hyperref[\detokenize{ch/waves/optics:physics-hs-waves-optics}]{\sphinxcrossref{\DUrole{std,std-ref}{ottica}}}} per la {\hyperref[\detokenize{ch/waves/phenomena:physics-hs-waves-effects-diffraction}]{\sphinxcrossref{\DUrole{std,std-ref}{diffrazione}}}}?
+cristallografia…Già a metà del XIX secolo. Trattare qui o in {\hyperref[\detokenize{ch/waves/optics:physics-hs-waves-optics}]{\sphinxcrossref{\DUrole{std,std-ref}{ottica}}}} per la {\hyperref[\detokenize{ch/waves/waves-phenomena:physics-hs-waves-effects-diffraction}]{\sphinxcrossref{\DUrole{std,std-ref}{diffrazione}}}}?
 
 \item {} 
 \sphinxAtStartPar
@@ -19578,6 +19577,34 @@ Lumière
 \sphinxstepscope
 
 
+\part{Semiconduttori}
+
+\sphinxstepscope
+
+
+\chapter{Introduzione alla fisica dei semiconduttori}
+\label{\detokenize{ch/semiconductors/intro:introduzione-alla-fisica-dei-semiconduttori}}\label{\detokenize{ch/semiconductors/intro:semiconductors-intro}}\label{\detokenize{ch/semiconductors/intro::doc}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+applicazioni onnipresenti nella vita quotidiana
+
+\item {} 
+\sphinxAtStartPar
+struttura: …
+
+\item {} 
+\sphinxAtStartPar
+componenti elettronici: diodi, transistor,
+
+\item {} 
+\sphinxAtStartPar
+fenomeni caratteristici: effetto fotovoltaico, effetto fotoresistivo,…
+
+\end{itemize}
+
+\sphinxstepscope
+
+
 \part{Strumenti di misura}
 
 \sphinxstepscope
@@ -19602,20 +19629,54 @@ In questa sezione vengono discussi alcuni strumenti di misura. E” stato scelto
 
 \end{itemize}
 
+\sphinxAtStartPar
+\sphinxstylestrong{Contenuti.}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Spazio \sphinxhyphen{} geometria
+
+\item {} 
+\sphinxAtStartPar
+Tempo
+
+\item {} 
+\sphinxAtStartPar
+Massa
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/instrumentation/kinematics:instrumentation-kinematics}]{\sphinxcrossref{\DUrole{std,std-ref}{Quantità cinematiche}}}}: lineari: posizione, velocità, accelerazione; rotazionali: orientamento, velocità angolare, accelerazione angolare,…;
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/instrumentation/mechanics:instrumentation-mechanics}]{\sphinxcrossref{\DUrole{std,std-ref}{Quantità meccaniche}}}}: forza,…
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/instrumentation/thermodynamics:instrumentation-thermodynamics}]{\sphinxcrossref{\DUrole{std,std-ref}{Quantità termodinamiche}}}}: pressione, temperatura, densità, viscosità,…
+
+\item {} 
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/instrumentation/electromagnetism:instrumentation-electromagnetism}]{\sphinxcrossref{\DUrole{std,std-ref}{Quantità elettromagnetiche}}}}: corrente, differenza di tensione, resistività, induttanza, capacità,…; luce e radiazione elettromagnetica
+
+\item {} 
+\sphinxAtStartPar
+…
+
+\end{itemize}
+
 \sphinxstepscope
 
 
-\section{Esempi}
-\label{\detokenize{ch/instrumentation/misc:esempi}}\label{\detokenize{ch/instrumentation/misc:instrumentation-list}}\label{\detokenize{ch/instrumentation/misc::doc}}
+\section{Misura posizione, velocità, accelerazione}
+\label{\detokenize{ch/instrumentation/kinematics:misura-posizione-velocita-accelerazione}}\label{\detokenize{ch/instrumentation/kinematics:instrumentation-kinematics}}\label{\detokenize{ch/instrumentation/kinematics::doc}}
 
-\subsection{Misura posizione, velocità, accelerazione}
-\label{\detokenize{ch/instrumentation/misc:misura-posizione-velocita-accelerazione}}
+\subsection{Accelerometri}
+\label{\detokenize{ch/instrumentation/kinematics:accelerometri}}\label{\detokenize{ch/instrumentation/kinematics:instrumentation-kinematics-accelerometer}}
 
-\subsubsection{Accelerometri}
-\label{\detokenize{ch/instrumentation/misc:accelerometri}}\label{\detokenize{ch/instrumentation/misc:instrumentation-list-accelerometer}}
-
-\paragraph{Accelerometro capacitivo, MEMS}
-\label{\detokenize{ch/instrumentation/misc:accelerometro-capacitivo-mems}}\label{\detokenize{ch/instrumentation/misc:instrumentation-list-accelerometer-mems}}\begin{itemize}
+\subsubsection{Accelerometro capacitivo, MEMS}
+\label{\detokenize{ch/instrumentation/kinematics:accelerometro-capacitivo-mems}}\label{\detokenize{ch/instrumentation/kinematics:instrumentation-kinematics-accelerometer-mems}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 parte meccanica MMS. Equazioni in un sistema di riferimento non inerziale, \(\tilde{x} = x + x_{out}\), con \(\tilde{x}\) lo spostamento rispetto a un sistema inerziale, \(x_{out}\) lo spostamento del telaio dello strumento, preso come sistema non inerziale del quale vogliamo misurare l’accelerazione, e \(x\) lo spostamento relativo rispetto al telaio di una massa sospesa
@@ -19634,11 +19695,11 @@ o separando lo stato \(x\) dello strumento, dall’ingresso \(a_{out} := \ddot{x
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-parte elettrica. Lettura della variabile in uscita funzione dello spostamento relativo della massa sospesa rispetto al telaio dello strumento, \(y(x)\). Questo legame viene ricavato dall’analisi del circuito elettrico dello strumento {\hyperref[\detokenize{ch/instrumentation/misc:mems-accelerometer-circuit}]{\sphinxcrossref{Example 38.1.1}}}
+parte elettrica. Lettura della variabile in uscita funzione dello spostamento relativo della massa sospesa rispetto al telaio dello strumento, \(y(x)\). Questo legame viene ricavato dall’analisi del circuito elettrico dello strumento {\hyperref[\detokenize{ch/instrumentation/kinematics:mems-accelerometer-circuit}]{\sphinxcrossref{Example 39.1.1}}}
 
 \end{itemize}
-\label{ch/instrumentation/misc:mems-accelerometer-circuit}
-\begin{sphinxadmonition}{note}{Example 38.1.1 (Circuito elettrico dello strumento)}
+\label{ch/instrumentation/kinematics:mems-accelerometer-circuit}
+\begin{sphinxadmonition}{note}{Example 39.1.1 (Circuito elettrico dello strumento)}
 
 
 
@@ -19665,6 +19726,55 @@ Add a sketch or a picture of a real\sphinxhyphen{}world MEMS accelerometer, and 
 
 \sphinxAtStartPar
 \sphinxstylestrong{Cross\sphinxhyphen{}referencing.} Questo strumento è stato discusso nell’introduzione agli {\hyperref[\detokenize{ch/intro/measurements:physics-hs-intro-measurements-order}]{\sphinxcrossref{\DUrole{std,std-ref}{strumenti di misura}}}}, e presentato come esempio di strumento del secondo ordine.
+
+\sphinxstepscope
+
+
+\section{Quantità meccaniche}
+\label{\detokenize{ch/instrumentation/mechanics:quantita-meccaniche}}\label{\detokenize{ch/instrumentation/mechanics:instrumentation-mechanics}}\label{\detokenize{ch/instrumentation/mechanics::doc}}
+\sphinxstepscope
+
+
+\section{Quantità termodinamiche}
+\label{\detokenize{ch/instrumentation/thermodynamics:quantita-termodinamiche}}\label{\detokenize{ch/instrumentation/thermodynamics:instrumentation-thermodynamics}}\label{\detokenize{ch/instrumentation/thermodynamics::doc}}
+\sphinxstepscope
+
+
+\section{Quantità elettromagnetiche}
+\label{\detokenize{ch/instrumentation/electromagnetism:quantita-elettromagnetiche}}\label{\detokenize{ch/instrumentation/electromagnetism:instrumentation-electromagnetism}}\label{\detokenize{ch/instrumentation/electromagnetism::doc}}
+
+\subsection{Fotorilevatori}
+\label{\detokenize{ch/instrumentation/electromagnetism:fotorilevatori}}\label{\detokenize{ch/instrumentation/electromagnetism:instrumentation-electromagnetism-photodetector}}
+\sphinxAtStartPar
+Basati sulla fisica dei {\hyperref[\detokenize{ch/semiconductors/intro:semiconductors-intro}]{\sphinxcrossref{\DUrole{std,std-ref}{semiconduttori}}}}
+
+\sphinxstepscope
+
+
+\part{Approfondimenti}
+
+\sphinxstepscope
+
+
+\chapter{Approfondimenti}
+\label{\detokenize{ch/extra:approfondimenti}}\label{\detokenize{ch/extra:physics-hs-extra}}\label{\detokenize{ch/extra::doc}}
+
+\section{Fenomeni ondulatori e ottica}
+\label{\detokenize{ch/extra:fenomeni-ondulatori-e-ottica}}\label{\detokenize{ch/extra:physics-hs-extra-waves-optics}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxhref{https://www.youtube.com/watch?v=EmKQsSDlaa4}{3B1B \sphinxhyphen{} How are holograms possible?}. Ologrammi e diffrazione. Argomenti: diffrazione di Fresnel, reticoli di diffrazione,…
+
+\end{itemize}
+
+
+\section{Strumenti di misura}
+\label{\detokenize{ch/extra:strumenti-di-misura}}\label{\detokenize{ch/extra:physics-hs-extra-instrumentation}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxhref{https://www.youtube.com/watch?v=O7xH9ZSp\_B4}{Breaking Taps \sphinxhyphen{} I tried to make a camera sensor}. Costruzione DIY di un sensore di una camera digitale come matrice di {\hyperref[\detokenize{ch/instrumentation/electromagnetism:instrumentation-electromagnetism-photodetector}]{\sphinxcrossref{\DUrole{std,std-ref}{fotorilevatori}}}}. Argomenti: fisica dei {\hyperref[\detokenize{ch/semiconductors/intro:semiconductors-intro}]{\sphinxcrossref{\DUrole{std,std-ref}{semiconduttori}}}}, ottica, laser, spettroscopia per analisi chimiche di elementi,…
+
+\end{itemize}
 
 \sphinxstepscope
 
@@ -19721,10 +19831,10 @@ Add a sketch or a picture of a real\sphinxhyphen{}world MEMS accelerometer, and 
 \item\relax\sphinxstyleindexentry{electric\sphinxhyphen{}dipole\sphinxhyphen{}ext\sphinxhyphen{}e\sphinxhyphen{}field}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{electric-dipole-ext-e-field}}
 \indexspace
 \bigletter{example\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}in\sphinxhyphen{}physics}\sphinxstyleindexpageref{ch/waves/waves-in-physics:\detokenize{example-0}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/waves-phenomena:\detokenize{example-0}}
 \indexspace
 \bigletter{example\sphinxhyphen{}1}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}in\sphinxhyphen{}physics}\sphinxstyleindexpageref{ch/waves/waves-in-physics:\detokenize{example-1}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/waves-phenomena:\detokenize{example-1}}
 \indexspace
 \bigletter{example\sphinxhyphen{}10}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}10}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-10}}
@@ -19754,16 +19864,7 @@ Add a sketch or a picture of a real\sphinxhyphen{}world MEMS accelerometer, and 
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}18}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-18}}
 \indexspace
 \bigletter{example\sphinxhyphen{}2}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}in\sphinxhyphen{}physics}\sphinxstyleindexpageref{ch/waves/waves-in-physics:\detokenize{example-2}}
-\indexspace
-\bigletter{example\sphinxhyphen{}3}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/waves/phenomena}\sphinxstyleindexpageref{ch/waves/phenomena:\detokenize{example-3}}
-\indexspace
-\bigletter{example\sphinxhyphen{}4}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}4}\sphinxstyleindexextra{ch/waves/phenomena}\sphinxstyleindexpageref{ch/waves/phenomena:\detokenize{example-4}}
-\indexspace
-\bigletter{example\sphinxhyphen{}5}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/waves/phenomena}\sphinxstyleindexpageref{ch/waves/phenomena:\detokenize{example-5}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/waves-phenomena:\detokenize{example-2}}
 \indexspace
 \bigletter{example\sphinxhyphen{}6}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}6}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-6}}
@@ -19829,7 +19930,7 @@ Add a sketch or a picture of a real\sphinxhyphen{}world MEMS accelerometer, and 
 \item\relax\sphinxstyleindexentry{mechanics:dynamics:open:ex:rockets}\sphinxstyleindexextra{ch/mechanics/dynamics\sphinxhyphen{}eom\sphinxhyphen{}open}\sphinxstyleindexpageref{ch/mechanics/dynamics-eom-open:\detokenize{mechanics:dynamics:open:ex:rockets}}
 \indexspace
 \bigletter{mems\sphinxhyphen{}accelerometer\sphinxhyphen{}circuit}
-\item\relax\sphinxstyleindexentry{mems\sphinxhyphen{}accelerometer\sphinxhyphen{}circuit}\sphinxstyleindexextra{ch/instrumentation/misc}\sphinxstyleindexpageref{ch/instrumentation/misc:\detokenize{mems-accelerometer-circuit}}
+\item\relax\sphinxstyleindexentry{mems\sphinxhyphen{}accelerometer\sphinxhyphen{}circuit}\sphinxstyleindexextra{ch/instrumentation/kinematics}\sphinxstyleindexpageref{ch/instrumentation/kinematics:\detokenize{mems-accelerometer-circuit}}
 \indexspace
 \bigletter{motor:simple:dangle}
 \item\relax\sphinxstyleindexentry{motor:simple:dangle}\sphinxstyleindexextra{ch/electromagnetism/electric\sphinxhyphen{}machines}\sphinxstyleindexpageref{ch/electromagnetism/electric-machines:\detokenize{motor:simple:dangle}}
@@ -19946,13 +20047,13 @@ Add a sketch or a picture of a real\sphinxhyphen{}world MEMS accelerometer, and 
 \item\relax\sphinxstyleindexentry{thermodynamics:principles:open:ex:turbine}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}open}\sphinxstyleindexpageref{ch/thermodynamics/principles-open:\detokenize{thermodynamics:principles:open:ex:turbine}}
 \indexspace
 \bigletter{wave\sphinxhyphen{}frequency}
-\item\relax\sphinxstyleindexentry{wave\sphinxhyphen{}frequency}\sphinxstyleindexextra{ch/waves/phenomena}\sphinxstyleindexpageref{ch/waves/phenomena:\detokenize{wave-frequency}}
+\item\relax\sphinxstyleindexentry{wave\sphinxhyphen{}frequency}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}elementary\sphinxhyphen{}solutions}\sphinxstyleindexpageref{ch/waves/waves-elementary-solutions:\detokenize{wave-frequency}}
 \indexspace
 \bigletter{wave\sphinxhyphen{}length}
-\item\relax\sphinxstyleindexentry{wave\sphinxhyphen{}length}\sphinxstyleindexextra{ch/waves/phenomena}\sphinxstyleindexpageref{ch/waves/phenomena:\detokenize{wave-length}}
+\item\relax\sphinxstyleindexentry{wave\sphinxhyphen{}length}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}elementary\sphinxhyphen{}solutions}\sphinxstyleindexpageref{ch/waves/waves-elementary-solutions:\detokenize{wave-length}}
 \indexspace
 \bigletter{wave\sphinxhyphen{}speed}
-\item\relax\sphinxstyleindexentry{wave\sphinxhyphen{}speed}\sphinxstyleindexextra{ch/waves/phenomena}\sphinxstyleindexpageref{ch/waves/phenomena:\detokenize{wave-speed}}
+\item\relax\sphinxstyleindexentry{wave\sphinxhyphen{}speed}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}elementary\sphinxhyphen{}solutions}\sphinxstyleindexpageref{ch/waves/waves-elementary-solutions:\detokenize{wave-speed}}
 \indexspace
 \bigletter{zoom}
 \item\relax\sphinxstyleindexentry{zoom}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}lens}\sphinxstyleindexpageref{ch/waves/optics-lens:\detokenize{zoom}}

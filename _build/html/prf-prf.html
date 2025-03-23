@@ -79,15 +79,6 @@ const thebe_selector_output = ".output, .cell_output"
 
 
   </head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R3GS2LVD8M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-R3GS2LVD8M');
-</script>
-
   
   
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
@@ -327,8 +318,9 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="ch/waves/intro.html">21. Introduzione ai fenomeni ondulatori</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="ch/waves/waves-in-physics.html">21.1. Equazione delle onde in diversi sistemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch/waves/phenomena.html">21.2. Caratteristiche dei fenomeni ondulatori</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch/waves/waves-notes.html">21.3. Note</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/waves/waves-elementary-solutions.html">21.2. Soluzioni elementari dell’equazione delle onde</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/waves/waves-phenomena.html">21.3. Caratteristiche dei fenomeni ondulatori</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/waves/waves-notes.html">21.4. Note</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="ch/waves/optics.html">22. Ottica</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -396,15 +388,23 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="ch/modern/intro-coupling.html">36. Fenomeni termo-elettrici nella materia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ch/modern/intro-photography.html">37. Fotografia</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Semiconduttori</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ch/semiconductors/intro.html">38. Introduzione alla fisica dei semiconduttori</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Strumenti di misura</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="ch/instrumentation/intro.html">38. Strumenti di misura</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-27"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="ch/instrumentation/kinematics.html">38.1. Misura posizione, velocità, accelerazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch/instrumentation/mechanics.html">38.2. Quantità meccaniche</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch/instrumentation/thermodynamics.html">38.3. Quantità termodinamiche</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ch/instrumentation/electromagnetism.html">38.4. Quantità elettromagnetiche</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/instrumentation/intro.html">39. Strumenti di misura</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-27"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/instrumentation/kinematics.html">39.1. Misura posizione, velocità, accelerazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/instrumentation/mechanics.html">39.2. Quantità meccaniche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/instrumentation/thermodynamics.html">39.3. Quantità termodinamiche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/instrumentation/electromagnetism.html">39.4. Quantità elettromagnetiche</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Approfondimenti</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ch/extra.html">Approfondimenti</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
 <ul class="nav bd-sidenav">
@@ -758,7 +758,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/waves/waves-in-physics.html#example-0"><code class="xref">example-0</code></a> <em>(ch/waves/waves-in-physics)</em></td><td>
+       <a href="ch/waves/waves-phenomena.html#example-0"><code class="xref">example-0</code></a> <em>(ch/waves/waves-phenomena)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-example-1"><td></td><td>
@@ -766,7 +766,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/waves/waves-in-physics.html#example-1"><code class="xref">example-1</code></a> <em>(ch/waves/waves-in-physics)</em></td><td>
+       <a href="ch/waves/waves-phenomena.html#example-1"><code class="xref">example-1</code></a> <em>(ch/waves/waves-phenomena)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-example-10"><td></td><td>
@@ -846,7 +846,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/waves/waves-in-physics.html#example-2"><code class="xref">example-2</code></a> <em>(ch/waves/waves-in-physics)</em></td><td>
+       <a href="ch/waves/waves-phenomena.html#example-2"><code class="xref">example-2</code></a> <em>(ch/waves/waves-phenomena)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-example-3"><td></td><td>
@@ -854,7 +854,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/waves/phenomena.html#example-3"><code class="xref">example-3</code></a> <em>(ch/waves/phenomena)</em></td><td>
+       <a href="ch/waves/optics-phenomena.html#example-3"><code class="xref">example-3</code></a> <em>(ch/waves/optics-phenomena)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-example-4"><td></td><td>
@@ -862,7 +862,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/waves/phenomena.html#example-4"><code class="xref">example-4</code></a> <em>(ch/waves/phenomena)</em></td><td>
+       <a href="ch/waves/optics-phenomena.html#example-4"><code class="xref">example-4</code></a> <em>(ch/waves/optics-phenomena)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-example-5"><td></td><td>
@@ -870,7 +870,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/waves/phenomena.html#example-5"><code class="xref">example-5</code></a> <em>(ch/waves/phenomena)</em></td><td>
+       <a href="ch/waves/optics-phenomena.html#example-5"><code class="xref">example-5</code></a> <em>(ch/waves/optics-phenomena)</em></td><td>
        <em>example</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-example-6"><td></td><td>
@@ -1358,7 +1358,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/waves/phenomena.html#wave-frequency"><code class="xref">wave-frequency</code></a> <em>(ch/waves/phenomena)</em></td><td>
+       <a href="ch/waves/waves-elementary-solutions.html#wave-frequency"><code class="xref">wave-frequency</code></a> <em>(ch/waves/waves-elementary-solutions)</em></td><td>
        <em>definition</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-wave-length"><td></td><td>
@@ -1366,7 +1366,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/waves/phenomena.html#wave-length"><code class="xref">wave-length</code></a> <em>(ch/waves/phenomena)</em></td><td>
+       <a href="ch/waves/waves-elementary-solutions.html#wave-length"><code class="xref">wave-length</code></a> <em>(ch/waves/waves-elementary-solutions)</em></td><td>
        <em>definition</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-wave-speed"><td></td><td>
@@ -1374,7 +1374,7 @@ document.write(`
      <tr>
        <td></td>
        <td>
-       <a href="ch/waves/phenomena.html#wave-speed"><code class="xref">wave-speed</code></a> <em>(ch/waves/phenomena)</em></td><td>
+       <a href="ch/waves/waves-elementary-solutions.html#wave-speed"><code class="xref">wave-speed</code></a> <em>(ch/waves/waves-elementary-solutions)</em></td><td>
        <em>definition</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-zoom"><td></td><td>

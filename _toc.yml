@@ -160,7 +160,8 @@ parts:
   - file: ch/waves/intro
     sections:
     - file: ch/waves/waves-in-physics
-    - file: ch/waves/phenomena
+    - file: ch/waves/waves-elementary-solutions
+    - file: ch/waves/waves-phenomena
     - file: ch/waves/waves-notes
   - file: ch/waves/optics
     sections:
@@ -230,6 +231,10 @@ parts:
   - file: ch/modern/standard.md
   - file: ch/modern/intro-coupling.md
   - file: ch/modern/intro-photography.md
+- caption: Semiconduttori
+  numbered: True
+  chapters:
+  - file: ch/semiconductors/intro.md
 - caption: Strumenti di misura
   numbered: True
   chapters:
@@ -239,6 +244,9 @@ parts:
     - file: ch/instrumentation/mechanics.md
     - file: ch/instrumentation/thermodynamics.md
     - file: ch/instrumentation/electromagnetism.md
+- caption: Approfondimenti
+  chapters:
+  - file: ch/extra.md
 - caption: Indice
   chapters:
   - file: genindex.md

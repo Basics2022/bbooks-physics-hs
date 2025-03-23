@@ -71,20 +71,11 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon-sugar.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="21.2. Caratteristiche dei fenomeni ondulatori" href="phenomena.html" />
+    <link rel="next" title="21.2. Soluzioni elementari dell’equazione delle onde" href="waves-elementary-solutions.html" />
     <link rel="prev" title="21. Introduzione ai fenomeni ondulatori" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R3GS2LVD8M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-R3GS2LVD8M');
-</script>
-
   
   
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
@@ -324,8 +315,9 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="intro.html">21. Introduzione ai fenomeni ondulatori</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">21.1. Equazione delle onde in diversi sistemi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="phenomena.html">21.2. Caratteristiche dei fenomeni ondulatori</a></li>
-<li class="toctree-l2"><a class="reference internal" href="waves-notes.html">21.3. Note</a></li>
+<li class="toctree-l2"><a class="reference internal" href="waves-elementary-solutions.html">21.2. Soluzioni elementari dell’equazione delle onde</a></li>
+<li class="toctree-l2"><a class="reference internal" href="waves-phenomena.html">21.3. Caratteristiche dei fenomeni ondulatori</a></li>
+<li class="toctree-l2"><a class="reference internal" href="waves-notes.html">21.4. Note</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="optics.html">22. Ottica</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -393,15 +385,23 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../modern/intro-coupling.html">36. Fenomeni termo-elettrici nella materia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/intro-photography.html">37. Fotografia</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Semiconduttori</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../semiconductors/intro.html">38. Introduzione alla fisica dei semiconduttori</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Strumenti di misura</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../instrumentation/intro.html">38. Strumenti di misura</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-27"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../instrumentation/kinematics.html">38.1. Misura posizione, velocità, accelerazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../instrumentation/mechanics.html">38.2. Quantità meccaniche</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../instrumentation/thermodynamics.html">38.3. Quantità termodinamiche</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../instrumentation/electromagnetism.html">38.4. Quantità elettromagnetiche</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../instrumentation/intro.html">39. Strumenti di misura</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-27"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../instrumentation/kinematics.html">39.1. Misura posizione, velocità, accelerazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../instrumentation/mechanics.html">39.2. Quantità meccaniche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../instrumentation/thermodynamics.html">39.3. Quantità termodinamiche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../instrumentation/electromagnetism.html">39.4. Quantità elettromagnetiche</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Approfondimenti</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../extra.html">Approfondimenti</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
 <ul class="nav bd-sidenav">
@@ -650,7 +650,7 @@ document.write(`
 <p>In questa sezione viene discusso il ruolo dell”<strong>equazione delle onde</strong> in diversi ambiti della fisica. La dinamica di perturbazioni di ampiezza «sufficientemente piccola» è descritta da un problema lineare, governato dall’equazione delle onde con le oppportune condizioni iniziali e al contorno. Per problemi in domini <span class="math notranslate nohighlight">\(D\)</span> spaziali <span class="math notranslate nohighlight">\(1\)</span>-dimensionali, l’espressione dell’equazione (lineare) delle onde in un mezzo omogeneo è</p>
 <div class="math notranslate nohighlight" id="equation-eq-wave-eqn-1d">
 <span class="eqno">(21.1)<a class="headerlink" href="#equation-eq-wave-eqn-1d" title="Permalink a questa equazione">#</a></span>\[\frac{1}{c^2} \partial_{tt} u - \partial_{xx} u = f(x, t) \ , \qquad x \in D \ ,\]</div>
-<p>dove <span class="math notranslate nohighlight">\(c\)</span> è la <strong>velocità di propagazione delle perturbazioni</strong>. Questa velocità è una costante del problema in mezzi omogenei. Il significato della costante <span class="math notranslate nohighlight">\(c\)</span> come velocità di propagazione delle perturbazioni risulta chiaro nell’espressione delle onde viaggianti come <a class="reference internal" href="phenomena.html#physics-hs-waves-equation-solutions"><span class="std std-ref">soluzioni elementari dell’equazione delle onde</span></a>.</p>
+<p>dove <span class="math notranslate nohighlight">\(c\)</span> è la <strong>velocità di propagazione delle perturbazioni</strong>. Questa velocità è una costante del problema in mezzi omogenei. Il significato della costante <span class="math notranslate nohighlight">\(c\)</span> come velocità di propagazione delle perturbazioni risulta chiaro nell’espressione delle onde viaggianti come <a class="reference internal" href="waves-elementary-solutions.html#physics-hs-waves-equation-solutions"><span class="std std-ref">soluzioni elementari dell’equazione delle onde</span></a>.</p>
 <p>Per domini <span class="math notranslate nohighlight">\(n\)</span>-dimensionali, l’espressione dell’equazione delle onde in un mezzo omogeneo è</p>
 <div class="math notranslate nohighlight">
 \[\frac{1}{c^2} \partial_{tt} u - \nabla^2 u = f(\vec{r}, t) \ , \qquad \vec{r} \in D \ .\]</div>
@@ -884,11 +884,11 @@ $$\dfrac{1}{c^2} \partial_{tt} P - \nabla^2 P = 0$$
       </div>
     </a>
     <a class="right-next"
-       href="phenomena.html"
+       href="waves-elementary-solutions.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">21.2. </span>Caratteristiche dei fenomeni ondulatori</p>
+        <p class="prev-next-title"><span class="section-number">21.2. </span>Soluzioni elementari dell’equazione delle onde</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
