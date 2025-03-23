@@ -1,13 +1,11 @@
-(instrumentation:list)=
-# Esempi
+(instrumentation:kinematics)=
+# Misura posizione, velocità, accelerazione
 
-## Misura posizione, velocità, accelerazione
+(instrumentation:kinematics:accelerometer)=
+## Accelerometri
 
-(instrumentation:list:accelerometer)=
-### Accelerometri
-
-(instrumentation:list:accelerometer:mems)=
-#### Accelerometro capacitivo, MEMS
+(instrumentation:kinematics:accelerometer:mems)=
+### Accelerometro capacitivo, MEMS
 
 - parte meccanica MMS. Equazioni in un sistema di riferimento non inerziale, $\tilde{x} = x + x_{out}$, con $\tilde{x}$ lo spostamento rispetto a un sistema inerziale, $x_{out}$ lo spostamento del telaio dello strumento, preso come sistema non inerziale del quale vogliamo misurare l'accelerazione, e $x$ lo spostamento relativo rispetto al telaio di una massa sospesa
 

@@ -235,7 +235,10 @@ parts:
   chapters:
   - file: ch/instrumentation/intro.md
     sections:
-    - file: ch/instrumentation/misc.md
+    - file: ch/instrumentation/kinematics.md
+    - file: ch/instrumentation/mechanics.md
+    - file: ch/instrumentation/thermodynamics.md
+    - file: ch/instrumentation/electromagnetism.md
 - caption: Indice
   chapters:
   - file: genindex.md

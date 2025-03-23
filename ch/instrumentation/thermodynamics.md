@@ -1,0 +1,2 @@
+(instrumentation:thermodynamics)=
+# Quantità termodinamiche
