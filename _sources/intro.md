@@ -23,7 +23,16 @@ Vengono presentati i fenomeni di interesse della fisica. Vengono introdotti i co
 ```{dropdown} [Fisica moderna](physics-hs:modern:intro)
 ```
 
+Inoltre viene dedicata una sezione agli strumenti di misura
+
+```{dropdown} [Strumenti di misura](instrumentation:intro)
+```
+
+
 ````
+
+
+
 
 
 <!--
