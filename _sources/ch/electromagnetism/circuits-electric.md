@@ -190,9 +190,25 @@ con $V \in \mathbb{C}$. **todo**
 
 **Analisi potenza.**
 
+(physics-hs:electromagnetism:circuits-electric:regimes:conversion)=
+### Conversione AC-DC e DC-AC
+
+(physics-hs:electromagnetism:circuits-electric:regimes:conversion:rectifier)=
+#### AC $\rightarrow$ DC, tramite raddizzatori (o rectifier)
+
+Ponte di Graetz, con diodi. Le oscillazioni vengono ridotte tramite l'uso di condensatori e induttori.
+
+(physics-hs:electromagnetism:circuits-electric:regimes:conversion:inverter)=
+#### DC $\rightarrow$ AC, con inverter
+
+```{dropdown} Riferimenti
+[How Inverters Work - Working principle rectifier, The Enginnering Mindset](https://www.youtube.com/watch?v=ln9VZIL8rVs)
+```
+
+Interruttori elettronici (tipicamente basati [semiconduttori](semiconductors:intro): diode, IGBT, MOSFET) connessi a un controllore che ne regola l'apertura. Esempio di logica: **pulse width modulation**. Filtro passivo con condensatori e induttori per produrre un segnale armonico dal treno di impulsi rettangolari ("induttori per regolarizzare la corrente, condensatori per regolarizzare la tensione")
 
 (physics-hs:electromagnetism:circuits-electric:regimes:ac-tri)=
-#### Sistemi trifase
+## Sistemi trifase
 
 I sistemi attuali di produzione, trasporto e gli utilizzatori basati su motori elettrici utilizzano molto frequentemente sistemi con **corrente alternata trifase**, poiché risulta la configurazione migliore che
 - permette la generazione/utilizzo di un campo magnetico rotante, fondamentale per l'utilizzo di generatori e motori elettrici

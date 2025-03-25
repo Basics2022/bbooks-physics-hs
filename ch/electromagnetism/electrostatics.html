@@ -1054,7 +1054,100 @@ Avendo dimostrato la legge di Gauss per una carica puntiforme attraverso una sup
 <div class="math notranslate nohighlight">
 \[\Phi_{\partial V}(\vec{d}) = Q_V\]</div>
 </div>
-</details></div>
+</details><p>Utilizzando la simmetria del problema, la legge di Gauss per il campo elettrico consente di valutare abbastanza semplicemente il campo elettrico di alcune smeplici distribuzioni di carica.</p>
+<div class="proof example dropdown admonition" id="ex-e-field-point">
+<p class="admonition-title"><span class="caption-number">Example 24.6 </span> (Campo elettrico di una carica puntiforme)</p>
+<div class="example-content section" id="proof-content">
+<p>Usando coordinate sferiche</p>
+<div class="math notranslate nohighlight">
+\[4 \pi r^2 e_r(r) = \frac{Q}{\varepsilon}\]</div>
+<div class="math notranslate nohighlight">
+\[\vec{e}(r) = \frac{Q}{4 \pi \varepsilon r^2} \hat{r} \ .\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="ex-e-field-line">
+<p class="admonition-title"><span class="caption-number">Example 24.7 </span> (Campo elettrico di un filo di lunghezza infinita con densità di carica uniforme)</p>
+<div class="example-content section" id="proof-content">
+<p>Usando coordinate cilindriche</p>
+<div class="math notranslate nohighlight">
+\[2 \pi r L e_r(r) = \frac{q L}{\varepsilon}\]</div>
+<div class="math notranslate nohighlight">
+\[\vec{e}(r) = \frac{q}{2 \pi \varepsilon r} \hat{r} \ .\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="ex-e-field-plane">
+<p class="admonition-title"><span class="caption-number">Example 24.8 </span> (Campo elettrico di un piano con densità di carica uniforme)</p>
+<div class="example-content section" id="proof-content">
+<p>Usando coordinate cartesiane, e ricordandosi di considerare le superfici da entrambe le parti del piano carico</p>
+<div class="math notranslate nohighlight">
+\[2 B L e_x(x) = \frac{\sigma B L}{\varepsilon}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{e}(x) = \frac{\sigma}{2 \varepsilon} \frac{\vec{x}}{|\vec{x}|}
+ = \left\{ \begin{aligned} &amp; \ \ \frac{\sigma}{2 \varepsilon} \hat{x} &amp;&amp; \qquad x &gt; 0 \\ &amp; - \frac{\sigma}{2 \varepsilon} \hat{x} &amp;&amp; \qquad x &lt; 0 \end{aligned}\right. \end{split}\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="ex-e-field-cylinder">
+<p class="admonition-title"><span class="caption-number">Example 24.9 </span> (Campo elettrico di una cilindro infinito con densità di carica uniforme)</p>
+<div class="example-content section" id="proof-content">
+<p>La carica totale è uguale al prodotto della densità uniforme e del volume delcilindro, <span class="math notranslate nohighlight">\(Q = \rho \cdot 2 \pi R^2 H\)</span>. La carica contenuta in un cilindro di raggio <span class="math notranslate nohighlight">\(r\)</span> che ha lo stesso asse del cilindro è</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}Q_{in}(r) = \left\{ \begin{aligned} &amp; 2 \pi r^2 H \, \rho = Q \, \frac{r^2}{R^2} &amp;&amp; \qquad r &lt; R \\ &amp; 2 \pi R^2 H \, \rho =  Q &amp;&amp; \qquad r &gt; R \end{aligned} \right.\end{split}\]</div>
+<p>Sfruttando la simmetria del problema, il teorema di Gauss produce la relazione</p>
+<div class="math notranslate nohighlight">
+\[e_r(r) 2 \pi r H = \frac{Q_{in}(r)}{\varepsilon} \ ,\]</div>
+<p>e di conseguenza il campo elettrico vale</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+e_r(r) = \left\{ \begin{aligned} &amp; \frac{\rho r}{\varepsilon} = \frac{Q/H}{2 \pi R}\frac{r}{R}  &amp;&amp; \qquad r &lt; R \\ &amp; \frac{\rho R}{\varepsilon}\frac{R}{r} = \frac{Q/H}{2 \pi r} &amp;&amp; \qquad r &gt; R \end{aligned} \right.
+\end{split}\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="ex-e-field-sphere">
+<p class="admonition-title"><span class="caption-number">Example 24.10 </span> (Campo elettrico di una sfera con densità di carica uniforme)</p>
+<div class="example-content section" id="proof-content">
+<p>La carica totale è uguale al prodotto della densità uniforme e del volume della sfera, <span class="math notranslate nohighlight">\(Q = \rho \cdot \frac{4}{3}\pi R^3\)</span>. La carica contentua in una sfera di raggio <span class="math notranslate nohighlight">\(r\)</span> con centro nel centro della sfera è</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}Q_{in}(r) = \left\{ \begin{aligned} &amp; \frac{4}{3} \pi r^3 \, \rho = Q \, \frac{r^3}{R^3} &amp;&amp; \qquad r &lt; R \\ &amp; \frac{4}{3} \pi R^3 \, \rho =  Q &amp;&amp; \qquad r &gt; R \end{aligned} \right.\end{split}\]</div>
+<p>Sfruttando la simmetria del problema, il teorema di Gauss produce la relazione</p>
+<div class="math notranslate nohighlight">
+\[e_r(r) 4 \pi r^2 = \frac{Q_{in}(r)}{\varepsilon} \ ,\]</div>
+<p>e di conseguenza il campo elettrico vale</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+e_r(r) = \left\{ \begin{aligned} &amp; \frac{1}{3} \frac{\rho r}{\varepsilon} = \frac{Q}{4 \pi R^2}\frac{r}{R}  &amp;&amp; \qquad r &lt; R \\ &amp; \frac{1}{3} \frac{\rho R}{\varepsilon}\frac{R^2}{r^2} = \frac{Q}{4 \pi R^2}\frac{R^2}{r^2} &amp;&amp; \qquad r &gt; R \end{aligned} \right.
+\end{split}\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="ex-e-field-shell-cyl">
+<p class="admonition-title"><span class="caption-number">Example 24.11 </span> (Campo elettrico di un guscio cilindrico con densità di carica uniforme)</p>
+<div class="example-content section" id="proof-content">
+<p>…</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Q_{in}(r) = \left\{ \begin{aligned} 0 &amp;&amp; \qquad r &lt; R \\ Q &amp;&amp; \qquad r &gt; R \end{aligned} \right.
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+2 \pi  L r e_r(r) = \frac{Q_{in}}{\varepsilon} = \frac{q L}{\varepsilon}
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+e_r(r) = \left\{ \begin{aligned} &amp; 0 &amp;&amp; \qquad r &lt; R \\ &amp; \frac{q}{2 \pi r} &amp;&amp; \qquad r &gt; R \end{aligned} \right.
+\end{split}\]</div>
+</div>
+</div><div class="proof example dropdown admonition" id="ex-e-field-shell">
+<p class="admonition-title"><span class="caption-number">Example 24.12 </span> (Campo elettrico di un guscio sferico con densità di carica uniforme)</p>
+<div class="example-content section" id="proof-content">
+<p>…</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Q_{in}(r) = \left\{ \begin{aligned} 0 &amp;&amp; \qquad r &lt; R \\ Q &amp;&amp; \qquad r &gt; R \end{aligned} \right.
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+4 \pi r^2 e_r(r) = \frac{Q_{in}}{\varepsilon} 
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+e_r(r) = \left\{ \begin{aligned} &amp; 0 &amp;&amp; \qquad r &lt; R \\ &amp; \frac{Q}{4 \pi r^2} &amp;&amp; \qquad r &gt; R \end{aligned} \right.
+\end{split}\]</div>
+</div>
+</div></div>
 <div class="section" id="legge-di-faraday-in-elettrostatica">
 <span id="physics-hs-electromagnetism-electrostatics-maxwell-faraday"></span><h3><span class="section-number">24.1.4.2. </span>Legge di Faraday, in elettrostatica<a class="headerlink" href="#legge-di-faraday-in-elettrostatica" title="Permalink to this heading">#</a></h3>
 <ul>
@@ -1113,7 +1206,7 @@ Avendo dimostrato la legge di Faraday nel caso stazionario per una carica puntif
 </tbody>
 </table>
 <p>Sfruttando la simmetria del problema - omogeneo nelle direzioni parallele alle armature del condensatore - e applicando la <a class="reference internal" href="#physics-hs-electromagnetism-electrostatics-maxwell-gauss"><span class="std std-ref">legge di Gauss per ilcampo di spostamento <span class="math notranslate nohighlight">\(\vec{d}\)</span></span></a>, si ottiene la relazione tra il campo elettrico tra le armature del condensatore, la densità di carica superficiale <span class="math notranslate nohighlight">\(\sigma\)</span>, e la costante dielettrica del mezzo tra le armature,</p>
-<p><strong>todo</strong> aggiungere immagini e dettagli</p>
+<p><strong>todo</strong> <span style="color:red">Aggiungere immagine con applicazione di legge di Gauss</span></p>
 <div class="math notranslate nohighlight">
 \[e = \frac{\sigma}{\varepsilon}\]</div>
 <div class="math notranslate nohighlight">
@@ -1192,7 +1285,25 @@ $$L^{molla} = \frac{1}{2} k x^2$$
 <li><p>condensatori in serie</p></li>
 <li><p>condensatori in parallelo</p></li>
 </ul>
+<p><span style="color:red"> Motivazione dell’importanza dei condensatori, uso nei circuiti in molti sistemi moderni, aggiungere <strong>link</strong> a esempi fatti in seguito </span></p>
+<div class="proof example admonition" id="capacitor-series">
+<p class="admonition-title"><span class="caption-number">Example 24.13 </span> (Condensatori in serie)</p>
+<div class="example-content section" id="proof-content">
 </div>
+</div><div class="proof example admonition" id="capacitor-parallel">
+<p class="admonition-title"><span class="caption-number">Example 24.14 </span> (Condensatori in parallelo)</p>
+<div class="example-content section" id="proof-content">
+</div>
+</div><p>Altre configurazioni. Applicazioni: <a class="reference internal" href="../instrumentation/kinematics.html#instrumentation-kinematics-accelerometer-mems"><span class="std std-ref">accelerometro capacitivo MEMS</span></a></p>
+<div class="proof example admonition" id="example-15">
+<p class="admonition-title"><span class="caption-number">Example 24.15 </span> (A  B  A)</p>
+<div class="example-content section" id="proof-content">
+</div>
+</div><div class="proof example admonition" id="example-16">
+<p class="admonition-title"><span class="caption-number">Example 24.16 </span> (A  B  A … B A)</p>
+<div class="example-content section" id="proof-content">
+</div>
+</div></div>
 </div>
 <div class="section" id="moto-di-una-carica-in-un-campo-elettrico">
 <h2><span class="section-number">24.1.6. </span>Moto di una carica in un campo elettrico<a class="headerlink" href="#moto-di-una-carica-in-un-campo-elettrico" title="Permalink to this heading">#</a></h2>

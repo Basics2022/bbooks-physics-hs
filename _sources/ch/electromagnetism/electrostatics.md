@@ -101,6 +101,8 @@ $$\vec{F} = q \, \vec{e}(P) \ .$$
 
 - **todo** Poichè il PSCE vale per la forza, il **PSCE** vale per il campo elettrico
 
+
+
 (physics-hs:electromagnetism:electrostatics:e-field:conservative)=
 ### Campo conservativo
 Come mostrato (**todo** <span style="color:red"> ah sì? fare riferimenti qui?</span>) per il campo gravitazionale, anche il campo elettrostatico è un campo conservativo.
@@ -406,6 +408,127 @@ $$\Phi_{\partial V}(\vec{d}) = Q_V$$
 
 ```
 
+Utilizzando la simmetria del problema, la legge di Gauss per il campo elettrico consente di valutare abbastanza semplicemente il campo elettrico di alcune smeplici distribuzioni di carica.
+
+```{prf:example} Campo elettrico di una carica puntiforme
+:label: ex-e-field-point
+:class: dropdown
+
+Usando coordinate sferiche
+
+$$4 \pi r^2 e_r(r) = \frac{Q}{\varepsilon}$$
+$$\vec{e}(r) = \frac{Q}{4 \pi \varepsilon r^2} \hat{r} \ .$$
+
+```
+
+```{prf:example} Campo elettrico di un filo di lunghezza infinita con densità di carica uniforme
+:label: ex-e-field-line
+:class: dropdown
+
+Usando coordinate cilindriche
+
+$$2 \pi r L e_r(r) = \frac{q L}{\varepsilon}$$
+$$\vec{e}(r) = \frac{q}{2 \pi \varepsilon r} \hat{r} \ .$$
+
+```
+
+```{prf:example} Campo elettrico di un piano con densità di carica uniforme
+:label: ex-e-field-plane
+:class: dropdown
+
+Usando coordinate cartesiane, e ricordandosi di considerare le superfici da entrambe le parti del piano carico
+
+$$2 B L e_x(x) = \frac{\sigma B L}{\varepsilon}$$
+
+$$\vec{e}(x) = \frac{\sigma}{2 \varepsilon} \frac{\vec{x}}{|\vec{x}|}
+ = \left\{ \begin{aligned} & \ \ \frac{\sigma}{2 \varepsilon} \hat{x} && \qquad x > 0 \\ & - \frac{\sigma}{2 \varepsilon} \hat{x} && \qquad x < 0 \end{aligned}\right. $$
+
+```
+
+```{prf:example} Campo elettrico di una cilindro infinito con densità di carica uniforme
+:label: ex-e-field-cylinder
+:class: dropdown
+
+La carica totale è uguale al prodotto della densità uniforme e del volume delcilindro, $Q = \rho \cdot 2 \pi R^2 H$. La carica contenuta in un cilindro di raggio $r$ che ha lo stesso asse del cilindro è
+
+$$Q_{in}(r) = \left\{ \begin{aligned} & 2 \pi r^2 H \, \rho = Q \, \frac{r^2}{R^2} && \qquad r < R \\ & 2 \pi R^2 H \, \rho =  Q && \qquad r > R \end{aligned} \right.$$
+
+Sfruttando la simmetria del problema, il teorema di Gauss produce la relazione
+
+$$e_r(r) 2 \pi r H = \frac{Q_{in}(r)}{\varepsilon} \ ,$$
+
+e di conseguenza il campo elettrico vale
+
+$$
+e_r(r) = \left\{ \begin{aligned} & \frac{\rho r}{\varepsilon} = \frac{Q/H}{2 \pi R}\frac{r}{R}  && \qquad r < R \\ & \frac{\rho R}{\varepsilon}\frac{R}{r} = \frac{Q/H}{2 \pi r} && \qquad r > R \end{aligned} \right.
+$$
+
+```
+
+```{prf:example} Campo elettrico di una sfera con densità di carica uniforme
+:label: ex-e-field-sphere
+:class: dropdown
+
+La carica totale è uguale al prodotto della densità uniforme e del volume della sfera, $Q = \rho \cdot \frac{4}{3}\pi R^3$. La carica contentua in una sfera di raggio $r$ con centro nel centro della sfera è
+
+$$Q_{in}(r) = \left\{ \begin{aligned} & \frac{4}{3} \pi r^3 \, \rho = Q \, \frac{r^3}{R^3} && \qquad r < R \\ & \frac{4}{3} \pi R^3 \, \rho =  Q && \qquad r > R \end{aligned} \right.$$
+
+Sfruttando la simmetria del problema, il teorema di Gauss produce la relazione
+
+$$e_r(r) 4 \pi r^2 = \frac{Q_{in}(r)}{\varepsilon} \ ,$$
+
+e di conseguenza il campo elettrico vale
+
+$$
+e_r(r) = \left\{ \begin{aligned} & \frac{1}{3} \frac{\rho r}{\varepsilon} = \frac{Q}{4 \pi R^2}\frac{r}{R}  && \qquad r < R \\ & \frac{1}{3} \frac{\rho R}{\varepsilon}\frac{R^2}{r^2} = \frac{Q}{4 \pi R^2}\frac{R^2}{r^2} && \qquad r > R \end{aligned} \right.
+$$
+
+```
+
+```{prf:example} Campo elettrico di un guscio cilindrico con densità di carica uniforme
+:label: ex-e-field-shell-cyl
+:class: dropdown
+
+...
+
+$$
+Q_{in}(r) = \left\{ \begin{aligned} 0 && \qquad r < R \\ Q && \qquad r > R \end{aligned} \right.
+$$
+
+$$
+2 \pi  L r e_r(r) = \frac{Q_{in}}{\varepsilon} = \frac{q L}{\varepsilon}
+$$
+
+$$
+e_r(r) = \left\{ \begin{aligned} & 0 && \qquad r < R \\ & \frac{q}{2 \pi r} && \qquad r > R \end{aligned} \right.
+$$
+
+
+
+```
+
+```{prf:example} Campo elettrico di un guscio sferico con densità di carica uniforme
+:label: ex-e-field-shell
+:class: dropdown
+
+...
+
+$$
+Q_{in}(r) = \left\{ \begin{aligned} 0 && \qquad r < R \\ Q && \qquad r > R \end{aligned} \right.
+$$
+
+$$
+4 \pi r^2 e_r(r) = \frac{Q_{in}}{\varepsilon} 
+$$
+
+$$
+e_r(r) = \left\{ \begin{aligned} & 0 && \qquad r < R \\ & \frac{Q}{4 \pi r^2} && \qquad r > R \end{aligned} \right.
+$$
+
+
+
+```
+
 (physics-hs:electromagnetism:electrostatics:maxwell:faraday)=
 ### Legge di Faraday, in elettrostatica
 - La legge di Faraday in elettrostatica è una diretta conseguenza della conservatività del campo elettrico
@@ -458,7 +581,8 @@ Un condensatore piano viene qui studiato nell'approssimazione di condensatore pi
 
 Sfruttando la simmetria del problema - omogeneo nelle direzioni parallele alle armature del condensatore - e applicando la [legge di Gauss per ilcampo di spostamento $\vec{d}$](physics-hs:electromagnetism:electrostatics:maxwell:gauss), si ottiene la relazione tra il campo elettrico tra le armature del condensatore, la densità di carica superficiale $\sigma$, e la costante dielettrica del mezzo tra le armature,
 
-**todo** aggiungere immagini e dettagli
+**todo** <span style="color:red">Aggiungere immagine con applicazione di legge di Gauss</span>
+
 
 $$e = \frac{\sigma}{\varepsilon}$$
 
@@ -531,6 +655,28 @@ $$L^{molla} = \frac{1}{2} k x^2$$
 
 - condensatori in serie
 - condensatori in parallelo
+
+<span style="color:red"> Motivazione dell'importanza dei condensatori, uso nei circuiti in molti sistemi moderni, aggiungere **link** a esempi fatti in seguito </span>
+
+```{prf:example} Condensatori in serie
+:label: capacitor-series
+```
+
+```{prf:example} Condensatori in parallelo
+:label: capacitor-parallel
+
+```
+
+Altre configurazioni. Applicazioni: [accelerometro capacitivo MEMS](instrumentation:kinematics:accelerometer:mems)
+```{prf:example}  A  B  A
+
+```
+
+```{prf:example}  A  B  A ... B A
+
+```
+
+
 
 ## Moto di una carica in un campo elettrico
 Il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$ in una regione dello spazio nel quale c'è un campo elettrico $\vec{e}(\vec{r},t)$ è soggetto a una forza esterna,

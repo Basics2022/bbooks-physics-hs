@@ -5,6 +5,7 @@
 (physics-hs:extra:waves-optics)=
 ## Fenomeni ondulatori e ottica
 - [3B1B - How are holograms possible?](https://www.youtube.com/watch?v=EmKQsSDlaa4). Ologrammi e diffrazione. Argomenti: diffrazione di Fresnel, reticoli di diffrazione,...
+- solarigrafia, fotografia con materiale di recupero con tempi lunghissimi
 
 (physics-hs:extra:instrumentation)=
 ## Strumenti di misura
