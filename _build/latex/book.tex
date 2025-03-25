@@ -87,7 +87,7 @@
         
 
 \title{Fisica per le superiori}
-\date{23 mar 2025}
+\date{25 mar 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -12686,9 +12686,28 @@ A differenza dell’espressione delle onde viaggianti nel caso 1\sphinxhyphen{}d
 
 \section{Caratteristiche dei fenomeni ondulatori}
 \label{\detokenize{ch/waves/waves-phenomena:caratteristiche-dei-fenomeni-ondulatori}}\label{\detokenize{ch/waves/waves-phenomena:physics-hs-waves-phenomena}}\label{\detokenize{ch/waves/waves-phenomena::doc}}
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+necessità di segnali coerenti (es.laser, forzanti armoniche)?
+
+\item {} 
+\sphinxAtStartPar
+condizioni nelle quali è lecito aspettarsi la manifestazione dei seguenti fenomeni. Es. diffrazione quando un’onda incontra ostacoli di dimensioni «paragonabili» alla lunghezza d’onda della perturbazione…
+
+\end{itemize}
+
 
 \subsection{Interferenza}
-\label{\detokenize{ch/waves/waves-phenomena:interferenza}}\label{\detokenize{ch/waves/waves-phenomena:physics-hs-waves-effects-interference}}
+\label{\detokenize{ch/waves/waves-phenomena:interferenza}}\label{\detokenize{ch/waves/waves-phenomena:physics-hs-waves-effects-interference}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+distinguere tra PSCE di segnali, e pattern di interferenza che compare nel quadrato del segnale, spesso associato alle grandezze percepite con i sensi e/o misurate da strumenti di misura (es. intensità luminosa della radiazione elettromagnetica)
+
+\end{itemize}
+
 
 \subsection{Riflessione}
 \label{\detokenize{ch/waves/waves-phenomena:riflessione}}\label{\detokenize{ch/waves/waves-phenomena:physics-hs-waves-effects-reflection}}
@@ -12699,7 +12718,37 @@ A differenza dell’espressione delle onde viaggianti nel caso 1\sphinxhyphen{}d
 \subsection{Diffrazione}
 \label{\detokenize{ch/waves/waves-phenomena:diffrazione}}\label{\detokenize{ch/waves/waves-phenomena:physics-hs-waves-effects-diffraction}}
 \sphinxAtStartPar
-La diffrazione è una conseguenza dell’incontro di un’onda con un ostacolo o un’apertura di dimensione parabonabile alla lunghezza d’onda ({\hyperref[\detokenize{ch/waves/waves-elementary-solutions:wave-length}]{\sphinxcrossref{Definition 21.2.2}}}) della perturbazione.
+La diffrazione è una conseguenza dell’intereferenza di un’onda con un ostacolo o un’apertura di dimensione parabonabile alla lunghezza d’onda ({\hyperref[\detokenize{ch/waves/waves-elementary-solutions:wave-length}]{\sphinxcrossref{Definition 21.2.2}}}) della perturbazione.
+
+\sphinxAtStartPar
+Per alcune geometrie semplici, sono note alcune soluzioni approssimate dei pattern di interferenza in seguito alla diffrazione:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{near\sphinxhyphen{}field}: approssimazione di Fresnel
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{far\sphinxhyphen{}field}: approssimazione di Fraunhofer
+
+\end{itemize}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Limiti di diffrazione: quando è lecito aspettarsi diosservare diffrazione?
+
+\item {} 
+\sphinxAtStartPar
+Aggiungere esempi di soluzione esatta calcolata con script, e confronto con le approssimazioni di Fresnel e Fraunhofer; distinguere tra soprapposizione segnali, e pattern di \DUrole{xref,myst}{interferenza nell’intensità media}. Riferimeni: {\hyperref[\detokenize{ch/extra:physics-hs-extra-waves-optics}]{\sphinxcrossref{\DUrole{std,std-ref}{video di 3B1B \sphinxhyphen{} How re hologram possible?}}}}
+
+\item {} 
+\sphinxAtStartPar
+Fare esempi pratici: lato posteriore di un DVD, doppia fenditura, reticoli di diffrazione, diaframma di una macchina fotografica con apertura ridotta,…
+
+\end{itemize}
 
 \sphinxAtStartPar
 \sphinxstylestrong{Applicazioni ed esempi.} Spettroscopia
@@ -15212,6 +15261,130 @@ Avendo dimostrato la legge di Gauss per una carica puntiforme attraverso una sup
 \end{equation*}\begin{equation*}
 \begin{split}\Phi_{\partial V}(\vec{d}) = Q_V\end{split}
 \end{equation*}
+\sphinxAtStartPar
+Utilizzando la simmetria del problema, la legge di Gauss per il campo elettrico consente di valutare abbastanza semplicemente il campo elettrico di alcune smeplici distribuzioni di carica.
+\label{ch/electromagnetism/electrostatics:ex-e-field-point}
+\begin{sphinxadmonition}{note}{Example 24.1.6 (Campo elettrico di una carica puntiforme)}
+
+
+
+\sphinxAtStartPar
+Usando coordinate sferiche
+\begin{equation*}
+\begin{split}4 \pi r^2 e_r(r) = \frac{Q}{\varepsilon}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\vec{e}(r) = \frac{Q}{4 \pi \varepsilon r^2} \hat{r} \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/electromagnetism/electrostatics:ex-e-field-line}
+\begin{sphinxadmonition}{note}{Example 24.1.7 (Campo elettrico di un filo di lunghezza infinita con densità di carica uniforme)}
+
+
+
+\sphinxAtStartPar
+Usando coordinate cilindriche
+\begin{equation*}
+\begin{split}2 \pi r L e_r(r) = \frac{q L}{\varepsilon}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\vec{e}(r) = \frac{q}{2 \pi \varepsilon r} \hat{r} \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/electromagnetism/electrostatics:ex-e-field-plane}
+\begin{sphinxadmonition}{note}{Example 24.1.8 (Campo elettrico di un piano con densità di carica uniforme)}
+
+
+
+\sphinxAtStartPar
+Usando coordinate cartesiane, e ricordandosi di considerare le superfici da entrambe le parti del piano carico
+\begin{equation*}
+\begin{split}2 B L e_x(x) = \frac{\sigma B L}{\varepsilon}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\vec{e}(x) = \frac{\sigma}{2 \varepsilon} \frac{\vec{x}}{|\vec{x}|}
+ = \left\{ \begin{aligned} & \ \ \frac{\sigma}{2 \varepsilon} \hat{x} && \qquad x > 0 \\ & - \frac{\sigma}{2 \varepsilon} \hat{x} && \qquad x < 0 \end{aligned}\right. \end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/electromagnetism/electrostatics:ex-e-field-cylinder}
+\begin{sphinxadmonition}{note}{Example 24.1.9 (Campo elettrico di una cilindro infinito con densità di carica uniforme)}
+
+
+
+\sphinxAtStartPar
+La carica totale è uguale al prodotto della densità uniforme e del volume delcilindro, \(Q = \rho \cdot 2 \pi R^2 H\). La carica contenuta in un cilindro di raggio \(r\) che ha lo stesso asse del cilindro è
+\begin{equation*}
+\begin{split}Q_{in}(r) = \left\{ \begin{aligned} & 2 \pi r^2 H \, \rho = Q \, \frac{r^2}{R^2} && \qquad r < R \\ & 2 \pi R^2 H \, \rho =  Q && \qquad r > R \end{aligned} \right.\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Sfruttando la simmetria del problema, il teorema di Gauss produce la relazione
+\begin{equation*}
+\begin{split}e_r(r) 2 \pi r H = \frac{Q_{in}(r)}{\varepsilon} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e di conseguenza il campo elettrico vale
+\begin{equation*}
+\begin{split}
+e_r(r) = \left\{ \begin{aligned} & \frac{\rho r}{\varepsilon} = \frac{Q/H}{2 \pi R}\frac{r}{R}  && \qquad r < R \\ & \frac{\rho R}{\varepsilon}\frac{R}{r} = \frac{Q/H}{2 \pi r} && \qquad r > R \end{aligned} \right.
+\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/electromagnetism/electrostatics:ex-e-field-sphere}
+\begin{sphinxadmonition}{note}{Example 24.1.10 (Campo elettrico di una sfera con densità di carica uniforme)}
+
+
+
+\sphinxAtStartPar
+La carica totale è uguale al prodotto della densità uniforme e del volume della sfera, \(Q = \rho \cdot \frac{4}{3}\pi R^3\). La carica contentua in una sfera di raggio \(r\) con centro nel centro della sfera è
+\begin{equation*}
+\begin{split}Q_{in}(r) = \left\{ \begin{aligned} & \frac{4}{3} \pi r^3 \, \rho = Q \, \frac{r^3}{R^3} && \qquad r < R \\ & \frac{4}{3} \pi R^3 \, \rho =  Q && \qquad r > R \end{aligned} \right.\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Sfruttando la simmetria del problema, il teorema di Gauss produce la relazione
+\begin{equation*}
+\begin{split}e_r(r) 4 \pi r^2 = \frac{Q_{in}(r)}{\varepsilon} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e di conseguenza il campo elettrico vale
+\begin{equation*}
+\begin{split}
+e_r(r) = \left\{ \begin{aligned} & \frac{1}{3} \frac{\rho r}{\varepsilon} = \frac{Q}{4 \pi R^2}\frac{r}{R}  && \qquad r < R \\ & \frac{1}{3} \frac{\rho R}{\varepsilon}\frac{R^2}{r^2} = \frac{Q}{4 \pi R^2}\frac{R^2}{r^2} && \qquad r > R \end{aligned} \right.
+\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/electromagnetism/electrostatics:ex-e-field-shell-cyl}
+\begin{sphinxadmonition}{note}{Example 24.1.11 (Campo elettrico di un guscio cilindrico con densità di carica uniforme)}
+
+
+
+\sphinxAtStartPar
+…
+\begin{equation*}
+\begin{split}
+Q_{in}(r) = \left\{ \begin{aligned} 0 && \qquad r < R \\ Q && \qquad r > R \end{aligned} \right.
+\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}
+2 \pi  L r e_r(r) = \frac{Q_{in}}{\varepsilon} = \frac{q L}{\varepsilon}
+\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}
+e_r(r) = \left\{ \begin{aligned} & 0 && \qquad r < R \\ & \frac{q}{2 \pi r} && \qquad r > R \end{aligned} \right.
+\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/electromagnetism/electrostatics:ex-e-field-shell}
+\begin{sphinxadmonition}{note}{Example 24.1.12 (Campo elettrico di un guscio sferico con densità di carica uniforme)}
+
+
+
+\sphinxAtStartPar
+…
+\begin{equation*}
+\begin{split}
+Q_{in}(r) = \left\{ \begin{aligned} 0 && \qquad r < R \\ Q && \qquad r > R \end{aligned} \right.
+\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}
+4 \pi r^2 e_r(r) = \frac{Q_{in}}{\varepsilon} 
+\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}
+e_r(r) = \left\{ \begin{aligned} & 0 && \qquad r < R \\ & \frac{Q}{4 \pi r^2} && \qquad r > R \end{aligned} \right.
+\end{split}
+\end{equation*}\end{sphinxadmonition}
+
 
 \subsubsection{Legge di Faraday, in elettrostatica}
 \label{\detokenize{ch/electromagnetism/electrostatics:legge-di-faraday-in-elettrostatica}}\label{\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-maxwell-faraday}}\begin{itemize}
@@ -15294,7 +15467,7 @@ Un condensatore piano viene qui studiato nell’approssimazione di condensatore 
 Sfruttando la simmetria del problema \sphinxhyphen{} omogeneo nelle direzioni parallele alle armature del condensatore \sphinxhyphen{} e applicando la {\hyperref[\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-maxwell-gauss}]{\sphinxcrossref{\DUrole{std,std-ref}{legge di Gauss per ilcampo di spostamento \(\vec{d}\)}}}}, si ottiene la relazione tra il campo elettrico tra le armature del condensatore, la densità di carica superficiale \(\sigma\), e la costante dielettrica del mezzo tra le armature,
 
 \sphinxAtStartPar
-\sphinxstylestrong{todo} aggiungere immagini e dettagli
+\sphinxstylestrong{todo} Aggiungere immagine con applicazione di legge di Gauss
 \begin{equation*}
 \begin{split}e = \frac{\sigma}{\varepsilon}\end{split}
 \end{equation*}\begin{equation*}
@@ -15383,6 +15556,32 @@ condensatori in serie
 condensatori in parallelo
 
 \end{itemize}
+
+\sphinxAtStartPar
+ Motivazione dell’importanza dei condensatori, uso nei circuiti in molti sistemi moderni, aggiungere \sphinxstylestrong{link} a: circuiti come filtro, esempi fatti in seguito (strumenti di misura,…),… 
+\label{ch/electromagnetism/electrostatics:capacitor-series}
+\begin{sphinxadmonition}{note}{Example 24.1.13 (Condensatori in serie)}
+
+
+\end{sphinxadmonition}
+\label{ch/electromagnetism/electrostatics:capacitor-parallel}
+\begin{sphinxadmonition}{note}{Example 24.1.14 (Condensatori in parallelo)}
+
+
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+Altre configurazioni. Applicazioni: {\hyperref[\detokenize{ch/instrumentation/kinematics:instrumentation-kinematics-accelerometer-mems}]{\sphinxcrossref{\DUrole{std,std-ref}{accelerometro capacitivo MEMS}}}},…
+\label{ch/electromagnetism/electrostatics:example-15}
+\begin{sphinxadmonition}{note}{Example 24.1.15 (A  B  A)}
+
+
+\end{sphinxadmonition}
+\label{ch/electromagnetism/electrostatics:example-16}
+\begin{sphinxadmonition}{note}{Example 24.1.16 (A  B  A … B A)}
+
+
+\end{sphinxadmonition}
 
 
 \subsection{Moto di una carica in un campo elettrico}
@@ -16943,6 +17142,9 @@ Fare riferimento a:
 \chapter{Fondamenti di elettrotecnica}
 \label{\detokenize{ch/electromagnetism/electrical-engineering:fondamenti-di-elettrotecnica}}\label{\detokenize{ch/electromagnetism/electrical-engineering:physics-hs-electromagnetism-electric-engineering}}\label{\detokenize{ch/electromagnetism/electrical-engineering::doc}}
 \sphinxAtStartPar
+Riscrivere introduzione e riorganizzare il capitolo
+
+\sphinxAtStartPar
 L’applicazione dei fenomeni elettromagnetici può essere distinta qualitativamente in due grandi discipline:
 \subsubsection*{\sphinxstylestrong{Elettrotecnica}}
 
@@ -17000,6 +17202,15 @@ A queste discipline, si aggiunge l”\sphinxstylestrong{ottica} \sphinxstylestro
 
 \sphinxAtStartPar
 Il regime fisico di applicazione dell’elettrotecnica consente di semplificare le equazioni che governano il problema elettromagnetico usando un\(\text{'}\)\sphinxstylestrong{approssimazione circuitale}.
+
+
+\bigskip\hrule\bigskip
+
+\subsubsection*{Riferimenti e fonti.}
+\subsubsection*{The Engineering Mindset}
+
+\sphinxAtStartPar
+Progetto che si propone di essere un riferimento per il materiale didattico essenziale su tutti gli aspetti di ingegneria. Non so se si può dire che siano riusciti a coprire tutti gli aspetti di ingegneria, ma hanno una gran quantità di video sul loro \sphinxhref{https://www.youtube.com/@EngineeringMindset}{canale Youtube \sphinxhyphen{} The Engineering Mindset} di ottima qualità su \sphinxstylestrong{elettrotecnica ed elettronica}, con alcune applicazioni elettromeccaniche, proprio quello che serve a noi qui.
 
 \sphinxstepscope
 
@@ -17287,7 +17498,26 @@ con \(V \in \mathbb{C}\). \sphinxstylestrong{todo}
 \sphinxstylestrong{Analisi potenza.}
 
 
-\paragraph{Sistemi trifase}
+\subsubsection{Conversione AC\sphinxhyphen{}DC e DC\sphinxhyphen{}AC}
+\label{\detokenize{ch/electromagnetism/circuits-electric:conversione-ac-dc-e-dc-ac}}\label{\detokenize{ch/electromagnetism/circuits-electric:physics-hs-electromagnetism-circuits-electric-regimes-conversion}}
+
+\paragraph{AC \protect\(\rightarrow\protect\) DC, tramite raddizzatori (o rectifier)}
+\label{\detokenize{ch/electromagnetism/circuits-electric:ac-rightarrow-dc-tramite-raddizzatori-o-rectifier}}\label{\detokenize{ch/electromagnetism/circuits-electric:physics-hs-electromagnetism-circuits-electric-regimes-conversion-rectifier}}
+\sphinxAtStartPar
+Ponte di Graetz, con diodi. Le oscillazioni vengono ridotte tramite l’uso di condensatori e induttori.
+
+
+\paragraph{DC \protect\(\rightarrow\protect\) AC, con inverter}
+\label{\detokenize{ch/electromagnetism/circuits-electric:dc-rightarrow-ac-con-inverter}}\label{\detokenize{ch/electromagnetism/circuits-electric:physics-hs-electromagnetism-circuits-electric-regimes-conversion-inverter}}\subsubsection*{Riferimenti}
+
+\sphinxAtStartPar
+\sphinxhref{https://www.youtube.com/watch?v=ln9VZIL8rVs}{How Inverters Work \sphinxhyphen{} Working principle rectifier, The Enginnering Mindset}
+
+\sphinxAtStartPar
+Interruttori elettronici (tipicamente basati {\hyperref[\detokenize{ch/semiconductors/intro:semiconductors-intro}]{\sphinxcrossref{\DUrole{std,std-ref}{semiconduttori}}}}: diode, IGBT, MOSFET) connessi a un controllore che ne regola l’apertura. Esempio di logica: \sphinxstylestrong{pulse width modulation}. Filtro passivo con condensatori e induttori per produrre un segnale armonico dal treno di impulsi rettangolari («induttori per regolarizzare la corrente, condensatori per regolarizzare la tensione»)
+
+
+\subsection{Sistemi trifase}
 \label{\detokenize{ch/electromagnetism/circuits-electric:sistemi-trifase}}\label{\detokenize{ch/electromagnetism/circuits-electric:physics-hs-electromagnetism-circuits-electric-regimes-ac-tri}}
 \sphinxAtStartPar
 I sistemi attuali di produzione, trasporto e gli utilizzatori basati su motori elettrici utilizzano molto frequentemente sistemi con \sphinxstylestrong{corrente alternata trifase}, poiché risulta la configurazione migliore che
@@ -19602,6 +19832,23 @@ fenomeni caratteristici: effetto fotovoltaico, effetto fotoresistivo,…
 
 \end{itemize}
 
+\sphinxAtStartPar
+\sphinxstylestrong{Riferimenti}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+…
+
+\item {} 
+\sphinxAtStartPar
+\sphinxhref{https://lampz.tugraz.at/~hadley/psd/L6/abrupt.html}{giunzione p\sphinxhyphen{}n e depletion approximation}
+
+\item {} 
+\sphinxAtStartPar
+…
+
+\end{itemize}
+
 \sphinxstepscope
 
 
@@ -19765,6 +20012,10 @@ Basati sulla fisica dei {\hyperref[\detokenize{ch/semiconductors/intro:semicondu
 \sphinxAtStartPar
 \sphinxhref{https://www.youtube.com/watch?v=EmKQsSDlaa4}{3B1B \sphinxhyphen{} How are holograms possible?}. Ologrammi e diffrazione. Argomenti: diffrazione di Fresnel, reticoli di diffrazione,…
 
+\item {} 
+\sphinxAtStartPar
+solarigrafia, fotografia con materiale di recupero con tempi lunghissimi
+
 \end{itemize}
 
 
@@ -19796,6 +20047,12 @@ Basati sulla fisica dei {\hyperref[\detokenize{ch/semiconductors/intro:semicondu
 \let\bigletter\sphinxstyleindexlettergroup
 \bigletter{capacitor\sphinxhyphen{}capacity}
 \item\relax\sphinxstyleindexentry{capacitor\sphinxhyphen{}capacity}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{capacitor-capacity}}
+\indexspace
+\bigletter{capacitor\sphinxhyphen{}parallel}
+\item\relax\sphinxstyleindexentry{capacitor\sphinxhyphen{}parallel}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{capacitor-parallel}}
+\indexspace
+\bigletter{capacitor\sphinxhyphen{}series}
+\item\relax\sphinxstyleindexentry{capacitor\sphinxhyphen{}series}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{capacitor-series}}
 \indexspace
 \bigletter{charge\sphinxhyphen{}sphere:conductor}
 \item\relax\sphinxstyleindexentry{charge\sphinxhyphen{}sphere:conductor}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{charge-sphere:conductor}}
@@ -19830,6 +20087,27 @@ Basati sulla fisica dei {\hyperref[\detokenize{ch/semiconductors/intro:semicondu
 \bigletter{electric\sphinxhyphen{}dipole\sphinxhyphen{}ext\sphinxhyphen{}e\sphinxhyphen{}field}
 \item\relax\sphinxstyleindexentry{electric\sphinxhyphen{}dipole\sphinxhyphen{}ext\sphinxhyphen{}e\sphinxhyphen{}field}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{electric-dipole-ext-e-field}}
 \indexspace
+\bigletter{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}cylinder}
+\item\relax\sphinxstyleindexentry{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}cylinder}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{ex-e-field-cylinder}}
+\indexspace
+\bigletter{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}line}
+\item\relax\sphinxstyleindexentry{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}line}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{ex-e-field-line}}
+\indexspace
+\bigletter{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}plane}
+\item\relax\sphinxstyleindexentry{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}plane}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{ex-e-field-plane}}
+\indexspace
+\bigletter{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}point}
+\item\relax\sphinxstyleindexentry{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}point}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{ex-e-field-point}}
+\indexspace
+\bigletter{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}shell}
+\item\relax\sphinxstyleindexentry{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}shell}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{ex-e-field-shell}}
+\indexspace
+\bigletter{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}shell\sphinxhyphen{}cyl}
+\item\relax\sphinxstyleindexentry{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}shell\sphinxhyphen{}cyl}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{ex-e-field-shell-cyl}}
+\indexspace
+\bigletter{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}sphere}
+\item\relax\sphinxstyleindexentry{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}sphere}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{ex-e-field-sphere}}
+\indexspace
 \bigletter{example\sphinxhyphen{}0}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/waves-phenomena:\detokenize{example-0}}
 \indexspace
@@ -19852,10 +20130,10 @@ Basati sulla fisica dei {\hyperref[\detokenize{ch/semiconductors/intro:semicondu
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}14}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-14}}
 \indexspace
 \bigletter{example\sphinxhyphen{}15}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}15}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-15}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}15}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{example-15}}
 \indexspace
 \bigletter{example\sphinxhyphen{}16}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}16}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-16}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}16}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{example-16}}
 \indexspace
 \bigletter{example\sphinxhyphen{}17}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}17}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-17}}
@@ -19865,6 +20143,15 @@ Basati sulla fisica dei {\hyperref[\detokenize{ch/semiconductors/intro:semicondu
 \indexspace
 \bigletter{example\sphinxhyphen{}2}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/waves-phenomena:\detokenize{example-2}}
+\indexspace
+\bigletter{example\sphinxhyphen{}3}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-3}}
+\indexspace
+\bigletter{example\sphinxhyphen{}4}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}4}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-4}}
+\indexspace
+\bigletter{example\sphinxhyphen{}5}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-5}}
 \indexspace
 \bigletter{example\sphinxhyphen{}6}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}6}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-6}}
