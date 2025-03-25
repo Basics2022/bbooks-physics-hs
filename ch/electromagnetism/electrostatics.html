@@ -71,7 +71,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon-sugar.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="24.1.7. Problemi" href="electrostatics-problems.html" />
+    <link rel="next" title="24.1.8. Problemi" href="electrostatics-problems.html" />
     <link rel="prev" title="24. Fondamenti di elettromagnetismo" href="em.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -347,9 +347,9 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="em.html">24. Fondamenti di elettromagnetismo</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">24.1. Elettrostatica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="electrostatics-problems.html">24.1.7. Problemi</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electrostatics-sol.html">24.1.8. Soluzioni</a></li>
-<li class="toctree-l3"><a class="reference internal" href="electrostatics-notes.html">24.1.9. Note e dimostrazioni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrostatics-problems.html">24.1.8. Problemi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrostatics-sol.html">24.1.9. Soluzioni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="electrostatics-notes.html">24.1.10. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="electric-current.html">24.2. Corrente elettrica</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -636,23 +636,27 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energia-potenziale-di-una-distribuzione-di-cariche">24.1.2.2. Energia potenziale di una distribuzione di cariche</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-elettrico-nei-materiali">24.1.3. Campo elettrico nei materiali</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-elettrostatico-nei-conduttori">24.1.3.1. Campo elettrostatico nei conduttori</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-elettrostatico-nei-dielettrici">24.1.3.2. Campo elettrostatico nei dielettrici</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi-di-distrituzione-di-cariche">24.1.3. Esempi di distrituzione di cariche</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dipolo-elettrico">24.1.3.1. Dipolo elettrico</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verso-le-equazioni-di-maxwell">24.1.4. Verso le equazioni di Maxwell</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gauss-per-il-flusso-del-campo-elettrico">24.1.4.1. Legge di Gauss per il flusso del campo elettrico</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-faraday-in-elettrostatica">24.1.4.2. Legge di Faraday, in elettrostatica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-elettrico-nei-materiali">24.1.4. Campo elettrico nei materiali</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-elettrostatico-nei-conduttori">24.1.4.1. Campo elettrostatico nei conduttori</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-elettrostatico-nei-dielettrici">24.1.4.2. Campo elettrostatico nei dielettrici</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore">24.1.5. Condensatore</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore-piano">24.1.5.1. Condensatore piano</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-di-energia-in-un-condensatore">24.1.5.2. Bilancio di energia in un condensatore</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configurazioni-di-condensatori">24.1.5.3. Configurazioni di condensatori</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verso-le-equazioni-di-maxwell">24.1.5. Verso le equazioni di Maxwell</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gauss-per-il-flusso-del-campo-elettrico">24.1.5.1. Legge di Gauss per il flusso del campo elettrico</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-faraday-in-elettrostatica">24.1.5.2. Legge di Faraday, in elettrostatica</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-di-una-carica-in-un-campo-elettrico">24.1.6. Moto di una carica in un campo elettrico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore">24.1.6. Condensatore</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore-piano">24.1.6.1. Condensatore piano</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-di-energia-in-un-condensatore">24.1.6.2. Bilancio di energia in un condensatore</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configurazioni-di-condensatori">24.1.6.3. Configurazioni di condensatori</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-di-una-carica-in-un-campo-elettrostatico">24.1.7. Moto di una carica in un campo elettrostatico</a></li>
 </ul>
             </nav>
         </div>
@@ -837,7 +841,17 @@ Posizionando le cariche contemporanamente<div class="sd-summary-down docutils">
  L = \int_{\alpha = 0}^{1} dL (\alpha) =  - \int_{\alpha=0}^{1} \sum_{\{i,j\}, i \ne j} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{1}{r_{ij}}  \, d \alpha = - \sum_{\{i,j\}, i \ne j} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{1}{r_{ij}} \ .
 \]</div>
 </div>
-</details><div class="proof example admonition" id="electric-dipole">
+</details></div>
+</div>
+<div class="section" id="esempi-di-distrituzione-di-cariche">
+<span id="physics-hs-electromagnetism-electrostatics-e-field-examples"></span><h2><span class="section-number">24.1.3. </span>Esempi di distrituzione di cariche<a class="headerlink" href="#esempi-di-distrituzione-di-cariche" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>dipolo</p></li>
+<li><p>distribuzioni lineari, superficiali, nel volume</p></li>
+</ul>
+<div class="section" id="dipolo-elettrico">
+<span id="physics-hs-electromagnetism-electrostatics-e-field-dipole"></span><h3><span class="section-number">24.1.3.1. </span>Dipolo elettrico<a class="headerlink" href="#dipolo-elettrico" title="Permalink to this heading">#</a></h3>
+<div class="proof example admonition" id="electric-dipole">
 <p class="admonition-title"><span class="caption-number">Example 24.1 </span> (Il dipolo elettrico)</p>
 <div class="example-content section" id="proof-content">
 <p>Un dipolo elettrico viene definito come un sistema formato da due cariche di intensità <span class="math notranslate nohighlight">\(-q\)</span> e <span class="math notranslate nohighlight">\(q\)</span> poste in due punti dello spazio <span class="math notranslate nohighlight">\(P_{-}\)</span>, <span class="math notranslate nohighlight">\(P_{+} = P_{-}\)</span> dal vettore <span class="math notranslate nohighlight">\(\vec{\ell}\)</span>,</p>
@@ -879,14 +893,14 @@ Posizionando le cariche contemporanamente<div class="sd-summary-down docutils">
 </div></div>
 </div>
 <div class="section" id="campo-elettrico-nei-materiali">
-<span id="physics-hs-electromagnetism-electrostatics-e-field-media"></span><h2><span class="section-number">24.1.3. </span>Campo elettrico nei materiali<a class="headerlink" href="#campo-elettrico-nei-materiali" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-electromagnetism-electrostatics-e-field-media"></span><h2><span class="section-number">24.1.4. </span>Campo elettrico nei materiali<a class="headerlink" href="#campo-elettrico-nei-materiali" title="Permalink to this heading">#</a></h2>
 <p>L’interazione dei materiali con un campo elettrico viene descritta qui e nella sezione <a class="reference internal" href="electric-current.html#physics-hs-electromagnetism-electric-current-media"><span class="std std-ref">Corrente elettrica nella materia</span></a> del capitolo successivo. E” frequente analizzare la risposta di un materiale a un campo elettrico utilizzando una classificazione delle cariche elettriche presenti nel materiale in <strong>cariche libere</strong> (cariche elettriche non vincolate ai singoli atomi del materiale, ma condivise tra di essi, come gli <em>elettroni di conduzione</em> nei <em>metalli</em>) e <strong>cariche vincolate</strong> (cariche elettriche vincolate ai rispettivi nuclei, come gli elettroni degli orbitali più interni in un solido metallico, o gli elettroni dei materiali non conduttori - che hanno tutti gli elettroni vincolati a singoli atomi, e non condivisi all’interno dell’intero materiale).</p>
 <p>A seconda della loro interazione con un campo elettrico e alla loro capacità di condurre corrente, i materiali possono essere classificati come:</p>
 <ul class="simple">
 <li><p>materiali conduttori:</p>
 <ul>
 <li><p>permettono il passaggio della corrente elettrica, cioè il moto di <strong>cariche elettriche libere</strong></p></li>
-<li><p>non mostrano polarizzazione, poiché le cariche libere rispondono a un campo elettrico esterno, disponendosi in una configurazione tale da annullare il campo elettrico totale all’interno del conduttore, si veda <span class="xref myst"></span> e l’esempio della <span class="xref myst">gabbia di Faraday</span></p></li>
+<li><p>non mostrano polarizzazione, poiché le cariche libere rispondono a un campo elettrico esterno, disponendosi in una configurazione tale da annullare il campo elettrico totale all’interno del conduttore, si veda <strong>todo</strong> e l’esempio {prf:ref}`faraday-cage} sulla <strong>gabbia di Faraday</strong></p></li>
 </ul>
 </li>
 <li><p>materiali isolanti:</p>
@@ -909,7 +923,7 @@ Posizionando le cariche contemporanamente<div class="sd-summary-down docutils">
 <li><p>materiali dielettrici manifestano una polarizzazione che si manifesta con una costante dielettrica relativa, <span class="math notranslate nohighlight">\(\varepsilon_r &gt; 1\)</span>, <span class="math notranslate nohighlight">\(\varepsilon &gt; \varepsilon_0\)</span></p></li>
 </ul>
 <div class="section" id="campo-elettrostatico-nei-conduttori">
-<span id="physics-hs-electromagnetism-electrostatics-e-field-media-conductors"></span><h3><span class="section-number">24.1.3.1. </span>Campo elettrostatico nei conduttori<a class="headerlink" href="#campo-elettrostatico-nei-conduttori" title="Permalink to this heading">#</a></h3>
+<span id="physics-hs-electromagnetism-electrostatics-e-field-media-conductors"></span><h3><span class="section-number">24.1.4.1. </span>Campo elettrostatico nei conduttori<a class="headerlink" href="#campo-elettrostatico-nei-conduttori" title="Permalink to this heading">#</a></h3>
 <p>In condizioni statiche il campo elettrico nei conduttori è identicamente nullo. Le cariche elettriche (libere) si concentrano quindi in zone di superficie sottile e possono essere modellate in prima approssimazione con densità di carica superficiale. Se in una regione dello spazio il campo elettrico è identicamente nullo, allora i punti in quella regione hanno lo stesso pontenziale. E” quindi possibile affermare che nei punti all’interno di un materiale conduttore in condizioni di elettrostatica (o di resistività nulla o trascurabile, come sarà spiegato nel prossimo capitolo sulla <a class="reference internal" href="electric-current.html#physics-hs-electromagnetism-electric-current"><span class="std std-ref">corrente elettrica</span></a> per la <a class="reference internal" href="electric-current.html#physics-hs-electromagnetism-electric-current-solids-conductor"><span class="std std-ref">conduzione nei solidi conduttori</span></a>),</p>
 <ul class="simple">
 <li><p>il campo elettrico è nullo <span class="math notranslate nohighlight">\(\vec{e}(P) = \vec{0}\)</span></p></li>
@@ -957,12 +971,12 @@ Posizionando le cariche contemporanamente<div class="sd-summary-down docutils">
 </div>
 </div></div>
 <div class="section" id="campo-elettrostatico-nei-dielettrici">
-<span id="physics-hs-electromagnetism-electrostatics-e-field-media-dielectrics"></span><h3><span class="section-number">24.1.3.2. </span>Campo elettrostatico nei dielettrici<a class="headerlink" href="#campo-elettrostatico-nei-dielettrici" title="Permalink to this heading">#</a></h3>
+<span id="physics-hs-electromagnetism-electrostatics-e-field-media-dielectrics"></span><h3><span class="section-number">24.1.4.2. </span>Campo elettrostatico nei dielettrici<a class="headerlink" href="#campo-elettrostatico-nei-dielettrici" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>polarizzazione: descrizione</p></li>
-<li><p>polarizzazione equivalente a una distribuzione di volume di <span class="xref myst">dipoli elettrici</span>, vedi <a class="reference internal" href="#electric-dipole">Example 24.1</a>, equivalente a una distribuzione di carica superficiale e una distribuzione di carica di volume solo se polarizzazione non uniforme</p></li>
+<li><p>polarizzazione equivalente a una distribuzione di volume di <a class="reference internal" href="#physics-hs-electromagnetism-electrostatics-e-field-dipole"><span class="std std-ref">dipoli elettrici</span></a>, vedi <a class="reference internal" href="#electric-dipole">Example 24.1</a>, equivalente a una distribuzione di carica superficiale e una distribuzione di carica di volume solo se polarizzazione non uniforme</p></li>
 </ul>
-<p>A differenza dei materiali conduttori, gli elettroni sono localizzati attorno ai nuclei degli atomi del materiale e non esistono elettroni liberi di muoversi all’interno del materiale - come sono gli elettroni di conduzione nei conduttori. Quando un materiale dielettrico viene sottoposto a un campo elettrico esterno, esso risponde con una ridistribuzione locale di carica vincolata ai singoli atomi: benché ogni atomo rimanga elettricamente neutro, avviene una ridistribuzione delle cariche di segno opposto presenti all’interno di ogni atomo, che può quindi essere rappresentato come un <span class="xref myst">dipolo elettrico</span>.</p>
+<p>A differenza dei materiali conduttori, gli elettroni sono localizzati attorno ai nuclei degli atomi del materiale e non esistono elettroni liberi di muoversi all’interno del materiale - come sono gli elettroni di conduzione nei conduttori. Quando un materiale dielettrico viene sottoposto a un campo elettrico esterno, esso risponde con una ridistribuzione locale di carica vincolata ai singoli atomi: benché ogni atomo rimanga elettricamente neutro, avviene una ridistribuzione delle cariche di segno opposto presenti all’interno di ogni atomo, che può quindi essere rappresentato come un <a class="reference internal" href="#physics-hs-electromagnetism-electrostatics-e-field-dipole"><span class="std std-ref">dipolo elettrico</span></a>.</p>
 <p>La ridistribuzione delle cariche elettriche all’interno del materiale crea a sua volta un campo elettrico, che in un modello continuo della materia può essere rappresentato come una densità di volume di dipoli elettrici, <span class="math notranslate nohighlight">\(\vec{p}(\vec{r},t)\)</span>: è possibile dimostrare che<a class="footnote-reference brackets" href="#dipole-distribution-proof" id="id1">1</a> distribuzione di dipoli elettrici nel volume corrisponde agli effetti di: 1) una densità di carica sulla superficie del volume di intensità <span class="math notranslate nohighlight">\(\vec{p} \cdot \hat{n}\)</span> e 2) di una densità di volume di carica di intensità <span class="math notranslate nohighlight">\(\nabla \cdot \vec{p}\)</span>, termine nullo nel caso in cui la polarizzazione sia uniforme.</p>
 <p>Questa affermazione viene utilizzata per analizzare la risposta di un materiale dielettrico isotropo in un campo elettrico uniforme. Facendo riferimento alla figure <strong>todo</strong>, la polarizzazione è equivalente alla distribuzione di carica superficiale <span class="math notranslate nohighlight">\(\sigma_p = \vec{p} \cdot \hat{n} &gt; 0\)</span> sulla faccia di destra, <span class="math notranslate nohighlight">\(-\sigma_p\)</span> sulla faccia di sinistra. Riconoscendo l’analogia con un <a class="reference internal" href="#physics-hs-electromagnetism-electrostatics-capacitor-flat"><span class="std std-ref">condensatore piano</span></a>, il campo elettrico all’esterno del dielettrico rimane invariato; all’interno del dielettrico, il campo elettrico vale</p>
 <div class="math notranslate nohighlight">
@@ -1008,7 +1022,7 @@ Posizionando le cariche contemporanamente<div class="sd-summary-down docutils">
 </div>
 </div>
 <div class="section" id="verso-le-equazioni-di-maxwell">
-<span id="physics-hs-electromagnetism-electrostatics-maxwell"></span><h2><span class="section-number">24.1.4. </span>Verso le equazioni di Maxwell<a class="headerlink" href="#verso-le-equazioni-di-maxwell" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-electromagnetism-electrostatics-maxwell"></span><h2><span class="section-number">24.1.5. </span>Verso le equazioni di Maxwell<a class="headerlink" href="#verso-le-equazioni-di-maxwell" title="Permalink to this heading">#</a></h2>
 <p>In questa sezione vengono riassunti i risultati del capitolo in due equazioni che faranno parte delle equazioni di Maxwell e in generale dei principi dell’elettromagnetismo classico.</p>
 <p>Fare riferimento a:</p>
 <ul class="simple">
@@ -1017,7 +1031,7 @@ Posizionando le cariche contemporanamente<div class="sd-summary-down docutils">
 <li><p><a class="reference internal" href="electromagnetism-general.html#physics-hs-electromagnetism-electromagnetism-general-maxwell"><span class="std std-ref">equazioni di Maxwell e principi dell’elettromagnetismo classico</span></a></p></li>
 </ul>
 <div class="section" id="legge-di-gauss-per-il-flusso-del-campo-elettrico">
-<span id="physics-hs-electromagnetism-electrostatics-maxwell-gauss"></span><h3><span class="section-number">24.1.4.1. </span>Legge di Gauss per il flusso del campo elettrico<a class="headerlink" href="#legge-di-gauss-per-il-flusso-del-campo-elettrico" title="Permalink to this heading">#</a></h3>
+<span id="physics-hs-electromagnetism-electrostatics-maxwell-gauss"></span><h3><span class="section-number">24.1.5.1. </span>Legge di Gauss per il flusso del campo elettrico<a class="headerlink" href="#legge-di-gauss-per-il-flusso-del-campo-elettrico" title="Permalink to this heading">#</a></h3>
 <p>La legge di Gauss per il campo di spostamento <span class="math notranslate nohighlight">\(\vec{d} := \varepsilon_0 \vec{e} + \vec{p}\)</span> afferma che il flusso del campo di spostamento attraverso una superficie chiusa <span class="math notranslate nohighlight">\(\partial V\)</span> è uguale alla carica elettrica libera <span class="math notranslate nohighlight">\(Q_{V,f}\)</span> contenuta nel volume <span class="math notranslate nohighlight">\(V\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\Phi_{\partial V}(\vec{d}) = Q_{V,f} \ .\]</div>
@@ -1149,7 +1163,7 @@ e_r(r) = \left\{ \begin{aligned} &amp; 0 &amp;&amp; \qquad r &lt; R \\ &amp; \fr
 </div>
 </div></div>
 <div class="section" id="legge-di-faraday-in-elettrostatica">
-<span id="physics-hs-electromagnetism-electrostatics-maxwell-faraday"></span><h3><span class="section-number">24.1.4.2. </span>Legge di Faraday, in elettrostatica<a class="headerlink" href="#legge-di-faraday-in-elettrostatica" title="Permalink to this heading">#</a></h3>
+<span id="physics-hs-electromagnetism-electrostatics-maxwell-faraday"></span><h3><span class="section-number">24.1.5.2. </span>Legge di Faraday, in elettrostatica<a class="headerlink" href="#legge-di-faraday-in-elettrostatica" title="Permalink to this heading">#</a></h3>
 <ul>
 <li><p>La legge di Faraday in elettrostatica è una diretta conseguenza della conservatività del campo elettrico</p>
 <div class="math notranslate nohighlight" id="equation-eq-faraday-steady">
@@ -1182,10 +1196,10 @@ Avendo dimostrato la legge di Faraday nel caso stazionario per una carica puntif
 </details></div>
 </div>
 <div class="section" id="condensatore">
-<span id="physics-hs-electromagnetism-electrostatics-capacitor"></span><span id="physics-hs-electromagnetism-lorentz-electric"></span><h2><span class="section-number">24.1.5. </span>Condensatore<a class="headerlink" href="#condensatore" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-electromagnetism-electrostatics-capacitor"></span><span id="physics-hs-electromagnetism-lorentz-electric"></span><h2><span class="section-number">24.1.6. </span>Condensatore<a class="headerlink" href="#condensatore" title="Permalink to this heading">#</a></h2>
 <p>Un condensatore è un componente elettrico in grado di immagazzinare l’energia associata a una distribuzione di cariche e un campo elettrico stazionario. Un condensatore rimane elettricamente neutro e immagazzina l’energia grazie alla separazione di cariche positive e negative, creata grazie a una differenza di potenziale ai capi del condensatore.</p>
 <div class="section" id="condensatore-piano">
-<span id="physics-hs-electromagnetism-electrostatics-capacitor-flat"></span><h3><span class="section-number">24.1.5.1. </span>Condensatore piano<a class="headerlink" href="#condensatore-piano" title="Permalink to this heading">#</a></h3>
+<span id="physics-hs-electromagnetism-electrostatics-capacitor-flat"></span><h3><span class="section-number">24.1.6.1. </span>Condensatore piano<a class="headerlink" href="#condensatore-piano" title="Permalink to this heading">#</a></h3>
 <p>Un condensatore piano viene qui studiato nell’approssimazione di condensatore piano infinito, per poter sfruttare la simmetria del problema trascurando gli effetti di bordo. Si ipotizza inoltre che le pareti del condensatore - le sue <em>armature</em> - siano sottili da poter rappresentare la distribuzione di carica elettrica come una densità superficiale sull’armatura.</p>
 <table class="table">
 <colgroup>
@@ -1261,9 +1275,26 @@ La differenza di potenziale tra le due armature è quindi</p>
 <div class="math notranslate nohighlight">
 \[C = 4 \pi \, \varepsilon \,  \frac{R_1 \, R_2}{R_2 - R_1} \ .\]</div>
 </div>
-</details></div>
+</details><div class="proof example admonition" id="example-13">
+<p class="admonition-title"><span class="caption-number">Example 24.13 </span> (Forza agente sulle pareti di un condensatore)</p>
+<div class="example-content section" id="proof-content">
+<p>Le due pareti di un condensatore carico si attraggono. Si introduce la coordinata <span class="math notranslate nohighlight">\(x\)</span> che identifica una direzione perpendicolare alle facce del condensatore con verso positivo dalla faccia 1 con carica positiva <span class="math notranslate nohighlight">\(Q_{1} = Q = \sigma \, A\)</span> alla faccia con carica negativa <span class="math notranslate nohighlight">\(Q_{2} = -Q\)</span>.</p>
+<p>La carica elettrica (netta) <span class="math notranslate nohighlight">\(-Q\)</span> della parete del seconda si trova nel campo elettrico generato dalla carica positiva</p>
+<div class="math notranslate nohighlight">
+\[\vec{e} = \frac{\sigma}{2\varepsilon}\hat{x} = \frac{Q}{2 \varepsilon A} \hat{x} \ .\]</div>
+<p>La forza elementare <span class="math notranslate nohighlight">\(d \vec{F}_{21}\)</span> agente sull’elemento della faccia 2 di area <span class="math notranslate nohighlight">\(dA_2\)</span> con carica <span class="math notranslate nohighlight">\(dQ_2 = -d Q = -\sigma d A_2\)</span>, a causa del campo elettrico generato dalla faccia 1, <span class="math notranslate nohighlight">\(\vec{e}_1\)</span> vale</p>
+<div class="math notranslate nohighlight">
+\[d \vec{F}_{21} = dQ_2 \, \vec{e}_1 = - dA_2 \, \sigma \, \frac{\sigma}{2 \varepsilon} \hat{x} = - dA \, \frac{\sigma^2}{2 \varepsilon} \hat{x}
+= - dA \, \frac{Q^2}{2 \varepsilon A^2} \hat{x} \ ,\]</div>
+<p>e la risultante di questi contributi elementari - l’integrale di un’integranda costante è uguale al prodotto dell’integranda per le dimensioni del dominio di integrazione, qui l’area dell’armatura - è</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{21} = - \frac{Q^2}{2 \varepsilon A} \hat{x} = - \frac{1}{2} \frac{\varepsilon A}{\ell} \frac{\Delta V^2}{\ell} \hat{x} = - \frac{1}{2} C \frac{\Delta V^2}{\ell} \hat{x} \]</div>
+<p>avendo usato la relazione tra carica sull’armatura e differenza di tensione tra le armature del condensatore <span class="math notranslate nohighlight">\(Q = C \Delta V = \frac{\varepsilon A}{\ell} \, \Delta V\)</span>, o l’espressione</p>
+<p><strong>Note: perché si considera solo il campo elettrico generato dall’altra armatura?</strong> Concettualmente, è «difficile» che un sistema produca una forza netta agente su se stesso senza interagire con altri sistemi: qui il campo elettrico generato da un armatura non interagisce con la propria carica per generare una forza, come già discusso per una <a class="reference internal" href="#physics-hs-electromagnetism-electrostatics-e-field-energy"><span class="std std-ref">distribuzione di cariche puntiformi</span></a>. E” bene ricordare anche che le cariche puntiformi e le distribuzioni superficiali di carica sono modelli che rappresentano «sufficiente bene» i sistemi di interesse, ma nei quali si rinuncia a rappresentare i dettagli locali della distribuzione di carica (<strong>todo</strong> <em>discutere, magari con script, magari facendo riferimento a FMM</em>)</p>
+</div>
+</div></div>
 <div class="section" id="bilancio-di-energia-in-un-condensatore">
-<h3><span class="section-number">24.1.5.2. </span>Bilancio di energia in un condensatore<a class="headerlink" href="#bilancio-di-energia-in-un-condensatore" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">24.1.6.2. </span>Bilancio di energia in un condensatore<a class="headerlink" href="#bilancio-di-energia-in-un-condensatore" title="Permalink to this heading">#</a></h3>
 <p><strong>todo</strong> Definire l’energia immagazzinata nel condensatore e verificarne l’espressione con diverse forme di lavoro realizzabile:</p>
 <ul class="simple">
 <li><p>lavoro elettrico?</p></li>
@@ -1280,33 +1311,45 @@ $$L^{molla} = \frac{1}{2} k x^2$$
 -->
 </div>
 <div class="section" id="configurazioni-di-condensatori">
-<h3><span class="section-number">24.1.5.3. </span>Configurazioni di condensatori<a class="headerlink" href="#configurazioni-di-condensatori" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">24.1.6.3. </span>Configurazioni di condensatori<a class="headerlink" href="#configurazioni-di-condensatori" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>condensatori in serie</p></li>
 <li><p>condensatori in parallelo</p></li>
 </ul>
-<p><span style="color:red"> Motivazione dell’importanza dei condensatori, uso nei circuiti in molti sistemi moderni, aggiungere <strong>link</strong> a esempi fatti in seguito </span></p>
+<p><span style="color:red"> Motivazione dell’importanza dei condensatori, uso nei circuiti in molti sistemi moderni, aggiungere <strong>link</strong> a: circuiti come filtro, esempi fatti in seguito (strumenti di misura,…),… </span></p>
 <div class="proof example admonition" id="capacitor-series">
-<p class="admonition-title"><span class="caption-number">Example 24.13 </span> (Condensatori in serie)</p>
+<p class="admonition-title"><span class="caption-number">Example 24.14 </span> (Condensatori in serie)</p>
 <div class="example-content section" id="proof-content">
 </div>
 </div><div class="proof example admonition" id="capacitor-parallel">
-<p class="admonition-title"><span class="caption-number">Example 24.14 </span> (Condensatori in parallelo)</p>
+<p class="admonition-title"><span class="caption-number">Example 24.15 </span> (Condensatori in parallelo)</p>
 <div class="example-content section" id="proof-content">
 </div>
-</div><p>Altre configurazioni. Applicazioni: <a class="reference internal" href="../instrumentation/kinematics.html#instrumentation-kinematics-accelerometer-mems"><span class="std std-ref">accelerometro capacitivo MEMS</span></a></p>
-<div class="proof example admonition" id="example-15">
-<p class="admonition-title"><span class="caption-number">Example 24.15 </span> (A  B  A)</p>
+</div><p>Altre configurazioni. Applicazioni: <a class="reference internal" href="../instrumentation/kinematics.html#instrumentation-kinematics-accelerometer-mems"><span class="std std-ref">accelerometro capacitivo MEMS</span></a>,…</p>
+<div class="proof example admonition" id="example-16">
+<p class="admonition-title"><span class="caption-number">Example 24.16 </span> (A  B  A)</p>
 <div class="example-content section" id="proof-content">
 </div>
-</div><div class="proof example admonition" id="example-16">
-<p class="admonition-title"><span class="caption-number">Example 24.16 </span> (A  B  A … B A)</p>
+</div><div class="proof example admonition" id="example-17">
+<p class="admonition-title"><span class="caption-number">Example 24.17 </span> (A  B  A … B A)</p>
 <div class="example-content section" id="proof-content">
+<p><strong>todo</strong> Riprendere esempio sul drive</p>
 </div>
-</div></div>
+</div><table class="table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../_images/capacitor-config-1.png" /></p></td>
+<td><p><img alt="" src="../../_images/capacitor-config-1-e-field.png" /></p></td>
+</tr>
+</tbody>
+</table>
 </div>
-<div class="section" id="moto-di-una-carica-in-un-campo-elettrico">
-<h2><span class="section-number">24.1.6. </span>Moto di una carica in un campo elettrico<a class="headerlink" href="#moto-di-una-carica-in-un-campo-elettrico" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="moto-di-una-carica-in-un-campo-elettrostatico">
+<h2><span class="section-number">24.1.7. </span>Moto di una carica in un campo elettrostatico<a class="headerlink" href="#moto-di-una-carica-in-un-campo-elettrostatico" title="Permalink to this heading">#</a></h2>
 <p>Il moto di una corpo puntiforme di massa <span class="math notranslate nohighlight">\(m\)</span> e carica elettrica <span class="math notranslate nohighlight">\(q\)</span> in una regione dello spazio nel quale c’è un campo elettrico <span class="math notranslate nohighlight">\(\vec{e}(\vec{r},t)\)</span> è soggetto a una forza esterna,</p>
 <div class="math notranslate nohighlight" id="equation-eq-force-lorentz-electric">
 <span class="eqno">(24.2)<a class="headerlink" href="#equation-eq-force-lorentz-electric" title="Permalink a questa equazione">#</a></span>\[\vec{F}^{el} = q \, \vec{e}(P) \ ,\]</div>
@@ -1410,7 +1453,7 @@ $$i = \dfrac{d}{dt} \left( A \, d \right) = \dfrac{d}{dt} \left( A \, \varepsilo
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">24.1.7. </span>Problemi</p>
+        <p class="prev-next-title"><span class="section-number">24.1.8. </span>Problemi</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1438,23 +1481,27 @@ $$i = \dfrac{d}{dt} \left( A \, d \right) = \dfrac{d}{dt} \left( A \, \varepsilo
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energia-potenziale-di-una-distribuzione-di-cariche">24.1.2.2. Energia potenziale di una distribuzione di cariche</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-elettrico-nei-materiali">24.1.3. Campo elettrico nei materiali</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-elettrostatico-nei-conduttori">24.1.3.1. Campo elettrostatico nei conduttori</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-elettrostatico-nei-dielettrici">24.1.3.2. Campo elettrostatico nei dielettrici</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi-di-distrituzione-di-cariche">24.1.3. Esempi di distrituzione di cariche</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dipolo-elettrico">24.1.3.1. Dipolo elettrico</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verso-le-equazioni-di-maxwell">24.1.4. Verso le equazioni di Maxwell</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gauss-per-il-flusso-del-campo-elettrico">24.1.4.1. Legge di Gauss per il flusso del campo elettrico</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-faraday-in-elettrostatica">24.1.4.2. Legge di Faraday, in elettrostatica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-elettrico-nei-materiali">24.1.4. Campo elettrico nei materiali</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-elettrostatico-nei-conduttori">24.1.4.1. Campo elettrostatico nei conduttori</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#campo-elettrostatico-nei-dielettrici">24.1.4.2. Campo elettrostatico nei dielettrici</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore">24.1.5. Condensatore</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore-piano">24.1.5.1. Condensatore piano</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-di-energia-in-un-condensatore">24.1.5.2. Bilancio di energia in un condensatore</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configurazioni-di-condensatori">24.1.5.3. Configurazioni di condensatori</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verso-le-equazioni-di-maxwell">24.1.5. Verso le equazioni di Maxwell</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-gauss-per-il-flusso-del-campo-elettrico">24.1.5.1. Legge di Gauss per il flusso del campo elettrico</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-faraday-in-elettrostatica">24.1.5.2. Legge di Faraday, in elettrostatica</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-di-una-carica-in-un-campo-elettrico">24.1.6. Moto di una carica in un campo elettrico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore">24.1.6. Condensatore</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#condensatore-piano">24.1.6.1. Condensatore piano</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bilancio-di-energia-in-un-condensatore">24.1.6.2. Bilancio di energia in un condensatore</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configurazioni-di-condensatori">24.1.6.3. Configurazioni di condensatori</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-di-una-carica-in-un-campo-elettrostatico">24.1.7. Moto di una carica in un campo elettrostatico</a></li>
 </ul>
   </nav></div>
 
