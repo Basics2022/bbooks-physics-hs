@@ -648,12 +648,15 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regimi-di-funzionamento">25.1.7. Regimi di funzionamento</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regime-stazionario-la-corrente-continua">25.1.7.1. Regime stazionario - la corrente continua</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transitorio">25.1.7.2. Transitorio</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regime-periodico-la-corrente-alternata">25.1.7.3. Regime periodico - la corrente alternata</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-trifase">25.1.7.3.1. Sistemi trifase</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regime-periodico-la-corrente-alternata">25.1.7.3. Regime periodico - la corrente alternata</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conversione-ac-dc-e-dc-ac">25.1.7.4. Conversione AC-DC e DC-AC</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ac-rightarrow-dc-tramite-raddizzatori-o-rectifier">25.1.7.4.1. AC <span class="math notranslate nohighlight">\(\rightarrow\)</span> DC, tramite raddizzatori (o rectifier)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dc-rightarrow-ac-con-inverter">25.1.7.4.2. DC <span class="math notranslate nohighlight">\(\rightarrow\)</span> AC, con inverter</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-trifase">25.1.8. Sistemi trifase</a></li>
 </ul>
             </nav>
         </div>
@@ -836,8 +839,30 @@ I componenti sono caratterizzati dalla loro legge costitutiva - determinata dall
 <p>con <span class="math notranslate nohighlight">\(V \in \mathbb{C}\)</span>. <strong>todo</strong></p>
 <p><strong>Analisi circuiti.</strong></p>
 <p><strong>Analisi potenza.</strong></p>
+</div>
+<div class="section" id="conversione-ac-dc-e-dc-ac">
+<span id="physics-hs-electromagnetism-circuits-electric-regimes-conversion"></span><h3><span class="section-number">25.1.7.4. </span>Conversione AC-DC e DC-AC<a class="headerlink" href="#conversione-ac-dc-e-dc-ac" title="Permalink to this heading">#</a></h3>
+<div class="section" id="ac-rightarrow-dc-tramite-raddizzatori-o-rectifier">
+<span id="physics-hs-electromagnetism-circuits-electric-regimes-conversion-rectifier"></span><h4><span class="section-number">25.1.7.4.1. </span>AC <span class="math notranslate nohighlight">\(\rightarrow\)</span> DC, tramite raddizzatori (o rectifier)<a class="headerlink" href="#ac-rightarrow-dc-tramite-raddizzatori-o-rectifier" title="Permalink to this heading">#</a></h4>
+<p>Ponte di Graetz, con diodi. Le oscillazioni vengono ridotte tramite l’uso di condensatori e induttori.</p>
+</div>
+<div class="section" id="dc-rightarrow-ac-con-inverter">
+<span id="physics-hs-electromagnetism-circuits-electric-regimes-conversion-inverter"></span><h4><span class="section-number">25.1.7.4.2. </span>DC <span class="math notranslate nohighlight">\(\rightarrow\)</span> AC, con inverter<a class="headerlink" href="#dc-rightarrow-ac-con-inverter" title="Permalink to this heading">#</a></h4>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Riferimenti<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><a class="reference external" href="https://www.youtube.com/watch?v=ln9VZIL8rVs">How Inverters Work - Working principle rectifier, The Enginnering Mindset</a></p>
+</div>
+</details><p>Interruttori elettronici (tipicamente basati <a class="reference internal" href="../semiconductors/intro.html#semiconductors-intro"><span class="std std-ref">semiconduttori</span></a>: diode, IGBT, MOSFET) connessi a un controllore che ne regola l’apertura. Esempio di logica: <strong>pulse width modulation</strong>. Filtro passivo con condensatori e induttori per produrre un segnale armonico dal treno di impulsi rettangolari («induttori per regolarizzare la corrente, condensatori per regolarizzare la tensione»)</p>
+</div>
+</div>
+</div>
 <div class="section" id="sistemi-trifase">
-<span id="physics-hs-electromagnetism-circuits-electric-regimes-ac-tri"></span><h4><span class="section-number">25.1.7.3.1. </span>Sistemi trifase<a class="headerlink" href="#sistemi-trifase" title="Permalink to this heading">#</a></h4>
+<span id="physics-hs-electromagnetism-circuits-electric-regimes-ac-tri"></span><h2><span class="section-number">25.1.8. </span>Sistemi trifase<a class="headerlink" href="#sistemi-trifase" title="Permalink to this heading">#</a></h2>
 <p>I sistemi attuali di produzione, trasporto e gli utilizzatori basati su motori elettrici utilizzano molto frequentemente sistemi con <strong>corrente alternata trifase</strong>, poiché risulta la configurazione migliore che</p>
 <ul class="simple">
 <li><p>permette la generazione/utilizzo di un campo magnetico rotante, fondamentale per l’utilizzo di generatori e motori elettrici</p></li>
@@ -879,8 +904,6 @@ Vantaggi:
 <dd><p>Dal punto di vista matematico, il problema elettromagnetico generale è governato da equazioni differenziali alle derivate parziali (PDE), ben oltre le possibilità di uno studente di scuola superiore. L’approccio circuitale permette di formulare il problema elettromagnetico in termini di equazioni differenziali ordinarie nel caso instazionario, equazioni algebriche nel caso stazionario (o periodico, in seguito a opportune trasformazioni): non proprio il problema più semplice possibile, ma un problema comunque affrontabile anche da parte di studenti delle scuole superiori.</p>
 </dd>
 </dl>
-</div>
-</div>
 </div>
 </div>
 
@@ -968,12 +991,15 @@ Vantaggi:
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regimi-di-funzionamento">25.1.7. Regimi di funzionamento</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regime-stazionario-la-corrente-continua">25.1.7.1. Regime stazionario - la corrente continua</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transitorio">25.1.7.2. Transitorio</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regime-periodico-la-corrente-alternata">25.1.7.3. Regime periodico - la corrente alternata</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-trifase">25.1.7.3.1. Sistemi trifase</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regime-periodico-la-corrente-alternata">25.1.7.3. Regime periodico - la corrente alternata</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conversione-ac-dc-e-dc-ac">25.1.7.4. Conversione AC-DC e DC-AC</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ac-rightarrow-dc-tramite-raddizzatori-o-rectifier">25.1.7.4.1. AC <span class="math notranslate nohighlight">\(\rightarrow\)</span> DC, tramite raddizzatori (o rectifier)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dc-rightarrow-ac-con-inverter">25.1.7.4.2. DC <span class="math notranslate nohighlight">\(\rightarrow\)</span> AC, con inverter</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-trifase">25.1.8. Sistemi trifase</a></li>
 </ul>
   </nav></div>
 
