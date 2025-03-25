@@ -14883,7 +14883,23 @@ e il lavoro diventa
 \begin{split}
  L = \int_{\alpha = 0}^{1} dL (\alpha) =  - \int_{\alpha=0}^{1} \sum_{\{i,j\}, i \ne j} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{1}{r_{ij}}  \, d \alpha = - \sum_{\{i,j\}, i \ne j} \frac{q_i \, q_j}{4 \pi \varepsilon}  \frac{1}{r_{ij}} \ .
 \end{split}
-\end{equation*}\label{ch/electromagnetism/electrostatics:electric-dipole}
+\end{equation*}
+
+\subsection{Esempi di distrituzione di cariche}
+\label{\detokenize{ch/electromagnetism/electrostatics:esempi-di-distrituzione-di-cariche}}\label{\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-e-field-examples}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+dipolo
+
+\item {} 
+\sphinxAtStartPar
+distribuzioni lineari, superficiali, nel volume
+
+\end{itemize}
+
+
+\subsubsection{Dipolo elettrico}
+\label{\detokenize{ch/electromagnetism/electrostatics:dipolo-elettrico}}\label{\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-e-field-dipole}}\label{ch/electromagnetism/electrostatics:electric-dipole}
 \begin{sphinxadmonition}{note}{Example 24.1.1 (Il dipolo elettrico)}
 
 
@@ -14966,7 +14982,7 @@ permettono il passaggio della corrente elettrica, cioè il moto di \sphinxstyles
 
 \item {} 
 \sphinxAtStartPar
-non mostrano polarizzazione, poiché le cariche libere rispondono a un campo elettrico esterno, disponendosi in una configurazione tale da annullare il campo elettrico totale all’interno del conduttore, si veda \DUrole{xref,myst}{} e l’esempio della \DUrole{xref,myst}{gabbia di Faraday}
+non mostrano polarizzazione, poiché le cariche libere rispondono a un campo elettrico esterno, disponendosi in una configurazione tale da annullare il campo elettrico totale all’interno del conduttore, si veda \sphinxstylestrong{todo} e l’esempio \{prf:ref\}`faraday\sphinxhyphen{}cage\} sulla \sphinxstylestrong{gabbia di Faraday}
 
 \end{itemize}
 
@@ -15117,12 +15133,12 @@ polarizzazione: descrizione
 
 \item {} 
 \sphinxAtStartPar
-polarizzazione equivalente a una distribuzione di volume di \DUrole{xref,myst}{dipoli elettrici}, vedi {\hyperref[\detokenize{ch/electromagnetism/electrostatics:electric-dipole}]{\sphinxcrossref{Example 24.1.1}}}, equivalente a una distribuzione di carica superficiale e una distribuzione di carica di volume solo se polarizzazione non uniforme
+polarizzazione equivalente a una distribuzione di volume di {\hyperref[\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-e-field-dipole}]{\sphinxcrossref{\DUrole{std,std-ref}{dipoli elettrici}}}}, vedi {\hyperref[\detokenize{ch/electromagnetism/electrostatics:electric-dipole}]{\sphinxcrossref{Example 24.1.1}}}, equivalente a una distribuzione di carica superficiale e una distribuzione di carica di volume solo se polarizzazione non uniforme
 
 \end{itemize}
 
 \sphinxAtStartPar
-A differenza dei materiali conduttori, gli elettroni sono localizzati attorno ai nuclei degli atomi del materiale e non esistono elettroni liberi di muoversi all’interno del materiale \sphinxhyphen{} come sono gli elettroni di conduzione nei conduttori. Quando un materiale dielettrico viene sottoposto a un campo elettrico esterno, esso risponde con una ridistribuzione locale di carica vincolata ai singoli atomi: benché ogni atomo rimanga elettricamente neutro, avviene una ridistribuzione delle cariche di segno opposto presenti all’interno di ogni atomo, che può quindi essere rappresentato come un \DUrole{xref,myst}{dipolo elettrico}.
+A differenza dei materiali conduttori, gli elettroni sono localizzati attorno ai nuclei degli atomi del materiale e non esistono elettroni liberi di muoversi all’interno del materiale \sphinxhyphen{} come sono gli elettroni di conduzione nei conduttori. Quando un materiale dielettrico viene sottoposto a un campo elettrico esterno, esso risponde con una ridistribuzione locale di carica vincolata ai singoli atomi: benché ogni atomo rimanga elettricamente neutro, avviene una ridistribuzione delle cariche di segno opposto presenti all’interno di ogni atomo, che può quindi essere rappresentato come un {\hyperref[\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-e-field-dipole}]{\sphinxcrossref{\DUrole{std,std-ref}{dipolo elettrico}}}}.
 
 \sphinxAtStartPar
 La ridistribuzione delle cariche elettriche all’interno del materiale crea a sua volta un campo elettrico, che in un modello continuo della materia può essere rappresentato come una densità di volume di dipoli elettrici, \(\vec{p}(\vec{r},t)\): è possibile dimostrare che%
@@ -15525,7 +15541,37 @@ La differenza di potenziale tra le due armature è quindi
 La formula precedente e la definizione di capacità, \(Q = C \, v\), consente di determinare la capacità di un condensatore sferico ideale,
 \begin{equation*}
 \begin{split}C = 4 \pi \, \varepsilon \,  \frac{R_1 \, R_2}{R_2 - R_1} \ .\end{split}
+\end{equation*}\label{ch/electromagnetism/electrostatics:example-13}
+\begin{sphinxadmonition}{note}{Example 24.1.13 (Forza agente sulle pareti di un condensatore)}
+
+
+
+\sphinxAtStartPar
+Le due pareti di un condensatore carico si attraggono. Si introduce la coordinata \(x\) che identifica una direzione perpendicolare alle facce del condensatore con verso positivo dalla faccia 1 con carica positiva \(Q_{1} = Q = \sigma \, A\) alla faccia con carica negativa \(Q_{2} = -Q\).
+
+\sphinxAtStartPar
+La carica elettrica (netta) \(-Q\) della parete del seconda si trova nel campo elettrico generato dalla carica positiva
+\begin{equation*}
+\begin{split}\vec{e} = \frac{\sigma}{2\varepsilon}\hat{x} = \frac{Q}{2 \varepsilon A} \hat{x} \ .\end{split}
 \end{equation*}
+\sphinxAtStartPar
+La forza elementare \(d \vec{F}_{21}\) agente sull’elemento della faccia 2 di area \(dA_2\) con carica \(dQ_2 = -d Q = -\sigma d A_2\), a causa del campo elettrico generato dalla faccia 1, \(\vec{e}_1\) vale
+\begin{equation*}
+\begin{split}d \vec{F}_{21} = dQ_2 \, \vec{e}_1 = - dA_2 \, \sigma \, \frac{\sigma}{2 \varepsilon} \hat{x} = - dA \, \frac{\sigma^2}{2 \varepsilon} \hat{x}
+= - dA \, \frac{Q^2}{2 \varepsilon A^2} \hat{x} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e la risultante di questi contributi elementari \sphinxhyphen{} l’integrale di un’integranda costante è uguale al prodotto dell’integranda per le dimensioni del dominio di integrazione, qui l’area dell’armatura \sphinxhyphen{} è
+\begin{equation*}
+\begin{split}\vec{F}_{21} = - \frac{Q^2}{2 \varepsilon A} \hat{x} = - \frac{1}{2} \frac{\varepsilon A}{\ell} \frac{\Delta V^2}{\ell} \hat{x} = - \frac{1}{2} C \frac{\Delta V^2}{\ell} \hat{x} \end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo usato la relazione tra carica sull’armatura e differenza di tensione tra le armature del condensatore \(Q = C \Delta V = \frac{\varepsilon A}{\ell} \, \Delta V\), o l’espressione
+
+\sphinxAtStartPar
+\sphinxstylestrong{Note: perché si considera solo il campo elettrico generato dall’altra armatura?} Concettualmente, è «difficile» che un sistema produca una forza netta agente su se stesso senza interagire con altri sistemi: qui il campo elettrico generato da un armatura non interagisce con la propria carica per generare una forza, come già discusso per una {\hyperref[\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-e-field-energy}]{\sphinxcrossref{\DUrole{std,std-ref}{distribuzione di cariche puntiformi}}}}. E” bene ricordare anche che le cariche puntiformi e le distribuzioni superficiali di carica sono modelli che rappresentano «sufficiente bene» i sistemi di interesse, ma nei quali si rinuncia a rappresentare i dettagli locali della distribuzione di carica (\sphinxstylestrong{todo} \sphinxstyleemphasis{discutere, magari con script, magari facendo riferimento a FMM})
+\end{sphinxadmonition}
+
 
 \subsubsection{Bilancio di energia in un condensatore}
 \label{\detokenize{ch/electromagnetism/electrostatics:bilancio-di-energia-in-un-condensatore}}
@@ -15560,32 +15606,52 @@ condensatori in parallelo
 \sphinxAtStartPar
  Motivazione dell’importanza dei condensatori, uso nei circuiti in molti sistemi moderni, aggiungere \sphinxstylestrong{link} a: circuiti come filtro, esempi fatti in seguito (strumenti di misura,…),… 
 \label{ch/electromagnetism/electrostatics:capacitor-series}
-\begin{sphinxadmonition}{note}{Example 24.1.13 (Condensatori in serie)}
+\begin{sphinxadmonition}{note}{Example 24.1.14 (Condensatori in serie)}
 
 
 \end{sphinxadmonition}
 \label{ch/electromagnetism/electrostatics:capacitor-parallel}
-\begin{sphinxadmonition}{note}{Example 24.1.14 (Condensatori in parallelo)}
+\begin{sphinxadmonition}{note}{Example 24.1.15 (Condensatori in parallelo)}
 
 
 \end{sphinxadmonition}
 
 \sphinxAtStartPar
 Altre configurazioni. Applicazioni: {\hyperref[\detokenize{ch/instrumentation/kinematics:instrumentation-kinematics-accelerometer-mems}]{\sphinxcrossref{\DUrole{std,std-ref}{accelerometro capacitivo MEMS}}}},…
-\label{ch/electromagnetism/electrostatics:example-15}
-\begin{sphinxadmonition}{note}{Example 24.1.15 (A  B  A)}
-
-
-\end{sphinxadmonition}
 \label{ch/electromagnetism/electrostatics:example-16}
-\begin{sphinxadmonition}{note}{Example 24.1.16 (A  B  A … B A)}
+\begin{sphinxadmonition}{note}{Example 24.1.16 (A  B  A)}
 
 
 \end{sphinxadmonition}
+\label{ch/electromagnetism/electrostatics:example-17}
+\begin{sphinxadmonition}{note}{Example 24.1.17 (A  B  A … B A)}
 
 
-\subsection{Moto di una carica in un campo elettrico}
-\label{\detokenize{ch/electromagnetism/electrostatics:moto-di-una-carica-in-un-campo-elettrico}}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} Riprendere esempio sul drive
+\end{sphinxadmonition}
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|}
+\hline
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{capacitor-config-1}.png}
+&
+\sphinxAtStartPar
+\sphinxincludegraphics{{capacitor-config-1-e-field}.png}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+
+\subsection{Moto di una carica in un campo elettrostatico}
+\label{\detokenize{ch/electromagnetism/electrostatics:moto-di-una-carica-in-un-campo-elettrostatico}}
 \sphinxAtStartPar
 Il moto di una corpo puntiforme di massa \(m\) e carica elettrica \(q\) in una regione dello spazio nel quale c’è un campo elettrico \(\vec{e}(\vec{r},t)\) è soggetto a una forza esterna,
 \begin{equation}\label{equation:ch/electromagnetism/electrostatics:eq:force:lorentz:electric}
@@ -20124,19 +20190,19 @@ solarigrafia, fotografia con materiale di recupero con tempi lunghissimi
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}12}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-12}}
 \indexspace
 \bigletter{example\sphinxhyphen{}13}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}13}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-13}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}13}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{example-13}}
 \indexspace
 \bigletter{example\sphinxhyphen{}14}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}14}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-14}}
 \indexspace
 \bigletter{example\sphinxhyphen{}15}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}15}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{example-15}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}15}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-15}}
 \indexspace
 \bigletter{example\sphinxhyphen{}16}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}16}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{example-16}}
 \indexspace
 \bigletter{example\sphinxhyphen{}17}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}17}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-17}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}17}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{example-17}}
 \indexspace
 \bigletter{example\sphinxhyphen{}18}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}18}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-18}}

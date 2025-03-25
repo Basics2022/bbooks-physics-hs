@@ -183,6 +183,13 @@ $$
 $$
 ```
 
+(physics-hs:electromagnetism:electrostatics:e-field:examples)=
+## Esempi di distrituzione di cariche
+- dipolo
+- distribuzioni lineari, superficiali, nel volume
+
+(physics-hs:electromagnetism:electrostatics:e-field:dipole)=
+### Dipolo elettrico
 ````{prf:example} Il dipolo elettrico
 :label: electric-dipole
 
@@ -228,7 +235,7 @@ L'interazione dei materiali con un campo elettrico viene descritta qui e nella s
 A seconda della loro interazione con un campo elettrico e alla loro capacità di condurre corrente, i materiali possono essere classificati come:
 - materiali conduttori:
   - permettono il passaggio della corrente elettrica, cioè il moto di **cariche elettriche libere**
-  - non mostrano polarizzazione, poiché le cariche libere rispondono a un campo elettrico esterno, disponendosi in una configurazione tale da annullare il campo elettrico totale all'interno del conduttore, si veda []() e l'esempio della [gabbia di Faraday]()
+  - non mostrano polarizzazione, poiché le cariche libere rispondono a un campo elettrico esterno, disponendosi in una configurazione tale da annullare il campo elettrico totale all'interno del conduttore, si veda **todo** e l'esempio {prf:ref}`faraday-cage} sulla **gabbia di Faraday**
 - materiali isolanti:
   - non permettono il passaggio di corrente elettrica. 
   - Alcuni materiali isolanti, detti **dielettrici**, rispondono comunque a un campo elettrico "esterno" sotto forma di polarizzazione, cioè con un'orientazione della distribuzione di carica locale associata ai singoli atomi del materiale.
@@ -300,9 +307,9 @@ Quindi:
 (physics-hs:electromagnetism:electrostatics:e-field:media:dielectrics)=
 ### Campo elettrostatico nei dielettrici
 - polarizzazione: descrizione
-- polarizzazione equivalente a una distribuzione di volume di [dipoli elettrici](), vedi {prf:ref}`electric-dipole`, equivalente a una distribuzione di carica superficiale e una distribuzione di carica di volume solo se polarizzazione non uniforme
+- polarizzazione equivalente a una distribuzione di volume di [dipoli elettrici](physics-hs:electromagnetism:electrostatics:e-field:dipole), vedi {prf:ref}`electric-dipole`, equivalente a una distribuzione di carica superficiale e una distribuzione di carica di volume solo se polarizzazione non uniforme
 
-A differenza dei materiali conduttori, gli elettroni sono localizzati attorno ai nuclei degli atomi del materiale e non esistono elettroni liberi di muoversi all'interno del materiale - come sono gli elettroni di conduzione nei conduttori. Quando un materiale dielettrico viene sottoposto a un campo elettrico esterno, esso risponde con una ridistribuzione locale di carica vincolata ai singoli atomi: benché ogni atomo rimanga elettricamente neutro, avviene una ridistribuzione delle cariche di segno opposto presenti all'interno di ogni atomo, che può quindi essere rappresentato come un [dipolo elettrico]().
+A differenza dei materiali conduttori, gli elettroni sono localizzati attorno ai nuclei degli atomi del materiale e non esistono elettroni liberi di muoversi all'interno del materiale - come sono gli elettroni di conduzione nei conduttori. Quando un materiale dielettrico viene sottoposto a un campo elettrico esterno, esso risponde con una ridistribuzione locale di carica vincolata ai singoli atomi: benché ogni atomo rimanga elettricamente neutro, avviene una ridistribuzione delle cariche di segno opposto presenti all'interno di ogni atomo, che può quindi essere rappresentato come un [dipolo elettrico](physics-hs:electromagnetism:electrostatics:e-field:dipole).
 
 La ridistribuzione delle cariche elettriche all'interno del materiale crea a sua volta un campo elettrico, che in un modello continuo della materia può essere rappresentato come una densità di volume di dipoli elettrici, $\vec{p}(\vec{r},t)$: è possibile dimostrare che[^dipole-distribution-proof] distribuzione di dipoli elettrici nel volume corrisponde agli effetti di: 1) una densità di carica sulla superficie del volume di intensità $\vec{p} \cdot \hat{n}$ e 2) di una densità di volume di carica di intensità $\nabla \cdot \vec{p}$, termine nullo nel caso in cui la polarizzazione sia uniforme.
 
@@ -635,11 +642,37 @@ La formula precedente e la definizione di capacità, $Q = C \, v$, consente di d
 $$C = 4 \pi \, \varepsilon \,  \frac{R_1 \, R_2}{R_2 - R_1} \ .$$
 ```
 
+```{prf:example} Forza agente sulle pareti di un condensatore
+
+Le due pareti di un condensatore carico si attraggono. Si introduce la coordinata $x$ che identifica una direzione perpendicolare alle facce del condensatore con verso positivo dalla faccia 1 con carica positiva $Q_{1} = Q = \sigma \, A$ alla faccia con carica negativa $Q_{2} = -Q$.
+
+La carica elettrica (netta) $-Q$ della parete del seconda si trova nel campo elettrico generato dalla carica positiva 
+
+$$\vec{e} = \frac{\sigma}{2\varepsilon}\hat{x} = \frac{Q}{2 \varepsilon A} \hat{x} \ .$$
+
+La forza elementare $d \vec{F}_{21}$ agente sull'elemento della faccia 2 di area $dA_2$ con carica $dQ_2 = -d Q = -\sigma d A_2$, a causa del campo elettrico generato dalla faccia 1, $\vec{e}_1$ vale
+
+$$d \vec{F}_{21} = dQ_2 \, \vec{e}_1 = - dA_2 \, \sigma \, \frac{\sigma}{2 \varepsilon} \hat{x} = - dA \, \frac{\sigma^2}{2 \varepsilon} \hat{x}
+= - dA \, \frac{Q^2}{2 \varepsilon A^2} \hat{x} \ ,$$
+
+e la risultante di questi contributi elementari - l'integrale di un'integranda costante è uguale al prodotto dell'integranda per le dimensioni del dominio di integrazione, qui l'area dell'armatura - è
+
+$$\vec{F}_{21} = - \frac{Q^2}{2 \varepsilon A} \hat{x} = - \frac{1}{2} \frac{\varepsilon A}{\ell} \frac{\Delta V^2}{\ell} \hat{x} = - \frac{1}{2} C \frac{\Delta V^2}{\ell} \hat{x} $$
+
+avendo usato la relazione tra carica sull'armatura e differenza di tensione tra le armature del condensatore $Q = C \Delta V = \frac{\varepsilon A}{\ell} \, \Delta V$, o l'espressione 
+
+**Note: perché si considera solo il campo elettrico generato dall'altra armatura?** Concettualmente, è "difficile" che un sistema produca una forza netta agente su se stesso senza interagire con altri sistemi: qui il campo elettrico generato da un armatura non interagisce con la propria carica per generare una forza, come già discusso per una [distribuzione di cariche puntiformi](physics-hs:electromagnetism:electrostatics:e-field:energy). E' bene ricordare anche che le cariche puntiformi e le distribuzioni superficiali di carica sono modelli che rappresentano "sufficiente bene" i sistemi di interesse, ma nei quali si rinuncia a rappresentare i dettagli locali della distribuzione di carica (**todo** *discutere, magari con script, magari facendo riferimento a FMM*)
+
+```
+
 ### Bilancio di energia in un condensatore
 
 **todo** Definire l'energia immagazzinata nel condensatore e verificarne l'espressione con diverse forme di lavoro realizzabile:
 - lavoro elettrico?
 - lavoro meccanico? Un-comment
+
+
+
 
 <!--
 Dopo aver staccato l'alimentazione del condensatore, e connesso a terra le armature del condensatore una in maniera rigida e una con una molla lineare e allungamento nullo nella configurazione iniziale, si cerca la condizione di equilibrio.
@@ -656,7 +689,7 @@ $$L^{molla} = \frac{1}{2} k x^2$$
 - condensatori in serie
 - condensatori in parallelo
 
-<span style="color:red"> Motivazione dell'importanza dei condensatori, uso nei circuiti in molti sistemi moderni, aggiungere **link** a esempi fatti in seguito </span>
+<span style="color:red"> Motivazione dell'importanza dei condensatori, uso nei circuiti in molti sistemi moderni, aggiungere **link** a: circuiti come filtro, esempi fatti in seguito (strumenti di misura,...),... </span>
 
 ```{prf:example} Condensatori in serie
 :label: capacitor-series
@@ -667,18 +700,26 @@ $$L^{molla} = \frac{1}{2} k x^2$$
 
 ```
 
-Altre configurazioni. Applicazioni: [accelerometro capacitivo MEMS](instrumentation:kinematics:accelerometer:mems)
+Altre configurazioni. Applicazioni: [accelerometro capacitivo MEMS](instrumentation:kinematics:accelerometer:mems),...
 ```{prf:example}  A  B  A
 
 ```
 
 ```{prf:example}  A  B  A ... B A
 
+**todo** Riprendere esempio sul drive
+
 ```
 
+````{list-table}
+:header-rows: 0
+* - ![](../../media/capacitor-config-1.png)
+  - ![](../../media/capacitor-config-1-e-field.png)
+````
 
 
-## Moto di una carica in un campo elettrico
+
+## Moto di una carica in un campo elettrostatico
 Il moto di una corpo puntiforme di massa $m$ e carica elettrica $q$ in una regione dello spazio nel quale c'è un campo elettrico $\vec{e}(\vec{r},t)$ è soggetto a una forza esterna,
 
 $$\vec{F}^{el} = q \, \vec{e}(P) \ ,$$ (eq:force:lorentz:electric)
