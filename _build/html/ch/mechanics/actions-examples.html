@@ -347,9 +347,9 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../electromagnetism/em.html">24. Fondamenti di elettromagnetismo</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../electromagnetism/electrostatics.html">24.1. Elettrostatica</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electrostatics-problems.html">24.1.7. Problemi</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electrostatics-sol.html">24.1.8. Soluzioni</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electrostatics-notes.html">24.1.9. Note e dimostrazioni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electrostatics-problems.html">24.1.8. Problemi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electrostatics-sol.html">24.1.9. Soluzioni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electrostatics-notes.html">24.1.10. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../electromagnetism/electric-current.html">24.2. Corrente elettrica</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -647,9 +647,9 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#attrito">9.4.3.2. Attrito</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#attrito-statico">9.4.3.2.1. Attrito statico</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#attrito-dinamico">9.4.3.2.2. Attrito dinamico</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#puro-rotolamento">9.4.3.2.3. Puro rotolamento</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#puro-rotolamento">9.4.3.3. Puro rotolamento</a></li>
 </ul>
 </li>
 </ul>
@@ -900,9 +900,17 @@ P &amp; = \vec{v}_1     \cdot \vec{F}_{21} + \vec{v}_2     \cdot \vec{F}_{12}
 \[\vec{F}_{12} = - \mu^d N \frac{\vec{v}_{12}}{|\vec{v}_{12}|} \ ,\]</div>
 <p>avendo definito <span class="math notranslate nohighlight">\(\vec{F}_{12}\)</span> come la forza agente sul corpo <span class="math notranslate nohighlight">\(1\)</span> a causa del corpo <span class="math notranslate nohighlight">\(2\)</span>, e <span class="math notranslate nohighlight">\(\vec{v}_{12} = \vec{v}_1 - \vec{v}_2\)</span> la velocità del corpo <span class="math notranslate nohighlight">\(1\)</span> relativa al corpo <span class="math notranslate nohighlight">\(2\)</span>.</p>
 </div>
-<div class="section" id="puro-rotolamento">
-<h4><span class="section-number">9.4.3.2.3. </span>Puro rotolamento<a class="headerlink" href="#puro-rotolamento" title="Permalink to this heading">#</a></h4>
 </div>
+<div class="section" id="puro-rotolamento">
+<span id="physics-hs-mechanics-actions-contact-pure-rolling"></span><h3><span class="section-number">9.4.3.3. </span>Puro rotolamento<a class="headerlink" href="#puro-rotolamento" title="Permalink to this heading">#</a></h3>
+<p>In generale, è necessario garantire l’attrito per garantire la condizione di puro rotolamento.
+Nella condizione di puro rotolamento, i punti materiali delle due superfici in corrispondenza del punto di contatto hanno la stessa velocità.</p>
+<p>Nonostante la presenza di attrito per garantire il puro rotolamento, questo vincolo è un vincolo ideale con potenza nulla: la forze scambiate tra le due superfici sono uguali e opposte per il terzo <a class="reference internal" href="dynamics-principles.html#physics-hs-mechanics-dynamics-principles"><span class="std std-ref">principio della dinamica - azione e reazione</span></a>, mentre la velocità dei punti nei quali le forze sono applicate è uguale per la condizione di puro rotolamento.</p>
+<p><strong>todo</strong></p>
+<ul class="simple">
+<li><p>ragionare sul punto di contatto…(i punti materiali a contatto cambiano da un istante all’altro, in generale)</p></li>
+<li><p>fare bilancio di potenze</p></li>
+</ul>
 </div>
 </div>
 </div>
@@ -990,9 +998,9 @@ P &amp; = \vec{v}_1     \cdot \vec{F}_{21} + \vec{v}_2     \cdot \vec{F}_{12}
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#attrito">9.4.3.2. Attrito</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#attrito-statico">9.4.3.2.1. Attrito statico</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#attrito-dinamico">9.4.3.2.2. Attrito dinamico</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#puro-rotolamento">9.4.3.2.3. Puro rotolamento</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#puro-rotolamento">9.4.3.3. Puro rotolamento</a></li>
 </ul>
 </li>
 </ul>

@@ -2148,7 +2148,14 @@ In assenza di attrito, sul sistema non agiscono azioni non conservative (gravit�
 :::{grid-item-card} Problema 20.
 :columns: 8
 
-Testo
+**Testo.** ...
+
+Il disco rotola senza strisciamento sul prisma: questo moto è garantito dall'attrito tra i due corpi. 
+**Osservazione.** La forza scambiata tra i due corpi compie lavoro? No, poiché le forze scambiate tra i due corpi sono uguali e contrari e sono applicate in punti che hanno la stessa velocità per la condizione di puro rotolamento, vedi [Esempi di forze - Azioni di contatto - Puro rotolamento](physics-hs:mechanics:actions:contact).
+
+Chiedere di studiare due condizioni:
+- assenza di attrito tra il prisma e la parete orizzontale: in assenza di azioni non-conservative, si può applicare il teorema di [conservazione dell'energia meccanica](physics-hs:mechanics:dynamics:conservation:mechanical-energy)
+- con attrito tra il prisma e la parete orizzontale: è necessario usare equaizoni dinamiche...
 
 :::
 
@@ -2162,6 +2169,63 @@ Testo
 ::::
 
 ```{dropdown} Soluzione.
+
+Nelle condizioni di contatto tra prisma e superficie orizzontale, e di puro rotolamento tra disco e prisma, il sistema ha due gradi di libertà. 
+
+**Cinematica.**  **todo** **...descrizione della cinematica e scelta dei gradi di libertà...**
+
+$$x_2 - x_1 = R \theta \ ,$$
+
+**Senza attrito.** Per determinare le 2 equazioni del moto per i 2 gradi di libertà si possono usare 2 leggi di conservazione:
+- conservazione dell'energia meccanica, valido in assenza di azioni non-conservative
+- conservazione della componente orizzontale della quantità di moto del sistema completo, sul quale non agiscono azioni esterne nette con componente orizzontale diversa da zero.
+
+**Quantità dinamiche.** Energia meccanica del sistema $E^{mec} = K + V$,
+
+$$\begin{aligned}
+  K = K_1 + K_2 
+  & = \frac{1}{2} m_1 \dot{x}_1^2 + \frac{1}{2} m_2 \dot{x}_2^2 + \frac{1}{2} I_G \dot{\theta}^2 = \\
+  & = \frac{1}{2} m_1 \dot{x}_1^2 + \frac{1}{2} m_2 \dot{x}_2^2 + \frac{1}{2} \frac{I_G}{R^2} \left( \dot{x}_2 - \dot{x}_1 \right)^2  \\
+\end{aligned}$$
+
+$$V = \frac{1}{2} k (x_2 - x_1)^2$$
+
+**Integrali del moto - quantità costanti.**
+
+$$\begin{aligned}
+  E^{mec} & = \frac{1}{2} m_1 \dot{x}_1^2 + \frac{1}{2} m_2 \dot{x}_2^2 + \frac{1}{2} \frac{I_G}{R^2} \left( \dot{x}_2 - \dot{x}_1 \right)^2 + \frac{1}{2} k (x_2 - x_1)^2 \\
+  Q_x & = m_1 \dot{x}_1 + m_2 \dot{x}_2
+\end{aligned}$$
+
+- confronto tra lo stato del sistema in due istanti temporali diversi...
+
+**Equazioni del moto.** Poiché l'energia meccanica e la quantità orizzontale della quantità del sistema completo sono costanti del moto, si possono ricavare le equazioni del moto valutando la derivata nel tempo dell'espressione dei due integrali del moto,
+
+$$\begin{aligned}
+  0 & = m_1 \dot{x}_1 \ddot{x}_1 + m_2 \dot{x}_2 \ddot{x}_2 + \frac{I_G}{R^2}(\dot{x}_2 - \dot{x}_1) (\ddot{x}_2 - \ddot{x}_1) + k (x_2 - x_1)(\dot{x}_2 - \dot{x}_1 ) \\
+  0 & = m_1 \ddot{x}_1 + m_2 \ddot{x}_2
+\end{aligned}$$
+
+La prima equazione può essere riscritta come
+
+$$\begin{aligned}
+  0
+  & = m_1 \dot{x}_1 \ddot{x}_1 + m_2 \dot{x}_2 \ddot{x}_2 + \frac{I_G}{R^2}(\dot{x}_2 - \dot{x}_1) (\ddot{x}_2 - \ddot{x}_1) + k (x_2 - x_1)(\dot{x}_2 - \dot{x}_1 ) = \\
+  & = m_1 \dot{x}_1 \left(- \frac{m_2}{m_1} \ddot{x}_2 \right) + m_2 \dot{x}_2 \ddot{x}_2 + \frac{I_G}{R^2}(\dot{x}_2 - \dot{x}_1) (\ddot{x}_2 - \ddot{x}_1) + k (x_2 - x_1)(\dot{x}_2 - \dot{x}_1 ) = \\
+  & = (\dot{x}_2 - \dot{x}_1) \left[ m_2 \ddot{x}_2 + \frac{I_G}{R^2}(\ddot{x}_2 - \ddot{x}_1) + k(x_2 - x_1) \right]
+\end{aligned}$$
+
+$$
+\begin{bmatrix} m_1 + m_2 & m_2 \\ m_2 & m_2 + \frac{I_G}{R^2} \end{bmatrix}
+\begin{bmatrix} \ddot{x}_1 \\ \Delta \ddot{x}_{12} \end{bmatrix} +
+\begin{bmatrix} 0 & 0 \\ 0 & k \end{bmatrix}
+\begin{bmatrix} x_1 \\ \Delta x_{12} \end{bmatrix} =
+\begin{bmatrix} 0 \\ 0 \end{bmatrix} 
+$$
+
+
+**Con attrito.** ...
+
 ```
 
 <!-- Esercizio ************************************************************* -->
@@ -2185,6 +2249,47 @@ Testo
 ::::
 
 ```{dropdown} Soluzione.
+:open:
+
+$$\begin{aligned}
+  \vec{r}_P & = ( x + y \cos \alpha ) \, \hat{x}  - y \sin \alpha \, \hat{y} \\
+  \vec{v}_P & = ( \dot{x} + \dot{y} \cos \alpha ) \, \hat{x} - \dot{y} \sin \alpha \, \hat{y} \\
+\end{aligned}$$
+
+**Quantità dinamiche.**
+
+$$\begin{aligned}
+  K = K_1 + K_2 
+  & = \frac{1}{2} m_1 |\vec{v}_1|^2 + \frac{1}{2} m_2 \dot{x}^2 = \\
+  & = \frac{1}{2} m_1 \left( \dot{x}^2 + 2 \dot{x} \dot{y} \cos \alpha + \dot{y}^2 \right) + \frac{1}{2} m_2 \dot{x}^2 \ .
+\end{aligned}$$
+
+$$V = \frac{1}{2} k y^2 - m g y \sin \alpha$$
+
+**Integrali del moto.**
+
+$$\begin{aligned}
+  Q_x     & = m_1 ( \dot{x} + \dot{y} \cos \alpha ) + m_2 \dot{x} = (m_1+m_2) \dot{x} + m_1 \dot{y} \cos \alpha \\
+  E^{mec} & = \frac{1}{2} \left( m_1 + m_2 \right) \dot{x}^2 + m_1 \dot{x} \dot{y} \cos \alpha + \frac{1}{2} m_1 \dot{y}^2 + \frac{1}{2} k y^2 - m g y \sin \alpha \\
+\end{aligned}$$
+
+**Equazione del moto.**
+
+$$\begin{aligned}
+  0 & = (m_1+m_2) \ddot{x} + m_1 \cos \alpha \ddot{y} \\
+  0 & = (m_1+m_2) \dot{x} \ddot{x} + m_1 \ddot{x} \dot{y} \cos \alpha + m_1 \dot{x} \ddot{y} \cos \alpha + m_1 \dot{y} \ddot{y} + k y \dot{y} - m g \dot{y} \sin \alpha \\
+\end{aligned}$$
+
+Riconoscendo nella seconda equazione, il fattore di $\dot{x}$ uguale alla prima equazione e quindi nullo, le equazioni del sistema possono essere riscritte come equazioni dinamiche del secondo ordine
+
+$$
+\begin{bmatrix} m_1 + m_2 & m_1 \cos \alpha \\ m_1 \cos \alpha & m_1 \end{bmatrix}
+\begin{bmatrix} \ddot{x} \\ \ddot{y} \end{bmatrix} +
+\begin{bmatrix} 0 & 0 \\ 0 & k \end{bmatrix}
+\begin{bmatrix} x \\ y \end{bmatrix} =
+\begin{bmatrix} 0 \\ m g \sin \alpha \end{bmatrix} 
+$$
+
 ```
 
 <!-- Esercizio ************************************************************* -->

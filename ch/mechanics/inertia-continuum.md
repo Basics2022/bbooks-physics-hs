@@ -9,6 +9,15 @@
 (physics-hs:mechanics:inertia:continuum)=
 # Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa
 
+I sistemi rigidi sono indeformabili. Durante il moto, possono cambiare posizione e orientamento (in generale hanno 6 gradi di libertà nello spazio 3-dimensionale, e 3 gradi di libertà nello spazio 2-dimensionale), ma non cambiano forma.
+
+Le proprietà di inerzia di un sistema rigido, se riferite a un punto materiale del sistema, se riferite a un sistema di riferimento materiale, in moto con il sistema stesso. Detto meglio e mettendo in luce la differenza tra quantità fisiche vettoriali (e tensoriali, assolute; **todo** **Riferimento a una sezione sull'invarianza**): le componenti delle proprietà di inerzia di un sistema rigido riferite a un sistema di riferimento materiale sono costanti.
+
+In questa sezione vengono calcolate le proprietà inerziali (centro di gravità, momento di inerzia - con tutta l'attenzione che bisogna prestare quando si parla di momenti di inerzia qui[^inertia-tensor]) di alcuni sistemi rigidi come: asta, anello, disco, sfera,...
+
+[^inertia-tensor]: Le proprietà di inerzia di un sistema rigido sono descritte da grandezze scalari (massa), vettoriali (posizione del centro di massa), e tensoriali (tensore di inerzia e tensore del momento statico), come descritto nella sezione sull'inerzia nel materiale per l'università, [Inertia - Tensor of Inertia](https://basics2022.github.io/bbooks-physics-mechanics/ch/inertia.html#tensor-of-inertia).
+
+
 (physics-hs:mechanics:inertia:continuum:rigid)=
 ## Sistemi rigidi
 
