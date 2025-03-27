@@ -347,9 +347,9 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../electromagnetism/em.html">24. Fondamenti di elettromagnetismo</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../electromagnetism/electrostatics.html">24.1. Elettrostatica</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electrostatics-problems.html">24.1.7. Problemi</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electrostatics-sol.html">24.1.8. Soluzioni</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electrostatics-notes.html">24.1.9. Note e dimostrazioni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electrostatics-problems.html">24.1.8. Problemi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electrostatics-sol.html">24.1.9. Soluzioni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../electromagnetism/electrostatics-notes.html">24.1.10. Note e dimostrazioni</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../electromagnetism/electric-current.html">24.2. Corrente elettrica</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -648,6 +648,9 @@ document.write(`
 -->
 <div class="tex2jax_ignore mathjax_ignore section" id="inerzia-e-grandezze-dinamiche-di-un-sistema-esteso-con-distribuzione-continua-di-massa">
 <span id="physics-hs-mechanics-inertia-continuum"></span><h1><span class="section-number">11.3. </span>Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa<a class="headerlink" href="#inerzia-e-grandezze-dinamiche-di-un-sistema-esteso-con-distribuzione-continua-di-massa" title="Permalink to this heading">#</a></h1>
+<p>I sistemi rigidi sono indeformabili. Durante il moto, possono cambiare posizione e orientamento (in generale hanno 6 gradi di libertà nello spazio 3-dimensionale, e 3 gradi di libertà nello spazio 2-dimensionale), ma non cambiano forma.</p>
+<p>Le proprietà di inerzia di un sistema rigido, se riferite a un punto materiale del sistema, se riferite a un sistema di riferimento materiale, in moto con il sistema stesso. Detto meglio e mettendo in luce la differenza tra quantità fisiche vettoriali (e tensoriali, assolute; <strong>todo</strong> <strong>Riferimento a una sezione sull’invarianza</strong>): le componenti delle proprietà di inerzia di un sistema rigido riferite a un sistema di riferimento materiale sono costanti.</p>
+<p>In questa sezione vengono calcolate le proprietà inerziali (centro di gravità, momento di inerzia - con tutta l’attenzione che bisogna prestare quando si parla di momenti di inerzia qui<a class="footnote-reference brackets" href="#inertia-tensor" id="id1">1</a>) di alcuni sistemi rigidi come: asta, anello, disco, sfera,…</p>
 <div class="section" id="sistemi-rigidi">
 <span id="physics-hs-mechanics-inertia-continuum-rigid"></span><h2><span class="section-number">11.3.1. </span>Sistemi rigidi<a class="headerlink" href="#sistemi-rigidi" title="Permalink to this heading">#</a></h2>
 <div class="proof example dropdown admonition" id="inertia-sphere">
@@ -694,7 +697,13 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\mu = \frac{m}{2 \pi R} \ .\]</div>
 </div>
-</div></div>
+</div><hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="inertia-tensor"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Le proprietà di inerzia di un sistema rigido sono descritte da grandezze scalari (massa), vettoriali (posizione del centro di massa), e tensoriali (tensore di inerzia e tensore del momento statico), come descritto nella sezione sull’inerzia nel materiale per l’università, <a class="reference external" href="https://basics2022.github.io/bbooks-physics-mechanics/ch/inertia.html#tensor-of-inertia">Inertia - Tensor of Inertia</a>.</p>
+</dd>
+</dl>
+</div>
 </div>
 
     <script type="text/x-thebe-config">

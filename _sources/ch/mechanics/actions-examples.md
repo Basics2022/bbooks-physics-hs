@@ -257,6 +257,13 @@ $$\vec{F}_{12} = - \mu^d N \frac{\vec{v}_{12}}{|\vec{v}_{12}|} \ ,$$
 
 avendo definito $\vec{F}_{12}$ come la forza agente sul corpo $1$ a causa del corpo $2$, e $\vec{v}_{12} = \vec{v}_1 - \vec{v}_2$ la velocità del corpo $1$ relativa al corpo $2$.
  
-#### Puro rotolamento
+(physics-hs:mechanics:actions:contact:pure-rolling)=
+### Puro rotolamento
+In generale, è necessario garantire l'attrito per garantire la condizione di puro rotolamento.
+Nella condizione di puro rotolamento, i punti materiali delle due superfici in corrispondenza del punto di contatto hanno la stessa velocità.
 
+Nonostante la presenza di attrito per garantire il puro rotolamento, questo vincolo è un vincolo ideale con potenza nulla: la forze scambiate tra le due superfici sono uguali e opposte per il terzo [principio della dinamica - azione e reazione](physics-hs:mechanics:dynamics:principles), mentre la velocità dei punti nei quali le forze sono applicate è uguale per la condizione di puro rotolamento.
 
+**todo**
+- ragionare sul punto di contatto...(i punti materiali a contatto cambiano da un istante all'altro, in generale)
+- fare bilancio di potenze
