@@ -631,6 +631,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-punti-materiali">10.5.2. Sistemi di punti materiali</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-del-corpo-rigido">10.5.3. Statica del corpo rigido</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miscellanea">10.5.4. Miscellanea</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-dei-fluidi">10.5.5. Statica dei fluidi</a></li>
 </ul>
             </nav>
         </div>
@@ -1242,6 +1243,81 @@ Soluzione.<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 </div>
 </details></div>
+<div class="section" id="statica-dei-fluidi">
+<h2><span class="section-number">10.5.5. </span>Statica dei fluidi<a class="headerlink" href="#statica-dei-fluidi" title="Permalink to this heading">#</a></h2>
+<!-- Esercizio ************************************************************* -->
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Problema 20.</div>
+<p class="sd-card-text">Due scatole uguali sono posizionate su una leva alla stessa distanza dal fulcro e contengono lo stesso volume <span class="math notranslate nohighlight">\(V_f\)</span> di acqua di densità <span class="math notranslate nohighlight">\(\rho_f\)</span>. Nell’acqua contenuta nelle due scatole sono immerse completamente due sfere che hanno lo stesso volume <span class="math notranslate nohighlight">\(V\)</span> di metallo di densità <span class="math notranslate nohighlight">\(\rho_1 &gt; \rho_f\)</span> e una sfera con <span class="math notranslate nohighlight">\(\rho_2 &lt; \rho_f\)</span>. La sfera di metallo è appesa con un filo ideale a una parete esterna, mentre la sfera 2 è ancorata al fondo della scatola. Il sistema è immerso in un campo gravitazionale uniforme, le scatole sono poste alla stessa distanza dalla cerniera della leva sulla quale sono appoggiate, con la quale scambiano solo azioni in direzione perpendicolare alla superficie. Si assuma quindi<a class="footnote-reference brackets" href="#f-application" id="id1">1</a> che la risultante delle forze di contatto abbia punto di applicazione nel centro della base.</p>
+<p class="sd-card-text">Viene chiesto di:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">determinare se la bilancia si trova in una posizione di equilibrio. Se no, in quale direzione tenderà a ruotare?</p></li>
+<li><p class="sd-card-text">calcolare la tensione nel filo al quale è appesa la sfera metallica.</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><img alt="" src="../../_images/fluids-statics-balance-0.png" /></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Per determinare l’equilibrio alla rotazione del sistema è necessario valutare i momenti delle forze esterne agenti su di esso. Prendendo come segno positivo dei momenti quello che fa ruotare la leva in senso anti-orario.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  M^e_H
+  &amp; = - \rho_f V g  L - \rho_2 V_2 g L - P_a S L - T L + \rho_f V g L + \rho_1 V g L + P_a S L = \\
+  &amp; = - \rho_2 V g L - T L + \rho_1 V g L \ .
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Per determinare la tensione <span class="math notranslate nohighlight">\(T\)</span> dell filo si usa la condizione di equilibrio per la sfera metallica. Sulla sfera agiscono la tensione del filo, il proprio peso e la forza di galleggiamento di Archimede,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+0
+&amp; = - \rho_1  V g + T + F_{Arch} = \\
+&amp; = - \rho_1  V g + T + \rho_f V g \\
+T = &amp; (\rho_1-\rho_f) V g
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">La risultante dei momenti esterni vale quindi</p>
+<div class="math notranslate nohighlight">
+\[M^e_H = \left( \rho_f - \rho_1 \right) g V L &lt; 0 \ . \]</div>
+<p class="sd-card-text">Poiché la risultante dei momenti non è nulla, il sistema non si trova in una condizione di equilibrio. Poiché <span class="math notranslate nohighlight">\(M^e_H &lt; 0\)</span> - per le convenzioni scelte sui segni, <em>verso positivo di rotazione e momenti in senso anti-orario</em> - il sistema tende a ruotare in senso orario</p>
+</div>
+</details><table class="table">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../_images/fluids-statics-balance-0.png" /></p></td>
+<td><p><img alt="" src="../../_images/fluids-statics-balance-0-equilibria.png" /></p></td>
+<td><p><img alt="" src="../../_images/fluids-statics-balance-0-equilibria-detail.png" /></p></td>
+</tr>
+</tbody>
+</table>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="f-application"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Se i due corpi scambiano solo reazioni in direzione perpendicolare alla parete, questa condizione è sufficiente per garantire che il punto - o meglio la retta - di applicazione della risultante delle forze si trovi nel centro della base della scatola. Ma c’è equilibrio qui?</p>
+</dd>
+</dl>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -1311,6 +1387,7 @@ Soluzione.<div class="sd-summary-down docutils">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-punti-materiali">10.5.2. Sistemi di punti materiali</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-del-corpo-rigido">10.5.3. Statica del corpo rigido</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miscellanea">10.5.4. Miscellanea</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statica-dei-fluidi">10.5.5. Statica dei fluidi</a></li>
 </ul>
   </nav></div>
 

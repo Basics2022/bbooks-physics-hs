@@ -46,7 +46,7 @@ $$
 (physics-hs:mechanics:dynamics:conservation:mechanical-energy)=
 ## Conservazione dell'energia meccanica
 Se in un sistema agiscono solo [azioni conservative](physics-hs:mechanics:actions:conservative) - sia azioni interne sia azioni esterne -, è valida la conservazione dell'energia meccanica.
-La potenza delle azioni conservative può essere scritta come derivata nel tempo di una funnzione energia potenziale, $P^{tot} = - \dot{V}$. 
+La potenza delle azioni conservative può essere scritta come derivata nel tempo di una funzione energia potenziale, $P^{tot} = - \dot{V}$. 
 Definendo l'**energia meccanica** come la somma dell'energia cinetica del sistema e dell'energia potenziale, 
 
 $$E^{mec} := K + V \ ,$$

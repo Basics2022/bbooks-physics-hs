@@ -87,7 +87,7 @@
         
 
 \title{Fisica per le superiori}
-\date{27 mar 2025}
+\date{01 apr 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -4060,6 +4060,82 @@ Se non c’è contatto, \(N_1 = 0\); se c’è contatto, in generale \(N_1 > 0\)
 \sphinxAtStartPar
 \sphinxstylestrong{Soluzione.}
 
+
+\subsection{Statica dei fluidi}
+\label{\detokenize{ch/mechanics/statics-problems:statica-dei-fluidi}}\begin{equation*}
+\begin{split}
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 20.}
+Due scatole uguali sono posizionate su una leva alla stessa distanza dal fulcro e contengono lo stesso volume $V_f$ di acqua di densità $\rho_f$. Nell'acqua contenuta nelle due scatole sono immerse completamente due sfere che hanno lo stesso volume $V$ di metallo di densità $\rho_1 > \rho_f$ e una sfera con $\rho_2 < \rho_f$. La sfera di metallo è appesa con un filo ideale a una parete esterna, mentre la sfera 2 è ancorata al fondo della scatola. Il sistema è immerso in un campo gravitazionale uniforme, le scatole sono poste alla stessa distanza dalla cerniera della leva sulla quale sono appoggiate, con la quale scambiano solo azioni in direzione perpendicolare alla superficie. Si assuma quindi che la risultante delle forze di contatto abbia punto di applicazione nel centro della base.
+Viene chiesto di:
+\begin{enumerate}
+  \item determinare se la bilancia si trova in una posizione di equilibrio. Se no, in quale direzione tenderà a ruotare? 
+  \item calcolare la tensione nel filo al quale è appesa la sfera metallica.
+\end{enumerate}
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \includegraphics[width=.95\textwidth]{../../media/fluids-statics-balance-0.png}
+\end{minipage}
+\end{split}
+\end{equation*}
+
+
+\sphinxAtStartPar
+\sphinxstylestrong{Soluzione.}
+
+\sphinxAtStartPar
+Per determinare l’equilibrio alla rotazione del sistema è necessario valutare i momenti delle forze esterne agenti su di esso. Prendendo come segno positivo dei momenti quello che fa ruotare la leva in senso anti\sphinxhyphen{}orario.
+\begin{equation*}
+\begin{split}\begin{aligned}
+  M^e_H
+  & = - \rho_f V g  L - \rho_2 V_2 g L - P_a S L - T L + \rho_f V g L + \rho_1 V g L + P_a S L = \\
+  & = - \rho_2 V g L - T L + \rho_1 V g L \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Per determinare la tensione \(T\) dell filo si usa la condizione di equilibrio per la sfera metallica. Sulla sfera agiscono la tensione del filo, il proprio peso e la forza di galleggiamento di Archimede,
+\begin{equation*}
+\begin{split}\begin{aligned}
+0
+& = - \rho_1  V g + T + F_{Arch} = \\
+& = - \rho_1  V g + T + \rho_f V g \\
+T = & (\rho_1-\rho_f) V g
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La risultante dei momenti esterni vale quindi
+\begin{equation*}
+\begin{split}M^e_H = \left( \rho_f - \rho_1 \right) g V L < 0 \ . \end{split}
+\end{equation*}
+\sphinxAtStartPar
+Poiché la risultante dei momenti non è nulla, il sistema non si trova in una condizione di equilibrio. Poiché \(M^e_H < 0\) \sphinxhyphen{} per le convenzioni scelte sui segni, \sphinxstyleemphasis{verso positivo di rotazione e momenti in senso anti\sphinxhyphen{}orario} \sphinxhyphen{} il sistema tende a ruotare in senso orario
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|T|}
+\hline
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{fluids-statics-balance-0}.png}
+&
+\sphinxAtStartPar
+\sphinxincludegraphics{{fluids-statics-balance-0-equilibria}.png}
+&
+\sphinxAtStartPar
+\sphinxincludegraphics{{fluids-statics-balance-0-equilibria-detail}.png}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+
+\bigskip\hrule\bigskip
+
+
 \sphinxstepscope
 
 
@@ -4849,7 +4925,7 @@ L’equazione di bilancio dell’energia cinetica di un sistema chiuso garantisc
 \label{\detokenize{ch/mechanics/dynamics-conservation:conservazione-dell-energia-meccanica}}\label{\detokenize{ch/mechanics/dynamics-conservation:physics-hs-mechanics-dynamics-conservation-mechanical-energy}}
 \sphinxAtStartPar
 Se in un sistema agiscono solo {\hyperref[\detokenize{ch/mechanics/actions-conservative:physics-hs-mechanics-actions-conservative}]{\sphinxcrossref{\DUrole{std,std-ref}{azioni conservative}}}} \sphinxhyphen{} sia azioni interne sia azioni esterne \sphinxhyphen{}, è valida la conservazione dell’energia meccanica.
-La potenza delle azioni conservative può essere scritta come derivata nel tempo di una funnzione energia potenziale, \(P^{tot} = - \dot{V}\).
+La potenza delle azioni conservative può essere scritta come derivata nel tempo di una funzione energia potenziale, \(P^{tot} = - \dot{V}\).
 Definendo l”\sphinxstylestrong{energia meccanica} come la somma dell’energia cinetica del sistema e dell’energia potenziale,
 \begin{equation*}
 \begin{split}E^{mec} := K + V \ ,\end{split}
