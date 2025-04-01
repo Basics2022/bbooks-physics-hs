@@ -518,6 +518,7 @@ $$
 
 **Soluzione.**
 
+
 ````
 
 
@@ -888,3 +889,120 @@ Equilibrio di un corpo appoggiato...esempio che mostra come la retta di applicaz
 
 ````
 
+## Statica dei fluidi
+
+````{only} latex
+$$
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 20.}
+Due scatole uguali sono posizionate su una leva alla stessa distanza dal fulcro e contengono lo stesso volume $V_f$ di acqua di densità $\rho_f$. Nell'acqua contenuta nelle due scatole sono immerse completamente due sfere che hanno lo stesso volume $V$ di metallo di densità $\rho_1 > \rho_f$ e una sfera con $\rho_2 < \rho_f$. La sfera di metallo è appesa con un filo ideale a una parete esterna, mentre la sfera 2 è ancorata al fondo della scatola. Il sistema è immerso in un campo gravitazionale uniforme, le scatole sono poste alla stessa distanza dalla cerniera della leva sulla quale sono appoggiate, con la quale scambiano solo azioni in direzione perpendicolare alla superficie. Si assuma quindi che la risultante delle forze di contatto abbia punto di applicazione nel centro della base.
+Viene chiesto di:
+\begin{enumerate}
+  \item determinare se la bilancia si trova in una posizione di equilibrio. Se no, in quale direzione tenderà a ruotare? 
+  \item calcolare la tensione nel filo al quale è appesa la sfera metallica.
+\end{enumerate}
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \includegraphics[width=.95\textwidth]{../../media/fluids-statics-balance-0.png}
+\end{minipage}
+$$
+
+<!--
+[^f-application]: Se i due corpi scambiano solo reazioni in direzione perpendicolare alla parete, questa condizione è sufficiente per garantire che il punto - o meglio la retta - di applicazione della risultante delle forze si trovi nel centro della base della scatola. Ma c'è equilibrio qui?
+-->
+
+**Soluzione.**
+
+Per determinare l'equilibrio alla rotazione del sistema è necessario valutare i momenti delle forze esterne agenti su di esso. Prendendo come segno positivo dei momenti quello che fa ruotare la leva in senso anti-orario.
+
+$$\begin{aligned}
+  M^e_H
+  & = - \rho_f V g  L - \rho_2 V_2 g L - P_a S L - T L + \rho_f V g L + \rho_1 V g L + P_a S L = \\
+  & = - \rho_2 V g L - T L + \rho_1 V g L \ .
+\end{aligned}$$
+
+Per determinare la tensione $T$ dell filo si usa la condizione di equilibrio per la sfera metallica. Sulla sfera agiscono la tensione del filo, il proprio peso e la forza di galleggiamento di Archimede,
+
+$$\begin{aligned}
+0
+& = - \rho_1  V g + T + F_{Arch} = \\
+& = - \rho_1  V g + T + \rho_f V g \\
+T = & (\rho_1-\rho_f) V g
+\end{aligned}$$
+
+La risultante dei momenti esterni vale quindi
+
+$$M^e_H = \left( \rho_f - \rho_1 \right) g V L < 0 \ . $$
+
+Poiché la risultante dei momenti non è nulla, il sistema non si trova in una condizione di equilibrio. Poiché $M^e_H < 0$ - per le convenzioni scelte sui segni, *verso positivo di rotazione e momenti in senso anti-orario* - il sistema tende a ruotare in senso orario
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/fluids-statics-balance-0.png)
+  - ![](../../media/fluids-statics-balance-0-equilibria.png)
+  - ![](../../media/fluids-statics-balance-0-equilibria-detail.png)
+```
+
+````
+````{only} html
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 20.
+:columns: 8
+
+Due scatole uguali sono posizionate su una leva alla stessa distanza dal fulcro e contengono lo stesso volume $V_f$ di acqua di densità $\rho_f$. Nell'acqua contenuta nelle due scatole sono immerse completamente due sfere che hanno lo stesso volume $V$ di metallo di densità $\rho_1 > \rho_f$ e una sfera con $\rho_2 < \rho_f$. La sfera di metallo è appesa con un filo ideale a una parete esterna, mentre la sfera 2 è ancorata al fondo della scatola. Il sistema è immerso in un campo gravitazionale uniforme, le scatole sono poste alla stessa distanza dalla cerniera della leva sulla quale sono appoggiate, con la quale scambiano solo azioni in direzione perpendicolare alla superficie. Si assuma quindi[^f-application] che la risultante delle forze di contatto abbia punto di applicazione nel centro della base.
+
+Viene chiesto di:
+1. determinare se la bilancia si trova in una posizione di equilibrio. Se no, in quale direzione tenderà a ruotare? 
+2. calcolare la tensione nel filo al quale è appesa la sfera metallica. 
+
+[^f-application]: Se i due corpi scambiano solo reazioni in direzione perpendicolare alla parete, questa condizione è sufficiente per garantire che il punto - o meglio la retta - di applicazione della risultante delle forze si trovi nel centro della base della scatola. Ma c'è equilibrio qui?
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/fluids-statics-balance-0.png)
+:::
+
+::::
+
+```{dropdown} Soluzione
+
+Per determinare l'equilibrio alla rotazione del sistema è necessario valutare i momenti delle forze esterne agenti su di esso. Prendendo come segno positivo dei momenti quello che fa ruotare la leva in senso anti-orario.
+
+$$\begin{aligned}
+  M^e_H
+  & = - \rho_f V g  L - \rho_2 V_2 g L - P_a S L - T L + \rho_f V g L + \rho_1 V g L + P_a S L = \\
+  & = - \rho_2 V g L - T L + \rho_1 V g L \ .
+\end{aligned}$$
+
+Per determinare la tensione $T$ dell filo si usa la condizione di equilibrio per la sfera metallica. Sulla sfera agiscono la tensione del filo, il proprio peso e la forza di galleggiamento di Archimede,
+
+$$\begin{aligned}
+0
+& = - \rho_1  V g + T + F_{Arch} = \\
+& = - \rho_1  V g + T + \rho_f V g \\
+T = & (\rho_1-\rho_f) V g
+\end{aligned}$$
+
+La risultante dei momenti esterni vale quindi
+
+$$M^e_H = \left( \rho_f - \rho_1 \right) g V L < 0 \ . $$
+
+Poiché la risultante dei momenti non è nulla, il sistema non si trova in una condizione di equilibrio. Poiché $M^e_H < 0$ - per le convenzioni scelte sui segni, *verso positivo di rotazione e momenti in senso anti-orario* - il sistema tende a ruotare in senso orario
+
+```
+
+```{list-table}
+:header-rows: 0
+* - ![](../../media/fluids-statics-balance-0.png)
+  - ![](../../media/fluids-statics-balance-0-equilibria.png)
+  - ![](../../media/fluids-statics-balance-0-equilibria-detail.png)
+```
+````
