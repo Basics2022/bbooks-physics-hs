@@ -1,5 +1,5 @@
 # Physics for high-school
-This repository contains source files of [Basics - Physics for High School](https://basics2022.github.io/bbooks-physics-hs) website. So far, it's in Italian language only. Please rely on the translator of your browser or feel free to [contribute](contribute).
+This repository contains source files of [Basics - Physics for High School](https://basics2022.github.io/bbooks-physics-hs) website. So far, it's in Italian language only. Please rely on the translator of your browser or feel free to [contribute](#contribute).
 
 This is a [JupyterBook](https://jupyterbook.org) book dealing with topics in physics at high-school level. This book is part of the main [**basics-books** project](https://basics2022.github.io/bbooks).
 
