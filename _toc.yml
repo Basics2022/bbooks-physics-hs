@@ -210,6 +210,8 @@ parts:
 # - file: ch/electromagnetism/electrical-engineering-instruments
   - file: ch/electromagnetism/em-waves
     sections:
+    - file: ch/electromagnetism/em-waves-spectrum
+    - file: ch/electromagnetism/em-waves-speed
     - file: ch/electromagnetism/em-waves-problems
   - file: ch/electromagnetism/thermoelectric-effects
 # - file: ch/electromagnetism/...
@@ -224,6 +226,8 @@ parts:
   - file: ch/modern/intro-radioactivity.md
   - file: ch/modern/einstein.md
   - file: ch/modern/quantum.md
+    sections:
+    - file: ch/modern/quantum-basics.md
   - file: ch/modern/astronomy.md
     sections:
     - file: ch/modern/astronomy-star-classification.md

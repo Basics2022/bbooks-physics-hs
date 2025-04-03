@@ -10,9 +10,6 @@
 (physics-hs:modern:quantum:experience:black-body:planck)=
 #### Legge di Planck
 
-
-
-
 (physics-hs:modern:quantum:experience:black-body:wien)=
 #### Legge di Wien
 
@@ -28,6 +25,10 @@
 - Thomson
 - Rutherford
 - Bohr e Bohr-Sommerfeld
+
+Con esperimenti:
+- Rutherford
+- Stern-Gerlach: **spin**
 
 ## Origine della meccanica quantistica
 - de Broglie, 1924

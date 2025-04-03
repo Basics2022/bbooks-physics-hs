@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>33. Meccanica quantistica &#8212; Fisica per le superiori</title>
+    <title>33.3. Introduzione alla meccanica quantistica &#8212; Fisica per le superiori</title>
   
   
   
@@ -65,12 +65,14 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/modern/quantum';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch/modern/quantum-basics';</script>
     <link rel="shortcut icon" href="../../_static/favicon-sugar.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="33.3. Introduzione alla meccanica quantistica" href="quantum-basics.html" />
-    <link rel="prev" title="32. Teoria di Einstein" href="einstein.html" />
+    <link rel="next" title="34. Sviluppi dell’astronomia" href="astronomy.html" />
+    <link rel="prev" title="33. Meccanica quantistica" href="quantum.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -382,8 +384,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="experiments.html">30. Esperimenti</a></li>
 <li class="toctree-l1"><a class="reference internal" href="intro-radioactivity.html">31. Radioattività</a></li>
 <li class="toctree-l1"><a class="reference internal" href="einstein.html">32. Teoria di Einstein</a></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">33. Meccanica quantistica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="quantum-basics.html">33.3. Introduzione alla meccanica quantistica</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="quantum.html">33. Meccanica quantistica</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">33.3. Introduzione alla meccanica quantistica</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="astronomy.html">34. Sviluppi dell’astronomia</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-27"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -487,7 +489,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/edit/master/ch/modern/quantum.md" target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/edit/master/ch/modern/quantum-basics.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -504,7 +506,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/modern/quantum.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fch/modern/quantum-basics.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Apri un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -534,7 +536,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/ch/modern/quantum.md" target="_blank"
+      <li><a href="../../_sources/ch/modern/quantum-basics.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -618,7 +620,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Meccanica quantistica</h1>
+    <h1>Introduzione alla meccanica quantistica</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -628,18 +630,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienze-all-origine-della-meccanica-quantistica">33.1. Esperienze all’origine della meccanica quantistica</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#radiazione-di-corpo-nero-planck">33.1.1. Radiazione di corpo nero - Planck</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-planck">33.1.1.1. Legge di Planck</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-wien">33.1.1.2. Legge di Wien</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-stefan-boltzmann">33.1.1.3. Legge di Stefan-Boltzmann</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretazione-probabilistica">33.3.1. Interpretazione probabilistica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#misura">33.3.2. Misura</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#indeterminazione-di-heisenberg">33.3.3. Indeterminazione di Heisenberg</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alcuni-esempi-1-dimensionali">33.3.4. Alcuni esempi 1-dimensionali</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-libero-di-un-sistema-puntiforme">33.3.4.1. Moto libero di un sistema puntiforme</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#barriera-e-buca-di-potenziale">33.3.4.2. Barriera e buca di potenziale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oscillatore-armonico">33.3.4.3. Oscillatore armonico</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effetto-fotoelettrico-einstein">33.1.2. Effetto fotoelettrico - Einstein</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelli-atomici">33.1.3. Modelli atomici</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#origine-della-meccanica-quantistica">33.2. Origine della meccanica quantistica</a></li>
 </ul>
             </nav>
         </div>
@@ -651,53 +650,59 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="meccanica-quantistica">
-<span id="physics-hs-modern-quantum"></span><h1><span class="section-number">33. </span>Meccanica quantistica<a class="headerlink" href="#meccanica-quantistica" title="Permalink to this heading">#</a></h1>
-<div class="section" id="esperienze-all-origine-della-meccanica-quantistica">
-<span id="physics-hs-modern-quantum-experience"></span><h2><span class="section-number">33.1. </span>Esperienze all’origine della meccanica quantistica<a class="headerlink" href="#esperienze-all-origine-della-meccanica-quantistica" title="Permalink to this heading">#</a></h2>
-<div class="section" id="radiazione-di-corpo-nero-planck">
-<span id="physics-hs-modern-quantum-experience-black-body"></span><h3><span class="section-number">33.1.1. </span>Radiazione di corpo nero - Planck<a class="headerlink" href="#radiazione-di-corpo-nero-planck" title="Permalink to this heading">#</a></h3>
-<div class="section" id="legge-di-planck">
-<span id="physics-hs-modern-quantum-experience-black-body-planck"></span><h4><span class="section-number">33.1.1.1. </span>Legge di Planck<a class="headerlink" href="#legge-di-planck" title="Permalink to this heading">#</a></h4>
+  <div class="tex2jax_ignore mathjax_ignore section" id="introduzione-alla-meccanica-quantistica">
+<span id="physics-hs-modern-quantum-basics"></span><h1><span class="section-number">33.3. </span>Introduzione alla meccanica quantistica<a class="headerlink" href="#introduzione-alla-meccanica-quantistica" title="Permalink to this heading">#</a></h1>
+<div class="section" id="interpretazione-probabilistica">
+<h2><span class="section-number">33.3.1. </span>Interpretazione probabilistica<a class="headerlink" href="#interpretazione-probabilistica" title="Permalink to this heading">#</a></h2>
 </div>
-<div class="section" id="legge-di-wien">
-<span id="physics-hs-modern-quantum-experience-black-body-wien"></span><h4><span class="section-number">33.1.1.2. </span>Legge di Wien<a class="headerlink" href="#legge-di-wien" title="Permalink to this heading">#</a></h4>
+<div class="section" id="misura">
+<h2><span class="section-number">33.3.2. </span>Misura<a class="headerlink" href="#misura" title="Permalink to this heading">#</a></h2>
 </div>
-<div class="section" id="legge-di-stefan-boltzmann">
-<span id="physics-hs-modern-quantum-experience-black-body-stefan-boltzmann"></span><h4><span class="section-number">33.1.1.3. </span>Legge di Stefan-Boltzmann<a class="headerlink" href="#legge-di-stefan-boltzmann" title="Permalink to this heading">#</a></h4>
-</div>
-</div>
-<div class="section" id="effetto-fotoelettrico-einstein">
-<span id="physics-hs-modern-quantum-experience-pe-effect"></span><h3><span class="section-number">33.1.2. </span>Effetto fotoelettrico - Einstein<a class="headerlink" href="#effetto-fotoelettrico-einstein" title="Permalink to this heading">#</a></h3>
-</div>
-<div class="section" id="modelli-atomici">
-<span id="physics-hs-modern-quantum-experience-atoms"></span><h3><span class="section-number">33.1.3. </span>Modelli atomici<a class="headerlink" href="#modelli-atomici" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Thomson</p></li>
-<li><p>Rutherford</p></li>
-<li><p>Bohr e Bohr-Sommerfeld</p></li>
-</ul>
-<p>Con esperimenti:</p>
-<ul class="simple">
-<li><p>Rutherford</p></li>
-<li><p>Stern-Gerlach: <strong>spin</strong></p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="origine-della-meccanica-quantistica">
-<h2><span class="section-number">33.2. </span>Origine della meccanica quantistica<a class="headerlink" href="#origine-della-meccanica-quantistica" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>de Broglie, 1924</p></li>
-<li><p>Heisenberg, Born, Jordan, 1925-26: meccanica matriciale</p></li>
-<li><p>Schrodinger, 1926: meccanica ondulatoria</p></li>
-<li><p>Dirac e meccanica quantistica relativistica:</p>
+<div class="section" id="indeterminazione-di-heisenberg">
+<h2><span class="section-number">33.3.3. </span>Indeterminazione di Heisenberg<a class="headerlink" href="#indeterminazione-di-heisenberg" title="Permalink to this heading">#</a></h2>
+<p>Non è possibile conoscere contemporaneamete il valore di alcune coppie di grandezze fisiche, dette complementari o coniugate. Alcuni esempi sono:</p>
 <ul>
+<li><p>stessa componente di posizione e quantità di moto</p>
+<div class="math notranslate nohighlight">
+\[\sigma_{x_i} \sigma_{p_i} \ge \frac{\hbar}{2}\]</div>
+</li>
+<li><p>diverse componenti del momento della quantità di moto (sia momento totale, sia orbitale, sia di spin)</p></li>
 <li><p>…</p></li>
 </ul>
-</li>
+</div>
+<div class="section" id="alcuni-esempi-1-dimensionali">
+<h2><span class="section-number">33.3.4. </span>Alcuni esempi 1-dimensionali<a class="headerlink" href="#alcuni-esempi-1-dimensionali" title="Permalink to this heading">#</a></h2>
+<div class="section" id="moto-libero-di-un-sistema-puntiforme">
+<h3><span class="section-number">33.3.4.1. </span>Moto libero di un sistema puntiforme<a class="headerlink" href="#moto-libero-di-un-sistema-puntiforme" title="Permalink to this heading">#</a></h3>
+<p>Moto libero, incertezza tra posizione e quantità di moto porta a «diffusione della probabilità»</p>
+</div>
+<div class="section" id="barriera-e-buca-di-potenziale">
+<h3><span class="section-number">33.3.4.2. </span>Barriera e buca di potenziale<a class="headerlink" href="#barriera-e-buca-di-potenziale" title="Permalink to this heading">#</a></h3>
+<p>Contronto e differenze con meccanica classica:</p>
+<ul class="simple">
+<li><p>collisione con una parete - barriera di potenziale</p></li>
+<li><p>moto libero in una scatola - buca di potenziale</p></li>
+</ul>
+<p>Effetti:</p>
+<ul class="simple">
+<li><p>effetto tunnel</p></li>
+</ul>
+<p>Buca di potenziale, sistema finito:</p>
+<ul class="simple">
+<li><p>valori di energia discreti</p></li>
+</ul>
+<p>Barriera di potenziale, dominio infinito:</p>
+<ul class="simple">
+<li><p>valori di energia continui</p></li>
+<li><p>…</p></li>
 </ul>
 </div>
-<div class="toctree-wrapper compound">
+<div class="section" id="oscillatore-armonico">
+<h3><span class="section-number">33.3.4.3. </span>Oscillatore armonico<a class="headerlink" href="#oscillatore-armonico" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>valore di energia discreti</p></li>
+</ul>
+</div>
 </div>
 </div>
 
@@ -732,20 +737,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="einstein.html"
+       href="quantum.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title"><span class="section-number">32. </span>Teoria di Einstein</p>
+        <p class="prev-next-title"><span class="section-number">33. </span>Meccanica quantistica</p>
       </div>
     </a>
     <a class="right-next"
-       href="quantum-basics.html"
+       href="astronomy.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title"><span class="section-number">33.3. </span>Introduzione alla meccanica quantistica</p>
+        <p class="prev-next-title"><span class="section-number">34. </span>Sviluppi dell’astronomia</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -764,18 +769,15 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esperienze-all-origine-della-meccanica-quantistica">33.1. Esperienze all’origine della meccanica quantistica</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#radiazione-di-corpo-nero-planck">33.1.1. Radiazione di corpo nero - Planck</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-planck">33.1.1.1. Legge di Planck</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-wien">33.1.1.2. Legge di Wien</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#legge-di-stefan-boltzmann">33.1.1.3. Legge di Stefan-Boltzmann</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretazione-probabilistica">33.3.1. Interpretazione probabilistica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#misura">33.3.2. Misura</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#indeterminazione-di-heisenberg">33.3.3. Indeterminazione di Heisenberg</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alcuni-esempi-1-dimensionali">33.3.4. Alcuni esempi 1-dimensionali</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-libero-di-un-sistema-puntiforme">33.3.4.1. Moto libero di un sistema puntiforme</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#barriera-e-buca-di-potenziale">33.3.4.2. Barriera e buca di potenziale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oscillatore-armonico">33.3.4.3. Oscillatore armonico</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effetto-fotoelettrico-einstein">33.1.2. Effetto fotoelettrico - Einstein</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelli-atomici">33.1.3. Modelli atomici</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#origine-della-meccanica-quantistica">33.2. Origine della meccanica quantistica</a></li>
 </ul>
   </nav></div>
 

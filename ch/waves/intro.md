@@ -3,13 +3,25 @@
 
 **Cosa intendiamo per onda?** Il termine onda è comunemente associato alla propagazione di una perturbazione - rispetto a una condizione di equilibrio - di una quantità fisica nello spazio e nel tempo, in grado di trasportare energia e in molti casi con una **velocità di propagazione** ben definita[^wave-speed].
 
-Da un punto di vista matematico, la propagazione di perturbazioni di diverse quantità fisiche è governata dallo **stesso modello matematico**, e può mostrare **fenomeni caratteristici** come interferenza, effetto Doppler, e - in presenza di ostacoli - riflessione, rifrazione, diffrazione, scattering da particelle o superfici irregolari. 
+Da un punto di vista matematico, la propagazione di perturbazioni di diverse quantità fisiche è governata dallo **stesso modello matematico**:
+così, ad esempio, lo stesso modello matematico governa la trasmissione delle onde meccaniche nella materia e delle onde elettromagnetiche nella materia o nel "vuoto" - di materia[^space-physical-properties].
+Poiché lo stesso modello matematico descrive la propagazione di diversi disturbi in vari ambiti della natura, questi sistemi possono mostrare formalmente gli stessi **fenomeni caratteristici** come interferenza, effetto Doppler, e - in presenza di ostacoli - riflessione, rifrazione, diffrazione, scattering da particelle o superfici irregolari. 
+L'interazione con ostacoli può dipendere dalle dimensioni relative dell'ostacolo e della *lunghezza d'onda*, vedi {prf:ref}`wave-length`, della perturbazione.
 
-La manifestazione dei fenomeni di interazione con ostacoli può dipendere dalle dimensioni relative dell'ostacolo e della *lunghezza d'onda* della perturbazione.
+La propagazione di disturbi di intensità "sufficientemente piccola" può essere descritta con un modello lineare, l'*equazione delle onde*. La linearità di un problema consente di utilizzare il **principio di sovrapposizione delle cause e degli effetti**, e scomporre perturbazioni con "forma complessa" come somma di [perturbazioni più semplici](physics-hs:waves:equation:solutions).
 
-La propagazione di disturbi di intensità "sufficientemente piccola" può essere descritta con un modello lineare, l'*equazione delle onde*. La linearità di un problema consente di utilizzare il **principio di sovrapposizione delle cause e degli effetti**, e scomporre perturbazioni con "forma complessa" come somma di perturbazioni più semplici.
+Da quanto detto nell'introduzione, dovrebbe risultare sensato il programma di questo capitolo.
+- L'[equazione delle onde in diversi sistemi fisici](physics-hs:waves:equation:examples) viene ricavata a partire da equazioni di bilancio. Partendo da equazioni di bilancio differenti, in ambiti differenti, in alcuni casi si arriva allo stesso modello matematico: l'equazione delle onde.
+- Una volta ricavata l'equazione delle onde in diversi ambiti, dovrebbe risultare sensato investire un po' di tempo per discutere il modello matematico - indipendente dall'applicazione -, descrivendone
+  - le [soluzioni elementari](physics-hs:waves:equation:solutions), che possono essere composte in un problema lineare per ricavare una soluzione generale
+  - le [caratteristiche dei fenomeni ondulatori](physics-hs:waves:phenomena), che possono manifestarsi
 
-La perturbazione di diverse quantità fisiche in vari ambiti delle scienze è governata dallo **stesso modello matematico**, e quindi diversi fenomeni fisici mostrano formalmente le stesse caratteristiche. Così, lo stesso modello matematico governa la trasmissione delle onde meccaniche nella materia e delle onde elettromagnetiche nella materia o nel "vuoto" - di materia[^space-physical-properties].
+
+---
+
+<!--
+La perturbazione di diverse quantità fisiche in vari ambiti delle scienze è governata dallo **stesso modello matematico**, e quindi diversi fenomeni fisici mostrano formalmente le stesse caratteristiche.
+-->
 
 ```{dropdown} Alcuni esempi
 Alcuni fenomeni fisici governati dall'equazione delle onde sono:

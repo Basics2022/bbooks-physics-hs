@@ -87,7 +87,7 @@
         
 
 \title{Fisica per le superiori}
-\date{01 apr 2025}
+\date{03 apr 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -920,7 +920,46 @@ La carica elettrica è una grandezza fisica
 
 \sphinxAtStartPar
 \sphinxstylestrong{Strumenti e unità di misura.}
+\label{ch/intro/physical_quantities-charge:def:unit:ampere}
+\begin{sphinxadmonition}{note}{Definition 2.5.1 (Ampére, \protect\(A\protect\))}
 
+
+
+\sphinxAtStartPar
+Definizione dell’Ampére, \(A\), come unitò di misura tramite l”{\hyperref[\detokenize{ch/electromagnetism/electromagnetism-steady:physics-hs-electromagnetism-electromagnetism-steady-experience-oersted-ampere-ampere}]{\sphinxcrossref{\DUrole{std,std-ref}{esperimento di Ampère}}}}:
+
+\sphinxAtStartPar
+\sphinxstyleemphasis{\(1/10\) della corrente elettrica che genera \(2 \, \text{dyne} = 2 \cdot 10^{-5} N\) di forza per \(cm\) di lunghezza, tra due fili distanti \(d = 1 \, \text{cm}\)}
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+Seguendo i risultati dell’esperienza di Ampére, la forza per unità di lunghezza \(\frac{F}{Ł}\) scambiata tra due fili paralleli a distanza \(d\) percorsi da corrente elettrica \(i_1\), \(i_2\) è proporzionale al prodotto delle correnti elettriche e inversamente proporzionale alla distanza,
+\begin{equation*}
+\begin{split}\frac{F}{L} = k \dfrac{i_1 \, i_2}{d} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+dove \(k\) è la costante di proporzionalità. Il valore della costante di proporzionalità (rispetto al sistema di unità di misura definito) viene calcolato introducendo i valori della definizione nella formula derivata dall’esperienza di Ampere. Quindi, con \(i_1 = i_2 = 10 \, A\), \(d = 10^{-2} \, m\), \(\frac{F}{L} = 2 \cdot 10^{-5} \frac{N}{cm} = 2 \cdot 10^{-3} \frac{N}{m}\), si ottiene il valore della costante di proporzionalità
+\begin{equation*}
+\begin{split}k = \frac{\frac{F}{L} d}{i_1 i_2} = \frac{2 \cdot 10^{-3} \frac{N}{m} 10^{-2} \, m}{ 10^2 \, A^2} = 2 \cdot 10^{-7} \frac{N}{A^2} \ . \end{split}
+\end{equation*}
+\sphinxAtStartPar
+L’unità di misura della costane di proporzionalità può essere espressa come
+\begin{equation*}
+\begin{split}\frac{kg \, m}{s^2 \, A^2} = \frac{N}{A^2} = H \, m^{-1} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo introdotto l”\sphinxstylestrong{henry}, \sphinxstyleemphasis{H}, come unità di misura dell’induttanza.
+
+\sphinxAtStartPar
+Per comodità, che permette di ottenere una circuitazione del campo magnetico senza costanti numeriche, si è soliti definire la costante di proporzionalità come
+\begin{equation*}
+\begin{split}k = \frac{\mu_0}{2 \pi} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+utilizzando la \sphinxstylestrong{permeabilità magnetica del vuoto} \(\mu_0\), il cui valore \sphinxhyphen{} sempre per definizione \sphinxhyphen{} risulta essere
+\begin{equation*}
+\begin{split}\mu_0 = 2 \pi k = 4 \pi \cdot 10^{-7}\end{split}
+\end{equation*}
 \sphinxstepscope
 
 
@@ -12373,20 +12412,46 @@ In molti problemi, la propagazione di perturbazioni di ampiezza limitata è gove
 \end{footnote}.
 
 \sphinxAtStartPar
-Da un punto di vista matematico, la propagazione di perturbazioni di diverse quantità fisiche è governata dallo \sphinxstylestrong{stesso modello matematico}, e può mostrare \sphinxstylestrong{fenomeni caratteristici} come interferenza, effetto Doppler, e \sphinxhyphen{} in presenza di ostacoli \sphinxhyphen{} riflessione, rifrazione, diffrazione, scattering da particelle o superfici irregolari.
-
-\sphinxAtStartPar
-La manifestazione dei fenomeni di interazione con ostacoli può dipendere dalle dimensioni relative dell’ostacolo e della \sphinxstyleemphasis{lunghezza d’onda} della perturbazione.
-
-\sphinxAtStartPar
-La propagazione di disturbi di intensità «sufficientemente piccola» può essere descritta con un modello lineare, l”\sphinxstyleemphasis{equazione delle onde}. La linearità di un problema consente di utilizzare il \sphinxstylestrong{principio di sovrapposizione delle cause e degli effetti}, e scomporre perturbazioni con «forma complessa» come somma di perturbazioni più semplici.
-
-\sphinxAtStartPar
-La perturbazione di diverse quantità fisiche in vari ambiti delle scienze è governata dallo \sphinxstylestrong{stesso modello matematico}, e quindi diversi fenomeni fisici mostrano formalmente le stesse caratteristiche. Così, lo stesso modello matematico governa la trasmissione delle onde meccaniche nella materia e delle onde elettromagnetiche nella materia o nel «vuoto» \sphinxhyphen{} di materia%
+Da un punto di vista matematico, la propagazione di perturbazioni di diverse quantità fisiche è governata dallo \sphinxstylestrong{stesso modello matematico}:
+così, ad esempio, lo stesso modello matematico governa la trasmissione delle onde meccaniche nella materia e delle onde elettromagnetiche nella materia o nel «vuoto» \sphinxhyphen{} di materia%
 \begin{footnote}[2]\sphinxAtStartFootnote
 Spazio magari «vuoto di materia» ma non di proprietà fisiche, come dimostrato dalla propagazione delle onde EM, e l’assenza di un mezzo \sphinxhyphen{} l”\sphinxstyleemphasis{etere luminifero} \sphinxhyphen{} per spiegarne la propagazione. Vedi esperimento di Michelson\sphinxhyphen{}Morley.
 %
 \end{footnote}.
+Poiché lo stesso modello matematico descrive la propagazione di diversi disturbi in vari ambiti della natura, questi sistemi possono mostrare formalmente gli stessi \sphinxstylestrong{fenomeni caratteristici} come interferenza, effetto Doppler, e \sphinxhyphen{} in presenza di ostacoli \sphinxhyphen{} riflessione, rifrazione, diffrazione, scattering da particelle o superfici irregolari.
+L’interazione con ostacoli può dipendere dalle dimensioni relative dell’ostacolo e della \sphinxstyleemphasis{lunghezza d’onda}, vedi {\hyperref[\detokenize{ch/waves/waves-elementary-solutions:wave-length}]{\sphinxcrossref{Definition 21.2.2}}}, della perturbazione.
+
+\sphinxAtStartPar
+La propagazione di disturbi di intensità «sufficientemente piccola» può essere descritta con un modello lineare, l”\sphinxstyleemphasis{equazione delle onde}. La linearità di un problema consente di utilizzare il \sphinxstylestrong{principio di sovrapposizione delle cause e degli effetti}, e scomporre perturbazioni con «forma complessa» come somma di {\hyperref[\detokenize{ch/waves/waves-elementary-solutions:physics-hs-waves-equation-solutions}]{\sphinxcrossref{\DUrole{std,std-ref}{perturbazioni più semplici}}}}.
+
+\sphinxAtStartPar
+Da quanto detto nell’introduzione, dovrebbe risultare sensato il programma di questo capitolo.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+L”{\hyperref[\detokenize{ch/waves/waves-in-physics:physics-hs-waves-equation-examples}]{\sphinxcrossref{\DUrole{std,std-ref}{equazione delle onde in diversi sistemi fisici}}}} viene ricavata a partire da equazioni di bilancio. Partendo da equazioni di bilancio differenti, in ambiti differenti, in alcuni casi si arriva allo stesso modello matematico: l’equazione delle onde.
+
+\item {} 
+\sphinxAtStartPar
+Una volta ricavata l’equazione delle onde in diversi ambiti, dovrebbe risultare sensato investire un po” di tempo per discutere il modello matematico \sphinxhyphen{} indipendente dall’applicazione \sphinxhyphen{}, descrivendone
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+le {\hyperref[\detokenize{ch/waves/waves-elementary-solutions:physics-hs-waves-equation-solutions}]{\sphinxcrossref{\DUrole{std,std-ref}{soluzioni elementari}}}}, che possono essere composte in un problema lineare per ricavare una soluzione generale
+
+\item {} 
+\sphinxAtStartPar
+le {\hyperref[\detokenize{ch/waves/waves-phenomena:physics-hs-waves-phenomena}]{\sphinxcrossref{\DUrole{std,std-ref}{caratteristiche dei fenomeni ondulatori}}}}, che possono manifestarsi
+
+\end{itemize}
+
+\end{itemize}
+
+
+\bigskip\hrule\bigskip
+
+
+
 \subsubsection*{Alcuni esempi}
 
 \sphinxAtStartPar
@@ -16866,6 +16931,11 @@ Confrontando l’espressione della forza nell’esperienza di Ampére con l”{\
 \begin{split}B_{21} = \frac{\mu}{2 \pi} \frac{i_1}{d}\end{split}
 \end{equation*}
 \sphinxAtStartPar
+Storicamente, l’esperimento di Ampére fu utilizzato per {\hyperref[\detokenize{ch/intro/physical_quantities-charge:physics-hs-intro-physical-quantities-charge}]{\sphinxcrossref{\DUrole{std,std-ref}{definire l’Ampére, \(A\), come unità di misura della corrente elettrica}}}}. Dalla definizione {\hyperref[\detokenize{ch/intro/physical_quantities-charge:def:unit:ampere}]{\sphinxcrossref{Definition 2.5.1}}} segue il valore «esatto» della permeabilità del vuoto
+\begin{equation*}
+\begin{split}\mu_0 = 4 \pi \cdot 10^{-7} \, H \, m^{-1}\end{split}
+\end{equation*}
+\sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{direzione} del campo
 
 \sphinxAtStartPar
@@ -17911,27 +17981,18 @@ asincrono
 
 
 \chapter{Onde elettromagnetiche}
-\label{\detokenize{ch/electromagnetism/em-waves:onde-elettromagnetiche}}\label{\detokenize{ch/electromagnetism/em-waves:physics-hs-electromagnetism-em-waves}}\label{\detokenize{ch/electromagnetism/em-waves::doc}}\begin{itemize}
-\item {} 
+\label{\detokenize{ch/electromagnetism/em-waves:onde-elettromagnetiche}}\label{\detokenize{ch/electromagnetism/em-waves:physics-hs-electromagnetism-em-waves}}\label{\detokenize{ch/electromagnetism/em-waves::doc}}
 \sphinxAtStartPar
-modello matematico
-
-\item {} 
+Le onde elettromagnetiche sono perturbazioni del campo elettromagnetico \(\vec{e}(\vec{r},t)\), \(\vec{b}(\vec{r},t)\) governate da un”{\hyperref[\detokenize{ch/waves/waves-in-physics:physics-hs-waves-equation-examples}]{\sphinxcrossref{\DUrole{std,std-ref}{equazione delle onde}}}} che si propagano nello spazio e nel tempo con una velocità ben definita e dipendente dal mezzo di propagazione: in un materiale omogeneo e isotropo, la velocità delle perturbazioni è uguale in ogni punto e in ogni direzione, e ha valore assoluto \(c = \frac{1}{\sqrt{\mu \varepsilon}}\). Il campo elettronagmetico esiste e le sue perturbazioni si propagano anche in assenza di materia, nel cosiddetto \sphinxstyleemphasis{«vuoto di materia ma non di proprietà fisiche»}. Usando la costante dielettrica e la permeabilità del «vuoto», la velocità delle onde elettromagnetiche \sphinxhyphen{} la velocità della luce, il modo comune per chiamare la radiazione elettromagnetica nel visibile, cioè che riusciamo a {\hyperref[\detokenize{ch/intro/sensing-sight:physics-hs-intro-sensing-sight}]{\sphinxcrossref{\DUrole{std,std-ref}{percepire con gli occhi}}}} \sphinxhyphen{} nel vuoto è
+\begin{equation*}
+\begin{split}c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}} \ .\end{split}
+\end{equation*}
 \sphinxAtStartPar
-prova sperimentale
-
-\item {} 
-\sphinxAtStartPar
-applicazioni
-
-\item {} 
-\sphinxAtStartPar
-spettro elettromagnetico; intensità fenomeni ondulatori e potenza trasportata
-
-\end{itemize}
+La \sphinxstylestrong{velocità della luce} nel vuoto è considerata ad oggi una \sphinxstylestrong{costante della natura}. Un primo esperimento che portò a questa conclusione fu l”{\hyperref[\detokenize{ch/electromagnetism/em-waves-speed:physics-hs-electromagnetism-em-waves-speed-michelson-morley}]{\sphinxcrossref{\DUrole{std,std-ref}{esperimento di Michelson e Morley}}}} del 1887. La costanza della
+\subsubsection*{\sphinxstylestrong{Maxwell \sphinxhyphen{} il modello matematico.}}
 
 \sphinxAtStartPar
-\sphinxstylestrong{Equazioni di Maxwell \sphinxhyphen{} il modello matematico.} Le equazioni di Maxwell forniscono un modello matematico per i fenomeni dell’elettromagnetismo classico. Sotto opportune condizioni, le equazioni prevedono la possibilità che il campo elettromagnetico possa propagarsi come un fenomeno ondulatorio. La rapida oscillazione di un cariche elettriche \sphinxhyphen{} e quindi una corrente alternata ad alta frequenza \sphinxhyphen{} è una sorgente di onde elettromagnetiche: un modello di questa sorgente è un dipolo oscillante, una realizzazione pratica fondamentale sono le antenne per le trasissioni di onde EM.
+Le equazioni di Maxwell forniscono un modello matematico per i fenomeni dell’elettromagnetismo classico. Sotto opportune condizioni, le equazioni prevedono la possibilità che il campo elettromagnetico possa propagarsi come un fenomeno ondulatorio. La rapida oscillazione di un cariche elettriche \sphinxhyphen{} e quindi una corrente alternata ad alta frequenza \sphinxhyphen{} è una sorgente di onde elettromagnetiche: un modello di questa sorgente è un dipolo oscillante, una realizzazione pratica fondamentale sono le antenne per le trasissioni di onde EM.
 
 \sphinxAtStartPar
 Ai tempi, non era ancora chiaro che la luce visibile fosse un effetto EM, un esempio di onde EM con una particolare lunghezza d’onda e frequenza percepibile dall’occhio umano, i nostri percettori della vista.
@@ -17942,12 +18003,10 @@ Le equazioni di Maxwell prevedevano una velocità di propagazione delle onde EM 
 
 \sphinxAtStartPar
 \sphinxstylestrong{todo}
+\subsubsection*{\sphinxstylestrong{Hertz \sphinxhyphen{} la prova sperimentale.}}
 
 \sphinxAtStartPar
-\sphinxstylestrong{todo} è possibile arrivare a un equazione per le onde senza passare dalle equazioni in forma differenziale? Magari con qualche analogia meccanica governata dalle equazioni delle onde. Se sì, in maniera sufficiente formale, figata
-
-\sphinxAtStartPar
-\sphinxstylestrong{Esperimenti di Hertz \sphinxhyphen{} la prova sperimentale.} Gli esperimenti del 1887\sphinxhyphen{}88 di H.R.Hertz(1857\sphinxhyphen{}1894)%
+Gli esperimenti del 1887\sphinxhyphen{}88 di H.R.Hertz(1857\sphinxhyphen{}1894)%
 \begin{footnote}[1]\sphinxAtStartFootnote
 \sphinxhref{https://www.youtube.com/watch?v=Vwjcn4Vl2iw}{Onde magnetiche, con Sir L.Bragg} per la Royal institution
 %
@@ -17991,10 +18050,47 @@ condusse un esperimento fallimentare con il quale pensò di dimostrare che i rag
 \end{itemize}
 
 \sphinxAtStartPar
-\sphinxstylestrong{todo} \sphinxstyleemphasis{controllare citazioni} H.R.Hertz riteneva inutile ai fini pratici la sua scoperta (!), cosa presto smentita da Marconi…
+\sphinxstylestrong{todo} \sphinxstyleemphasis{controllare citazioni} H.R.Hertz riteneva inutile ai fini pratici la sua scoperta (!), cosa presto smentita da \sphinxstylestrong{Marconi}…
+\subsubsection*{\sphinxstylestrong{Marconi \sphinxhyphen{} le applicazioni.}}
 
 \sphinxAtStartPar
-\sphinxstylestrong{Marconi \sphinxhyphen{} le applicazioni.} \sphinxstylestrong{todo} \sphinxstyleemphasis{due parole sul contensto storico, la stesura dei cavi sottomarini e transoceanici del telegrafo \sphinxhyphen{} in cui erano coinvolti anche personaggi del calibro di Kelvin \sphinxhyphen{}, e rivoluzione della radio per le comunicazioni}
+\sphinxstylestrong{todo} \sphinxstyleemphasis{due parole sul contensto storico, la stesura dei cavi sottomarini e transoceanici del telegrafo \sphinxhyphen{} in cui erano coinvolti anche personaggi del calibro di Kelvin \sphinxhyphen{}, e rivoluzione della radio per le comunicazioni}
+
+\sphinxAtStartPar
+Oggi, le onde EM hanno un enorme numero di applicazioni.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Onde radio: comunicazioni e connessioni: radio, televisione, cellulari, Wi\sphinxhyphen{}Fi, Bluetooth; navigazione: GPS, radar; controlli da remoto: radiocomando (anche con ostacoli tra sorgente e ricevitore); astronomia: radio telescopi
+
+\item {} 
+\sphinxAtStartPar
+Micro\sphinxhyphen{}onde: cottura; radar: per previsioni del tempo,…; comunicazioni: satellitari,…; astronomia: radiazione cosmica di fondo
+
+\item {} 
+\sphinxAtStartPar
+IR: radiazione termica: termocamere, visori notturi,…; controlli da remoto: telecomando (senza ostacoli in mezzo…)
+
+\item {} 
+\sphinxAtStartPar
+Visibile: tutte le applicazioni legate alla vista, es. fotografia e schermi: schermi di camere, cellulari, computer, TV,…; laser:…; comunicazioni: fibra ottica
+
+\item {} 
+\sphinxAtStartPar
+UV: sterilizzazione;…
+
+\item {} 
+\sphinxAtStartPar
+X: applicazioni medicali (raggi X per radiografia); scanner: sicurezza aeroporti,…; astronomia: telscopi sensibili ai raggi X
+
+\item {} 
+\sphinxAtStartPar
+\(\gamma\): sterilizzazione:…; trattamenti medici: radioterapia su cellule tumorali,…; astronomia: eventi più energentici dell’universo emettono raggi \(\gamma\)
+
+\end{itemize}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} è possibile arrivare a un equazione per le onde senza passare dalle equazioni in forma differenziale? Magari con qualche analogia meccanica governata dalle equazioni delle onde. Se sì, in maniera sufficiente formale, figata
 
 
 \section{Esperimenti di Hertz}
@@ -18060,10 +18156,68 @@ cercare pubblicazioni di Hertz
 \sphinxstepscope
 
 
+\section{Spettro della radiazione elettromagnetica}
+\label{\detokenize{ch/electromagnetism/em-waves-spectrum:spettro-della-radiazione-elettromagnetica}}\label{\detokenize{ch/electromagnetism/em-waves-spectrum:physics-hs-electromagnetism-em-waves-spectrum}}\label{\detokenize{ch/electromagnetism/em-waves-spectrum::doc}}
+\sphinxstepscope
+
+
+\section{Velocità della radiazione elettromagnetica}
+\label{\detokenize{ch/electromagnetism/em-waves-speed:velocita-della-radiazione-elettromagnetica}}\label{\detokenize{ch/electromagnetism/em-waves-speed:physics-hs-electromagnetism-em-waves-speed}}\label{\detokenize{ch/electromagnetism/em-waves-speed::doc}}
+
+\subsection{Metodo di Fizeau e Foucault: metodi ottici}
+\label{\detokenize{ch/electromagnetism/em-waves-speed:metodo-di-fizeau-e-foucault-metodi-ottici}}
+
+\subsection{Esperimento di Michelson\sphinxhyphen{}Morley: interferometria}
+\label{\detokenize{ch/electromagnetism/em-waves-speed:esperimento-di-michelson-morley-interferometria}}\label{\detokenize{ch/electromagnetism/em-waves-speed:physics-hs-electromagnetism-em-waves-speed-michelson-morley}}
+\sphinxAtStartPar
+L’esperimento di Michelson e Morley del 1887 aveva l’obiettivo di trovare l’esistenza dell”\sphinxstyleemphasis{etere}, un mezzo all’interno del quale si supponeva avvenisse il moto dei corpi, e che costituisse un sistema di riferimento «privilegiato».
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+l’obiettivo era di valutare la differenza della velocità della luce proveniente dal Sole a distanza di 6 mesi, per dedurre la velocità relativa del sistema solare rispetto all’etere
+
+\item {} 
+\sphinxAtStartPar
+fallimento! Nessuna differenza significativa \sphinxhyphen{} entro l’incertezza della misura. Non esiste l’etere! Non esiste = non è un’entità misurabile con effetti misurabili…
+
+\item {} 
+\sphinxAtStartPar
+Allora non era ancora chiaro che non fosse necessario un mezzo per la trasmissione di onde, come le onde elettromagnetiche
+
+\end{itemize}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{spiegare interferometria}
+
+\sphinxAtStartPar
+\sphinxhref{https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/trigonometry.html}{proprietà delle funzioni trigonometriche}
+
+\sphinxAtStartPar
+…
+
+
+\subsection{Rosa\sphinxhyphen{}Dorsey: misura delle proprietà elettromagnetiche del vuoto}
+\label{\detokenize{ch/electromagnetism/em-waves-speed:rosa-dorsey-misura-delle-proprieta-elettromagnetiche-del-vuoto}}
+\sphinxAtStartPar
+Nel 1907 le equazioni di Maxwell erano un modello matematico sufficientemente assodato, da poter misurare la velocità della luce nel vuoto come risultato della misura della costante dielettrica del vuoto \(\varepsilon_0\). Dalla manipolazione delle equazioni di Maxwell è possibile ricavare un’equazione delle onde per le grandezze elettromagnetiche nel vuoto con velocità delle perturbazioni
+\begin{equation*}
+\begin{split}c = \frac{1}{\sqrt{\varepsilon_0 \mu_0}} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La costante dielettrica nel vuoto era allora definita come
+\begin{equation*}
+\begin{split}4 \pi \cdot 10^{-7} \, H \, m^{-1} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+come conseguenza della definizione {\color{red}\bfseries{}def:unit:ampere} dell’Ampére, \(A\), come {\hyperref[\detokenize{ch/intro/physical_quantities-charge:physics-hs-intro-physical-quantities-charge}]{\sphinxcrossref{\DUrole{std,std-ref}{unità di misura della corrente elettrica}}}}.
+
+\sphinxstepscope
+
+
 \section{Problemi}
 \label{\detokenize{ch/electromagnetism/em-waves-problems:problemi}}\label{\detokenize{ch/electromagnetism/em-waves-problems:physics-hs-electromagnetism-em-waves-problems}}\label{\detokenize{ch/electromagnetism/em-waves-problems::doc}}\phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 26.4.1 (Velocità della Luce)}
+\begin{sphinxadmonition}{note}{Exercise 26.6.1 (Velocità della Luce)}
 
 
 
@@ -18072,7 +18226,7 @@ Calcola la velocità della luce in un vuoto utilizzando la costante dielettrica 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 26.4.2 (Frequenza e Lunghezza d’Onda)}
+\begin{sphinxadmonition}{note}{Exercise 26.6.2 (Frequenza e Lunghezza d’Onda)}
 
 
 
@@ -18081,7 +18235,7 @@ Un’onda elettromagnetica ha una frequenza di \(f = 60 \, \text{MHz}\). Calcola
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 26.4.3 (Energia di un Foton)}
+\begin{sphinxadmonition}{note}{Exercise 26.6.3 (Energia di un Foton)}
 
 
 
@@ -18090,7 +18244,7 @@ Calcola l’energia di un fotone di luce con una lunghezza d’onda di \(500 \, 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 26.4.4 (Legge di Snell per Onde Elettromagnetiche)}
+\begin{sphinxadmonition}{note}{Exercise 26.6.4 (Legge di Snell per Onde Elettromagnetiche)}
 
 
 
@@ -18099,7 +18253,7 @@ Un’onda elettromagnetica passa dall’aria (indice di rifrazione \(n_1 = 1\)) 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 26.4.5 (Direzione del Campo Elettrico in un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 26.6.5 (Direzione del Campo Elettrico in un’onda Elettromagnetica)}
 
 
 
@@ -18108,7 +18262,7 @@ In un’onda elettromagnetica che si propaga lungo l’asse \(z\), con il campo 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 26.4.6 (Intensità di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 26.6.6 (Intensità di un’onda Elettromagnetica)}
 
 
 
@@ -18117,7 +18271,7 @@ Se l’intensità di un’onda elettromagnetica è \(I = 8 \, \text{W/m}^2\) e l
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 26.4.7 (Energia Mediata da un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 26.6.7 (Energia Mediata da un’onda Elettromagnetica)}
 
 
 
@@ -18126,7 +18280,7 @@ Un’onda elettromagnetica ha una frequenza di \(f = 100 \, \text{MHz}\). Se l�
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 26.4.8 (Propagazione in un Medio Dielettrico)}
+\begin{sphinxadmonition}{note}{Exercise 26.6.8 (Propagazione in un Medio Dielettrico)}
 
 
 
@@ -18135,7 +18289,7 @@ Un’onda elettromagnetica si propaga in un materiale con costante dielettrica \
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 26.4.9 (Polarizzazione di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 26.6.9 (Polarizzazione di un’onda Elettromagnetica)}
 
 
 
@@ -18144,7 +18298,7 @@ Un’onda elettromagnetica viene polarizzata attraverso un filtro lineare. Se la
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 26.4.10 (Effetto Doppler per Onde Elettromagnetiche)}
+\begin{sphinxadmonition}{note}{Exercise 26.6.10 (Effetto Doppler per Onde Elettromagnetiche)}
 
 
 
@@ -18153,7 +18307,7 @@ Un’onda elettromagnetica ha una frequenza \(f = 5 \, \text{GHz}\) e viene osse
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 26.4.11 (Energia per Unità di Volume di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 26.6.11 (Energia per Unità di Volume di un’onda Elettromagnetica)}
 
 
 
@@ -18162,7 +18316,7 @@ Calcola l’energia per unità di volume in un’onda elettromagnetica che ha un
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 26.4.12 (Onda Elettromagnetica nel Vuoto)}
+\begin{sphinxadmonition}{note}{Exercise 26.6.12 (Onda Elettromagnetica nel Vuoto)}
 
 
 
@@ -18171,7 +18325,7 @@ Una radiazione elettromagnetica ha una frequenza di \(f = 2 \, \text{GHz}\). Cal
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 26.4.13 (Impedenza di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 26.6.13 (Impedenza di un’onda Elettromagnetica)}
 
 
 
@@ -18180,7 +18334,7 @@ In un’onda elettromagnetica nel vuoto, calcola l’impedenza, sapendo che la p
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 26.4.14 (Spettro Elettromagnetico)}
+\begin{sphinxadmonition}{note}{Exercise 26.6.14 (Spettro Elettromagnetico)}
 
 
 
@@ -18189,7 +18343,7 @@ Un’onda elettromagnetica appartiene alla banda delle microonde con una frequen
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 26.4.15 (Legge di Ampère\sphinxhyphen{}Maxwell)}
+\begin{sphinxadmonition}{note}{Exercise 26.6.15 (Legge di Ampère\sphinxhyphen{}Maxwell)}
 
 
 
@@ -18198,7 +18352,7 @@ Utilizzando la legge di Ampère\sphinxhyphen{}Maxwell, calcola la corrente indot
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-15}
 
-\begin{sphinxadmonition}{note}{Exercise 26.4.16 (Direzione di Propagazione di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 26.6.16 (Direzione di Propagazione di un’onda Elettromagnetica)}
 
 
 
@@ -18207,7 +18361,7 @@ In un’onda elettromagnetica che si propaga lungo l’asse \(z\) con il campo e
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-16}
 
-\begin{sphinxadmonition}{note}{Exercise 26.4.17 (Potenza Trasportata da un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 26.6.17 (Potenza Trasportata da un’onda Elettromagnetica)}
 
 
 
@@ -18216,7 +18370,7 @@ Calcola la potenza trasportata da un’onda elettromagnetica con una intensità 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-17}
 
-\begin{sphinxadmonition}{note}{Exercise 26.4.18 (Riflessione e Rifrazione di Onde Elettromagnetiche)}
+\begin{sphinxadmonition}{note}{Exercise 26.6.18 (Riflessione e Rifrazione di Onde Elettromagnetiche)}
 
 
 
@@ -19186,6 +19340,19 @@ la teoria della relatività generale, come nuova \sphinxstylestrong{teoria della
 
 \section{Relatività ristretta}
 \label{\detokenize{ch/modern/einstein:relativita-ristretta}}\label{\detokenize{ch/modern/einstein:physics-hs-modern-einstein-special}}
+\sphinxAtStartPar
+\sphinxstylestrong{Princìpi.}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Come conseguenza del risultato dell”{\hyperref[\detokenize{ch/electromagnetism/em-waves-speed:physics-hs-electromagnetism-em-waves-speed-michelson-morley}]{\sphinxcrossref{\DUrole{std,std-ref}{esperimento di Michelson\sphinxhyphen{}Morley}}}}, la \sphinxstylestrong{velocità della luce è costante}. Questa è inoltre la \sphinxstylestrong{velocità massima} della trasmissione di informazioni nello spazio, tale da garantire la {\hyperref[\detokenize{ch/todo:physics-hs-todo-causality}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{causalità}}}}}.
+
+\item {} 
+\sphinxAtStartPar
+Esiste una classe di sistemi di riferimento privilegiata, quella dei sistemi di riferimento inerziali. Le equazioni che governano la natura sono invarianti ai sistemi di riferimento o, detto altrimenti, un fenomeno fisico non dipende da chi lo osserva (almeno se questa osservazione non interagisce con il fenomeno stesso).
+
+\end{itemize}
+
 
 \section{Relatività generale}
 \label{\detokenize{ch/modern/einstein:relativita-generale}}\label{\detokenize{ch/modern/einstein:physics-hs-modern-einstein-general}}\label{ch/modern/einstein:example-0}
@@ -19244,6 +19411,19 @@ Bohr e Bohr\sphinxhyphen{}Sommerfeld
 
 \end{itemize}
 
+\sphinxAtStartPar
+Con esperimenti:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Rutherford
+
+\item {} 
+\sphinxAtStartPar
+Stern\sphinxhyphen{}Gerlach: \sphinxstylestrong{spin}
+
+\end{itemize}
+
 
 \section{Origine della meccanica quantistica}
 \label{\detokenize{ch/modern/quantum:origine-della-meccanica-quantistica}}\begin{itemize}
@@ -19268,6 +19448,104 @@ Dirac e meccanica quantistica relativistica:
 …
 
 \end{itemize}
+
+\end{itemize}
+
+\sphinxstepscope
+
+
+\section{Introduzione alla meccanica quantistica}
+\label{\detokenize{ch/modern/quantum-basics:introduzione-alla-meccanica-quantistica}}\label{\detokenize{ch/modern/quantum-basics:physics-hs-modern-quantum-basics}}\label{\detokenize{ch/modern/quantum-basics::doc}}
+
+\subsection{Interpretazione probabilistica}
+\label{\detokenize{ch/modern/quantum-basics:interpretazione-probabilistica}}
+
+\subsection{Misura}
+\label{\detokenize{ch/modern/quantum-basics:misura}}
+
+\subsection{Indeterminazione di Heisenberg}
+\label{\detokenize{ch/modern/quantum-basics:indeterminazione-di-heisenberg}}
+\sphinxAtStartPar
+Non è possibile conoscere contemporaneamete il valore di alcune coppie di grandezze fisiche, dette complementari o coniugate. Alcuni esempi sono:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+stessa componente di posizione e quantità di moto
+\begin{equation*}
+\begin{split}\sigma_{x_i} \sigma_{p_i} \ge \frac{\hbar}{2}\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+diverse componenti del momento della quantità di moto (sia momento totale, sia orbitale, sia di spin)
+
+\item {} 
+\sphinxAtStartPar
+…
+
+\end{itemize}
+
+
+\subsection{Alcuni esempi 1\sphinxhyphen{}dimensionali}
+\label{\detokenize{ch/modern/quantum-basics:alcuni-esempi-1-dimensionali}}
+
+\subsubsection{Moto libero di un sistema puntiforme}
+\label{\detokenize{ch/modern/quantum-basics:moto-libero-di-un-sistema-puntiforme}}
+\sphinxAtStartPar
+Moto libero, incertezza tra posizione e quantità di moto porta a «diffusione della probabilità»
+
+
+\subsubsection{Barriera e buca di potenziale}
+\label{\detokenize{ch/modern/quantum-basics:barriera-e-buca-di-potenziale}}
+\sphinxAtStartPar
+Contronto e differenze con meccanica classica:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+collisione con una parete \sphinxhyphen{} barriera di potenziale
+
+\item {} 
+\sphinxAtStartPar
+moto libero in una scatola \sphinxhyphen{} buca di potenziale
+
+\end{itemize}
+
+\sphinxAtStartPar
+Effetti:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+effetto tunnel
+
+\end{itemize}
+
+\sphinxAtStartPar
+Buca di potenziale, sistema finito:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+valori di energia discreti
+
+\end{itemize}
+
+\sphinxAtStartPar
+Barriera di potenziale, dominio infinito:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+valori di energia continui
+
+\item {} 
+\sphinxAtStartPar
+…
+
+\end{itemize}
+
+
+\subsubsection{Oscillatore armonico}
+\label{\detokenize{ch/modern/quantum-basics:oscillatore-armonico}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+valore di energia discreti
 
 \end{itemize}
 
@@ -20251,6 +20529,9 @@ solarigrafia, fotografia con materiale di recupero con tempi lunghissimi
 \bigletter{def\sphinxhyphen{}dimensions\sphinxhyphen{}homonegneous}
 \item\relax\sphinxstyleindexentry{def\sphinxhyphen{}dimensions\sphinxhyphen{}homonegneous}\sphinxstyleindexextra{ch/intro/measurements}\sphinxstyleindexpageref{ch/intro/measurements:\detokenize{def-dimensions-homonegneous}}
 \indexspace
+\bigletter{def:unit:ampere}
+\item\relax\sphinxstyleindexentry{def:unit:ampere}\sphinxstyleindexextra{ch/intro/physical\_quantities\sphinxhyphen{}charge}\sphinxstyleindexpageref{ch/intro/physical_quantities-charge:\detokenize{def:unit:ampere}}
+\indexspace
 \bigletter{definition\sphinxhyphen{}0}
 \item\relax\sphinxstyleindexentry{definition\sphinxhyphen{}0}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{definition-0}}
 \indexspace
@@ -20297,10 +20578,10 @@ solarigrafia, fotografia con materiale di recupero con tempi lunghissimi
 \item\relax\sphinxstyleindexentry{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}sphere}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{ex-e-field-sphere}}
 \indexspace
 \bigletter{example\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/waves-phenomena:\detokenize{example-0}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/modern/einstein}\sphinxstyleindexpageref{ch/modern/einstein:\detokenize{example-0}}
 \indexspace
 \bigletter{example\sphinxhyphen{}1}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/waves-phenomena:\detokenize{example-1}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/modern/einstein}\sphinxstyleindexpageref{ch/modern/einstein:\detokenize{example-1}}
 \indexspace
 \bigletter{example\sphinxhyphen{}10}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}10}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-10}}
@@ -20330,7 +20611,7 @@ solarigrafia, fotografia con materiale di recupero con tempi lunghissimi
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}18}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-18}}
 \indexspace
 \bigletter{example\sphinxhyphen{}2}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/waves-phenomena:\detokenize{example-2}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/modern/einstein}\sphinxstyleindexpageref{ch/modern/einstein:\detokenize{example-2}}
 \indexspace
 \bigletter{example\sphinxhyphen{}3}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-3}}
