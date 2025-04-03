@@ -334,6 +334,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">22.2. Fenomeni ondulatori in ottica</a></li>
 <li class="toctree-l2"><a class="reference internal" href="optics-lens.html">22.3. Lenti e strumenti ottici</a></li>
 <li class="toctree-l2"><a class="reference internal" href="optics-eye.html">22.4. Occhio e vista</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optics-applications.html">22.5. Applicazioni</a></li>
 </ul>
 </li>
 </ul>
@@ -715,11 +716,24 @@ document.write(`
 </div></div>
 </div>
 <div class="section" id="dispersione">
-<h2><span class="section-number">22.2.6. </span>Dispersione<a class="headerlink" href="#dispersione" title="Permalink to this heading">#</a></h2>
-<p>Alcuni materiali sono dispersivi, cioè la velocità di propagazione nel materiale di una perturbazione dipende dalla sua frequenza.</p>
-<div class="proof example admonition" id="example-7">
-<p class="admonition-title"><span class="caption-number">Example 22.9 </span> (Prismi, tra Newton e Pink Floyd)</p>
+<span id="physics-hs-waves-optics-geometric-phenomena-dispersion"></span><h2><span class="section-number">22.2.6. </span>Dispersione<a class="headerlink" href="#dispersione" title="Permalink to this heading">#</a></h2>
+<p>Alcuni materiali sono dispersivi, cioè la velocità di propagazione nel materiale di una perturbazione dipende dalla sua frequenza, <span class="math notranslate nohighlight">\(c(f)\)</span>, e quindi il coefficiente di rifrazione è funzione della frequenza,</p>
+<div class="math notranslate nohighlight">
+\[n(f) = \frac{c_0}{c(f)} \ .\]</div>
+<div class="proof example admonition" id="em-waves:dispersion:prism">
+<p class="admonition-title"><span class="caption-number">Example 22.9 </span> (Prismi, tra Newton, Pink Floyd e <a class="reference internal" href="optics-applications.html#physics-hs-waves-optics-applications-spectrography"><span class="std std-ref">spettrografia</span></a>)</p>
 <div class="example-content section" id="proof-content">
+<p>Un prisma costruito con un materiale dispersivo permette di scomporre la radiazione elettromagnetica nei suoi componenti elementari con diversa frequenza (e quindi lunghezza d’onda).</p>
+<p>Ad esempio, l’acqua ha un indice di rifrazione che varia da <span class="math notranslate nohighlight">\(n_{red} = 1.33\)</span> per la radiazione con lunghezza d’onda <span class="math notranslate nohighlight">\(\lambda_{red} = 700 \, \text{nm}\)</span> corrispondente alla luce di colore rosso, a <span class="math notranslate nohighlight">\(n_{violet} = 1.339\)</span> per la radiazione con lunghezza d’onda <span class="math notranslate nohighlight">\(\lambda_{violet} = 400 \, \text{nm}\)</span> corrisponendente alla luce di colore viola.</p>
+<p>Legame tra lunghezza d’onda e frequenza: <span class="math notranslate nohighlight">\(c = \frac{\omega}{k} = \lambda \, f\)</span>, dalle relazioni <span class="math notranslate nohighlight">\(\omega = 2 \pi f\)</span>, <span class="math notranslate nohighlight">\(\lambda = \frac{2 \pi }{k} = \frac{c}{f}\)</span>.</p>
+<p>Il comportamento della radiazione descritta dai <a class="reference internal" href="optics-geometric.html#physics-hs-waves-optics-geometric-principles"><span class="std std-ref">principi dell’ottica geometrica</span></a>, e dalla legge di Snell in particolare, prevede che l’angolo di rifrazione della luce trasmessa dipende quindi dalla lunghezza d’onda,</p>
+<div class="math notranslate nohighlight">
+\[\sin \theta_t(f) = \frac{n_1}{n_2(f)} \, \sin \theta_i(f) \ .\]</div>
+<p>A seconda del contenuto in frequenza della radiazione, la scomposizione del segnale può manifstarsi:</p>
+<ul class="simple">
+<li><p>per <strong>spettri continui</strong> come la formazione di un arcobaleno con un angolo più piccolo rispetto alla normale alla superficie per il colore viola e un angolo maggiore per il colore rosso. Ad esempio, con un angolo di incidenza <span class="math notranslate nohighlight">\(\theta_i = 45^\circ\)</span>, l’angolo formato dalla radiazione viola è di <span class="math notranslate nohighlight">\(31.85^\circ\)</span> mentre l’angolo della radiazione rossa è <span class="math notranslate nohighlight">\(32.11^\circ\)</span>.</p></li>
+<li><p>per <strong>spettri discreti</strong> come la formazione di una serie di righe spettrali corrispondenti alle componenti discrete nel segnale</p></li>
+</ul>
 </div>
 </div><div class="proof example admonition" id="example-8">
 <p class="admonition-title"><span class="caption-number">Example 22.10 </span> (Arcobaleno)</p>
@@ -729,7 +743,7 @@ document.write(`
 </div>
 </div></div>
 <div class="section" id="diffrazione">
-<h2><span class="section-number">22.2.7. </span>Diffrazione<a class="headerlink" href="#diffrazione" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-waves-optics-geometric-phenomena-diffraction"></span><h2><span class="section-number">22.2.7. </span>Diffrazione<a class="headerlink" href="#diffrazione" title="Permalink to this heading">#</a></h2>
 <p>…</p>
 <hr class="docutils" />
 <p><strong>Riferimenti.</strong></p>

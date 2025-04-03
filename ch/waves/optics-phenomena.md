@@ -44,10 +44,30 @@ L'effetto Doppler[^doppler-1842] è un effetto dovuto al moto relativo tra sorge
 ```{prf:example} Osservazioni astronomiche attraverso l'atmosfera
 ```
 
+(physics-hs:waves:optics:geometric:phenomena:dispersion)=
 ## Dispersione
-Alcuni materiali sono dispersivi, cioè la velocità di propagazione nel materiale di una perturbazione dipende dalla sua frequenza.
+Alcuni materiali sono dispersivi, cioè la velocità di propagazione nel materiale di una perturbazione dipende dalla sua frequenza, $c(f)$, e quindi il coefficiente di rifrazione è funzione della frequenza,
 
-```{prf:example} Prismi, tra Newton e Pink Floyd
+$$n(f) = \frac{c_0}{c(f)} \ .$$
+
+
+```{prf:example} Prismi, tra Newton, Pink Floyd e [spettrografia](physics-hs:waves:optics:applications:spectrography)
+:label: em-waves:dispersion:prism
+
+Un prisma costruito con un materiale dispersivo permette di scomporre la radiazione elettromagnetica nei suoi componenti elementari con diversa frequenza (e quindi lunghezza d'onda).
+
+Ad esempio, l'acqua ha un indice di rifrazione che varia da $n_{red} = 1.33$ per la radiazione con lunghezza d'onda $\lambda_{red} = 700 \, \text{nm}$ corrispondente alla luce di colore rosso, a $n_{violet} = 1.339$ per la radiazione con lunghezza d'onda $\lambda_{violet} = 400 \, \text{nm}$ corrisponendente alla luce di colore viola.
+
+Legame tra lunghezza d'onda e frequenza: $c = \frac{\omega}{k} = \lambda \, f$, dalle relazioni $\omega = 2 \pi f$, $\lambda = \frac{2 \pi }{k} = \frac{c}{f}$.
+
+Il comportamento della radiazione descritta dai [principi dell'ottica geometrica](physics-hs:waves:optics:geometric:principles), e dalla legge di Snell in particolare, prevede che l'angolo di rifrazione della luce trasmessa dipende quindi dalla lunghezza d'onda,
+
+$$\sin \theta_t(f) = \frac{n_1}{n_2(f)} \, \sin \theta_i(f) \ .$$
+
+A seconda del contenuto in frequenza della radiazione, la scomposizione del segnale può manifstarsi:
+- per **spettri continui** come la formazione di un arcobaleno con un angolo più piccolo rispetto alla normale alla superficie per il colore viola e un angolo maggiore per il colore rosso. Ad esempio, con un angolo di incidenza $\theta_i = 45^\circ$, l'angolo formato dalla radiazione viola è di $31.85^\circ$ mentre l'angolo della radiazione rossa è $32.11^\circ$.
+- per **spettri discreti** come la formazione di una serie di righe spettrali corrispondenti alle componenti discrete nel segnale
+
 ```
 
 ```{prf:example} Arcobaleno
@@ -58,6 +78,7 @@ Alcuni materiali sono dispersivi, cioè la velocità di propagazione nel materia
 
 ```
 
+(physics-hs:waves:optics:geometric:phenomena:diffraction)=
 ## Diffrazione
 ...
 

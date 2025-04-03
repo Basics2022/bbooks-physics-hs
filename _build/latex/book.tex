@@ -12760,11 +12760,17 @@ In generale, questa operazione può essere svolta localmente per una soluzione q
 %
 \end{footnote} prese singolarmente è possibile definire una lunghezza d’onda (o in 3d un vettore d’onda locale che indica la direzione della propagazione), una frequenza e la velocità della perturbazione.
 
+\sphinxAtStartPar
+Alcuni esempi sono riportati nella sezione delle {\hyperref[\detokenize{ch/waves/waves-notes:physics-hs-waves-notes}]{\sphinxcrossref{\DUrole{std,std-ref}{Note}}}} in fondo al capitolo.
+
 
 \subsection{Dominio 1\sphinxhyphen{}dimensionale}
-\label{\detokenize{ch/waves/waves-elementary-solutions:dominio-1-dimensionale}}
+\label{\detokenize{ch/waves/waves-elementary-solutions:dominio-1-dimensionale}}\label{\detokenize{ch/waves/waves-elementary-solutions:physics-hs-waves-equation-solutions-1d}}
+
+\subsubsection{Onde stazionarie}
+\label{\detokenize{ch/waves/waves-elementary-solutions:onde-stazionarie}}\label{\detokenize{ch/waves/waves-elementary-solutions:physics-hs-waves-equation-solutions-1d-modes}}
 \sphinxAtStartPar
-\sphinxstylestrong{Onde stazionarie.} Una soluzione generica dell’equazione delle onde può essere scritta come somma di onde stazionarie nella forma
+Una soluzione generica dell’equazione delle onde può essere scritta come somma di onde stazionarie nella forma
 \begin{equation*}
 \begin{split}f_n(x) = \cos(k_n x + \phi_n) \ ,\end{split}
 \end{equation*}
@@ -12788,8 +12794,11 @@ Per dimostrare che la funzione \(f_n(x) g_n(t)\) è una soluzione dell’equazio
 \sphinxAtStartPar
 così che \(\partial_{tt} u - c^2 \partial_{tt} u = \left( -\omega_n^2 + c^2 k_n^2 \right) u = 0\) se è soddisfatta la relazione tra la pulsazione \(\omega_n\) e il vettore d’onda \(k_n\), \(\omega_n = c k_n\).
 
+
+\subsubsection{Onde viaggianti}
+\label{\detokenize{ch/waves/waves-elementary-solutions:onde-viaggianti}}\label{\detokenize{ch/waves/waves-elementary-solutions:physics-hs-waves-equation-solutions-1d-travelling}}
 \sphinxAtStartPar
-\sphinxstylestrong{Onde viaggianti.} Utilizzando le proprietà delle funzioni trigonometriche, la funzione \(u_n(x,t) = f_{n}(x) g_n(t)\) può essere scritta come somma di due onde viaggianti con velocità \(c\),
+Utilizzando le proprietà delle funzioni trigonometriche, la funzione \(u_n(x,t) = f_{n}(x) g_n(t)\) può essere scritta come somma di due onde viaggianti con velocità \(c\),
 \begin{equation}\label{equation:ch/waves/waves-elementary-solutions:travelling-waves}
 \begin{split}u_n(x,t) = f_n(x) g_n(t) = A_n^{-}(x+ct) + A_n^{+}(x-ct) \ .\end{split}
 \end{equation}\subsubsection*{Dimostrazione}
@@ -12995,31 +13004,72 @@ Onde EM
 \label{\detokenize{ch/waves/waves-phenomena:effetto-doppler}}\label{\detokenize{ch/waves/waves-phenomena:physics-hs-waves-effects-doppler}}
 \sphinxAtStartPar
 Quando la sorgente e l’osservatore sono in moto relativo, la frequenza percepita dall’osservatore è diversa dalla frequenza emessa dalla sorgente.
+
+\sphinxAtStartPar
+In questo paragrafo viene valutato solo l’effetto della propagazione 1\sphinxhyphen{}dimensionale di disturbi piani, lungo la direzione del moto relativo di sorgente e osservatore (ricevitore). Per evitare complicazioni algebriche e avere un problema risolvibile in forma chiusa senza troppe difficoltà, ci si limita al moto relativo uniforme.
+Le leggi del moto di sorgente e osservatore sono rispettivamente,
 \begin{equation*}
-\begin{split}A(t) = F \cos(\Omega t )\end{split}
+\begin{split}\begin{aligned}
+  x_s(t) & = x_{s,0} + v_s \, t \\
+  x_r(t) & = x_{r,0} + v_r \, t \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il segnale emesso dalla sorgente  \(A_s(t) = F \cos(\Omega_s t)\) si propaga come due {\hyperref[\detokenize{ch/waves/waves-elementary-solutions:physics-hs-waves-equation-solutions-1d-travelling}]{\sphinxcrossref{\DUrole{std,std-ref}{onde viaggianti}}}} in direzione opposta,
+\begin{equation*}
+\begin{split}\begin{aligned}
+  u(x,t) = \dots 
+\end{aligned}\end{split}
 \end{equation*}
 
 
 \sphinxAtStartPar
-con \(t_{ret}\) l’istante di tempo in cui è stato emesso il segnale dalla sorgente che raggiunge il punto \(x\) nell’istante \(t > t_{ret}\) (causalità)
+con la funzione \(H(y) = 1\) per \(y = \text{True}\), \(H(y)=0\) se \(y= \text{False}\) necessaria a limitare la soluzione al dominio di influenza.
+
+\sphinxAtStartPar
+Quando l’osservatore si trova a destra della sorgente, \(x_r(t) > x_s(t)\) (\sphinxstylestrong{todo} ruolo di \(t_{ret}\), onde d’urto,…) esso è raggiunto al tempo \(t\) dalla parte di segnale che si propaga verso destra emesso nell’istante di tempo \(t^+_{ret}\)
 \begin{equation*}
 \begin{split}\begin{aligned}
- | x - x_s(t_{ret}) | & = \quad  c (t - t_{ret}) \\
-   x - x_s(t_{ret})   & = \pm c (t - t_{ret}) = \begin{cases} \quad c ( t-t_{ret} ) & , \quad x \ge x_s(t_{ret}) \\ - c ( t-t_{ret} ) & , \quad  x \le x_s(t_{ret}) \\ \end{cases}
+  c( t - t^+_{ret} ) 
+  & = x_r(t) - x_s(t^+_{ret}) = \\ 
+  & = v_r \, t  - v_s \, t^+_{ret} + x_{r,0} - x_{s,0} 
+  \quad \rightarrow \quad t^+_{ret} = \frac{1- \frac{v_r}{c}}{1 - \frac{v_s}{c}} t - \frac{x_{r,0} - x_{s,0}}{c - v_s}
 \end{aligned}\end{split}
 \end{equation*}
 \sphinxAtStartPar
-Nel caso di sorgente a velocità costante, \(x_s(t) = x_{s,0} + v_s t\), e ricettore a velocità costante \(x_r(t) = x_{r,0} + v_r t\).
+L’osservatore registra un segnale precedente emesso dalla sorgente uguale a
+\begin{equation*}
+\begin{split}U_R(t) = u(x_r(t), t) = U_s( t_{ret}^+ ) = U_S \left( \frac{1- \frac{v_r}{c}}{1 - \frac{v_s}{c}} t - \frac{x_{r,0} - x_{s,0}}{c - v_s} \right) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+quindi nel caso di segnale armonico, la pulsazione della frequenza registrata è
+\begin{equation}\label{equation:ch/waves/waves-phenomena:eq:doppler:right:freq}
+\begin{split}\Omega_r = \frac{1- \frac{v_r}{c}}{1 - \frac{v_s}{c}} \, \Omega_s\end{split}
+\end{equation}
+\sphinxAtStartPar
+Quando l’osservatore si trova a sinistra della sorgente, \(x_r(t) < x_s(t)\) (\sphinxstylestrong{todo} ruolo di \(t_{ret}\), onde d’urto,…) esso è raggiunto al tempo \(t\) dalla parte di segnale che si propaga verso sinistra emesso nell’istante di tempo \(t^-_{ret}\)
 \begin{equation*}
 \begin{split}\begin{aligned}
-  x_r(t) -x_s(t_{ret}) & = \pm c ( t - t_{ret} ) \\
-  x_{r,0} + v_r t - x_{s,0} - v_s t_{ret} & = \pm c ( t - t_{ret} ) \\
+  c( t - t^-_{ret} ) 
+  & = - x_r(t) + x_s(t^-_{ret}) = \\ 
+  & = - v_r \, t  + v_s \, t^-_{ret} - x_{r,0} + x_{s,0} 
+  \quad \rightarrow \quad t^-_{ret} = \frac{1+ \frac{v_r}{c}}{1 + \frac{v_s}{c}} t - \frac{x_{s,0} - x_{r,0}}{c + v_s}
 \end{aligned}\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}(v_s \mp c) t_{ret} = (v_r \mp c) t + x_{r,0} - x_{s,0}\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}t_{ret} = \dfrac{v_r \mp c}{v_s \mp c} t + \dfrac{x_{r,0} - x_{s,0}}{v_s \mp c}\end{split}
-\end{equation*}\label{ch/waves/waves-phenomena:ex-doppler-ambulance-speed}
+\end{equation*}
+\sphinxAtStartPar
+L’osservatore registra un segnale precedente emesso dalla sorgente uguale a
+\begin{equation*}
+\begin{split}U_R(t) = u(x_r(t), t) = U_s( t_{ret}^- ) = U_S \left( \frac{1+ \frac{v_r}{c}}{1 + \frac{v_s}{c}} t - \frac{x_{s,0} - x_{r,0}}{c - v_s} \right) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+quindi nel caso di segnale armonico, la pulsazione della frequenza registrata è
+\begin{equation}\label{equation:ch/waves/waves-phenomena:eq:doppler:left:freq}
+\begin{split}\Omega_r = \frac{1 + \frac{v_r}{c}}{1 + \frac{v_s}{c}} \, \Omega_s\end{split}
+\end{equation}
+
+
+
+\label{ch/waves/waves-phenomena:ex-doppler-ambulance-speed}
 \begin{sphinxadmonition}{note}{Example 21.3.4 (Stima della velocità dell’ambulanza con effetto Doppler)}
 
 
@@ -13041,20 +13091,47 @@ stimare la frequenza della sorgente, \(f_0\)
 
 \item {} 
 \sphinxAtStartPar
-ripetere i calcoli nelle due seguenti situazioni:
+una volta nota la velocità dell’ambulanza e la frequenza del segnale emesso calcolati ai punti 1. e 2., stimare le frequenze misurate nei casi in cui:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-non siamo fermi rispetto alla strada, ma ci stiamo muovendo a un passo di \(v_r = 1 \, m/s\) nella stessa direzione dell’ambulanza
+non fossimo fermi rispetto alla strada, ma ci stessimo muovendo a un passo di \(v_r = 1 \, m/s\) nella stessa direzione dell’ambulanza
 
 \item {} 
 \sphinxAtStartPar
-siamo fermi rispetto alla strada, ma c’è un vento uniforme con velocità \(v_m = 3 \, m /s\) che soffia nella stessa direzione del moto dell’ambulanza
+fossimo fermi rispetto alla strada, ma ci fosse un vento uniforme con velocità \(v_m = 3 \, m /s\) che soffia nella stessa direzione del moto dell’ambulanza
 
 \end{itemize}
 
 \end{enumerate}
 \subsubsection*{Soluzione}
+
+\sphinxAtStartPar
+(1\sphinxhyphen{}2) Supponiamo che l’ambulanza si muova da sinistra verso destra.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Ambulanza in avvicinamento.}
+Mentre l’ambulanza si avvicina a noi, veniamo raggiunti dalla parte disegnale che viaggia verso destra, \(f(x - c t)\)…Il segnale registrato ha una frequenza data dall’espressione \eqref{equation:ch/waves/waves-phenomena:eq:doppler:right:freq}, con velocità dell’osservatore \(v_r = 0 \)
+
+
+\begin{equation*}
+\begin{split}f_1 = f^+_r = \frac{1}{1-\frac{v}{c}} \, f_s\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Ambulanza che si allontana.} Mentre l’ambulanza si allontana veniano raggiunti dalla parte di segnale che si muove verso sinistra, \(f(x+ct)\)…Il segnale registrato ha una frequenza data dall’espressione \eqref{equation:ch/waves/waves-phenomena:eq:doppler:left:freq}, con velocità dell’osservatore \(v_r = 0 \)
+\begin{equation*}
+\begin{split}f_2 = f^-_r = \frac{1}{1+\frac{v}{c}} \, f_s\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Mettendo a sistema le due equazioni, si può calcolare la velocità dell’ambulanza e la frequenza della sirena
+\begin{equation*}
+\begin{split}\begin{aligned}
+ \left( 1 + \frac{v}{c} \right) f_2 = \left( 1 - \frac{v}{c} \right) f_1 \qquad & \rightarrow \qquad v = \dfrac{f_1 - f_2}{f_1 + f_2} \, c \\
+  & \rightarrow \qquad f_s = \frac{2 f_1 f_2}{f_1 + f_2} \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+(3) …
 \end{sphinxadmonition}
 \label{ch/waves/waves-phenomena:ex-doppler-astronomy}
 \begin{sphinxadmonition}{note}{Example 21.3.5 (Effetto doppler in astronomia)}
@@ -13093,6 +13170,7 @@ Il rapporto,
 \end{equation*}
 \sphinxAtStartPar
 viene definito \sphinxstylestrong{red\sphinxhyphen{}shift}, o \sphinxstylestrong{spostamento verso il rosso}, come sarà più chiaro nella discussione dello \DUrole{xref,myst}{spettro elettromagnetico}
+\subsubsection*{Soluzione}
 \end{sphinxadmonition}
 
 
@@ -13104,10 +13182,10 @@ viene definito \sphinxstylestrong{red\sphinxhyphen{}shift}, o \sphinxstylestrong
 \label{\detokenize{ch/waves/waves-notes:note}}\label{\detokenize{ch/waves/waves-notes:physics-hs-waves-notes}}\label{\detokenize{ch/waves/waves-notes::doc}}
 
 \subsection{Soluzioni particolari}
-\label{\detokenize{ch/waves/waves-notes:soluzioni-particolari}}
+\label{\detokenize{ch/waves/waves-notes:soluzioni-particolari}}\label{\detokenize{ch/waves/waves-notes:physics-hs-waves-notes-elementary-sol}}
 
 \subsubsection{Moti liberi}
-\label{\detokenize{ch/waves/waves-notes:moti-liberi}}
+\label{\detokenize{ch/waves/waves-notes:moti-liberi}}\label{\detokenize{ch/waves/waves-notes:physics-hs-waves-notes-elementary-sol-free}}
 
 \paragraph{Vibrazione di una corda con estremi vincolati}
 \label{\detokenize{ch/waves/waves-notes:vibrazione-di-una-corda-con-estremi-vincolati}}\begin{equation*}
@@ -13121,7 +13199,7 @@ viene definito \sphinxstylestrong{red\sphinxhyphen{}shift}, o \sphinxstylestrong
 \end{equation*}
 \sphinxAtStartPar
 La velocità di propagazione delle perturbazioni è \(c = \sqrt{\frac{\sigma_0}{m}}\).
-\subsubsection*{Onde stazionarie \sphinxhyphen{} modi propri di vibrare}
+\subsubsection*{Onde \protect\(\ \protect\) stazionarie \sphinxhyphen{} modi propri di vibrare}
 
 \sphinxAtStartPar
 Si applica il metodo di separazione delle variabili \(u(x,t) = f(x) g(t)\),
@@ -13184,7 +13262,7 @@ I coefficienti \(\alpha_n\), \(\beta_n\) vengono calcolati applicando le condizi
 \end{equation*}
 \sphinxAtStartPar
 e quindi risultano essere i coefficienti delle \sphinxstylestrong{serie di Fourier} della posizione e della velocità iniziale. Nel caso di configurazione iniziale in quiete, \(\dot{u}(x,0) = 0\), i coefficienti \(\beta_n\) sono nulli, \(\beta_n = 0\).
-\subsubsection*{Onde viaggianti}
+\subsubsection*{Onde \protect\(\ \protect\) viaggianti}
 
 \sphinxAtStartPar
 Si usano le proprietà delle funzoni trigonometriche,
@@ -13241,7 +13319,7 @@ avendo riconosciuto il contributo delle due onde viaggianti
 \end{equation*}
 \sphinxAtStartPar
 La velocità di propagazione delle perturbazioni è \(c = \sqrt{\frac{GJ}{I}}\).
-\subsubsection*{Onde stazionarie \sphinxhyphen{} modi propri di vibrare}
+\subsubsection*{Onde \protect\(\ \protect\) stazionarie \sphinxhyphen{} modi propri di vibrare}
 
 \sphinxAtStartPar
 Si applica il metodo di separazione delle variabili \(u(x,t) = f(x) g(t)\),
@@ -13363,14 +13441,19 @@ ottica quantistica, riconosce la natura discreta della radiazione elettromagneti
 
 \sphinxAtStartPar
 \sphinxstylestrong{Velocità della luce nel vuoto.} La velocità della luce nel vuoto è una costante della natura. Viene qui indicata con \(c_0\), o a volte con \(c\) per brevità o pigrizia.
+\label{ch/waves/optics:def:refraction-index}
+\begin{sphinxadmonition}{note}{Definition 22.1 (Velocità della luce nei materiali e indice di rifrazione.)}
+
+
 
 \sphinxAtStartPar
-\sphinxstylestrong{Velocità della luce nei materiali.} In molti materiali, la velocità della luce nel materiale \(c_i\) può essere descritta come frazione della velocità della luce nel vuoto, \(c_0\), tramite l’indice di rifrazione \(n_i\) del materiale,
+In molti materiali, la velocità della luce nel materiale \(c_i\) può essere descritta come frazione della velocità della luce nel vuoto, \(c_0\), tramite l’indice di rifrazione \(n_i\) del materiale,
 \begin{equation*}
 \begin{split}c_i = \frac{c_0}{n_i} \ .\end{split}
-\end{equation*}
+\end{equation*}\end{sphinxadmonition}
+
 \sphinxAtStartPar
-In generale, la velocità di propagazione può dipendere dalla frequenza della propagazione stessa. In questo caso, il mezzo viene definito dispersivo. \sphinxstylestrong{todo} \sphinxstyleemphasis{mostrare esempi: rifrazione in prismi e arcobaleno; simulazione della propagazione di segnali in mezzi dispersivi}
+In generale, la velocità di propagazione può dipendere dalla frequenza della propagazione stessa. In questo caso, il mezzo viene definito {\hyperref[\detokenize{ch/waves/optics-phenomena:physics-hs-waves-optics-geometric-phenomena-dispersion}]{\sphinxcrossref{\DUrole{std,std-ref}{ mezzo dispersivo}}}}. \sphinxstylestrong{todo} \sphinxstyleemphasis{mostrare esempi: rifrazione in prismi e arcobaleno; simulazione della propagazione di segnali in mezzi dispersivi}
 
 
 \subsubsection*{Storia delle misure della velocità della luce}
@@ -13428,7 +13511,7 @@ Storia della misura della luce%
 \subsection{Princìpi dell’ottica geometrica}
 \label{\detokenize{ch/waves/optics-geometric:principi-dell-ottica-geometrica}}\label{\detokenize{ch/waves/optics-geometric:physics-hs-waves-optics-geometric-principles}}
 \sphinxAtStartPar
-\sphinxstylestrong{Propagazione rettilinea in un mezzo omogeneo.} In un mezzo omogeneo, con indice di rifrazione \(n\) (\sphinxcode{\sphinxupquote{refraction\sphinxhyphen{}index}}) uniforme, i raggi luminosi si propagano su traiettorie rettilinee.
+\sphinxstylestrong{Propagazione rettilinea in un mezzo omogeneo.} In un mezzo omogeneo, con indice di rifrazione \(n\) ({\hyperref[\detokenize{ch/waves/optics:def:refraction-index}]{\sphinxcrossref{Definition 22.1}}}) uniforme, i raggi luminosi si propagano su traiettorie rettilinee.
 
 \sphinxAtStartPar
 \sphinxstylestrong{Legge di Snell \sphinxhyphen{} riflessione e rifrazione tra mezzi discontinui.} Per soddisfare le condizioni di continuità del campo elettromagnetico in corrispondenza di una discontinuità di proprietà fisiche, un raggio che si propaga nel mezzo 1 e incidente su una discontinuità con il mezzo 2 con un angolo \(\theta{1,i}\) con la direzione normale, in generale:
@@ -13573,13 +13656,42 @@ Coefficienti di Fresnel per la polarizzazione della luce riflessa e trasmessa
 
 
 \subsection{Dispersione}
-\label{\detokenize{ch/waves/optics-phenomena:dispersione}}
+\label{\detokenize{ch/waves/optics-phenomena:dispersione}}\label{\detokenize{ch/waves/optics-phenomena:physics-hs-waves-optics-geometric-phenomena-dispersion}}
 \sphinxAtStartPar
-Alcuni materiali sono dispersivi, cioè la velocità di propagazione nel materiale di una perturbazione dipende dalla sua frequenza.
-\label{ch/waves/optics-phenomena:example-7}
+Alcuni materiali sono dispersivi, cioè la velocità di propagazione nel materiale di una perturbazione dipende dalla sua frequenza, \(c(f)\), e quindi il coefficiente di rifrazione è funzione della frequenza,
+\begin{equation*}
+\begin{split}n(f) = \frac{c_0}{c(f)} \ .\end{split}
+\end{equation*}\label{ch/waves/optics-phenomena:em-waves:dispersion:prism}
 \begin{sphinxadmonition}{note}{Example 22.2.8 (Prismi, tra Newton e Pink Floyd)}
 
 
+
+\sphinxAtStartPar
+Un prisma costruito con un materiale dispersivo permette di scomporre la radiazione elettromagnetica nei suoi componenti elementari con diversa frequenza (e quindi lunghezza d’onda).
+
+\sphinxAtStartPar
+Ad esempio, l’acqua ha un indice di rifrazione che varia da \(n_{red} = 1.33\) per la radiazione con lunghezza d’onda \(\lambda_{red} = 700 \, \text{nm}\) corrispondente alla luce di colore rosso, a \(n_{violet} = 1.339\) per la radiazione con lunghezza d’onda \(\lambda_{violet} = 400 \, \text{nm}\) corrisponendente alla luce di colore viola.
+
+\sphinxAtStartPar
+Legame tra lunghezza d’onda e frequenza: \(c = \frac{\omega}{k} = \lambda \, f\), dalle relazioni \(\omega = 2 \pi f\), \(\lambda = \frac{2 \pi }{k} = \frac{c}{f}\).
+
+\sphinxAtStartPar
+Il comportamento della radiazione descritta dai {\hyperref[\detokenize{ch/waves/optics-geometric:physics-hs-waves-optics-geometric-principles}]{\sphinxcrossref{\DUrole{std,std-ref}{principi dell’ottica geometrica}}}}, e dalla legge di Snell in particolare, prevede che l’angolo di rifrazione della luce trasmessa dipende quindi dalla lunghezza d’onda,
+\begin{equation*}
+\begin{split}\sin \theta_t(f) = \frac{n_1}{n_2(f)} \, \sin \theta_i(f) \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+A seconda del contenuto in frequenza della radiazione, la scomposizione del segnale può manifstarsi:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+per \sphinxstylestrong{spettri continui} come la formazione di un arcobaleno con un angolo più piccolo rispetto alla normale alla superficie per il colore viola e un angolo maggiore per il colore rosso. Ad esempio, con un angolo di incidenza \(\theta_i = 45^\circ\), l’angolo formato dalla radiazione viola è di \(31.85^\circ\) mentre l’angolo della radiazione rossa è \(32.11^\circ\).
+
+\item {} 
+\sphinxAtStartPar
+per \sphinxstylestrong{spettri discreti} come la formazione di una serie di righe spettrali corrispondenti alle componenti discrete nel segnale
+
+\end{itemize}
 \end{sphinxadmonition}
 \label{ch/waves/optics-phenomena:example-8}
 \begin{sphinxadmonition}{note}{Example 22.2.9 (Arcobaleno)}
@@ -13595,7 +13707,7 @@ Alcuni materiali sono dispersivi, cioè la velocità di propagazione nel materia
 
 
 \subsection{Diffrazione}
-\label{\detokenize{ch/waves/optics-phenomena:diffrazione}}
+\label{\detokenize{ch/waves/optics-phenomena:diffrazione}}\label{\detokenize{ch/waves/optics-phenomena:physics-hs-waves-optics-geometric-phenomena-diffraction}}
 \sphinxAtStartPar
 …
 
@@ -20756,6 +20868,9 @@ solarigrafia, fotografia con materiale di recupero con tempi lunghissimi
 \bigletter{def\sphinxhyphen{}dimensions\sphinxhyphen{}homonegneous}
 \item\relax\sphinxstyleindexentry{def\sphinxhyphen{}dimensions\sphinxhyphen{}homonegneous}\sphinxstyleindexextra{ch/intro/measurements}\sphinxstyleindexpageref{ch/intro/measurements:\detokenize{def-dimensions-homonegneous}}
 \indexspace
+\bigletter{def:refraction\sphinxhyphen{}index}
+\item\relax\sphinxstyleindexentry{def:refraction\sphinxhyphen{}index}\sphinxstyleindexextra{ch/waves/optics}\sphinxstyleindexpageref{ch/waves/optics:\detokenize{def:refraction-index}}
+\indexspace
 \bigletter{def:unit:ampere}
 \item\relax\sphinxstyleindexentry{def:unit:ampere}\sphinxstyleindexextra{ch/intro/physical\_quantities\sphinxhyphen{}charge}\sphinxstyleindexpageref{ch/intro/physical_quantities-charge:\detokenize{def:unit:ampere}}
 \indexspace
@@ -20782,6 +20897,9 @@ solarigrafia, fotografia con materiale di recupero con tempi lunghissimi
 \indexspace
 \bigletter{electric\sphinxhyphen{}dipole\sphinxhyphen{}ext\sphinxhyphen{}e\sphinxhyphen{}field}
 \item\relax\sphinxstyleindexentry{electric\sphinxhyphen{}dipole\sphinxhyphen{}ext\sphinxhyphen{}e\sphinxhyphen{}field}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{electric-dipole-ext-e-field}}
+\indexspace
+\bigletter{em\sphinxhyphen{}waves:dispersion:prism}
+\item\relax\sphinxstyleindexentry{em\sphinxhyphen{}waves:dispersion:prism}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{em-waves:dispersion:prism}}
 \indexspace
 \bigletter{ex\sphinxhyphen{}doppler\sphinxhyphen{}ambulance\sphinxhyphen{}speed}
 \item\relax\sphinxstyleindexentry{ex\sphinxhyphen{}doppler\sphinxhyphen{}ambulance\sphinxhyphen{}speed}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/waves-phenomena:\detokenize{ex-doppler-ambulance-speed}}
@@ -20859,7 +20977,7 @@ solarigrafia, fotografia con materiale di recupero con tempi lunghissimi
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}6}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-6}}
 \indexspace
 \bigletter{example\sphinxhyphen{}7}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}7}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-7}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}7}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-7}}
 \indexspace
 \bigletter{example\sphinxhyphen{}8}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}8}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-8}}
