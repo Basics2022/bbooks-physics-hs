@@ -720,27 +720,80 @@ document.write(`
 <div class="section" id="effetto-doppler">
 <span id="physics-hs-waves-effects-doppler"></span><h2><span class="section-number">21.3.6. </span>Effetto Doppler<a class="headerlink" href="#effetto-doppler" title="Permalink to this heading">#</a></h2>
 <p>Quando la sorgente e l’osservatore sono in moto relativo, la frequenza percepita dall’osservatore è diversa dalla frequenza emessa dalla sorgente.</p>
+<p>In questo paragrafo viene valutato solo l’effetto della propagazione 1-dimensionale di disturbi piani, lungo la direzione del moto relativo di sorgente e osservatore (ricevitore). Per evitare complicazioni algebriche e avere un problema risolvibile in forma chiusa senza troppe difficoltà, ci si limita al moto relativo uniforme.
+Le leggi del moto di sorgente e osservatore sono rispettivamente,</p>
 <div class="math notranslate nohighlight">
-\[A(t) = F \cos(\Omega t )\]</div>
+\[\begin{split}\begin{aligned}
+  x_s(t) &amp; = x_{s,0} + v_s \, t \\
+  x_r(t) &amp; = x_{r,0} + v_r \, t \\
+\end{aligned}\end{split}\]</div>
+<p>Il segnale emesso dalla sorgente  <span class="math notranslate nohighlight">\(A_s(t) = F \cos(\Omega_s t)\)</span> si propaga come due <a class="reference internal" href="waves-elementary-solutions.html#physics-hs-waves-equation-solutions-1d-travelling"><span class="std std-ref">onde viaggianti</span></a> in direzione opposta,</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+  u(x,t) = \dots 
+\end{aligned}\]</div>
+<!--
+  & = \frac{1}{2} A\left(x-x_s(t_{ret})-c(t-t_{ret})\right) + \frac{1}{2} A\left(x-x_s(t_{ret})+c(t-t_{ret})\right) = \\
+  & = \dots
+& = \frac{1}{2} A\left(x-x_{s,0}-(c+v_s)t\right) \cdot H(x-x_s(t)-ct > 0) + \\
+  & + \frac{1}{2} A\left(x-x_{s,0}+(c-v_s)t\right) \cdot H(x-x_s(t)+ct < 0) \ ,
+-->
+<p>con la funzione <span class="math notranslate nohighlight">\(H(y) = 1\)</span> per <span class="math notranslate nohighlight">\(y = \text{True}\)</span>, <span class="math notranslate nohighlight">\(H(y)=0\)</span> se <span class="math notranslate nohighlight">\(y= \text{False}\)</span> necessaria a limitare la soluzione al dominio di influenza.</p>
+<p>Quando l’osservatore si trova a destra della sorgente, <span class="math notranslate nohighlight">\(x_r(t) &gt; x_s(t)\)</span> (<strong>todo</strong> ruolo di <span class="math notranslate nohighlight">\(t_{ret}\)</span>, onde d’urto,…) esso è raggiunto al tempo <span class="math notranslate nohighlight">\(t\)</span> dalla parte di segnale che si propaga verso destra emesso nell’istante di tempo <span class="math notranslate nohighlight">\(t^+_{ret}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  c( t - t^+_{ret} ) 
+  &amp; = x_r(t) - x_s(t^+_{ret}) = \\ 
+  &amp; = v_r \, t  - v_s \, t^+_{ret} + x_{r,0} - x_{s,0} 
+  \quad \rightarrow \quad t^+_{ret} = \frac{1- \frac{v_r}{c}}{1 - \frac{v_s}{c}} t - \frac{x_{r,0} - x_{s,0}}{c - v_s}
+\end{aligned}\end{split}\]</div>
+<p>L’osservatore registra un segnale precedente emesso dalla sorgente uguale a</p>
+<div class="math notranslate nohighlight">
+\[U_R(t) = u(x_r(t), t) = U_s( t_{ret}^+ ) = U_S \left( \frac{1- \frac{v_r}{c}}{1 - \frac{v_s}{c}} t - \frac{x_{r,0} - x_{s,0}}{c - v_s} \right) \ ,\]</div>
+<p>quindi nel caso di segnale armonico, la pulsazione della frequenza registrata è</p>
+<div class="math notranslate nohighlight" id="equation-eq-doppler-right-freq">
+<span class="eqno">(21.4)<a class="headerlink" href="#equation-eq-doppler-right-freq" title="Permalink a questa equazione">#</a></span>\[\Omega_r = \frac{1- \frac{v_r}{c}}{1 - \frac{v_s}{c}} \, \Omega_s\]</div>
+<p>Quando l’osservatore si trova a sinistra della sorgente, <span class="math notranslate nohighlight">\(x_r(t) &lt; x_s(t)\)</span> (<strong>todo</strong> ruolo di <span class="math notranslate nohighlight">\(t_{ret}\)</span>, onde d’urto,…) esso è raggiunto al tempo <span class="math notranslate nohighlight">\(t\)</span> dalla parte di segnale che si propaga verso sinistra emesso nell’istante di tempo <span class="math notranslate nohighlight">\(t^-_{ret}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  c( t - t^-_{ret} ) 
+  &amp; = - x_r(t) + x_s(t^-_{ret}) = \\ 
+  &amp; = - v_r \, t  + v_s \, t^-_{ret} - x_{r,0} + x_{s,0} 
+  \quad \rightarrow \quad t^-_{ret} = \frac{1+ \frac{v_r}{c}}{1 + \frac{v_s}{c}} t - \frac{x_{s,0} - x_{r,0}}{c + v_s}
+\end{aligned}\end{split}\]</div>
+<p>L’osservatore registra un segnale precedente emesso dalla sorgente uguale a</p>
+<div class="math notranslate nohighlight">
+\[U_R(t) = u(x_r(t), t) = U_s( t_{ret}^- ) = U_S \left( \frac{1+ \frac{v_r}{c}}{1 + \frac{v_s}{c}} t - \frac{x_{s,0} - x_{r,0}}{c - v_s} \right) \ ,\]</div>
+<p>quindi nel caso di segnale armonico, la pulsazione della frequenza registrata è</p>
+<div class="math notranslate nohighlight" id="equation-eq-doppler-left-freq">
+<span class="eqno">(21.5)<a class="headerlink" href="#equation-eq-doppler-left-freq" title="Permalink a questa equazione">#</a></span>\[\Omega_r = \frac{1 + \frac{v_r}{c}}{1 + \frac{v_s}{c}} \, \Omega_s\]</div>
 <!--
 $$f(x, t) = A_+(x-x_s(t_{ret}) - c(t-t_{ret}))$$
 -->
-<p>con <span class="math notranslate nohighlight">\(t_{ret}\)</span> l’istante di tempo in cui è stato emesso il segnale dalla sorgente che raggiunge il punto <span class="math notranslate nohighlight">\(x\)</span> nell’istante <span class="math notranslate nohighlight">\(t &gt; t_{ret}\)</span> (causalità)</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
- | x - x_s(t_{ret}) | &amp; = \quad  c (t - t_{ret}) \\
-   x - x_s(t_{ret})   &amp; = \pm c (t - t_{ret}) = \begin{cases} \quad c ( t-t_{ret} ) &amp; , \quad x \ge x_s(t_{ret}) \\ - c ( t-t_{ret} ) &amp; , \quad  x \le x_s(t_{ret}) \\ \end{cases}
-\end{aligned}\end{split}\]</div>
-<p>Nel caso di sorgente a velocità costante, <span class="math notranslate nohighlight">\(x_s(t) = x_{s,0} + v_s t\)</span>, e ricettore a velocità costante <span class="math notranslate nohighlight">\(x_r(t) = x_{r,0} + v_r t\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  x_r(t) -x_s(t_{ret}) &amp; = \pm c ( t - t_{ret} ) \\
-  x_{r,0} + v_r t - x_{s,0} - v_s t_{ret} &amp; = \pm c ( t - t_{ret} ) \\
-\end{aligned}\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[(v_s \mp c) t_{ret} = (v_r \mp c) t + x_{r,0} - x_{s,0}\]</div>
-<div class="math notranslate nohighlight">
-\[t_{ret} = \dfrac{v_r \mp c}{v_s \mp c} t + \dfrac{x_{r,0} - x_{s,0}}{v_s \mp c}\]</div>
+<!--
+<span style="color:red"> **todo** *Controllare formule e pulire presentazione.*
+con $t_{ret}$ l'istante di tempo in cui è stato emesso il segnale dalla sorgente che raggiunge il punto $x$ nell'istante $t > t_{ret}$ (causalità)
+</span>
+
+$$\begin{aligned}
+ | x - x_s(t_{ret}) | & = \quad  c (t - t_{ret}) \\
+   x - x_s(t_{ret})   & = \pm c (t - t_{ret}) = \begin{cases} \quad c ( t-t_{ret} ) & , \quad x \ge x_s(t_{ret}) \\ - c ( t-t_{ret} ) & , \quad  x \le x_s(t_{ret}) \\ \end{cases}
+\end{aligned}$$
+
+<span style="color:red">
+Nel caso di sorgente a velocità costante, $x_s(t) = x_{s,0} + v_s t$, e ricettore a velocità costante $x_r(t) = x_{r,0} + v_r t$.
+</span>
+
+$$\begin{aligned}
+  x_r(t) -x_s(t_{ret}) & = \pm c ( t - t_{ret} ) \\
+  x_{r,0} + v_r t - x_{s,0} - v_s t_{ret} & = \pm c ( t - t_{ret} ) \\
+\end{aligned}$$
+
+
+$$(v_s \mp c) t_{ret} = (v_r \mp c) t + x_{r,0} - x_{s,0}$$
+
+$$t_{ret} = \dfrac{v_r \mp c}{v_s \mp c} t + \dfrac{x_{r,0} - x_{s,0}}{v_s \mp c}$$
+-->
 <div class="proof example admonition" id="ex-doppler-ambulance-speed">
 <p class="admonition-title"><span class="caption-number">Example 21.7 </span> (Stima della velocità dell’ambulanza con effetto Doppler)</p>
 <div class="example-content section" id="proof-content">
@@ -749,19 +802,45 @@ $$f(x, t) = A_+(x-x_s(t_{ret}) - c(t-t_{ret}))$$
 <ol class="arabic simple">
 <li><p>stimare la velocità dell’ambulanza, <span class="math notranslate nohighlight">\(v\)</span>, rispetto alla strada</p></li>
 <li><p>stimare la frequenza della sorgente, <span class="math notranslate nohighlight">\(f_0\)</span></p></li>
-<li><p>ripetere i calcoli nelle due seguenti situazioni:</p>
+<li><p>una volta nota la velocità dell’ambulanza e la frequenza del segnale emesso calcolati ai punti 1. e 2., stimare le frequenze misurate nei casi in cui:</p>
 <ul class="simple">
-<li><p>non siamo fermi rispetto alla strada, ma ci stiamo muovendo a un passo di <span class="math notranslate nohighlight">\(v_r = 1 \, m/s\)</span> nella stessa direzione dell’ambulanza</p></li>
-<li><p>siamo fermi rispetto alla strada, ma c’è un vento uniforme con velocità <span class="math notranslate nohighlight">\(v_m = 3 \, m /s\)</span> che soffia nella stessa direzione del moto dell’ambulanza</p></li>
+<li><p>non fossimo fermi rispetto alla strada, ma ci stessimo muovendo a un passo di <span class="math notranslate nohighlight">\(v_r = 1 \, m/s\)</span> nella stessa direzione dell’ambulanza</p></li>
+<li><p>fossimo fermi rispetto alla strada, ma ci fosse un vento uniforme con velocità <span class="math notranslate nohighlight">\(v_m = 3 \, m /s\)</span> che soffia nella stessa direzione del moto dell’ambulanza</p></li>
 </ul>
 </li>
 </ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<summary class="sd-summary-title sd-card-header">
+Soluzione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">(1-2) Supponiamo che l’ambulanza si muova da sinistra verso destra.</p>
+<p class="sd-card-text"><strong>Ambulanza in avvicinamento.</strong>
+Mentre l’ambulanza si avvicina a noi, veniamo raggiunti dalla parte disegnale che viaggia verso destra, <span class="math notranslate nohighlight">\(f(x - c t)\)</span>…Il segnale registrato ha una frequenza data dall’espressione <a class="reference internal" href="#equation-eq-doppler-right-freq">(21.4)</a>, con velocità dell’osservatore <span class="math notranslate nohighlight">\(v_r = 0 \)</span></p>
+<!--
+Il segnale misurato in $x_r$ al tempo $t$ è uguale al segnale emesso in $x_s$ al tempo $t_s = t - \frac{x_r - x_s(t)}{c}$, con $x_s(t) = x_{s,0} + v \, t$,
+-->
+<div class="math notranslate nohighlight">
+\[f_1 = f^+_r = \frac{1}{1-\frac{v}{c}} \, f_s\]</div>
+<p class="sd-card-text"><strong>Ambulanza che si allontana.</strong> Mentre l’ambulanza si allontana veniano raggiunti dalla parte di segnale che si muove verso sinistra, <span class="math notranslate nohighlight">\(f(x+ct)\)</span>…Il segnale registrato ha una frequenza data dall’espressione <a class="reference internal" href="#equation-eq-doppler-left-freq">(21.5)</a>, con velocità dell’osservatore <span class="math notranslate nohighlight">\(v_r = 0 \)</span></p>
+<div class="math notranslate nohighlight">
+\[f_2 = f^-_r = \frac{1}{1+\frac{v}{c}} \, f_s\]</div>
+<p class="sd-card-text">Mettendo a sistema le due equazioni, si può calcolare la velocità dell’ambulanza e la frequenza della sirena</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ \left( 1 + \frac{v}{c} \right) f_2 = \left( 1 - \frac{v}{c} \right) f_1 \qquad &amp; \rightarrow \qquad v = \dfrac{f_1 - f_2}{f_1 + f_2} \, c \\
+  &amp; \rightarrow \qquad f_s = \frac{2 f_1 f_2}{f_1 + f_2} \ .
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">(3) …</p>
 </div>
+</details></div>
 </div><div class="proof example admonition" id="ex-doppler-astronomy">
 <p class="admonition-title"><span class="caption-number">Example 21.8 </span> (Effetto doppler in astronomia)</p>
 <div class="example-content section" id="proof-content">
 <p>Si vuole determinare velocità della galassia <strong>XXX</strong> <strong>todo</strong> analizzando la radiazione elettromagnetica emessa dalla galassia che arriva sulla Terra. Nello spettro di emissione si riconosce la linea <span class="math notranslate nohighlight">\(H-\alpha\)</span>, legata alla presenza di idrogeno ionizzato, e a una transizione di un <span class="math notranslate nohighlight">\(e^-\)</span> di un atomo di <span class="math notranslate nohighlight">\(H\)</span> dal livello di energia <span class="math notranslate nohighlight">\(n=3\)</span> al livello di energia <span class="math notranslate nohighlight">\(n=2\)</span>.</p>
-<p>Queta riga spettrale è associata a una lunghezza d’onda <span class="math notranslate nohighlight">\(\lambda^0_{H\alpha} = 656.46 \, nm\)</span> nel vuoto, e quindi <span class="math notranslate nohighlight">\(f^0_{H\alpha} = \...\)</span>, in un sistema in quiete relativa.</p>
+<p>Queta riga spettrale è associata a una lunghezza d’onda <span class="math notranslate nohighlight">\(\lambda^0_{H\alpha} = 656.46 \, nm\)</span> nel vuoto, e quindi <span class="math notranslate nohighlight">\(f^0_{H\alpha} = ...\)</span>, in un sistema in quiete relativa.</p>
 <p>Nello spettro misurato si riconosce la linea <span class="math notranslate nohighlight">\(H\alpha\)</span> con una lunghezza d’onda <span class="math notranslate nohighlight">\(\lambda = 659.5 \, nm\)</span>. (Virgo cluster)</p>
 <p>Si chiede di:</p>
 <ol class="arabic simple">
@@ -774,7 +853,15 @@ $$f(x, t) = A_+(x-x_s(t_{ret}) - c(t-t_{ret}))$$
 <div class="math notranslate nohighlight">
 \[z = \frac{\lambda_r - \lambda_e}{\lambda_e}\]</div>
 <p>viene definito <strong>red-shift</strong>, o <strong>spostamento verso il rosso</strong>, come sarà più chiaro nella discussione dello <span class="xref myst">spettro elettromagnetico</span></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Soluzione<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 </div>
+</details></div>
 </div><!--
 $$x - x_{s,0} - v_s t_{ret} = c \left( t - t_{ret} \right)$$
 

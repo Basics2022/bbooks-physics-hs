@@ -9,9 +9,14 @@ In particolare, vengono alcune soluzioni elementari in domini 1-dimensionali, ne
 
 Per ognuna di queste perturbazioni elementari[^eikonal-approx] prese singolarmente è possibile definire una lunghezza d'onda (o in 3d un vettore d'onda locale che indica la direzione della propagazione), una frequenza e la velocità della perturbazione.
 
+Alcuni esempi sono riportati nella sezione delle [Note](physics-hs:waves:notes) in fondo al capitolo.
+
+(physics-hs:waves:equation:solutions:1d)=
 ## Dominio 1-dimensionale
 
-**Onde stazionarie.** Una soluzione generica dell'equazione delle onde può essere scritta come somma di onde stazionarie nella forma
+(physics-hs:waves:equation:solutions:1d:modes)=
+### Onde stazionarie
+ Una soluzione generica dell'equazione delle onde può essere scritta come somma di onde stazionarie nella forma
 
 $$f_n(x) = \cos(k_n x + \phi_n) \ ,$$
 
@@ -32,7 +37,9 @@ $$\begin{aligned}
 così che $\partial_{tt} u - c^2 \partial_{tt} u = \left( -\omega_n^2 + c^2 k_n^2 \right) u = 0$ se è soddisfatta la relazione tra la pulsazione $\omega_n$ e il vettore d'onda $k_n$, $\omega_n = c k_n$.
 ```
 
-**Onde viaggianti.** Utilizzando le proprietà delle funzioni trigonometriche, la funzione $u_n(x,t) = f_{n}(x) g_n(t)$ può essere scritta come somma di due onde viaggianti con velocità $c$,
+(physics-hs:waves:equation:solutions:1d:travelling)=
+### Onde viaggianti
+Utilizzando le proprietà delle funzioni trigonometriche, la funzione $u_n(x,t) = f_{n}(x) g_n(t)$ può essere scritta come somma di due onde viaggianti con velocità $c$,
 
 $$u_n(x,t) = f_n(x) g_n(t) = A_n^{-}(x+ct) + A_n^{+}(x-ct) \ .$$ (travelling-waves)
 
