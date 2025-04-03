@@ -10,11 +10,13 @@
 
 - distinguere tra PSCE di segnali, e pattern di interferenza che compare nel quadrato del segnale, spesso associato alle grandezze percepite con i sensi e/o misurate da strumenti di misura (es. intensità luminosa della radiazione elettromagnetica)
 
-(physics-hs:waves:effects:reflection)=
-## Riflessione
+```{list-table}
+:header-rows: 0
+* - ![](../../media/psce-0.png)
+* - ![](../../media/psce-1.png)
+```
 
-(physics-hs:waves:effects:refraction)=
-## Rifrazione
+<span style="color:red">Studio sistematico della diffrazione, con esempi: di limite di Fresnel e Fraunhofer; limite di diffrazione; pattern di diffrazione in funzione della forma dell'apertura,...</span>
 
 (physics-hs:waves:effects:diffraction)=
 ## Diffrazione
@@ -43,6 +45,13 @@ Modello: diffrazione dovuta alla sovrapposizione degli effetti di una distribuzi
 
 ```{prf:example} Reticolo di diffrazione
 ```
+
+(physics-hs:waves:effects:reflection)=
+## Riflessione
+
+(physics-hs:waves:effects:refraction)=
+## Rifrazione
+
 
 (physics-hs:waves:effects:polarization)=
 ## Polarizzazione
@@ -77,6 +86,44 @@ $$\begin{aligned}
 $$(v_s \mp c) t_{ret} = (v_r \mp c) t + x_{r,0} - x_{s,0}$$
 
 $$t_{ret} = \dfrac{v_r \mp c}{v_s \mp c} t + \dfrac{x_{r,0} - x_{s,0}}{v_s \mp c}$$
+
+```{prf:example} Stima della velocità dell'ambulanza con effetto Doppler
+:label: ex-doppler-ambulance-speed
+
+Si conosce la temperatura ambiente, $T_a$, che permette di valutare la velocità di propagazione del suono, $c = \sqrt{\gamma R T}$. Mentre ci si trova per strada ad aspettare l'autobus, e stiamo giocando con il nostro smartphone con un'app che rende disponibili la misura della frequenza dei suoni ricevuti, sentiamo arrivare un'ambulanza.
+
+Essendo a conoscenza dell'effetto Doppler, vogliamo stimare la velocità dell'ambulanza osservando la frequenza misurata del suono emesso dalla sirena dell'ambulanza mentre si sta avvicinando $f_1$ e mentre si sta allontanando da noi $f_2$. Si chiede quindi di:
+1. stimare la velocità dell'ambulanza, $v$, rispetto alla strada
+2. stimare la frequenza della sorgente, $f_0$
+3. ripetere i calcoli nelle due seguenti situazioni:
+    - non siamo fermi rispetto alla strada, ma ci stiamo muovendo a un passo di $v_r = 1 \, m/s$ nella stessa direzione dell'ambulanza
+    - siamo fermi rispetto alla strada, ma c'è un vento uniforme con velocità $v_m = 3 \, m /s$ che soffia nella stessa direzione del moto dell'ambulanza
+
+```
+
+```{prf:example} Effetto doppler in astronomia
+:label: ex-doppler-astronomy
+
+Si vuole determinare velocità della galassia **XXX** **todo** analizzando la radiazione elettromagnetica emessa dalla galassia che arriva sulla Terra. Nello spettro di emissione si riconosce la linea $H-\alpha$, legata alla presenza di idrogeno ionizzato, e a una transizione di un $e^-$ di un atomo di $H$ dal livello di energia $n=3$ al livello di energia $n=2$.
+
+Queta riga spettrale è associata a una lunghezza d'onda $\lambda^0_{H\alpha} = 656.46 \, nm$ nel vuoto, e quindi $f^0_{H\alpha} = \...$, in un sistema in quiete relativa.
+
+Nello spettro misurato si riconosce la linea $H\alpha$ con una lunghezza d'onda $\lambda = 659.5 \, nm$. (Virgo cluster)
+
+Si chiede di:
+1. calcolare la velocità radiale usando le formule per l'effetto Doppler non relativistico
+2. valuatere l'errore commesso usando le formule dell'effetto Doppler non relativistico, rispetto all'uso delle formule che tengono conto degli effetti relativistici
+
+  $$\lambda_{r} = \lambda_e \sqrt{\frac{1 + v/c}{1-v/c}}$$
+
+Il rapporto,
+
+$$z = \frac{\lambda_r - \lambda_e}{\lambda_e}$$ 
+
+viene definito **red-shift**, o **spostamento verso il rosso**, come sarà più chiaro nella discussione dello [spettro elettromagnetico]()
+
+```
+
 
 <!--
 $$x - x_{s,0} - v_s t_{ret} = c \left( t - t_{ret} \right)$$

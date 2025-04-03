@@ -25,6 +25,15 @@ Non è possibile conoscere contemporaneamete il valore di alcune coppie di grand
 - diverse componenti del momento della quantità di moto (sia momento totale, sia orbitale, sia di spin)
 - ...
 
+(physics-hs:modern:quantum:basics:spin)=
+## Spin, esperimento di Stern-Gerlach
+Le particelle subatomiche manifestano due tipi di momento angolare:
+- il momento angolare orbitale, $\hat{\mathbf{L}}$
+- momento angolare intrinseco, di **spin**, $\hat{\mathbf{S}}$
+
+Il momento angolare totale è la somma di questi due contributi, $\hat{\mathbf{J}} = \hat{\mathbf{L}} + \hat{\mathbf{S}}$
+
+
 ## Alcuni esempi 1-dimensionali
 ### Moto libero di un sistema puntiforme
 Moto libero, incertezza tra posizione e quantità di moto porta a "diffusione della probabilità"
@@ -90,6 +99,15 @@ relazione che implica $f(x,x) = 0$. Poiché il modulo quadro di $\Psi$ rappresen
 $$p(\dots, \mathbf{q}_i, \dots, \mathbf{q}_i, \dots) = |\Psi(\dots, \mathbf{q}_i, \dots, \mathbf{q}_i, \dots)|^2 = 0 \ ,$$
 
 e quindi **la probabilità che due fermioni si trovino nello stesso stato è nulla**.
+
+```
+
+**todo** La natura dei fermioni è legata allo [spin]() frazionario
+
+```{prf:example} Gli elettroni sono fermioni
+:label: fermions-electrons
+
+Gli elettroni sono fermioni. Questo comportamento degli elettroni è alla base della spiegazione della struttura atomica, e dell'occupazione di orbitali differenti.
 
 ```
 

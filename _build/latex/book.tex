@@ -12405,7 +12405,7 @@ Per la propagazione nel vuoto, o in mezzi che non assorbono radiazione, la legge
 \chapter{Introduzione ai fenomeni ondulatori}
 \label{\detokenize{ch/waves/intro:introduzione-ai-fenomeni-ondulatori}}\label{\detokenize{ch/waves/intro:physics-hs-waves-intro}}\label{\detokenize{ch/waves/intro::doc}}
 \sphinxAtStartPar
-\sphinxstylestrong{Cosa intendiamo per onda?} Il termine onda è comunemente associato alla propagazione di una perturbazione \sphinxhyphen{} rispetto a una condizione di equilibrio \sphinxhyphen{} di una quantità fisica nello spazio e nel tempo, in grado di trasportare energia e in molti casi con una \sphinxstylestrong{velocità di propagazione} ben definita%
+\sphinxstylestrong{Cosa intendiamo per onda?} Il termine onda è comunemente associato alla propagazione di una perturbazione \sphinxhyphen{} rispetto a una condizione di equilibrio \sphinxhyphen{} di una quantità fisica nello spazio e nel tempo, in grado di trasportare energia e in molti casi con una \sphinxstylestrong{velocità di propagazione finita} e ben definita%
 \begin{footnote}[1]\sphinxAtStartFootnote
 In molti problemi, la propagazione di perturbazioni di ampiezza limitata è governata da un problema lineare. Quando è valido un modello lineare, la velocità di propagazione dell’onda dipende dalle caratteristiche del mezzo e del suo stato di equilibrio, e non dall’ampiezza delle perturbazioni: ad esempio, le onde acustiche in un gas si propagano con una velocità che dipende tipicamente dalla natura del gas e dalla sua temperatura, per un gas ideale perfetto \(c = \sqrt{\gamma R T}\); la luce si propaga nel vuoto con una velocità che dipende solo da costanti della natura, \(c_0 := \frac{1}{\sqrt{\varepsilon_0 \mu_0}}\). In alcuni contesti, la propagazione di perturbazioni di ampiezza «sufficientemente grande» sono descritte da un problema non\sphinxhyphen{}lineare, e lì la storia si complica…\sphinxstylestrong{todo} \sphinxstyleemphasis{esempi: equazione delle acque basse, equazione dei gas comprimibili. Questi casi apparentemente differenti, sono descritti da equazioni simili; in entrambi i casi la dinamica delle perturbazioni non è banale e può dare origine a} \sphinxstylestrong{urti}, \sphinxstyleemphasis{nel primo caso chiamati salti idraulici, nel secondo caso onde d’urto}
 %
@@ -12425,31 +12425,26 @@ L’interazione con ostacoli può dipendere dalle dimensioni relative dell’ost
 La propagazione di disturbi di intensità «sufficientemente piccola» può essere descritta con un modello lineare, l”\sphinxstyleemphasis{equazione delle onde}. La linearità di un problema consente di utilizzare il \sphinxstylestrong{principio di sovrapposizione delle cause e degli effetti}, e scomporre perturbazioni con «forma complessa» come somma di {\hyperref[\detokenize{ch/waves/waves-elementary-solutions:physics-hs-waves-equation-solutions}]{\sphinxcrossref{\DUrole{std,std-ref}{perturbazioni più semplici}}}}.
 
 \sphinxAtStartPar
-Da quanto detto nell’introduzione, dovrebbe risultare sensato il programma di questo capitolo.
-\begin{itemize}
-\item {} 
+\sphinxstylestrong{Contenuti.}
+\subsubsection*{Equazione delle onde in diversi sistemi fisici}
+
 \sphinxAtStartPar
-L”{\hyperref[\detokenize{ch/waves/waves-in-physics:physics-hs-waves-equation-examples}]{\sphinxcrossref{\DUrole{std,std-ref}{equazione delle onde in diversi sistemi fisici}}}} viene ricavata a partire da equazioni di bilancio. Partendo da equazioni di bilancio differenti, in ambiti differenti, in alcuni casi si arriva allo stesso modello matematico: l’equazione delle onde.
+Partendo da equazioni di bilancio differenti, in ambiti della fisica differenti, si arriva allo stesso modello matematico: l’equazione delle onde.
+\subsubsection*{Soluzioni elementari dell’equazione delle onde,}
 
-\item {} 
 \sphinxAtStartPar
-Una volta ricavata l’equazione delle onde in diversi ambiti, dovrebbe risultare sensato investire un po” di tempo per discutere il modello matematico \sphinxhyphen{} indipendente dall’applicazione \sphinxhyphen{}, descrivendone
-\begin{itemize}
-\item {} 
+Vengono presentate alcune soluzioni elementari dell’equazione delle onde, che possono essere combinate tramite il {\hyperref[\detokenize{ch/todo:physics-hs-todo-psce}]{\sphinxcrossref{\DUrole{std,std-ref}{principio di sovrapposizione di cause e degli effetti (PSCE)}}}} per ottenere soluzioni generali in problemi lineari.
+\subsubsection*{Caratteristiche dei fenomeni ondulatori}
+
 \sphinxAtStartPar
-le {\hyperref[\detokenize{ch/waves/waves-elementary-solutions:physics-hs-waves-equation-solutions}]{\sphinxcrossref{\DUrole{std,std-ref}{soluzioni elementari}}}}, che possono essere composte in un problema lineare per ricavare una soluzione generale
+Caratteristiche delle perturbazioni (direzione di propagazione, polarizzazione, ampiezza, lunghezza d’onda,…, velocità di fase e di gruppo,…), e fenomeni (interferenza, Doppler, riflessione, rifrazione, diffrazione,…)
 
-\item {} 
 \sphinxAtStartPar
-le {\hyperref[\detokenize{ch/waves/waves-phenomena:physics-hs-waves-phenomena}]{\sphinxcrossref{\DUrole{std,std-ref}{caratteristiche dei fenomeni ondulatori}}}}, che possono manifestarsi
+\sphinxstylestrong{Origine della perturbazione.}
+L’introduzione si è concentrata sulla definizione di onda come perturbazione di una quantità fisica che si propaga con determinate caratteristiche, ma nulla è stato detto sull’origine della perturbazione. Le cause che creano la perturbazione dipendono dal sistema studiato:
 
-\end{itemize}
-
-\end{itemize}
-
-
-\bigskip\hrule\bigskip
-
+\sphinxAtStartPar
+sistemare esempi: quantità fisica che viene perturbata; cause della perturbazione; ricezione;…
 
 
 \subsubsection*{Alcuni esempi}
@@ -12459,7 +12454,7 @@ Alcuni fenomeni fisici governati dall’equazione delle onde sono:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-le onde meccaniche nella amteria che si manifestano sotto forma di vibrazione. Alcuni esempi sono:
+le onde meccaniche nella materia che si manifestano sotto forma di vibrazione. Alcuni esempi sono:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -12896,11 +12891,26 @@ distinguere tra PSCE di segnali, e pattern di interferenza che compare nel quadr
 \end{itemize}
 
 
-\subsection{Riflessione}
-\label{\detokenize{ch/waves/waves-phenomena:riflessione}}\label{\detokenize{ch/waves/waves-phenomena:physics-hs-waves-effects-reflection}}
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|}
+\hline
 
-\subsection{Rifrazione}
-\label{\detokenize{ch/waves/waves-phenomena:rifrazione}}\label{\detokenize{ch/waves/waves-phenomena:physics-hs-waves-effects-refraction}}
+\sphinxAtStartPar
+\sphinxincludegraphics{{psce-0}.png}
+\\
+\hline
+\sphinxAtStartPar
+\sphinxincludegraphics{{psce-1}.png}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+\sphinxAtStartPar
+Studio sistematico della diffrazione, con esempi: di limite di Fresnel e Fraunhofer; limite di diffrazione; pattern di diffrazione in funzione della forma dell’apertura,…
+
 
 \subsection{Diffrazione}
 \label{\detokenize{ch/waves/waves-phenomena:diffrazione}}\label{\detokenize{ch/waves/waves-phenomena:physics-hs-waves-effects-diffraction}}
@@ -12962,6 +12972,12 @@ Modello: diffrazione dovuta alla sovrapposizione degli effetti di una distribuzi
 \end{sphinxadmonition}
 
 
+\subsection{Riflessione}
+\label{\detokenize{ch/waves/waves-phenomena:riflessione}}\label{\detokenize{ch/waves/waves-phenomena:physics-hs-waves-effects-reflection}}
+
+\subsection{Rifrazione}
+\label{\detokenize{ch/waves/waves-phenomena:rifrazione}}\label{\detokenize{ch/waves/waves-phenomena:physics-hs-waves-effects-refraction}}
+
 \subsection{Polarizzazione}
 \label{\detokenize{ch/waves/waves-phenomena:polarizzazione}}\label{\detokenize{ch/waves/waves-phenomena:physics-hs-waves-effects-polarization}}\begin{itemize}
 \item {} 
@@ -13003,7 +13019,81 @@ Nel caso di sorgente a velocità costante, \(x_s(t) = x_{s,0} + v_s t\), e ricet
 \begin{split}(v_s \mp c) t_{ret} = (v_r \mp c) t + x_{r,0} - x_{s,0}\end{split}
 \end{equation*}\begin{equation*}
 \begin{split}t_{ret} = \dfrac{v_r \mp c}{v_s \mp c} t + \dfrac{x_{r,0} - x_{s,0}}{v_s \mp c}\end{split}
+\end{equation*}\label{ch/waves/waves-phenomena:ex-doppler-ambulance-speed}
+\begin{sphinxadmonition}{note}{Example 21.3.4 (Stima della velocità dell’ambulanza con effetto Doppler)}
+
+
+
+\sphinxAtStartPar
+Si conosce la temperatura ambiente, \(T_a\), che permette di valutare la velocità di propagazione del suono, \(c = \sqrt{\gamma R T}\). Mentre ci si trova per strada ad aspettare l’autobus, e stiamo giocando con il nostro smartphone con un’app che rende disponibili la misura della frequenza dei suoni ricevuti, sentiamo arrivare un’ambulanza.
+
+\sphinxAtStartPar
+Essendo a conoscenza dell’effetto Doppler, vogliamo stimare la velocità dell’ambulanza osservando la frequenza misurata del suono emesso dalla sirena dell’ambulanza mentre si sta avvicinando \(f_1\) e mentre si sta allontanando da noi \(f_2\). Si chiede quindi di:
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+stimare la velocità dell’ambulanza, \(v\), rispetto alla strada
+
+\item {} 
+\sphinxAtStartPar
+stimare la frequenza della sorgente, \(f_0\)
+
+\item {} 
+\sphinxAtStartPar
+ripetere i calcoli nelle due seguenti situazioni:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+non siamo fermi rispetto alla strada, ma ci stiamo muovendo a un passo di \(v_r = 1 \, m/s\) nella stessa direzione dell’ambulanza
+
+\item {} 
+\sphinxAtStartPar
+siamo fermi rispetto alla strada, ma c’è un vento uniforme con velocità \(v_m = 3 \, m /s\) che soffia nella stessa direzione del moto dell’ambulanza
+
+\end{itemize}
+
+\end{enumerate}
+\end{sphinxadmonition}
+\label{ch/waves/waves-phenomena:ex-doppler-astronomy}
+\begin{sphinxadmonition}{note}{Example 21.3.5 (Effetto doppler in astronomia)}
+
+
+
+\sphinxAtStartPar
+Si vuole determinare velocità della galassia \sphinxstylestrong{XXX} \sphinxstylestrong{todo} analizzando la radiazione elettromagnetica emessa dalla galassia che arriva sulla Terra. Nello spettro di emissione si riconosce la linea \(H-\alpha\), legata alla presenza di idrogeno ionizzato, e a una transizione di un \(e^-\) di un atomo di \(H\) dal livello di energia \(n=3\) al livello di energia \(n=2\).
+
+\sphinxAtStartPar
+Queta riga spettrale è associata a una lunghezza d’onda \(\lambda^0_{H\alpha} = 656.46 \, nm\) nel vuoto, e quindi \(f^0_{H\alpha} = \...\), in un sistema in quiete relativa.
+
+\sphinxAtStartPar
+Nello spettro misurato si riconosce la linea \(H\alpha\) con una lunghezza d’onda \(\lambda = 659.5 \, nm\). (Virgo cluster)
+
+\sphinxAtStartPar
+Si chiede di:
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+calcolare la velocità radiale usando le formule per l’effetto Doppler non relativistico
+
+\item {} 
+\sphinxAtStartPar
+valuatere l’errore commesso usando le formule dell’effetto Doppler non relativistico, rispetto all’uso delle formule che tengono conto degli effetti relativistici
+
+\end{enumerate}
+\begin{equation*}
+\begin{split}\lambda_{r} = \lambda_e \sqrt{\frac{1 + v/c}{1-v/c}}\end{split}
 \end{equation*}
+\sphinxAtStartPar
+Il rapporto,
+\begin{equation*}
+\begin{split}z = \frac{\lambda_r - \lambda_e}{\lambda_e}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+viene definito \sphinxstylestrong{red\sphinxhyphen{}shift}, o \sphinxstylestrong{spostamento verso il rosso}, come sarà più chiaro nella discussione dello \DUrole{xref,myst}{spettro elettromagnetico}
+\end{sphinxadmonition}
+
 
 
 \sphinxstepscope
@@ -17989,7 +18079,7 @@ Le onde elettromagnetiche sono perturbazioni del campo elettromagnetico \(\vec{e
 \end{equation*}
 \sphinxAtStartPar
 La \sphinxstylestrong{velocità della luce} nel vuoto è considerata ad oggi una \sphinxstylestrong{costante della natura}. Un primo esperimento che portò a questa conclusione fu l”{\hyperref[\detokenize{ch/electromagnetism/em-waves-speed:physics-hs-electromagnetism-em-waves-speed-michelson-morley}]{\sphinxcrossref{\DUrole{std,std-ref}{esperimento di Michelson e Morley}}}} del 1887. La costanza della
-\subsubsection*{\sphinxstylestrong{Maxwell \sphinxhyphen{} il modello matematico.}}
+\subsubsection*{\sphinxstylestrong{1865 \sphinxhyphen{} Maxwell \sphinxhyphen{} il modello matematico.}}
 
 \sphinxAtStartPar
 Le equazioni di Maxwell forniscono un modello matematico per i fenomeni dell’elettromagnetismo classico. Sotto opportune condizioni, le equazioni prevedono la possibilità che il campo elettromagnetico possa propagarsi come un fenomeno ondulatorio. La rapida oscillazione di un cariche elettriche \sphinxhyphen{} e quindi una corrente alternata ad alta frequenza \sphinxhyphen{} è una sorgente di onde elettromagnetiche: un modello di questa sorgente è un dipolo oscillante, una realizzazione pratica fondamentale sono le antenne per le trasissioni di onde EM.
@@ -17999,11 +18089,9 @@ Ai tempi, non era ancora chiaro che la luce visibile fosse un effetto EM, un ese
 
 \sphinxAtStartPar
 Le equazioni di Maxwell prevedevano una velocità di propagazione delle onde EM nel vuoto non lontana dalle migliori misure disponibili allora per la velocità della luce. La natura ondulatoria mostrata dalla luce (riflessione, diffrazione, rifrazione, interferenza, e anche polarizzazione) e le misure di velocità simili a quelle previste dal modello di Maxwell portarono all’interpretazione della luce come fenomeno EM, e diedero forti argomenti a sostegno della natura ondulatoria nel dibattito sulla natura corpuscolare o ondulatoria della luce.
-\subsubsection*{Misure della velocità della luce}
 
-\sphinxAtStartPar
-\sphinxstylestrong{todo}
-\subsubsection*{\sphinxstylestrong{Hertz \sphinxhyphen{} la prova sperimentale.}}
+
+\subsubsection*{\sphinxstylestrong{1886\sphinxhyphen{}89 \sphinxhyphen{} Hertz \sphinxhyphen{} la prova sperimentale.}}
 
 \sphinxAtStartPar
 Gli esperimenti del 1887\sphinxhyphen{}88 di H.R.Hertz(1857\sphinxhyphen{}1894)%
@@ -18051,7 +18139,7 @@ condusse un esperimento fallimentare con il quale pensò di dimostrare che i rag
 
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{controllare citazioni} H.R.Hertz riteneva inutile ai fini pratici la sua scoperta (!), cosa presto smentita da \sphinxstylestrong{Marconi}…
-\subsubsection*{\sphinxstylestrong{Marconi \sphinxhyphen{} le applicazioni.}}
+\subsubsection*{\sphinxstylestrong{1894\sphinxhyphen{}95 \sphinxhyphen{} Marconi \sphinxhyphen{} le prime applicazioni.}}
 
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{due parole sul contensto storico, la stesura dei cavi sottomarini e transoceanici del telegrafo \sphinxhyphen{} in cui erano coinvolti anche personaggi del calibro di Kelvin \sphinxhyphen{}, e rivoluzione della radio per le comunicazioni}
@@ -19349,7 +19437,7 @@ Come conseguenza del risultato dell”{\hyperref[\detokenize{ch/electromagnetism
 
 \item {} 
 \sphinxAtStartPar
-Esiste una classe di sistemi di riferimento privilegiata, quella dei sistemi di riferimento inerziali. Le equazioni che governano la natura sono invarianti ai sistemi di riferimento o, detto altrimenti, un fenomeno fisico non dipende da chi lo osserva (almeno se questa osservazione non interagisce con il fenomeno stesso).
+Esiste una classe di sistemi di riferimento privilegiata, quella dei sistemi di riferimento inerziali. Le equazioni che governano la natura sono invarianti ai sistemi di riferimento o, detto altrimenti, un fenomeno fisico non dipende da chi lo osserva (almeno se questa osservazione non interagisce con il fenomeno stesso, come succede in meccanica quantistica, vedi{\hyperref[\detokenize{ch/modern/quantum-basics:physics-hs-modern-quantum-basics-measurements}]{\sphinxcrossref{\DUrole{std,std-ref}{QM:Misura}}}}, {\hyperref[\detokenize{ch/modern/quantum-basics:physics-hs-modern-quantum-basics-uncertainty}]{\sphinxcrossref{\DUrole{std,std-ref}{QM:Indeterminazione di Heisenberg}}}}).
 
 \end{itemize}
 
@@ -19458,13 +19546,40 @@ Dirac e meccanica quantistica relativistica:
 \label{\detokenize{ch/modern/quantum-basics:introduzione-alla-meccanica-quantistica}}\label{\detokenize{ch/modern/quantum-basics:physics-hs-modern-quantum-basics}}\label{\detokenize{ch/modern/quantum-basics::doc}}
 
 \subsection{Interpretazione probabilistica}
-\label{\detokenize{ch/modern/quantum-basics:interpretazione-probabilistica}}
+\label{\detokenize{ch/modern/quantum-basics:interpretazione-probabilistica}}\label{\detokenize{ch/modern/quantum-basics:physics-hs-modern-quantum-basics-probability}}
+\sphinxAtStartPar
+Interpretazione probabilistica di alcuni esperimenti:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+doppia fenditura
+
+\item {} 
+\sphinxAtStartPar
+intensità delle righe degli spettri di emissione
+
+\end{itemize}
+
 
 \subsection{Misura}
-\label{\detokenize{ch/modern/quantum-basics:misura}}
+\label{\detokenize{ch/modern/quantum-basics:misura}}\label{\detokenize{ch/modern/quantum-basics:physics-hs-modern-quantum-basics-measurements}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+interazione sistema\sphinxhyphen{}strumento
+
+\item {} 
+\sphinxAtStartPar
+lo strumento è tipicamente un sistema macroscopico che funziona nel regime ben descritto dalla fisica classica
+
+\item {} 
+\sphinxAtStartPar
+…
+
+\end{itemize}
+
 
 \subsection{Indeterminazione di Heisenberg}
-\label{\detokenize{ch/modern/quantum-basics:indeterminazione-di-heisenberg}}
+\label{\detokenize{ch/modern/quantum-basics:indeterminazione-di-heisenberg}}\label{\detokenize{ch/modern/quantum-basics:physics-hs-modern-quantum-basics-uncertainty}}
 \sphinxAtStartPar
 Non è possibile conoscere contemporaneamete il valore di alcune coppie di grandezze fisiche, dette complementari o coniugate. Alcuni esempi sono:
 \begin{itemize}
@@ -19483,6 +19598,25 @@ diverse componenti del momento della quantità di moto (sia momento totale, sia 
 …
 
 \end{itemize}
+
+
+\subsection{Spin, esperimento di Stern\sphinxhyphen{}Gerlach}
+\label{\detokenize{ch/modern/quantum-basics:spin-esperimento-di-stern-gerlach}}\label{\detokenize{ch/modern/quantum-basics:physics-hs-modern-quantum-basics-spin}}
+\sphinxAtStartPar
+Le particelle subatomiche manifestano due tipi di momento angolare:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+il momento angolare orbitale, \(\hat{\mathbf{L}}\)
+
+\item {} 
+\sphinxAtStartPar
+momento angolare intrinseco, di \sphinxstylestrong{spin}, \(\hat{\mathbf{S}}\)
+
+\end{itemize}
+
+\sphinxAtStartPar
+Il momento angolare totale è la somma di questi due contributi, \(\hat{\mathbf{J}} = \hat{\mathbf{L}} + \hat{\mathbf{S}}\)
 
 
 \subsection{Alcuni esempi 1\sphinxhyphen{}dimensionali}
@@ -19548,6 +19682,98 @@ valori di energia continui
 valore di energia discreti
 
 \end{itemize}
+
+
+\subsection{Atomo di Idrogeno, \protect\(H\protect\)}
+\label{\detokenize{ch/modern/quantum-basics:atomo-di-idrogeno-h}}
+
+\subsection{Sistemi di elementi identici}
+\label{\detokenize{ch/modern/quantum-basics:sistemi-di-elementi-identici}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+In meccanica quantistica, non è possibile distinguere elementi identici in sistemi che contengono più elementi
+
+\item {} 
+\sphinxAtStartPar
+Stato di un sistema
+\begin{equation*}
+\begin{split}\Psi(\mathbf{q}_1, \mathbf{q}_2, \dots \mathbf{q}_n) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+è indistinguibile con uno scambio di due elementi identici. Quindi in seguito a uno scambio di argomenti della funzione d’onda, la funzione d’onda non cambia a meno di un cambio di fase (in principio arbitrario, e ininfluente sulla fisica del problema),
+\begin{equation*}
+\begin{split}\Psi(\mathbf{q}_1, \dots, \mathbf{q}_a, \dots, \mathbf{q}_b, \dots, \mathbf{q}_n) = e^{j \alpha} \Psi(\mathbf{q}_1, \dots, \mathbf{q}_b, \dots, \mathbf{q}_a, \dots, \mathbf{q}_n) \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Un secondo scambio degli stessi argomenti comporta che
+\begin{equation*}
+\begin{split}\Psi(\mathbf{q}_1, \dots, \mathbf{q}_a, \dots, \mathbf{q}_b, \dots, \mathbf{q}_n) = e^{j 2 \alpha} \Psi(\mathbf{q}_1, \dots, \mathbf{q}_a, \dots, \mathbf{q}_b, \dots, \mathbf{q}_n) \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Questa relazione è soddisfatta per qualsiasi valore della funzione d’onda nel caso in cui \(e^{j 2 \alpha} = 1\), e quindi \(e^{i \alpha} = \pm 1\).
+
+\sphinxAtStartPar
+La funziona d’onda che rappresenta lo stato di un sistema composto da più elementi identici deve quindi essere o simmetrica o anti\sphinxhyphen{}simmetrica rispetto a uno scambio di indici:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+funzione d’onda simmetrica, i \sphinxstylestrong{bosoni}
+\begin{equation*}
+\begin{split}\Psi(\mathbf{q}_1, \dots, \mathbf{q}_a, \dots, \mathbf{q}_b, \dots, \mathbf{q}_n) = \Psi(\mathbf{q}_1, \dots, \mathbf{q}_b, \dots, \mathbf{q}_a, \dots, \mathbf{q}_n) \ .\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+funzione d’onda anti\sphinxhyphen{}simmetrica, i \sphinxstylestrong{fermioni}
+\begin{equation*}
+\begin{split}\Psi(\mathbf{q}_1, \dots, \mathbf{q}_a, \dots, \mathbf{q}_b, \dots, \mathbf{q}_n) = - \Psi(\mathbf{q}_1, \dots, \mathbf{q}_b, \dots, \mathbf{q}_a, \dots, \mathbf{q}_n) \ .\end{split}
+\end{equation*}
+\end{itemize}
+
+\end{itemize}
+\label{ch/modern/quantum-basics:pauli-principle}
+\begin{sphinxadmonition}{note}{Definition 33.3.1 (Principio di esclusione di Pauli \sphinxhyphen{} per fermioni)}
+
+
+
+\sphinxAtStartPar
+\sphinxstylestrong{Principio di esclusione di Pauli} Due fermoni della stessa natura non possono trovarsi nello stesso stato. La relazione di anti\sphinxhyphen{}simmetria della funzione d’onda per i fermioni corrisponde a una generalizzazione della condizione
+\begin{equation*}
+\begin{split}f(x,y) = - f(y,x) \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+In questo caso, se i due argomenti della funzione assumono lo stesso valore (analogia con due fermioni che si trovano nello stesso stato) allora segue che
+\begin{equation*}
+\begin{split}f(x,x) = - f(x,x) \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+relazione che implica \(f(x,x) = 0\). Poiché il modulo quadro di \(\Psi\) rappresenta la densità di probabilità di uno stato del sistema, se \(\Psi(\mathbf{q}_i) = 0\), allora
+\begin{equation*}
+\begin{split}p(\dots, \mathbf{q}_i, \dots, \mathbf{q}_i, \dots) = |\Psi(\dots, \mathbf{q}_i, \dots, \mathbf{q}_i, \dots)|^2 = 0 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi \sphinxstylestrong{la probabilità che due fermioni si trovino nello stesso stato è nulla}.
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} La natura dei fermioni è legata allo \DUrole{xref,myst}{spin} frazionario
+\label{ch/modern/quantum-basics:fermions-electrons}
+\begin{sphinxadmonition}{note}{Example 33.3.1 (Gli elettroni sono fermioni)}
+
+
+
+\sphinxAtStartPar
+Gli elettroni sono fermioni. Questo comportamento degli elettroni è alla base della spiegazione della struttura atomica, e dell’occupazione di orbitali differenti.
+\end{sphinxadmonition}
+\label{ch/modern/quantum-basics:example-2}
+\begin{sphinxadmonition}{note}{Example 33.3.2 (Bosoni in una buca di potenziale)}
+
+
+\end{sphinxadmonition}
+\label{ch/modern/quantum-basics:example-3}
+\begin{sphinxadmonition}{note}{Example 33.3.3 (Fermioni in una buca di potenziale)}
+
+
+\end{sphinxadmonition}
 
 \sphinxstepscope
 
@@ -20556,6 +20782,12 @@ solarigrafia, fotografia con materiale di recupero con tempi lunghissimi
 \bigletter{electric\sphinxhyphen{}dipole\sphinxhyphen{}ext\sphinxhyphen{}e\sphinxhyphen{}field}
 \item\relax\sphinxstyleindexentry{electric\sphinxhyphen{}dipole\sphinxhyphen{}ext\sphinxhyphen{}e\sphinxhyphen{}field}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{electric-dipole-ext-e-field}}
 \indexspace
+\bigletter{ex\sphinxhyphen{}doppler\sphinxhyphen{}ambulance\sphinxhyphen{}speed}
+\item\relax\sphinxstyleindexentry{ex\sphinxhyphen{}doppler\sphinxhyphen{}ambulance\sphinxhyphen{}speed}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/waves-phenomena:\detokenize{ex-doppler-ambulance-speed}}
+\indexspace
+\bigletter{ex\sphinxhyphen{}doppler\sphinxhyphen{}astronomy}
+\item\relax\sphinxstyleindexentry{ex\sphinxhyphen{}doppler\sphinxhyphen{}astronomy}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/waves-phenomena:\detokenize{ex-doppler-astronomy}}
+\indexspace
 \bigletter{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}cylinder}
 \item\relax\sphinxstyleindexentry{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}cylinder}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{ex-e-field-cylinder}}
 \indexspace
@@ -20578,10 +20810,10 @@ solarigrafia, fotografia con materiale di recupero con tempi lunghissimi
 \item\relax\sphinxstyleindexentry{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}sphere}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{ex-e-field-sphere}}
 \indexspace
 \bigletter{example\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/modern/einstein}\sphinxstyleindexpageref{ch/modern/einstein:\detokenize{example-0}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/waves-phenomena:\detokenize{example-0}}
 \indexspace
 \bigletter{example\sphinxhyphen{}1}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/modern/einstein}\sphinxstyleindexpageref{ch/modern/einstein:\detokenize{example-1}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/waves-phenomena:\detokenize{example-1}}
 \indexspace
 \bigletter{example\sphinxhyphen{}10}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}10}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-10}}
@@ -20611,10 +20843,10 @@ solarigrafia, fotografia con materiale di recupero con tempi lunghissimi
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}18}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-18}}
 \indexspace
 \bigletter{example\sphinxhyphen{}2}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/modern/einstein}\sphinxstyleindexpageref{ch/modern/einstein:\detokenize{example-2}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/waves-phenomena:\detokenize{example-2}}
 \indexspace
 \bigletter{example\sphinxhyphen{}3}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-3}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/modern/quantum\sphinxhyphen{}basics}\sphinxstyleindexpageref{ch/modern/quantum-basics:\detokenize{example-3}}
 \indexspace
 \bigletter{example\sphinxhyphen{}4}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}4}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-4}}
@@ -20636,6 +20868,9 @@ solarigrafia, fotografia con materiale di recupero con tempi lunghissimi
 \indexspace
 \bigletter{faraday\sphinxhyphen{}cage}
 \item\relax\sphinxstyleindexentry{faraday\sphinxhyphen{}cage}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{faraday-cage}}
+\indexspace
+\bigletter{fermions\sphinxhyphen{}electrons}
+\item\relax\sphinxstyleindexentry{fermions\sphinxhyphen{}electrons}\sphinxstyleindexextra{ch/modern/quantum\sphinxhyphen{}basics}\sphinxstyleindexpageref{ch/modern/quantum-basics:\detokenize{fermions-electrons}}
 \indexspace
 \bigletter{inertia\sphinxhyphen{}disk}
 \item\relax\sphinxstyleindexentry{inertia\sphinxhyphen{}disk}\sphinxstyleindexextra{ch/mechanics/inertia\sphinxhyphen{}continuum}\sphinxstyleindexpageref{ch/mechanics/inertia-continuum:\detokenize{inertia-disk}}
@@ -20705,6 +20940,9 @@ solarigrafia, fotografia con materiale di recupero con tempi lunghissimi
 \indexspace
 \bigletter{parametric\sphinxhyphen{}instability\sphinxhyphen{}buclking}
 \item\relax\sphinxstyleindexentry{parametric\sphinxhyphen{}instability\sphinxhyphen{}buclking}\sphinxstyleindexextra{ch/mechanics/dynamics\sphinxhyphen{}equilibrium\sphinxhyphen{}stability}\sphinxstyleindexpageref{ch/mechanics/dynamics-equilibrium-stability:\detokenize{parametric-instability-buclking}}
+\indexspace
+\bigletter{pauli\sphinxhyphen{}principle}
+\item\relax\sphinxstyleindexentry{pauli\sphinxhyphen{}principle}\sphinxstyleindexextra{ch/modern/quantum\sphinxhyphen{}basics}\sphinxstyleindexpageref{ch/modern/quantum-basics:\detokenize{pauli-principle}}
 \indexspace
 \bigletter{pendulum\sphinxhyphen{}free}
 \item\relax\sphinxstyleindexentry{pendulum\sphinxhyphen{}free}\sphinxstyleindexextra{ch/mechanics/dynamics\sphinxhyphen{}examples}\sphinxstyleindexpageref{ch/mechanics/dynamics-examples:\detokenize{pendulum-free}}
