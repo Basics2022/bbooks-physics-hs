@@ -9,8 +9,7 @@
 
 (physics-hs:waves:optics:geometric:principles)=
 ## Princìpi dell'ottica geometrica
-**Propagazione rettilinea in un mezzo omogeneo.** In un mezzo omogeneo, con indice di rifrazione $n$ ({prf:ref}`refraction-index`) uniforme, i raggi luminosi si propagano su traiettorie rettilinee.
-
+**Propagazione rettilinea in un mezzo omogeneo.** In un mezzo omogeneo, con indice di rifrazione $n$ ({prf:ref}`def:refraction-index`) uniforme, i raggi luminosi si propagano su traiettorie rettilinee.
 
 **Legge di Snell - riflessione e rifrazione tra mezzi discontinui.** Per soddisfare le condizioni di continuità del campo elettromagnetico in corrispondenza di una discontinuità di proprietà fisiche, un raggio che si propaga nel mezzo 1 e incidente su una discontinuità con il mezzo 2 con un angolo $\theta{1,i}$ con la direzione normale, in generale:
 - viene riflesso con lo stesso angolo 

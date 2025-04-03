@@ -25,11 +25,16 @@ Si possono distinguere tre approcci/regimi dell'ottica:
 
 **Velocità della luce nel vuoto.** La velocità della luce nel vuoto è una costante della natura. Viene qui indicata con $c_0$, o a volte con $c$ per brevità o pigrizia.
 
-**Velocità della luce nei materiali.** In molti materiali, la velocità della luce nel materiale $c_i$ può essere descritta come frazione della velocità della luce nel vuoto, $c_0$, tramite l'indice di rifrazione $n_i$ del materiale,
+```{prf:definition} Velocità della luce nei materiali e indice di rifrazione.
+:label: def:refraction-index
+
+ In molti materiali, la velocità della luce nel materiale $c_i$ può essere descritta come frazione della velocità della luce nel vuoto, $c_0$, tramite l'indice di rifrazione $n_i$ del materiale,
 
 $$c_i = \frac{c_0}{n_i} \ .$$
 
-In generale, la velocità di propagazione può dipendere dalla frequenza della propagazione stessa. In questo caso, il mezzo viene definito dispersivo. **todo** *mostrare esempi: rifrazione in prismi e arcobaleno; simulazione della propagazione di segnali in mezzi dispersivi*
+```
+
+In generale, la velocità di propagazione può dipendere dalla frequenza della propagazione stessa. In questo caso, il mezzo viene definito [ mezzo dispersivo](physics-hs:waves:optics:geometric:phenomena:dispersion). **todo** *mostrare esempi: rifrazione in prismi e arcobaleno; simulazione della propagazione di segnali in mezzi dispersivi*
 
 <!--
 ```{prf:definition} Indice di rifrazione
