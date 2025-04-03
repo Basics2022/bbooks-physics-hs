@@ -152,6 +152,10 @@ $$F = i_2 B_{21} L \ ,$$
 
 $$B_{21} = \frac{\mu}{2 \pi} \frac{i_1}{d}$$
 
+Storicamente, l'esperimento di Ampére fu utilizzato per [definire l'Ampére, $A$, come unità di misura della corrente elettrica](physics-hs:intro:physical-quantities:charge). Dalla definizione {prf:ref}`def:unit:ampere` segue il valore "esatto" della permeabilità del vuoto 
+
+$$\mu_0 = 4 \pi \cdot 10^{-7} \, H \, m^{-1}$$
+
 **todo** *direzione* del campo
 
 **todo** *immagini*

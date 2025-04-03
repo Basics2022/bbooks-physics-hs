@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch/intro/physical_quantities-charge';</script>
     <link rel="shortcut icon" href="../../_static/favicon-sugar.svg"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
@@ -370,7 +372,9 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../electromagnetism/em-waves.html">26. Onde elettromagnetiche</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-25"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../electromagnetism/em-waves-problems.html">26.4. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../electromagnetism/em-waves-spectrum.html">26.4. Spettro della radiazione elettromagnetica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../electromagnetism/em-waves-speed.html">26.5. Velocità della radiazione elettromagnetica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../electromagnetism/em-waves-problems.html">26.6. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../electromagnetism/thermoelectric-effects.html">27. Effetti foto-termo-elettro-meccanici</a></li>
@@ -382,8 +386,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../modern/experiments.html">30. Esperimenti</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/intro-radioactivity.html">31. Radioattività</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/einstein.html">32. Teoria di Einstein</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modern/quantum.html">33. Meccanica quantistica</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../modern/astronomy.html">34. Sviluppi dell’astronomia</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../modern/quantum.html">33. Meccanica quantistica</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../modern/quantum-basics.html">33.3. Introduzione alla meccanica quantistica</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../modern/astronomy.html">34. Sviluppi dell’astronomia</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-27"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../modern/astronomy-star-classification.html">34.1. Classificazione stellare</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../modern/astronomy-distance-ladder.html">34.2. Scala delle distanze cosmiche</a></li>
 </ul>
@@ -398,7 +405,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Strumenti di misura</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../instrumentation/intro.html">39. Strumenti di misura</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-27"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../instrumentation/intro.html">39. Strumenti di misura</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-28"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../instrumentation/kinematics.html">39.1. Misura posizione, velocità, accelerazione</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../instrumentation/mechanics.html">39.2. Quantità meccaniche</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../instrumentation/thermodynamics.html">39.3. Quantità termodinamiche</a></li>
@@ -631,6 +638,28 @@ document.write(`
 <span id="physics-hs-intro-physical-quantities-charge"></span><h1><span class="section-number">2.5. </span>Carica e corrente elettrica<a class="headerlink" href="#carica-e-corrente-elettrica" title="Permalink to this heading">#</a></h1>
 <p>La carica elettrica è una grandezza fisica</p>
 <p><strong>Strumenti e unità di misura.</strong></p>
+<div class="proof definition admonition" id="def:unit:ampere">
+<p class="admonition-title"><span class="caption-number">Definition 2.1 </span> (Ampére, <span class="math notranslate nohighlight">\(A\)</span>)</p>
+<div class="definition-content section" id="proof-content">
+<p>Definizione dell’Ampére, <span class="math notranslate nohighlight">\(A\)</span>, come unitò di misura tramite l”<a class="reference internal" href="../electromagnetism/electromagnetism-steady.html#physics-hs-electromagnetism-electromagnetism-steady-experience-oersted-ampere-ampere"><span class="std std-ref">esperimento di Ampère</span></a>:</p>
+<p><em><span class="math notranslate nohighlight">\(1/10\)</span> della corrente elettrica che genera <span class="math notranslate nohighlight">\(2 \, \text{dyne} = 2 \cdot 10^{-5} N\)</span> di forza per <span class="math notranslate nohighlight">\(cm\)</span> di lunghezza, tra due fili distanti <span class="math notranslate nohighlight">\(d = 1 \, \text{cm}\)</span></em></p>
+</div>
+</div><p>Seguendo i risultati dell’esperienza di Ampére, la forza per unità di lunghezza <span class="math notranslate nohighlight">\(\frac{F}{Ł}\)</span> scambiata tra due fili paralleli a distanza <span class="math notranslate nohighlight">\(d\)</span> percorsi da corrente elettrica <span class="math notranslate nohighlight">\(i_1\)</span>, <span class="math notranslate nohighlight">\(i_2\)</span> è proporzionale al prodotto delle correnti elettriche e inversamente proporzionale alla distanza,</p>
+<div class="math notranslate nohighlight">
+\[\frac{F}{L} = k \dfrac{i_1 \, i_2}{d} \ ,\]</div>
+<p>dove <span class="math notranslate nohighlight">\(k\)</span> è la costante di proporzionalità. Il valore della costante di proporzionalità (rispetto al sistema di unità di misura definito) viene calcolato introducendo i valori della definizione nella formula derivata dall’esperienza di Ampere. Quindi, con <span class="math notranslate nohighlight">\(i_1 = i_2 = 10 \, A\)</span>, <span class="math notranslate nohighlight">\(d = 10^{-2} \, m\)</span>, <span class="math notranslate nohighlight">\(\frac{F}{L} = 2 \cdot 10^{-5} \frac{N}{cm} = 2 \cdot 10^{-3} \frac{N}{m}\)</span>, si ottiene il valore della costante di proporzionalità</p>
+<div class="math notranslate nohighlight">
+\[k = \frac{\frac{F}{L} d}{i_1 i_2} = \frac{2 \cdot 10^{-3} \frac{N}{m} 10^{-2} \, m}{ 10^2 \, A^2} = 2 \cdot 10^{-7} \frac{N}{A^2} \ . \]</div>
+<p>L’unità di misura della costane di proporzionalità può essere espressa come</p>
+<div class="math notranslate nohighlight">
+\[\frac{kg \, m}{s^2 \, A^2} = \frac{N}{A^2} = H \, m^{-1} \ ,\]</div>
+<p>avendo introdotto l”<strong>henry</strong>, <em>H</em>, come unità di misura dell’induttanza.</p>
+<p>Per comodità, che permette di ottenere una circuitazione del campo magnetico senza costanti numeriche, si è soliti definire la costante di proporzionalità come</p>
+<div class="math notranslate nohighlight">
+\[k = \frac{\mu_0}{2 \pi} \ ,\]</div>
+<p>utilizzando la <strong>permeabilità magnetica del vuoto</strong> <span class="math notranslate nohighlight">\(\mu_0\)</span>, il cui valore - sempre per definizione - risulta essere</p>
+<div class="math notranslate nohighlight">
+\[\mu_0 = 2 \pi k = 4 \pi \cdot 10^{-7}\]</div>
 </div>
 
     <script type="text/x-thebe-config">

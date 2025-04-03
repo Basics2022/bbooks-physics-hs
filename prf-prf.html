@@ -375,7 +375,9 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="ch/electromagnetism/em-waves.html">26. Onde elettromagnetiche</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-25"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="ch/electromagnetism/em-waves-problems.html">26.4. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/electromagnetism/em-waves-spectrum.html">26.4. Spettro della radiazione elettromagnetica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/electromagnetism/em-waves-speed.html">26.5. Velocità della radiazione elettromagnetica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/electromagnetism/em-waves-problems.html">26.6. Problemi</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="ch/electromagnetism/thermoelectric-effects.html">27. Effetti foto-termo-elettro-meccanici</a></li>
@@ -387,8 +389,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="ch/modern/experiments.html">30. Esperimenti</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ch/modern/intro-radioactivity.html">31. Radioattività</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ch/modern/einstein.html">32. Teoria di Einstein</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ch/modern/quantum.html">33. Meccanica quantistica</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="ch/modern/astronomy.html">34. Sviluppi dell’astronomia</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/modern/quantum.html">33. Meccanica quantistica</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/modern/quantum-basics.html">33.3. Introduzione alla meccanica quantistica</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/modern/astronomy.html">34. Sviluppi dell’astronomia</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-27"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="ch/modern/astronomy-star-classification.html">34.1. Classificazione stellare</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch/modern/astronomy-distance-ladder.html">34.2. Scala delle distanze cosmiche</a></li>
 </ul>
@@ -403,7 +408,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Strumenti di misura</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="ch/instrumentation/intro.html">39. Strumenti di misura</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-27"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/instrumentation/intro.html">39. Strumenti di misura</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-28"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="ch/instrumentation/kinematics.html">39.1. Misura posizione, velocità, accelerazione</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch/instrumentation/mechanics.html">39.2. Quantità meccaniche</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ch/instrumentation/thermodynamics.html">39.3. Quantità termodinamiche</a></li>
@@ -577,6 +582,7 @@ document.write(`
    <a href="#cap-charge-sphere:conductor"><strong>charge-sphere:conductor</strong></a> | 
    <a href="#cap-charge-sphere:dielectric"><strong>charge-sphere:dielectric</strong></a> | 
    <a href="#cap-def-dimensions-homonegneous"><strong>def-dimensions-homonegneous</strong></a> | 
+   <a href="#cap-def:unit:ampere"><strong>def:unit:ampere</strong></a> | 
    <a href="#cap-definition-0"><strong>definition-0</strong></a> | 
    <a href="#cap-definition-2"><strong>definition-2</strong></a> | 
    <a href="#cap-definition-3"><strong>definition-3</strong></a> | 
@@ -721,6 +727,14 @@ document.write(`
        <td></td>
        <td>
        <a href="ch/intro/measurements.html#def-dimensions-homonegneous"><code class="xref">def-dimensions-homonegneous</code></a> <em>(ch/intro/measurements)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-def:unit:ampere"><td></td><td>
+       <strong>def:unit:ampere</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="ch/intro/physical_quantities-charge.html#def:unit:ampere"><code class="xref">def:unit:ampere</code></a> <em>(ch/intro/physical_quantities-charge)</em></td><td>
        <em>definition</em></td></tr>
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
      <tr class="cap" id="cap-definition-0"><td></td><td>
