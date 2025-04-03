@@ -1,10 +1,21 @@
 (physics-hs:modern:quantum:basics)=
 # Introduzione alla meccanica quantistica
 
+(physics-hs:modern:quantum:basics:probability)=
 ## Interpretazione probabilistica
 
-## Misura
+Interpretazione probabilistica di alcuni esperimenti:
+- doppia fenditura
+- intensità delle righe degli spettri di emissione
 
+(physics-hs:modern:quantum:basics:measurements)=
+## Misura
+- interazione sistema-strumento
+- lo strumento è tipicamente un sistema macroscopico che funziona nel regime ben descritto dalla fisica classica
+- ...
+
+
+(physics-hs:modern:quantum:basics:uncertainty)=
 ## Indeterminazione di Heisenberg
 Non è possibile conoscere contemporaneamete il valore di alcune coppie di grandezze fisiche, dette complementari o coniugate. Alcuni esempi sono:
 - stessa componente di posizione e quantità di moto
@@ -35,3 +46,57 @@ Barriera di potenziale, dominio infinito:
 
 ### Oscillatore armonico
 - valore di energia discreti
+
+## Atomo di Idrogeno, $H$
+
+## Sistemi di elementi identici
+- In meccanica quantistica, non è possibile distinguere elementi identici in sistemi che contengono più elementi
+- Stato di un sistema
+
+   $$\Psi(\mathbf{q}_1, \mathbf{q}_2, \dots \mathbf{q}_n) \ ,$$
+
+   è indistinguibile con uno scambio di due elementi identici. Quindi in seguito a uno scambio di argomenti della funzione d'onda, la funzione d'onda non cambia a meno di un cambio di fase (in principio arbitrario, e ininfluente sulla fisica del problema),
+
+   $$\Psi(\mathbf{q}_1, \dots, \mathbf{q}_a, \dots, \mathbf{q}_b, \dots, \mathbf{q}_n) = e^{j \alpha} \Psi(\mathbf{q}_1, \dots, \mathbf{q}_b, \dots, \mathbf{q}_a, \dots, \mathbf{q}_n) \ .$$
+
+   Un secondo scambio degli stessi argomenti comporta che 
+   
+   $$\Psi(\mathbf{q}_1, \dots, \mathbf{q}_a, \dots, \mathbf{q}_b, \dots, \mathbf{q}_n) = e^{j 2 \alpha} \Psi(\mathbf{q}_1, \dots, \mathbf{q}_a, \dots, \mathbf{q}_b, \dots, \mathbf{q}_n) \ .$$
+
+   Questa relazione è soddisfatta per qualsiasi valore della funzione d'onda nel caso in cui $e^{j 2 \alpha} = 1$, e quindi $e^{i \alpha} = \pm 1$.
+
+   La funziona d'onda che rappresenta lo stato di un sistema composto da più elementi identici deve quindi essere o simmetrica o anti-simmetrica rispetto a uno scambio di indici:
+   - funzione d'onda simmetrica, i **bosoni**
+
+     $$\Psi(\mathbf{q}_1, \dots, \mathbf{q}_a, \dots, \mathbf{q}_b, \dots, \mathbf{q}_n) = \Psi(\mathbf{q}_1, \dots, \mathbf{q}_b, \dots, \mathbf{q}_a, \dots, \mathbf{q}_n) \ .$$
+
+   - funzione d'onda anti-simmetrica, i **fermioni**
+
+     $$\Psi(\mathbf{q}_1, \dots, \mathbf{q}_a, \dots, \mathbf{q}_b, \dots, \mathbf{q}_n) = - \Psi(\mathbf{q}_1, \dots, \mathbf{q}_b, \dots, \mathbf{q}_a, \dots, \mathbf{q}_n) \ .$$
+
+```{prf:definition} Principio di esclusione di Pauli - per fermioni
+:label: pauli-principle
+
+**Principio di esclusione di Pauli** Due fermoni della stessa natura non possono trovarsi nello stesso stato. La relazione di anti-simmetria della funzione d'onda per i fermioni corrisponde a una generalizzazione della condizione 
+
+$$f(x,y) = - f(y,x) \ .$$
+
+In questo caso, se i due argomenti della funzione assumono lo stesso valore (analogia con due fermioni che si trovano nello stesso stato) allora segue che
+
+$$f(x,x) = - f(x,x) \ ,$$
+
+relazione che implica $f(x,x) = 0$. Poiché il modulo quadro di $\Psi$ rappresenta la densità di probabilità di uno stato del sistema, se $\Psi(\mathbf{q}_i) = 0$, allora
+
+$$p(\dots, \mathbf{q}_i, \dots, \mathbf{q}_i, \dots) = |\Psi(\dots, \mathbf{q}_i, \dots, \mathbf{q}_i, \dots)|^2 = 0 \ ,$$
+
+e quindi **la probabilità che due fermioni si trovino nello stesso stato è nulla**.
+
+```
+
+```{prf:example} Bosoni in una buca di potenziale
+```
+
+```{prf:example} Fermioni in una buca di potenziale
+```
+
+

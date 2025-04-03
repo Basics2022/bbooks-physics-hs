@@ -641,6 +641,8 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oscillatore-armonico">33.3.4.3. Oscillatore armonico</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#atomo-di-idrogeno-h">33.3.5. Atomo di Idrogeno, <span class="math notranslate nohighlight">\(H\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-elementi-identici">33.3.6. Sistemi di elementi identici</a></li>
 </ul>
             </nav>
         </div>
@@ -655,13 +657,23 @@ document.write(`
   <div class="tex2jax_ignore mathjax_ignore section" id="introduzione-alla-meccanica-quantistica">
 <span id="physics-hs-modern-quantum-basics"></span><h1><span class="section-number">33.3. </span>Introduzione alla meccanica quantistica<a class="headerlink" href="#introduzione-alla-meccanica-quantistica" title="Permalink to this heading">#</a></h1>
 <div class="section" id="interpretazione-probabilistica">
-<h2><span class="section-number">33.3.1. </span>Interpretazione probabilistica<a class="headerlink" href="#interpretazione-probabilistica" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-modern-quantum-basics-probability"></span><h2><span class="section-number">33.3.1. </span>Interpretazione probabilistica<a class="headerlink" href="#interpretazione-probabilistica" title="Permalink to this heading">#</a></h2>
+<p>Interpretazione probabilistica di alcuni esperimenti:</p>
+<ul class="simple">
+<li><p>doppia fenditura</p></li>
+<li><p>intensità delle righe degli spettri di emissione</p></li>
+</ul>
 </div>
 <div class="section" id="misura">
-<h2><span class="section-number">33.3.2. </span>Misura<a class="headerlink" href="#misura" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-modern-quantum-basics-measurements"></span><h2><span class="section-number">33.3.2. </span>Misura<a class="headerlink" href="#misura" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>interazione sistema-strumento</p></li>
+<li><p>lo strumento è tipicamente un sistema macroscopico che funziona nel regime ben descritto dalla fisica classica</p></li>
+<li><p>…</p></li>
+</ul>
 </div>
 <div class="section" id="indeterminazione-di-heisenberg">
-<h2><span class="section-number">33.3.3. </span>Indeterminazione di Heisenberg<a class="headerlink" href="#indeterminazione-di-heisenberg" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-modern-quantum-basics-uncertainty"></span><h2><span class="section-number">33.3.3. </span>Indeterminazione di Heisenberg<a class="headerlink" href="#indeterminazione-di-heisenberg" title="Permalink to this heading">#</a></h2>
 <p>Non è possibile conoscere contemporaneamete il valore di alcune coppie di grandezze fisiche, dette complementari o coniugate. Alcuni esempi sono:</p>
 <ul>
 <li><p>stessa componente di posizione e quantità di moto</p>
@@ -706,6 +718,59 @@ document.write(`
 </ul>
 </div>
 </div>
+<div class="section" id="atomo-di-idrogeno-h">
+<h2><span class="section-number">33.3.5. </span>Atomo di Idrogeno, <span class="math notranslate nohighlight">\(H\)</span><a class="headerlink" href="#atomo-di-idrogeno-h" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="sistemi-di-elementi-identici">
+<h2><span class="section-number">33.3.6. </span>Sistemi di elementi identici<a class="headerlink" href="#sistemi-di-elementi-identici" title="Permalink to this heading">#</a></h2>
+<ul>
+<li><p>In meccanica quantistica, non è possibile distinguere elementi identici in sistemi che contengono più elementi</p></li>
+<li><p>Stato di un sistema</p>
+<div class="math notranslate nohighlight">
+\[\Psi(\mathbf{q}_1, \mathbf{q}_2, \dots \mathbf{q}_n) \ ,\]</div>
+<p>è indistinguibile con uno scambio di due elementi identici. Quindi in seguito a uno scambio di argomenti della funzione d’onda, la funzione d’onda non cambia a meno di un cambio di fase (in principio arbitrario, e ininfluente sulla fisica del problema),</p>
+<div class="math notranslate nohighlight">
+\[\Psi(\mathbf{q}_1, \dots, \mathbf{q}_a, \dots, \mathbf{q}_b, \dots, \mathbf{q}_n) = e^{j \alpha} \Psi(\mathbf{q}_1, \dots, \mathbf{q}_b, \dots, \mathbf{q}_a, \dots, \mathbf{q}_n) \ .\]</div>
+<p>Un secondo scambio degli stessi argomenti comporta che</p>
+<div class="math notranslate nohighlight">
+\[\Psi(\mathbf{q}_1, \dots, \mathbf{q}_a, \dots, \mathbf{q}_b, \dots, \mathbf{q}_n) = e^{j 2 \alpha} \Psi(\mathbf{q}_1, \dots, \mathbf{q}_a, \dots, \mathbf{q}_b, \dots, \mathbf{q}_n) \ .\]</div>
+<p>Questa relazione è soddisfatta per qualsiasi valore della funzione d’onda nel caso in cui <span class="math notranslate nohighlight">\(e^{j 2 \alpha} = 1\)</span>, e quindi <span class="math notranslate nohighlight">\(e^{i \alpha} = \pm 1\)</span>.</p>
+<p>La funziona d’onda che rappresenta lo stato di un sistema composto da più elementi identici deve quindi essere o simmetrica o anti-simmetrica rispetto a uno scambio di indici:</p>
+<ul>
+<li><p>funzione d’onda simmetrica, i <strong>bosoni</strong></p>
+<div class="math notranslate nohighlight">
+\[\Psi(\mathbf{q}_1, \dots, \mathbf{q}_a, \dots, \mathbf{q}_b, \dots, \mathbf{q}_n) = \Psi(\mathbf{q}_1, \dots, \mathbf{q}_b, \dots, \mathbf{q}_a, \dots, \mathbf{q}_n) \ .\]</div>
+</li>
+<li><p>funzione d’onda anti-simmetrica, i <strong>fermioni</strong></p>
+<div class="math notranslate nohighlight">
+\[\Psi(\mathbf{q}_1, \dots, \mathbf{q}_a, \dots, \mathbf{q}_b, \dots, \mathbf{q}_n) = - \Psi(\mathbf{q}_1, \dots, \mathbf{q}_b, \dots, \mathbf{q}_a, \dots, \mathbf{q}_n) \ .\]</div>
+</li>
+</ul>
+</li>
+</ul>
+<div class="proof definition admonition" id="pauli-principle">
+<p class="admonition-title"><span class="caption-number">Definition 33.1 </span> (Principio di esclusione di Pauli - per fermioni)</p>
+<div class="definition-content section" id="proof-content">
+<p><strong>Principio di esclusione di Pauli</strong> Due fermoni della stessa natura non possono trovarsi nello stesso stato. La relazione di anti-simmetria della funzione d’onda per i fermioni corrisponde a una generalizzazione della condizione</p>
+<div class="math notranslate nohighlight">
+\[f(x,y) = - f(y,x) \ .\]</div>
+<p>In questo caso, se i due argomenti della funzione assumono lo stesso valore (analogia con due fermioni che si trovano nello stesso stato) allora segue che</p>
+<div class="math notranslate nohighlight">
+\[f(x,x) = - f(x,x) \ ,\]</div>
+<p>relazione che implica <span class="math notranslate nohighlight">\(f(x,x) = 0\)</span>. Poiché il modulo quadro di <span class="math notranslate nohighlight">\(\Psi\)</span> rappresenta la densità di probabilità di uno stato del sistema, se <span class="math notranslate nohighlight">\(\Psi(\mathbf{q}_i) = 0\)</span>, allora</p>
+<div class="math notranslate nohighlight">
+\[p(\dots, \mathbf{q}_i, \dots, \mathbf{q}_i, \dots) = |\Psi(\dots, \mathbf{q}_i, \dots, \mathbf{q}_i, \dots)|^2 = 0 \ ,\]</div>
+<p>e quindi <strong>la probabilità che due fermioni si trovino nello stesso stato è nulla</strong>.</p>
+</div>
+</div><div class="proof example admonition" id="example-1">
+<p class="admonition-title"><span class="caption-number">Example 33.1 </span> (Bosoni in una buca di potenziale)</p>
+<div class="example-content section" id="proof-content">
+</div>
+</div><div class="proof example admonition" id="example-2">
+<p class="admonition-title"><span class="caption-number">Example 33.2 </span> (Fermioni in una buca di potenziale)</p>
+<div class="example-content section" id="proof-content">
+</div>
+</div></div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -780,6 +845,8 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oscillatore-armonico">33.3.4.3. Oscillatore armonico</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#atomo-di-idrogeno-h">33.3.5. Atomo di Idrogeno, <span class="math notranslate nohighlight">\(H\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-di-elementi-identici">33.3.6. Sistemi di elementi identici</a></li>
 </ul>
   </nav></div>
 
