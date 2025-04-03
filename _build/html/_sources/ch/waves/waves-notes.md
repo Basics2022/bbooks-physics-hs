@@ -1,8 +1,10 @@
 (physics-hs:waves:notes)=
 # Note
 
+(physics-hs:waves:notes:elementary-sol)=
 ## Soluzioni particolari
 
+(physics-hs:waves:notes:elementary-sol:free)=
 ### Moti liberi
 #### Vibrazione di una corda con estremi vincolati 
 
@@ -16,7 +18,7 @@ $$
 
 La velocità di propagazione delle perturbazioni è $c = \sqrt{\frac{\sigma_0}{m}}$.
 
-````{dropdown} Onde stazionarie - modi propri di vibrare
+````{dropdown} Onde $\ $ stazionarie - modi propri di vibrare
 Si applica il metodo di separazione delle variabili $u(x,t) = f(x) g(t)$,
 
 $$m f \ddot{g} - \sigma_0 f'' g = 0 \ ,$$
@@ -67,7 +69,7 @@ $$\begin{aligned}
 e quindi risultano essere i coefficienti delle **serie di Fourier** della posizione e della velocità iniziale. Nel caso di configurazione iniziale in quiete, $\dot{u}(x,0) = 0$, i coefficienti $\beta_n$ sono nulli, $\beta_n = 0$.
 
 ````
-````{dropdown} Onde viaggianti
+````{dropdown} Onde $\ $ viaggianti
 
 Si usano le proprietà delle funzoni trigonometriche,
 
@@ -120,7 +122,7 @@ $$\begin{aligned}
 
 La velocità di propagazione delle perturbazioni è $c = \sqrt{\frac{GJ}{I}}$.
 
-````{dropdown} Onde stazionarie - modi propri di vibrare
+````{dropdown} Onde $\ $ stazionarie - modi propri di vibrare
 Si applica il metodo di separazione delle variabili $u(x,t) = f(x) g(t)$,
 
 $$m f \ddot{g} - \sigma_0 f'' g = 0 \ ,$$

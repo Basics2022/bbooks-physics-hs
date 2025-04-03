@@ -632,7 +632,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dominio-1-dimensionale">21.2.1. Dominio 1-dimensionale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dominio-1-dimensionale">21.2.1. Dominio 1-dimensionale</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#onde-stazionarie">21.2.1.1. Onde stazionarie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#onde-viaggianti">21.2.1.2. Onde viaggianti</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dominio-3-dimensionale">21.2.2. Dominio 3-dimensionale</a></li>
 </ul>
             </nav>
@@ -651,9 +655,12 @@ document.write(`
 <p>Vengono qui discusse alcune soluzioni elementari dell”<span class="xref myst">equazione lineare delle onde</span>. In un problema lineare, una soluzione qualsiasi può essere ottenuta come somma di soluzioni elementari, sfruttando il principio di sovrapposizione delle cause e degli effetti (<strong>todo-list:</strong><a class="reference internal" href="../todo.html#physics-hs-todo-psce"><span class="std std-ref"><strong>PSCE</strong></span></a>): un segnale generico e la sua evoluzione può quindi essere studiato come somma di segnali semplici che evolvono in maniera indipendente l’uno dall’altro (<strong>todo-list:</strong><a class="reference internal" href="../todo.html#physics-hs-todo-fourier"><span class="std std-ref"><strong>analisi di Fourier</strong></span></a>)</p>
 <p>In particolare, vengono alcune soluzioni elementari in domini 1-dimensionali, nella forma di onde stazionarie o onde viaggianti, e in domini 3-dimensionali, nella forma di onde piane e onde sferiche.</p>
 <p>Per ognuna di queste perturbazioni elementari<a class="footnote-reference brackets" href="#eikonal-approx" id="id1">1</a> prese singolarmente è possibile definire una lunghezza d’onda (o in 3d un vettore d’onda locale che indica la direzione della propagazione), una frequenza e la velocità della perturbazione.</p>
+<p>Alcuni esempi sono riportati nella sezione delle <a class="reference internal" href="waves-notes.html#physics-hs-waves-notes"><span class="std std-ref">Note</span></a> in fondo al capitolo.</p>
 <div class="section" id="dominio-1-dimensionale">
-<h2><span class="section-number">21.2.1. </span>Dominio 1-dimensionale<a class="headerlink" href="#dominio-1-dimensionale" title="Permalink to this heading">#</a></h2>
-<p><strong>Onde stazionarie.</strong> Una soluzione generica dell’equazione delle onde può essere scritta come somma di onde stazionarie nella forma</p>
+<span id="physics-hs-waves-equation-solutions-1d"></span><h2><span class="section-number">21.2.1. </span>Dominio 1-dimensionale<a class="headerlink" href="#dominio-1-dimensionale" title="Permalink to this heading">#</a></h2>
+<div class="section" id="onde-stazionarie">
+<span id="physics-hs-waves-equation-solutions-1d-modes"></span><h3><span class="section-number">21.2.1.1. </span>Onde stazionarie<a class="headerlink" href="#onde-stazionarie" title="Permalink to this heading">#</a></h3>
+<p>Una soluzione generica dell’equazione delle onde può essere scritta come somma di onde stazionarie nella forma</p>
 <div class="math notranslate nohighlight">
 \[f_n(x) = \cos(k_n x + \phi_n) \ ,\]</div>
 <p>modulate da un’ampiezza</p>
@@ -675,7 +682,10 @@ Dimostrazione<div class="sd-summary-down docutils">
 \end{aligned}\end{split}\]</div>
 <p class="sd-card-text">così che <span class="math notranslate nohighlight">\(\partial_{tt} u - c^2 \partial_{tt} u = \left( -\omega_n^2 + c^2 k_n^2 \right) u = 0\)</span> se è soddisfatta la relazione tra la pulsazione <span class="math notranslate nohighlight">\(\omega_n\)</span> e il vettore d’onda <span class="math notranslate nohighlight">\(k_n\)</span>, <span class="math notranslate nohighlight">\(\omega_n = c k_n\)</span>.</p>
 </div>
-</details><p><strong>Onde viaggianti.</strong> Utilizzando le proprietà delle funzioni trigonometriche, la funzione <span class="math notranslate nohighlight">\(u_n(x,t) = f_{n}(x) g_n(t)\)</span> può essere scritta come somma di due onde viaggianti con velocità <span class="math notranslate nohighlight">\(c\)</span>,</p>
+</details></div>
+<div class="section" id="onde-viaggianti">
+<span id="physics-hs-waves-equation-solutions-1d-travelling"></span><h3><span class="section-number">21.2.1.2. </span>Onde viaggianti<a class="headerlink" href="#onde-viaggianti" title="Permalink to this heading">#</a></h3>
+<p>Utilizzando le proprietà delle funzioni trigonometriche, la funzione <span class="math notranslate nohighlight">\(u_n(x,t) = f_{n}(x) g_n(t)\)</span> può essere scritta come somma di due onde viaggianti con velocità <span class="math notranslate nohighlight">\(c\)</span>,</p>
 <div class="math notranslate nohighlight" id="equation-travelling-waves">
 <span class="eqno">(21.3)<a class="headerlink" href="#equation-travelling-waves" title="Permalink a questa equazione">#</a></span>\[u_n(x,t) = f_n(x) g_n(t) = A_n^{-}(x+ct) + A_n^{+}(x-ct) \ .\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -717,6 +727,7 @@ u_n(x,t)
 <p>Usando le relazioni tra lunghezza d’onda e vettore d’onda <span class="math notranslate nohighlight">\(\lambda = \frac{2 \pi}{k_n}\)</span>, e tra periodo e puslazione <span class="math notranslate nohighlight">\(T_n = \frac{2 \pi}{\omega_n}\)</span>, si ottiene di nuovo</p>
 <div class="math notranslate nohighlight">
 \[\omega_n = c k_n \ .\]</div>
+</div>
 </div>
 <div class="section" id="dominio-3-dimensionale">
 <h2><span class="section-number">21.2.2. </span>Dominio 3-dimensionale<a class="headerlink" href="#dominio-3-dimensionale" title="Permalink to this heading">#</a></h2>
@@ -803,7 +814,11 @@ u_n(x,t)
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dominio-1-dimensionale">21.2.1. Dominio 1-dimensionale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dominio-1-dimensionale">21.2.1. Dominio 1-dimensionale</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#onde-stazionarie">21.2.1.1. Onde stazionarie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#onde-viaggianti">21.2.1.2. Onde viaggianti</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dominio-3-dimensionale">21.2.2. Dominio 3-dimensionale</a></li>
 </ul>
   </nav></div>
