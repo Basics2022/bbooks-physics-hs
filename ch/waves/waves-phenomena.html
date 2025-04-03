@@ -633,9 +633,9 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interferenza">21.3.1. Interferenza</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riflessione">21.3.2. Riflessione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rifrazione">21.3.3. Rifrazione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diffrazione">21.3.4. Diffrazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diffrazione">21.3.2. Diffrazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riflessione">21.3.3. Riflessione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rifrazione">21.3.4. Rifrazione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#polarizzazione">21.3.5. Polarizzazione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effetto-doppler">21.3.6. Effetto Doppler</a></li>
 </ul>
@@ -661,15 +661,21 @@ document.write(`
 <ul class="simple">
 <li><p>distinguere tra PSCE di segnali, e pattern di interferenza che compare nel quadrato del segnale, spesso associato alle grandezze percepite con i sensi e/o misurate da strumenti di misura (es. intensità luminosa della radiazione elettromagnetica)</p></li>
 </ul>
-</div>
-<div class="section" id="riflessione">
-<span id="physics-hs-waves-effects-reflection"></span><h2><span class="section-number">21.3.2. </span>Riflessione<a class="headerlink" href="#riflessione" title="Permalink to this heading">#</a></h2>
-</div>
-<div class="section" id="rifrazione">
-<span id="physics-hs-waves-effects-refraction"></span><h2><span class="section-number">21.3.3. </span>Rifrazione<a class="headerlink" href="#rifrazione" title="Permalink to this heading">#</a></h2>
+<table class="table">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><img alt="" src="../../_images/psce-0.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="" src="../../_images/psce-1.png" /></p></td>
+</tr>
+</tbody>
+</table>
+<p><span style="color:red">Studio sistematico della diffrazione, con esempi: di limite di Fresnel e Fraunhofer; limite di diffrazione; pattern di diffrazione in funzione della forma dell’apertura,…</span></p>
 </div>
 <div class="section" id="diffrazione">
-<span id="physics-hs-waves-effects-diffraction"></span><h2><span class="section-number">21.3.4. </span>Diffrazione<a class="headerlink" href="#diffrazione" title="Permalink to this heading">#</a></h2>
+<span id="physics-hs-waves-effects-diffraction"></span><h2><span class="section-number">21.3.2. </span>Diffrazione<a class="headerlink" href="#diffrazione" title="Permalink to this heading">#</a></h2>
 <p>La diffrazione è una conseguenza dell’intereferenza di un’onda con un ostacolo o un’apertura di dimensione parabonabile alla lunghezza d’onda (<a class="reference internal" href="waves-elementary-solutions.html#wave-length">Definition 21.2</a>) della perturbazione.</p>
 <p>Per alcune geometrie semplici, sono note alcune soluzioni approssimate dei pattern di interferenza in seguito alla diffrazione:</p>
 <ul class="simple">
@@ -698,6 +704,12 @@ document.write(`
 <div class="example-content section" id="proof-content">
 </div>
 </div></div>
+<div class="section" id="riflessione">
+<span id="physics-hs-waves-effects-reflection"></span><h2><span class="section-number">21.3.3. </span>Riflessione<a class="headerlink" href="#riflessione" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="rifrazione">
+<span id="physics-hs-waves-effects-refraction"></span><h2><span class="section-number">21.3.4. </span>Rifrazione<a class="headerlink" href="#rifrazione" title="Permalink to this heading">#</a></h2>
+</div>
 <div class="section" id="polarizzazione">
 <span id="physics-hs-waves-effects-polarization"></span><h2><span class="section-number">21.3.5. </span>Polarizzazione<a class="headerlink" href="#polarizzazione" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
@@ -729,7 +741,41 @@ $$f(x, t) = A_+(x-x_s(t_{ret}) - c(t-t_{ret}))$$
 \[(v_s \mp c) t_{ret} = (v_r \mp c) t + x_{r,0} - x_{s,0}\]</div>
 <div class="math notranslate nohighlight">
 \[t_{ret} = \dfrac{v_r \mp c}{v_s \mp c} t + \dfrac{x_{r,0} - x_{s,0}}{v_s \mp c}\]</div>
-<!--
+<div class="proof example admonition" id="ex-doppler-ambulance-speed">
+<p class="admonition-title"><span class="caption-number">Example 21.7 </span> (Stima della velocità dell’ambulanza con effetto Doppler)</p>
+<div class="example-content section" id="proof-content">
+<p>Si conosce la temperatura ambiente, <span class="math notranslate nohighlight">\(T_a\)</span>, che permette di valutare la velocità di propagazione del suono, <span class="math notranslate nohighlight">\(c = \sqrt{\gamma R T}\)</span>. Mentre ci si trova per strada ad aspettare l’autobus, e stiamo giocando con il nostro smartphone con un’app che rende disponibili la misura della frequenza dei suoni ricevuti, sentiamo arrivare un’ambulanza.</p>
+<p>Essendo a conoscenza dell’effetto Doppler, vogliamo stimare la velocità dell’ambulanza osservando la frequenza misurata del suono emesso dalla sirena dell’ambulanza mentre si sta avvicinando <span class="math notranslate nohighlight">\(f_1\)</span> e mentre si sta allontanando da noi <span class="math notranslate nohighlight">\(f_2\)</span>. Si chiede quindi di:</p>
+<ol class="arabic simple">
+<li><p>stimare la velocità dell’ambulanza, <span class="math notranslate nohighlight">\(v\)</span>, rispetto alla strada</p></li>
+<li><p>stimare la frequenza della sorgente, <span class="math notranslate nohighlight">\(f_0\)</span></p></li>
+<li><p>ripetere i calcoli nelle due seguenti situazioni:</p>
+<ul class="simple">
+<li><p>non siamo fermi rispetto alla strada, ma ci stiamo muovendo a un passo di <span class="math notranslate nohighlight">\(v_r = 1 \, m/s\)</span> nella stessa direzione dell’ambulanza</p></li>
+<li><p>siamo fermi rispetto alla strada, ma c’è un vento uniforme con velocità <span class="math notranslate nohighlight">\(v_m = 3 \, m /s\)</span> che soffia nella stessa direzione del moto dell’ambulanza</p></li>
+</ul>
+</li>
+</ol>
+</div>
+</div><div class="proof example admonition" id="ex-doppler-astronomy">
+<p class="admonition-title"><span class="caption-number">Example 21.8 </span> (Effetto doppler in astronomia)</p>
+<div class="example-content section" id="proof-content">
+<p>Si vuole determinare velocità della galassia <strong>XXX</strong> <strong>todo</strong> analizzando la radiazione elettromagnetica emessa dalla galassia che arriva sulla Terra. Nello spettro di emissione si riconosce la linea <span class="math notranslate nohighlight">\(H-\alpha\)</span>, legata alla presenza di idrogeno ionizzato, e a una transizione di un <span class="math notranslate nohighlight">\(e^-\)</span> di un atomo di <span class="math notranslate nohighlight">\(H\)</span> dal livello di energia <span class="math notranslate nohighlight">\(n=3\)</span> al livello di energia <span class="math notranslate nohighlight">\(n=2\)</span>.</p>
+<p>Queta riga spettrale è associata a una lunghezza d’onda <span class="math notranslate nohighlight">\(\lambda^0_{H\alpha} = 656.46 \, nm\)</span> nel vuoto, e quindi <span class="math notranslate nohighlight">\(f^0_{H\alpha} = \...\)</span>, in un sistema in quiete relativa.</p>
+<p>Nello spettro misurato si riconosce la linea <span class="math notranslate nohighlight">\(H\alpha\)</span> con una lunghezza d’onda <span class="math notranslate nohighlight">\(\lambda = 659.5 \, nm\)</span>. (Virgo cluster)</p>
+<p>Si chiede di:</p>
+<ol class="arabic simple">
+<li><p>calcolare la velocità radiale usando le formule per l’effetto Doppler non relativistico</p></li>
+<li><p>valuatere l’errore commesso usando le formule dell’effetto Doppler non relativistico, rispetto all’uso delle formule che tengono conto degli effetti relativistici</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\lambda_{r} = \lambda_e \sqrt{\frac{1 + v/c}{1-v/c}}\]</div>
+<p>Il rapporto,</p>
+<div class="math notranslate nohighlight">
+\[z = \frac{\lambda_r - \lambda_e}{\lambda_e}\]</div>
+<p>viene definito <strong>red-shift</strong>, o <strong>spostamento verso il rosso</strong>, come sarà più chiaro nella discussione dello <span class="xref myst">spettro elettromagnetico</span></p>
+</div>
+</div><!--
 $$x - x_{s,0} - v_s t_{ret} = c \left( t - t_{ret} \right)$$
 
 $$t_{ret} = \dfrac{c}{c - v_s} t - \dfrac{x - x_{s,0}}{c}$$
@@ -801,9 +847,9 @@ $$t_{ret} = \dfrac{c}{c - v_s} t - \dfrac{x - x_{s,0}}{c}$$
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interferenza">21.3.1. Interferenza</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riflessione">21.3.2. Riflessione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rifrazione">21.3.3. Rifrazione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diffrazione">21.3.4. Diffrazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diffrazione">21.3.2. Diffrazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riflessione">21.3.3. Riflessione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rifrazione">21.3.4. Rifrazione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#polarizzazione">21.3.5. Polarizzazione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effetto-doppler">21.3.6. Effetto Doppler</a></li>
 </ul>

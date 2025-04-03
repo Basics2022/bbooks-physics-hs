@@ -1,7 +1,7 @@
 (physics-hs:waves:intro)=
 # Introduzione ai fenomeni ondulatori
 
-**Cosa intendiamo per onda?** Il termine onda è comunemente associato alla propagazione di una perturbazione - rispetto a una condizione di equilibrio - di una quantità fisica nello spazio e nel tempo, in grado di trasportare energia e in molti casi con una **velocità di propagazione** ben definita[^wave-speed].
+**Cosa intendiamo per onda?** Il termine onda è comunemente associato alla propagazione di una perturbazione - rispetto a una condizione di equilibrio - di una quantità fisica nello spazio e nel tempo, in grado di trasportare energia e in molti casi con una **velocità di propagazione finita** e ben definita[^wave-speed].
 
 Da un punto di vista matematico, la propagazione di perturbazioni di diverse quantità fisiche è governata dallo **stesso modello matematico**:
 così, ad esempio, lo stesso modello matematico governa la trasmissione delle onde meccaniche nella materia e delle onde elettromagnetiche nella materia o nel "vuoto" - di materia[^space-physical-properties].
@@ -10,22 +10,30 @@ L'interazione con ostacoli può dipendere dalle dimensioni relative dell'ostacol
 
 La propagazione di disturbi di intensità "sufficientemente piccola" può essere descritta con un modello lineare, l'*equazione delle onde*. La linearità di un problema consente di utilizzare il **principio di sovrapposizione delle cause e degli effetti**, e scomporre perturbazioni con "forma complessa" come somma di [perturbazioni più semplici](physics-hs:waves:equation:solutions).
 
-Da quanto detto nell'introduzione, dovrebbe risultare sensato il programma di questo capitolo.
-- L'[equazione delle onde in diversi sistemi fisici](physics-hs:waves:equation:examples) viene ricavata a partire da equazioni di bilancio. Partendo da equazioni di bilancio differenti, in ambiti differenti, in alcuni casi si arriva allo stesso modello matematico: l'equazione delle onde.
-- Una volta ricavata l'equazione delle onde in diversi ambiti, dovrebbe risultare sensato investire un po' di tempo per discutere il modello matematico - indipendente dall'applicazione -, descrivendone
-  - le [soluzioni elementari](physics-hs:waves:equation:solutions), che possono essere composte in un problema lineare per ricavare una soluzione generale
-  - le [caratteristiche dei fenomeni ondulatori](physics-hs:waves:phenomena), che possono manifestarsi
+**Contenuti.**
+```{dropdown} [Equazione delle onde in diversi sistemi fisici](physics-hs:waves:equation:examples)
+ Partendo da equazioni di bilancio differenti, in ambiti della fisica differenti, si arriva allo stesso modello matematico: l'equazione delle onde.
+```
+```{dropdown} [Soluzioni elementari dell'equazione delle onde](physics-hs:waves:equation:solutions),
+Vengono presentate alcune soluzioni elementari dell'equazione delle onde, che possono essere combinate tramite il [principio di sovrapposizione di cause e degli effetti (PSCE)](physics-hs:todo:psce) per ottenere soluzioni generali in problemi lineari.
+```
+```{dropdown} [Caratteristiche dei fenomeni ondulatori](physics-hs:waves:phenomena)
+Caratteristiche delle perturbazioni (direzione di propagazione, polarizzazione, ampiezza, lunghezza d'onda,..., velocità di fase e di gruppo,...), e fenomeni (interferenza, Doppler, riflessione, rifrazione, diffrazione,...)
+```
 
+**Origine della perturbazione.**
+L'introduzione si è concentrata sulla definizione di onda come perturbazione di una quantità fisica che si propaga con determinate caratteristiche, ma nulla è stato detto sull'origine della perturbazione. Le cause che creano la perturbazione dipendono dal sistema studiato:
 
----
-
+<span style="color:red">sistemare esempi: quantità fisica che viene perturbata; cause della perturbazione; ricezione;...</span>
 <!--
-La perturbazione di diverse quantità fisiche in vari ambiti delle scienze è governata dallo **stesso modello matematico**, e quindi diversi fenomeni fisici mostrano formalmente le stesse caratteristiche.
+- le vibrazioni in un materiale possono essere generate da una sollecitazione meccanica, sotto forma di forza imposta o spostamento rispetto allo stato di quiete imposto;
+- il suono è un'onda di pressione in mezzi che può essere generata dall'interazione del mezzo con un altro corpo (esempi: membrana degli altoparlanti che vibra per generare le onde sonore che, dopo la trasmissione ed entro certi limiti, possiamo percepire con il nostro apparato uditivo
+- le onde elettromagnetiche sono generate dal moto - non uniforme - di cariche elettriche. Alcune applicazioni producono un'oscillazione di carica elettrica per generare la perturbazione del campo EM, come le antenne (che funzionano sia come trasmettitori sia come ricevitori...); tutti i corpi emettono radiazione elettromagnetica...
 -->
 
 ```{dropdown} Alcuni esempi
 Alcuni fenomeni fisici governati dall'equazione delle onde sono:
-- le onde meccaniche nella amteria che si manifestano sotto forma di vibrazione. Alcuni esempi sono:
+- le onde meccaniche nella materia che si manifestano sotto forma di vibrazione. Alcuni esempi sono:
   - la vibrazione delle corde tese di strumenti a corda. Lo stato a riposo della corda viene perturbato da un'azione esterna (lo sfregamento di un arco per le viole, il pizzicamento per la chitarra, la percussione per pianoforte). La perturbazione introdotta si trasmette poi lungo la corda tesa con una dinamica descritta dall'equazione delle onde, ed è visibile come perturbazione della posizione della corda
   - i terremoti. Lo stato a riposo delle rocce nel sottosuolo viene alterato dal cedimento improvviso di una condizione di equilibrio, a causa del raggiungimento del carico di rottura. Questo movimento improvviso, quasi impulsivo, introduce una perturbazione della posizione delle che si trasmette *attraverso i diversi strati* della Terra sotto forma di onde sismiche, che vengono percepite come terremoti quando arrivano sulla superficie terrestre. Il punto in cui si verifica il cedimento è l'*ipocentro*, mentre la sua proiezione sulla superficie terrestre è l'epicentro*; in media, l'intensità della perturbazione diminuisce con la distanza dall'ipocentro
   - il suono. Lo stato di quiete dell'aria o di un altro fluido viene perturbato da un'azione esterna, che introduce una perturbazione di pressione - tipicamente il movimento di una superficie solida come può essere la vibrazione degli strumenti a corda discussi sopra, ma non solo: **todo** getti e spettro in fluidi, fuoco,.... Questa perturbazione si trasmette all'interno del fluido come onda di pressione. Quando una perturbazione con contenuti sensibili in frequenza tra i $20 \, \text{Hz}$ e i $20 \, \text{kHz}$ raggiunge l'[orecchio umano](physics-hs:intro:sensing:hearing), questo è in grado di convertire il segnale di pressione in segnale nervoso che il nostro cervello elabora come suono
