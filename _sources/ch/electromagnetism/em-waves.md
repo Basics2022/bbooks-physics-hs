@@ -9,7 +9,7 @@ La **velocità della luce** nel vuoto è considerata ad oggi una **costante dell
 
 
 
-```{dropdown} **Maxwell - il modello matematico.**
+```{dropdown} **1865 - Maxwell - il modello matematico.**
 Le equazioni di Maxwell forniscono un modello matematico per i fenomeni dell'elettromagnetismo classico. Sotto opportune condizioni, le equazioni prevedono la possibilità che il campo elettromagnetico possa propagarsi come un fenomeno ondulatorio. La rapida oscillazione di un cariche elettriche - e quindi una corrente alternata ad alta frequenza - è una sorgente di onde elettromagnetiche: un modello di questa sorgente è un dipolo oscillante, una realizzazione pratica fondamentale sono le antenne per le trasissioni di onde EM.
 
 Ai tempi, non era ancora chiaro che la luce visibile fosse un effetto EM, un esempio di onde EM con una particolare lunghezza d'onda e frequenza percepibile dall'occhio umano, i nostri percettori della vista.
@@ -17,11 +17,13 @@ Ai tempi, non era ancora chiaro che la luce visibile fosse un effetto EM, un ese
 Le equazioni di Maxwell prevedevano una velocità di propagazione delle onde EM nel vuoto non lontana dalle migliori misure disponibili allora per la velocità della luce. La natura ondulatoria mostrata dalla luce (riflessione, diffrazione, rifrazione, interferenza, e anche polarizzazione) e le misure di velocità simili a quelle previste dal modello di Maxwell portarono all'interpretazione della luce come fenomeno EM, e diedero forti argomenti a sostegno della natura ondulatoria nel dibattito sulla natura corpuscolare o ondulatoria della luce.
 ```
 
+<!--
 ```{dropdown} Misure della velocità della luce
 **todo**
 ```
+-->
 
-```{dropdown} **Hertz - la prova sperimentale.**
+```{dropdown} **1886-89 - Hertz - la prova sperimentale.**
 
 Gli esperimenti del 1887-88 di H.R.Hertz(1857-1894)[^emwave-bragg][^emwave-fst] dimostrarono sperimentalmente l'esistenza delle onde, come fenomeno fisico:
 - capace di propagare nello spazio senza bisogno di un conduttore (**todo** *fondamentale per le applicazioni radio di Marconi*)
@@ -39,7 +41,7 @@ Hertz fece altre esperienze significative:
 **todo** *controllare citazioni* H.R.Hertz riteneva inutile ai fini pratici la sua scoperta (!), cosa presto smentita da **Marconi**...
 ```
 
-```{dropdown} **Marconi - le applicazioni.**
+```{dropdown} **1894-95 - Marconi - le prime applicazioni.**
 
 **todo** *due parole sul contensto storico, la stesura dei cavi sottomarini e transoceanici del telegrafo - in cui erano coinvolti anche personaggi del calibro di Kelvin -, e rivoluzione della radio per le comunicazioni*
 
@@ -55,9 +57,6 @@ Oggi, le onde EM hanno un enorme numero di applicazioni.
 ```
 
 **todo** <span style="color:red">è possibile arrivare a un equazione per le onde senza passare dalle equazioni in forma differenziale? Magari con qualche analogia meccanica governata dalle equazioni delle onde. Se sì, in maniera sufficiente formale, figata</span>
-
-
-
 
 
 (physics-hs:electromagnetism:em-waves:hertz)=
