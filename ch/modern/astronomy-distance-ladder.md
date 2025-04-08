@@ -53,7 +53,31 @@ Keplero fu in grado di definire la **forma delle orbite** e le **dimensioni rela
 
 (physics-hs:modern:astronomy:distance-ladder:sun:venus)=
 ## Distanza Sole, Terra, Venere
-...
+La parallasse solare è usata per stimare la distanza Terra, Venere, Sole osservando il passaggio di Venere tra Terra e Sole da diverse località.
+
+Sia $D$ la latitudine di due località differenti, la proiezione delle due immagini di Venere sul Sole hanno distanza $R_S \left( \cos \varphi_1 - \cos \varphi_2 \right)$. I due angoli $\varphi_1$, $\varphi_2 = \varphi_1 + \Delta \varphi$ non erano distinguibili dall'osservazione diretta, ma vengono stimati dal tempo di transito delle due immagini di Venere sul Sole,
+
+$$\frac{\Delta t_2}{\Delta t_1} = \frac{\sin \varphi_2}{\sin \varphi_1}$$
+
+$$\sin \varphi_2 = \sin ( \varphi_1 + \Delta \varphi ) \sim \sin \varphi_1 + \Delta \varphi \, \cos \varphi_1 = \sin \varphi_1 \left[ 1 + \frac{\cos \varphi_1}{\sin \varphi_1} \Delta \varphi \right] $$
+
+$$\Delta \varphi = \left( \frac{\Delta t_2}{\Delta t_1} - 1 \right) \frac{\sin \varphi_1}{\cos \varphi_1}$$
+
+Dalla similitudine dei triangoli per angoli piccoli della parallasse,
+
+$$\dfrac{D}{R_{ES} - R_{VS}} = \dfrac{R_S(\cos \varphi_1 - \cos \varphi_2)}{R_{VS}} \sim \dfrac{R_S(\cos \varphi_1 - \cos \varphi_1 + \Delta \varphi \sin \varphi_1)}{R_{VS}} = \dfrac{R_S}{R_{VS}} \sin \varphi_1 \Delta \varphi$$
+
+e scrivendo la lunghezza del tratto di traiettoria di Venere con due espressioni (usando l'angolo $\theta$ - noto - visto dalla Terra, coincidente con l'angolo di vista del Sole, poiché si considera il passaggio di Venere attraverso quell'angolo di vista; usando l'angolo rispetto al Sole $\psi$, e assumendo una traiettoria circolare qui per semplicità, con $\frac{\psi}{2 \pi} = \frac{\Delta t}{T}$),
+
+$$R_{VS} \psi = (R_{ES} - R_{VS}) \theta \quad \rightarrow \quad \frac{R_{ES}}{R_{VS}} = \frac{\psi}{\theta} - 1 \ ,$$
+
+e usando il rapporto $r = \frac{R_S}{R_{ES}}$ [noto grazie all'eclissi solare](physics-hs:modern:astronomy:distance-ladder:sun) si possono ricavare
+
+$$D = r R_{ES} \frac{\psi}{\theta} \sin \varphi_1 \Delta \varphi 
+\quad \rightarrow \quad
+R_{ES} = D \frac{\theta}{r \psi} \frac{1}{\sin \varphi_1 \, \Delta \varphi} \ , $$
+
+e dalla stima della distanza Terra-Sole $R_{ES}$ si può risalire alla stima delle altre grandezze $R_{S}$, $R_{VS}$.
 
 ## Stelle vicine
 Metodo: parallasse usando l'orbita della Terra "attorno al Sole"

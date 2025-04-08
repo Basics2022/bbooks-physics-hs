@@ -713,7 +713,26 @@ document.write(`
 </div>
 <div class="section" id="distanza-sole-terra-venere">
 <span id="physics-hs-modern-astronomy-distance-ladder-sun-venus"></span><h2><span class="section-number">34.2.5. </span>Distanza Sole, Terra, Venere<a class="headerlink" href="#distanza-sole-terra-venere" title="Permalink to this heading">#</a></h2>
-<p>…</p>
+<p>La parallasse solare è usata per stimare la distanza Terra, Venere, Sole osservando il passaggio di Venere tra Terra e Sole da diverse località.</p>
+<p>Sia <span class="math notranslate nohighlight">\(D\)</span> la latitudine di due località differenti, la proiezione delle due immagini di Venere sul Sole hanno distanza <span class="math notranslate nohighlight">\(R_S \left( \cos \varphi_1 - \cos \varphi_2 \right)\)</span>. I due angoli <span class="math notranslate nohighlight">\(\varphi_1\)</span>, <span class="math notranslate nohighlight">\(\varphi_2 = \varphi_1 + \Delta \varphi\)</span> non erano distinguibili dall’osservazione diretta, ma vengono stimati dal tempo di transito delle due immagini di Venere sul Sole,</p>
+<div class="math notranslate nohighlight">
+\[\frac{\Delta t_2}{\Delta t_1} = \frac{\sin \varphi_2}{\sin \varphi_1}\]</div>
+<div class="math notranslate nohighlight">
+\[\sin \varphi_2 = \sin ( \varphi_1 + \Delta \varphi ) \sim \sin \varphi_1 + \Delta \varphi \, \cos \varphi_1 = \sin \varphi_1 \left[ 1 + \frac{\cos \varphi_1}{\sin \varphi_1} \Delta \varphi \right] \]</div>
+<div class="math notranslate nohighlight">
+\[\Delta \varphi = \left( \frac{\Delta t_2}{\Delta t_1} - 1 \right) \frac{\sin \varphi_1}{\cos \varphi_1}\]</div>
+<p>Dalla similitudine dei triangoli per angoli piccoli della parallasse,</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{D}{R_{ES} - R_{VS}} = \dfrac{R_S(\cos \varphi_1 - \cos \varphi_2)}{R_{VS}} \sim \dfrac{R_S(\cos \varphi_1 - \cos \varphi_1 + \Delta \varphi \sin \varphi_1)}{R_{VS}} = \dfrac{R_S}{R_{VS}} \sin \varphi_1 \Delta \varphi\]</div>
+<p>e scrivendo la lunghezza del tratto di traiettoria di Venere con due espressioni (usando l’angolo <span class="math notranslate nohighlight">\(\theta\)</span> - noto - visto dalla Terra, coincidente con l’angolo di vista del Sole, poiché si considera il passaggio di Venere attraverso quell’angolo di vista; usando l’angolo rispetto al Sole <span class="math notranslate nohighlight">\(\psi\)</span>, e assumendo una traiettoria circolare qui per semplicità, con <span class="math notranslate nohighlight">\(\frac{\psi}{2 \pi} = \frac{\Delta t}{T}\)</span>),</p>
+<div class="math notranslate nohighlight">
+\[R_{VS} \psi = (R_{ES} - R_{VS}) \theta \quad \rightarrow \quad \frac{R_{ES}}{R_{VS}} = \frac{\psi}{\theta} - 1 \ ,\]</div>
+<p>e usando il rapporto <span class="math notranslate nohighlight">\(r = \frac{R_S}{R_{ES}}\)</span> <a class="reference internal" href="#physics-hs-modern-astronomy-distance-ladder-sun"><span class="std std-ref">noto grazie all’eclissi solare</span></a> si possono ricavare</p>
+<div class="math notranslate nohighlight">
+\[D = r R_{ES} \frac{\psi}{\theta} \sin \varphi_1 \Delta \varphi 
+\quad \rightarrow \quad
+R_{ES} = D \frac{\theta}{r \psi} \frac{1}{\sin \varphi_1 \, \Delta \varphi} \ , \]</div>
+<p>e dalla stima della distanza Terra-Sole <span class="math notranslate nohighlight">\(R_{ES}\)</span> si può risalire alla stima delle altre grandezze <span class="math notranslate nohighlight">\(R_{S}\)</span>, <span class="math notranslate nohighlight">\(R_{VS}\)</span>.</p>
 </div>
 <div class="section" id="stelle-vicine">
 <h2><span class="section-number">34.2.6. </span>Stelle vicine<a class="headerlink" href="#stelle-vicine" title="Permalink to this heading">#</a></h2>
