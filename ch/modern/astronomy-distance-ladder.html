@@ -76,15 +76,6 @@ const thebe_selector_output = ".output, .cell_output"
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R3GS2LVD8M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-R3GS2LVD8M');
-</script>
-
   
   
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
@@ -708,8 +699,52 @@ document.write(`
 <li><p>N.Copernicus (1473-1573): <strong>modello eliocentrico</strong> e <strong>periodo di rivoluzione</strong> dei pianeti attorno al Sole; dati risalenti alle osservazioni astronomiche dell’età antica</p></li>
 <li><p>T.Brahe (1546-1601)</p></li>
 </ul>
-<p>J.Kepler (1571-1630)…</p>
-<p>Keplero fu in grado di definire la <strong>forma delle orbite</strong> e le <strong>dimensioni relative</strong> dei pianeti del sistema solare. Per definire le dimensioni assolute delle orbite era necessario conoscere le dimenisoni</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p>Pianeta</p></th>
+<th class="text-center head"><p>Periodo<a class="footnote-reference brackets" href="#copernicus-britannica-periods" id="id6">6</a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Mercurio</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(88\)</span> giorni</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Venere</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(225\)</span> giorni</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Terra</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1.0\)</span> anno</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Marte</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(1.9\)</span> anni</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Giove</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(12.0\)</span> anni</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Saturno</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(30.0\)</span> anni</p></td>
+</tr>
+</tbody>
+</table>
+<p>J.Kepler (1571-1630) fu in grado di definire la <strong>forma delle orbite</strong> e le <strong>dimensioni relative</strong> delle orbite pianeti del sistema solare. I risultati sono riassunti nelle <strong>tre leggi di Keplero</strong>.</p>
+<div class="proof proposition admonition" id="kepler-first">
+<p class="admonition-title"><span class="caption-number">Proposition 34.1 </span> (Prima legge di Keplero)</p>
+<div class="proposition-content section" id="proof-content">
+<p>Le orbite dei pianeti del sistema solare sono ellissi<a class="footnote-reference brackets" href="#kepler-first" id="id7">7</a>, e il Sole si trova in uno dei due fuochi.</p>
+</div>
+</div><div class="proof proposition admonition" id="kepler-second">
+<p class="admonition-title"><span class="caption-number">Proposition 34.2 </span> (Seconda legge di Keplero)</p>
+<div class="proposition-content section" id="proof-content">
+<p>I pianeti percorrono le orbite con una velocità areolare (con vertice il Sole) costante.</p>
+</div>
+</div><div class="proof proposition admonition" id="kepler-third">
+<p class="admonition-title"><span class="caption-number">Proposition 34.3 </span> (Terza legge di Keplero)</p>
+<div class="proposition-content section" id="proof-content">
+<p>Il periodo di rivoluzione dei pianeti è proporzionale alla potenza <span class="math notranslate nohighlight">\(\frac{3}{2}\)</span> del semiasse maggire <span class="math notranslate nohighlight">\(a\)</span> della traiettoria, <span class="math notranslate nohighlight">\(T \sim a^{\frac{3}{2}}\)</span>.</p>
+</div>
+</div><p>La dimostrazione delle leggi di Keplero con le equazioni della dinamica e della legge di gravitazione universale di Newton, nell’ambito del sistema dei due corpi, fu uno dei primi successi e verifiche della probabile<a class="footnote-reference brackets" href="#kepler-newton-falsification" id="id8">8</a> bontà della teoria di Newton della dinamica.</p>
+<p><strong>todo</strong> <em>aggiungere lo script sul metodo usato da J.Kepler per la formulazione delle sue leggi a partire dalle misure</em></p>
+<p>Per stabilire le dimensioni assolute delle orbite nel sistema solare era necessario conoscere almeno una dimensione assoluta: la misura della distanza tra Terra e Sole, definita come <strong>unità astronomica</strong>, <span class="math notranslate nohighlight">\(\text{UA}\)</span>, fu ottenuta per la prima volta grazie alle misure del 1761 e del 1769 del transito di Venere davanti al Sole.</p>
 </div>
 <div class="section" id="distanza-sole-terra-venere">
 <span id="physics-hs-modern-astronomy-distance-ladder-sun-venus"></span><h2><span class="section-number">34.2.5. </span>Distanza Sole, Terra, Venere<a class="headerlink" href="#distanza-sole-terra-venere" title="Permalink to this heading">#</a></h2>
@@ -740,14 +775,14 @@ R_{ES} = D \frac{\theta}{r \psi} \frac{1}{\sin \varphi_1 \, \Delta \varphi} \ , 
 </div>
 <div class="section" id="stelle-lontane">
 <h2><span class="section-number">34.2.7. </span>Stelle lontane<a class="headerlink" href="#stelle-lontane" title="Permalink to this heading">#</a></h2>
-<p>Per le stelle lontane, il metodo di parallasse con il moto di rivoluzione della Terra non è sufficiente a fornire una misura (o come nel caso degli antichi della misura della distanza Terra-Sole, la misura è paragonabile all’errore di misura). La parallasse stellare consente di misurare circa il centesimo di arcsec, <span class="math notranslate nohighlight">\(\dots \, \text{arcsec}\)</span> o <span class="math notranslate nohighlight">\(\frac{1}{\dots} \, \text{parsec}\)</span><a class="footnote-reference brackets" href="#britannica-parallax" id="id6">6</a><a class="footnote-reference brackets" href="#se-parallax" id="id7">7</a><a class="footnote-reference brackets" href="#esa-parallax" id="id8">8</a>, con la conversione tra parsec e anno luce <span class="math notranslate nohighlight">\(1 \, \text{parsec} = 3.26 \text{a.l.}\)</span></p>
+<p>Per le stelle lontane, il metodo di parallasse con il moto di rivoluzione della Terra non è sufficiente a fornire una misura (o come nel caso degli antichi della misura della distanza Terra-Sole, la misura è paragonabile all’errore di misura). La parallasse stellare consente di misurare circa il centesimo di arcsec, <span class="math notranslate nohighlight">\(\dots \, \text{arcsec}\)</span> o <span class="math notranslate nohighlight">\(\frac{1}{\dots} \, \text{parsec}\)</span><a class="footnote-reference brackets" href="#britannica-parallax" id="id9">9</a><a class="footnote-reference brackets" href="#se-parallax" id="id10">10</a><a class="footnote-reference brackets" href="#esa-parallax" id="id11">11</a>, con la conversione tra parsec e anno luce <span class="math notranslate nohighlight">\(1 \, \text{parsec} = 3.26 \text{a.l.}\)</span></p>
 <p>Oggi sappaimo che la Grande Nube di Magellano è di circa <span class="math notranslate nohighlight">\(48 \, \text{kpc}\)</span> o <span class="math notranslate nohighlight">\(160.000 \, \text{al}\)</span>,  <strong>todo</strong> <em>Ma quali erano i limiti tecnologici nel 1912, all’epoca degli studi di H. Swan Leavitt?</em></p>
 <p>H.Swan Leavitt: «C’è una notevole correlazione tra la luminosità apparente e il periodo di oscillazione delle stelle variabili». Le variabili più luminose sono quelle con il periodo più lungo. Si assume che le stelle appartenenti alla nube di Magellano siano alla stessa di distanza, e quindi la loro luminosità apparente sia legata alla loro luminosità assoluta dalla stessa costante geometrica.</p>
 <ul class="simple">
 <li><p>H.Hertzsprung (1913) parallasse con il moto del Sole nella Galassia?</p></li>
 <li><p>H.Shapley (1918) confronto con stelle cefeide con distanza nota per parallasse?</p></li>
 </ul>
-<div class="proof example dropdown admonition" id="example-1">
+<div class="proof example dropdown admonition" id="example-4">
 <p class="admonition-title"><span class="caption-number">Example 34.2 </span> (Parallasse)</p>
 <div class="example-content section" id="proof-content">
 <ul class="simple">
@@ -766,7 +801,7 @@ R_{ES} = D \frac{\theta}{r \psi} \frac{1}{\sin \varphi_1 \, \Delta \varphi} \ , 
 <li><p>Missioni spaziali. Esempio: Hubble (1990), Hipparcos (1989-1993), GAIA (2013-…) dell’European Space Agency (ESA).</p></li>
 </ul>
 </div>
-</div><div class="proof example dropdown admonition" id="example-2">
+</div><div class="proof example dropdown admonition" id="example-5">
 <p class="admonition-title"><span class="caption-number">Example 34.3 </span> (Conversioni)</p>
 <div class="example-content section" id="proof-content">
 <ul class="simple">
@@ -836,13 +871,22 @@ Cefeidi e stelle variabili<div class="sd-summary-down docutils">
 <dt class="label" id="nebraska-spectroscpic-parallax"><span class="brackets"><a class="fn-backref" href="#id5">5</a></span></dt>
 <dd><p><a class="reference external" href="https://astro.unl.edu/naap/distance/distance.html">Astronomy Education at the University of Nebraska-Lincoln - Cosmic Distance Ladder Lab</a></p>
 </dd>
-<dt class="label" id="britannica-parallax"><span class="brackets"><a class="fn-backref" href="#id6">6</a></span></dt>
+<dt class="label" id="copernicus-britannica-periods"><span class="brackets"><a class="fn-backref" href="#id6">6</a></span></dt>
+<dd><p><a class="reference external" href="https://www.britannica.com/biography/Nicolaus-Copernicus/Copernicuss-astronomical-work">Britannica, Nicolaus Copernicus</a></p>
+</dd>
+<dt class="label" id="kepler-first"><span class="brackets"><a class="fn-backref" href="#id7">7</a></span></dt>
+<dd><p>Come viene dimostrato con le equazioni della dinamica di Newton, la tratiettoria ellittica è la traiettoria prevista nel problema dei due corpi. Modelli più raffinati considerano l’influenza della totalità dei pianeti - e non usano le equazioni del problema dei due corpi isolati; per la traiettoria di Mercurio risulta poi non trascurabile l’effetto descritto dalla teoria della relatività generale di Einstein, nella previsione della precessione del perielio.</p>
+</dd>
+<dt class="label" id="kepler-newton-falsification"><span class="brackets"><a class="fn-backref" href="#id8">8</a></span></dt>
+<dd><p>Come già mostrato nella sezione sul <span class="xref myst">metodo scientifico</span>, non esiste una prova definitivia della validità di un modello ma, al contrario, un modello scientifico è un modello sottoposto a continua verifica e la possibilità di essere falsificato: mentre non è possibile avere la certezza assoluta della validità del modello, un sempre numero maggiore di prove e di verifiche aiuta a stabilire i limiti di validità del modello e a confermarne la bontà all’interno di questi limiti.</p>
+</dd>
+<dt class="label" id="britannica-parallax"><span class="brackets"><a class="fn-backref" href="#id9">9</a></span></dt>
 <dd><p><a class="reference external" href="https://www.britannica.com/science/parallax/Solar-parallax">Enciclopedia Britannica - Parallasse solare</a></p>
 </dd>
-<dt class="label" id="se-parallax"><span class="brackets"><a class="fn-backref" href="#id7">7</a></span></dt>
+<dt class="label" id="se-parallax"><span class="brackets"><a class="fn-backref" href="#id10">10</a></span></dt>
 <dd><p><a class="reference external" href="https://astronomy.stackexchange.com/questions/19666/whats-the-farthest-object-as-determined-only-by-parallax">SE: What’s the farthest object as determined only by parallax?</a>; <a class="reference external" href="https://astronomy.stackexchange.com/questions/31711/what-is-the-maximum-distance-measurable-with-parallax">SE: Limit of stellar parallax</a> e ulteriori collegamenti.</p>
 </dd>
-<dt class="label" id="esa-parallax"><span class="brackets"><a class="fn-backref" href="#id8">8</a></span></dt>
+<dt class="label" id="esa-parallax"><span class="brackets"><a class="fn-backref" href="#id11">11</a></span></dt>
 <dd><p><a class="reference external" href="https://sci.esa.int/web/education/-/35616-stellar-distances?fbodylongid=1661">ESA - Educational support: stellar distances</a> <em>tenendo conto dell’avviso: Currently, sci.esa.int is under review and not being updated. For the latest information and news from ESA science missions and scientific results, please visit esa.int. For in-depth technical information aimed at ESA’s scientific communities, you may also wish to consult cosmos.esa.int.</em></p>
 </dd>
 </dl>
