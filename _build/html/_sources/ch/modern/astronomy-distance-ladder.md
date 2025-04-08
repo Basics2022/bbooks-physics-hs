@@ -13,19 +13,50 @@ Qualitativamente possono essere riconosciute diverse fasi:
 ## Dimensioni Terra
 Metodo: ombra di un bastone normale
 
+$$R_E = 6.37 \cdot 10^{3} \, km $$
+
 ## Distanza Terra-Luna e dimensioni Luna
 Metodo: eclisse lunare per la distanza; sorgere della Luna per le dimensioni
 
-## Dimensioni Sole e Distanza Sole-Luna
-Metodo:
-- eclisse solare per il rapporto dimenisoni-distanza $\frac{R_S}{R_M} = \frac{D_{ES}}{D_{EM}}$;
-- fasi lunari per la distanza Terra-Sole. Il metodo utilizzato dagli antichi ha però una sensibilità della misura alla variabile misurata enorme, e la tecnologia allora disponibile non consentiva misure precise della variabile misurata;...
+$$\begin{aligned}
+  R_{EM} & = \dots \\
+  R_{M}  & = \dots \\
+\end{aligned}$$
+
+(physics-hs:modern:astronomy:distance-ladder:sun)=
+## Dimensioni Sole e Distanza Sole-Terra
+La coincidenza che si può osservare durante le **eclissi solari** permette di stimare il rapporto tra le dimensioni del Sole e la distanza Terra-SOle
+
+$$\frac{R_{S}}{R_{ES}} \sim \frac{R_{M}}{R_{EM}} \ .$$
+
+Per calcolare i valori assoluti, serve poter detemrminare una delle due grandezze fisiche, come ad esempmio la distanza Terra-Sole:
+- gli antichi greci stimarono la distanza Terra-Sole usando le fasi lunari: il metodo usava la misura dell'angolo in cui si osservava la mezza luna (che non corrisponde con la quadratura). Il metodo utilizzato dagli antichi incontrava i limiti tecnologici disponibili all'epoca, a cominciare dall'assenza di strumenti affidabili per misurare il tempo, soprattutto durante la notte; poichè la misura si fonda sulla misura di un angolo "piccolo", un piccolo errore ha ripercussioni enormi sulla stima della distanza: così, i greci stimarono una distanza Terra-Sole circa 20 volte il valore attualmente accettato, **todo** *discutere limiti tecnologici, sensibilità di errori di misura, metodi per ridurre incertezza con misure ripetute...; collegamento a strumenti per la misura del tempo*
+- ...bisogna aspettare il XVII e il XVIII secolo per la proposta di J.Gregory e **E.Halley** (1656-1742) e la realizzazione della misura che sfruttasse la [parallasse solare durante il passaggio di Venere davanti al Sole avvenuto nel 1761 e nel 1769](physics-hs:modern:astronomy:distance-ladder:sun:venus), dati riassunti da J.Lalande nel 1771 nella misura di 8.6" di parallasse solare, equivalente a circa 24000 raggi terrestri, circa il 2.5\% maggiore della misura comunemente accettata oggi (di cosa? raggio medio? semiasse maggiore?...).
+
+```{prf:example} E.Halley, I.Newton e la gravitazione universale
+Halley prevede la periodicità della comparsa della cometa, alla quale fu dato il suo nome, applicando le [leggi della dinamica](physics-hs:mechanics:dynamics) e la [**legge di gravitazione universale di Newton**](physics-hs:mechanics:actions:gravitation:newton).
+
+- 1986: ultima apparizione
+- ...
+- 1222: ispirazione per le conquiste di G.Khan a occidente
+- 1066: segno premonitore per la battaglia di Hastings
+```
 
 ## Orbite pianeti
-Keplero: ...
+Osservazioni astronomiche di:
+- N.Copernicus (1473-1573): **modello eliocentrico** e **periodo di rivoluzione** dei pianeti attorno al Sole; dati risalenti alle osservazioni astronomiche dell'età antica
+- T.Brahe (1546-1601)
+
+J.Kepler (1571-1630)...
+
+Keplero fu in grado di definire la **forma delle orbite** e le **dimensioni relative** dei pianeti del sistema solare. Per definire le dimensioni assolute delle orbite era necessario conoscere le dimenisoni
+
+(physics-hs:modern:astronomy:distance-ladder:sun:venus)=
+## Distanza Sole, Terra, Venere
+...
 
 ## Stelle vicine
-Metodo: parallasse usando l'"orbita della Terra attorno al Sole"
+Metodo: parallasse usando l'orbita della Terra "attorno al Sole"
 
 ## Stelle lontane
 Per le stelle lontane, il metodo di parallasse con il moto di rivoluzione della Terra non è sufficiente a fornire una misura (o come nel caso degli antichi della misura della distanza Terra-Sole, la misura è paragonabile all'errore di misura). La parallasse stellare consente di misurare circa il centesimo di arcsec, $\dots \, \text{arcsec}$ o $\frac{1}{\dots} \, \text{parsec}$[^britannica-parallax][^se-parallax][^esa-parallax], con la conversione tra parsec e anno luce $1 \, \text{parsec} = 3.26 \text{a.l.}$
