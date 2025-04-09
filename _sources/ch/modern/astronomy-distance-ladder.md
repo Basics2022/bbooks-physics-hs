@@ -3,12 +3,48 @@
 
 In questa pagina viene ripercorso il calcolo delle distanze cosmiche, secondo quella che viene definita la **scala delle distanze cosmiche**: partendo dalle dimensioni e dalle distanze, di Terra, Luna e Sole, passando per le dimensioni e la forma delle orbite dei pianeti, continuando con la distanza delle stelle vicine e le dimensioni della nostra galassia, la Via Lattea, e finendo con la distanza della stelle remote e delle altre galassie.
 
-L'aumento delle distanze misurate procede in un ordine cronologico, grazie alla costruzione di nuove conoscenze delle conoscenze pregresse, al progresso tecnologico che fornisce strumenti più precisi e alla scoperta e alla comprensione di nuovi fenomeni fisici utili nella misura di oggetti così remoti. Il racconto viene costruito seguendo l'ordine presentato nei consigliatissimi video di 3Blue1Brown con Terence Tao[^3b1b-tao-1][^3b1b-tao-2], con l'aggiunta di dettagli degli ancora più consigliatissimi video di Alan Zamboni, aka CURIUSS, su Henrietta Swan Leavitt[^curiuss-leavitt] e Cecilia Payne-Gaposchkin[^curiuss-payne], gli osservatori e le donne di Harvard, Schwarzshild, e i due studiosi Hertzsprung-Russell del diagramma, e il materiale fornito dall'Università del Nebraska[^nebraska-spectroscpic-parallax].
+L'aumento delle distanze misurate procede in un ordine cronologico, grazie alla costruzione di nuove conoscenze sulle conoscenze pregresse, al progresso tecnologico che fornisce strumenti migliori e alla scoperta e alla comprensione di nuovi fenomeni fisici utili nella misura di oggetti così remoti. Il racconto viene costruito seguendo l'ordine presentato nei consigliatissimi video di 3Blue1Brown con Terence Tao[^3b1b-tao-1][^3b1b-tao-2], con l'aggiunta di dettagli degli ancora più consigliatissimi video di Alan Zamboni, aka CURIUSS, su Henrietta Swan Leavitt[^curiuss-leavitt] e Cecilia Payne-Gaposchkin[^curiuss-payne], gli osservatori e le donne di Harvard, Schwarzshild, e i due studiosi Hertzsprung-Russell del diagramma, e il materiale fornito dall'Università del Nebraska[^nebraska-spectroscpic-parallax].
 
 Qualitativamente possono essere riconosciute diverse fasi:
 - antichità: Terra, Luna, Sole
 - età moderna: Copernico e Keplero: orbite dei pianeti;...
 - età contemporanea: Donne calcolatrici di Harvard;...; Hubble e red-shift (dimensioni ed espansione dell'universo)
+
+```{dropdown} Unità di misura in astronomia
+:
+A causa delle dimensioni molto diverse delle distanze misurate, vengono introdotte diverse unità di misura
+
+| Unità di misura                 |  Definizione                                    | in $m$                | in $au$             | in $ly$    |
+| :------------------------------ | :---------------------------------------------- | :-------------------: | :-----------------: | :--------: |
+| chilometro, $kg$                |                                                 | $10^3$                | ...                 | ...        |
+| unità astronomica, $au$, $UA$   | distanza media Terra-Sole                       | $1.49 \cdot 10^{11}$  | $1$                 | ...        |
+| anno luce, $ly$, $al$           | distanza percorsa nel vuoto da luce in 1 anno   | ...                   | $6.33\cdot 10^{4}$  | ...        |
+| parsec, $pc$                    | distanza corrispondente a $1''$ di parallasse per il semiasse maggiore dell'orbita terestre    | ...                   | $2.06\cdot 10^{5}$  | $3.26$     |
+| redshift                        | ...                                             | ...                   | ...                 | ...        |
+
+```
+
+
+```{dropdown} Scala delle distanze cosmiche, esempi e ordini di grandezza
+
+Alcune dimensioni **todo** aggiungere incertezza
+
+| Grandezza fisica                                     | Misura                     | Incremento                       |
+| :--------------------------------------------------- | :------------------------: | :------------------------------: |
+| Raggio Luna                                          | $1737 \, km$               |                                  |
+| Raggio Terra                                         | $6378 \, km$               | $3.7$                            |
+| Distanza Terra-Luna                                  | $3.84 \cdot 10^{5} \, km$  | $60.2$                           |
+| Raggio Sole                                          | $6.96 \cdot 10^{5} \, km$  | $1.8$                            |
+| Distanza Terra-Sole                                  | $1.49 \cdot 10^{8} \, km$  | $214.1$                          |
+| Dimensioni sistema solare (asse maggiore Nettuno)    | $9.08 \cdot 10^{9} \, km$  | $60.9$                           |
+| Distanza Sole-Proxima Centauri (stella pi vicina)    | $4.3 \, ly $               | $4.5 \cdot 10^6$                 |
+| Dimensioni Via Lattea, la nostra galassia            | $5.3 \cdot 10^4 \, ly$     | $1.2 \cdot 10^4$                 |
+| Distanza Via Lattea Andromeda, galassia più vicina   | $2.5 \cdot 10^6 \, ly$     | $47.2$                           |
+| Galassie più lontane[^distant-galaxies]              | $\sim 30 \cdot 10^9 \, ly$ | $1.2 \cdot 10^4$                 |
+
+[^distant-galaxies]: Nel caso delle galassie più lontane osservate, cosa stiamo osservando? Stiamo osservando ora la luce emessa da eventi remoti in spazio-tempo, e trasmessa attraverso di esso: detto male, stiamo osservando una traccia di un evento passato in un punto remoto nello spazio.
+```
+
 
 ## Dimensioni Terra
 Metodo: ombra di un bastone normale
