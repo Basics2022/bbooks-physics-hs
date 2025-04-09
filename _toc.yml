@@ -227,7 +227,7 @@ parts:
     sections:
     - file: ch/modern/experiments-matter.md
     - file: ch/modern/experiments-light-matter.md
-    - file: ch/modern/black-body
+    - file: ch/modern/black-body-nb
   - file: ch/modern/intro-radioactivity.md
   - file: ch/modern/einstein.md
     sections:

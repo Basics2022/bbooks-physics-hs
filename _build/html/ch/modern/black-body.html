@@ -74,15 +74,6 @@ const thebe_selector_output = ".output, .cell_output"
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R3GS2LVD8M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-R3GS2LVD8M');
-</script>
-
   
   
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
@@ -481,7 +472,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://colab.research.google.com/github/Basics2022/bbooks-physics-hs/blob/master/ch/modern/black-body.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/Basics2022/bbooks-physics-hs/blob/master/ch/modern/black-body.md" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -529,7 +520,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/edit/master/ch/modern/black-body.ipynb" target="_blank"
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/edit/master/ch/modern/black-body.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -577,6 +568,23 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       <li><a href="../../_sources/ch/modern/black-body.ipynb" target="_blank"
+   class="btn btn-sm btn-download-notebook-button dropdown-item"
+   title="Scarica il file del taccuino"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="../../_sources/ch/modern/black-body.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Scarica il file sorgente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -586,7 +594,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -674,84 +682,119 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="black-body-radiation">
 <span id="physics-hs-modern-black-body"></span><h1><span class="section-number">29.3. </span>Black body radiation<a class="headerlink" href="#black-body-radiation" title="Permalink to this heading">#</a></h1>
+<p>This is a test</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># :tags: [remove-input]</span>
+
 <span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
-<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">interactive</span><span class="p">,</span> <span class="n">IntSlider</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
-<span class="c1"># Constants</span>
-<span class="n">h</span> <span class="o">=</span> <span class="mf">6.62607015e-34</span>  <span class="c1"># Planck&#39;s constant (J·s)</span>
-<span class="n">c</span> <span class="o">=</span> <span class="mf">3.0e8</span>           <span class="c1"># Speed of light (m/s)</span>
-<span class="n">k</span> <span class="o">=</span> <span class="mf">1.380649e-23</span>    <span class="c1"># Boltzmann constant (J/K)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mf">2.897e-3</span>        <span class="c1"># Wien&#39;s displacement constant (m·K)</span>
-<span class="n">sigma</span> <span class="o">=</span> <span class="mf">5.67e-8</span>     <span class="c1"># Stefan-Boltzmann constant (W/m^2·K^4)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 
-<span class="c1"># Planck&#39;s Law function</span>
-<span class="k">def</span> <span class="nf">planck</span><span class="p">(</span><span class="n">lam</span><span class="p">,</span> <span class="n">T</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">h</span><span class="o">*</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">lam</span><span class="o">**</span><span class="mi">5</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">h</span><span class="o">*</span><span class="n">c</span> <span class="o">/</span> <span class="p">(</span><span class="n">lam</span><span class="o">*</span><span class="n">k</span><span class="o">*</span><span class="n">T</span><span class="p">))</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
+<span class="k">def</span> <span class="nf">f_vdw_doubleprime</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculates the second derivative of the free energy density for a</span>
+<span class="sd">    Van der Waals fluid.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">kbt</span><span class="o">/</span><span class="p">(</span><span class="n">rho</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">b</span><span class="o">*</span><span class="n">rho</span><span class="p">))</span> <span class="o">+</span> <span class="n">kbt</span><span class="o">*</span><span class="n">b</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">b</span><span class="o">*</span><span class="n">rho</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">a</span>
 
-<span class="c1"># Wien&#39;s Law function</span>
-<span class="k">def</span> <span class="nf">wien_peak_temp</span><span class="p">(</span><span class="n">T</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">b</span> <span class="o">/</span> <span class="n">T</span>  <span class="c1"># Peak wavelength (m)</span>
+<span class="n">range_a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">27.0</span><span class="o">/</span><span class="mf">8.0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
 
-<span class="c1"># Stefan-Boltzmann Law for power</span>
-<span class="k">def</span> <span class="nf">stefan_boltzmann</span><span class="p">(</span><span class="n">T</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">sigma</span> <span class="o">*</span> <span class="n">T</span><span class="o">**</span><span class="mi">4</span>
+<span class="c1">## Create plot</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
 
-<span class="c1"># Wavelength range</span>
-<span class="n">wavelengths</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">100e-9</span><span class="p">,</span> <span class="mf">3000e-9</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+<span class="n">base_traces</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># Number of traces that are always visible</span>
 
-<span class="k">def</span> <span class="nf">show_all_plots</span><span class="p">(</span><span class="n">temp</span><span class="o">=</span><span class="mi">5500</span><span class="p">):</span>
-    <span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
+<span class="c1"># Add traces, one for each slider step</span>
+<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">range_a</span><span class="p">:</span>
+    <span class="n">rhosol</span> <span class="o">=</span> <span class="n">fsolve</span><span class="p">(</span><span class="n">conditions_for_coexistence</span><span class="p">,</span> <span class="n">x0</span><span class="o">=</span><span class="p">[</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">],</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">))</span>
+    <span class="n">rho_turningpoints</span> <span class="o">=</span> <span class="n">fsolve</span><span class="p">(</span><span class="n">f_vdw_doubleprime</span><span class="p">,</span> <span class="n">x0</span><span class="o">=</span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">],</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">))</span>    
+    <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span>
+        <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+            <span class="n">visible</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="n">rhosol</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">rhosol</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">rho_turningpoints</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">rho_turningpoints</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span>
+            <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+            <span class="n">fill</span><span class="o">=</span><span class="s2">&quot;toself&quot;</span><span class="p">,</span>
+            <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;nucleation and growth&#39;</span><span class="p">,</span>
+            <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">nucleatn_color</span><span class="p">)))</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span>
+        <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+            <span class="n">visible</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="n">rho_turningpoints</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">rho_turningpoints</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">rhosol</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">rhosol</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span>
+            <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+            <span class="n">fill</span><span class="o">=</span><span class="s2">&quot;toself&quot;</span><span class="p">,</span>
+            <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;nucleation and growth&#39;</span><span class="p">,</span>
+            <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">nucleatn_color</span><span class="p">),</span>
+            <span class="n">showlegend</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>    
+    <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span>
+        <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+            <span class="n">visible</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="n">rho_turningpoints</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">rho_turningpoints</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">rho_turningpoints</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">rho_turningpoints</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span>
+            <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+            <span class="n">fill</span><span class="o">=</span><span class="s2">&quot;toself&quot;</span><span class="p">,</span>
+            <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;spinodal decomposition&#39;</span><span class="p">,</span>
+            <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">spinodal_color</span><span class="p">)))</span>    
+    <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span>        
+        <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+            <span class="n">visible</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="n">x</span><span class="o">=</span><span class="n">rho</span><span class="p">,</span>
+            <span class="n">y</span><span class="o">=</span><span class="n">f_vdw</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">),</span>
+            <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">line</span><span class="p">),</span>
+            <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;VdW fluid&#39;</span><span class="p">))</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span>  
+        <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+            <span class="n">visible</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="n">x</span><span class="o">=</span><span class="n">rho</span><span class="p">,</span>
+            <span class="n">y</span><span class="o">=</span><span class="n">f_mix</span><span class="p">(</span><span class="n">rho</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">),</span>
+            <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;#000000&#39;</span><span class="p">),</span>
+            <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;phase separated&#39;</span><span class="p">))</span>
 
-    <span class="c1"># Planck Spectrum</span>
-    <span class="n">intensity</span> <span class="o">=</span> <span class="n">planck</span><span class="p">(</span><span class="n">wavelengths</span><span class="p">,</span> <span class="n">temp</span><span class="p">)</span>
-    <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">wavelengths</span><span class="o">*</span><span class="mf">1e9</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">intensity</span><span class="p">,</span>
-                             <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Spectrum&#39;</span><span class="p">))</span>
+<span class="n">traces_per_step</span> <span class="o">=</span> <span class="mi">5</span> <span class="c1"># Number of traces per value of a</span>
 
-    <span class="c1"># Wien&#39;s Peak</span>
-    <span class="n">peak_wavelength</span> <span class="o">=</span> <span class="n">wien_peak_temp</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1e9</span>
-    <span class="n">fig</span><span class="o">.</span><span class="n">add_vline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">peak_wavelength</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">dash</span><span class="o">=</span><span class="s1">&#39;dash&#39;</span><span class="p">),</span>
-                  <span class="n">annotation_text</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Peak: </span><span class="si">{</span><span class="n">peak_wavelength</span><span class="si">:</span><span class="s1">.1f</span><span class="si">}</span><span class="s1"> nm&#39;</span><span class="p">,</span> <span class="n">annotation_position</span><span class="o">=</span><span class="s2">&quot;top right&quot;</span><span class="p">)</span>
+<span class="c1"># Show the traces for one value of a when loading the plot (initial setup)</span>
+<span class="n">active_a_index</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">traces_per_step</span><span class="p">):</span>
+    <span class="n">curr_idx</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">base_traces</span> <span class="o">+</span> <span class="n">active_a_index</span><span class="o">*</span><span class="n">traces_per_step</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">curr_idx</span><span class="p">]</span><span class="o">.</span><span class="n">visible</span> <span class="o">=</span> <span class="kc">True</span>
 
-    <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Blackbody Spectrum at </span><span class="si">{</span><span class="n">temp</span><span class="si">}</span><span class="s1"> K&#39;</span><span class="p">,</span>
-                      <span class="n">xaxis_title</span><span class="o">=</span><span class="s1">&#39;Wavelength (nm)&#39;</span><span class="p">,</span>
-                      <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Spectral Radiance (W/m^3)&#39;</span><span class="p">,</span>
-                      <span class="n">template</span><span class="o">=</span><span class="s1">&#39;plotly_white&#39;</span><span class="p">)</span>
+<span class="c1"># Create and add slider</span>
+<span class="n">steps</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">range_a</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+    <span class="n">visarray</span> <span class="o">=</span> <span class="p">[</span><span class="kc">False</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">fig</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">visarray</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">base_traces</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="kc">True</span><span class="p">]</span> <span class="o">*</span> <span class="n">base_traces</span>
+    <span class="n">curr_idx</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">base_traces</span> <span class="o">+</span> <span class="n">i</span> <span class="o">*</span> <span class="n">traces_per_step</span><span class="p">)</span>
+    <span class="n">next_idx</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">base_traces</span> <span class="o">+</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">traces_per_step</span><span class="p">)</span>
+    <span class="n">visarray</span><span class="p">[</span><span class="n">curr_idx</span><span class="p">:</span><span class="n">next_idx</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="kc">True</span><span class="p">]</span> <span class="o">*</span> <span class="n">traces_per_step</span>
+    <span class="n">step</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="n">method</span><span class="o">=</span><span class="s2">&quot;update&quot;</span><span class="p">,</span>
+        <span class="n">args</span><span class="o">=</span><span class="p">[{</span><span class="s2">&quot;visible&quot;</span><span class="p">:</span> <span class="n">visarray</span><span class="p">}],</span>
+        <span class="n">label</span><span class="o">=</span><span class="nb">round</span><span class="p">(</span><span class="n">range_a</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="n">steps</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">step</span><span class="p">)</span>
 
-    <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">sliders</span> <span class="o">=</span> <span class="p">[</span><span class="nb">dict</span><span class="p">(</span>
+    <span class="n">active</span><span class="o">=</span><span class="n">active_a_index</span><span class="p">,</span>
+    <span class="n">currentvalue</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;prefix&quot;</span><span class="p">:</span> <span class="s2">&quot;a/b: &quot;</span><span class="p">},</span>
+    <span class="n">steps</span><span class="o">=</span><span class="n">steps</span>
+<span class="p">)]</span>
 
-    <span class="c1"># Power vs Temp</span>
-    <span class="n">temps</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">10000</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
-    <span class="n">powers</span> <span class="o">=</span> <span class="n">stefan_boltzmann</span><span class="p">(</span><span class="n">temps</span><span class="p">)</span>
-    <span class="n">fig2</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
-    <span class="n">fig2</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">temps</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">powers</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Power&#39;</span><span class="p">))</span>
-    <span class="n">fig2</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Total Power vs Temperature&#39;</span><span class="p">,</span>
-                       <span class="n">xaxis_title</span><span class="o">=</span><span class="s1">&#39;Temperature (K)&#39;</span><span class="p">,</span>
-                       <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Power (W/m^2)&#39;</span><span class="p">,</span>
-                       <span class="n">template</span><span class="o">=</span><span class="s1">&#39;plotly_white&#39;</span><span class="p">)</span>
-    <span class="n">fig2</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">sliders</span><span class="o">=</span><span class="n">sliders</span><span class="p">,</span>
+    <span class="n">legend_title</span><span class="o">=</span><span class="s2">&quot;Legend&quot;</span><span class="p">,</span>
+<span class="p">)</span>
 
-    <span class="c1"># Peak Wavelength vs Temp</span>
-    <span class="n">peaks</span> <span class="o">=</span> <span class="n">wien_peak_temp</span><span class="p">(</span><span class="n">temps</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1e9</span>
-    <span class="n">fig3</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
-    <span class="n">fig3</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">temps</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">peaks</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;lines&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Peak Wavelength&#39;</span><span class="p">))</span>
-    <span class="n">fig3</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Peak Wavelength vs Temperature&#39;</span><span class="p">,</span>
-                       <span class="n">xaxis_title</span><span class="o">=</span><span class="s1">&#39;Temperature (K)&#39;</span><span class="p">,</span>
-                       <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Peak Wavelength (nm)&#39;</span><span class="p">,</span>
-                       <span class="n">template</span><span class="o">=</span><span class="s1">&#39;plotly_white&#39;</span><span class="p">)</span>
-    <span class="n">fig3</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">title_text</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;density $\rho$&#39;</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="n">rho</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">rho</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
 
+<span class="c1"># Update yaxis properties</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">title_text</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;free energy density $f$&#39;</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 
-<span class="n">interactive_plot</span> <span class="o">=</span> <span class="n">interactive</span><span class="p">(</span><span class="n">show_all_plots</span><span class="p">,</span> <span class="n">temp</span><span class="o">=</span><span class="n">IntSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">5500</span><span class="p">))</span>
-<span class="n">display</span><span class="p">(</span><span class="n">interactive_plot</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"model_id": "84edec12784a4bb0b5608dd76b3f3666", "version_major": 2, "version_minor": 0}</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a  :  1
+<span class="n">fig</span>
 </pre></div>
 </div>
 </div>

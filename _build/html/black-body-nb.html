@@ -1,0 +1,771 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="it" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black body radiation &#8212; Fisica per le superiori</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'black-body-nb';</script>
+    <link rel="shortcut icon" href="_static/favicon-sugar.svg"/>
+    <link rel="index" title="Indice" href="genindex.html" />
+    <link rel="search" title="Cerca" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="it"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.svg" class="logo__image only-light" alt="Fisica per le superiori - Home"/>
+    <script>document.write(`<img src="_static/logo-dark.svg" class="logo__image only-dark" alt="Fisica per le superiori - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/program.html">Programma</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/todo.html">todo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/approach.html">Approccio</a></li>
+
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduzione alla fisica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ch/intro.html">1. Introduzione alla fisica</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/intro/physical_quantities.html">2. Grandezze fisiche</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/intro/physical_quantities-space.html">2.1. Spazio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/intro/physical_quantities-mass.html">2.2. Quantità di materia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/intro/physical_quantities-time.html">2.3. Tempo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/intro/physical_quantities-temperature.html">2.4. Temperatura</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/intro/physical_quantities-charge.html">2.5. Carica e corrente elettrica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/intro/physical_quantities-mole.html">2.6. Quantità di sostanza, la mole</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/intro/physical_quantities-luminosity.html">2.7. Intensità luminosa</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ch/intro/measurements.html">3. Misura</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch/intro/scientific-method.html">4. Il metodo scientifico</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/intro/sensing.html">5. Sensi</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/intro/sensing-sight.html">5.1. Vista</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/intro/sensing-hearing.html">5.2. Udito</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/intro/sensing-tactile.html">5.3. Tatto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/intro/sensing-taste.html">5.4. Gusto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/intro/sensing-smell.html">5.5. Olfatto</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ch/intro/current-status.html">6. Stato corrente</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Meccanica classica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/mechanics/intro.html">7. Introduzione alla meccanica classica</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/intro-vocabulary.html">7.1. Concetti in meccanica classica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/intro-history.html">7.2. Esperienze e breve storia delle origini della meccanica classica</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/mechanics/kinematics.html">8. Cinematica</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/kinematics-point.html">8.1. Cinematica del punto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/kinematics-rigid.html">8.2. Cinematica di un corpo rigido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/kinematics-deformable.html">8.3. Cinematica dei sistemi deformabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/kinematics-relative.html">8.4. Cinematica relativa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/kinematics-problems.html">8.5. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/kinematics-sol.html">8.6. Soluzioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/kinematics-notes.html">8.7. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/mechanics/actions.html">9. Azioni</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/actions-types.html">9.1. Forza, momento di una forza, azioni distribuite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/actions-work.html">9.2. Lavoro e potenza</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/actions-conservative.html">9.3. Azioni conservative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/actions-examples.html">9.4. Esempi di forze</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/actions-problems.html">9.5. Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/mechanics/statics.html">10. Statica</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/statics-point.html">10.1. Statica del punto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/statics-rigid.html">10.2. Statica di un corpo rigido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/statics-composite.html">10.3. Statica di sistemi composti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/statics-fluid.html">10.4. Statica dei mezzi deformabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/statics-problems.html">10.5. Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/mechanics/inertia.html">11. Inerzia</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/inertia-point.html">11.1. Inerzia e grandezze dinamiche di un punto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/inertia-points.html">11.2. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione discreta di massa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/inertia-continuum.html">11.3. Inerzia e grandezze dinamiche di un sistema esteso con distribuzione continua di massa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/inertia-problems.html">11.4. Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/mechanics/dynamics.html">12. Dinamica</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-principles.html">12.1. Princìpi della dinamica di Newton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-eom.html">12.2. Equazioni cardinali della dinamica per sistemi chiusi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-conservation.html">12.3. Leggi di conservazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-equilibrium-stability.html">12.4. Equilibrio e stabilità</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-examples.html">12.5. Esempi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-eom-open.html">12.6. Equazioni cardinali della dinamica per sistemi aperti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-collisions.html">12.7. Collisioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-motion-gravitation.html">12.8. Gravitazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-central.html">12.9. Moti centrali</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-problems.html">12.10. Problemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/mechanics/dynamics-notes.html">12.11. Note e dimostrazioni</a></li>
+
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Cenni di meccanica del continuo</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ch/continuum/intro.html">13. Cenni di meccanica del continuo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch/continuum/solids.html">14. Solidi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch/continuum/fluids.html">15. Fluidi</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Termodinamica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/thermodynamics/foundation.html">16. Introduzione alla termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/foundation-history.html">16.1. Breve storia della termodinamica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/foundation-experiments.html">16.2. Esperienze ed esperimenti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/foundation-atomic-theory.html">16.3. Termodinamica e teoria atomica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/foundation-vocabulary.html">16.4. Concetti in termodinamica</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/thermodynamics/principles.html">17. Princìpi della termodinamica</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/principles-lavoisier.html">17.1. Principio di Lavoisier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/principles-first.html">17.2. Primo principio della termodinamica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/principles-gibbs-phase-rule.html">17.3. Gibbs: energia interna, regola delle fasi e funzioni multi-variabili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/principles-phase-diagrams.html">17.4. Diagrammi termodinamici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/principles-second.html">17.5. Secondo principio della termodinamica - enunciato di Clausius</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/principles-open.html">17.6. Sistemi aperti</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/thermodynamics/matter.html">18. Stati della materia</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="ch/thermodynamics/ideal-gas.html">18.1. Gas ideali</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="ch/thermodynamics/ideal-gas-experiments.html">18.1.1. Esperimenti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ch/thermodynamics/ideal-gas-expressions.html">18.1.2. Espressioni diverse dell’equazione di stato dei gas perfetti</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ch/thermodynamics/ideal-gas-kinetic-theory.html">18.1.3. Teoria cinetica dei gas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ch/thermodynamics/ideal-gas-formulas.html">18.1.4. Caratteristiche dei gas perfetti</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="ch/thermodynamics/gas-mixture.html">18.2. Miscele di gas</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="ch/thermodynamics/humid-air.html">18.2.1. Aria umida</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/elastic-solid-1d.html">18.3. Solidi elastici</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/thermodynamics/heat-engine.html">19. Fondamenti di fisica tecnica</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/heat-engine-td-transformations.html">19.1. Trasformazioni termodinamiche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/heat-engine-td-cycles.html">19.2. Cicli termodinamici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/heat-engine-carnot.html">19.3. Carnot e le «Riflessioni sulla forza motrice del fuoco»</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/thermodynamics/heat-engine-second-principle.html">19.4. Secondo principio della termodinamica per cicli termodinamici</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="ch/thermodynamics/heat-engine-industrial.html">19.5. Macchine termiche e cicli termodinamici</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="ch/thermodynamics/heat-engine-otto.html">19.5.1. Ciclo Otto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ch/thermodynamics/heat-engine-diesel.html">19.5.2. Ciclo Diesel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ch/thermodynamics/heat-engine-joule-brayton.html">19.5.3. Ciclo Joule-Brayton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ch/thermodynamics/heat-engine-rankine.html">19.5.4. Ciclo Rankine</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ch/thermodynamics/heat-transmission.html">20. Meccanismi di trasmissione del calore</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Fenomeni ondulatori e ottica</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/waves/intro.html">21. Introduzione ai fenomeni ondulatori</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/waves/waves-in-physics.html">21.1. Equazione delle onde in diversi sistemi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/waves/waves-elementary-solutions.html">21.2. Soluzioni elementari dell’equazione delle onde</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/waves/waves-phenomena.html">21.3. Caratteristiche dei fenomeni ondulatori</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/waves/waves-notes.html">21.4. Note</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/waves/optics.html">22. Ottica</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/waves/optics-geometric.html">22.1. Ottica geometrica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/waves/optics-phenomena.html">22.2. Fenomeni ondulatori in ottica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/waves/optics-lens.html">22.3. Lenti e strumenti ottici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/waves/optics-eye.html">22.4. Occhio e vista</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/waves/optics-applications.html">22.5. Applicazioni</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Elettromagnetismo</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/electromagnetism/intro.html">23. Introduzione all’elettromagnetismo</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/electromagnetism/intro-history.html">23.1. Breve storia dell’elettromagnetismo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/electromagnetism/intro-experiments.html">23.2. Esperienze ed esperimenti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/electromagnetism/intro-problems.html">23.3. Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/electromagnetism/em.html">24. Fondamenti di elettromagnetismo</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="ch/electromagnetism/electrostatics.html">24.1. Elettrostatica</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="ch/electromagnetism/electrostatics-problems.html">24.1.8. Problemi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ch/electromagnetism/electrostatics-sol.html">24.1.9. Soluzioni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ch/electromagnetism/electrostatics-notes.html">24.1.10. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="ch/electromagnetism/electric-current.html">24.2. Corrente elettrica</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="ch/electromagnetism/electric-current-problems.html">24.2.5. Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="ch/electromagnetism/electromagnetism-steady.html">24.3. Magnetismo ed elettromagnetismo in regime stazionario</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="ch/electromagnetism/electromagnetism-steady-problems.html">24.3.8. Problemi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ch/electromagnetism/electromagnetism-steady-sol.html">24.3.9. Soluzioni</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ch/electromagnetism/electromagnetism-steady-notes.html">24.3.10. Note e dimostrazioni</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ch/electromagnetism/electromagnetism-general.html">24.4. Induzione ed elettromagnetismo</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/electromagnetism/electrical-engineering.html">25. Fondamenti di elettrotecnica</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/electromagnetism/circuits-electric.html">25.1. Circuiti elettrici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/electromagnetism/circuits-magnetic.html">25.2. Circuiti magnetici</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/electromagnetism/electric-machines.html">25.3. Sistemi elettromeccanici e macchine elettriche</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/electromagnetism/em-waves.html">26. Onde elettromagnetiche</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-25"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/electromagnetism/em-waves-spectrum.html">26.4. Spettro della radiazione elettromagnetica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/electromagnetism/em-waves-speed.html">26.5. Velocità della radiazione elettromagnetica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/electromagnetism/em-waves-problems.html">26.6. Problemi</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ch/electromagnetism/thermoelectric-effects.html">27. Effetti foto-termo-elettro-meccanici</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Fisica moderna</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ch/modern/intro.html">28. Introduzione alla fisica del XX secolo</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/modern/experiments.html">29. Esperienze ed esperimenti sulla materia, sulla radiazione elettromagnetica e sulla loro interazione</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/modern/experiments-matter.html">29.1. Esperimenti sulla materia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/modern/experiments-light-matter.html">29.2. Esperimenti sulla radiazione elettromagnetica e l’interazione con la materia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/modern/black-body-nb.html">29.3. Black body radiation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ch/modern/intro-radioactivity.html">30. Radioattività</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/modern/einstein.html">31. Teoria di Einstein</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-27"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/modern/einstein-special.html">31.1. Relatività ristretta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/modern/einstein-general.html">31.2. Relatività generale</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/modern/quantum.html">32. Meccanica quantistica</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-28"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/modern/quantum-basics.html">32.3. Introduzione alla meccanica quantistica</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/modern/astronomy.html">33. Sviluppi dell’astronomia</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-29"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/modern/astronomy-star-classification.html">33.1. Classificazione stellare</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/modern/astronomy-distance-ladder.html">33.2. Scala delle distanze cosmiche</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ch/modern/standard.html">34. Introduzione al modello standard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch/modern/intro-coupling.html">35. Fenomeni termo-elettrici nella materia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch/modern/intro-photography.html">36. Fotografia</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Semiconduttori</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ch/semiconductors/intro.html">37. Introduzione alla fisica dei semiconduttori</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Strumenti di misura</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="ch/instrumentation/intro.html">38. Strumenti di misura</a><input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-30"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ch/instrumentation/kinematics.html">38.1. Misura posizione, velocità, accelerazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/instrumentation/mechanics.html">38.2. Quantità meccaniche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/instrumentation/thermodynamics.html">38.3. Quantità termodinamiche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ch/instrumentation/electromagnetism.html">38.4. Quantità elettromagnetiche</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Approfondimenti</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ch/extra.html">Approfondimenti</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Indice</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/Basics2022/bbooks-physics-hs/blob/master/black-body-nb.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repository di origine"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/edit/master/black-body-nb.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Basics2022/bbooks-physics-hs/issues/new?title=Issue%20on%20page%20%2Fblack-body-nb.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Apri un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Scarica questa pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/black-body-nb.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Scarica il file sorgente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Stampa in PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modalità schermo intero"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Cerca" aria-label="Cerca" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Black body radiation</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="black-body-radiation">
+<span id="physics-hs-modern-black-body"></span><h1>Black body radiation<a class="headerlink" href="#black-body-radiation" title="Permalink to this heading">#</a></h1>
+<p>This is a test</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span> <span class="s1">&#39;o&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f8901d34c10&gt;]
+</pre></div>
+</div>
+<img alt="_images/44bd1c69d239d2102e2ebc5b4bcf04eabd857155656986c742fe602c2a4f8f2c.png" src="_images/44bd1c69d239d2102e2ebc5b4bcf04eabd857155656986c742fe602c2a4f8f2c.png" />
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Di basics
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

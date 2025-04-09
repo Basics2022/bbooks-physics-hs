@@ -80,6 +80,11 @@ repository:
   branch: master                                        # Which branch of the repository should be used when creating links (optional)
 # path_to_book: docs                                    # Optional path to your book, relative to the repository root
 
+jupyter_cache: true          # Enable jupyter-cache for caching notebook outputs
+execute:
+  cache: "true"              # Allow Jupyter Book to store the outputs of the executed cells
+  execute_notebooks: force   # Only execute notebooks that have changed
+
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
