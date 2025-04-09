@@ -222,10 +222,17 @@ parts:
   chapters:
 #  - file: ch/modern.md
   - file: ch/modern/intro.md
-  - file: ch/modern/intro-experiments.md
+# - file: ch/modern/intro-experiments.md
   - file: ch/modern/experiments.md
+    sections:
+    - file: ch/modern/experiments-matter.md
+    - file: ch/modern/experiments-light-matter.md
+    - file: ch/modern/black-body
   - file: ch/modern/intro-radioactivity.md
   - file: ch/modern/einstein.md
+    sections:
+    - file: ch/modern/einstein-special.md
+    - file: ch/modern/einstein-general.md
   - file: ch/modern/quantum.md
     sections:
     - file: ch/modern/quantum-basics.md

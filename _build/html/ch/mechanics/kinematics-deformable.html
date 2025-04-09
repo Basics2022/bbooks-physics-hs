@@ -384,12 +384,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../modern/intro-experiments.html">29. Esperienze ed esperimenti</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/experiments.html">30. Esperimenti</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/intro-radioactivity.html">31. Radioattività</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modern/einstein.html">32. Teoria di Einstein</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../modern/quantum.html">33. Meccanica quantistica</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../modern/einstein.html">32. Teoria di Einstein</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../modern/einstein-special.html">32.1. Relatività ristretta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modern/einstein-general.html">32.2. Relatività generale</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../modern/quantum.html">33. Meccanica quantistica</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-27"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../modern/quantum-basics.html">33.3. Introduzione alla meccanica quantistica</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../modern/astronomy.html">34. Sviluppi dell’astronomia</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-27"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../modern/astronomy.html">34. Sviluppi dell’astronomia</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-28"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../modern/astronomy-star-classification.html">34.1. Classificazione stellare</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../modern/astronomy-distance-ladder.html">34.2. Scala delle distanze cosmiche</a></li>
 </ul>
@@ -404,7 +408,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Strumenti di misura</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../instrumentation/intro.html">39. Strumenti di misura</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-28"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../instrumentation/intro.html">39. Strumenti di misura</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-29"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../instrumentation/kinematics.html">39.1. Misura posizione, velocità, accelerazione</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../instrumentation/mechanics.html">39.2. Quantità meccaniche</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../instrumentation/thermodynamics.html">39.3. Quantità termodinamiche</a></li>
@@ -643,7 +647,7 @@ document.write(`
 <div class="tex2jax_ignore mathjax_ignore section" id="cinematica-dei-sistemi-deformabili">
 <span id="physics-hs-mechanics-kinematics-deformable"></span><h1><span class="section-number">8.3. </span>Cinematica dei sistemi deformabili<a class="headerlink" href="#cinematica-dei-sistemi-deformabili" title="Permalink to this heading">#</a></h1>
 <p>La descrizione dei sistemi deformabili è al di fuori dell’obiettivo di questa parte.</p>
-<p>Lo stato di sistemi costituiti da corpi deformabili con distribuzione di massa continua è definito dallo stato di ogni singolo punto materiale (<strong>todo</strong> <em>due parole su descrizione lagrangiana ed euleriana?</em>), e una trattazione completa richiederebbe strumenti matematici non banali. Verranno fatti dei cenni alla meccanica dei corpi deformabili continui nella sezione su <a class="reference internal" href="../continuum/intro.html#physics-hs-continuum"><span class="std std-ref">cenni della meccanica del continuo</span></a>.</p>
+<p>Lo stato di sistemi costituiti da corpi deformabili con distribuzione di massa continua è definito dallo stato di ogni singolo punto materiale (<strong>todo</strong> <em>due parole su descrizione lagrangiana ed euleriana?</em>), e una trattazione completa richiederebbe strumenti matematici non banali. Verranno fatti dei cenni alla meccanica dei corpi deformabili continui nella sezione su <span class="xref myst">cenni della meccanica del continuo</span>.</p>
 <p>Lo stato di sistemi costituiti da più corpi discreti indeformabili, collegati da elementi deformabili senza massa, può essere descritto come insieme degli stati dei corpi che lo costituiscono, siano essi punti o corpi rigidi estesi: è quindi possibile descrivere lo stato di questo tipo di sistemi con gli strumenti descritti nei paragrafi sulla cinematica del <a class="reference internal" href="kinematics-point.html#physics-hs-mechanics-kinematics-point"><span class="std std-ref">punto</span></a> e dei <a class="reference internal" href="kinematics-rigid.html#physics-hs-mechanics-kinematics-rigid"><span class="std std-ref">corpi estesi rigidi</span></a>.</p>
 </div>
 
