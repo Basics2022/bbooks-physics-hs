@@ -47,13 +47,55 @@ Osservazioni astronomiche di:
 - N.Copernicus (1473-1573): **modello eliocentrico** e **periodo di rivoluzione** dei pianeti attorno al Sole; dati risalenti alle osservazioni astronomiche dell'età antica
 - T.Brahe (1546-1601)
 
-J.Kepler (1571-1630)...
+| Pianeta                      | Periodo[^copernicus-britannica-periods]  |
+| :--------------------------- | :------------------: |
+| Mercurio                     | $88$ giorni          |
+| Venere                       | $225$ giorni         |
+| Terra                        | $1.0$ anno           |
+| Marte                        | $1.9$ anni           |
+| Giove                        | $12.0$ anni          |
+| Saturno                      | $30.0$ anni          |
 
-Keplero fu in grado di definire la **forma delle orbite** e le **dimensioni relative** dei pianeti del sistema solare. Per definire le dimensioni assolute delle orbite era necessario conoscere le dimenisoni
+[^copernicus-britannica-periods]: [Britannica, Nicolaus Copernicus](https://www.britannica.com/biography/Nicolaus-Copernicus/Copernicuss-astronomical-work)
+
+J.Kepler (1571-1630) fu in grado di definire la **forma delle orbite** e le **dimensioni relative** delle orbite pianeti del sistema solare. I risultati sono riassunti nelle **tre leggi di Keplero**.
+
+```{prf:proposition} Prima legge di Keplero
+:label: kepler-first
+
+Le orbite dei pianeti del sistema solare sono ellissi[^kepler-first], e il Sole si trova in uno dei due fuochi.
+
+```
+
+[^kepler-first]: Come viene dimostrato con le equazioni della dinamica di Newton, la tratiettoria ellittica è la traiettoria prevista nel problema dei due corpi. Modelli più raffinati considerano l'influenza della totalità dei pianeti - e non usano le equazioni del problema dei due corpi isolati; per la traiettoria di Mercurio risulta poi non trascurabile l'effetto descritto dalla teoria della relatività generale di Einstein, nella previsione della precessione del perielio.
+
+```{prf:proposition} Seconda legge di Keplero
+:label: kepler-second
+
+I pianeti percorrono le orbite con una velocità areolare (con vertice il Sole) costante.
+
+```
+
+```{prf:proposition} Terza legge di Keplero
+:label: kepler-third
+
+Il periodo di rivoluzione dei pianeti è proporzionale alla potenza $\frac{3}{2}$ del semiasse maggire $a$ della traiettoria, $T \sim a^{\frac{3}{2}}$.
+
+```
+
+La dimostrazione delle leggi di Keplero con le [equazioni della dinamica](physics-hs:mechanics:dynamics) e della [legge di gravitazione universale di Newton](physics-hs:mechanics:actions:gravitation:newton), nell'ambito del [sistema dei due corpi](physics-hs:mechanics:dynamics:motion:central), fu uno dei primi successi e verifiche della probabile[^kepler-newton-falsification] bontà della teoria di Newton della dinamica. Vedi anche [moti centrali](physics-hs:mechanics:dynamics:motion:central).
+
+[^kepler-newton-falsification]: Come già mostrato nella sezione sul [metodo scientifico](physics-hs:intro:scientific-method), non esiste una prova definitivia della validità di un modello ma, al contrario, un modello scientifico è un modello sottoposto a continua verifica e la possibilità di essere falsificato: mentre non è possibile avere la certezza assoluta della validità del modello, un sempre numero maggiore di prove e di verifiche aiuta a stabilire i limiti di validità del modello e a confermarne la bontà all'interno di questi limiti.
+
+**todo** *aggiungere lo script sul metodo usato da J.Kepler per la formulazione delle sue leggi a partire dalle misure*
+
+Per stabilire le dimensioni assolute delle orbite nel sistema solare era necessario conoscere almeno una dimensione assoluta: la misura della distanza tra Terra e Sole, definita come **unità astronomica**, $\text{UA}$, fu ottenuta per la prima volta grazie alle misure del 1761 e del 1769 del transito di Venere davanti al Sole.
 
 (physics-hs:modern:astronomy:distance-ladder:sun:venus)=
 ## Distanza Sole, Terra, Venere
-La parallasse solare è usata per stimare la distanza Terra, Venere, Sole osservando il passaggio di Venere tra Terra e Sole da diverse località.
+La parallasse solare è usata per stimare la distanza Terra, Venere, Sole osservando il passaggio di Venere tra Terra e Sole da diverse località[^venus-transit-ohio]. **todo** *Usare i dati disponibili sul sito NASA, [NASA, Eclipse Web Site](https://eclipse.gsfc.nasa.gov/OH/transit12.html)*
+
+[^venus-transit-ohio]: [Ohio State University, Astronomy 161: An Introduction to Solar System Astronomy. Lecture 26: Ho Far to the Sun? The Venus Transits of 1761 and 1769](https://www.astronomy.ohio-state.edu/pogge.1/Ast161/Unit4/venussun.html).
 
 Sia $D$ la latitudine di due località differenti, la proiezione delle due immagini di Venere sul Sole hanno distanza $R_S \left( \cos \varphi_1 - \cos \varphi_2 \right)$. I due angoli $\varphi_1$, $\varphi_2 = \varphi_1 + \Delta \varphi$ non erano distinguibili dall'osservazione diretta, ma vengono stimati dal tempo di transito delle due immagini di Venere sul Sole,
 

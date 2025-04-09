@@ -31,7 +31,7 @@ $$m \ddot{\vec{r}} = -k \vec{r}$$
 
 L'equazione del moto di un corpo soggetto a un campo di forze centrali con intensità inversamente proporzionale al quadrato della distanza dal centro è
 
-$$m \ddot{\vec{r}} = c \frac{\vec{r}}{\vec{|\vec{r}|^3}} \ ,$$ (eq:central:r-2:eom)
+$$m \ddot{\vec{r}} = c \frac{\vec{r}}{|\vec{r}|^3} \ ,$$ (eq:central:r-2:eom)
 
 ...**todo** *bla bla*
 
