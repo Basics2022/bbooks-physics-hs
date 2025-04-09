@@ -1,9 +1,39 @@
 (physics-hs:modern:intro)=
 # Introduzione alla fisica del XX secolo
 
-Neanche il tempo di pensare che le teorie di meccanica, termodinamica ed elettromagnetismo fornisssero un modello completo, soddisfacente e concluso della fisica, che indagini più dettagliate sulla natura pù intima di materia, luce e gravitazione portarono in pochi anni alla rivoluzione relativistica e quantistica che avrebbero sconvolto la fisica e, ancora di più la storia dell'umanità, aprendo allo sviluppo tecnologico del XX secolo che dura tutt'oggi.
+A fine XIX secolo la [meccanica](physics-hs:mechanics:intro), la [termodinamica](physics-hs:thermodynamics:intro) e l'[elettromagnetismo](physics-hs:electromagnetism:intro) - incluse la[ meccanica del continuo per solidi e fluidi](physics-hs:continuum:intro) - rappresentavano teorie soddisfacenti per la comprensione di molti fenomeni fisici, e utili per il progetto e la realizzazione delle molte applicazioni che contraddistinsero le rivoluzioni tecniche e industriali: macchine termiche, mezzi di trasporto, costruzioni, e le prime applicazioni dell'elettromagnetismo per il trasporto di energia e per le comunicazioni. Le equazioni di Maxwell, la verifica sperimentale di Hertz e le prime applicazioni di Marconi sembravano aver risolto il dilemma sulla natura della luce, a vantaggio di un modello ondulatorio su quello particellare.
 
-````{only} html
+Uno sguardo poco attento poteva far cadere nella tentazione di pensare di aver trovato un insieme di modelli completi della fisica, in grado di descrivere tutti i fenomeni. Tuttavia:
+- i modelli non erano in grado di spiegare alcune **osservazioni sperimentali**, come ad esempio gli spettri atomici discreti, lo spettro di radiazione di un corpo nero, o l'effetto fotoelettrico
+- i modelli sono tra di loro **incompatibili**: ad esempio, mentre la meccanica classica ammette l'azione a distanza istantanea (ad esempio nella forza di interazione gravitazionale tra due corpi) e le sue equazioni sono invarianti a trasformazioni di Galileo, le equazioni dell'elettromagnetismo non sono invarianti rispetto a queste trasformazioni (ma a quelle di Lorentz) e suggeriscono l'esistenza di una velocità massima di propagazione dell'informazione - incompatibile con l'azione a distanza
+- mentre in chimica un **modello atomico discreto della materia** era accettato e si lavorava su una descrizione dettagliata degli elementi "fondamentali" della materia - risolvendo alcuni problemi dovuti a errori e sviste -, in fisia questo faceva fatica ad essere accettato nonostante i lavori di Clausius, Maxwell e Boltzmann. 
+
+<!--
+che indagini più dettagliate sulla natura pù intima di materia, luce e gravitazione portarono in pochi anni alla rivoluzione relativistica e quantistica che avrebbero sconvolto la fisica e, ancora di più la storia dell'umanità, aprendo allo sviluppo tecnologico del XX secolo che dura tutt'oggi.
+-->
+
+<!-- ````{only} html -->
+```{dropdown} Argomenti del capitolo
+:open:
+
+[Indagine sulla materia, sulla luce, e sulla loro interazione]()
+- [Esperimenti sulla struttura microscopica della materia](modern:experiments:matter):
+  - componenti elementari della materia, e loro caratteristiche: la scoperta dell'elettrone (Thomson, 1891), il modello atomico di Rutherford (esperimenti di scattering di Rutherford-Geiger-Mardsen, 1906-1913), il modello atomico di Borh (effetto Zeeman, effetto Stark,...)
+  - stabilità dei componenti elementari - la radioattività: gli studi primordiali dei coniugi Curie e di Becquerel, 1898; la classificazione della radioattività da parte di Rutherford, 1910 
+  - caratteristiche e comportamento dei componenti elementari: la misura della carica dell'elettrone (Millikan, 1909), lo spin (Stern-Gerlach)
+- [Esperimenti sulla natura della radiazione elettromagnetica, e l'interazione con la materia]:
+  - lo spettro di radiazione di corpo nero
+  - l'effetto fotoelettrico
+  - *il calore specifico nei solidi*
+
+[**Teorie di Einstein**](physics-hs:modern:einstein)
+- [**Relatività speciale**](physics-hs:modern:einstein:special): teoria di meccanica ed elettromagnetismo compatibli tra di loro, e all'osservazione della velocità finita della luce nel vuoto
+- [**Relatività generale**](physics-hs:modern:einstein:general): teoria della gravitazione
+
+[**Meccanica quantistica**](physics-hs:modern:quantum): un modello fisico per il comportamento di luce e materia
+
+```
+<!--
 **Contenuti.**
 
 ```{dropdown}
@@ -12,8 +42,15 @@ Neanche il tempo di pensare che le teorie di meccanica, termodinamica ed elettro
 ```
 ```{dropdown}
 ```
+-->
 
-````
+<!-- ```` -->
+
+Ulteriori indagini sulla natura della materia - e la sua stabilità -, della luce e delle loro interazioni portarono all'accettazione del modello atomistico della materia.
+Il riconoscimento della costanza della velocità della luce come costante universale portarono alla formulazione della relatività (ristretta) di Einstein, in cui veniva risolta l'incompatibilità tra meccanica ed elettromagnetismo. La formulazione di una nuova teoria meccanica (quantistica) per i fenomeni su scale atomiche misero in evidenza il comportamento "duale" di luce e materia come onda e particella.
+La teoria della relatività generale di Einstein completava la rivoluzione, imponendosi come nuova teoria della gravitazione in grado di spiegare le osservazioni astronomiche che risultavano anomale con il modello di gravitazione di Newton.
+
+
 
 **Riferimenti.**
 ```{dropdown} INFN - Pomeriggi di scienza 2020 dell'INFN
@@ -46,12 +83,9 @@ Video divulgativi disponibili sul canale youtube [CURIUSS](https://www.youtube.c
 ```
 
 <!-- LLM summary + my updates -->
+<!--
 Alla fine del XIX secolo, la fisica sembrava basarsi su teorie consolidate come meccanica, termodinamica ed elettromagnetismo; il riconoscimento della luce come fenomeno ondulatorio elettromagnetico sembrava risolvere la disputa sulla natura della luce come fenomeno continuo, continuo così come i modelli utilizzati per fluidi e solidi che hanno contribuito alla rivoluzione tecnica e industriale. Mentre in chimica si cercava di mettere insieme i dettagli di un modello atomico discreto, in fisica questo faceva fatica a essere accettato, nonostante i lavori di Clausius, Maxwell e Boltzmann.
-
-Tuttavia, le teorie sviluppate non erano tra di loro compatibili e non erano in grado di spiegare alcune osservazioni sperimentali come gli spettri atomici discreti, la radiazione del corpo nero, l’effetto fotoelettrico. Ulteriori indagini sulla natura della materia - e la sua stabilità -, della luce e delle loro interazioni portarono all'accettazione del modello atomistico della materia.
-Il riconoscimento della costanza della velocità della luce come costante universale portarono alla formulazione della relatività (ristretta) di Einstein, in cui veniva risolta l'imcompatibilità tra meccanica ed elettromagnetismo. La formulazione di una nuova teoria meccanica (quantistica) per i fenomeni su scale atomiche misero in evidenza il comportamento "duale" di luce e materia come onda e particella.
-La teoria della relatività generale di Einstein completava la rivoluzione, imponendosi come nuova teoria della gravitazione in grado di spiegare le osservazioni astronomiche che risultavano anomale con il modello di gravitazione di Newton.
-
+-->
 
 
 <!-- original version
