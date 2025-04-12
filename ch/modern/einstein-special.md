@@ -5,7 +5,7 @@
  Non esiste un sistema di riferimento assoluto: il fenomeno fisico è **assoluto**[^relativity-absolute], cioè **invariante**, indipendente dal sistema di riferimento usato per descriverlo.
 ```
 ```{prf:axiom} Costanza della velocità della luce
-2. In accordo con le equazioni di Maxwell dell'elettromagnetismo e con l'[esperimento di Michelson-Morley](physics-hs:electromagnetism:em-waves:speed:michelson-morley), la **velocità della luce è costante**. Questa è inoltre la **velocità massima** della trasmissione di informazioni nello spazio, tale da garantire la [**causalità**](physics-hs:todo:causality), vedi [Velocità della luce e causalità](physics-hs:modern:einstein:special:causality).
+In accordo con le equazioni di Maxwell dell'elettromagnetismo e con l'[esperimento di Michelson-Morley](physics-hs:electromagnetism:em-waves:speed:michelson-morley), la **velocità della luce è costante**. Questa è inoltre la **velocità massima** della trasmissione di informazioni nello spazio, tale da garantire la [**causalità**](physics-hs:todo:causality), vedi [Velocità della luce e causalità](physics-hs:modern:einstein:special:causality).
 ```
 
 [^relativity-absolute]: A dispetto del nome della teoria, "relatività", e delle vaccate che si sentono "tutto è relativo, come diceva Einstein", la teoria della relatività è un trionfo, il trionfo definitivo, dell'assolutismo: i fenomeni fisici sono indipendenti da chi li osserva, in matematichese sono indipendenti dal sistema di coordinate usato per descrivere il fenomeno; le equazioni della fisica devono quindi essere scritte con oggetti matematici che rispecchiano questa invarianza, i tensori. 
@@ -76,7 +76,9 @@ $$
 \end{cases}
 $$
 
-con $\gamma = \left[ 1 - \left(\frac{v}{c}\right)^2 \right]^{-\frac{1}{2}}$.
+con $\gamma = \left[ 1 - \left(\frac{v}{c}\right)^2 \right]^{-\frac{1}{2}}$. Da queste trasformazioni seguono i fenomeni di *contrazione delle lunghezze*, *dilatazione dei tempi* e il *"paradosso"[^twin-non-paradox] dei gemelli*
+
+[^twin-non-paradox]: Il paradosso dei gemelli non è strettamente un paradosso, è solo una manifestazione dei meccanismi del mondo che sono inaspettati rispetto alla nostra percezione, forgiata sull'esperienza della vita quotidiana. E' solo un esempio in cui i nostri [sensi ci ingannano](physics-hs:intro:sensing:mislead). Secondo la [Treccani](https://www.treccani.it/enciclopedia/paradosso_(Enciclopedia-della-Matematica)/), comunque, il termine "paradosso" può essere applicato nell'accezione ampia a questo genere di situazioni, o affermazioni che contrastano con un'opinione comune o un risultato ritenuto ovvio. Il termine preferibile per un paradosso logico della forma "A e non A" è "antinomia". Esempi di antinomia sono: "questa frase è falsa"; il paradosso del barbiere: un barbiere deve radere tutti e solo le persone che non si radono da sole. Ma chi rade il barbiere? Non può farsi radere da altre persone; se non si rade da solo, infrange la regola perché sta radendo una persona che si rade da sola; se non si rade, allora non sta radendo una persona che non si rade da sola.
 
 
 ```{dropdown} Dimostrazione delle trasformazioni di Lorentz a partire dalle 3 osservazioni
@@ -159,13 +161,24 @@ e si ricavano i valori dei quattro coefficienti $A$, $B$, $C$, $D$ con le condiz
 ```
 
 
+(physics-hs:modern:einstein:special:causality)=
+## Velocità della luce e causalità
+
+
+
 ```{prf:example} Trasformazione di coordinate tra 3 sistemi di riferimento e composizione delle velocità
 :label: relativity:velocity-composition
 
+Nemmeno continuando a comporre velocità positive può essere superata la velocità della luce...
+
 ```
 
-(physics-hs:modern:einstein:special:causality)=
-## Velocità della luce e causalità
+## Dilatazione dei tempi e contrazione delle lunghezze
+
+## "Paradosso" dei gemelli
+
+## Geometria della relatività speciale
+Intervallo tra due eventi(invariante); tempo proprio; metrica di Minkowski
 
 
 

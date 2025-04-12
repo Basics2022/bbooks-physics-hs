@@ -16,10 +16,12 @@ I sensori umani hanno alcune caratteristiche tipiche degli strumenti:
 - banda passante
 - ...
 
+```{dropdown} Inganno dell'esperienza sensoriale
 Esempi:
 - temperatura e calore? (Termodinamica)
 - spazio, tempo o spazio-tempo? (Relatività di Einstein)
 
+```
 
 
 
