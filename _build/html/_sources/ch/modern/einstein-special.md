@@ -1,6 +1,15 @@
 (physics-hs:modern:einstein:special)=
 # Relatività speciale
 
+La teoria della relatività speciale viene presentata da A.Einstein in due articoli del suo *Annus Mirabilis*, il 1905. Il primo articolo, "Sull'elettrodinamica dei corpi in movimento"{cite}`einstein1905elektrodynamik`, propone una nuova teoria della meccanica partendo da [due princìpi](physics-hs:modern:einstein:special:principles): le leggi non dipendono dall'osservatore, e la velocità della luce misurata da ogni osservatore è costante. Questi due princìpi permettono di ricavare una teoria meccanica che sia compatibile con le equazioni di Maxwell dell'elettromagnetismo, sostituendo la relarività galileiana con le trasformazioni di Lorentz ricavate a partire dai due princìpi, come mostrato nella sezione sulla [cinematica realtivistica](physics-hs:modern:einstein:special:kinematics). Nel secondo articolo, "L'inerzia di un corpo dipende dal contenuto di energia?"{cite}`einstein1905tragheit`, viene discussa la dinamica e riconosciuto il ruolo della massa nell'eneergia dei sistemi: la più famosa conseguenza è riassunta nella legge
+
+$$E^{rest} = m c^2 \ ,$$
+
+che lega l'energia di un sistema in quiete, $E^{rest}$, alla sua massa $m$, come viene mostrato nella sezione su alcuni cenni di [dinamica](physics-hs:modern:einstein:special:dynamics).
+
+(physics-hs:modern:einstein:special:principles)=
+## Princìpi della relatività speciale
+
 ```{prf:axiom} Invarianza delle leggi fisiche
  Non esiste un sistema di riferimento assoluto: il fenomeno fisico è **assoluto**[^relativity-absolute], cioè **invariante**, indipendente dal sistema di riferimento usato per descriverlo.
 ```
@@ -9,7 +18,7 @@ In accordo con le equazioni di Maxwell dell'elettromagnetismo e con l'[esperimen
 ```
 
 [^relativity-absolute]: A dispetto del nome della teoria, "relatività", e delle vaccate che si sentono "tutto è relativo, come diceva Einstein", la teoria della relatività è un trionfo, il trionfo definitivo, dell'assolutismo: i fenomeni fisici sono indipendenti da chi li osserva, in matematichese sono indipendenti dal sistema di coordinate usato per descrivere il fenomeno; le equazioni della fisica devono quindi essere scritte con oggetti matematici che rispecchiano questa invarianza, i tensori. 
-Le equazioni che governano la natura sono invarianti alla scelta del sistema di riferimento usato per descriverle o, detto altrimenti, un fenomeno fisico non dipende da chi lo osserva (almeno se questa osservazione non interagisce con il fenomeno stesso, come succede in meccanica quantistica, vedi[QM:Misura](physics-hs:modern:quantum:basics:measurements), [QM:Indeterminazione di Heisenberg](physics-hs:modern:quantum:basics:uncertainty)).
+Le equazioni che governano la natura sono invarianti alla scelta del sistema di riferimento usato per descriverle o, detto altrimenti, un fenomeno fisico non dipende da chi lo osserva (almeno se questa osservazione non interagisce con il fenomeno stesso, come succede in meccanica quantistica, vedi [QM:Misura](physics-hs:modern:quantum:basics:measurements), [QM:Indeterminazione di Heisenberg](physics-hs:modern:quantum:basics:uncertainty)).
 
 Esiste però una classe di sistemi di riferimento "privilegiata" per la descrizione del fenomeno fisico (almeno in relatività speciale), la classe dei *sistemi riferimento inerziali*: l'espressione delle equazioni della fisica sono le stesse quando sono scritte con le coordinate di sistemi di riferimento inerziali. Questo non è vero per un sistema di riferimento qualsiasi.
 
@@ -206,7 +215,7 @@ $$\mathbf{U}(s) := \dfrac{d \mathbf{X}}{ds} = \dfrac{d \, ct}{ds} \dfrac{d \math
 
 La quantità di moto viene scritta come il prodotto della velocità per la massa
 
-$$\mathbf{P}(s) := m \mathbf{U}(s) = \gamma m \mathbf{E}_0 + \gamma m \frac{v}{c} \mathbf{E}_1 = \frac{E}{c^2} \mathbf{E}_0 + \gamma \frac{p}{c} \mathbf{E}_1 \ .$$
+$$\mathbf{P}(s) := m \mathbf{U}(s) = \gamma m \mathbf{E}_0 + \gamma m \frac{v}{c} \mathbf{E}_1 = \frac{E}{c^2} \mathbf{E}_0 + \frac{p}{c} \mathbf{E}_1 \ .$$
 
 avendo definito la quantità di moto come prodotto del fattore di Lorentz per la quantità di moto classica $p = \gamma \, m v$, e definito l'energia $E := \gamma m c^2$. Utilizzando queste definizioni e calcolando il prodotto $\mathbf{P} \cdot \mathbf{P}$, si ottiene la relazione
 
@@ -225,16 +234,43 @@ Un sistema in quiete rispetto a un osservatore ha quantità di moto nulla, $p = 
 
 $$E = m c^2 \ ,$$ (relativity:dynamics:energy:emc2)
 
-ricavata e discussa nell'articolo dal titolo "L'inerzia di un corpo dipende dal contenuto di energia?"{cite}`einstein1905tragheit`. Il titolo dell'articolo descrive bene le conclusioni riassunte nella formula {eq}`relativity:dynamics:energy:emc2`: un corpo in quiete ha energia non nulla, per il fatto di avere massa. *Qua potremmo ricominciare a ragionare su cosa è l'energia e cosa è la massa. Ma per ora rimandiamo questa discussione...* **todo** *aggiungere link? serie di CURIUSS sulla massa?*
+ricavata e discussa nell'articolo dal titolo "L'inerzia di un corpo dipende dal contenuto di energia?"{cite}`einstein1905tragheit`. Il titolo dell'articolo descrive bene le conclusioni riassunte nella formula {eq}`relativity:dynamics:energy:emc2`: un corpo in quiete ha energia non nulla, per il fatto di avere massa. *Qua potremmo ricominciare a ragionare su cosa è l'energia e cosa è la massa. Ma per ora rimandiamo questa discussione...* **todo** *aggiungere link? serie divulgativa di CURIUSS sulla massa?*
 
 [^energy-positive-dirac]: P.Dirac non sarebbe fiero di noi! P.Dirac userà questa relazione per costruire una teoria quantistica relativistica, usando la relazione {eq}`relativity:dynamics:energy` e considerando tutti i valori possibili di energia, sia quelli positivi sia quelli negativi. Questa scelta portò Dirac alla previsione di valori di energia negativi, e all'esistenza dell'**antimateria**.
+
+```
+
+```{dropdown} Limite classico
+:open:
+
+**Energia.** Partendo dall'espressione dell'energia
+
+$$E = \gamma m c^2$$
+
+e calcolando i primi termini dell'espansione in serie di Taylor del fattore di Lorentz $\gamma(v)$, buona approssimazione per $v \ll t$
+
+$$\begin{aligned}
+  \gamma(v) & = \left( 1 - \frac{v^2}{c^2} \right)^{-\frac{1}{2}} = 1 + \frac{1}{2} \frac{v^2}{c^2} + o(v^2) \\
+\end{aligned}$$
+
+si ottiene l'espressione dell'energia troncata alla potenza $v^2$ come somma dell'energia in quiete e dell'energia cinetica classica del sistema,
+
+$$E = m c^2 + \frac{1}{2} m v^2 + o(v^2) \ ,$$
+
+**Quantità di moto.** L'espansione in serie della quantità di moto ha come primo termine significativo l'espressione classica della quantità di moto
+
+$$p = \gamma m v = m v \left[ 1 + \frac{1}{2}\frac{v^2}{c^2} \right] + o(v^3) \ .$$
 
 
 ```
 
 
+
+
 (physics-hs:modern:einstein:special:electrodynamics)=
 ## Elettromagnetismo
+
+... è un po' troppo? Link a [Modern Physics:Special Relativity](https://basics2022.github.io/bbooks-physics-modern/ch/relativity-special/notes.html)
 
 
 ```{bibliography}
