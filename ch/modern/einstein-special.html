@@ -644,6 +644,9 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relativita-e-trasformazioni-di-lorentz">31.1.1. Relatività e trasformazioni di Lorentz</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#velocita-della-luce-e-causalita">31.1.2. Velocità della luce e causalità</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dilatazione-dei-tempi-e-contrazione-delle-lunghezze">31.1.3. Dilatazione dei tempi e contrazione delle lunghezze</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#paradosso-dei-gemelli">31.1.4. «Paradosso» dei gemelli</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geometria-della-relativita-speciale">31.1.5. Geometria della relatività speciale</a></li>
 </ul>
             </nav>
         </div>
@@ -665,9 +668,7 @@ document.write(`
 </div><div class="proof axiom admonition" id="axiom-1">
 <p class="admonition-title"><span class="caption-number">Axiom 31.2 </span> (Costanza della velocità della luce)</p>
 <div class="axiom-content section" id="proof-content">
-<ol class="arabic simple" start="2">
-<li><p>In accordo con le equazioni di Maxwell dell’elettromagnetismo e con l”<a class="reference internal" href="../electromagnetism/em-waves-speed.html#physics-hs-electromagnetism-em-waves-speed-michelson-morley"><span class="std std-ref">esperimento di Michelson-Morley</span></a>, la <strong>velocità della luce è costante</strong>. Questa è inoltre la <strong>velocità massima</strong> della trasmissione di informazioni nello spazio, tale da garantire la <a class="reference internal" href="../todo.html#physics-hs-todo-causality"><span class="std std-ref"><strong>causalità</strong></span></a>, vedi <a class="reference internal" href="#physics-hs-modern-einstein-special-causality"><span class="std std-ref">Velocità della luce e causalità</span></a>.</p></li>
-</ol>
+<p>In accordo con le equazioni di Maxwell dell’elettromagnetismo e con l”<a class="reference internal" href="../electromagnetism/em-waves-speed.html#physics-hs-electromagnetism-em-waves-speed-michelson-morley"><span class="std std-ref">esperimento di Michelson-Morley</span></a>, la <strong>velocità della luce è costante</strong>. Questa è inoltre la <strong>velocità massima</strong> della trasmissione di informazioni nello spazio, tale da garantire la <a class="reference internal" href="../todo.html#physics-hs-todo-causality"><span class="std std-ref"><strong>causalità</strong></span></a>, vedi <a class="reference internal" href="#physics-hs-modern-einstein-special-causality"><span class="std std-ref">Velocità della luce e causalità</span></a>.</p>
 </div>
 </div><p>Esiste però una classe di sistemi di riferimento «privilegiata» per la descrizione del fenomeno fisico (almeno in relatività speciale), la classe dei <em>sistemi riferimento inerziali</em>: l’espressione delle equazioni della fisica sono le stesse quando sono scritte con le coordinate di sistemi di riferimento inerziali. Questo non è vero per un sistema di riferimento qualsiasi.</p>
 <p>Alcune conseguenze: tempo e spazio non sono più assoluti se presi indipendentemente, lo spazio-tempo lo è; il tempo non è più lo stesso per tutti gli osservatori, e quindi si perde il concetto di simultaneità; le trasformazioni di Galileo non rappresentano più le trasformazioni di coordinate tra due sistemi inerziali: queste devono essere sostituite dalle trasformazioni di Lorentz, le stesse trasformazioni di coordiante rispetto alle quali l’equazione delle onde (come quella ricavata dalle equazioni dell’elettromagnetismo di Maxwell) sono invarianti</p>
@@ -727,7 +728,7 @@ document.write(`
     x'= \gamma \left( \frac{v}{c} c t' + x  \right) \\
 \end{cases}
 \end{split}\]</div>
-<p>con <span class="math notranslate nohighlight">\(\gamma = \left[ 1 - \left(\frac{v}{c}\right)^2 \right]^{-\frac{1}{2}}\)</span>.</p>
+<p>con <span class="math notranslate nohighlight">\(\gamma = \left[ 1 - \left(\frac{v}{c}\right)^2 \right]^{-\frac{1}{2}}\)</span>. Da queste trasformazioni seguono i fenomeni di <em>contrazione delle lunghezze</em>, <em>dilatazione dei tempi</em> e il <em>«paradosso»<a class="footnote-reference brackets" href="#twin-non-paradox" id="id2">2</a> dei gemelli</em></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Dimostrazione delle trasformazioni di Lorentz a partire dalle 3 osservazioni<div class="sd-summary-down docutils">
@@ -809,18 +810,32 @@ Dimostrazione delle trasformazioni di Lorentz a partire dalle 3 osservazioni<div
 </li>
 </ol>
 </div>
-</details><div class="proof example admonition" id="relativity:velocity-composition">
-<p class="admonition-title"><span class="caption-number">Example 31.1 </span> (Trasformazione di coordinate tra 3 sistemi di riferimento e composizione delle velocità)</p>
-<div class="example-content section" id="proof-content">
-</div>
-</div></div>
+</details></div>
 <div class="section" id="velocita-della-luce-e-causalita">
 <span id="physics-hs-modern-einstein-special-causality"></span><h2><span class="section-number">31.1.2. </span>Velocità della luce e causalità<a class="headerlink" href="#velocita-della-luce-e-causalita" title="Permalink to this heading">#</a></h2>
+<div class="proof example admonition" id="relativity:velocity-composition">
+<p class="admonition-title"><span class="caption-number">Example 31.1 </span> (Trasformazione di coordinate tra 3 sistemi di riferimento e composizione delle velocità)</p>
+<div class="example-content section" id="proof-content">
+<p>Nemmeno continuando a comporre velocità positive può essere superata la velocità della luce…</p>
+</div>
+</div></div>
+<div class="section" id="dilatazione-dei-tempi-e-contrazione-delle-lunghezze">
+<h2><span class="section-number">31.1.3. </span>Dilatazione dei tempi e contrazione delle lunghezze<a class="headerlink" href="#dilatazione-dei-tempi-e-contrazione-delle-lunghezze" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="paradosso-dei-gemelli">
+<h2><span class="section-number">31.1.4. </span>«Paradosso» dei gemelli<a class="headerlink" href="#paradosso-dei-gemelli" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="geometria-della-relativita-speciale">
+<h2><span class="section-number">31.1.5. </span>Geometria della relatività speciale<a class="headerlink" href="#geometria-della-relativita-speciale" title="Permalink to this heading">#</a></h2>
+<p>Intervallo tra due eventi(invariante); tempo proprio; metrica di Minkowski</p>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="relativity-absolute"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
 <dd><p>A dispetto del nome della teoria, «relatività», e delle vaccate che si sentono «tutto è relativo, come diceva Einstein», la teoria della relatività è un trionfo, il trionfo definitivo, dell’assolutismo: i fenomeni fisici sono indipendenti da chi li osserva, in matematichese sono indipendenti dal sistema di coordinate usato per descrivere il fenomeno; le equazioni della fisica devono quindi essere scritte con oggetti matematici che rispecchiano questa invarianza, i tensori.
 Le equazioni che governano la natura sono invarianti alla scelta del sistema di riferimento usato per descriverle o, detto altrimenti, un fenomeno fisico non dipende da chi lo osserva (almeno se questa osservazione non interagisce con il fenomeno stesso, come succede in meccanica quantistica, vedi<a class="reference internal" href="quantum-basics.html#physics-hs-modern-quantum-basics-measurements"><span class="std std-ref">QM:Misura</span></a>, <a class="reference internal" href="quantum-basics.html#physics-hs-modern-quantum-basics-uncertainty"><span class="std std-ref">QM:Indeterminazione di Heisenberg</span></a>).</p>
+</dd>
+<dt class="label" id="twin-non-paradox"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>Il paradosso dei gemelli non è strettamente un paradosso, è solo una manifestazione dei meccanismi del mondo che sono inaspettati rispetto alla nostra percezione, forgiata sull’esperienza della vita quotidiana. E” solo un esempio in cui i nostri <span class="xref myst">sensi ci ingannano</span>. Secondo la <a class="reference external" href="https://www.treccani.it/enciclopedia/paradosso_(Enciclopedia-della-Matematica)/">Treccani</a>, comunque, il termine «paradosso» può essere applicato nell’accezione ampia a questo genere di situazioni, o affermazioni che contrastano con un’opinione comune o un risultato ritenuto ovvio. Il termine preferibile per un paradosso logico della forma «A e non A» è «antinomia». Esempi di antinomia sono: «questa frase è falsa»; il paradosso del barbiere: un barbiere deve radere tutti e solo le persone che non si radono da sole. Ma chi rade il barbiere? Non può farsi radere da altre persone; se non si rade da solo, infrange la regola perché sta radendo una persona che si rade da sola; se non si rade, allora non sta radendo una persona che non si rade da sola.</p>
 </dd>
 </dl>
 </div>
@@ -891,6 +906,9 @@ Le equazioni che governano la natura sono invarianti alla scelta del sistema di 
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relativita-e-trasformazioni-di-lorentz">31.1.1. Relatività e trasformazioni di Lorentz</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#velocita-della-luce-e-causalita">31.1.2. Velocità della luce e causalità</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dilatazione-dei-tempi-e-contrazione-delle-lunghezze">31.1.3. Dilatazione dei tempi e contrazione delle lunghezze</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#paradosso-dei-gemelli">31.1.4. «Paradosso» dei gemelli</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geometria-della-relativita-speciale">31.1.5. Geometria della relatività speciale</a></li>
 </ul>
   </nav></div>
 
