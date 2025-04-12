@@ -261,6 +261,7 @@ parts:
   - file: ch/extra.md
 - caption: Indice
   chapters:
+  - file: ppl.md
   - file: genindex.md
 
 

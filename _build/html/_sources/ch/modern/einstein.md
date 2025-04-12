@@ -6,3 +6,5 @@ Nell'arco di circa 15 anni, ad A.Einstein si deve la rivoluzione della meccanica
  - la teoria della relatività generale, come nuova **teoria della gravitazione**
 
 
+```{admonition} A.Einstein
+```
