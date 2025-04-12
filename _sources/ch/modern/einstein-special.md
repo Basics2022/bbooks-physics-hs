@@ -39,8 +39,11 @@ bla bla
 bla bla
 ```
 
+(physics-hs:modern:einstein:special:kinematics)=
+## Cinematica
+
 (physics-hs:modern:einstein:special:lorentz)=
-## Relatività e trasformazioni di Lorentz
+### Relatività e trasformazioni di Lorentz
 
 Si ricavano qui le trasformazioni di Lorentz che legano le coordinate spazio-tempo di due osservatori inerziali in moto relativo uniforme, lungo la direzione identificata dalle coordinate $x$, $x'$. Le trasformazioni di Lorentz seguono (quasi) in maniera indolore, dopo aver ribadito (0) la definizione della velocità nello spazio di un evento misurata da un'osservatore, (1) la costanza della velocità di un evento che corrisponde alla propagazione di un segnale luminoso, la cui misura è uguale per ogni osservatore, e (2,3) la simmetria della descrizione del moto relativo:
 
@@ -66,15 +69,15 @@ Per motivi di composizione delle trasformazioni tra più sistemi di riferimento,
 
 $$
 \begin{cases}
-  c t = \gamma \left( c t' - \frac{v}{c} x' \right) \\
-    x = \gamma \left(-\frac{v}{c} c t' + x' \right) \\
+  c t = \gamma \left( c t' + \frac{v}{c} x' \right) \\
+    x = \gamma \left( \frac{v}{c} c t' + x' \right) \\
 \end{cases}
 \quad , \quad
 \begin{cases}
-  c t'= \gamma \left( c t' + \frac{v}{c} x  \right) \\
-    x'= \gamma \left( \frac{v}{c} c t' + x  \right) \\
+  c t'= \gamma \left( c t' - \frac{v}{c} x  \right) \\
+    x'= \gamma \left(-\frac{v}{c} c t' + x  \right) \\
 \end{cases}
-$$
+$$ (eq:lorentz-transform:xt)
 
 con $\gamma = \left[ 1 - \left(\frac{v}{c}\right)^2 \right]^{-\frac{1}{2}}$. Da queste trasformazioni seguono i fenomeni di *contrazione delle lunghezze*, *dilatazione dei tempi* e il *"paradosso"[^twin-non-paradox] dei gemelli*
 
@@ -162,7 +165,7 @@ e si ricavano i valori dei quattro coefficienti $A$, $B$, $C$, $D$ con le condiz
 
 
 (physics-hs:modern:einstein:special:causality)=
-## Velocità della luce e causalità
+### Velocità della luce e causalità
 
 
 
@@ -173,12 +176,69 @@ Nemmeno continuando a comporre velocità positive può essere superata la veloci
 
 ```
 
-## Dilatazione dei tempi e contrazione delle lunghezze
+### Dilatazione dei tempi e contrazione delle lunghezze
 
-## "Paradosso" dei gemelli
+### "Paradosso" dei gemelli
 
-## Geometria della relatività speciale
+### Geometria della relatività speciale
 Intervallo tra due eventi(invariante); tempo proprio; metrica di Minkowski
 
+$$d s^2 = c^2 dt^2 - dx^2 = \dots = c^2 dt'^2 - dx'^2 = d\mathbf{X} \cdot d \mathbf{X}$$
 
+```{dropdown} Invarianza della lunghezza dell'intervallo
+```
+
+Tempo proprio $\tau$, definito come 
+
+$$c \, d\tau = ds = c \sqrt{ 1 - \left(\frac{v}{c}\right)^2} \, dt = \gamma^{-1} \, c \, dt \ . $$
+
+
+(physics-hs:modern:einstein:special:dynamics)=
+## Dinamica
+
+La posizione di un sistema puntiforme nello spazio-tempo può essere parametrizzata in maniera conveniente in funzione della lunghezza dell'intervallo $s$ o del tempo proprio $\tau$, 
+
+$$\mathbf{X}(s) = c t(s) \, \mathbf{E}_0 + x(s) \, \mathbf{E}_1$$
+
+La velocità nello spazio-tempo può essere definita come la derivata della posizione nello spazio-tempo rispetto a $s$ o a $\tau$,
+
+$$\mathbf{U}(s) := \dfrac{d \mathbf{X}}{ds} = \dfrac{d \, ct}{ds} \dfrac{d \mathbf{X}}{d \, ct} = \gamma \, \left( c \mathbf{E}_0 + \dfrac{d x}{dt} \right) =  \gamma \mathbf{E}_0 + \gamma \frac{v}{c} \mathbf{E}_1 $$
+
+La quantità di moto viene scritta come il prodotto della velocità per la massa
+
+$$\mathbf{P}(s) := m \mathbf{U}(s) = \gamma m \mathbf{E}_0 + \gamma m \frac{v}{c} \mathbf{E}_1 = \frac{E}{c^2} \mathbf{E}_0 + \gamma \frac{p}{c} \mathbf{E}_1 \ .$$
+
+avendo definito la quantità di moto come prodotto del fattore di Lorentz per la quantità di moto classica $p = \gamma \, m v$, e definito l'energia $E := \gamma m c^2$. Utilizzando queste definizioni e calcolando il prodotto $\mathbf{P} \cdot \mathbf{P}$, si ottiene la relazione
+
+$$m^2 = \frac{E^2}{c^4} + \frac{p^2}{c^2} \ , $$
+
+o esplicitando l'energia
+
+$$E^2 = m^2 c^4 + p^2 c^2 \ . $$ (relativity:dynamics:energy)
+
+Da questa ultima relazione, si ricava ora la famosa relazione $E = mc^2$ per un sistema in quiete e il limite classico dell'energia dei una particella libera, in moto con velocità $v \ll c$.
+
+```{dropdown} Energia in quiete
+:open:
+
+Un sistema in quiete rispetto a un osservatore ha quantità di moto nulla, $p = 0$. Prendendo solo il valore positivo dell'energia[^energy-positive-dirac], si ottiene la famosa relazione 
+
+$$E = m c^2 \ ,$$ (relativity:dynamics:energy:emc2)
+
+ricavata e discussa nell'articolo dal titolo "L'inerzia di un corpo dipende dal contenuto di energia?"{cite}`einstein1905tragheit`. Il titolo dell'articolo descrive bene le conclusioni riassunte nella formula {eq}`relativity:dynamics:energy:emc2`: un corpo in quiete ha energia non nulla, per il fatto di avere massa. *Qua potremmo ricominciare a ragionare su cosa è l'energia e cosa è la massa. Ma per ora rimandiamo questa discussione...* **todo** *aggiungere link? serie di CURIUSS sulla massa?*
+
+[^energy-positive-dirac]: P.Dirac non sarebbe fiero di noi! P.Dirac userà questa relazione per costruire una teoria quantistica relativistica, usando la relazione {eq}`relativity:dynamics:energy` e considerando tutti i valori possibili di energia, sia quelli positivi sia quelli negativi. Questa scelta portò Dirac alla previsione di valori di energia negativi, e all'esistenza dell'**antimateria**.
+
+
+```
+
+
+(physics-hs:modern:einstein:special:electrodynamics)=
+## Elettromagnetismo
+
+
+```{bibliography}
+:style: unsrt
+:filter: docname in docnames
+```
 

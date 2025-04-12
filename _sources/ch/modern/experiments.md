@@ -14,7 +14,7 @@
 
 1900: M.Planck e la radiazione di corpo nero. L'introduzione di una nuova costante, $h$, è solo un trucco per ottenere una regressione dei dati sperimentali? Il lavoro di Einstein sull'effetto fotoelettrico dimostrerà che la costante $h$ compare anche in un altro fenomeno fisico, e suggerisce che $h$ non sia solo un trucco, ma una caratteristica della fisica
 
-1905: *Annus Mirabilis* di A.Einstein: pubblicazioni sulla teoria della relatività speciale, sulla spiegazione dell'effetto fotoelettrico compatibile con la spiegazione di Planck dello spettro del corpo nero, e sul moto browniano come argomento a favore della natura atomica della materia
+1905: *Annus Mirabilis* di A.Einstein: pubblicazioni sulla teoria della relatività speciale{cite}`einstein1905elektrodynamik,einstein1905tragheit`, sulla spiegazione dell'effetto fotoelettrico{cite}`einstein1905erzeugung` compatibile con l'ipotesi di Planck sulla quantizzazione dell'energia, e sul moto browniano{cite}`einstein1905molekularkinetischen` come argomento a favore della natura atomica della materia
 
 1909: Millikan misura la carica dell'elettrone
 
@@ -35,4 +35,11 @@
 1927: Davisson-Germer mostrano il carattere ondulatorio della materia, con un esperimento di diffrazione di elettroni
 
 1926-28: P.Dirac dimostra l'equivalenza delle formulazioni matriciale e ondulatoria della meccanica quantistica, e formula una meccanica quantistica compatibile con la teoria della relatività ristretta di Einstein
+```
+
+## Riferimenti
+
+```{bibliography}
+:style: unsrt
+:filter: docname in docnames
 ```
