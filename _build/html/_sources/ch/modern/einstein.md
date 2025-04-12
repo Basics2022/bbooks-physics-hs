@@ -8,5 +8,15 @@ Nell'arco di circa 15 anni, ad A.Einstein si deve la rivoluzione della meccanica
 
 ```{admonition} A.Einstein
 :class: dropdown
-bla bla
+
+1905, *Annus Mirabilis*
+- due pubblicazioni in cui presenta la teoria della relatività speciale
+  - "Sull'elettrodinamica dei corpi in movimento"{cite}`einstein1905elektrodynamik`
+  - "L'inerzia di un corpo dipende dal contenuto di energia?"{cite}`einstein1905tragheit`
+
+```
+
+```{bibliography}
+:style: unsrt
+:filter: docname in docnames
 ```
