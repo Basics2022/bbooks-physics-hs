@@ -7,4 +7,6 @@ Nell'arco di circa 15 anni, ad A.Einstein si deve la rivoluzione della meccanica
 
 
 ```{admonition} A.Einstein
+:class: dropdown
+bla bla
 ```
