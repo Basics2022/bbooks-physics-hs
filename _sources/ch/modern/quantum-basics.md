@@ -54,7 +54,7 @@ Smettila di dire a Dio cosa fare
 
 Questo scrive[^einstein-god-dice] A.Einstein in una corrispondenza {cite}`born1916albert` con M.Born e N.Bohr nel 1926,
 
-[^einstein-god-dice]: Le frasi di A.Einstein dalle quali è stata tagliata la citazione sono "la teoria produce dei buoni risultati, ma difficilmente ci porterà più vicini al segreto di Dio. Sono fermamente convinto che Dio non giochi a dadi". Chi è interessato è conosce il tedesco {cite}`born1916albert`, o chi si accontenta della traduzione in inglese {cite}`bromberg1972twentieth` trova i riferimenti; per chi vuole ricordarsi l'importanza delle fonti, ma in fondo è un ciarlatano, si consiglia una ricerca "Einstein fake quotes" sul vostro motore di ricerca preferito.
+[^einstein-god-dice]: Le frasi di A.Einstein dalle quali è stata tagliata la citazione sono "la teoria produce dei buoni risultati, ma difficilmente ci porterà più vicini al segreto di Dio. Sono fermamente convinto che Dio non giochi a dadi". Chi è interessato è conosce il tedesco {cite}`born1916albert`, o chi si accontenta della traduzione in inglese {cite}`bromberg1972twentieth` trova i riferimenti; per chi vuole ricordarsi l'importanza delle fonti, ma in fondo è un ciarlatano, si consiglia una ricerca "Einstein fake quotes" sul vostro motore di ricerca preferito. Inoltre non èvero che A.Einstein non conoscesse la matematica - anche se c'era chi la conosceva meglio, e gli diede una mano soprattutto per la [teoria della relatività generale](physics-hs:modern:einstein:general)...: Einstein fu bocciato la prima volta all'ammissione all'ETH, il Politecnico di Zurigo, per la prova di francese. Aveva 16 anni. Entrò l'anno successivo.
 
 Interpretazione probabilistica di alcuni esperimenti:
 - doppia fenditura
