@@ -386,7 +386,6 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 has-children"><a class="reference internal" href="../modern/experiments.html">29. Esperienze ed esperimenti sulla materia, sulla radiazione elettromagnetica e sulla loro interazione</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../modern/experiments-matter.html">29.2. Esperimenti sulla materia</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../modern/experiments-light-matter.html">29.3. Esperimenti sulla radiazione elettromagnetica e l’interazione con la materia</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../modern/black-body-nb.html">29.4. Black body radiation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../modern/intro-radioactivity.html">30. Radioattività</a></li>
@@ -683,7 +682,16 @@ document.write(`
 <span id="physics-hs-waves-equation-examples-mechanics"></span><h2><span class="section-number">21.1.1. </span>Problemi strutturali<a class="headerlink" href="#problemi-strutturali" title="Permalink to this heading">#</a></h2>
 <div class="section" id="azione-assiale-catena-di-molle-lineari">
 <span id="physics-hs-waves-equation-examples-mechanics-axial"></span><h3><span class="section-number">21.1.1.1. </span>Azione assiale - catena di molle lineari<a class="headerlink" href="#azione-assiale-catena-di-molle-lineari" title="Permalink to this heading">#</a></h3>
-<p>L’azione assiale nelle travi elastiche può essere rappresentata con un sistema discret(izzat)o di masse e molle lineari. La trave viene discretizzata con <span class="math notranslate nohighlight">\(N+1\)</span> masse concentrate, connesse da <span class="math notranslate nohighlight">\(N\)</span> molle. La posizione di una massa è</p>
+<p>L’azione assiale nelle travi elastiche può essere rappresentata con un sistema discret(izzat)o di masse e molle lineari. La trave viene discretizzata con <span class="math notranslate nohighlight">\(N+1\)</span> masse concentrate, connesse da <span class="math notranslate nohighlight">\(N\)</span> molle.</p>
+<div class="figure align-default" id="id1">
+<img alt="../../_images/elasticity-spring-axial-continuum.png" src="../../_images/elasticity-spring-axial-continuum.png" />
+<p class="caption"><span class="caption-number">Fig. 21.1 </span><span class="caption-text">Trave soggetta ad azione assiale. Modello continuo.</span><a class="headerlink" href="#id1" title="Link a questa immagine">#</a></p>
+</div>
+<div class="figure align-default" id="id2">
+<img alt="../../_images/elasticity-spring-axial-discrete.png" src="../../_images/elasticity-spring-axial-discrete.png" />
+<p class="caption"><span class="caption-number">Fig. 21.2 </span><span class="caption-text">Trave soggetta ad azione assiale. Modello discreto: la viene rappresentata come un insieme di masse concentrate connesse da molle. Il moto fuori dall’asse della trave è impedito da un vincolo di pattino, che costringe le masse a muoversi solo lungo l’asse.</span><a class="headerlink" href="#id2" title="Link a questa immagine">#</a></p>
+</div>
+<p>La posizione di una massa è</p>
 <div class="math notranslate nohighlight">
 \[X_i(t) = X_{0,i} + U_i(t) \ ,\]</div>
 <p>cioè la somma della posizione di riferimento e lo spostamento <span class="math notranslate nohighlight">\(U_i\)</span>. Nella configurazione di riferimento la struttura non è soggetta a sforzi, e le molle hanno allungamento nullo. Segue che l’allungamento della molla tra la massa <span class="math notranslate nohighlight">\(i\)</span> e <span class="math notranslate nohighlight">\(j\)</span> è</p>
@@ -787,6 +795,10 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[c_{v} = \sqrt{\frac{N_0}{m}} \ .\]</div>
 <p>Esempio: corde di strumenti musicali.</p>
+<div class="figure align-default" id="id3">
+<img alt="../../_images/elasticity-spring-outofplane-discrete.png" src="../../_images/elasticity-spring-outofplane-discrete.png" />
+<p class="caption"><span class="caption-number">Fig. 21.3 </span><span class="caption-text">Questa è una didascalia</span><a class="headerlink" href="#id3" title="Link a questa immagine">#</a></p>
+</div>
 </div>
 </div>
 <div class="section" id="fluidi">
