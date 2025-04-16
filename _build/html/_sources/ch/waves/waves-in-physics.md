@@ -18,7 +18,19 @@ Nelle sezioni successive viene mostrato come l'equazione delle onde compare in d
 (physics-hs:waves:equation:examples:mechanics:axial)=
 ### Azione assiale - catena di molle lineari
 
-L'azione assiale nelle travi elastiche può essere rappresentata con un sistema discret(izzat)o di masse e molle lineari. La trave viene discretizzata con $N+1$ masse concentrate, connesse da $N$ molle. La posizione di una massa è
+L'azione assiale nelle travi elastiche può essere rappresentata con un sistema discret(izzat)o di masse e molle lineari. La trave viene discretizzata con $N+1$ masse concentrate, connesse da $N$ molle.
+
+```{figure} ../../media/elasticity-spring-axial-continuum.png
+
+Trave soggetta ad azione assiale. Modello continuo.
+```
+
+```{figure} ../../media/elasticity-spring-axial-discrete.png
+
+Trave soggetta ad azione assiale. Modello discreto: la viene rappresentata come un insieme di masse concentrate connesse da molle. Il moto fuori dall'asse della trave è impedito da un vincolo di pattino, che costringe le masse a muoversi solo lungo l'asse.
+```
+
+La posizione di una massa è
 
 $$X_i(t) = X_{0,i} + U_i(t) \ ,$$
 
@@ -144,6 +156,12 @@ Confrontando questa espressione con l'espressione {eq}`eq:wave-eqn:1d` dell'equa
 $$c_{v} = \sqrt{\frac{N_0}{m}} \ .$$
 
 Esempio: corde di strumenti musicali.
+
+```{figure} ../../media/elasticity-spring-outofplane-discrete.png
+
+Questa è una didascalia
+
+```
 
 (physics-hs:waves:equation:examples:fluids)=
 ## Fluidi
