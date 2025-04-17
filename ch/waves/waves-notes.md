@@ -124,7 +124,27 @@ $$\begin{aligned}
 </div>
 -->
 
-<div style="display: flex; flwx-wrap: wrap; gap: 0px;">
+<!-- flex-wrap: wrap; -->
+<div style="display: flex; gap: 0; overflow-x: auto; min-width: 2400px;">
+  <div style="width: 480px; height: 560px; overflow: hidden;">
+    <div style="transform: scale(0.8); transform-origin: top left; width: 700px; height: 700px;">
+      <iframe src="../../_static/animations/waves-packet.html" width="800" height="800" frameborder="0" style="border: 0;"></iframe>
+    </div>
+  </div>
+  <div style="width: 480px; height: 560px; overflow: hidden;">
+    <div style="transform: scale(0.8); transform-origin: top left; width: 800px; height: 800px;">
+      <iframe src="../../_static/animations/waves-mode-1.html" width="800" height="800" frameborder="0" style="border: 0;"></iframe>
+    </div>
+  </div>
+  <div style="width: 480px; height: 560px; overflow: hidden;">
+    <div style="transform: scale(0.8); transform-origin: top left; width: 800px; height: 800px;">
+      <iframe src="../../_static/animations/waves-mode-2.html" width="800" height="800" frameborder="0" style="border: 0;"></iframe>
+    </div>
+  </div>
+</div>
+
+<!--
+<div style="display: flex; gap: 0px;">
   <div style="transform: scale(0.70); transform-origin: top left;">
     <iframe src="../../_static/animations/waves-packet.html" width="800" height="800" frameborder="0"></iframe>
   </div>
@@ -135,7 +155,7 @@ $$\begin{aligned}
     <iframe src="../../_static/animations/waves-mode-2.html" width="800" height="800" frameborder="0"></iframe>
   </div>
 </div>
-
+-->
 
 #### Torsione di una trave con un estremo vincolato e un estremo libero
 
