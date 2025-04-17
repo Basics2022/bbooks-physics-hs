@@ -74,6 +74,14 @@ $$T = \pi \dfrac{a^{\frac{3}{2}}}{\sqrt{GM}} \ \quad , \quad T^2 \sim a^3$$
 
 ```
 
+<div style="display: flex; gap: 0; overflow-x: auto;>">  <!-- min-width: 2400px;"> -->
+  <div style="width: 900px; height: 500px; overflow: hidden;">
+    <div style="transform: scale(0.8); transform-origin: top left; width: 1000px; height: 550px;">
+      <iframe src="../../_static/animations/kepler.html" width="1200" height="700" frameborder="0" style="border: 0;"></iframe>
+    </div>
+  </div>
+</div>
+
 
 
 (physics-hs:mechanics:dynamics:motion:gravitation:two-bodies)=
@@ -92,18 +100,17 @@ $$P_1 - G = P_1 - \frac{m_0 \, P_0 + m_1 \, P_1}{m_0 + m_1} = \frac{ - m_0 \, P_
 L'equazione del moto per il corpo $1$ nel sistema di riferimento inerziale con origine in $G$ segue il secondo principio della dinamica. L'equazione del moto può essere scritto in termini del raggio vettore tra corpo $1$ e centro di massa,
 
 $$\begin{aligned}
-  m_1 \dfrac{d^2}{dt^2}(P_1-G) & = - G m_0 m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} = \\
-                               & = - G \dfrac{(m_0 + m_1)^2}{m_0} m_1 \frac{P_1 - G}{|P_1 - G|^3} 
+  m_1 \dfrac{d^2}{dt^2}(P_1-G) 
+  & = - G m_0 m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} = \\
+  & = - G \dfrac{m_0^2}{(m_0 + m_1)^2} m_0 m_1 \frac{P_1 - G}{|P_1 - G|^3} 
 \end{aligned}$$
 
 o in termini del raggio vettore tra i due corpi $P_1 - P_0$
 
-$$
-  \frac{m_0 m_1}{m_0 + m_1} \dfrac{d^2}{dt^2}(P_1-P_0) = - G m_0 m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} 
-$$
-$$
-  m_1 \dfrac{d^2}{dt^2}(P_1-P_0) = - G ( m_0 + m_1 ) m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} 
-$$
+$$\begin{aligned}
+  \frac{m_0 m_1}{m_0 + m_1} \dfrac{d^2}{dt^2}(P_1-P_0) & = - G m_0 m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} \\
+  m_1 \dfrac{d^2}{dt^2}(P_1-P_0) & = - G ( m_0 + m_1 ) m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3}  \\
+\end{aligned}$$
 
 Le equazioni del moto in questi due sistemi di riferimento possono essere scritte nella forma
 
@@ -146,6 +153,7 @@ Poiché $\frac{1}{2}\dot{r}^2 \ge 0$, il moto è possibile per tutti i valori di
 **Seconda legge legge.** Considerando l'area descritta dal moto del pianeta attorno al Sole, la velocità angolare è costante lungo la traiettoria.
 
 **Terza legge.** In un sistema di pianeti, il quadrato del periodo delle orbite descritte dai pianeti è proporzionale al cubo del semiasse maggiore della traiettoria, $T^2 \propto a^3$.
+
 
 
 <span style="color:red">**todo** rispetto a quale sistema di riferimento? Serve l'approssimazione che la massa del Sole sia $>>$ delle masse dei pianeti, se si considera inerziale un sistema di coordinate con origine nel Sole? O bisogna/si può usare un sistema inerziale con origine nel centro di massa del sistema (considerato isolato)</span>
