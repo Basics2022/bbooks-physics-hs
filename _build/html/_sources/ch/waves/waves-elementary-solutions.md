@@ -37,6 +37,8 @@ $$\begin{aligned}
 così che $\partial_{tt} u - c^2 \partial_{tt} u = \left( -\omega_n^2 + c^2 k_n^2 \right) u = 0$ se è soddisfatta la relazione tra la pulsazione $\omega_n$ e il vettore d'onda $k_n$, $\omega_n = c k_n$.
 ```
 
+
+
 (physics-hs:waves:equation:solutions:1d:travelling)=
 ### Onde viaggianti
 Utilizzando le proprietà delle funzioni trigonometriche, la funzione $u_n(x,t) = f_{n}(x) g_n(t)$ può essere scritta come somma di due onde viaggianti con velocità $c$,

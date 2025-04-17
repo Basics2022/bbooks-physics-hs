@@ -987,6 +987,21 @@ Soluzione.<div class="sd-summary-down docutils">
 <p class="sd-card-text">per trovare</p>
 <div class="math notranslate nohighlight">
 \[h_2 = \frac{1}{2} \frac{L^2 \dot{\theta}_1^2}{g} \ .\]</div>
+<p class="sd-card-text"><strong>Reazioni vincolari.</strong></p>
+<ul>
+<li><p class="sd-card-text">Prima dell’urto, la reazione alla cerniera deve solo sostenere il peso del corpo di massa <span class="math notranslate nohighlight">\(M\)</span>, e quindi la forza è in direzione radiale (verso l’alto nella posizione di quiete, per bilanciare il peso) di intensità <span class="math notranslate nohighlight">\(Mg\)</span></p></li>
+<li><p class="sd-card-text">Dopo l’urto, le reazioni della cerniera contribuiscono a realizzare il moto. Noto il moto <span class="math notranslate nohighlight">\(\theta(t), \dot{\theta}(t)\)</span> e l’azione delle «forze attive», è possible ricavare le reazioni dalle equazioni del moto</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+      x: &amp; \quad F_x = (M+m) \dfrac{d v_x}{dt} = (M+m) \dfrac{d}{dt} \left( L \dot{\theta} \cos \theta \right) = (M+m) L (\ddot{\theta} \cos \theta - \dot{\theta}^2 \sin \theta )  \\
+      y: &amp; \quad F_x - (M+m)g = (M+m) \dfrac{d v_y}{dt} = (M+m) \dfrac{d}{dt} \left( L \dot{\theta} \sin \theta \right) = (M+m) L (\ddot{\theta} \sin \theta + \dot{\theta}^2 \cos \theta )  \\
+    \end{aligned}\end{split}\]</div>
+</li>
+<li><p class="sd-card-text"><strong>Durante l’urto</strong>, la cerniera introduce nel sistema delle reazioni impulsive. Queste possono essere valuatate usando le equazioni del moto nella forma incrementale per un intervallo di tempo attorno all’urto. Ad esempio, usando l’equazione di bilancio della quantità di moto,</p>
+<div class="math notranslate nohighlight">
+\[\vec{I}^{hinge} = \Delta \vec{Q} = (M+m) L \dot{\theta}^+ \hat{x} - m v^- \hat{x} = \vec{0} \]</div>
+</li>
+</ul>
 </div>
 </details><!-- Esercizio ************************************************************* -->
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
@@ -1016,7 +1031,7 @@ Proiettile su pendolo con massa distribuita</div>
 </div>
 </div>
 </div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
 Soluzione.<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -1056,6 +1071,27 @@ Soluzione.<div class="sd-summary-down docutils">
 <p class="sd-card-text">per trovare</p>
 <div class="math notranslate nohighlight">
 \[h_2 = \frac{\left(\frac{1}{2} m + \frac{1}{6} M \right) L^2 \dot{\theta}_1^2 }{\left( m + \frac{M}{2} \right) g} \ .\]</div>
+<p class="sd-card-text"><strong>Reazioni vincolari.</strong></p>
+<ul>
+<li><p class="sd-card-text">Prima dell’urto, la reazione alla cerniera deve solo sostenere il peso del corpo di massa <span class="math notranslate nohighlight">\(M\)</span>, e quindi la forza è in direzione radiale (verso l’alto nella posizione di quiete, per bilanciare il peso) di intensità <span class="math notranslate nohighlight">\(Mg\)</span></p></li>
+<li><p class="sd-card-text">Dopo l’urto, le reazioni della cerniera contribuiscono a realizzare il moto. Noto il moto <span class="math notranslate nohighlight">\(\theta(t), \dot{\theta}(t)\)</span> e l’azione delle «forze attive», è possible ricavare le reazioni dalle equazioni del moto</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+      x: &amp; \quad F_x = (M+m) \dfrac{d v_x}{dt} = (M+m) \dfrac{d}{dt} \left( L \dot{\theta} \cos \theta \right) = (M+m) L (\ddot{\theta} \cos \theta - \dot{\theta}^2 \sin \theta )  \\
+      y: &amp; \quad F_x - (M+m)g = (M+m) \dfrac{d v_y}{dt} = (M+m) \dfrac{d}{dt} \left( L \dot{\theta} \sin \theta \right) = (M+m) L (\ddot{\theta} \sin \theta + \dot{\theta}^2 \cos \theta )  \\
+    \end{aligned}\end{split}\]</div>
+</li>
+<li><p class="sd-card-text"><strong>Durante l’urto</strong>, la cerniera introduce nel sistema delle <strong>reazioni impulsive</strong>. Queste possono essere valuatate usando le equazioni del moto nella forma incrementale per un intervallo di tempo attorno all’urto. Ad esempio, usando l’equazione di bilancio della quantità di moto,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+      \vec{I}^{hinge} = \Delta \vec{Q} 
+      &amp; = \left( \dfrac{M}{2} + m \right) L \dot{\theta}^+ \hat{x} - m v^- \hat{x} = \\
+      &amp; = \left( \dfrac{\dfrac{M}{2} + m}{3 m + M}  - 1  \right) m v^- \hat{x} = \\
+      &amp; = - \dfrac{1 + 4 \frac{m}{M}}{2+6\frac{m}{M}} m v^- \hat{x} \ .
+    \end{aligned}\end{split}\]</div>
+<p class="sd-card-text">La cerniera introduce una reazione impulsiva in direzione opposta alla quantità di moto iniziale del proiettile <span class="math notranslate nohighlight">\(m v^- \hat{x}\)</span>.</p>
+</li>
+</ul>
 </div>
 </details><!-- Esercizio ************************************************************* -->
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">

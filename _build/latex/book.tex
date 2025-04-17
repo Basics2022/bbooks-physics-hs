@@ -87,7 +87,7 @@
         
 
 \title{Fisica per le superiori}
-\date{12 apr 2025}
+\date{17 apr 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -6031,6 +6031,30 @@ per trovare
 \begin{equation*}
 \begin{split}h_2 = \frac{1}{2} \frac{L^2 \dot{\theta}_1^2}{g} \ .\end{split}
 \end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Reazioni vincolari.}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Prima dell’urto, la reazione alla cerniera deve solo sostenere il peso del corpo di massa \(M\), e quindi la forza è in direzione radiale (verso l’alto nella posizione di quiete, per bilanciare il peso) di intensità \(Mg\)
+
+\item {} 
+\sphinxAtStartPar
+Dopo l’urto, le reazioni della cerniera contribuiscono a realizzare il moto. Noto il moto \(\theta(t), \dot{\theta}(t)\) e l’azione delle «forze attive», è possible ricavare le reazioni dalle equazioni del moto
+\begin{equation*}
+\begin{split}\begin{aligned}
+      x: & \quad F_x = (M+m) \dfrac{d v_x}{dt} = (M+m) \dfrac{d}{dt} \left( L \dot{\theta} \cos \theta \right) = (M+m) L (\ddot{\theta} \cos \theta - \dot{\theta}^2 \sin \theta )  \\
+      y: & \quad F_x - (M+m)g = (M+m) \dfrac{d v_y}{dt} = (M+m) \dfrac{d}{dt} \left( L \dot{\theta} \sin \theta \right) = (M+m) L (\ddot{\theta} \sin \theta + \dot{\theta}^2 \cos \theta )  \\
+    \end{aligned}\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{Durante l’urto}, la cerniera introduce nel sistema delle reazioni impulsive. Queste possono essere valuatate usando le equazioni del moto nella forma incrementale per un intervallo di tempo attorno all’urto. Ad esempio, usando l’equazione di bilancio della quantità di moto,
+\begin{equation*}
+\begin{split}\vec{I}^{hinge} = \Delta \vec{Q} = (M+m) L \dot{\theta}^+ \hat{x} - m v^- \hat{x} = \vec{0} \end{split}
+\end{equation*}
+\end{itemize}
+
 
 
 \begin{sphinxuseclass}{sd-container-fluid}
@@ -6175,6 +6199,38 @@ per trovare
 \begin{equation*}
 \begin{split}h_2 = \frac{\left(\frac{1}{2} m + \frac{1}{6} M \right) L^2 \dot{\theta}_1^2 }{\left( m + \frac{M}{2} \right) g} \ .\end{split}
 \end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Reazioni vincolari.}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Prima dell’urto, la reazione alla cerniera deve solo sostenere il peso del corpo di massa \(M\), e quindi la forza è in direzione radiale (verso l’alto nella posizione di quiete, per bilanciare il peso) di intensità \(Mg\)
+
+\item {} 
+\sphinxAtStartPar
+Dopo l’urto, le reazioni della cerniera contribuiscono a realizzare il moto. Noto il moto \(\theta(t), \dot{\theta}(t)\) e l’azione delle «forze attive», è possible ricavare le reazioni dalle equazioni del moto
+\begin{equation*}
+\begin{split}\begin{aligned}
+      x: & \quad F_x = (M+m) \dfrac{d v_x}{dt} = (M+m) \dfrac{d}{dt} \left( L \dot{\theta} \cos \theta \right) = (M+m) L (\ddot{\theta} \cos \theta - \dot{\theta}^2 \sin \theta )  \\
+      y: & \quad F_x - (M+m)g = (M+m) \dfrac{d v_y}{dt} = (M+m) \dfrac{d}{dt} \left( L \dot{\theta} \sin \theta \right) = (M+m) L (\ddot{\theta} \sin \theta + \dot{\theta}^2 \cos \theta )  \\
+    \end{aligned}\end{split}
+\end{equation*}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{Durante l’urto}, la cerniera introduce nel sistema delle \sphinxstylestrong{reazioni impulsive}. Queste possono essere valuatate usando le equazioni del moto nella forma incrementale per un intervallo di tempo attorno all’urto. Ad esempio, usando l’equazione di bilancio della quantità di moto,
+\begin{equation*}
+\begin{split}\begin{aligned}
+      \vec{I}^{hinge} = \Delta \vec{Q} 
+      & = \left( \dfrac{M}{2} + m \right) L \dot{\theta}^+ \hat{x} - m v^- \hat{x} = \\
+      & = \left( \dfrac{\dfrac{M}{2} + m}{3 m + M}  - 1  \right) m v^- \hat{x} = \\
+      & = - \dfrac{1 + 4 \frac{m}{M}}{2+6\frac{m}{M}} m v^- \hat{x} \ .
+    \end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La cerniera introduce una reazione impulsiva in direzione opposta alla quantità di moto iniziale del proiettile \(m v^- \hat{x}\).
+
+\end{itemize}
+
 
 
 \begin{sphinxuseclass}{sd-container-fluid}
@@ -12513,7 +12569,24 @@ Nelle sezioni successive viene mostrato come l’equazione delle onde compare in
 \subsubsection{Azione assiale \sphinxhyphen{} catena di molle lineari}
 \label{\detokenize{ch/waves/waves-in-physics:azione-assiale-catena-di-molle-lineari}}\label{\detokenize{ch/waves/waves-in-physics:physics-hs-waves-equation-examples-mechanics-axial}}
 \sphinxAtStartPar
-L’azione assiale nelle travi elastiche può essere rappresentata con un sistema discret(izzat)o di masse e molle lineari. La trave viene discretizzata con \(N+1\) masse concentrate, connesse da \(N\) molle. La posizione di una massa è
+L’azione assiale nelle travi elastiche può essere rappresentata con un sistema discret(izzat)o di masse e molle lineari. La trave viene discretizzata con \(N+1\) masse concentrate, connesse da \(N\) molle.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics{{elasticity-spring-axial-continuum}.png}
+\caption{Trave soggetta ad azione assiale. Modello continuo.}\label{\detokenize{ch/waves/waves-in-physics:id1}}\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics{{elasticity-spring-axial-discrete}.png}
+\caption{Trave soggetta ad azione assiale. Modello discreto: la viene rappresentata come un insieme di masse concentrate connesse da molle. Il moto fuori dall’asse della trave è impedito da un vincolo di pattino, che costringe le masse a muoversi solo lungo l’asse.}\label{\detokenize{ch/waves/waves-in-physics:id2}}\end{figure}
+
+\sphinxAtStartPar
+La posizione di una massa è
 \begin{equation*}
 \begin{split}X_i(t) = X_{0,i} + U_i(t) \ ,\end{split}
 \end{equation*}
@@ -12660,6 +12733,13 @@ Confrontando questa espressione con l’espressione \eqref{equation:ch/waves/wav
 \end{equation*}
 \sphinxAtStartPar
 Esempio: corde di strumenti musicali.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics{{elasticity-spring-outofplane-discrete}.png}
+\caption{Modello discreto di un filo teso.}\label{\detokenize{ch/waves/waves-in-physics:id3}}\end{figure}
 
 
 \subsection{Fluidi}
@@ -18894,7 +18974,7 @@ Modello Standard
 1900: M.Planck e la radiazione di corpo nero. L’introduzione di una nuova costante, \(h\), è solo un trucco per ottenere una regressione dei dati sperimentali? Il lavoro di Einstein sull’effetto fotoelettrico dimostrerà che la costante \(h\) compare anche in un altro fenomeno fisico, e suggerisce che \(h\) non sia solo un trucco, ma una caratteristica della fisica
 
 \sphinxAtStartPar
-1905: \sphinxstyleemphasis{Annus Mirabilis} di A.Einstein: pubblicazioni sulla teoria della relatività speciale{[}\hyperlink{cite.ch/modern/einstein-special:id10}{1}, \hyperlink{cite.ch/modern/einstein-special:id11}{2}{]}, sulla spiegazione dell’effetto fotoelettrico{[}\hyperlink{cite.ch/modern/experiments:id5}{3}{]} compatibile con l’ipotesi di Planck sulla quantizzazione dell’energia, e sul moto browniano{[}\hyperlink{cite.ch/modern/experiments:id6}{4}{]} come argomento a favore della natura atomica della materia
+1905: \sphinxstyleemphasis{Annus Mirabilis} di A.Einstein: pubblicazioni sulla teoria della relatività speciale{[}\hyperlink{cite.ch/modern/experiments:id7}{1}, \hyperlink{cite.ch/modern/experiments:id8}{2}{]}, sulla spiegazione dell’effetto fotoelettrico{[}\hyperlink{cite.ch/modern/experiments:id5}{3}{]} compatibile con l’ipotesi di Planck sulla quantizzazione dell’energia, e sul moto browniano{[}\hyperlink{cite.ch/modern/experiments:id6}{4}{]} come argomento a favore della natura atomica della materia
 
 \sphinxAtStartPar
 1909: Millikan misura la carica dell’elettrone
@@ -19355,57 +19435,6 @@ Questa espressione della sezione d’urto ha un buon accordo con i dati sperimen
 \sphinxstepscope
 
 
-\section{Black body radiation}
-\label{\detokenize{ch/modern/black-body-nb:black-body-radiation}}\label{\detokenize{ch/modern/black-body-nb:physics-hs-modern-black-body}}\label{\detokenize{ch/modern/black-body-nb::doc}}
-\begin{sphinxuseclass}{cell}\begin{sphinxVerbatimInput}
-
-\begin{sphinxuseclass}{cell_input}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
-\PYG{k+kn}{import} \PYG{n+nn}{matplotlib}\PYG{n+nn}{.}\PYG{n+nn}{pyplot} \PYG{k}{as} \PYG{n+nn}{plt}
-\PYG{k+kn}{from} \PYG{n+nn}{ipywidgets} \PYG{k+kn}{import} \PYG{n}{interactive}\PYG{p}{,} \PYG{n}{widgets}\PYG{p}{,} \PYG{n}{Output}
-\PYG{k+kn}{from} \PYG{n+nn}{IPython}\PYG{n+nn}{.}\PYG{n+nn}{display} \PYG{k+kn}{import} \PYG{n}{display}\PYG{p}{,} \PYG{n}{clear\PYGZus{}output}
-
-\PYG{c+c1}{\PYGZsh{} Create an Output widget to capture and update the plot}
-\PYG{n}{out} \PYG{o}{=} \PYG{n}{Output}\PYG{p}{(}\PYG{p}{)}
-
-\PYG{c+c1}{\PYGZsh{} Function to update plot}
-\PYG{k}{def} \PYG{n+nf}{plot\PYGZus{}fun}\PYG{p}{(}\PYG{n}{n}\PYG{p}{)}\PYG{p}{:}
-    \PYG{k}{with} \PYG{n}{out}\PYG{p}{:}
-        \PYG{n}{clear\PYGZus{}output}\PYG{p}{(}\PYG{n}{wait}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Clear the previous output}
-        \PYG{n}{plt}\PYG{o}{.}\PYG{n}{figure}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{6}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{)}\PYG{p}{)}
-        \PYG{n}{plt}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{random}\PYG{o}{.}\PYG{n}{random}\PYG{p}{(}\PYG{n}{n}\PYG{p}{)}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{random}\PYG{o}{.}\PYG{n}{random}\PYG{p}{(}\PYG{n}{n}\PYG{p}{)}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{o}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
-        \PYG{n}{plt}\PYG{o}{.}\PYG{n}{title}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Plot with }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{n}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{ points}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
-        \PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
-
-\PYG{c+c1}{\PYGZsh{} Create the slider widget}
-\PYG{n}{n\PYGZus{}slider} \PYG{o}{=} \PYG{n}{widgets}\PYG{o}{.}\PYG{n}{IntSlider}\PYG{p}{(}\PYG{n+nb}{min}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n+nb}{max}\PYG{o}{=}\PYG{l+m+mi}{100}\PYG{p}{,} \PYG{n}{step}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{value}\PYG{o}{=}\PYG{l+m+mi}{10}\PYG{p}{)}
-
-\PYG{c+c1}{\PYGZsh{} Create the interactive widget}
-\PYG{n}{interactive\PYGZus{}plot} \PYG{o}{=} \PYG{n}{interactive}\PYG{p}{(}\PYG{n}{plot\PYGZus{}fun}\PYG{p}{,} \PYG{n}{n}\PYG{o}{=}\PYG{n}{n\PYGZus{}slider}\PYG{p}{)}
-
-\PYG{c+c1}{\PYGZsh{} Display the slider and the plot output}
-\PYG{n}{display}\PYG{p}{(}\PYG{n}{interactive\PYGZus{}plot}\PYG{p}{,} \PYG{n}{out}\PYG{p}{)}
-\end{sphinxVerbatim}
-
-\end{sphinxuseclass}\end{sphinxVerbatimInput}
-\begin{sphinxVerbatimOutput}
-
-\begin{sphinxuseclass}{cell_output}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-interactive(children=(IntSlider(value=10, description=\PYGZsq{}n\PYGZsq{}, min=1), Output()), \PYGZus{}dom\PYGZus{}classes=(\PYGZsq{}widget\PYGZhy{}interact\PYGZsq{},…
-\end{sphinxVerbatim}
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-Output()
-\end{sphinxVerbatim}
-
-\end{sphinxuseclass}\end{sphinxVerbatimOutput}
-
-\end{sphinxuseclass}
-\sphinxstepscope
-
-
 \chapter{Radioattività}
 \label{\detokenize{ch/modern/intro-radioactivity:radioattivita}}\label{\detokenize{ch/modern/intro-radioactivity:physics-hs-modern-radioactivity}}\label{\detokenize{ch/modern/intro-radioactivity::doc}}
 \sphinxAtStartPar
@@ -19703,11 +19732,11 @@ due pubblicazioni in cui presenta la teoria della relatività speciale
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-«Sull’elettrodinamica dei corpi in movimento»{[}\hyperlink{cite.ch/modern/einstein-special:id10}{1}{]}
+«Sull’elettrodinamica dei corpi in movimento»{[}\hyperlink{cite.ch/modern/experiments:id7}{1}{]}
 
 \item {} 
 \sphinxAtStartPar
-«L’inerzia di un corpo dipende dal contenuto di energia?»{[}\hyperlink{cite.ch/modern/einstein-special:id11}{2}{]}
+«L’inerzia di un corpo dipende dal contenuto di energia?»{[}\hyperlink{cite.ch/modern/experiments:id8}{2}{]}
 
 \end{itemize}
 
@@ -19720,7 +19749,7 @@ due pubblicazioni in cui presenta la teoria della relatività speciale
 \section{Relatività speciale}
 \label{\detokenize{ch/modern/einstein-special:relativita-speciale}}\label{\detokenize{ch/modern/einstein-special:physics-hs-modern-einstein-special}}\label{\detokenize{ch/modern/einstein-special::doc}}
 \sphinxAtStartPar
-La teoria della relatività speciale viene presentata da A.Einstein in due articoli del suo \sphinxstyleemphasis{Annus Mirabilis}, il 1905. Il primo articolo, «Sull’elettrodinamica dei corpi in movimento»{[}\hyperlink{cite.ch/modern/einstein-special:id10}{1}{]}, propone una nuova teoria della meccanica partendo da {\hyperref[\detokenize{ch/modern/einstein-special:physics-hs-modern-einstein-special-principles}]{\sphinxcrossref{\DUrole{std,std-ref}{due princìpi}}}}: le leggi non dipendono dall’osservatore, e la velocità della luce misurata da ogni osservatore è costante. Questi due princìpi permettono di ricavare una teoria meccanica che sia compatibile con le equazioni di Maxwell dell’elettromagnetismo, sostituendo la relarività galileiana con le trasformazioni di Lorentz ricavate a partire dai due princìpi, come mostrato nella sezione sulla {\hyperref[\detokenize{ch/modern/einstein-special:physics-hs-modern-einstein-special-kinematics}]{\sphinxcrossref{\DUrole{std,std-ref}{cinematica realtivistica}}}}. Nel secondo articolo, «L’inerzia di un corpo dipende dal contenuto di energia?»{[}\hyperlink{cite.ch/modern/einstein-special:id11}{2}{]}, viene discussa la dinamica e riconosciuto il ruolo della massa nell’eneergia dei sistemi: la più famosa conseguenza è riassunta nella legge
+La teoria della relatività speciale viene presentata da A.Einstein in due articoli del suo \sphinxstyleemphasis{Annus Mirabilis}, il 1905. Il primo articolo, «Sull’elettrodinamica dei corpi in movimento»{[}\hyperlink{cite.ch/modern/experiments:id7}{1}{]}, propone una nuova teoria della meccanica partendo da {\hyperref[\detokenize{ch/modern/einstein-special:physics-hs-modern-einstein-special-principles}]{\sphinxcrossref{\DUrole{std,std-ref}{due princìpi}}}}: le leggi non dipendono dall’osservatore, e la velocità della luce misurata da ogni osservatore è costante. Questi due princìpi permettono di ricavare una teoria meccanica che sia compatibile con le equazioni di Maxwell dell’elettromagnetismo, sostituendo la relarività galileiana con le trasformazioni di Lorentz ricavate a partire dai due princìpi, come mostrato nella sezione sulla {\hyperref[\detokenize{ch/modern/einstein-special:physics-hs-modern-einstein-special-kinematics}]{\sphinxcrossref{\DUrole{std,std-ref}{cinematica realtivistica}}}}. Nel secondo articolo, «L’inerzia di un corpo dipende dal contenuto di energia?»{[}\hyperlink{cite.ch/modern/experiments:id8}{2}{]}, viene discussa la dinamica e riconosciuto il ruolo della massa nell’eneergia dei sistemi: la più famosa conseguenza è riassunta nella legge
 \begin{equation*}
 \begin{split}E^{rest} = m c^2 \ ,\end{split}
 \end{equation*}
@@ -20018,7 +20047,7 @@ P.Dirac non sarebbe fiero di noi! P.Dirac userà questa relazione per costruire 
 \begin{split}E = m c^2 \ ,\end{split}
 \end{equation}
 \sphinxAtStartPar
-ricavata e discussa nell’articolo dal titolo «L’inerzia di un corpo dipende dal contenuto di energia?»{[}\hyperlink{cite.ch/modern/einstein-special:id11}{2}{]}. Il titolo dell’articolo descrive bene le conclusioni riassunte nella formula \eqref{equation:ch/modern/einstein-special:relativity:dynamics:energy:emc2}: un corpo in quiete ha energia non nulla, per il fatto di avere massa. \sphinxstyleemphasis{Qua potremmo ricominciare a ragionare su cosa è l’energia e cosa è la massa. Ma per ora rimandiamo questa discussione…} \sphinxstylestrong{todo} \sphinxstyleemphasis{aggiungere link? serie divulgativa di CURIUSS sulla massa?}
+ricavata e discussa nell’articolo dal titolo «L’inerzia di un corpo dipende dal contenuto di energia?»{[}\hyperlink{cite.ch/modern/experiments:id8}{2}{]}. Il titolo dell’articolo descrive bene le conclusioni riassunte nella formula \eqref{equation:ch/modern/einstein-special:relativity:dynamics:energy:emc2}: un corpo in quiete ha energia non nulla, per il fatto di avere massa. \sphinxstyleemphasis{Qua potremmo ricominciare a ragionare su cosa è l’energia e cosa è la massa. Ma per ora rimandiamo questa discussione…} \sphinxstylestrong{todo} \sphinxstyleemphasis{aggiungere link? serie divulgativa di CURIUSS sulla massa?}
 \subsubsection*{Limite classico}
 
 \sphinxAtStartPar
@@ -22035,10 +22064,10 @@ Joan Bromberg. Twentieth Century\sphinxhyphen{}The Born\sphinxhyphen{}Einstein L
 \item\relax\sphinxstyleindexentry{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}sphere}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{ex-e-field-sphere}}
 \indexspace
 \bigletter{example\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/waves-phenomena:\detokenize{example-0}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}in\sphinxhyphen{}physics}\sphinxstyleindexpageref{ch/waves/waves-in-physics:\detokenize{example-0}}
 \indexspace
 \bigletter{example\sphinxhyphen{}1}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/waves-phenomena:\detokenize{example-1}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}in\sphinxhyphen{}physics}\sphinxstyleindexpageref{ch/waves/waves-in-physics:\detokenize{example-1}}
 \indexspace
 \bigletter{example\sphinxhyphen{}10}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}10}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-10}}
@@ -22068,10 +22097,10 @@ Joan Bromberg. Twentieth Century\sphinxhyphen{}The Born\sphinxhyphen{}Einstein L
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}18}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-18}}
 \indexspace
 \bigletter{example\sphinxhyphen{}2}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/modern/quantum\sphinxhyphen{}basics}\sphinxstyleindexpageref{ch/modern/quantum-basics:\detokenize{example-2}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}in\sphinxhyphen{}physics}\sphinxstyleindexpageref{ch/waves/waves-in-physics:\detokenize{example-2}}
 \indexspace
 \bigletter{example\sphinxhyphen{}3}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/modern/quantum\sphinxhyphen{}basics}\sphinxstyleindexpageref{ch/modern/quantum-basics:\detokenize{example-3}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-3}}
 \indexspace
 \bigletter{example\sphinxhyphen{}4}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}4}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-4}}
