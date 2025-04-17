@@ -159,7 +159,7 @@ Esempio: corde di strumenti musicali.
 
 ```{figure} ../../media/elasticity-spring-outofplane-discrete.png
 
-Questa è una didascalia
+Modello discreto di un filo teso.
 
 ```
 

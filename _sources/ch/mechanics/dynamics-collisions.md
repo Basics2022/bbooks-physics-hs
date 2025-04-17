@@ -325,8 +325,18 @@ per trovare
 
 $$h_2 = \frac{1}{2} \frac{L^2 \dot{\theta}_1^2}{g} \ .$$
 
+**Reazioni vincolari.**
+- Prima dell'urto, la reazione alla cerniera deve solo sostenere il peso del corpo di massa $M$, e quindi la forza è in direzione radiale (verso l'alto nella posizione di quiete, per bilanciare il peso) di intensità $Mg$
+- Dopo l'urto, le reazioni della cerniera contribuiscono a realizzare il moto. Noto il moto $\theta(t), \dot{\theta}(t)$ e l'azione delle "forze attive", è possible ricavare le reazioni dalle equazioni del moto
 
+   $$\begin{aligned}
+      x: & \quad F_x = (M+m) \dfrac{d v_x}{dt} = (M+m) \dfrac{d}{dt} \left( L \dot{\theta} \cos \theta \right) = (M+m) L (\ddot{\theta} \cos \theta - \dot{\theta}^2 \sin \theta )  \\
+      y: & \quad F_x - (M+m)g = (M+m) \dfrac{d v_y}{dt} = (M+m) \dfrac{d}{dt} \left( L \dot{\theta} \sin \theta \right) = (M+m) L (\ddot{\theta} \sin \theta + \dot{\theta}^2 \cos \theta )  \\
+    \end{aligned}$$
 
+- **Durante l'urto**, la cerniera introduce nel sistema delle reazioni impulsive. Queste possono essere valuatate usando le equazioni del moto nella forma incrementale per un intervallo di tempo attorno all'urto. Ad esempio, usando l'equazione di bilancio della quantità di moto,
+
+   $$\vec{I}^{hinge} = \Delta \vec{Q} = (M+m) L \dot{\theta}^+ \hat{x} - m v^- \hat{x} = \vec{0} $$
 
 
 ```
@@ -358,6 +368,7 @@ Si analizzi inizialmente il caso di urto anelastico.
 ::::
 
 ```{dropdown} Soluzione.
+:open:
 
 **Urto anelastico.** Nel caso di urto anelastico, il proiettile di massa $m$ rimane incastrato nella massa $M$. Usando il bilancio del momento della quantità di moto rispetto alla cerniera per confrontare le due condizioni prima e dopo l'urto, in assenza di reazioni impulsive che hanno momento non nullo rispetto alla rotazione attorno alla cerniera, si ha:
 
@@ -398,6 +409,28 @@ $$\left( m + \frac{M}{2} \right) g h_2 = \left( \frac{1}{2} m + \frac{1}{6} M \r
 per trovare
 
 $$h_2 = \frac{\left(\frac{1}{2} m + \frac{1}{6} M \right) L^2 \dot{\theta}_1^2 }{\left( m + \frac{M}{2} \right) g} \ .$$
+
+
+**Reazioni vincolari.**
+- Prima dell'urto, la reazione alla cerniera deve solo sostenere il peso del corpo di massa $M$, e quindi la forza è in direzione radiale (verso l'alto nella posizione di quiete, per bilanciare il peso) di intensità $Mg$
+- Dopo l'urto, le reazioni della cerniera contribuiscono a realizzare il moto. Noto il moto $\theta(t), \dot{\theta}(t)$ e l'azione delle "forze attive", è possible ricavare le reazioni dalle equazioni del moto
+
+   $$\begin{aligned}
+      x: & \quad F_x = (M+m) \dfrac{d v_x}{dt} = (M+m) \dfrac{d}{dt} \left( L \dot{\theta} \cos \theta \right) = (M+m) L (\ddot{\theta} \cos \theta - \dot{\theta}^2 \sin \theta )  \\
+      y: & \quad F_x - (M+m)g = (M+m) \dfrac{d v_y}{dt} = (M+m) \dfrac{d}{dt} \left( L \dot{\theta} \sin \theta \right) = (M+m) L (\ddot{\theta} \sin \theta + \dot{\theta}^2 \cos \theta )  \\
+    \end{aligned}$$
+
+- **Durante l'urto**, la cerniera introduce nel sistema delle **reazioni impulsive**. Queste possono essere valuatate usando le equazioni del moto nella forma incrementale per un intervallo di tempo attorno all'urto. Ad esempio, usando l'equazione di bilancio della quantità di moto,
+
+   $$\begin{aligned}
+      \vec{I}^{hinge} = \Delta \vec{Q} 
+      & = \left( \dfrac{M}{2} + m \right) L \dot{\theta}^+ \hat{x} - m v^- \hat{x} = \\
+      & = \left( \dfrac{\dfrac{M}{2} + m}{3 m + M}  - 1  \right) m v^- \hat{x} = \\
+      & = - \dfrac{1 + 4 \frac{m}{M}}{2+6\frac{m}{M}} m v^- \hat{x} \ .
+    \end{aligned}$$
+
+    La cerniera introduce una reazione impulsiva in direzione opposta alla quantità di moto iniziale del proiettile $m v^- \hat{x}$.
+
 
 ```
 
