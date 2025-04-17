@@ -112,6 +112,31 @@ $$\begin{aligned}
 
 ````
 
+<!--
+<iframe src="../../_static/animations/waves-packet.html" width="800" height="600" frameborder="0"></iframe>
+<iframe src="../../_static/animations/waves-mode-1.html" width="800" height="600" frameborder="0"></iframe>
+<iframe src="../../_static/animations/waves-mode-2.html" width="800" height="600" frameborder="0"></iframe>
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <iframe src="../../_static/animations/waves-packet.html" width="100" height="100" frameborder="0"></iframe>
+  <iframe src="../../_static/animations/waves-mode-1.html" width="100" height="100" frameborder="0"></iframe>
+  <iframe src="../../_static/animations/waves-mode-2.html" width="100" height="100" frameborder="0"></iframe>
+</div>
+-->
+
+<div style="display: flex; flwx-wrap: wrap; gap: 0px;">
+  <div style="transform: scale(0.70); transform-origin: top left;">
+    <iframe src="_static/animations/waves-packet.html" width="800" height="800" frameborder="0"></iframe>
+  </div>
+  <div style="transform: scale(0.70); transform-origin: top left;">
+    <iframe src="_static/animations/waves-mode-1.html" width="800" height="800" frameborder="0"></iframe>
+  </div>
+  <div style="transform: scale(0.70); transform-origin: top left;">
+    <iframe src="_static/animations/waves-mode-2.html" width="800" height="800" frameborder="0"></iframe>
+  </div>
+</div>
+
+
 #### Torsione di una trave con un estremo vincolato e un estremo libero
 
 $$\begin{aligned}
