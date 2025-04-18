@@ -155,11 +155,35 @@ Confrontando questa espressione con l'espressione {eq}`eq:wave-eqn:1d` dell'equa
 
 $$c_{v} = \sqrt{\frac{N_0}{m}} \ .$$
 
+**Dynamical equations.** Out-of-axis component of the momentum equation of the $i$-th mass reads 
+
+   $$\begin{aligned} 
+     M \ddot{w}_i 
+     & = F_i^e - F_{i-1,i} \theta_{i,i-1} + F_{i,i+1} \theta_{i,i+1} = \\
+     & = F_i^e - F_{i-1,i} \dfrac{w_i - w_{i-1}}{\Delta x} + F_{i,i+1} \dfrac{w_{i+1}-x_{i}}{\Delta x} = \\
+   \end{aligned}$$
+   
+ with the approximations $\sin \theta_{i,i+1} \sim \theta_{i,i+1} \sim \dfrac{w_{i+1}-w_i}{\Delta x}$ and $F_{i,i+1} = N_0$ for small displacements. If $M_i = m \Delta x$, with $\mu$ linear mass density, and the lumped force is written as a linear force density $F_i = \Delta x \, f_i(t)$
+ 
+ $$\begin{aligned}
+   \Delta x \, m \ddot{w}_i(t) - N_0 \dfrac{w_{i+1}(t) - 2 w_i(t) + w_{i-1}(t)}{\Delta x} = \Delta x \, f_i^e
+  \end{aligned}$$
+
+  and dividing by $\Delta x$, adn recognizing the center scheme for the second order partial derivative in space,
+ 
+ $$\begin{aligned}
+    m \ddot{w}_i(t) - N_0 \dfrac{w_{i+1}(t) - 2 w_i(t) + w_{i-1}(t)}{\Delta x^2} & = \, f_i^e \\
+    m \partial_{tt} \ddot{w}(x,t) - N_0 \partial_{xx} w(x,t) & = \, f(x,t)
+  \end{aligned}$$
+
+  the wave equation for the out-of-plane dispalcement appears.
+
+
 Esempio: corde di strumenti musicali.
 
 ```{figure} ../../media/elasticity-spring-outofplane-discrete.png
 
-Modello discreto di un filo teso.
+Modello discreto di un filo teso. 
 
 ```
 
