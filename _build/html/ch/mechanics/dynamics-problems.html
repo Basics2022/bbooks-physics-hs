@@ -428,6 +428,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../ppl.html">Persone</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Indice</a></li>
 </ul>
 
@@ -1631,9 +1632,9 @@ In assenza di attrito, sul sistema non agiscono azioni non conservative (gravit�
 \[Q_x = m_1 \dot{y} + m_2 \left( \dot{x} + \dot{y} \right) \ ,\]</div>
 <p class="sd-card-text">e poiché il sistema è inizialmente in uno stato di quiete, la componente orizzontale della quantità di moto vale <span class="math notranslate nohighlight">\(Q_x = 0\)</span>. Da questa relazione si può quindi ricavare una relazione tra le derivate dei due gradi di libertà,</p>
 <div class="math notranslate nohighlight" id="equation-mechanics-ex19-kinematics">
-<span class="eqno">(12.9)<a class="headerlink" href="#equation-mechanics-ex19-kinematics" title="Permalink a questa equazione">#</a></span>\[\dot{x} = - \frac{m_1 + m_2}{m_2} \dot{y}\]</div>
+<span class="eqno">(12.11)<a class="headerlink" href="#equation-mechanics-ex19-kinematics" title="Permalink a questa equazione">#</a></span>\[\dot{x} = - \frac{m_1 + m_2}{m_2} \dot{y}\]</div>
 </li>
-<li><p class="sd-card-text">Usando la relazione <a class="reference internal" href="#equation-mechanics-ex19-kinematics">(12.9)</a>, è possibile riscrivere l’espressione dell’energia meccanica del sistema in funzione solo di <span class="math notranslate nohighlight">\(x\)</span> e <span class="math notranslate nohighlight">\(\dot{y}\)</span></p>
+<li><p class="sd-card-text">Usando la relazione <a class="reference internal" href="#equation-mechanics-ex19-kinematics">(12.11)</a>, è possibile riscrivere l’espressione dell’energia meccanica del sistema in funzione solo di <span class="math notranslate nohighlight">\(x\)</span> e <span class="math notranslate nohighlight">\(\dot{y}\)</span></p>
 <div class="math notranslate nohighlight">
 \[E_0 = m_1 \dot{y}^2 + \frac{1}{2} k x^2 \ .\]</div>
 <p class="sd-card-text">Quindi la velocità massima dei due corpi si verifica quando l’allungamento della molla è nullo, <span class="math notranslate nohighlight">\(x = 0\)</span>,</p>
@@ -1660,7 +1661,7 @@ In assenza di attrito, sul sistema non agiscono azioni non conservative (gravit�
      0 = \dot{y} m_1 \ddot{y} + m_2 (\dot{x} + \dot{y}) (\ddot{x} + \ddot{y}) + k x \dot{x} \\
      0 = m_1 \ddot{y} + m_2 ( \ddot{x} + \ddot{y} ) = 0
     \end{cases}\end{split}\]</div>
-<p class="sd-card-text">e usando la relazione <a class="reference internal" href="#equation-mechanics-ex19-kinematics">(12.9)</a> per esprimere <span class="math notranslate nohighlight">\(\dot{x}\)</span> in funzione di <span class="math notranslate nohighlight">\(\dot{y}\)</span> e semplificare questo ultimo termine nella prima delle due equazioni,</p>
+<p class="sd-card-text">e usando la relazione <a class="reference internal" href="#equation-mechanics-ex19-kinematics">(12.11)</a> per esprimere <span class="math notranslate nohighlight">\(\dot{x}\)</span> in funzione di <span class="math notranslate nohighlight">\(\dot{y}\)</span> e semplificare questo ultimo termine nella prima delle due equazioni,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
       0 &amp; = \dot{y} \left[ m_1 \ddot{y} + m_2 \left( - \frac{m_1+m_2}{m_2} + 1\right) \left( \ddot{x} + \ddot{y} \right) - \frac{m_1 + m_2}{m_2} k x \right] = \\
@@ -2098,7 +2099,7 @@ Soluzione.<div class="sd-summary-down docutils">
 \[m R^2 \ddot{\theta} = m g R \sin \theta\]</div>
 <p class="sd-card-text">con le condizioni iniziali definite dal problema. Oppure, la conservazione dell’energia meccanica</p>
 <div class="math notranslate nohighlight" id="equation-mechanics-ex28-energy">
-<span class="eqno">(12.10)<a class="headerlink" href="#equation-mechanics-ex28-energy" title="Permalink a questa equazione">#</a></span>\[E = m g R \cos \theta + \frac{1}{2} m R^2 \dot{\theta}^2\]</div>
+<span class="eqno">(12.12)<a class="headerlink" href="#equation-mechanics-ex28-energy" title="Permalink a questa equazione">#</a></span>\[E = m g R \cos \theta + \frac{1}{2} m R^2 \dot{\theta}^2\]</div>
 <p class="sd-card-text">in assenza di azioni non conservative, permette di ricavare immediatamente una relazione tra <span class="math notranslate nohighlight">\(\theta\)</span> e <span class="math notranslate nohighlight">\(\dot{\theta}\)</span>.
 L’equazione di bilancio della quantità di moto permette invece di determinare le reazioni vincolari,</p>
 <div class="math notranslate nohighlight">
@@ -2115,7 +2116,7 @@ L’equazione di bilancio della quantità di moto permette invece di determinare
        r:      \ R_r = m g \cos \theta - m R \dot{\theta}^2 \\
        \theta: \ m g \sin \theta = m R \ddot{\theta}^2 \\
     \end{cases}\end{split}\]</div>
-<p class="sd-card-text">La componente tangenziale è equivalente all’equazione pura del moto; la componente radiale fornisce l’espressione della reazione vincolare in funzione di <span class="math notranslate nohighlight">\(\theta\)</span> e <span class="math notranslate nohighlight">\(\dot{\theta}\)</span>. Usando la relazione <a class="reference internal" href="#equation-mechanics-ex28-energy">(12.10)</a> per esprimere <span class="math notranslate nohighlight">\(\dot{\theta}\)</span> in funzione di <span class="math notranslate nohighlight">\(\theta\)</span>, si può scrivere la reazione normale in funzione del solo <span class="math notranslate nohighlight">\(\theta\)</span></p>
+<p class="sd-card-text">La componente tangenziale è equivalente all’equazione pura del moto; la componente radiale fornisce l’espressione della reazione vincolare in funzione di <span class="math notranslate nohighlight">\(\theta\)</span> e <span class="math notranslate nohighlight">\(\dot{\theta}\)</span>. Usando la relazione <a class="reference internal" href="#equation-mechanics-ex28-energy">(12.12)</a> per esprimere <span class="math notranslate nohighlight">\(\dot{\theta}\)</span> in funzione di <span class="math notranslate nohighlight">\(\theta\)</span>, si può scrivere la reazione normale in funzione del solo <span class="math notranslate nohighlight">\(\theta\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
       R_r

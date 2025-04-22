@@ -22,7 +22,15 @@ avendo indicato con $\vec{r}_{12} = (P_2 - P_1)$ il vettore che punta dal punto 
 
 $$G = 6.67 \cdot 10^{-11} \frac{N \, m^2}{kg^2}$$ 
 
-la **costante di gravitazione universale**, considerata una costante della natura. **todo**
+la **costante di gravitazione universale**, considerata una costante della natura.
+
+
+```{admonition} Gravitazione di Newton e azione a distanza
+:class: tip
+
+La legge di gravitazione universale è una legge di **interazione a distanza**, in cui la forza agente su un corpo in un punto $P_0(t)$ nello spazio dipende dalla posizione di un altro corpo nel punto $P_1(t)$ nello spazio nello stesso istante di tempo. L'espressione dell'interazione gravitazionale tramite la legge di gravitazione universale è quindi in contrasto con i postulati della [fisica di Einstein](physics-hs:modern:einstein), secondo la quale la velocità massima di trasmissione dell'informazione nello spazio è finita e uguale alla velocità della luce, $c \sim 3 \cdot 10^{8} \, m/s$.
+
+```
 
 (physics-hs:mechanics:actions:gravitation:field)=
 ### Campo di gravità
@@ -268,7 +276,36 @@ L'attrito dinamico è la forma di attrito che si manifesta tra due corpi a conta
 $$\vec{F}_{12} = - \mu^d N \frac{\vec{v}_{12}}{|\vec{v}_{12}|} \ ,$$
 
 avendo definito $\vec{F}_{12}$ come la forza agente sul corpo $1$ a causa del corpo $2$, e $\vec{v}_{12} = \vec{v}_1 - \vec{v}_2$ la velocità del corpo $1$ relativa al corpo $2$.
- 
+
+```{admonition} La potenza totale dell'attrito dinamico è non-positiva
+:class: tip
+
+Un blocco di massa $m$ scivola con velocità $\vec{v}$ su un piano orizzontale. Il corpo è soggetto all'attrazione gravitazionale terrestre e il suo peso è $m \vec{g} = - m g \hat{z}$. Il coefficiente di attrito dinamico tra blocco e piano è $\mu^d$. Come si vedrà nel capitolo sulla dinamica, la reazione normale del piano sul blocco è una forza verticale diretta verso l'alto e di intensità uguale al peso, $\vec{N} = m g \hat{z}$.
+
+La potenza della forza di attrito è quindi
+
+$$P^{d} = \vec{F} \cdot \vec{v} = - \mu^d N \frac{\vec{v}}{|\vec{v}|} \cdot \vec{v} = - \mu^d N |\vec{v}| \le 0 \ ,$$
+
+poiché il coefficiente di attrito è non-negativo $\mu^d ge 0$, la reazione normale affinchè ci sia contatto ha intensità non negativa $N \ge 0$ e il modulo di un vettore è non negativo.
+
+```
+
+```{admonition} La potenza totale dell'attrito dinamico è non-positiva: moto relativo
+:class: tip
+
+Due blocchi scivolano l'uno sull'altro...Siano $\vec{v}_1$, $\vec{v}_2$ le velocità dei blocchi $1$ e $2$, e $\vec{F}_{12}$ la forza agente sul blocco $1$ dovuta al contatto con $2$, e $\vec{F}_{21} = - \vec{F}_{12}$ la forza agente sul blocco $2$ dovuta al blocco $1$ **todo** *fare riferimento a Dinamica:Terzo principio*
+
+$$\begin{aligned}
+  P^d
+  & = \vec{F}_{12} \cdot \vec{v}_1 + \vec{F}_{21} \cdot \vec{v}_2 = \\
+  & = - \mu^d N \frac{\vec{v}_{12}}{|\vec{v}_{12}|} \cdot \vec{v}_1 - \mu^d N \frac{\vec{v}_{21}}{|\vec{v}_{21}|} \cdot \vec{v}_2 = \\
+  & = - \mu^d N \frac{\vec{v}_{12}}{|\vec{v}_{12}|} \cdot ( \vec{v}_1 - \vec{v}_2 ) = \\
+  & = - \mu^d N |\vec{v}_{12}| \le 0 \ .
+\end{aligned}$$
+
+```
+
+
 (physics-hs:mechanics:actions:contact:pure-rolling)=
 ### Puro rotolamento
 In generale, è necessario garantire l'attrito per garantire la condizione di puro rotolamento.

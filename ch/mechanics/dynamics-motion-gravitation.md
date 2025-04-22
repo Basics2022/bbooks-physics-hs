@@ -50,6 +50,7 @@ $$G = 6.67 \cdot 10^{-11} \dfrac{N \, m^2}{kg^2} \ ,$$
 
 che prende il nome di **costante di gravitazione universale**.
 
+(physics-hs:mechanics:dynamics:motion:gravitation:kepler)=
 ## Leggi di Keplero
 Le equazioni della dinamica e la legge di gravitazione universale da lui formulate, permise a Newton di dimostrare le **tre leggi di Keplero** che descrivono il moto *limitato* (**todo** *trovare sinonimo*) di due corpi celesti, come ad esempio il moto di un pianeta rispetto al Sole, o il moto di un satellite rispetto al pianeta di riferimento.
 

@@ -697,7 +697,11 @@ document.write(`
 <p>avendo indicato con <span class="math notranslate nohighlight">\(\vec{r}_{12} = (P_2 - P_1)\)</span> il vettore che punta dal punto <span class="math notranslate nohighlight">\(P_1\)</span> al punto <span class="math notranslate nohighlight">\(P_2\)</span>, <span class="math notranslate nohighlight">\(r_{12} = |\vec{r}_{12}|\)</span> il suo modulo, e <span class="math notranslate nohighlight">\(\hat{r}_{12} = \frac{\vec{r}_{12}}{|\vec{r}_{12}|}\)</span> il vettore unitario lungo la stessa direzione, e con</p>
 <div class="math notranslate nohighlight">
 \[G = 6.67 \cdot 10^{-11} \frac{N \, m^2}{kg^2}\]</div>
-<p>la <strong>costante di gravitazione universale</strong>, considerata una costante della natura. <strong>todo</strong></p>
+<p>la <strong>costante di gravitazione universale</strong>, considerata una costante della natura.</p>
+<div class="tip admonition">
+<p class="admonition-title">Gravitazione di Newton e azione a distanza</p>
+<p>La legge di gravitazione universale è una legge di <strong>interazione a distanza</strong>, in cui la forza agente su un corpo in un punto <span class="math notranslate nohighlight">\(P_0(t)\)</span> nello spazio dipende dalla posizione di un altro corpo nel punto <span class="math notranslate nohighlight">\(P_1(t)\)</span> nello spazio nello stesso istante di tempo. L’espressione dell’interazione gravitazionale tramite la legge di gravitazione universale è quindi in contrasto con i postulati della <a class="reference internal" href="../modern/einstein.html#physics-hs-modern-einstein"><span class="std std-ref">fisica di Einstein</span></a>, secondo la quale la velocità massima di trasmissione dell’informazione nello spazio è finita e uguale alla velocità della luce, <span class="math notranslate nohighlight">\(c \sim 3 \cdot 10^{8} \, m/s\)</span>.</p>
+</div>
 </div>
 <div class="section" id="campo-di-gravita">
 <span id="physics-hs-mechanics-actions-gravitation-field"></span><h3><span class="section-number">9.4.1.2. </span>Campo di gravità<a class="headerlink" href="#campo-di-gravita" title="Permalink to this heading">#</a></h3>
@@ -925,6 +929,26 @@ P &amp; = \vec{v}_1     \cdot \vec{F}_{21} + \vec{v}_2     \cdot \vec{F}_{12}
 <div class="math notranslate nohighlight">
 \[\vec{F}_{12} = - \mu^d N \frac{\vec{v}_{12}}{|\vec{v}_{12}|} \ ,\]</div>
 <p>avendo definito <span class="math notranslate nohighlight">\(\vec{F}_{12}\)</span> come la forza agente sul corpo <span class="math notranslate nohighlight">\(1\)</span> a causa del corpo <span class="math notranslate nohighlight">\(2\)</span>, e <span class="math notranslate nohighlight">\(\vec{v}_{12} = \vec{v}_1 - \vec{v}_2\)</span> la velocità del corpo <span class="math notranslate nohighlight">\(1\)</span> relativa al corpo <span class="math notranslate nohighlight">\(2\)</span>.</p>
+<div class="tip admonition">
+<p class="admonition-title">La potenza totale dell’attrito dinamico è non-positiva</p>
+<p>Un blocco di massa <span class="math notranslate nohighlight">\(m\)</span> scivola con velocità <span class="math notranslate nohighlight">\(\vec{v}\)</span> su un piano orizzontale. Il corpo è soggetto all’attrazione gravitazionale terrestre e il suo peso è <span class="math notranslate nohighlight">\(m \vec{g} = - m g \hat{z}\)</span>. Il coefficiente di attrito dinamico tra blocco e piano è <span class="math notranslate nohighlight">\(\mu^d\)</span>. Come si vedrà nel capitolo sulla dinamica, la reazione normale del piano sul blocco è una forza verticale diretta verso l’alto e di intensità uguale al peso, <span class="math notranslate nohighlight">\(\vec{N} = m g \hat{z}\)</span>.</p>
+<p>La potenza della forza di attrito è quindi</p>
+<div class="math notranslate nohighlight">
+\[P^{d} = \vec{F} \cdot \vec{v} = - \mu^d N \frac{\vec{v}}{|\vec{v}|} \cdot \vec{v} = - \mu^d N |\vec{v}| \le 0 \ ,\]</div>
+<p>poiché il coefficiente di attrito è non-negativo <span class="math notranslate nohighlight">\(\mu^d ge 0\)</span>, la reazione normale affinchè ci sia contatto ha intensità non negativa <span class="math notranslate nohighlight">\(N \ge 0\)</span> e il modulo di un vettore è non negativo.</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">La potenza totale dell’attrito dinamico è non-positiva: moto relativo</p>
+<p>Due blocchi scivolano l’uno sull’altro…Siano <span class="math notranslate nohighlight">\(\vec{v}_1\)</span>, <span class="math notranslate nohighlight">\(\vec{v}_2\)</span> le velocità dei blocchi <span class="math notranslate nohighlight">\(1\)</span> e <span class="math notranslate nohighlight">\(2\)</span>, e <span class="math notranslate nohighlight">\(\vec{F}_{12}\)</span> la forza agente sul blocco <span class="math notranslate nohighlight">\(1\)</span> dovuta al contatto con <span class="math notranslate nohighlight">\(2\)</span>, e <span class="math notranslate nohighlight">\(\vec{F}_{21} = - \vec{F}_{12}\)</span> la forza agente sul blocco <span class="math notranslate nohighlight">\(2\)</span> dovuta al blocco <span class="math notranslate nohighlight">\(1\)</span> <strong>todo</strong> <em>fare riferimento a Dinamica:Terzo principio</em></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  P^d
+  &amp; = \vec{F}_{12} \cdot \vec{v}_1 + \vec{F}_{21} \cdot \vec{v}_2 = \\
+  &amp; = - \mu^d N \frac{\vec{v}_{12}}{|\vec{v}_{12}|} \cdot \vec{v}_1 - \mu^d N \frac{\vec{v}_{21}}{|\vec{v}_{21}|} \cdot \vec{v}_2 = \\
+  &amp; = - \mu^d N \frac{\vec{v}_{12}}{|\vec{v}_{12}|} \cdot ( \vec{v}_1 - \vec{v}_2 ) = \\
+  &amp; = - \mu^d N |\vec{v}_{12}| \le 0 \ .
+\end{aligned}\end{split}\]</div>
+</div>
 </div>
 </div>
 <div class="section" id="puro-rotolamento">

@@ -87,7 +87,7 @@
         
 
 \title{Fisica per le superiori}
-\date{17 apr 2025}
+\date{22 apr 2025}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -1625,6 +1625,29 @@ interazione nucleare forte
 \sphinxAtStartPar
 La meccanica classica si occupa del moto che hanno dimensioni e velocità caratteristiche dell’esperienza quotidiana, o di quella che poteva essere l’esperienza quotidiana dell’uomo del XIX secolo.
 
+\begin{sphinxadmonition}{note}{Pre\sphinxhyphen{}requisiti}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxhref{https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic\_geometry.html}{Geometria analitica}
+
+\item {} 
+\sphinxAtStartPar
+\sphinxhref{https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/calculus.html}{Calcolo infinitesimale}
+
+\item {} 
+\sphinxAtStartPar
+\sphinxhref{https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/algebra/vector-algebra-euclidean-space.html}{Algebra vettoriale}
+
+\end{itemize}
+\end{sphinxadmonition}
+
+\begin{sphinxadmonition}{note}{I.Newton, 1642\sphinxhyphen{}1726}
+\begin{itemize}
+\item {} 
+\end{itemize}
+\end{sphinxadmonition}
+
 \sphinxAtStartPar
 La \sphinxstylestrong{meccanica classica} fornisce un buon modello \sphinxstylestrong{deterministico} per sistemi formati da un numero limitato di corpi. Per un numero molto grande di corpi oggetto di indagine, l’approccio della meccanica classica può risultare impraticabile (per necessità di capacità di conto) o comunque poco efficiente (si farebbe un grande sforzo per ottenere gli stessi risultati ottenibili molto più facilmente e velocemente con altri approcci): in questi casi, può essere utile un approccio \sphinxstyleemphasis{statistico} come quello adottato dalla {\hyperref[\detokenize{ch/thermodynamics/foundation:physics-hs-thermodynamics-intro}]{\sphinxcrossref{\DUrole{std,std-ref}{termodinamica classica}}}}.
 
@@ -2053,20 +2076,53 @@ un corpo rigido nello spazio ha 6 gradi di libertà, 3 per definire la posizione
 \subsection{Configurazione e stato in un moto regolare (differenziabile)}
 \label{\detokenize{ch/mechanics/kinematics-point:configurazione-e-stato-in-un-moto-regolare-differenziabile}}
 \sphinxAtStartPar
-La cinematica di un punto \(P(t)\) è completamente definita dalla sua posizione nello spazio in funzione del tempo. La configurazione di un sistema puntiforme in un istante temporale è data dalla sua posizione rispetto a un punto \(O\) preso come origine, come riferimento. Lo stato di un sistema puntiforme in un determinato istante temporale è definito dalla sua posizione e dalla sua velocità. Rispetto a un’origine considerata indipendente dal tempo, la posizione del punto \(P\) è definita dal vettore euclideo \(\vec{r}_P(t) = P(t) - O\) che congiunge l’origine \(O\) con il punto \(P\), la velocità e l’accelerazione sono rispettivamente la derivata prima e seconda della posizione rispetto al tempo,
+La cinematica di un punto \(P(t)\) è completamente definita dalla sua posizione nello spazio in funzione del tempo. La configurazione di un sistema puntiforme in un istante temporale è data dalla sua posizione rispetto a un punto \(O\) preso come origine, come riferimento.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Spostamento, velocità e accelerazione media in un intervallo di tempo \(\ \Delta t_{12} = t_2 - t_1\).} Per un moto qualsiasi di un punto \(P(t)\) riferito a un punto \(O\) fisso, vegono definiti
+\begin{equation*}
+\begin{split}\begin{aligned}
+   \Delta \vec{r}_{P,12} & := P(t_2) - P(t_1) & \text{(spostamento di $P$ rispetto a $O$)} \\
+   \langle \vec{v}_{P;12} \rangle & := \frac{\Delta \vec{r}_{P,12}}{\Delta t_{12}} & \text{(velocità media di $P$ rispetto a $O$)} \\
+   \langle \vec{a}_{P,12} \rangle & := \frac{\Delta \vec{v}_{P,12}}{\Delta t_{12}} & \text{(accelerazione media di $P$ rispetto a $O$)} \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Velocità e accelerazioni istantanee.} Lo stato di un sistema puntiforme in un determinato istante temporale è definito dalla sua posizione e dalla sua velocità. Rispetto a un’origine considerata indipendente dal tempo, la posizione del punto \(P\) è definita dal vettore euclideo \(\vec{r}_P(t) = P(t) - O\) che congiunge l’origine \(O\) con il punto \(P\), la velocità e l’accelerazione sono rispettivamente la derivata prima e seconda della posizione rispetto al tempo,
 \begin{equation*}
 \begin{split}\begin{aligned}
    \vec{r}_P(t) & := P(t) - O & \text{(posizione di $P$ rispetto a $O$)} \\
    \vec{v}_P(t) & := \frac{d \vec{r}_P}{dt}(t) & \text{(velocità di $P$ rispetto a $O$)} \\
    \vec{a}_P(t) & := \frac{d^2 \vec{r}_P}{dt^2}(t) = \frac{d \vec{v}_P}{dt}(t) & \text{(accelerazione di $P$ rispetto a $O$)} \\
 \end{aligned}\end{split}
-\end{equation*}
+\end{equation*}\label{ch/mechanics/kinematics-point:kinematics:avg}
+\begin{sphinxadmonition}{note}{Example 8.1.1 (…)}
+
+
+
+\sphinxAtStartPar
+Un atleta si allena correndo attorno a un isolato con perimetro a forma di triangolo rettangolo, con due cateti di lunghezza \(c_1 = 300 \, m\) e \(c_2 = 400 \, m\). …
+
+\sphinxAtStartPar
+Viene chiesto di calcolare:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+la velocità media dopo 5 giri completi;
+
+\item {} 
+\sphinxAtStartPar
+…
+
+\end{itemize}
+\end{sphinxadmonition}
+
 
 \subsection{Moti particolari}
 \label{\detokenize{ch/mechanics/kinematics-point:moti-particolari}}\label{\detokenize{ch/mechanics/kinematics-point:physics-hs-mechanics-kinematics-point-motion}}
 
-\subsubsection{Moto non accelerato}
-\label{\detokenize{ch/mechanics/kinematics-point:moto-non-accelerato}}\label{\detokenize{ch/mechanics/kinematics-point:physics-hs-mechanics-kinematics-point-motion-a-0}}
+\subsubsection{Moto non accelerato \sphinxhyphen{} o moto rettilineo uniforme.}
+\label{\detokenize{ch/mechanics/kinematics-point:moto-non-accelerato-o-moto-rettilineo-uniforme}}\label{\detokenize{ch/mechanics/kinematics-point:physics-hs-mechanics-kinematics-point-motion-a-0}}
 \sphinxAtStartPar
 Un moto non accelerato di un punto \(P\) rispetto a un sistema di riferimento con origine in \(O\) può essere definito dalla condizione di accelerazione nulla
 \begin{equation*}
@@ -2081,55 +2137,61 @@ la cui integrazione due volte in tempo fornisce le leggi della velocità e dello
 \end{cases}\end{split}
 \end{equation*}
 \sphinxAtStartPar
-\sphinxstylestrong{todo} dimostrazione come esercizio con procedimento
+La condizione di accelerazione nulla implica accelerazione la condizione di \sphinxstylestrong{velocità costante}; la condizione di velocità costante implica che il moto del punto si svolge lungo una \sphinxstylestrong{traiettoria rettilinea}: l’equazione \(\vec{r}_P(t) = \vec{c}_1 \, t + \vec{c}_2\) è infatti l’equazione parametrica di una retta nello spazio, con il tempo \(t\) come parametro.
 
 \sphinxAtStartPar
-Si nota che la condizione di accelerazione nulla implica la condizione di velocità costante. \sphinxstylestrong{todo}
+\sphinxstylestrong{Scelta conveniente sistemi di riferimento.} Una volta identificata la retta sulla quale si svolge la traiettoria, può risultare conveniente introdurre un sistema di coordinate 1\sphinxhyphen{}dimensionale per parametrizzare la retta.
 
 \sphinxAtStartPar
-accompagnata da condizioni tra di loro compatibili (\sphinxstylestrong{todo} \sphinxstyleemphasis{fare esempio di condizioni non compatibili, es. velocità diverse in due istanti temporali diversi}) che identifichino unicamente il moto, come possono essere ad esempio:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-posizione e velocità a un istante temporale
-\begin{equation*}
-\begin{split}\begin{cases}
-    \vec{r}(t_0) = \vec{r}_0 \\
-    \vec{v}(t_0) = \vec{v}_0
-  \end{cases}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Le leggi del moto possono diventano
-\begin{equation*}
-\begin{split}\begin{cases}
-    \vec{v}_P    & = \vec{v}_0  \\
-    \vec{r}_P(t) & = \vec{v}_0 \, ( t - t_0 ) + \vec{r}_0 \ ,
-  \end{cases}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-\sphinxstylestrong{todo} dimostrazione come esercizio con procedimento
+\sphinxstylestrong{Costanti di integrazione.} Poiché si parte da una condizione sull’accelerazione e si integra due volte nel tempo per ottenere la posizione in funzione del tempo, compaiono 2 costanti di integrazione (vettoriali) \(\vec{c}_1\), \(\vec{c}_2\). Per determinare univocamente un moto non accelerato servono due condizioni (vettoriali) indipendenti e compatibili%
+\begin{footnote}[1]\sphinxAtStartFootnote
+Indipendenti: devono fornire tutte le informazioni necessarie (non devono ripetere la stessa informazione); compatibili: devono fornire informazioni che non sono tra di loro mutuamente esclusive.
+%
+\end{footnote} tra di loro, come mostrato negli esempi {\hyperref[\detokenize{ch/mechanics/kinematics-point:kinematics:point:uniform:cauchy}]{\sphinxcrossref{Example 8.1.2}}} e {\hyperref[\detokenize{ch/mechanics/kinematics-point:kinematics:point:uniform:points}]{\sphinxcrossref{Example 8.1.3}}}.
 
-\item {} 
-\sphinxAtStartPar
-posizione in due istanti temporali
-\begin{equation*}
-\begin{split}\begin{cases}
-    \vec{r}(t_0) = \vec{r}_0 \\
-    \vec{r}(t_1) = \vec{r}_1
-  \end{cases}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Le leggi del moto possono diventano
-\begin{equation*}
-\begin{split}\begin{cases}
-    \vec{v}_P    & = \frac{\vec{r}_1 - \vec{r}_0}{t_1 - t_0} \\
-    \vec{r}_P(t) & = \vec{v}_P \, ( t - t_0 ) + \vec{r}_0 \ ,
-  \end{cases}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-\sphinxstylestrong{todo} dimostrazione come esercizio con procedimento
 
-\end{itemize}
+\label{ch/mechanics/kinematics-point:kinematics:point:uniform:cauchy}
+\begin{sphinxadmonition}{note}{Example 8.1.2 (Stato iniziale)}
+
+
+
+\sphinxAtStartPar
+Note le condizioni iniziali sullo stato (posizione e velocità),
+\begin{equation*}
+\begin{split}\begin{cases}
+  \vec{r}(t_0) = \vec{r}_0 \\
+  \vec{v}(t_0) = \vec{v}_0 \ ,
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+le leggi del moto diventano
+\begin{equation*}
+\begin{split}\begin{cases}
+  \vec{v}_P    & = \vec{v}_0  \\
+  \vec{r}_P(t) & = \vec{v}_0 \, ( t - t_0 ) + \vec{r}_0 \ ,
+\end{cases}\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/mechanics/kinematics-point:kinematics:point:uniform:points}
+\begin{sphinxadmonition}{note}{Example 8.1.3 (Posizione nota in due istanti noti)}
+
+
+
+\sphinxAtStartPar
+Nota la posizione in due istanti di tempo noti,
+\begin{equation*}
+\begin{split}\begin{cases}
+  \vec{r}(t_0) = \vec{r}_0 \\
+  \vec{r}(t_1) = \vec{r}_1 \ ,
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+le leggi del moto diventano
+\begin{equation*}
+\begin{split}\begin{cases}
+  \vec{v}_P    & = \frac{\vec{r}_1 - \vec{r}_0}{t_1 - t_0} \\
+  \vec{r}_P(t) & = \vec{v}_P \, ( t - t_0 ) + \vec{r}_0 \ ,
+\end{cases}\end{split}
+\end{equation*}\end{sphinxadmonition}
 
 
 
@@ -2150,39 +2212,62 @@ la cui integrazione due volte in tempo fornisce le leggi della velocità e dello
 \end{cases}\end{split}
 \end{equation*}
 \sphinxAtStartPar
-\sphinxstylestrong{todo} dimostrazione come esercizio con procedimento
-
-\sphinxAtStartPar
-accompagnata da condizioni tra di loro compatibili che identifichino unicamente il moto, come possono essere ad esempio:
-\begin{itemize}
+Tra i moti uniformemente accelerati si possono distinguere due situazioni:
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
 \sphinxAtStartPar
-posizione e velocità a un istante temporale
-\begin{equation*}
-\begin{split}\begin{cases}
-    \vec{r}(t_0) = \vec{r}_0 \\
-    \vec{v}(t_0) = \vec{v}_0
-  \end{cases}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Le leggi del moto possono diventano
-\begin{equation*}
-\begin{split}\begin{cases}
-    \vec{v}_P(t) & = \vec{a} t                     + \vec{v}_0  \\
-    \vec{r}_P(t) & = \dfrac{1}{2}\vec{a} (t-t_0)^2 + \vec{v}_0 \, ( t - t_0 ) + \vec{r}_0 \ ,
-  \end{cases}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-\sphinxstylestrong{todo} dimostrazione come esercizio con procedimento
+il \sphinxstylestrong{moto rettilineo uniformemente accelerato}, se la velocità iniziale è nulla o allineata con l’accelerazione costante
 
 \item {} 
 \sphinxAtStartPar
-posizione in due istanti temporali… \sphinxstylestrong{todo}
+il \sphinxstylestrong{moto parabolico}, se la velocità iniziale e l’accelerazione non sono allineate; in questo caso, il \DUrole{xref,myst}{moto uniformemente accelerato è un moto piano}, che avviene nel piano passante per un punto della traiettoria e nel quale giacciono i vettori velocità e accelerazione.
+
+\end{enumerate}
 
 \sphinxAtStartPar
-\sphinxstylestrong{todo} dimostrazione come esercizio con procedimento
+\sphinxstylestrong{Scelta conveniente sistemi di riferimento.} Per un moto rettilineo uniformemente accelerato, una volta identificata la retta sulla quale si svolge la traiettoria, può risultare conveniente introdurre un sistema di coordinate 1\sphinxhyphen{}dimensionale per parametrizzare la retta. Per un moto parabolico, una volta identificato il piano nel quale si svolge il moto, può risultare conveniente introdurre un sistema di coordinate (cartesiano? perché no) 2\sphinxhyphen{}dimensionale per parametrizzare il piano del moto.
 
-\end{itemize}
+\sphinxAtStartPar
+\sphinxstylestrong{Costanti di integrazione.} Poiché si parte da una condizione sull’accelerazione e si integra due volte nel tempo per ottenere la posizione in funzione del tempo, compaiono 2 costanti di integrazione (vettoriali) \(\vec{c}_1\), \(\vec{c}_2\). Per determinare univocamente un moto non accelerato servono due condizioni (vettoriali) indipendenti e compatibili\sphinxfootnotemark[1] tra di loro, come mostrato negli esempi {\hyperref[\detokenize{ch/mechanics/kinematics-point:kinematics:point:accel:cauchy}]{\sphinxcrossref{Example 8.1.4}}} e {\hyperref[\detokenize{ch/mechanics/kinematics-point:kinematics:point:accel:points}]{\sphinxcrossref{Example 8.1.5}}}.
+\label{ch/mechanics/kinematics-point:kinematics:point:accel:cauchy}
+\begin{sphinxadmonition}{note}{Example 8.1.4 (Stato iniziale)}
+
+
+
+\sphinxAtStartPar
+Note le condizioni iniziali sullo stato (posizione e velocità),
+\begin{equation*}
+\begin{split}\begin{cases}
+  \vec{r}(t_0) = \vec{r}_0 \\
+  \vec{v}(t_0) = \vec{v}_0 \ ,
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+le leggi del moto diventano
+\begin{equation*}
+\begin{split}\begin{cases}
+  \vec{v}_P(t) & = \vec{a} t                     + \vec{v}_0  \\
+  \vec{r}_P(t) & = \dfrac{1}{2}\vec{a} (t-t_0)^2 + \vec{v}_0 \, ( t - t_0 ) + \vec{r}_0 \ ,
+\end{cases}\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/mechanics/kinematics-point:kinematics:point:accel:points}
+\begin{sphinxadmonition}{note}{Example 8.1.5 (Posizione nota in due istanti noti)}
+
+
+\begin{equation*}
+\begin{split}\begin{cases}
+  \vec{r}_0 & = \dfrac{1}{2}\vec{a} t_0^2 + \vec{c}_1 \, t_0 + \vec{c}_2 \\ 
+  \vec{r}_1 & = \dfrac{1}{2}\vec{a} t_1^2 + \vec{c}_1 \, t_1 + \vec{c}_2 \ ,
+\end{cases}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{aligned}
+  \vec{c}_1 & = \left[ \vec{r}_1 - \vec{r}_0 - \dfrac{1}{2} \vec{a} \left( t_1^2 - t_0^2 \right) \right] \dfrac{1}{t_1 - t_0} = \\
+   & = \frac{\vec{r}_1 - \vec{r}_0 }{t_1-t_0} - \dfrac{1}{2} \vec{a} \left( t_0 + t_1 \right) \\
+  \vec{c}_2 & = \vec{r}_0 - \dfrac{1}{2} \vec{a} t_0^2 - t_0 \left[ \frac{\vec{r}_1 - \vec{r}_0 }{t_1-t_0} - \dfrac{1}{2} \vec{a} \left( t_0 + t_1 \right) \right] = \\
+   & = \dfrac{1}{2} \vec{a} t_0 t_1 + \frac{\vec{r}_0 \, t_1 - \vec{r}_1 \, t_0}{t_1-t_0}
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
 
 
 
@@ -2190,68 +2275,97 @@ posizione in due istanti temporali… \sphinxstylestrong{todo}
 \subsubsection{Moto circolare}
 \label{\detokenize{ch/mechanics/kinematics-point:moto-circolare}}\label{\detokenize{ch/mechanics/kinematics-point:physics-hs-mechanics-kinematics-point-motion-circular}}
 \sphinxAtStartPar
-La cinematica di un punto su una traiettoria circolare (\sphinxstylestrong{todo} è un vincolo!) può essere rappresentato usando un sistema di \sphinxstylestrong{coordinate polari} con origine coincidente con il centro della circonferenza
+Il moto di un punto su una traiettoria circolare può essere rappresentato comodamente usando un sistema di \sphinxstylestrong{coordinate polari} con origine coincidente con il centro \(C\) della circonferenza
 \begin{equation*}
-\begin{split}r = R \ , \quad \theta_P(t)=\text{**todo**}\end{split}
+\begin{split}
+r = R  \qquad , \qquad  \theta = \theta_P(t)
+\end{split}
 \end{equation*}
 \sphinxAtStartPar
-o in coordinate cartesiane
+con la distanza del punto \(P\) dal centro della circonferenza \(C\) costante e l’angolo \(\theta_P(t)\) come coordinata libera che descrive il moto; oppure usando un sistema di \sphinxstylestrong{coordinate cartesiane} che descrivono il piano del moto
+\begin{equation}\label{equation:ch/mechanics/kinematics-point:eq:kinematics:point:circuilar:p}
+\begin{split}\begin{aligned}
+  P(t) - C 
+  & = R \cos \theta_P(t) \, \hat{x} + R \sin \theta_P(t) \, \hat{y} = \\
+  & = R \hat{r}(P(t)) \\
+\end{aligned}\end{split}
+\end{equation}
+\sphinxAtStartPar
+avendo usato il versore in direzione radiale della base locale indotta dal sistema di coordinate polari,
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \hat{r}     \left( P(t) \right) & = \hat{x} \, \cos \theta_P(t) + \hat{y} \, \sin \theta_P(t) \\
+  \hat{\theta}\left( P(t) \right) & =-\hat{x} \, \sin \theta_P(t) + \hat{y} \, \cos \theta_P(t) \\
+\end{aligned}\end{split}
+\end{equation*}
+\begin{sphinxadmonition}{note}{Nota:}
+\sphinxAtStartPar
+I versori indotti dalle coordinate polari dipendono dalla posizione del punto \(P\) nello spazio e quindi, quando questa dipendente dal tempo, funzione del tempo \(t\). E” necessario ricordarsi di questa dipendenza quando si usa l’espressione \(P(t) - C = R \hat{r}(P(t))\) per calcolare la velocità e l’accelerazione del punto \(P(t)\), come mostrato di seguito. In particolare, si dimostra che
+\begin{equation*}
+\begin{split}\begin{aligned}
+\dfrac{d \hat{r}}{dt} & = \dot{\theta}_P(t) \, \hat{\theta}(P(t)) \\
+\dfrac{d \hat{\theta}}{dt} & = - \dot{\theta}_P(t) \, \hat{r}(P(t))
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
+
+\sphinxAtStartPar
+Data l’espressione \eqref{equation:ch/mechanics/kinematics-point:eq:kinematics:point:circuilar:p} della posizione del punto \(P(t)\) espressa in funzione del tempo, è possibile calcolare la velocità e l’accelerazione del punto, valutando le derivate prima e seconda della posizione rispetto al tempo,
 \begin{equation*}
 \begin{split}\begin{cases}
- x_P(t) = R \, \cos \theta_P(t) \\
- y_P(t) = R \, \sin \theta_P(t) \\
+  \vec{v}_P(t) & = R \dot{\theta}_P(t) \left( -\sin \theta_P(t) \hat{x} + \cos \theta_P(t) \hat{y} \right) = \\
+               & = R \dot{\theta}_P(t) \hat{\theta}(P(t)) \\
+  \vec{a}_P(t) & = \hat{x} R \left[ - \ddot{\theta}_P(t) \, \sin \theta_P(t) - \dot{\theta}_P^2 \cos \theta_P(t) \right]
+                 + \hat{y} R \left[   \ddot{\theta}_P(t) \, \cos \theta_P(t) - \dot{\theta}_P^2 \sin \theta_P(t) \right] = \\
+               & = R \ddot{\theta}_P(t) \left( -\sin \theta_P(t) \hat{x} + \cos \theta_P(t) \hat{y} \right)
+                 + R \ddot{\theta}_P^2(t) \left( -\cos \theta_P(t) \hat{x} - \sin \theta_P(t) \hat{y} \right) = \\
+               & = R \ddot{\theta}_P(t) \hat{\theta}(P(t)) - R \dot{\theta}_P^2(t) \hat{r}(P(t)) \ .
 \end{cases}\end{split}
 \end{equation*}
 \sphinxAtStartPar
-che permettono di identificare il punto \(P\) con il raggio vettore rispetto all’origine
-\begin{equation*}
-\begin{split}\vec{r}_P(t) = R \cos \theta_P(t) \hat{x} + R \sin \theta_P(t) \hat{y} \ .\end{split}
-\end{equation*}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Definizione vettori \(\hat{r}\), \(\hat{\theta}\) \sphinxstylestrong{todo} *dipendenza di questi versori dalla posizione di \(P\) nello spazio, e quindi in generale dal tempo
-
-\item {} 
-\sphinxAtStartPar
-La velocità e l’accelerazione del punto \sphinxstylestrong{todo}
+La \sphinxstylestrong{velocità} ha direzione \(\hat{\theta}(P(t))\) ed è quindi \sphinxstylestrong{tangente alla traiettoria} circolare. L’accelerazione può avere una direzione generica nel piano, e può avere:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-direzione e modulo di velocità e accelerazione
+componente tangente alla traiettoria, l’accelerazione tangenziale, \(R \ddot{\theta}^2_P(t) \hat{\theta}(P(t))\)
+
+\item {} 
+\sphinxAtStartPar
+componente normale alla traiettoria verso il centro della traiettoria, l’accelerazione normale o \sphinxstylestrong{centripeta}, \(-R \dot{\theta}^2_P(t) \hat{r}(P(t))\)
 
 \end{itemize}
 
-\end{itemize}
-\begin{equation*}
-\begin{split}\begin{cases}
-  \vec{v}_P(t) & = R \dot{\theta}(t) \left( -\sin \theta_P(t) \hat{x} + \cos \theta_P(t) \hat{y} \right) = R \dot{\theta}(t) \hat{\theta}(t) \\
-  \vec{a}_P(t) & = R \ddot{\theta}(t) \left( -\sin \theta_P(t) \hat{x} + \cos \theta_P(t) \hat{y} \right) + \\
-               & + R \ddot{\theta}^2(t) \left( -\cos \theta_P(t) \hat{x} - \sin \theta_P(t) \hat{y} \right)     
-                 = R \ddot{\theta}(t) \hat{\theta}(t) - R \dot{\theta}^2(t) \hat{r}(t) \ .
-\end{cases}\end{split}
-\end{equation*}
 
 \paragraph{Moto circolare uniforme}
 \label{\detokenize{ch/mechanics/kinematics-point:moto-circolare-uniforme}}\label{\detokenize{ch/mechanics/kinematics-point:physics-hs-mechanics-kinematics-point-motion-circular-uniform}}
 \sphinxAtStartPar
 Il moto circolare uniforme ha modulo della velocità costante,
 \begin{equation*}
-\begin{split}|\vec{v}_P| = |R \dot \theta_P|\end{split}
+\begin{split}|\vec{v}_P(t)| = |R \dot \theta_P(t)| \ .\end{split}
 \end{equation*}
 \sphinxAtStartPar
-e la derivata nel tempo della coordinata \(\theta_P\) è costante \sphinxstylestrong{todo}
-\begin{itemize}
-\item {} 
+e quindi la derivata nel tempo della coordinata \(\theta_P\) è costante,
+\begin{equation*}
+\begin{split}\dot\theta_P(t) = \Omega \ .\end{split}
+\end{equation*}
 \sphinxAtStartPar
-\sphinxstylestrong{todo} pulsazione, periodo, frequenza,…
+Quindi, l’accelerazione tangenziale un punto \(P\) che compie un moto circolare uniforme è nulla. L’accelerazione ha solo componente componente centripeta.
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \vec{v}_P & = R \Omega \hat{\theta}_P \\
+  \vec{a}_P & =- R \Omega^2 \hat{r}_P \\
+\end{aligned}\end{split}
+\end{equation*}
 
-\end{itemize}
 
 
 \subsubsection{Moto armonico lungo un segmento}
 \label{\detokenize{ch/mechanics/kinematics-point:moto-armonico-lungo-un-segmento}}\label{\detokenize{ch/mechanics/kinematics-point:physics-hs-mechanics-kinematics-point-motion-harmonic}}
 \sphinxAtStartPar
 Un moto armonico lungo un segmento può essere definito come la proiezione di un punto che compie un moto circolare uniforme su una circonferenza che ha il segmento come diametro \sphinxstylestrong{todo}
+
+
+\bigskip\hrule\bigskip
+
 
 \sphinxstepscope
 
@@ -2343,6 +2457,11 @@ avendo definito la \sphinxstylestrong{velocità angolare}, \(\vec{\omega} = \dot
 \begin{split}\vec{n} \times (\vec{n} \times \vec{w}) = \hat{n} \underbrace{(\hat{n} \cdot \vec{w})}_{=0} - \vec{w} \underbrace{(\hat{n} \cdot \hat{n})}_{=1} = - \vec{w} \ .\end{split}
 \end{equation*}
 \end{itemize}
+
+\begin{sphinxadmonition}{note}{Nota:}
+\sphinxAtStartPar
+La velocità angolare \(\vec{\omega}\) di un sistema rigido è una quantità fisica associata all’intero sistema e non dipende dal punto materiale \(Q\) usato come riferimento per descrivere il moto del sistema.
+\end{sphinxadmonition}
 
 \begin{sphinxadmonition}{note}{Nota:}
 \sphinxAtStartPar
@@ -2751,24 +2870,75 @@ Un corpo rigido ruota con velocità angolare costante \(\omega = 3 \, \text{rad/
 \label{\detokenize{ch/mechanics/kinematics-notes:note-e-dimostrazioni}}\label{\detokenize{ch/mechanics/kinematics-notes:physics-hs-mechanics-kinematics-notes}}\label{\detokenize{ch/mechanics/kinematics-notes::doc}}
 
 \subsection{Cinematica del punto}
-\label{\detokenize{ch/mechanics/kinematics-notes:cinematica-del-punto}}
+\label{\detokenize{ch/mechanics/kinematics-notes:cinematica-del-punto}}\label{\detokenize{ch/mechanics/kinematics-notes:physics-hs-mechanics-kinematics-notes-point}}
 
 \subsubsection{Moto uniforme, \protect\(\ \ddot{\vec{r}}_P(t) = \vec{0}\protect\)}
-\label{\detokenize{ch/mechanics/kinematics-notes:moto-uniforme-ddot-vec-r-p-t-vec-0}}
+\label{\detokenize{ch/mechanics/kinematics-notes:moto-uniforme-ddot-vec-r-p-t-vec-0}}\label{\detokenize{ch/mechanics/kinematics-notes:physics-hs-mechanics-kinematics-notes-point-a-0}}
 \sphinxAtStartPar
 Il moto uniforme è un moto rettilineo.
 \subsubsection*{Dimostrazione}
 
+\sphinxAtStartPar
+Poiché \(\ddot{\vec{r}}_P(t) = \vec{0}\), allora
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \dot{\vec{r}}_P(t) & = \vec{v} \\
+  \vec{r}_P(t) & = \vec{r}_0 + \vec{v} \, t \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+L’espressione della posizione in funzione del tempo è l’espressione parametrica della retta passante per \(\vec{r}_0\) con la stessa direzione del vettore velocità \(\vec{v}\), vedi \sphinxhref{https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic\_geometry/analytic\_geometry\_3d/lines.html\#definizione-ed-equazione}{Matematica:Geometrica analitica nello spazio:Rette nello spazio}.
+
 
 \subsubsection{Moto uniformemente accelerato, \protect\(\ \ddot{\vec{r}}_P(t) = \vec{a}\protect\)}
-\label{\detokenize{ch/mechanics/kinematics-notes:moto-uniformemente-accelerato-ddot-vec-r-p-t-vec-a}}
-\sphinxAtStartPar
-Il moto uniformemente accelerato è un moto piano. Data la posizione del punto \(P\) in un istante, e la sua velocità \(\dot{\vec{r}}_P(t) = \vec{v}_P(t)\), il moto si svolge nel piano passante per \(P\), nel quale giacciono i vettori velocità \(\vec{v}_P(t)\) e accelerazione \(\vec{a}\).
+\label{\detokenize{ch/mechanics/kinematics-notes:moto-uniformemente-accelerato-ddot-vec-r-p-t-vec-a}}\label{\detokenize{ch/mechanics/kinematics-notes:physics-hs-mechanics-kinematics-notes-point-motion-a}}
+
 
 \sphinxAtStartPar
-Se i vettori velocità e accelerazione sono allineati (con direzione concorde o opposta), il moto si svolge lungo una retta.
+Il moto uniformemente accelerato è un moto piano. Se la velocità iniziale \(\vec{v}_0\) (o in qualsiasi istante temporale) ha la stessa direzione dell’accelerazione costante, \(\vec{a}\), allora il moto è rettilineo e si svolge sulla retta passante per il punto iniziale \(P_0\) con la direzione di \(\vec{a}\).
+Nel caso in cui \(\vec{v}_0\) e \(\vec{a}\) non sono allineati, il moto è parabolico e si svolge nel piano passante per \(P_0\) con direzione normale sia a \(\vec{v}_0\) sia a \(\vec{a}\).
+
+
 \subsubsection*{Dimostrazione}
 
+\sphinxAtStartPar
+Data l’accelerazione costante \$\(\ddot{\vec{r}}_P(t) = \vec{a}\)\$, velocità e posizione sono
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \vec{v}_P(t) & = \vec{v}_0 + \vec{a} \, t \\
+          P(t) & =       P_0 + \vec{v}_0 \, t + \dfrac{1}{2} \vec{a} \ t^2 \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Moto rettilineo uniformemente accelerato.} Se \(\vec{v}_0 = v_0 \hat{t}\), \(\vec{a} = a \hat{t}\), allora
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \vec{v}_P(t) & = ( v_0 + a \, t ) \hat{t} \\
+          P(t) - P_0 & = \left( v_0 \, t + \dfrac{1}{2} a \, t^2 \right) \hat{t}  \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Moto parabolico.} Si scelgono due direzioni ortogonali \(\hat{x}\), \(\hat{y}\) definite dalle direzioni di \(\vec{a}\) e \(\vec{v}_0\)
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \vec{a}   & = a \hat{x} \\
+  \vec{v}_0 & = v_{0,x} \hat{x} + v_{0,y} \hat{y} \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con \(v_{0,y} \ne 0\) (altrimenti si è nel caso di moto rettilineo uniformemente accelerato con \(\vec{v}_0 \parallel \vec{a}\)) così che la posizione in funzione del tempo è
+\begin{equation*}
+\begin{split}\begin{aligned}
+  P(t) - P_0 = \Delta x_P(t) \hat{x} + \Delta y_P(t) \hat{y} =
+  \hat{x} \left( \dfrac{1}{2} a t^2 + v_{0,x} t \right) +
+  \hat{y} \left( v_{0,y} t \right)
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+ed è possibile scrivere la coordinata \(x\) in funzione della coordinata \(y\) come
+\begin{equation*}
+\begin{split}\Delta x_P = \frac{1}{2} \, a \, \dfrac{ \Delta y_P^2}{v_{0,y}^2} + \frac{v_{0,x}}{v_{0,y}} \Delta y_P\end{split}
+\end{equation*}
 \sphinxstepscope
 
 
@@ -3070,7 +3240,13 @@ avendo indicato con \(\vec{r}_{12} = (P_2 - P_1)\) il vettore che punta dal punt
 \begin{split}G = 6.67 \cdot 10^{-11} \frac{N \, m^2}{kg^2}\end{split}
 \end{equation*}
 \sphinxAtStartPar
-la \sphinxstylestrong{costante di gravitazione universale}, considerata una costante della natura. \sphinxstylestrong{todo}
+la \sphinxstylestrong{costante di gravitazione universale}, considerata una costante della natura.
+
+\begin{sphinxadmonition}{note}{Gravitazione di Newton e azione a distanza}
+
+\sphinxAtStartPar
+La legge di gravitazione universale è una legge di \sphinxstylestrong{interazione a distanza}, in cui la forza agente su un corpo in un punto \(P_0(t)\) nello spazio dipende dalla posizione di un altro corpo nel punto \(P_1(t)\) nello spazio nello stesso istante di tempo. L’espressione dell’interazione gravitazionale tramite la legge di gravitazione universale è quindi in contrasto con i postulati della {\hyperref[\detokenize{ch/modern/einstein:physics-hs-modern-einstein}]{\sphinxcrossref{\DUrole{std,std-ref}{fisica di Einstein}}}}, secondo la quale la velocità massima di trasmissione dell’informazione nello spazio è finita e uguale alla velocità della luce, \(c \sim 3 \cdot 10^{8} \, m/s\).
+\end{sphinxadmonition}
 
 
 \subsubsection{Campo di gravità}
@@ -3145,6 +3321,34 @@ Secondo la legge di Hooke, il comportamento di una molla elastica lineare ideale
 \end{equation}
 \sphinxAtStartPar
 essendo \(\vec{F}\) la forza trasmessa dalla molla al corpo in \(P\), \(P_0\) l’altra estremità della molla, \(k\) la costante elastica della molla.
+
+\begin{sphinxadmonition}{note}{R.Hooke, 1635\sphinxhyphen{}1703}
+
+\sphinxAtStartPar
+Assistente di R.Boyle presso l’università di Oxford, e in seguito curatore degli esperimenti presso la Royal Society, fu protagonista come inventore e perfezionatore di strumenti scientifici negli anni della rivoluzione scientifica del XVII secolo. Tra le sue attività principali,
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+la caratterizzazione di molle e materiali elastici, con la legge di Hooke come legge costitutiva di materiali elastici lineari
+
+\item {} 
+\sphinxAtStartPar
+l’utilizzo delle proprietà delle molle all’interno di strumenti meteorologici, per la misura della pressione atmosferica
+
+\item {} 
+\sphinxAtStartPar
+l’utilizzo di molle per l’alimentazione di orologi che fossero insensibili alle accelerazioni dello strumento
+
+\item {} 
+\sphinxAtStartPar
+la realizzazione di pompe pneumatiche che permisero a R.Boyle di svolgere i suoi esperimenti sui gas, e di formulare la {\hyperref[\detokenize{ch/thermodynamics/ideal-gas-experiments:physics-hs-thermodynamics-matter-gases-ideal-experiments-boyle}]{\sphinxcrossref{\DUrole{std,std-ref}{legge di Boyle}}}} per descrivere il comporamento a temperatura costante di gas rarefatti
+
+\item {} 
+\sphinxAtStartPar
+strumenti ottici per le osservazioni micsorsopiche e astronomiche
+
+\end{itemize}
+\end{sphinxadmonition}
 
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{Considerare il caso con lunghezza a riposo non nulla; discutere il caso 1\sphinxhyphen{}dimensionale; aggiungere esempi}
@@ -3342,6 +3546,34 @@ L’attrito dinamico è la forma di attrito che si manifesta tra due corpi a con
 \end{equation*}
 \sphinxAtStartPar
 avendo definito \(\vec{F}_{12}\) come la forza agente sul corpo \(1\) a causa del corpo \(2\), e \(\vec{v}_{12} = \vec{v}_1 - \vec{v}_2\) la velocità del corpo \(1\) relativa al corpo \(2\).
+
+\begin{sphinxadmonition}{note}{La potenza totale dell’attrito dinamico è non\sphinxhyphen{}positiva}
+
+\sphinxAtStartPar
+Un blocco di massa \(m\) scivola con velocità \(\vec{v}\) su un piano orizzontale. Il corpo è soggetto all’attrazione gravitazionale terrestre e il suo peso è \(m \vec{g} = - m g \hat{z}\). Il coefficiente di attrito dinamico tra blocco e piano è \(\mu^d\). Come si vedrà nel capitolo sulla dinamica, la reazione normale del piano sul blocco è una forza verticale diretta verso l’alto e di intensità uguale al peso, \(\vec{N} = m g \hat{z}\).
+
+\sphinxAtStartPar
+La potenza della forza di attrito è quindi
+\begin{equation*}
+\begin{split}P^{d} = \vec{F} \cdot \vec{v} = - \mu^d N \frac{\vec{v}}{|\vec{v}|} \cdot \vec{v} = - \mu^d N |\vec{v}| \le 0 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+poiché il coefficiente di attrito è non\sphinxhyphen{}negativo \(\mu^d ge 0\), la reazione normale affinchè ci sia contatto ha intensità non negativa \(N \ge 0\) e il modulo di un vettore è non negativo.
+\end{sphinxadmonition}
+
+\begin{sphinxadmonition}{note}{La potenza totale dell’attrito dinamico è non\sphinxhyphen{}positiva: moto relativo}
+
+\sphinxAtStartPar
+Due blocchi scivolano l’uno sull’altro…Siano \(\vec{v}_1\), \(\vec{v}_2\) le velocità dei blocchi \(1\) e \(2\), e \(\vec{F}_{12}\) la forza agente sul blocco \(1\) dovuta al contatto con \(2\), e \(\vec{F}_{21} = - \vec{F}_{12}\) la forza agente sul blocco \(2\) dovuta al blocco \(1\) \sphinxstylestrong{todo} \sphinxstyleemphasis{fare riferimento a Dinamica:Terzo principio}
+\begin{equation*}
+\begin{split}\begin{aligned}
+  P^d
+  & = \vec{F}_{12} \cdot \vec{v}_1 + \vec{F}_{21} \cdot \vec{v}_2 = \\
+  & = - \mu^d N \frac{\vec{v}_{12}}{|\vec{v}_{12}|} \cdot \vec{v}_1 - \mu^d N \frac{\vec{v}_{21}}{|\vec{v}_{21}|} \cdot \vec{v}_2 = \\
+  & = - \mu^d N \frac{\vec{v}_{12}}{|\vec{v}_{12}|} \cdot ( \vec{v}_1 - \vec{v}_2 ) = \\
+  & = - \mu^d N |\vec{v}_{12}| \le 0 \ .
+\end{aligned}\end{split}
+\end{equation*}\end{sphinxadmonition}
 
 
 \subsubsection{Puro rotolamento}
@@ -4664,62 +4896,62 @@ Un corpo rigido di massa \(m = 15 \, \text{kg}\) e momento di inerzia \$I =
 
 \chapter{Dinamica}
 \label{\detokenize{ch/mechanics/dynamics:dinamica}}\label{\detokenize{ch/mechanics/dynamics:physics-hs-mechanics-dynamics}}\label{\detokenize{ch/mechanics/dynamics::doc}}
-\sphinxAtStartPar
-\sphinxstylestrong{todo}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Sistemare l’introuzione e il capitolo
-
-\item {} 
-\sphinxAtStartPar
-Aggiungere i concetti di \sphinxstylestrong{equilibrio} e \sphinxstylestrong{stabilità}. Fare riferimento alla capitolo sulla {\hyperref[\detokenize{ch/mechanics/statics:physics-hs-mechanics-statics}]{\sphinxcrossref{\DUrole{std,std-ref}{statica}}}}, se necessario
-
-\item {} 
-\sphinxAtStartPar
-…
 
 
-\end{itemize}
+\sphinxAtStartPar
+La dinamica si occupa del moto dei sistemi e delle cause del moto, mettendo insieme la descrizione {\hyperref[\detokenize{ch/mechanics/kinematics:physics-hs-mechanics-kinematics}]{\sphinxcrossref{\DUrole{std,std-ref}{cinematica}}}}, l”{\hyperref[\detokenize{ch/mechanics/inertia:physics-hs-mechanics-inertia}]{\sphinxcrossref{\DUrole{std,std-ref}{inerzia}}}} dei sistemi a perseverare nel moto, e le {\hyperref[\detokenize{ch/mechanics/actions:physics-hs-mechanics-actions}]{\sphinxcrossref{\DUrole{std,std-ref}{azioni}}}} come causa di una variazione del moto. La {\hyperref[\detokenize{ch/mechanics/statics:physics-hs-mechanics-statics}]{\sphinxcrossref{\DUrole{std,std-ref}{statica}}}} rappresenta un caso particolare di dinamica, in cui il sistema di interesse rimane nella configurazione di riferimento.
 
 \sphinxAtStartPar
-La dinamica si occupa del moto dei sistemi e delle cause del moto, mettendo insieme la descrizione cinematica, l’inerzia dei sistemi a perseverare nel moto, e le cause di una variazione del moto.
+{\hyperref[\detokenize{ch/mechanics/dynamics-principles:physics-hs-mechanics-dynamics-principles}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Princìpi della dinamica}}}}}. Insieme al principio della conservazione della massa, vengono formulati i tre principi della dinamica di Newton per sistemi chiusi rispetto a sistemi di riferimento inerziali (1. principio di inerzia, 2. bilancio della quantità di moto e 3. principio di azione e reazione); successivamente viene discusso il significato della relatività galileiana e il ruolo dei sistemi di riferimento inerizali.
+
+
 
 \sphinxAtStartPar
-\sphinxstylestrong{Princìpi della dinamica.} Vengono discussi i tre principi della dinamica di Newton e il significato della relatività galileiana.
-
-\sphinxAtStartPar
-\sphinxstylestrong{Equazioni cardinali della dinamica.} Vengono presentate le tre equazioni cardinali della dinamica per sistemi chiusi, che mettono in relazione la variazione delle grandezze dinamiche alle azioni, e che nel caso di moti regolari possono essere scritte in forma differenziale
-\begin{equation*}
+{\hyperref[\detokenize{ch/mechanics/dynamics-eom:physics-hs-mechanics-dynamics-eom}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Equazioni cardinali della dinamica}}}}}. Vengono presentate le tre equazioni cardinali della dinamica per sistemi chiusi, che mettono in relazione la variazione delle grandezze dinamiche alle azioni, e che nel caso di moti regolari possono essere scritte in forma differenziale
+\begin{equation}\label{equation:ch/mechanics/dynamics:dynamics:eom}
 \begin{split}\begin{aligned}
  \dot{\vec{Q}} & = \vec{R}^{ext} & \text{(bilancio quantità di moto)} \\
  \dot{\vec{L}}_H + \dot{\vec{x}}_H \times \vec{Q} & = \vec{M}_H^{ext} & \text{(bilancio momento della quantità di moto)} \\
- \dot{K} & = P^{tot} & \text{(bilancio energia cinetica)} \ .
+ \dot{K} & = P^{tot} & \text{(bilancio energia cinetica)} 
 \end{aligned}\end{split}
-\end{equation*}
-\sphinxAtStartPar
-Viene dimostrato che le equazioni di bilancio hanno la stessa forma per ogni sistema chiuso se scritti in termini di variazione di quantità di moto, momento della quantità di moto ed energia cinetica, senza esplicitare la forma particolare di queste grandezze dinamiche per i sistemi particolari presi in considerazione. Vengono forniti alcuni esempi ed esercizi svolti.
+\end{equation}
+\begin{sphinxadmonition}{note}{Espressione delle equazioni di bilancio}
 
 \sphinxAtStartPar
-\sphinxstylestrong{Leggi di conservazione.} Sotto opportune ipotesi immediatamente riconoscibili dalle equazioni cardinali, vengono ricavate le leggi di conservazione validi per i sistemi meccanici,
-\begin{equation*}
+Come dimostrato in {\hyperref[\detokenize{ch/mechanics/dynamics-notes:physics-hs-mechanics-dynamics-notes}]{\sphinxcrossref{\DUrole{std,std-ref}{appendice}}}}, le equazioni di bilancio hanno la stessa forma \eqref{equation:ch/mechanics/dynamics:dynamics:eom} per ogni sistema chiuso se scritti in termini di variazione di quantità di moto, momento della quantità di moto ed energia cinetica, senza esplicitare la forma particolare di queste grandezze dinamiche per i sistemi particolari presi in considerazione. Vengono forniti alcuni esempi ed esercizi svolti.
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/mechanics/dynamics-conservation:physics-hs-mechanics-dynamics-conservation}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Leggi di conservazione}}}}}. Sotto opportune ipotesi immediatamente riconoscibili dalle equazioni cardinali \eqref{equation:ch/mechanics/dynamics:dynamics:eom}, vengono ricavate le leggi di conservazione validi per i sistemi meccanici,
+\begin{equation}\label{equation:ch/mechanics/dynamics:dynamics:eom:conservation}
 \begin{split}\begin{aligned}
   \vec{R}^{ext} & = \vec{0} \qquad  & \rightarrow \qquad \ \ \vec{Q} = \text{const.} \\
   \vec{M}_H^{ext} & = \vec{0}, \dot{\vec{x}}_H \times \vec{Q} = \vec{0} \qquad  & \rightarrow \qquad \vec{L}_H = \text{const.} \\
   P^{tot} & = \vec{0} \qquad  & \rightarrow \qquad \ \  K = \text{const.} \\
 \end{aligned}\end{split}
-\end{equation*}
+\end{equation}
 \sphinxAtStartPar
-Nel caso in cui le azioni agenti sul sistema non abbiano potenza nulla, ma che siano forze conservative, si riconosce la legge di conservazione dell’energia meccanica \(E^{mec}\), definita come somma dell’energia cinetica, \(K\), e dell’energia potenziale, \(V\),
+Nel caso in cui le azioni agenti sul sistema non abbiano potenza nulla, ma che siano forze conservative, si riconosce la {\hyperref[\detokenize{ch/mechanics/dynamics-conservation:physics-hs-mechanics-dynamics-conservation-mechanical-energy}]{\sphinxcrossref{\DUrole{std,std-ref}{legge di conservazione dell’energia meccanica \(E^{mec}\)}}}}, definita come somma dell’energia cinetica, \(K\), e dell’energia potenziale, \(V\),
 \begin{equation*}
 \begin{split}P^{tot} = -\dot{V} \ , \quad E^{mec} = K + V \qquad \rightarrow \qquad E^{mec} = \text{const.}\end{split}
 \end{equation*}
 \sphinxAtStartPar
-\sphinxstylestrong{Urti.}
+{\hyperref[\detokenize{ch/mechanics/dynamics-equilibrium-stability:physics-hs-mechanics-equilibrium-stability}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Equilibrio e stabilità}}}}}. \sphinxstylestrong{todo}
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/mechanics/dynamics-examples:physics-hs-mechanics-dynamics-examples}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Esempi}}}}}. Vengono analizzati alcuni sistemi particolari, di interesse pratico, storico, e/o didattico, per iniziare a fare pratica con i princìpi, le equazioni e i criteri mostrati in precedenza.
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/mechanics/dynamics-eom-open:physics-hs-mechanics-dynamics-eom-open}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Sistemi aperti}}}}}. Vengono discussi i bilanci delle quantità fisiche di massa, quantità di moto e momento della quantità di moto per sistemi aperti che possono scambiare massa con l’estero, e che quindi non hanno massa costante.
+
+\sphinxAtStartPar
+{\hyperref[\detokenize{ch/mechanics/dynamics-collisions:physics-hs-mechanics-dynamics-collisions}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Urti}}}}}.
+Vengono studiati alcuni sistemi in cui il moto non è regolare e derivabile, almeno in corrispondenza degli eventi di urto.
 Viene presentato un modello di urto tra sistemi fondato unicamente sul coefficiente di restituzione, \(\varepsilon\), per rappresentare la frazione di energia meccanica persa dal sistema durante l’urto. Vengono presentati dei problemi risolti grazie ai princìpi di conservazione e alle equazioni cardinali in forma incrementale.
 
 \sphinxAtStartPar
-\sphinxstylestrong{Moti particolari \sphinxhyphen{} gravitazione.} Vengono infine analizzati alcuni sistemi particolare, di interesse pratico, storico, e/o didattico \sphinxstylestrong{todo}
+{\hyperref[\detokenize{ch/mechanics/dynamics-central:physics-hs-mechanics-dynamics-motion-central}]{\sphinxcrossref{\DUrole{std,std-ref}{\sphinxstylestrong{Moti centrali e gravitazione}}}}}.
+Viene studiata la dinamica di alcuni sistemi soggetti a una forza centrale, usando come esempi la forza generata da una molla elastica o la forza gravitazionale. L’interazione gravitazionale tra \sphinxstylestrong{due corpi} viene studiata in dettaglio, a causa della sua rilevanza storica: la corretta descrizione delle orbite dei pianeti attorno al Sole è stato uno dei primi successi della meccanica e la legge di gravitazione universale di Newton. Nell’ambito del problema dei due corpi, viene dimostrato che i corpi si muovono lungo traiettorie rappresentabili come \sphinxhref{https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic\_geometry/analytic\_geometry\_2d/conics.html}{sezioni coniche}, nelle quali il Sole occupa un fuoco; vengono quindi enunciate e dimostrate le {\hyperref[\detokenize{ch/mechanics/dynamics-motion-gravitation:physics-hs-mechanics-dynamics-motion-gravitation-kepler}]{\sphinxcrossref{\DUrole{std,std-ref}{leggi di Keplero}}}} per le orbite chiuse.
 
 
 
@@ -4729,19 +4961,34 @@ Viene presentato un modello di urto tra sistemi fondato unicamente sul coefficie
 \section{Princìpi della dinamica di Newton}
 \label{\detokenize{ch/mechanics/dynamics-principles:principi-della-dinamica-di-newton}}\label{\detokenize{ch/mechanics/dynamics-principles:physics-hs-mechanics-dynamics-principles}}\label{\detokenize{ch/mechanics/dynamics-principles::doc}}
 \sphinxAtStartPar
-La meccanica classica di Newton viene costruita assumendo valido il \sphinxstylestrong{principio di conservazione della massa} e i \sphinxstylestrong{tre principi della dinamica}.
+La meccanica classica di Newton viene costruita assumendo valido il \sphinxstylestrong{principio di conservazione della massa} e i \sphinxstylestrong{tre principi della dinamica} per sistemi chiusi, cioè che non scambiano massa con l’esterno. In seguito verranno trattati {\hyperref[\detokenize{ch/mechanics/dynamics-eom-open:physics-hs-mechanics-dynamics-eom-open}]{\sphinxcrossref{\DUrole{std,std-ref}{bilanci per sistemi aperti}}}}.
+\label{ch/mechanics/dynamics-principles:mechanics:principles:mass}
+\begin{sphinxadmonition}{note}{Axiom 12.1.1 (Principio di conservazione della massa)}
+
+
 
 \sphinxAtStartPar
-\sphinxstylestrong{Principio di conservazione della massa.} In meccanica classica, il principio di Lavoisier di conservazione della massa può essere riassunto con la formula «niente si crea, niente si distrugge». Per essere più precisi, il principio di conservazione della massa postula che la massa di un sistema chiuso è costante.
+In meccanica classica, il principio di Lavoisier di conservazione della massa può essere riassunto con la formula «niente si crea, niente si distrugge». Per essere più precisi, il principio di conservazione della massa postula che la massa di un sistema chiuso è costante.
+\end{sphinxadmonition}
+\label{ch/mechanics/dynamics-principles:mechanics:principles:inertia}
+\begin{sphinxadmonition}{note}{Axiom 12.1.2 (Primo principio \sphinxhyphen{} principio di inerzia)}
+
+
 
 \sphinxAtStartPar
-\sphinxstylestrong{Primo principio \sphinxhyphen{} principio di inerzia.} Un sistema (o meglio, il baricentro di un sistema) sul quale agisce una forza esterna netta nulla, persevera nel suo stato di quiete o di moto rettilineo uniforme rispetto a un {\hyperref[\detokenize{ch/mechanics/dynamics-principles:physics-hs-mechanics-dynamics-principles-inertial-ref-frame}]{\sphinxcrossref{\DUrole{std,std-ref}{sistema di riferimento inerziale}}}}.
+Un sistema (o meglio, il baricentro di un sistema) sul quale agisce una forza esterna netta nulla, persevera nel suo stato di quiete o di moto rettilineo uniforme rispetto a un {\hyperref[\detokenize{ch/mechanics/dynamics-principles:physics-hs-mechanics-dynamics-principles-inertial-ref-frame}]{\sphinxcrossref{\DUrole{std,std-ref}{sistema di riferimento inerziale}}}}.
+\end{sphinxadmonition}
+\label{ch/mechanics/dynamics-principles:mechanics:principles:momentum}
+\begin{sphinxadmonition}{note}{Axiom 12.1.3 (Secondo principio \sphinxhyphen{} bilancio della quantità di moto per sistemi chiusi)}
+
+
 
 \sphinxAtStartPar
-\sphinxstylestrong{Secondo principio \sphinxhyphen{} bilancio della quantità di moto per sistemi chiusi.} Rispetto a un sistema di riferimento inerziale, la variazione della quantità di moto \(\vec{Q}\) di un sistema chiuso è uguale all’impulso delle forze esterne \(\vec{I}^{ext}\) agenti su di esso,
+Rispetto a un sistema di riferimento inerziale, la variazione della quantità di moto \(\vec{Q}\) di un sistema chiuso è uguale all’impulso delle forze esterne \(\vec{I}^{ext}\) agenti su di esso,
 \begin{equation*}
 \begin{split}\Delta \vec{Q} = \vec{I}^{ext} \ .\end{split}
-\end{equation*}
+\end{equation*}\end{sphinxadmonition}
+
 \sphinxAtStartPar
 Nel caso di moto regolare, in cui la quantità di moto del sistema è una grandezza continua e differenziabile rispetto al tempo, il secondo principio può essere scritto in forma differenziale, facendo tendere a zero l’intervallo di tempo considerato
 \begin{equation*}
@@ -4749,24 +4996,18 @@ Nel caso di moto regolare, in cui la quantità di moto del sistema è una grande
 \end{equation*}
 \sphinxAtStartPar
 avendo indicato con \(\vec{R}^{ext}\) la risultante delle forze esterne agenti sul sistema.
+\label{ch/mechanics/dynamics-principles:mechanics:principles:action-reaction}
+\begin{sphinxadmonition}{note}{Axiom 12.1.4 (Terzo principio \sphinxhyphen{} principio di azione\sphinxhyphen{}reazione)}
+
+
 
 \sphinxAtStartPar
-\sphinxstylestrong{Terzo principio \sphinxhyphen{} principio di azione\sphinxhyphen{}reazione.} Se un sistema \(i\) esercita una forza \(\vec{F}_{ji}\) sul sistema \(j\), allora il sistema \(j\) esercita sul sistema \(i\) una forza \(\vec{F}_{ij}\) «uguale e contraria» \sphinxhyphen{} stesso valore assoluto e verso opposto,
+Se un sistema \(i\) esercita una forza \(\vec{F}_{ji}\) sul sistema \(j\), allora il sistema \(j\) esercita sul sistema \(i\) una forza \(\vec{F}_{ij}\) «uguale e contraria» \sphinxhyphen{} stesso valore assoluto e verso opposto,
 \begin{equation*}
 \begin{split}\vec{F}_{ij} = - \vec{F}_{ji} \ .\end{split}
-\end{equation*}
-\sphinxAtStartPar
-\sphinxstylestrong{todo} \sphinxstylestrong{Osservazioni}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-sistema di riferimento inerziale e invarianza galileiana
+\end{equation*}\end{sphinxadmonition}
 
-\item {} 
-\sphinxAtStartPar
-sistemi aperti e sistemi chiusi: sottolineare la validità di \(\Delta \vec{Q} = \vec{I}^{ext}\) solo per sistemi chiusi, mentre per sistemi aperti è necessario un termine di flusso della quantità meccanica. Riferimento alla meccanica dei fluidi
 
-\end{itemize}
 
 
 \subsection{Sistemi di riferimento inerziali e invarianza galileiana.}
@@ -4792,7 +5033,7 @@ sia possibile conoscere le azioni «vere» agenti sul sistema, di natura gravita
 \sphinxAtStartPar
 Un osservatore è inerziale se la lettura degli strumenti di misura in suo possesso corrisponde alle azioni «vere» agenti sul sistema. In particolare, in assenza di azioni nette gli strumenti restituiscono una misura nulla.
 \end{sphinxadmonition}
-\label{ch/mechanics/dynamics-principles:example-1}
+\label{ch/mechanics/dynamics-principles:example-5}
 \begin{sphinxadmonition}{note}{Example 12.1.1 (Sistemi inerziali, azioni vere e relatività generale)}
 
 
@@ -6562,7 +6803,7 @@ che prende il nome di \sphinxstylestrong{costante di gravitazione universale}.
 
 
 \subsection{Leggi di Keplero}
-\label{\detokenize{ch/mechanics/dynamics-motion-gravitation:leggi-di-keplero}}
+\label{\detokenize{ch/mechanics/dynamics-motion-gravitation:leggi-di-keplero}}\label{\detokenize{ch/mechanics/dynamics-motion-gravitation:physics-hs-mechanics-dynamics-motion-gravitation-kepler}}
 \sphinxAtStartPar
 Le equazioni della dinamica e la legge di gravitazione universale da lui formulate, permise a Newton di dimostrare le \sphinxstylestrong{tre leggi di Keplero} che descrivono il moto \sphinxstyleemphasis{limitato} (\sphinxstylestrong{todo} \sphinxstyleemphasis{trovare sinonimo}) di due corpi celesti, come ad esempio il moto di un pianeta rispetto al Sole, o il moto di un satellite rispetto al pianeta di riferimento.
 \label{ch/mechanics/dynamics-motion-gravitation:kepler-law-1}
@@ -6593,6 +6834,8 @@ Il periodo \(T\) dell’orbita è in relazione al semiasse maggiore \(a\)
 \end{equation*}\end{sphinxadmonition}
 
 
+
+
 \subsection{Problema dei due corpi}
 \label{\detokenize{ch/mechanics/dynamics-motion-gravitation:problema-dei-due-corpi}}\label{\detokenize{ch/mechanics/dynamics-motion-gravitation:physics-hs-mechanics-dynamics-motion-gravitation-two-bodies}}
 \sphinxAtStartPar
@@ -6612,20 +6855,18 @@ ed è possibile definire un sistema di riferimento inerziale con origine nel cen
 L’equazione del moto per il corpo \(1\) nel sistema di riferimento inerziale con origine in \(G\) segue il secondo principio della dinamica. L’equazione del moto può essere scritto in termini del raggio vettore tra corpo \(1\) e centro di massa,
 \begin{equation*}
 \begin{split}\begin{aligned}
-  m_1 \dfrac{d^2}{dt^2}(P_1-G) & = - G m_0 m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} = \\
-                               & = - G \dfrac{(m_0 + m_1)^2}{m_0} m_1 \frac{P_1 - G}{|P_1 - G|^3} 
+  m_1 \dfrac{d^2}{dt^2}(P_1-G) 
+  & = - G m_0 m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} = \\
+  & = - G \dfrac{m_0^2}{(m_0 + m_1)^2} m_0 m_1 \frac{P_1 - G}{|P_1 - G|^3} 
 \end{aligned}\end{split}
 \end{equation*}
 \sphinxAtStartPar
 o in termini del raggio vettore tra i due corpi \(P_1 - P_0\)
 \begin{equation*}
-\begin{split}
-  \frac{m_0 m_1}{m_0 + m_1} \dfrac{d^2}{dt^2}(P_1-P_0) = - G m_0 m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} 
-\end{split}
-\end{equation*}\begin{equation*}
-\begin{split}
-  m_1 \dfrac{d^2}{dt^2}(P_1-P_0) = - G ( m_0 + m_1 ) m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} 
-\end{split}
+\begin{split}\begin{aligned}
+  \frac{m_0 m_1}{m_0 + m_1} \dfrac{d^2}{dt^2}(P_1-P_0) & = - G m_0 m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3} \\
+  m_1 \dfrac{d^2}{dt^2}(P_1-P_0) & = - G ( m_0 + m_1 ) m_1 \frac{P_1 - P_0}{|P_1 - P_0|^3}  \\
+\end{aligned}\end{split}
 \end{equation*}
 \sphinxAtStartPar
 Le equazioni del moto in questi due sistemi di riferimento possono essere scritte nella forma
@@ -12732,6 +12973,33 @@ Confrontando questa espressione con l’espressione \eqref{equation:ch/waves/wav
 \begin{split}c_{v} = \sqrt{\frac{N_0}{m}} \ .\end{split}
 \end{equation*}
 \sphinxAtStartPar
+\sphinxstylestrong{Dynamical equations.} Out\sphinxhyphen{}of\sphinxhyphen{}axis component of the momentum equation of the \(i\)\sphinxhyphen{}th mass reads
+\begin{equation*}
+\begin{split}\begin{aligned} 
+     M \ddot{w}_i 
+     & = F_i^e - F_{i-1,i} \theta_{i,i-1} + F_{i,i+1} \theta_{i,i+1} = \\
+     & = F_i^e - F_{i-1,i} \dfrac{w_i - w_{i-1}}{\Delta x} + F_{i,i+1} \dfrac{w_{i+1}-x_{i}}{\Delta x} = \\
+   \end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+with the approximations \(\sin \theta_{i,i+1} \sim \theta_{i,i+1} \sim \dfrac{w_{i+1}-w_i}{\Delta x}\) and \(F_{i,i+1} = N_0\) for small displacements. If \(M_i = m \Delta x\), with \(\mu\) linear mass density, and the lumped force is written as a linear force density \(F_i = \Delta x \, f_i(t)\)
+\begin{equation*}
+\begin{split}\begin{aligned}
+   \Delta x \, m \ddot{w}_i(t) - N_0 \dfrac{w_{i+1}(t) - 2 w_i(t) + w_{i-1}(t)}{\Delta x} = \Delta x \, f_i^e
+  \end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+and dividing by \(\Delta x\), adn recognizing the center scheme for the second order partial derivative in space,
+\begin{equation*}
+\begin{split}\begin{aligned}
+    m \ddot{w}_i(t) - N_0 \dfrac{w_{i+1}(t) - 2 w_i(t) + w_{i-1}(t)}{\Delta x^2} & = \, f_i^e \\
+    m \partial_{tt} \ddot{w}(x,t) - N_0 \partial_{xx} w(x,t) & = \, f(x,t)
+  \end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+the wave equation for the out\sphinxhyphen{}of\sphinxhyphen{}plane dispalcement appears.
+
+\sphinxAtStartPar
 Esempio: corde di strumenti musicali.
 
 \begin{figure}[htbp]
@@ -13389,6 +13657,14 @@ avendo riconosciuto il contributo delle due onde viaggianti
   \frac{1}{2} u_0(x-ct) & = \sum_n \frac{\alpha_n}{2} \sin(k_n(x-ct)) && \text{(onda viaggiante verso destra)}
 \end{aligned}\end{split}
 \end{equation*}
+
+
+
+
+
+
+
+
 
 \paragraph{Torsione di una trave con un estremo vincolato e un estremo libero}
 \label{\detokenize{ch/waves/waves-notes:torsione-di-una-trave-con-un-estremo-vincolato-e-un-estremo-libero}}\begin{equation*}
@@ -21910,6 +22186,18 @@ solarigrafia, fotografia con materiale di recupero con tempi lunghissimi
 \label{\detokenize{ppl:persone}}\label{\detokenize{ppl:physics-hs-people}}\label{\detokenize{ppl::doc}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
+R.Boyle (1627\sphinxhyphen{}1691):
+
+\item {} 
+\sphinxAtStartPar
+R.Hooke (1635\sphinxhyphen{}1703):
+
+\item {} 
+\sphinxAtStartPar
+I.Newton (1642\sphinxhyphen{}1726): {\hyperref[\detokenize{ch/mechanics/intro:physics-hs-mechanics-intro}]{\sphinxcrossref{\DUrole{std,std-ref}{Introduzione alla meccanica classica}}}}
+
+\item {} 
+\sphinxAtStartPar
 FitzGerald
 
 \item {} 
@@ -21926,7 +22214,16 @@ Minkowski
 
 \item {} 
 \sphinxAtStartPar
-Einstein
+A.Einstein (1879\sphinxhyphen{}1955): {\hyperref[\detokenize{ch/modern/einstein:physics-hs-modern-einstein}]{\sphinxcrossref{\DUrole{std,std-ref}{Teorie di Einstein}}}}
+
+\end{itemize}
+
+
+\chapter{Accademie e centri di ricerca}
+\label{\detokenize{ppl:accademie-e-centri-di-ricerca}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Royal Society, 1660\sphinxhyphen{}
 
 \end{itemize}
 
@@ -22063,12 +22360,6 @@ Joan Bromberg. Twentieth Century\sphinxhyphen{}The Born\sphinxhyphen{}Einstein L
 \bigletter{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}sphere}
 \item\relax\sphinxstyleindexentry{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}sphere}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{ex-e-field-sphere}}
 \indexspace
-\bigletter{example\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}in\sphinxhyphen{}physics}\sphinxstyleindexpageref{ch/waves/waves-in-physics:\detokenize{example-0}}
-\indexspace
-\bigletter{example\sphinxhyphen{}1}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}in\sphinxhyphen{}physics}\sphinxstyleindexpageref{ch/waves/waves-in-physics:\detokenize{example-1}}
-\indexspace
 \bigletter{example\sphinxhyphen{}10}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}10}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-10}}
 \indexspace
@@ -22096,9 +22387,6 @@ Joan Bromberg. Twentieth Century\sphinxhyphen{}The Born\sphinxhyphen{}Einstein L
 \bigletter{example\sphinxhyphen{}18}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}18}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-18}}
 \indexspace
-\bigletter{example\sphinxhyphen{}2}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}in\sphinxhyphen{}physics}\sphinxstyleindexpageref{ch/waves/waves-in-physics:\detokenize{example-2}}
-\indexspace
 \bigletter{example\sphinxhyphen{}3}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-3}}
 \indexspace
@@ -22106,7 +22394,7 @@ Joan Bromberg. Twentieth Century\sphinxhyphen{}The Born\sphinxhyphen{}Einstein L
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}4}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-4}}
 \indexspace
 \bigletter{example\sphinxhyphen{}5}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-5}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/mechanics/dynamics\sphinxhyphen{}principles}\sphinxstyleindexpageref{ch/mechanics/dynamics-principles:\detokenize{example-5}}
 \indexspace
 \bigletter{example\sphinxhyphen{}6}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}6}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-6}}
@@ -22165,6 +22453,21 @@ Joan Bromberg. Twentieth Century\sphinxhyphen{}The Born\sphinxhyphen{}Einstein L
 \bigletter{kepler\sphinxhyphen{}third}
 \item\relax\sphinxstyleindexentry{kepler\sphinxhyphen{}third}\sphinxstyleindexextra{ch/modern/astronomy\sphinxhyphen{}distance\sphinxhyphen{}ladder}\sphinxstyleindexpageref{ch/modern/astronomy-distance-ladder:\detokenize{kepler-third}}
 \indexspace
+\bigletter{kinematics:avg}
+\item\relax\sphinxstyleindexentry{kinematics:avg}\sphinxstyleindexextra{ch/mechanics/kinematics\sphinxhyphen{}point}\sphinxstyleindexpageref{ch/mechanics/kinematics-point:\detokenize{kinematics:avg}}
+\indexspace
+\bigletter{kinematics:point:accel:cauchy}
+\item\relax\sphinxstyleindexentry{kinematics:point:accel:cauchy}\sphinxstyleindexextra{ch/mechanics/kinematics\sphinxhyphen{}point}\sphinxstyleindexpageref{ch/mechanics/kinematics-point:\detokenize{kinematics:point:accel:cauchy}}
+\indexspace
+\bigletter{kinematics:point:accel:points}
+\item\relax\sphinxstyleindexentry{kinematics:point:accel:points}\sphinxstyleindexextra{ch/mechanics/kinematics\sphinxhyphen{}point}\sphinxstyleindexpageref{ch/mechanics/kinematics-point:\detokenize{kinematics:point:accel:points}}
+\indexspace
+\bigletter{kinematics:point:uniform:cauchy}
+\item\relax\sphinxstyleindexentry{kinematics:point:uniform:cauchy}\sphinxstyleindexextra{ch/mechanics/kinematics\sphinxhyphen{}point}\sphinxstyleindexpageref{ch/mechanics/kinematics-point:\detokenize{kinematics:point:uniform:cauchy}}
+\indexspace
+\bigletter{kinematics:point:uniform:points}
+\item\relax\sphinxstyleindexentry{kinematics:point:uniform:points}\sphinxstyleindexextra{ch/mechanics/kinematics\sphinxhyphen{}point}\sphinxstyleindexpageref{ch/mechanics/kinematics-point:\detokenize{kinematics:point:uniform:points}}
+\indexspace
 \bigletter{lenses\sphinxhyphen{}simple}
 \item\relax\sphinxstyleindexentry{lenses\sphinxhyphen{}simple}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}lens}\sphinxstyleindexpageref{ch/waves/optics-lens:\detokenize{lenses-simple}}
 \indexspace
@@ -22182,6 +22485,18 @@ Joan Bromberg. Twentieth Century\sphinxhyphen{}The Born\sphinxhyphen{}Einstein L
 \indexspace
 \bigletter{mechanics:dynamics:open:ex:rockets}
 \item\relax\sphinxstyleindexentry{mechanics:dynamics:open:ex:rockets}\sphinxstyleindexextra{ch/mechanics/dynamics\sphinxhyphen{}eom\sphinxhyphen{}open}\sphinxstyleindexpageref{ch/mechanics/dynamics-eom-open:\detokenize{mechanics:dynamics:open:ex:rockets}}
+\indexspace
+\bigletter{mechanics:principles:action\sphinxhyphen{}reaction}
+\item\relax\sphinxstyleindexentry{mechanics:principles:action\sphinxhyphen{}reaction}\sphinxstyleindexextra{ch/mechanics/dynamics\sphinxhyphen{}principles}\sphinxstyleindexpageref{ch/mechanics/dynamics-principles:\detokenize{mechanics:principles:action-reaction}}
+\indexspace
+\bigletter{mechanics:principles:inertia}
+\item\relax\sphinxstyleindexentry{mechanics:principles:inertia}\sphinxstyleindexextra{ch/mechanics/dynamics\sphinxhyphen{}principles}\sphinxstyleindexpageref{ch/mechanics/dynamics-principles:\detokenize{mechanics:principles:inertia}}
+\indexspace
+\bigletter{mechanics:principles:mass}
+\item\relax\sphinxstyleindexentry{mechanics:principles:mass}\sphinxstyleindexextra{ch/mechanics/dynamics\sphinxhyphen{}principles}\sphinxstyleindexpageref{ch/mechanics/dynamics-principles:\detokenize{mechanics:principles:mass}}
+\indexspace
+\bigletter{mechanics:principles:momentum}
+\item\relax\sphinxstyleindexentry{mechanics:principles:momentum}\sphinxstyleindexextra{ch/mechanics/dynamics\sphinxhyphen{}principles}\sphinxstyleindexpageref{ch/mechanics/dynamics-principles:\detokenize{mechanics:principles:momentum}}
 \indexspace
 \bigletter{mems\sphinxhyphen{}accelerometer\sphinxhyphen{}circuit}
 \item\relax\sphinxstyleindexentry{mems\sphinxhyphen{}accelerometer\sphinxhyphen{}circuit}\sphinxstyleindexextra{ch/instrumentation/kinematics}\sphinxstyleindexpageref{ch/instrumentation/kinematics:\detokenize{mems-accelerometer-circuit}}

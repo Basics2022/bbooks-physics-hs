@@ -1,15 +1,27 @@
 (physics-hs:mechanics:dynamics:principles)=
 # Princìpi della dinamica di Newton
 
-La meccanica classica di Newton viene costruita assumendo valido il **principio di conservazione della massa** e i **tre principi della dinamica**.
+La meccanica classica di Newton viene costruita assumendo valido il **principio di conservazione della massa** e i **tre principi della dinamica** per sistemi chiusi, cioè che non scambiano massa con l'esterno. In seguito verranno trattati [bilanci per sistemi aperti](physics-hs:mechanics:dynamics:eom:open).
 
-**Principio di conservazione della massa.** In meccanica classica, il principio di Lavoisier di conservazione della massa può essere riassunto con la formula "niente si crea, niente si distrugge". Per essere più precisi, il principio di conservazione della massa postula che la massa di un sistema chiuso è costante.
+```{prf:axiom} Principio di conservazione della massa
+:label: mechanics:principles:mass
 
-**Primo principio - principio di inerzia.** Un sistema (o meglio, il baricentro di un sistema) sul quale agisce una forza esterna netta nulla, persevera nel suo stato di quiete o di moto rettilineo uniforme rispetto a un [sistema di riferimento inerziale](physics-hs:mechanics:dynamics:principles:inertial-ref-frame).
+In meccanica classica, il principio di Lavoisier di conservazione della massa può essere riassunto con la formula "niente si crea, niente si distrugge". Per essere più precisi, il principio di conservazione della massa postula che la massa di un sistema chiuso è costante.
+```
 
-**Secondo principio - bilancio della quantità di moto per sistemi chiusi.** Rispetto a un sistema di riferimento inerziale, la variazione della quantità di moto $\vec{Q}$ di un sistema chiuso è uguale all'impulso delle forze esterne $\vec{I}^{ext}$ agenti su di esso,
+```{prf:axiom} Primo principio - principio di inerzia
+:label: mechanics:principles:inertia
+
+Un sistema (o meglio, il baricentro di un sistema) sul quale agisce una forza esterna netta nulla, persevera nel suo stato di quiete o di moto rettilineo uniforme rispetto a un [sistema di riferimento inerziale](physics-hs:mechanics:dynamics:principles:inertial-ref-frame).
+```
+
+```{prf:axiom} Secondo principio - bilancio della quantità di moto per sistemi chiusi
+:label: mechanics:principles:momentum
+
+Rispetto a un sistema di riferimento inerziale, la variazione della quantità di moto $\vec{Q}$ di un sistema chiuso è uguale all'impulso delle forze esterne $\vec{I}^{ext}$ agenti su di esso,
 
 $$\Delta \vec{Q} = \vec{I}^{ext} \ .$$
+```
 
 Nel caso di moto regolare, in cui la quantità di moto del sistema è una grandezza continua e differenziabile rispetto al tempo, il secondo principio può essere scritto in forma differenziale, facendo tendere a zero l'intervallo di tempo considerato
 
@@ -17,15 +29,20 @@ $$\dot{\vec{Q}} = \vec{R}^{ext} \ ,$$
 
 avendo indicato con $\vec{R}^{ext}$ la risultante delle forze esterne agenti sul sistema.
 
-**Terzo principio - principio di azione-reazione.** Se un sistema $i$ esercita una forza $\vec{F}_{ji}$ sul sistema $j$, allora il sistema $j$ esercita sul sistema $i$ una forza $\vec{F}_{ij}$ "uguale e contraria" - stesso valore assoluto e verso opposto,
+```{prf:axiom} Terzo principio - principio di azione-reazione
+:label: mechanics:principles:action-reaction
+
+Se un sistema $i$ esercita una forza $\vec{F}_{ji}$ sul sistema $j$, allora il sistema $j$ esercita sul sistema $i$ una forza $\vec{F}_{ij}$ "uguale e contraria" - stesso valore assoluto e verso opposto,
 
 $$\vec{F}_{ij} = - \vec{F}_{ji} \ .$$
 
+```
 
+<!--
 **todo** **Osservazioni**
 - sistema di riferimento inerziale e invarianza galileiana
 - sistemi aperti e sistemi chiusi: sottolineare la validità di $\Delta \vec{Q} = \vec{I}^{ext}$ solo per sistemi chiusi, mentre per sistemi aperti è necessario un termine di flusso della quantità meccanica. Riferimento alla meccanica dei fluidi
-
+-->
 
 (physics-hs:mechanics:dynamics:principles:inertial-ref-frame)=
 ## Sistemi di riferimento inerziali e invarianza galileiana.

@@ -653,36 +653,45 @@ document.write(`
 -->
 <div class="tex2jax_ignore mathjax_ignore section" id="dinamica">
 <span id="physics-hs-mechanics-dynamics"></span><h1><span class="section-number">12. </span>Dinamica<a class="headerlink" href="#dinamica" title="Permalink to this heading">#</a></h1>
-<p><span style="color:red"><strong>todo</strong></p>
-<ul class="simple">
-<li><p>Sistemare l’introuzione e il capitolo</p></li>
-<li><p>Aggiungere i concetti di <strong>equilibrio</strong> e <strong>stabilità</strong>. Fare riferimento alla capitolo sulla <a class="reference internal" href="statics.html#physics-hs-mechanics-statics"><span class="std std-ref">statica</span></a>, se necessario</p></li>
-<li><p>…
-</span></p></li>
-</ul>
-<p>La dinamica si occupa del moto dei sistemi e delle cause del moto, mettendo insieme la descrizione cinematica, l’inerzia dei sistemi a perseverare nel moto, e le cause di una variazione del moto.</p>
-<p><strong>Princìpi della dinamica.</strong> Vengono discussi i tre principi della dinamica di Newton e il significato della relatività galileiana.</p>
-<p><strong>Equazioni cardinali della dinamica.</strong> Vengono presentate le tre equazioni cardinali della dinamica per sistemi chiusi, che mettono in relazione la variazione delle grandezze dinamiche alle azioni, e che nel caso di moti regolari possono essere scritte in forma differenziale</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
+<!--
+```{dropdown} todo
+- Sistemare l'introuzione e il capitolo
+- Aggiungere i concetti di **equilibrio** e **stabilità**. Fare riferimento alla capitolo sulla [statica](physics-hs:mechanics:statics), se necessario
+- ...
+```
+-->
+<p>La dinamica si occupa del moto dei sistemi e delle cause del moto, mettendo insieme la descrizione <a class="reference internal" href="kinematics.html#physics-hs-mechanics-kinematics"><span class="std std-ref">cinematica</span></a>, l”<a class="reference internal" href="inertia.html#physics-hs-mechanics-inertia"><span class="std std-ref">inerzia</span></a> dei sistemi a perseverare nel moto, e le <a class="reference internal" href="actions.html#physics-hs-mechanics-actions"><span class="std std-ref">azioni</span></a> come causa di una variazione del moto. La <a class="reference internal" href="statics.html#physics-hs-mechanics-statics"><span class="std std-ref">statica</span></a> rappresenta un caso particolare di dinamica, in cui il sistema di interesse rimane nella configurazione di riferimento.</p>
+<p><a class="reference internal" href="dynamics-principles.html#physics-hs-mechanics-dynamics-principles"><span class="std std-ref"><strong>Princìpi della dinamica</strong></span></a>. Insieme al principio della conservazione della massa, vengono formulati i tre principi della dinamica di Newton per sistemi chiusi rispetto a sistemi di riferimento inerziali (1. principio di inerzia, 2. bilancio della quantità di moto e 3. principio di azione e reazione); successivamente viene discusso il significato della relatività galileiana e il ruolo dei sistemi di riferimento inerizali.</p>
+<!--  -->
+<p><a class="reference internal" href="dynamics-eom.html#physics-hs-mechanics-dynamics-eom"><span class="std std-ref"><strong>Equazioni cardinali della dinamica</strong></span></a>. Vengono presentate le tre equazioni cardinali della dinamica per sistemi chiusi, che mettono in relazione la variazione delle grandezze dinamiche alle azioni, e che nel caso di moti regolari possono essere scritte in forma differenziale</p>
+<div class="math notranslate nohighlight" id="equation-dynamics-eom">
+<span class="eqno">(12.1)<a class="headerlink" href="#equation-dynamics-eom" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{aligned}
  \dot{\vec{Q}} &amp; = \vec{R}^{ext} &amp; \text{(bilancio quantità di moto)} \\
  \dot{\vec{L}}_H + \dot{\vec{x}}_H \times \vec{Q} &amp; = \vec{M}_H^{ext} &amp; \text{(bilancio momento della quantità di moto)} \\
- \dot{K} &amp; = P^{tot} &amp; \text{(bilancio energia cinetica)} \ .
+ \dot{K} &amp; = P^{tot} &amp; \text{(bilancio energia cinetica)} 
 \end{aligned}\end{split}\]</div>
-<p>Viene dimostrato che le equazioni di bilancio hanno la stessa forma per ogni sistema chiuso se scritti in termini di variazione di quantità di moto, momento della quantità di moto ed energia cinetica, senza esplicitare la forma particolare di queste grandezze dinamiche per i sistemi particolari presi in considerazione. Vengono forniti alcuni esempi ed esercizi svolti.</p>
-<p><strong>Leggi di conservazione.</strong> Sotto opportune ipotesi immediatamente riconoscibili dalle equazioni cardinali, vengono ricavate le leggi di conservazione validi per i sistemi meccanici,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
+<div class="tip admonition">
+<p class="admonition-title">Espressione delle equazioni di bilancio</p>
+<p>Come dimostrato in <a class="reference internal" href="dynamics-notes.html#physics-hs-mechanics-dynamics-notes"><span class="std std-ref">appendice</span></a>, le equazioni di bilancio hanno la stessa forma <a class="reference internal" href="#equation-dynamics-eom">(12.1)</a> per ogni sistema chiuso se scritti in termini di variazione di quantità di moto, momento della quantità di moto ed energia cinetica, senza esplicitare la forma particolare di queste grandezze dinamiche per i sistemi particolari presi in considerazione. Vengono forniti alcuni esempi ed esercizi svolti.</p>
+</div>
+<p><a class="reference internal" href="dynamics-conservation.html#physics-hs-mechanics-dynamics-conservation"><span class="std std-ref"><strong>Leggi di conservazione</strong></span></a>. Sotto opportune ipotesi immediatamente riconoscibili dalle equazioni cardinali <a class="reference internal" href="#equation-dynamics-eom">(12.1)</a>, vengono ricavate le leggi di conservazione validi per i sistemi meccanici,</p>
+<div class="math notranslate nohighlight" id="equation-dynamics-eom-conservation">
+<span class="eqno">(12.2)<a class="headerlink" href="#equation-dynamics-eom-conservation" title="Permalink a questa equazione">#</a></span>\[\begin{split}\begin{aligned}
   \vec{R}^{ext} &amp; = \vec{0} \qquad  &amp; \rightarrow \qquad \ \ \vec{Q} = \text{const.} \\
   \vec{M}_H^{ext} &amp; = \vec{0}, \dot{\vec{x}}_H \times \vec{Q} = \vec{0} \qquad  &amp; \rightarrow \qquad \vec{L}_H = \text{const.} \\
   P^{tot} &amp; = \vec{0} \qquad  &amp; \rightarrow \qquad \ \  K = \text{const.} \\
 \end{aligned}\end{split}\]</div>
-<p>Nel caso in cui le azioni agenti sul sistema non abbiano potenza nulla, ma che siano forze conservative, si riconosce la legge di conservazione dell’energia meccanica <span class="math notranslate nohighlight">\(E^{mec}\)</span>, definita come somma dell’energia cinetica, <span class="math notranslate nohighlight">\(K\)</span>, e dell’energia potenziale, <span class="math notranslate nohighlight">\(V\)</span>,</p>
+<p>Nel caso in cui le azioni agenti sul sistema non abbiano potenza nulla, ma che siano forze conservative, si riconosce la <a class="reference internal" href="dynamics-conservation.html#physics-hs-mechanics-dynamics-conservation-mechanical-energy"><span class="std std-ref">legge di conservazione dell’energia meccanica <span class="math notranslate nohighlight">\(E^{mec}\)</span></span></a>, definita come somma dell’energia cinetica, <span class="math notranslate nohighlight">\(K\)</span>, e dell’energia potenziale, <span class="math notranslate nohighlight">\(V\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[P^{tot} = -\dot{V} \ , \quad E^{mec} = K + V \qquad \rightarrow \qquad E^{mec} = \text{const.}\]</div>
-<p><strong>Urti.</strong>
+<p><a class="reference internal" href="dynamics-equilibrium-stability.html#physics-hs-mechanics-equilibrium-stability"><span class="std std-ref"><strong>Equilibrio e stabilità</strong></span></a>. <span style="color:red"><strong>todo</strong></span></p>
+<p><a class="reference internal" href="dynamics-examples.html#physics-hs-mechanics-dynamics-examples"><span class="std std-ref"><strong>Esempi</strong></span></a>. Vengono analizzati alcuni sistemi particolari, di interesse pratico, storico, e/o didattico, per iniziare a fare pratica con i princìpi, le equazioni e i criteri mostrati in precedenza.</p>
+<p><a class="reference internal" href="dynamics-eom-open.html#physics-hs-mechanics-dynamics-eom-open"><span class="std std-ref"><strong>Sistemi aperti</strong></span></a>. Vengono discussi i bilanci delle quantità fisiche di massa, quantità di moto e momento della quantità di moto per sistemi aperti che possono scambiare massa con l’estero, e che quindi non hanno massa costante.</p>
+<p><a class="reference internal" href="dynamics-collisions.html#physics-hs-mechanics-dynamics-collisions"><span class="std std-ref"><strong>Urti</strong></span></a>.
+Vengono studiati alcuni sistemi in cui il moto non è regolare e derivabile, almeno in corrispondenza degli eventi di urto.
 Viene presentato un modello di urto tra sistemi fondato unicamente sul coefficiente di restituzione, <span class="math notranslate nohighlight">\(\varepsilon\)</span>, per rappresentare la frazione di energia meccanica persa dal sistema durante l’urto. Vengono presentati dei problemi risolti grazie ai princìpi di conservazione e alle equazioni cardinali in forma incrementale.</p>
-<p><strong>Moti particolari - gravitazione.</strong> Vengono infine analizzati alcuni sistemi particolare, di interesse pratico, storico, e/o didattico <span style="color:red"><strong>todo</strong></span></p>
+<p><a class="reference internal" href="dynamics-central.html#physics-hs-mechanics-dynamics-motion-central"><span class="std std-ref"><strong>Moti centrali e gravitazione</strong></span></a>.
+Viene studiata la dinamica di alcuni sistemi soggetti a una forza centrale, usando come esempi la forza generata da una molla elastica o la forza gravitazionale. L’interazione gravitazionale tra <strong>due corpi</strong> viene studiata in dettaglio, a causa della sua rilevanza storica: la corretta descrizione delle orbite dei pianeti attorno al Sole è stato uno dei primi successi della meccanica e la legge di gravitazione universale di Newton. Nell’ambito del problema dei due corpi, viene dimostrato che i corpi si muovono lungo traiettorie rappresentabili come <a class="reference external" href="https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic_geometry/analytic_geometry_2d/conics.html">sezioni coniche</a>, nelle quali il Sole occupa un fuoco; vengono quindi enunciate e dimostrate le <a class="reference internal" href="dynamics-motion-gravitation.html#physics-hs-mechanics-dynamics-motion-gravitation-kepler"><span class="std std-ref">leggi di Keplero</span></a> per le orbite chiuse.</p>
 <!--
 ## Princìpi della dinamica
 1.
