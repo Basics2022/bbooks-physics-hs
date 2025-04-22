@@ -24,6 +24,13 @@ $$G = 6.67 \cdot 10^{-11} \frac{N \, m^2}{kg^2}$$
 
 la **costante di gravitazione universale**, considerata una costante della natura. **todo**
 
+```{admonition}
+:class: tip
+
+La legge di gravitazione universale è una legge di **interazione a distanza**, in cui la forza agente su un corpo in un punto $P_0(t)$ nello spazio dipende dalla posizione di un altro corpo nel punto $P_1(t)$ nello spazio nello stesso istante di tempo. L'espressione dell'interazione gravitazionale tramite la legge di gravitazione universale è quindi in contrasto con i postulati della fisica di Einstein, secondo la quale la velocità massima di trasmissione dell'informazione nello spazio è finita e uguale alla velocità della luce, $c \sim 3 \cdot 10^{8} \, m/s$.
+
+```
+
 (physics-hs:mechanics:actions:gravitation:field)=
 ### Campo di gravità
 Il campo di gravità generato da una massa $m_2$ posta in $P_2$ è **todo** una funzione dello spazio che associa a ogni punto $P$ un vettore,

@@ -13,7 +13,6 @@
 
 La meccanica classica si occupa del moto che hanno dimensioni e velocità caratteristiche dell'esperienza quotidiana, o di quella che poteva essere l'esperienza quotidiana dell'uomo del XIX secolo. 
 
-La formulazione originale della meccanica classica si deve a I.Newton, che si appoggiò agli strumenti 
 
 ```{admonition} Pre-requisiti
 :class: warning, dropdown
