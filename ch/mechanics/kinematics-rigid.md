@@ -64,6 +64,10 @@ $$\vec{v}_Q = \dfrac{d \vec{r}_Q}{dt}$$
   $$\vec{n} \times (\vec{n} \times \vec{w}) = \hat{n} \underbrace{(\hat{n} \cdot \vec{w})}_{=0} - \vec{w} \underbrace{(\hat{n} \cdot \hat{n})}_{=1} = - \vec{w} \ .$$
 
 ```{note}
+La velocità angolare $\vec{\omega}$ di un sistema rigido è una quantità fisica associata all'intero sistema e non dipende dal punto materiale $Q$ usato come riferimento per descrivere il moto del sistema.
+```
+
+```{note}
 La formula 
 
 $$\vec{v}_P - \vec{v}_Q = \vec{\omega} \times (P - Q)$$

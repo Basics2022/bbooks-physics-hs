@@ -643,10 +643,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-del-punto">8.7.1. Cinematica del punto</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-uniforme-ddot-vec-r-p-t-vec-0">8.7.1.1. Moto uniforme, <span class="math notranslate nohighlight">\(\ \ddot{\vec{r}}_P(t) = \vec{0}\)</span></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-uniformemente-accelerato-ddot-vec-r-p-t-vec-a">8.7.1.2. Moto uniformemente accelerato, <span class="math notranslate nohighlight">\(\ \ddot{\vec{r}}_P(t) = \vec{a}\)</span></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-piano">8.7.1.2.1. Moto piano</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-uniformemente-accelerato-ddot-vec-r-p-t-vec-a">8.7.1.2. Moto uniformemente accelerato, <span class="math notranslate nohighlight">\(\ \ddot{\vec{r}}_P(t) = \vec{a}\)</span></a></li>
 </ul>
 </li>
 </ul>
@@ -674,24 +671,64 @@ Dimostrazione<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Poiché <span class="math notranslate nohighlight">\(\ddot{\vec{r}}_P(t) = \vec{0}\)</span>, allora</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \dot{\vec{r}}_P(t) &amp; = \vec{v} \\
+  \vec{r}_P(t) &amp; = \vec{r}_0 + \vec{v} \, t \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">L’espressione della posizione in funzione del tempo è l’espressione parametrica della retta passante per <span class="math notranslate nohighlight">\(\vec{r}_0\)</span> con la stessa direzione del vettore velocità <span class="math notranslate nohighlight">\(\vec{v}\)</span>, vedi <a class="reference external" href="https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic_geometry/analytic_geometry_3d/lines.html#definizione-ed-equazione">Matematica:Geometrica analitica nello spazio:Rette nello spazio</a>.</p>
 </div>
 </details></div>
 <div class="section" id="moto-uniformemente-accelerato-ddot-vec-r-p-t-vec-a">
 <span id="physics-hs-mechanics-kinematics-notes-point-motion-a"></span><h3><span class="section-number">8.7.1.2. </span>Moto uniformemente accelerato, <span class="math notranslate nohighlight">\(\ \ddot{\vec{r}}_P(t) = \vec{a}\)</span><a class="headerlink" href="#moto-uniformemente-accelerato-ddot-vec-r-p-t-vec-a" title="Permalink to this heading">#</a></h3>
-<div class="section" id="moto-piano">
-<span id="physics-hs-mechanics-kinematics-notes-point-motion-a-planar"></span><h4><span class="section-number">8.7.1.2.1. </span>Moto piano<a class="headerlink" href="#moto-piano" title="Permalink to this heading">#</a></h4>
-<p>Il moto uniformemente accelerato è un moto piano. Data la posizione del punto <span class="math notranslate nohighlight">\(P\)</span> in un istante, e la sua velocità <span class="math notranslate nohighlight">\(\dot{\vec{r}}_P(t) = \vec{v}_P(t)\)</span>, il moto si svolge nel piano passante per <span class="math notranslate nohighlight">\(P\)</span>, nel quale giacciono i vettori velocità <span class="math notranslate nohighlight">\(\vec{v}_P(t)\)</span> e accelerazione <span class="math notranslate nohighlight">\(\vec{a}\)</span>.</p>
-<p>Se i vettori velocità e accelerazione sono allineati (con direzione concorde o opposta), il moto si svolge lungo una retta.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" id="kinematics-notes-const-a">
+<!--
+(physics-hs:mechanics:kinematics:notes:point:motion:a:linear)=
+#### Moto rettilineo uniformemente accelerato - moto rettilineo
+
+(physics-hs:mechanics:kinematics:notes:point:motion:a:planar)=
+#### Moto parabolico - moto piano
+-->
+<p>Il moto uniformemente accelerato è un moto piano. Se la velocità iniziale <span class="math notranslate nohighlight">\(\vec{v}_0\)</span> (o in qualsiasi istante temporale) ha la stessa direzione dell’accelerazione costante, <span class="math notranslate nohighlight">\(\vec{a}\)</span>, allora il moto è rettilineo e si svolge sulla retta passante per il punto iniziale <span class="math notranslate nohighlight">\(P_0\)</span> con la direzione di <span class="math notranslate nohighlight">\(\vec{a}\)</span>.
+Nel caso in cui <span class="math notranslate nohighlight">\(\vec{v}_0\)</span> e <span class="math notranslate nohighlight">\(\vec{a}\)</span> non sono allineati, il moto è parabolico e si svolge nel piano passante per <span class="math notranslate nohighlight">\(P_0\)</span> con direzione normale sia a <span class="math notranslate nohighlight">\(\vec{v}_0\)</span> sia a <span class="math notranslate nohighlight">\(\vec{a}\)</span>.</p>
+<!--posizione del punto $P$ in un istante, e la sua velocità $\dot{\vec{r}}_P(t) = \vec{v}_P(t)$, il moto si svolge nel piano passante per $P$, nel quale giacciono i vettori velocità $\vec{v}_P(t)$ e accelerazione $\vec{a}$.-->
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" id="kinematics-notes-const-a-planar">
 <summary class="sd-summary-title sd-card-header">
 Dimostrazione<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Data l’accelerazione costante $<span class="math notranslate nohighlight">\(\ddot{\vec{r}}_P(t) = \vec{a}\)</span>$, velocità e posizione sono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{v}_P(t) &amp; = \vec{v}_0 + \vec{a} \, t \\
+          P(t) &amp; =       P_0 + \vec{v}_0 \, t + \dfrac{1}{2} \vec{a} \ t^2 \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text"><strong>Moto rettilineo uniformemente accelerato.</strong> Se <span class="math notranslate nohighlight">\(\vec{v}_0 = v_0 \hat{t}\)</span>, <span class="math notranslate nohighlight">\(\vec{a} = a \hat{t}\)</span>, allora</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{v}_P(t) &amp; = ( v_0 + a \, t ) \hat{t} \\
+          P(t) - P_0 &amp; = \left( v_0 \, t + \dfrac{1}{2} a \, t^2 \right) \hat{t}  \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text"><strong>Moto parabolico.</strong> Si scelgono due direzioni ortogonali <span class="math notranslate nohighlight">\(\hat{x}\)</span>, <span class="math notranslate nohighlight">\(\hat{y}\)</span> definite dalle direzioni di <span class="math notranslate nohighlight">\(\vec{a}\)</span> e <span class="math notranslate nohighlight">\(\vec{v}_0\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{a}   &amp; = a \hat{x} \\
+  \vec{v}_0 &amp; = v_{0,x} \hat{x} + v_{0,y} \hat{y} \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">con <span class="math notranslate nohighlight">\(v_{0,y} \ne 0\)</span> (altrimenti si è nel caso di moto rettilineo uniformemente accelerato con <span class="math notranslate nohighlight">\(\vec{v}_0 \parallel \vec{a}\)</span>) così che la posizione in funzione del tempo è</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+  P(t) - P_0 = \Delta x_P(t) \hat{x} + \Delta y_P(t) \hat{y} =
+  \hat{x} \left( \dfrac{1}{2} a t^2 + v_{0,x} t \right) +
+  \hat{y} \left( v_{0,y} t \right)
+\end{aligned}\]</div>
+<p class="sd-card-text">ed è possibile scrivere la coordinata <span class="math notranslate nohighlight">\(x\)</span> in funzione della coordinata <span class="math notranslate nohighlight">\(y\)</span> come</p>
+<div class="math notranslate nohighlight">
+\[\Delta x_P = \frac{1}{2} \, a \, \dfrac{ \Delta y_P^2}{v_{0,y}^2} + \frac{v_{0,x}}{v_{0,y}} \Delta y_P\]</div>
 </div>
 </details></div>
-</div>
 </div>
 </div>
 
@@ -760,10 +797,7 @@ Dimostrazione<div class="sd-summary-down docutils">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica-del-punto">8.7.1. Cinematica del punto</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-uniforme-ddot-vec-r-p-t-vec-0">8.7.1.1. Moto uniforme, <span class="math notranslate nohighlight">\(\ \ddot{\vec{r}}_P(t) = \vec{0}\)</span></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-uniformemente-accelerato-ddot-vec-r-p-t-vec-a">8.7.1.2. Moto uniformemente accelerato, <span class="math notranslate nohighlight">\(\ \ddot{\vec{r}}_P(t) = \vec{a}\)</span></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-piano">8.7.1.2.1. Moto piano</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#moto-uniformemente-accelerato-ddot-vec-r-p-t-vec-a">8.7.1.2. Moto uniformemente accelerato, <span class="math notranslate nohighlight">\(\ \ddot{\vec{r}}_P(t) = \vec{a}\)</span></a></li>
 </ul>
 </li>
 </ul>

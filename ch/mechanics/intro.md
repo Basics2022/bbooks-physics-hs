@@ -13,6 +13,25 @@
 
 La meccanica classica si occupa del moto che hanno dimensioni e velocità caratteristiche dell'esperienza quotidiana, o di quella che poteva essere l'esperienza quotidiana dell'uomo del XIX secolo. 
 
+La formulazione originale della meccanica classica si deve a I.Newton, che si appoggiò agli strumenti 
+
+```{admonition} Pre-requisiti
+:class: warning, dropdown
+
+- [Geometria analitica](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/analytic_geometry.html)
+- [Calcolo infinitesimale](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/calculus.html)
+- [Algebra vettoriale](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/algebra/vector-algebra-euclidean-space.html)
+
+```
+
+```{admonition} I.Newton, 1642-1726
+:class: dropdown
+
+- 
+
+```
+
+
 ````{only} html
 **Contenuti.**
 
