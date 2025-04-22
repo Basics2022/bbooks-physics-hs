@@ -81,6 +81,18 @@ $$\vec{F} = - k (P - P_0) \ ,$$ (eq:spring)
 
 essendo $\vec{F}$ la forza trasmessa dalla molla al corpo in $P$, $P_0$ l'altra estremità della molla, $k$ la costante elastica della molla.
 
+```{admonition} R.Hooke, 1635-1703
+:class: dropdown
+
+Assistente di R.Boyle presso l'università di Oxford, e in seguito curatore degli esperimenti presso la Royal Society, fu protagonista come inventore e perfezionatore di strumenti scientifici negli anni della rivoluzione scientifica del XVII secolo. Tra le sue attività principali,
+- la caratterizzazione di molle e materiali elastici, con la legge di Hooke come legge costitutiva di materiali elastici lineari
+- l'utilizzo delle proprietà delle molle all'interno di strumenti meteorologici, per la misura della pressione atmosferica
+- l'utilizzo di molle per l'alimentazione di orologi che fossero insensibili alle accelerazioni dello strumento
+- la realizzazione di pompe pneumatiche che permisero a R.Boyle di svolgere i suoi esperimenti sui gas, e di formulare la [legge di Boyle](physics-hs:thermodynamics:matter:gases:ideal:experiments:boyle) per descrivere il comporamento a temperatura costante di gas rarefatti
+- strumenti ottici per le osservazioni micsorsopiche e astronomiche
+
+```
+
 **todo** *Considerare il caso con lunghezza a riposo non nulla; discutere il caso 1-dimensionale; aggiungere esempi*
 
 <!--
