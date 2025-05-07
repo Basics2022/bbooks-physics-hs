@@ -2249,7 +2249,6 @@ Testo
 ::::
 
 ```{dropdown} Soluzione.
-:open:
 
 $$\begin{aligned}
   \vec{r}_P & = ( x + y \cos \alpha ) \, \hat{x}  - y \sin \alpha \, \hat{y} \\
@@ -2550,7 +2549,7 @@ Il vincolo con la superficie è un vincolo ideale monolatero, che agisce solo fi
 
     $$\cos \theta \ge \frac{2}{3} \frac{E}{m g R}$$
 
-2. Nel caso in cui il sistema è inizialmente in corrispondenza del punto più alto della superficie e in quiete (o quel minimo di velocità per allontanarsi dalla posizione di equilibrio instabile), l'energia meccanica del sistema è $E = m g R$ e l'angolo limite $\theta^*$ ha coseno e seno
+2. Nel caso in cui il sistema è inizialmente in quiete in corrispondenza del punto più alto della superficie e in quiete (o quel minimo di velocità per allontanarsi dalla posizione di equilibrio instabile), l'energia meccanica del sistema è $E = m g R$ e l'angolo limite $\theta^*$ ha coseno e seno
 
     $$\begin{aligned}
       \cos \theta^* & = \frac{2}{3} \frac{E}{mgR} = \frac{2}{3} \\
@@ -2603,8 +2602,113 @@ Testo
 
 ::::
 
-```{dropdown} Soluzione.
-```
+````{dropdown} Soluzione.
+:open:
+
+**Cinematica.** Fino a quando il vincolo di contatto e puro rotolamento è soddisfatto, il sistema ha un solo grado di libertà effettivo. Si sceglie qui l'angolo $\theta$ formato dalla direzione che congiunge i centri del disco e della semicriconferenca. La posizione e velocità del centro $C$ del disco possono essere scritte usando un sistema di coordinate polari
+
+$$\begin{aligned}
+  C-O & = (R+r) \, \hat{r}  \\
+  \vec{v}_C & = (R+r) \dot{\theta} \, \hat{\theta}  \\
+\end{aligned}$$
+
+Si calcola la velocità angolare del disco, $\vec{\omega} = \omega \hat{z}$, usando la legge dell'atto di moto rigido confrontando il centre $C$ con il punto di contatto $Q$ (diverso a ogni istante di tempo) con la superficie semi-circolare,
+
+$$Q - O = R \, \hat{r} \ .$$
+
+Quando il vincolo di **puro rotolamento** è soddisfatto, la velocità del punto materiale del disco nel punto $Q$ è nulla, poiché è uguale alla velocità del punto della calotta sferica a contatto - che è nullo poiché la calotta è fissa,
+
+$$\begin{aligned}
+  \vec{v}_C - \vec{v}_Q & = \vec{\omega} \times (C - Q) \\
+  (R+r)\dot{\theta} \, \hat{\theta} & = r \omega \, \hat{\theta}
+\end{aligned}$$
+
+e quindi la velocità angolare in funzione della coordinata libera $\theta$ è $\omega = \frac{R + r}{r} \dot\theta$.
+
+**Equazioni della dinamica.** Le equazioni della dinamica per il disco sono
+
+$$\begin{aligned}
+  \dot{\vec{Q}}   & = \vec{F}^{ext} \\
+  \dot{\vec{L}}_C & = \vec{M}_C^{ext} \ ,
+\end{aligned}$$
+
+avendo scelto il centro di massa $C$ del disco per l'equazione del momento della quantità di moto. La quantità di moto e il momento della quantità di moto sono
+
+$$\begin{aligned}
+  \vec{Q}   & = m \vec{v}_C = m (R+r) \dot{\theta} \, \hat{\theta} \\
+  \vec{L}_C & = I_C \omega \, \hat{z} = I_C \dfrac{R+r}{r} \dot{\theta} \, \hat{z} \ ,
+\end{aligned}$$
+
+e la derivata nel tempo è
+
+$$\begin{aligned}
+  \dot{\vec{Q}}   & = m \vec{v}_C = m (R+r) \ddot{\theta} \, \hat{\theta} - m (R+r) \dot{\theta}^2 \, \hat{r}  \\
+  \dot{\vec{L}}_C & = I_C \dot{\omega} \, \hat{z} = I_C \dfrac{R+r}{r} \ddot{\theta} \, \hat{z} \ ,
+\end{aligned}$$
+
+Proiettando l'equazione della quantità di moto in direzione radiale e tangenziale, le componenti delle equazioni del moto sono
+
+$$\begin{aligned}
+ \text{q.moto, $r$      } & : \ - m (R+r)  \dot{\theta}^2 = - m g \cos \theta + F_r \\ 
+ \text{q.moto, $\theta$ } & : \   m (R+r) \ddot{\theta}   =   m g \sin \theta + F_{\theta} \\ 
+ \text{mom.q.moto, $z$  } & : \   I_c \frac{R+r}{r} \ddot \theta = - r F_{\theta} \\ 
+\end{aligned}$$
+
+Sommando l'equazione della quantità di moto in direzione tangenziale moltiplicata per $r$ e l'equazione del momento della quantità di moto, si ottiene un'**equazione pura del moto** nella quale non compaiono reazioni vincolari,
+
+$$\left[ m (R+r) r + I_c \frac{R+r}{r} \right] \ddot{\theta} = m g r \sin \theta \ .$$
+
+Questa equazione può essere manipolata per ottenere un'equazione di conservazione dell'energia meccanica, poiché sul disco non agiscono azioni non conservative: portando tutti i termini da una parte dell'uguale, moltiplicando per $\frac{R+r}{r}\dot{\theta}$, e riconoscendo che
+
+$$\dot{\theta} \ddot{\theta} = \dfrac{d}{d t} \left( \frac{1}{2} \dot{\theta}^2 \right) \quad , \quad \dot{\theta} \sin \theta = - \dfrac{d}{dt} \left( \cos \theta \right) \ ,$$
+
+si può scrivere la legge di conservazione dell'energia meccanica
+
+$$0 = \dfrac{d}{dt} \left[ \dfrac{1}{2} \left( m (R+r)^2 + I \left(\frac{R+r}{r}\right)^2 \right) \dot{\theta}^2 + m g (R+r) \cos \theta \right]$$
+
+e quindi il valore dell'energia è costante,
+
+$$\begin{aligned}
+  E 
+  & = \dfrac{1}{2} \left( m (R+r)^2 + I \left(\frac{R+r}{r}\right)^2 \right) \dot{\theta}^2 + m g (R+r) \cos \theta  \ .
+\end{aligned}$$
+
+Nel caso in cui il sistema si trovi nella condizione iniziale di quiete, $\dot{\theta}_0 = 0$ e a contatto con il punto più alto della circonferenza, $\theta_0 = 0$, $\cos \theta_0 = 1$,
+
+$$E = m g (R+r) \ .$$
+
+E' quindi possibile ricavare $\dot{\theta}^2$ in funzione di $\theta$,
+
+$$\dot{\theta}^2 = \dfrac{2 m g (1 - \cos \theta)}{\left( m + \frac{I}{r^2} \right) (R+r)} \ ,$$
+
+e poi sostituire il valore nella componente radiale dell'equazione della quantità di moto per ricavare l'espressione della componente in direzione radiale della reazione vincolare
+
+$$\begin{aligned}
+  F_r 
+  & = - m (R+r) \dot{\theta}^2 + m g \cos \theta = \\
+  & = - m (R+r) \dfrac{2 m g (1 - \cos \theta)}{\left( m + \frac{I}{r^2} \right) (R+r)}  + m g \cos \theta \ .
+\end{aligned}$$
+
+Nel caso di disco uniforme, il momento di inerzia è $I = \frac{1}{2} m r^2$,
+
+$$\begin{aligned}
+  F_r 
+  & = - m \dfrac{2 m g (1 - \cos \theta)}{ \frac{3}{2} m }  + m g \cos \theta = \\
+  & = - \frac{4}{3} m g (1 - \cos \theta) + m g \cos \theta = \\
+  & = \frac{7}{3} \cos \theta - \frac{4}{3} \ ,
+\end{aligned}$$
+
+Nella condizione limite in cui il disco si stacca dal corpo, la componente radiale della reazione vincolare si annulla. Questo avviene in corrispondenza dell'angolo $\theta^*$, il cui coseno vale
+
+$$\cos \theta^* = \frac{4}{7} \ .$$
+
+
+**Conservazione dell'energia meccanica.** In assenza di azioni non-conservative, si può risolvere l'esercizio usando l'equazione di conservazione dell'energia meccanica.
+
+
+
+
+````
 
 <!-- Esercizio ************************************************************* -->
 ::::{grid}

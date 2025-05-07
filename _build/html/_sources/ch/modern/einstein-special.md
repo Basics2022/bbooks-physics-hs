@@ -52,9 +52,9 @@ bla bla
 ## Cinematica
 
 (physics-hs:modern:einstein:special:lorentz)=
-### Relatività e trasformazioni di Lorentz
+### Sistemi inerziali e trasformazioni di Lorentz
 
-Si ricavano qui le trasformazioni di Lorentz che legano le coordinate spazio-tempo di due osservatori inerziali in moto relativo uniforme, lungo la direzione identificata dalle coordinate $x$, $x'$. Le trasformazioni di Lorentz seguono (quasi) in maniera indolore, dopo aver ribadito (0) la definizione della velocità nello spazio di un evento misurata da un'osservatore, (1) la costanza della velocità di un evento che corrisponde alla propagazione di un segnale luminoso, la cui misura è uguale per ogni osservatore, e (2,3) la simmetria della descrizione del moto relativo:
+Si ricavano qui le trasformazioni di Lorentz che legano le coordinate spazio-tempo degli eventi descritti da due **osservatori inerziali** in **moto relativo rettilineo uniforme**, lungo la direzione identificata dalle coordinate $x$, $x'$ allineate. Le trasformazioni di Lorentz seguono (quasi) in maniera indolore, dopo aver ribadito (0) la definizione della velocità nello spazio di un evento misurata da un'osservatore, (1) la costanza della velocità di un evento che corrisponde alla propagazione di un segnale luminoso, la cui misura è uguale per ogni osservatore, e (2,3) la simmetria della descrizione del moto relativo:
 
 0. la velocità (3-dimensionale) di un punto rispetto all'osservatore $Oxt$, visto dallo stesso osservatore è definita come la derivata della coordinata spaziale rispetto alla coordinata temporale misurata dall'osservatore,
 
@@ -185,9 +185,11 @@ Nemmeno continuando a comporre velocità positive può essere superata la veloci
 
 ```
 
-### Dilatazione dei tempi e contrazione delle lunghezze
+### Esempi e alcune conseguenze
 
-### "Paradosso" dei gemelli
+#### Dilatazione dei tempi e contrazione delle lunghezze
+
+#### "Paradosso" dei gemelli
 
 ### Geometria della relatività speciale
 Intervallo tra due eventi(invariante); tempo proprio; metrica di Minkowski

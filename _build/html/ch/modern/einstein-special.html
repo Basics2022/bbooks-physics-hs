@@ -428,6 +428,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Indice</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../ppl.html">Persone</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Indice</a></li>
 </ul>
 
@@ -643,11 +644,14 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principi-della-relativita-speciale">31.1.1. Princìpi della relatività speciale</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica">31.1.2. Cinematica</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relativita-e-trasformazioni-di-lorentz">31.1.2.1. Relatività e trasformazioni di Lorentz</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-inerziali-e-trasformazioni-di-lorentz">31.1.2.1. Sistemi inerziali e trasformazioni di Lorentz</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocita-della-luce-e-causalita">31.1.2.2. Velocità della luce e causalità</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dilatazione-dei-tempi-e-contrazione-delle-lunghezze">31.1.2.3. Dilatazione dei tempi e contrazione delle lunghezze</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paradosso-dei-gemelli">31.1.2.4. «Paradosso» dei gemelli</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geometria-della-relativita-speciale">31.1.2.5. Geometria della relatività speciale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi-e-alcune-conseguenze">31.1.2.3. Esempi e alcune conseguenze</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dilatazione-dei-tempi-e-contrazione-delle-lunghezze">31.1.2.3.1. Dilatazione dei tempi e contrazione delle lunghezze</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paradosso-dei-gemelli">31.1.2.3.2. «Paradosso» dei gemelli</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geometria-della-relativita-speciale">31.1.2.4. Geometria della relatività speciale</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dinamica">31.1.3. Dinamica</a></li>
@@ -706,9 +710,9 @@ document.write(`
 </div>
 <div class="section" id="cinematica">
 <span id="physics-hs-modern-einstein-special-kinematics"></span><h2><span class="section-number">31.1.2. </span>Cinematica<a class="headerlink" href="#cinematica" title="Permalink to this heading">#</a></h2>
-<div class="section" id="relativita-e-trasformazioni-di-lorentz">
-<span id="physics-hs-modern-einstein-special-lorentz"></span><h3><span class="section-number">31.1.2.1. </span>Relatività e trasformazioni di Lorentz<a class="headerlink" href="#relativita-e-trasformazioni-di-lorentz" title="Permalink to this heading">#</a></h3>
-<p>Si ricavano qui le trasformazioni di Lorentz che legano le coordinate spazio-tempo di due osservatori inerziali in moto relativo uniforme, lungo la direzione identificata dalle coordinate <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(x'\)</span>. Le trasformazioni di Lorentz seguono (quasi) in maniera indolore, dopo aver ribadito (0) la definizione della velocità nello spazio di un evento misurata da un’osservatore, (1) la costanza della velocità di un evento che corrisponde alla propagazione di un segnale luminoso, la cui misura è uguale per ogni osservatore, e (2,3) la simmetria della descrizione del moto relativo:</p>
+<div class="section" id="sistemi-inerziali-e-trasformazioni-di-lorentz">
+<span id="physics-hs-modern-einstein-special-lorentz"></span><h3><span class="section-number">31.1.2.1. </span>Sistemi inerziali e trasformazioni di Lorentz<a class="headerlink" href="#sistemi-inerziali-e-trasformazioni-di-lorentz" title="Permalink to this heading">#</a></h3>
+<p>Si ricavano qui le trasformazioni di Lorentz che legano le coordinate spazio-tempo degli eventi descritti da due <strong>osservatori inerziali</strong> in <strong>moto relativo rettilineo uniforme</strong>, lungo la direzione identificata dalle coordinate <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(x'\)</span> allineate. Le trasformazioni di Lorentz seguono (quasi) in maniera indolore, dopo aver ribadito (0) la definizione della velocità nello spazio di un evento misurata da un’osservatore, (1) la costanza della velocità di un evento che corrisponde alla propagazione di un segnale luminoso, la cui misura è uguale per ogni osservatore, e (2,3) la simmetria della descrizione del moto relativo:</p>
 <ol class="arabic" start="0">
 <li><p>la velocità (3-dimensionale) di un punto rispetto all’osservatore <span class="math notranslate nohighlight">\(Oxt\)</span>, visto dallo stesso osservatore è definita come la derivata della coordinata spaziale rispetto alla coordinata temporale misurata dall’osservatore,</p>
 <div class="math notranslate nohighlight">
@@ -833,14 +837,17 @@ Dimostrazione delle trasformazioni di Lorentz a partire dalle 3 osservazioni<div
 <p>Nemmeno continuando a comporre velocità positive può essere superata la velocità della luce…</p>
 </div>
 </div></div>
+<div class="section" id="esempi-e-alcune-conseguenze">
+<h3><span class="section-number">31.1.2.3. </span>Esempi e alcune conseguenze<a class="headerlink" href="#esempi-e-alcune-conseguenze" title="Permalink to this heading">#</a></h3>
 <div class="section" id="dilatazione-dei-tempi-e-contrazione-delle-lunghezze">
-<h3><span class="section-number">31.1.2.3. </span>Dilatazione dei tempi e contrazione delle lunghezze<a class="headerlink" href="#dilatazione-dei-tempi-e-contrazione-delle-lunghezze" title="Permalink to this heading">#</a></h3>
+<h4><span class="section-number">31.1.2.3.1. </span>Dilatazione dei tempi e contrazione delle lunghezze<a class="headerlink" href="#dilatazione-dei-tempi-e-contrazione-delle-lunghezze" title="Permalink to this heading">#</a></h4>
 </div>
 <div class="section" id="paradosso-dei-gemelli">
-<h3><span class="section-number">31.1.2.4. </span>«Paradosso» dei gemelli<a class="headerlink" href="#paradosso-dei-gemelli" title="Permalink to this heading">#</a></h3>
+<h4><span class="section-number">31.1.2.3.2. </span>«Paradosso» dei gemelli<a class="headerlink" href="#paradosso-dei-gemelli" title="Permalink to this heading">#</a></h4>
+</div>
 </div>
 <div class="section" id="geometria-della-relativita-speciale">
-<h3><span class="section-number">31.1.2.5. </span>Geometria della relatività speciale<a class="headerlink" href="#geometria-della-relativita-speciale" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">31.1.2.4. </span>Geometria della relatività speciale<a class="headerlink" href="#geometria-della-relativita-speciale" title="Permalink to this heading">#</a></h3>
 <p>Intervallo tra due eventi(invariante); tempo proprio; metrica di Minkowski</p>
 <div class="math notranslate nohighlight">
 \[d s^2 = c^2 dt^2 - dx^2 = \dots = c^2 dt'^2 - dx'^2 = d\mathbf{X} \cdot d \mathbf{X}\]</div>
@@ -1004,11 +1011,14 @@ Le equazioni che governano la natura sono invarianti alla scelta del sistema di 
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principi-della-relativita-speciale">31.1.1. Princìpi della relatività speciale</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cinematica">31.1.2. Cinematica</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relativita-e-trasformazioni-di-lorentz">31.1.2.1. Relatività e trasformazioni di Lorentz</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemi-inerziali-e-trasformazioni-di-lorentz">31.1.2.1. Sistemi inerziali e trasformazioni di Lorentz</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#velocita-della-luce-e-causalita">31.1.2.2. Velocità della luce e causalità</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dilatazione-dei-tempi-e-contrazione-delle-lunghezze">31.1.2.3. Dilatazione dei tempi e contrazione delle lunghezze</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paradosso-dei-gemelli">31.1.2.4. «Paradosso» dei gemelli</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geometria-della-relativita-speciale">31.1.2.5. Geometria della relatività speciale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempi-e-alcune-conseguenze">31.1.2.3. Esempi e alcune conseguenze</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dilatazione-dei-tempi-e-contrazione-delle-lunghezze">31.1.2.3.1. Dilatazione dei tempi e contrazione delle lunghezze</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#paradosso-dei-gemelli">31.1.2.3.2. «Paradosso» dei gemelli</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geometria-della-relativita-speciale">31.1.2.4. Geometria della relatività speciale</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dinamica">31.1.3. Dinamica</a></li>
