@@ -905,6 +905,7 @@ Viene chiesto di:
 \end{minipage}
 \hspace{.05\textwidth}
 \begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
   \includegraphics[width=.95\textwidth]{../../media/fluids-statics-balance-0.png}
 \end{minipage}
 $$

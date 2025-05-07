@@ -1788,7 +1788,7 @@ Problema 21.</div>
 </div>
 </div>
 </div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Soluzione.<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -2128,7 +2128,7 @@ L’equazione di bilancio della quantità di moto permette invece di determinare
 <div class="math notranslate nohighlight">
 \[\cos \theta \ge \frac{2}{3} \frac{E}{m g R}\]</div>
 </li>
-<li><p class="sd-card-text">Nel caso in cui il sistema è inizialmente in corrispondenza del punto più alto della superficie e in quiete (o quel minimo di velocità per allontanarsi dalla posizione di equilibrio instabile), l’energia meccanica del sistema è <span class="math notranslate nohighlight">\(E = m g R\)</span> e l’angolo limite <span class="math notranslate nohighlight">\(\theta^*\)</span> ha coseno e seno</p>
+<li><p class="sd-card-text">Nel caso in cui il sistema è inizialmente in quiete in corrispondenza del punto più alto della superficie e in quiete (o quel minimo di velocità per allontanarsi dalla posizione di equilibrio instabile), l’energia meccanica del sistema è <span class="math notranslate nohighlight">\(E = m g R\)</span> e l’angolo limite <span class="math notranslate nohighlight">\(\theta^*\)</span> ha coseno e seno</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
       \cos \theta^* &amp; = \frac{2}{3} \frac{E}{mgR} = \frac{2}{3} \\
@@ -2180,13 +2180,94 @@ Problema 29.</div>
 </div>
 </div>
 </div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
 Soluzione.<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Cinematica.</strong> Fino a quando il vincolo di contatto e puro rotolamento è soddisfatto, il sistema ha un solo grado di libertà effettivo. Si sceglie qui l’angolo <span class="math notranslate nohighlight">\(\theta\)</span> formato dalla direzione che congiunge i centri del disco e della semicriconferenca. La posizione e velocità del centro <span class="math notranslate nohighlight">\(C\)</span> del disco possono essere scritte usando un sistema di coordinate polari</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  C-O &amp; = (R+r) \, \hat{r}  \\
+  \vec{v}_C &amp; = (R+r) \dot{\theta} \, \hat{\theta}  \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Si calcola la velocità angolare del disco, <span class="math notranslate nohighlight">\(\vec{\omega} = \omega \hat{z}\)</span>, usando la legge dell’atto di moto rigido confrontando il centre <span class="math notranslate nohighlight">\(C\)</span> con il punto di contatto <span class="math notranslate nohighlight">\(Q\)</span> (diverso a ogni istante di tempo) con la superficie semi-circolare,</p>
+<div class="math notranslate nohighlight">
+\[Q - O = R \, \hat{r} \ .\]</div>
+<p class="sd-card-text">Quando il vincolo di <strong>puro rotolamento</strong> è soddisfatto, la velocità del punto materiale del disco nel punto <span class="math notranslate nohighlight">\(Q\)</span> è nulla, poiché è uguale alla velocità del punto della calotta sferica a contatto - che è nullo poiché la calotta è fissa,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{v}_C - \vec{v}_Q &amp; = \vec{\omega} \times (C - Q) \\
+  (R+r)\dot{\theta} \, \hat{\theta} &amp; = r \omega \, \hat{\theta}
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">e quindi la velocità angolare in funzione della coordinata libera <span class="math notranslate nohighlight">\(\theta\)</span> è <span class="math notranslate nohighlight">\(\omega = \frac{R + r}{r} \dot\theta\)</span>.</p>
+<p class="sd-card-text"><strong>Equazioni della dinamica.</strong> Le equazioni della dinamica per il disco sono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \dot{\vec{Q}}   &amp; = \vec{F}^{ext} \\
+  \dot{\vec{L}}_C &amp; = \vec{M}_C^{ext} \ ,
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">avendo scelto il centro di massa <span class="math notranslate nohighlight">\(C\)</span> del disco per l’equazione del momento della quantità di moto. La quantità di moto e il momento della quantità di moto sono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \vec{Q}   &amp; = m \vec{v}_C = m (R+r) \dot{\theta} \, \hat{\theta} \\
+  \vec{L}_C &amp; = I_C \omega \, \hat{z} = I_C \dfrac{R+r}{r} \dot{\theta} \, \hat{z} \ ,
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">e la derivata nel tempo è</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \dot{\vec{Q}}   &amp; = m \vec{v}_C = m (R+r) \ddot{\theta} \, \hat{\theta} - m (R+r) \dot{\theta}^2 \, \hat{r}  \\
+  \dot{\vec{L}}_C &amp; = I_C \dot{\omega} \, \hat{z} = I_C \dfrac{R+r}{r} \ddot{\theta} \, \hat{z} \ ,
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Proiettando l’equazione della quantità di moto in direzione radiale e tangenziale, le componenti delle equazioni del moto sono</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+ \text{q.moto, $r$      } &amp; : \ - m (R+r)  \dot{\theta}^2 = - m g \cos \theta + F_r \\ 
+ \text{q.moto, $\theta$ } &amp; : \   m (R+r) \ddot{\theta}   =   m g \sin \theta + F_{\theta} \\ 
+ \text{mom.q.moto, $z$  } &amp; : \   I_c \frac{R+r}{r} \ddot \theta = - r F_{\theta} \\ 
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Sommando l’equazione della quantità di moto in direzione tangenziale moltiplicata per <span class="math notranslate nohighlight">\(r\)</span> e l’equazione del momento della quantità di moto, si ottiene un”<strong>equazione pura del moto</strong> nella quale non compaiono reazioni vincolari,</p>
+<div class="math notranslate nohighlight">
+\[\left[ m (R+r) r + I_c \frac{R+r}{r} \right] \ddot{\theta} = m g r \sin \theta \ .\]</div>
+<p class="sd-card-text">Questa equazione può essere manipolata per ottenere un’equazione di conservazione dell’energia meccanica, poiché sul disco non agiscono azioni non conservative: portando tutti i termini da una parte dell’uguale, moltiplicando per <span class="math notranslate nohighlight">\(\frac{R+r}{r}\dot{\theta}\)</span>, e riconoscendo che</p>
+<div class="math notranslate nohighlight">
+\[\dot{\theta} \ddot{\theta} = \dfrac{d}{d t} \left( \frac{1}{2} \dot{\theta}^2 \right) \quad , \quad \dot{\theta} \sin \theta = - \dfrac{d}{dt} \left( \cos \theta \right) \ ,\]</div>
+<p class="sd-card-text">si può scrivere la legge di conservazione dell’energia meccanica</p>
+<div class="math notranslate nohighlight">
+\[0 = \dfrac{d}{dt} \left[ \dfrac{1}{2} \left( m (R+r)^2 + I \left(\frac{R+r}{r}\right)^2 \right) \dot{\theta}^2 + m g (R+r) \cos \theta \right]\]</div>
+<p class="sd-card-text">e quindi il valore dell’energia è costante,</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+  E 
+  &amp; = \dfrac{1}{2} \left( m (R+r)^2 + I \left(\frac{R+r}{r}\right)^2 \right) \dot{\theta}^2 + m g (R+r) \cos \theta  \ .
+\end{aligned}\]</div>
+<p class="sd-card-text">Nel caso in cui il sistema si trovi nella condizione iniziale di quiete, <span class="math notranslate nohighlight">\(\dot{\theta}_0 = 0\)</span> e a contatto con il punto più alto della circonferenza, <span class="math notranslate nohighlight">\(\theta_0 = 0\)</span>, <span class="math notranslate nohighlight">\(\cos \theta_0 = 1\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[E = m g (R+r) \ .\]</div>
+<p class="sd-card-text">E” quindi possibile ricavare <span class="math notranslate nohighlight">\(\dot{\theta}^2\)</span> in funzione di <span class="math notranslate nohighlight">\(\theta\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\dot{\theta}^2 = \dfrac{2 m g (1 - \cos \theta)}{\left( m + \frac{I}{r^2} \right) (R+r)} \ ,\]</div>
+<p class="sd-card-text">e poi sostituire il valore nella componente radiale dell’equazione della quantità di moto per ricavare l’espressione della componente in direzione radiale della reazione vincolare</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  F_r 
+  &amp; = - m (R+r) \dot{\theta}^2 + m g \cos \theta = \\
+  &amp; = - m (R+r) \dfrac{2 m g (1 - \cos \theta)}{\left( m + \frac{I}{r^2} \right) (R+r)}  + m g \cos \theta \ .
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Nel caso di disco uniforme, il momento di inerzia è <span class="math notranslate nohighlight">\(I = \frac{1}{2} m r^2\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  F_r 
+  &amp; = - m \dfrac{2 m g (1 - \cos \theta)}{ \frac{3}{2} m }  + m g \cos \theta = \\
+  &amp; = - \frac{4}{3} m g (1 - \cos \theta) + m g \cos \theta = \\
+  &amp; = \frac{7}{3} \cos \theta - \frac{4}{3} \ ,
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Nella condizione limite in cui il disco si stacca dal corpo, la componente radiale della reazione vincolare si annulla. Questo avviene in corrispondenza dell’angolo <span class="math notranslate nohighlight">\(\theta^*\)</span>, il cui coseno vale</p>
+<div class="math notranslate nohighlight">
+\[\cos \theta^* = \frac{4}{7} \ .\]</div>
+<p class="sd-card-text"><strong>Conservazione dell’energia meccanica.</strong> In assenza di azioni non-conservative, si può risolvere l’esercizio usando l’equazione di conservazione dell’energia meccanica.</p>
 </div>
 </details><!-- Esercizio ************************************************************* -->
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
@@ -2248,7 +2329,7 @@ Soluzione.<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 </div>
-</details><!--
+</details><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;!--
 
 ```{exercise} Pendolo - Equazioni dinamiche
 :label: pendulum-eom
@@ -2258,7 +2339,7 @@ Soluzione.<div class="sd-summary-down docutils">
 ```{exercise} Sistema che scivola su piano inclinato
 :label: point-vs-rigid
 
-Una biglia di massa $m$ e raggio $R$ scivola su un piano inclinato di un angolo $\alpha$ rispetto al piano orizzontale. L'attrito tra il piano e la biglia è approssimabile come nullo, così che la biglia può scivolare sulla superficie del piano.
+Una biglia di massa $m$ e raggio $R$ scivola su un piano inclinato di un angolo $\alpha$ rispetto al piano orizzontale. L&#39;attrito tra il piano e la biglia è approssimabile come nullo, così che la biglia può scivolare sulla superficie del piano.
 
 ```
 ```{dropdown} Soluzione.
@@ -2268,15 +2349,16 @@ Una biglia di massa $m$ e raggio $R$ scivola su un piano inclinato di un angolo 
 ```{exercise} Sfera che rotola su piano inclinato
 :label: point-vs-rigid
 
-Una biglia di massa $m$ e raggio $R$ rotola su un piano inclinato di un angolo $\alpha$ rispetto al piano orizzontale. L'attrito statico tra il piano e la biglia è sufficiente da garantire la condizione di puro rotolamento della biglia sul piano, senza scivolamento.
+Una biglia di massa $m$ e raggio $R$ rotola su un piano inclinato di un angolo $\alpha$ rispetto al piano orizzontale. L&#39;attrito statico tra il piano e la biglia è sufficiente da garantire la condizione di puro rotolamento della biglia sul piano, senza scivolamento.
 
 ```
 ```{dropdown} Soluzione.
 
 ```
 
--->
-<!--
+--&gt;
+
+&lt;!--
 ## Moto di un punto materiale
 
 ```{exercise} Accelerazione costante
@@ -2284,65 +2366,65 @@ Un punto materiale parte da fermo e si muove con un’accelerazione costante di 
 ```
 
 ```{exercise} Moto uniformemente accelerato
-Un'auto si muove inizialmente a $20 \, \text{m/s}$. Dopo $5 \, \text{s}$, la velocità è aumentata a $40 \, \text{m/s}$. Calcola l'accelerazione e lo spazio percorso in questo intervallo.
+Un&#39;auto si muove inizialmente a $20 \, \text{m/s}$. Dopo $5 \, \text{s}$, la velocità è aumentata a $40 \, \text{m/s}$. Calcola l&#39;accelerazione e lo spazio percorso in questo intervallo.
 ```
 
 ```{exercise} Caduta libera
-Un oggetto viene lasciato cadere da un'altezza di $80 \, \text{m}$. Calcola il tempo impiegato per raggiungere il suolo e la velocità al momento dell'impatto ($g = 9,81 \, \text{m/s}^2$).
+Un oggetto viene lasciato cadere da un&#39;altezza di $80 \, \text{m}$. Calcola il tempo impiegato per raggiungere il suolo e la velocità al momento dell&#39;impatto ($g = 9,81 \, \text{m/s}^2$).
 ```
 
 ```{exercise} Velocità angolare
-Un punto materiale si muove lungo una circonferenza di raggio $2 \, \text{m}$ con velocità costante $10 \, \text{m/s}$. Calcola la sua velocità angolare e l'accelerazione centripeta.
+Un punto materiale si muove lungo una circonferenza di raggio $2 \, \text{m}$ con velocità costante $10 \, \text{m/s}$. Calcola la sua velocità angolare e l&#39;accelerazione centripeta.
 ```
 
 ```{exercise} Moto su piano inclinato
-Un blocco di $5 \, \text{kg}$ scivola senza attrito lungo un piano inclinato di $30^\circ$. Calcola l'accelerazione del blocco e la velocità dopo $4 \, \text{s}$.
+Un blocco di $5 \, \text{kg}$ scivola senza attrito lungo un piano inclinato di $30^\circ$. Calcola l&#39;accelerazione del blocco e la velocità dopo $4 \, \text{s}$.
 ```
 
 
 ## Moto di sistemi di punti materiali
 
 ```{exercise} Centro di massa in movimento
-Due masse, $m_1 = 2 \, \text{kg}$ e $m_2 = 6 \, \text{kg}$, si muovono lungo l'asse $x$ rispettivamente con velocità $v_1 = 3 \, \text{m/s}$ e $v_2 = 1 \, \text{m/s}$. Determina la velocità del centro di massa.
+Due masse, $m_1 = 2 \, \text{kg}$ e $m_2 = 6 \, \text{kg}$, si muovono lungo l&#39;asse $x$ rispettivamente con velocità $v_1 = 3 \, \text{m/s}$ e $v_2 = 1 \, \text{m/s}$. Determina la velocità del centro di massa.
 ```
 
 ```{exercise} Trazione su una fune
-Due blocchi, $m_1 = 10 \, \text{kg}$ e $m_2 = 5 \, \text{kg}$, sono collegati da una fune e tirati con una forza di $60 \, \text{N}$ su una superficie orizzontale priva di attrito. Calcola l'accelerazione del sistema e la tensione nella fune.
+Due blocchi, $m_1 = 10 \, \text{kg}$ e $m_2 = 5 \, \text{kg}$, sono collegati da una fune e tirati con una forza di $60 \, \text{N}$ su una superficie orizzontale priva di attrito. Calcola l&#39;accelerazione del sistema e la tensione nella fune.
 ```
 
 ```{exercise} Impulso e quantità di moto
-Un corpo di massa $3 \, \text{kg}$ si muove con velocità $4 \, \text{m/s}$. Una forza costante di $6 \, \text{N}$ viene applicata per $5 \, \text{s}$. Calcola l'impulso ricevuto e la nuova velocità del corpo.
+Un corpo di massa $3 \, \text{kg}$ si muove con velocità $4 \, \text{m/s}$. Una forza costante di $6 \, \text{N}$ viene applicata per $5 \, \text{s}$. Calcola l&#39;impulso ricevuto e la nuova velocità del corpo.
 ```
 
 ```{exercise} Centro di massa e forze
-Un sistema è composto da due blocchi di masse $m_1 = 5 \, \text{kg}$ e $m_2 = 10 \, \text{kg}$. Se al primo blocco è applicata una forza di $20 \, \text{N}$ verso destra, calcola l'accelerazione del centro di massa.
+Un sistema è composto da due blocchi di masse $m_1 = 5 \, \text{kg}$ e $m_2 = 10 \, \text{kg}$. Se al primo blocco è applicata una forza di $20 \, \text{N}$ verso destra, calcola l&#39;accelerazione del centro di massa.
 ```
 
 ```{exercise} Sistema in caduta
-Due blocchi di masse $m_1 = 8 \, \text{kg}$ e $m_2 = 12 \, \text{kg}$ sono collegati da una fune che passa su una carrucola. Calcola l'accelerazione del sistema e la tensione nella fune ($g = 9,81 \, \text{m/s}^2$).
+Due blocchi di masse $m_1 = 8 \, \text{kg}$ e $m_2 = 12 \, \text{kg}$ sono collegati da una fune che passa su una carrucola. Calcola l&#39;accelerazione del sistema e la tensione nella fune ($g = 9,81 \, \text{m/s}^2$).
 ```
 
 
 ## Moto di corpi rigidi in 2D
 
 ```{exercise} Disco in rotazione
-Un disco di raggio $0,5 \, \text{m}$ e momento d'inerzia $I = 0,2 \, \text{kg·m}^2$ è soggetto a un momento torcente costante di $5 \, \text{N·m}$. Calcola l'accelerazione angolare e la velocità angolare dopo $4 \, \text{s}$.
+Un disco di raggio $0,5 \, \text{m}$ e momento d&#39;inerzia $I = 0,2 \, \text{kg·m}^2$ è soggetto a un momento torcente costante di $5 \, \text{N·m}$. Calcola l&#39;accelerazione angolare e la velocità angolare dopo $4 \, \text{s}$.
 ```
 
 ```{exercise} Asta rotante
-Un'asta uniforme di lunghezza $2,0 \, \text{m}$ e massa $10 \, \text{kg}$ ruota attorno a un’estremità. Calcola il momento d’inerzia e il momento torcente necessario per darle un'accelerazione angolare di $3 \, \text{rad/s}^2$.
+Un&#39;asta uniforme di lunghezza $2,0 \, \text{m}$ e massa $10 \, \text{kg}$ ruota attorno a un’estremità. Calcola il momento d’inerzia e il momento torcente necessario per darle un&#39;accelerazione angolare di $3 \, \text{rad/s}^2$.
 ```
 
 ```{exercise} Rotolamento di una sfera
-Una sfera di raggio $0,2 \, \text{m}$ e massa $5 \, \text{kg}$ rotola senza scivolare su un piano inclinato. Calcola l'accelerazione della sfera e la forza di attrito necessaria.
+Una sfera di raggio $0,2 \, \text{m}$ e massa $5 \, \text{kg}$ rotola senza scivolare su un piano inclinato. Calcola l&#39;accelerazione della sfera e la forza di attrito necessaria.
 ```
 
 ```{exercise} Bilanciamento di un’asta
-Un’asta di lunghezza $3,0 \, \text{m}$ e massa $6 \, \text{kg}$ è appoggiata su due supporti agli estremi. Un peso di $20 \, \text{N}$ è sospeso a $1,0 \, \text{m}$ da un'estremità. Calcola le reazioni vincolari.
+Un’asta di lunghezza $3,0 \, \text{m}$ e massa $6 \, \text{kg}$ è appoggiata su due supporti agli estremi. Un peso di $20 \, \text{N}$ è sospeso a $1,0 \, \text{m}$ da un&#39;estremità. Calcola le reazioni vincolari.
 ```
 
 ```{exercise} Energia cinetica rotazionale
-Un disco di massa $4,0 \, \text{kg}$ e raggio $0,3 \, \text{m}$ ruota con velocità angolare $10 \, \text{rad/s}$. Calcola l'energia cinetica totale (traslazionale + rotazionale).
+Un disco di massa $4,0 \, \text{kg}$ e raggio $0,3 \, \text{m}$ ruota con velocità angolare $10 \, \text{rad/s}$. Calcola l&#39;energia cinetica totale (traslazionale + rotazionale).
 ```
 
 
@@ -2353,15 +2435,15 @@ Una massa $m_1 = 2,0 \, \text{kg}$, inizialmente ferma, viene urtata da una mass
 ```
 
 ```{exercise} Urto completamente anelastico
-Due blocchi di masse $3,0 \, \text{kg}$ e $2,0 \, \text{kg}$ si muovono rispettivamente a $5,0 \, \text{m/s}$ e $-3,0 \, \text{m/s}$. Calcola la velocità finale se i due blocchi si uniscono dopo l'urto.
+Due blocchi di masse $3,0 \, \text{kg}$ e $2,0 \, \text{kg}$ si muovono rispettivamente a $5,0 \, \text{m/s}$ e $-3,0 \, \text{m/s}$. Calcola la velocità finale se i due blocchi si uniscono dopo l&#39;urto.
 ```
 
-```{exercise} Energia persa nell'urto
-Due sfere di massa uguale $m = 1,0 \, \text{kg}$ si scontrano frontalmente con velocità iniziali $2,0 \, \text{m/s}$ e $-1,0 \, \text{m/s}$. Determina l'energia cinetica persa nell'urto anelastico.
+```{exercise} Energia persa nell&#39;urto
+Due sfere di massa uguale $m = 1,0 \, \text{kg}$ si scontrano frontalmente con velocità iniziali $2,0 \, \text{m/s}$ e $-1,0 \, \text{m/s}$. Determina l&#39;energia cinetica persa nell&#39;urto anelastico.
 ```
 
 ```{exercise} Urto su un piano inclinato
-Una pallina di massa $0,5 \, \text{kg}$ rotola lungo un piano inclinato e colpisce una parete con velocità $3,0 \, \text{m/s}$. Se l'urto è elastico, calcola la velocità della pallina dopo l'urto.
+Una pallina di massa $0,5 \, \text{kg}$ rotola lungo un piano inclinato e colpisce una parete con velocità $3,0 \, \text{m/s}$. Se l&#39;urto è elastico, calcola la velocità della pallina dopo l&#39;urto.
 ```
 
 ```{exercise} Velocità del centro di massa dopo un urto
@@ -2376,11 +2458,11 @@ Due masse $m_1 = 5,0 \, \text{kg}$ e $m_2 = 10,0 \, \text{kg}$ si trovano a una 
 ```
 
 ```{exercise} Orbita di un satellite
-Un satellite di massa $1.000 \, \text{kg}$ si trova in un'orbita circolare a $300 \, \text{km}$ sopra la superficie terrestre. Calcola la velocità orbitale ($R_T = 6.371 \, \text{km}$, $g = 9,81 \, \text{m/s}^2$).
+Un satellite di massa $1.000 \, \text{kg}$ si trova in un&#39;orbita circolare a $300 \, \text{km}$ sopra la superficie terrestre. Calcola la velocità orbitale ($R_T = 6.371 \, \text{km}$, $g = 9,81 \, \text{m/s}^2$).
 ```
 
 ```{exercise} Terza legge di Kepler
-Un pianeta ha un'orbita ellittica con un periodo di $365 \, \text{giorni}$. Calcola la lunghezza del semi-asse maggiore della sua orbita, se la sua distanza dal Sole è di $1 \, \text{AU}$ (unità astronomica).
+Un pianeta ha un&#39;orbita ellittica con un periodo di $365 \, \text{giorni}$. Calcola la lunghezza del semi-asse maggiore della sua orbita, se la sua distanza dal Sole è di $1 \, \text{AU}$ (unità astronomica).
 ```
 
 ```{exercise} Forza centripeta in orbita
@@ -2388,7 +2470,7 @@ Una navetta spaziale di massa $500 \, \text{kg}$ è in orbita circolare attorno 
 ```
 
 ```{exercise} Satelliti in orbita geostazionaria
-Calcola l’altitudine di un satellite che segue un'orbita geostazionaria, cioè che ha lo stesso periodo della rotazione terrestre ($T = 24 \, \text{h}$). Usa $R_T = 6.371 \, \text{km}$ e $g = 9,81 \, \text{m/s}^2$.
+Calcola l’altitudine di un satellite che segue un&#39;orbita geostazionaria, cioè che ha lo stesso periodo della rotazione terrestre ($T = 24 \, \text{h}$). Usa $R_T = 6.371 \, \text{km}$ e $g = 9,81 \, \text{m/s}^2$.
 ```
 
 ```{exercise} Energia potenziale gravitazionale
@@ -2419,7 +2501,7 @@ Un oggetto composto da due blocchi di massa $2 \, \text{kg}$ e $5 \, \text{kg}$ 
 ```
 
 ```{exercise} Equilibrio di un corpo galleggiante
-Un oggetto con densità $800 \, \text{kg/m}^3$ galleggia in un fluido di densità $1.000 \, \text{kg/m}^3$. Determina la frazione sommersa dell'oggetto.
+Un oggetto con densità $800 \, \text{kg/m}^3$ galleggia in un fluido di densità $1.000 \, \text{kg/m}^3$. Determina la frazione sommersa dell&#39;oggetto.
 ```
 
 ```{exercise} Equilibrio di una leva
@@ -2439,10 +2521,14 @@ Un’asta di $2 \, \text{m}$ è sospesa a un’estremità. Un peso di $40 \, \te
 ```
 
 ```{exercise} Instabilità di un corpo
-Un oggetto ha un centro di massa molto alto rispetto alla sua base. Quali sono le condizioni per cui l’oggetto risulta instabile? Discuti in relazione all'altezza e alla posizione del centro di massa.
+Un oggetto ha un centro di massa molto alto rispetto alla sua base. Quali sono le condizioni per cui l’oggetto risulta instabile? Discuti in relazione all&#39;altezza e alla posizione del centro di massa.
 ```
 
--->
+--&gt;
+
+
+</pre></div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
