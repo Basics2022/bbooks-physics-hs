@@ -1131,6 +1131,109 @@ $$
 
 **Soluzione.**
 
+**Cinematica.** Fino a quando il vincolo di contatto e puro rotolamento è soddisfatto, il sistema ha un solo grado di libertà effettivo. Si sceglie qui l'angolo $\theta$ formato dalla direzione che congiunge i centri del disco e della semicriconferenca. La posizione e velocità del centro $C$ del disco possono essere scritte usando un sistema di coordinate polari
+
+$$\begin{aligned}
+  C-O & = (R+r) \, \hat{r}  \\
+  \vec{v}_C & = (R+r) \dot{\theta} \, \hat{\theta}  \\
+\end{aligned}$$
+
+Si calcola la velocità angolare del disco, $\vec{\omega} = \omega \hat{z}$, usando la legge dell'atto di moto rigido confrontando il centre $C$ con il punto di contatto $Q$ (diverso a ogni istante di tempo) con la superficie semi-circolare,
+
+$$Q - O = R \, \hat{r} \ .$$
+
+Quando il vincolo di **puro rotolamento** è soddisfatto, la velocità del punto materiale del disco nel punto $Q$ è nulla, poiché è uguale alla velocità del punto della calotta sferica a contatto - che è nullo poiché la calotta è fissa,
+
+$$\begin{aligned}
+  \vec{v}_C - \vec{v}_Q & = \vec{\omega} \times (C - Q) \\
+  (R+r)\dot{\theta} \, \hat{\theta} & = r \omega \, \hat{\theta}
+\end{aligned}$$
+
+e quindi la velocità angolare in funzione della coordinata libera $\theta$ è $\omega = \frac{R + r}{r} \dot\theta$.
+
+**Equazioni della dinamica.** Le equazioni della dinamica per il disco sono
+
+$$\begin{aligned}
+  \dot{\vec{Q}}   & = \vec{F}^{ext} \\
+  \dot{\vec{L}}_C & = \vec{M}_C^{ext} \ ,
+\end{aligned}$$
+
+avendo scelto il centro di massa $C$ del disco per l'equazione del momento della quantità di moto. La quantità di moto e il momento della quantità di moto sono
+
+$$\begin{aligned}
+  \vec{Q}   & = m \vec{v}_C = m (R+r) \dot{\theta} \, \hat{\theta} \\
+  \vec{L}_C & = I_C \omega \, \hat{z} = I_C \dfrac{R+r}{r} \dot{\theta} \, \hat{z} \ ,
+\end{aligned}$$
+
+e la derivata nel tempo è
+
+$$\begin{aligned}
+  \dot{\vec{Q}}   & = m \vec{v}_C = m (R+r) \ddot{\theta} \, \hat{\theta} - m (R+r) \dot{\theta}^2 \, \hat{r}  \\
+  \dot{\vec{L}}_C & = I_C \dot{\omega} \, \hat{z} = I_C \dfrac{R+r}{r} \ddot{\theta} \, \hat{z} \ ,
+\end{aligned}$$
+
+Proiettando l'equazione della quantità di moto in direzione radiale e tangenziale, le componenti delle equazioni del moto sono
+
+$$\begin{aligned}
+ \text{q.moto, $r$      } & : \ - m (R+r)  \dot{\theta}^2 = - m g \cos \theta + F_r \\ 
+ \text{q.moto, $\theta$ } & : \   m (R+r) \ddot{\theta}   =   m g \sin \theta + F_{\theta} \\ 
+ \text{mom.q.moto, $z$  } & : \   I_c \frac{R+r}{r} \ddot \theta = - r F_{\theta} \\ 
+\end{aligned}$$
+
+Sommando l'equazione della quantità di moto in direzione tangenziale moltiplicata per $r$ e l'equazione del momento della quantità di moto, si ottiene un'**equazione pura del moto** nella quale non compaiono reazioni vincolari,
+
+$$\left[ m (R+r) r + I_c \frac{R+r}{r} \right] \ddot{\theta} = m g r \sin \theta \ .$$
+
+Questa equazione può essere manipolata per ottenere un'equazione di conservazione dell'energia meccanica, poiché sul disco non agiscono azioni non conservative: portando tutti i termini da una parte dell'uguale, moltiplicando per $\frac{R+r}{r}\dot{\theta}$, e riconoscendo che
+
+$$\dot{\theta} \ddot{\theta} = \dfrac{d}{d t} \left( \frac{1}{2} \dot{\theta}^2 \right) \quad , \quad \dot{\theta} \sin \theta = - \dfrac{d}{dt} \left( \cos \theta \right) \ ,$$
+
+si può scrivere la legge di conservazione dell'energia meccanica
+
+$$0 = \dfrac{d}{dt} \left[ \dfrac{1}{2} \left( m (R+r)^2 + I \left(\frac{R+r}{r}\right)^2 \right) \dot{\theta}^2 + m g (R+r) \cos \theta \right]$$
+
+e quindi il valore dell'energia è costante,
+
+$$\begin{aligned}
+  E 
+  & = \dfrac{1}{2} \left( m (R+r)^2 + I \left(\frac{R+r}{r}\right)^2 \right) \dot{\theta}^2 + m g (R+r) \cos \theta  \ .
+\end{aligned}$$
+
+Nel caso in cui il sistema si trovi nella condizione iniziale di quiete, $\dot{\theta}_0 = 0$ e a contatto con il punto più alto della circonferenza, $\theta_0 = 0$, $\cos \theta_0 = 1$,
+
+$$E = m g (R+r) \ .$$
+
+E' quindi possibile ricavare $\dot{\theta}^2$ in funzione di $\theta$,
+
+$$\dot{\theta}^2 = \dfrac{2 m g (1 - \cos \theta)}{\left( m + \frac{I}{r^2} \right) (R+r)} \ ,$$
+
+e poi sostituire il valore nella componente radiale dell'equazione della quantità di moto per ricavare l'espressione della componente in direzione radiale della reazione vincolare
+
+$$\begin{aligned}
+  F_r 
+  & = - m (R+r) \dot{\theta}^2 + m g \cos \theta = \\
+  & = - m (R+r) \dfrac{2 m g (1 - \cos \theta)}{\left( m + \frac{I}{r^2} \right) (R+r)}  + m g \cos \theta \ .
+\end{aligned}$$
+
+Nel caso di disco uniforme, il momento di inerzia è $I = \frac{1}{2} m r^2$,
+
+$$\begin{aligned}
+  F_r 
+  & = - m \dfrac{2 m g (1 - \cos \theta)}{ \frac{3}{2} m }  + m g \cos \theta = \\
+  & = - \frac{4}{3} m g (1 - \cos \theta) + m g \cos \theta = \\
+  & = \frac{7}{3} \cos \theta - \frac{4}{3} \ ,
+\end{aligned}$$
+
+Nella condizione limite in cui il disco si stacca dal corpo, la componente radiale della reazione vincolare si annulla. Questo avviene in corrispondenza dell'angolo $\theta^*$, il cui coseno vale
+
+$$\cos \theta^* = \frac{4}{7} \ .$$
+
+
+**Conservazione dell'energia meccanica.** In assenza di azioni non-conservative, si può risolvere l'esercizio usando l'equazione di conservazione dell'energia meccanica.
+
+...
+
+
 % Esercizio *****************************************************************
 $$
 \begin{minipage}[t]{.55\textwidth}
@@ -2602,8 +2705,7 @@ Testo
 
 ::::
 
-````{dropdown} Soluzione.
-:open:
+```{dropdown} Soluzione.
 
 **Cinematica.** Fino a quando il vincolo di contatto e puro rotolamento è soddisfatto, il sistema ha un solo grado di libertà effettivo. Si sceglie qui l'angolo $\theta$ formato dalla direzione che congiunge i centri del disco e della semicriconferenca. La posizione e velocità del centro $C$ del disco possono essere scritte usando un sistema di coordinate polari
 
@@ -2705,10 +2807,10 @@ $$\cos \theta^* = \frac{4}{7} \ .$$
 
 **Conservazione dell'energia meccanica.** In assenza di azioni non-conservative, si può risolvere l'esercizio usando l'equazione di conservazione dell'energia meccanica.
 
+...
 
 
-
-````
+```
 
 <!-- Esercizio ************************************************************* -->
 ::::{grid}
@@ -2731,7 +2833,138 @@ Testo
 ::::
 
 ```{dropdown} Soluzione.
+
+Se avviene puro rotolamento del cerchio esterno sul terreno, e del disco sulla superficie interna del cerchio, il sistema ha **due gradi** di libertà, che descrivono due moti indipendenti: (1) il moto del cerchio esterno rispetto al terreno, (2) il moto del disco sulla superficie interna del cerchio.
+
+
+
 ```
+
+```{dropdown} Solution using Lagrangian mechanics
+:open:
+
+**Lagrangian function.** $L = K + U$
+- **Kinetic energy.**
+
+   $$ K = \dfrac{1}{2} m_A |\vec{v}_A|^2 + \dfrac{1}{2} I_A \omega_A^2 + \dfrac{1}{2} m_B |\vec{v}_B|^2 + \dfrac{1}{2} I_B \omega_B^2 \ .$$
+
+-  **Potential function $U = - V$.**
+
+   $$U = - m g y_B$$
+
+**Kinematics.**
+- Position and velocity of the center of the circle
+
+   $$\begin{aligned}
+     A - O     & = \hat{x} \, R \theta_A \\
+     \vec{v}_A & = \hat{x} \, R \dot\theta_A  \\
+   \end{aligned}$$
+
+- Position and velocity of the center of the disc
+
+   $$\begin{aligned}
+     B - A     & = - \hat{x} \, (R-r) \sin \theta_B + \hat{y} \, (R - (R-r) \cos \theta_B) \\
+     \vec{v}_{B} - \vec{v}_A & = - \hat{x} \, (R-r) \dot{\theta}_B \cos \theta_B + \hat{y} \, (R-r) \dot\theta_B \sin \theta_B & \qquad \text{(a)} \\
+   \end{aligned}$$
+
+   $$\vec{v}_B = \hat{x} \left[ R \dot\theta_A - (R-r) \dot{\theta}_B \cos \theta_B \right] + \hat{y} \left[ (R-r) \dot\theta_B \sin \theta_B \right]$$
+
+   $$| \vec{v}_B |^2 = R^2 \dot\theta_A^2 - 2 R (R-r)\dot\theta_A \dot\theta_B \cos \theta_B + (R-r)^2 \dot\theta_B^2 \ .$$
+
+- Angular velocity of the circle, $\vec{\omega}_A = - \dot\theta_A \hat{z}$
+
+- Angular velocity of the disc, using pure rolling between the disc and the circle, and the kinematics of the circle to find the velocity of the contact point as a function of the state of the circle only,
+
+   $$\begin{aligned} 
+     \vec{v}_B - \vec{v}_Q = \vec{\omega}_{B} \times (B - Q) \ , & \qquad \text{(b)}
+   \end{aligned}$$
+
+   with 
+
+   $$\begin{aligned}
+     \vec{v}_Q 
+     & = \vec{v}_A + \vec{\omega}_A \times (Q - A) = \\
+     & = \vec{v}_A - \hat{z} \dot{\theta}_A \times \left( - \hat{x} R \sin \theta_B - \hat{y} R \cos \theta_B \right) = \\
+     & = \vec{v}_A - \hat{x} \, R \dot\theta_A  \cos \theta_B + \hat{y} \, R \dot\theta_A \sin \theta_B 
+   \end{aligned}$$
+
+   And thus, comparing the two expressions of $\vec{v}_B - \vec{v}_A$,
+
+   $$\begin{aligned}
+     \text{(a)} & = - \hat{x} \, (R-r)\dot{\theta}_B \cos \theta_B + \hat{y} \, (R-r) \dot{\theta}_B \sin \theta_B = \\
+     \text{(b)} & = - \hat{x} R \dot\theta_A \cos \theta_B + \hat{y} R \dot \theta_A \sin \theta_B + \omega_B \hat{z} \times \left[ \hat{x} r \sin \theta_B + \hat{y} r \cos \theta_B \right] = \\
+     & = \hat{x} \left[ - R \dot\theta_A - r \omega_B \right] \cos \theta_B + \hat{y} \left[R \dot\theta_A + r \omega_B  \right] \sin \theta_B
+   \end{aligned}$$
+
+   it follows that
+
+   $$\begin{aligned}
+     & (R-r )\dot\theta_B = R \dot\theta_A + r \omega_B \\
+     & \qquad \rightarrow \qquad \omega_B = -\dfrac{R}{r} \dot\theta_A + \frac{R-r}{r} \dot\theta_B
+   \end{aligned}$$
+
+**Lagrangian function.**
+
+$$L = \frac{1}{2} m_A R^2 \dot\theta_A^2 + \dfrac{1}{2} I_A \dot{\theta}_A^2 + \dfrac{1}{2} m_B \vec{v}_B \cdot \vec{v}_B + \dfrac{1}{2} I_B \omega_B^2 - m_B g (R - (R-r) \cos \theta_B) \ ,$$
+
+with $\vec{v}_B(\theta_A, \theta_B, \dot\theta_A, \dot\theta_B)$, and $\omega_B(\theta_A, \theta_B, \dot\theta_A, \dot\theta_B)$.
+
+**Pure equations of  motion from Largange equations of type II**.
+
+$$\dfrac{d}{dt}\left( \dfrac{\partial L}{\partial \dot{q}} \right) - \dfrac{\partial L}{\partial q} = Q_q$$
+
+
+$$\dfrac{d}{dt}\left( \dfrac{\partial L}{\partial \dot\theta_A} \right) - \dfrac{\partial L}{\partial \theta_A} = 0$$
+
+$$\begin{aligned}
+\dfrac{d}{dt}\left( \dfrac{\partial L}{\partial \dot\theta_A} \right)
+  & = \dfrac{d}{dt} \left[ \left( m_A R^2 + I_A \right) \dot\theta_A + m_B \left( R^2 \dot\theta_A - R(R-r) \dot\theta_B \cos \theta_B \right) + I_B \left( \left(\frac{R}{r}\right)^2 \dot\theta_A - \frac{R(R-r)}{r^2} \dot\theta_B \right) \right]  \\
+\dfrac{\partial L}{\partial \theta_A} 
+  & = 0 \\
+\end{aligned}$$
+
+gives the conservation of generalized momentum w.r.t. $\theta_A$. **todo** *Physical meaning? What's that conserved quantity? It could be something like the angular momentum of the system w.r.t. a pole w.r.t. the net moments of the external actions is zero*
+
+$$\begin{aligned}
+\dfrac{d}{dt}\left( \dfrac{\partial L}{\partial \dot\theta_B} \right)
+  & = \dfrac{d}{dt} \left[ m_B \left( - 2 R(R-r) \dot\theta_A \cos \theta_B + (R-r)^2 \dot\theta_B \right) + I_B \left( \left(\frac{R-r}{r}\right)^2 \dot\theta_B - \frac{R(R-r)}{r^2} \dot\theta_A \right) \right]  \\
+  & =  m_B \left( - R(R-r) \ddot\theta_A \cos \theta_B + R(R-r) \dot\theta_A \dot\theta_B \sin \theta_B + m_B (R-r)^2 \ddot\theta_B \right)  + I_B \left( \left(\frac{R-r}{r}\right)^2 \ddot\theta_B - \frac{R(R-r)}{r^2} \ddot\theta_A \right)  \\
+\dfrac{\partial L}{\partial \theta_B} 
+  & = m_B R(R-r)\dot\theta_A \dot\theta_B \sin \theta_B  - m_B g (R-r) \sin \theta_B \\
+\end{aligned}$$
+
+**2$^{nd}$ order dynamical equations of motion.**
+
+$$\begin{aligned}
+ & \left( m_A R^2 + I_A + m R^2 + I_B \left(\frac{R}{r} \right)^2 \right) \ddot\theta_A - \left( m_B R(R-r) \cos \theta_B - I_B \frac{R(R-r)}{r^2}  \right) \ddot\theta_B + m_B R(R-r)\dot\theta_B^2 \sin \theta_B = 0 \\
+ & m_B \left( - R(R-r) \ddot\theta_A \cos \theta_B + m_B (R-r)^2 \ddot\theta_B \right)  + I_B \left( \left(\frac{R-r}{r}\right)^2 \ddot\theta_B - \frac{R(R-r)}{r^2} \ddot\theta_A \right) + m g (R-r) \sin \theta_B = 0 \ .
+\end{aligned}$$
+
+**Equilibrium.** Equilibriu is attained as the condition $\sin \theta_B = 0$. It's possible to prove (...prove it!) that $\theta_B = 0$ is a stable equilibrium, while $\theta_B = \pi$ would be unstable (if it constraints allows to reach it. With monolateral contacts, the normal reactions between bodies should be so that one body pushes the other, otherwise contact is lost. Unstable equilibrium is not possible to be reached with monolateral contacts, as the disk would fall under its weight. Discuss limit conditions? It could be another exercise...one more, one less...).
+
+The value of angle $\theta_A$ is irrelevant for the position of equilibrium, and for the problem in general, because of the symmetry of the system under investigation and the actions acting on it, not depending on $\theta_A$. This condition is reflected in the result $\dfrac{\partial L}{\partial \theta_A}$
+
+**Linearized equations of motion around the equilibrium $\ \theta_A = 0, \ \theta_B = 0$.**
+
+$$\begin{aligned}
+& \begin{bmatrix}
+  (m_A + m_B) R^2 + I_A + I_B \frac{R^2}{r^2}    &   -m_B R(R-r)- I_B \frac{R(R-r)}{r^2} \\
+  -m_B R(R-r) -I_B \dfrac{R(R-r)}{r^2}           & m_B(R-r)^2 + I_B \left(\frac{R-r}{r}\right)^2
+  \end{bmatrix} \begin{bmatrix} \ddot\theta_A \\ \ddot\theta_B \end{bmatrix}
+  + \begin{bmatrix} 0 & 0 \\ 0 & m_B g (R-r) \end{bmatrix} \begin{bmatrix}      \theta_A \\      \theta_B \end{bmatrix} 
+  = \begin{bmatrix} 0 \\ 0 \end{bmatrix}  \ .
+\end{aligned}$$
+
+
+Lagrangian method provides a linearized system of the mechanical system of the form
+
+$$\mathbf{M} \ddot{\mathbf{x}} + \mathbf{K} \mathbf{x} = \mathbf{f} \ ,$$
+
+with symmetri mass and stiffness matrices $\mathbf{M} = \mathbf{M}^T$, $\mathbf{K} = \mathbf{K}^T$, and semi-definite positive if the system is linearized around a (marginally)stable equilibrium, $\mathbf{M} > 0$, $\mathbf{K} \ge 0$.
+
+
+```
+
 
 <!-- Esercizio ************************************************************* -->
 ::::{grid}
