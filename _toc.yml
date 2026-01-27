@@ -101,6 +101,7 @@ parts:
   - file: ch/continuum/intro 
   - file: ch/continuum/solids
   - file: ch/continuum/fluids
+  - file: ch/continuum/problems
 - caption: Termodinamica
   numbered: True
   chapters:

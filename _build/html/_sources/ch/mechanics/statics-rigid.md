@@ -6,7 +6,7 @@ Le condizioni necessarie all'equilibrio di un corpo rigido sono:
 - l'equilibrio **globale** dei **momenti esterni** agenti sul sistema
 
 $$\begin{cases}
-  \sum_k \vec{F}^{ext} = \vec{0} \\
+  \sum_k \vec{F}^{ext}_k = \vec{0} \\
   \sum_k \vec{M}^{ext}_{k,H} = \vec{0} \ .  
 \end{cases}$$
 

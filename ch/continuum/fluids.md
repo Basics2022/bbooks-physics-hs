@@ -1,14 +1,31 @@
 (continuum:fluids)=
 # Fluidi
 
+Un fluido può essere definito come uno stato della materia che non è in grado di sostenere sforzi di taglio in quiete. Una porzione di fluido in quiete scambia per contatto solo reazioni normali alla sua superficie. La forza elementare scambiata dalla sezione di superficie elementare $\Delta S$ in $\vec{r}$, con normale $\hat{n}(\vec{r})$ uscente dalla superficie della porzione di fluido considerata è
+
+$$\Delta \vec{F} = - p(\vec{r}) \hat{n}(\vec{r}) \Delta S \ ,$$
+
+dove $p(\vec{r})$ è la pressione nel punto considerato. Il versore normale dà la direzione della forza, il segno meno dà il verso (l'azione esercitata da un fluido su una superficie esterna è sempre di spinta, e per il terzo principio della dinamica lo stesso vale per l'azione esercitata da una superficie esterna sul fluido), mentre la pressione può essere interpretata dal punto di vista meccanico come il valore assoluto della forza per unità di superficie. La pressione ha quindi come unità di misura il Pascal, $\text{Pa} = \frac{\text{N}}{\text{m}^2}$.
+
 (fluids:statics)=
 ## Statica dei fluidi
 
 (fluids:statics:stevino)=
-### Legge di Stevino
+### Legge di Stevinio
+
+...
+
+$$P + \rho g z = \text{const}$$
+
+...
 
 (fluids:statics:archimedes)=
 ### Legge di Archimede
+
+Un corpo di volume $V$ immerso in un fluido di densità $\rho_f$ e soggetto a un campo gravitazionale uniforme $\vec{g} = - g \hat{z}$, riceve dal fluido una spinta dal basso verso l'alto di intensità *pari al peso del volume del fluido spostato*, cioè la forza di Archimede è
+
+$$\vec{F}^{\text{Arch}} = \rho_f V g \hat{z} \ .$$
+
 
 (fluids:dynamics)=
 ## Dinamica dei fluidi
