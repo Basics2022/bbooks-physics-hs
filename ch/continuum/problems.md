@@ -53,6 +53,12 @@ Si chiede di calcolare se il sistema può trovarsi in equilibrio.
 
 ::::
 
+Questo problema è stato pubblicato dalla pagina **Questioni Di Fisica** su Facebook. Una lunga lista di disgraziate risposte nei commenti al [post](https://www.facebook.com/groups/290763317726004/permalink/3752277994907835/) ha ispirato l'aggiunta di questo problema con svolgimento. Se volete lasciare un commento, trovate un [post su Instagram](https://www.instagram.com/p/DUBYsFxCrwQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) e un post su Facebook, qui incorporato
+
+<div display="flex" justify-content="center" align-items="center">
+  <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fbasicsfb%2Fposts%2Fpfbid02pRcjeXmzTSBP7NE3RDSHUtJfuoyzxhfLpiqfEvJ7JdokzD51GPSrjyfSnjWVAKpml&show_text=true&width=500" width="500" height="731" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+</div>
+
 ```{dropdown} Soluzione.
 :open:
 
