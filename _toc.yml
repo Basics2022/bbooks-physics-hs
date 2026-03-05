@@ -90,7 +90,8 @@ parts:
     - file: ch/mechanics/dynamics-motion-gravitation
     - file: ch/mechanics/dynamics-central
     - file: ch/mechanics/dynamics-problems
-    - file: ch/mechanics/dynamics-sol
+    - file: ch/mechanics/dynamics-problems-extra
+#   - file: ch/mechanics/dynamics-sol
     - file: ch/mechanics/dynamics-notes
 #   - file: ch/mechanics/dynamics-problems-extra
 #   - file: ch/mechanics/dynamics-sims
