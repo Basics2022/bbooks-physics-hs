@@ -10,7 +10,7 @@
 :::{grid-item-card} Problema 1. Sistema di carrucole
 :columns: 8
 
-Determinare le equazioni del moto, e determinare la direzione di rotazione delle due carrucole.
+Determinare le equazioni del moto, e determinare la direzione di rotazione delle due carrucole. Dopo aver trovato l'espressione letterale, determinare la direzione con $m_1 = 17 \, \text{kg}$, $m_2 = 100 \, \text{kg}$ $m_3 = 4 \, \text{kg}$.
 
 :::
 
@@ -81,6 +81,13 @@ Poiché il determinante della matrice $\mathbf{M}$ è positivo - matrice di mass
 * l'accelerazione della carrucola $2$ è positiva (in senso anti-orario, per le convenzioni scelte) se $m_2 > m_3$
 * l'accelerazione della carrucola $1$ è positiva (sempre in senso anti-orario, per le convenzioni scelte) se $4 m_2 m_3 > m_1 (m_2 + m_3)$
 
+Nel caso particolare in cui $m_1 = 17 \, \text{kg}$, $m_2 = 100 \, \text{kg}$ $m_3 = 4 \, \text{kg}$, l'accelerazione delle due carrucole è
+
+$$\begin{aligned}
+  \alpha_1 & = \frac{R_1 R_2^2 g}{\text{det}(\mathbf{M})} \left( - 17 \times ( 100 + 4 ) + 4 \times 100 \times 4 \right) \text{kg}^2 = ( - 168 \, \text{kg}^2 ) \frac{R_1 R_2^2 g}{\text{det}(\mathbf{M})} \\
+  \alpha_2 & = \frac{2 R_1^2 R_2 g}{\text{det}(\mathbf{M})} \left( 17 \times ( 100 - 4 ) \right) \text{kg}^2 = 2 \times ( 1632 \, \text{kg}^2 ) \frac{R_1^2 R_2 g}{\text{det}(\mathbf{M})} \\
+\end{aligned}$$
+
 ```
 
 ```{dropdown} Moto del sistema
@@ -92,6 +99,7 @@ $$\theta_k(t) = \frac{1}{2} \alpha_k t^2 + \Omega_{k,0} t + \theta_{k,0} \ ,$$
 con $\Omega_{k,0}$ e $\theta_{k,0}$ rispettivamente la velocità e la posizione all'istante iniziale, da determinare con due condizioni (qui non fornite): se si ipotizza che il sistema si trovi inizialmente in quite e l'angolo iniziale sia il riferimento nullo, allora 
 
 $$\theta_k(t) = \frac{1}{2} \alpha_k t^2  \ .$$
+
 ```
 
 ````
