@@ -670,13 +670,51 @@ Problema 1. Sistema di carrucole</div>
 </div>
 </div>
 </div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
-Equazioni del moto - con bilanci meccanici («meccanica di Newton»)<div class="sd-summary-down docutils">
+Equazioni del moto - con bilanci meccanici («meccanica di Newton») - Approccio 1<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Le equazioni pure del moto - cioé senza reazioni vincolari, o azioni interne - possono essere ricavate a partire dal:</p>
+<ul class="simple">
+<li><p class="sd-card-text">bilancio del momento della quantità di moto del sottosistema carrucola 1 + massa <span class="math notranslate nohighlight">\(m_1\)</span> rispetto al centro della carrucola. Su questo sottosistema agiscono come forze esterne la forza peso, la reazione vincolare a terra e la tensione <span class="math notranslate nohighlight">\(T\)</span> nel filo che sostiene la carrucola 2, e che viene «tagliato» per ottenere il sottosistema</p></li>
+<li><p class="sd-card-text">bilancio del momento della quantità di moto del sottosistema carrucola 2 + massa <span class="math notranslate nohighlight">\(m_2\)</span> + massa <span class="math notranslate nohighlight">\(m_3\)</span> rispetto al centro della carrucola. Su questo secondo sistema agiscono come forze esterne la forza peso, e la tensione <span class="math notranslate nohighlight">\(T\)</span> nel filo che sostiene la carrucola 2</p></li>
+<li><p class="sd-card-text">bilancio della quantità di moto del sottosistema carrucola 2 + massa <span class="math notranslate nohighlight">\(m_2\)</span> + massa <span class="math notranslate nohighlight">\(m_3\)</span> rispetto al centro della carrucola</p></li>
+</ul>
+<p class="sd-card-text">In queste 3 equazioni compaiono i due gradi di libertà <span class="math notranslate nohighlight">\(\theta_1\)</span>, <span class="math notranslate nohighlight">\(\theta_2\)</span> e la azione interna <span class="math notranslate nohighlight">\(T\)</span> del filo. Queste tre equazioni sono:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  0 &amp; = - I_1 \ddot{\theta}_1 + T R_1 - m_1 R_1^2 \ddot{\theta}_1 - m_1 R_1 g \\
+  0 &amp; = - I_2 \ddot{\theta}_2 + m_2 R_2 g - m_3 R_2 g - m_2 R_2 ( R_2 \ddot{\theta}_2 + R_1 \ddot{\theta}_1 ) - m_3 R_2 ( + R_2 \ddot{\theta}_2 - R_1 \ddot{\theta}_1 ) \\
+  0 &amp; = T - m_2 g - m_3 g + m_2 ( R_2 \ddot{\theta}_2 + R_1 \ddot{\theta}_1 ) + m_3 ( - R_2 \ddot{\theta}_2 + R_1 \ddot{\theta}_1 ) + M_2 R_1 \ddot{\theta}_1 - M_2 g \\
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">La seconda equazione è un’equazione pura del moto, non contenendo azioni interne o reazioni. Combinando la prima e la terza equazione, si può eliminare la dipendenza da <span class="math notranslate nohighlight">\(T\)</span> (che poi può essere ricavata, una volta calcolata la dinamica del moto), per ottenere</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  0
+  &amp; = - I_1 \ddot{\theta}_1 + T R_1 - m_1 R_1^2 \ddot{\theta}_1 - m_1 R_1 g = \\
+  &amp; = - I_1 \ddot{\theta}_1 + \left( + m_2 g + m_3 g - m_2 ( R_2 \ddot{\theta}_2 + R_1 \ddot{\theta}_1 ) - m_3 ( - R_2 \ddot{\theta}_2 + R_1 \ddot{\theta}_1 ) - M_2 R_1 \ddot{\theta}_1 + M_2 g \right) R_1 - m_1 R_1^2 \ddot{\theta}_1 - m_1 R_1 g = \\
+  &amp; = - \ddot{\theta}_1 \left( I_1 + ( m_1 + m_2 + m_3 ) R_1^2 \right) - \ddot{\theta}_2 \left( ( m_2 - m_3 ) R_1 R_2 \right) + ( m_2 + m_3 - m_1 + M_2 ) R_1 g
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Usando il formalismo matriciale, questa equazione e l’equazione di bilancio del momento della quantità di moto del secondo sottosistema sono una coppia di equazioni pure del moto</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} I_1 + (M_2+m_1+m_2+m_3) R_1^2 &amp; (m_2 - m_3) R_1 R_2 \\ (m_2 - m_3) R_1 R_2 &amp; I_2 + (m_2+m_3) R_2^2  \end{bmatrix}\begin{bmatrix} \ddot{\theta}_1 \\ \ddot{\theta}_2 \end{bmatrix} = \begin{bmatrix} ( M_2 - m_1 + m_2 + m_3 ) R_1 \\ ( m_2 - m_3 ) R_2  \end{bmatrix} g \ .\end{split}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Equazioni del moto - con bilanci meccanici («meccanica di Newton») - Approccio 2<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">…scrivendo le equazioni di bilancio del momento della quantità di moto per:</p>
+<ul class="simple">
+<li><p class="sd-card-text">il sottosistema 2 (come prima)</p></li>
+<li><p class="sd-card-text">tutto il sistema (sottosistema 1 + sottosistema 2) rispetto al centro della carrucola 1</p></li>
+</ul>
+<p class="sd-card-text">si ottiene direttamente una coppia di equazioni pure del moto. La seconda equazione consiste al procedimento fatto in precedenza di eliminazione della tensione <span class="math notranslate nohighlight">\(T\)</span> nel filo mettendo insieme l’equazione 1 e 3.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
