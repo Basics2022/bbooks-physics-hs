@@ -23,9 +23,48 @@ Determinare le equazioni del moto, e determinare la direzione di rotazione delle
 
 ::::
 
-```{dropdown} Equazioni del moto - con bilanci meccanici ("meccanica di Newton")
+```{dropdown} Equazioni del moto - con bilanci meccanici ("meccanica di Newton") - Approccio 1
+:open:
+
+Le equazioni pure del moto - cioé senza reazioni vincolari, o azioni interne - possono essere ricavate a partire dal:
+* bilancio del momento della quantità di moto del sottosistema carrucola 1 + massa $m_1$ rispetto al centro della carrucola. Su questo sottosistema agiscono come forze esterne la forza peso, la reazione vincolare a terra e la tensione $T$ nel filo che sostiene la carrucola 2, e che viene "tagliato" per ottenere il sottosistema
+* bilancio del momento della quantità di moto del sottosistema carrucola 2 + massa $m_2$ + massa $m_3$ rispetto al centro della carrucola. Su questo secondo sistema agiscono come forze esterne la forza peso, e la tensione $T$ nel filo che sostiene la carrucola 2
+* bilancio della quantità di moto del sottosistema carrucola 2 + massa $m_2$ + massa $m_3$ rispetto al centro della carrucola
+
+In queste 3 equazioni compaiono i due gradi di libertà $\theta_1$, $\theta_2$ e la azione interna $T$ del filo. Queste tre equazioni sono:
+
+$$\begin{aligned}
+  0 & = - I_1 \ddot{\theta}_1 + T R_1 - m_1 R_1^2 \ddot{\theta}_1 - m_1 R_1 g \\
+  0 & = - I_2 \ddot{\theta}_2 + m_2 R_2 g - m_3 R_2 g - m_2 R_2 ( R_2 \ddot{\theta}_2 + R_1 \ddot{\theta}_1 ) - m_3 R_2 ( + R_2 \ddot{\theta}_2 - R_1 \ddot{\theta}_1 ) \\
+  0 & = T - m_2 g - m_3 g + m_2 ( R_2 \ddot{\theta}_2 + R_1 \ddot{\theta}_1 ) + m_3 ( - R_2 \ddot{\theta}_2 + R_1 \ddot{\theta}_1 ) + M_2 R_1 \ddot{\theta}_1 - M_2 g \\
+\end{aligned}$$
+
+La seconda equazione è un'equazione pura del moto, non contenendo azioni interne o reazioni. Combinando la prima e la terza equazione, si può eliminare la dipendenza da $T$ (che poi può essere ricavata, una volta calcolata la dinamica del moto), per ottenere
+
+$$\begin{aligned}
+  0
+  & = - I_1 \ddot{\theta}_1 + T R_1 - m_1 R_1^2 \ddot{\theta}_1 - m_1 R_1 g = \\
+  & = - I_1 \ddot{\theta}_1 + \left( + m_2 g + m_3 g - m_2 ( R_2 \ddot{\theta}_2 + R_1 \ddot{\theta}_1 ) - m_3 ( - R_2 \ddot{\theta}_2 + R_1 \ddot{\theta}_1 ) - M_2 R_1 \ddot{\theta}_1 + M_2 g \right) R_1 - m_1 R_1^2 \ddot{\theta}_1 - m_1 R_1 g = \\
+  & = - \ddot{\theta}_1 \left( I_1 + ( m_1 + m_2 + m_3 ) R_1^2 \right) - \ddot{\theta}_2 \left( ( m_2 - m_3 ) R_1 R_2 \right) + ( m_2 + m_3 - m_1 + M_2 ) R_1 g
+\end{aligned}$$
+
+Usando il formalismo matriciale, questa equazione e l'equazione di bilancio del momento della quantità di moto del secondo sottosistema sono una coppia di equazioni pure del moto
+
+$$\begin{bmatrix} I_1 + (M_2+m_1+m_2+m_3) R_1^2 & (m_2 - m_3) R_1 R_2 \\ (m_2 - m_3) R_1 R_2 & I_2 + (m_2+m_3) R_2^2  \end{bmatrix}\begin{bmatrix} \ddot{\theta}_1 \\ \ddot{\theta}_2 \end{bmatrix} = \begin{bmatrix} ( M_2 - m_1 + m_2 + m_3 ) R_1 \\ ( m_2 - m_3 ) R_2  \end{bmatrix} g \ .$$
 
 ```
+
+```{dropdown} Equazioni del moto - con bilanci meccanici ("meccanica di Newton") - Approccio 2
+
+...scrivendo le equazioni di bilancio del momento della quantità di moto per:
+* il sottosistema 2 (come prima)
+* tutto il sistema (sottosistema 1 + sottosistema 2) rispetto al centro della carrucola 1
+
+si ottiene direttamente una coppia di equazioni pure del moto. La seconda equazione consiste al procedimento fatto in precedenza di eliminazione della tensione $T$ nel filo mettendo insieme l'equazione 1 e 3.
+
+```
+
+ 
 ```{dropdown} Equazioni del moto - con equazioni di Lagrange
 :open:
 
@@ -99,6 +138,7 @@ $$\theta_k(t) = \frac{1}{2} \alpha_k t^2 + \Omega_{k,0} t + \theta_{k,0} \ ,$$
 con $\Omega_{k,0}$ e $\theta_{k,0}$ rispettivamente la velocità e la posizione all'istante iniziale, da determinare con due condizioni (qui non fornite): se si ipotizza che il sistema si trovi inizialmente in quite e l'angolo iniziale sia il riferimento nullo, allora 
 
 $$\theta_k(t) = \frac{1}{2} \alpha_k t^2  \ .$$
+
 ```
 
 ````
