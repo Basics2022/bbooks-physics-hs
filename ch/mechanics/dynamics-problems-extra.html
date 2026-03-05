@@ -656,7 +656,7 @@ document.write(`
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Problema 1. Sistema di carrucole</div>
-<p class="sd-card-text">Determinare le equazioni del moto, e determinare la direzione di rotazione delle due carrucole.</p>
+<p class="sd-card-text">Determinare le equazioni del moto, e determinare la direzione di rotazione delle due carrucole. Dopo aver trovato l’espressione letterale, determinare la direzione con <span class="math notranslate nohighlight">\(m_1 = 17 \, \text{kg}\)</span>, <span class="math notranslate nohighlight">\(m_2 = 100 \, \text{kg}\)</span> <span class="math notranslate nohighlight">\(m_3 = 4 \, \text{kg}\)</span>.</p>
 </div>
 </div>
 </div>
@@ -733,6 +733,12 @@ Accelerazione<div class="sd-summary-down docutils">
 <li><p class="sd-card-text">l’accelerazione della carrucola <span class="math notranslate nohighlight">\(2\)</span> è positiva (in senso anti-orario, per le convenzioni scelte) se <span class="math notranslate nohighlight">\(m_2 &gt; m_3\)</span></p></li>
 <li><p class="sd-card-text">l’accelerazione della carrucola <span class="math notranslate nohighlight">\(1\)</span> è positiva (sempre in senso anti-orario, per le convenzioni scelte) se <span class="math notranslate nohighlight">\(4 m_2 m_3 &gt; m_1 (m_2 + m_3)\)</span></p></li>
 </ul>
+<p class="sd-card-text">Nel caso particolare in cui <span class="math notranslate nohighlight">\(m_1 = 17 \, \text{kg}\)</span>, <span class="math notranslate nohighlight">\(m_2 = 100 \, \text{kg}\)</span> <span class="math notranslate nohighlight">\(m_3 = 4 \, \text{kg}\)</span>, l’accelerazione delle due carrucole è</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+  \alpha_1 &amp; = \frac{R_1 R_2^2 g}{\text{det}(\mathbf{M})} \left( - 17 \times ( 100 + 4 ) + 4 \times 100 \times 4 \right) \text{kg}^2 = ( - 168 \, \text{kg}^2 ) \frac{R_1 R_2^2 g}{\text{det}(\mathbf{M})} \\
+  \alpha_2 &amp; = \frac{2 R_1^2 R_2 g}{\text{det}(\mathbf{M})} \left( 17 \times ( 100 - 4 ) \right) \text{kg}^2 = 2 \times ( 1632 \, \text{kg}^2 ) \frac{R_1^2 R_2 g}{\text{det}(\mathbf{M})} \\
+\end{aligned}\end{split}\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
