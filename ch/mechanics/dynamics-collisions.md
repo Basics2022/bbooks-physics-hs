@@ -542,3 +542,152 @@ Un proiettile colpisce un sistema rigido di due masse concentrate, libero e iniz
 ```{dropdown} Soluzione.
 **todo**
 ```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Doppia collisione 
+:columns: 8
+
+Si usi un modello di doppia collisione in serie (non una collisione tripla in simultanea), studiando prima la collisione tra la palla grossa e il pavimento, e successivamente la collisione tra la palla grossa e la palla piccola.
+
+[Video YouTube dell'esperimento di Walter Lewin](https://www.youtube.com/shorts/g2F5msCUIJw)
+
+<div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+    <iframe
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+        src="https://www.youtube.com/embed/0gAIRwMuQS4"
+        frameborder="0"
+        allowfullscreen
+    ></iframe>
+</div>
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+<!-- *Didascalia, se necessaria* -->
+
+
+
+:::
+
+::::
+
+```{dropdown} Soluzione.
+:open:
+
+Si identificano qui alcuni istanti:
+- 0: istante iniziale
+- 1: istante vicino a parete, immediatamente prima del primo urto
+- 2: istante vicino a parete, immediatamente dopo il primo urto e immediatamente prima del secondo urto
+- 3: istante vicino a parete, immediatamente dopo il secondo urto
+- 4: istante in cui la pallina piccola raggiunge la quota massima.
+
+**$0 \rightarrow 1$. Dinamica regolare.** Il principio di conservazione dell'energia meccanica (in assenza di azioni non conservative), permette di calcolare la velocità delle due palle poco prima del primo impatto. Per la massa $A$ (si può scrivere lo stesso bilancio per la massa $B$)
+
+$$0 = E_{A,0} - E_{A,1} = m_A g h_0 - \frac{1}{2} m_A v_1^2 \ ,$$
+
+e quindi
+
+$$v_{A,1} = v_{B,1} = - \sqrt{2 g h_0} \ ,$$
+
+avendo scelto la convenzione di spostamento e velocità positive verso l'alto.
+
+**$1 \rightarrow 2$. Prima collisione elastica.** In un urto elastico si conserva l'energia cinetica del sistema "palla grande"+Terra. In assenza di moviemnto della superficie terrestre (si può studiare il problema di urto tra due corpi, di cui uno - la Terra - con massa enorme rispetto all'altro e concludere che la sua velocità rimane invariata prima e dopo l'urto), si conclude che la palla grande dopo l'urto ha una velocità uguale e contraria alla velocità $v_{1,A}$,
+
+$$v_{A,2} = - v_{A,1} = \sqrt{2 g h_0} \ .$$
+
+**$2 \rightarrow 3$. Seconda collisione elastica.** Nel secondo urto elastico tra la palla piccola e la palla grande si possono usare la conservazione dell'energia cinetica (urto istantaneo, nessuna dissipazione), e la conservazione della quantità di moto (nessuna forza esterna impulsiva agente sul sistema). La palla piccola nell'istante 2 non ha ancora subito nessuna collisione, e quindi $v_{B,2} = v_{B,1}$
+
+$$\begin{cases}
+  0 = \Delta E = \frac{1}{2} m_A v_{A,3}^2 + \frac{1}{2} m_B v_{B,3}^2 - \left( \frac{1}{2} m_A v_{A,2}^2 + \frac{1}{2} m_B v_{B,2}^2 \right) \\
+  0 = \Delta Q = m_A v_{A,3} + m_B v_{B,3} - \left( m_A v_{A,2} + m_B v_{B,2} \right) \\
+\end{cases}$$
+
+$$\begin{cases}
+  0 = m_A v_{A,3}^2 + m_B v_{B,3}^2 - \left( m_A + m_B \right) v_{A,2}^2 \\
+  0 = m_A v_{A,3} + m_B v_{B,3} - v_{A,2} \left( m_A - m_B \right) \\
+\end{cases}$$
+
+Ricavando $v_{A,3}$ dalla seconda equazione,
+
+$$v_{A,3} = - \frac{m_B}{m_A} v_{B,3} + \left( 1 - \frac{m_B}{m_A} \right) v_{A,2} \ ,$$
+
+e inserendo nella prima
+
+$$\begin{aligned}
+  0
+  & = m_A \left[ - \frac{m_B}{m_A} v_{B,3} + \left( 1 - \frac{m_B}{m_A} \right) v_{A,2} \right]^2 + m_B v_{B,3}^2 - \left( m_A + m_B \right) v_{A,2}^2 \\
+  & = m_B \left( 1 + \frac{m_B}{m_A} \right) v_{B,3}^2 - 2 m_B \left( 1 - \frac{m_B}{m_A} \right) v_{A,2} v_{B,3} + \left( m_A - 2 m_B + \frac{m_B^2}{m_A} - m_A - m_B  \right) v_{A,2}^2 \\
+  & = m_B \left( 1 + \frac{m_B}{m_A} \right) v_{B,3}^2 - 2 m_B \left( 1 - \frac{m_B}{m_A} \right) v_{A,2} v_{B,3} + m_B \left( - 3 + \frac{m_B}{m_A} \right) v_{A,2}^2 \\
+\end{aligned}$$
+
+Dopo aver semplificato per $m_B \ne 0$, il discriminante dell'equazione di secondo grado è sempre positivo (con l'eccezione di essere nullo, se le palle sono appoggiate sul tavolo nella loro condizione iniziale),
+
+$$\begin{aligned}
+  \frac{\Delta}{4}
+  & = \left( 1 - r \right)^2 v_{A,2}^2 - \left( 1 + r \right) \left( - 3 + r \right ) v_{A,2}^2 = \\
+  & = v_{A,2}^2 \left( 1 - 2 r + r^2 + 3 + 3 r - r - r^2 \right) = \\
+  & = 4 \, v_{A,2}^2 > 0
+\end{aligned}$$
+
+e la soluzione dell'equazione restituisce la velocità della palla piccola dopo l'urto,
+
+$$\begin{aligned}
+  v_{B,3} & = \frac{1}{1 + \frac{m_B}{m_A}} \left[ \left(1-\frac{m_B}{m_A}\right) \mp 2  \right] v_{A,2} \\
+  v_{B,3} & =
+\begin{cases}
+  \frac{1}{1+\frac{m_B}{m_A}} \left( 3 - \frac{m_B}{m_A} \right) v_{A,2} && \text{(Soluzione fisica)} \\
+   - v_{A,2}                                                             && \text{(Soluzione in assenza di urto, vedi sotto)} \\
+\end{cases}
+\end{aligned}$$
+
+mentre la velocità della palla grande è
+
+$$\begin{aligned}
+  v_{A,3} 
+  & = v_{A,2} - \frac{m_B}{m_A} ( v_{A,2} + v_{B,3} ) = \\
+\end{aligned}$$
+
+**Discussione della soluzione fisica e "non fisica".** In un urto con il la pallina piccola (il corpo B) che ha velocità iniziale verso il basso e quindi negativa, la velocità verticale della palla grande (il corpo A) deve diminuire dopo la collisione, e quindi $v_{A,3} < v_{A,2}$. La validità di questa disequazione dipende dal segno del termine
+
+$$-\frac{m_B}{m_A} ( v_{A,2} + v_{B,3} ) < 0 \ ,$$
+
+e quindi dal termine $v_{A,2} + v_{B,3} > 0$. La prima soluzione implica
+
+$$\frac{v_{A,2} + v_{B,3}}{v_{A,2}} = 1 + \frac{3 - r}{1+r} = \frac{1+r+3-r}{1+r} = \frac{4}{1+r} > 0 \ .$$
+
+La seconda soluzione implica
+
+$$v_{A,3} = v_{A,2} \ ,$$
+
+cioè nessun cambiamento della velocità delle due palle negli istanti prima e dopo l'urto (che quindi non è avvenuto).
+
+**$3 \rightarrow 4$. Dinamica regolare.** Usando ancora la conservazione dell'energia meccanica per la pallina piccola (corpo $B$), si può calcolare la quota massima raggiunta, rispetto alla quota nel momento dell'urto
+
+$$0 = E_{B,4} - E_{B,3} = m_B g H_{B,4} - \frac{1}{2} m_B v_{B,3}^2 \ ,$$
+
+e quindi
+
+$$\begin{aligned}
+  H_{B,4}
+  & = \frac{1}{2 g} v_{B,3}^2 = \\
+  & = \frac{1}{2g} \left[ \frac{1}{1+\frac{m_B}{m_A}} \left( 3 - \frac{m_B}{m_A} \right) v_{A,2} \right]^2 = \\
+  & = \frac{1}{2g} \left[ \frac{1}{1+\frac{m_B}{m_A}} \left( 3 - \frac{m_B}{m_A} \right) \right]^2 2 g h_0 = \\
+  & = h_0 \, \left[ \frac{1}{1+\frac{m_B}{m_A}} \left( 3 - \frac{m_B}{m_A} \right) \right]^2 \ ,
+\end{aligned}$$
+
+Nel limite in cui la massa della palla grande è molto maggiore della massa della palla piccola, $m_B \ll m_A$, $\frac{m_B}{m_A} \rightarrow 0$, la quota raggiunta dalla palla piccola - rispetto all'istante dell'urto - è
+
+$$H_{B,4} = 9 h_0 \ .$$
+
+```
+
+```{dropdown} Discussione collisione tripla
+
+**todo**
+
+```
