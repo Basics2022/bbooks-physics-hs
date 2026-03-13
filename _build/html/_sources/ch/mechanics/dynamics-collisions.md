@@ -552,8 +552,10 @@ Un proiettile colpisce un sistema rigido di due masse concentrate, libero e iniz
 
 Si usi un modello di doppia collisione in serie (non una collisione tripla in simultanea), studiando prima la collisione tra la palla grossa e il pavimento, e successivamente la collisione tra la palla grossa e la palla piccola.
 
-[Video YouTube dell'esperimento di Walter Lewin](https://www.youtube.com/shorts/g2F5msCUIJw)
+[Short YouTube dell'esperimento di Walter Lewin](https://www.youtube.com/shorts/g2F5msCUIJw)
+[Video con qualche commento di W.Lewin](https://youtu.be/BPIFFGNFu9A?si=SBTvgEZntte1654G)
 
+<!--
 <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;">
     <iframe
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
@@ -562,6 +564,7 @@ Si usi un modello di doppia collisione in serie (non una collisione tripla in si
         allowfullscreen
     ></iframe>
 </div>
+-->
 
 <!--    "https://www.youtube.com/embed/0gAIRwMuQS4"  -->
 :::
@@ -571,11 +574,11 @@ Si usi un modello di doppia collisione in serie (non una collisione tripla in si
 
 <!-- *Didascalia, se necessaria* -->
 
-
-
 :::
 
 ::::
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BPIFFGNFu9A?si=r-qYBkufK53JwWFl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ```{dropdown} Soluzione.
 :open:
