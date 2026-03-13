@@ -686,7 +686,9 @@ $$\begin{aligned}
 
 Nel limite in cui la massa della palla grande è molto maggiore della massa della palla piccola, $m_B \ll m_A$, $\frac{m_B}{m_A} \rightarrow 0$, la quota raggiunta dalla palla piccola - rispetto all'istante dell'urto - è
 
-$$H_{B,4} = 9 h_0 \ .$$
+$$H_{B,4} = 9 h_0 \ ,$$
+
+e quindi il punto più basso della pallina raggiunge la quota sopra il piano orizzontale $H_{B,4} + 2 R_A$, e il suo centro di massa la quota $H_{B,4} + 2 R_A + R_B$.
 
 ```
 
