@@ -24,7 +24,6 @@ Determinare le equazioni del moto, e determinare la direzione di rotazione delle
 ::::
 
 ```{dropdown} Equazioni del moto - con bilanci meccanici ("meccanica di Newton") - Approccio 1
-:open:
 
 Le equazioni pure del moto - cioé senza reazioni vincolari, o azioni interne - possono essere ricavate a partire dal:
 * bilancio del momento della quantità di moto del sottosistema carrucola 1 + massa $m_1$ rispetto al centro della carrucola. Su questo sottosistema agiscono come forze esterne la forza peso, la reazione vincolare a terra e la tensione $T$ nel filo che sostiene la carrucola 2, e che viene "tagliato" per ottenere il sottosistema
@@ -66,7 +65,6 @@ si ottiene direttamente una coppia di equazioni pure del moto. La seconda equazi
 
  
 ```{dropdown} Equazioni del moto - con equazioni di Lagrange
-:open:
 
 Questo approccio richiede la conoscenza della meccanica lagrangiana, che non rientra nel programma di scuola superiore. Per riferimenti, [Physics-Mechanics:Lagrangian Mechanics](https://basics2022.github.io/bbooks-physics-mechanics/ch/lagrange.html).
 
@@ -88,7 +86,6 @@ $$\begin{bmatrix} I_1 + (M_2+m_1+m_2+m_3) R_1^2 & (m_2 - m_3) R_1 R_2 \\ (m_2 - 
 ```
 
 ```{dropdown} Accelerazione
-:open:
 
 Invertendo la matrice dei coefficienti costanti che moltiplica il vettore delle accelerazioni $\ddot{\theta}_k$, si ottiene l'espressione esplicita delle accelerazioni in funzione delle caratteristiche del sistema e della accelerazione di gravità $g$,
 
@@ -138,6 +135,197 @@ $$\theta_k(t) = \frac{1}{2} \alpha_k t^2 + \Omega_{k,0} t + \theta_{k,0} \ ,$$
 con $\Omega_{k,0}$ e $\theta_{k,0}$ rispettivamente la velocità e la posizione all'istante iniziale, da determinare con due condizioni (qui non fornite): se si ipotizza che il sistema si trovi inizialmente in quite e l'angolo iniziale sia il riferimento nullo, allora 
 
 $$\theta_k(t) = \frac{1}{2} \alpha_k t^2  \ .$$
+
+```
+
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 2. Sistema di infinite carrucole
+:columns: 8
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/pulley-1.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione - Approccio 1.
+:open:
+
+Si studia prima un sistema formato da $n$ carrucole, e poi si fa tendere $n \rightarrow + \infty$. Si trova quindi il risultato, dopo essersi accorti che il contributo della massa $M$ tende a un contributo nullo per il numero di carrucole che tende all'infinito.
+
+Per il sistema formato dalla prima carrucola, dalla prima massa e dal filo, separato dal resto del sistema prima di collegarsi alla seconda carrucola, il bilancio del momento della quantità di moto
+
+$$m_1 R^2 \ddot{\theta}_1 = T_{12} R - m_1 g R$$
+
+Si può quindi scrivere la tensione $T_{12} = m_1 ( g + R \ddot{\theta}_1 )$.
+
+Per la seconda carrucola, il bilancio della quantità di moto e del momento della quantità di moto
+
+$$\begin{aligned}
+  & m_2 R ( - \ddot{\theta}_1 + \ddot{\theta}_2 ) = T_{12} - T_{23} - m_2 g  \\
+  & m_2 R^2 ( - \ddot{\theta}_1 + \ddot{\theta}_2 ) = T_{23} R - m_2 R g \\
+\end{aligned}$$
+
+Si trova la tensione $T_{23} = \frac{1}{2} T_{12}$.
+
+Per la terza carrucola, il bilancio della quantità di moto e del momento della quantità di moto
+
+$$\begin{aligned}
+  & m_3 R   ( - \ddot{\theta}_1 - \ddot{\theta}_2 + \ddot{\theta}_3 ) = T_{23} - T_{34} - m_3 g  \\
+  & m_3 R^2 ( - \ddot{\theta}_1 - \ddot{\theta}_2 + \ddot{\theta}_3 ) = T_{34} R - m_3 R g \\
+\end{aligned}$$
+
+Si trova la tensione $T_{34} = \frac{1}{2} T_{23} = \frac{1}{2^2} T_{12}$.
+
+Per la $n$-esima carrucola, con una massa $M$ collegata all'altro estremo invece di un'ulteriore carrucola,
+- la tensione del filo che sostiene le due masse $m_n$ e  $M$ è $T_{n} = \frac{1}{2} T_{n-1,n} = \dots = \frac{1}{2^{n-1}} T_{12}$,
+- le equazioni di bilancio della quantità di moto delle due masse sono
+
+   $$\begin{aligned}
+     & M R \left( - \sum_{k=1}^{n-1} \ddot{\theta}_k - \ddot{\theta}_n \right) = T_{n} - M g \\
+     & m R \left( - \sum_{k=1}^{n-1} \ddot{\theta}_k + \ddot{\theta}_n \right) = T_{n} - m g \\
+   \end{aligned}$$
+
+
+Sostituendo l'espressione delle tensioni nelle equazioni di bilancio dei momenti delle quantità di moto delle singole carrucole, si trova un sistema di equazioni pure del moto - cioè nelle quali non compaiono reazioni vincolari:
+
+$$\begin{aligned}
+  m R ( - \ddot{\theta}_1 + \ddot{\theta}_2 )                   & = T_{23} - m g \\
+  m R ( - \ddot{\theta}_1 - \ddot{\theta}_2 + \ddot{\theta}_3 ) & = T_{34} - m g \\
+  & \dots \\
+  m R \left( - \sum_{k=1}^{n-2} \ddot{\theta}_k + \ddot{\theta}_{n-1} \right) & = T_{n-1,n} - m g \\
+  m R \left( - \sum_{k=1}^{n-1} \ddot{\theta}_k + \ddot{\theta}_n \right) & = T_{n} - m g \\
+  M R \left( - \sum_{k=1}^{n-1} \ddot{\theta}_k - \ddot{\theta}_n \right) & = T_{n} - M g \\
+\end{aligned}$$
+
+Sottraendo le ultime due equazioni - dopo aver diviso per le rispettive masse -, si può ricavare l'espressione di $\ddot{\theta}_n$ in funzione di $T_n$ (e quindi in funzione di $\ddot{\theta}_1$)
+
+$$\begin{aligned}
+  \ddot{\theta}_n 
+  & = \frac{1}{2} \left( \frac{1}{m} - \frac{1}{M} \right) \frac{T_n}{R} = \\
+  & = \frac{1}{2} \left( 1 - \frac{m}{M} \right) \frac{1}{2^{n-1}} \left( \frac{g}{R} + \ddot{\theta}_1 \right) = \\
+  & = \frac{1}{2^n} \left( 1 - \frac{m}{M} \right) \left( \frac{g}{R} + \ddot{\theta}_1 \right) \ .
+\end{aligned}$$
+
+Sottraendo la penultima dalla terzultima equazione,
+
+$$2 \ddot{\theta}_{n-1} - \ddot{\theta}_n = \frac{1}{R} \left( T_{n-1,n} - T_{n} \right)$$
+
+e quindi
+
+$$\begin{aligned}
+  \ddot{\theta}_{n-1} 
+  & = \frac{1}{2} \ddot{\theta}_n + \frac{1}{2} \left( \frac{1}{2^{n-2}} - \frac{1}{2^{n-1}}  \right) \left( \frac{g}{R} + \ddot{\theta}_1 \right) 
+    = \frac{1}{2} \ddot{\theta}_n + \frac{1}{2^n} \left( \frac{g}{R} + \ddot{\theta}_1 \right) \ .
+\end{aligned}$$
+<!--
+  & = - \frac{1}{2^{n+1}} \frac{m}{M} \left( \frac{g}{R} - \ddot{\theta}_1 \right) + \frac{1}{2^{n+1}} \left( \frac{g}{R} - \ddot{\theta}_1 \right) + \frac{1}{2} \left( \frac{1}{2^{n-2}} - \frac{1}{2^{n-1}}  \right) \left( \frac{g}{R} - \ddot{\theta}_1 \right) = \\
+  & = - \frac{1}{2^{n+1}} \frac{m}{M} \left( \frac{g}{R} - \ddot{\theta}_1 \right) + \frac{1}{2^{n}} \left( \frac{g}{R} - \ddot{\theta}_1 \right) + \frac{1}{2^n} \left( \frac{g}{R} - \ddot{\theta}_1 \right) \ .
+-->
+
+Continuando con lo stesso procedimento,
+
+$$2 \ddot{\theta}_{n-2} - \ddot{\theta}_{n-1} = \frac{1}{R} \left( T_{n-2,n-1} - T_{n-1,n} \right)$$
+
+si trova $\ddot{\theta}_{n-2}$
+
+$$\begin{aligned}
+  \ddot{\theta}_{n-2} 
+  & = \frac{1}{2} \ddot{\theta}_{n-1} + \frac{1}{2} \left( \frac{1}{2^{n-3}} - \frac{1}{2^{n-2}}  \right) \left( \frac{g}{R} + \ddot{\theta}_1 \right) = \\
+  & = \frac{1}{2^2} \ddot{\theta}_n + \left[ \frac{1}{2^{n+1}} + \frac{1}{2^{n-1}} \right] \left( \frac{g}{R} + \ddot{\theta}_1 \right) = \\
+  & = \frac{1}{2^2} \ddot{\theta}_n + \frac{1}{2^{n-1}} \left[ 1 + \frac{1}{2^{2}} \right] \left( \frac{g}{R} + \ddot{\theta}_1 \right) \ .
+\end{aligned}$$
+
+e le accelerazioni successive
+
+$$\begin{aligned}
+  \ddot{\theta}_{n-3} & = \frac{1}{2^3} \ddot{\theta}_n + \frac{1}{2^{n-2}} \left[ 1 + \frac{1}{2^{2}} + \frac{1}{2^{4}} \right] \left( \frac{g}{R} + \ddot{\theta}_1 \right) \\
+  & \dots \\
+  \ddot{\theta}_{n-k} & = \frac{1}{2^k} \ddot{\theta}_n + \frac{1}{2^{n-k+1}} \left[ \sum_{j=0}^{k-1} \frac{1}{2^{2j}} \right] \left( \frac{g}{R} + \ddot{\theta}_1 \right) \\
+  & \dots \\
+\end{aligned}$$
+
+Dall'espressione per l'accelerazione generica, si può calcolare l'espressione di $\ddot{\theta}_2$, usando $k = n-2$
+
+$$\begin{aligned}
+  \ddot{\theta}_2 
+  & = \frac{1}{2^{n-2}} \ddot{\theta}_n + \frac{1}{2^3} \sum_{j=0}^{n-3} \left( \frac{1}{4} \right)^j \left( \frac{g}{R} + \ddot{\theta}_1 \right) = \\ 
+  & = \left\{ \frac{1}{2^{n-2}} \left[ - \frac{m}{M} + \frac{1}{2^n} \right] + \frac{1}{2^3} \sum_{j=0}^{n-3} \left( \frac{1}{4} \right)^j \right\} \left( \frac{g}{R} + \ddot{\theta}_1 \right) \ ,
+\end{aligned}$$
+
+con
+
+$$S_{1/4}\left( n-3 \right) = \frac{1 - \left( \frac{1}{4} \right)^{n-2}}{1 - \frac{1}{4}} = \frac{4}{3} \left[ 1 - \left( \frac{1}{4} \right)^{n-2} \right] \ .$$
+
+Al limite $n \rightarrow + \infty$, la somma tende a $S_{1/4} = \frac{4}{3}$, e l'accelerazione della seconda carrucola a $\ddot{\theta}_2 \rightarrow \frac{1}{8} \frac{4}{3} \left( \frac{g}{R} + \ddot{\theta}_1 \right) = \frac{1}{6} \left( \frac{g}{R} + \ddot{\theta}_1 \right)$. Inserendo questa espressione nella prima equazione, si ottiene un'equazione in $\ddot{\theta}_1$
+
+$$\begin{aligned}
+  m R ( - \ddot{\theta}_1 + \ddot{\theta}_2 ) & = T_{23} - m g \\
+  m R \left[ - \ddot{\theta}_1 + \frac{1}{6} \left( \frac{g}{R} + \ddot{\theta}_1 \right) \right] & = \frac{1}{2} m \left( g + R \ddot{\theta}_1 \right) - m g \\
+  \ddot{\theta}_1 \left( -1 + \frac{1}{6} - \frac{1}{2} \right) & = \frac{g}{R} \left( -\frac{1}{2} - \frac{1}{6} \right) \\
+  -\frac{4}{3} \ddot{\theta}_1 & = - \frac{2}{3} \frac{g}{R} \ ,
+\end{aligned}$$
+
+e quindi, l'accelerazione della prima carrucola - nel limite di un numero infinito di carrucole - vale
+
+$$\ddot{\theta}_1 = \frac{1}{2} \frac{g}{R} \ .$$
+
+L'accelerazione della sceonda carrucola vale
+
+$$\ddot{\theta}_2 = \frac{1}{8}\frac{4}{3} \left( \frac{g}{R} + \ddot{\theta}_1 \right) = \frac{1}{6} \frac{3}{2} \frac{g}{R} = \frac{1}{4} \frac{g}{R} \ .$$
+
+L'accelearazione della terza carrucola - **verificare, usando la formula generica di $\ddot{\theta}_{n-k}$** - vale
+
+$$\ddot{\theta}_3 = \frac{1}{16}\frac{4}{3} \left( \frac{g}{R} + \ddot{\theta}_1 \right) = \frac{1}{12} \frac{3}{2} \frac{g}{R} = \frac{1}{8} \frac{g}{R} \ .$$
+
+e l'accelerazione dell'$k$-esima carrucola vale
+
+$$\ddot{\theta}_{j} = \frac{1}{2^{j+1}}\frac{4}{3} \left( \frac{g}{R} + \ddot{\theta}_1 \right) = \frac{1}{3 \cdot 2^{j-1}} \frac{3}{2} \frac{g}{R} = \frac{1}{2^j} \frac{g}{R} \ .$$
+
+
+
+
+
+```
+
+```{dropdown} Soluzione - Approccio 2.
+
+
+```
+
+<!-- Esercizio ************************************************************* -->
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card} Problema 3. La macchina di Atwood e la massa equivalente
+:columns: 8
+
+La massa equivalente è definita come...
+
+
+
+:::
+
+:::{grid-item-card} 
+:columns: 4
+
+![](../../media/dynamics/pulley-1.png)
+<!-- *Didascalia, se necessaria* -->
+:::
+
+::::
+
+```{dropdown} Soluzione 
+
 
 ```
 
