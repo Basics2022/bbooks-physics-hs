@@ -177,7 +177,7 @@ Per risolvere il problema, ora serve una condizione iniziale - o per un qualsias
 
 $$y_0 = 0 \ ,$$
 
-rappresenta la condizione iniziale della relazione ricorsiva. Anche se non si sapesse nulla delle **equazioni alle differenze**, si può trovare la soluzione della relazione ricorsiva - che è un'equazione alle differenze, la controparte discreta delle equazioni differenziali - calcolandone i primi termini
+rappresenta la condizione iniziale della relazione ricorsiva. Anche se non si sapesse nulla delle [**equazioni alle differenze**](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/difference-equations.html), si può trovare la soluzione della relazione ricorsiva - che è un'equazione alle differenze, la controparte discreta delle equazioni differenziali - calcolandone i primi termini
 
 $$\begin{aligned}
   \ddot{y}_1 & = \frac{1}{2} \ddot{y}_0 - \frac{1}{2} g = - \frac{1}{2} g                                 && = - \frac{1}{2} g && = - \left( 1 - \frac{1}{2} \right) g \\
