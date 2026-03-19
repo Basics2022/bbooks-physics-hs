@@ -157,8 +157,49 @@ $$\theta_k(t) = \frac{1}{2} \alpha_k t^2  \ .$$
 
 ::::
 
-```{dropdown} Soluzione - Approccio 1.
+```{dropdown} Soluzione - Approccio 1. - Altezze masse come coordinate libere
 :open:
+
+Il bilancio del momento della quantità di moto dell'$n$-esima carrucola e il bilancio della quantità di moto dell'$n$-esima massa sono
+
+$$\begin{cases}
+  T_{n,n+1} = \frac{1}{2} T_{n-1,n} \\
+  m \ddot{y}_n = T_{n,n+1} - m g \ ,
+\end{cases}$$
+
+con $T_{n,n+1}$ la tensione nei fili che collegano l'$n$-esima carrucola alla $n+1$-esima carrucola e l'$n$-esima carrucola alla $n$-esima massa, e $\ddot{y}_n$ l'accelerazione della $n$-esima massa.
+
+Usando la seconda equazione per ricavare un'espressione delle tensioni in funzione dell'accelerazione, si può usare la prima equazione per ricavare una relazione ricorsiva
+
+$$\ddot{y}_n + g = \frac{1}{2} \left( \ddot{y}_{n-1} + g \right) \ .$$
+
+Per risolvere il problema, ora serve una condizione iniziale - o per un qualsiasi indice $k$ - per determinare $\ddot{y}_n$. Per fare questo, si può tradurre il vincolo della prima carrucola - con il centro a quota costante - sostituendo il vincolo reale con il vincolo equivalente rappresentato da una "carrucola zero", con rotazione bloccata. Supponendo che esista una massa $m$ collegata a questa carrucola bloccata, la sua quota
+
+$$y_0 = 0 \ ,$$
+
+rappresenta la condizione iniziale della relazione ricorsiva. Anche se non si sapesse nulla delle **equazioni alle differenze**, si può trovare la soluzione della relazione ricorsiva - che è un'equazione alle differenze, la controparte discreta delle equazioni differenziali - calcolandone i primi termini
+
+$$\begin{aligned}
+  \ddot{y}_1 & = \frac{1}{2} \ddot{y}_0 - \frac{1}{2} g = - \frac{1}{2} g \\
+  \ddot{y}_2 & = \frac{1}{2} \ddot{y}_1 - \frac{1}{2} g = - \frac{1}{4} g - \frac{1}{2} g \\
+  \ddot{y}_3 & = \frac{1}{2} \ddot{y}_1 - \frac{1}{2} g = - \frac{1}{8} g - \frac{1}{4} g - \frac{1}{2} g \\
+  & \dots
+\end{aligned}$$
+
+e generalizzando la soluzione
+
+$$\ddot{y}_n = - g \, \sum_{k=1}^{n} \left( \frac{1}{2} \right)^k = - g \left( \sum_{k=1}^{n} \left( \frac{1}{2} \right)^k - 1 \right) = \frac{1 - \frac{1}{2^{n+1}}}{1 - \frac{1}{2}} - 1 = 2 \left( 1 - \frac{1}{2^{n+1}} \right) - 1 \ .$$
+
+Si calcolano alcuni termini come verifica
+
+$$\begin{aligned}
+  \ddot{y}_0 & =  \\
+  \ddot{y}_1 & =  \\
+\end{aligned}$$
+
+```
+
+```{dropdown} Soluzione - Approccio 2. - Angoli di rotazione come coordinate libere
 
 Si studia prima un sistema formato da $n$ carrucole, e poi si fa tendere $n \rightarrow + \infty$. Si trova quindi il risultato, dopo essersi accorti che il contributo della massa $M$ tende a un contributo nullo per il numero di carrucole che tende all'infinito.
 
