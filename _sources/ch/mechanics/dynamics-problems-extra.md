@@ -180,9 +180,9 @@ $$y_0 = 0 \ ,$$
 rappresenta la condizione iniziale della relazione ricorsiva. Anche se non si sapesse nulla delle **equazioni alle differenze**, si può trovare la soluzione della relazione ricorsiva - che è un'equazione alle differenze, la controparte discreta delle equazioni differenziali - calcolandone i primi termini
 
 $$\begin{aligned}
-  \ddot{y}_1 & = \frac{1}{2} \ddot{y}_0 - \frac{1}{2} g = - \frac{1}{2} g                                 && = \frac{1}{2} g && = \left( 1 - \frac{1}{2} \right) g \\
-  \ddot{y}_2 & = \frac{1}{2} \ddot{y}_1 - \frac{1}{2} g = - \frac{1}{4} g - \frac{1}{2} g                 && = \frac{1}{2} g && = \left( 1 - \frac{1}{4} \right) g \\
-  \ddot{y}_3 & = \frac{1}{2} \ddot{y}_1 - \frac{1}{2} g = - \frac{1}{8} g - \frac{1}{4} g - \frac{1}{2} g && = \frac{1}{2} g && = \left( 1 - \frac{1}{8} \right) g \\
+  \ddot{y}_1 & = \frac{1}{2} \ddot{y}_0 - \frac{1}{2} g = - \frac{1}{2} g                                 && = - \frac{1}{2} g && = - \left( 1 - \frac{1}{2} \right) g \\
+  \ddot{y}_2 & = \frac{1}{2} \ddot{y}_1 - \frac{1}{2} g = - \frac{1}{4} g - \frac{1}{2} g                 && = - \frac{3}{4} g && = - \left( 1 - \frac{1}{4} \right) g \\
+  \ddot{y}_3 & = \frac{1}{2} \ddot{y}_1 - \frac{1}{2} g = - \frac{1}{8} g - \frac{1}{4} g - \frac{1}{2} g && = - \frac{7}{8} g && = - \left( 1 - \frac{1}{8} \right) g \\
   & \dots
 \end{aligned}$$
 
@@ -192,9 +192,9 @@ $$\begin{aligned}
   \ddot{y}_n
   & = - g \, \sum_{k=1}^{n} \left( \frac{1}{2} \right)^k = \\
   & = - g \left[ \sum_{k=1}^{n} \left( \frac{1}{2} \right)^k - 1 \right] = \\
-  & = \frac{1 - \frac{1}{2^{n+1}}}{1 - \frac{1}{2}} - 1 = \\
-  & = 2 \left( 1 - \frac{1}{2^{n+1}} \right) - 1 = \\
-  & = 1 - \frac{1}{2^n} \ .
+  & = - g \left[ \frac{1 - \frac{1}{2^{n+1}}}{1 - \frac{1}{2}} - 1 \right] = \\
+  & = - g \left[ 2 \left( 1 - \frac{1}{2^{n+1}} \right) - 1 \right] = \\
+  & = - g \left[ 1 - \frac{1}{2^n} \right] \ .
 \end{aligned}$$
 
 ```
