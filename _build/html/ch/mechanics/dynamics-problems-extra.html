@@ -836,19 +836,20 @@ Soluzione - Approccio 1. - Altezze masse come coordinate libere<div class="sd-su
 <p class="sd-card-text">rappresenta la condizione iniziale della relazione ricorsiva. Anche se non si sapesse nulla delle <strong>equazioni alle differenze</strong>, si può trovare la soluzione della relazione ricorsiva - che è un’equazione alle differenze, la controparte discreta delle equazioni differenziali - calcolandone i primi termini</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-  \ddot{y}_1 &amp; = \frac{1}{2} \ddot{y}_0 - \frac{1}{2} g = - \frac{1}{2} g \\
-  \ddot{y}_2 &amp; = \frac{1}{2} \ddot{y}_1 - \frac{1}{2} g = - \frac{1}{4} g - \frac{1}{2} g \\
-  \ddot{y}_3 &amp; = \frac{1}{2} \ddot{y}_1 - \frac{1}{2} g = - \frac{1}{8} g - \frac{1}{4} g - \frac{1}{2} g \\
+  \ddot{y}_1 &amp; = \frac{1}{2} \ddot{y}_0 - \frac{1}{2} g = - \frac{1}{2} g                                 &amp;&amp; = \frac{1}{2} g &amp;&amp; = \left( 1 - \frac{1}{2} \right) g \\
+  \ddot{y}_2 &amp; = \frac{1}{2} \ddot{y}_1 - \frac{1}{2} g = - \frac{1}{4} g - \frac{1}{2} g                 &amp;&amp; = \frac{1}{2} g &amp;&amp; = \left( 1 - \frac{1}{4} \right) g \\
+  \ddot{y}_3 &amp; = \frac{1}{2} \ddot{y}_1 - \frac{1}{2} g = - \frac{1}{8} g - \frac{1}{4} g - \frac{1}{2} g &amp;&amp; = \frac{1}{2} g &amp;&amp; = \left( 1 - \frac{1}{8} \right) g \\
   &amp; \dots
 \end{aligned}\end{split}\]</div>
 <p class="sd-card-text">e generalizzando la soluzione</p>
 <div class="math notranslate nohighlight">
-\[\ddot{y}_n = - g \, \sum_{k=1}^{n} \left( \frac{1}{2} \right)^k = - g \left( \sum_{k=1}^{n} \left( \frac{1}{2} \right)^k - 1 \right) = \frac{1 - \frac{1}{2^{n+1}}}{1 - \frac{1}{2}} - 1 = 2 \left( 1 - \frac{1}{2^{n+1}} \right) - 1 \ .\]</div>
-<p class="sd-card-text">Si calcolano alcuni termini come verifica</p>
-<div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
-  \ddot{y}_0 &amp; =  \\
-  \ddot{y}_1 &amp; =  \\
+  \ddot{y}_n
+  &amp; = - g \, \sum_{k=1}^{n} \left( \frac{1}{2} \right)^k = \\
+  &amp; = - g \left[ \sum_{k=1}^{n} \left( \frac{1}{2} \right)^k - 1 \right] = \\
+  &amp; = \frac{1 - \frac{1}{2^{n+1}}}{1 - \frac{1}{2}} - 1 = \\
+  &amp; = 2 \left( 1 - \frac{1}{2^{n+1}} \right) - 1 = \\
+  &amp; = 1 - \frac{1}{2^n} \ .
 \end{aligned}\end{split}\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
