@@ -151,7 +151,7 @@ $$\theta_k(t) = \frac{1}{2} \alpha_k t^2  \ .$$
 :::{grid-item-card} 
 :columns: 4
 
-![](../../media/dynamics/pulley-1.png)
+![](../../media/dynamics/pulley-infinite.png)
 <!-- *Didascalia, se necessaria* -->
 :::
 
