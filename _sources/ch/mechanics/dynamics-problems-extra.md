@@ -157,8 +157,11 @@ $$\theta_k(t) = \frac{1}{2} \alpha_k t^2  \ .$$
 
 ::::
 
-```{dropdown} Soluzione - Approccio 1. - Altezze masse come coordinate libere
+````{dropdown} Soluzione - Approccio 1. - Altezze masse come coordinate libere
 :open:
+
+
+```{dropdown} Relazione ricorsiva come equazione alle differenze
 
 Il bilancio del momento della quantità di moto dell'$n$-esima carrucola e il bilancio della quantità di moto dell'$n$-esima massa sono
 
@@ -180,6 +183,10 @@ $$\ddot{y}_n = \frac{1}{2} \ddot{y}_{n-1} - \frac{1}{2} g \ .$$
 La soluzione generica di qusto problema - al netto di una costante arbitraria $c$ - ha la forma 
 
 $$y_n = - \frac{1}{2} g + c \left( \frac{1}{2} \right)^n \ .$$
+
+```
+
+```{dropdown} Vincolo sulla prima carrucola come condizione iniziale dell'equazione alle differenze
 
 **Condizione iniziale.** Per risolvere il problema, ora serve una condizione iniziale - o per un qualsiasi indice $k$ - per determinare $\ddot{y}_n$. Per fare questo, è necessario tradurre la condizione di centro fisso della prima carrucola, $\ddot{y}_1^c = 0$, in termini di spostamento delle masse. L'accelerazione dei centri di due carrucole vicine è legata dalla relazione
 
@@ -223,7 +230,11 @@ $$\begin{aligned}
   & = - g + \frac{c}{3} \ ,
 \end{aligned}$$
 
-per trovare il valore della costante di integrazione $c = 3 g$. Risultano quindi note:
+per trovare il valore della costante di integrazione $c = 3 g$.
+```
+
+```{dropdown} Risultati
+Risultano quindi note:
 
 * le accelerazioni delle masse
 
@@ -248,7 +259,7 @@ per trovare il valore della costante di integrazione $c = 3 g$. Risultano quindi
      & = \left( -\frac{1}{2} + \frac{1}{2^{n-1}} \right) g - \left(  -\frac{1}{2} + \frac{1}{2^{n}} \right) g = \\
      & = \frac{1}{2^n} g \ .
    \end{aligned}$$
-
+```
 <!--
 Per $n=1$, $\ddot{y}^c_1 = 0$ dal vincolo, e quindi $\ddot{y}^c_2 = - \ddot{y}_1$.
 -->
@@ -282,7 +293,7 @@ $$\begin{aligned}
 
 -->
 
-```
+````
 
 ```{dropdown} Soluzione - Approccio 2. - Angoli di rotazione come coordinate libere
 
