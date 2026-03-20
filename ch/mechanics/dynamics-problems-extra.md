@@ -171,13 +171,87 @@ con $T_{n,n+1}$ la tensione nei fili che collegano l'$n$-esima carrucola alla $n
 
 Usando la seconda equazione per ricavare un'espressione delle tensioni in funzione dell'accelerazione, si può usare la prima equazione per ricavare una relazione ricorsiva
 
-$$\ddot{y}_n + g = \frac{1}{2} \left( \ddot{y}_{n-1} + g \right) \ .$$
+$$\ddot{y}_n + g = \frac{1}{2} \left( \ddot{y}_{n-1} + g \right) \ ,$$
+
+che si può interpretare come un'[equazione alle differenze](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/difference-equations.html) per l'incognita $y_n$, $n \ge 1$.
+
+$$\ddot{y}_n = \frac{1}{2} \ddot{y}_{n-1} - \frac{1}{2} g \ .$$
+
+La soluzione generica di qusto problema - al netto di una costante arbitraria $c$ - ha la forma 
+
+$$y_n = - \frac{1}{2} g + c \left( \frac{1}{2} \right)^n \ .$$
 
 **Condizione iniziale.** Per risolvere il problema, ora serve una condizione iniziale - o per un qualsiasi indice $k$ - per determinare $\ddot{y}_n$. Per fare questo, è necessario tradurre la condizione di centro fisso della prima carrucola, $\ddot{y}_1^c = 0$, in termini di spostamento delle masse. L'accelerazione dei centri di due carrucole vicine è legata dalla relazione
 
 $$\ddot{y}^c_{n} = \frac{1}{2} \left( \ddot{y}_n + \ddot{y}^c_{n+1} \right) \ .$$
 
+Questa equazioni vale per ogni coppia di carrucole e si può quindi scrivere in formato matriciale come
+
+$$
+\begin{bmatrix} \ddot{y}_1 \\ \ddot{y}_2 \\ \ddot{y}_3 \\ \dots \end{bmatrix} =
+\begin{bmatrix}
+  2  & -1  &     &       &    \\ 
+     &  2  & -1  &       &    \\ 
+     &     &  2  & -1    &    \\ 
+     &     &     & \dots & \dots  \\
+\end{bmatrix}
+\begin{bmatrix} \ddot{y}^c_1 \\ \ddot{y}^c_2 \\ \ddot{y}^c_3 \\ \dots \end{bmatrix} \ ,
+$$
+
+la cui relazione inversa vale - verificare come esercizio -
+
+$$
+\begin{bmatrix} \ddot{y}^c_1 \\ \ddot{y}^c_2 \\ \ddot{y}^c_3 \\ \dots \end{bmatrix} =
+\begin{bmatrix}
+  \frac{1}{2}  & \frac{1}{4}  & \frac{1}{8} & \dots \\
+  \dots        & \frac{1}{2}  & \frac{1}{4} & \dots \\
+  \dots        & \dots        & \frac{1}{2} & \dots \\
+  \dots        & \dots        & \dots       & \dots  \\
+\end{bmatrix}
+\begin{bmatrix} \ddot{y}_1 \\ \ddot{y}_2 \\ \ddot{y}_3 \\ \dots \end{bmatrix} \ .
+$$
+
+Usando l'espressione dell'accelerazione della prima carrucola in funzione delle accelerazioni delle masse per applicare il vincolo
+
+$$\begin{aligned}
+  0
+  & = \ddot{y}^c_1 = \\
+  & = \frac{1}{2} \ddot{y}_1 + \frac{1}{2^2} \ddot{y}_2 + \dots = \\
+  & = \sum_{j=1}^{+\infty} \frac{1}{2^j} \ddot{y}_j = \\
+  & = \sum_{j=1}^{+\infty} \frac{1}{2^j} \left[ - \frac{1}{2} g + c \frac{1}{2^j} \right] = \\
+  & = - \frac{1}{4} \cdot g + c \left( \frac{4}{3} - 1 \right) = \\
+  & = - g + \frac{c}{3} \ ,
+\end{aligned}$$
+
+per trovare il valore della costante di integrazione $c = 3 g$. Risultano quindi note:
+
+* le accelerazioni delle masse
+
+   $$\ddot{y}_n = g \left( - \frac{1}{2} + \frac{3}{2^n} \right) \ ;$$
+
+* le accelerazioni dei centri delle carrucole
+
+   $$\begin{aligned}
+      \ddot{y}^c_n
+      & = \frac{1}{2} \ddot{y}_n + \frac{1}{2^2} \ddot{y}_{n+1} + \frac{1}{2^3} \ddot{y}_{n+2} + \dots = \\
+      & = \frac{1}{2} \sum_{k=0}^{+\infty} \frac{1}{2^k} \ddot{y}_{n+k} = \\
+      & = \frac{g}{2} \sum_{k=0}^{+\infty} \frac{1}{2^k} \left( - \frac{1}{2} + 3 \frac{1}{2^{n+k}} \right) = \\
+      & = - \frac{g}{4} \sum_{k=0}^{+\infty} \frac{1}{2^k} + \frac{3}{2^{n+1}} g \sum_{k=0}^{+\infty} \frac{1}{4^k} = \\
+      & = - \frac{g}{4} \cdot 2 + \frac{3}{2^{n+1}} g \cdot \frac{4}{3} = \\
+      & = \left( - \frac{1}{2} + \frac{1}{2^{n-1}} \right) g \ . 
+   \end{aligned}$$
+
+* le accelerazioni angolari delle carrucole $R \ddot{\theta}_n = \ddot{y}^c_{n} - \ddot{y}^c_{n+1}$
+
+   $$\begin{aligned}
+     \ddot{\theta}_n 
+     & = \left( -\frac{1}{2} + \frac{1}{2^{n-1}} \right) g - \left(  -\frac{1}{2} + \frac{1}{2^{n}} \right) g = \\
+     & = \frac{1}{2^n} g \ .
+   \end{aligned}$$
+
+<!--
 Per $n=1$, $\ddot{y}^c_1 = 0$ dal vincolo, e quindi $\ddot{y}^c_2 = - \ddot{y}_1$.
+-->
 
 <!--
 Per risolvere il problema, ora serve una condizione iniziale - o per un qualsiasi indice $k$ - per determinare $\ddot{y}_n$. Per fare questo, si può tradurre il vincolo della prima carrucola - con il centro a quota costante - sostituendo il vincolo reale con il vincolo equivalente rappresentato da una "carrucola zero", con rotazione bloccata. Supponendo che esista una massa $m$ collegata a questa carrucola bloccata, la sua quota
