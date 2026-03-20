@@ -173,11 +173,20 @@ Usando la seconda equazione per ricavare un'espressione delle tensioni in funzio
 
 $$\ddot{y}_n + g = \frac{1}{2} \left( \ddot{y}_{n-1} + g \right) \ .$$
 
+**Condizione iniziale.** Per risolvere il problema, ora serve una condizione iniziale - o per un qualsiasi indice $k$ - per determinare $\ddot{y}_n$. Per fare questo, è necessario tradurre la condizione di centro fisso della prima carrucola, $\ddot{y}_1^c = 0$, in termini di spostamento delle masse. L'accelerazione dei centri di due carrucole vicine è legata dalla relazione
+
+$$\ddot{y}^c_{n} = \frac{1}{2} \left( \ddot{y}_n + \ddot{y}^c_{n+1} \right) \ .$$
+
+Per $n=1$, $\ddot{y}^c_1 = 0$ dal vincolo, e quindi $\ddot{y}^c_2 = - \ddot{y}_1$.
+
+<!--
 Per risolvere il problema, ora serve una condizione iniziale - o per un qualsiasi indice $k$ - per determinare $\ddot{y}_n$. Per fare questo, si può tradurre il vincolo della prima carrucola - con il centro a quota costante - sostituendo il vincolo reale con il vincolo equivalente rappresentato da una "carrucola zero", con rotazione bloccata. Supponendo che esista una massa $m$ collegata a questa carrucola bloccata, la sua quota
 
 $$y_0 = 0 \ ,$$
 
-rappresenta la condizione iniziale della relazione ricorsiva. Anche se non si sapesse nulla delle [**equazioni alle differenze**](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/difference-equations.html), si può trovare la soluzione della relazione ricorsiva - che è un'equazione alle differenze, la controparte discreta delle equazioni differenziali - calcolandone i primi termini
+rappresenta la condizione iniziale della relazione ricorsiva.
+
+Anche se non si sapesse nulla delle [**equazioni alle differenze**](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/difference-equations.html), si può trovare la soluzione della relazione ricorsiva - che è un'equazione alle differenze, la controparte discreta delle equazioni differenziali - calcolandone i primi termini
 
 $$\begin{aligned}
   \ddot{y}_1 & = \frac{1}{2} \ddot{y}_0 - \frac{1}{2} g = - \frac{1}{2} g                                 && = - \frac{1}{2} g && = - \left( 1 - \frac{1}{2} \right) g \\
@@ -196,6 +205,8 @@ $$\begin{aligned}
   & = - g \left[ 2 \left( 1 - \frac{1}{2^{n+1}} \right) - 1 \right] = \\
   & = - g \left[ 1 - \frac{1}{2^n} \right] \ .
 \end{aligned}$$
+
+-->
 
 ```
 
