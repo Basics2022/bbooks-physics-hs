@@ -842,7 +842,7 @@ Relazione ricorsiva come equazione alle differenze<div class="sd-summary-down do
 \[\ddot{y}_n = \frac{1}{2} \ddot{y}_{n-1} - \frac{1}{2} g \ .\]</div>
 <p class="sd-card-text">La soluzione generica di qusto problema - al netto di una costante arbitraria <span class="math notranslate nohighlight">\(c\)</span> - ha la forma</p>
 <div class="math notranslate nohighlight">
-\[y_n = - \frac{1}{2} g + c \left( \frac{1}{2} \right)^n \ .\]</div>
+\[y_n = - g + c \left( \frac{1}{2} \right)^n \ .\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -885,13 +885,13 @@ Vincolo sulla prima carrucola come condizione iniziale dell’equazione alle dif
   &amp; = \ddot{y}^c_1 = \\
   &amp; = \frac{1}{2} \ddot{y}_1 + \frac{1}{2^2} \ddot{y}_2 + \dots = \\
   &amp; = \sum_{j=1}^{+\infty} \frac{1}{2^j} \ddot{y}_j = \\
-  &amp; = \sum_{j=1}^{+\infty} \frac{1}{2^j} \left[ - \frac{1}{2} g + c \frac{1}{2^j} \right] = \\
-  &amp; = - \frac{1}{4} \cdot g + c \left( \frac{4}{3} - 1 \right) = \\
+  &amp; = \sum_{j=1}^{+\infty} \frac{1}{2^j} \left[ - g + c \frac{1}{2^j} \right] = \\
+  &amp; = - \frac{1}{2} \cdot 2 g + c \left( \frac{4}{3} - 1 \right) = \\
   &amp; = - g + \frac{c}{3} \ ,
 \end{aligned}\end{split}\]</div>
 <p class="sd-card-text">per trovare il valore della costante di integrazione <span class="math notranslate nohighlight">\(c = 3 g\)</span>.</p>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
 Risultati<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -902,7 +902,7 @@ Risultati<div class="sd-summary-down docutils">
 <ul>
 <li><p class="sd-card-text">le accelerazioni delle masse</p>
 <div class="math notranslate nohighlight">
-\[\ddot{y}_n = g \left( - \frac{1}{2} + \frac{3}{2^n} \right) \ ;\]</div>
+\[\ddot{y}_n = g \left( - 1 + \frac{3}{2^{n}} \right) \ ;\]</div>
 </li>
 <li><p class="sd-card-text">le accelerazioni dei centri delle carrucole</p>
 <div class="math notranslate nohighlight">
@@ -910,18 +910,18 @@ Risultati<div class="sd-summary-down docutils">
       \ddot{y}^c_n
       &amp; = \frac{1}{2} \ddot{y}_n + \frac{1}{2^2} \ddot{y}_{n+1} + \frac{1}{2^3} \ddot{y}_{n+2} + \dots = \\
       &amp; = \frac{1}{2} \sum_{k=0}^{+\infty} \frac{1}{2^k} \ddot{y}_{n+k} = \\
-      &amp; = \frac{g}{2} \sum_{k=0}^{+\infty} \frac{1}{2^k} \left( - \frac{1}{2} + 3 \frac{1}{2^{n+k}} \right) = \\
-      &amp; = - \frac{g}{4} \sum_{k=0}^{+\infty} \frac{1}{2^k} + \frac{3}{2^{n+1}} g \sum_{k=0}^{+\infty} \frac{1}{4^k} = \\
-      &amp; = - \frac{g}{4} \cdot 2 + \frac{3}{2^{n+1}} g \cdot \frac{4}{3} = \\
-      &amp; = \left( - \frac{1}{2} + \frac{1}{2^{n-1}} \right) g \ . 
+      &amp; = \frac{g}{2} \sum_{k=0}^{+\infty} \frac{1}{2^k} \left( - 1 + 3 \frac{1}{2^{n+k}} \right) = \\
+      &amp; = - \frac{g}{2} \sum_{k=0}^{+\infty} \frac{1}{2^k} + \frac{3}{2^{n+1}} g \sum_{k=0}^{+\infty} \frac{1}{4^k} = \\
+      &amp; = - \frac{g}{2} \cdot 2 + \frac{3}{2^{n+1}} g \cdot \frac{4}{3} = \\
+      &amp; = \left( - 1 + \frac{1}{2^{n-1}} \right) g \ . 
    \end{aligned}\end{split}\]</div>
 </li>
 <li><p class="sd-card-text">le accelerazioni angolari delle carrucole <span class="math notranslate nohighlight">\(R \ddot{\theta}_n = \ddot{y}^c_{n} - \ddot{y}^c_{n+1}\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
      \ddot{\theta}_n 
-     &amp; = \left( -\frac{1}{2} + \frac{1}{2^{n-1}} \right) g - \left(  -\frac{1}{2} + \frac{1}{2^{n}} \right) g = \\
-     &amp; = \frac{1}{2^n} g \ .
+     &amp; = \left( - 1 + \frac{1}{2^{n-1}} \right) \frac{g}{R} - \left(  - 1 + \frac{1}{2^{n}} \right) \frac{g}{R} = \\
+     &amp; = \frac{1}{2^{n}} \frac{g}{R} \ .
    \end{aligned}\end{split}\]</div>
 </li>
 </ul>
