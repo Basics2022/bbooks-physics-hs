@@ -830,27 +830,38 @@ Soluzione - Approccio 1. - Altezze masse come coordinate libere<div class="sd-su
 <p class="sd-card-text">Usando la seconda equazione per ricavare un’espressione delle tensioni in funzione dell’accelerazione, si può usare la prima equazione per ricavare una relazione ricorsiva</p>
 <div class="math notranslate nohighlight">
 \[\ddot{y}_n + g = \frac{1}{2} \left( \ddot{y}_{n-1} + g \right) \ .\]</div>
-<p class="sd-card-text">Per risolvere il problema, ora serve una condizione iniziale - o per un qualsiasi indice <span class="math notranslate nohighlight">\(k\)</span> - per determinare <span class="math notranslate nohighlight">\(\ddot{y}_n\)</span>. Per fare questo, si può tradurre il vincolo della prima carrucola - con il centro a quota costante - sostituendo il vincolo reale con il vincolo equivalente rappresentato da una «carrucola zero», con rotazione bloccata. Supponendo che esista una massa <span class="math notranslate nohighlight">\(m\)</span> collegata a questa carrucola bloccata, la sua quota</p>
+<p class="sd-card-text"><strong>Condizione iniziale.</strong> Per risolvere il problema, ora serve una condizione iniziale - o per un qualsiasi indice <span class="math notranslate nohighlight">\(k\)</span> - per determinare <span class="math notranslate nohighlight">\(\ddot{y}_n\)</span>. Per fare questo, è necessario tradurre la condizione di centro fisso della prima carrucola, <span class="math notranslate nohighlight">\(\ddot{y}_1^c = 0\)</span>, in termini di spostamento delle masse. L’accelerazione dei centri di due carrucole vicine è legata dalla relazione</p>
 <div class="math notranslate nohighlight">
-\[y_0 = 0 \ ,\]</div>
-<p class="sd-card-text">rappresenta la condizione iniziale della relazione ricorsiva. Anche se non si sapesse nulla delle <a class="reference external" href="https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/difference-equations.html"><strong>equazioni alle differenze</strong></a>, si può trovare la soluzione della relazione ricorsiva - che è un’equazione alle differenze, la controparte discreta delle equazioni differenziali - calcolandone i primi termini</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-  \ddot{y}_1 &amp; = \frac{1}{2} \ddot{y}_0 - \frac{1}{2} g = - \frac{1}{2} g                                 &amp;&amp; = - \frac{1}{2} g &amp;&amp; = - \left( 1 - \frac{1}{2} \right) g \\
-  \ddot{y}_2 &amp; = \frac{1}{2} \ddot{y}_1 - \frac{1}{2} g = - \frac{1}{4} g - \frac{1}{2} g                 &amp;&amp; = - \frac{3}{4} g &amp;&amp; = - \left( 1 - \frac{1}{4} \right) g \\
-  \ddot{y}_3 &amp; = \frac{1}{2} \ddot{y}_1 - \frac{1}{2} g = - \frac{1}{8} g - \frac{1}{4} g - \frac{1}{2} g &amp;&amp; = - \frac{7}{8} g &amp;&amp; = - \left( 1 - \frac{1}{8} \right) g \\
-  &amp; \dots
-\end{aligned}\end{split}\]</div>
-<p class="sd-card-text">e generalizzando la soluzione</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
+\[\ddot{y}^c_{n} = \frac{1}{2} \left( \ddot{y}_n + \ddot{y}^c_{n+1} \right) \ .\]</div>
+<p class="sd-card-text">Per <span class="math notranslate nohighlight">\(n=1\)</span>, <span class="math notranslate nohighlight">\(\ddot{y}^c_1 = 0\)</span> dal vincolo, e quindi <span class="math notranslate nohighlight">\(\ddot{y}^c_2 = - \ddot{y}_1\)</span>.</p>
+<!--
+Per risolvere il problema, ora serve una condizione iniziale - o per un qualsiasi indice $k$ - per determinare $\ddot{y}_n$. Per fare questo, si può tradurre il vincolo della prima carrucola - con il centro a quota costante - sostituendo il vincolo reale con il vincolo equivalente rappresentato da una "carrucola zero", con rotazione bloccata. Supponendo che esista una massa $m$ collegata a questa carrucola bloccata, la sua quota
+
+$$y_0 = 0 \ ,$$
+
+rappresenta la condizione iniziale della relazione ricorsiva.
+
+Anche se non si sapesse nulla delle [**equazioni alle differenze**](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/difference-equations.html), si può trovare la soluzione della relazione ricorsiva - che è un'equazione alle differenze, la controparte discreta delle equazioni differenziali - calcolandone i primi termini
+
+$$\begin{aligned}
+  \ddot{y}_1 & = \frac{1}{2} \ddot{y}_0 - \frac{1}{2} g = - \frac{1}{2} g                                 && = - \frac{1}{2} g && = - \left( 1 - \frac{1}{2} \right) g \\
+  \ddot{y}_2 & = \frac{1}{2} \ddot{y}_1 - \frac{1}{2} g = - \frac{1}{4} g - \frac{1}{2} g                 && = - \frac{3}{4} g && = - \left( 1 - \frac{1}{4} \right) g \\
+  \ddot{y}_3 & = \frac{1}{2} \ddot{y}_1 - \frac{1}{2} g = - \frac{1}{8} g - \frac{1}{4} g - \frac{1}{2} g && = - \frac{7}{8} g && = - \left( 1 - \frac{1}{8} \right) g \\
+  & \dots
+\end{aligned}$$
+
+e generalizzando la soluzione
+
+$$\begin{aligned}
   \ddot{y}_n
-  &amp; = - g \, \sum_{k=1}^{n} \left( \frac{1}{2} \right)^k = \\
-  &amp; = - g \left[ \sum_{k=1}^{n} \left( \frac{1}{2} \right)^k - 1 \right] = \\
-  &amp; = - g \left[ \frac{1 - \frac{1}{2^{n+1}}}{1 - \frac{1}{2}} - 1 \right] = \\
-  &amp; = - g \left[ 2 \left( 1 - \frac{1}{2^{n+1}} \right) - 1 \right] = \\
-  &amp; = - g \left[ 1 - \frac{1}{2^n} \right] \ .
-\end{aligned}\end{split}\]</div>
+  & = - g \, \sum_{k=1}^{n} \left( \frac{1}{2} \right)^k = \\
+  & = - g \left[ \sum_{k=1}^{n} \left( \frac{1}{2} \right)^k - 1 \right] = \\
+  & = - g \left[ \frac{1 - \frac{1}{2^{n+1}}}{1 - \frac{1}{2}} - 1 \right] = \\
+  & = - g \left[ 2 \left( 1 - \frac{1}{2^{n+1}} \right) - 1 \right] = \\
+  & = - g \left[ 1 - \frac{1}{2^n} \right] \ .
+\end{aligned}$$
+
+-->
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
