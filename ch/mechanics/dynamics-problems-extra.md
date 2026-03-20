@@ -182,7 +182,7 @@ $$\ddot{y}_n = \frac{1}{2} \ddot{y}_{n-1} - \frac{1}{2} g \ .$$
 
 La soluzione generica di qusto problema - al netto di una costante arbitraria $c$ - ha la forma 
 
-$$y_n = - \frac{1}{2} g + c \left( \frac{1}{2} \right)^n \ .$$
+$$y_n = - g + c \left( \frac{1}{2} \right)^n \ .$$
 
 ```
 
@@ -225,8 +225,8 @@ $$\begin{aligned}
   & = \ddot{y}^c_1 = \\
   & = \frac{1}{2} \ddot{y}_1 + \frac{1}{2^2} \ddot{y}_2 + \dots = \\
   & = \sum_{j=1}^{+\infty} \frac{1}{2^j} \ddot{y}_j = \\
-  & = \sum_{j=1}^{+\infty} \frac{1}{2^j} \left[ - \frac{1}{2} g + c \frac{1}{2^j} \right] = \\
-  & = - \frac{1}{4} \cdot g + c \left( \frac{4}{3} - 1 \right) = \\
+  & = \sum_{j=1}^{+\infty} \frac{1}{2^j} \left[ - g + c \frac{1}{2^j} \right] = \\
+  & = - \frac{1}{2} \cdot 2 g + c \left( \frac{4}{3} - 1 \right) = \\
   & = - g + \frac{c}{3} \ ,
 \end{aligned}$$
 
@@ -235,11 +235,12 @@ per trovare il valore della costante di integrazione $c = 3 g$.
 ```
 
 ```{dropdown} Risultati
+:open:
 Risultano quindi note:
 
 * le accelerazioni delle masse
 
-   $$\ddot{y}_n = g \left( - \frac{1}{2} + \frac{3}{2^n} \right) \ ;$$
+   $$\ddot{y}_n = g \left( - 1 + \frac{3}{2^{n}} \right) \ ;$$
 
 * le accelerazioni dei centri delle carrucole
 
@@ -247,18 +248,18 @@ Risultano quindi note:
       \ddot{y}^c_n
       & = \frac{1}{2} \ddot{y}_n + \frac{1}{2^2} \ddot{y}_{n+1} + \frac{1}{2^3} \ddot{y}_{n+2} + \dots = \\
       & = \frac{1}{2} \sum_{k=0}^{+\infty} \frac{1}{2^k} \ddot{y}_{n+k} = \\
-      & = \frac{g}{2} \sum_{k=0}^{+\infty} \frac{1}{2^k} \left( - \frac{1}{2} + 3 \frac{1}{2^{n+k}} \right) = \\
-      & = - \frac{g}{4} \sum_{k=0}^{+\infty} \frac{1}{2^k} + \frac{3}{2^{n+1}} g \sum_{k=0}^{+\infty} \frac{1}{4^k} = \\
-      & = - \frac{g}{4} \cdot 2 + \frac{3}{2^{n+1}} g \cdot \frac{4}{3} = \\
-      & = \left( - \frac{1}{2} + \frac{1}{2^{n-1}} \right) g \ . 
+      & = \frac{g}{2} \sum_{k=0}^{+\infty} \frac{1}{2^k} \left( - 1 + 3 \frac{1}{2^{n+k}} \right) = \\
+      & = - \frac{g}{2} \sum_{k=0}^{+\infty} \frac{1}{2^k} + \frac{3}{2^{n+1}} g \sum_{k=0}^{+\infty} \frac{1}{4^k} = \\
+      & = - \frac{g}{2} \cdot 2 + \frac{3}{2^{n+1}} g \cdot \frac{4}{3} = \\
+      & = \left( - 1 + \frac{1}{2^{n-1}} \right) g \ . 
    \end{aligned}$$
 
 * le accelerazioni angolari delle carrucole $R \ddot{\theta}_n = \ddot{y}^c_{n} - \ddot{y}^c_{n+1}$
 
    $$\begin{aligned}
      \ddot{\theta}_n 
-     & = \left( -\frac{1}{2} + \frac{1}{2^{n-1}} \right) g - \left(  -\frac{1}{2} + \frac{1}{2^{n}} \right) g = \\
-     & = \frac{1}{2^n} g \ .
+     & = \left( - 1 + \frac{1}{2^{n-1}} \right) \frac{g}{R} - \left(  - 1 + \frac{1}{2^{n}} \right) \frac{g}{R} = \\
+     & = \frac{1}{2^{n}} \frac{g}{R} \ .
    \end{aligned}$$
 
 ```
