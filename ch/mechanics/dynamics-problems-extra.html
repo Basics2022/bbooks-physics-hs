@@ -926,38 +926,7 @@ Risultati<div class="sd-summary-down docutils">
 </li>
 </ul>
 </div>
-</details><!--
-Per $n=1$, $\ddot{y}^c_1 = 0$ dal vincolo, e quindi $\ddot{y}^c_2 = - \ddot{y}_1$.
--->
-<!--
-Per risolvere il problema, ora serve una condizione iniziale - o per un qualsiasi indice $k$ - per determinare $\ddot{y}_n$. Per fare questo, si può tradurre il vincolo della prima carrucola - con il centro a quota costante - sostituendo il vincolo reale con il vincolo equivalente rappresentato da una "carrucola zero", con rotazione bloccata. Supponendo che esista una massa $m$ collegata a questa carrucola bloccata, la sua quota
-
-$$y_0 = 0 \ ,$$
-
-rappresenta la condizione iniziale della relazione ricorsiva.
-
-Anche se non si sapesse nulla delle [**equazioni alle differenze**](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/difference-equations.html), si può trovare la soluzione della relazione ricorsiva - che è un'equazione alle differenze, la controparte discreta delle equazioni differenziali - calcolandone i primi termini
-
-$$\begin{aligned}
-  \ddot{y}_1 & = \frac{1}{2} \ddot{y}_0 - \frac{1}{2} g = - \frac{1}{2} g                                 && = - \frac{1}{2} g && = - \left( 1 - \frac{1}{2} \right) g \\
-  \ddot{y}_2 & = \frac{1}{2} \ddot{y}_1 - \frac{1}{2} g = - \frac{1}{4} g - \frac{1}{2} g                 && = - \frac{3}{4} g && = - \left( 1 - \frac{1}{4} \right) g \\
-  \ddot{y}_3 & = \frac{1}{2} \ddot{y}_1 - \frac{1}{2} g = - \frac{1}{8} g - \frac{1}{4} g - \frac{1}{2} g && = - \frac{7}{8} g && = - \left( 1 - \frac{1}{8} \right) g \\
-  & \dots
-\end{aligned}$$
-
-e generalizzando la soluzione
-
-$$\begin{aligned}
-  \ddot{y}_n
-  & = - g \, \sum_{k=1}^{n} \left( \frac{1}{2} \right)^k = \\
-  & = - g \left[ \sum_{k=1}^{n} \left( \frac{1}{2} \right)^k - 1 \right] = \\
-  & = - g \left[ \frac{1 - \frac{1}{2^{n+1}}}{1 - \frac{1}{2}} - 1 \right] = \\
-  & = - g \left[ 2 \left( 1 - \frac{1}{2^{n+1}} \right) - 1 \right] = \\
-  & = - g \left[ 1 - \frac{1}{2^n} \right] \ .
-\end{aligned}$$
-
--->
-</div>
+</details></div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Soluzione - Approccio 2. - Angoli di rotazione come coordinate libere<div class="sd-summary-down docutils">
@@ -1115,8 +1084,7 @@ Soluzione<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 </div>
-</details><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-&lt;!--
+</details><!--
 ````{only} latex
 
 % Esercizio *****************************************************************
@@ -1124,13 +1092,13 @@ $$
 \begin{minipage}[t]{.55\textwidth}
   \vspace{0pt}
   \textbf{Problema 1.}
-Una palla di massa $m$ si trova inizialmente in quiete rispetto a un&#39;osservatore inerziale, a una quota $h$ sopra la superficie terrestre.
+Una palla di massa $m$ si trova inizialmente in quiete rispetto a un'osservatore inerziale, a una quota $h$ sopra la superficie terrestre.
 La palla viene lasciata cadere dalla condizione di quiete. Viene chiesto di determinare:
 1. la velocità di impatto con il terreno
 2. il tempo impiegato per raggiungere il terreno.
 
-Viene chiesto di svolgere i conti trascurando la resistenza dell&#39;aria. Si chiede poi di:
-3. confrontare i risultati ottenuti con i risultati per un corpo di massa $M &gt; m$ 
+Viene chiesto di svolgere i conti trascurando la resistenza dell'aria. Si chiede poi di:
+3. confrontare i risultati ottenuti con i risultati per un corpo di massa $M > m$ 
 4. confrontare i risultati ottenuti con i risultati che si otterrebbero nei pressi della superficie lunare.
 
 Raggio Terra: $R_E = 6380 \, km$ ; massa Terra: $M_E = 5.98 \cdot 10^{24} \, kg$;
@@ -1145,12 +1113,10 @@ $$
 
 **Soluzione.**
 
-**Accelerazione nei pressi della superficie di un pianeta.** L&#39;accelerazione di gravità nei pressi della superficie di un pianeta è data dalla formula **todo** *ref*
+**Accelerazione nei pressi della superficie di un pianeta.** L'accelerazione di gravità nei pressi della superficie di un pianeta è data dalla formula **todo** *ref*
 
-
-</pre></div>
-</div>
-<p>–&gt;</p>
+````
+-->
 </div>
 
     <script type="text/x-thebe-config">
