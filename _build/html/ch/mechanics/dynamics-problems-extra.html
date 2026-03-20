@@ -813,6 +813,44 @@ Problema 2. Sistema di infinite carrucole</div>
 </div>
 </div>
 </div>
+<p>Verificare che la soluzione del problema porta alle seguenti accelerazioni delle masse <span class="math notranslate nohighlight">\(\ddot{y}_n\)</span>, e dei centri delle carrucole <span class="math notranslate nohighlight">\(\ddot{y}^c_n\)</span> (<strong>positivi verso l’alto</strong>) e delle accelerazioni angolari delle carrucole <span class="math notranslate nohighlight">\(\ddot{\theta}_n\)</span> (<strong>positive in verso anti-orario</strong>)</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-center head"><p>Index <span class="math notranslate nohighlight">\(n\)</span></p></th>
+<th class="text-center head"><p><span class="math notranslate nohighlight">\(\frac{\ddot{y}^c_n}{g}\)</span></p></th>
+<th class="text-center head"><p><span class="math notranslate nohighlight">\(\frac{\ddot{y}_n}{g}\)</span></p></th>
+<th class="text-center head"><p><span class="math notranslate nohighlight">\(\frac{R \ddot{\theta}_n}{gR}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\frac{1}{2}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\frac{1}{2}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-\frac{1}{2}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-\frac{1}{4}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\frac{1}{4}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(3\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-\frac{3}{4}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-\frac{5}{8}\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\frac{1}{8}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><span class="math notranslate nohighlight">\(\dots\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\dots\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\dots\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\dots\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(+\infty\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-1\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(-1\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>L’espressione analitica di <span class="math notranslate nohighlight">\(\ddot{y}_n\)</span>, <span class="math notranslate nohighlight">\(\ddot{y}_n^c\)</span>, <span class="math notranslate nohighlight">\(\ddot{\theta}_n\)</span> in funzione dell’accelerazione di gravità <span class="math notranslate nohighlight">\(g\)</span>, del raggio delle carrucole <span class="math notranslate nohighlight">\(R\)</span> e dell’indice <span class="math notranslate nohighlight">\(n\)</span> è fornita nei <strong>Risultati</strong> della <strong>Soluzione - Approccio 1</strong>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
 <summary class="sd-summary-title sd-card-header">
 Soluzione - Approccio 1. - Altezze masse come coordinate libere<div class="sd-summary-down docutils">
@@ -891,7 +929,7 @@ Vincolo sulla prima carrucola come condizione iniziale dell’equazione alle dif
 \end{aligned}\end{split}\]</div>
 <p class="sd-card-text">per trovare il valore della costante di integrazione <span class="math notranslate nohighlight">\(c = 3 g\)</span>.</p>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3" open="open">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Risultati<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>

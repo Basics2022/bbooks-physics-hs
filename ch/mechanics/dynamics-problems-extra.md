@@ -157,6 +157,18 @@ $$\theta_k(t) = \frac{1}{2} \alpha_k t^2  \ .$$
 
 ::::
 
+Verificare che la soluzione del problema porta alle seguenti accelerazioni delle masse $\ddot{y}_n$, e dei centri delle carrucole $\ddot{y}^c_n$ (**positivi verso l'alto**) e delle accelerazioni angolari delle carrucole $\ddot{\theta}_n$ (**positive in verso anti-orario**)
+
+| Index $n$  |  $\frac{\ddot{y}^c_n}{g}$  |  $\frac{\ddot{y}_n}{g}$ |  $\frac{R \ddot{\theta}_n}{gR}$  |
+| :--------: | :------------------------: | :---------------------: | :------------------------------: |
+| $1$        | $0$                        | $\frac{1}{2}$           | $\frac{1}{2}$                    |
+| $2$        | $-\frac{1}{2}$             | $-\frac{1}{4}$          | $\frac{1}{4}$                    |
+| $3$        | $-\frac{3}{4}$             | $-\frac{5}{8}$          | $\frac{1}{8}$                    |
+| $\dots$    | $\dots$                    | $\dots$                 | $\dots$                          |
+| $+\infty$  | $-1$                       | $-1$                    | $0$                              |
+
+L'espressione analitica di $\ddot{y}_n$, $\ddot{y}_n^c$, $\ddot{\theta}_n$ in funzione dell'accelerazione di gravità $g$, del raggio delle carrucole $R$ e dell'indice $n$ è fornita nei **Risultati** della **Soluzione - Approccio 1**.
+
 ````{dropdown} Soluzione - Approccio 1. - Altezze masse come coordinate libere
 :open:
 
@@ -235,7 +247,7 @@ per trovare il valore della costante di integrazione $c = 3 g$.
 ```
 
 ```{dropdown} Risultati
-:open:
+
 Risultano quindi note:
 
 * le accelerazioni delle masse
