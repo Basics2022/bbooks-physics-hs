@@ -1,7 +1,7 @@
 (physics-hs:mechanics:dynamics:problems:extra)=
 # Altri problemi
 
-````{only} html
+`````{only} html
 
 <!-- Esercizio ************************************************************* -->
 ::::{grid}
@@ -231,6 +231,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 per trovare il valore della costante di integrazione $c = 3 g$.
+
 ```
 
 ```{dropdown} Risultati
@@ -259,39 +260,8 @@ Risultano quindi note:
      & = \left( -\frac{1}{2} + \frac{1}{2^{n-1}} \right) g - \left(  -\frac{1}{2} + \frac{1}{2^{n}} \right) g = \\
      & = \frac{1}{2^n} g \ .
    \end{aligned}$$
+
 ```
-<!--
-Per $n=1$, $\ddot{y}^c_1 = 0$ dal vincolo, e quindi $\ddot{y}^c_2 = - \ddot{y}_1$.
--->
-
-<!--
-Per risolvere il problema, ora serve una condizione iniziale - o per un qualsiasi indice $k$ - per determinare $\ddot{y}_n$. Per fare questo, si può tradurre il vincolo della prima carrucola - con il centro a quota costante - sostituendo il vincolo reale con il vincolo equivalente rappresentato da una "carrucola zero", con rotazione bloccata. Supponendo che esista una massa $m$ collegata a questa carrucola bloccata, la sua quota
-
-$$y_0 = 0 \ ,$$
-
-rappresenta la condizione iniziale della relazione ricorsiva.
-
-Anche se non si sapesse nulla delle [**equazioni alle differenze**](https://basics2022.github.io/bbooks-math-miscellanea-hs/ch/difference-equations.html), si può trovare la soluzione della relazione ricorsiva - che è un'equazione alle differenze, la controparte discreta delle equazioni differenziali - calcolandone i primi termini
-
-$$\begin{aligned}
-  \ddot{y}_1 & = \frac{1}{2} \ddot{y}_0 - \frac{1}{2} g = - \frac{1}{2} g                                 && = - \frac{1}{2} g && = - \left( 1 - \frac{1}{2} \right) g \\
-  \ddot{y}_2 & = \frac{1}{2} \ddot{y}_1 - \frac{1}{2} g = - \frac{1}{4} g - \frac{1}{2} g                 && = - \frac{3}{4} g && = - \left( 1 - \frac{1}{4} \right) g \\
-  \ddot{y}_3 & = \frac{1}{2} \ddot{y}_1 - \frac{1}{2} g = - \frac{1}{8} g - \frac{1}{4} g - \frac{1}{2} g && = - \frac{7}{8} g && = - \left( 1 - \frac{1}{8} \right) g \\
-  & \dots
-\end{aligned}$$
-
-e generalizzando la soluzione
-
-$$\begin{aligned}
-  \ddot{y}_n
-  & = - g \, \sum_{k=1}^{n} \left( \frac{1}{2} \right)^k = \\
-  & = - g \left[ \sum_{k=1}^{n} \left( \frac{1}{2} \right)^k - 1 \right] = \\
-  & = - g \left[ \frac{1 - \frac{1}{2^{n+1}}}{1 - \frac{1}{2}} - 1 \right] = \\
-  & = - g \left[ 2 \left( 1 - \frac{1}{2^{n+1}} \right) - 1 \right] = \\
-  & = - g \left[ 1 - \frac{1}{2^n} \right] \ .
-\end{aligned}$$
-
--->
 
 ````
 
@@ -466,7 +436,7 @@ La massa equivalente è definita come...
 
 ```
 
-````
+`````
 
 <!--
 ````{only} latex
@@ -498,7 +468,6 @@ $$
 **Soluzione.**
 
 **Accelerazione nei pressi della superficie di un pianeta.** L'accelerazione di gravità nei pressi della superficie di un pianeta è data dalla formula **todo** *ref*
-
 
 ````
 -->
