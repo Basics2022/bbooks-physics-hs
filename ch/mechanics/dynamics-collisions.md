@@ -1,6 +1,8 @@
 (physics-hs:mechanics:dynamics:collisions)=
 # Collisioni
 
+<span style="color:red">**todo** Sistemare il paragrafo: 1) introduzione, 2) definizione di coefficiente di restituzione, 3) urti tra sfere, 4) problemi</span>
+
 Una descrizione dettagliata delle collisioni tra sistemi qualsiasi va ben al di là dello scopo di un primo approccio alla meccanica.
 
 Qui, ci si limiterà allo studio di collisioni che:
@@ -9,7 +11,7 @@ Qui, ci si limiterà allo studio di collisioni che:
 
 Questi urti comportano delle variazioni finite delle quantità dinamiche in intervalli di tempo finiti, vengono definiti **urti impulsivi** (**todo** *verificare*) e  rappresentano un esempio di moto "non regolare", per il quale le equazioni cardinali della dinamica devono essere scritte in forma incrementale.
 
-**todo** *approfondimento su forze impulsive e delta di Dirac?*
+<span style="color:red">**todo** *approfondimento su forze impulsive e delta di Dirac?*</span>
 
 Tra due istanti temporali immediatamente precedente e immediatamente successivo all'urto tra due sistemi possono essere trascurate tutte le azioni agenti sul sistema complessivo tranne quelle **impulsive** dovute all'**urto**, e ad eventuali **reazioni vincolari** (vedi esercizi),
 
@@ -47,6 +49,76 @@ $$\begin{aligned}
 {K^{+ '}} & = \frac{1}{2 m_1} {\vec{p}_1^{+ '}}  \cdot {\vec{p}_1^{+ '}}  + \frac{1}{2 m_2} {\vec{p}_2^{+ '}}  \cdot {\vec{p}_2^{+ '}}  = \\
        & = \varepsilon^2 \left[ \frac{1}{2 m_1} {\vec{p}_1^{- '}}  \cdot {\vec{p}_1^{- '}}  + \frac{1}{2 m_2} {\vec{p}_2^{- '}}  \cdot {\vec{p}_2^{- '}}  \right] = \varepsilon^2 {K^{- '}} 
 \end{aligned}$$
+
+
+(physics-hs:mechanics:dynamics:collisions:two-spheres)=
+## Collisione tra due sfere
+
+(physics-hs:mechanics:dynamics:collisions:two-spheres:elastic)=
+### Urto elastico
+
+In questa sezione si studia l'urto elastico tra due sfere rigide di massa $m$ e raggio $R$, assumendo che la forza (impulsiva) scambiata tra le due sfere nel momento dell'urto sia normale alla superficie dell'urto. La velocità $\vec{v}_i$ delle due sfere dopo l'urto può essere scritta in funzione della velocità $\vec{v}'_i$ prima dell'urto e del vettore unitario $\hat{n}$ che ha la direzione della congiungente dei due centri delle sfere nel momento dell'impatto,
+
+$$\begin{cases}
+  \vec{v}_1 & = \vec{v}'_1 + \hat{n} \hat{n} \cdot ( \vec{v}'_2 - \vec{v}'_1 ) \\
+  \vec{v}_2 & = \vec{v}'_2 - \hat{n} \hat{n} \cdot ( \vec{v}'_2 - \vec{v}'_1 ) \ .
+\end{cases}$$
+
+```{dropdown} Dettagli
+
+In assenza di forze esterne - o limitandosi all'istante dell'urto, in assenza di forze esterne impulsive - in un urto elastico si conservano sia la quantità di moto del sistema, sia la sua energia cinetica. Si può quindi scrivere
+
+$$\begin{cases}
+  m \vec{v}_1 + m \vec{v}_2 = m \vec{v}'_1 + m \vec{v}'_2 \\
+  \dfrac{1}{2} m \left| \vec{v}_1 \right|^2 + \dfrac{1}{2} m \left| \vec{v}_2 \right|^2 = \dfrac{1}{2} m \left| \vec{v}'_1 \right|^2 + \dfrac{1}{2} m \left| \vec{v}'_2 \right|^2 \\
+\end{cases}$$
+
+L'equazione della quantità di moto può essere scritta
+
+$$
+  \vec{v}_1 - \vec{v}'_1 = - \left( \vec{v}_2 - \vec{v}'_2 \right)
+$$
+
+e usata nell'equazione dell'energia cinetica
+
+$$\begin{aligned}
+  \left| \vec{v}_1 \right|^2 - \left| \vec{v}'_1 \right|^2 & = \left| \vec{v}'_2 \right|^2 - \left| \vec{v}_2 \right|^2  \\
+  \left( \vec{v}_1 - \vec{v}'_1 \right) \cdot \left( \vec{v}_1 + \vec{v}'_1 \right) & = - \left( \vec{v}'_2 - \vec{v}_2 \right) \cdot \left( \vec{v}'_2 + \vec{v}_2 \right) \\
+\end{aligned}$$
+
+La differenza di velocità ha la direzione normale alle due superfici nel punto e nel momento di contatto. Chiamando $\vec{r}_1$, $\vec{r}_2$ la posizione dei centri delle sfere nell'istante del contatto, identificato dalla condizione $|\vec{r}_2 - \vec{r}_1| = 2 R$, il vettore normale è $\hat{n} = \frac{\vec{r}_2 - \vec{r}_1}{2R}$. La differenza della velocità della sfera 1 dopo e prima dell'urto può quindi essere scritta come
+
+$$\vec{v}_1 - \vec{v}'_1 = \hat{n} \, \hat{n} \cdot ( \vec{v}_1 - \vec{v}'_1 ) = \hat{n} ( v_{1,n} - v'_{1,n} ) = \hat{n} \Delta v_{1,n} \ .$$
+
+Usando questa relazione nell'equazione dell'energia cinetica, si può scrivere
+
+$$\begin{aligned}
+  \Delta v_{1,n} \hat{n} \cdot ( \vec{v}_1 + \vec{v}'_1 ) & = \Delta v_{1,n} \hat{n} \cdot ( \vec{v}_2 + \vec{v}'_2 ) \\
+  v_{1,n} + v'_{1,n} & = v_{2,n} + v'_{2,n} \ .
+\end{aligned}$$
+
+Mettendo a sistema le due relazioni ricavata dall'equazione della quantità di moto e dall'energia cinetica,
+
+$$\begin{cases}
+  v_{1,n} - v'_{1,n} & = - v_{2,n} + v'_{2,n} \\
+  v_{1,n} + v'_{1,n} & = v_{2,n} + v'_{2,n} \\
+\end{cases}$$
+
+si ottengono le relazioni 
+
+$$\begin{aligned}
+  v'_{1,n} & = v_{2,n} \\
+  v'_{2,n} & = v_{1,n} \\
+\end{aligned}$$
+
+e quindi l'espressione delle velocità dopo l'urto in funzione delle velocità prima dell'urto e del vettore normale $\hat{n}$,
+
+$$\begin{cases}
+  \vec{v}_1 & = \vec{v}'_1 + \hat{n} \hat{n} \cdot ( \vec{v}'_2 - \vec{v}'_1 ) \\
+  \vec{v}_2 & = \vec{v}'_2 - \hat{n} \hat{n} \cdot ( \vec{v}'_2 - \vec{v}'_1 ) \\
+\end{cases}$$
+
+```
 
 ## Problemi
 
