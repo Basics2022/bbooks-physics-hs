@@ -28,6 +28,6 @@ L'orbita di Mercurio attorno al Sole non si svolge su di un'ellisse perfetta, ma
 
 ### Onde gravitazionali
 
-Osservatorio **LIGO**.
+Osservatorio **LIGO** (*Laser Interferometer Gravitational-Wave Observatory*).
 
 **todo** *due parole sull'interferenza?*
