@@ -243,6 +243,8 @@ parts:
     - file: ch/modern/quantum-basics.md
   - file: ch/modern/astronomy.md
     sections:
+    - file: ch/modern/astronomy-solar-system.md
+      # - file: ch/modern/astronomy-kepler-shape-of-the-orbits
     - file: ch/modern/astronomy-star-classification.md
     - file: ch/modern/astronomy-distance-ladder.md
   - file: ch/modern/standard.md

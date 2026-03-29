@@ -47,17 +47,89 @@ Alcune dimensioni **todo** aggiungere incertezza
 
 
 ## Dimensioni Terra
-Metodo: ombra di un bastone normale
 
-$$R_E = 6.37 \cdot 10^{3} \, km $$
+La Terra non ha forma sferica, ma è "schiacciata ai poli". Il raggio medio vale circa
+
+$$R_E = 6.373 \cdot 10^{3} \, \text{k}m \ ,$$
+
+mentre raggio equatoriale e polare valgono rispettivamente $6.378 \cdot 10^{3} \, \text{km}$ e $6.357 \cdot 10^{3} \, \text{km}$.
+
+**Eratostene** di Cirene (III secolo a.C.) usò la miusra della lunghezza dell'ombra di un bastone di dimensioni note a mezzogiorno in due città differenti, Alessandria d'Egitto ($31^\circ 11'51'' \text{N}$ $29^\circ 53'33'' \text{E}$) e Siene, l'odierna Assuan ($24^\circ 05' \text{N}$ $32^\circ 56' \text{E}$). 
+
+```{prf:example} Sensibilità del valore del raggio alle misure
+
+Distanza tra le due città, $d = 5000$ stadi, con $1$ stadio compreso tra i $155 \, \text{m}$ e i $160 \, \text{m}$. Dalla misura dell'ombra nello stesso istante tra le due città, Eratostene trovò un angolo di circa $\Delta \theta = 7.2^\circ$, $1/50$ di angolo giro. Con trigonometria elementare, l'espressione della lunghezza di un arco di circonferenza dati raggio e angolo sotteso vale
+
+$$d = R \, \theta =  R \frac{2 \pi}{360^\circ} \theta[^\circ] \ ,$$
+
+con gli angoli espressi in radianti dove non specificato. Quindi 
+
+$$R = \frac{360^\circ}{\theta[^\circ]} \frac{d}{2 \pi} = 50 \times \frac{5000 \times ( 155 \div 160 ) \text{m}}{2 \pi} = (6167.25 \div 6366.20) \text{m} \ .$$
+
+**Sensibilità agli errori di misura.**
+* Errore sulla distanza $\Delta d$ implica un errore assoluto $\Delta R = \frac{1}{\theta} \Delta d$, e quindi un errore relativo $\frac{\Delta R}{R} = \frac{\Delta d}{d}$.
+* Errore sull'angolo $\Delta \theta$ implica un errore assoluto $\Delta R = \left( \frac{1}{\theta + \Delta \theta} - \frac{1}{\theta} \right) d = - \frac{\Delta \theta}{\theta^2} d + o(\Delta \theta)$, e un errore relativo $\frac{\Delta R}{R} = - \frac{\Delta \theta}{\theta}$
+
+avendo usato l'espansione in serie di Taylor per la funzione $f(\Delta \theta)$, valutata in $\Delta \theta = 0$ - nessun errore di misura -, $\frac{1}{\theta + \Delta \theta} = \frac{1}{\theta} - \frac{\Delta \theta}{\theta^2}$, con $f'(\Delta \theta) = - \frac{1}{( \theta + \Delta \theta)^2}$.
+
+<!--
+Conti con le misure note ad oggi, cioè sapendo le coordinate delle due città, cioè senza confondere la latitudine di Assuan con quella del Tropico del Cancro, $23^\circ 27' \text{N}$.
+
+$$\Delta \theta = \theta_{Assuan} = \qquad , \qquad \theta_{$$
+-->
+
+```
+
 
 ## Distanza Terra-Luna e dimensioni Luna
-Metodo: eclisse lunare per la distanza; sorgere della Luna per le dimensioni
+
+La Luna compie una traiettoria attorno alla Terra all'incirca ellittica con semiasse maggiore $a_{EM} = 384.4 \cdot 10^{3} \, \text{km}$, eccentricità $e = 0.0549$. La luna ha raggio medio $R_M = 1.738 \cdot 10^3 \, \text{km}$.
+
+**Prime misure**: eclisse lunare per la distanza; sorgere della Luna per le dimensioni
+
+```{prf:example} Raggio lunare
+
+Si ipotizza che il Sole sia sufficientemente lontano dal sistema Terra-Luna che l'ombra proiettata dalla Terra abbia raggi paralleli. La durata massima di un'eclissi totale è di $1$ ora e $47$ minuti. La Luna compie un'orbita completa attorno alla Terra[^moon-month] in circa $27$ giorni, $7$ ore e $43$ minuti.
+
+<!--
+Approssimando la traiettoria della Luna attorno alla Terra con una traiettoria circolare, e trascurando il moto della Terra attorno al Sole durante un'eclissi, la distanza percorsa dalla Luna durante la fase di eclissi totale è
+
+$$d = 2 R_E - 2 R_M \ .$$
+-->
+
+[^moon-month]: Il periodo di rotazione della Luna attorno alla Terra è definito come **mese siderale** e dura circa $27$ giorni, $7$ ore, $43$ minuti. Il **mese sinodico** è il periodo di tempo affinché la Luna si riallinei con Sole e Terra: questo mese è più lungo del precedente poiché la Terra compie il suo moto di rivoluzione attorno al Sole nella stessa direzione del moto di rivoluzione della Luna attorno alla Terra, ed è di circa $29$ giorni, $12$ ore e $44$ minuti.
+
+```
+
+```{prf:example} Nascita della Luna e diametro
+
+<!--
+L'alba della Luna dura circa $2$ minuti, ed è un effetto della rotazione della Terra attorno al proprio asse.
+-->
+
+```
+
+```{prf:example} Sistema di equazioni
+
+<!--
+$$\begin{cases}
+  \frac{2 R_E - 2 R_M}{2 \pi R_{EM}} = \frac{T_{total \, ecl.}}{T_M} \\
+  \frac{2 R_M}{2 \pi R_{EM}}  = \frac{T_{moonset}}{T_E^{rot}}
+\end{cases}$$
 
 $$\begin{aligned}
-  R_{EM} & = \dots \\
-  R_{M}  & = \dots \\
+  \frac{R_E}{\pi R_{EM}} 
+  & = \frac{T_{total \, ecl.}}{T_M} + \frac{1}{\pi} \frac{R_M}{R_{EM}} = \\
+  & = \frac{T_{total \, ecl.}}{T_M} + \frac{T_{moonset}}{T_E^{rot}} = \\
+  & = \frac{107'}{39343'} + \frac{2'}{1440'} = \\
+  & = 4.11 \cdot 10^{-3} \ ,
 \end{aligned}$$
+
+e quindi $R_{E} = R_{EM} * 0.129$, o $$
+-->
+
+```
+
 
 (physics-hs:modern:astronomy:distance-ladder:sun)=
 ## Dimensioni Sole e Distanza Sole-Terra
@@ -68,6 +140,28 @@ $$\frac{R_{S}}{R_{ES}} \sim \frac{R_{M}}{R_{EM}} \ .$$
 Per calcolare i valori assoluti, serve poter detemrminare una delle due grandezze fisiche, come ad esempmio la distanza Terra-Sole:
 - gli antichi greci stimarono la distanza Terra-Sole usando le fasi lunari: il metodo usava la misura dell'angolo in cui si osservava la mezza luna (che non corrisponde con la quadratura). Il metodo utilizzato dagli antichi incontrava i limiti tecnologici disponibili all'epoca, a cominciare dall'assenza di strumenti affidabili per misurare il tempo, soprattutto durante la notte; poichè la misura si fonda sulla misura di un angolo "piccolo", un piccolo errore ha ripercussioni enormi sulla stima della distanza: così, i greci stimarono una distanza Terra-Sole circa 20 volte il valore attualmente accettato, **todo** *discutere limiti tecnologici, sensibilità di errori di misura, metodi per ridurre incertezza con misure ripetute...; collegamento a strumenti per la misura del tempo*
 - ...bisogna aspettare il XVII e il XVIII secolo per la proposta di J.Gregory e **E.Halley** (1656-1742) e la realizzazione della misura che sfruttasse la [parallasse solare durante il passaggio di Venere davanti al Sole avvenuto nel 1761 e nel 1769](physics-hs:modern:astronomy:distance-ladder:sun:venus), dati riassunti da J.Lalande nel 1771 nella misura di 8.6" di parallasse solare, equivalente a circa 24000 raggi terrestri, circa il 2.5\% maggiore della misura comunemente accettata oggi (di cosa? raggio medio? semiasse maggiore?...).
+
+```{prf:example} Il limite della tecnologia dei greci, la sensibilità delle misure e la stima errata
+
+$$R_{EM} = R_{ES} \sin \varphi \ ,$$
+
+con $\varphi$ l'angolo tra la quadratura e la condizione di mezza luna sulla traiettoria della Luna attorno alla Terra. Questo angolo è molto piccolo, ed esplicitando il valore della distanza Terra-Sole in funzione della distanza Terra-Luna (data per nota) e l'angolo $\varphi$, si ottiene la formula
+
+$$R_{ES} = R_{EM} \frac{1}{\sin \varphi} \ ,$$
+
+<!--
+che si dimostra molto sensibile all'errore di misura dell'angolo. Usando un'approssimazione di Taylor al primo ordine della funzione $\frac{1}{\sin (\varphi + \Delta \varphi)}$ per $\Delta \varphi = 0$, si ottiene
+
+$$\frac{1}{\sin (\varphi + \Delta \varphi} = \frac{1}{\sin \varphi} - \Delta \varphi \frac{1}{\sin \varphi} + o(\Delta \varphi) \ ,$$
+
+e 
+
+$$\frac{\Delta R_{ES}}{R_{EM}} \sim - \frac{\Delta \varphi}{\sin \varphi}$$
+-->
+
+
+```
+
 
 ```{prf:example} E.Halley, I.Newton e la gravitazione universale
 Halley prevede la periodicità della comparsa della cometa, alla quale fu dato il suo nome, applicando le [leggi della dinamica](physics-hs:mechanics:dynamics) e la [**legge di gravitazione universale di Newton**](physics-hs:mechanics:actions:gravitation:newton).
@@ -126,6 +220,15 @@ La dimostrazione delle leggi di Keplero con le [equazioni della dinamica](physic
 **todo** *aggiungere lo script sul metodo usato da J.Kepler per la formulazione delle sue leggi a partire dalle misure*
 
 Per stabilire le dimensioni assolute delle orbite nel sistema solare era necessario conoscere almeno una dimensione assoluta: la misura della distanza tra Terra e Sole, definita come **unità astronomica**, $\text{UA}$, fu ottenuta per la prima volta grazie alle misure del 1761 e del 1769 del transito di Venere davanti al Sole.
+
+<iframe 
+    src="./../../../script/mars_recon_demo.html" 
+    width="100%" 
+    height="1100px" 
+    frameborder="0" 
+    scrolling="no">
+</iframe>
+
 
 (physics-hs:modern:astronomy:distance-ladder:sun:venus)=
 ## Distanza Sole, Terra, Venere

@@ -33,6 +33,13 @@ Dal punto di vista operativo, la massa di un sistema - quando possibile dal punt
 -->
 **Distribuzione di massa.**
 
+```{prf:definition} Centro di massa
+:label: inertia-center-of-mass
+
+Il centro di massa $\dots$
+
+```
+
 <!--
 (physics-hs:mechanics:inertia:dynamical-quantities)=
 ## Quantità dinamiche
