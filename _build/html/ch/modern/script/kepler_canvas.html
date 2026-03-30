@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kepler Orbital Reconstruction</title>
+    <style>
+        body { font-family: sans-serif; display: flex; background: #f4f4f9; margin: 0; height: 100vh; overflow: hidden; }
+        #controls { width: 350px; padding: 20px; background: #fff; box-shadow: 2px 0 5px rgba(0,0,0,0.1); overflow-y: auto; }
+        #viewport { flex-grow: 1; display: flex; justify-content: center; align-items: center; background: #fff; }
+        canvas { border: 1px solid #ccc; background: white; cursor: crosshair; }
+        .year-group { margin-bottom: 20px; padding: 10px; border-radius: 8px; border-left: 5px solid; }
+        .slider-row { margin: 10px 0; }
+        label { display: block; font-size: 12px; font-weight: bold; margin-bottom: 5px; }
+        input[type=range] { width: 100%; }
+        span { float: right; color: #666; }
+    </style>
+</head>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R3GS2LVD8M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-R3GS2LVD8M');
+</script>
+
+<body>
+
+<div id="controls">
+    <h3>Mars Reconstruction</h3>
+    <p style="font-size: 11px; color: #666;">Move the Mars crosses to reconstruct Earth's positions.</p>
+    <div id="sliders-container"></div>
+</div>
+
+<div id="viewport">
+    <canvas id="keplerCanvas"></canvas>
+</div>
+
+<script>
+// --- 1. DATA & CONFIG ---
+const nmars_years = 5;
+const colors = ['#e6194b', '#3cb44b', '#ffe119', '#4363d8', '#f58231'];
+const scale = 150; // Pixels per 1 AU
+
+// Fake Data for Angles (th_s, th_m) - Replace with your actual arrays
+const th_s = Array.from({length: 5}, (_, i) => [0, 0.5, 1.0, 1.5, 2.0].map(v => v + i));
+const th_m = Array.from({length: 5}, (_, i) => [0.2, 0.4, 0.6, 0.8, 1.0].map(v => v + i));
+
+const mars_initial = [
+    {x: 1.3, y: 0.5}, {x: 0.8, y: 1.2}, {x: -0.5, y: 1.4}, {x: -1.2, y: 0.3}, {x: 0.2, y: -1.4}
+];
+
+// --- 2. SETUP UI ---
+const container = document.getElementById('sliders-container');
+const marsPos = [];
+
+for (let i = 0; i < nmars_years; i++) {
+    const group = document.createElement('div');
+    group.className = 'year-group';
+    group.style.borderLeftColor = colors[i];
+    group.innerHTML = `
+        <div class="slider-row">
+            <label>Year ${i} Mars X: <span id="val-x-${i}">${mars_initial[i].x}</span></label>
+            <input type="range" id="x-${i}" min="-2.2" max="2.2" step="0.01" value="${mars_initial[i].x}">
+        </div>
+        <div class="slider-row">
+            <label>Year ${i} Mars Y: <span id="val-y-${i}">${mars_initial[i].y}</span></label>
+            <input type="range" id="y-${i}" min="-2.2" max="2.2" step="0.01" value="${mars_initial[i].y}">
+        </div>
+    `;
+    container.appendChild(group);
+    
+    marsPos.push({x: mars_initial[i].x, y: mars_initial[i].y});
+    
+    // Event Listeners
+    document.getElementById(`x-${i}`).oninput = (e) => { 
+        marsPos[i].x = parseFloat(e.target.value); 
+        document.getElementById(`val-x-${i}`).innerText = e.target.value;
+    };
+    document.getElementById(`y-${i}`).oninput = (e) => { 
+        marsPos[i].y = parseFloat(e.target.value); 
+        document.getElementById(`val-y-${i}`).innerText = e.target.value;
+    };
+}
+
+// --- 3. DRAWING ENGINE ---
+const canvas = document.getElementById('keplerCanvas');
+const ctx = canvas.getContext('2d');
+canvas.width = 800;
+canvas.height = 800;
+
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    const cx = canvas.width / 2;
+    const cy = canvas.height / 2;
+
+    // Draw Orbits
+    ctx.strokeStyle = '#ddd'; ctx.lineWidth = 1; ctx.setLineDash([5, 5]);
+    ctx.beginPath(); ctx.arc(cx, cy, 1.0 * scale, 0, Math.PI * 2); ctx.stroke();
+    ctx.beginPath(); ctx.arc(cx, cy, 1.5 * scale, 0, Math.PI * 2); ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Draw Sun
+    ctx.fillStyle = 'black';
+    ctx.beginPath(); ctx.arc(cx, cy, 5, 0, Math.PI * 2); ctx.fill();
+
+    // Draw Each Year
+    for (let i = 0; i < nmars_years; i++) {
+        const mx = marsPos[i].x;
+        const my = marsPos[i].y;
+        const mPx = cx + mx * scale;
+        const mPy = cy - my * scale; // Y is inverted in Canvas
+
+        // Kepler Math & Earth Points
+        for (let j = 0; j < th_s[i].length; j++) {
+            const ts = th_s[i][j], tm = th_m[i][j];
+            const det = Math.cos(ts)*Math.sin(tm) - Math.sin(ts)*Math.cos(tm);
+            const dist = (-Math.sin(tm)*mx + Math.cos(tm)*my) / det;
+            
+            const ex = dist * -Math.cos(ts);
+            const ey = dist * -Math.sin(ts);
+            const ePx = cx + ex * scale;
+            const ePy = cy - ey * scale;
+
+            // Lines
+            ctx.setLineDash([2, 4]);
+            ctx.strokeStyle = '#bbb'; // Sun-Earth
+            ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(ePx, ePy); ctx.stroke();
+            
+            ctx.strokeStyle = colors[i] + '66'; // Mars-Earth (with alpha)
+            ctx.beginPath(); ctx.moveTo(mPx, mPy); ctx.lineTo(ePx, ePy); ctx.stroke();
+            ctx.setLineDash([]);
+
+            // Earth Crosses
+            drawCross(ePx, ePy, 6, colors[i], 1.5);
+        }
+
+        // Mars Cross
+        drawCross(mPx, mPy, 12, colors[i], 3);
+    }
+    requestAnimationFrame(draw);
+}
+
+function drawCross(x, y, size, color, thickness) {
+    ctx.strokeStyle = 'black'; ctx.lineWidth = thickness + 1;
+    ctx.beginPath();
+    ctx.moveTo(x - size/2, y); ctx.lineTo(x + size/2, y);
+    ctx.moveTo(x, y - size/2); ctx.lineTo(x, y + size/2);
+    ctx.stroke();
+    
+    ctx.strokeStyle = color; ctx.lineWidth = thickness;
+    ctx.stroke();
+}
+
+draw(); // Start Loop
+</script>
+</body>
+</html>
