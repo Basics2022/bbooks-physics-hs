@@ -52,6 +52,8 @@ const colors = ['#4682B4', '#FFA500', '#2E8B57', '#FF4500', '#9370DB', '#00CED1'
 const canvas = document.getElementById('cv');
 const ctx = canvas.getContext('2d');
 canvas.width = 800; canvas.height = 800;
+canvas.style.width = '100%';
+canvas.style.height = 'auto';
 const scale = 180; // Pixels per AU
 
 let marsPos = mars_init.map(p => ({...p}));

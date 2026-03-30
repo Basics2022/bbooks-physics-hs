@@ -261,9 +261,9 @@ Per stabilire le dimensioni assolute delle orbite nel sistema solare era necessa
 <iframe 
     src="script/mars_recon_canvas.html" 
     width="100%" 
-    height="800px" 
+    height="900px" 
     frameborder="0" 
-    scrolling="no">
+    scrolling="auto">
 </iframe>
 
 
