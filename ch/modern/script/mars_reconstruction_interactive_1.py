@@ -143,7 +143,7 @@ for i in range(nmars_years):
     sliders.append(dict(
         active=int(idx_x), currentvalue={"prefix": f"Year {i} Mars X-Pos: ", "font": {"size": 14}},
         len=0.4, x=0.05, y=-0.1-(i*0.25),
-        steps=[dict(label=f"Y{i}X", method="restyle", args=[{"x": [[v]]}, [3+i*2]]) for v in v_range]
+        steps=[dict(label=f"{v:.2f}", method="restyle", args=[{"x": [[v]]}, [3+i*2]]) for v in v_range]
     ))
     # Y Slider
     sliders.append(dict(
@@ -163,40 +163,52 @@ js_th_m = json.dumps(th_m.tolist())
 
 # Logic: reconstructs Earth points whenever a slider is moved
 # Based on your RMat logic: (r11*mx + r12*my) * [-cos(th_s), -sin(th_s)]
+# Use a raw string or be careful with f-string curly braces
 post_script = f"""
     var gd = document.getElementsByClassName('plotly-graph-div')[0];
     var th_s = {js_th_s};
     var th_m = {js_th_m};
 
-    function updateEarth(year) {{
-        var mx = gd.data[3 + year*2].x[0];
-        var my = gd.data[3 + year*2].y[0];
-        var ex = [], ey = [];
+    function update(year) {{
+        var m_idx = 3 + year * 12; 
+        var mx = gd.data[m_idx].x[0];
+        var my = gd.data[m_idx].y[0];
+        
+        var ex_list = [], ey_list = [];
+        var updateX = [], updateY = [], traceIndices = [];
 
         for (var j = 0; j < th_s[year].length; j++) {{
-            var ts = th_s[year][j];
-            var tm = th_m[year][j];
-
-            // Determinant of RMat
+            var ts = th_s[year][j], tm = th_m[year][j];
             var det = Math.cos(ts)*Math.sin(tm) - Math.sin(ts)*Math.cos(tm);
-            // Result of [ -sin(tm), cos(tm) ] / det dot [mx, my]
-            var earth_dist = (-Math.sin(tm) * mx + Math.cos(tm) * my) / det;
+            var dist = (-Math.sin(tm)*mx + Math.cos(tm)*my) / det;
+            
+            var ex = dist * -Math.cos(ts);
+            var ey = dist * -Math.sin(ts);
+            
+            ex_list.push(ex); ey_list.push(ey);
+            
+            updateX.push([0, ex]); updateY.push([0, ey]);
+            traceIndices.push(m_idx + 2 + j);
 
-            ex.push(earth_dist * -Math.cos(ts));
-            ey.push(earth_dist * -Math.sin(ts));
+            updateX.push([mx, ex]); updateY.push([my, ey]);
+            traceIndices.push(m_idx + 7 + j);
         }}
-        Plotly.restyle(gd, {{'x': [ex], 'y': [ey]}}, [4 + year*2]);
+        
+        updateX.push(ex_list); updateY.push(ey_list);
+        traceIndices.push(m_idx + 1);
+
+        Plotly.restyle(gd, {{x: updateX, y: updateY}}, traceIndices);
     }}
 
-    // Watch for slider changes
     gd.on('plotly_sliderchange', function(e) {{
-        var label = e.step.label; // e.g., "Y0X"
-        var yr = parseInt(label.charAt(1));
-        updateEarth(yr);
+        // We use the 'active' property of the slider to determine the year
+        // This is much safer than parsing text labels!
+        var sliderIdx = gd.layout.sliders.indexOf(e.slider);
+        var year = Math.floor(sliderIdx / 2); 
+        update(year);
     }});
-
-    // Initial run to show starting Earth points
-    for (var i=0; i<{nmars_years}; i++) {{ updateEarth(i); }}
+    
+    for(var i=0; i<{nmars_years}; i++) {{ update(i); }}
 """
 
 fig.write_html("mars_recon_demo.html", post_script=post_script, include_plotlyjs='cdn')
