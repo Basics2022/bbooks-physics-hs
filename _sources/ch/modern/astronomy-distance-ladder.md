@@ -199,92 +199,6 @@ Il Sole non è una sorgente luminosa puntiforme...
 
 ```
 
-<!--
-<div style="display: flex; justify-content: center;">
-  <img src="../../media/solar-eclipse.png" width="500">
-</div>
--->
-
-<!--
-## Distanza Terra-Luna e dimensioni Luna
-
-La Luna compie una traiettoria attorno alla Terra all'incirca ellittica con semiasse maggiore $a_{EM} = 384.4 \cdot 10^{3} \, \text{km}$, eccentricità $e = 0.0549$. La luna ha raggio medio $R_M = 1.738 \cdot 10^3 \, \text{km}$.
-
-**Prime misure**: eclisse lunare per la distanza; sorgere della Luna per le dimensioni
-
-```{prf:example} Raggio lunare
-
-Si ipotizza che il Sole sia sufficientemente lontano dal sistema Terra-Luna che l'ombra proiettata dalla Terra abbia raggi paralleli. La durata massima di un'eclissi totale è di $1$ ora e $47$ minuti. La Luna compie un'orbita completa attorno alla Terra[^moon-month] in circa $27$ giorni, $7$ ore e $43$ minuti.
-
-[^moon-month]: Il periodo di rotazione della Luna attorno alla Terra è definito come **mese siderale** e dura circa $27$ giorni, $7$ ore, $43$ minuti. Il **mese sinodico** è il periodo di tempo affinché la Luna si riallinei con Sole e Terra: questo mese è più lungo del precedente poiché la Terra compie il suo moto di rivoluzione attorno al Sole nella stessa direzione del moto di rivoluzione della Luna attorno alla Terra, ed è di circa $29$ giorni, $12$ ore e $44$ minuti.
-
-```
-
-```{prf:example} Nascita della Luna e diametro
-
-L'alba della Luna (dove? Dove la Luna si muove in direzione perpendicolare all'orizzonte) dura circa $2$ minuti, ed è un effetto della rotazione della Terra attorno al proprio asse. 
-
-$$
-\frac{2 R_M}{2 \pi R_{EM}}  = \frac{T_{moonset}}{T_E^{rot}}
-$$
-
-Il rapporto tra distanza Terra-Luna e il raggio della Luna vale quindi
-
-$$\frac{R_{EM}}{R_M} = \frac{1}{\pi} \frac{T_E^{rot}}{T_{moonset}} = \frac{1}{\pi} \frac{24 \times 60 \text{min}}{2 \text{min}} = 229.2 \ .$$
-
-**Osservazione.** Questa stima è compatibile con i valori oggi noti del semiasse maggiore $a_{EM}$ dell'orbita (confondibile con il raggio di un'orbita circolare, data la piccola eccentricità dell'orbita ellittica), e del raggio lunare medio $R_M$,
-
-$$\frac{a_{EM}}{R_M} = \frac{384.4}{1.74} = 220.92 \ . $$
-
-```
-
-```{prf:example} Sistema di equazioni
-
-$$\begin{cases}
-  \frac{2 R_E - 2 R_M}{2 \pi R_{EM}} = \frac{T_{total \, ecl.}}{T_M} \\
-  \frac{2 R_M}{2 \pi R_{EM}}  = \frac{T_{moonset}}{T_E^{rot}}
-\end{cases}$$
-
-$$\begin{aligned}
-  \frac{R_E}{\pi R_{EM}} 
-  & = \frac{T_{total \, ecl.}}{T_M} + \frac{1}{\pi} \frac{R_M}{R_{EM}} = \\
-  & = \frac{T_{total \, ecl.}}{T_M} + \frac{T_{moonset}}{T_E^{rot}} = \\
-  & = \frac{107'}{39343'} + \frac{2'}{1440'} = \\
-  & = 4.11 \cdot 10^{-3} \ ,
-\end{aligned}$$
-
-e quindi $R_{E} = R_{EM} \cdot 0.0129$, e quindi 
-
-$$\begin{aligned}
- R_{EM} & = \frac{ R_{E} }{0.0129}                     && = 494.03 \cdot 10^{3} \, \text{km} \\
- R_M    & = \pi \frac{T_{moonset}}{T_{E}^{rot}} R_{EM} && = 2.156 \cdot 10^{3} \, \text{km} \ .
-\end{aligned}$$
-
-
-```
-
-
-(physics-hs:modern:astronomy:distance-ladder:sun)=
-## Dimensioni Sole e Distanza Sole-Terra
-La coincidenza che si può osservare durante le **eclissi solari** permette di stimare il rapporto tra le dimensioni del Sole e la distanza Terra-SOle
-
-$$\frac{R_{S}}{R_{ES}} \sim \frac{R_{M}}{R_{EM}} \ .$$
-
-Per calcolare i valori assoluti, serve poter detemrminare una delle due grandezze fisiche, come ad esempmio la distanza Terra-Sole:
-- gli antichi greci stimarono la distanza Terra-Sole usando le fasi lunari: il metodo usava la misura dell'angolo in cui si osservava la mezza luna (che non corrisponde con la quadratura). Il metodo utilizzato dagli antichi incontrava i limiti tecnologici disponibili all'epoca, a cominciare dall'assenza di strumenti affidabili per misurare il tempo, soprattutto durante la notte; poichè la misura si fonda sulla misura di un angolo "piccolo", un piccolo errore ha ripercussioni enormi sulla stima della distanza: così, i greci stimarono una distanza Terra-Sole circa 20 volte il valore attualmente accettato, **todo** *discutere limiti tecnologici, sensibilità di errori di misura, metodi per ridurre incertezza con misure ripetute...; collegamento a strumenti per la misura del tempo*
-- ...bisogna aspettare il XVII e il XVIII secolo per la proposta di J.Gregory e **E.Halley** (1656-1742) e la realizzazione della misura che sfruttasse la [parallasse solare durante il passaggio di Venere davanti al Sole avvenuto nel 1761 e nel 1769](physics-hs:modern:astronomy:distance-ladder:sun:venus), dati riassunti da J.Lalande nel 1771 nella misura di 8.6" di parallasse solare, equivalente a circa 24000 raggi terrestri, circa il 2.5\% maggiore della misura comunemente accettata oggi (di cosa? raggio medio? semiasse maggiore?...).
-
-```{prf:example} Il limite della tecnologia dei greci, la sensibilità delle misure e la stima errata
-
-$$R_{EM} = R_{ES} \sin \varphi \ ,$$
-
-con $\varphi$ l'angolo tra la quadratura e la condizione di mezza luna sulla traiettoria della Luna attorno alla Terra. Questo angolo è molto piccolo, ed esplicitando il valore della distanza Terra-Sole in funzione della distanza Terra-Luna (data per nota) e l'angolo $\varphi$, si ottiene la formula
-
-$$R_{ES} = R_{EM} \frac{1}{\sin \varphi} \ ,$$
-
-
-```
--->
 
 ```{prf:example} E.Halley, I.Newton e la gravitazione universale
 Halley prevede la periodicità della comparsa della cometa, alla quale fu dato il suo nome, applicando le [leggi della dinamica](physics-hs:mechanics:dynamics) e la [**legge di gravitazione universale di Newton**](physics-hs:mechanics:actions:gravitation:newton).
@@ -345,11 +259,11 @@ La dimostrazione delle leggi di Keplero con le [equazioni della dinamica](physic
 Per stabilire le dimensioni assolute delle orbite nel sistema solare era necessario conoscere almeno una dimensione assoluta: la misura della distanza tra Terra e Sole, definita come **unità astronomica**, $\text{UA}$, fu ottenuta per la prima volta grazie alle misure del 1761 e del 1769 del transito di Venere davanti al Sole.
 
 <iframe 
-    src="script/mars_recon_demo.html" 
+    src="script/mars_recon_canvas.html" 
     width="100%" 
-    height="800px" 
+    height="900px" 
     frameborder="0" 
-    scrolling="no">
+    scrolling="auto">
 </iframe>
 
 
