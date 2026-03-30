@@ -46,6 +46,7 @@ Alcune dimensioni **todo** aggiungere incertezza
 ```
 
 
+(physics-hs:modern:astronomy:distance-ladder:earth-radius)=
 ## Dimensioni Terra
 
 La Terra non ha forma sferica, ma è "schiacciata ai poli". Il raggio medio vale circa
@@ -54,7 +55,7 @@ $$R_E = 6.373 \cdot 10^{3} \, \text{k}m \ ,$$
 
 mentre raggio equatoriale e polare valgono rispettivamente $6.378 \cdot 10^{3} \, \text{km}$ e $6.357 \cdot 10^{3} \, \text{km}$.
 
-**Eratostene** di Cirene (III secolo a.C.) usò la miusra della lunghezza dell'ombra di un bastone di dimensioni note a mezzogiorno in due città differenti, Alessandria d'Egitto ($31^\circ 11'51'' \text{N}$ $29^\circ 53'33'' \text{E}$) e Siene, l'odierna Assuan ($24^\circ 05' \text{N}$ $32^\circ 56' \text{E}$). 
+**Eratostene** di Cirene (**III secolo a.C.**) usò la miusra della lunghezza dell'ombra di un bastone di dimensioni note a mezzogiorno in due città differenti, Alessandria d'Egitto ($31^\circ 11'51'' \text{N}$ $29^\circ 53'33'' \text{E}$) e Siene, l'odierna Assuan ($24^\circ 05' \text{N}$ $32^\circ 56' \text{E}$). 
 
 ```{prf:example} Sensibilità del valore del raggio alle misure
 
@@ -75,12 +76,136 @@ avendo usato l'espansione in serie di Taylor per la funzione $f(\Delta \theta)$,
 <!--
 Conti con le misure note ad oggi, cioè sapendo le coordinate delle due città, cioè senza confondere la latitudine di Assuan con quella del Tropico del Cancro, $23^\circ 27' \text{N}$.
 
-$$\Delta \theta = \theta_{Assuan} = \qquad , \qquad \theta_{$$
 -->
 
 ```
 
 
+
+(physics-hs:modern:astronomy:distance-ladder:moon-sun)=
+## Luna e Sole
+
+La Luna è l'unico satellite naturale della Terra. La Luna percorre una traiettoria all'incirca ellittica attorno alla Terra con semiasse maggiore $a_{EM} = 384.4 \cdot 10^{3} \, \text{km}$ ed eccentricità $e = 0.0549$. La Luna ha raggio medio $R_M = 1.738 \cdot 10^{3} \, \text{km}$.
+
+Il Sole è la stella al "centro" del [sistema solare](astronomy-solar-system). La Terra percorre una traiettoria all'incirca ellittica attorno al Sole con semiasse maggiore di circa $a_{ES} = 149.6 \cdot 10^{6} \, \text{km}$ ed eccentricità $e = 0.0167$. La distanza media tra Terra e Sole - poco minore del semiasse maggiore dell'orbita, data la piccola eccentricità dell'orbita stessa - è usata come definizione dell'**unità astronomica**. Il Sole ha raggio medio $R_S = 695.475 \cdot 10^{3} \, \text{km}$.
+
+**Coincidenza astronomica.** Il Sole e la Luna hanno la stessa dimensione (angolare) apparente nel cielo, poiché il valore del rapporto delle loro distanze dalla Terra $\frac{a_{ES}}{a_{EM}} \sim 390$ è simiile al rapporto dei loro raggi $\frac{R_S}{R_M} \sim 400$ - con un errore di circa il 2%. 
+
+```{list-table}
+:header-rows: 0
+* - ![Eclissi di Sole: durante un'eclissi di Sole](../../media/solar-eclipse.png)
+```
+
+**Aristarco di Samo** (**III secolo a.C**) fu in grado di stimare i valori del raggio della Luna e del Sole e le dimensioni delle loro orbite, conoscendo i periodi di rivoluzione della Terra attorno al Sole, e della Luna attorno alla Terra, misurando l'angolo della Luna a metà rispetto alla quadratura, e il tempo necessario alla Luna per entrare in un'eclissi e il tempo di eclissi totale. Aristarco 
+- si accorse che il Sole è molto più grande della Terra:
+  - alla distanza della Luna dalla Terra, un'approsimazione di raggi solari paralleli produrrebbe quindi una sovrastima delle dimensioni dell'ombra terrestre sulla Luna
+  - date le dimensioni relative, è il Sole che gira attorno a un granello come la Terra?
+- si imbatté nei limiti tecnologici dell'epoca, nella misura dell'angolo sulla traiettoria in cui la Luna appare a metà. Un errore su un angolo piccolo:
+  - produsse un errore grande sulla stima delle dimensioni del Sole e della sua distanza dalla Terra. Aristarco stimò che il raggio del Sole fosse 20 volte più grande del raggio della Terra, invece delle circa 400 volte effettive
+  - produsse un errore piccolo sulla stima delle dimesnioni della Luna
+
+````{prf:example} Il metodo di Aristarco
+
+Quando possibile, viene usata l'approssimazione di angoli piccoli che permette di confondere l'angolo (espresso in radianti) con il suo seno e la sua tangente, $\alpha \sim \sin \alpha \sim \tan \alpha$.
+
+```{list-table}
+:header-rows: 0
+* - ![Metodo di Aristarco](../../media/dynamics/aristarco.png)
+```
+
+**Misura dell'angolo $\theta$, e rapporto distanze $\frac{a_{ES}}{a_{EM}}$.** Aristarco pensò di misurare l'angolo $\theta$ tra la posizione della Luna in quadratura e la Luna a metà. La sua misura di $\theta = 2.5^\circ$ portò a una stima del rapporto tra la dimensione dell'orbita della Terra attorno al Sole e della Luna attorno alla Terra di
+
+$$\frac{a_{ES}}{a_{EM}} = \frac{1}{\sin \theta} \sim 22.9 \ .$$
+
+Oggi sappiamo che il valore dell'angolo è circa $0.5^\circ$ e il rapporto è circa $400$. Mentre la stima di Aristarco del rapporto è circa 20 volte (!!!) inferiore al valore reale, la stima del raggio della Luna è poco sensibile a tale errore - vedi sotto - e ciò permise ad Aristarco di trovarne un valore sufficientemente accurato.
+
+**Coincidenza astronomica.** Poiché Luna e Sole hanno la stessa dimensione apparente in cielo, questo permette di scrivere
+
+$$\frac{a_{ES}}{a_{EM}} \sim \frac{R_S}{R_M} \ ,$$
+
+considerato noto da Aristarco. Questo rapporto viene definito $r$.
+
+**Eclissi lunare.** Aristarco usò la misura del tempo impiegato dalla Luna per entrare in eclissi $T_{in}$ e il tempo di eclissi totale $T_{tot}$ per la stima della dimensione del raggio lunare $R_M$,
+
+$$\begin{cases}
+  \Omega_M T_{in}  & = \frac{2 R_M}{a_{EM}} \\
+  \Omega_M T_{tot} & = \frac{2 \ell - 2 R_M}{a_{EM}} \ ,
+\end{cases}$$
+
+con $\ell$ il raggio dell'ombra della Terra sulla traiettoria della Luna. Facendo il rapporto tra le ultime due espressioni, è possibile trovare una relazione tra il raggio lunare e la dimensione dell'ombra,
+
+$$\ell = R_M \left[  1 + \frac{T_{tot}}{T_{in}} \right] \ .$$
+
+Il rapporto tra i tempi viene definito $\tau$. Usando la similitudine dei triangoli,
+
+$$
+ R_M  = \frac{1+r}{r} \frac{1}{2+\tau} R_E \ .
+$$
+
+```{dropdown} Similitudine triangoli - dettagli
+
+$$\begin{aligned}
+ \frac{R_S - R_E}{a_{ES}} & = \frac{R_S - \ell}{a_ES + a_EM} \\
+ \frac{r R_M - R_E}{r a_{EM}} & = \frac{r R_M - R_M \left( 1 + \tau \right)}{( r + 1 ) a_{EM}} \\
+ \frac{R_{E}}{r} & = R_M \left( 1 - \frac{r}{r+1} + \frac{1+\tau}{1+r} \right) \\
+ \frac{R_{E}}{r} & = R_M \frac{2 + \tau}{1 + r} \\
+ R_M & = \frac{1+r}{r} \frac{1}{2+\tau} R_E \ .
+\end{aligned}$$
+
+```
+
+**Osservazione.** La prima frazione è poco sensibile anche a grandi errori di $r$ per $r \gg 1$: per questa ragione, mentre la stima di Aristarco di $r^{Ari} = 22.9$ era sbagliata di circa $20$ volte rispetto al valore reale $r=400$, il suo effetto nella stima di $R_M$ è molto piccolo
+
+$$\frac{1+r^{Ari}}{r^{Ari}} = 1.044 \quad , \quad \frac{1+r}{r} = 1.0025 \ ,$$
+
+circa il 4%.
+
+**Valore del raggio lunare, $R_M$.** Con la misura dell tempo (massimo) di un'eclissi totale di circa $T_{tot} = 1\text{h}47'$, e il tempo di inizio dell'eclissi $T_{in} = 1 \text{h}$, il rapporto dei tempi è circa
+
+$$\tau = \frac{T_{tot}}{T_{in}} \sim \frac{107'}{60'} = 2.675 \ ,$$
+
+e la stima di Aristarco del raggio lunare è
+
+$$R_M \sim \frac{1.044}{3.783} R_E = 0.284 \cdot R_E \ ,$$
+
+o, con il valore del raggio terrestre $R_E = 6373 \, \text{km}$,
+
+$$R_M \sim 1758 \, \text{km} \ .$$
+
+
+````
+
+
+```{prf:example} Raggi paralleli e sovrastima dimensioni dell'ombra terrestre sulla Luna
+
+L'approssimazione di raggi paralleli corrisponde all'ipotesi che l'ombra della Terra sulla Luna abbia le stesse dimensioni della Terra, e quindi equivale a imporre nel sistema di equazioni
+
+$$\begin{cases}
+  \Omega_M T_{in}  & = \frac{2 R_M}{a_{EM}} \\
+  \Omega_M T_{tot} & = \frac{2 \ell - 2 R_M}{a_{EM}} \ ,
+\end{cases}$$
+
+il valore $\ell = R_E$. Dal rapporto tra le due equazioni si ottiene quindi
+
+$$\frac{R_E}{R_M} - 1 = \tau \ ,$$
+
+$$R_M = \frac{1}{1+\tau} R_E$$
+
+```
+
+```{prf:example} Ombra e penombra
+
+Il Sole non è una sorgente luminosa puntiforme...
+
+```
+
+<!--
+<div style="display: flex; justify-content: center;">
+  <img src="../../media/solar-eclipse.png" width="500">
+</div>
+-->
+
+<!--
 ## Distanza Terra-Luna e dimensioni Luna
 
 La Luna compie una traiettoria attorno alla Terra all'incirca ellittica con semiasse maggiore $a_{EM} = 384.4 \cdot 10^{3} \, \text{km}$, eccentricità $e = 0.0549$. La luna ha raggio medio $R_M = 1.738 \cdot 10^3 \, \text{km}$.
@@ -91,27 +216,30 @@ La Luna compie una traiettoria attorno alla Terra all'incirca ellittica con semi
 
 Si ipotizza che il Sole sia sufficientemente lontano dal sistema Terra-Luna che l'ombra proiettata dalla Terra abbia raggi paralleli. La durata massima di un'eclissi totale è di $1$ ora e $47$ minuti. La Luna compie un'orbita completa attorno alla Terra[^moon-month] in circa $27$ giorni, $7$ ore e $43$ minuti.
 
-<!--
-Approssimando la traiettoria della Luna attorno alla Terra con una traiettoria circolare, e trascurando il moto della Terra attorno al Sole durante un'eclissi, la distanza percorsa dalla Luna durante la fase di eclissi totale è
-
-$$d = 2 R_E - 2 R_M \ .$$
--->
-
 [^moon-month]: Il periodo di rotazione della Luna attorno alla Terra è definito come **mese siderale** e dura circa $27$ giorni, $7$ ore, $43$ minuti. Il **mese sinodico** è il periodo di tempo affinché la Luna si riallinei con Sole e Terra: questo mese è più lungo del precedente poiché la Terra compie il suo moto di rivoluzione attorno al Sole nella stessa direzione del moto di rivoluzione della Luna attorno alla Terra, ed è di circa $29$ giorni, $12$ ore e $44$ minuti.
 
 ```
 
 ```{prf:example} Nascita della Luna e diametro
 
-<!--
-L'alba della Luna dura circa $2$ minuti, ed è un effetto della rotazione della Terra attorno al proprio asse.
--->
+L'alba della Luna (dove? Dove la Luna si muove in direzione perpendicolare all'orizzonte) dura circa $2$ minuti, ed è un effetto della rotazione della Terra attorno al proprio asse. 
+
+$$
+\frac{2 R_M}{2 \pi R_{EM}}  = \frac{T_{moonset}}{T_E^{rot}}
+$$
+
+Il rapporto tra distanza Terra-Luna e il raggio della Luna vale quindi
+
+$$\frac{R_{EM}}{R_M} = \frac{1}{\pi} \frac{T_E^{rot}}{T_{moonset}} = \frac{1}{\pi} \frac{24 \times 60 \text{min}}{2 \text{min}} = 229.2 \ .$$
+
+**Osservazione.** Questa stima è compatibile con i valori oggi noti del semiasse maggiore $a_{EM}$ dell'orbita (confondibile con il raggio di un'orbita circolare, data la piccola eccentricità dell'orbita ellittica), e del raggio lunare medio $R_M$,
+
+$$\frac{a_{EM}}{R_M} = \frac{384.4}{1.74} = 220.92 \ . $$
 
 ```
 
 ```{prf:example} Sistema di equazioni
 
-<!--
 $$\begin{cases}
   \frac{2 R_E - 2 R_M}{2 \pi R_{EM}} = \frac{T_{total \, ecl.}}{T_M} \\
   \frac{2 R_M}{2 \pi R_{EM}}  = \frac{T_{moonset}}{T_E^{rot}}
@@ -125,8 +253,13 @@ $$\begin{aligned}
   & = 4.11 \cdot 10^{-3} \ ,
 \end{aligned}$$
 
-e quindi $R_{E} = R_{EM} * 0.129$, o $$
--->
+e quindi $R_{E} = R_{EM} \cdot 0.0129$, e quindi 
+
+$$\begin{aligned}
+ R_{EM} & = \frac{ R_{E} }{0.0129}                     && = 494.03 \cdot 10^{3} \, \text{km} \\
+ R_M    & = \pi \frac{T_{moonset}}{T_{E}^{rot}} R_{EM} && = 2.156 \cdot 10^{3} \, \text{km} \ .
+\end{aligned}$$
+
 
 ```
 
@@ -149,19 +282,9 @@ con $\varphi$ l'angolo tra la quadratura e la condizione di mezza luna sulla tra
 
 $$R_{ES} = R_{EM} \frac{1}{\sin \varphi} \ ,$$
 
-<!--
-che si dimostra molto sensibile all'errore di misura dell'angolo. Usando un'approssimazione di Taylor al primo ordine della funzione $\frac{1}{\sin (\varphi + \Delta \varphi)}$ per $\Delta \varphi = 0$, si ottiene
-
-$$\frac{1}{\sin (\varphi + \Delta \varphi} = \frac{1}{\sin \varphi} - \Delta \varphi \frac{1}{\sin \varphi} + o(\Delta \varphi) \ ,$$
-
-e 
-
-$$\frac{\Delta R_{ES}}{R_{EM}} \sim - \frac{\Delta \varphi}{\sin \varphi}$$
--->
-
 
 ```
-
+-->
 
 ```{prf:example} E.Halley, I.Newton e la gravitazione universale
 Halley prevede la periodicità della comparsa della cometa, alla quale fu dato il suo nome, applicando le [leggi della dinamica](physics-hs:mechanics:dynamics) e la [**legge di gravitazione universale di Newton**](physics-hs:mechanics:actions:gravitation:newton).
