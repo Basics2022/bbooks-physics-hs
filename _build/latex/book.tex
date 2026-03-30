@@ -87,7 +87,7 @@
         
 
 \title{Fisica per le superiori}
-\date{08 mag 2025}
+\date{30 mar 2026}
 \release{}
 \author{basics}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -3790,7 +3790,7 @@ l’equilibrio \sphinxstylestrong{globale} dei \sphinxstylestrong{momenti estern
 \end{itemize}
 \begin{equation*}
 \begin{split}\begin{cases}
-  \sum_k \vec{F}^{ext} = \vec{0} \\
+  \sum_k \vec{F}^{ext}_k = \vec{0} \\
   \sum_k \vec{M}^{ext}_{k,H} = \vec{0} \ .  
 \end{cases}\end{split}
 \end{equation*}
@@ -3819,6 +3819,66 @@ ingranaggi e trasmissioni
 
 \section{Statica di sistemi composti}
 \label{\detokenize{ch/mechanics/statics-composite:statica-di-sistemi-composti}}\label{\detokenize{ch/mechanics/statics-composite:physics-hs-statics-composite}}\label{\detokenize{ch/mechanics/statics-composite::doc}}
+\sphinxAtStartPar
+Un sistema composto \sphinxhyphen{} o complesso \sphinxhyphen{} è un sistema formato da diversi sotto\sphinxhyphen{}sistemi \sphinxhyphen{} o elementi \sphinxhyphen{} che interagiscono in generale interagiscono tra di loro.
+
+\sphinxAtStartPar
+Le condizioni necessarie all’equilibrio di un sistema composto o di un sistema continuo deformabile%
+\begin{footnote}[1]\sphinxAtStartFootnote
+Un sistema continuo deformabile può essere pensato come un sistema formato da un numero infinito di sottosistemi di dimensione infinitesima, che si scambiano tra di loro azioni meccaniche. Nel modello di un sistema continuo \sphinxstyleemphasis{non polare} di Cauchy, porzioni adiacenti del sistema si scambiano solo forze e non momenti. La condizione di equilibrio per alcuni sistemi deformabili viene discussa nella {\hyperref[\detokenize{ch/continuum/intro:physics-hs-continuum-intro}]{\sphinxcrossref{\DUrole{std,std-ref}{sezione sulla meccanica del continuo}}}}. Per quanto riguarda la {\hyperref[\detokenize{ch/continuum/fluids:fluids-statics}]{\sphinxcrossref{\DUrole{std,std-ref}{statica dei fluidi}}}}, la condizione di equilibrio globale del sistema \sphinxhyphen{} che impone l’equilibrio di tutte le sue parti \sphinxhyphen{} dà origine alla {\hyperref[\detokenize{ch/continuum/fluids:fluids-statics-stevino}]{\sphinxcrossref{\DUrole{std,std-ref}{legge di Stevino}}}}, come una forma differenziale \sphinxhyphen{} locale, di tutte le sue parti \sphinxhyphen{} della condizione di equilibrio.
+%
+\end{footnote} \sphinxhyphen{} o di un sistema composto di sottosistemi di tipo diverso: puntiformi, estesi rigidi, estesi deformabili \sphinxhyphen{} sono:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+l’equilibrio di tutti i suoi sotto\sphinxhyphen{}sistemi alle forze esterni al sotto\sphinxhyphen{}sistema
+
+\item {} 
+\sphinxAtStartPar
+l’equilibrio di tutti i suoi sotto\sphinxhyphen{}sistemi ai momenti esterni al sotto\sphinxhyphen{}sistema
+
+\end{itemize}
+
+\sphinxAtStartPar
+cioé per il sottosistema \(s\), la somma di tutte le forze esterne al sottosistema e la somma di tutti i momenti esterni al sottositema rispetto a un polo devono essere uguali a zero,
+\begin{equation*}
+\begin{split}\begin{cases}
+  \sum_k \vec{F}^{ext,s}_k = \vec{0} \\
+  \sum_k \vec{M}^{ext,s}_{k,H} = \vec{0} \ .  
+\end{cases}\end{split}
+\end{equation*}\label{ch/mechanics/statics-composite:example-0}
+\begin{sphinxadmonition}{note}{Example 10.3.1 (Equilibrio di un sistema composto)}
+
+
+
+\sphinxAtStartPar
+Esempio: due corpi di massa \(m\) collegati da una molla lineare ideale, di massa trascurabile, e di costante elastica \(k\) e posti su un piano orizzontale senza attrito, senza forze esterne oltre al loro peso e le reazioni normali del piano, e con allungamento iniziale della molla non nullo e uguale a \(\Delta x_0\).
+
+\sphinxAtStartPar
+Sul sistema composto dai due corpi e dalla molla agiscono forze esterne con risultante nulla, ma non su tutti i suoi sotto\sphinxhyphen{}sistemi:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+sulla molla senza massa agiscono due forze ai suoi estremi uguali e contrarie \(\vec{F}_1 = - k \Delta \vec{x}\), \(\vec{F}_2 = k \Delta \vec{x}\); quindi la risultante delle forze agenti sulla molla è nulla;
+
+\item {} 
+\sphinxAtStartPar
+sul corpo \(1\) agiscono forza peso e reazione del piano (che si equilibrano) e la reazione della molla \(-\vec{F}_1 = k \Delta \vec{x}\); quindi la risultante delle forze esterne al corpo \(1\) agenti sul corpo \(1\) è in generale diversa da zero e uguale a  \(\vec{R}^{1,ext} = -\vec{F}_1 = k \Delta \vec{x}\)
+
+\item {} 
+\sphinxAtStartPar
+sul corpo \(2\) agiscono forza peso e reazione del piano (che si equilibrano) e la reazione della molla \(-\vec{F}_2 =-k \Delta \vec{x}\); quindi la risultante delle forze esterne al corpo \(2\) agenti sul corpo \(2\) è in generale diversa da zero e uguale a  \(\vec{R}^{2,ext} = -\vec{F}_2 =-k \Delta \vec{x}\)
+
+\end{itemize}
+
+\sphinxAtStartPar
+Se l’allungamento iniziale non è nullo, i due corpi non rimangono fermi \sphinxhyphen{} in condizioni statiche, di equilibrio \sphinxhyphen{} ma i due corpi del sistema oscillano, anche se la risultante delle forze esterne al sistema è nulla.
+\end{sphinxadmonition}
+
+
+\bigskip\hrule\bigskip
+
+
 \sphinxstepscope
 
 
@@ -4452,6 +4512,14 @@ Dal punto di vista operativo, la massa di un sistema \sphinxhyphen{} quando poss
 
 \sphinxAtStartPar
 \sphinxstylestrong{Distribuzione di massa.}
+\label{ch/mechanics/inertia:inertia-center-of-mass}
+\begin{sphinxadmonition}{note}{Definition 11.1 (Centro di massa)}
+
+
+
+\sphinxAtStartPar
+Il centro di massa \(\dots\)
+\end{sphinxadmonition}
 
 
 
@@ -5524,6 +5592,9 @@ che può essere riscritta come
 \section{Collisioni}
 \label{\detokenize{ch/mechanics/dynamics-collisions:collisioni}}\label{\detokenize{ch/mechanics/dynamics-collisions:physics-hs-mechanics-dynamics-collisions}}\label{\detokenize{ch/mechanics/dynamics-collisions::doc}}
 \sphinxAtStartPar
+\sphinxstylestrong{todo} Sistemare il paragrafo: 1) introduzione, 2) definizione di coefficiente di restituzione, 3) urti tra sfere, 4) problemi
+
+\sphinxAtStartPar
 Una descrizione dettagliata delle collisioni tra sistemi qualsiasi va ben al di là dello scopo di un primo approccio alla meccanica.
 
 \sphinxAtStartPar
@@ -5588,6 +5659,81 @@ In termini di energia cinetica, nel sistema di riferimento del centro di massa
 {K^{+ '}} & = \frac{1}{2 m_1} {\vec{p}_1^{+ '}}  \cdot {\vec{p}_1^{+ '}}  + \frac{1}{2 m_2} {\vec{p}_2^{+ '}}  \cdot {\vec{p}_2^{+ '}}  = \\
        & = \varepsilon^2 \left[ \frac{1}{2 m_1} {\vec{p}_1^{- '}}  \cdot {\vec{p}_1^{- '}}  + \frac{1}{2 m_2} {\vec{p}_2^{- '}}  \cdot {\vec{p}_2^{- '}}  \right] = \varepsilon^2 {K^{- '}} 
 \end{aligned}\end{split}
+\end{equation*}
+
+\subsection{Collisione tra due sfere}
+\label{\detokenize{ch/mechanics/dynamics-collisions:collisione-tra-due-sfere}}\label{\detokenize{ch/mechanics/dynamics-collisions:physics-hs-mechanics-dynamics-collisions-two-spheres}}
+
+\subsubsection{Urto elastico}
+\label{\detokenize{ch/mechanics/dynamics-collisions:urto-elastico}}\label{\detokenize{ch/mechanics/dynamics-collisions:physics-hs-mechanics-dynamics-collisions-two-spheres-elastic}}
+\sphinxAtStartPar
+In questa sezione si studia l’urto elastico tra due sfere rigide di massa \(m\) e raggio \(R\), assumendo che la forza (impulsiva) scambiata tra le due sfere nel momento dell’urto sia normale alla superficie dell’urto. La velocità \(\vec{v}_i\) delle due sfere dopo l’urto può essere scritta in funzione della velocità \(\vec{v}'_i\) prima dell’urto e del vettore unitario \(\hat{n}\) che ha la direzione della congiungente dei due centri delle sfere nel momento dell’impatto,
+\begin{equation*}
+\begin{split}\begin{cases}
+  \vec{v}_1 & = \vec{v}'_1 + \hat{n} \hat{n} \cdot ( \vec{v}'_2 - \vec{v}'_1 ) \\
+  \vec{v}_2 & = \vec{v}'_2 - \hat{n} \hat{n} \cdot ( \vec{v}'_2 - \vec{v}'_1 ) \ .
+\end{cases}\end{split}
+\end{equation*}\subsubsection*{Dettagli}
+
+\sphinxAtStartPar
+In assenza di forze esterne \sphinxhyphen{} o limitandosi all’istante dell’urto, in assenza di forze esterne impulsive \sphinxhyphen{} in un urto elastico si conservano sia la quantità di moto del sistema, sia la sua energia cinetica. Si può quindi scrivere
+\begin{equation*}
+\begin{split}\begin{cases}
+  m \vec{v}_1 + m \vec{v}_2 = m \vec{v}'_1 + m \vec{v}'_2 \\
+  \dfrac{1}{2} m \left| \vec{v}_1 \right|^2 + \dfrac{1}{2} m \left| \vec{v}_2 \right|^2 = \dfrac{1}{2} m \left| \vec{v}'_1 \right|^2 + \dfrac{1}{2} m \left| \vec{v}'_2 \right|^2 \\
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+L’equazione della quantità di moto può essere scritta
+\begin{equation*}
+\begin{split}
+  \vec{v}_1 - \vec{v}'_1 = - \left( \vec{v}_2 - \vec{v}'_2 \right)
+\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e usata nell’equazione dell’energia cinetica
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \left| \vec{v}_1 \right|^2 - \left| \vec{v}'_1 \right|^2 & = \left| \vec{v}'_2 \right|^2 - \left| \vec{v}_2 \right|^2  \\
+  \left( \vec{v}_1 - \vec{v}'_1 \right) \cdot \left( \vec{v}_1 + \vec{v}'_1 \right) & = - \left( \vec{v}'_2 - \vec{v}_2 \right) \cdot \left( \vec{v}'_2 + \vec{v}_2 \right) \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La differenza di velocità ha la direzione normale alle due superfici nel punto e nel momento di contatto. Chiamando \(\vec{r}_1\), \(\vec{r}_2\) la posizione dei centri delle sfere nell’istante del contatto, identificato dalla condizione \(|\vec{r}_2 - \vec{r}_1| = 2 R\), il vettore normale è \(\hat{n} = \frac{\vec{r}_2 - \vec{r}_1}{2R}\). La differenza della velocità della sfera 1 dopo e prima dell’urto può quindi essere scritta come
+\begin{equation*}
+\begin{split}\vec{v}_1 - \vec{v}'_1 = \hat{n} \, \hat{n} \cdot ( \vec{v}_1 - \vec{v}'_1 ) = \hat{n} ( v_{1,n} - v'_{1,n} ) = \hat{n} \Delta v_{1,n} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Usando questa relazione nell’equazione dell’energia cinetica, si può scrivere
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \Delta v_{1,n} \hat{n} \cdot ( \vec{v}_1 + \vec{v}'_1 ) & = \Delta v_{1,n} \hat{n} \cdot ( \vec{v}_2 + \vec{v}'_2 ) \\
+  v_{1,n} + v'_{1,n} & = v_{2,n} + v'_{2,n} \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Mettendo a sistema le due relazioni ricavata dall’equazione della quantità di moto e dall’energia cinetica,
+\begin{equation*}
+\begin{split}\begin{cases}
+  v_{1,n} - v'_{1,n} & = - v_{2,n} + v'_{2,n} \\
+  v_{1,n} + v'_{1,n} & = v_{2,n} + v'_{2,n} \\
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+si ottengono le relazioni
+\begin{equation*}
+\begin{split}\begin{aligned}
+  v'_{1,n} & = v_{2,n} \\
+  v'_{2,n} & = v_{1,n} \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi l’espressione delle velocità dopo l’urto in funzione delle velocità prima dell’urto e del vettore normale \(\hat{n}\),
+\begin{equation*}
+\begin{split}\begin{cases}
+  \vec{v}_1 & = \vec{v}'_1 + \hat{n} \hat{n} \cdot ( \vec{v}'_2 - \vec{v}'_1 ) \\
+  \vec{v}_2 & = \vec{v}'_2 - \hat{n} \hat{n} \cdot ( \vec{v}'_2 - \vec{v}'_1 ) \\
+\end{cases}\end{split}
 \end{equation*}
 
 \subsection{Problemi}
@@ -6768,6 +6914,241 @@ Un proiettile colpisce un sistema rigido di due masse concentrate, libero e iniz
 \end{sphinxuseclass}
 \end{sphinxuseclass}
 \end{sphinxuseclass}\subsubsection*{Soluzione.}
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo}
+
+
+
+\begin{sphinxuseclass}{sd-container-fluid}
+\begin{sphinxuseclass}{sd-sphinx-override}
+\begin{sphinxuseclass}{sd-mb-4}
+\begin{sphinxuseclass}{sd-row}
+\begin{sphinxuseclass}{sd-g-2}
+\begin{sphinxuseclass}{sd-g-xs-2}
+\begin{sphinxuseclass}{sd-g-sm-2}
+\begin{sphinxuseclass}{sd-g-md-2}
+\begin{sphinxuseclass}{sd-g-lg-2}
+\begin{sphinxuseclass}{sd-col}
+\begin{sphinxuseclass}{sd-d-flex-row}
+\begin{sphinxuseclass}{sd-col-8}
+\begin{sphinxuseclass}{sd-col-xs-8}
+\begin{sphinxuseclass}{sd-col-sm-8}
+\begin{sphinxuseclass}{sd-col-md-8}
+\begin{sphinxuseclass}{sd-col-lg-8}
+\begin{sphinxuseclass}{sd-card}
+\begin{sphinxuseclass}{sd-sphinx-override}
+\begin{sphinxuseclass}{sd-w-100}
+\begin{sphinxuseclass}{sd-shadow-sm}
+\begin{sphinxuseclass}{sd-card-body}
+\begin{sphinxuseclass}{sd-card-title}
+\begin{sphinxuseclass}{sd-font-weight-bold}Doppia collisione 
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\sphinxAtStartPar
+Si usi un modello di doppia collisione in serie (non una collisione tripla in simultanea), studiando prima la collisione tra la palla grossa e il pavimento, e successivamente la collisione tra la palla grossa e la palla piccola.
+
+\sphinxAtStartPar
+\sphinxhref{https://www.youtube.com/shorts/g2F5msCUIJw}{Short YouTube dell’esperimento di Walter Lewin}
+\sphinxhref{https://youtu.be/BPIFFGNFu9A?si=SBTvgEZntte1654G}{Video con qualche commento di W.Lewin}
+
+
+
+
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{sd-col}
+\begin{sphinxuseclass}{sd-d-flex-row}
+\begin{sphinxuseclass}{sd-col-4}
+\begin{sphinxuseclass}{sd-col-xs-4}
+\begin{sphinxuseclass}{sd-col-sm-4}
+\begin{sphinxuseclass}{sd-col-md-4}
+\begin{sphinxuseclass}{sd-col-lg-4}
+\begin{sphinxuseclass}{sd-card}
+\begin{sphinxuseclass}{sd-sphinx-override}
+\begin{sphinxuseclass}{sd-w-100}
+\begin{sphinxuseclass}{sd-shadow-sm}
+\begin{sphinxuseclass}{sd-card-body}
+
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+
+\subsubsection*{Soluzione.}
+
+\sphinxAtStartPar
+Si identificano qui alcuni istanti:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+0: istante iniziale
+
+\item {} 
+\sphinxAtStartPar
+1: istante vicino a parete, immediatamente prima del primo urto
+
+\item {} 
+\sphinxAtStartPar
+2: istante vicino a parete, immediatamente dopo il primo urto e immediatamente prima del secondo urto
+
+\item {} 
+\sphinxAtStartPar
+3: istante vicino a parete, immediatamente dopo il secondo urto
+
+\item {} 
+\sphinxAtStartPar
+4: istante in cui la pallina piccola raggiunge la quota massima.
+
+\end{itemize}
+
+\sphinxAtStartPar
+\sphinxstylestrong{\(0 \rightarrow 1\). Dinamica regolare.} Il principio di conservazione dell’energia meccanica (in assenza di azioni non conservative), permette di calcolare la velocità delle due palle poco prima del primo impatto. Per la massa \(A\) (si può scrivere lo stesso bilancio per la massa \(B\))
+\begin{equation*}
+\begin{split}0 = E_{A,0} - E_{A,1} = m_A g h_0 - \frac{1}{2} m_A v_1^2 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi
+\begin{equation*}
+\begin{split}v_{A,1} = v_{B,1} = - \sqrt{2 g h_0} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+avendo scelto la convenzione di spostamento e velocità positive verso l’alto.
+
+\sphinxAtStartPar
+\sphinxstylestrong{\(1 \rightarrow 2\). Prima collisione elastica.} In un urto elastico si conserva l’energia cinetica del sistema «palla grande»+Terra. In assenza di moviemnto della superficie terrestre (si può studiare il problema di urto tra due corpi, di cui uno \sphinxhyphen{} la Terra \sphinxhyphen{} con massa enorme rispetto all’altro e concludere che la sua velocità rimane invariata prima e dopo l’urto), si conclude che la palla grande dopo l’urto ha una velocità uguale e contraria alla velocità \(v_{1,A}\),
+\begin{equation*}
+\begin{split}v_{A,2} = - v_{A,1} = \sqrt{2 g h_0} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{\(2 \rightarrow 3\). Seconda collisione elastica.} Nel secondo urto elastico tra la palla piccola e la palla grande si possono usare la conservazione dell’energia cinetica (urto istantaneo, nessuna dissipazione), e la conservazione della quantità di moto (nessuna forza esterna impulsiva agente sul sistema). La palla piccola nell’istante 2 non ha ancora subito nessuna collisione, e quindi \(v_{B,2} = v_{B,1}\)
+\begin{equation*}
+\begin{split}\begin{cases}
+  0 = \Delta E = \frac{1}{2} m_A v_{A,3}^2 + \frac{1}{2} m_B v_{B,3}^2 - \left( \frac{1}{2} m_A v_{A,2}^2 + \frac{1}{2} m_B v_{B,2}^2 \right) \\
+  0 = \Delta Q = m_A v_{A,3} + m_B v_{B,3} - \left( m_A v_{A,2} + m_B v_{B,2} \right) \\
+\end{cases}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}\begin{cases}
+  0 = m_A v_{A,3}^2 + m_B v_{B,3}^2 - \left( m_A + m_B \right) v_{A,2}^2 \\
+  0 = m_A v_{A,3} + m_B v_{B,3} - v_{A,2} \left( m_A - m_B \right) \\
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Ricavando \(v_{A,3}\) dalla seconda equazione,
+\begin{equation*}
+\begin{split}v_{A,3} = - \frac{m_B}{m_A} v_{B,3} + \left( 1 - \frac{m_B}{m_A} \right) v_{A,2} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e inserendo nella prima
+\begin{equation*}
+\begin{split}\begin{aligned}
+  0
+  & = m_A \left[ - \frac{m_B}{m_A} v_{B,3} + \left( 1 - \frac{m_B}{m_A} \right) v_{A,2} \right]^2 + m_B v_{B,3}^2 - \left( m_A + m_B \right) v_{A,2}^2 \\
+  & = m_B \left( 1 + \frac{m_B}{m_A} \right) v_{B,3}^2 - 2 m_B \left( 1 - \frac{m_B}{m_A} \right) v_{A,2} v_{B,3} + \left( m_A - 2 m_B + \frac{m_B^2}{m_A} - m_A - m_B  \right) v_{A,2}^2 \\
+  & = m_B \left( 1 + \frac{m_B}{m_A} \right) v_{B,3}^2 - 2 m_B \left( 1 - \frac{m_B}{m_A} \right) v_{A,2} v_{B,3} + m_B \left( - 3 + \frac{m_B}{m_A} \right) v_{A,2}^2 \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Dopo aver semplificato per \(m_B \ne 0\), il discriminante dell’equazione di secondo grado è sempre positivo (con l’eccezione di essere nullo, se le palle sono appoggiate sul tavolo nella loro condizione iniziale),
+\begin{equation*}
+\begin{split}\begin{aligned}
+  \frac{\Delta}{4}
+  & = \left( 1 - r \right)^2 v_{A,2}^2 - \left( 1 + r \right) \left( - 3 + r \right ) v_{A,2}^2 = \\
+  & = v_{A,2}^2 \left( 1 - 2 r + r^2 + 3 + 3 r - r - r^2 \right) = \\
+  & = 4 \, v_{A,2}^2 > 0
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e la soluzione dell’equazione restituisce la velocità della palla piccola dopo l’urto,
+\begin{equation*}
+\begin{split}\begin{aligned}
+  v_{B,3} & = \frac{1}{1 + \frac{m_B}{m_A}} \left[ \left(1-\frac{m_B}{m_A}\right) \mp 2  \right] v_{A,2} \\
+  v_{B,3} & =
+\begin{cases}
+  \frac{1}{1+\frac{m_B}{m_A}} \left( 3 - \frac{m_B}{m_A} \right) v_{A,2} && \text{(Soluzione fisica)} \\
+   - v_{A,2}                                                             && \text{(Soluzione in assenza di urto, vedi sotto)} \\
+\end{cases}
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+mentre la velocità della palla grande è
+\begin{equation*}
+\begin{split}\begin{aligned}
+  v_{A,3} 
+  & = v_{A,2} - \frac{m_B}{m_A} ( v_{A,2} + v_{B,3} ) = \\
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Discussione della soluzione fisica e «non fisica».} In un urto con il la pallina piccola (il corpo B) che ha velocità iniziale verso il basso e quindi negativa, la velocità verticale della palla grande (il corpo A) deve diminuire dopo la collisione, e quindi \(v_{A,3} < v_{A,2}\). La validità di questa disequazione dipende dal segno del termine
+\begin{equation*}
+\begin{split}-\frac{m_B}{m_A} ( v_{A,2} + v_{B,3} ) < 0 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi dal termine \(v_{A,2} + v_{B,3} > 0\). La prima soluzione implica
+\begin{equation*}
+\begin{split}\frac{v_{A,2} + v_{B,3}}{v_{A,2}} = 1 + \frac{3 - r}{1+r} = \frac{1+r+3-r}{1+r} = \frac{4}{1+r} > 0 \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+La seconda soluzione implica
+\begin{equation*}
+\begin{split}v_{A,3} = v_{A,2} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+cioè nessun cambiamento della velocità delle due palle negli istanti prima e dopo l’urto (che quindi non è avvenuto).
+
+\sphinxAtStartPar
+\sphinxstylestrong{\(3 \rightarrow 4\). Dinamica regolare.} Usando ancora la conservazione dell’energia meccanica per la pallina piccola (corpo \(B\)), si può calcolare la quota massima raggiunta, rispetto alla quota nel momento dell’urto
+\begin{equation*}
+\begin{split}0 = E_{B,4} - E_{B,3} = m_B g H_{B,4} - \frac{1}{2} m_B v_{B,3}^2 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi
+\begin{equation*}
+\begin{split}\begin{aligned}
+  H_{B,4}
+  & = \frac{1}{2 g} v_{B,3}^2 = \\
+  & = \frac{1}{2g} \left[ \frac{1}{1+\frac{m_B}{m_A}} \left( 3 - \frac{m_B}{m_A} \right) v_{A,2} \right]^2 = \\
+  & = \frac{1}{2g} \left[ \frac{1}{1+\frac{m_B}{m_A}} \left( 3 - \frac{m_B}{m_A} \right) \right]^2 2 g h_0 = \\
+  & = h_0 \, \left[ \frac{1}{1+\frac{m_B}{m_A}} \left( 3 - \frac{m_B}{m_A} \right) \right]^2 \ ,
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Nel limite in cui la massa della palla grande è molto maggiore della massa della palla piccola, \(m_B \ll m_A\), \(\frac{m_B}{m_A} \rightarrow 0\), la quota raggiunta dalla palla piccola \sphinxhyphen{} rispetto all’istante dell’urto \sphinxhyphen{} è
+\begin{equation*}
+\begin{split}H_{B,4} = 9 h_0 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e quindi il punto più basso della pallina raggiunge la quota sopra il piano orizzontale \(H_{B,4} + 2 R_A\), e il suo centro di massa la quota \(H_{B,4} + 2 R_A + R_B\).
+\subsubsection*{Discussione collisione tripla}
 
 \sphinxAtStartPar
 \sphinxstylestrong{todo}
@@ -8691,366 +9072,14 @@ Nella condizione limite in cui il disco si stacca dal corpo, la componente radia
 
 
 
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-mb-4}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-g-2}
-\begin{sphinxuseclass}{sd-g-xs-2}
-\begin{sphinxuseclass}{sd-g-sm-2}
-\begin{sphinxuseclass}{sd-g-md-2}
-\begin{sphinxuseclass}{sd-g-lg-2}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-col-8}
-\begin{sphinxuseclass}{sd-col-xs-8}
-\begin{sphinxuseclass}{sd-col-sm-8}
-\begin{sphinxuseclass}{sd-col-md-8}
-\begin{sphinxuseclass}{sd-col-lg-8}
-\begin{sphinxuseclass}{sd-card}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-w-100}
-\begin{sphinxuseclass}{sd-shadow-sm}
-\begin{sphinxuseclass}{sd-card-body}
-\begin{sphinxuseclass}{sd-card-title}
-\begin{sphinxuseclass}{sd-font-weight-bold}Problema 30.
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\sphinxAtStartPar
-Testo
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-col-4}
-\begin{sphinxuseclass}{sd-col-xs-4}
-\begin{sphinxuseclass}{sd-col-sm-4}
-\begin{sphinxuseclass}{sd-col-md-4}
-\begin{sphinxuseclass}{sd-col-lg-4}
-\begin{sphinxuseclass}{sd-card}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-w-100}
-\begin{sphinxuseclass}{sd-shadow-sm}
-\begin{sphinxuseclass}{sd-card-body}
-\sphinxAtStartPar
-\sphinxincludegraphics{{oscillator-8-ring-disk}.png}
 
+\sphinxstepscope
 
 
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}\subsubsection*{Soluzione.}
+\section{Altri problemi}
+\label{\detokenize{ch/mechanics/dynamics-problems-extra:altri-problemi}}\label{\detokenize{ch/mechanics/dynamics-problems-extra:physics-hs-mechanics-dynamics-problems-extra}}\label{\detokenize{ch/mechanics/dynamics-problems-extra::doc}}
 
-
-
-\begin{sphinxuseclass}{sd-container-fluid}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-mb-4}
-\begin{sphinxuseclass}{sd-row}
-\begin{sphinxuseclass}{sd-g-2}
-\begin{sphinxuseclass}{sd-g-xs-2}
-\begin{sphinxuseclass}{sd-g-sm-2}
-\begin{sphinxuseclass}{sd-g-md-2}
-\begin{sphinxuseclass}{sd-g-lg-2}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-col-8}
-\begin{sphinxuseclass}{sd-col-xs-8}
-\begin{sphinxuseclass}{sd-col-sm-8}
-\begin{sphinxuseclass}{sd-col-md-8}
-\begin{sphinxuseclass}{sd-col-lg-8}
-\begin{sphinxuseclass}{sd-card}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-w-100}
-\begin{sphinxuseclass}{sd-shadow-sm}
-\begin{sphinxuseclass}{sd-card-body}
-\begin{sphinxuseclass}{sd-card-title}
-\begin{sphinxuseclass}{sd-font-weight-bold}Problema 31.
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\sphinxAtStartPar
-Testo
-
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\begin{sphinxuseclass}{sd-col}
-\begin{sphinxuseclass}{sd-d-flex-row}
-\begin{sphinxuseclass}{sd-col-4}
-\begin{sphinxuseclass}{sd-col-xs-4}
-\begin{sphinxuseclass}{sd-col-sm-4}
-\begin{sphinxuseclass}{sd-col-md-4}
-\begin{sphinxuseclass}{sd-col-lg-4}
-\begin{sphinxuseclass}{sd-card}
-\begin{sphinxuseclass}{sd-sphinx-override}
-\begin{sphinxuseclass}{sd-w-100}
-\begin{sphinxuseclass}{sd-shadow-sm}
-\begin{sphinxuseclass}{sd-card-body}
-\sphinxAtStartPar
-\sphinxincludegraphics{{oscillator-8-ring-half-disk}.png}
-
-
-
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}
-\end{sphinxuseclass}\subsubsection*{Soluzione.}
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYGZlt{}!\PYGZhy{}\PYGZhy{}
-
-```\PYGZob{}exercise\PYGZcb{} Pendolo \PYGZhy{} Equazioni dinamiche
-:label: pendulum\PYGZhy{}eom
-
-```
-
-```\PYGZob{}exercise\PYGZcb{} Sistema che scivola su piano inclinato
-:label: point\PYGZhy{}vs\PYGZhy{}rigid
-
-Una biglia di massa \PYGZdl{}m\PYGZdl{} e raggio \PYGZdl{}R\PYGZdl{} scivola su un piano inclinato di un angolo \PYGZdl{}\PYGZbs{}alpha\PYGZdl{} rispetto al piano orizzontale. L\PYGZsq{}attrito tra il piano e la biglia è approssimabile come nullo, così che la biglia può scivolare sulla superficie del piano.
-
-```
-```\PYGZob{}dropdown\PYGZcb{} Soluzione.
-
-```
-
-```\PYGZob{}exercise\PYGZcb{} Sfera che rotola su piano inclinato
-:label: point\PYGZhy{}vs\PYGZhy{}rigid
-
-Una biglia di massa \PYGZdl{}m\PYGZdl{} e raggio \PYGZdl{}R\PYGZdl{} rotola su un piano inclinato di un angolo \PYGZdl{}\PYGZbs{}alpha\PYGZdl{} rispetto al piano orizzontale. L\PYGZsq{}attrito statico tra il piano e la biglia è sufficiente da garantire la condizione di puro rotolamento della biglia sul piano, senza scivolamento.
-
-```
-```\PYGZob{}dropdown\PYGZcb{} Soluzione.
-
-```
-
-\PYGZhy{}\PYGZhy{}\PYGZgt{}
-
-\PYGZlt{}!\PYGZhy{}\PYGZhy{}
-\PYGZsh{}\PYGZsh{} Moto di un punto materiale
-
-```\PYGZob{}exercise\PYGZcb{} Accelerazione costante
-Un punto materiale parte da fermo e si muove con un’accelerazione costante di \PYGZdl{}2 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m/s\PYGZcb{}\PYGZca{}2\PYGZdl{}. Calcola lo spazio percorso dopo \PYGZdl{}10 \PYGZbs{}, \PYGZbs{}text\PYGZob{}s\PYGZcb{}\PYGZdl{} e la velocità finale.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Moto uniformemente accelerato
-Un\PYGZsq{}auto si muove inizialmente a \PYGZdl{}20 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m/s\PYGZcb{}\PYGZdl{}. Dopo \PYGZdl{}5 \PYGZbs{}, \PYGZbs{}text\PYGZob{}s\PYGZcb{}\PYGZdl{}, la velocità è aumentata a \PYGZdl{}40 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m/s\PYGZcb{}\PYGZdl{}. Calcola l\PYGZsq{}accelerazione e lo spazio percorso in questo intervallo.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Caduta libera
-Un oggetto viene lasciato cadere da un\PYGZsq{}altezza di \PYGZdl{}80 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{}. Calcola il tempo impiegato per raggiungere il suolo e la velocità al momento dell\PYGZsq{}impatto (\PYGZdl{}g = 9,81 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m/s\PYGZcb{}\PYGZca{}2\PYGZdl{}).
-```
-
-```\PYGZob{}exercise\PYGZcb{} Velocità angolare
-Un punto materiale si muove lungo una circonferenza di raggio \PYGZdl{}2 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{} con velocità costante \PYGZdl{}10 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m/s\PYGZcb{}\PYGZdl{}. Calcola la sua velocità angolare e l\PYGZsq{}accelerazione centripeta.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Moto su piano inclinato
-Un blocco di \PYGZdl{}5 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} scivola senza attrito lungo un piano inclinato di \PYGZdl{}30\PYGZca{}\PYGZbs{}circ\PYGZdl{}. Calcola l\PYGZsq{}accelerazione del blocco e la velocità dopo \PYGZdl{}4 \PYGZbs{}, \PYGZbs{}text\PYGZob{}s\PYGZcb{}\PYGZdl{}.
-```
-
-
-\PYGZsh{}\PYGZsh{} Moto di sistemi di punti materiali
-
-```\PYGZob{}exercise\PYGZcb{} Centro di massa in movimento
-Due masse, \PYGZdl{}m\PYGZus{}1 = 2 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} e \PYGZdl{}m\PYGZus{}2 = 6 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{}, si muovono lungo l\PYGZsq{}asse \PYGZdl{}x\PYGZdl{} rispettivamente con velocità \PYGZdl{}v\PYGZus{}1 = 3 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m/s\PYGZcb{}\PYGZdl{} e \PYGZdl{}v\PYGZus{}2 = 1 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m/s\PYGZcb{}\PYGZdl{}. Determina la velocità del centro di massa.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Trazione su una fune
-Due blocchi, \PYGZdl{}m\PYGZus{}1 = 10 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} e \PYGZdl{}m\PYGZus{}2 = 5 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{}, sono collegati da una fune e tirati con una forza di \PYGZdl{}60 \PYGZbs{}, \PYGZbs{}text\PYGZob{}N\PYGZcb{}\PYGZdl{} su una superficie orizzontale priva di attrito. Calcola l\PYGZsq{}accelerazione del sistema e la tensione nella fune.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Impulso e quantità di moto
-Un corpo di massa \PYGZdl{}3 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} si muove con velocità \PYGZdl{}4 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m/s\PYGZcb{}\PYGZdl{}. Una forza costante di \PYGZdl{}6 \PYGZbs{}, \PYGZbs{}text\PYGZob{}N\PYGZcb{}\PYGZdl{} viene applicata per \PYGZdl{}5 \PYGZbs{}, \PYGZbs{}text\PYGZob{}s\PYGZcb{}\PYGZdl{}. Calcola l\PYGZsq{}impulso ricevuto e la nuova velocità del corpo.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Centro di massa e forze
-Un sistema è composto da due blocchi di masse \PYGZdl{}m\PYGZus{}1 = 5 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} e \PYGZdl{}m\PYGZus{}2 = 10 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{}. Se al primo blocco è applicata una forza di \PYGZdl{}20 \PYGZbs{}, \PYGZbs{}text\PYGZob{}N\PYGZcb{}\PYGZdl{} verso destra, calcola l\PYGZsq{}accelerazione del centro di massa.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Sistema in caduta
-Due blocchi di masse \PYGZdl{}m\PYGZus{}1 = 8 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} e \PYGZdl{}m\PYGZus{}2 = 12 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} sono collegati da una fune che passa su una carrucola. Calcola l\PYGZsq{}accelerazione del sistema e la tensione nella fune (\PYGZdl{}g = 9,81 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m/s\PYGZcb{}\PYGZca{}2\PYGZdl{}).
-```
-
-
-\PYGZsh{}\PYGZsh{} Moto di corpi rigidi in 2D
-
-```\PYGZob{}exercise\PYGZcb{} Disco in rotazione
-Un disco di raggio \PYGZdl{}0,5 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{} e momento d\PYGZsq{}inerzia \PYGZdl{}I = 0,2 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg·m\PYGZcb{}\PYGZca{}2\PYGZdl{} è soggetto a un momento torcente costante di \PYGZdl{}5 \PYGZbs{}, \PYGZbs{}text\PYGZob{}N·m\PYGZcb{}\PYGZdl{}. Calcola l\PYGZsq{}accelerazione angolare e la velocità angolare dopo \PYGZdl{}4 \PYGZbs{}, \PYGZbs{}text\PYGZob{}s\PYGZcb{}\PYGZdl{}.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Asta rotante
-Un\PYGZsq{}asta uniforme di lunghezza \PYGZdl{}2,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{} e massa \PYGZdl{}10 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} ruota attorno a un’estremità. Calcola il momento d’inerzia e il momento torcente necessario per darle un\PYGZsq{}accelerazione angolare di \PYGZdl{}3 \PYGZbs{}, \PYGZbs{}text\PYGZob{}rad/s\PYGZcb{}\PYGZca{}2\PYGZdl{}.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Rotolamento di una sfera
-Una sfera di raggio \PYGZdl{}0,2 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{} e massa \PYGZdl{}5 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} rotola senza scivolare su un piano inclinato. Calcola l\PYGZsq{}accelerazione della sfera e la forza di attrito necessaria.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Bilanciamento di un’asta
-Un’asta di lunghezza \PYGZdl{}3,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{} e massa \PYGZdl{}6 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} è appoggiata su due supporti agli estremi. Un peso di \PYGZdl{}20 \PYGZbs{}, \PYGZbs{}text\PYGZob{}N\PYGZcb{}\PYGZdl{} è sospeso a \PYGZdl{}1,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{} da un\PYGZsq{}estremità. Calcola le reazioni vincolari.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Energia cinetica rotazionale
-Un disco di massa \PYGZdl{}4,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} e raggio \PYGZdl{}0,3 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{} ruota con velocità angolare \PYGZdl{}10 \PYGZbs{}, \PYGZbs{}text\PYGZob{}rad/s\PYGZcb{}\PYGZdl{}. Calcola l\PYGZsq{}energia cinetica totale (traslazionale + rotazionale).
-```
-
-
-\PYGZsh{}\PYGZsh{} Collisioni
-
-```\PYGZob{}exercise\PYGZcb{} Urto elastico
-Una massa \PYGZdl{}m\PYGZus{}1 = 2,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{}, inizialmente ferma, viene urtata da una massa \PYGZdl{}m\PYGZus{}2 = 1,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} in moto con velocità \PYGZdl{}v\PYGZus{}2 = 4,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m/s\PYGZcb{}\PYGZdl{}. Calcola le velocità finali dopo un urto elastico.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Urto completamente anelastico
-Due blocchi di masse \PYGZdl{}3,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} e \PYGZdl{}2,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} si muovono rispettivamente a \PYGZdl{}5,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m/s\PYGZcb{}\PYGZdl{} e \PYGZdl{}\PYGZhy{}3,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m/s\PYGZcb{}\PYGZdl{}. Calcola la velocità finale se i due blocchi si uniscono dopo l\PYGZsq{}urto.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Energia persa nell\PYGZsq{}urto
-Due sfere di massa uguale \PYGZdl{}m = 1,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} si scontrano frontalmente con velocità iniziali \PYGZdl{}2,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m/s\PYGZcb{}\PYGZdl{} e \PYGZdl{}\PYGZhy{}1,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m/s\PYGZcb{}\PYGZdl{}. Determina l\PYGZsq{}energia cinetica persa nell\PYGZsq{}urto anelastico.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Urto su un piano inclinato
-Una pallina di massa \PYGZdl{}0,5 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} rotola lungo un piano inclinato e colpisce una parete con velocità \PYGZdl{}3,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m/s\PYGZcb{}\PYGZdl{}. Se l\PYGZsq{}urto è elastico, calcola la velocità della pallina dopo l\PYGZsq{}urto.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Velocità del centro di massa dopo un urto
-Due oggetti, \PYGZdl{}m\PYGZus{}1 = 4,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} e \PYGZdl{}m\PYGZus{}2 = 2,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{}, si muovono verso il centro di massa con velocità opposte. Dopo un urto completamente anelastico, calcola la velocità del sistema.
-```
-
-
-\PYGZsh{}\PYGZsh{} Gravitazione
-
-```\PYGZob{}exercise\PYGZcb{} Legge di gravitazione
-Due masse \PYGZdl{}m\PYGZus{}1 = 5,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} e \PYGZdl{}m\PYGZus{}2 = 10,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} si trovano a una distanza di \PYGZdl{}2,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{}. Calcola la forza gravitazionale che agisce tra di loro (\PYGZdl{}G = 6,67 \PYGZbs{}cdot 10\PYGZca{}\PYGZob{}\PYGZhy{}11\PYGZcb{} \PYGZbs{}, \PYGZbs{}text\PYGZob{}N·m\PYGZcb{}\PYGZca{}2/\PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZca{}2\PYGZdl{}).
-```
-
-```\PYGZob{}exercise\PYGZcb{} Orbita di un satellite
-Un satellite di massa \PYGZdl{}1.000 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} si trova in un\PYGZsq{}orbita circolare a \PYGZdl{}300 \PYGZbs{}, \PYGZbs{}text\PYGZob{}km\PYGZcb{}\PYGZdl{} sopra la superficie terrestre. Calcola la velocità orbitale (\PYGZdl{}R\PYGZus{}T = 6.371 \PYGZbs{}, \PYGZbs{}text\PYGZob{}km\PYGZcb{}\PYGZdl{}, \PYGZdl{}g = 9,81 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m/s\PYGZcb{}\PYGZca{}2\PYGZdl{}).
-```
-
-```\PYGZob{}exercise\PYGZcb{} Terza legge di Kepler
-Un pianeta ha un\PYGZsq{}orbita ellittica con un periodo di \PYGZdl{}365 \PYGZbs{}, \PYGZbs{}text\PYGZob{}giorni\PYGZcb{}\PYGZdl{}. Calcola la lunghezza del semi\PYGZhy{}asse maggiore della sua orbita, se la sua distanza dal Sole è di \PYGZdl{}1 \PYGZbs{}, \PYGZbs{}text\PYGZob{}AU\PYGZcb{}\PYGZdl{} (unità astronomica).
-```
-
-```\PYGZob{}exercise\PYGZcb{} Forza centripeta in orbita
-Una navetta spaziale di massa \PYGZdl{}500 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} è in orbita circolare attorno alla Terra con un raggio di \PYGZdl{}500 \PYGZbs{}, \PYGZbs{}text\PYGZob{}km\PYGZcb{}\PYGZdl{}. Calcola la forza centripeta necessaria per mantenere la navetta in orbita.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Satelliti in orbita geostazionaria
-Calcola l’altitudine di un satellite che segue un\PYGZsq{}orbita geostazionaria, cioè che ha lo stesso periodo della rotazione terrestre (\PYGZdl{}T = 24 \PYGZbs{}, \PYGZbs{}text\PYGZob{}h\PYGZcb{}\PYGZdl{}). Usa \PYGZdl{}R\PYGZus{}T = 6.371 \PYGZbs{}, \PYGZbs{}text\PYGZob{}km\PYGZcb{}\PYGZdl{} e \PYGZdl{}g = 9,81 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m/s\PYGZcb{}\PYGZca{}2\PYGZdl{}.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Energia potenziale gravitazionale
-Calcola l’energia potenziale gravitazionale di un oggetto di \PYGZdl{}2,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} posto a una distanza di \PYGZdl{}10 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{} da un altro oggetto di massa \PYGZdl{}5,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{}.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Energia cinetica di un satellite
-Un satellite di massa \PYGZdl{}3,0 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} si muove in orbita circolare con raggio \PYGZdl{}1000 \PYGZbs{}, \PYGZbs{}text\PYGZob{}km\PYGZcb{}\PYGZdl{} e velocità di \PYGZdl{}7,5 \PYGZbs{}, \PYGZbs{}text\PYGZob{}km/s\PYGZcb{}\PYGZdl{}. Calcola la sua energia cinetica.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Periodo di un satellite
-Un satellite è in orbita circolare a \PYGZdl{}200 \PYGZbs{}, \PYGZbs{}text\PYGZob{}km\PYGZcb{}\PYGZdl{} sopra la superficie terrestre. Calcola il suo periodo orbitale (\PYGZdl{}R\PYGZus{}T = 6.371 \PYGZbs{}, \PYGZbs{}text\PYGZob{}km\PYGZcb{}\PYGZdl{}, \PYGZdl{}g = 9,81 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m/s\PYGZcb{}\PYGZca{}2\PYGZdl{}).
-```
-
-
-\PYGZsh{}\PYGZsh{} Equilibrio e Stabilità
-
-```\PYGZob{}exercise\PYGZcb{} Stabilità di un oggetto
-Un cubo uniforme di massa \PYGZdl{}10 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} e lato \PYGZdl{}0,5 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{} è appoggiato su un piano inclinato di \PYGZdl{}20\PYGZca{}\PYGZbs{}circ\PYGZdl{}. Verifica se il cubo rimane stabile o si ribalta.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Momento torcenti in equilibrio
-Un’asta di massa \PYGZdl{}5 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} e lunghezza \PYGZdl{}2 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{} è sospesa a un’estremità. Se un peso di \PYGZdl{}30 \PYGZbs{}, \PYGZbs{}text\PYGZob{}N\PYGZcb{}\PYGZdl{} viene appeso a \PYGZdl{}1 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{} dalla base, calcola il momento torcenti necessario per mantenere l’asta in equilibrio.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Centro di massa e stabilità
-Un oggetto composto da due blocchi di massa \PYGZdl{}2 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} e \PYGZdl{}5 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} è posto su un piano inclinato. Determina la posizione del centro di massa e verifica la sua stabilità.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Equilibrio di un corpo galleggiante
-Un oggetto con densità \PYGZdl{}800 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg/m\PYGZcb{}\PYGZca{}3\PYGZdl{} galleggia in un fluido di densità \PYGZdl{}1.000 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg/m\PYGZcb{}\PYGZca{}3\PYGZdl{}. Determina la frazione sommersa dell\PYGZsq{}oggetto.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Equilibrio di una leva
-Una leva lunga \PYGZdl{}3 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{} ha un punto di supporto al centro. A sinistra del supporto, viene applicata una forza di \PYGZdl{}100 \PYGZbs{}, \PYGZbs{}text\PYGZob{}N\PYGZcb{}\PYGZdl{} a \PYGZdl{}0,5 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{} dal supporto. Qual è la forza necessaria per mantenere la leva in equilibrio a \PYGZdl{}2 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{} dal supporto?
-```
-
-```\PYGZob{}exercise\PYGZcb{} Stabilità di una torre
-Una torre alta \PYGZdl{}100 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{} ha una base quadrata di \PYGZdl{}10 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{} per lato. Calcola il rapporto tra la base e l’altezza, e discuti la stabilità della torre.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Equilibrio di una trave
-Una trave di \PYGZdl{}10 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{} di lunghezza e massa \PYGZdl{}20 \PYGZbs{}, \PYGZbs{}text\PYGZob{}kg\PYGZcb{}\PYGZdl{} è appoggiata su due supporti. Un carico di \PYGZdl{}50 \PYGZbs{}, \PYGZbs{}text\PYGZob{}N\PYGZcb{}\PYGZdl{} è sospeso al centro della trave. Calcola le reazioni ai supporti per mantenere l’equilibrio.
-```
-
-```\PYGZob{}exercise\PYGZcb{} Momenti di forze in equilibrio
-Un’asta di \PYGZdl{}2 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{} è sospesa a un’estremità. Un peso di \PYGZdl{}40 \PYGZbs{}, \PYGZbs{}text\PYGZob{}N\PYGZcb{}\PYGZdl{} è appeso a \PYGZdl{}1 \PYGZbs{}, \PYGZbs{}text\PYGZob{}m\PYGZcb{}\PYGZdl{} dal punto di sospensione. Quale forza orizzontale deve essere applicata all’altro estremo per mantenere l’asta in equilibrio?
-```
-
-```\PYGZob{}exercise\PYGZcb{} Instabilità di un corpo
-Un oggetto ha un centro di massa molto alto rispetto alla sua base. Quali sono le condizioni per cui l’oggetto risulta instabile? Discuti in relazione all\PYGZsq{}altezza e alla posizione del centro di massa.
-```
-
-\PYGZhy{}\PYGZhy{}\PYGZgt{}
-
-
-\end{sphinxVerbatim}
 
 \sphinxstepscope
 
@@ -9246,7 +9275,10 @@ si ritrova la forma generale del bilancio dell’energia cinetica,
 \chapter{Cenni di meccanica del continuo}
 \label{\detokenize{ch/continuum/intro:cenni-di-meccanica-del-continuo}}\label{\detokenize{ch/continuum/intro:physics-hs-continuum-intro}}\label{\detokenize{ch/continuum/intro::doc}}
 \sphinxAtStartPar
-In questa sezione vengono presentati alcuni risultati sui solidi e i fluidi modellati come mezzi continui…
+In questa sezione vengono presentati alcuni risultati sui solidi e i fluidi modellati come mezzi continui
+
+\sphinxAtStartPar
+…
 
 \sphinxstepscope
 
@@ -9510,15 +9542,36 @@ reazioni vincolari e azioni interne con condizioni di equilibrio
 
 \chapter{Fluidi}
 \label{\detokenize{ch/continuum/fluids:fluidi}}\label{\detokenize{ch/continuum/fluids:continuum-fluids}}\label{\detokenize{ch/continuum/fluids::doc}}
+\sphinxAtStartPar
+Un fluido può essere definito come uno stato della materia che non è in grado di sostenere sforzi di taglio in quiete. Una porzione di fluido in quiete scambia per contatto solo reazioni normali alla sua superficie. La forza elementare scambiata dalla sezione di superficie elementare \(\Delta S\) in \(\vec{r}\), con normale \(\hat{n}(\vec{r})\) uscente dalla superficie della porzione di fluido considerata è
+\begin{equation*}
+\begin{split}\Delta \vec{F} = - p(\vec{r}) \hat{n}(\vec{r}) \Delta S \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+dove \(p(\vec{r})\) è la pressione nel punto considerato. Il versore normale dà la direzione della forza, il segno meno dà il verso (l’azione esercitata da un fluido su una superficie esterna è sempre di spinta, e per il terzo principio della dinamica lo stesso vale per l’azione esercitata da una superficie esterna sul fluido), mentre la pressione può essere interpretata dal punto di vista meccanico come il valore assoluto della forza per unità di superficie. La pressione ha quindi come unità di misura il Pascal, \(\text{Pa} = \frac{\text{N}}{\text{m}^2}\).
+
 
 \section{Statica dei fluidi}
 \label{\detokenize{ch/continuum/fluids:statica-dei-fluidi}}\label{\detokenize{ch/continuum/fluids:fluids-statics}}
 
-\subsection{Legge di Stevino}
-\label{\detokenize{ch/continuum/fluids:legge-di-stevino}}\label{\detokenize{ch/continuum/fluids:fluids-statics-stevino}}
+\subsection{Legge di Stevinio}
+\label{\detokenize{ch/continuum/fluids:legge-di-stevinio}}\label{\detokenize{ch/continuum/fluids:fluids-statics-stevino}}
+\sphinxAtStartPar
+…
+\begin{equation*}
+\begin{split}P + \rho g z = \text{const}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+…
+
 
 \subsection{Legge di Archimede}
 \label{\detokenize{ch/continuum/fluids:legge-di-archimede}}\label{\detokenize{ch/continuum/fluids:fluids-statics-archimedes}}
+\sphinxAtStartPar
+Un corpo di volume \(V\) immerso in un fluido di densità \(\rho_f\) e soggetto a un campo gravitazionale uniforme \(\vec{g} = - g \hat{z}\), riceve dal fluido una spinta dal basso verso l’alto di intensità \sphinxstyleemphasis{pari al peso del volume del fluido spostato}, cioè la forza di Archimede è
+\begin{equation*}
+\begin{split}\vec{F}^{\text{Arch}} = \rho_f V g \hat{z} \ .\end{split}
+\end{equation*}
 
 \section{Dinamica dei fluidi}
 \label{\detokenize{ch/continuum/fluids:dinamica-dei-fluidi}}\label{\detokenize{ch/continuum/fluids:fluids-dynamics}}
@@ -9544,6 +9597,37 @@ La formula di Stokes fornisce un’espressione della resistenza aerodinamcia lin
 
 \sphinxAtStartPar
 \sphinxstylestrong{todo} \sphinxstyleemphasis{Commentare effetto di \textbackslash{}text\{Re\}. Cogliere l’occasione per un po” di analisi dimensionale per ottenere la formula \(\vec{F} = \frac{1}{2} \rho |\vec{v}|^2 \vec{c}_F(\text{Re}, \text{M})\)…}
+
+\sphinxstepscope
+
+
+\chapter{Problemi}
+\label{\detokenize{ch/continuum/problems:problemi}}\label{\detokenize{ch/continuum/problems:physics-hs-continuum-problems}}\label{\detokenize{ch/continuum/problems::doc}}\begin{align*}\!\begin{aligned}
+\begin{minipage}[t]{.55\textwidth}
+  \vspace{0pt}
+  \textbf{Problema 1.}
+Una palla di massa $m$ si trova inizialmente in quiete rispetto a un'osservatore inerziale, a una quota $h$ sopra la superficie terrestre.
+La palla viene lasciata cadere dalla condizione di quiete. Viene chiesto di determinare:
+1. la velocità di impatto con il terreno
+2. il tempo impiegato per raggiungere il terreno.\\
+Viene chiesto di svolgere i conti trascurando la resistenza dell'aria. Si chiede poi di:
+3. confrontare i risultati ottenuti con i risultati per un corpo di massa $M > m$ 
+4. confrontare i risultati ottenuti con i risultati che si otterrebbero nei pressi della superficie lunare.\\
+Raggio Terra: $R_E = 6380 \, km$ ; massa Terra: $M_E = 5.98 \cdot 10^{24} \, kg$;
+Raggio Luna:  $R_M = 1740 \, km$ ; massa Luna:  $M_M = 7.34 \cdot 10^{22} \, kg$;
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}[t]{.40\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=.95\textwidth]{../../media/dynamics/free-fall.png}
+\end{minipage}\\
+\end{aligned}\end{align*}
+\sphinxAtStartPar
+\sphinxstylestrong{Soluzione.}
+
+
+\bigskip\hrule\bigskip
+
 
 \sphinxstepscope
 
@@ -9962,7 +10046,7 @@ La misura del volume \(V_{gas}\) occupato dal gas è immediata. Lo svolgimento d
 Usando il mercurio come liquido, \(\text{Hg}\), e partendo da una condizione di riferimento a pressione ambiente in cui il volume occupato dal gas è \(V_0\), si osserva che a una differenza della quota delle colonnine \(\Delta h = n \cdot 760 \, \text{mm}\) corrisponde un volume \(\frac{V}{1+n}\).
 \phantomsection \label{exercise:ch/thermodynamics/foundation-experiments-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 16.2.1}
+\begin{sphinxadmonition}{note}{Exercise 17.2.1}
 
 
 \end{sphinxadmonition}
@@ -10111,7 +10195,7 @@ Evaporazione ed ebollizione dell’acqua in funzione della pressione. Quanto cam
 
 
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:th-expansion:gravesande}
-\begin{sphinxadmonition}{note}{Example 16.2.1 (Anello di Gravesande)}
+\begin{sphinxadmonition}{note}{Example 17.2.1 (Anello di Gravesande)}
 
 
 
@@ -10122,17 +10206,17 @@ L’anello di Gravesande è un esperimento di fisica ideato dal fisico olandese 
 La {\hyperref[\detokenize{ch/thermodynamics/elastic-solid-1d:physics-hs-thermodynamics-matter-elastic-1d-dilation}]{\sphinxcrossref{\DUrole{std,std-ref}{dilatazione termica di un solido}}}} può essere descritta con i coefficienti di dilatazione.
 \end{sphinxadmonition}
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:th-expansion:junctions}
-\begin{sphinxadmonition}{note}{Example 16.2.2 (Giunzione binari e ponti)}
+\begin{sphinxadmonition}{note}{Example 17.2.2 (Giunzione binari e ponti)}
 
 
 \end{sphinxadmonition}
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:th-expansion:pendulum}
-\begin{sphinxadmonition}{note}{Example 16.2.3 (Pendolo)}
+\begin{sphinxadmonition}{note}{Example 17.2.3 (Pendolo)}
 
 
 \end{sphinxadmonition}
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:th-exapnsion:interference}
-\begin{sphinxadmonition}{note}{Example 16.2.4 (Calettamento)}
+\begin{sphinxadmonition}{note}{Example 17.2.4 (Calettamento)}
 
 
 \end{sphinxadmonition}
@@ -10242,7 +10326,7 @@ Viene definito \sphinxstylestrong{calore latente di fusione} il coefficiente \(L
 
 \end{itemize}
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:heat-capacity:1}
-\begin{sphinxadmonition}{note}{Example 16.2.5}
+\begin{sphinxadmonition}{note}{Example 17.2.5}
 
 
 
@@ -10253,7 +10337,7 @@ Si mescolano due masse uguali di acqua inizialmente a temperatura \(T_1 = 20 \te
 Successivamente si ripete l’esperimento, mescolando una massa di acqua a temperatura \(T_1\) doppia rispetto alla massa di acqua a \(T_2\).
 \end{sphinxadmonition}
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:heat-capacity:2}
-\begin{sphinxadmonition}{note}{Example 16.2.6}
+\begin{sphinxadmonition}{note}{Example 17.2.6}
 
 
 
@@ -10261,7 +10345,7 @@ Successivamente si ripete l’esperimento, mescolando una massa di acqua a tempe
 Mescolando una massa uguale di due sostanze inizialmente a temperatura \(T_1\)  e \(T_2\), dopo aver misurato la temperatura di equilibrio \(T_e\), si chiede di determinare il rapporto tra i loro calori specifici nelle condizioni di prova.
 \end{sphinxadmonition}
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:heat-capacity:3}
-\begin{sphinxadmonition}{note}{Example 16.2.7}
+\begin{sphinxadmonition}{note}{Example 17.2.7}
 
 
 
@@ -10269,7 +10353,7 @@ Mescolando una massa uguale di due sostanze inizialmente a temperatura \(T_1\)  
 Mescolando una massa uguale di due sostanze inizialmente a temperatura \(T_1\)  e \(T_2\), dopo aver misurato la temperatura di equilibrio \(T_e\), si chiede di determinare il rapporto tra i loro calori specifici nelle condizioni di prova.
 \end{sphinxadmonition}
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:heat-capacity:4}
-\begin{sphinxadmonition}{note}{Example 16.2.8}
+\begin{sphinxadmonition}{note}{Example 17.2.8}
 
 
 
@@ -10277,7 +10361,7 @@ Mescolando una massa uguale di due sostanze inizialmente a temperatura \(T_1\)  
 Un sistema contente una massa \(m_1\) di acqua inizialmente a \(T_1\) gradi viene messo a contatto con un sistema contentente una massa \(m_2\) di ghiaccio a \(T_2 = \text{°C}\) a pressione ambiente. La condizione iniziale del sistema 1 non è sufficiente a far sciogliere l’intera massa di ghiaccio ma solo \(m_{2,l} < m_2\). L’equilibrio tra i due sistemi viene quidi raggiunto a temperatura \(T=0 \text{°C}\). Si chiede di determinare il rapporto tra il calore latente di fusione e il calore specifico dell’acqua.
 \end{sphinxadmonition}
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:heat-capacity:unit}
-\begin{sphinxadmonition}{note}{Example 16.2.9 (Caloria come unità di misura del calore \sphinxhyphen{} N.Clément)}
+\begin{sphinxadmonition}{note}{Example 17.2.9 (Caloria come unità di misura del calore \sphinxhyphen{} N.Clément)}
 
 
 
@@ -10361,7 +10445,7 @@ i lavori sull’equivalenza tra calore e lavoro conducono alla formulazione del 
 
 \end{itemize}
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:heat-work:joule}
-\begin{sphinxadmonition}{note}{Example 16.2.10 (Equivalenza calore\sphinxhyphen{}lavoro \sphinxhyphen{} Esperienza di Joule)}
+\begin{sphinxadmonition}{note}{Example 17.2.10 (Equivalenza calore\sphinxhyphen{}lavoro \sphinxhyphen{} Esperienza di Joule)}
 
 
 
@@ -10383,7 +10467,7 @@ Questa osservazione, opportunamente verificata tramite il metodo scientifico, pe
 \end{aligned}\end{split}
 \end{equation*}\end{sphinxadmonition}
 \label{ch/thermodynamics/foundation-experiments:thermodynamics:history:heat-work:second}
-\begin{sphinxadmonition}{note}{Example 16.2.11 (Non\sphinxhyphen{}equivalenza calore\sphinxhyphen{}lavoro \sphinxhyphen{} verso il secondo principio della termodinamica)}
+\begin{sphinxadmonition}{note}{Example 17.2.11 (Non\sphinxhyphen{}equivalenza calore\sphinxhyphen{}lavoro \sphinxhyphen{} verso il secondo principio della termodinamica)}
 
 
 
@@ -10669,7 +10753,7 @@ Seguendo il lavoro di Gibbs, in questa sezione vengono introdotti alcuni concett
 
 \subsection{Variabili di stato}
 \label{\detokenize{ch/thermodynamics/principles-gibbs-phase-rule:variabili-di-stato}}\label{\detokenize{ch/thermodynamics/principles-gibbs-phase-rule:physics-hs-thermodynamics-foundation-principles-gibbs-phase-rule-state-vars}}\label{ch/thermodynamics/principles-gibbs-phase-rule:definition-0}
-\begin{sphinxadmonition}{note}{Definition 17.3.1 (Variabile di stato)}
+\begin{sphinxadmonition}{note}{Definition 18.3.1 (Variabile di stato)}
 
 
 
@@ -10677,7 +10761,7 @@ Seguendo il lavoro di Gibbs, in questa sezione vengono introdotti alcuni concett
 Una variabile di stato di un sistema è una proprietà fisica del sistema che dipende esclusivamente dallo stato corrente del sistema.
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-1}
-\begin{sphinxadmonition}{note}{Example 17.3.1 (Variabili di stato e non)}
+\begin{sphinxadmonition}{note}{Example 18.3.1 (Variabili di stato e non)}
 
 
 
@@ -10689,7 +10773,7 @@ Non sono variabili di stato il lavoro o il calore scambiato dal sistema. \sphinx
 
 \subsection{Energia interna}
 \label{\detokenize{ch/thermodynamics/principles-gibbs-phase-rule:energia-interna}}\label{\detokenize{ch/thermodynamics/principles-gibbs-phase-rule:physics-hs-thermodynamics-foundation-principles-gibbs-phase-rule-internal-energy}}\label{ch/thermodynamics/principles-gibbs-phase-rule:definition-2}
-\begin{sphinxadmonition}{note}{Definition 17.3.2 (Energia interna)}
+\begin{sphinxadmonition}{note}{Definition 18.3.2 (Energia interna)}
 
 
 
@@ -10715,7 +10799,7 @@ Il bilancio dell’energia interna per un sistema chiuso diventa quindi
 
 \subsection{Regola delle fasi di Gibbs}
 \label{\detokenize{ch/thermodynamics/principles-gibbs-phase-rule:regola-delle-fasi-di-gibbs}}\label{\detokenize{ch/thermodynamics/principles-gibbs-phase-rule:physics-hs-thermodynamics-foundation-principles-gibbs-phase-rule-gibbs-phase-rule}}\label{ch/thermodynamics/principles-gibbs-phase-rule:definition-3}
-\begin{sphinxadmonition}{note}{Definition 17.3.3 (Fase)}
+\begin{sphinxadmonition}{note}{Definition 18.3.3 (Fase)}
 
 
 
@@ -10736,7 +10820,7 @@ esempi: miscela di gas miscibili costituisce una fase sola, nella quale non è p
 
 \end{itemize}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:proposition-4}
-\begin{sphinxadmonition}{note}{Proposition 17.3.1 (Regola delle fasi di Gibbs)}
+\begin{sphinxadmonition}{note}{Proposition 18.3.1 (Regola delle fasi di Gibbs)}
 
 
 
@@ -10810,7 +10894,7 @@ discutere il ruolo delle frazioni di fase di un singolo componente e il fatto ch
 
 \end{itemize}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-5}
-\begin{sphinxadmonition}{note}{Example 17.3.2 (Sistema chiuso contentente un monocomponente (o non\sphinxhyphen{}reagente), monofase, elettricamente neutro (o non\sphinxhyphen{}soggetto a campo elettromagnetico))}
+\begin{sphinxadmonition}{note}{Example 18.3.2 (Sistema chiuso contentente un monocomponente (o non\sphinxhyphen{}reagente), monofase, elettricamente neutro (o non\sphinxhyphen{}soggetto a campo elettromagnetico))}
 
 
 
@@ -10823,7 +10907,7 @@ In un sistema composto da un gas comprimibile, monocomponente e monofase (gassos
 variabili di stato per definire lo stato del sistema.
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-6}
-\begin{sphinxadmonition}{note}{Example 17.3.3 (Sistema aperto contentente un monocomponente (o non\sphinxhyphen{}reagente), monofase, elettricamente neutro (o non\sphinxhyphen{}soggetto a campo elettromagnetico))}
+\begin{sphinxadmonition}{note}{Example 18.3.3 (Sistema aperto contentente un monocomponente (o non\sphinxhyphen{}reagente), monofase, elettricamente neutro (o non\sphinxhyphen{}soggetto a campo elettromagnetico))}
 
 
 
@@ -10831,7 +10915,7 @@ variabili di stato per definire lo stato del sistema.
 In un sistema aperto, la variazione di energia del sistema dipende anche dalla variazione della quantità di gas contenuto in esso. Quindi, in generale esistono \(W = 2\) modi per far variare l’eneergia del sistema: tramite il lavoro di compressione, o tramite un flusso di materia all’interno del sistema. Servono quindi \(F=3\) variabili di stato per definire lo stato del sistema.
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-7}
-\begin{sphinxadmonition}{note}{Example 17.3.4 (Miscela reattiva di gas in un sistema chiuso)}
+\begin{sphinxadmonition}{note}{Example 18.3.4 (Miscela reattiva di gas in un sistema chiuso)}
 
 
 
@@ -10852,7 +10936,7 @@ l’energia del sistema dipende dal lavoro meccanico di compressione della misce
 La reazione è quindi determinata da 1 solo parametro. La variazione di energia del sistema è quindi determinata da \(W=2\) processi: dal lavoro di compressione fatto sul sistema, e dallo stato della reazione. Per determinare lo stato del sistema servono quindi \(F=3\) variabili di stato indipendenti, come ad esempio \sphinxstylestrong{todo} \(T\), \(P\), \(n_A\)? Non servono i potenziali chimici \(\mu_A\), \(\mu_B\), \(\mu_{A_a B_b}\)? Sono unicamente determinati?
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-8}
-\begin{sphinxadmonition}{note}{Example 17.3.5 (Sistema monocomponente durante una transizione di fase)}
+\begin{sphinxadmonition}{note}{Example 18.3.5 (Sistema monocomponente durante una transizione di fase)}
 
 
 
@@ -10868,7 +10952,7 @@ variabile di stato.
 \sphinxstylestrong{Punto critico.} Il punto critico nel piano delle fasi di un sistema mono\sphinxhyphen{}componente definisce la condizione in cui sono simultaneamente presenti nel sistema \(P = 3\) fasi. Secondo la regola delle fasi di Gibbs, lo stato del sistema è determinato da \(F = 0\) variabili di stato: lo stato del sistema nel punto critico è univocamente definito, senza alcun grado di libertà.
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-9}
-\begin{sphinxadmonition}{note}{Example 17.3.6 (Solido)}
+\begin{sphinxadmonition}{note}{Example 18.3.6 (Solido)}
 
 
 
@@ -10876,7 +10960,7 @@ variabile di stato.
 In assenza di altri fenomeni fisici, l’unica forma di lavoro in un solido è quella legata al lavoro di deformazione, \(\delta L^{int,rev} = \sigma_{ij} \, d \varepsilon_{ij} dV\). Il tensore di deformazione è del secondo ordine e simmetrico, e ha quindi 6 componenti indipendenti nello spazio 3\sphinxhyphen{}dimensionale, e quindi \(W=6\)
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-10}
-\begin{sphinxadmonition}{note}{Example 17.3.7 (Miscele solide)}
+\begin{sphinxadmonition}{note}{Example 18.3.7 (Miscele solide)}
 
 
 \begin{itemize}
@@ -10887,7 +10971,7 @@ Fasi nelle miscele solide \sphinxstylestrong{todo}
 \end{itemize}
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-11}
-\begin{sphinxadmonition}{note}{Example 17.3.8 (Influenza del campo elettromagnetico)}
+\begin{sphinxadmonition}{note}{Example 18.3.8 (Influenza del campo elettromagnetico)}
 
 
 \begin{itemize}
@@ -11019,7 +11103,7 @@ con \(\vec{e}\), \(\vec{h}\) campi elettrico e magnetico, \(\vec{p}\), \(\vec{m}
 
 \end{itemize}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-12}
-\begin{sphinxadmonition}{note}{Example 17.3.9 (Sistema gassoso chiuso monocomponente)}
+\begin{sphinxadmonition}{note}{Example 18.3.9 (Sistema gassoso chiuso monocomponente)}
 
 
 
@@ -11029,7 +11113,7 @@ L’energia del sistema, \(E(S,V)\)
 \begin{split}dE = T \, dS - P \, dV\end{split}
 \end{equation*}\end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-13}
-\begin{sphinxadmonition}{note}{Example 17.3.10 (Sistema gassoso aperto monocomponente)}
+\begin{sphinxadmonition}{note}{Example 18.3.10 (Sistema gassoso aperto monocomponente)}
 
 
 
@@ -11039,7 +11123,7 @@ L’energia del sistema, \(E(S,V,N)\)
 \begin{split}dE = T \, dS - P \, dV + \mu \, dN\end{split}
 \end{equation*}\end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-14}
-\begin{sphinxadmonition}{note}{Example 17.3.11 (Miscela reattiva di gas in un sistema chiuso)}
+\begin{sphinxadmonition}{note}{Example 18.3.11 (Miscela reattiva di gas in un sistema chiuso)}
 
 
 
@@ -11055,7 +11139,7 @@ L’energia del sistema
 avendo indicato con \(n_k\) i coefficienti stechiomentrici (con segno) della reazione, e con \(N\) una quantità che identifica l’equilibrio della reazione, in maniera tale da poter scrivere la variazione di ogni componente come \(d N_k = n_k \, d N\).
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-15}
-\begin{sphinxadmonition}{note}{Example 17.3.12 (Miscela monocomponente durante una transizione di fase)}
+\begin{sphinxadmonition}{note}{Example 18.3.12 (Miscela monocomponente durante una transizione di fase)}
 
 
 
@@ -11063,7 +11147,7 @@ avendo indicato con \(n_k\) i coefficienti stechiomentrici (con segno) della rea
 \sphinxstylestrong{todo} come trattare la frazione delle fasi?
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-16}
-\begin{sphinxadmonition}{note}{Example 17.3.13 (Solido)}
+\begin{sphinxadmonition}{note}{Example 18.3.13 (Solido)}
 
 
 
@@ -11073,7 +11157,7 @@ Sistema solido di volume iniziale \(V\) con stato di sforzo e deformazione unifo
 \begin{split}dE = T \, dS - V \, \sigma_{ij} \, d \varepsilon_{ij} \end{split}
 \end{equation*}\end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-17}
-\begin{sphinxadmonition}{note}{Example 17.3.14 (Miscele solide)}
+\begin{sphinxadmonition}{note}{Example 18.3.14 (Miscele solide)}
 
 
 
@@ -11081,7 +11165,7 @@ Sistema solido di volume iniziale \(V\) con stato di sforzo e deformazione unifo
 \sphinxstylestrong{todo}
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-gibbs-phase-rule:example-18}
-\begin{sphinxadmonition}{note}{Example 17.3.15 (Influenza del campo magnetico)}
+\begin{sphinxadmonition}{note}{Example 18.3.15 (Influenza del campo magnetico)}
 
 
 \begin{equation*}
@@ -11359,17 +11443,17 @@ e il bilancio di energia totale del sistema diventa
 \sphinxAtStartPar
 avendo introdotto la definizione di entalpia totale specifica, \(h^{tot} = e^{tot} + \frac{P}{\rho} = e + \frac{P}{\rho} + \frac{|\vec{v}|^2}{2}\).
 \label{ch/thermodynamics/principles-open:thermodynamics:principles:open:ex:turbine}
-\begin{sphinxadmonition}{note}{Example 17.6.1 (Turbina)}
+\begin{sphinxadmonition}{note}{Example 18.6.1 (Turbina)}
 
 
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-open:thermodynamics:principles:open:ex:compressor}
-\begin{sphinxadmonition}{note}{Example 17.6.2 (Compressore)}
+\begin{sphinxadmonition}{note}{Example 18.6.2 (Compressore)}
 
 
 \end{sphinxadmonition}
 \label{ch/thermodynamics/principles-open:thermodynamics:principles:open:ex:comb-chamber}
-\begin{sphinxadmonition}{note}{Example 17.6.3 (Camera di combustione)}
+\begin{sphinxadmonition}{note}{Example 18.6.3 (Camera di combustione)}
 
 
 \end{sphinxadmonition}
@@ -12337,20 +12421,20 @@ si ricava nell’approssimazione lineare il coefficiente di dilatazione di super
 \begin{equation*}
 \begin{split} \dfrac{1}{V_0}\left(\dfrac{\partial V}{\partial T}\right)_x = \alpha_v \sim 3 \alpha \ .\end{split}
 \end{equation*}\label{ch/thermodynamics/elastic-solid-1d:thermodynamics:elastic-solid:gravesande}
-\begin{sphinxadmonition}{note}{Example 18.3.1 (Anello di Gravesande)}
+\begin{sphinxadmonition}{note}{Example 19.3.1 (Anello di Gravesande)}
 
 
 
 \sphinxAtStartPar
-{\hyperref[\detokenize{ch/thermodynamics/foundation-experiments:thermodynamics:history:th-expansion:gravesande}]{\sphinxcrossref{Example 16.2.1}}}
+{\hyperref[\detokenize{ch/thermodynamics/foundation-experiments:thermodynamics:history:th-expansion:gravesande}]{\sphinxcrossref{Example 17.2.1}}}
 \end{sphinxadmonition}
 \label{ch/thermodynamics/elastic-solid-1d:thermodynamics:elastic-solid:pendulum}
-\begin{sphinxadmonition}{note}{Example 18.3.2 (Pendolo)}
+\begin{sphinxadmonition}{note}{Example 19.3.2 (Pendolo)}
 
 
 \end{sphinxadmonition}
 \label{ch/thermodynamics/elastic-solid-1d:thermodynamics:elastic-solid:interference}
-\begin{sphinxadmonition}{note}{Example 18.3.3 (Calettamento)}
+\begin{sphinxadmonition}{note}{Example 19.3.3 (Calettamento)}
 
 
 
@@ -12693,7 +12777,7 @@ Come sarà chiaro più tardi con l”{\hyperref[\detokenize{ch/thermodynamics/he
 \sphinxAtStartPar
 Ricordando l’osservazione fatta nell’introduzione riguardo le macchine in funzionamento periodico o in ciclo continuo, si definisce qui il rendimento delle macchine termiche in funzionamento periodico in termini di lavoro e calore per ogni ciclo; dovrebbe essere immediata l’estensione di questa definizione al caso di macchine termiche in funzionamento continuo in termini di potenza meccanica e flusso di calore per unità di tempo.
 \label{ch/thermodynamics/heat-engine-td-cycles:td-efficiency}
-\begin{sphinxadmonition}{note}{Definition 19.2.1 (Rendimento termodinamico)}
+\begin{sphinxadmonition}{note}{Definition 20.2.1 (Rendimento termodinamico)}
 
 
 
@@ -12704,7 +12788,7 @@ Il rendimento termodinamico di una macchina termica è definita come il rapporto
 \sphinxAtStartPar
 La definizione di rendimento termodinamico dipende quindi dallo scopo e dal funzionamento della macchina termica.
 \label{ch/thermodynamics/heat-engine-td-cycles:td-efficiency-direct}
-\begin{sphinxadmonition}{note}{Definition 19.2.2 (Rendimento termodinamico \sphinxhyphen{} macchina termica diretta)}
+\begin{sphinxadmonition}{note}{Definition 20.2.2 (Rendimento termodinamico \sphinxhyphen{} macchina termica diretta)}
 
 
 
@@ -12818,7 +12902,7 @@ Esistono due enunciati equivalenti del secondo principio della termodinamica per
 
 \subsection{Enunciato di Kelvin}
 \label{\detokenize{ch/thermodynamics/heat-engine-second-principle:enunciato-di-kelvin}}\label{\detokenize{ch/thermodynamics/heat-engine-second-principle:physics-hs-thermodynamics-heat-engine-second-principle-kelvin}}\label{ch/thermodynamics/heat-engine-second-principle:proposition-0}
-\begin{sphinxadmonition}{note}{Proposition 19.4.1 (Enunciato di Kelvin)}
+\begin{sphinxadmonition}{note}{Proposition 20.4.1 (Enunciato di Kelvin)}
 
 
 
@@ -12856,7 +12940,7 @@ In altri termini, una macchina termica che scambia calore unicamente con una sor
 
 \subsection{Enunciato di Planck}
 \label{\detokenize{ch/thermodynamics/heat-engine-second-principle:enunciato-di-planck}}\label{\detokenize{ch/thermodynamics/heat-engine-second-principle:physics-hs-thermodynamics-heat-engine-second-principle-planck}}\label{ch/thermodynamics/heat-engine-second-principle:proposition-1}
-\begin{sphinxadmonition}{note}{Proposition 19.4.2 (Enunciato di Planck)}
+\begin{sphinxadmonition}{note}{Proposition 20.4.2 (Enunciato di Planck)}
 
 
 
@@ -13197,7 +13281,7 @@ Spazio magari «vuoto di materia» ma non di proprietà fisiche, come dimostrato
 %
 \end{footnote}.
 Poiché lo stesso modello matematico descrive la propagazione di diversi disturbi in vari ambiti della natura, questi sistemi possono mostrare formalmente gli stessi \sphinxstylestrong{fenomeni caratteristici} come interferenza, effetto Doppler, e \sphinxhyphen{} in presenza di ostacoli \sphinxhyphen{} riflessione, rifrazione, diffrazione, scattering da particelle o superfici irregolari.
-L’interazione con ostacoli può dipendere dalle dimensioni relative dell’ostacolo e della \sphinxstyleemphasis{lunghezza d’onda}, vedi {\hyperref[\detokenize{ch/waves/waves-elementary-solutions:wave-length}]{\sphinxcrossref{Definition 21.2.2}}}, della perturbazione.
+L’interazione con ostacoli può dipendere dalle dimensioni relative dell’ostacolo e della \sphinxstyleemphasis{lunghezza d’onda}, vedi {\hyperref[\detokenize{ch/waves/waves-elementary-solutions:wave-length}]{\sphinxcrossref{Definition 22.2.2}}}, della perturbazione.
 
 \sphinxAtStartPar
 La propagazione di disturbi di intensità «sufficientemente piccola» può essere descritta con un modello lineare, l”\sphinxstyleemphasis{equazione delle onde}. La linearità di un problema consente di utilizzare il \sphinxstylestrong{principio di sovrapposizione delle cause e degli effetti}, e scomporre perturbazioni con «forma complessa» come somma di {\hyperref[\detokenize{ch/waves/waves-elementary-solutions:physics-hs-waves-equation-solutions}]{\sphinxcrossref{\DUrole{std,std-ref}{perturbazioni più semplici}}}}.
@@ -13353,7 +13437,7 @@ Confrontando questa espressione con l’espressione \eqref{equation:ch/waves/wav
 \begin{equation*}
 \begin{split}c_{u} = \sqrt{\frac{EA}{m}} \ .\end{split}
 \end{equation*}\label{ch/waves/waves-in-physics:example-0}
-\begin{sphinxadmonition}{note}{Example 21.1.1 (Modello discreto)}
+\begin{sphinxadmonition}{note}{Example 22.1.1 (Modello discreto)}
 
 
 \begin{equation*}
@@ -13550,12 +13634,12 @@ Per motivi di sintesi e per motivi di comprensione, l’approssimazione del lapl
 \begin{equation*}
 \begin{split}\nabla^2 P_i \sim \dfrac{\sum_{\mathbf{j} \in B(\mathbf{i})}\left( P_{\mathbf{j}} - P_{\mathbf{i}} \right)}{\Delta x^2} \ .\end{split}
 \end{equation*}\label{ch/waves/waves-in-physics:example-1}
-\begin{sphinxadmonition}{note}{Example 21.1.2 (Dominio \protect\(2\protect\)\sphinxhyphen{}dimensionale)}
+\begin{sphinxadmonition}{note}{Example 22.1.2 (Dominio \protect\(2\protect\)\sphinxhyphen{}dimensionale)}
 
 
 \end{sphinxadmonition}
 \label{ch/waves/waves-in-physics:example-2}
-\begin{sphinxadmonition}{note}{Example 21.1.3 (Dominio \protect\(3\protect\)\sphinxhyphen{}dimensionale)}
+\begin{sphinxadmonition}{note}{Example 22.1.3 (Dominio \protect\(3\protect\)\sphinxhyphen{}dimensionale)}
 
 
 \end{sphinxadmonition}
@@ -13753,7 +13837,7 @@ Studio sistematico della diffrazione, con esempi: di limite di Fresnel e Fraunho
 \subsection{Diffrazione}
 \label{\detokenize{ch/waves/waves-phenomena:diffrazione}}\label{\detokenize{ch/waves/waves-phenomena:physics-hs-waves-effects-diffraction}}
 \sphinxAtStartPar
-La diffrazione è una conseguenza dell’intereferenza di un’onda con un ostacolo o un’apertura di dimensione parabonabile alla lunghezza d’onda ({\hyperref[\detokenize{ch/waves/waves-elementary-solutions:wave-length}]{\sphinxcrossref{Definition 21.2.2}}}) della perturbazione.
+La diffrazione è una conseguenza dell’intereferenza di un’onda con un ostacolo o un’apertura di dimensione parabonabile alla lunghezza d’onda ({\hyperref[\detokenize{ch/waves/waves-elementary-solutions:wave-length}]{\sphinxcrossref{Definition 22.2.2}}}) della perturbazione.
 
 \sphinxAtStartPar
 Per alcune geometrie semplici, sono note alcune soluzioni approssimate dei pattern di interferenza in seguito alla diffrazione:
@@ -13788,7 +13872,7 @@ Fare esempi pratici: lato posteriore di un DVD, doppia fenditura, reticoli di di
 \sphinxAtStartPar
 \sphinxstylestrong{Applicazioni ed esempi.} Spettroscopia
 \label{ch/waves/waves-phenomena:example-0}
-\begin{sphinxadmonition}{note}{Example 21.3.1 (Doppia fenditura)}
+\begin{sphinxadmonition}{note}{Example 22.3.1 (Doppia fenditura)}
 
 
 
@@ -13796,7 +13880,7 @@ Fare esempi pratici: lato posteriore di un DVD, doppia fenditura, reticoli di di
 Modello: diffrazione dovuta a due fessure sufficientmente ridotte da poter essere considerate sorgenti puntiformi (in fase, o no? discutere)
 \end{sphinxadmonition}
 \label{ch/waves/waves-phenomena:example-1}
-\begin{sphinxadmonition}{note}{Example 21.3.2 (Singola fenditura)}
+\begin{sphinxadmonition}{note}{Example 22.3.2 (Singola fenditura)}
 
 
 
@@ -13804,7 +13888,7 @@ Modello: diffrazione dovuta a due fessure sufficientmente ridotte da poter esser
 Modello: diffrazione dovuta alla sovrapposizione degli effetti di una distribuzione di sorgenti punti.
 \end{sphinxadmonition}
 \label{ch/waves/waves-phenomena:example-2}
-\begin{sphinxadmonition}{note}{Example 21.3.3 (Reticolo di diffrazione)}
+\begin{sphinxadmonition}{note}{Example 22.3.3 (Reticolo di diffrazione)}
 
 
 \end{sphinxadmonition}
@@ -13899,7 +13983,7 @@ quindi nel caso di segnale armonico, la pulsazione della frequenza registrata è
 
 
 \label{ch/waves/waves-phenomena:ex-doppler-ambulance-speed}
-\begin{sphinxadmonition}{note}{Example 21.3.4 (Stima della velocità dell’ambulanza con effetto Doppler)}
+\begin{sphinxadmonition}{note}{Example 22.3.4 (Stima della velocità dell’ambulanza con effetto Doppler)}
 
 
 
@@ -13963,7 +14047,7 @@ Mettendo a sistema le due equazioni, si può calcolare la velocità dell’ambul
 (3) …
 \end{sphinxadmonition}
 \label{ch/waves/waves-phenomena:ex-doppler-astronomy}
-\begin{sphinxadmonition}{note}{Example 21.3.5 (Effetto doppler in astronomia)}
+\begin{sphinxadmonition}{note}{Example 22.3.5 (Effetto doppler in astronomia)}
 
 
 
@@ -14279,7 +14363,7 @@ ottica quantistica, riconosce la natura discreta della radiazione elettromagneti
 \sphinxAtStartPar
 \sphinxstylestrong{Velocità della luce nel vuoto.} La velocità della luce nel vuoto è una costante della natura. Viene qui indicata con \(c_0\), o a volte con \(c\) per brevità o pigrizia.
 \label{ch/waves/optics:def:refraction-index}
-\begin{sphinxadmonition}{note}{Definition 22.1 (Velocità della luce nei materiali e indice di rifrazione.)}
+\begin{sphinxadmonition}{note}{Definition 23.1 (Velocità della luce nei materiali e indice di rifrazione.)}
 
 
 
@@ -14348,7 +14432,7 @@ Storia della misura della luce%
 \subsection{Princìpi dell’ottica geometrica}
 \label{\detokenize{ch/waves/optics-geometric:principi-dell-ottica-geometrica}}\label{\detokenize{ch/waves/optics-geometric:physics-hs-waves-optics-geometric-principles}}
 \sphinxAtStartPar
-\sphinxstylestrong{Propagazione rettilinea in un mezzo omogeneo.} In un mezzo omogeneo, con indice di rifrazione \(n\) ({\hyperref[\detokenize{ch/waves/optics:def:refraction-index}]{\sphinxcrossref{Definition 22.1}}}) uniforme, i raggi luminosi si propagano su traiettorie rettilinee.
+\sphinxstylestrong{Propagazione rettilinea in un mezzo omogeneo.} In un mezzo omogeneo, con indice di rifrazione \(n\) ({\hyperref[\detokenize{ch/waves/optics:def:refraction-index}]{\sphinxcrossref{Definition 23.1}}}) uniforme, i raggi luminosi si propagano su traiettorie rettilinee.
 
 \sphinxAtStartPar
 \sphinxstylestrong{Legge di Snell \sphinxhyphen{} riflessione e rifrazione tra mezzi discontinui.} Per soddisfare le condizioni di continuità del campo elettromagnetico in corrispondenza di una discontinuità di proprietà fisiche, un raggio che si propaga nel mezzo 1 e incidente su una discontinuità con il mezzo 2 con un angolo \(\theta{1,i}\) con la direzione normale, in generale:
@@ -14378,7 +14462,7 @@ viene trasmesso con angolo \(\theta_{2,t}\), tale che
 \sphinxAtStartPar
 \sphinxstylestrong{Principio di Fermat.} La propagazione di un raggio luminoso può essere riformulata con il principio di Fermat: un raggio luminoso da una sorgente a un osservatore percorre la traiettoria con tempo di percorrenza minimo.
 \label{ch/waves/optics-geometric:example-0}
-\begin{sphinxadmonition}{note}{Example 22.1.1 (Principio di Fermat e legge di Snell)}
+\begin{sphinxadmonition}{note}{Example 23.1.1 (Principio di Fermat e legge di Snell)}
 
 
 
@@ -14432,7 +14516,7 @@ C.A.Doppler, 1842 \sphinxstyleemphasis{On the coloured light of the binary stars
 %
 \end{footnote} è un effetto dovuto al moto relativo tra sorgente e ricevente, che è origine della differenza tra la frequenza del segnale emesso dalla sorgente del segnale e la frequenza del segnale misurato dal ricevente.
 \label{ch/waves/optics-phenomena:example-0}
-\begin{sphinxadmonition}{note}{Example 22.2.1 (Red\sphinxhyphen{}shift)}
+\begin{sphinxadmonition}{note}{Example 23.2.1 (Red\sphinxhyphen{}shift)}
 
 
 \end{sphinxadmonition}
@@ -14458,17 +14542,17 @@ Coefficienti di Fresnel per la polarizzazione della luce riflessa e trasmessa
 
 \end{itemize}
 \label{ch/waves/optics-phenomena:example-1}
-\begin{sphinxadmonition}{note}{Example 22.2.2 (Arcobaleno)}
+\begin{sphinxadmonition}{note}{Example 23.2.2 (Arcobaleno)}
 
 
 \end{sphinxadmonition}
 \label{ch/waves/optics-phenomena:example-2}
-\begin{sphinxadmonition}{note}{Example 22.2.3 (Riflessione totale)}
+\begin{sphinxadmonition}{note}{Example 23.2.3 (Riflessione totale)}
 
 
 \end{sphinxadmonition}
 \label{ch/waves/optics-phenomena:example-3}
-\begin{sphinxadmonition}{note}{Example 22.2.4 (Polarizzazione della luce riflessa)}
+\begin{sphinxadmonition}{note}{Example 23.2.4 (Polarizzazione della luce riflessa)}
 
 
 \end{sphinxadmonition}
@@ -14476,17 +14560,17 @@ Coefficienti di Fresnel per la polarizzazione della luce riflessa e trasmessa
 
 \subsubsection{Rifrazione continua \sphinxhyphen{} Principio di Fermat}
 \label{\detokenize{ch/waves/optics-phenomena:rifrazione-continua-principio-di-fermat}}\label{ch/waves/optics-phenomena:example-4}
-\begin{sphinxadmonition}{note}{Example 22.2.5 (Miraggi)}
+\begin{sphinxadmonition}{note}{Example 23.2.5 (Miraggi)}
 
 
 \end{sphinxadmonition}
 \label{ch/waves/optics-phenomena:example-5}
-\begin{sphinxadmonition}{note}{Example 22.2.6 (Schlieren)}
+\begin{sphinxadmonition}{note}{Example 23.2.6 (Schlieren)}
 
 
 \end{sphinxadmonition}
 \label{ch/waves/optics-phenomena:example-6}
-\begin{sphinxadmonition}{note}{Example 22.2.7 (Osservazioni astronomiche attraverso l’atmosfera)}
+\begin{sphinxadmonition}{note}{Example 23.2.7 (Osservazioni astronomiche attraverso l’atmosfera)}
 
 
 \end{sphinxadmonition}
@@ -14499,7 +14583,7 @@ Alcuni materiali sono dispersivi, cioè la velocità di propagazione nel materia
 \begin{equation*}
 \begin{split}n(f) = \frac{c_0}{c(f)} \ .\end{split}
 \end{equation*}\label{ch/waves/optics-phenomena:em-waves:dispersion:prism}
-\begin{sphinxadmonition}{note}{Example 22.2.8 (Prismi, tra Newton, Pink Floyd e spettrografia)}
+\begin{sphinxadmonition}{note}{Example 23.2.8 (Prismi, tra Newton, Pink Floyd e spettrografia)}
 
 
 
@@ -14531,7 +14615,7 @@ per \sphinxstylestrong{spettri discreti} come la formazione di una serie di righ
 \end{itemize}
 \end{sphinxadmonition}
 \label{ch/waves/optics-phenomena:example-8}
-\begin{sphinxadmonition}{note}{Example 22.2.9 (Arcobaleno)}
+\begin{sphinxadmonition}{note}{Example 23.2.9 (Arcobaleno)}
 
 
 
@@ -14909,7 +14993,7 @@ teleobiettivo: \(100-800 \, mm\)
 \sphinxAtStartPar
 \sphinxstylestrong{Effetto sulle proporzioni di oggetti a distanza diversa: angolo di campo, dimensioni relative e prospettiva.} Lunghezze focali piccole rendono oggetti a distanza diversa di dimensione molto diversa (dovuto ad angolo di campo maggiore, e distanze minori dal soggetto principale)
 \label{ch/waves/optics-lens:magnifying-lens}
-\begin{sphinxadmonition}{note}{Example 22.3.1 (Lente di ingrandimento)}
+\begin{sphinxadmonition}{note}{Example 23.3.1 (Lente di ingrandimento)}
 
 
 
@@ -14977,7 +15061,7 @@ Sherlock Holmes, occhio molto vicino alla lente
 \end{itemize}
 \end{sphinxadmonition}
 \label{ch/waves/optics-lens:lenses-simple}
-\begin{sphinxadmonition}{note}{Example 22.3.2 (Confronto tra obiettivi (di lenti semplici))}
+\begin{sphinxadmonition}{note}{Example 23.3.2 (Confronto tra obiettivi (di lenti semplici))}
 
 
 
@@ -15177,7 +15261,7 @@ altri limiti tecnici per strumenti con una lente semplice derivano dalla distanz
 
 \item {} 
 \sphinxAtStartPar
-il fattore di magnificazione è determinato dalla distanza dell’oggetto \(d_o\), non è possibile compiere un ingrandimento. In seguito, nell’esempio {\hyperref[\detokenize{ch/waves/optics-lens:zoom}]{\sphinxcrossref{Example 22.3.5}}} viene discusso un semplice meccanismo che permette l’ingrandimento dell’immagine (e quindi la riduzione dell’angolo di campo).
+il fattore di magnificazione è determinato dalla distanza dell’oggetto \(d_o\), non è possibile compiere un ingrandimento. In seguito, nell’esempio {\hyperref[\detokenize{ch/waves/optics-lens:zoom}]{\sphinxcrossref{Example 23.3.5}}} viene discusso un semplice meccanismo che permette l’ingrandimento dell’immagine (e quindi la riduzione dell’angolo di campo).
 
 \end{itemize}
 \end{sphinxadmonition}
@@ -15185,12 +15269,12 @@ il fattore di magnificazione è determinato dalla distanza dell’oggetto \(d_o\
 
 \subsection{Lenti}
 \label{\detokenize{ch/waves/optics-lens:lenti}}\label{ch/waves/optics-lens:example-2}
-\begin{sphinxadmonition}{note}{Example 22.3.3 (Messa a fuoco)}
+\begin{sphinxadmonition}{note}{Example 23.3.3 (Messa a fuoco)}
 
 
 \end{sphinxadmonition}
 \label{ch/waves/optics-lens:example-3}
-\begin{sphinxadmonition}{note}{Example 22.3.4 (Auto\sphinxhyphen{}focus)}
+\begin{sphinxadmonition}{note}{Example 23.3.4 (Auto\sphinxhyphen{}focus)}
 
 
 \begin{itemize}
@@ -15205,12 +15289,12 @@ Per contrasto
 \end{itemize}
 \end{sphinxadmonition}
 \label{ch/waves/optics-lens:zoom}
-\begin{sphinxadmonition}{note}{Example 22.3.5 (Zoom)}
+\begin{sphinxadmonition}{note}{Example 23.3.5 (Zoom)}
 
 
 
 \sphinxAtStartPar
-L’esempio {\hyperref[\detokenize{ch/waves/optics-lens:lenses-simple}]{\sphinxcrossref{Example 22.3.2}}} sulle lenti semplici ha mostrato come il rapporto di magnificazione, e quindi l’ingrandimento, in quei sistemi sia determinato dalla distanza dell’oggetto.
+L’esempio {\hyperref[\detokenize{ch/waves/optics-lens:lenses-simple}]{\sphinxcrossref{Example 23.3.2}}} sulle lenti semplici ha mostrato come il rapporto di magnificazione, e quindi l’ingrandimento, in quei sistemi sia determinato dalla distanza dell’oggetto.
 
 \sphinxAtStartPar
 Zoom: sistema afocale (modifica l’ingrandimento angolare) + lente focale (si occupa della generazione dell’immagine)
@@ -16138,7 +16222,7 @@ distribuzioni lineari, superficiali, nel volume
 
 \subsubsection{Dipolo elettrico}
 \label{\detokenize{ch/electromagnetism/electrostatics:dipolo-elettrico}}\label{\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-e-field-dipole}}\label{ch/electromagnetism/electrostatics:electric-dipole}
-\begin{sphinxadmonition}{note}{Example 24.1.1 (Il dipolo elettrico)}
+\begin{sphinxadmonition}{note}{Example 25.1.1 (Il dipolo elettrico)}
 
 
 
@@ -16179,7 +16263,7 @@ Il modello di dipolo elettrico può essere utilizzato per rappresentare la \sphi
 \sphinxattableend\end{savenotes}
 \end{sphinxadmonition}
 \label{ch/electromagnetism/electrostatics:electric-dipole-ext-e-field}
-\begin{sphinxadmonition}{note}{Example 24.1.2 (Il dipolo elettrico in un campo elettrico esterno uniforme)}
+\begin{sphinxadmonition}{note}{Example 25.1.2 (Il dipolo elettrico in un campo elettrico esterno uniforme)}
 
 
 
@@ -16311,7 +16395,7 @@ esempio 2\sphinxhyphen{}dimensionale, con script
 \end{itemize}
 \end{sphinxadmonition}
 \label{ch/electromagnetism/electrostatics:charge-sphere:conductor}
-\begin{sphinxadmonition}{note}{Example 24.1.3 (Distribuzione di carica in un guscio sferico conduttore \sphinxhyphen{} simmetria sferica)}
+\begin{sphinxadmonition}{note}{Example 25.1.3 (Distribuzione di carica in un guscio sferico conduttore \sphinxhyphen{} simmetria sferica)}
 
 
 
@@ -16357,7 +16441,7 @@ per \(r > R_2\):
 \sphinxstylestrong{todo} aggiungere esempio numerico?
 \end{sphinxadmonition}
 \label{ch/electromagnetism/electrostatics:faraday-cage}
-\begin{sphinxadmonition}{note}{Example 24.1.4 (Gabbia di Faraday)}
+\begin{sphinxadmonition}{note}{Example 25.1.4 (Gabbia di Faraday)}
 
 
 \end{sphinxadmonition}
@@ -16371,7 +16455,7 @@ polarizzazione: descrizione
 
 \item {} 
 \sphinxAtStartPar
-polarizzazione equivalente a una distribuzione di volume di {\hyperref[\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-e-field-dipole}]{\sphinxcrossref{\DUrole{std,std-ref}{dipoli elettrici}}}}, vedi {\hyperref[\detokenize{ch/electromagnetism/electrostatics:electric-dipole}]{\sphinxcrossref{Example 24.1.1}}}, equivalente a una distribuzione di carica superficiale e una distribuzione di carica di volume solo se polarizzazione non uniforme
+polarizzazione equivalente a una distribuzione di volume di {\hyperref[\detokenize{ch/electromagnetism/electrostatics:physics-hs-electromagnetism-electrostatics-e-field-dipole}]{\sphinxcrossref{\DUrole{std,std-ref}{dipoli elettrici}}}}, vedi {\hyperref[\detokenize{ch/electromagnetism/electrostatics:electric-dipole}]{\sphinxcrossref{Example 25.1.1}}}, equivalente a una distribuzione di carica superficiale e una distribuzione di carica di volume solo se polarizzazione non uniforme
 
 \end{itemize}
 
@@ -16418,7 +16502,7 @@ da cui
 \par
 \sphinxattableend\end{savenotes}
 \label{ch/electromagnetism/electrostatics:charge-sphere:dielectric}
-\begin{sphinxadmonition}{note}{Example 24.1.5 (Distribuzione di carica in un guscio sferico dielettrico senza carica netta \sphinxhyphen{} simmetria sferica)}
+\begin{sphinxadmonition}{note}{Example 25.1.5 (Distribuzione di carica in un guscio sferico dielettrico senza carica netta \sphinxhyphen{} simmetria sferica)}
 
 
 
@@ -16518,7 +16602,7 @@ Avendo dimostrato la legge di Gauss per una carica puntiforme attraverso una sup
 \sphinxAtStartPar
 Utilizzando la simmetria del problema, la legge di Gauss per il campo elettrico consente di valutare abbastanza semplicemente il campo elettrico di alcune smeplici distribuzioni di carica.
 \label{ch/electromagnetism/electrostatics:ex-e-field-point}
-\begin{sphinxadmonition}{note}{Example 24.1.6 (Campo elettrico di una carica puntiforme)}
+\begin{sphinxadmonition}{note}{Example 25.1.6 (Campo elettrico di una carica puntiforme)}
 
 
 
@@ -16530,7 +16614,7 @@ Usando coordinate sferiche
 \begin{split}\vec{e}(r) = \frac{Q}{4 \pi \varepsilon r^2} \hat{r} \ .\end{split}
 \end{equation*}\end{sphinxadmonition}
 \label{ch/electromagnetism/electrostatics:ex-e-field-line}
-\begin{sphinxadmonition}{note}{Example 24.1.7 (Campo elettrico di un filo di lunghezza infinita con densità di carica uniforme)}
+\begin{sphinxadmonition}{note}{Example 25.1.7 (Campo elettrico di un filo di lunghezza infinita con densità di carica uniforme)}
 
 
 
@@ -16542,7 +16626,7 @@ Usando coordinate cilindriche
 \begin{split}\vec{e}(r) = \frac{q}{2 \pi \varepsilon r} \hat{r} \ .\end{split}
 \end{equation*}\end{sphinxadmonition}
 \label{ch/electromagnetism/electrostatics:ex-e-field-plane}
-\begin{sphinxadmonition}{note}{Example 24.1.8 (Campo elettrico di un piano con densità di carica uniforme)}
+\begin{sphinxadmonition}{note}{Example 25.1.8 (Campo elettrico di un piano con densità di carica uniforme)}
 
 
 
@@ -16555,7 +16639,7 @@ Usando coordinate cartesiane, e ricordandosi di considerare le superfici da entr
  = \left\{ \begin{aligned} & \ \ \frac{\sigma}{2 \varepsilon} \hat{x} && \qquad x > 0 \\ & - \frac{\sigma}{2 \varepsilon} \hat{x} && \qquad x < 0 \end{aligned}\right. \end{split}
 \end{equation*}\end{sphinxadmonition}
 \label{ch/electromagnetism/electrostatics:ex-e-field-cylinder}
-\begin{sphinxadmonition}{note}{Example 24.1.9 (Campo elettrico di una cilindro infinito con densità di carica uniforme)}
+\begin{sphinxadmonition}{note}{Example 25.1.9 (Campo elettrico di una cilindro infinito con densità di carica uniforme)}
 
 
 
@@ -16577,7 +16661,7 @@ e_r(r) = \left\{ \begin{aligned} & \frac{\rho r}{\varepsilon} = \frac{Q/H}{2 \pi
 \end{split}
 \end{equation*}\end{sphinxadmonition}
 \label{ch/electromagnetism/electrostatics:ex-e-field-sphere}
-\begin{sphinxadmonition}{note}{Example 24.1.10 (Campo elettrico di una sfera con densità di carica uniforme)}
+\begin{sphinxadmonition}{note}{Example 25.1.10 (Campo elettrico di una sfera con densità di carica uniforme)}
 
 
 
@@ -16599,7 +16683,7 @@ e_r(r) = \left\{ \begin{aligned} & \frac{1}{3} \frac{\rho r}{\varepsilon} = \fra
 \end{split}
 \end{equation*}\end{sphinxadmonition}
 \label{ch/electromagnetism/electrostatics:ex-e-field-shell-cyl}
-\begin{sphinxadmonition}{note}{Example 24.1.11 (Campo elettrico di un guscio cilindrico con densità di carica uniforme)}
+\begin{sphinxadmonition}{note}{Example 25.1.11 (Campo elettrico di un guscio cilindrico con densità di carica uniforme)}
 
 
 
@@ -16619,7 +16703,7 @@ e_r(r) = \left\{ \begin{aligned} & 0 && \qquad r < R \\ & \frac{q}{2 \pi r} && \
 \end{split}
 \end{equation*}\end{sphinxadmonition}
 \label{ch/electromagnetism/electrostatics:ex-e-field-shell}
-\begin{sphinxadmonition}{note}{Example 24.1.12 (Campo elettrico di un guscio sferico con densità di carica uniforme)}
+\begin{sphinxadmonition}{note}{Example 25.1.12 (Campo elettrico di un guscio sferico con densità di carica uniforme)}
 
 
 
@@ -16732,11 +16816,11 @@ Sfruttando la simmetria del problema \sphinxhyphen{} omogeneo nelle direzioni pa
 \begin{split} Q = \sigma \, A = \varepsilon \, e \, A = \frac{\varepsilon \, \ell}{A} \, v = C \, v \ ,\end{split}
 \end{equation*}
 \sphinxAtStartPar
-definendo la capacità \(C\) (vedi {\hyperref[\detokenize{ch/electromagnetism/electrostatics:capacitor-capacity}]{\sphinxcrossref{Definition 24.1.1}}}) come costante di proporzionalità tra la carica elettrica immagazzinata nelle armature del condensatore e la differenza di potenziale ai capi del condensatore stesso, e avendo trovato l’espressione della capacità di un condensatore piano,
+definendo la capacità \(C\) (vedi {\hyperref[\detokenize{ch/electromagnetism/electrostatics:capacitor-capacity}]{\sphinxcrossref{Definition 25.1.1}}}) come costante di proporzionalità tra la carica elettrica immagazzinata nelle armature del condensatore e la differenza di potenziale ai capi del condensatore stesso, e avendo trovato l’espressione della capacità di un condensatore piano,
 \begin{equation*}
 \begin{split}C = \frac{\varepsilon \, A}{\ell} \ .\end{split}
 \end{equation*}\label{ch/electromagnetism/electrostatics:capacitor-capacity}
-\begin{sphinxadmonition}{note}{Definition 24.1.1 (Capacità di un condensatore)}
+\begin{sphinxadmonition}{note}{Definition 25.1.1 (Capacità di un condensatore)}
 
 
 
@@ -16780,7 +16864,7 @@ La formula precedente e la definizione di capacità, \(Q = C \, v\), consente di
 \begin{equation*}
 \begin{split}C = 4 \pi \, \varepsilon \,  \frac{R_1 \, R_2}{R_2 - R_1} \ .\end{split}
 \end{equation*}\label{ch/electromagnetism/electrostatics:example-13}
-\begin{sphinxadmonition}{note}{Example 24.1.13 (Forza agente sulle pareti di un condensatore)}
+\begin{sphinxadmonition}{note}{Example 25.1.13 (Forza agente sulle pareti di un condensatore)}
 
 
 
@@ -16844,12 +16928,12 @@ condensatori in parallelo
 \sphinxAtStartPar
  Motivazione dell’importanza dei condensatori, uso nei circuiti in molti sistemi moderni, aggiungere \sphinxstylestrong{link} a: circuiti come filtro, esempi fatti in seguito (strumenti di misura,…),… 
 \label{ch/electromagnetism/electrostatics:capacitor-series}
-\begin{sphinxadmonition}{note}{Example 24.1.14 (Condensatori in serie)}
+\begin{sphinxadmonition}{note}{Example 25.1.14 (Condensatori in serie)}
 
 
 \end{sphinxadmonition}
 \label{ch/electromagnetism/electrostatics:capacitor-parallel}
-\begin{sphinxadmonition}{note}{Example 24.1.15 (Condensatori in parallelo)}
+\begin{sphinxadmonition}{note}{Example 25.1.15 (Condensatori in parallelo)}
 
 
 \end{sphinxadmonition}
@@ -16857,12 +16941,12 @@ condensatori in parallelo
 \sphinxAtStartPar
 Altre configurazioni. Applicazioni: {\hyperref[\detokenize{ch/instrumentation/kinematics:instrumentation-kinematics-accelerometer-mems}]{\sphinxcrossref{\DUrole{std,std-ref}{accelerometro capacitivo MEMS}}}},…
 \label{ch/electromagnetism/electrostatics:example-16}
-\begin{sphinxadmonition}{note}{Example 24.1.16 (A  B  A)}
+\begin{sphinxadmonition}{note}{Example 25.1.16 (A  B  A)}
 
 
 \end{sphinxadmonition}
 \label{ch/electromagnetism/electrostatics:example-17}
-\begin{sphinxadmonition}{note}{Example 24.1.17 (A  B  A … B A)}
+\begin{sphinxadmonition}{note}{Example 25.1.17 (A  B  A … B A)}
 
 
 
@@ -16935,7 +17019,7 @@ Distribuzioni di cariche
 \end{itemize}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.1 (Cariche puntiformi)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.1 (Cariche puntiformi)}
 
 
 
@@ -16977,7 +17061,7 @@ determinare l’entità della carica \(q_3\) affinché il sistema di cariche \(q
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.2 (Cariche puntiformi nel piano)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.2 (Cariche puntiformi nel piano)}
 
 
 
@@ -17005,7 +17089,7 @@ il lavoro necessario per portare una quinta carica \(q_5\) dall’infinito al ce
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.3}
+\begin{sphinxadmonition}{note}{Exercise 25.1.3}
 
 
 
@@ -17029,7 +17113,7 @@ calcolare il lavoro compiuto per portare una carica \(q_A\) dal punto \(A_1\) al
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.4}
+\begin{sphinxadmonition}{note}{Exercise 25.1.4}
 
 
 
@@ -17067,13 +17151,13 @@ Moto di cariche tra pareti di condensatore
 \end{itemize}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.5 (Lavoro meccanico su condensatore modificandone la geometria)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.5 (Lavoro meccanico su condensatore modificandone la geometria)}
 
 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.6 (Lavoro necessario a inserire o rimuovere un dielettrico)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.6 (Lavoro necessario a inserire o rimuovere un dielettrico)}
 
 
 \end{sphinxadmonition}
@@ -17085,7 +17169,7 @@ vecchi esercizi
 \end{itemize}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.7 (Legge di Coulomb)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.7 (Legge di Coulomb)}
 
 
 
@@ -17094,7 +17178,7 @@ Due cariche di \(q_1 = 3 \, \mu C\) e \(q_2 = -2 \, \mu C\) sono separate da una
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.8 (Forza Elettrica e Direzione)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.8 (Forza Elettrica e Direzione)}
 
 
 
@@ -17103,7 +17187,7 @@ Due cariche puntiformi di carica \(q_1 = 4 \, \mu C\) e \(q_2 = -3 \, \mu C\) so
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.9 (Campo Elettrico da una Carica Puntiforme)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.9 (Campo Elettrico da una Carica Puntiforme)}
 
 
 
@@ -17112,7 +17196,7 @@ Calcola il campo elettrico a una distanza \(r = 2 \, \text{m}\) da una carica di
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.10 (Potenziale Elettrico di una Carica Puntiforme)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.10 (Potenziale Elettrico di una Carica Puntiforme)}
 
 
 
@@ -17121,7 +17205,7 @@ Calcola il potenziale elettrico creato da una carica di \(q = 3 \, \mu C\) a una
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.11 (Legge di Gauss)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.11 (Legge di Gauss)}
 
 
 
@@ -17130,7 +17214,7 @@ Calcola il flusso del campo elettrico attraverso una superficie sferica di raggi
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.12 (Superficie Gaussiana con Distribuzione Sferica)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.12 (Superficie Gaussiana con Distribuzione Sferica)}
 
 
 
@@ -17139,7 +17223,7 @@ Una carica distribuita uniformemente su una superficie sferica di raggio \(R = 0
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.13 (Campo Elettrico da una Distribuzione Continua di Carica)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.13 (Campo Elettrico da una Distribuzione Continua di Carica)}
 
 
 
@@ -17148,7 +17232,7 @@ Calcola il campo elettrico prodotto da una distribuzione continua di carica su u
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.14 (Energia Potenziale Elettrica tra Due Cariche)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.14 (Energia Potenziale Elettrica tra Due Cariche)}
 
 
 
@@ -17157,7 +17241,7 @@ Calcola l’energia potenziale elettrica tra due cariche di \(q_1 = 1 \, \mu C\)
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.15 (Legge di Faraday Stazionaria)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.15 (Legge di Faraday Stazionaria)}
 
 
 
@@ -17166,7 +17250,7 @@ Calcola il campo elettrico indotto da un campo magnetico stazionario di intensit
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-15}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.16 (Moto di una Carica in un Campo Elettrico)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.16 (Moto di una Carica in un Campo Elettrico)}
 
 
 
@@ -17175,7 +17259,7 @@ Una particella di carica \(q = 5 \, \mu C\) si muove con velocità \(v = 3 \, \t
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-16}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.17 (Capacitore Piatto)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.17 (Capacitore Piatto)}
 
 
 
@@ -17184,7 +17268,7 @@ Calcola la capacità di un condensatore a piatti paralleli con superficie dei pi
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-17}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.18 (Energia di un Condensatore)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.18 (Energia di un Condensatore)}
 
 
 
@@ -17193,7 +17277,7 @@ Calcola l’energia immagazzinata in un condensatore con capacità \(C = 2 \, \m
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-18}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.19 (Energia Potenziale di un Condensatore)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.19 (Energia Potenziale di un Condensatore)}
 
 
 
@@ -17202,7 +17286,7 @@ Un condensatore a piatti paralleli ha una capacità di \(C = 3 \, \mu F\) e vien
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-19}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.20 (Potenziale di un Condensatore)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.20 (Potenziale di un Condensatore)}
 
 
 
@@ -17211,7 +17295,7 @@ Calcola il potenziale elettrico tra due piatti di un condensatore a piatti paral
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-20}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.21 (Capacità di un Condensatore con Dielettrico)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.21 (Capacità di un Condensatore con Dielettrico)}
 
 
 
@@ -17220,7 +17304,7 @@ Un condensatore a piatti paralleli ha una capacità di \(C = 5 \, \mu F\) con ar
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-21}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.22 (Densità di Energia in un Campo Elettrico)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.22 (Densità di Energia in un Campo Elettrico)}
 
 
 
@@ -17229,7 +17313,7 @@ Calcola la densità di energia in un campo elettrico con intensità \(E = 100 \,
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-22}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.23 (Energia Potenziale di una Carica in un Condensatore)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.23 (Energia Potenziale di una Carica in un Condensatore)}
 
 
 
@@ -17238,7 +17322,7 @@ Calcola l’energia potenziale di una carica di \(q = 2 \, \mu C\) in un condens
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-23}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.24 (Capacità di un Condensatore Sferico)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.24 (Capacità di un Condensatore Sferico)}
 
 
 
@@ -17247,7 +17331,7 @@ Calcola la capacità di un condensatore sferico con raggio interno \(r_1 = 0.1 \
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-24}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.25 (Carica di un Condensatore)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.25 (Carica di un Condensatore)}
 
 
 
@@ -17256,7 +17340,7 @@ Un condensatore con capacità \(C = 10 \, \mu F\) è collegato a una batteria ch
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-25}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.26 (Potenziale di una Carica in un Campo Elettrico Uniforme)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.26 (Potenziale di una Carica in un Campo Elettrico Uniforme)}
 
 
 
@@ -17265,7 +17349,7 @@ Una carica di \(q = 2 \, \mu C\) è posta a una distanza di \(r = 0.5 \, \text{m
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-26}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.27 (Legge di Coulomb in un Dielettrico)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.27 (Legge di Coulomb in un Dielettrico)}
 
 
 
@@ -17274,7 +17358,7 @@ Due cariche di \(q_1 = 4 \, \mu C\) e \(q_2 = -6 \, \mu C\) sono separate da una
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-27}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.28 (Potenziale Elettrico di un Dipolo)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.28 (Potenziale Elettrico di un Dipolo)}
 
 
 
@@ -17283,7 +17367,7 @@ Calcola il potenziale elettrico creato da un dipolo con momento dipolare \(p = 5
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-28}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.29 (Condensatore con Dielettrico Non Lineare)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.29 (Condensatore con Dielettrico Non Lineare)}
 
 
 
@@ -17292,7 +17376,7 @@ Calcola la capacità di un condensatore a piatti paralleli con costante dielettr
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-29}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.30 (Forza su una Carica in un Campo Elettrico Non Uniforme)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.30 (Forza su una Carica in un Campo Elettrico Non Uniforme)}
 
 
 
@@ -17301,7 +17385,7 @@ Una particella di carica \(q = 1 \, \mu C\) è posta in un campo elettrico che v
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electrostatics-problems-exercise-30}
 
-\begin{sphinxadmonition}{note}{Exercise 24.1.31 (Campo Elettrico all’Interno di una Sfera Carica)}
+\begin{sphinxadmonition}{note}{Exercise 25.1.31 (Campo Elettrico all’Interno di una Sfera Carica)}
 
 
 
@@ -17337,7 +17421,7 @@ Calcola il campo elettrico all’interno di una sfera carica con densità di car
 
 \subsection{Definizioni}
 \label{\detokenize{ch/electromagnetism/electric-current:definizioni}}\label{ch/electromagnetism/electric-current:electric-current}
-\begin{sphinxadmonition}{note}{Definition 24.2.1 (Corrente elettrica)}
+\begin{sphinxadmonition}{note}{Definition 25.2.1 (Corrente elettrica)}
 
 
 
@@ -17363,7 +17447,7 @@ La \sphinxstylestrong{corrente elettrica} attraverso una superficie \(S\) viene 
 
 \subsubsection{Densità di corrente elettrica}
 \label{\detokenize{ch/electromagnetism/electric-current:densita-di-corrente-elettrica}}\label{\detokenize{ch/electromagnetism/electric-current:electric-current-density-def}}\label{ch/electromagnetism/electric-current:electric-current-density}
-\begin{sphinxadmonition}{note}{Definition 24.2.2 (Densità di corrente elettrica)}
+\begin{sphinxadmonition}{note}{Definition 25.2.2 (Densità di corrente elettrica)}
 
 
 \begin{equation*}
@@ -17385,7 +17469,7 @@ Nell’ipotesi di avere due sostanze diverse con densità di carica carica \(\rh
 Nel caso in cui il materiale sia neutro, la densità di carica elettrica è nulla, \(0 = \rho = \rho^+ + \rho^- =\) e quindi \(\rho^+ = - \rho^-\) e la densità di corrente elettrica può essere scritta come \(\vec{j} = \rho^- (\vec{v}^- - \vec{v}^+)\).
 \end{sphinxadmonition}
 \label{ch/electromagnetism/electric-current:electric-current-wire}
-\begin{sphinxadmonition}{note}{Example 24.2.1 (Corrente in un cavo elettrico di piccola sezione)}
+\begin{sphinxadmonition}{note}{Example 25.2.1 (Corrente in un cavo elettrico di piccola sezione)}
 
 
 
@@ -17455,7 +17539,7 @@ Senza «forzanti esterne», come ad esempio campi elettrici, il moto degli elett
 
 \paragraph{Conduttori di Ohm}
 \label{\detokenize{ch/electromagnetism/electric-current:conduttori-di-ohm}}\label{\detokenize{ch/electromagnetism/electric-current:physics-hs-electromagnetism-electric-current-solids-conductor-ohm}}\label{ch/electromagnetism/electric-current:ohm-local}
-\begin{sphinxadmonition}{note}{Definition 24.2.3 (Conduttore di Ohm \sphinxhyphen{} legge di Ohm in forma locale)}
+\begin{sphinxadmonition}{note}{Definition 25.2.3 (Conduttore di Ohm \sphinxhyphen{} legge di Ohm in forma locale)}
 
 
 
@@ -17486,7 +17570,7 @@ avendo introdotto la differenza di potenziale elementare \(d v\) tra gli estremi
 \sphinxAtStartPar
 Queste relazioni che ben descrivono il comportamento di cavi elettrici conduttori in un ampio regime di funzionamento, sono le leggi Ohm.
 \label{ch/electromagnetism/electric-current:ohm-wire}
-\begin{sphinxadmonition}{note}{Definition 24.2.4 (Leggi di Ohm per cavi elettrici)}
+\begin{sphinxadmonition}{note}{Definition 25.2.4 (Leggi di Ohm per cavi elettrici)}
 
 
 
@@ -17511,7 +17595,7 @@ Nel caso di proprietà omogenee in un resistore di lunghezza \(\ell\), la sua re
 \begin{split}R = \int d R = \int_{\ell} \frac{\rho_R}{A} d \ell = \dfrac{\rho_R \ell}{A} \ .\end{split}
 \end{equation*}\end{sphinxadmonition}
 \label{ch/electromagnetism/electric-current:resistance-temperature}
-\begin{sphinxadmonition}{note}{Example 24.2.2 (Effetto della temperatura sulla resistenza)}
+\begin{sphinxadmonition}{note}{Example 25.2.2 (Effetto della temperatura sulla resistenza)}
 
 
 
@@ -17656,7 +17740,7 @@ vecchi problemi
 \end{itemize}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 24.2.1 (Conservazione della Carica)}
+\begin{sphinxadmonition}{note}{Exercise 25.2.1 (Conservazione della Carica)}
 
 
 
@@ -17665,7 +17749,7 @@ In un conduttore, la carica totale rimane invariata quando una corrente elettric
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 24.2.2 (Legge di Ohm)}
+\begin{sphinxadmonition}{note}{Exercise 25.2.2 (Legge di Ohm)}
 
 
 
@@ -17674,7 +17758,7 @@ Calcola la corrente che attraversa un resistore con resistenza \(R = 10 \, \Omeg
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 24.2.3 (Legge di Ohm in un Circuito)}
+\begin{sphinxadmonition}{note}{Exercise 25.2.3 (Legge di Ohm in un Circuito)}
 
 
 
@@ -17683,7 +17767,7 @@ In un circuito serie con tre resistenze \(R_1 = 5 \, \Omega\), \(R_2 = 10 \, \Om
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 24.2.4 (Resistenza di un Conduttore)}
+\begin{sphinxadmonition}{note}{Exercise 25.2.4 (Resistenza di un Conduttore)}
 
 
 
@@ -17692,7 +17776,7 @@ Un conduttore ha una lunghezza di \(L = 2 \, \text{m}\), una sezione trasversale
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 24.2.5 (Conduzione nei Gas)}
+\begin{sphinxadmonition}{note}{Exercise 25.2.5 (Conduzione nei Gas)}
 
 
 
@@ -17701,7 +17785,7 @@ Considera un gas conduttore a temperatura \(T = 300 \, \text{K}\) e pressione \(
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 24.2.6 (Corrente nei Semiconduttori)}
+\begin{sphinxadmonition}{note}{Exercise 25.2.6 (Corrente nei Semiconduttori)}
 
 
 
@@ -17710,7 +17794,7 @@ In un semiconduttore di silicio, la mobilità degli elettroni è di \(1500 \, \t
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 24.2.7 (Corrente Elettrica in un Conduttore)}
+\begin{sphinxadmonition}{note}{Exercise 25.2.7 (Corrente Elettrica in un Conduttore)}
 
 
 
@@ -17719,7 +17803,7 @@ Un conduttore ha una resistenza di \(R = 5 \, \Omega\). Se una corrente di \(I =
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 24.2.8 (Conduttività di un Materiale)}
+\begin{sphinxadmonition}{note}{Exercise 25.2.8 (Conduttività di un Materiale)}
 
 
 
@@ -17728,7 +17812,7 @@ Un materiale ha una conduttività \(\sigma = 1.5 \times 10^6 \, \text{S/m}\) e u
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 24.2.9 (La Corrente in un Conduttore)}
+\begin{sphinxadmonition}{note}{Exercise 25.2.9 (La Corrente in un Conduttore)}
 
 
 
@@ -17737,7 +17821,7 @@ Se un conduttore ha una resistenza di \(R = 10 \, \Omega\) e una tensione di \(V
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 24.2.10 (Effetto Joule)}
+\begin{sphinxadmonition}{note}{Exercise 25.2.10 (Effetto Joule)}
 
 
 
@@ -17746,7 +17830,7 @@ Un filo di resistenza \(R = 0.5 \, \Omega\) trasporta una corrente di \(I = 2 \,
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 24.2.11 (Legge di Ohm per un Semiconduttore)}
+\begin{sphinxadmonition}{note}{Exercise 25.2.11 (Legge di Ohm per un Semiconduttore)}
 
 
 
@@ -17755,7 +17839,7 @@ In un semiconduttore con una resistività di \(\rho = 3 \times 10^{-4} \, \Omega
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 24.2.12 (Effetto della Temperatura sulla Resistenza)}
+\begin{sphinxadmonition}{note}{Exercise 25.2.12 (Effetto della Temperatura sulla Resistenza)}
 
 
 
@@ -17764,7 +17848,7 @@ La resistenza di un filo metallico è di \(R = 10 \, \Omega\) a \(T_0 = 20 \, \t
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 24.2.13 (Energia Spesa in un Conduttore)}
+\begin{sphinxadmonition}{note}{Exercise 25.2.13 (Energia Spesa in un Conduttore)}
 
 
 
@@ -17773,7 +17857,7 @@ Calcola l’energia spesa in un conduttore con resistenza \(R = 1 \, \Omega\) in
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 24.2.14 (Conduzione nei Semiconduttori)}
+\begin{sphinxadmonition}{note}{Exercise 25.2.14 (Conduzione nei Semiconduttori)}
 
 
 
@@ -17782,7 +17866,7 @@ Considera un semiconduttore di germanio con resistività \(\rho = 0.5 \, \Omega 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 24.2.15 (Corrente in un Circuito Serie)}
+\begin{sphinxadmonition}{note}{Exercise 25.2.15 (Corrente in un Circuito Serie)}
 
 
 
@@ -17791,7 +17875,7 @@ In un circuito serie con tre resistenze \(R_1 = 2 \, \Omega\), \(R_2 = 3 \, \Ome
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-15}
 
-\begin{sphinxadmonition}{note}{Exercise 24.2.16 (Densità di Corrente in un Conduttore)}
+\begin{sphinxadmonition}{note}{Exercise 25.2.16 (Densità di Corrente in un Conduttore)}
 
 
 
@@ -17800,7 +17884,7 @@ Un conduttore di lunghezza \(L = 2 \, \text{m}\) e sezione trasversale \(A = 0.5
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electric-current-problems-exercise-16}
 
-\begin{sphinxadmonition}{note}{Exercise 24.2.17 (Legge di Ohm per un Gas)}
+\begin{sphinxadmonition}{note}{Exercise 25.2.17 (Legge di Ohm per un Gas)}
 
 
 
@@ -18194,7 +18278,7 @@ moto di cariche all’interno di campo elettromagnetico
 \end{itemize}
 \phantomsection \label{exercise:ch/electromagnetism/electromagnetism-steady-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 24.3.5 (Amperometro \sphinxhyphen{} Azioni agenti sulla bobina)}
+\begin{sphinxadmonition}{note}{Exercise 25.3.5 (Amperometro \sphinxhyphen{} Azioni agenti sulla bobina)}
 
 
 
@@ -18218,19 +18302,19 @@ determinare la condizione di equilibrio alla rotazione che determina la misura d
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electromagnetism-steady-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 24.3.6 (Amperometro \sphinxhyphen{} Intrusività)}
+\begin{sphinxadmonition}{note}{Exercise 25.3.6 (Amperometro \sphinxhyphen{} Intrusività)}
 
 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electromagnetism-steady-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 24.3.7 (Amperometro \sphinxhyphen{} Sensibilità)}
+\begin{sphinxadmonition}{note}{Exercise 25.3.7 (Amperometro \sphinxhyphen{} Sensibilità)}
 
 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/electromagnetism-steady-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 24.3.8 (Voltmetro \sphinxhyphen{} Intrusività)}
+\begin{sphinxadmonition}{note}{Exercise 25.3.8 (Voltmetro \sphinxhyphen{} Intrusività)}
 
 
 \end{sphinxadmonition}
@@ -18994,17 +19078,17 @@ I sistemi elettromeccanici permettono di convertire energia elettromagnetica in 
 
 \subsubsection{Esempi elementari}
 \label{\detokenize{ch/electromagnetism/electric-machines:esempi-elementari}}\label{\detokenize{ch/electromagnetism/electric-machines:physics-hs-electromagnetism-electric-machines-motor-simple}}\label{ch/electromagnetism/electric-machines:motor:simple:darea}
-\begin{sphinxadmonition}{note}{Example 25.3.1 (Variazione di area di una spira)}
+\begin{sphinxadmonition}{note}{Example 26.3.1 (Variazione di area di una spira)}
 
 
 \end{sphinxadmonition}
 \label{ch/electromagnetism/electric-machines:motor:simple:dangle}
-\begin{sphinxadmonition}{note}{Example 25.3.2 (Variazione di orientazione di una spira)}
+\begin{sphinxadmonition}{note}{Example 26.3.2 (Variazione di orientazione di una spira)}
 
 
 \end{sphinxadmonition}
 \label{ch/electromagnetism/electric-machines:motor:simple:db}
-\begin{sphinxadmonition}{note}{Example 25.3.3 (Variazione del campo magnetico)}
+\begin{sphinxadmonition}{note}{Example 26.3.3 (Variazione del campo magnetico)}
 
 
 \end{sphinxadmonition}
@@ -19266,7 +19350,7 @@ come conseguenza della definizione {\color{red}\bfseries{}def:unit:ampere} dell�
 \section{Problemi}
 \label{\detokenize{ch/electromagnetism/em-waves-problems:problemi}}\label{\detokenize{ch/electromagnetism/em-waves-problems:physics-hs-electromagnetism-em-waves-problems}}\label{\detokenize{ch/electromagnetism/em-waves-problems::doc}}\phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-0}
 
-\begin{sphinxadmonition}{note}{Exercise 26.6.1 (Velocità della Luce)}
+\begin{sphinxadmonition}{note}{Exercise 27.6.1 (Velocità della Luce)}
 
 
 
@@ -19275,7 +19359,7 @@ Calcola la velocità della luce in un vuoto utilizzando la costante dielettrica 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-1}
 
-\begin{sphinxadmonition}{note}{Exercise 26.6.2 (Frequenza e Lunghezza d’Onda)}
+\begin{sphinxadmonition}{note}{Exercise 27.6.2 (Frequenza e Lunghezza d’Onda)}
 
 
 
@@ -19284,7 +19368,7 @@ Un’onda elettromagnetica ha una frequenza di \(f = 60 \, \text{MHz}\). Calcola
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-2}
 
-\begin{sphinxadmonition}{note}{Exercise 26.6.3 (Energia di un Foton)}
+\begin{sphinxadmonition}{note}{Exercise 27.6.3 (Energia di un Foton)}
 
 
 
@@ -19293,7 +19377,7 @@ Calcola l’energia di un fotone di luce con una lunghezza d’onda di \(500 \, 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-3}
 
-\begin{sphinxadmonition}{note}{Exercise 26.6.4 (Legge di Snell per Onde Elettromagnetiche)}
+\begin{sphinxadmonition}{note}{Exercise 27.6.4 (Legge di Snell per Onde Elettromagnetiche)}
 
 
 
@@ -19302,7 +19386,7 @@ Un’onda elettromagnetica passa dall’aria (indice di rifrazione \(n_1 = 1\)) 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-4}
 
-\begin{sphinxadmonition}{note}{Exercise 26.6.5 (Direzione del Campo Elettrico in un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 27.6.5 (Direzione del Campo Elettrico in un’onda Elettromagnetica)}
 
 
 
@@ -19311,7 +19395,7 @@ In un’onda elettromagnetica che si propaga lungo l’asse \(z\), con il campo 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-5}
 
-\begin{sphinxadmonition}{note}{Exercise 26.6.6 (Intensità di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 27.6.6 (Intensità di un’onda Elettromagnetica)}
 
 
 
@@ -19320,7 +19404,7 @@ Se l’intensità di un’onda elettromagnetica è \(I = 8 \, \text{W/m}^2\) e l
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-6}
 
-\begin{sphinxadmonition}{note}{Exercise 26.6.7 (Energia Mediata da un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 27.6.7 (Energia Mediata da un’onda Elettromagnetica)}
 
 
 
@@ -19329,7 +19413,7 @@ Un’onda elettromagnetica ha una frequenza di \(f = 100 \, \text{MHz}\). Se l�
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-7}
 
-\begin{sphinxadmonition}{note}{Exercise 26.6.8 (Propagazione in un Medio Dielettrico)}
+\begin{sphinxadmonition}{note}{Exercise 27.6.8 (Propagazione in un Medio Dielettrico)}
 
 
 
@@ -19338,7 +19422,7 @@ Un’onda elettromagnetica si propaga in un materiale con costante dielettrica \
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-8}
 
-\begin{sphinxadmonition}{note}{Exercise 26.6.9 (Polarizzazione di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 27.6.9 (Polarizzazione di un’onda Elettromagnetica)}
 
 
 
@@ -19347,7 +19431,7 @@ Un’onda elettromagnetica viene polarizzata attraverso un filtro lineare. Se la
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-9}
 
-\begin{sphinxadmonition}{note}{Exercise 26.6.10 (Effetto Doppler per Onde Elettromagnetiche)}
+\begin{sphinxadmonition}{note}{Exercise 27.6.10 (Effetto Doppler per Onde Elettromagnetiche)}
 
 
 
@@ -19356,7 +19440,7 @@ Un’onda elettromagnetica ha una frequenza \(f = 5 \, \text{GHz}\) e viene osse
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-10}
 
-\begin{sphinxadmonition}{note}{Exercise 26.6.11 (Energia per Unità di Volume di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 27.6.11 (Energia per Unità di Volume di un’onda Elettromagnetica)}
 
 
 
@@ -19365,7 +19449,7 @@ Calcola l’energia per unità di volume in un’onda elettromagnetica che ha un
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-11}
 
-\begin{sphinxadmonition}{note}{Exercise 26.6.12 (Onda Elettromagnetica nel Vuoto)}
+\begin{sphinxadmonition}{note}{Exercise 27.6.12 (Onda Elettromagnetica nel Vuoto)}
 
 
 
@@ -19374,7 +19458,7 @@ Una radiazione elettromagnetica ha una frequenza di \(f = 2 \, \text{GHz}\). Cal
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-12}
 
-\begin{sphinxadmonition}{note}{Exercise 26.6.13 (Impedenza di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 27.6.13 (Impedenza di un’onda Elettromagnetica)}
 
 
 
@@ -19383,7 +19467,7 @@ In un’onda elettromagnetica nel vuoto, calcola l’impedenza, sapendo che la p
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-13}
 
-\begin{sphinxadmonition}{note}{Exercise 26.6.14 (Spettro Elettromagnetico)}
+\begin{sphinxadmonition}{note}{Exercise 27.6.14 (Spettro Elettromagnetico)}
 
 
 
@@ -19392,7 +19476,7 @@ Un’onda elettromagnetica appartiene alla banda delle microonde con una frequen
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-14}
 
-\begin{sphinxadmonition}{note}{Exercise 26.6.15 (Legge di Ampère\sphinxhyphen{}Maxwell)}
+\begin{sphinxadmonition}{note}{Exercise 27.6.15 (Legge di Ampère\sphinxhyphen{}Maxwell)}
 
 
 
@@ -19401,7 +19485,7 @@ Utilizzando la legge di Ampère\sphinxhyphen{}Maxwell, calcola la corrente indot
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-15}
 
-\begin{sphinxadmonition}{note}{Exercise 26.6.16 (Direzione di Propagazione di un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 27.6.16 (Direzione di Propagazione di un’onda Elettromagnetica)}
 
 
 
@@ -19410,7 +19494,7 @@ In un’onda elettromagnetica che si propaga lungo l’asse \(z\) con il campo e
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-16}
 
-\begin{sphinxadmonition}{note}{Exercise 26.6.17 (Potenza Trasportata da un’onda Elettromagnetica)}
+\begin{sphinxadmonition}{note}{Exercise 27.6.17 (Potenza Trasportata da un’onda Elettromagnetica)}
 
 
 
@@ -19419,7 +19503,7 @@ Calcola la potenza trasportata da un’onda elettromagnetica con una intensità 
 \end{sphinxadmonition}
 \phantomsection \label{exercise:ch/electromagnetism/em-waves-problems-exercise-17}
 
-\begin{sphinxadmonition}{note}{Exercise 26.6.18 (Riflessione e Rifrazione di Onde Elettromagnetiche)}
+\begin{sphinxadmonition}{note}{Exercise 27.6.18 (Riflessione e Rifrazione di Onde Elettromagnetiche)}
 
 
 
@@ -20515,7 +20599,7 @@ che lega l’energia di un sistema in quiete, \(E^{rest}\), alla sua massa \(m\)
 
 \subsection{Princìpi della relatività speciale}
 \label{\detokenize{ch/modern/einstein-special:principi-della-relativita-speciale}}\label{\detokenize{ch/modern/einstein-special:physics-hs-modern-einstein-special-principles}}\label{ch/modern/einstein-special:axiom-0}
-\begin{sphinxadmonition}{note}{Axiom 31.1.1 (Invarianza delle leggi fisiche)}
+\begin{sphinxadmonition}{note}{Axiom 32.1.1 (Invarianza delle leggi fisiche)}
 
 
 
@@ -20528,7 +20612,7 @@ Le equazioni che governano la natura sono invarianti alla scelta del sistema di 
 \end{footnote}, cioè \sphinxstylestrong{invariante}, indipendente dal sistema di riferimento usato per descriverlo.
 \end{sphinxadmonition}
 \label{ch/modern/einstein-special:axiom-1}
-\begin{sphinxadmonition}{note}{Axiom 31.1.2 (Costanza della velocità della luce)}
+\begin{sphinxadmonition}{note}{Axiom 32.1.2 (Costanza della velocità della luce)}
 
 
 
@@ -20619,7 +20703,7 @@ l’intervallo di tempo di \(O'\) letto da \(O\) è uguale all’intervallo di t
 \end{enumerate}
 
 \sphinxAtStartPar
-Per motivi di composizione delle trasformazioni tra più sistemi di riferimento, vedi {\hyperref[\detokenize{ch/modern/einstein-special:relativity:velocity-composition}]{\sphinxcrossref{Example 31.1.1}}}, viene considerata una trasformazione lineare. Come dimostrato in seguito, le trasformazioni di Lorentz tra le coordinate dei due sistemi inerziali appena descritti sono (\sphinxstylestrong{todo} \sphinxstyleemphasis{ipotesi su una «posizione iniziale» delle origini})
+Per motivi di composizione delle trasformazioni tra più sistemi di riferimento, vedi {\hyperref[\detokenize{ch/modern/einstein-special:relativity:velocity-composition}]{\sphinxcrossref{Example 32.1.1}}}, viene considerata una trasformazione lineare. Come dimostrato in seguito, le trasformazioni di Lorentz tra le coordinate dei due sistemi inerziali appena descritti sono (\sphinxstylestrong{todo} \sphinxstyleemphasis{ipotesi su una «posizione iniziale» delle origini})
 \begin{equation}\label{equation:ch/modern/einstein-special:eq:lorentz-transform:xt}
 \begin{split}
 \begin{cases}
@@ -20733,7 +20817,7 @@ e risolvendo, si possono ricavare i coefficienti della trasformazione di Lorentz
 
 \subsubsection{Velocità della luce e causalità}
 \label{\detokenize{ch/modern/einstein-special:velocita-della-luce-e-causalita}}\label{\detokenize{ch/modern/einstein-special:physics-hs-modern-einstein-special-causality}}\label{ch/modern/einstein-special:relativity:velocity-composition}
-\begin{sphinxadmonition}{note}{Example 31.1.1 (Trasformazione di coordinate tra 3 sistemi di riferimento e composizione delle velocità)}
+\begin{sphinxadmonition}{note}{Example 32.1.1 (Trasformazione di coordinate tra 3 sistemi di riferimento e composizione delle velocità)}
 
 
 
@@ -20845,21 +20929,59 @@ si ottiene l’espressione dell’energia troncata alla potenza \(v^2\) come som
 
 
 \section{Relatività generale}
-\label{\detokenize{ch/modern/einstein-general:relativita-generale}}\label{\detokenize{ch/modern/einstein-general:physics-hs-modern-einstein-general}}\label{\detokenize{ch/modern/einstein-general::doc}}\label{ch/modern/einstein-general:example-0}
-\begin{sphinxadmonition}{note}{Example 31.2.1 (Esperimento dell’ascensore)}
+\label{\detokenize{ch/modern/einstein-general:relativita-generale}}\label{\detokenize{ch/modern/einstein-general:physics-hs-modern-einstein-general}}\label{\detokenize{ch/modern/einstein-general::doc}}
+\sphinxAtStartPar
+\sphinxstylestrong{Esperiemnto mentale \sphinxhyphen{} l’ascensore.} Il moto naturale è in caduta libera nel campo gravitazionale, sia per corpi dotati di massa sia per la luce (che viene deflessa dal campo gravitazionale).
+\label{ch/modern/einstein-general:example-0}
+\begin{sphinxadmonition}{note}{Example 32.2.1 (Esperimento dell’ascensore)}
 
 
 \end{sphinxadmonition}
 \label{ch/modern/einstein-general:example-1}
-\begin{sphinxadmonition}{note}{Example 31.2.2 (Equivalenza tra assenza di gravità e caduta libera in un campo gravitazionale)}
+\begin{sphinxadmonition}{note}{Example 32.2.2 (Equivalenza tra assenza di gravità e caduta libera in un campo gravitazionale)}
 
 
 \end{sphinxadmonition}
 \label{ch/modern/einstein-general:example-2}
-\begin{sphinxadmonition}{note}{Example 31.2.3 (Inconsistenza della legge di gravitazione di Newton e delle azioni a distanza con la velocità finita delle informazioni)}
+\begin{sphinxadmonition}{note}{Example 32.2.3 (Inconsistenza della legge di gravitazione di Newton e delle azioni a distanza con la velocità finita delle informazioni)}
 
 
 \end{sphinxadmonition}
+
+
+\subsection{Verifiche della relatività generale}
+\label{\detokenize{ch/modern/einstein-general:verifiche-della-relativita-generale}}
+
+\subsubsection{Deflessione dei raggi luminosi}
+\label{\detokenize{ch/modern/einstein-general:deflessione-dei-raggi-luminosi}}
+\sphinxAtStartPar
+\sphinxstylestrong{A.Eddington (1919)}: osservazione di alcune stelle durante l”\sphinxstylestrong{eclissi di Sole}. Le stelle vicine al disco solare apparivano spostate rispetoto alla posizione solita di circa \(1.75"\), la quantità prevista dalla teoria di relatività generale.
+
+
+\subsubsection{Perielio di Mercurio}
+\label{\detokenize{ch/modern/einstein-general:perielio-di-mercurio}}
+\sphinxAtStartPar
+L’orbita di Mercurio attorno al Sole non si svolge su di un’ellisse perfetta, ma su un’orbita «quasi ellittica» che manifesta una precessione del perielio di circa \(5600''\)/secolo%
+\begin{footnote}[1]\sphinxAtStartFootnote
+Un arco di secondo \(1''\) corrisponde a \(1/60\) di minuto di secondo \(1'\), che a sua volta corrisponde a \(1/60\) di grado \(1^\circ\). Quindi la precessione del perielio di Mercurio è di circa \(1.5^\circ\) per secolo.
+%
+\end{footnote}. Lo studio del sistema solare con le leggi di Newton prevede una precessione di circa \(5557''\)/secolo, dovuto all’interazione gravitazionale del Sole e di Mercurio con gli altri pianeti.
+
+
+\subsubsection{Dilatazione del tempo dovuta alla gravità}
+\label{\detokenize{ch/modern/einstein-general:dilatazione-del-tempo-dovuta-alla-gravita}}
+
+\subsubsection{Onde gravitazionali}
+\label{\detokenize{ch/modern/einstein-general:onde-gravitazionali}}
+\sphinxAtStartPar
+Osservatorio \sphinxstylestrong{LIGO} (\sphinxstyleemphasis{Laser Interferometer Gravitational\sphinxhyphen{}Wave Observatory}).
+
+\sphinxAtStartPar
+\sphinxstylestrong{todo} \sphinxstyleemphasis{due parole sull’interferenza?}
+
+
+\bigskip\hrule\bigskip
+
 
 \sphinxstepscope
 
@@ -21230,7 +21352,7 @@ funzione d’onda anti\sphinxhyphen{}simmetrica, i \sphinxstylestrong{fermioni}
 
 \end{itemize}
 \label{ch/modern/quantum-basics:pauli-principle}
-\begin{sphinxadmonition}{note}{Definition 32.3.1 (Principio di esclusione di Pauli \sphinxhyphen{} per fermioni)}
+\begin{sphinxadmonition}{note}{Definition 33.3.1 (Principio di esclusione di Pauli \sphinxhyphen{} per fermioni)}
 
 
 
@@ -21256,7 +21378,7 @@ e quindi \sphinxstylestrong{la probabilità che due fermioni si trovino nello st
 \sphinxAtStartPar
 \sphinxstylestrong{todo} La natura dei fermioni è legata allo \DUrole{xref,myst}{spin} frazionario
 \label{ch/modern/quantum-basics:fermions-electrons}
-\begin{sphinxadmonition}{note}{Example 32.3.1 (Gli elettroni sono fermioni)}
+\begin{sphinxadmonition}{note}{Example 33.3.1 (Gli elettroni sono fermioni)}
 
 
 
@@ -21264,12 +21386,12 @@ e quindi \sphinxstylestrong{la probabilità che due fermioni si trovino nello st
 Gli elettroni sono fermioni. Questo comportamento degli elettroni è alla base della spiegazione della struttura atomica, e dell’occupazione di orbitali differenti.
 \end{sphinxadmonition}
 \label{ch/modern/quantum-basics:example-2}
-\begin{sphinxadmonition}{note}{Example 32.3.2 (Bosoni in una buca di potenziale)}
+\begin{sphinxadmonition}{note}{Example 33.3.2 (Bosoni in una buca di potenziale)}
 
 
 \end{sphinxadmonition}
 \label{ch/modern/quantum-basics:example-3}
-\begin{sphinxadmonition}{note}{Example 32.3.3 (Fermioni in una buca di potenziale)}
+\begin{sphinxadmonition}{note}{Example 33.3.3 (Fermioni in una buca di potenziale)}
 
 
 \end{sphinxadmonition}
@@ -21430,6 +21552,49 @@ K.Schwarzschild scopre la relazione tra il colore (e quindi la temperatura) e la
 …
 
 \end{itemize}
+
+\sphinxstepscope
+
+
+\section{Sistema solare}
+\label{\detokenize{ch/modern/astronomy-solar-system:sistema-solare}}\label{\detokenize{ch/modern/astronomy-solar-system:physics-hs-modern-astronomy-solar-system}}\label{\detokenize{ch/modern/astronomy-solar-system::doc}}
+
+\subsection{Sistemi planetari}
+\label{\detokenize{ch/modern/astronomy-solar-system:sistemi-planetari}}
+\sphinxAtStartPar
+\sphinxstylestrong{Piano invariabile.} Il piano invariabile di un sistema planetario è il piano passante per il centro di massa \(G\) del sistema e perpendicolare al vettore del momento angolare \(\vec{L}_G\) del sistema rispetto al centro di massa.
+
+\sphinxAtStartPar
+In prima approssimazione, un sistema planetario può essere considerato come un \sphinxstylestrong{sistema chiuso} e \sphinxstylestrong{isolato}, cioè senza scambi di massa con l’esterno e senza forze estrerne al sistema agenti su di esso.%
+\begin{footnote}[1]\sphinxAtStartFootnote
+Si considera un volume geometrico che contiene tutti i pianeti e le stelle del sistema planetario di interesse, trascurando eventuali corpi «piccoli» che possono transitare in questa regione per periodi di tempo limitati \sphinxhyphen{} come comete \sphinxhyphen{} e l’interazione gravitazionale di questi (di massa ridotta) e di altri corpi celesti (di distanza elevata) con i corpi del sistema planetario: questa risulta un’ipotesi adeguata se si ricorda l’espressione della {\hyperref[\detokenize{ch/mechanics/dynamics-motion-gravitation:physics-hs-mechanics-dynamics-motion-gravitation-newton}]{\sphinxcrossref{\DUrole{std,std-ref}{legge di gravitazione universale di Newton}}}}, \(\vec{F} = - G M m \frac{\vec{r}}{|\vec{r}|^3}\), e la sua dipendenza proporzionale alla massa dei corpi e inversamente proporzionale alla distanza tra due corpi.
+%
+\end{footnote}
+\sphinxstylestrong{Rispetto a un sistema di riferimento inerziale}, quindi
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+come conseguenza del secondo principio della meccanica di Newton ({\hyperref[\detokenize{ch/mechanics/dynamics-principles:mechanics:principles:momentum}]{\sphinxcrossref{Axiom 12.1.3}}}), la \sphinxstylestrong{quantità di moto del sistema} è \sphinxstylestrong{costante}. Si può quindi scegliere un sistema di riferimento inerziale con origine nel centro di massa del sistema: con questa scelta, la velocità del centro di massa del sistema rispetto all’origine del sistema di riferimento è identicamente nulla (essendo la velocità relativa tra due punti sempre coincidenti).
+
+\item {} 
+\sphinxAtStartPar
+come conseguenza del bilancio del momento della quantità di moto (vedi {\hyperref[\detokenize{ch/mechanics/dynamics-eom:physics-hs-mechanics-dynamics-eom}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni cardinali della dinamica per sistemi chiusi}}}}), in assenza di momenti esterni \(\vec{M}_{G}^{ext} = \vec{0}\), e con polo coincidente con il centro di massa,%
+\begin{footnote}[2]\sphinxAtStartFootnote
+Si usa qui l’equazione dinamica del momento della quantità di moto \(\dot{\vec{L}}_H = - \dot{\vec{x}}_H \times \vec{Q} + \vec{M}^{ext}_H\), con la scelta del polo coincidente con il centro di massa del sistem, \(H \equiv G\). In assenza di momenti esterni \(\vec{M}_G^{ext} = \vec{0}\); se il polo \(H\) coincinde con il centro di massa del sistema, segue che \(\dot{\vec{x}}_G \times \vec{Q} = \vec{v}_G \times m_{tot} \vec{v}_G \equiv \vec{0}\), avendo espresso la quantità di moto del sistema come prodotto della massa totale e della velocità del \sphinxstylestrong{centro di massa} ({\hyperref[\detokenize{ch/mechanics/inertia:inertia-center-of-mass}]{\sphinxcrossref{Definition 11.1}}}), e ricordando che il prodotto vettore tra due vettori paralleli è il vettore nullo.
+%
+\end{footnote} il \sphinxstylestrong{momento della quantità di moto del sistema} \(\vec{L}_G\) è \sphinxstylestrong{costante}.
+
+\end{itemize}
+
+
+\subsection{Coordinate terrestri}
+\label{\detokenize{ch/modern/astronomy-solar-system:coordinate-terrestri}}
+
+\subsection{Orbita della Terra}
+\label{\detokenize{ch/modern/astronomy-solar-system:orbita-della-terra}}
+
+\bigskip\hrule\bigskip
+
 
 \sphinxstepscope
 
@@ -21785,45 +21950,229 @@ Nel caso delle galassie più lontane osservate, cosa stiamo osservando? Stiamo o
 
 
 \subsection{Dimensioni Terra}
-\label{\detokenize{ch/modern/astronomy-distance-ladder:dimensioni-terra}}
+\label{\detokenize{ch/modern/astronomy-distance-ladder:dimensioni-terra}}\label{\detokenize{ch/modern/astronomy-distance-ladder:physics-hs-modern-astronomy-distance-ladder-earth-radius}}
 \sphinxAtStartPar
-Metodo: ombra di un bastone normale
+La Terra non ha forma sferica, ma è «schiacciata ai poli». Il raggio medio vale circa
 \begin{equation*}
-\begin{split}R_E = 6.37 \cdot 10^{3} \, km \end{split}
+\begin{split}R_E = 6.373 \cdot 10^{3} \, \text{k}m \ ,\end{split}
 \end{equation*}
+\sphinxAtStartPar
+mentre raggio equatoriale e polare valgono rispettivamente \(6.378 \cdot 10^{3} \, \text{km}\) e \(6.357 \cdot 10^{3} \, \text{km}\).
 
-\subsection{Distanza Terra\sphinxhyphen{}Luna e dimensioni Luna}
-\label{\detokenize{ch/modern/astronomy-distance-ladder:distanza-terra-luna-e-dimensioni-luna}}
 \sphinxAtStartPar
-Metodo: eclisse lunare per la distanza; sorgere della Luna per le dimensioni
-\begin{equation*}
-\begin{split}\begin{aligned}
-  R_{EM} & = \dots \\
-  R_{M}  & = \dots \\
-\end{aligned}\end{split}
-\end{equation*}
+\sphinxstylestrong{Eratostene} di Cirene (\sphinxstylestrong{III secolo a.C.}) usò la miusra della lunghezza dell’ombra di un bastone di dimensioni note a mezzogiorno in due città differenti, Alessandria d’Egitto (\(31^\circ 11'51'' \text{N}\) \(29^\circ 53'33'' \text{E}\)) e Siene, l’odierna Assuan (\(24^\circ 05' \text{N}\) \(32^\circ 56' \text{E}\)).
+\label{ch/modern/astronomy-distance-ladder:example-0}
+\begin{sphinxadmonition}{note}{Example 34.3.1 (Sensibilità del valore del raggio alle misure)}
 
-\subsection{Dimensioni Sole e Distanza Sole\sphinxhyphen{}Terra}
-\label{\detokenize{ch/modern/astronomy-distance-ladder:dimensioni-sole-e-distanza-sole-terra}}\label{\detokenize{ch/modern/astronomy-distance-ladder:physics-hs-modern-astronomy-distance-ladder-sun}}
+
+
 \sphinxAtStartPar
-La coincidenza che si può osservare durante le \sphinxstylestrong{eclissi solari} permette di stimare il rapporto tra le dimensioni del Sole e la distanza Terra\sphinxhyphen{}SOle
+Distanza tra le due città, \(d = 5000\) stadi, con \(1\) stadio compreso tra i \(155 \, \text{m}\) e i \(160 \, \text{m}\). Dalla misura dell’ombra nello stesso istante tra le due città, Eratostene trovò un angolo di circa \(\Delta \theta = 7.2^\circ\), \(1/50\) di angolo giro. Con trigonometria elementare, l’espressione della lunghezza di un arco di circonferenza dati raggio e angolo sotteso vale
 \begin{equation*}
-\begin{split}\frac{R_{S}}{R_{ES}} \sim \frac{R_{M}}{R_{EM}} \ .\end{split}
+\begin{split}d = R \, \theta =  R \frac{2 \pi}{360^\circ} \theta[^\circ] \ ,\end{split}
 \end{equation*}
 \sphinxAtStartPar
-Per calcolare i valori assoluti, serve poter detemrminare una delle due grandezze fisiche, come ad esempmio la distanza Terra\sphinxhyphen{}Sole:
+con gli angoli espressi in radianti dove non specificato. Quindi
+\begin{equation*}
+\begin{split}R = \frac{360^\circ}{\theta[^\circ]} \frac{d}{2 \pi} = 50 \times \frac{5000 \times ( 155 \div 160 ) \text{m}}{2 \pi} = (6167.25 \div 6366.20) \text{m} \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Sensibilità agli errori di misura.}
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-gli antichi greci stimarono la distanza Terra\sphinxhyphen{}Sole usando le fasi lunari: il metodo usava la misura dell’angolo in cui si osservava la mezza luna (che non corrisponde con la quadratura). Il metodo utilizzato dagli antichi incontrava i limiti tecnologici disponibili all’epoca, a cominciare dall’assenza di strumenti affidabili per misurare il tempo, soprattutto durante la notte; poichè la misura si fonda sulla misura di un angolo «piccolo», un piccolo errore ha ripercussioni enormi sulla stima della distanza: così, i greci stimarono una distanza Terra\sphinxhyphen{}Sole circa 20 volte il valore attualmente accettato, \sphinxstylestrong{todo} \sphinxstyleemphasis{discutere limiti tecnologici, sensibilità di errori di misura, metodi per ridurre incertezza con misure ripetute…; collegamento a strumenti per la misura del tempo}
+Errore sulla distanza \(\Delta d\) implica un errore assoluto \(\Delta R = \frac{1}{\theta} \Delta d\), e quindi un errore relativo \(\frac{\Delta R}{R} = \frac{\Delta d}{d}\).
 
 \item {} 
 \sphinxAtStartPar
-…bisogna aspettare il XVII e il XVIII secolo per la proposta di J.Gregory e \sphinxstylestrong{E.Halley} (1656\sphinxhyphen{}1742) e la realizzazione della misura che sfruttasse la {\hyperref[\detokenize{ch/modern/astronomy-distance-ladder:physics-hs-modern-astronomy-distance-ladder-sun-venus}]{\sphinxcrossref{\DUrole{std,std-ref}{parallasse solare durante il passaggio di Venere davanti al Sole avvenuto nel 1761 e nel 1769}}}}, dati riassunti da J.Lalande nel 1771 nella misura di 8.6» di parallasse solare, equivalente a circa 24000 raggi terrestri, circa il 2.5\% maggiore della misura comunemente accettata oggi (di cosa? raggio medio? semiasse maggiore?…).
+Errore sull’angolo \(\Delta \theta\) implica un errore assoluto \(\Delta R = \left( \frac{1}{\theta + \Delta \theta} - \frac{1}{\theta} \right) d = - \frac{\Delta \theta}{\theta^2} d + o(\Delta \theta)\), e un errore relativo \(\frac{\Delta R}{R} = - \frac{\Delta \theta}{\theta}\)
 
 \end{itemize}
-\label{ch/modern/astronomy-distance-ladder:example-0}
-\begin{sphinxadmonition}{note}{Example 33.2.1 (E.Halley, I.Newton e la gravitazione universale)}
+
+\sphinxAtStartPar
+avendo usato l’espansione in serie di Taylor per la funzione \(f(\Delta \theta)\), valutata in \(\Delta \theta = 0\) \sphinxhyphen{} nessun errore di misura \sphinxhyphen{}, \(\frac{1}{\theta + \Delta \theta} = \frac{1}{\theta} - \frac{\Delta \theta}{\theta^2}\), con \(f'(\Delta \theta) = - \frac{1}{( \theta + \Delta \theta)^2}\).
+
+
+\end{sphinxadmonition}
+
+
+\subsection{Luna e Sole}
+\label{\detokenize{ch/modern/astronomy-distance-ladder:luna-e-sole}}\label{\detokenize{ch/modern/astronomy-distance-ladder:physics-hs-modern-astronomy-distance-ladder-moon-sun}}
+\sphinxAtStartPar
+La Luna è l’unico satellite naturale della Terra. La Luna percorre una traiettoria all’incirca ellittica attorno alla Terra con semiasse maggiore \(a_{EM} = 384.4 \cdot 10^{3} \, \text{km}\) ed eccentricità \(e = 0.0549\). La Luna ha raggio medio \(R_M = 1.738 \cdot 10^{3} \, \text{km}\).
+
+\sphinxAtStartPar
+Il Sole è la stella al «centro» del {\hyperref[\detokenize{ch/modern/astronomy-solar-system::doc}]{\sphinxcrossref{\DUrole{doc,std,std-doc}{sistema solare}}}}. La Terra percorre una traiettoria all’incirca ellittica attorno al Sole con semiasse maggiore di circa \(a_{ES} = 149.6 \cdot 10^{6} \, \text{km}\) ed eccentricità \(e = 0.0167\). La distanza media tra Terra e Sole \sphinxhyphen{} poco minore del semiasse maggiore dell’orbita, data la piccola eccentricità dell’orbita stessa \sphinxhyphen{} è usata come definizione dell”\sphinxstylestrong{unità astronomica}. Il Sole ha raggio medio \(R_S = 695.475 \cdot 10^{3} \, \text{km}\).
+
+\sphinxAtStartPar
+\sphinxstylestrong{Coincidenza astronomica.} Il Sole e la Luna hanno la stessa dimensione (angolare) apparente nel cielo, poiché il valore del rapporto delle loro distanze dalla Terra \(\frac{a_{ES}}{a_{EM}} \sim 390\) è simiile al rapporto dei loro raggi \(\frac{R_S}{R_M} \sim 400\) \sphinxhyphen{} con un errore di circa il 2\%.
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|}
+\hline
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{solar-eclipse}.png}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Aristarco di Samo} (\sphinxstylestrong{III secolo a.C}) fu in grado di stimare i valori del raggio della Luna e del Sole e le dimensioni delle loro orbite, conoscendo i periodi di rivoluzione della Terra attorno al Sole, e della Luna attorno alla Terra, misurando l’angolo della Luna a metà rispetto alla quadratura, e il tempo necessario alla Luna per entrare in un’eclissi e il tempo di eclissi totale. Aristarco
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+si accorse che il Sole è molto più grande della Terra:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+alla distanza della Luna dalla Terra, un’approsimazione di raggi solari paralleli produrrebbe quindi una sovrastima delle dimensioni dell’ombra terrestre sulla Luna
+
+\item {} 
+\sphinxAtStartPar
+date le dimensioni relative, è il Sole che gira attorno a un granello come la Terra?
+
+\end{itemize}
+
+\item {} 
+\sphinxAtStartPar
+si imbatté nei limiti tecnologici dell’epoca, nella misura dell’angolo sulla traiettoria in cui la Luna appare a metà. Un errore su un angolo piccolo:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+produsse un errore grande sulla stima delle dimensioni del Sole e della sua distanza dalla Terra. Aristarco stimò che il raggio del Sole fosse 20 volte più grande del raggio della Terra, invece delle circa 400 volte effettive
+
+\item {} 
+\sphinxAtStartPar
+produsse un errore piccolo sulla stima delle dimesnioni della Luna
+
+\end{itemize}
+
+\end{itemize}
+\label{ch/modern/astronomy-distance-ladder:example-1}
+\begin{sphinxadmonition}{note}{Example 34.3.2 (Il metodo di Aristarco)}
+
+
+
+\sphinxAtStartPar
+Quando possibile, viene usata l’approssimazione di angoli piccoli che permette di confondere l’angolo (espresso in radianti) con il suo seno e la sua tangente, \(\alpha \sim \sin \alpha \sim \tan \alpha\).
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|}
+\hline
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{aristarco}.png}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Misura dell’angolo \(\theta\), e rapporto distanze \(\frac{a_{ES}}{a_{EM}}\).} Aristarco pensò di misurare l’angolo \(\theta\) tra la posizione della Luna in quadratura e la Luna a metà. La sua misura di \(\theta = 2.5^\circ\) portò a una stima del rapporto tra la dimensione dell’orbita della Terra attorno al Sole e della Luna attorno alla Terra di
+\begin{equation*}
+\begin{split}\frac{a_{ES}}{a_{EM}} = \frac{1}{\sin \theta} \sim 22.9 \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Oggi sappiamo che il valore dell’angolo è circa \(0.5^\circ\) e il rapporto è circa \(400\). Mentre la stima di Aristarco del rapporto è circa 20 volte (!!!) inferiore al valore reale, la stima del raggio della Luna è poco sensibile a tale errore \sphinxhyphen{} vedi sotto \sphinxhyphen{} e ciò permise ad Aristarco di trovarne un valore sufficientemente accurato.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Coincidenza astronomica.} Poiché Luna e Sole hanno la stessa dimensione apparente in cielo, questo permette di scrivere
+\begin{equation*}
+\begin{split}\frac{a_{ES}}{a_{EM}} \sim \frac{R_S}{R_M} \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+considerato noto da Aristarco. Questo rapporto viene definito \(r\).
+
+\sphinxAtStartPar
+\sphinxstylestrong{Eclissi lunare.} Aristarco usò la misura del tempo impiegato dalla Luna per entrare in eclissi \(T_{in}\) e il tempo di eclissi totale \(T_{tot}\) per la stima della dimensione del raggio lunare \(R_M\),
+\begin{equation*}
+\begin{split}\begin{cases}
+  \Omega_M T_{in}  & = \frac{2 R_M}{a_{EM}} \\
+  \Omega_M T_{tot} & = \frac{2 \ell - 2 R_M}{a_{EM}} \ ,
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+con \(\ell\) il raggio dell’ombra della Terra sulla traiettoria della Luna. Facendo il rapporto tra le ultime due espressioni, è possibile trovare una relazione tra il raggio lunare e la dimensione dell’ombra,
+\begin{equation*}
+\begin{split}\ell = R_M \left[  1 + \frac{T_{tot}}{T_{in}} \right] \ .\end{split}
+\end{equation*}
+\sphinxAtStartPar
+Il rapporto tra i tempi viene definito \(\tau\). Usando la similitudine dei triangoli,
+\begin{equation*}
+\begin{split}
+ R_M  = \frac{1+r}{r} \frac{1}{2+\tau} R_E \ .
+\end{split}
+\end{equation*}\subsubsection*{Similitudine triangoli \sphinxhyphen{} dettagli}
+\begin{equation*}
+\begin{split}\begin{aligned}
+ \frac{R_S - R_E}{a_{ES}} & = \frac{R_S - \ell}{a_ES + a_EM} \\
+ \frac{r R_M - R_E}{r a_{EM}} & = \frac{r R_M - R_M \left( 1 + \tau \right)}{( r + 1 ) a_{EM}} \\
+ \frac{R_{E}}{r} & = R_M \left( 1 - \frac{r}{r+1} + \frac{1+\tau}{1+r} \right) \\
+ \frac{R_{E}}{r} & = R_M \frac{2 + \tau}{1 + r} \\
+ R_M & = \frac{1+r}{r} \frac{1}{2+\tau} R_E \ .
+\end{aligned}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+\sphinxstylestrong{Osservazione.} La prima frazione è poco sensibile anche a grandi errori di \(r\) per \(r \gg 1\): per questa ragione, mentre la stima di Aristarco di \(r^{Ari} = 22.9\) era sbagliata di circa \(20\) volte rispetto al valore reale \(r=400\), il suo effetto nella stima di \(R_M\) è molto piccolo
+\begin{equation*}
+\begin{split}\frac{1+r^{Ari}}{r^{Ari}} = 1.044 \quad , \quad \frac{1+r}{r} = 1.0025 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+circa il 4\%.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Valore del raggio lunare, \(R_M\).} Con la misura dell tempo (massimo) di un’eclissi totale di circa \(T_{tot} = 1\text{h}47'\), e il tempo di inizio dell’eclissi \(T_{in} = 1 \text{h}\), il rapporto dei tempi è circa
+\begin{equation*}
+\begin{split}\tau = \frac{T_{tot}}{T_{in}} \sim \frac{107'}{60'} = 2.675 \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+e la stima di Aristarco del raggio lunare è
+\begin{equation*}
+\begin{split}R_M \sim \frac{1.044}{3.783} R_E = 0.284 \cdot R_E \ ,\end{split}
+\end{equation*}
+\sphinxAtStartPar
+o, con il valore del raggio terrestre \(R_E = 6373 \, \text{km}\),
+\begin{equation*}
+\begin{split}R_M \sim 1758 \, \text{km} \ .\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/modern/astronomy-distance-ladder:example-2}
+\begin{sphinxadmonition}{note}{Example 34.3.3 (Raggi paralleli e sovrastima dimensioni dell’ombra terrestre sulla Luna)}
+
+
+
+\sphinxAtStartPar
+L’approssimazione di raggi paralleli corrisponde all’ipotesi che l’ombra della Terra sulla Luna abbia le stesse dimensioni della Terra, e quindi equivale a imporre nel sistema di equazioni
+\begin{equation*}
+\begin{split}\begin{cases}
+  \Omega_M T_{in}  & = \frac{2 R_M}{a_{EM}} \\
+  \Omega_M T_{tot} & = \frac{2 \ell - 2 R_M}{a_{EM}} \ ,
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+il valore \(\ell = R_E\). Dal rapporto tra le due equazioni si ottiene quindi
+\begin{equation*}
+\begin{split}\frac{R_E}{R_M} - 1 = \tau \ ,\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}R_M = \frac{1}{1+\tau} R_E\end{split}
+\end{equation*}\end{sphinxadmonition}
+\label{ch/modern/astronomy-distance-ladder:example-3}
+\begin{sphinxadmonition}{note}{Example 34.3.4 (Ombra e penombra)}
+
+
+
+\sphinxAtStartPar
+Il Sole non è una sorgente luminosa puntiforme…
+\end{sphinxadmonition}
+\label{ch/modern/astronomy-distance-ladder:example-4}
+\begin{sphinxadmonition}{note}{Example 34.3.5 (E.Halley, I.Newton e la gravitazione universale)}
 
 
 
@@ -21931,7 +22280,7 @@ Saturno
 \sphinxAtStartPar
 J.Kepler (1571\sphinxhyphen{}1630) fu in grado di definire la \sphinxstylestrong{forma delle orbite} e le \sphinxstylestrong{dimensioni relative} delle orbite pianeti del sistema solare. I risultati sono riassunti nelle \sphinxstylestrong{tre leggi di Keplero}.
 \label{ch/modern/astronomy-distance-ladder:kepler-first}
-\begin{sphinxadmonition}{note}{Proposition 33.2.1 (Prima legge di Keplero)}
+\begin{sphinxadmonition}{note}{Proposition 34.3.1 (Prima legge di Keplero)}
 
 
 
@@ -21943,7 +22292,7 @@ Come viene dimostrato con le equazioni della dinamica di Newton, la tratiettoria
 \end{footnote}, e il Sole si trova in uno dei due fuochi.
 \end{sphinxadmonition}
 \label{ch/modern/astronomy-distance-ladder:kepler-second}
-\begin{sphinxadmonition}{note}{Proposition 33.2.2 (Seconda legge di Keplero)}
+\begin{sphinxadmonition}{note}{Proposition 34.3.2 (Seconda legge di Keplero)}
 
 
 
@@ -21951,13 +22300,22 @@ Come viene dimostrato con le equazioni della dinamica di Newton, la tratiettoria
 I pianeti percorrono le orbite con una velocità areolare (con vertice il Sole) costante.
 \end{sphinxadmonition}
 \label{ch/modern/astronomy-distance-ladder:kepler-third}
-\begin{sphinxadmonition}{note}{Proposition 33.2.3 (Terza legge di Keplero)}
+\begin{sphinxadmonition}{note}{Proposition 34.3.3 (Terza legge di Keplero)}
 
 
 
 \sphinxAtStartPar
-Il periodo di rivoluzione dei pianeti è proporzionale alla potenza \(\frac{3}{2}\) del semiasse maggire \(a\) della traiettoria, \(T \sim a^{\frac{3}{2}}\).
+Il periodo di rivoluzione dei pianeti è proporzionale alla potenza \(\frac{3}{2}\) del semiasse maggire \(a\) della traiettoria, \(T \propto a^{\frac{3}{2}}\), come mostrato in figura \hyperref[\detokenize{ch/modern/astronomy-distance-ladder:fig-kepler-3}]{Fig.\@ \ref{\detokenize{ch/modern/astronomy-distance-ladder:fig-kepler-3}}}.
 \end{sphinxadmonition}
+
+
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=1.000\linewidth]{{kepler_third_law}.png}
+\caption{Analisi della terza legge di Keplero: confronto tra scala lineare (pianeti interni ed esterni) e scala logaritmica.}\label{\detokenize{ch/modern/astronomy-distance-ladder:fig-kepler-3}}\label{\detokenize{ch/modern/astronomy-distance-ladder:label-target}}\end{figure}
 
 \sphinxAtStartPar
 La dimostrazione delle leggi di Keplero con le {\hyperref[\detokenize{ch/mechanics/dynamics:physics-hs-mechanics-dynamics}]{\sphinxcrossref{\DUrole{std,std-ref}{equazioni della dinamica}}}} e della {\hyperref[\detokenize{ch/mechanics/actions-examples:physics-hs-mechanics-actions-gravitation-newton}]{\sphinxcrossref{\DUrole{std,std-ref}{legge di gravitazione universale di Newton}}}}, nell’ambito del {\hyperref[\detokenize{ch/mechanics/dynamics-central:physics-hs-mechanics-dynamics-motion-central}]{\sphinxcrossref{\DUrole{std,std-ref}{sistema dei due corpi}}}}, fu uno dei primi successi e verifiche della probabile%
@@ -21971,6 +22329,8 @@ Come già mostrato nella sezione sul {\hyperref[\detokenize{ch/intro/scientific-
 
 \sphinxAtStartPar
 Per stabilire le dimensioni assolute delle orbite nel sistema solare era necessario conoscere almeno una dimensione assoluta: la misura della distanza tra Terra e Sole, definita come \sphinxstylestrong{unità astronomica}, \(\text{UA}\), fu ottenuta per la prima volta grazie alle misure del 1761 e del 1769 del transito di Venere davanti al Sole.
+
+
 
 
 \subsection{Distanza Sole, Terra, Venere}
@@ -22002,7 +22362,7 @@ e scrivendo la lunghezza del tratto di traiettoria di Venere con due espressioni
 \begin{split}R_{VS} \psi = (R_{ES} - R_{VS}) \theta \quad \rightarrow \quad \frac{R_{ES}}{R_{VS}} = \frac{\psi}{\theta} - 1 \ ,\end{split}
 \end{equation*}
 \sphinxAtStartPar
-e usando il rapporto \(r = \frac{R_S}{R_{ES}}\) {\hyperref[\detokenize{ch/modern/astronomy-distance-ladder:physics-hs-modern-astronomy-distance-ladder-sun}]{\sphinxcrossref{\DUrole{std,std-ref}{noto grazie all’eclissi solare}}}} si possono ricavare
+e usando il rapporto \(r = \frac{R_S}{R_{ES}}\) \DUrole{xref,myst}{noto grazie all’eclissi solare} si possono ricavare
 \begin{equation*}
 \begin{split}D = r R_{ES} \frac{\psi}{\theta} \sin \varphi_1 \Delta \varphi 
 \quad \rightarrow \quad
@@ -22050,8 +22410,8 @@ H.Hertzsprung (1913) parallasse con il moto del Sole nella Galassia?
 H.Shapley (1918) confronto con stelle cefeide con distanza nota per parallasse?
 
 \end{itemize}
-\label{ch/modern/astronomy-distance-ladder:example-4}
-\begin{sphinxadmonition}{note}{Example 33.2.2 (Parallasse)}
+\label{ch/modern/astronomy-distance-ladder:example-8}
+\begin{sphinxadmonition}{note}{Example 34.3.6 (Parallasse)}
 
 
 \begin{itemize}
@@ -22089,8 +22449,8 @@ Missioni spaziali. Esempio: Hubble (1990), Hipparcos (1989\sphinxhyphen{}1993), 
 
 \end{itemize}
 \end{sphinxadmonition}
-\label{ch/modern/astronomy-distance-ladder:example-5}
-\begin{sphinxadmonition}{note}{Example 33.2.3 (Conversioni)}
+\label{ch/modern/astronomy-distance-ladder:example-9}
+\begin{sphinxadmonition}{note}{Example 34.3.7 (Conversioni)}
 
 
 \begin{itemize}
@@ -22572,11 +22932,11 @@ o separando lo stato \(x\) dello strumento, dall’ingresso \(a_{out} := \ddot{x
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-parte elettrica. Lettura della variabile in uscita funzione dello spostamento relativo della massa sospesa rispetto al telaio dello strumento, \(y(x)\). Questo legame viene ricavato dall’analisi del circuito elettrico dello strumento {\hyperref[\detokenize{ch/instrumentation/kinematics:mems-accelerometer-circuit}]{\sphinxcrossref{Example 38.1.1}}}
+parte elettrica. Lettura della variabile in uscita funzione dello spostamento relativo della massa sospesa rispetto al telaio dello strumento, \(y(x)\). Questo legame viene ricavato dall’analisi del circuito elettrico dello strumento {\hyperref[\detokenize{ch/instrumentation/kinematics:mems-accelerometer-circuit}]{\sphinxcrossref{Example 39.1.1}}}
 
 \end{itemize}
 \label{ch/instrumentation/kinematics:mems-accelerometer-circuit}
-\begin{sphinxadmonition}{note}{Example 38.1.1 (Circuito elettrico dello strumento)}
+\begin{sphinxadmonition}{note}{Example 39.1.1 (Circuito elettrico dello strumento)}
 
 
 
@@ -22844,13 +23204,10 @@ Joan Bromberg. Twentieth Century\sphinxhyphen{}The Born\sphinxhyphen{}Einstein L
 \item\relax\sphinxstyleindexentry{ex\sphinxhyphen{}e\sphinxhyphen{}field\sphinxhyphen{}sphere}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{ex-e-field-sphere}}
 \indexspace
 \bigletter{example\sphinxhyphen{}0}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/waves-phenomena:\detokenize{example-0}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}0}\sphinxstyleindexextra{ch/modern/astronomy\sphinxhyphen{}distance\sphinxhyphen{}ladder}\sphinxstyleindexpageref{ch/modern/astronomy-distance-ladder:\detokenize{example-0}}
 \indexspace
 \bigletter{example\sphinxhyphen{}1}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/waves-phenomena:\detokenize{example-1}}
-\indexspace
-\bigletter{example\sphinxhyphen{}10}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}10}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-10}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}1}\sphinxstyleindexextra{ch/modern/astronomy\sphinxhyphen{}distance\sphinxhyphen{}ladder}\sphinxstyleindexpageref{ch/modern/astronomy-distance-ladder:\detokenize{example-1}}
 \indexspace
 \bigletter{example\sphinxhyphen{}11}
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}11}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-11}}
@@ -22877,34 +23234,28 @@ Joan Bromberg. Twentieth Century\sphinxhyphen{}The Born\sphinxhyphen{}Einstein L
 \item\relax\sphinxstyleindexentry{example\sphinxhyphen{}18}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-18}}
 \indexspace
 \bigletter{example\sphinxhyphen{}2}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/waves/waves\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/waves-phenomena:\detokenize{example-2}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}2}\sphinxstyleindexextra{ch/modern/astronomy\sphinxhyphen{}distance\sphinxhyphen{}ladder}\sphinxstyleindexpageref{ch/modern/astronomy-distance-ladder:\detokenize{example-2}}
 \indexspace
 \bigletter{example\sphinxhyphen{}3}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-3}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}3}\sphinxstyleindexextra{ch/modern/astronomy\sphinxhyphen{}distance\sphinxhyphen{}ladder}\sphinxstyleindexpageref{ch/modern/astronomy-distance-ladder:\detokenize{example-3}}
 \indexspace
 \bigletter{example\sphinxhyphen{}4}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}4}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-4}}
-\indexspace
-\bigletter{example\sphinxhyphen{}5}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}5}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-5}}
-\indexspace
-\bigletter{example\sphinxhyphen{}6}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}6}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-6}}
-\indexspace
-\bigletter{example\sphinxhyphen{}7}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}7}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-7}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}4}\sphinxstyleindexextra{ch/modern/astronomy\sphinxhyphen{}distance\sphinxhyphen{}ladder}\sphinxstyleindexpageref{ch/modern/astronomy-distance-ladder:\detokenize{example-4}}
 \indexspace
 \bigletter{example\sphinxhyphen{}8}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}8}\sphinxstyleindexextra{ch/waves/optics\sphinxhyphen{}phenomena}\sphinxstyleindexpageref{ch/waves/optics-phenomena:\detokenize{example-8}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}8}\sphinxstyleindexextra{ch/modern/astronomy\sphinxhyphen{}distance\sphinxhyphen{}ladder}\sphinxstyleindexpageref{ch/modern/astronomy-distance-ladder:\detokenize{example-8}}
 \indexspace
 \bigletter{example\sphinxhyphen{}9}
-\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}9}\sphinxstyleindexextra{ch/thermodynamics/principles\sphinxhyphen{}gibbs\sphinxhyphen{}phase\sphinxhyphen{}rule}\sphinxstyleindexpageref{ch/thermodynamics/principles-gibbs-phase-rule:\detokenize{example-9}}
+\item\relax\sphinxstyleindexentry{example\sphinxhyphen{}9}\sphinxstyleindexextra{ch/modern/astronomy\sphinxhyphen{}distance\sphinxhyphen{}ladder}\sphinxstyleindexpageref{ch/modern/astronomy-distance-ladder:\detokenize{example-9}}
 \indexspace
 \bigletter{faraday\sphinxhyphen{}cage}
 \item\relax\sphinxstyleindexentry{faraday\sphinxhyphen{}cage}\sphinxstyleindexextra{ch/electromagnetism/electrostatics}\sphinxstyleindexpageref{ch/electromagnetism/electrostatics:\detokenize{faraday-cage}}
 \indexspace
 \bigletter{fermions\sphinxhyphen{}electrons}
 \item\relax\sphinxstyleindexentry{fermions\sphinxhyphen{}electrons}\sphinxstyleindexextra{ch/modern/quantum\sphinxhyphen{}basics}\sphinxstyleindexpageref{ch/modern/quantum-basics:\detokenize{fermions-electrons}}
+\indexspace
+\bigletter{inertia\sphinxhyphen{}center\sphinxhyphen{}of\sphinxhyphen{}mass}
+\item\relax\sphinxstyleindexentry{inertia\sphinxhyphen{}center\sphinxhyphen{}of\sphinxhyphen{}mass}\sphinxstyleindexextra{ch/mechanics/inertia}\sphinxstyleindexpageref{ch/mechanics/inertia:\detokenize{inertia-center-of-mass}}
 \indexspace
 \bigletter{inertia\sphinxhyphen{}disk}
 \item\relax\sphinxstyleindexentry{inertia\sphinxhyphen{}disk}\sphinxstyleindexextra{ch/mechanics/inertia\sphinxhyphen{}continuum}\sphinxstyleindexpageref{ch/mechanics/inertia-continuum:\detokenize{inertia-disk}}
