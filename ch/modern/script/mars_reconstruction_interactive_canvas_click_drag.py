@@ -94,7 +94,7 @@ html_template = """
 const DATA = %PAYLOAD%;
 const th_s = DATA.th_s, th_m = DATA.th_m, mars_init = DATA.mars_init;
 const orbit_m = DATA.orbit_m, orbit_e = DATA.orbit_e;
-const colors = ['#4682B4', '#FFA500', '#2E8B57', '#FF4500', '#9370DB'];
+const colors = ['#4682B4', '#FFA500', '#2E8B57', '#FF4500', '#9370DB', '#00CED1'];
 
 const canvas = document.getElementById('cv');
 const ctx = canvas.getContext('2d');
@@ -210,7 +210,7 @@ function render() {
         });
 
         // Ref Cross
-        drawCross(cx + mars_init[i].x*scale, cy - mars_init[i].y*scale, 15, '#ddd', 2);
+        drawCross(cx + mars_init[i].x*scale, cy - mars_init[i].y*scale, 15, color, 4);
         // Interactive Mars Circle
         drawCircle(mPx, mPy, 10, color, 2);
     });
