@@ -86,7 +86,7 @@ html_template = """
 <body>
 <div id="viewport"><canvas id="cv"></canvas></div>
 <div id="controls">
-    <h3>Kepler Recon <small style="font-weight:normal; color:#666;">(Drag ♂ symbols)</small></h3>
+    <h3>Kepler's Method for Orbit Reconstruction <small style="font-weight:normal; color:#666;">(Drag Mars ♂ symbols)</small></h3>
     <div id="ui"></div>
 </div>
 
@@ -94,7 +94,7 @@ html_template = """
 const DATA = %PAYLOAD%;
 const th_s = DATA.th_s, th_m = DATA.th_m, mars_init = DATA.mars_init;
 const orbit_m = DATA.orbit_m, orbit_e = DATA.orbit_e;
-const colors = ['#4682B4', '#FFA500', '#2E8B57', '#FF4500', '#9370DB'];
+const colors = ['#4682B4', '#FFA500', '#2E8B57', '#FF4500', '#9370DB', '#00CED1'];
 
 const canvas = document.getElementById('cv');
 const ctx = canvas.getContext('2d');
@@ -108,7 +108,7 @@ const ui = document.getElementById('ui');
 marsPos.forEach((p, i) => {
     const div = document.createElement('div');
     div.className = 'group'; div.style.borderColor = colors[i % colors.length];
-    div.innerHTML = `<b>Year ${i}</b><br>X: <span class="val" id="vx${i}">${p.x.toFixed(2)}</span><br>Y: <span class="val" id="vy${i}">${p.y.toFixed(2)}</span>`;
+    div.innerHTML = `<b>Position ${i}</b><br>X: <span class="val" id="vx${i}">${p.x.toFixed(2)}</span><br>Y: <span class="val" id="vy${i}">${p.y.toFixed(2)}</span>`;
     ui.appendChild(div);
 });
 
@@ -156,6 +156,13 @@ function drawSymbol(x, y, symbol, color, size) {
     ctx.shadowBlur = 0;
 }
 
+function drawCross(x, y, s, col, lw) {
+    ctx.beginPath(); ctx.setLineDash([]); ctx.strokeStyle = col; ctx.lineWidth = lw;
+    ctx.moveTo(x-s, y); ctx.lineTo(x+s, y);
+    ctx.moveTo(x, y-s); ctx.lineTo(x, y+s);
+    ctx.stroke();
+}
+
 function render() {
     ctx.clearRect(0, 0, 800, 800);
     const cx = 400, cy = 400;
@@ -170,14 +177,16 @@ function render() {
     ctx.beginPath();
     for(let i=0; i<orbit_m[0].length; i++) ctx.lineTo(cx + orbit_m[0][i]*scale, cy - orbit_m[1][i]*scale);
     ctx.stroke();
-    ctx.fillStyle = "#aaa";
-    ctx.fillText("Mars Trajectory", cx + 1.6*scale, cy - 1.2*scale);
+    ctx.fillStyle = "#333";
+    ctx.fillText("Mars (♂) Trajectory", cx + 1.2*scale, cy + 1.2*scale);
 
     // Earth Orbit
     ctx.beginPath();
+    ctx.strokeStyle = '#eee';
     for(let i=0; i<orbit_e[0].length; i++) ctx.lineTo(cx + orbit_e[0][i]*scale, cy - orbit_e[1][i]*scale);
     ctx.stroke();
-    ctx.fillText("Earth Trajectory", cx + 0.8*scale, cy - 0.7*scale);
+    ctx.fillStyle = "#333";
+    ctx.fillText("Earth (⊕) Trajectory", cx + .3*scale, cy + 1.1*scale);
 
     // Sun Label
     ctx.fillStyle = '#333';
@@ -195,20 +204,18 @@ function render() {
             const ex = dist * -Math.cos(ts), ey = dist * -Math.sin(ts);
             
             // Sight lines
-            ctx.setLineDash([2, 3]); ctx.strokeStyle = color + '44';
+            ctx.setLineDash([2, 3]); ctx.strokeStyle = color + '44'; ctx.lineWidth = 1.5;
             ctx.beginPath(); ctx.moveTo(mPx, mPy); ctx.lineTo(cx + ex*scale, cy - ey*scale); ctx.stroke();
             
             // Earth Symbols (⊕)
-            drawSymbol(cx + ex*scale, cy - ey*scale, "⊕", color, 16);
+            drawSymbol(cx + ex*scale, cy - ey*scale, "⊕", color, 20);
         });
 
         // Ref target (Faint Cross)
-        ctx.strokeStyle = '#ddd'; ctx.lineWidth = 1; ctx.beginPath();
-        let rx = cx + mars_init[i].x*scale, ry = cy - mars_init[i].y*scale;
-        ctx.moveTo(rx-8, ry); ctx.lineTo(rx+8, ry); ctx.moveTo(rx, ry-8); ctx.lineTo(rx, ry+8); ctx.stroke();
+        drawCross(cx + mars_init[i].x*scale, cy - mars_init[i].y*scale, 15, color, 2);
         
         // Interactive Mars Symbols (♂)
-        drawSymbol(mPx, mPy, "♂", color, 24);
+        drawSymbol(mPx, mPy, "♂", color, 30);
     });
     requestAnimationFrame(render);
 }
