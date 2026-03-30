@@ -259,7 +259,7 @@ La dimostrazione delle leggi di Keplero con le [equazioni della dinamica](physic
 Per stabilire le dimensioni assolute delle orbite nel sistema solare era necessario conoscere almeno una dimensione assoluta: la misura della distanza tra Terra e Sole, definita come **unità astronomica**, $\text{UA}$, fu ottenuta per la prima volta grazie alle misure del 1761 e del 1769 del transito di Venere davanti al Sole.
 
 <iframe 
-    src="script/mars_recon_canvas.html" 
+    src="script/mars_recon_canvas_click.html" 
     width="100%" 
     height="900px" 
     frameborder="0" 
