@@ -246,8 +246,24 @@ I pianeti percorrono le orbite con una velocità areolare (con vertice il Sole) 
 ```{prf:proposition} Terza legge di Keplero
 :label: kepler-third
 
-Il periodo di rivoluzione dei pianeti è proporzionale alla potenza $\frac{3}{2}$ del semiasse maggire $a$ della traiettoria, $T \sim a^{\frac{3}{2}}$.
+Il periodo di rivoluzione dei pianeti è proporzionale alla potenza $\frac{3}{2}$ del semiasse maggire $a$ della traiettoria, $T \propto a^{\frac{3}{2}}$, come mostrato in figura {numref}`fig-kepler-3`.
 
+```
+
+<!--
+```{list-table}
+:header-rows: 0
+* - ![Terza legge di Keplero.](script/kepler_third_law.png)
+```
+-->
+
+(label-target)=
+```{figure} script/kepler_third_law.png
+---
+width: 100%
+name: fig-kepler-3
+---
+Analisi della terza legge di Keplero: confronto tra scala lineare (pianeti interni ed esterni) e scala logaritmica.
 ```
 
 La dimostrazione delle leggi di Keplero con le [equazioni della dinamica](physics-hs:mechanics:dynamics) e della [legge di gravitazione universale di Newton](physics-hs:mechanics:actions:gravitation:newton), nell'ambito del [sistema dei due corpi](physics-hs:mechanics:dynamics:motion:central), fu uno dei primi successi e verifiche della probabile[^kepler-newton-falsification] bontà della teoria di Newton della dinamica. Vedi anche [moti centrali](physics-hs:mechanics:dynamics:motion:central).
