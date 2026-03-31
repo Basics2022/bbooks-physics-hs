@@ -33,8 +33,15 @@ L'equazione del moto di un corpo soggetto a un campo di forze centrali con inten
 
 $$m \ddot{\vec{r}} = c \frac{\vec{r}}{|\vec{r}|^3} \ ,$$ (eq:central:r-2:eom)
 
-...**todo** *bla bla*
+L'equazione {eq}`eq:central:r-2:eom` può rappresentare diversi problemi, a seconda del valore della costante $c$. Ad esempio:
+* se $c = - G M m$, questa equazione rappresenta l'equazione dinamica {eq}`eq:gravitation:2-body` che governa il [problema dei due corpi in gravitazione](physics-hs:mechanics:dynamics:motion:gravitation:two-bodies)
+* se $c = \frac{q_1 q_2}{4 \pi \varepsilon}$ con $q_1$, $q_2$, cioè se la forza è la [forza di Coulomb](physics-hs:electromagnetism:electrostatics:coulomb), l'equazione rappresenta il moto di una carica puntiforme di massa $m_1$ e carica elettrica $q_1$, soggetta all'interazione elettrica con una carica puntiforme fissa di carica $q_2$. In questo caso, questa equazione coincide con l'equazione {eq}`eq:rutherford:coulomb` che governa il moto delle cariche proiettile nell'esperimento di [scattering di Rutherford-Geiger-Mardsen](modern:experiments:rutherford:atom) all'origine del modello atomico di Rutherford.
 
+Vale quindi la pena studiare l'equazione nel caso generale, per discurerne alcune caratteristiche e proprietà:
+* Un corpo puntiforme governato dall'equazione {eq}`eq:central:r-2:eom` descrive un moto piano
+* Il momento angolare del corpo puntiforme rispetto al centro di attrazione (o repulsione) è costante, poiché la forza è diretta dal corpo al centro e quindi ha braccio nullo, e quindi momento nullo: in assenza di momenti esterni al sistema, il momento angolare è costante; anche la velocità areolare è costante
+* L'energia meccanica del sistema è costante, in assenza di forze esterne non-conservative
+* Le traiettorie percorse da corpi governati da questa equazione descrivono curve coniche, a seconda del segno della costante $c$ e delle condizioni iniziali - o dell'energia del sistema -, come dimostrato in seguito nei paragrafi **Traiettorie e coniche** e **Equazione della traiettoria in funzione dell'energia e del momento angolare**.
 
 (physics-hs:mechanics:dynamics:motion:central:plane)=
 ```{dropdown} Moto piano

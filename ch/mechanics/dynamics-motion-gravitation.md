@@ -1,25 +1,3 @@
-<!--
----
-jupytext:
-    formats: md:myst
-    text_representation:
-        extension: .md
-        format_name: myst
-kernelspec:
-    dispaly_name: Python 3(ipykernel)
-    language: python
-    name: python3
----
--->
-
-<!--
-```{article-info}
-:author: basics
-:date: "{sub-ref}`today`"
-:read-time: "{sub-ref}`wordcount-minutes` min read"
-```
--->
-
 (physics-hs:mechanics:dynamics:motion:gravitation)=
 # Gravitazione
 
@@ -36,6 +14,7 @@ kernelspec:
 - problema dei 3 corpi:
   - punti lagrangiani. Esempio: telescopio Webb
 -->
+
 Newton formula anche la prima teoria della gravitazione, riconoscendola come causa unica del moto dei corpi celesti e della caduta dei corpi nei pressi della superficie terrestre.
 
 (physics-hs:mechanics:dynamics:motion:gravitation:newton)=
@@ -52,7 +31,18 @@ che prende il nome di **costante di gravitazione universale**.
 
 (physics-hs:mechanics:dynamics:motion:gravitation:kepler)=
 ## Leggi di Keplero
+
+Le leggi di Keplero descrivono il moto dei pianeti attorno al Sole, e vennero formulate da J.Keplero all'inizio del XVII secolo usando le osservazioni astronomiche di T.Brahe. Stabiliscono che 1) i pianeti percorrono orbite ellittiche attorno al Sole, che si trova in un fuoco, 2) la velocità areolare di un pianeta è costante lungo la sua traiettoria, 3) il quadrato del semiasse maggiore delle traiettorie ellittiche è proporzionale al cubo del periodo di rivoluzione.
+
+Un dettaglio sul procedimento che permise a Keplero di determinare la forma delle orbite a partire dagli angoli misurati con le osservazioni astronomiche è disponibile nella sezione di astronomia, nell'articolo sulla [scala delle distanze cosmiche](physics-hs:modern:astronomy:distance-ladder), al paragrafo [Orbite dei pianeti](physics-hs:modern:astronomy:distance-ladder:planets).
+
+Attraverso le leggi della dinamica e la gravitazione universale, Newton riuscì a dimostrare le leggi di Keplero. Quindi:
+* le leggi di Keplero possono essere considerate come una verifica sperimentale della teoria della meccanica di Newton basata sui 3 principi e sviluppata con gli strumenti del calcolo infinitesimale, e della legge di gravitazione universale
+* la meccanica di Newton diede fondamento teorico alle leggi di Keplero.
+
+<!--
 Le equazioni della dinamica e la legge di gravitazione universale da lui formulate, permise a Newton di dimostrare le **tre leggi di Keplero** che descrivono il moto *limitato* (**todo** *trovare sinonimo*) di due corpi celesti, come ad esempio il moto di un pianeta rispetto al Sole, o il moto di un satellite rispetto al pianeta di riferimento.
+-->
 
 ```{prf:definition} Prima legge di Keplero
 :label: kepler-law-1
@@ -69,13 +59,13 @@ Il moto di un pianeta rispetto al Sole ha una velocità areolare costante.
 ```{prf:definition} Terza legge di Keplero
 :label: kepler-law-3
 
-Il periodo $T$ dell'orbita è in relazione al semiasse maggiore $a$
+Il quadrato del periodo di rivoluzione dei pianeti è proporzionale al cubo dei semiassi maggiori delle loro traiettorie,
 
-$$T = \pi \dfrac{a^{\frac{3}{2}}}{\sqrt{GM}} \ \quad , \quad T^2 \sim a^3$$
+$$T = \dfrac{2 \pi}{\sqrt{GM}} a^{\frac{3}{2}} \ \quad , \quad T^2 \propto a^3$$
 
 ```
 
-<div style="display: flex; gap: 0; overflow-x: auto; min-width: 1200px;"> -->
+<div style="display: flex; gap: 0; overflow-x: auto; min-width: 1200px;"> 
   <div style="width: 900px; height: 500px; overflow: hidden;">
     <div style="transform: scale(0.8); transform-origin: top left; width: 1000px; height: 550px;">
       <iframe src="../../_static/animations/kepler.html" width="1200" height="700" frameborder="0" style="border: 0;"></iframe>
@@ -89,6 +79,13 @@ $$T = \pi \dfrac{a^{\frac{3}{2}}}{\sqrt{GM}} \ \quad , \quad T^2 \sim a^3$$
 ## Problema dei due corpi
 
 In meccanica classica, il problema dei due corpi si riferisce alla dinamica di un sistema formato da due corpi puntiformi soggetti unicamente alla mutua interazione gravitazionale, descritta dalla legge di gravitazione universale di Newton.
+
+<!--
+(physics-hs:mechanics:dynamics:motion:gravitation:two-bodies:center-of-mass)=
+### Centro di massa e massa ridotta
+-->
+
+```{dropdown} Centro di massa e massa ridotta
 
 Il sistema formato dai due punti è un sistema chiuso e isolato, sul quale non agiscono azioni esterne. La quantità di moto rispetto a un sistema di riferimento inerziale rimane quindi costante. Rimane quindi costante la velocità del centro di massa $G$,
 
@@ -115,7 +112,45 @@ $$\begin{aligned}
 
 Le equazioni del moto in questi due sistemi di riferimento possono essere scritte nella forma
 
-$$m_1 \, \ddot{\vec{r}} = - G M m_1 \frac{\vec{r}}{r^3} \ .$$
+$$m_1 \, \ddot{\vec{r}} = - G M m_1 \frac{\vec{r}}{r^3} \ ,$$(eq:gravitation:2-body)
+
+con $M$ una massa equivalente del sistema a seconda della scelta di $\vec{r}$ nella dscrizione: se $\vec{r} = P_1 - G$, allora $M = m_0 \frac{1}{\left(1+ \frac{m_1}{m_0}\right)^2}$; se $\vec{r} = P_1 - P_0$, allora $M = m_0 + m_1$.
+
+```
+
+```{dropdown} Dimostrazione delle leggi di Keplero
+:open:
+
+Le leggi di Keplero vengono qui dimostrate usando i risultati del capitolo sui [moti centrali](physics-hs:mechanics:dynamics:motion:central).
+
+L'equazione {eq}`eq:dynamics:central:r-2:trajectory:el` rappresenta l'equazione di una conica. Per quanto detto alla fine del paragrafo sul [centro di massa del sistema](physics-hs:mechanics:dynamics:motion:gravitation:two-bodies:center-of-mass), se si sceglie il Sole $P_0$ come origine del sistema di riferimento, la massa equivalente vale $M = m_0 + m_1$, mentre la costante $c = - G M m$.
+
+**Prima legge di Keplero.** La seconda legge di Keplero è dimostrata nel [capitolo sui moti centrali con forza inversamente proporzionale alla distanza](physics-hs:mechanics:dynamics:motion:central:r-2), nella sezione **Traiettorie e coniche**. In quella sezione viene dimostrato che le traiettorie possibili sono le sezioni coniche. Le uniche orbite chiuse possibili sono ellissi, con il caso particolare di ellisse di eccentricità nulla, cioè la circonferenza. Come descritto nella sezione **Equazione della traiettoria in funzioen dell'energia e del momento angolare**, queste due grandezze fisiche determinano l'orbita. 
+
+**Seconda legge di Keplero.** La seconda legge di Keplero è dimostrata nel [capitolo sui moti centrali con forza inversamente proporzionale alla distanza](physics-hs:mechanics:dynamics:motion:central:r-2), nella sezione **Costanza del momento angolare e della velocità areolare**.
+
+**Terza legge di Keplero.** Poiché la velocità aerolare $\Omega$ è costante, il periodo di rivoluzione di un pianeta può essere calcolato come rapporto tra l'area interna alla sua orbita e la sua velocità areolare,
+
+$$T = \frac{\pi a b}{\Omega} = \frac{\pi a^2 \sqrt{1-e^2}}{\Omega} \ ,$$
+
+avendo indicato con $a$, $b$ i semiassi maggiore e minore dell'orbita rispettivamente, e avendo usato la relazione tra i semiassi e l'eccentricità $e$ di un'ellisse, $b = a \sqrt{1-e^2}$.
+
+Dalle equazioni {eq}`eq:dynamics:central:r-2:trajectory:conics`, {eq}`eq:dynamics:central:r-2:trajectory:el` della traiettoria ellittica segue l'espressione dell'asse maggiore
+
+$$2 a = \frac{l^2}{m|c|} \left( \frac{1}{1 + e} + \frac{1}{1-e} \right) = \frac{l^2}{m|c|} \frac{2}{1-e^2} \ .$$
+
+dalla quale si può ricavare, usando la relazione tra momento angolare e velocità areolare $l = 2 m \Omega$,
+
+$$\frac{\sqrt{1-e^2}}{\Omega} = \frac{l}{\Omega} \sqrt{\frac{1}{m |c| a}} = 2 m \sqrt{\frac{1}{m |c| a}} = 2 m \sqrt{\frac{1}{GM m^2 a}} = 2 \sqrt{\frac{1}{GM a}} \ .$$
+
+Sostituendo questa espressione nella formula del periodo $T$, si ottiene la dimostrazione della terza legge di Keplero,
+
+$$T = \frac{2\pi}{\sqrt{GM}} a^{3/2} \ .$$
+
+```
+
+
+```{dropdown} Old
 
 (physics-hs:mechanics:dynamics:motion:gravitation:two-bodies:energy-and-conics)=
 ### Traiettorie, coniche, ed energia
@@ -252,7 +287,7 @@ $$a = \frac{c}{e} = \frac{e}{1-e^2} D$$
 $$b = \sqrt{a^2 - c^2} = \sqrt{\frac{1 - e^2}{e^2}} c = \sqrt{\frac{1 - e^2}{e^2}}  \frac{e^2}{1-e^2} D = \frac{e D}{\sqrt{1-e^2}} = a \, \sqrt{1-e^2} $$
 -->
 
-Poiché la velocità areolare è costante, il periodo dell'orbita è uguale al raggporto tra l'area dell'ellisse e la velocità areaolare,
+Poiché la velocità areolare è costante, il periodo dell'orbita è uguale al raggporto tra l'area dell'ellisse e la velocità areolare,
 
 $$T = \frac{\pi a b}{\Omega} = \pi \frac{a^2 \sqrt{1-e^2}}{\Omega} = $$
 
@@ -273,6 +308,8 @@ $$A^2 \Omega^4 = (GM)^2 - \frac{GM \, \Omega^2}{a}$$
 $$\frac{\Omega^2}{GM}\frac{1}{a} = 1 - \left(\frac{A \Omega^2}{GM}\right)^2$$
 
 $$\frac{1}{a} = \left( 1 - \left(\frac{A \Omega^2}{GM}\right)^2 \right) \frac{GM}{\Omega^2}$$
+
+```
 
 <!--
 Il semiasse maggiore è dato da

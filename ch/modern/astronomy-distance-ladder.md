@@ -209,7 +209,8 @@ Halley prevede la periodicità della comparsa della cometa, alla quale fu dato i
 - 1066: segno premonitore per la battaglia di Hastings
 ```
 
-## Orbite pianeti
+(physics-hs:modern:astronomy:distance-ladder:planets)=
+## Orbite dei pianeti
 Osservazioni astronomiche di:
 - N.Copernicus (1473-1573): **modello eliocentrico** e **periodo di rivoluzione** dei pianeti attorno al Sole; dati risalenti alle osservazioni astronomiche dell'età antica
 - T.Brahe (1546-1601)

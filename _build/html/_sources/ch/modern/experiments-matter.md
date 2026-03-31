@@ -187,6 +187,7 @@ $$\begin{cases}
 
 ```
 
+(modern:experiments:curie:radioactivity)=
 ## La radioattività - Esperimento dei coniugi Curie
 
 ```{dropdown}
@@ -197,6 +198,7 @@ $$\begin{cases}
 ```
 
 
+(modern:experiments:electron-charge:millikan)=
 ## Misura della carica dell'elettrone - Millikan
 
 ```{dropdown} Misura della carica dell'elettrone
@@ -235,6 +237,7 @@ $$v_{z, \infty}(E_2) - v_{z, \infty}(E_1) = \frac{E_2 - E_1}{c} q \qquad \righta
 ```
 
 
+(modern:experiments:rutherford:atom)=
 ## Modello atomico di Rutherford - Geiger-Mardsen
 ```{dropdown} Scattering
 
@@ -252,7 +255,7 @@ $$\vec{F} = \frac{q_1 q_2}{4\pi\varepsilon} \frac{\vec{r}}{|\vec{r}|^3} \ ,$$
 
 e l'equazione del moto è
 
-$$m \ddot{\vec{r}} = \frac{q_1 q_2}{4\pi\varepsilon} \frac{\vec{r}}{|\vec{r}|^3} = c \frac{\vec{r}}{|\vec{r}|^3} \ .$$
+$$m \ddot{\vec{r}} = \frac{q_1 q_2}{4\pi\varepsilon} \frac{\vec{r}}{|\vec{r}|^3} = c \frac{\vec{r}}{|\vec{r}|^3} \ .$$ (eq:rutherford:coulomb)
 
 Poiché la forza è repulsiva, la traiettoria della particella proiettile è un'iperbole per qualsiasi valore dei parametri del problema. L'equazione della traiettoria è data dall'espressione {eq}`eq:dynamics:central:r-2:trajectory:el`,
 
