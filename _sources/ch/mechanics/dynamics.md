@@ -19,6 +19,14 @@
 
 La dinamica si occupa del moto dei sistemi e delle cause del moto, mettendo insieme la descrizione [cinematica](physics-hs:mechanics:kinematics), l'[inerzia](physics-hs:mechanics:inertia) dei sistemi a perseverare nel moto, e le [azioni](physics-hs:mechanics:actions) come causa di una variazione del moto. La [statica](physics-hs:mechanics:statics) rappresenta un caso particolare di dinamica, in cui il sistema di interesse rimane nella configurazione di riferimento.
 
+```{admonition} I.Newton
+:class: dropdown
+
+...
+
+```
+
+
 [**Princìpi della dinamica**](physics-hs:mechanics:dynamics:principles). Insieme al principio della conservazione della massa, vengono formulati i tre principi della dinamica di Newton per sistemi chiusi rispetto a sistemi di riferimento inerziali (1. principio di inerzia, 2. bilancio della quantità di moto e 3. principio di azione e reazione); successivamente viene discusso il significato della relatività galileiana e il ruolo dei sistemi di riferimento inerizali.
 
 <!--  -->
